@@ -1,0 +1,22 @@
+window.SPEC = {
+  title: 'MCP Servers & Marketplace',
+  subtitle: 'Connect Devin to the tools your team already uses',
+  outro: 'Give Devin more tools',
+  speed: 1,
+  edit: {
+    '0000.png': { hold: 1.0 },
+    '0010.png': { cam: { x: 1060, y: 330, z: 1.35 }, camDelay: 0.3, camDur: 1.2 },
+    '0011.png': { hold: 1.6 },
+    '0012.png': { cam: { x: 1100, y: 560, z: 1.45 }, camDur: 0.9 },
+    '0014.png': { hold: 2.0 },
+    '0015.png': { cam: 'reset', camDur: 0.8 },
+    '0021.png': { hold: 2.2 },
+    '0031.png': { hold: 1.4, cam: { x: 520, y: 260, z: 1.5 }, camDur: 0.9 },
+    '0033.png': { cam: 'reset' },
+    '0034.png': { hold: 2.4 },
+    '0039.png': { hold: 2.8, cap: 'Context7 is enabled and ready to use', cam: { x: 1130, y: 300, z: 1.3 }, camDur: 1.4 },
+    '0040.png': { skip: true }, '0041.png': { skip: true }, '0042.png': { skip: true }, '0043.png': { skip: true }, '0044.png': { skip: true }, '0045.png': { skip: true },
+    '0046.png': { hold: 1.4, cap: 'It shows up under MCPs, toggled on', cam: 'reset' },
+    '0047.png': { hold: 3.0, cam: { x: 900, y: 330, z: 1.5 }, camDelay: 0.6, camDur: 1.4 },
+  },
+};
