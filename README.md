@@ -14,7 +14,14 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 8. **Testing Apps with Devin** (1:39): Ask Devin to test an app end to end; it drives the UI on its own computer and returns a recording with each check. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/08-computer-use-testing/08-computer-use-testing.mp4)
 9. **Devin Review** (1:50): Open a pull request in Devin Review, run Devin's analysis to find bugs, ask about a finding, commit Devin's fix to the PR branch, and turn on automatic reviews. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/09-devin-review/09-devin-review.mp4)
 10. **Devin CLI** (1:44): Run Devin in your terminal: permission modes (Accept Edits, Smart, Bypass), model selection, @ file context, /handoff to the cloud, /cloud sessions and devin ssh. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/10-devin-cli/10-devin-cli.mp4)
-11. **Devin Desktop** (2:12): Devin's desktop app: the agent and model pickers, ACP agents, Quick Review, Codemaps, DeepWiki and a live localhost preview of the change. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop.mp4) · Narrated: [Joseff](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-joseff.mp4), [Megan](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-megan.mp4)
+11. **Devin Desktop** (2:12): Devin's desktop app: the agent and model pickers, ACP agents, Quick Review, Codemaps, DeepWiki and a live localhost preview of the change. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop.mp4)
+
+## Narrated tutorials
+
+Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
+
+- **Devin Desktop, narrated by Joseff** (2:18): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-joseff.mp4)
+- **Devin Desktop, narrated by Megan** (2:17): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-megan.mp4)
 
 ## Making a new tutorial
 
