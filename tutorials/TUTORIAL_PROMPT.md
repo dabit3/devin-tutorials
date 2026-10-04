@@ -1,0 +1,92 @@
+# Prompt: create a Devin feature tutorial video
+
+Copy everything below the line into a new Devin session. Fill in the three fields at the top; leave the rest unchanged.
+
+---
+
+Create a polished tutorial video that teaches new users how to use one Devin feature, and open a PR that adds it to `dabit3/devin-tutorials` under `tutorials/<NN>-<slug>/`.
+
+- **Feature:** <name of the Devin feature, e.g. "Playbooks">
+- **What the viewer should be able to do afterwards:** <one sentence>
+- **Docs / reference material:** <link or pasted docs, repo to use (mention it with @owner/repo), environment (Linux/macOS/Windows)>
+
+## How to build it
+
+Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Canvas renderer, synthesized audio, `build.sh`), and follow `tutorials/README.md`. Copy the structure of the most similar existing tutorial folder (`capture.mjs`, `shots/beats.json`, `spec.js`).
+
+1. **Plan first.** Read the docs, then write a short shot list of 6–12 beats: the golden path from a clean start to a visible end result. Each beat is one action plus one short caption.
+2. **Clean the account.** Open the org home and archive every old session from earlier attempts at this feature (or earlier takes of this video) so the left-nav session list doesn't show stale work. If the archive dialog asks about the session's PR, choose **Keep open**. Use `HIDE_TEXT="<title>"` only for sessions that can't be archived and aren't part of the story. Repeat between takes, since each take can start new sessions.
+3. **Capture the real app.** Drive a signed-in Devin web app in Chrome through CDP (`127.0.0.1:9333`) and take a screenshot per beat. Mask the account email name (`MASK_TEXT=<email name>`). Before capturing, make sure there are no setup warnings, dismissible banners or notifications under the prompt box or floating announcement cards on the home page (dismiss them with their real close button, never paint them out), stale failed sessions in view, or real secrets on screen (use obviously fake demo values and delete them afterwards). Wait until the sidebar session list has loaded (no skeleton rows) before the first screenshot. If a live take is not smooth, re-capture or recreate the UI pixel for pixel instead of shipping a rough take.
+4. **Edit in `spec.js`.** Holds, captions, speed badges, skips. A `poll` beat lasts as long as the real gap to the next kept poll (divided by `speed`), so when you skip a range, give the last kept poll before it an explicit `hold`. Otherwise the whole skipped wait comes back as one long still. Don't keep frames showing questions or answers the video never explains; skip them or answer them on camera. When only the edit changes, change `spec.js` and rebuild; don't re-record. Put caption fixes in both `spec.js` (as an override) and `capture.mjs` (for future takes).
+5. **Build.** Run `bash tutorials/_kit/tools/build.sh <folder>` and wait until the log prints `built <folder>/…mp4` before touching the MP4 (it isn't playable until then). Then make a 1080p preview for review. 4K renders need about 1.5–3 GB free for frames; if disk is tight, build with `JPEG_QUALITY=80`, delete old `build/` frame dirs, clear `npm cache` and Chrome's cache over CDP (`Network.clearBrowserCache`). Before a full build, check caption placement and zoom cheaply with `node _kit/tools/render.mjs <folder> --every 30 --out <dir>` and look at the stills.
+6. **Review the frames.** Pull frames every few seconds, at every caption and at any timestamp the reviewer mentioned, and look at them. Check that each click lands on the control the caption describes, that each caption matches what is on screen (e.g. don't say "opened devin.ai" when Devin's browser shows the app on `localhost`), that no text is oversized or half-loaded, that the cursor isn't parked somewhere misleading, and that the sidebar has no stale sessions. Fix and rebuild before handing off.
+
+## Every narrated action must be real
+- If a caption says "click X", the capture must click the actual X control, and the script must confirm the click did what the caption says. Otherwise fail the capture instead of recording the shot.
+- Find targets by their real DOM element and position, never by a loose text match that could pick a nearby look-alike. For example, a citation demo must click a `file:line` citation link (`span[role=link]`) inside Devin's answer in the chat, not a file link in the code panel. Pick a citation whose lines aren't already on screen, so the jump is visible, then check that the code panel scrolled to those lines.
+- Don't show a step whose result is already on screen. For example, if the PR view is already open, switch the panel back first, then open the PR from the PR card in the chat, and check that the PR view opened.
+- Wait for the real UI before acting: poll with `p.evaluate(...)` plus a short `sleep` (the CDP page object has no `waitForFunction`), e.g. wait up to 30 s for the session link to appear in the sidebar before clicking it. Start each session exactly once; if a retry starts a duplicate, stop and archive it.
+- Capture helpers (`r.poll`, `r.clean()` in `_kit/capture/rec.mjs`) skip frames with loading skeletons, oversized text (over 24 px), a terminal (xterm) canvas drawn at the wrong pixel ratio, which shows up as giant terminal text in the Progress panel, or the empty new-tab picker. Keep that on, and never ship a frame that shows those states.
+
+## Style rules
+
+**Format**
+- 3840×2160, 60 fps, 16:9, H.264 High, AAC 48 kHz.
+- Open on the Devin logo and a short title with a one-line subtitle. Never write "Devin tutorial" on the title card.
+- End on the outro card with a short takeaway line.
+
+**Pacing**
+- Length is whatever the flow needs. Most run 45–90 s, and long agentic flows can run longer.
+- Every caption stays on screen long enough to read: at least about 2.6 s, longer for long captions. The video itself slows down to make room; the caption is not just left up longer over faster footage.
+- No dead air. Cut or speed up waits, and show long Devin work as a short sped-up montage (about 10–12 s, with a "Sped up" badge). Code being written gets 7 s at most. Focus on the result, not every step.
+- Jump straight to results. About 2–3 s after the last "watch it work" caption, cut to the finished PR with a caption like "When Devin is done, it opens a PR and offers to test it", skipping the polling in between. After a click that starts something (e.g. `Test…`), the next visible change (e.g. the Computer tab) should come within about 3 s.
+- Never make the viewer wait on typing. Short prompts can type in with typing sounds that match the visible text. For long or pasted prompts, drop the finished prompt in at once as a still beat (`kind: 'still'`), with no typing sound.
+
+**Camera**
+- Capture the Devin UI one zoom step in: 110% browser zoom, the same as pressing Cmd + once in Chrome. Apply it before the first screenshot and keep it for the whole take, so every tutorial shows the UI at the same, slightly larger size. With CDP, set it in `_kit/capture/cdp.mjs` before capturing, and check a frame to make sure the layout still fits and nothing is cut off.
+- Zoom sparingly, and only early on (home screen, composer, a small setting) when a control would otherwise be unreadable. The kit caps zoom at 1.3×.
+- Once you are inside a Devin session (chat, Progress, PR tab, Computer tab, testing), stay zoomed out so the viewer sees the whole UI. Set `noZoom: [['<first session shot>']]` in `spec.js`. `noZoom` drops every `cam` from that shot onward, so a deliberate zoom on a small control after that point needs `camForce: true` on its `cam` entry. Check the rendered frames to confirm the zoom actually shows.
+- Never let the cursor cover text the viewer needs to read. Hide it with `cursor: false` while a prompt is on screen.
+- The capture cursor is separate from Devin's own pointer inside the Computer tab. While Devin's computer is working (testing, browsing), hide the capture cursor (`cursor: false` on the first beat, `cursor: true` when the next real click comes) so it doesn't sit still on the Computer tab and look like it isn't following the action.
+- Cut shots with glitches such as loading skeletons, oversized text or half-rendered panels, and use a loaded frame instead.
+
+**Captions**
+- One short, plain-English line per beat (under about 10 words) that says what to do or why it matters.
+- Use the kit defaults: 1.18× size, no arrows. Never cover the control being used or anything the viewer needs to read.
+- Outside a running session (setup, menus, pickers, dialogs, settings, terminal prompts), put the caption next to the action, in empty space, so the eye doesn't travel to the bottom: set `capPos: 'auto'` and a `target: {x, y, w, h}` (1440×810 CSS px, covering the control or output being described) on that beat. If a list or menu fills most of the screen, use `capPos: 'top'` (or `'bottom'`) instead.
+- Inside a running session (Devin working, its summary, changing terminal output), keep captions at the bottom: the screen is busy and changing there, and a fixed spot is easiest to follow.
+- Shorten a caption if that's what it takes to fit beside the control (e.g. "Turn on ACP agents like Codex in Settings"). Check rendered stills of every moved caption for overlaps, including the crossfade into the next shot.
+- Captions about a whole page or section (a nav tour stop like Wiki, Automations, Review, Customize) always sit at the bottom: set `capPos: 'bottom'` on those beats so the caption doesn't jump around between pages. Give each tour stop at least about 3 s on screen.
+- Light subtitles only where they help. Don't caption every click.
+- Every caption must describe something the viewer can see or understand. Avoid slogans that need explaining (e.g. "Changelog in, docs PR out"); say what is on screen instead.
+
+**Content**
+- Show the real product flow: the Agent or Ask mode choice, the model and OS pickers where relevant, repos mentioned with `@owner/repo`, and Devin opening PRs on its own. Never prompt Devin to "open a PR".
+- Show Devin's own computer (the Computer tab) when it helps explain the feature, e.g. its browser on a real page.
+- When a video ends with a merge, show Devin testing the change first: give it a small, visible UI feature (not a config or docs-only change), click the real `Test…` button Devin offers after it opens the PR, show the Computer tab while it clicks through the app, then play the recording it sends. Wait until Devin has finished testing, and only use a recording that passed cleanly (not one titled "interrupted" or with failures). Close the recording viewer, click the PR card in the chat, then Merge, and check that the PR really shows Merged before the final caption. The shared helper `_kit/capture/testmerge.mjs` does all of this. If the test reports any failure, don't use the take; pick a simpler feature and re-record. Use the repo the feature belongs to, e.g. docs automations target the docs repo, not a product-demo repo.
+- If the feature has a quick "try it now" control (Run automation, Test the app, Merge…), end by pointing it out.
+- Keep the account anonymous: mask the email and avoid private repo names you don't need.
+
+**Audio**
+- The music bed is quiet, below UI clicks, typing and caption pops. Typing sounds play only while text is visibly appearing.
+
+## Native apps (Devin CLI, Devin Desktop)
+- Record the real installed app, never a mock. CLI: run `devin` in tmux and render the pane through `_kit/capture/term/termrec.mjs` (xterm.js, JetBrains Mono at 21 px, 3× scale), which keeps terminal text crisp and readable at the whole-screen framing. Resize the tmux window to the xterm grid before starting so lines don't wrap. Desktop: attach to the Electron app over CDP (`--remote-debugging-port=9335`) with `_kit/capture/desktop.mjs`, set the viewport to 1280×720 at 3× so the UI renders large and sharp, and bring the app to the front first (`open /Applications/Devin.app`), since background windows stall screenshots.
+- Use a clean demo repo (e.g. Orbit) and a small, visible UI feature. In Desktop, finish by showing it working in Desktop's own localhost preview pane, and caption that it is the app running on localhost. In the CLI, skip the browser demo: end the local part on the edits being on disk and move on to the CLI's own features.
+- Show the real first-run gates when they appear: the CLI workspace trust prompt and Desktop's "Do you trust the authors of the files in this folder?" dialog. Answer them on camera.
+- Cover the core concepts from the docs in order: how to start (`devin` / New Space), where it runs (Devin Local vs Cloud, folder), how much it can do alone (permission modes: Normal/Accept Edits/Smart/Bypass/Plan in the CLI, cycled with Shift+Tab; show each one with an accurate caption: Accept Edits asks before running commands, Smart auto-approves actions the model judges safe, Bypass auto-approves everything; then return to the mode used for the task; Code/Smart/Ask/Plan in Desktop), context (`@` files, slash commands like `/model` and `/mode`), the task, approvals, the summary, then review and accept.
+- Stay whole-screen by default; the 3× capture makes most text legible without zooming. Zoom (about 1.5×) only where a small click would otherwise go unnoticed, e.g. the Desktop Agent→Editor switch, the Codemaps icon and the DeepWiki panel. A spec-wide `noZoom` or `maxZoom: 1.0` silently drops those `cam`s, so scope `noZoom` to the shots that need it and confirm the zoom in rendered frames.
+- Caption models by what the user cares about and what's really in the picker (e.g. "Choose the model: Fusion, SWE-2, Claude, GPT and more"); don't mention options the user asked to leave out (e.g. Adaptive).
+- Preview panes in Desktop are separate CDP page targets: click elements inside them through that target (e.g. find the page whose URL is the preview's `127.0.0.1` address), not with mouse coordinates on the workbench page.
+- Drop beats for features that show no visible result in the take (e.g. a review that never posts findings on screen) instead of captioning something the viewer can't see.
+- Leave the result in a clean state on camera (Accept all in Desktop, `git status` in the CLI) and archive exploratory Desktop spaces from earlier attempts through their real context menu.
+- Desktop feature tour, each on the real UI: the model picker in the composer (pick the label that is actually shown, e.g. `SWE-2 High`), the agent selector (Devin Local, Devin Cloud, and any ACP agent such as Codex after enabling it in Settings → Agents; never caption an ACP agent as doing work unless the take really runs it), Quick Review (click `Quick review`, then the model *in the menu*, not its tooltip, and wait until the findings are in the chat), Codemaps (Editor → Codemaps, ask about one flow, show the generated map, click a step to jump into the code, optionally the diagram view), and DeepWiki (open its panel, then a real ⌘⇧-click on a symbol, held down while the mouse clicks, and wait for the explanation).
+- Before a Desktop take, stop editor notifications from popping up mid-recording, e.g. the Git "open repositories in parent folders" toast (set `"git.openRepositoryInParentFolders": "never"` in Desktop settings, or dismiss it with its close button before the shot). Don't paint a popup out of screenshots; if one slips into a take, re-record that stretch with it dismissed. Review frame sheets of every Desktop shot for toasts, since they are easy to miss at full-window framing.
+- In Desktop, end on the app running in the live localhost preview (e.g. toggle the new feature back and forth); nothing comes after it. Record long takes in resumable phases (`PHASE=1..4`, beats appended to `shots/beats.json`) so a failed step only re-records that phase. The preview target only exists while it's visible: map its DOM coordinates to the workbench by adding the pane's on-screen offset.
+- CLI feature tour: `/model` for model selection (show Fusion), `/cloud` (creates, steers, resumes and watches Devin Cloud sessions from the terminal; it does not move the current session, so never caption it that way), `/handoff <task>` to send the local task to a cloud Devin (the only command that moves work to the cloud), and `devin ssh <session>` (or `/ssh`) into that cloud box. `/handoff` and SSH need a repo with a real git remote that the cloud org can reach; get the user's OK before pushing a demo repo anywhere, and never fake a Cloud, handoff or SSH screen. The repo must be clonable by the org the CLI is signed into (check `git ls-remote` from a cloud box). Run `devin ssh` inside tmux (it needs a TTY), accept the host key off camera, and wait until the box has cloned the repo before showing it. `10-devin-cli/cloud.mjs` appends this part after the main capture.
+
+## Deliverables
+- A PR on `dabit3/devin-tutorials` containing the folder (MP4, poster, `capture.mjs`, `shots/`, `spec.js`) and a new row in the `tutorials/README.md` table and in the root `README.md` list (description + download link).
+- The 1080p preview attached in the chat.
+- One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
+- A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.

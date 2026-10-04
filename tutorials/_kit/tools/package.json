@@ -1,0 +1,7 @@
+{
+  "name": "devin-tutorials-render",
+  "private": true,
+  "type": "module",
+  "scripts": { "render": "node render.mjs" },
+  "dependencies": { "@xterm/xterm": "5.5.0", "puppeteer-core": "23.11.1" }
+}
