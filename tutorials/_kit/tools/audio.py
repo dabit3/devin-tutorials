@@ -81,7 +81,19 @@ for b in range(nbars):
             madd(H, t0 + k * BEAT / 2, (0.03 if k % 2 else 0.018) + 0.006 * section, pan=0.25)
 fade_in = np.minimum(1, np.arange(N) / (1.5 * SR))
 fade_out = np.clip((total - np.arange(N) / SR) / 2.5, 0, 1)
-L += ML * fade_in * fade_out * MUSIC_GAIN * 1.8; R += MR * fade_in * fade_out * MUSIC_GAIN * 1.8
+# narration (vo/<voice>/<key>.wav) ducks the music bed while it plays
+VOICE = os.environ.get('VOICE'); VL = np.zeros(N)
+duck = np.ones(N)
+if VOICE and cue.get('vo'):
+    for v in cue['vo']:
+        with wave.open(os.path.join(VD, 'vo', VOICE, v['file'] + '.wav')) as w:
+            x = np.frombuffer(w.readframes(w.getnframes()), '<i2').astype(float) / 32767
+        i = int(T(v['t']) * SR); j = min(N, i + len(x)); VL[i:j] += x[:j - i]
+        duck[max(0, i - int(0.25 * SR)):j + int(0.4 * SR)] = float(os.environ.get('DUCK', '0.45'))
+    duck = lfilter([0.0004], [1, -0.9996], duck - 1) + 1  # smooth the duck envelope (~50 ms)
+    VL *= 0.5 / max(1e-9, np.abs(VL).max())
+mg = fade_in * fade_out * MUSIC_GAIN * 1.8 * duck
+L += ML * mg + VL; R += MR * mg + VL
 
 # title chime
 for i, m in enumerate([72, 76, 79, 84]):

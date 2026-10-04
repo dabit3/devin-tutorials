@@ -16,6 +16,13 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 10. **Devin CLI** (1:44): Run Devin in your terminal: permission modes (Accept Edits, Smart, Bypass), model selection, @ file context, /handoff to the cloud, /cloud sessions and devin ssh. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/10-devin-cli/10-devin-cli.mp4)
 11. **Devin Desktop** (2:12): Devin's desktop app: the agent and model pickers, ACP agents, Quick Review, Codemaps, DeepWiki and a live localhost preview of the change. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop.mp4)
 
+## Narrated tutorials
+
+Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
+
+- **Devin Desktop, narrated by Joseff** (2:18): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-joseff.mp4)
+- **Devin Desktop, narrated by Megan** (2:17): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-megan.mp4)
+
 ## Making a new tutorial
 
 Every video's capture script, screenshots and edit spec live in [`tutorials/`](tutorials/), which also explains how to rebuild them. To create a tutorial for another Devin feature, use the reusable prompt in [`tutorials/TUTORIAL_PROMPT.md`](tutorials/TUTORIAL_PROMPT.md).

@@ -22,13 +22,16 @@ window.SPEC = {
         "y": 345,
         "w": 760,
         "h": 120
-      }
+      },
+      "vo": "This is Devin Desktop. Every task starts in the Agent view, in a new Space."
     },
     "0019.png": {
       "hold": 2.6,
       "cursor": false,
       "cap": "Devin Local reads, edits and checks the code",
-      "badge": "Sped up"
+      "badge": "Sped up",
+      "vo": "Devin Local reads the code, makes the edits, and checks its work.",
+      "voGap": 0.7
     },
     "0020.png": {
       "skip": true
@@ -292,7 +295,9 @@ window.SPEC = {
     },
     "0125.png": {
       "hold": 4,
-      "cap": "And expands again, live on localhost"
+      "cap": "And expands again, live on localhost",
+      "vo": "and expands again.",
+      "voGap": 0.15
     },
     "0013.png": {
       "cap": "Choose the model: Fusion, SWE-2, Claude, GPT and more",
@@ -302,12 +307,15 @@ window.SPEC = {
         "y": 570,
         "w": 320,
         "h": 440
-      }
+      },
+      "vo": "Choose a model, like Fusion or SWE-2,"
     },
     "0060.png": {
       "cap": "A summary of what changed, and the app already running on localhost",
       "badge": "",
-      "hold": 3.6
+      "hold": 3.6,
+      "vo": "When it's done, you get a summary, and the app is already running on localhost.",
+      "voGap": 0.6
     },
     "0086.png": {
       "cam": {
@@ -318,7 +326,9 @@ window.SPEC = {
       "camForce": true
     },
     "0110.png": {
-      "badge": ""
+      "badge": "",
+      "vo": "and you get a step-by-step map, linked to the code.",
+      "voGap": 0.3
     },
     "0115.png": {
       "cam": {
@@ -326,16 +336,22 @@ window.SPEC = {
         "y": 270,
         "z": 1.5
       },
-      "camForce": true
+      "camForce": true,
+      "vo": "With DeepWiki, Command-Shift-click any symbol",
+      "voGap": 0.8
     },
     "0123.png": {
       "cam": "reset"
     },
     "0083.png": {
-      "badge": ""
+      "badge": "",
+      "vo": "Its findings land right in the chat.",
+      "voGap": 0.4
     },
     "0002.png": {
-      "capPos": "auto"
+      "capPos": "auto",
+      "vo": "Pick an agent: Devin Local, Devin Cloud, or an ACP agent like Codex.",
+      "voGap": 0.5
     },
     "0005.png": {
       "capPos": "auto",
@@ -345,13 +361,17 @@ window.SPEC = {
         "w": 560,
         "h": 60
       },
-      "cap": "Turn on ACP agents like Codex in Settings"
+      "cap": "Turn on ACP agents like Codex in Settings",
+      "vo": "You can turn on more ACP agents in Settings."
     },
     "0007.png": {
-      "capPos": "auto"
+      "capPos": "auto",
+      "vo": "Choose where it runs: on this Mac, in a worktree, or in the cloud.",
+      "voGap": 0.5
     },
     "0009.png": {
-      "capPos": "auto"
+      "capPos": "auto",
+      "vo": "Then pick the project folder."
     },
     "0017.png": {
       "capPos": "auto",
@@ -360,7 +380,9 @@ window.SPEC = {
         "y": 200,
         "w": 330,
         "h": 300
-      }
+      },
+      "vo": "and how much Devin can do on its own.",
+      "voGap": 0.15
     },
     "0018.png": {
       "capPos": "auto",
@@ -369,7 +391,50 @@ window.SPEC = {
         "y": 330,
         "w": 760,
         "h": 100
-      }
+      },
+      "vo": "Then describe the task. Here, a collapse toggle for each board column.",
+      "voGap": 0.5
+    },
+    "0063.png": {
+      "vo": "Quick Review has a second agent check the changes.",
+      "voGap": 0.7
+    },
+    "0085.png": {
+      "vo": "Accept all, and the changes are yours.",
+      "voGap": 0.5
+    },
+    "0087.png": {
+      "vo": "Switch to the Editor for the full IDE.",
+      "voGap": 0.8
+    },
+    "0089.png": {
+      "vo": "Codemaps show how your code fits together.",
+      "voGap": 0.4
+    },
+    "0091.png": {
+      "vo": "Ask about one flow,",
+      "voGap": 0.2
+    },
+    "0112.png": {
+      "vo": "Click a step to jump to that line,",
+      "voGap": 0.4
+    },
+    "0114.png": {
+      "vo": "or view the whole flow as a diagram.",
+      "voGap": 0.15
+    },
+    "0120.png": {
+      "vo": "to get a written explanation in the sidebar.",
+      "voGap": 0.3
+    },
+    "0122.png": {
+      "vo": "Back in the Agent view, the app is still running on localhost.",
+      "voGap": 0.8
+    },
+    "0124.png": {
+      "vo": "Try the new toggle. Backlog collapses,",
+      "voGap": 0.4
     }
-  }
+  },
+  "voOutro": "Build with Devin Desktop."
 };
