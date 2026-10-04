@@ -33,16 +33,18 @@ async function openPage() {
   const page = await browser.newPage();
   await page.setViewport({ width: 3840, height: 2160, deviceScaleFactor: 1 });
   page.on('pageerror', e => { console.error('pageerror', e); process.exit(1); });
-  await page.goto(`http://127.0.0.1:${port}/_kit/src/index.html?v=${encodeURIComponent(VIDEO)}`, { waitUntil: 'load' });
+  await page.goto(`http://127.0.0.1:${port}/_kit/src/index.html?v=${encodeURIComponent(VIDEO)}${process.env.VOICE ? '&voice=' + encodeURIComponent(process.env.VOICE) : ''}`, { waitUntil: 'load' });
   await page.evaluate(() => window.film.ready);
   return page;
 }
 const first = await openPage();
 const total = await first.evaluate(() => window.film.frames);
 fs.mkdirSync(path.join(ROOT, VIDEO, 'build'), { recursive: true });
+if (args.includes('--count')) { console.log(total); process.exit(0); }
 fs.writeFileSync(path.join(ROOT, VIDEO, 'build', 'cues.json'), JSON.stringify(await first.evaluate(() => window.film.cues()), null, 1));
 const list = flag('--frames', null);
-const frames = list ? list.split(',').map(Number) : []; if (!list) for (let f = 0; f < total; f += EVERY) frames.push(f);
+const from = Number(flag('--from', 0)), to = Math.min(total, Number(flag('--to', total)));
+const frames = list ? list.split(',').map(Number) : []; if (!list) for (let f = from; f < to; f += EVERY) frames.push(f);
 const n = Math.min(WORKERS, frames.length);
 const pages = [first]; for (let i = 1; i < n; i++) pages.push(await openPage());
 // contiguous chunks per worker keep each page's shot cache warm

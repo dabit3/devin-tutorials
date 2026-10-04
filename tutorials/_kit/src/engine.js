@@ -38,13 +38,26 @@ function build() {
   const capMin = text => S.capMin ?? Math.max(2.6, 1.0 + text.split(/\s+/).length * 0.3);
   const beats = BEATS.map(b => ({ ...b, ...(edits[b.img] || {}) })).filter(b => !b.skip);
   const push = (img, t0, dur, fade, extra = {}) => { tl.steps.push({ img, t0, t1: t0 + dur, fade, prev: shown, ...extra }); shown = img; };
-  let settle = 0;
+  let settle = 0, voEnd = 0;
+  const VO = S.voLines; tl.vo = [];
+  const say = (key, t0) => {
+    const L = VO[key]; if (!L) return t0;
+    tl.vo.push({ t: t0, file: key });
+    for (const c of L.chunks) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos: 'bottom' });
+    tl.caps.push({ t: t0 + sec(L.dur + 0.3), text: '', pos: 'bottom' });
+    return t0 + sec(L.dur);
+  };
   const zMax = S.maxZoom ?? 1.3;
   const flat = img => (S.noZoom || []).some(([a, z]) => img >= a && (!z || img <= z));
   beats.forEach((b, i) => {
     const noZoom = flat(b.img);
     if (b.cam && b.cam !== 'reset') b = noZoom && !b.camForce ? { ...b, cam: undefined } : { ...b, cam: { ...b.cam, z: Math.min(b.cam.z, zMax) } };
     if (t < settle) t = settle;
+    if (VO) {
+      b = { ...b, cap: undefined };
+      if ((b.vo && VO[b.img]) || b.waitVo) t = Math.max(t, voEnd + sec(b.voGap ?? 0.35));
+      if (b.vo && VO[b.img]) voEnd = say(b.img, t + sec(b.voDelay ?? 0));
+    }
     if (b.cap !== undefined && b.cap !== cap) {
       if (cap) { const need = sec(capMin(cap)); if (t - capT < need) t = capT + need; }
     }
@@ -81,9 +94,12 @@ function build() {
       const dur = Math.max(3, sec(b.hold ?? dt / speed)); push(b.img, t, dur, b.fade ?? Math.min(8, Math.floor(dur / 2))); t += dur;
     } else { const dur = hs(b.hold ?? 1.0); push(b.img, t, dur, b.fade ?? 6); t += dur; }
   });
+  if (VO) t = Math.max(t, voEnd + sec(0.5));
   t += sec(S.tailHold ?? 1.0);
   tl.steps[tl.steps.length - 1].t1 = t;
-  tl.introEnd = INTRO; tl.enter = ENTER; tl.uiEnd = t; tl.outro = sec(3.6); tl.frames = t + tl.outro;
+  tl.introEnd = INTRO; tl.enter = ENTER; tl.uiEnd = t; tl.outro = sec(3.6);
+  if (VO && VO.outro) { const t0 = t + sec(1.0); tl.vo.push({ t: t0, file: 'outro' }); tl.outro = Math.max(tl.outro, sec(1.0 + VO.outro.dur + 1.4)); }
+  tl.frames = t + tl.outro;
   // clamp first step start to 0 so the window shows the first shot while entering
   const firstImg = tl.steps.find(s => s.img); firstImg.t0 = 0;
   tl.imgSteps = tl.steps.filter(s => s.img);
@@ -283,6 +299,10 @@ function drawCaption(f) {
     ctx.fillStyle = '#fff'; ctx.textBaseline = 'middle'; spaced(c.text, x + CAP.padX, y + h / 2 + 2, -0.8); ctx.textBaseline = 'alphabetic';
     ctx.restore();
   };
+  if (SPEC.voLines) { // subtitles: cut between chunks, fade only at the start and end of a line
+    if (!k.text) { if (prev && prev.text && f < k.t + 10) draw(prev, 1 - prog(f, k.t, k.t + 8), 0); return; }
+    draw(k, prev && prev.text ? 1 : prog(f, k.t, k.t + 6), 0); return;
+  }
   const pin = eOutQuint(prog(f, k.t, k.t + 20));
   if (prev && prev.text && f < k.t + 14) draw(prev, 1 - prog(f, k.t, k.t + 12), 0);
   draw(k, pin, 24 * (1 - pin));
@@ -334,11 +354,13 @@ async function renderFrame(f) {
 }
 
 function cues() {
-  return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, clicks: TL.clicks.map(c => c.t), typing: TL.typing, caps: TL.caps.filter(c => c.text).map(c => c.t) };
+  return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, clicks: TL.clicks.map(c => c.t), typing: TL.typing, caps: SPEC.voLines ? [] : TL.caps.filter(c => c.text).map(c => c.t), vo: TL.vo };
 }
 const ready = (async () => {
   await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/spec.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
   SPEC = window.SPEC;
+  const VOICE = new URLSearchParams(location.search).get('voice');
+  if (VOICE) { SPEC.voLines = await (await fetch(`../../${V}/vo/${VOICE}/lines.json`)).json(); SPEC.capScale = SPEC.voCapScale ?? 1.0; }
   const cs = SPEC.capScale ?? 1.18; for (const k of ['font', 'padX', 'h', 'gap']) CAP[k] = Math.round(CAP[k] * cs);
   BEATS = await (await fetch(shotURL('beats.json'))).json();
   BEATS.forEach(b => { if (b.kind === 'type') b.n = b.paste ? 2 : b.chars || 2; });

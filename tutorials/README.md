@@ -23,6 +23,7 @@ Each folder contains the final MP4, a poster frame, the `capture.mjs` script tha
 1. **Capture** (`_kit/capture/`): `capture.mjs` connects to a signed-in Chrome over CDP, drives the UI, and records a screenshot per beat. The account email is masked in the DOM before every screenshot (`MASK_TEXT=<email name>`).
 2. **Render** (`_kit/src/`, `_kit/tools/render.mjs`): a deterministic Canvas engine composites the screenshots at 4K with the Devin title card, animated cursor, click ripples, camera zoom/pan, subtitles, and outro, rendered frame by frame in headless Chrome.
 3. **Audio + encode** (`_kit/tools/audio.py`, `_kit/tools/build.sh`): synthesized music and UI sound effects are generated from the timeline and muxed with H.264 High / AAC.
+4. **Narration** (optional, `_kit/tools/vo.py`): ElevenLabs reads the `vo` lines in `spec.js`; `VOICE=<id> VO_NAME=<name> bash _kit/tools/build.sh <folder>` paces the timeline to the voice, swaps captions for subtitles of the spoken words, ducks the music, and writes `<folder>-<name>.mp4`.
 
 ## Rebuild a video
 
