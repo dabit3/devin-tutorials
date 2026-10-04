@@ -34,7 +34,9 @@ window.SPEC = {
         "y": 150,
         "w": 800,
         "h": 250
-      }
+      },
+      "vo": "This is the Devin CLI. Run devin in a project and trust the folder once.",
+      "voGap": 0.5
     },
     "0008.png": {
       "hold": 2
@@ -47,7 +49,9 @@ window.SPEC = {
         "y": 330,
         "w": 1440,
         "h": 330
-      }
+      },
+      "vo": "Now Devin is running right in your terminal.",
+      "voGap": 0.4
     },
     "0012.png": {
       "hold": 2.8,
@@ -57,7 +61,9 @@ window.SPEC = {
         "y": 400,
         "w": 1440,
         "h": 540
-      }
+      },
+      "vo": "Type slash for commands like model and mode.",
+      "voGap": 0.4
     },
     "0013.png": {
       "hold": 2.2,
@@ -67,7 +73,9 @@ window.SPEC = {
         "y": 440,
         "w": 700,
         "h": 110
-      }
+      },
+      "vo": "Shift-Tab switches permission modes.",
+      "voGap": 0.2
     },
     "0014.png": {
       "hold": 3,
@@ -77,11 +85,15 @@ window.SPEC = {
         "y": 445,
         "w": 1440,
         "h": 110
-      }
+      },
+      "vo": "Describe the task, and use at to point at files.",
+      "voGap": 0.5
     },
     "0015.png": {
       "hold": 0.9,
-      "badge": "Sped up"
+      "badge": "Sped up",
+      "vo": "Devin reads the code, edits files, and runs checks.",
+      "voGap": 0.4
     },
     "0016.png": {
       "skip": true
@@ -271,7 +283,9 @@ window.SPEC = {
         "y": 690,
         "w": 800,
         "h": 250
-      }
+      },
+      "vo": "In Accept Edits, it asks before running commands.",
+      "voGap": 0.4
     },
     "0076.png": {
       "hold": 0.7,
@@ -695,7 +709,9 @@ window.SPEC = {
     "0215.png": {
       "kind": "still",
       "hold": 4,
-      "badge": ""
+      "badge": "",
+      "vo": "When it's done, you get a summary of what changed,",
+      "voGap": 0.2
     },
     "0216.png": {
       "hold": 0.5
@@ -708,7 +724,9 @@ window.SPEC = {
         "y": 110,
         "w": 600,
         "h": 100
-      }
+      },
+      "vo": "and the edits are on disk, ready to review and commit.",
+      "voGap": 0.5
     },
     "0218.png": {
       "skip": true
@@ -768,7 +786,9 @@ window.SPEC = {
         "y": 330,
         "w": 1440,
         "h": 260
-      }
+      },
+      "vo": "Cloud Devin picks it up, and you can follow along at the link.",
+      "voGap": 0.5
     },
     "0241.png": {
       "skip": true
@@ -793,7 +813,9 @@ window.SPEC = {
         "y": 140,
         "w": 1000,
         "h": 140
-      }
+      },
+      "vo": "with your repo cloned and ready.",
+      "voGap": 0.4
     },
     "0240.png": {
       "cap": "/cloud creates, steers and watches Devin Cloud sessions",
@@ -803,7 +825,9 @@ window.SPEC = {
         "y": 340,
         "w": 1440,
         "h": 290
-      }
+      },
+      "vo": "Slash cloud lets you create, steer, and watch Devin Cloud sessions from here.",
+      "voGap": 0.3
     },
     "0243.png": {
       "cap": "New prompts here now start a Devin Cloud session",
@@ -813,7 +837,9 @@ window.SPEC = {
         "y": 420,
         "w": 1440,
         "h": 320
-      }
+      },
+      "vo": "New prompts now start a Devin Cloud session.",
+      "voGap": 0.4
     },
     "0013c.png": {
       "cap": "This demo stays in Accept Edits",
@@ -824,7 +850,9 @@ window.SPEC = {
         "y": 440,
         "w": 700,
         "h": 110
-      }
+      },
+      "vo": "This demo stays in Accept Edits.",
+      "voGap": 0.4
     },
     "0013a.png": {
       "capPos": "auto",
@@ -833,7 +861,9 @@ window.SPEC = {
         "y": 440,
         "w": 700,
         "h": 110
-      }
+      },
+      "vo": "Smart auto-approves actions the model judges safe,",
+      "voGap": 0.15
     },
     "0013b.png": {
       "capPos": "auto",
@@ -842,7 +872,9 @@ window.SPEC = {
         "y": 440,
         "w": 700,
         "h": 110
-      }
+      },
+      "vo": "and Bypass auto-approves everything.",
+      "voGap": 0.3
     },
     "0224.png": {
       "capPos": "auto",
@@ -851,10 +883,14 @@ window.SPEC = {
         "y": 300,
         "w": 1440,
         "h": 300
-      }
+      },
+      "vo": "Start a new session for the next task.",
+      "voGap": 0.3
     },
     "0227.png": {
-      "capPos": "top"
+      "capPos": "top",
+      "vo": "Pick a model with slash model, like Fusion or swee two.",
+      "voGap": 0.3
     },
     "0229.png": {
       "capPos": "auto",
@@ -863,7 +899,9 @@ window.SPEC = {
         "y": 200,
         "w": 1440,
         "h": 200
-      }
+      },
+      "vo": "Fusion is now the model for this session.",
+      "voGap": 0.4
     },
     "0230.png": {
       "capPos": "auto",
@@ -872,7 +910,9 @@ window.SPEC = {
         "y": 200,
         "w": 1440,
         "h": 200
-      }
+      },
+      "vo": "Slash handoff hands a task to a cloud Devin.",
+      "voGap": 0.2
     },
     "0233.png": {
       "capPos": "auto",
@@ -881,7 +921,9 @@ window.SPEC = {
         "y": 310,
         "w": 600,
         "h": 200
-      }
+      },
+      "vo": "Choose the cloud machine it runs on.",
+      "voGap": 0.3
     },
     "0244.png": {
       "capPos": "auto",
@@ -890,7 +932,9 @@ window.SPEC = {
         "y": 80,
         "w": 400,
         "h": 40
-      }
+      },
+      "vo": "And devin ssh takes you into the cloud machine,",
+      "voGap": 0.2
     },
     "0253.png": {
       "capPos": "auto",
@@ -899,7 +943,10 @@ window.SPEC = {
         "y": 80,
         "w": 400,
         "h": 40
-      }
+      },
+      "vo": "the same box the cloud Devin is using,",
+      "voGap": 0.2
     }
-  }
+  },
+  "voOutro": "That's the Devin CLI."
 };

@@ -28,9 +28,9 @@ window.SPEC = {
     "0019.png": {
       "hold": 2.6,
       "cursor": false,
-      "cap": "Devin Local reads, edits and checks the code",
+      "cap": "Devin reads, edits and checks the code",
       "badge": "Sped up",
-      "vo": "Devin Local reads the code, makes the edits, and checks its work.",
+      "vo": "Devin reads the code, makes the edits, and checks its work.",
       "voGap": 0.7
     },
     "0020.png": {
@@ -308,7 +308,7 @@ window.SPEC = {
         "w": 320,
         "h": 440
       },
-      "vo": "Choose a model, like Fusion or SWE-2,"
+      "vo": "Choose a model, like Fusion or swee two,"
     },
     "0060.png": {
       "cap": "A summary of what changed, and the app already running on localhost",
@@ -350,7 +350,7 @@ window.SPEC = {
     },
     "0002.png": {
       "capPos": "auto",
-      "vo": "Pick an agent: Devin Local, Devin Cloud, or an ACP agent like Codex.",
+      "vo": "Pick an agent: Devin, Devin Cloud, or an ACP agent like Codex.",
       "voGap": 0.5
     },
     "0005.png": {
@@ -434,6 +434,37 @@ window.SPEC = {
     "0124.png": {
       "vo": "Try the new toggle. Backlog collapses,",
       "voGap": 0.4
+    },
+    "0126.png": {
+      "cam": "reset",
+      "camForce": true,
+      "hold": 3,
+      "vo": "Every session, local or cloud, lives in Sessions, grouped by status.",
+      "voGap": 0.4
+    },
+    "0128.png": {
+      "vo": "Switch to a list to see them all.",
+      "voGap": 0.3
+    },
+    "0130.png": {
+      "capPos": "auto",
+      "vo": "Filter by status, agent, repo, and more,",
+      "voGap": 0.2
+    },
+    "0134.png": {
+      "vo": "like just your Devin Cloud sessions.",
+      "voGap": 0.4
+    },
+    "0137.png": {
+      "vo": "Search to find one fast,",
+      "voGap": 0.2
+    },
+    "0139.png": {
+      "vo": "and sort them however you like.",
+      "voGap": 0.5
+    },
+    "0121.png": {
+      "cam": "reset"
     }
   },
   "voOutro": "Build with Devin Desktop."
