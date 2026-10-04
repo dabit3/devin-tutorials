@@ -8,7 +8,7 @@ export class DeskRec {
   constructor(dir) { this.dir = path.resolve(dir); fs.mkdirSync(this.dir, { recursive: true }); this.beats = fs.existsSync(`${this.dir}/beats.json`) ? JSON.parse(fs.readFileSync(`${this.dir}/beats.json`, 'utf8')) : []; this.n = this.beats.length ? Math.max(...this.beats.map(b => parseInt(b.img))) + 1 : 0; this.cur = { x: 1279, y: 300 }; }
   async init() {
     this.b = await puppeteer.connect({ browserURL: process.env.DESKTOP_CDP || 'http://127.0.0.1:9335', defaultViewport: null });
-    this.p = (await this.b.pages()).find(p => p.url().includes('workbench'));
+    this.p = (await this.b.pages()).find(p => p.url().includes(process.env.DESKTOP_PAGE || 'workbench'));
     await this.p.setViewport({ width: 1280, height: 720, deviceScaleFactor: 3 });
     await sleep(1500);
     return this;
