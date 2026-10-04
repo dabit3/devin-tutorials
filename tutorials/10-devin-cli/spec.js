@@ -6,7 +6,7 @@ window.SPEC = {
   "cps": 14,
   "capPos": "bottom",
   "capArrows": false,
-  "maxZoom": 1.0,
+  "maxZoom": 1,
   "noZoom": [
     [
       "0000.png"
@@ -27,22 +27,57 @@ window.SPEC = {
       "skip": true
     },
     "0006.png": {
-      "hold": 0.6
+      "hold": 0.6,
+      "capPos": "auto",
+      "target": {
+        "x": 400,
+        "y": 150,
+        "w": 800,
+        "h": 250
+      }
     },
     "0008.png": {
-      "hold": 2.0
+      "hold": 2
     },
     "0011.png": {
-      "hold": 2.8
+      "hold": 2.8,
+      "capPos": "auto",
+      "target": {
+        "x": 720,
+        "y": 330,
+        "w": 1440,
+        "h": 330
+      }
     },
     "0012.png": {
-      "hold": 2.8
+      "hold": 2.8,
+      "capPos": "auto",
+      "target": {
+        "x": 720,
+        "y": 400,
+        "w": 1440,
+        "h": 540
+      }
     },
     "0013.png": {
-      "hold": 2.2
+      "hold": 2.2,
+      "capPos": "auto",
+      "target": {
+        "x": 1100,
+        "y": 440,
+        "w": 700,
+        "h": 110
+      }
     },
     "0014.png": {
-      "hold": 3.0
+      "hold": 3,
+      "capPos": "auto",
+      "target": {
+        "x": 720,
+        "y": 445,
+        "w": 1440,
+        "h": 110
+      }
     },
     "0015.png": {
       "hold": 0.9,
@@ -227,9 +262,16 @@ window.SPEC = {
     },
     "0075.png": {
       "kind": "still",
-      "hold": 3.0,
+      "hold": 3,
       "badge": "",
-      "cap": "In Accept Edits mode, it asks before running commands"
+      "cap": "In Accept Edits mode, it asks before running commands",
+      "capPos": "auto",
+      "target": {
+        "x": 400,
+        "y": 690,
+        "w": 800,
+        "h": 250
+      }
     },
     "0076.png": {
       "hold": 0.7,
@@ -652,14 +694,21 @@ window.SPEC = {
     },
     "0215.png": {
       "kind": "still",
-      "hold": 4.0,
+      "hold": 4,
       "badge": ""
     },
     "0216.png": {
       "hold": 0.5
     },
     "0217.png": {
-      "hold": 3.0
+      "hold": 3,
+      "capPos": "auto",
+      "target": {
+        "x": 300,
+        "y": 110,
+        "w": 600,
+        "h": 100
+      }
     },
     "0218.png": {
       "skip": true
@@ -712,7 +761,14 @@ window.SPEC = {
       "skip": true
     },
     "0239.png": {
-      "badge": ""
+      "badge": "",
+      "capPos": "auto",
+      "target": {
+        "x": 720,
+        "y": 330,
+        "w": 1440,
+        "h": 260
+      }
     },
     "0241.png": {
       "skip": true
@@ -730,17 +786,120 @@ window.SPEC = {
       "skip": true
     },
     "0254.png": {
-      "hold": 3.6
+      "hold": 3.6,
+      "capPos": "auto",
+      "target": {
+        "x": 500,
+        "y": 140,
+        "w": 1000,
+        "h": 140
+      }
     },
     "0240.png": {
-      "cap": "/cloud creates, steers and watches Devin Cloud sessions"
+      "cap": "/cloud creates, steers and watches Devin Cloud sessions",
+      "capPos": "auto",
+      "target": {
+        "x": 720,
+        "y": 340,
+        "w": 1440,
+        "h": 290
+      }
     },
     "0243.png": {
-      "cap": "New prompts here now start a Devin Cloud session"
+      "cap": "New prompts here now start a Devin Cloud session",
+      "capPos": "auto",
+      "target": {
+        "x": 720,
+        "y": 420,
+        "w": 1440,
+        "h": 320
+      }
     },
     "0013c.png": {
       "cap": "This demo stays in Accept Edits",
-      "hold": 1.8
+      "hold": 1.8,
+      "capPos": "auto",
+      "target": {
+        "x": 1100,
+        "y": 440,
+        "w": 700,
+        "h": 110
+      }
+    },
+    "0013a.png": {
+      "capPos": "auto",
+      "target": {
+        "x": 1100,
+        "y": 440,
+        "w": 700,
+        "h": 110
+      }
+    },
+    "0013b.png": {
+      "capPos": "auto",
+      "target": {
+        "x": 1100,
+        "y": 440,
+        "w": 700,
+        "h": 110
+      }
+    },
+    "0224.png": {
+      "capPos": "auto",
+      "target": {
+        "x": 720,
+        "y": 300,
+        "w": 1440,
+        "h": 300
+      }
+    },
+    "0227.png": {
+      "capPos": "top"
+    },
+    "0229.png": {
+      "capPos": "auto",
+      "target": {
+        "x": 720,
+        "y": 200,
+        "w": 1440,
+        "h": 200
+      }
+    },
+    "0230.png": {
+      "capPos": "auto",
+      "target": {
+        "x": 720,
+        "y": 200,
+        "w": 1440,
+        "h": 200
+      }
+    },
+    "0233.png": {
+      "capPos": "auto",
+      "target": {
+        "x": 300,
+        "y": 310,
+        "w": 600,
+        "h": 200
+      }
+    },
+    "0244.png": {
+      "capPos": "auto",
+      "target": {
+        "x": 200,
+        "y": 80,
+        "w": 400,
+        "h": 40
+      }
+    },
+    "0253.png": {
+      "capPos": "auto",
+      "target": {
+        "x": 200,
+        "y": 80,
+        "w": 400,
+        "h": 40
+      }
     }
   }
 };
