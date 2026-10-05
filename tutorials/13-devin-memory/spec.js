@@ -3,7 +3,7 @@ window.SPEC = {
   "subtitle": "Devin remembers how you like to work",
   "outro": "Devin remembers how you work",
   "speed": 3,
-  "cps": 16,
+  "cps": 48,
   "capPos": "bottom",
   "capArrows": false,
   "noZoom": [["0031.png", "0036.png"], ["0047.png", "0079.png"]],
