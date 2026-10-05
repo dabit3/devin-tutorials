@@ -6,8 +6,8 @@ Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`). Each line pla
 | --- | --- |
 | Home screen | This is Devin Memory. Devin remembers what it learns from working with you, across every session. |
 | Typing the preference | Say you have a preference, like how you want status updates. |
-| Sending it | Just tell Devin to remember it. |
-| Devin replies | Devin saves it on its own, and the Updated memory card shows what changed. |
+| Sending it | You can tell Devin to remember it. |
+| Devin replies | But Devin also saves and edits memories on its own as you work, with no approval step. Each time it does, an Updated memory card shows up in the session. |
 | Memory card with the `MEMORY.md` diff | Your memories are Markdown notes in a Git repo, called your memory drive. |
 | Customize → Memory | You can browse them anytime in Customize, Memory. |
 | `MEMORY.md` selected | MEMORY.md holds your general preferences, and an index of your other notes. |
