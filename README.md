@@ -24,6 +24,9 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Devin Desktop, narrated by Joseff** (2:18): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-joseff.mp4)
 - **Devin Desktop, narrated by Megan** (2:17): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-megan.mp4)
 - **Devin in Slack, narrated by Megan** (1:14): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack-megan.mp4)
+- **Devin CLI, narrated by Nader** (1:41): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/10-devin-cli/10-devin-cli-nader.mp4)
+- **Devin Desktop, narrated by Nader** (2:42): Also tours the Sessions page for organizing many cloud sessions (board, list, filters, search, sort). [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-nader.mp4)
+- **Devin in Slack, narrated by Nader** (1:13): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack-nader.mp4)
 
 ## Making a new tutorial
 

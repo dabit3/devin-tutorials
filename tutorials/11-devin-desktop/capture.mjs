@@ -1,6 +1,6 @@
 // Records tutorial 11 from the real Devin Desktop app.
 // Prereq: open -a /Applications/Devin.app --args --remote-debugging-port=9335, signed in, Agent view on a New Space,
-// Codex enabled in Settings > Agents, ~/orbit clean. PHASE=1..4 records each part; beats append to shots/beats.json.
+// Codex enabled in Settings > Agents, ~/orbit clean. PHASE=1..5 records each part (5: the Sessions page, spliced in after Accept all); beats append to shots/beats.json.
 import { execSync } from 'child_process';
 import { DeskRec } from '../_kit/capture/desktop.mjs';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -23,8 +23,8 @@ await r.park();
 
 if (PHASE === 1 && !process.env.FROM_MODEL) {
   await r.shot({ hold: 2.6, cursor: false, cap: 'The Agent view: start a session in a new Space' });
-  // Agent selector: Devin Local, Devin Cloud, and any ACP agent enabled in Settings.
-  await r.click(await r.at('Devin Local'), { hold: 3.0, cap: 'Pick the agent: Devin Local, Devin Cloud, or an ACP agent like Codex' });
+  // Agent selector: Devin (local), Devin Cloud, and any ACP agent enabled in Settings.
+  await r.click(await r.at('Devin Local'), { hold: 3.0, cap: 'Pick the agent: Devin, Devin Cloud, or an ACP agent like Codex' });
   const add = await r.p.evaluate(() => { const f = [...document.querySelectorAll('*')].find(e => e.children.length && /to switch agents/.test(e.textContent) && e.textContent.length < 60);
     const bs = f ? [...f.querySelectorAll('*')].map(e => e.getBoundingClientRect()).filter(b => b.width) : []; const b = bs.sort((a, c) => c.x - a.x)[0]; return b ? { x: b.x + b.width / 2, y: b.y + b.height / 2 } : null; });
   await r.click(add, {}, 2500);
@@ -43,7 +43,7 @@ if (PHASE === 1 && !process.env.FROM_MODEL) {
   if (await has('Do you trust the authors')) { await r.park(); await r.shot({ kind: 'still', hold: 3.0, cursor: false, cap: 'Trust the folder before Devin works in it' }); const y = await r.find('Yes'); if (y) await r.click(y, {}, 1200); }
 
   const model = await r.find('SWE-2 High') || await r.find('Claude Opus 5.5 Medium');
-  await r.click(model, { hold: 3.2, cap: 'Choose the model: Adaptive, SWE-2, Claude, GPT and more' }, 1200);
+  await r.click(model, { hold: 3.2, cap: 'Choose the model: Fusion, SWE-2, Claude, GPT and more' }, 1200);
 }
 if (PHASE === 1 && !process.env.FROM_PROMPT) {
   const swe = await r.p.evaluate(() => { const hs = [...document.querySelectorAll('*')].filter(e => e.textContent.trim().startsWith('SWE-2 High')).map(e => e.getBoundingClientRect()).filter(b => b.width && b.y > 420); const b = hs.sort((a, c) => a.width * a.height - c.width * c.height)[0]; return b ? { x: b.x + b.width / 2, y: b.y + b.height / 2 } : null; });
@@ -132,6 +132,31 @@ if (PHASE === 4) {
   await r.shot({ kind: 'click', clickAt: { x: pt.x * S, y: pt.y * S }, hold: 2.8, cap: 'Try the new toggle: Backlog collapses' });
   await btn.click(); await sleep(1200);
   await r.shot({ kind: 'click', clickAt: { x: pt.x * S, y: pt.y * S }, hold: 3.2, cap: 'And expands again, live on localhost' });
+}
+if (PHASE === 5) {
+  // Sessions page in the main Devin window, agent sidebar hidden, Board view selected.
+  for (const q of await r.b.pages()) if ((await q.title()) === 'Devin') r.p = q;
+  await r.p.bringToFront(); await r.p.setViewport({ width: 1280, height: 720, deviceScaleFactor: 3 }); await sleep(1500);
+  const btn = t => r.p.evaluate(t => { const e = [...document.querySelectorAll('button')].find(e => e.textContent.trim() === t && e.getBoundingClientRect().width);
+    const b = e?.getBoundingClientRect(); return b ? { x: b.x + b.width / 2, y: b.y + b.height / 2 } : null; }, t);
+  const menuItem = (t, minX) => r.p.evaluate((t, minX) => { const e = [...document.querySelectorAll('*')].filter(e => e.textContent.trim() === t && e.getBoundingClientRect().width && e.getBoundingClientRect().x > minX && e.getBoundingClientRect().y > 120)
+    .sort((a, c) => a.getBoundingClientRect().width * a.getBoundingClientRect().height - c.getBoundingClientRect().width * c.getBoundingClientRect().height)[0];
+    const b = e?.getBoundingClientRect(); return b ? { x: b.x + b.width / 2, y: b.y + b.height / 2 } : null; }, t, minX);
+  await r.park();
+  await r.shot({ kind: 'still', hold: 3.0, cursor: false, cap: 'Sessions: every local and cloud session, by status' });
+  await r.click(await btn('List'), { hold: 2.4, cap: 'Or see them all as a list' }, 1500);
+  const plus = await r.p.evaluate(() => { const e = [...document.querySelectorAll('button')].filter(e => e.textContent.trim() === '' && e.getBoundingClientRect().y > 85 && e.getBoundingClientRect().y < 125).pop().getBoundingClientRect(); return { x: e.x + e.width / 2, y: e.y + e.height / 2 }; });
+  await r.click(plus, { hold: 2.6, cap: 'Filter by status, agent, repo and more' }, 1200);
+  const ag = await menuItem('Agent', 380); await r.hover(ag);
+  let dc; for (let i = 0; i < 20 && !(dc = await menuItem('Devin Cloud', 600)); i++) { await r.p.mouse.move(ag.x + 10, ag.y, { steps: 3 }); await sleep(500); }
+  await sleep(600); await r.shot({ kind: 'still', hold: 1.6 });
+  await r.click(dc, { hold: 2.8, cap: 'Like just your Devin Cloud sessions' }, 1800);
+  await r.p.mouse.click(640, 640); await sleep(800);
+  const sb = await el('input[placeholder="Search sessions..."]');
+  await r.click(sb, {}, 600); await r.p.focus('input[placeholder="Search sessions..."]'); await r.p.keyboard.type('board', { delay: 60 }); await sleep(1500);
+  await r.park(); await r.shot({ kind: 'still', hold: 2.6, cursor: false, cap: 'Search to find one fast' });
+  await r.click(await label('Display settings'), { hold: 2.6, cap: 'Sort them the way you like' }, 1200);
+  await r.key('Escape'); await sleep(500);
 }
 r.close();
 console.log('beats', r.beats.length);

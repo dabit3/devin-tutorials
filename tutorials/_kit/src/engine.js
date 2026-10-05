@@ -38,10 +38,11 @@ function build() {
   const capMin = text => S.capMin ?? Math.max(2.6, 1.0 + text.split(/\s+/).length * 0.3);
   const beats = BEATS.map(b => ({ ...b, ...(edits[b.img] || {}) })).filter(b => !b.skip);
   const push = (img, t0, dur, fade, extra = {}) => { tl.steps.push({ img, t0, t1: t0 + dur, fade, prev: shown, ...extra }); shown = img; };
-  let settle = 0, voEnd = 0;
+  let settle = 0, voEnd = 0, voLast = '';
   const VO = S.voLines; tl.vo = [];
   const say = (key, t0) => {
     const L = VO[key]; if (!L) return t0;
+    voLast = L.text;
     tl.vo.push({ t: t0, file: key });
     for (const c of L.chunks) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos: 'bottom' });
     tl.caps.push({ t: t0 + sec(L.dur + 0.3), text: '', pos: 'bottom' });
@@ -55,7 +56,8 @@ function build() {
     if (t < settle) t = settle;
     if (VO) {
       b = { ...b, cap: undefined };
-      if ((b.vo && VO[b.img]) || b.waitVo) t = Math.max(t, voEnd + sec(b.voGap ?? 0.35));
+      const gap = /[.?!]$/.test(voLast.trim()) ? Math.max(b.voGap ?? 0, S.voSentGap ?? 0.75) : (b.voGap ?? 0.35);
+      if ((b.vo && VO[b.img]) || b.waitVo) t = Math.max(t, voEnd + sec(gap));
       if (b.vo && VO[b.img]) voEnd = say(b.img, t + sec(b.voDelay ?? 0));
     }
     if (b.cap !== undefined && b.cap !== cap) {
