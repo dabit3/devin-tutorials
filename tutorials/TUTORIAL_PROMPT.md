@@ -102,6 +102,12 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - Target composers by container, not position: the channel composer is the `[data-qa="message_input"]` outside `[data-qa="threads_flexpane"]`, the thread reply box is the one inside it. Open a thread through the `reply_bar_count` of the message whose text matches, and wait until the thread pane shows that message before acting; otherwise a follow-up can land in the channel or the wrong thread.
 - Tour from the Slack docs, each on camera with Devin's real reply: `@Devin !ask ...` (quick answer, no full session), `@Devin !fast <task>` to start a session, a plain thread reply to continue it (no tag needed), the same session in the Devin web app (open the session URL from the thread; collapse the web-app sidebar if its session list is still loading), and `archive` to close it out (Devin reacts with 📦).
 
+## Memory (Devin Memory)
+
+- Show a real save: ask Devin to remember a concrete preference, then show its "Updated memory" line and the memory card's `MEMORY.md` diff, then Customize → Memory with the entry and its source link.
+- New memories apply to future sessions, so show recall in a new session, never the one that saved it. Use a prompt where the preference obviously applies (a status update to write), not a question about Memory: asked to explain Memory, Devin answered in paragraphs instead of the three saved bullets.
+- Show the Turn off personal memory menu item by hovering it, without clicking.
+
 ## Deliverables
 - A PR on `dabit3/devin-tutorials` containing the folder (MP4, poster, `capture.mjs`, `shots/`, `spec.js`) and a new row in the `tutorials/README.md` table and in the root `README.md` list (description + download link).
 - The 1080p preview attached in the chat.
