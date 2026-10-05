@@ -1,7 +1,7 @@
 """Generate ElevenLabs narration for a tutorial from the `vo` lines in its spec.js.
 usage: ELEVEN_LABS_API_KEY=... python3 vo.py <video-dir> <voice-id>
   -> <video-dir>/vo/<voice-id>/<img>.wav (48 kHz mono) + lines.json (durations and subtitle chunks)"""
-import array, base64, difflib, json, math, os, re, subprocess, sys, urllib.request, uuid
+import array, base64, wave, difflib, json, math, os, re, subprocess, sys, urllib.request, uuid
 
 VD, VOICE = os.path.abspath(sys.argv[1]), sys.argv[2]
 MODEL = os.environ.get('VO_MODEL', 'eleven_multilingual_v2')
@@ -53,13 +53,14 @@ def tts(text, prev, nxt, wav):
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', mp3, '-ac', '1', '-ar', str(SR), wav], check=True); os.remove(mp3)
     return d['alignment']
 
-def stt(wav):
+def stt(wav, timed=False):
     b = uuid.uuid4().hex
     body = (f'--{b}\r\nContent-Disposition: form-data; name="model_id"\r\n\r\nscribe_v1\r\n'
             f'--{b}\r\nContent-Disposition: form-data; name="file"; filename="a.wav"\r\nContent-Type: audio/wav\r\n\r\n').encode() + open(wav, 'rb').read() + f'\r\n--{b}--\r\n'.encode()
     req = urllib.request.Request('https://api.elevenlabs.io/v1/speech-to-text', data=body,
                                  headers={'xi-api-key': KEY, 'Content-Type': f'multipart/form-data; boundary={b}'})
-    return json.load(urllib.request.urlopen(req, timeout=120))['text']
+    d = json.load(urllib.request.urlopen(req, timeout=120))
+    return [w for w in d['words'] if w['type'] == 'word'] if timed else d['text']
 
 # Transcripts spell names and symbols their own way; map them back before comparing.
 ALIAS = {'devon': 'devin', 'dev in': 'devin', '@': 'at', 'deep wiki': 'deepwiki', 'code maps': 'codemaps', 'swe': 'swee',
@@ -94,48 +95,103 @@ def span(al, wav):
         k += 1
     return t0, (k - quiet + 1) / 100 + 0.04
 
-# Each sentence is its own request (with neighbouring sentences as context) so it gets a complete
-# sentence cadence; sentences within one line are joined with SENT_GAP seconds of silence.
-# Every take is transcribed and regenerated if it says something other than its text.
-res = {}
-for li, (img, text) in enumerate(order):
-    wav = os.path.join(out, f'{img}.wav')
-    say = says.get(img, text)
-    if old.get(img, {}).get('text') == text and old[img].get('say', text) == say and old[img].get('sentGap') == SENT_GAP and old[img].get('checked') and os.path.exists(wav):
-        res[img] = old[img]; continue
-    sents, spoken = sentences(text), sentences(say)
-    if len(spoken) != len(sents): sys.exit(f'{img}: voSay must have the same sentences as vo')
-    prev_all = [x for _, t in order[:li] for x in sentences(t)]
-    next_all = [x for _, t in order[li + 1:] for x in sentences(t)]
-    parts, ch, off = [], [], 0.0
+# Narration is generated per sentence, never per line: a line that stops mid-sentence ("Backlog collapses,")
+# is joined with the following lines into one utterance, each whole sentence of it is one ElevenLabs request
+# (previous sentences as context, no next_text, so it gets a finished-sentence cadence), and the utterance is
+# cut back into lines at the quietest point between their words. A fragment request would instead start
+# speaking its next_text before the clip ends. Sentences are joined with SENT_GAP seconds of silence.
+# Every sentence take is transcribed and regenerated if it says something other than its text.
+MODE = 'sentence-cut-2'
+groups, g = [], []
+for img, text in order:
+    g.append((img, text, says.get(img, text)))
+    if text.rstrip().endswith(('.', '?', '!')): groups.append(g); g = []
+if g: groups.append(g)
+
+def take(sent, shown, before, part):
+    for attempt in range(4):
+        al = tts(sent, before, '', part)
+        t0, t1 = span(al, part)
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', part, '-af', f'atrim={t0:.3f}:{t1:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.02,afade=t=out:st={t1 - t0 - 0.04:.3f}:d=0.04', part + '.cut.wav'], check=True)
+        got = stt(part + '.cut.wav')
+        if matches(shown, got):
+            os.replace(part + '.cut.wav', part)
+            return al, t0, t1
+        print(f'  retry {sent!r}: heard {got!r}')
+    sys.exit(f'no clean take for {sent!r}')
+
+def pcm(wav):
+    raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', wav, '-f', 's16le', '-ac', '1', '-ar', str(SR), '-'], capture_output=True, check=True).stdout
+    return array.array('h', raw)
+
+def write(wav, samples):
+    with wave.open(wav, 'wb') as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes(samples.tobytes())
+
+res, said = {}, []
+for gi, grp in enumerate(groups):
+    key = [[img, text, say] for img, text, say in grp]
+    if all(old.get(img, {}).get('utt') == key and old[img].get('mode') == MODE and old[img].get('sentGap') == SENT_GAP and os.path.exists(os.path.join(out, f'{img}.wav')) for img, _, _ in grp):
+        for img, text, _ in grp: res[img] = old[img]
+        said += sentences(' '.join(t for _, t, _ in grp)); continue
+    U = ' '.join(say for _, _, say in grp); shownU = ' '.join(t for _, t, _ in grp)
+    bounds, o = [], 0
+    for _, _, say in grp: bounds.append((o, o + len(say))); o += len(say) + 1
+    sents, shown = sentences(U), sentences(shownU)
+    if len(sents) != len(shown): sys.exit(f'{grp[0][0]}: voSay must have the same sentences as vo')
+    # one track for the utterance; times[c] = (start, end) of character c of U in it
+    track, times, pos, off = array.array('h'), [None] * len(U), 0, 0.0
     for k, sent in enumerate(sents):
-        before = (prev_all + sents[:k])[-2:]
-        # next_text makes a finished sentence sound like it runs on, so only unfinished ones get it.
-        after = [] if sent.rstrip().endswith((".", "?", "!")) else (sents[k + 1:] + next_all)[:1]
-        part = f'{wav[:-4]}.{k}.wav'
-        for attempt in range(4):
-            al = tts(spoken[k], ' '.join(before), ' '.join(after), part)
-            t0, t1 = span(al, part)
-            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', part, '-af', f'atrim={t0:.3f}:{t1:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.02,afade=t=out:st={t1 - t0 - 0.04:.3f}:d=0.04', part + '.cut.wav'], check=True)
-            got = stt(part + '.cut.wav')
-            if matches(sent, got): break
-            print(f'  retry {img}.{k}: heard {got!r}')
-        else:
-            sys.exit(f'{img}: no clean take for {sent!r}')
-        os.replace(part + '.cut.wav', part)
-        if k: off += SENT_GAP
-        cs = chunks(spoken[k], al)
-        if spoken[k] != sent:
-            cs = [{**cs[0], 't1': cs[-1]['t1'], 'text': sent}]
-        ch += [{**c, 't0': round(max(0, c['t0'] - t0) + off, 3), 't1': round(min(c['t1'], t1) - t0 + off, 3)} for c in cs]
-        parts.append((part, off, t1 - t0)); off += t1 - t0
-    filt = ''.join(f'[{i}]adelay={int(o * 1000)}[a{i}];' for i, (_, o, _) in enumerate(parts))
-    filt += ''.join(f'[a{i}]' for i in range(len(parts))) + f'amix=inputs={len(parts)}:normalize=0,atrim=0:{off:.3f}[o]'
-    cmd = ['ffmpeg', '-v', 'error', '-y'] + sum((['-i', p] for p, _, _ in parts), []) + ['-filter_complex', filt, '-map', '[o]', '-ar', str(SR), '-ac', '1', wav]
-    subprocess.run(cmd, check=True)
-    for p, _, _ in parts: os.remove(p)
-    res[img] = {'text': text, **({'say': say} if say != text else {}), 'dur': round(off, 3), 'sentGap': SENT_GAP, 'checked': True, 'chunks': ch}
-    print(f'{img}: {off:.2f}s  {text}')
+        pos = U.index(sent, pos)
+        part = os.path.join(out, f'_utt{gi}.{k}.wav')
+        al, t0, t1 = take(sent, shown[k], ' '.join(said[-2:]), part)
+        said.append(shown[k])
+        if k:
+            off += SENT_GAP; track.extend([0] * int(SENT_GAP * SR))
+        off = len(track) / SR
+        for j, (a, b) in enumerate(zip(al['character_start_times_seconds'], al['character_end_times_seconds'])):
+            if j < len(sent): times[pos + j] = (min(max(a - t0, 0), t1 - t0) + off, min(max(b - t0, 0), t1 - t0) + off)
+        track.extend(pcm(part)); os.remove(part)
+        pos += len(sent)
+    e = [math.sqrt(sum(x * x for x in track[i:i + SR // 100]) / (SR // 100) + 1e-9) for i in range(0, len(track), SR // 100)]
+    def alnum_times(a, b):
+        return [times[c] for c in range(a, b) if U[c].isalnum() and times[c]]
+    # 30 ms average loudness per 10 ms frame; the cut goes in the quietest window near the aligned word gap
+    # (alignment times can be ~100 ms late, so the window reaches past them on both sides).
+    q = [sum(e[f:f + 3]) / len(e[f:f + 3]) for f in range(len(e))]
+    cuts = [0.0]
+    for (a0, a1), (b0, b1) in zip(bounds, bounds[1:]):
+        lo, hi = alnum_times(a0, a1)[-1][1], alnum_times(b0, b1)[0][0]
+        lo, hi = max(lo - 0.15, alnum_times(a0, a1)[-1][0]), min(hi + 0.15, alnum_times(b0, b1)[0][1])
+        f = min(range(int(lo * 100), max(int(lo * 100) + 1, int(hi * 100))), key=lambda f: q[min(f, len(q) - 1)])
+        cuts.append(f / 100 + 0.015)
+    cuts.append(len(track) / SR)
+    # Check every cut against a transcript of the whole utterance: it must fall between two heard words,
+    # the last word of one line and the first word of the next (an isolated short "and" is often misheard).
+    if len(grp) > 1:
+        write(os.path.join(out, '_utt.wav'), track)
+        heard = stt(os.path.join(out, '_utt.wav'), timed=True); os.remove(os.path.join(out, '_utt.wav'))
+        for li, c in enumerate(cuts[1:-1]):
+            pre, post = [w for w in heard if w['end'] <= c + 0.02], [w for w in heard if w['start'] >= c - 0.02]
+            ok = pre and post and len(pre) + len(post) == len(heard) and words(pre[-1]['text'])[-1:] == words(grp[li][1])[-1:] and words(post[0]['text'])[:1] == words(grp[li + 1][1])[:1]
+            if not ok: sys.exit(f'{grp[li][0]}: cut at {c:.2f}s does not fall between {grp[li][1]!r} and {grp[li + 1][1]!r}: {[(w["text"], w["start"], w["end"]) for w in heard]}')
+    for li, ((img, text, say), (a0, a1)) in enumerate(zip(grp, bounds)):
+        c0, c1 = cuts[li], cuts[li + 1]
+        seg = track[int(c0 * SR):int(c1 * SR)]
+        fade = int(0.01 * SR)
+        for j in range(min(fade, len(seg))):
+            seg[j] = int(seg[j] * j / fade); seg[-1 - j] = int(seg[-1 - j] * j / fade)
+        write(os.path.join(out, f'{img}.wav'), seg)
+        ch = []
+        for ssay, stext in zip(sentences(say), sentences(text)):
+            s0 = U.index(ssay, a0)
+            idx = [c for c in range(s0, s0 + len(ssay)) if times[c]]
+            al = {'characters': [U[c] for c in idx], 'character_start_times_seconds': [times[c][0] - c0 for c in idx], 'character_end_times_seconds': [times[c][1] - c0 for c in idx]}
+            cs = chunks(ssay, al)
+            if ssay != stext: cs = [{**cs[0], 't1': cs[-1]['t1'], 'text': stext}]
+            ch += [{**c, 't0': round(max(0, c['t0']), 3), 't1': round(min(c['t1'], c1 - c0), 3)} for c in cs]
+        res[img] = {'text': text, **({'say': say} if say != text else {}), 'dur': round(c1 - c0, 3), 'sentGap': SENT_GAP, 'mode': MODE, 'utt': key, 'checked': True, 'chunks': ch}
+        print(f'{img}: {c1 - c0:.2f}s  {text}')
     json.dump({**old, **res}, open(manifest_p, 'w'), indent=1)
 json.dump(res, open(manifest_p, 'w'), indent=1)
 print('total speech', round(sum(r['dur'] for r in res.values()), 1), 's')
