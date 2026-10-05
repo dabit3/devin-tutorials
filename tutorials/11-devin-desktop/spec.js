@@ -23,7 +23,8 @@ window.SPEC = {
         "w": 760,
         "h": 120
       },
-      "vo": "This is Devin Desktop. Every task starts in the Agent view, in a new Space."
+      "vo": "This is Devin Desktop. Every task starts in the Agent view, in a new Space.",
+      "voSay": "This, is Devin Desktop. Every task starts in the Agent view, in a new Space."
     },
     "0019.png": {
       "hold": 2.6,

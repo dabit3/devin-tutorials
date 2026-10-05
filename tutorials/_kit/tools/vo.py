@@ -11,6 +11,8 @@ spec = json.loads(re.sub(r'^\s*window\.SPEC\s*=\s*', '', src).rstrip().rstrip(';
 beats = json.load(open(os.path.join(VD, 'shots', 'beats.json')))
 edits = spec.get('edit', {})
 order = [(b['img'], edits[b['img']]['vo']) for b in beats if edits.get(b['img'], {}).get('vo') and not edits[b['img']].get('skip')]
+# Optional `voSay`: the same sentences as `vo`, spelled for the voice (e.g. a comma for a pause); subtitles keep `vo`.
+says = {b['img']: edits[b['img']]['voSay'] for b in beats if edits.get(b['img'], {}).get('voSay')}
 if spec.get('voOutro'): order.append(('outro', spec['voOutro']))
 out = os.path.join(VD, 'vo', VOICE); os.makedirs(out, exist_ok=True)
 manifest_p = os.path.join(out, 'lines.json')
@@ -98,9 +100,11 @@ def span(al, wav):
 res = {}
 for li, (img, text) in enumerate(order):
     wav = os.path.join(out, f'{img}.wav')
-    if old.get(img, {}).get('text') == text and old[img].get('sentGap') == SENT_GAP and old[img].get('checked') and os.path.exists(wav):
+    say = says.get(img, text)
+    if old.get(img, {}).get('text') == text and old[img].get('say', text) == say and old[img].get('sentGap') == SENT_GAP and old[img].get('checked') and os.path.exists(wav):
         res[img] = old[img]; continue
-    sents = sentences(text)
+    sents, spoken = sentences(text), sentences(say)
+    if len(spoken) != len(sents): sys.exit(f'{img}: voSay must have the same sentences as vo')
     prev_all = [x for _, t in order[:li] for x in sentences(t)]
     next_all = [x for _, t in order[li + 1:] for x in sentences(t)]
     parts, ch, off = [], [], 0.0
@@ -110,7 +114,7 @@ for li, (img, text) in enumerate(order):
         after = [] if sent.rstrip().endswith((".", "?", "!")) else (sents[k + 1:] + next_all)[:1]
         part = f'{wav[:-4]}.{k}.wav'
         for attempt in range(4):
-            al = tts(sent, ' '.join(before), ' '.join(after), part)
+            al = tts(spoken[k], ' '.join(before), ' '.join(after), part)
             t0, t1 = span(al, part)
             subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', part, '-af', f'atrim={t0:.3f}:{t1:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.02,afade=t=out:st={t1 - t0 - 0.04:.3f}:d=0.04', part + '.cut.wav'], check=True)
             got = stt(part + '.cut.wav')
@@ -120,14 +124,17 @@ for li, (img, text) in enumerate(order):
             sys.exit(f'{img}: no clean take for {sent!r}')
         os.replace(part + '.cut.wav', part)
         if k: off += SENT_GAP
-        ch += [{**c, 't0': round(max(0, c['t0'] - t0) + off, 3), 't1': round(min(c['t1'], t1) - t0 + off, 3)} for c in chunks(sent, al)]
+        cs = chunks(spoken[k], al)
+        if spoken[k] != sent:
+            cs = [{**cs[0], 't1': cs[-1]['t1'], 'text': sent}]
+        ch += [{**c, 't0': round(max(0, c['t0'] - t0) + off, 3), 't1': round(min(c['t1'], t1) - t0 + off, 3)} for c in cs]
         parts.append((part, off, t1 - t0)); off += t1 - t0
     filt = ''.join(f'[{i}]adelay={int(o * 1000)}[a{i}];' for i, (_, o, _) in enumerate(parts))
     filt += ''.join(f'[a{i}]' for i in range(len(parts))) + f'amix=inputs={len(parts)}:normalize=0,atrim=0:{off:.3f}[o]'
     cmd = ['ffmpeg', '-v', 'error', '-y'] + sum((['-i', p] for p, _, _ in parts), []) + ['-filter_complex', filt, '-map', '[o]', '-ar', str(SR), '-ac', '1', wav]
     subprocess.run(cmd, check=True)
     for p, _, _ in parts: os.remove(p)
-    res[img] = {'text': text, 'dur': round(off, 3), 'sentGap': SENT_GAP, 'checked': True, 'chunks': ch}
+    res[img] = {'text': text, **({'say': say} if say != text else {}), 'dur': round(off, 3), 'sentGap': SENT_GAP, 'checked': True, 'chunks': ch}
     print(f'{img}: {off:.2f}s  {text}')
     json.dump({**old, **res}, open(manifest_p, 'w'), indent=1)
 json.dump(res, open(manifest_p, 'w'), indent=1)
