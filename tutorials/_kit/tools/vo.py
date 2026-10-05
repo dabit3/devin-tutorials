@@ -105,7 +105,9 @@ for li, (img, text) in enumerate(order):
     next_all = [x for _, t in order[li + 1:] for x in sentences(t)]
     parts, ch, off = [], [], 0.0
     for k, sent in enumerate(sents):
-        before, after = (prev_all + sents[:k])[-2:], (sents[k + 1:] + next_all)[:1]
+        before = (prev_all + sents[:k])[-2:]
+        # next_text makes a finished sentence sound like it runs on, so only unfinished ones get it.
+        after = [] if sent.rstrip().endswith((".", "?", "!")) else (sents[k + 1:] + next_all)[:1]
         part = f'{wav[:-4]}.{k}.wav'
         for attempt in range(4):
             al = tts(sent, ' '.join(before), ' '.join(after), part)
