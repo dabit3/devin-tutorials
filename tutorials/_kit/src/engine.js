@@ -54,6 +54,7 @@ function build() {
     const noZoom = flat(b.img);
     if (b.cam && b.cam !== 'reset') b = noZoom && !b.camForce ? { ...b, cam: undefined } : { ...b, cam: { ...b.cam, z: Math.min(b.cam.z, zMax) } };
     if (t < settle) t = settle;
+    if (S.noCaps) b = { ...b, cap: undefined };
     if (VO) {
       b = { ...b, cap: undefined };
       const gap = /[.?!]$/.test(voLast.trim()) ? Math.max(b.voGap ?? 0, S.voSentGap ?? 0.75) : (b.voGap ?? 0.35);

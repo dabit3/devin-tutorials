@@ -28,6 +28,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Devin Desktop, narrated by Nader** (2:42): Also tours the Sessions page for organizing many cloud sessions (board, list, filters, search, sort). [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-nader.mp4)
 - **Devin in Slack, narrated by Nader** (1:13): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack-nader.mp4)
 - **Devin Memory, narrated by Nader** (1:22): Tell Devin a preference, watch it save to Memory, browse Customize → Memory and Dreaming, then see a new session follow it. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-nader.mp4) · [Voice script](tutorials/13-devin-memory/voice-script.md)
+- **Devin Memory, clean** (1:00): The same Memory footage with no captions and no voiceover, music only. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-clean.mp4)
 
 ## Making a new tutorial
 
