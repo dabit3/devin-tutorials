@@ -16,6 +16,7 @@
 | 10 | Devin CLI | `10-devin-cli/` |
 | 11 | Devin Desktop | `11-devin-desktop/` |
 | 12 | Devin in Slack | `12-devin-slack/` |
+| 14 | Devin Code Scans | `14-devin-code-scans/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
 
