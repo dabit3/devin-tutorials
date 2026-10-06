@@ -42,16 +42,31 @@ SENT_GAP = float(os.environ.get('VO_SENT_GAP', '0.6'))
 SR = 48000
 sentences = lambda t: [x for x in re.split(r'(?<=[.?!])\s+(?=[A-Z])', t.strip()) if x]
 
+# Tone consistency: every take is conditioned on the audio of the last three accepted takes (ElevenLabs
+# request stitching via `previous_request_ids`; `previous_text` is only a fallback once IDs expire), sampled
+# with a fixed seed, at a high stability with no style exaggeration, then gain-matched to VO_LUFS.
+STABILITY = float(os.environ.get('VO_STABILITY', '0.7'))
+STYLE = float(os.environ.get('VO_STYLE', '0'))
+SEED = int(os.environ.get('VO_SEED', '1234'))
+LUFS = float(os.environ.get('VO_LUFS', '-21'))
+prev_ids = []
+
 def tts(text, prev, nxt, wav):
-    body = {'text': text, 'model_id': MODEL, 'previous_text': prev, 'next_text': nxt,
-            'voice_settings': {'stability': 0.5, 'similarity_boost': 0.8, 'style': 0.15, 'use_speaker_boost': True}}
+    body = {'text': text, 'model_id': MODEL, 'previous_text': prev, 'next_text': nxt, 'seed': SEED,
+            'previous_request_ids': prev_ids[-3:],
+            'voice_settings': {'stability': STABILITY, 'similarity_boost': 0.8, 'style': STYLE, 'use_speaker_boost': True}}
     req = urllib.request.Request(f'https://api.elevenlabs.io/v1/text-to-speech/{VOICE}/with-timestamps?output_format=mp3_44100_192',
                                  data=json.dumps(body).encode(), headers={'xi-api-key': KEY, 'Content-Type': 'application/json'})
-    d = json.load(urllib.request.urlopen(req, timeout=120))
+    r = urllib.request.urlopen(req, timeout=120)
+    d = json.load(r)
     mp3 = wav[:-4] + '.mp3'
     open(mp3, 'wb').write(base64.b64decode(d['audio_base64']))
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', mp3, '-ac', '1', '-ar', str(SR), wav], check=True); os.remove(mp3)
-    return d['alignment']
+    return d['alignment'], r.headers.get('request-id')
+
+def loudness(wav):
+    log = subprocess.run(['ffmpeg', '-nostats', '-i', wav, '-af', 'ebur128', '-f', 'null', '-'], capture_output=True, text=True).stderr
+    return float(re.findall(r'I:\s+(-?[\d.]+) LUFS', log)[-1])
 
 def stt(wav, timed=False):
     b = uuid.uuid4().hex
@@ -101,7 +116,7 @@ def span(al, wav):
 # cut back into lines at the quietest point between their words. A fragment request would instead start
 # speaking its next_text before the clip ends. Sentences are joined with SENT_GAP seconds of silence.
 # Every sentence take is transcribed and regenerated if it says something other than its text.
-MODE = 'sentence-cut-2'
+MODE = 'sentence-cut-3'
 groups, g = [], []
 for img, text in order:
     g.append((img, text, says.get(img, text)))
@@ -110,12 +125,16 @@ if g: groups.append(g)
 
 def take(sent, shown, before, part):
     for attempt in range(4):
-        al = tts(sent, before, '', part)
+        al, rid = tts(sent, before, '', part)
         t0, t1 = span(al, part)
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', part, '-af', f'atrim={t0:.3f}:{t1:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.02,afade=t=out:st={t1 - t0 - 0.04:.3f}:d=0.04', part + '.cut.wav'], check=True)
+        gain = LUFS - loudness(part + '.cut.wav')
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', part + '.cut.wav', '-af', f'volume={gain:.2f}dB,alimiter=limit=0.89:level=false', part + '.norm.wav'], check=True)
+        os.replace(part + '.norm.wav', part + '.cut.wav')
         got = stt(part + '.cut.wav')
         if matches(shown, got):
             os.replace(part + '.cut.wav', part)
+            if rid: prev_ids.append(rid)
             return al, t0, t1
         print(f'  retry {sent!r}: heard {got!r}')
     sys.exit(f'no clean take for {sent!r}')
