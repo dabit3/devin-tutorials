@@ -17,6 +17,7 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 11. **Devin Desktop** (2:12): Devin's desktop app: the agent and model pickers, ACP agents, Quick Review, Codemaps, DeepWiki and a live localhost preview of the change. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop.mp4)
 12. **Devin in Slack** (1:13): Tag @Devin in Slack: `!ask` for a quick codebase answer, start a full session with a task, keep going in the thread, follow the same session in the web app and `archive` it when done. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack.mp4)
 15. **Devin Playbooks** (1:20): Write a procedure once as a playbook with a `!before-after` macro, attach it to a new session with one macro, and get a PR with before and after screenshots. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/15-devin-playbooks/15-devin-playbooks.mp4)
+17. **Devin Security Swarm** (2:21): Scan a repo with a sandbox-validation profile, review and approve the threat model in Interactive mode, open a critical finding with its attack path, code and a Confirmed sandbox exploit, then assign it to Devin and end on the fix PR attached to the finding. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/17-security-swarm/17-security-swarm.mp4)
 
 ## Narrated tutorials
 
@@ -30,6 +31,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Devin in Slack, narrated by Nader** (1:13): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack-nader.mp4)
 - **Devin Memory, narrated by Nader** (1:13): Tell Devin a preference, watch it save to Memory, browse Customize → Memory and Dreaming, then see a new session follow it. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-nader.mp4) · [Voice script](tutorials/13-devin-memory/voice-script.md)
 - **Devin Memory, clean** (1:00): The same Memory footage with no captions and no voiceover, music only. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-clean.mp4)
+- **Devin Security Swarm, narrated by Nader** (2:18): A real exploit chain in an Orbit-style API, found by the scan, proven in a sandbox and fixed in a PR by Devin. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/17-security-swarm/17-security-swarm-nader.mp4) · [Voice script](tutorials/17-security-swarm/voice-script.md)
 
 ## Making a new tutorial
 

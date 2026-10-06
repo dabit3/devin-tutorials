@@ -26,6 +26,7 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - Find targets by their real DOM element and position, never by a loose text match that could pick a nearby look-alike. For example, a citation demo must click a `file:line` citation link (`span[role=link]`) inside Devin's answer in the chat, not a file link in the code panel. Pick a citation whose lines aren't already on screen, so the jump is visible, then check that the code panel scrolled to those lines.
 - Don't show a step whose result is already on screen. For example, if the PR view is already open, switch the panel back first, then open the PR from the PR card in the chat, and check that the PR view opened.
 - Wait for the real UI before acting: poll with `p.evaluate(...)` plus a short `sleep` (the CDP page object has no `waitForFunction`), e.g. wait up to 30 s for the session link to appear in the sidebar before clicking it. Start each session exactly once; if a retry starts a duplicate, stop and archive it.
+- Every poll beat without a `hold` lasts real gap ÷ `speed`, so a long wait you keep in shots/ can add minutes. Skip the polls you don't need in spec.js, and check `node render.mjs <folder> --count` before building.
 - Capture helpers (`r.poll`, `r.clean()` in `_kit/capture/rec.mjs`) skip frames with loading skeletons, oversized text (over 24 px), a terminal (xterm) canvas drawn at the wrong pixel ratio, which shows up as giant terminal text in the Progress panel, or the empty new-tab picker. Keep that on, and never ship a frame that shows those states.
 
 ## Style rules
@@ -118,6 +119,15 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - In the session, Devin shows "Used playbook: <name>" under your message, and the PR panel's Description tab shows the before/after images from the PR body. The PR tab links are `app.devin.ai/review/...`, not github.com, so wait on those.
 - The right panel opens on the new-tab picker, which `r.clean()` rejects, so polling records nothing until you open the Computer tab. Move the mouse off the Computer view afterwards or the "Take control" hint stays on screen.
 - Deleting a playbook is in the ⋮ menu on its page (Duplicate, Delete). Delete and re-create it to re-record the creation part on an empty list.
+
+## Security Swarm (Devin Security Swarm)
+- Scan a small, believable app with planted bugs (an IDOR, a path traversal, and a two-file chain such as a trusted `X-Forwarded-User` header plus a role check). Confirm each bug with curl yourself before scanning, so you know what a good finding looks like.
+- Sandbox validation only runs when the scan uses a profile with it turned on. A scan with "No profile" shows "Not validated" on every finding. Create the profile on camera first (Security → Profiles → Create profile), and put the exact start, seed and login steps in its guidance, plus "reproduce with curl against localhost and attach the request and response".
+- In the New Scan sheet, the profile picker is a `button[role=combobox]` showing "No profile". Check that the Interactive `[role=switch]` has `aria-checked="true"` before clicking Run Scan; a missed toggle starts a non-interactive scan that skips the threat-model review.
+- Interactive mode stops on "Action required: Review scan model" with a list of generated rules. Poll for the "Looks good, start scanning" option (that took a few minutes), and point at rules by their real names, which change per scan (e.g. "Node Sqlite Record Lookup Idor", "Node File Path Traversal").
+- Findings stream in with duplicates, then validation dedupes them (5 dismissed here) and adds green checks. Wait for the "Sandbox validation" heading in the finding detail rather than for the scan to look finished; the header can say "Scan in progress" while findings are already validated. Finding rows are `[role=button]`, not buttons.
+- Assign to Devin starts a fix session that showed up as a "Setting up…" chip and a sidebar row. Here it opened the PR in about 4 minutes, so the chip was already a PR link by the time the capture clicked it. Open the fix session from its sidebar row (`aside a[aria-label="<session title>"]`) instead, then come back to the finding, where a `#1` PR chip appears on the row and in the header.
+- GitHub's Files changed tab can open with a "Welcome to the upgraded Files Changed experience" popup. End on the PR's Conversation tab, or dismiss the popup before the take.
 
 ## Deliverables
 - A PR on `dabit3/devin-tutorials` containing the folder (MP4, poster, `capture.mjs`, `shots/`, `spec.js`) and a new row in the `tutorials/README.md` table and in the root `README.md` list (description + download link).
