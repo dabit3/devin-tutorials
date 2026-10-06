@@ -18,6 +18,7 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 12. **Devin in Slack** (1:13): Tag @Devin in Slack: `!ask` for a quick codebase answer, start a full session with a task, keep going in the thread, follow the same session in the web app and `archive` it when done. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack.mp4)
 14. **Devin Code Scans** (1:48): Type `/scan` with a focused request, confirm the setup card, watch findings arrive ranked by severity, then click Fix with Devin and follow one finding to its PR. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/14-devin-code-scans/14-devin-code-scans.mp4)
 15. **Devin Playbooks** (1:20): Write a procedure once as a playbook with a `!before-after` macro, attach it to a new session with one macro, and get a PR with before and after screenshots. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/15-devin-playbooks/15-devin-playbooks.mp4)
+16. **Devin Automations: events** (1:43): An automation with a GitHub Check run trigger (Conclusion = Failure) fires when CI fails on a pull request, starts a Devin session on its own, and Devin pushes the fix to the same branch until the check is green. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/16-automation-triggers/16-automation-triggers.mp4)
 
 ## Narrated tutorials
 
@@ -31,6 +32,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Devin in Slack, narrated by Nader** (1:13): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack-nader.mp4)
 - **Devin Memory, narrated by Nader** (1:13): Tell Devin a preference, watch it save to Memory, browse Customize → Memory and Dreaming, then see a new session follow it. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-nader.mp4) · [Voice script](tutorials/13-devin-memory/voice-script.md)
 - **Devin Memory, clean** (1:00): The same Memory footage with no captions and no voiceover, music only. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-clean.mp4)
+- **Devin Automations: events, narrated** (1:45): A failing GitHub check triggers an automation, and Devin fixes the PR on its own. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/16-automation-triggers/16-automation-triggers-narrated.mp4) · [Voice script](tutorials/16-automation-triggers/voice-script.md)
 
 ## Making a new tutorial
 

@@ -29,6 +29,7 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - Capture helpers (`r.poll`, `r.clean()` in `_kit/capture/rec.mjs`) skip frames with loading skeletons, oversized text (over 24 px), a terminal (xterm) canvas drawn at the wrong pixel ratio, which shows up as giant terminal text in the Progress panel, or the empty new-tab picker. Keep that on, and never ship a frame that shows those states.
 
 ## Style rules
+- Pages that scroll the window (GitHub) come out with a blank band at the top, because the kit's screenshot clips at document (0,0). Override `p.screenshot` in that capture to clip at `scrollX/scrollY` (see `16-automation-triggers/capture.mjs`), or keep the page at the top. Frames already shot this way can be saved with a `camForce` zoom that crops below the band.
 
 **Format**
 - 3840×2160, 60 fps, 16:9, H.264 High, AAC 48 kHz.
@@ -127,6 +128,15 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - In the session, Devin shows "Used playbook: <name>" under your message, and the PR panel's Description tab shows the before/after images from the PR body. The PR tab links are `app.devin.ai/review/...`, not github.com, so wait on those.
 - The right panel opens on the new-tab picker, which `r.clean()` rejects, so polling records nothing until you open the Computer tab. Move the mouse off the Computer view afterwards or the "Take control" hint stays on screen.
 - Deleting a playbook is in the ⋮ menu on its page (Duplicate, Delete). Delete and re-create it to re-record the creation part on an empty list.
+
+## Automations: events (GitHub Check run trigger)
+
+- Show an event firing, not just the form: a GitHub Check run trigger on a private repo (GitHub triggers only work on private repos), condition Conclusion equals Failure, Start new session, a spend cap and an invocation limit. Then open a real PR with a real type error, show the check fail, the automation's event row and "View session", and Devin's own fix commit turning the check green.
+- Pick a break whose fix keeps the PR useful. The first take changed `'done'` to `'completed'`, and Devin's fix just reverted it, leaving a PR with no net change. The final take adds a visible feature ("7 issues left" in the Orbit header) with a wrong argument type (`String(...)` passed to a `number` parameter). Devin removes the wrapper and the feature ships, so the payoff can show the app.
+- The automation fires within seconds of the check failing, and Devin's fix took under two minutes. Start the recorder (waiting on the automation page for the new event) before opening the PR, or the session will be finished before you film it. In this capture, `Rec.poll` inside the running session kept rejecting frames as unclean, so nothing was recorded mid-run. After the session finished, expanding its "Worked for" log showed the real steps.
+- CI only runs on `pull_request` and pushes to `main`, so pushing the branch first doesn't trigger anything. Open the PR on camera from the compare page.
+- The automation's event list keeps earlier events, so retakes add rows. Wait for the event count to go up (`EVENTS=2`) rather than clicking the first "View session" you see.
+- Leaving the automation form with unsaved changes opens a native "Leave site?" dialog, which blocks `Page.navigate` until it times out. Dismiss it (or finish/cancel the form) before the next run.
 
 ## Deliverables
 - A PR on `dabit3/devin-tutorials` containing the folder (MP4, poster, `capture.mjs`, `shots/`, `spec.js`) and a new row in the `tutorials/README.md` table and in the root `README.md` list (description + download link).
