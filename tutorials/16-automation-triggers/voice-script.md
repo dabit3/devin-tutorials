@@ -3,9 +3,28 @@
 Voice: ElevenLabs `T8iHhGIWPm2GVYpQD1Am`. Captions in the original cut come from the same beats.
 
 
+## Ways an automation can run
+
+- Automations let Devin start work without anyone prompting it.
+- There are a few ways they can run.
+- They can fire on events, like a new message in a Slack channel,
+- or something happening on GitHub, like a failing check.
+- They can also run on a schedule.
+
+## MCP integrations
+
+- And the sessions they start can use your MCP integrations, like Datadog,
+- Sentry,
+- Notion, or any other MCP server you connect.
+
+## Natural language
+
+- You can also create an automation in natural language.
+- Just describe what you want, and Devin drafts the automation for you to review.
+
 ## Create the automation
 
-- Automations don't only run on a schedule. They can also start when something happens, like a GitHub check failing.
+- Or build it step by step, and watch it fire.
 - Create a new automation.
 - Give it a name.
 - For the trigger, pick GitHub,
@@ -43,6 +62,7 @@ Voice: ElevenLabs `T8iHhGIWPm2GVYpQD1Am`. Captions in the original cut come from
 
 ## Typed on screen
 
+- Natural-language description (typed, not sent): "When a CI check fails on a pull request in thequantexplorer/orbit-ci-demo, have Devin read the logs, fix it, and push to the same branch."
 - Automation name: `Fix failing CI`
 - Instructions (pasted): "Fix the failing check and push to the same branch. A CI check just failed on a pull request in thequantexplorer/orbit-ci-demo. Read the check's logs, find the root cause, fix it, and push the fix to the PR's branch. You're done when the check passes."
 

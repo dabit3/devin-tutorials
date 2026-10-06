@@ -1,38 +1,303 @@
 {
- "0001.png": {
-  "text": "Automations don't only run on a schedule. They can also start when something happens, like a GitHub check failing.",
-  "dur": 5.55,
+ "i0001.png": {
+  "text": "Automations let Devin start work without anyone prompting it.",
+  "dur": 2.9,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
    [
-    "0001.png",
-    "Automations don't only run on a schedule. They can also start when something happens, like a GitHub check failing.",
-    "Automations don't only run on a schedule. They can also start when something happens, like a GitHub check failing."
+    "i0001.png",
+    "Automations let Devin start work without anyone prompting it.",
+    "Automations let Devin start work without anyone prompting it."
    ]
   ],
   "checked": true,
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.93,
-    "text": "Automations don't only run on a schedule."
+    "t1": 2.9,
+    "text": "Automations let Devin start work without anyone prompting it."
+   }
+  ]
+ },
+ "i0002.png": {
+  "text": "There are a few ways they can run.",
+  "dur": 1.39,
+  "sentGap": 0.6,
+  "mode": "sentence-cut-2",
+  "utt": [
+   [
+    "i0002.png",
+    "There are a few ways they can run.",
+    "There are a few ways they can run."
+   ]
+  ],
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.39,
+    "text": "There are a few ways they can run."
+   }
+  ]
+ },
+ "i0007.png": {
+  "text": "They can fire on events, like a new message in a Slack channel,",
+  "dur": 3.075,
+  "sentGap": 0.6,
+  "mode": "sentence-cut-2",
+  "utt": [
+   [
+    "i0007.png",
+    "They can fire on events, like a new message in a Slack channel,",
+    "They can fire on events, like a new message in a Slack channel,"
+   ],
+   [
+    "i0008.png",
+    "or something happening on GitHub, like a failing check.",
+    "or something happening on GitHub, like a failing check."
+   ]
+  ],
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.138,
+    "text": "They can fire on events,"
    },
    {
-    "t0": 2.53,
-    "t1": 4.295,
-    "text": "They can also start when something happens,"
+    "t0": 1.184,
+    "t1": 2.961,
+    "text": "like a new message in a Slack channel,"
+   }
+  ]
+ },
+ "i0008.png": {
+  "text": "or something happening on GitHub, like a failing check.",
+  "dur": 2.265,
+  "sentGap": 0.6,
+  "mode": "sentence-cut-2",
+  "utt": [
+   [
+    "i0007.png",
+    "They can fire on events, like a new message in a Slack channel,",
+    "They can fire on events, like a new message in a Slack channel,"
+   ],
+   [
+    "i0008.png",
+    "or something happening on GitHub, like a failing check.",
+    "or something happening on GitHub, like a failing check."
+   ]
+  ],
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.06,
+    "t1": 1.383,
+    "text": "or something happening on GitHub,"
    },
    {
-    "t0": 4.364,
-    "t1": 5.55,
-    "text": "like a GitHub check failing."
+    "t0": 1.406,
+    "t1": 2.265,
+    "text": "like a failing check."
+   }
+  ]
+ },
+ "i0009.png": {
+  "text": "They can also run on a schedule.",
+  "dur": 1.51,
+  "sentGap": 0.6,
+  "mode": "sentence-cut-2",
+  "utt": [
+   [
+    "i0009.png",
+    "They can also run on a schedule.",
+    "They can also run on a schedule."
+   ]
+  ],
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.51,
+    "text": "They can also run on a schedule."
+   }
+  ]
+ },
+ "i0010.png": {
+  "text": "And the sessions they start can use your MCP integrations, like Datadog,",
+  "dur": 3.975,
+  "sentGap": 0.6,
+  "mode": "sentence-cut-2",
+  "utt": [
+   [
+    "i0010.png",
+    "And the sessions they start can use your MCP integrations, like Datadog,",
+    "And the sessions they start can use your MCP integrations, like Datadog,"
+   ],
+   [
+    "i0011.png",
+    "Sentry,",
+    "Sentry,"
+   ],
+   [
+    "i0012.png",
+    "Notion, or any other MCP server you connect.",
+    "Notion, or any other MCP server you connect."
+   ]
+  ],
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.602,
+    "text": "And the sessions they start can use your"
+   },
+   {
+    "t0": 1.649,
+    "t1": 3.947,
+    "text": "MCP integrations, like Datadog,"
+   }
+  ]
+ },
+ "i0011.png": {
+  "text": "Sentry,",
+  "dur": 0.45,
+  "sentGap": 0.6,
+  "mode": "sentence-cut-2",
+  "utt": [
+   [
+    "i0010.png",
+    "And the sessions they start can use your MCP integrations, like Datadog,",
+    "And the sessions they start can use your MCP integrations, like Datadog,"
+   ],
+   [
+    "i0011.png",
+    "Sentry,",
+    "Sentry,"
+   ],
+   [
+    "i0012.png",
+    "Notion, or any other MCP server you connect.",
+    "Notion, or any other MCP server you connect."
+   ]
+  ],
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.088,
+    "t1": 0.45,
+    "text": "Sentry,"
+   }
+  ]
+ },
+ "i0012.png": {
+  "text": "Notion, or any other MCP server you connect.",
+  "dur": 2.295,
+  "sentGap": 0.6,
+  "mode": "sentence-cut-2",
+  "utt": [
+   [
+    "i0010.png",
+    "And the sessions they start can use your MCP integrations, like Datadog,",
+    "And the sessions they start can use your MCP integrations, like Datadog,"
+   ],
+   [
+    "i0011.png",
+    "Sentry,",
+    "Sentry,"
+   ],
+   [
+    "i0012.png",
+    "Notion, or any other MCP server you connect.",
+    "Notion, or any other MCP server you connect."
+   ]
+  ],
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.091,
+    "t1": 2.295,
+    "text": "Notion, or any other MCP server you connect."
+   }
+  ]
+ },
+ "i0016.png": {
+  "text": "You can also create an automation in natural language.",
+  "dur": 2.59,
+  "sentGap": 0.6,
+  "mode": "sentence-cut-2",
+  "utt": [
+   [
+    "i0016.png",
+    "You can also create an automation in natural language.",
+    "You can also create an automation in natural language."
+   ]
+  ],
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.59,
+    "text": "You can also create an automation in natural language."
+   }
+  ]
+ },
+ "i0017.png": {
+  "text": "Just describe what you want, and Devin drafts the automation for you to review.",
+  "dur": 3.58,
+  "sentGap": 0.6,
+  "mode": "sentence-cut-2",
+  "utt": [
+   [
+    "i0017.png",
+    "Just describe what you want, and Devin drafts the automation for you to review.",
+    "Just describe what you want, and Devin drafts the automation for you to review."
+   ]
+  ],
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.196,
+    "text": "Just describe what you want,"
+   },
+   {
+    "t0": 1.405,
+    "t1": 3.58,
+    "text": "and Devin drafts the automation for you to review."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "Or build it step by step, and watch it fire.",
+  "dur": 2.17,
+  "sentGap": 0.6,
+  "mode": "sentence-cut-2",
+  "utt": [
+   [
+    "0001.png",
+    "Or build it step by step, and watch it fire.",
+    "Or build it step by step, and watch it fire."
+   ]
+  ],
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.289,
+    "text": "Or build it step by step,"
+   },
+   {
+    "t0": 1.312,
+    "t1": 2.17,
+    "text": "and watch it fire."
    }
   ]
  },
  "0002.png": {
   "text": "Create a new automation.",
-  "dur": 1.15,
+  "dur": 1.24,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -46,14 +311,14 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.15,
+    "t1": 1.24,
     "text": "Create a new automation."
    }
   ]
  },
  "0006.png": {
   "text": "Give it a name.",
-  "dur": 0.71,
+  "dur": 0.69,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -67,14 +332,14 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 0.71,
+    "t1": 0.69,
     "text": "Give it a name."
    }
   ]
  },
  "0013.png": {
   "text": "For the trigger, pick GitHub,",
-  "dur": 1.385,
+  "dur": 1.345,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -93,14 +358,14 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.37,
+    "t1": 1.335,
     "text": "For the trigger, pick GitHub,"
    }
   ]
  },
  "0016.png": {
   "text": "then Check run. It fires whenever CI reports a result.",
-  "dur": 3.505,
+  "dur": 3.435,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -118,20 +383,20 @@
   "checked": true,
   "chunks": [
    {
-    "t0": 0.008,
-    "t1": 0.745,
+    "t0": 0.013,
+    "t1": 0.705,
     "text": "then Check run."
    },
    {
-    "t0": 1.345,
-    "t1": 3.505,
+    "t0": 1.305,
+    "t1": 3.435,
     "text": "It fires whenever CI reports a result."
    }
   ]
  },
  "0018.png": {
   "text": "Choose the private repo to watch.",
-  "dur": 1.53,
+  "dur": 1.56,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -145,14 +410,14 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.53,
+    "t1": 1.56,
     "text": "Choose the private repo to watch."
    }
   ]
  },
  "0022.png": {
   "text": "Add a condition, so it only fires when the check fails.",
-  "dur": 2.82,
+  "dur": 2.56,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -166,19 +431,19 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 0.894,
+    "t1": 0.801,
     "text": "Add a condition,"
    },
    {
-    "t0": 1.045,
-    "t1": 2.82,
+    "t0": 0.848,
+    "t1": 2.56,
     "text": "so it only fires when the check fails."
    }
   ]
  },
  "0033.png": {
   "text": "Each failure starts a new Devin session,",
-  "dur": 2.055,
+  "dur": 1.875,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -197,14 +462,14 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.985,
+    "t1": 1.846,
     "text": "Each failure starts a new Devin session,"
    }
   ]
  },
  "0034.png": {
   "text": "with instructions for what Devin should do.",
-  "dur": 1.775,
+  "dur": 2.045,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -222,15 +487,15 @@
   "checked": true,
   "chunks": [
    {
-    "t0": 0.046,
-    "t1": 1.775,
+    "t0": 0.18,
+    "t1": 2.045,
     "text": "with instructions for what Devin should do."
    }
   ]
  },
  "0038.png": {
   "text": "Cap how much each session can spend,",
-  "dur": 2.005,
+  "dur": 1.985,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -249,14 +514,14 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.892,
+    "t1": 1.869,
     "text": "Cap how much each session can spend,"
    }
   ]
  },
  "0042.png": {
   "text": "and how often the automation can run.",
-  "dur": 1.925,
+  "dur": 1.865,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -274,15 +539,15 @@
   "checked": true,
   "chunks": [
    {
-    "t0": 0.062,
-    "t1": 1.925,
+    "t0": 0.012,
+    "t1": 1.865,
     "text": "and how often the automation can run."
    }
   ]
  },
  "0046.png": {
   "text": "Save it. Now it waits for CI to fail.",
-  "dur": 2.58,
+  "dur": 2.53,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -296,19 +561,19 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 0.49,
+    "t1": 0.43,
     "text": "Save it."
    },
    {
-    "t0": 1.09,
-    "t1": 2.58,
+    "t0": 1.03,
+    "t1": 2.53,
     "text": "Now it waits for CI to fail."
    }
   ]
  },
  "0053.png": {
   "text": "Here's a new pull request that shows how many issues are left. It has a type error.",
-  "dur": 4.05,
+  "dur": 4.29,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -322,24 +587,24 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.521,
+    "t1": 1.649,
     "text": "Here's a new pull request that shows how"
    },
    {
-    "t0": 1.567,
-    "t1": 2.44,
+    "t0": 1.695,
+    "t1": 2.61,
     "text": "many issues are left."
    },
    {
-    "t0": 3.04,
-    "t1": 4.05,
+    "t0": 3.21,
+    "t1": 4.29,
     "text": "It has a type error."
    }
   ]
  },
  "0055.png": {
   "text": "Open the pull request.",
-  "dur": 1.06,
+  "dur": 1.11,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -353,14 +618,14 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.06,
+    "t1": 1.11,
     "text": "Open the pull request."
    }
   ]
  },
  "0059.png": {
   "text": "CI starts on the PR,",
-  "dur": 1.215,
+  "dur": 1.325,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -379,14 +644,14 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.215,
+    "t1": 1.312,
     "text": "CI starts on the PR,"
    }
   ]
  },
  "0060.png": {
   "text": "and the check fails.",
-  "dur": 0.895,
+  "dur": 0.835,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -404,15 +669,15 @@
   "checked": true,
   "chunks": [
    {
-    "t0": 0.027,
-    "t1": 0.895,
+    "t0": 0.01,
+    "t1": 0.835,
     "text": "and the check fails."
    }
   ]
  },
  "0061.png": {
   "text": "The automation sees the failure and fires on its own.",
-  "dur": 2.43,
+  "dur": 2.4,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -426,14 +691,14 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.43,
+    "t1": 2.4,
     "text": "The automation sees the failure and fires on its own."
    }
   ]
  },
  "0062.png": {
   "text": "It started a session. No one prompted it.",
-  "dur": 2.48,
+  "dur": 2.52,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -447,19 +712,19 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.03,
+    "t1": 1.0,
     "text": "It started a session."
    },
    {
-    "t0": 1.63,
-    "t1": 2.48,
+    "t0": 1.6,
+    "t1": 2.52,
     "text": "No one prompted it."
    }
   ]
  },
  "0065.png": {
   "text": "Devin reads the check's logs, finds the type error, and fixes it.",
-  "dur": 3.52,
+  "dur": 3.33,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -473,24 +738,24 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.602,
+    "t1": 1.451,
     "text": "Devin reads the check's logs,"
    },
    {
-    "t0": 1.695,
-    "t1": 2.752,
+    "t0": 1.533,
+    "t1": 2.624,
     "text": "finds the type error,"
    },
    {
-    "t0": 2.775,
-    "t1": 3.52,
+    "t0": 2.647,
+    "t1": 3.33,
     "text": "and fixes it."
    }
   ]
  },
  "0071.png": {
   "text": "Then it pushes a one-line fix to the same branch.",
-  "dur": 2.45,
+  "dur": 2.27,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -504,14 +769,14 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.45,
+    "t1": 2.27,
     "text": "Then it pushes a one-line fix to the same branch."
    }
   ]
  },
  "0072.png": {
   "text": "The first commit failed. Devin's fix passed, and the check is green.",
-  "dur": 3.78,
+  "dur": 3.64,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -525,24 +790,24 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.12,
+    "t1": 1.06,
     "text": "The first commit failed."
    },
    {
-    "t0": 1.72,
-    "t1": 2.788,
+    "t0": 1.66,
+    "t1": 2.728,
     "text": "Devin's fix passed,"
    },
    {
-    "t0": 2.823,
-    "t1": 3.78,
+    "t0": 2.751,
+    "t1": 3.64,
     "text": "and the check is green."
    }
   ]
  },
  "0073.png": {
   "text": "And the new header shows how many issues are left.",
-  "dur": 2.18,
+  "dur": 2.13,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -556,14 +821,14 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.18,
+    "t1": 2.13,
     "text": "And the new header shows how many issues are left."
    }
   ]
  },
  "outro": {
   "text": "Set up an event trigger once, and Devin picks up the work whenever it happens.",
-  "dur": 3.33,
+  "dur": 3.74,
   "sentGap": 0.6,
   "mode": "sentence-cut-2",
   "utt": [
@@ -577,12 +842,12 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.335,
+    "t1": 1.44,
     "text": "Set up an event trigger once,"
    },
    {
-    "t0": 1.358,
-    "t1": 3.33,
+    "t0": 1.614,
+    "t1": 3.74,
     "text": "and Devin picks up the work whenever it happens."
    }
   ]
