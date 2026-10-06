@@ -9,17 +9,21 @@ window.SPEC = {
     "0000.png": {
       "hold": 1.8,
       "cursor": false,
-      "cap": "Playbooks live in Settings"
+      "cap": "Playbooks live in Settings",
+      "vo": "This is Devin Playbooks. A playbook is a reusable prompt for a task you run again and again."
     },
     "0001.png": {
       "cursor": true,
-      "cap": "Create a playbook"
+      "cap": "Create a playbook",
+      "vo": "Create one in Settings, Playbooks."
     },
     "0003.png": {
-      "cap": "Give it a name"
+      "cap": "Give it a name",
+      "vo": "Give it a name."
     },
     "0018.png": {
-      "cap": "Write the procedure once"
+      "cap": "Write the procedure once",
+      "vo": "Then write the procedure once, in Markdown."
     },
     "0020.png": {
       "hold": 3.6,
@@ -30,7 +34,8 @@ window.SPEC = {
         "y": 330,
         "z": 1.3
       },
-      "camDur": 1.0
+      "camDur": 1.0,
+      "vo": "It has an overview, what Devin needs from you, the steps, specifications, advice, and forbidden actions."
     },
     "0021.png": {
       "cursor": true,
@@ -38,27 +43,32 @@ window.SPEC = {
       "camDur": 0.8
     },
     "0022.png": {
-      "cap": "Give it a macro"
+      "cap": "Give it a macro",
+      "vo": "Give it a macro, so you can call it with one word."
     },
     "0031.png": {
       "hold": 1.4
     },
     "0032.png": {
-      "cap": "Save it"
+      "cap": "Save it",
+      "vo": "Save it."
     },
     "0034.png": {
       "hold": 0.8
     },
     "0035.png": {
       "hold": 1.0,
-      "cap": "Start a new session"
+      "cap": "Start a new session",
+      "vo": "Start a new session."
     },
     "0036.png": {
-      "cap": "Type the macro"
+      "cap": "Type the macro",
+      "vo": "Type the macro,"
     },
     "0045.png": {
       "hold": 1.8,
-      "cap": "Pick it from Macros"
+      "cap": "Pick it from Macros",
+      "vo": "and pick it from the menu."
     },
     "0048.png": {
       "hold": 2.6,
@@ -68,12 +78,14 @@ window.SPEC = {
         "y": 370,
         "z": 1.3
       },
-      "camDur": 0.9
+      "camDur": 0.9,
+      "vo": "The playbook is attached before you send."
     },
     "0049.png": {
       "cam": "reset",
       "camDur": 0.8,
-      "cap": "Add the repo"
+      "cap": "Add the repo",
+      "vo": "Add the repo, and say what to change."
     },
     "0053.png": {
       "cap": "Then just say what to change"
@@ -82,7 +94,8 @@ window.SPEC = {
       "hold": 1.6
     },
     "0066.png": {
-      "cap": "Send"
+      "cap": "Send",
+      "vo": "Then send it."
     },
     "0068.png": {
       "skip": true
@@ -103,7 +116,8 @@ window.SPEC = {
       "hold": 1.6,
       "badge": "Sped up",
       "capPos": "bottom",
-      "cap": "Devin follows the playbook's steps"
+      "cap": "Devin follows the playbook's steps",
+      "vo": "Devin follows the playbook's steps. It takes a before screenshot, makes the change, and takes an after screenshot."
     },
     "0074.png": {
       "hold": 1.0
@@ -202,7 +216,8 @@ window.SPEC = {
       "hold": 1.4,
       "badge": null,
       "capPos": "bottom",
-      "cap": "Devin opened a PR"
+      "cap": "Devin opened a PR",
+      "vo": "Then it opens a pull request."
     },
     "0106.png": {
       "cap": "Open it"
@@ -212,7 +227,8 @@ window.SPEC = {
     },
     "0111.png": {
       "capPos": "bottom",
-      "cap": "Check the description"
+      "cap": "Check the description",
+      "vo": "The description has the before and after screenshots, just like the playbook says."
     },
     "0113.png": {
       "hold": 0.22,
@@ -270,10 +286,12 @@ window.SPEC = {
     },
     "0033.png": {
       "hold": 2.6,
-      "cap": "Now anyone in your org can use it"
+      "cap": "Now anyone in your org can use it",
+      "vo": "Now everyone in your organization can use it."
     },
     "0067.png": {
       "hold": 0.5
     }
-  }
+  },
+  "voOutro": "Write a procedure once, and reuse it with one macro."
 };

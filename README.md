@@ -32,6 +32,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Devin Memory, narrated by Nader** (1:13): Tell Devin a preference, watch it save to Memory, browse Customize → Memory and Dreaming, then see a new session follow it. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-nader.mp4) · [Voice script](tutorials/13-devin-memory/voice-script.md)
 - **Devin Memory, clean** (1:00): The same Memory footage with no captions and no voiceover, music only. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-clean.mp4)
 - **Devin Code Scans, narrated by Nader** (1:46): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/14-devin-code-scans/14-devin-code-scans-nader.mp4) · [Voice script](tutorials/14-devin-code-scans/voice-script.md)
+- **Devin Playbooks, narrated by Nader** (1:22): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/15-devin-playbooks/15-devin-playbooks-nader.mp4) · [Voice script](tutorials/15-devin-playbooks/voice-script.md)
 
 ## Making a new tutorial
 
