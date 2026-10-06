@@ -15,7 +15,8 @@ window.SPEC = {
     "0001.png": {
       "cursor": true,
       "cap": "Create a playbook",
-      "vo": "Create one in Settings, Playbooks."
+      "vo": "Create one in Settings → Playbooks.",
+      "voSay": "Create one in Settings, Playbooks."
     },
     "0003.png": {
       "cap": "Give it a name",
