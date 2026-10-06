@@ -112,6 +112,14 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - New memories apply to future sessions, so show recall in a new session, never the one that saved it. Use a prompt where the preference obviously applies (a status update to write), not a question about Memory: asked to explain Memory, Devin answered in paragraphs instead of the three saved bullets.
 - Show the Turn off personal memory menu item by hovering it, without clicking.
 
+## Playbooks (Devin Playbooks)
+- Create the playbook on camera in Settings → Playbooks → Create playbook. The editor starts with a template body and a macro derived from the name (`!ui_change_with_...`), so replace both: select the textarea and insert the body, then scroll the Macro field into view and select its value before typing. Check the saved value equals the macro you meant.
+- Type the macro in a clean composer, wait for the Macros menu (it shows the playbook name and author on hover), and click the option. Clicking replaces the typed `!macro` with a gray inline pill; pressing Enter instead can send the draft. Check the composer text contains the playbook name and no longer contains the `!macro` text before going on.
+- The composer draft survives reloads: run `clearComposer` before every take, and never press Enter in a probe.
+- In the session, Devin shows "Used playbook: <name>" under your message, and the PR panel's Description tab shows the before/after images from the PR body. The PR tab links are `app.devin.ai/review/...`, not github.com, so wait on those.
+- The right panel opens on the new-tab picker, which `r.clean()` rejects, so polling records nothing until you open the Computer tab. Move the mouse off the Computer view afterwards or the "Take control" hint stays on screen.
+- Deleting a playbook is in the ⋮ menu on its page (Duplicate, Delete). Delete and re-create it to re-record the creation part on an empty list.
+
 ## Automations: events (GitHub Check run trigger)
 
 - Show an event firing, not just the form: a GitHub Check run trigger on a private repo (GitHub triggers only work on private repos), condition Conclusion equals Failure, Start new session, a spend cap and an invocation limit. Then open a real PR with a real type error, show the check fail, the automation's event row and "View session", and Devin's own fix commit turning the check green.
