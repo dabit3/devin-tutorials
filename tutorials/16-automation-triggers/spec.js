@@ -35,7 +35,7 @@ window.SPEC = {
     "0054.png": { "skip": true },
     "0055.png": { "cam": "reset", "camForce": true, "camDur": 0.8, "vo": "Open the pull request, and CI runs on it, but the check fails.", "voDelay": 3.0 },
     "0059.png": { "voSync": 1.1 },
-    "0060.png": { "cam": { "x": 612, "y": 620, "z": 1.4 }, "camForce": true, "camDur": 0.8, "cap": "The check fails", "voSync": 2.9 },
+    "0060.png": { "cam": { "x": 612, "y": 620, "z": 1.4 }, "camForce": true, "camDur": 0.8, "cap": "The check fails", "voSync": 2.1 },
     "0061.png": { "cam": "reset", "camForce": true, "camDur": 0.6, "vo": "The automation sees the failure and starts this session on its own, with no one prompting it." },
     "0062.png": { "voSync": 1.3 },
     "0063.png": { "capPos": "bottom" },
