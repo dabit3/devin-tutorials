@@ -2,13 +2,14 @@
 
 Voice: ElevenLabs `T8iHhGIWPm2GVYpQD1Am`. Captions in the original cut come from the same beats.
 
+Every line is a complete sentence, so each take ends with a finished cadence.
 
 ## Ways an automation can run
 
 - Automations let Devin start work without anyone prompting it.
 - There are a few ways they can run.
-- They can fire on events, like a new message in a Slack channel,
-- or something happening on GitHub, like a failing check.
+- They can fire on events, like a new message in a Slack channel.
+- Or when something happens on GitHub, like a failing check.
 - They can also run on a schedule.
 
 ## MCP integrations
@@ -27,33 +28,30 @@ Voice: ElevenLabs `T8iHhGIWPm2GVYpQD1Am`. Captions in the original cut come from
 - Or build it step by step, and watch it fire.
 - Create a new automation.
 - Give it a name.
-- For the trigger, pick GitHub,
-- then Check run. It fires whenever CI reports a result.
+- For the trigger, pick GitHub, then Check run.
+- It fires whenever CI reports a result.
 - Choose the private repo to watch.
 - Add a condition, so it only fires when the check fails.
-- Each failure starts a new Devin session,
-- with instructions for what Devin should do.
-- Cap how much each session can spend,
-- and how often the automation can run.
-- Save it. Now it waits for CI to fail.
+- Each failure starts a new Devin session with these instructions.
+- Cap how much each session can spend, and how often the automation can run.
+- Save it, and it waits for CI to fail.
 
 ## CI fails on a pull request
 
-- Here's a new pull request that shows how many issues are left. It has a type error.
+- This new pull request shows how many issues are left. It also has a type error.
 - Open the pull request.
-- CI starts on the PR,
-- and the check fails.
+- CI starts on the pull request, and the check fails.
 
 ## The automation fires
 
 - The automation sees the failure and fires on its own.
-- It started a session. No one prompted it.
-- Devin reads the check's logs, finds the type error, and fixes it.
+- It started this session on its own, with no one prompting it.
+- Devin looks at why CI failed, finds the type error, and fixes it.
 - Then it pushes a one-line fix to the same branch.
 
 ## Green
 
-- The first commit failed. Devin's fix passed, and the check is green.
+- Devin's fix passed, and the check is green.
 - And the new header shows how many issues are left.
 
 ## Outro
