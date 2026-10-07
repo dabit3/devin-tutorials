@@ -20,7 +20,7 @@ window.SPEC = {
     "0001.png": {
       "cursor": true,
       "capPos": "auto",
-      "vo": "Open the platform menu below the prompt box.",
+      "vo": "To set your environment, open the platform menu below the prompt box and pick macOS.",
       "voGap": 1.0
     },
     "0003.png": {
@@ -33,8 +33,7 @@ window.SPEC = {
       "camDur": 0.9
     },
     "0004.png": {
-      "capPos": "auto",
-      "vo": "Then pick macOS."
+      "capPos": "auto"
     },
     "0005.png": {
       "hold": 1.4
@@ -76,7 +75,8 @@ window.SPEC = {
     },
     "0067.png": {
       "cap": "Open the Computer tab to watch live",
-      "vo": "In the Computer tab, you can watch Devin's Mac live."
+      "vo": "In the Computer tab, you can watch Devin's Mac live as it creates the Xcode project, writes the Swift code, and builds and tests it with xcodebuild.",
+      "voSay": "In the Computer tab, you can watch Devin's Mac live as it creates the Xcode project, writes the Swift code, and builds and tests it with x code build."
     },
     "0068.png": {
       "hold": 1.2
@@ -85,8 +85,7 @@ window.SPEC = {
       "hold": 1.0,
       "cap": "Devin writes the Swift code and project",
       "badge": "Sped up",
-      "cursor": false,
-      "vo": "Devin creates the Xcode project and writes the Swift code,"
+      "cursor": false
     },
     "0070.png": {
       "skip": true
@@ -120,9 +119,7 @@ window.SPEC = {
     },
     "0080.png": {
       "hold": 1.6,
-      "cap": "It builds and runs the tests with xcodebuild",
-      "vo": "then builds and tests it with xcodebuild.",
-      "voSay": "then builds and tests it with x code build."
+      "cap": "It builds and runs the tests with xcodebuild"
     },
     "0081.png": {
       "skip": true
@@ -150,7 +147,7 @@ window.SPEC = {
       },
       "camForce": true,
       "camDur": 0.9,
-      "vo": "On the iPad Simulator, the parks sit in a sidebar next to the details."
+      "vo": "On the iPad Simulator, the parks sit in a sidebar next to the details, and Devin opens a pull request on its own."
     },
     "0087.png": {
       "skip": true
@@ -191,8 +188,7 @@ window.SPEC = {
     "0098.png": {
       "hold": 2.8,
       "cap": "It opens a PR on its own",
-      "badge": "",
-      "vo": "It opens a pull request on its own."
+      "badge": ""
     },
     "0099.png": {
       "skip": true
@@ -214,7 +210,7 @@ window.SPEC = {
       "hold": 1.6,
       "cap": "Then it records a test run on the iPhone",
       "badge": "",
-      "vo": "Then it records a test run on the iPhone, tapping through the app with Computer Use."
+      "vo": "Then it records a test run on the iPhone, tapping through the app with Computer Use, and even flags a small glitch where a header slides under the back button."
     },
     "0105.png": {
       "skip": true
@@ -242,8 +238,7 @@ window.SPEC = {
     },
     "0113.png": {
       "hold": 2.4,
-      "cap": "Favorites get a heart in the list",
-      "vo": "Favorites get a heart in the list."
+      "cap": "Favorites get a heart in the list"
     },
     "0114.png": {
       "skip": true
@@ -253,8 +248,7 @@ window.SPEC = {
     },
     "0116.png": {
       "hold": 3.0,
-      "cap": "It flags a header sliding under the back button",
-      "vo": "It even flags a small glitch, where a header slides under the back button."
+      "cap": "It flags a header sliding under the back button"
     },
     "0117.png": {
       "skip": true
@@ -265,16 +259,15 @@ window.SPEC = {
     "0119.png": {
       "hold": 1.6,
       "cap": "Next, the iPad",
-      "vo": "Next, the iPad."
+      "vo": "Next comes the iPad, and Devin also suggests a blueprint change so XcodeGen is ready next time.",
+      "voSay": "Next comes the iPad, and Devin also suggests a blueprint change so x code gen is ready next time."
     },
     "0120.png": {
       "skip": true
     },
     "0121.png": {
       "hold": 3.0,
-      "cap": "It suggests a blueprint change to preinstall XcodeGen",
-      "vo": "It also suggests a blueprint change, so XcodeGen is ready next time.",
-      "voSay": "It also suggests a blueprint change, so x code gen is ready next time."
+      "cap": "It suggests a blueprint change to preinstall XcodeGen"
     },
     "0122.png": {
       "skip": true
@@ -325,7 +318,7 @@ window.SPEC = {
     "0137.png": {
       "hold": 3.4,
       "cap": "Both simulators, side by side",
-      "vo": "Here are both simulators, side by side, running the same app."
+      "vo": "Here are both simulators side by side, and every test run comes with a recording."
     },
     "0138.png": {
       "skip": true
@@ -344,8 +337,7 @@ window.SPEC = {
     },
     "0143.png": {
       "hold": 1.6,
-      "cap": "Open Devin's iPad recording",
-      "vo": "Every test run comes with a recording."
+      "cap": "Open Devin's iPad recording"
     },
     "0146.png": {
       "hold": 0.5,
@@ -391,7 +383,7 @@ window.SPEC = {
       "hold": 3.0,
       "badge": "",
       "cap": "Favorite Glacier: pink button, heart in the sidebar",
-      "vo": "Here, it favorites Glacier, and checks the button and the heart in the sidebar."
+      "vo": "In the iPad run, it favorites Glacier, checks the button and the heart in the sidebar, and all six checks pass, in landscape too."
     },
     "0160.png": {
       "hold": 0.5,
@@ -438,8 +430,7 @@ window.SPEC = {
     },
     "0174.png": {
       "hold": 3.0,
-      "cap": "All six checks pass, in landscape too",
-      "vo": "All six checks pass, in landscape too."
+      "cap": "All six checks pass, in landscape too"
     },
     "0175.png": {
       "skip": true
@@ -508,7 +499,7 @@ window.SPEC = {
       "hold": 2.8,
       "badge": "",
       "cap": "Devin's summary: what passed, and what it fixed",
-      "vo": "Then Devin sums up what passed, and what it fixed."
+      "vo": "Then Devin sums up what passed and what it fixed, and when you're ready to ship, it can also upload builds to TestFlight."
     },
     "0197.png": {
       "hold": 1.6
@@ -518,8 +509,7 @@ window.SPEC = {
     },
     "0199.png": {
       "hold": 3.4,
-      "cap": "It can also upload builds to TestFlight",
-      "vo": "When you're ready to ship, Devin can also upload builds to TestFlight."
+      "cap": "It can also upload builds to TestFlight"
     },
     "0009.png": {
       "skip": true
