@@ -65,7 +65,8 @@ window.SPEC = {
       "voSay": "Ask for a universal Swift UI app, and to test it on an iPhone and an iPad simulator."
     },
     "0065.png": {
-      "hold": 1.4
+      "kind": "still",
+      "hold": 2.4
     },
     "0066.png": {
       "cam": "reset",
@@ -519,6 +520,174 @@ window.SPEC = {
       "hold": 3.4,
       "cap": "It can also upload builds to TestFlight",
       "vo": "When you're ready to ship, Devin can also upload builds to TestFlight."
+    },
+    "0009.png": {
+      "skip": true
+    },
+    "0010.png": {
+      "skip": true
+    },
+    "0011.png": {
+      "skip": true
+    },
+    "0012.png": {
+      "skip": true
+    },
+    "0013.png": {
+      "skip": true
+    },
+    "0014.png": {
+      "skip": true
+    },
+    "0015.png": {
+      "skip": true
+    },
+    "0016.png": {
+      "skip": true
+    },
+    "0017.png": {
+      "skip": true
+    },
+    "0018.png": {
+      "skip": true
+    },
+    "0019.png": {
+      "skip": true
+    },
+    "0020.png": {
+      "skip": true
+    },
+    "0021.png": {
+      "skip": true
+    },
+    "0022.png": {
+      "skip": true
+    },
+    "0023.png": {
+      "skip": true
+    },
+    "0024.png": {
+      "skip": true
+    },
+    "0025.png": {
+      "skip": true
+    },
+    "0026.png": {
+      "skip": true
+    },
+    "0027.png": {
+      "skip": true
+    },
+    "0028.png": {
+      "skip": true
+    },
+    "0029.png": {
+      "skip": true
+    },
+    "0030.png": {
+      "skip": true
+    },
+    "0031.png": {
+      "skip": true
+    },
+    "0032.png": {
+      "skip": true
+    },
+    "0033.png": {
+      "skip": true
+    },
+    "0034.png": {
+      "skip": true
+    },
+    "0035.png": {
+      "skip": true
+    },
+    "0036.png": {
+      "skip": true
+    },
+    "0037.png": {
+      "skip": true
+    },
+    "0038.png": {
+      "skip": true
+    },
+    "0039.png": {
+      "skip": true
+    },
+    "0040.png": {
+      "skip": true
+    },
+    "0041.png": {
+      "skip": true
+    },
+    "0042.png": {
+      "skip": true
+    },
+    "0043.png": {
+      "skip": true
+    },
+    "0044.png": {
+      "skip": true
+    },
+    "0045.png": {
+      "skip": true
+    },
+    "0046.png": {
+      "skip": true
+    },
+    "0047.png": {
+      "skip": true
+    },
+    "0048.png": {
+      "skip": true
+    },
+    "0049.png": {
+      "skip": true
+    },
+    "0050.png": {
+      "skip": true
+    },
+    "0051.png": {
+      "skip": true
+    },
+    "0052.png": {
+      "skip": true
+    },
+    "0053.png": {
+      "skip": true
+    },
+    "0054.png": {
+      "skip": true
+    },
+    "0055.png": {
+      "skip": true
+    },
+    "0056.png": {
+      "skip": true
+    },
+    "0057.png": {
+      "skip": true
+    },
+    "0058.png": {
+      "skip": true
+    },
+    "0059.png": {
+      "skip": true
+    },
+    "0060.png": {
+      "skip": true
+    },
+    "0061.png": {
+      "skip": true
+    },
+    "0062.png": {
+      "skip": true
+    },
+    "0063.png": {
+      "skip": true
+    },
+    "0064.png": {
+      "skip": true
     }
   },
   "voOutro": "One prompt, and a native app tested on iPhone and iPad."
