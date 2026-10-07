@@ -10,14 +10,14 @@ window.SPEC = {
     "i0001.png": { "vo": "Automations let Devin start work without anyone prompting it." },
     "i0002.png": { "vo": "There are a few ways they can run." },
     "i0007.png": { "vo": "They can fire on events, like a new message in a Slack channel." },
-    "i0008.png": { "vo": "Or when something happens on GitHub, like a failing check." },
-    "i0009.png": { "vo": "They can also run on a schedule." },
-    "i0010.png": { "hold": 1.6, "vo": "And the sessions they start can use your MCP integrations, like Datadog." },
-    "i0011.png": { "cap": "Or Sentry", "hold": 1.2, "vo": "Or Sentry." },
-    "i0012.png": { "cap": "Or Notion, or any MCP you connect", "hold": 1.6, "vo": "Or Notion, or any other MCP server you connect." },
-    "i0016.png": { "vo": "You can also create an automation in natural language." },
+    "i0008.png": { "vo": "GitHub events work too, like a failing check." },
+    "i0009.png": { "vo": "You can also run them on a schedule." },
+    "i0010.png": { "hold": 1.6, "voGap": 1.2, "vo": "The sessions they start can use your MCP integrations, like Datadog." },
+    "i0011.png": { "cap": "Sentry works too", "hold": 1.2, "vo": "Sentry works too." },
+    "i0012.png": { "cap": "Notion too, and any MCP you connect", "hold": 1.6, "vo": "Notion works too, along with any other MCP server you connect." },
+    "i0016.png": { "voGap": 1.2, "vo": "You can also create an automation in natural language." },
     "i0017.png": { "vo": "Just describe what you want, and Devin drafts the automation for you to review." },
-    "0001.png": { "cap": "Or build it step by step", "vo": "Or build it step by step, and watch it fire." },
+    "0001.png": { "cap": "Now build one step by step", "voGap": 1.4, "vo": "Now let's build one step by step, and watch it fire." },
     "0002.png": { "vo": "Create a new automation." },
     "0006.png": { "vo": "Give it a name." },
     "0013.png": { "vo": "For the trigger, pick GitHub, then Check run." },
@@ -29,7 +29,7 @@ window.SPEC = {
     "0038.png": { "vo": "Cap how much each session can spend, and how often the automation can run." },
     "0042.png": { },
     "0046.png": { "vo": "Save it, and it waits for CI to fail." },
-    "0053.png": { "hold": 2.8, "cap": "A new PR shows issues left in the header", "cam": { "x": 640, "y": 790, "z": 1.5 }, "camForce": true, "camDur": 1.0, "vo": "This new pull request shows how many issues are left. It also has a type error." },
+    "0053.png": { "hold": 2.8, "cap": "A new PR shows issues left in the header", "cam": { "x": 640, "y": 790, "z": 1.5 }, "camForce": true, "camDur": 1.0, "voGap": 1.2, "vo": "This new pull request shows how many issues are left. It also has a type error." },
     "0054.png": { "skip": true },
     "0055.png": { "cam": "reset", "camForce": true, "camDur": 0.8, "vo": "Open the pull request." },
     "0059.png": { "vo": "CI starts on the pull request, and the check fails." },
@@ -40,6 +40,6 @@ window.SPEC = {
     "0065.png": { "capPos": "bottom", "vo": "Devin looks at why CI failed, finds the type error, and fixes it." },
     "0071.png": { "capPos": "bottom", "vo": "Then it pushes a one-line fix to the same branch." },
     "0072.png": { "vo": "Devin's fix passed, and the check is green." },
-    "0073.png": { "cam": { "x": 1250, "y": 300, "z": 1.6 }, "camForce": true, "camDur": 1.0, "vo": "And the new header shows how many issues are left." }
+    "0073.png": { "cam": { "x": 1250, "y": 300, "z": 1.6 }, "camForce": true, "camDur": 1.0, "vo": "The new header shows how many issues are left." }
   }
 };

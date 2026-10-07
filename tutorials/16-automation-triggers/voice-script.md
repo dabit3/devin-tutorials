@@ -2,7 +2,7 @@
 
 Voice: ElevenLabs `T8iHhGIWPm2GVYpQD1Am`. Captions in the original cut come from the same beats.
 
-Every line is a complete sentence, so each take ends with a finished cadence.
+Every line is a complete sentence that doesn't open with "Or" or "And", so no take sounds like it continues the one before. Lines that open a new section get a longer `voGap` in spec.js.
 
 Generated with a more upbeat read than the kit default: `VO_STABILITY=0.38 VO_STYLE=0.5 python3 _kit/tools/vo.py 16-automation-triggers T8iHhGIWPm2GVYpQD1Am`.
 
@@ -11,14 +11,14 @@ Generated with a more upbeat read than the kit default: `VO_STABILITY=0.38 VO_ST
 - Automations let Devin start work without anyone prompting it.
 - There are a few ways they can run.
 - They can fire on events, like a new message in a Slack channel.
-- Or when something happens on GitHub, like a failing check.
-- They can also run on a schedule.
+- GitHub events work too, like a failing check.
+- You can also run them on a schedule.
 
 ## MCP integrations
 
-- And the sessions they start can use your MCP integrations, like Datadog.
-- Or Sentry.
-- Or Notion, or any other MCP server you connect.
+- The sessions they start can use your MCP integrations, like Datadog.
+- Sentry works too.
+- Notion works too, along with any other MCP server you connect.
 
 ## Natural language
 
@@ -27,7 +27,7 @@ Generated with a more upbeat read than the kit default: `VO_STABILITY=0.38 VO_ST
 
 ## Create the automation
 
-- Or build it step by step, and watch it fire.
+- Now let's build one step by step, and watch it fire.
 - Create a new automation.
 - Give it a name.
 - For the trigger, pick GitHub, then Check run.
@@ -54,7 +54,7 @@ Generated with a more upbeat read than the kit default: `VO_STABILITY=0.38 VO_ST
 ## Green
 
 - Devin's fix passed, and the check is green.
-- And the new header shows how many issues are left.
+- The new header shows how many issues are left.
 
 ## Outro
 
