@@ -79,7 +79,7 @@ def stt(wav, timed=False):
 
 # Transcripts spell names and symbols their own way; map them back before comparing.
 ALIAS = {'devon': 'devin', 'dev in': 'devin', '@': 'at', 'deep wiki': 'deepwiki', 'code maps': 'codemaps', 'swe': 'swee',
-         '2': 'two', 'except': 'accept', 'id': 'ide', 'oneflow': 'one flow', '+': ' ', 'bang ': 'bang '}
+         '2': 'two', 'except': 'accept', 'id': 'ide', 'oneflow': 'one flow', '+': ' ', 'bang ': 'bang ', 'swift ui': 'swiftui', 'x code build': 'xcodebuild', 'x code gen': 'xcodegen', 'xcode build': 'xcodebuild', 'xcode gen': 'xcodegen'}
 def words(t):
     t = t.lower().replace('-', ' ')
     for a, b in ALIAS.items(): t = re.sub(rf'(?<![a-z]){re.escape(a)}(?![a-z])', b, t)

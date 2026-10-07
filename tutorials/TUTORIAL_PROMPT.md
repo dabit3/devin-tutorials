@@ -139,6 +139,16 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - The automation's event list keeps earlier events, so retakes add rows. Wait for the event count to go up (`EVENTS=2`) rather than clicking the first "View session" you see.
 - Leaving the automation form with unsaved changes opens a native "Leave site?" dialog, which blocks `Page.navigate` until it times out. Dismiss it (or finish/cancel the form) before the next run.
 
+## macOS sessions (iOS/iPad)
+- Pick **macOS** on camera: open the Configuration button below the prompt box, hover **Virtual environment**, click **macOS** in the Hosted submenu. The menu stays open with a check mark, so verify the selection from the open menu (`Virtual environment macOS`), then close it and check the `macOS` chip under the composer. Reset the picker to Ubuntu before the real take so the switch is visible; it persists between takes.
+- Ask for a small universal app where the iPad layout is visibly different (sidebar/split view on iPad, list → detail on iPhone) and ask Devin to test and record on both simulators. Devin picks the repo itself from its memory if you don't name one (it chose `thequantexplorer/product-demo-apps`), and opens the PR on its own.
+- The whole build/test run took about 15 minutes. Poll every 10 s from the Computer tab: Devin builds, boots the iPad and iPhone simulators and installs the app well before the recordings start, so the live iPad layout shows up early.
+- Suggestion cards (e.g. a blueprint change) open a file tab that takes over the side panel mid-run. The watch loop must switch back to the Computer tab whenever it isn't in front (`keepComputer` in `18-ios-ipad-mac-vms/capture.mjs`), or the iPad run is lost behind the file.
+- `main video` counts only the recordings in view (the chat is virtualized), so don't end the watch on a video count; end on the sidebar status leaving `Working`. Open a recording by scrolling its card (`Trailhead iPad feature test`) into view; older cards may not be in the DOM.
+- Only show a recording that passed cleanly (the iPad one: 6 passed). A recording with a failure can be mentioned as Devin flagging a glitch, but not played as the proof.
+- Narration: builds run on simulators, not physical devices (no USB passthrough). TestFlight upload can be said, never shown. Spell tool names for the voice (`voSay`: "x code build", "x code gen", "Swift UI"); `vo.py` has the matching `ALIAS`es.
+- Comma-ended lines followed by a short line (e.g. "Open the platform menu below the prompt box," / "and pick macOS.") can fail `vo.py`'s cut check when the voice doesn't pause; make them two sentences.
+
 ## Deliverables
 - A PR on `dabit3/devin-tutorials` containing the folder (MP4, poster, `capture.mjs`, `shots/`, `spec.js`) and a new row in the `tutorials/README.md` table and in the root `README.md` list (description + download link).
 - The 1080p preview attached in the chat.
