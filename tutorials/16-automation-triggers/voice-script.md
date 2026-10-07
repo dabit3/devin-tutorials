@@ -13,9 +13,9 @@ Voice: ElevenLabs `T8iHhGIWPm2GVYpQD1Am`. Captions in the original cut come from
 
 ## MCP integrations
 
-- And the sessions they start can use your MCP integrations, like Datadog,
-- Sentry,
-- Notion, or any other MCP server you connect.
+- And the sessions they start can use your MCP integrations, like Datadog.
+- Or Sentry.
+- Or Notion, or any other MCP server you connect.
 
 ## Natural language
 
