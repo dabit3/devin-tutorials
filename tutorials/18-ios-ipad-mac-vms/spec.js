@@ -325,7 +325,7 @@ window.SPEC = {
     "0137.png": {
       "hold": 3.4,
       "cap": "Both simulators, side by side",
-      "vo": "Here are both simulators, side by side. Builds run on simulators, not physical devices."
+      "vo": "Here are both simulators, side by side, running the same app."
     },
     "0138.png": {
       "skip": true

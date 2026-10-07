@@ -27,7 +27,7 @@ Platform: **macOS**, picked from the platform menu below the prompt box.
 | 0116 | It even flags a small glitch, where a header slides under the back button. |  |
 | 0119 | Next, the iPad. |  |
 | 0121 | It also suggests a blueprint change, so XcodeGen is ready next time. | It also suggests a blueprint change, so x code gen is ready next time. |
-| 0137 | Here are both simulators, side by side. Builds run on simulators, not physical devices. |  |
+| 0137 | Here are both simulators, side by side, running the same app. |  |
 | 0143 | Every test run comes with a recording. |  |
 | 0159 | Here, it favorites Glacier, and checks the button and the heart in the sidebar. |  |
 | 0174 | All six checks pass, in landscape too. |  |
