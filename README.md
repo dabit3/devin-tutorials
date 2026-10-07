@@ -19,6 +19,7 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 14. **Devin Code Scans** (1:48): Type `/scan` with a focused request, confirm the setup card, watch findings arrive ranked by severity, then click Fix with Devin and follow one finding to its PR. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/14-devin-code-scans/14-devin-code-scans.mp4)
 15. **Devin Playbooks** (1:20): Write a procedure once as a playbook with a `!before-after` macro, attach it to a new session with one macro, and get a PR with before and after screenshots. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/15-devin-playbooks/15-devin-playbooks.mp4)
 16. **Devin Automations: events** (2:21): The ways automations can run (Slack, GitHub, schedules), the MCPs their sessions can use (Datadog, Sentry, Notion), and creating one in natural language. Then an automation with a GitHub Check run trigger (Conclusion = Failure) fires when CI fails on a pull request, starts a Devin session on its own, and Devin pushes the fix to the same branch until the check is green. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/16-automation-triggers/16-automation-triggers.mp4)
+17. **Devin Security Swarm** (2:21): Scan a repo with a sandbox-validation profile, review and approve the threat model in Interactive mode, open a critical finding with its attack path, code and a Confirmed sandbox exploit, then assign it to Devin and end on the fix PR attached to the finding. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/17-security-swarm/17-security-swarm.mp4)
 
 ## Narrated tutorials
 
@@ -35,6 +36,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Devin Code Scans, narrated by Nader** (1:46): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/14-devin-code-scans/14-devin-code-scans-nader.mp4) · [Voice script](tutorials/14-devin-code-scans/voice-script.md)
 - **Devin Playbooks, narrated by Nader** (1:22): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/15-devin-playbooks/15-devin-playbooks-nader.mp4) · [Voice script](tutorials/15-devin-playbooks/voice-script.md)
 - **Devin Automations: events, narrated** (2:15): How automations can run, the MCPs they can use, natural-language setup, then a failing GitHub check triggers an automation, and Devin fixes the PR on its own. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/16-automation-triggers/16-automation-triggers-narrated.mp4) · [Voice script](tutorials/16-automation-triggers/voice-script.md)
+- **Devin Security Swarm, narrated by Nader** (2:18): A real exploit chain in an Orbit-style API, found by the scan, proven in a sandbox and fixed in a PR by Devin. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/17-security-swarm/17-security-swarm-nader.mp4) · [Voice script](tutorials/17-security-swarm/voice-script.md)
 
 ## Making a new tutorial
 
