@@ -47,6 +47,9 @@ sentences = lambda t: [x for x in re.split(r'(?<=[.?!])\s+(?=[A-Z])', t.strip())
 # with a fixed seed, at a high stability with no style exaggeration, then gain-matched to VO_LUFS.
 STABILITY = float(os.environ.get('VO_STABILITY', '0.7'))
 STYLE = float(os.environ.get('VO_STYLE', '0'))
+SIMILARITY = float(os.environ.get('VO_SIMILARITY', '0.8'))
+# Pre-roll before the first aligned character; the aligner marks plosives ("Cap") at the burst, so 0.03 clipped it.
+LEAD = float(os.environ.get('VO_LEAD', '0.12'))
 SEED = int(os.environ.get('VO_SEED', '1234'))
 LUFS = float(os.environ.get('VO_LUFS', '-21'))
 prev_ids = []
@@ -54,7 +57,7 @@ prev_ids = []
 def tts(text, prev, nxt, wav):
     body = {'text': text, 'model_id': MODEL, 'previous_text': prev, 'next_text': nxt, 'seed': SEED,
             'previous_request_ids': prev_ids[-3:],
-            'voice_settings': {'stability': STABILITY, 'similarity_boost': 0.8, 'style': STYLE, 'use_speaker_boost': True}}
+            'voice_settings': {'stability': STABILITY, 'similarity_boost': SIMILARITY, 'style': STYLE, 'use_speaker_boost': True}}
     req = urllib.request.Request(f'https://api.elevenlabs.io/v1/text-to-speech/{VOICE}/with-timestamps?output_format=mp3_44100_192',
                                  data=json.dumps(body).encode(), headers={'xi-api-key': KEY, 'Content-Type': 'application/json'})
     r = urllib.request.urlopen(req, timeout=120)
@@ -100,7 +103,7 @@ def span(al, wav):
     after it that follows a gap (TTS sometimes appends a stray syllable past the final character)."""
     ch, st, en = al['characters'], al['character_start_times_seconds'], al['character_end_times_seconds']
     idx = [i for i, c in enumerate(ch) if c.isalnum()]
-    t0, t1 = max(0.0, st[idx[0]] - 0.03), en[idx[-1]]
+    t0, t1 = max(0.0, st[idx[0]] - LEAD), en[idx[-1]]
     e = env(wav)
     k = min(int(t1 * 100), len(e) - 1)
     quiet = 0
