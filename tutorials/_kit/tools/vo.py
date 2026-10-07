@@ -13,6 +13,8 @@ edits = spec.get('edit', {})
 order = [(b['img'], edits[b['img']]['vo']) for b in beats if edits.get(b['img'], {}).get('vo') and not edits[b['img']].get('skip')]
 # Optional `voSay`: the same sentences as `vo`, spelled for the voice (e.g. a comma for a pause); subtitles keep `vo`.
 says = {b['img']: edits[b['img']]['voSay'] for b in beats if edits.get(b['img'], {}).get('voSay')}
+# Optional `voSpeed` (ElevenLabs speed, 0.7-1.2) slows or speeds one utterance, rarely needed: 0.85 sounded too slow.
+speeds = {b['img']: edits[b['img']]['voSpeed'] for b in beats if edits.get(b['img'], {}).get('voSpeed')}
 if spec.get('voOutro'): order.append(('outro', spec['voOutro']))
 out = os.path.join(VD, 'vo', VOICE); os.makedirs(out, exist_ok=True)
 manifest_p = os.path.join(out, 'lines.json')
@@ -45,19 +47,20 @@ sentences = lambda t: [x for x in re.split(r'(?<=[.?!])\s+(?=[A-Z])', t.strip())
 # Tone consistency: every take is conditioned on the audio of the last three accepted takes (ElevenLabs
 # request stitching via `previous_request_ids`; `previous_text` is only a fallback once IDs expire), sampled
 # with a fixed seed, at a high stability with no style exaggeration, then gain-matched to VO_LUFS.
-STABILITY = float(os.environ.get('VO_STABILITY', '0.7'))
-STYLE = float(os.environ.get('VO_STYLE', '0'))
+STABILITY = float(os.environ.get('VO_STABILITY', '0.45'))
+STYLE = float(os.environ.get('VO_STYLE', '0.35'))
+SEED = int(os.environ.get('VO_SEED', '1234'))
+SPEED = float(os.environ.get('VO_SPEED', '1.05'))
 SIMILARITY = float(os.environ.get('VO_SIMILARITY', '0.8'))
 # Pre-roll before the first aligned character; the aligner marks plosives ("Cap") at the burst, so 0.03 clipped it.
 LEAD = float(os.environ.get('VO_LEAD', '0.12'))
-SEED = int(os.environ.get('VO_SEED', '1234'))
 LUFS = float(os.environ.get('VO_LUFS', '-21'))
 prev_ids = []
 
-def tts(text, prev, nxt, wav):
+def tts(text, prev, nxt, wav, speed=1.0):
     body = {'text': text, 'model_id': MODEL, 'previous_text': prev, 'next_text': nxt, 'seed': SEED,
             'previous_request_ids': prev_ids[-3:],
-            'voice_settings': {'stability': STABILITY, 'similarity_boost': SIMILARITY, 'style': STYLE, 'use_speaker_boost': True}}
+            'voice_settings': {'stability': STABILITY, 'similarity_boost': SIMILARITY, 'style': STYLE, 'use_speaker_boost': True, **({'speed': speed} if speed != 1.0 else {})}}
     req = urllib.request.Request(f'https://api.elevenlabs.io/v1/text-to-speech/{VOICE}/with-timestamps?output_format=mp3_44100_192',
                                  data=json.dumps(body).encode(), headers={'xi-api-key': KEY, 'Content-Type': 'application/json'})
     r = urllib.request.urlopen(req, timeout=120)
@@ -119,16 +122,16 @@ def span(al, wav):
 # cut back into lines at the quietest point between their words. A fragment request would instead start
 # speaking its next_text before the clip ends. Sentences are joined with SENT_GAP seconds of silence.
 # Every sentence take is transcribed and regenerated if it says something other than its text.
-MODE = 'sentence-cut-3'
+MODE = 'sentence-cut-4'
 groups, g = [], []
 for img, text in order:
     g.append((img, text, says.get(img, text)))
     if text.rstrip().endswith(('.', '?', '!')): groups.append(g); g = []
 if g: groups.append(g)
 
-def take(sent, shown, before, part):
+def take(sent, shown, before, part, speed=1.0):
     for attempt in range(4):
-        al, rid = tts(sent, before, '', part)
+        al, rid = tts(sent, before, '', part, speed)
         t0, t1 = span(al, part)
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', part, '-af', f'atrim={t0:.3f}:{t1:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.02,afade=t=out:st={t1 - t0 - 0.04:.3f}:d=0.04', part + '.cut.wav'], check=True)
         gain = LUFS - loudness(part + '.cut.wav')
@@ -152,7 +155,8 @@ def write(wav, samples):
 
 res, said = {}, []
 for gi, grp in enumerate(groups):
-    key = [[img, text, say] for img, text, say in grp]
+    key = [[img, text, say] + ([speeds[img]] if img in speeds else []) for img, text, say in grp]
+    speed = float(speeds.get(grp[0][0], SPEED))
     if all(old.get(img, {}).get('utt') == key and old[img].get('mode') == MODE and old[img].get('sentGap') == SENT_GAP and os.path.exists(os.path.join(out, f'{img}.wav')) for img, _, _ in grp):
         for img, text, _ in grp: res[img] = old[img]
         said += sentences(' '.join(t for _, t, _ in grp)); continue
@@ -166,7 +170,7 @@ for gi, grp in enumerate(groups):
     for k, sent in enumerate(sents):
         pos = U.index(sent, pos)
         part = os.path.join(out, f'_utt{gi}.{k}.wav')
-        al, t0, t1 = take(sent, shown[k], ' '.join(said[-2:]), part)
+        al, t0, t1 = take(sent, shown[k], ' '.join(said[-2:]), part, speed)
         said.append(shown[k])
         if k:
             off += SENT_GAP; track.extend([0] * int(SENT_GAP * SR))

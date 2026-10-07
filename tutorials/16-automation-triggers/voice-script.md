@@ -4,7 +4,7 @@ Voice: ElevenLabs `T8iHhGIWPm2GVYpQD1Am`. Captions in the original cut come from
 
 Each section is said as a few long, whole sentences rather than one short line per UI step. A sentence starts as its section appears and the visuals (pans, the Datadog/Sentry/Notion cards, form steps) play underneath it, so no take sounds like it continues the one before. No line opens with "Or" or "And", and lines that open a new section get a longer `voGap` in spec.js.
 
-Generated with ElevenLabs' default voice settings (stability 0.5, similarity 0.75, style 0): `VO_STABILITY=0.5 VO_STYLE=0 VO_SIMILARITY=0.75 python3 _kit/tools/vo.py 16-automation-triggers T8iHhGIWPm2GVYpQD1Am`.
+Generated with ElevenLabs' default voice settings (stability 0.5, similarity 0.75, style 0, speed 1.0): `VO_STABILITY=0.5 VO_STYLE=0 VO_SIMILARITY=0.75 VO_SPEED=1.0 python3 _kit/tools/vo.py 16-automation-triggers T8iHhGIWPm2GVYpQD1Am`.
 
 ## Ways an automation can run
 
