@@ -56,6 +56,8 @@ SPEED = float(os.environ.get('VO_SPEED', '1'))
 # VO_WHOLE=1 (default): the whole script is one ElevenLabs request, cut back into lines afterwards, so every
 # line shares one take's tone. Per-sentence requests drifted in pitch and energy even with request stitching.
 WHOLE = os.environ.get('VO_WHOLE', '1') == '1'
+# Pre-roll before the first aligned character; the aligner marks plosives ("Cap") at the burst, so 0.03 clipped it.
+LEAD = float(os.environ.get('VO_LEAD', '0.12'))
 LUFS = float(os.environ.get('VO_LUFS', '-21'))
 prev_ids = []
 
@@ -111,7 +113,7 @@ def span(al, wav):
     after it that follows a gap (TTS sometimes appends a stray syllable past the final character)."""
     ch, st, en = al['characters'], al['character_start_times_seconds'], al['character_end_times_seconds']
     idx = [i for i, c in enumerate(ch) if c.isalnum()]
-    t0, t1 = max(0.0, st[idx[0]] - 0.03), en[idx[-1]]
+    t0, t1 = max(0.0, st[idx[0]] - LEAD), en[idx[-1]]
     e = env(wav)
     # alignment start times can be late, which clips a soft first word ("It"); back up to where the sound starts
     k0 = min(int(t0 * 100), len(e) - 1)
