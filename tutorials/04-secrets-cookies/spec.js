@@ -122,6 +122,10 @@ window.SPEC = {
       "camDur": 0.9,
       "vo": "Then paste the cookies you exported from your browser, as JSON or base64."
     },
+    "0084.png": {
+      "cam": "reset",
+      "camDur": 0.8
+    },
     "0085.png": {
       "hold": 1.4,
       "vo": "The form parses each cookie, and encodes it for you."
