@@ -32,6 +32,15 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Devin Memory, narrated by Nader** (1:13): Tell Devin a preference, watch it save to Memory, browse Customize → Memory and Dreaming, then see a new session follow it. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-nader.mp4) · [Voice script](tutorials/13-devin-memory/voice-script.md)
 - **Devin Memory, clean** (1:00): The same Memory footage with no captions and no voiceover, music only. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-clean.mp4)
 - **Devin Code Scans, narrated by Nader** (1:46): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/14-devin-code-scans/14-devin-code-scans-nader.mp4) · [Voice script](tutorials/14-devin-code-scans/voice-script.md)
+- **Ask Devin, narrated by Nader** (1:11): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/01-ask-devin/01-ask-devin-nader.mp4) · [Voice script](tutorials/01-ask-devin/voice-script.md)
+- **Your First Session, narrated by Nader** (1:50): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/02-first-session/02-first-session-nader.mp4) · [Voice script](tutorials/02-first-session/voice-script.md)
+- **Introducing Devin, narrated by Nader** (2:33): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/03-introducing-devin/03-introducing-devin-nader.mp4) · [Voice script](tutorials/03-introducing-devin/voice-script.md)
+- **Secrets & Site Cookies, narrated by Nader** (1:32): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/04-secrets-cookies/04-secrets-cookies-nader.mp4) · [Voice script](tutorials/04-secrets-cookies/voice-script.md)
+- **MCP Servers & Marketplace, narrated by Nader** (1:31): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/05-mcp-marketplace/05-mcp-marketplace-nader.mp4) · [Voice script](tutorials/05-mcp-marketplace/voice-script.md)
+- **DeepWiki, narrated by Nader** (1:14): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/06-deepwiki/06-deepwiki-nader.mp4) · [Voice script](tutorials/06-deepwiki/voice-script.md)
+- **Automating Tutorials with Devin, narrated by Nader** (1:49): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/07-automations/07-automations-nader.mp4) · [Voice script](tutorials/07-automations/voice-script.md)
+- **Testing Apps with Devin, narrated by Nader** (1:44): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/08-computer-use-testing/08-computer-use-testing-nader.mp4) · [Voice script](tutorials/08-computer-use-testing/voice-script.md)
+- **Devin Review, narrated by Nader** (1:52): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/09-devin-review/09-devin-review-nader.mp4) · [Voice script](tutorials/09-devin-review/voice-script.md)
 
 ## Making a new tutorial
 
