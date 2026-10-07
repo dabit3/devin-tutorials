@@ -3,6 +3,7 @@
 //   PHASE=pr needs PR=<github pr url>; PHASE=run needs PR and SESSION=<session url> once the run has started.
 import fs from 'fs';
 import { Rec, sleep } from '../_kit/capture/rec.mjs';
+import { clearComposer, closeMenus, editorBox } from '../_kit/capture/composer.mjs';
 
 const ORG = process.env.DEVIN_ORG_URL || 'https://app.devin.ai/org/thequantexplorer';
 const REPO = process.env.REPO || 'thequantexplorer/orbit-ci-demo';
@@ -10,7 +11,7 @@ const NAME = process.env.AUTOMATION_NAME || 'Fix failing CI';
 const INSTRUCTIONS = process.env.INSTRUCTIONS || `Fix the failing check and push to the same branch. A CI check just failed on a pull request in ${REPO}. Read the check's logs, find the root cause, fix it, and push the fix to the PR's branch. You're done when the check passes.`;
 const PHASE = process.env.PHASE || 'form';
 
-const r = await new Rec('shots').init();
+const r = await new Rec(PHASE === 'intro' ? 'shots_intro' : 'shots').init();
 const p = r.p;
 // The kit clips at document (0,0); GitHub scrolls the window, so clip at the current scroll offset instead.
 p.screenshot = async function ({ path }) {
@@ -21,6 +22,66 @@ p.screenshot = async function ({ path }) {
 const main = () => p.evaluate(() => document.querySelector('main')?.innerText || document.body.innerText);
 const dlg = '[role=dialog] button, [role=dialog] input, [role=dialog] span, [role=dialog] div';
 const noHugeText = p => p.evaluate(() => ![...document.querySelectorAll('pre, code, [class*=terminal] *')].some(e => { const b = e.getBoundingClientRect(); return b.width > 0 && b.height > 0 && parseFloat(getComputedStyle(e).fontSize) > 22; }));
+
+// Intro: the ways an automation can run, the MCPs it can use, and drafting one in plain English.
+const ASK = `When a CI check fails on a pull request in ${REPO}, have Devin read the logs, fix it, and push to the same branch.`;
+const card = async (title, chip, cap, hold = 2.2) => {
+  const at = () => p.evaluate((t, c) => {
+    const h = [...document.querySelectorAll('main *')].find(e => e.children.length === 0 && e.innerText?.trim() === t);
+    let box = h; while (box && !box.querySelector('span[class*=bg-tint-tertiary]')) box = box.parentElement;
+    const e = box && [...box.querySelectorAll('span[class*=bg-tint-tertiary]')].find(e => e.innerText.trim() === c);
+    if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2, top: b.y };
+  }, title, chip);
+  let b = await at();
+  if (b && (b.top < 120 || b.top > innerHeightGuess - 80)) {
+    await p.evaluate(t => { const e = [...document.querySelectorAll('main *')].find(e => e.children.length === 0 && e.innerText?.trim() === t); e?.scrollIntoView({ block: 'center', behavior: 'instant' }); }, title);
+    await sleep(900); b = await at();
+  }
+  if (!b) throw new Error('chip not found: ' + title + ' / ' + chip);
+  // Chip tooltips render offset from the chip at 110% zoom, so park the real mouse and only draw the cursor.
+  const w = await p.evaluate(() => innerWidth);
+  await p.mouse.move(w - 30, 22); await sleep(700);
+  r.cur = { x: b.x, y: b.y };
+  await r.point(b, { hold, cap });
+};
+const innerHeightGuess = 800;
+if (PHASE === 'intro') {
+  await r.goto(ORG + '/automations', 4000);
+  await r.poll(8000, 1000, { cap: null }, async () => /Fix failing CI/.test(await main()));
+  await p.mouse.move(720, 600); r.cur = { x: 720, y: 600 };
+  await r.shot({ hold: 1.6, cap: 'Automations start Devin without a prompt' });
+  await r.click({ text: 'Create automation', sel: 'main button' }, { pre: { cap: 'See what they can do' }, wait: 900 });
+  await r.click({ text: 'Template', sel: '[role=menuitem]' }, { wait: 3500 });
+  await r.poll(8000, 1000, { cap: null }, async () => /Fix Sentry Errors Daily/.test(await main()));
+  r.mark('templates');
+  await card('Triage Bug Reports', 'Slack', 'When a Slack message arrives');
+  await card('Fix CI Failures', 'GitHub', 'When something happens on GitHub');
+  await card('Weekly Dependency Update', 'GitHub', 'Or on a schedule');
+  await card('Investigate Alerts Triggered', 'Datadog', 'Sessions can use MCPs, like Datadog', 2.4);
+  await card('Fix Sentry Errors Daily', 'Sentry', 'Sentry', 2.0);
+  await card('Weekly Status Digest', 'Notion', 'Or Notion', 2.0);
+  r.mark('mcps');
+  await r.goto(ORG + '/automations', 3500);
+  await r.poll(8000, 1000, { cap: null }, async () => /Fix failing CI/.test(await main()));
+  await r.click({ text: 'Create automation', sel: 'main button' }, { pre: { cap: null }, wait: 900 });
+  await r.move({ text: 'Generate with Devin', sel: '[role=menuitem]' }, { settle: 700 });
+  await r.shot({ kind: 'hover', hold: 1.6, cap: 'Or let Devin build one for you' });
+  await closeMenus(p);
+  await r.goto(ORG, 3500);
+  await closeMenus(p); await clearComposer(p); await sleep(400);
+  await p.mouse.move(720, 600); r.cur = { x: 720, y: 600 };
+  const ed = await editorBox(p);
+  await r.click(ed, { pre: { cap: 'Describe it in plain English' }, wait: 300 });
+  await p.mouse.move(720, 690); r.cur = { x: 720, y: 690 };
+  await r.type(ASK, { every: 3 });
+  await sleep(500);
+  await r.shot({ hold: 2.6 });
+  r.mark('nl');
+  await clearComposer(p); await p.keyboard.press('Backspace');
+  r.done();
+  console.log('beats', r.beats.length);
+  process.exit(0);
+}
 
 if (PHASE === 'form') {
   await r.goto(ORG + '/automations', 4000);
