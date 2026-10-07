@@ -44,20 +44,25 @@ SENT_GAP = float(os.environ.get('VO_SENT_GAP', '0.6'))
 SR = 48000
 sentences = lambda t: [x for x in re.split(r'(?<=[.?!])\s+(?=[A-Z])', t.strip()) if x]
 
-# Tone consistency: every take is conditioned on the audio of the last three accepted takes (ElevenLabs
+# Tone consistency: every take is conditioned on the audio of the first three accepted takes (ElevenLabs
 # request stitching via `previous_request_ids`; `previous_text` is only a fallback once IDs expire), sampled
 # with a fixed seed, at a high stability with no style exaggeration, then gain-matched to VO_LUFS.
-STABILITY = float(os.environ.get('VO_STABILITY', '0.45'))
-STYLE = float(os.environ.get('VO_STYLE', '0.35'))
+# Defaults are ElevenLabs' own voice settings; tuned stability/style made Nader's read drift ("boring", then "mad").
+STABILITY = float(os.environ.get('VO_STABILITY', '0.5'))
+STYLE = float(os.environ.get('VO_STYLE', '0'))
+SIMILARITY = float(os.environ.get('VO_SIMILARITY', '0.75'))
 SEED = int(os.environ.get('VO_SEED', '1234'))
-SPEED = float(os.environ.get('VO_SPEED', '1.05'))
+SPEED = float(os.environ.get('VO_SPEED', '1'))
+# VO_WHOLE=1 (default): the whole script is one ElevenLabs request, cut back into lines afterwards, so every
+# line shares one take's tone. Per-sentence requests drifted in pitch and energy even with request stitching.
+WHOLE = os.environ.get('VO_WHOLE', '1') == '1'
 LUFS = float(os.environ.get('VO_LUFS', '-21'))
 prev_ids = []
 
 def tts(text, prev, nxt, wav, speed=1.0):
     body = {'text': text, 'model_id': MODEL, 'previous_text': prev, 'next_text': nxt, 'seed': SEED,
-            'previous_request_ids': prev_ids[-3:],
-            'voice_settings': {'stability': STABILITY, 'similarity_boost': 0.8, 'style': STYLE, 'use_speaker_boost': True, **({'speed': speed} if speed != 1.0 else {})}}
+            'previous_request_ids': prev_ids[:3],  # anchor on the first takes; a rolling window drifts lower and flatter
+            'voice_settings': {'stability': STABILITY, 'similarity_boost': SIMILARITY, 'style': STYLE, 'use_speaker_boost': True, **({'speed': speed} if speed != 1.0 else {})}}
     req = urllib.request.Request(f'https://api.elevenlabs.io/v1/text-to-speech/{VOICE}/with-timestamps?output_format=mp3_44100_192',
                                  data=json.dumps(body).encode(), headers={'xi-api-key': KEY, 'Content-Type': 'application/json'})
     r = urllib.request.urlopen(req, timeout=120)
@@ -82,11 +87,14 @@ def stt(wav, timed=False):
 
 # Transcripts spell names and symbols their own way; map them back before comparing.
 ALIAS = {'devon': 'devin', 'dev in': 'devin', '@': 'at', 'deep wiki': 'deepwiki', 'code maps': 'codemaps', 'swe': 'swee',
-         '2': 'two', 'except': 'accept', 'id': 'ide', 'oneflow': 'one flow', '+': ' ', 'bang ': 'bang '}
+         '2': 'two', 'except': 'accept', 'id': 'ide', 'oneflow': 'one flow', '+': ' ', 'bang ': 'bang ', 'swift ui': 'swiftui', 'x code build': 'xcodebuild', 'x code gen': 'xcodegen', 'xcode build': 'xcodebuild', 'xcode gen': 'xcodegen', 'test flight': 'testflight'}
 def words(t):
     t = t.lower().replace('-', ' ')
     for a, b in ALIAS.items(): t = re.sub(rf'(?<![a-z]){re.escape(a)}(?![a-z])', b, t)
     return re.sub(r"[^a-z0-9' ]", ' ', t).split()
+
+def same(a, b):  # one-word lists; homophones like too/two count
+    return a == b or (a and b and difflib.SequenceMatcher(None, a[0], b[0]).ratio() >= 0.6)
 
 def matches(want, got):
     w, g = ''.join(words(want)), ''.join(words(got))
@@ -105,6 +113,10 @@ def span(al, wav):
     idx = [i for i, c in enumerate(ch) if c.isalnum()]
     t0, t1 = max(0.0, st[idx[0]] - 0.03), en[idx[-1]]
     e = env(wav)
+    # alignment start times can be late, which clips a soft first word ("It"); back up to where the sound starts
+    k0 = min(int(t0 * 100), len(e) - 1)
+    while k0 > 0 and k0 > int((t0 - 0.3) * 100) and e[k0 - 1] > -50: k0 -= 1
+    t0 = max(0.0, min(t0, k0 / 100 - 0.03))
     k = min(int(t1 * 100), len(e) - 1)
     quiet = 0
     while k < len(e) and k < int((t1 + 0.25) * 100):
@@ -119,12 +131,13 @@ def span(al, wav):
 # cut back into lines at the quietest point between their words. A fragment request would instead start
 # speaking its next_text before the clip ends. Sentences are joined with SENT_GAP seconds of silence.
 # Every sentence take is transcribed and regenerated if it says something other than its text.
-MODE = 'sentence-cut-4'
+MODE = 'script-cut-1' if WHOLE else 'sentence-cut-4'
 groups, g = [], []
 for img, text in order:
     g.append((img, text, says.get(img, text)))
     if text.rstrip().endswith(('.', '?', '!')): groups.append(g); g = []
 if g: groups.append(g)
+if WHOLE: groups = [[x for grp in groups for x in grp]]
 
 def take(sent, shown, before, part, speed=1.0):
     for attempt in range(4):
@@ -162,6 +175,7 @@ for gi, grp in enumerate(groups):
     for _, _, say in grp: bounds.append((o, o + len(say))); o += len(say) + 1
     sents, shown = sentences(U), sentences(shownU)
     if len(sents) != len(shown): sys.exit(f'{grp[0][0]}: voSay must have the same sentences as vo')
+    if WHOLE: sents, shown = [U], [shownU]
     # one track for the utterance; times[c] = (start, end) of character c of U in it
     track, times, pos, off = array.array('h'), [None] * len(U), 0, 0.0
     for k, sent in enumerate(sents):
@@ -196,7 +210,7 @@ for gi, grp in enumerate(groups):
         heard = stt(os.path.join(out, '_utt.wav'), timed=True); os.remove(os.path.join(out, '_utt.wav'))
         for li, c in enumerate(cuts[1:-1]):
             pre, post = [w for w in heard if w['end'] <= c + 0.02], [w for w in heard if w['start'] >= c - 0.02]
-            ok = pre and post and len(pre) + len(post) == len(heard) and words(pre[-1]['text'])[-1:] == words(grp[li][1])[-1:] and words(post[0]['text'])[:1] == words(grp[li + 1][1])[:1]
+            ok = pre and post and len(pre) + len(post) == len(heard) and same(words(' '.join(w['text'] for w in pre[-3:]))[-1:], words(grp[li][1])[-1:]) and same(words(' '.join(w['text'] for w in post[:3]))[:1], words(grp[li + 1][1])[:1])
             if not ok: sys.exit(f'{grp[li][0]}: cut at {c:.2f}s does not fall between {grp[li][1]!r} and {grp[li + 1][1]!r}: {[(w["text"], w["start"], w["end"]) for w in heard]}')
     for li, ((img, text, say), (a0, a1)) in enumerate(zip(grp, bounds)):
         c0, c1 = cuts[li], cuts[li + 1]
