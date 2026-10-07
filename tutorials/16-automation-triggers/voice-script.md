@@ -2,59 +2,46 @@
 
 Voice: ElevenLabs `T8iHhGIWPm2GVYpQD1Am`. Captions in the original cut come from the same beats.
 
-Every line is a complete sentence, so each take ends with a finished cadence.
+Each section is said as a few long, whole sentences rather than one short line per UI step. A sentence starts as its section appears and the visuals (pans, the Datadog/Sentry/Notion cards, form steps) play underneath it, so no take sounds like it continues the one before. No line opens with "Or" or "And", and lines that open a new section get a longer `voGap` in spec.js.
 
-Generated with a more upbeat read than the kit default: `VO_STABILITY=0.45 VO_STYLE=0.35 python3 _kit/tools/vo.py 16-automation-triggers T8iHhGIWPm2GVYpQD1Am`.
+Generated as one ElevenLabs take of the whole script, cut back into lines afterwards (`VO_WHOLE=1`), with ElevenLabs' default voice settings (stability 0.5, similarity 0.75, style 0, speed 1.0): `VO_STABILITY=0.5 VO_STYLE=0 VO_SIMILARITY=0.75 VO_SPEED=1.0 VO_WHOLE=1 python3 _kit/tools/vo.py 16-automation-triggers T8iHhGIWPm2GVYpQD1Am`.
 
 ## Ways an automation can run
 
-- Automations let Devin start work without anyone prompting it.
-- There are a few ways they can run.
-- They can fire on events, like a new message in a Slack channel.
-- Or when something happens on GitHub, like a failing check.
-- They can also run on a schedule.
+- Automations let Devin start work without anyone prompting it, and there are a few ways they can run.
+- They can fire on events, like a new message in a Slack channel or a failing GitHub check, or they can run on a schedule.
 
 ## MCP integrations
 
-- And the sessions they start can use your MCP integrations, like Datadog.
-- Or Sentry.
-- Or Notion, or any other MCP server you connect.
+- The sessions they start can use your MCP integrations, like Datadog, Sentry, Notion, or any other MCP server you connect.
 
 ## Natural language
 
-- You can also create an automation in natural language.
-- Just describe what you want, and Devin drafts the automation for you to review.
+- You can also create an automation in natural language. Just describe what you want, and Devin drafts it for you to review.
 
 ## Create the automation
 
-- Or build it step by step, and watch it fire.
-- Create a new automation.
-- Give it a name.
-- For the trigger, pick GitHub, then Check run.
-- It fires whenever CI reports a result.
-- Choose the private repo to watch.
-- Add a condition, so it only fires when the check fails.
+- Now let's build one step by step, and watch it fire.
+- Create a new automation and give it a name.
+- For the trigger, pick GitHub, then Check run, which fires whenever CI reports a result.
+- Choose the private repo to watch, and add a condition so it only fires when the check fails.
 - Each failure starts a new Devin session with these instructions.
 - Cap how much each session can spend, and how often the automation can run.
 - Save it, and it waits for CI to fail.
 
 ## CI fails on a pull request
 
-- This new pull request shows how many issues are left. It also has a type error.
-- Open the pull request.
-- CI starts on the pull request, and the check fails.
+- This new pull request shows how many issues are left, but it also has a type error.
+- Open the pull request, and CI runs on it, but the check fails.
 
 ## The automation fires
 
-- The automation sees the failure and fires on its own.
-- It started this session on its own, with no one prompting it.
-- Devin looks at why CI failed, finds the type error, and fixes it.
-- Then it pushes a one-line fix to the same branch.
+- The automation sees the failure and starts this session on its own, with no one prompting it.
+- Devin looks at why CI failed, finds the type error, and pushes a one-line fix to the same branch.
 
 ## Green
 
-- Devin's fix passed, and the check is green.
-- And the new header shows how many issues are left.
+- The fix passed, the check is green, and the new header shows how many issues are left.
 
 ## Outro
 

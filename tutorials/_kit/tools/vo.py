@@ -41,6 +41,8 @@ def chunks(text, al):
 
 SR = 48000
 sentences = lambda t: [x for x in re.split(r'(?<=[.?!])\s+(?=[A-Z])', t.strip()) if x]
+# Pre-roll before a line's first aligned letter; the aligner marks plosives ("Cap") at the burst, so a short pre-roll clipped them.
+LEAD = float(os.environ.get('VO_LEAD', '0.12'))
 LUFS = float(os.environ.get('VO_LUFS', '-21'))
 
 # The whole script is one ElevenLabs request with the voice's own default settings (no voice_settings, seed,
@@ -152,7 +154,7 @@ for li, ((img, text, say), (a0, a1)) in enumerate(zip(items, bounds)):
     w0, w1 = alnum(a0, a1)[0][0], alnum(a0, a1)[-1][1]
     lo = cuts[li - 1] if li else 0.0
     hi = cuts[li] if li < len(cuts) else len(track) / SR
-    c0 = max(lo, w0 - 0.06)
+    c0 = max(lo, w0 - LEAD)
     k = min(int(w1 * 100), len(e) - 1); quiet = 0
     while k < len(e) and k < int(hi * 100) and k < int((w1 + 0.3) * 100):
         quiet = quiet + 1 if 20 * math.log10(e[k] / 32768 + 1e-9) < -50 else 0
