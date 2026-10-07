@@ -38,7 +38,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Devin Playbooks, narrated by Nader** (1:22): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/15-devin-playbooks/15-devin-playbooks-nader.mp4) · [Voice script](tutorials/15-devin-playbooks/voice-script.md)
 - **Devin Automations: events, narrated** (2:14): How automations can run, the MCPs they can use, natural-language setup, then a failing GitHub check triggers an automation, and Devin fixes the PR on its own. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/16-automation-triggers/16-automation-triggers-narrated.mp4) · [Voice script](tutorials/16-automation-triggers/voice-script.md)
 - **Devin Security Swarm, narrated by Nader** (2:18): A real exploit chain in an Orbit-style API, found by the scan, proven in a sandbox and fixed in a PR by Devin. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/17-security-swarm/17-security-swarm-nader.mp4) · [Voice script](tutorials/17-security-swarm/voice-script.md)
-- **iPhone and iPad apps on Mac VMs, narrated by Nader** (1:35): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/18-ios-ipad-mac-vms/18-ios-ipad-mac-vms-nader.mp4) · [Voice script](tutorials/18-ios-ipad-mac-vms/voice-script.md)
+- **iPhone and iPad apps on Mac VMs, narrated by Nader** (1:34): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/18-ios-ipad-mac-vms/18-ios-ipad-mac-vms-nader.mp4) · [Voice script](tutorials/18-ios-ipad-mac-vms/voice-script.md)
 
 ## Making a new tutorial
 

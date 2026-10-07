@@ -44,7 +44,7 @@ SENT_GAP = float(os.environ.get('VO_SENT_GAP', '0.6'))
 SR = 48000
 sentences = lambda t: [x for x in re.split(r'(?<=[.?!])\s+(?=[A-Z])', t.strip()) if x]
 
-# Tone consistency: every take is conditioned on the audio of the last three accepted takes (ElevenLabs
+# Tone consistency: every take is conditioned on the audio of the first three accepted takes (ElevenLabs
 # request stitching via `previous_request_ids`; `previous_text` is only a fallback once IDs expire), sampled
 # with a fixed seed, at a high stability with no style exaggeration, then gain-matched to VO_LUFS.
 STABILITY = float(os.environ.get('VO_STABILITY', '0.45'))
@@ -56,7 +56,7 @@ prev_ids = []
 
 def tts(text, prev, nxt, wav, speed=1.0):
     body = {'text': text, 'model_id': MODEL, 'previous_text': prev, 'next_text': nxt, 'seed': SEED,
-            'previous_request_ids': prev_ids[-3:],
+            'previous_request_ids': prev_ids[:3],  # anchor on the first takes; a rolling window drifts lower and flatter
             'voice_settings': {'stability': STABILITY, 'similarity_boost': 0.8, 'style': STYLE, 'use_speaker_boost': True, **({'speed': speed} if speed != 1.0 else {})}}
     req = urllib.request.Request(f'https://api.elevenlabs.io/v1/text-to-speech/{VOICE}/with-timestamps?output_format=mp3_44100_192',
                                  data=json.dumps(body).encode(), headers={'xi-api-key': KEY, 'Content-Type': 'application/json'})
