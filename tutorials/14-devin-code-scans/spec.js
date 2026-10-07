@@ -11,12 +11,10 @@ window.SPEC = {
       "hold": 2.4,
       "cursor": false,
       "vo": "This is Devin Code Scans. Devin reads a whole repo, looking for one kind of issue, and then fixes what it finds.",
-      "voSay": "This, is Devin Code Scans. Devin reads a whole repo, looking for one kind of issue, and then fixes what it finds.",
-      "voSpeed": 0.85
+      "voSay": "This, is Devin Code Scans. Devin reads a whole repo, looking for one kind of issue, and then fixes what it finds."
     },
     "0001.png": {
-      "vo": "In the composer, type slash scan.",
-      "voSpeed": 0.85
+      "vo": "In the composer, type slash scan."
     },
     "0004.png": {
       "hold": 1.6,

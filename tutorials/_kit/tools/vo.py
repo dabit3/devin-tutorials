@@ -13,7 +13,7 @@ edits = spec.get('edit', {})
 order = [(b['img'], edits[b['img']]['vo']) for b in beats if edits.get(b['img'], {}).get('vo') and not edits[b['img']].get('skip')]
 # Optional `voSay`: the same sentences as `vo`, spelled for the voice (e.g. a comma for a pause); subtitles keep `vo`.
 says = {b['img']: edits[b['img']]['voSay'] for b in beats if edits.get(b['img'], {}).get('voSay')}
-# Optional `voSpeed` (ElevenLabs speed, 0.7-1.2) slows or speeds one utterance, e.g. 0.85 for an unhurried intro.
+# Optional `voSpeed` (ElevenLabs speed, 0.7-1.2) slows or speeds one utterance, rarely needed: 0.85 sounded too slow.
 speeds = {b['img']: edits[b['img']]['voSpeed'] for b in beats if edits.get(b['img'], {}).get('voSpeed')}
 if spec.get('voOutro'): order.append(('outro', spec['voOutro']))
 out = os.path.join(VD, 'vo', VOICE); os.makedirs(out, exist_ok=True)
@@ -47,9 +47,10 @@ sentences = lambda t: [x for x in re.split(r'(?<=[.?!])\s+(?=[A-Z])', t.strip())
 # Tone consistency: every take is conditioned on the audio of the last three accepted takes (ElevenLabs
 # request stitching via `previous_request_ids`; `previous_text` is only a fallback once IDs expire), sampled
 # with a fixed seed, at a high stability with no style exaggeration, then gain-matched to VO_LUFS.
-STABILITY = float(os.environ.get('VO_STABILITY', '0.7'))
-STYLE = float(os.environ.get('VO_STYLE', '0'))
+STABILITY = float(os.environ.get('VO_STABILITY', '0.45'))
+STYLE = float(os.environ.get('VO_STYLE', '0.35'))
 SEED = int(os.environ.get('VO_SEED', '1234'))
+SPEED = float(os.environ.get('VO_SPEED', '1.05'))
 LUFS = float(os.environ.get('VO_LUFS', '-21'))
 prev_ids = []
 
@@ -118,7 +119,7 @@ def span(al, wav):
 # cut back into lines at the quietest point between their words. A fragment request would instead start
 # speaking its next_text before the clip ends. Sentences are joined with SENT_GAP seconds of silence.
 # Every sentence take is transcribed and regenerated if it says something other than its text.
-MODE = 'sentence-cut-3'
+MODE = 'sentence-cut-4'
 groups, g = [], []
 for img, text in order:
     g.append((img, text, says.get(img, text)))
@@ -152,7 +153,7 @@ def write(wav, samples):
 res, said = {}, []
 for gi, grp in enumerate(groups):
     key = [[img, text, say] + ([speeds[img]] if img in speeds else []) for img, text, say in grp]
-    speed = float(speeds.get(grp[0][0], 1.0))
+    speed = float(speeds.get(grp[0][0], SPEED))
     if all(old.get(img, {}).get('utt') == key and old[img].get('mode') == MODE and old[img].get('sentGap') == SENT_GAP and os.path.exists(os.path.join(out, f'{img}.wav')) for img, _, _ in grp):
         for img, text, _ in grp: res[img] = old[img]
         said += sentences(' '.join(t for _, t, _ in grp)); continue
