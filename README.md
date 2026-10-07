@@ -42,6 +42,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Automating Tutorials with Devin, narrated by Nader** (1:49): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/07-automations/07-automations-nader.mp4) · [Voice script](tutorials/07-automations/voice-script.md)
 - **Testing Apps with Devin, narrated by Nader** (1:44): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/08-computer-use-testing/08-computer-use-testing-nader.mp4) · [Voice script](tutorials/08-computer-use-testing/voice-script.md)
 - **Devin Review, narrated by Nader** (1:52): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/09-devin-review/09-devin-review-nader.mp4) · [Voice script](tutorials/09-devin-review/voice-script.md)
+- **Devin Playbooks, narrated by Nader** (1:22): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/15-devin-playbooks/15-devin-playbooks-nader.mp4) · [Voice script](tutorials/15-devin-playbooks/voice-script.md)
 - **Devin Automations: events, narrated** (2:14): How automations can run, the MCPs they can use, natural-language setup, then a failing GitHub check triggers an automation, and Devin fixes the PR on its own. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/16-automation-triggers/16-automation-triggers-narrated.mp4) · [Voice script](tutorials/16-automation-triggers/voice-script.md)
 
 ## Making a new tutorial
