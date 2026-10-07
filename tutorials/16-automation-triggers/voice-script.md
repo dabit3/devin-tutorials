@@ -4,7 +4,7 @@ Voice: ElevenLabs `T8iHhGIWPm2GVYpQD1Am`. Captions in the original cut come from
 
 Every line is a complete sentence, so each take ends with a finished cadence.
 
-Generated with a more upbeat read than the kit default: `VO_STABILITY=0.45 VO_STYLE=0.35 python3 _kit/tools/vo.py 16-automation-triggers T8iHhGIWPm2GVYpQD1Am`.
+Generated with a more upbeat read than the kit default: `VO_STABILITY=0.38 VO_STYLE=0.5 python3 _kit/tools/vo.py 16-automation-triggers T8iHhGIWPm2GVYpQD1Am`.
 
 ## Ways an automation can run
 
