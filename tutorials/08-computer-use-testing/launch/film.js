@@ -111,12 +111,9 @@ function headline(t, text, tIn, tOut, o = {}) {
 function background(t) {
   const toLight = prog(t, DROP - 0.06, DROP + 0.22), toDark = prog(t, bar(14) - 0.05, bar(14) + 0.3);
   const l = toLight * (1 - toDark);
-  ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H);
-  if (l > 0) {
-    ctx.globalAlpha = l;
-    const g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, LIGHT0); g.addColorStop(1, LIGHT1);
-    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); ctx.globalAlpha = 1;
-  }
+  const g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, LIGHT0); g.addColorStop(1, LIGHT1);
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  if (l < 1) { ctx.globalAlpha = 1 - l; ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, W, H); ctx.globalAlpha = 1; }
 }
 
 // ---------- layout
@@ -128,8 +125,8 @@ function sceneIntro(t) {
   if (t > DROP + 0.1) return;
   const push = 1 + 0.03 * prog(t, 0, DROP);
   ctx.save(); ctx.translate(W / 2, H / 2); ctx.scale(push, push); ctx.translate(-W / 2, -H / 2);
-  headline(t, 'Devin tests your app.', 0.08, bar(-1) - 0.02, { size: 230, y: 1160, color: '#fff' });
-  headline(t, 'By actually using it.', bar(-1) + 0.02, DROP + 0.02, { size: 230, y: 1160, color: '#fff' });
+  headline(t, 'Devin tests your app.', 0.08, bar(-1) - 0.02, { size: 230, y: 1160 });
+  headline(t, 'By actually using it.', bar(-1) + 0.02, DROP + 0.02, { size: 230, y: 1160 });
   ctx.restore();
 }
 
@@ -217,11 +214,21 @@ function scenePayoff(t) {
   card('0079', { x: 1800, y: 990, w: 1480, h: 700 }, { cx: 1098, cy: 165, w: 680 - 20 * drift }, { ...eB, spot: { x: 772, y: 245, w: 652, h: 28, a: prog(t, bar(13) - 0.1, bar(13) + 0.25), r: 10, g: 0.8 } });
 }
 
+let dark = null;
+function darkLockup(img) {                                  // the white brand lockup recoloured to ink for light mode
+  if (dark) return dark;
+  dark = document.createElement('canvas'); dark.width = img.naturalWidth; dark.height = img.naturalHeight;
+  const c = dark.getContext('2d'); c.drawImage(img, 0, 0);
+  c.globalCompositeOperation = 'source-in'; c.fillStyle = INK; c.fillRect(0, 0, dark.width, dark.height);
+  return dark;
+}
+
 function sceneEnd(t) {
   const t0 = bar(14);
   if (t < t0) return;
-  const img = I(KIT + 'brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png'); if (!img) return;
-  const lw = 1560, lh = lw * img.naturalHeight / img.naturalWidth, lx = (W - lw) / 2, ly = 960 - lh / 2;
+  const src = I(KIT + 'brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png'); if (!src) return;
+  const img = darkLockup(src);
+  const lw = 1560, lh = lw * img.height / img.width, lx = (W - lw) / 2, ly = 960 - lh / 2;
   const split = 0.335, hit = 1 + 0.025 * Math.sin(Math.PI * prog(t, bar(16) - 0.02, bar(16) + 0.32));
   ctx.save(); ctx.translate(W / 2, 960); ctx.scale(hit, hit); ctx.translate(-W / 2, -960);
   // mark pops in, then the wordmark slides out from behind it
@@ -231,12 +238,12 @@ function sceneEnd(t) {
   const offset = (1 - slide) * (lw - mw) * 0.5;              // lockup starts centred on the mark
   ctx.save(); ctx.globalAlpha = clamp(pm * 3);
   ctx.translate(mcx + offset, 960); ctx.scale(0.4 + 0.6 * mk, 0.4 + 0.6 * mk); ctx.rotate((1 - mk) * -0.5); ctx.translate(-mcx, -960);
-  ctx.drawImage(img, 0, 0, img.naturalWidth * split, img.naturalHeight, lx, ly, mw, lh); ctx.restore();
+  ctx.drawImage(img, 0, 0, img.width * split, img.height, lx, ly, mw, lh); ctx.restore();
   ctx.save(); ctx.beginPath(); ctx.rect(lx + mw + offset, 0, W, H); ctx.clip();
   ctx.globalAlpha = slide;
-  ctx.drawImage(img, img.naturalWidth * split, 0, img.naturalWidth * (1 - split), img.naturalHeight, lx + mw - (1 - slide) * 500 + offset, ly, lw - mw, lh);
+  ctx.drawImage(img, img.width * split, 0, img.width * (1 - split), img.height, lx + mw - (1 - slide) * 500 + offset, ly, lw - mw, lh);
   ctx.restore(); ctx.restore();
-  headline(t, 'Try it today at devin.ai', t0 + 1.3, null, { size: 120, weight: 520, y: 1520, color: 'rgba(255,255,255,0.78)' });
+  headline(t, 'Try it today at devin.ai', t0 + 1.3, null, { size: 120, weight: 520, y: 1520, color: '#3a3a3d' });
 }
 
 function draw(t) {

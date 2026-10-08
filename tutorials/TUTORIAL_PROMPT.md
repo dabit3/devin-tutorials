@@ -196,3 +196,4 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - Measure the music's drop and bar length first, trim the track so the drop lands on the first product cut, and put every scene change on a bar line.
 - Normalise music with two-pass `loudnorm` (I=-16, TP=-1.5) after trimming and fading, so the loudness matches what is actually heard.
 - Review a 4x4 sheet of stills first; it catches crop and layout problems faster than the full render.
+- Launch videos are light mode: white / very light gray backgrounds everywhere (title cards, overlays, transitions, end card), near-black text, and the dark Devin logo (`_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png`, or the lockup recoloured to black) with dark CTA text.
