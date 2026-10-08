@@ -187,3 +187,8 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - For a narrated video, a `voice-script.md` in the folder (each spoken line by section, the prompts typed on screen, and source links), linked from its README row and attached in the chat with the video.
 - One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Launch videos
+- A launch video is its own HTML motion timeline in `tutorials/<folder>/launch/` (`window.film.renderAt(t)`), not a `spec.js`: the real `shots/` screenshots sit in a browser-window card that zooms and pans on the control that matters, with a 2–6 word caption above it and a dark spotlight around the control. Render at 1920×1080 CSS with `deviceScaleFactor: 2` for 4K, and pipe JPEG screenshots from parallel Puppeteer workers straight into ffmpeg segments so no frame dirs fill the Mac's disk.
+- Hide a scene with `display: none`, not `visibility: hidden`: a child that sets `visibility: visible` (a spotlight, an image) still shows through a hidden parent, so an earlier scene bleeds into the end card.
+- ElevenLabs Music rejects prompts that name an artist or brand; describe the genre, instruments and BPM instead. Ask for ~120 BPM so cuts land on a 0.5 s grid, trim the head so the first downbeat lines up, fade the last 2 s, and loudnorm in two passes to −16 LUFS / −1.5 dBTP.

@@ -1,0 +1,242 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: 'Inter'; src: url('../../_kit/fonts/Inter-VF.ttf') format('truetype'); font-weight: 100 900; }
+html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+* { box-sizing: border-box; }
+#stage { position: absolute; inset: 0; overflow: hidden; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+#bg { position: absolute; inset: 0; }
+.win { position: absolute; left: 160px; top: 214px; width: 1600px; height: 900px; border-radius: 22px; overflow: hidden;
+  background: #fbfbfb; box-shadow: 0 40px 100px rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.07); transform-origin: 50% 40%; }
+.cam { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; transform-origin: 0 0; }
+.cam img { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; }
+.spot { position: absolute; border-radius: 10px; box-shadow: 0 0 0 3000px rgba(18,18,20,.30); outline: 2px solid rgba(255,255,255,.95); outline-offset: 3px; }
+.cursor { position: absolute; width: 22px; height: 32px; left: 0; top: 0; transform-origin: 3px 2px; }
+.ripple { position: absolute; width: 60px; height: 60px; margin: -30px 0 0 -30px; border-radius: 50%; border: 3px solid rgba(20,20,20,.55); }
+.line { position: absolute; left: 0; right: 0; text-align: center; white-space: nowrap; font-weight: 640; letter-spacing: -0.025em; }
+.line span { display: inline-block; }
+.cap { top: 62px; font-size: 76px; line-height: 1.1; color: #111; }
+#end img { position: absolute; }
+</style></head>
+<body><div id="stage"><div id="bg"></div></div>
+<script>
+const S = 'https://x/'.slice(0,0); // keep relative
+const SHOTS = '../shots/';
+const BEAT = 0.5;
+const DURATION = 34.0;
+const FPS = 60;
+
+// ---------- helpers ----------
+const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+const lerp = (a, b, k) => a + (b - a) * k;
+const eio = k => k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;   // ease in-out cubic
+const eout = k => 1 - Math.pow(1 - k, 3);
+const eoutBack = k => { const c1 = 1.4, c3 = c1 + 1; return 1 + c3 * Math.pow(k - 1, 3) + c1 * Math.pow(k - 1, 2); };
+const prog = (t, a, d, e = eio) => e(clamp((t - a) / d));
+const el = (tag, cls, parent, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; parent.appendChild(e); return e; };
+function track(keys, t, e = eio) { // keys: [[t, ...vals]]
+  if (t <= keys[0][0]) return keys[0].slice(1);
+  for (let i = 1; i < keys.length; i++) if (t <= keys[i][0]) {
+    const a = keys[i - 1], b = keys[i], k = e((t - a[0]) / (b[0] - a[0]));
+    return a.slice(1).map((v, j) => lerp(v, b[j + 1], k));
+  }
+  return keys[keys.length - 1].slice(1);
+}
+const mixColor = (c1, c2, k) => `rgb(${c1.map((v, i) => Math.round(lerp(v, c2[i], k))).join(',')})`;
+
+const stage = document.getElementById('stage'), bg = document.getElementById('bg');
+const BLACK = [0, 0, 0], GRAY = [236, 236, 238];
+
+// ---------- UI clips (real Devin screenshots) ----------
+// cam keys: [t, cx, cy, zoom] in screenshot CSS px (1440x810); spots: [tIn, tOut, x, y, w, h]
+const CLIPS = [
+  { t0: 2.75, t1: 7.75, imgs: [[0, '0008.png'], [6.95, '0009.png']],
+    cam: [[2.75, 720, 405, 1.0], [3.6, 870, 400, 1.55], [5.0, 860, 392, 1.62], [6.4, 900, 410, 1.5], [7.75, 960, 420, 1.62]],
+    spots: [[4.0, 5.1, 687, 351, 311, 20], [5.3, 6.35, 543, 410, 218, 23]],
+    cursor: [[6.2, 1290, 560], [6.9, 1161, 449]], clicks: [7.1] },
+  { t0: 7.75, t1: 15.25, imgs: [[0, '0010.png'], [9.25, '0294.png'], [11.6, '0297.png'], [13.15, '0300.png']],
+    cam: [[7.75, 560, 330, 1.42], [9.1, 540, 300, 1.48], [9.5, 530, 200, 1.6], [11.2, 530, 210, 1.62], [11.85, 530, 420, 1.55], [13.0, 520, 420, 1.6], [13.5, 530, 330, 1.42], [15.25, 530, 340, 1.48]],
+    spots: [[9.75, 11.35, 342, 93, 374, 62], [13.55, 15.2, 342, 252, 374, 64]],
+    cursor: [[11.9, 640, 560], [12.55, 409, 427], [13.1, 409, 427]], clicks: [12.75] },
+  { t0: 15.25, t1: 21.25, imgs: [[0, '0303.png'], [16.7, '0319.png'], [18.6, '0329.png']],
+    cam: [[15.25, 870, 230, 1.35], [16.4, 1060, 200, 1.42], [16.75, 900, 300, 1.55], [18.4, 890, 310, 1.62], [18.75, 980, 210, 1.5], [21.25, 960, 210, 1.58]],
+    spots: [[15.5, 16.55, 1085, 149, 158, 28], [17.0, 18.45, 678, 222, 444, 188], [19.0, 21.2, 702, 194, 528, 27]],
+    cursor: [[15.6, 1280, 330], [16.2, 1163, 163], [16.6, 1163, 163]], clicks: [16.35] },
+  { t0: 21.25, t1: 27.25, imgs: [[0, '0344.png']],
+    cam: [[21.25, 850, 300, 1.2], [22.2, 870, 250, 1.45], [23.6, 870, 260, 1.5], [24.1, 1150, 120, 1.62], [27.25, 1170, 110, 1.7]],
+    spots: [[21.9, 23.65, 483, 178, 776, 47], [24.35, 27.0, 1250, 8, 143, 28]],
+    cursor: [[24.5, 1100, 160], [25.3, 1322, 22], [26.0, 1322, 22]], clicks: [25.5] },
+];
+const TR = 0.4; // push transition length between clips
+
+// ---------- captions (2-6 words) ----------
+const CAPS = [
+  { t0: 3.25, t1: 5.2, text: 'Tell Devin what to do' },
+  { t0: 5.25, t1: 7.6, text: 'and when it should run' },
+  { t0: 7.95, t1: 11.6, text: 'Devin drafts the automation' },
+  { t0: 11.75, t1: 13.2, text: 'You approve it' },
+  { t0: 13.3, t1: 15.15, text: 'And it’s live' },
+  { t0: 15.4, t1: 16.65, text: 'Or build one yourself' },
+  { t0: 16.75, t1: 18.6, text: 'Pick any trigger' },
+  { t0: 18.75, t1: 21.15, text: 'Every day at 7:00' },
+  { t0: 21.45, t1: 24.1, text: 'Runs every morning, on its own' },
+  { t0: 24.25, t1: 27.1, text: 'Test it anytime' },
+];
+
+// ---------- build DOM ----------
+const clipEls = CLIPS.map(c => {
+  const win = el('div', 'win', stage), cam = el('div', 'cam', win);
+  const imgs = c.imgs.map(([t, f]) => { const i = el('img', null, cam); i.src = SHOTS + f; return i; });
+  const spots = c.spots.map(() => el('div', 'spot', cam));
+  const ripples = (c.clicks || []).map(() => el('div', 'ripple', cam));
+  const cursor = c.cursor ? el('div', 'cursor', cam,
+    '<svg viewBox="0 0 22 32" width="22" height="32"><path d="M2 2 L2 25 L7.6 19.6 L11.4 28.6 L15.2 27 L11.5 18.2 L19 18.2 Z" fill="#111" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg>') : null;
+  return { win, cam, imgs, spots, ripples, cursor };
+});
+const capEls = CAPS.map(c => {
+  const d = el('div', 'line cap', stage);
+  c.words = c.text.split(' ').map(w => { const s = el('span', null, d, w); return s; });
+  d.innerHTML = ''; c.words.forEach((s, i) => { d.appendChild(s); if (i < c.words.length - 1) d.appendChild(document.createTextNode(' ')); });
+  return d;
+});
+// title + payoff + end
+const title = el('div', null, stage);
+const tLabel = el('div', 'line', title, '<span><img src="../../_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png" style="width:58px;height:58px;vertical-align:-14px;margin-right:16px;filter:invert(1)">Devin Automations</span>');
+Object.assign(tLabel.style, { top: '330px', fontSize: '50px', color: '#a1a1a6', fontWeight: 560, letterSpacing: '-0.01em' });
+const tWords = ['Recurring work,', 'on autopilot.'].map((txt, i) => {
+  const d = el('div', 'line', title); Object.assign(d.style, { top: (440 + i * 150) + 'px', fontSize: '140px', color: '#fff', fontWeight: 680, letterSpacing: '-0.04em' });
+  return txt.split(' ').map((w, j) => { const s = el('span', null, d, w); if (j < txt.split(' ').length - 1) d.appendChild(document.createTextNode(' ')); return s; });
+});
+const pay = ['Define it once.', 'Devin handles every run.'].map((txt, i) => {
+  const d = el('div', 'line', stage); Object.assign(d.style, { top: (380 + i * 160) + 'px', fontSize: '128px', color: i ? '#b0b0b5' : '#fff', fontWeight: 680, letterSpacing: '-0.04em' });
+  const ws = txt.split(' '); return ws.map((w, j) => { const s = el('span', null, d, w); if (j < ws.length - 1) d.appendChild(document.createTextNode(' ')); return s; });
+});
+const end = el('div', null, stage); end.id = 'end';
+const logo = el('img', null, end); logo.src = '../../_kit/brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png';
+Object.assign(logo.style, { width: '760px', left: '580px', top: '330px' });
+const cta = el('div', 'line', end); Object.assign(cta.style, { top: '668px', fontSize: '60px', color: '#fff', fontWeight: 560, letterSpacing: '-0.02em' });
+const ctaWords = ['Try', 'it', 'today', 'at', 'devin.ai'].map((w, j, a) => { const s = el('span', null, cta, w); if (j < a.length - 1) cta.appendChild(document.createTextNode(' ')); if (w === 'devin.ai') s.style.color = '#fff'; return s; });
+
+// ---------- word animation ----------
+function wordsIn(spans, t, t0, stagger = 0.055, dur = 0.5, rise = 46) {
+  spans.forEach((s, i) => {
+    const k = clamp((t - t0 - i * stagger) / dur), e = eout(k);
+    s.style.opacity = e; s.style.transform = `translateY(${(1 - e) * rise}px)`; s.style.filter = k < 1 ? `blur(${(1 - e) * 10}px)` : 'none';
+  });
+}
+function lineOut(node, t, t1, dur = 0.25) {
+  const k = clamp((t - t1) / dur), e = eio(k);
+  node.style.opacity = 1 - e; node.style.transform = `translateY(${-e * 24}px)`;
+  node.style.visibility = k >= 1 ? 'hidden' : 'visible';
+}
+
+// ---------- render one frame ----------
+function renderAt(t) {
+  // background: black title -> gray UI -> black payoff/end
+  const toGray = prog(t, 2.7, 0.5), toBlack = prog(t, 27.05, 0.4);
+  bg.style.background = mixColor(mixColor(BLACK, GRAY, toGray).match(/\d+/g).map(Number), BLACK, toBlack);
+
+  // title
+  const tOut = prog(t, 2.6, 0.45);
+  title.style.visibility = t < 3.1 ? 'visible' : 'hidden';
+  title.style.opacity = 1 - tOut; title.style.transform = `scale(${1 + tOut * 0.12})`; title.style.filter = tOut > 0 ? `blur(${tOut * 12}px)` : 'none';
+  wordsIn([tLabel.firstChild], t, 0.15, 0, 0.6, 30);
+  wordsIn(tWords[0], t, 0.55, 0.12, 0.55, 70);
+  wordsIn(tWords[1], t, 1.25, 0.12, 0.55, 70);
+
+  // UI clips with push transitions
+  CLIPS.forEach((c, i) => {
+    const E = clipEls[i];
+    const first = i === 0, last = i === CLIPS.length - 1;
+    let x = 0, y = 0, s = 1, o = 1, blur = 0;
+    const inK = first ? prog(t, c.t0, 0.6, eout) : prog(t, c.t0 - TR * 0.4, TR, eout);
+    const outK = last ? prog(t, c.t1 - 0.25, 0.45) : prog(t, c.t1 - TR * 0.6, TR * 0.85, k => k * k);
+    const visible = t >= (first ? c.t0 : c.t0 - TR * 0.4) && t < (last ? c.t1 + 0.25 : c.t1 + TR * 0.3);
+    E.win.style.display = visible ? 'block' : 'none';
+    if (!visible) return;
+    if (first) { y = (1 - inK) * 900; s = lerp(0.9, 1, inK); }
+    else { x = (1 - inK) * 1920 * 0.55; s = lerp(1.0, 1, inK); o = clamp(inK * 2); }
+    if (last) { s *= lerp(1, 0.86, outK); o *= 1 - outK; blur = outK * 10; }
+    else { x += -outK * 1920 * 0.55; o *= 1 - clamp(outK * 1.6 - 0.6); }
+    E.win.style.transform = `translate(${x}px, ${y}px) scale(${s})`;
+    E.win.style.opacity = o; E.win.style.filter = blur ? `blur(${blur}px)` : 'none';
+
+    // camera
+    const [cx, cy, z] = track(c.cam, t);
+    const vw = 1440 / z, vh = 810 / z;
+    const ccx = clamp(cx, vw / 2, 1440 - vw / 2), ccy = clamp(cy, vh / 2, 810 - vh / 2);
+    const base = 1600 / 1440;
+    E.cam.style.transform = `scale(${base * z}) translate(${-(ccx - vw / 2)}px, ${-(ccy - vh / 2)}px)`;
+
+    // image crossfades (0.18 s)
+    c.imgs.forEach(([ti], j) => {
+      const next = c.imgs[j + 1];
+      let op = j === 0 ? 1 : prog(t, ti, 0.18, k => k);
+      E.imgs[j].style.opacity = op;
+      E.imgs[j].style.visibility = (j === 0 || t >= ti) && !(next && t >= next[0] + 0.2) ? 'visible' : 'hidden';
+    });
+
+    // spotlights
+    c.spots.forEach(([a, b, sx, sy, sw, sh], j) => {
+      const sp = E.spots[j];
+      const kin = prog(t, a, 0.35, eout), kout = prog(t, b - 0.25, 0.25);
+      const on = t >= a && t < b;
+      sp.style.visibility = on ? 'visible' : 'hidden';
+      const pad = lerp(26, 3, kin);
+      Object.assign(sp.style, { left: (sx - pad) + 'px', top: (sy - pad) + 'px', width: (sw + pad * 2) + 'px', height: (sh + pad * 2) + 'px', opacity: kin * (1 - kout) });
+    });
+
+    // cursor + click ripple
+    if (E.cursor) {
+      const ca = c.cursor[0][0], cb = c.cursor[c.cursor.length - 1][0];
+      const fadeIn = prog(t, ca, 0.2, k => k), fadeOut = prog(t, cb + 0.1, 0.25, k => k);
+      const [px, py] = track(c.cursor.map(k => k.slice()), t);
+      const press = (c.clicks || []).reduce((m, ct) => Math.max(m, 1 - Math.abs(t - ct) / 0.12), 0);
+      E.cursor.style.visibility = t >= ca && t < cb + 0.35 ? 'visible' : 'hidden';
+      E.cursor.style.opacity = fadeIn * (1 - fadeOut);
+      E.cursor.style.transform = `translate(${px - 3}px, ${py - 2}px) scale(${(1 - 0.15 * clamp(press)) / z * 1.25})`;
+    }
+    (c.clicks || []).forEach((ct, j) => {
+      const r = E.ripples[j], k = clamp((t - ct) / 0.5);
+      const [px, py] = track(c.cursor, ct);
+      r.style.visibility = t >= ct && k < 1 ? 'visible' : 'hidden';
+      Object.assign(r.style, { left: px + 'px', top: py + 'px', opacity: 1 - k, transform: `scale(${lerp(0.3, 1.4, eout(k)) / z * 1.4})` });
+    });
+  });
+
+  // captions
+  CAPS.forEach((c, i) => {
+    const d = capEls[i];
+    if (t < c.t0 || t > c.t1 + 0.3) { d.style.visibility = 'hidden'; return; }
+    wordsIn(c.words, t, c.t0);
+    lineOut(d, t, c.t1);
+  });
+
+  // payoff
+  const pOn = t >= 27.2 && t < 30.0;
+  const pOut = prog(t, 29.5, 0.4);
+  pay.forEach((ws, i) => { const d = ws[0].parentNode; d.style.visibility = pOn ? 'visible' : 'hidden'; d.style.opacity = 1 - pOut; d.style.filter = pOut > 0 ? `blur(${pOut * 10}px)` : 'none'; d.style.transform = `scale(${1 - pOut * 0.06})`; });
+  wordsIn(pay[0], t, 27.3, 0.1, 0.5, 60);
+  wordsIn(pay[1], t, 28.25, 0.1, 0.5, 60);
+
+  // end card
+  end.style.visibility = t >= 29.7 ? 'visible' : 'hidden';
+  const lk = prog(t, 29.75, 0.9, eout);
+  logo.style.opacity = lk; logo.style.transform = `scale(${lerp(0.82, 1, lk)})`; logo.style.filter = lk < 1 ? `blur(${(1 - lk) * 16}px)` : 'none';
+  logo.style.clipPath = `inset(0 ${(1 - prog(t, 29.75, 0.8, eout)) * 70}% 0 0)`;
+  const drift = prog(t, 30.5, 3.5, k => k);
+  logo.style.transform += ` translateY(${-drift * 8}px)`;
+  wordsIn(ctaWords, t, 30.55, 0.08, 0.5, 30);
+}
+
+window.film = {
+  frames: Math.round(DURATION * FPS), fps: FPS, duration: DURATION,
+  ready: (async () => {
+    await document.fonts.load('600 76px Inter'); await document.fonts.ready;
+    await Promise.all([...document.images].map(i => i.decode().catch(() => { throw new Error('img ' + i.src); })));
+    renderAt(0); return true;
+  })(),
+  renderFrame: f => { renderAt(f / FPS); return true; },
+  renderAt,
+};
+</script></body></html>
