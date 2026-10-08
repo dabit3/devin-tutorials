@@ -187,3 +187,9 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - For a narrated video, a `voice-script.md` in the folder (each spoken line by section, the prompts typed on screen, and source links), linked from its README row and attached in the chat with the video.
 - One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Launch videos
+- Build the launch edit as one HTML timeline with a pure `seek(t)` function (no CSS animations or timers), so any frame can be rendered or inspected in isolation and stills/contact sheets are deterministic.
+- Pipe screenshots from headless Chrome straight into ffmpeg (`-f image2pipe -c:v mjpeg -i -`), one encoder per worker, then concat; 4K60 never touches disk as frame files.
+- Generated music: check the RMS envelope per 0.5 s before using a track. Prompts like "drop at 2 s" are often ignored (one track only dropped at 8 s), and tracks tend to fade early, so pick the take whose full-energy span covers the edit and put the end card on the tail.
+- Pop a "proof" moment out of the real UI: crop the exact answer bullet and the cited code lines from the same screenshot into floating cards that fly out of their position in the window. When measuring crop rectangles from a downscaled preview, convert using the size the image was actually displayed at, not the size it was saved at.
