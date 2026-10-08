@@ -187,3 +187,10 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - For a narrated video, a `voice-script.md` in the folder (each spoken line by section, the prompts typed on screen, and source links), linked from its README row and attached in the chat with the video.
 - One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Launch videos
+
+- Build the edit on the music's beat grid: measure BPM and first-beat offset of the track once, express every cut as a beat index (`t = offset + k * 60 / BPM`), and put the strongest product moment on the drop.
+- The committed `shots/` are 3x captures (4320x2429 for a 1440x810 page), so a camera zoom up to about 2x into a 1920-wide card stays sharp at 4K; beyond that text goes soft.
+- To point at the control that matters without arrows or colored rings: dim the rest of the shot (`box-shadow: 0 0 0 6000px rgba(0,0,0,.4)` on a rect over the control) and lift a crop of the same screenshot slightly (scale 1.06 + soft shadow). It stays real UI and works on any background.
+- Let each card finish fading out before the next big text appears on the same spot; overlapping kinetic type and a fading screenshot reads as clutter in the frame-every-second review.
