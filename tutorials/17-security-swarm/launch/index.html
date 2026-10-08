@@ -1,0 +1,335 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:InterL;src:url(../../_kit/fonts/Inter-VF.ttf);font-weight:100 900}
+html,body{margin:0;background:#000;overflow:hidden}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden;background:#000;font-family:InterL,sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+.scene{position:absolute;inset:0;display:none}
+.card{position:absolute;left:0;top:0;overflow:hidden;border-radius:22px;background:#fff;box-shadow:0 50px 140px rgba(0,0,0,.65),0 0 0 1.5px rgba(255,255,255,.10);transform-origin:50% 50%}
+.wrap{position:absolute;left:0;top:0;transform-origin:0 0}
+.layer{position:absolute;overflow:hidden}
+.layer img{position:absolute;left:0;top:0;width:1440px;height:810px}
+.spot{position:absolute;border-radius:12px;box-shadow:0 0 0 4000px rgba(0,0,0,.42);border:3px solid #fff;pointer-events:none}
+.txt{position:absolute;left:0;top:0;white-space:nowrap;font-weight:700;letter-spacing:-0.035em;line-height:1.04}
+.sub{font-weight:500;letter-spacing:-0.015em;color:#a1a1a6}
+.w{display:inline-block;transform-origin:50% 70%}
+#bg{position:absolute;inset:0}
+#cursor{position:absolute;left:0;top:0;width:44px;height:44px;display:none;z-index:50;transform-origin:4px 4px}
+.ripple{position:absolute;border-radius:50%;border:4px solid #fff;display:none;z-index:49}
+</style></head>
+<body><div id="stage"><div id="bg"></div></div>
+<script>
+// ---------- helpers ----------
+const W = 1920, H = 1080, FPS = 60, DUR = 37.0;
+const stage = document.getElementById('stage');
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const seg = (t, a, b) => clamp((t - a) / (b - a));
+const E = {
+  lin: k => k,
+  outExpo: k => k >= 1 ? 1 : 1 - Math.pow(2, -10 * k),
+  inCubic: k => k * k * k,
+  outCubic: k => 1 - Math.pow(1 - k, 3),
+  inOut: k => k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2,
+  outBack: k => { const c = 1.4; return 1 + (c + 1) * Math.pow(k - 1, 3) + c * Math.pow(k - 1, 2); },
+};
+// keyframes: [[t, value(object or number)], ...], eased per segment with ease (default inOut)
+function key(t, ks, ease = E.inOut) {
+  if (t <= ks[0][0]) return ks[0][1];
+  for (let i = 0; i < ks.length - 1; i++) {
+    const [t0, v0] = ks[i], [t1, v1] = ks[i + 1];
+    if (t <= t1) {
+      const k = (ks[i + 1][2] || ease)(seg(t, t0, t1));
+      if (typeof v0 === 'number') return lerp(v0, v1, k);
+      const o = {}; for (const n in v0) o[n] = lerp(v0[n], v1[n], k); return o;
+    }
+  }
+  return ks[ks.length - 1][1];
+}
+function mk(tag, cls, parent, html) { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; parent.appendChild(e); return e; }
+const imgs = [];
+function shotImg(id, parent) { const i = mk('img', '', parent); i.src = `../shots/${id}.png`; imgs.push(i); return i; }
+
+// A card shows a "wrapper" made of image layers in U space (1 U = 1 CSS px of the 1440x810 capture).
+// layers: [{id, x0, y0, x1, y1, dx, dy}] source rect in U, dest position in wrapper U.
+class Card {
+  constructor(parent, layers, ww, wh) {
+    this.el = mk('div', 'card', parent);
+    this.wrap = mk('div', 'wrap', this.el);
+    this.ww = ww; this.wh = wh;
+    this.layers = layers.map(L => {
+      const d = mk('div', 'layer', this.wrap);
+      Object.assign(d.style, { left: L.dx + 'px', top: L.dy + 'px', width: (L.x1 - L.x0) + 'px', height: (L.y1 - L.y0) + 'px' });
+      const im = shotImg(L.id, d); im.style.left = -L.x0 + 'px'; im.style.top = -L.y0 + 'px';
+      return d;
+    });
+    this.spot = mk('div', 'spot', this.el); this.spot.style.display = 'none';
+  }
+  // r: stage rect {x,y,w,h}; v: {cx,cy,z} view centre in wrapper U, zoom relative to fitting wrapper width
+  set(r, v, o = {}) {
+    const s = (r.w / this.ww) * v.z;
+    const vw = r.w / s, vh = r.h / s;
+    const cx = clamp(v.cx, vw / 2, Math.max(vw / 2, this.ww - vw / 2));
+    const cy = clamp(v.cy, vh / 2, Math.max(vh / 2, this.wh - vh / 2));
+    this.s = s; this.ox = cx - vw / 2; this.oy = cy - vh / 2; this.r = r;
+    Object.assign(this.el.style, { width: r.w + 'px', height: r.h + 'px',
+      transform: `translate(${r.x + (o.dx || 0)}px,${r.y + (o.dy || 0)}px) scale(${o.scale ?? 1})`,
+      opacity: o.op ?? 1, filter: (o.blur ? `blur(${o.blur}px)` : '') + (o.bright != null ? ` brightness(${o.bright})` : '') || 'none',
+      zIndex: o.z || 0 });
+    this.wrap.style.transform = `translate(${-this.ox * s}px,${-this.oy * s}px) scale(${s})`;
+  }
+  // U (wrapper) -> stage px (ignores card scale/offset)
+  toStage(x, y) { return [this.r.x + (x - this.ox) * this.s, this.r.y + (y - this.oy) * this.s]; }
+  spotlight(a, rect) {
+    if (a <= 0.001) { this.spot.style.display = 'none'; return; }
+    const [x, y] = [(rect[0] - this.ox) * this.s, (rect[1] - this.oy) * this.s];
+    const pad = 8;
+    Object.assign(this.spot.style, { display: 'block', left: (x - pad) + 'px', top: (y - pad) + 'px',
+      width: ((rect[2] - rect[0]) * this.s + pad * 2) + 'px', height: ((rect[3] - rect[1]) * this.s + pad * 2) + 'px',
+      opacity: a });
+  }
+}
+// Text block with per-word spans
+function text(parent, str, size, opts = {}) {
+  const d = mk('div', 'txt' + (opts.sub ? ' sub' : ''), parent);
+  d.style.fontSize = size + 'px';
+  if (opts.weight) d.style.fontWeight = opts.weight;
+  if (opts.color) d.style.color = opts.color;
+  d.innerHTML = str.split('\n').map(line => line.split(' ').map(w => `<span class="w">${w}</span>`).join(' ')).join('<br>');
+  d.words = [...d.querySelectorAll('.w')];
+  d.align = opts.align || 'left'; d.ax = opts.x; d.ay = opts.y;
+  return d;
+}
+function placeText(d) {
+  const w = d.offsetWidth;
+  d.style.textAlign = d.align;
+  const x = d.align === 'center' ? d.ax - w / 2 : d.align === 'right' ? d.ax - w : d.ax;
+  d.style.transform = `translate(${x}px,${d.ay}px)`;
+}
+// word-staggered rise-in / fade-out
+function animText(d, t, tin, tout, o = {}) {
+  const st = o.stagger ?? 0.07, dur = o.dur ?? 0.55, rise = o.rise ?? 50;
+  const outk = tout != null ? E.inCubic(seg(t, tout, tout + (o.outDur ?? 0.3))) : 0;
+  d.style.opacity = 1 - outk;
+  d.style.filter = outk > 0 ? `blur(${outk * 14}px)` : 'none';
+  d.words.forEach((w, i) => {
+    const k = E.outExpo(seg(t, tin + i * st, tin + i * st + dur));
+    w.style.opacity = clamp(k * 1.4);
+    w.style.transform = `translateY(${(1 - k) * rise - outk * (o.outRise ?? 30)}px)`;
+    w.style.filter = k < 1 ? `blur(${(1 - k) * 12}px)` : 'none';
+  });
+}
+// cursor (macOS-style arrow) + click ripple
+const cursor = mk('div', '', stage); cursor.id = 'cursor';
+cursor.innerHTML = '<svg viewBox="0 0 28 28" width="44" height="44"><path d="M5 3 L5 22 L10 17.5 L13.5 25 L16.8 23.6 L13.4 16.2 L20 16.2 Z" fill="#000" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg>';
+const ripple = mk('div', 'ripple', stage);
+function setCursor(on, x, y, press = 0) {
+  cursor.style.display = on ? 'block' : 'none';
+  if (on) cursor.style.transform = `translate(${x - 4}px,${y - 4}px) scale(${1 - 0.15 * press})`;
+}
+function setRipple(k, x, y) {
+  if (k <= 0 || k >= 1) { ripple.style.display = 'none'; return; }
+  const r = 14 + 60 * E.outCubic(k);
+  Object.assign(ripple.style, { display: 'block', left: (x - r) + 'px', top: (y - r) + 'px', width: 2 * r + 'px', height: 2 * r + 'px', opacity: 1 - k });
+}
+
+// ---------- scenes ----------
+const scenes = [];
+function scene(t0, t1, build, update) { const root = mk('div', 'scene', stage); const s = { T0: t0, T1: t1, root }; build(s); s.update = update; scenes.push(s); return s; }
+
+// S1: title, then Find. Prove. Fix.
+scene(0, 4.0, s => {
+  s.logo = mk('img', '', s.root); s.logo.src = '../../_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png'; imgs.push(s.logo);
+  Object.assign(s.logo.style, { position: 'absolute', width: '130px', height: '130px', left: '895px', top: '250px', filter: 'invert(1)' });
+  s.intro = text(s.root, 'Introducing', 46, { sub: true, align: 'center', x: 960, y: 430 });
+  s.title = text(s.root, 'Devin Security Swarm', 136, { align: 'center', x: 960, y: 500, weight: 700 });
+  s.fpf = text(s.root, 'Find. Prove. Fix.', 196, { align: 'center', x: 960, y: 330, weight: 750 });
+}, (s, t) => {
+  const lk = E.outBack(seg(t, 0.1, 0.6)), out1 = E.inCubic(seg(t, 1.7, 2.0));
+  Object.assign(s.logo.style, { opacity: clamp(seg(t, 0.1, 0.4)) * (1 - out1), transform: `translateY(${-out1 * 80}px) scale(${0.6 + 0.4 * lk})` });
+  animText(s.intro, t, 0.3, 1.7, { outRise: 80 });
+  animText(s.title, t, 0.5, 1.7, { stagger: 0.1, rise: 70, outRise: 80 });
+  // Find. Prove. Fix. slam in on the beat; earlier words fall back to gray
+  const beats = [2.0, 2.5, 3.0], out2 = E.inCubic(seg(t, 3.75, 4.0));
+  s.fpf.style.opacity = 1 - out2; s.fpf.style.transform = s.fpf.base + ` scale(${1 + 0.18 * out2})`; s.fpf.style.filter = out2 ? `blur(${out2 * 14}px)` : 'none';
+  s.fpf.words.forEach((w, i) => {
+    const k = E.outExpo(seg(t, beats[i], beats[i] + 0.3));
+    const dim = i < 2 ? seg(t, beats[i + 1], beats[i + 1] + 0.2) * (1 - seg(t, 3.4, 3.6)) : 0;
+    w.style.opacity = clamp(k * 2);
+    w.style.transform = `scale(${1.3 - 0.3 * k})`;
+    w.style.color = `rgb(${255 - 125 * dim},${255 - 125 * dim},${255 - 120 * dim})`;
+  });
+});
+
+// S2: New Scan panel
+scene(4.0, 8.5, s => {
+  s.card = new Card(s.root, [{ id: '0084', x0: 594, y0: 0, x1: 1440, y1: 810, dx: 0, dy: 0 }], 846, 810);
+  s.t1 = text(s.root, 'Scan your repo', 92, { x: 120, y: 420 });
+  s.t2 = text(s.root, 'Pick a repo, a profile, and go', 40, { sub: true, x: 122, y: 535 });
+}, (s, t) => {
+  const r = { x: 860, y: 90, w: 940, h: 900 };
+  const ink = E.outExpo(seg(t, 4.0, 4.7)), outk = E.inCubic(seg(t, 8.1, 8.5));
+  const v = key(t, [[5.3, { cx: 423, cy: 405, z: 1 }], [6.2, { cx: 846, cy: 600, z: 1.5 }]]);
+  s.card.set(r, v, { dy: (1 - ink) * 420 + 0, dx: -outk * 1500, scale: 0.9 + 0.1 * ink, op: clamp(ink * 1.5), blur: outk * 16 });
+  // spotlight: Interactive mode, then Run Scan
+  const a1 = seg(t, 6.25, 6.45) * (1 - seg(t, 7.15, 7.3)), a2 = seg(t, 7.3, 7.45) * (1 - outk);
+  if (a2 > 0) s.card.spotlight(a2, [728, 762, 826, 796]); else s.card.spotlight(a1, [280, 620, 835, 692]);
+  // cursor travels to Run Scan, clicks on the beat at 7.5
+  const [bx, by] = s.card.toStage(777, 779);
+  const ck = E.inOut(seg(t, 6.7, 7.35));
+  const on = t > 6.7 && t < 8.1;
+  setCursor(on, lerp(bx - 330, bx, ck), lerp(by + 150, by, ck), seg(t, 7.45, 7.5) * (1 - seg(t, 7.55, 7.7)));
+  setRipple(seg(t, 7.5, 7.95), bx, by);
+  animText(s.t1, t, 4.25, 8.05);
+  animText(s.t2, t, 4.55, 8.05, { stagger: 0.04 });
+});
+
+// S3: scan model
+scene(8.5, 12.5, s => {
+  s.card = new Card(s.root, [{ id: '0092', x0: 326, y0: 47, x1: 866, y1: 810, dx: 0, dy: 0 }], 540, 763);
+  s.t1 = text(s.root, 'Thinks like\nan attacker', 104, { x: 1020, y: 340 });
+  s.t2 = text(s.root, 'A scan model written for your code', 40, { sub: true, x: 1024, y: 600 });
+}, (s, t) => {
+  const r = { x: 140, y: 70, w: 760, h: 940 };
+  const ink = E.outExpo(seg(t, 8.5, 9.1)), outk = E.inCubic(seg(t, 12.05, 12.5));
+  const v = key(t, [[9.8, { cx: 270, cy: 333, z: 1 }], [10.8, { cx: 270, cy: 470, z: 1 }]]);
+  s.card.set(r, v, { dx: (1 - ink) * 1500, blur: (1 - ink) * 16 + outk * 14, scale: (1 + 0.05 * E.inOut(seg(t, 9.8, 12.0))) * (1 - 0.12 * outk), op: 1 - outk });
+  s.card.spotlight(seg(t, 10.85, 11.05) * (1 - outk), [40, 368, 530, 578]);
+  animText(s.t1, t, 8.8, 12.0, { stagger: 0.06 });
+  animText(s.t2, t, 9.2, 12.0, { stagger: 0.04 });
+});
+
+// S4: findings list, ranked by severity
+scene(12.5, 17.0, s => {
+  const strips = [[47, 100], [100, 320], [320, 432], [432, 655], [655, 810]];
+  s.card = new Card(s.root, strips.map(([a, b]) => ({ id: '0145', x0: 326, y0: a, x1: 868, y1: b, dx: 0, dy: a - 47 })), 542, 763);
+  s.t1 = text(s.root, 'Ranked by severity', 88, { x: 120, y: 430 });
+  s.t2 = text(s.root, 'Duplicates and false positives dismissed', 38, { sub: true, x: 123, y: 540 });
+}, (s, t) => {
+  const r = { x: 1100, y: 80, w: 680, h: 920 };
+  const ink = E.outExpo(seg(t, 12.5, 12.95)), outk = E.inCubic(seg(t, 16.6, 17.0));
+  const v = key(t, [[15.0, { cx: 271, cy: 366, z: 1 }], [15.9, { cx: 271, cy: 240, z: 1 }], [17.0, { cx: 271, cy: 240, z: 1.7 }, E.inCubic]]);
+  s.card.set(r, v, { scale: 0.94 + 0.06 * ink, op: clamp(ink * 1.5) * (1 - outk), blur: outk * 10 });
+  s.card.layers.forEach((L, i) => {
+    const k = E.outExpo(seg(t, 12.75 + i * 0.25, 13.15 + i * 0.25));
+    L.style.opacity = k; L.style.transform = `translateY(${(1 - k) * 40}px)`;
+  });
+  s.card.spotlight(seg(t, 15.85, 16.05), [12, 213, 532, 267]);
+  animText(s.t1, t, 12.7, 16.55);
+  animText(s.t2, t, 13.0, 16.55, { stagger: 0.04 });
+});
+
+// S5: proven in a sandbox (0156 pane, continued by 0157 scrolled 344.33 U further)
+scene(17.0, 21.5, s => {
+  const OFF = 344.33;
+  s.card = new Card(s.root, [
+    { id: '0156', x0: 875, y0: 47, x1: 1440, y1: 810, dx: 0, dy: 0 },
+    { id: '0157', x0: 875, y0: 810 - OFF, x1: 1440, y1: 810, dx: 0, dy: 763 }], 565, 763 + OFF);
+  s.t1 = text(s.root, 'Proven\nin a sandbox', 100, { x: 120, y: 360 });
+  s.t2 = text(s.root, 'Devin runs the exploit to confirm it', 38, { sub: true, x: 123, y: 600 });
+}, (s, t) => {
+  const r = { x: 900, y: 110, w: 900, h: 860 };
+  const ink = E.outExpo(seg(t, 17.0, 17.55)), outk = E.inCubic(seg(t, 21.1, 21.5));
+  const v = key(t, [[18.8, { cx: 282, cy: 270, z: 1 }], [19.8, { cx: 282, cy: 505, z: 1 }]]);
+  s.card.set(r, v, { scale: 1.15 - 0.15 * ink, op: clamp(ink * 1.6) * (1 - outk), blur: (1 - ink) * 12 + outk * 10, dy: -outk * 300 });
+  const a1 = seg(t, 17.6, 17.8) * (1 - seg(t, 18.6, 18.75)), a2 = seg(t, 19.85, 20.05) * (1 - outk);
+  if (a2 > 0) s.card.spotlight(a2, [14, 340, 553, 662]); else s.card.spotlight(a1, [14, 30, 226, 66]);
+  animText(s.t1, t, 17.2, 21.05, { stagger: 0.06 });
+  animText(s.t2, t, 17.6, 21.05, { stagger: 0.04 });
+});
+
+// S6: Assign to Devin
+scene(21.5, 24.5, s => {
+  s.card = new Card(s.root, [
+    { id: '0158', x0: 326, y0: 0, x1: 1440, y1: 810, dx: 0, dy: 0 },
+    { id: '0160', x0: 326, y0: 0, x1: 1440, y1: 810, dx: 0, dy: 0 }], 1114, 810);
+  s.t1 = text(s.root, 'Assign it to Devin', 88, { align: 'center', x: 960, y: 70 });
+}, (s, t) => {
+  const r = { x: 210, y: 210, w: 1500, h: 800 };
+  const ink = E.outExpo(seg(t, 21.5, 22.05)), outk = E.inCubic(seg(t, 24.1, 24.5));
+  const v = key(t, [[22.2, { cx: 557, cy: 297, z: 1 }], [23.1, { cx: 1000, cy: 160, z: 2.2 }]]);
+  s.card.set(r, v, { dy: (1 - ink) * 500, scale: 0.92 + 0.08 * ink, op: clamp(ink * 1.5) * (1 - outk), dx: -outk * 1500, blur: outk * 16 });
+  s.card.layers[1].style.opacity = E.inOut(seg(t, 23.62, 23.82));
+  s.card.spotlight(seg(t, 23.1, 23.25) * (1 - seg(t, 23.65, 23.8)), [971, 88, 1100, 117]);
+  const [bx, by] = s.card.toStage(1036, 102);
+  const ck = E.inOut(seg(t, 22.6, 23.35));
+  setCursor(t > 22.6 && t < 24.1, lerp(bx - 380, bx, ck), lerp(by + 300, by, ck), seg(t, 23.45, 23.5) * (1 - seg(t, 23.55, 23.7)));
+  setRipple(seg(t, 23.5, 23.95), bx, by);
+  animText(s.t1, t, 21.65, 24.1);
+});
+
+// S7: fix PR, tested
+scene(24.5, 29.0, s => {
+  s.pr = new Card(s.root, [{ id: '0171', x0: 30, y0: 120, x1: 1380, y1: 800, dx: 0, dy: 0 }], 1350, 680);
+  s.chat = new Card(s.root, [{ id: '0167', x0: 340, y0: 126, x1: 750, y1: 390, dx: 0, dy: 0 }], 410, 264);
+  s.t1 = text(s.root, 'A fix PR, ready to merge', 84, { align: 'center', x: 960, y: 66 });
+  s.t2 = text(s.root, 'Tests pass. Exploit blocked.', 84, { align: 'center', x: 960, y: 66 });
+}, (s, t) => {
+  const ink = E.outExpo(seg(t, 24.5, 25.05)), outk = E.inCubic(seg(t, 28.6, 29.0));
+  const back = E.inOut(seg(t, 26.35, 26.85));
+  s.pr.set({ x: 260, y: 200, w: 1400, h: 705 }, { cx: 675, cy: 340, z: 1 + 0.03 * seg(t, 24.5, 29) },
+    { dy: (1 - ink) * 500, scale: (0.92 + 0.08 * ink) * (1 - 0.06 * back) * (1 - 0.1 * outk), op: clamp(ink * 1.5) * (1 - outk), bright: 1 - 0.45 * back, blur: outk * 12 });
+  s.pr.spotlight(seg(t, 25.4, 25.6) * (1 - back), [1066, 24, 1230, 56]);
+  const cin = E.outExpo(seg(t, 26.5, 27.1));
+  s.chat.set({ x: 880, y: 360, w: 860, h: 554 }, { cx: 205, cy: 132, z: 1 },
+    { dx: (1 - cin) * 1100, op: clamp(cin * 1.5) * (1 - outk), z: 2, blur: (1 - cin) * 14 + outk * 12, scale: 1 - 0.1 * outk });
+  s.chat.spotlight(seg(t, 27.25, 27.45) * (1 - outk), [30, 136, 404, 262]);
+  animText(s.t1, t, 24.65, 26.35, { outDur: 0.2 });
+  animText(s.t2, t, 26.6, 28.6, { stagger: 0.08 });
+});
+
+// S8: Found. Proven. Fixed.
+scene(29.0, 32.0, s => {
+  s.rows = [
+    { word: 'Found.', card: new Card(s.root, [{ id: '0153', x0: 885, y0: 160, x1: 1420, y1: 285, dx: 0, dy: 0 }], 535, 125), w: 856, cy: 260, t: 29.0 },
+    { word: 'Proven.', card: new Card(s.root, [{ id: '0156', x0: 885, y0: 47, x1: 1220, y1: 120, dx: 0, dy: 0 }], 335, 73), w: 536, cy: 540, t: 29.5 },
+    { word: 'Fixed.', card: new Card(s.root, [{ id: '0171', x0: 45, y0: 140, x1: 1010, y1: 268, dx: 0, dy: 0 }], 965, 128), w: 900, cy: 810, t: 30.0 }];
+  s.rows.forEach(R => { R.txt = text(s.root, R.word, 124, { align: 'right', x: 760, y: R.cy - 66, weight: 750 }); R.h = R.w * R.card.wh / R.card.ww; });
+}, (s, t) => {
+  const outk = E.inCubic(seg(t, 31.6, 32.0));
+  s.rows.forEach(R => {
+    const k = E.outExpo(seg(t, R.t, R.t + 0.4));
+    R.card.set({ x: 840, y: R.cy - R.h / 2, w: R.w, h: R.h }, { cx: R.card.ww / 2, cy: R.card.wh / 2, z: 1 },
+      { dx: (1 - k) * 700 - outk * 200, op: clamp(k * 1.6) * (1 - outk), blur: (1 - k) * 12 + outk * 12, scale: 1 - 0.2 * outk });
+    R.txt.style.opacity = clamp(k * 2) * (1 - outk);
+    R.txt.style.transform = R.txt.base + ` scale(${(1.25 - 0.25 * k) * (1 - 0.2 * outk)})`;
+    R.txt.style.transformOrigin = '100% 50%';
+    R.txt.style.filter = outk ? `blur(${outk * 12}px)` : 'none';
+  });
+});
+
+// S9: end card
+scene(32.0, 37.0, s => {
+  s.logo = mk('img', '', s.root); s.logo.src = '../../_kit/brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png'; imgs.push(s.logo);
+  Object.assign(s.logo.style, { position: 'absolute', width: '800px', left: '560px', top: '330px' });
+  s.cta = text(s.root, 'Try it today at devin.ai', 56, { align: 'center', x: 960, y: 690, weight: 550, color: '#e5e5ea' });
+}, (s, t) => {
+  const k = E.outExpo(seg(t, 32.0, 32.9)), out = seg(t, 36.4, 37.0);
+  Object.assign(s.logo.style, { opacity: clamp(k * 1.4) * (1 - out), transform: `scale(${1.12 - 0.12 * k + 0.02 * seg(t, 32, 37)})`, filter: k < 1 ? `blur(${(1 - k) * 24}px)` : 'none' });
+  animText(s.cta, t, 32.6, null, { stagger: 0.06, rise: 36 });
+  s.cta.style.opacity = 1 - out;
+});
+
+// ---------- frame driver ----------
+const bg = document.getElementById('bg');
+function renderAt(t) {
+  bg.style.background = `radial-gradient(1400px 900px at ${50 + 18 * Math.sin(t * 0.35)}% ${45 + 10 * Math.cos(t * 0.27)}%, #1b1b1d 0%, #0a0a0b 45%, #000 80%)`;
+  setCursor(false); setRipple(0);
+  for (const s of scenes) {
+    const on = t >= s.T0 && t < s.T1;
+    s.root.style.display = on ? 'block' : 'none';
+    if (on) s.update(s, t);
+  }
+}
+window.film = {
+  frames: Math.round(DUR * FPS),
+  ready: (async () => {
+    await document.fonts.load('700 100px InterL'); await document.fonts.ready;
+    await Promise.all(imgs.map(i => i.decode()));
+    for (const s of scenes) { s.root.style.display = 'block'; s.root.querySelectorAll('.txt').forEach(d => { placeText(d); d.base = d.style.transform; }); s.root.style.display = 'none'; }
+    renderAt(0); return true;
+  })(),
+  renderFrame: f => renderAt(f / FPS),
+  renderTime: t => renderAt(t),
+};
+</script></body></html>

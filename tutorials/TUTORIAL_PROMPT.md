@@ -187,3 +187,12 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - For a narrated video, a `voice-script.md` in the folder (each spoken line by section, the prompts typed on screen, and source links), linked from its README row and attached in the chat with the video.
 - One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Launch videos
+- A launch video is a separate ~30–40 s cut in `<folder>/launch/` (source, music, build script, README) that renders to `<folder>/<folder>-launch.mp4`; it never replaces the tutorial MP4s. No voice: music, hits and kinetic type carry it.
+- Build it from the committed `shots/*.png` (1440×810 captures, 3× DPR): crop the panel that matters into a card, keyframe its view (centre + zoom) and a dim-everything-else spotlight on the one control or line being shown. Read crop and spotlight rects off a rendered still and fix them by measurement; guessed coordinates were off by 20–30 px.
+- Neighbouring shots that differ only by scroll can be stacked into one tall card (find the scroll offset by matching rows) so a pan reads as real scrolling. Swapping two shots in place (e.g. button → "Setting up…") with a short crossfade on a click reads as a real state change.
+- Keep text zooms at the card's fitted width and pan vertically instead; zooming past it crops line ends and spotlights. Punch-in zooms are fine only inside the blurred cut.
+- Pick one tempo and put every scene cut, word slam and click on a beat (120 BPM = 0.5 s grid), then synthesize the music from the same cut list so hits land on the cuts. Loudnorm to −16 LUFS in the encode.
+- Each scene's text needs ~1 s fully on screen after it finishes animating; anything shorter (a tagline squeezed in before a cut) doesn't read, so cut it.
+- In a JS timeline, don't store text elements on the same object as the scene's start/end times (`s.t1` as both a caption and an end time hid every scene).
