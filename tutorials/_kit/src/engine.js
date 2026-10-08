@@ -31,7 +31,7 @@ const shotURL = img => `../../${V}/shots/${img}`;
 function build() {
   const S = SPEC, edits = S.edit || {};
   const INTRO = sec(S.introHold ?? 3.4), ENTER = sec(1.2);
-  const tl = { steps: [], caps: [], cams: [], badges: [], clicks: [], typing: [], cursorHide: [] };
+  const tl = { steps: [], caps: [], cams: [], badges: [], clicks: [], typing: [], cursorHide: [], rings: [] };
   let t = INTRO, cur = { x: VW / 2 + 120, y: VH * 0.78 }, shown = null, speed = S.speed ?? 4;
   let cap = undefined, badge = undefined, capT = 0;
   const hs = x => sec(x * (S.pace ?? 1.2));
@@ -75,7 +75,13 @@ function build() {
     if (b.cap !== undefined && b.cap !== cap) {
       cap = b.cap; capT = t + sec(b.capDelay ?? 0);
       if (camIn && b.capDelay === undefined) capT = camIn.t + Math.round(camIn.dur * 0.75);
-      tl.caps.push({ t: capT, text: cap, pos: b.capPos || S.capPos || 'auto', anchor: b.target || b.cur });
+      tl.caps.push({ t: capT, text: cap, pos: b.capPos || S.capPos || 'auto', anchor: b.target || (b.ring && b.ring.w ? b.ring : null) || b.cur });
+    }
+    // ring: {x,y,w,h} (center + size, 1440x810 UI px) or true (the beat's target) draws a thin annotation border; false clears it
+    if (b.ring !== undefined) {
+      const box = b.ring === true ? b.target : b.ring || null;
+      tl.rings.push({ t: t + sec(b.ringDelay ?? 0.2), box: box && { ...box, pad: b.ringPad ?? 7, r: b.ringRadius ?? 12 } });
+      if (box && b.ringFor) tl.rings.push({ t: t + sec((b.ringDelay ?? 0.2) + b.ringFor), box: null });
     }
     if (b.badge !== undefined && b.badge !== badge) { badge = b.badge; tl.badges.push({ t, text: badge }); }
     if (b.speed) speed = b.speed;
@@ -162,6 +168,7 @@ async function drawUI(f, alpha) {
     ctx.fillStyle = `rgba(32,120,255,${0.22 * (1 - p)})`; ctx.fill();
     ctx.lineWidth = 1.5; ctx.strokeStyle = `rgba(32,120,255,${0.55 * (1 - p)})`; ctx.stroke();
   }
+  drawRings(f, cam);
   const hideK = lastBefore(TL.cursorHide, f); let ca = 1;
   if (hideK) ca = hideK.hide ? 1 - prog(f, hideK.t, hideK.t + 12) : prog(f, hideK.t, hideK.t + 12);
   if (ca > 0) {
@@ -170,6 +177,27 @@ async function drawUI(f, alpha) {
     ctx.globalAlpha = ca; drawCursor(c.x, c.y, s); ctx.globalAlpha = 1;
   }
   ctx.restore();
+}
+// Annotation border: a thin rounded outline that draws itself in around the region the caption/narration refers to.
+const RING = { color: '42,108,246', width: 1.7 };
+function ring(box, f, t0, out) {
+  const pad = box.pad, x = box.x - box.w / 2 - pad, y = box.y - box.h / 2 - pad, w = box.w + pad * 2, h = box.h + pad * 2;
+  const draw = eOutQuint(prog(f, t0, t0 + sec(0.75))), a = eOut(prog(f, t0, t0 + sec(0.3))) * (1 - out), s = lerp(1.03, 1, eOutQuint(prog(f, t0, t0 + sec(0.6))));
+  if (a <= 0) return;
+  const len = 2 * (w + h);
+  ctx.save(); ctx.translate(x + w / 2, y + h / 2); ctx.scale(s, s); ctx.translate(-(x + w / 2), -(y + h / 2));
+  ctx.globalAlpha = a;
+  rr(x, y, w, h, box.r); ctx.fillStyle = `rgba(${RING.color},0.035)`; ctx.fill();
+  ctx.shadowColor = `rgba(${RING.color},0.35)`; ctx.shadowBlur = 10; ctx.shadowOffsetY = 1;
+  ctx.setLineDash([len * draw, len]); ctx.lineDashOffset = 0; ctx.lineCap = 'round';
+  ctx.lineWidth = RING.width; ctx.strokeStyle = `rgba(${RING.color},0.95)`; rr(x, y, w, h, box.r); ctx.stroke();
+  ctx.restore();
+}
+function drawRings(f) {
+  const k = lastBefore(TL.rings, f); if (!k) return;
+  const i = TL.rings.indexOf(k), prev = TL.rings[i - 1], OUT = sec(0.35);
+  if (prev && prev.box && f < k.t + OUT) ring(prev.box, f, prev.t, prog(f, k.t, k.t + OUT));
+  if (k.box) ring(k.box, f, k.t, 0);
 }
 function drawBackdrop(a = 1) {
   ctx.fillStyle = BG; ctx.fillRect(0, 0, W, H);
