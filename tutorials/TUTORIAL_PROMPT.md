@@ -187,3 +187,11 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - For a narrated video, a `voice-script.md` in the folder (each spoken line by section, the prompts typed on screen, and source links), linked from its README row and attached in the chat with the video.
 - One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Launch videos
+
+- Build the launch cut as its own HTML/JS timeline over the committed `shots/` PNGs (`window.seek(t)`, crop rects in shot pixels) and stream Puppeteer screenshots straight into ffmpeg; no frame dir needed. Give each parallel worker its own Puppeteer browser: extra tabs in one browser are background tabs, stop getting animation frames and hang.
+- Show typing by revealing the final composer shot with a growing clip rect; cover the placeholder text to the right of the reveal with a composer-colored mask, and skip shots that show the mention autocomplete popup mid-word.
+- Clamp close-up crops a few pixels inside the Slack window so its purple frame edge never shows at the card border.
+- Ask the music generator for an exact BPM, a one-beat drop-out where the edit has a breath, and a final hit before the end card; then add a reverb tail in post (generators often stop dead) and loudnorm to −16 LUFS.
+- Launch videos are light mode: white / very light gray backgrounds for title cards, overlays, transitions and the end card, near-black text, and the dark Devin logo (`_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png`, or the white lockup with CSS `filter: brightness(0)`).
