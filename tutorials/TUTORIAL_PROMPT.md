@@ -187,3 +187,8 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - For a narrated video, a `voice-script.md` in the folder (each spoken line by section, the prompts typed on screen, and source links), linked from its README row and attached in the chat with the video.
 - One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Launch videos
+- Get the music first, find its beat grid (e.g. `librosa.beat.beat_track`), and time every cut and headline as `B(n) = offset + n × beat` in the timeline, so the edit stays on the beat when you retime a scene.
+- When the camera zooms into a screenshot, check that the crop still shows the row labels (names in the first column, both tab names). A zoom that cuts `ACME_API_KEY` to `PI_KEY` reads as broken UI.
+- A spotlight dim over a light UI turns the whole card gray; keep the outside dim light (about 15% black) and let the zoom do the emphasis.
