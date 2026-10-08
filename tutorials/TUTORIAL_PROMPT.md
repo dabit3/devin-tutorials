@@ -187,3 +187,12 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - For a narrated video, a `voice-script.md` in the folder (each spoken line by section, the prompts typed on screen, and source links), linked from its README row and attached in the chat with the video.
 - One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Launch videos
+
+- Launch videos are light mode: white / very light gray backgrounds everywhere (title cards, overlays, transitions, end card), near-black text, dark Devin logo (the white lockup with CSS `filter: brightness(0)` works).
+- Author the edit as an HTML timeline where every frame is a pure function of time, keyed in beats of the music's BPM, and render it frame by frame. Put text changes and cuts on beats; a short blur/scale punch on the section cut reads as a transition without extra graphics.
+- Keep one UI card on screen and move a camera over the real screenshots (zoom into the control that matters, swap the screenshot underneath) instead of cutting between cards; it feels like motion, not a slideshow.
+- Before using a capture frame as footage, check the side panels: frames right after a tab switch often show a loading spinner or an empty panel. Measuring the panel's average brightness per frame (ffmpeg `signalstats`) finds them fast.
+- When rendering with Puppeteer in parallel, use one browser per worker; background tabs in a shared browser stall image decoding and `requestAnimationFrame`, so frames hang.
+- Generated music often starts with a second or two of silence; trim to the first downbeat and set the timeline's beat 0 there.
