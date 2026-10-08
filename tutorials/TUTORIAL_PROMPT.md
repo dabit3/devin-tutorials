@@ -187,3 +187,12 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - For a narrated video, a `voice-script.md` in the folder (each spoken line by section, the prompts typed on screen, and source links), linked from its README row and attached in the chat with the video.
 - One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Launch videos
+
+- A launch video is a 30–40 s silent, music-only cut built from the tutorial's real `shots/`; a canvas timeline where every frame is a pure function of time (`film.js` + `render.mjs` in `<folder>/launch/`) gives deterministic 4K frames and is easy to retime.
+- Show the UI as cropped, zoomed and spotlit regions of real screenshots; never redraw it. One region per card at no more than ~2x upscale stays sharp at 4K.
+- Crops of modals must stay inside the modal; a region that spills past its edge shows blurred page background as ugly side bands.
+- Measure the music's drop and bar length first, trim the track so the drop lands on the first product cut, and put every scene change on a bar line.
+- Normalise music with two-pass `loudnorm` (I=-16, TP=-1.5) after trimming and fading, so the loudness matches what is actually heard.
+- Review a 4x4 sheet of stills first; it catches crop and layout problems faster than the full render.
