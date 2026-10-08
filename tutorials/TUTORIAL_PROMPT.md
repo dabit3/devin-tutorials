@@ -187,3 +187,12 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - For a narrated video, a `voice-script.md` in the folder (each spoken line by section, the prompts typed on screen, and source links), linked from its README row and attached in the chat with the video.
 - One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Launch videos
+
+- Lay out the shot inside a fixed "camera" (center point + zoom in the shot's own capture space) and clamp it to the image edges; animating the camera and the window layout separately gives zooms, pans and split screens without ever showing past the edge of a screenshot.
+- Don't slow-push into busy full-window shots (terminal scrollback, title bar): any zoom crops line starts or the traffic lights. Keep those at zoom 1 and move the window instead; zoom only into a region with clear margins.
+- When bold text sits over a full-bleed shot, frame the camera so the UI's own text ends above the caption area instead of relying on a scrim; overlapping UI text reads as a glitch even when dimmed.
+- Inline-block per-word spans for kinetic type collapse their trailing spaces; give them `white-space: pre`.
+- Pipe JPEG frames from Puppeteer straight into one ffmpeg per worker (`-f image2pipe -c:v mjpeg -i -`) and concat the segments: no frame dirs on a tight disk, and a 37 s 4K60 cut renders in a few minutes.
+- Launch videos are light mode: white / very light gray backgrounds for title cards, overlays, transitions and the end card, near-black text, and the dark Devin logo (black lockup or `DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png`); the real UI shots stay as captured.
