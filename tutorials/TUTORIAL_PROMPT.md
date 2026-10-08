@@ -194,3 +194,4 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - Load the 4K captures lazily with a small LRU of `ImageBitmap`s; preloading 30+ full-size shots in each worker runs Chrome out of memory.
 - Pick the tempo first (120 BPM gives a beat every 0.5 s) and place every cut, card entrance and stop-motion frame change on a beat; generate the music from the same section times.
 - Prefer a stop-motion sequence of consecutive shots from Devin's own test recording over a single still for simulator footage, and check the summary shot that actually contains the PR link before claiming "opens the PR".
+- Launch videos are light mode: white / very light gray backgrounds everywhere (title cards, overlays, transitions, end card), near-black text, and the dark Devin logo on the end card.
