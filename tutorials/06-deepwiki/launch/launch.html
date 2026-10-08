@@ -2,22 +2,22 @@
 <html><head><meta charset="utf-8"><title>DeepWiki launch</title>
 <style>
 @font-face { font-family: Inter; src: url(../../_kit/fonts/Inter-VF.ttf) format('truetype'); font-weight: 100 900; }
-html, body { margin: 0; background: #000; overflow: hidden; }
-#stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; font-family: Inter, -apple-system, Helvetica, Arial, sans-serif; color: #fff;
-  background: radial-gradient(1400px 900px at 50% 58%, #1b1b1b 0%, #0b0b0b 55%, #050505 100%); perspective: 2200px; }
+html, body { margin: 0; background: #f5f5f7; overflow: hidden; }
+#stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; font-family: Inter, -apple-system, Helvetica, Arial, sans-serif; color: #111;
+  background: radial-gradient(1400px 900px at 50% 58%, #ffffff 0%, #f6f6f8 55%, #ececef 100%); perspective: 2200px; }
 .win { position: absolute; left: 0; top: 0; overflow: hidden; border-radius: 22px; background: #fff; transform-origin: 50% 50%;
-  box-shadow: 0 50px 140px rgba(0,0,0,.65), 0 0 0 1.5px rgba(255,255,255,.10); will-change: transform, opacity, filter; }
+  box-shadow: 0 40px 120px rgba(0,0,0,.16), 0 8px 30px rgba(0,0,0,.06), 0 0 0 1px rgba(0,0,0,.08); will-change: transform, opacity, filter; }
 .cam { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; transform-origin: 0 0; }
 .cam img.shot { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; display: none; }
-.dim { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; background: #000; opacity: 0; }
-.ring { position: absolute; border-radius: 7px; border: 2px solid #fff; opacity: 0; box-shadow: 0 0 0 1px rgba(0,0,0,.35), 0 0 24px rgba(255,255,255,.35); box-sizing: border-box; }
+.dim { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; background: #fafafa; opacity: 0; }
+.ring { position: absolute; border-radius: 7px; border: 2.5px solid #111; opacity: 0; box-shadow: 0 0 0 5px rgba(0,0,0,.07); box-sizing: border-box; }
 .cursor { position: absolute; left: 0; top: 0; width: 22px; height: 30px; opacity: 0; transform-origin: 0 0; }
 .ripple { position: absolute; border-radius: 50%; border: 2px solid rgba(20,20,20,.55); background: rgba(20,20,20,.08); opacity: 0; box-sizing: border-box; }
-.wdim { position: absolute; inset: 0; background: #000; opacity: 0; }
+.wdim { position: absolute; inset: 0; background: #f4f4f6; opacity: 0; }
 .head { position: absolute; left: 0; width: 1920px; text-align: center; font-weight: 680; letter-spacing: -0.035em; white-space: nowrap; }
 .head span { display: inline-block; margin: 0 .13em; will-change: transform, opacity, filter; }
 .card { position: absolute; left: 0; top: 0; overflow: hidden; border-radius: 16px; background: #fff; transform-origin: 0 0;
-  box-shadow: 0 40px 110px rgba(0,0,0,.6), 0 0 0 1.5px rgba(255,255,255,.14); opacity: 0; }
+  box-shadow: 0 30px 90px rgba(0,0,0,.18), 0 6px 20px rgba(0,0,0,.06), 0 0 0 1px rgba(0,0,0,.08); opacity: 0; }
 .card img { position: absolute; left: 0; top: 0; }
 #intro, #end { position: absolute; inset: 0; }
 #end img { position: absolute; }
@@ -59,7 +59,7 @@ const imgs = [];
 const CURSOR = `<svg viewBox="0 0 22 30" width="22" height="30"><path d="M2 2 L2 24 L7.6 18.8 L11.4 27.4 L15 25.8 L11.3 17.4 L18.8 17.2 Z" fill="#111" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg>`;
 
 // ---------- headline (kinetic words) ----------
-function headline(text, { a, b, y = 100, size = 74, color = '#fff', weight, stagger = 0.065, parent = stage }) {
+function headline(text, { a, b, y = 100, size = 74, color = '#111', weight, stagger = 0.065, parent = stage }) {
   const h = el('div', 'head', parent); h.style.top = (y - size * 0.62) + 'px'; h.style.fontSize = size + 'px'; h.style.color = color;
   if (weight) h.style.fontWeight = weight;
   const words = text.split(' ').map(w => el('span', '', h, w));
@@ -189,9 +189,9 @@ const updaters = [];
 // ---------- 1. intro ----------
 const intro = el('div', '', stage); intro.id = 'intro';
 updaters.push(headline('Every repo.', { a: 0.0, b: 2.15, y: 470, size: 150, parent: intro, stagger: 0.12 }));
-updaters.push(headline('Explained.', { a: 1.0, b: 2.15, y: 640, size: 150, parent: intro, color: '#8e8e8e' }));
+updaters.push(headline('Explained.', { a: 1.0, b: 2.15, y: 640, size: 150, parent: intro, color: '#86868b' }));
 const dw = el('div', 'head', intro, 'DeepWiki'); dw.style.fontSize = '230px'; dw.style.top = '345px'; dw.style.fontWeight = 720;
-updaters.push(headline('Your codebase, documented by Devin', { a: 2.5, b: 4.0, y: 690, size: 54, color: '#9b9b9b', weight: 520, parent: intro, stagger: 0.05 }));
+updaters.push(headline('Your codebase, documented by Devin', { a: 2.5, b: 4.0, y: 690, size: 54, color: '#6e6e73', weight: 520, parent: intro, stagger: 0.05 }));
 updaters.push(T => {
   const p = E.expo(seg(T, 2.0, 2.8)), q = E.in(seg(T, 3.55, 4.0));
   dw.style.display = T >= 2.0 && T <= 4.0 ? 'block' : 'none';
@@ -277,10 +277,10 @@ updaters.push(card(S6, { shot: '0061', crop: CARD_B, a: 26.55, b: 29.85, k: 1.9,
 // ---------- 8. end card ----------
 const end = el('div', '', stage); end.id = 'end';
 const LW = 820, LH = LW * 1024 / 2984, LX = 960 - LW / 2, LY = 400 - LH / 2, SPLIT = 0.30;
-const mark = el('img', '', end); mark.src = '../../_kit/brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png'; imgs.push(mark);
+const mark = el('img', '', end); mark.src = 'devin-lockup-dark.png'; imgs.push(mark);
 const word = el('img', '', end); word.src = mark.src; imgs.push(word);
 [mark, word].forEach(i => { i.style.left = LX + 'px'; i.style.top = LY + 'px'; i.style.width = LW + 'px'; i.style.height = LH + 'px'; });
-updaters.push(headline('Try DeepWiki today at devin.ai', { a: 30.75, b: 34.6, y: 640, size: 60, color: '#d6d6d6', weight: 560, parent: end, stagger: 0.06 }));
+updaters.push(headline('Try DeepWiki today at devin.ai', { a: 30.75, b: 34.6, y: 640, size: 60, color: '#1d1d1f', weight: 560, parent: end, stagger: 0.06 }));
 updaters.push(T => {
   end.style.display = T >= 29.8 ? 'block' : 'none';
   const p = E.back(seg(T, 30.0, 30.7)), pa = seg(T, 30.0, 30.2), w = E.expo(seg(T, 30.3, 31.1));
