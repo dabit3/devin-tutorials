@@ -1,0 +1,279 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: Inter; src: url(../../_kit/fonts/Inter-VF.ttf); font-weight: 100 900; }
+html, body { margin: 0; background: #000; overflow: hidden; }
+canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="3840" height="2160"></canvas>
+<script>
+// Launch film: iPhone and iPad apps on Mac VMs. 120 BPM, one beat = 0.5 s.
+// Shot coordinates are CSS px of the 1440x810 captures in ../shots (stored at 3x).
+const W = 3840, H = 2160, FPS = 60, DUR = 36;
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const SHOT_W = 1440, SHOT_H = 810;
+const CARD = { x: 420, y: 352, w: 3000, h: 1688, r: 40 };
+const ACCENT = '#0A84FF';
+
+const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const E = {
+  lin: t => t,
+  out: t => 1 - Math.pow(1 - t, 3),
+  expo: t => t >= 1 ? 1 : 1 - Math.pow(2, -10 * t),
+  io: t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
+  back: t => { const c = 1.4; return 1 + (c + 1) * Math.pow(t - 1, 3) + c * Math.pow(t - 1, 2); },
+};
+const prog = (t, a, d, e = E.out) => e(clamp((t - a) / d));
+// keyframes: [[time, value, ease-into-this-key], ...]; value may be an object of numbers
+function kf(t, keys) {
+  if (t <= keys[0][0]) return keys[0][1];
+  for (let i = 1; i < keys.length; i++) {
+    const [t1, v1, e = E.io] = keys[i], [t0, v0] = keys[i - 1];
+    if (t <= t1) {
+      const p = e((t - t0) / (t1 - t0));
+      if (typeof v0 === 'number') return lerp(v0, v1, p);
+      const o = {}; for (const k in v0) o[k] = lerp(v0[k], v1[k], p); return o;
+    }
+  }
+  return keys[keys.length - 1][1];
+}
+
+// ---------- images (lazy, LRU so 4K captures don't exhaust memory) ----------
+const cache = new Map(), loading = new Map(); let pending = [];
+const MAX_IMG = 14;
+function img(src) {
+  if (cache.has(src)) { const v = cache.get(src); cache.delete(src); cache.set(src, v); return v; }
+  pending.push(src); return null;
+}
+async function load(src) {
+  if (cache.has(src)) return;
+  if (!loading.has(src)) loading.set(src, (async () => {
+    const r = await fetch(src); const b = await createImageBitmap(await r.blob());
+    cache.set(src, b); loading.delete(src);
+    while (cache.size > MAX_IMG) { const [k, v] = cache.entries().next().value; v.close && v.close(); cache.delete(k); }
+  })());
+  await loading.get(src);
+}
+const shot = n => `../shots/${String(n).padStart(4, '0')}.png`;
+
+// ---------- drawing helpers ----------
+function rr(x, y, w, h, r) { ctx.beginPath(); ctx.roundRect(x, y, w, h, r); }
+function background(t) {
+  ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H);
+  const g = ctx.createRadialGradient(W / 2, H * .55, 100, W / 2, H * .55, W * .7);
+  g.addColorStop(0, 'rgba(255,255,255,0.075)'); g.addColorStop(1, 'rgba(255,255,255,0)');
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+}
+// Draw a capture into a card with a camera {fx, fy, z} (focus point in shot CSS px).
+// Returns a mapper from shot CSS px to canvas px.
+function drawShot(src, card, cam, alpha = 1, crop) {
+  const im = img(src); if (!im) return null;
+  const k = im.width / SHOT_W;
+  const area = crop || { x: 0, y: 0, w: SHOT_W, h: SHOT_H };
+  const s = card.w / area.w * cam.z;
+  const vw = card.w / s, vh = card.h / s;
+  let sx = cam.fx - vw / 2, sy = cam.fy - vh / 2;
+  sx = clamp(sx, area.x, area.x + area.w - vw); sy = clamp(sy, area.y, area.y + area.h - vh);
+  ctx.save(); ctx.globalAlpha *= alpha;
+  rr(card.x, card.y, card.w, card.h, card.r); ctx.clip();
+  ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(im, sx * k, sy * k, vw * k, vh * k, card.x, card.y, card.w, card.h);
+  ctx.restore();
+  return { map: (x, y) => [card.x + (x - sx) * s, card.y + (y - sy) * s], s, card };
+}
+function cardFrame(card, alpha) {
+  ctx.save(); ctx.globalAlpha *= alpha;
+  ctx.shadowColor = 'rgba(0,0,0,0.8)'; ctx.shadowBlur = 120; ctx.shadowOffsetY = 40;
+  rr(card.x, card.y, card.w, card.h, card.r); ctx.fillStyle = '#fafafa'; ctx.fill();
+  ctx.restore();
+}
+function cardBorder(card, alpha) {
+  ctx.save(); ctx.globalAlpha *= alpha * .5; ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(255,255,255,0.18)';
+  rr(card.x, card.y, card.w, card.h, card.r); ctx.stroke(); ctx.restore();
+}
+// Dim the card except a rounded rect (shot CSS px), then ring it in the accent colour.
+function spotlight(m, rect, p, pad = 8) {
+  if (!m || p <= 0) return;
+  const [x0, y0] = m.map(rect.x - pad, rect.y - pad), [x1, y1] = m.map(rect.x + rect.w + pad, rect.y + rect.h + pad);
+  const c = m.card, rad = Math.min(28, (y1 - y0) / 2);
+  ctx.save(); rr(c.x, c.y, c.w, c.h, c.r); ctx.clip();
+  ctx.fillStyle = `rgba(0,0,0,${0.3 * p})`;
+  ctx.beginPath(); ctx.rect(c.x, c.y, c.w, c.h); ctx.roundRect(x0, y0, x1 - x0, y1 - y0, rad); ctx.fill('evenodd');
+  const grow = (1 - E.back(clamp(p))) * 30;
+  ctx.globalAlpha = p; ctx.lineWidth = 8; ctx.strokeStyle = ACCENT;
+  ctx.shadowColor = 'rgba(10,132,255,0.55)'; ctx.shadowBlur = 40;
+  rr(x0 - grow, y0 - grow, x1 - x0 + 2 * grow, y1 - y0 + 2 * grow, rad + grow); ctx.stroke();
+  ctx.restore();
+}
+function ripple(m, x, y, t0, t) {
+  if (!m || t < t0 || t > t0 + .7) return;
+  const p = (t - t0) / .7, [cx, cy] = m.map(x, y);
+  ctx.save(); ctx.globalAlpha = 1 - p; ctx.lineWidth = 10 * (1 - p) + 2; ctx.strokeStyle = ACCENT;
+  ctx.beginPath(); ctx.arc(cx, cy, 40 + 160 * E.out(p), 0, Math.PI * 2); ctx.stroke(); ctx.restore();
+}
+// Kinetic headline: words rise in with a stagger, line leaves upward.
+function headline(text, t, t0, t1, o = {}) {
+  if (t < t0 || t > t1 + .4) return;
+  const size = o.size || 132, y = o.y ?? 230, weight = o.weight || 650;
+  ctx.save(); ctx.font = `${weight} ${size}px Inter`; ctx.letterSpacing = `${-size * .028}px`;
+  ctx.textBaseline = 'alphabetic'; ctx.fillStyle = o.color || '#fff';
+  const words = text.split(' '), sp = ctx.measureText(' ').width;
+  const ws = words.map(w => ctx.measureText(w).width), total = ws.reduce((a, b) => a + b, 0) + sp * (words.length - 1);
+  let x = (o.x ?? W / 2) - (o.align === 'left' ? 0 : total / 2);
+  const out = prog(t, t1, .3, E.io);
+  words.forEach((w, i) => {
+    const p = prog(t, t0 + i * (o.stagger ?? .07), .45, E.expo);
+    ctx.globalAlpha = p * (1 - out);
+    ctx.fillText(w, x, y + (1 - p) * size * .45 - out * size * .35);
+    x += ws[i] + sp;
+  });
+  ctx.restore();
+}
+function label(text, x, y, a, size = 64) {
+  ctx.save(); ctx.globalAlpha = a; ctx.font = `500 ${size}px Inter`; ctx.letterSpacing = '-1px';
+  ctx.fillStyle = 'rgba(255,255,255,0.62)'; ctx.textAlign = 'center'; ctx.fillText(text, x, y); ctx.restore();
+}
+// Card entrance/exit envelope -> {card, a}
+function envelope(t, t0, t1, base = CARD, o = {}) {
+  const pin = o.cut ? 1 : prog(t, t0, .55, E.expo), pout = o.keep ? 0 : prog(t, t1 - .28, .28, E.io);
+  const sc = lerp(o.from ?? .92, 1, pin) * lerp(1, 1.05, pout);
+  const dy = (1 - pin) * 120;
+  const w = base.w * sc, h = base.h * sc;
+  return { card: { x: base.x + (base.w - w) / 2, y: base.y + (base.h - h) / 2 + dy, w, h, r: base.r * sc }, a: pin * (1 - pout) };
+}
+function uiCard(t, src, env, cam, crop) {
+  cardFrame(env.card, env.a);
+  const m = drawShot(src, env.card, cam, env.a, crop);
+  cardBorder(env.card, env.a);
+  return m;
+}
+
+// ---------- scenes ----------
+const scenes = [
+  // Open: the launch message.
+  { t0: 0, t1: 4, draw(t) {
+    headline('Devin now has a Mac', t, .15, 1.85, { size: 220, y: H / 2 + 80, stagger: .12, weight: 700 });
+    headline('Build iPhone and iPad apps', t, 2.0, 3.72, { size: 190, y: H / 2 + 70, stagger: .1, weight: 700 });
+  } },
+  // Pick macOS in the platform menu.
+  { t0: 4, t1: 6.15, draw(t) {
+    const env = envelope(t, 4, 6.15);
+    const cam = kf(t, [[4.0, { fx: 720, fy: 405, z: 1 }], [4.55, { fx: 720, fy: 405, z: 1 }], [5.35, { fx: 900, fy: 540, z: 2.2 }], [6.15, { fx: 915, fy: 545, z: 2.35 }, E.lin]]);
+    const m = uiCard(t, shot(4), env, cam);
+    spotlight(m, { x: 886, y: 524, w: 234, h: 33 }, prog(t, 5.25, .4, E.out) * env.a);
+    headline('Pick macOS', t, 4.1, 5.85);
+  } },
+  { t0: 6, t1: 8.15, draw(t) {
+    const env = envelope(t, 6, 8.15, CARD, { from: 1.06 });
+    const cam = kf(t, [[6, { fx: 640, fy: 520, z: 2.4 }], [6.6, { fx: 700, fy: 500, z: 1.9 }, E.expo], [8.15, { fx: 720, fy: 490, z: 1.75 }, E.lin]]);
+    const m = uiCard(t, shot(6), env, cam);
+    spotlight(m, { x: 520, y: 488, w: 100, h: 32 }, prog(t, 6.5, .4) * env.a);
+    headline('Xcode and Simulator, preinstalled', t, 6.1, 7.85);
+  } },
+  // Describe the app.
+  { t0: 8, t1: 12.15, draw(t) {
+    const env = envelope(t, 8, 12.15);
+    const cam = kf(t, [[8, { fx: 885, fy: 420, z: 1.55 }], [10.8, { fx: 885, fy: 425, z: 1.75 }, E.io], [12.15, { fx: 960, fy: 440, z: 1.85 }, E.io]]);
+    const m = uiCard(t, shot(65), env, cam);
+    if (m) {
+      // Fast line-by-line reveal of the finished prompt (no slow typing).
+      const lines = [[343, 370], [369, 394], [394, 418], [418, 443]];
+      lines.forEach(([y0, y1], i) => {
+        const p = prog(t, 8.45 + i * .26, .3, E.io);
+        if (p >= 1) return;
+        const [ax, ay] = m.map(522 + 720 * p, y0), [bx, by] = m.map(1250, y1);
+        ctx.save(); rr(env.card.x, env.card.y, env.card.w, env.card.h, env.card.r); ctx.clip();
+        ctx.globalAlpha = env.a; ctx.fillStyle = '#ffffff'; ctx.fillRect(ax, ay, bx - ax, by - ay); ctx.restore();
+      });
+      const press = prog(t, 11, .12) * (1 - prog(t, 11.12, .25));
+      spotlight(m, { x: 1190, y: 437, w: 50, h: 32 }, prog(t, 10.5, .35) * (1 - prog(t, 11.6, .3)), 4 + press * 6);
+      ripple(m, 1205, 453, 11.0, t);
+    }
+    headline('Describe your app', t, 8.1, 11.85);
+  } },
+  // Devin writes and builds it, live on the Mac.
+  { t0: 12, t1: 17.15, draw(t) {
+    const env = envelope(t, 12, 17.15, CARD, { from: 1.08 });
+    const cam = kf(t, [[12, { fx: 560, fy: 380, z: 2.1 }], [14.2, { fx: 580, fy: 390, z: 1.95 }, E.lin], [15.0, { fx: 1110, fy: 410, z: 1.85 }, E.io], [17.15, { fx: 1110, fy: 410, z: 2.05 }, E.lin]]);
+    const m = uiCard(t, shot(86), env, cam);
+    spotlight(m, { x: 378, y: 344, w: 380, h: 84 }, prog(t, 12.6, .35) * (1 - prog(t, 14.1, .3)));
+    headline('Writes Swift. Builds with Xcode.', t, 12.1, 14.3);
+    headline('Runs it in the Simulator', t, 14.55, 16.85);
+  } },
+  // Split screen: the same app on iPhone and iPad.
+  { t0: 17, t1: 22.15, draw(t) {
+    const out = prog(t, 21.85, .3, E.io);
+    const H2 = 1460, top = 390;
+    const phone = { w: Math.round(H2 * 245 / 455), h: H2 }, pad = { w: Math.round(H2 * 345 / 430), h: H2 };
+    const gap = 200, total = phone.w + pad.w + gap, x0 = (W - total) / 2;
+    const items = [
+      { box: { x: x0, y: top, ...phone }, frames: [105, 106, 107, 108, 109, 110, 111, 112, 113, 114], crop: { x: 985, y: 180, w: 245, h: 455 }, name: 'iPhone', d: 0, dir: -1 },
+      { box: { x: x0 + phone.w + gap, y: top, ...pad }, frames: [147, 148, 149, 150, 151, 152, 153, 154, 155, 156], crop: { x: 310, y: 190, w: 345, h: 430 }, name: 'iPad', d: .12, dir: 1 },
+    ];
+    for (const it of items) {
+      const p = prog(t, 17 + it.d, .6, E.expo);
+      const a = p * (1 - out), dx = (1 - p) * 500 * it.dir;
+      const card = { x: it.box.x + dx, y: it.box.y + (1 - p) * 60 - out * 40, w: it.box.w, h: it.box.h, r: 44 };
+      const idx = Math.min(it.frames.length - 1, Math.floor(Math.max(0, t - 17.25) / .5));
+      cardFrame(card, a);
+      drawShot(shot(it.frames[idx]), card, { fx: it.crop.x + it.crop.w / 2, fy: it.crop.y + it.crop.h / 2, z: 1 }, a, it.crop);
+      cardBorder(card, a);
+      label(it.name, card.x + card.w / 2, top + H2 + 120, a * prog(t, 17.5 + it.d, .4));
+    }
+    headline('One app. iPhone and iPad.', t, 17.1, 21.85);
+  } },
+  // Tested and recorded.
+  { t0: 22, t1: 28.15, draw(t) {
+    const env = envelope(t, 22, 28.15);
+    const cam = kf(t, [[22, { fx: 720, fy: 440, z: 1.08 }], [23.4, { fx: 720, fy: 440, z: 1.12 }, E.lin], [24.3, { fx: 1035, fy: 450, z: 1.75 }, E.io], [28.15, { fx: 1050, fy: 470, z: 1.85 }, E.lin]]);
+    const seq = [164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175];
+    const idx = Math.min(seq.length - 1, Math.floor(Math.max(0, t - 22) / .5));
+    const m = uiCard(t, shot(seq[idx]), env, cam);
+    spotlight(m, { x: 832, y: 134, w: 132, h: 20 }, prog(t, 24.4, .35) * (1 - prog(t, 25.3, .3)), 10);
+    const rows = [396, 453, 511, 567, 624, 681];
+    rows.forEach((y, i) => {
+      const a = prog(t, 25.5 + i * .25, .2) * (1 - prog(t, 25.75 + i * .25, .3));
+      spotlight(m, { x: 858, y: y - 12, w: 420, h: 46 }, a * env.a, 6);
+    });
+    headline('Tested and recorded', t, 22.1, 27.85);
+  } },
+  // Pull request.
+  { t0: 28, t1: 31.65, draw(t) {
+    const env = envelope(t, 28, 31.65, CARD, { from: 1.06 });
+    const cam = kf(t, [[28, { fx: 600, fy: 330, z: 1.5 }], [29.0, { fx: 600, fy: 330, z: 1.8 }, E.expo], [31.65, { fx: 600, fy: 320, z: 1.9 }, E.lin]]);
+    const m = uiCard(t, shot(199), env, cam);
+    spotlight(m, { x: 449, y: 272, w: 188, h: 22 }, prog(t, 29.0, .35) * env.a, 8);
+    headline('Then it opens the PR', t, 28.1, 31.35);
+  } },
+  // End card.
+  { t0: 31.5, t1: DUR, draw(t) {
+    const lock = img('../../_kit/brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png');
+    const p = prog(t, 31.7, .9, E.expo), fade = prog(t, 35.5, .5, E.io);
+    if (lock) {
+      const w = 1500 * lerp(.86, 1, p), h = w * lock.height / lock.width;
+      ctx.save(); ctx.globalAlpha = p * (1 - fade);
+      ctx.drawImage(lock, (W - w) / 2, H / 2 - h / 2 - 120 + (1 - p) * 40, w, h); ctx.restore();
+    }
+    ctx.save(); ctx.globalAlpha = 1 - fade;
+    headline('Try it today at devin.ai', t, 32.5, 99, { size: 104, y: H / 2 + 330, weight: 500, color: 'rgba(255,255,255,0.85)', stagger: .06 });
+    ctx.restore();
+  } },
+];
+
+function drawAll(t) {
+  background(t);
+  for (const s of scenes) if (t >= s.t0 && t < s.t1 + .001) s.draw(t);
+}
+async function renderFrame(f) {
+  const t = f / FPS;
+  for (let i = 0; i < 4; i++) {
+    pending = []; drawAll(t);
+    if (!pending.length) return;
+    await Promise.all(pending.map(load));
+  }
+  throw new Error('images did not load for frame ' + f);
+}
+window.film = { frames: DUR * FPS, fps: FPS, renderFrame, ready: document.fonts.load('700 100px Inter').then(() => document.fonts.load('500 100px Inter')) };
+if (location.hash) { window.film.ready.then(() => renderFrame(Math.round(parseFloat(location.hash.slice(1)) * FPS))); }
+</script></body></html>
