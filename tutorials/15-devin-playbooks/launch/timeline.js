@@ -25,7 +25,7 @@ const el = (tag, cls, parent = stage) => { const e = document.createElement(tag)
 const shot = n => `../shots/${n}.png`;
 
 // ---------- text ----------
-function makeLine(text, { y, size, weight = 650, color = '#fff', layer }) {
+function makeLine(text, { y, size, weight = 650, color = '#1d1d1f', layer }) {
   const d = el('div', 'line', layer); d.style.top = (y - size * 0.6) + 'px'; d.style.fontSize = size + 'px'; d.style.fontWeight = weight; d.style.color = color; d.style.lineHeight = (size * 1.2) + 'px';
   const words = text.split(' ').map((w, i, a) => { const s = el('span', 'word', d); s.textContent = w + (i < a.length - 1 ? '\u00a0' : ''); return s; });
   return { d, words };
@@ -81,7 +81,7 @@ function drawCard(C, t, R, track, spots = [], pulses = [], flashes = []) {
     const g = 8; const [x0, y0] = toCard(v, R, s.r.x - g, s.r.y - g), [x1, y1] = toCard(v, R, s.r.x + s.r.w + g, s.r.y + s.r.h + g);
     const pop = 1 + 0.06 * (1 - eout(prog(t, s.t0 - 0.25, 0.4)));
     Object.assign(node.style, { left: x0 + 'px', top: y0 + 'px', width: (x1 - x0) + 'px', height: (y1 - y0) + 'px', opacity: a, zIndex: 5 + j, transform: `scale(${pop})`,
-      boxShadow: `0 0 0 9999px rgba(10,10,12,${(s.dim ?? 0.32) / (active.length > 1 ? 2 : 1)})` });
+      boxShadow: `0 0 0 9999px rgba(10,10,12,${(s.dim ?? 0.18) / (active.length > 1 ? 2 : 1)})` });
   });
   C.pulse.style.opacity = 0;
   for (const p of pulses) { const kk = prog(t, p.t, 0.6); if (t >= p.t && kk < 1) { const [x, y] = toCard(v, R, p.x, p.y); const r = 30 + 170 * eout(kk);
@@ -164,14 +164,14 @@ function rightRect(t) {
 // ---------- build DOM ----------
 const textLayer = el('div', 'layer');
 const avatar = el('img', null, textLayer); avatar.src = '../../_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png';
-Object.assign(avatar.style, { position: 'absolute', width: '360px', height: '360px', left: (W / 2 - 180) + 'px', top: '560px', filter: 'invert(1)' });
+Object.assign(avatar.style, { position: 'absolute', width: '360px', height: '360px', left: (W / 2 - 180) + 'px', top: '560px' });
 const T = {
   title: makeLine('Devin Playbooks', { y: 1150, size: 250, weight: 700, layer: textLayer }),
   once: makeLine('Write it once.', { y: 960, size: 230, weight: 700, layer: textLayer }),
   word: makeLine('Run it with one word.', { y: 1240, size: 230, weight: 700, color: '#8e8e93', layer: textLayer }),
   endA: makeLine('Write it once.', { y: 960, size: 230, weight: 700, layer: textLayer }),
   endB: makeLine('Reuse it everywhere.', { y: 1240, size: 230, weight: 700, color: '#8e8e93', layer: textLayer }),
-  cta: makeLine('Try it today at devin.ai', { y: 1420, size: 110, weight: 550, color: '#a1a1a6', layer: textLayer }),
+  cta: makeLine('Try it today at devin.ai', { y: 1420, size: 110, weight: 550, color: '#515154', layer: textLayer }),
 };
 const HEADS = [
   [4.0, 6.0, 'Create a playbook'], [6.0, 8.0, 'Write the steps once'], [8.0, 10.0, 'Give it a macro'],
@@ -180,7 +180,7 @@ const HEADS = [
   [26.0, 30.0, 'Before and after, right in the PR'],
 ].map(([t0, t1, s]) => ({ t0, t1, L: makeLine(s, { y: 262, size: 150, weight: 650, layer: textLayer }) }));
 const main = makeCard(), right = makeCard();
-const logo = el('img', null, textLayer); logo.src = '../../_kit/brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png';
+const logo = el('img', null, textLayer); logo.src = '../../_kit/brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png'; // rendered black via brightness(0)
 const LW = 1500, LH = LW * 1024 / 2984; Object.assign(logo.style, { position: 'absolute', width: LW + 'px', height: LH + 'px', left: (W / 2 - LW / 2) + 'px', top: (1000 - LH / 2) + 'px' });
 stage.appendChild(textLayer); // text above cards
 
@@ -203,7 +203,7 @@ async function render(t) {
   logo.style.opacity = clamp(prog(t, 32.0, 0.25));
   logo.style.clipPath = `inset(0 ${100 - 100 * expo(kl)}% 0 0)`;
   logo.style.transform = `scale(${0.88 + 0.12 * back(prog(t, 32.0, 0.8))})`;
-  logo.style.filter = `blur(${(1 - eout(prog(t, 32.0, 0.5))) * 18}px)`;
+  logo.style.filter = `brightness(0) blur(${(1 - eout(prog(t, 32.0, 0.5))) * 18}px)`;
   animLine(T.cta, t, 32.6, 99, { stagger: 0.05 });
   // cards
   const used = [

@@ -193,5 +193,6 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - Drive the whole edit from one deterministic `render(t)` timeline (DOM + CSS transforms over the real `shots/` PNGs) and render it with headless Chrome piping JPEG screenshots straight into ffmpeg per worker segment; no frame directories touch the disk and a 35 s 4K/60 film renders in about 5 minutes.
 - Generate the music first at a fixed BPM, then put every section change on the bar grid (120 BPM = a cut every 2 s) and save the drop for the product payoff moment. Two-pass `loudnorm` with `linear=true` lands it at −16 LUFS without pumping.
 - Typing: show 5–7 consecutive typing frames over about 1 s, then cut to the finished field; never retype long text.
-- The spotlight on the control that matters reads better with a light dim (about 30 % black) than a heavy one; a heavy dim makes the light UI look gray and washed out.
+- The spotlight on the control that matters reads better with a light dim (about 18 % black) than a heavy one; a heavy dim makes the light UI look gray against the light background.
+- Launch videos are light mode: white / very light gray backgrounds on title cards, overlays, transitions and the end card, near-black text, and the dark Devin logo (black avatar, or the lockup rendered black with CSS `filter: brightness(0)`).
 - Before rendering the full film, render ~30 half-scale stills across the timeline and tile them into 3×3 sheets; overlapping outgoing/incoming headlines and cards still visible under the end text show up immediately there.
