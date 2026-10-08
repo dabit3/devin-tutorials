@@ -3,12 +3,12 @@
 <title>Devin Code Scans launch</title>
 <style>
 @font-face { font-family: Inter; src: url(../../_kit/fonts/Inter-VF.ttf) format('truetype'); font-weight: 100 900; }
-html, body { margin: 0; background: #0a0a0b; overflow: hidden; }
-#stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; font-family: Inter, sans-serif; color: #f5f5f7;
-  background: radial-gradient(1400px 900px at 50% 45%, #1a1a1c 0%, #0a0a0b 70%); }
+html, body { margin: 0; background: #f2f2f4; overflow: hidden; }
+#stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; font-family: Inter, sans-serif; color: #1d1d1f;
+  background: radial-gradient(1400px 900px at 50% 45%, #ffffff 0%, #ededf0 75%); }
 .layer { position: absolute; inset: 0; will-change: transform, opacity; }
 .vp { position: absolute; overflow: hidden; border-radius: 28px; background: #fafafa;
-  box-shadow: 0 40px 120px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.08); transform-origin: 50% 50%; }
+  box-shadow: 0 30px 90px rgba(0,0,0,.14), 0 8px 24px rgba(0,0,0,.06), 0 0 0 1px rgba(0,0,0,.08); transform-origin: 50% 50%; }
 .cam { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; transform-origin: 0 0; }
 .cam img, .cam .shot { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; }
 .ring { position: absolute; border-radius: 10px; box-shadow: 0 0 0 3px #3b82f6, 0 0 24px 4px rgba(59,130,246,.45); opacity: 0; }
@@ -21,9 +21,9 @@ html, body { margin: 0; background: #0a0a0b; overflow: hidden; }
 .txt .w { display: inline-block; will-change: transform, opacity; }
 .h1 { font-size: 104px; font-weight: 680; letter-spacing: -0.035em; line-height: 1.04; }
 .h2 { font-size: 64px; font-weight: 600; letter-spacing: -0.03em; line-height: 1.12; }
-.sub { font-size: 40px; font-weight: 500; letter-spacing: -0.015em; color: #8e8e93; }
+.sub { font-size: 40px; font-weight: 500; letter-spacing: -0.015em; color: #6e6e73; }
 .lbl { font-size: 38px; font-weight: 600; letter-spacing: -0.02em; text-align: center; }
-.spot { position: absolute; inset: 0; background: rgba(6,6,7,.78); opacity: 0; }
+.spot { position: absolute; inset: 0; background: rgba(242,242,244,.88); opacity: 0; }
 .flash { position: absolute; inset: 0; background: #fff; opacity: 0; pointer-events: none; }
 </style></head>
 <body><div id="stage"></div>
@@ -103,10 +103,10 @@ const WIDE = { x: 200, y: 290, w: 1520, h: 700 };
 
 // A. intro
 mk('A');
-const mark = el('img', '', L.A, { position: 'absolute', width: '150px', height: '150px', left: (W / 2 - 75) + 'px', top: '250px', filter: 'invert(1)' });
+const mark = el('img', '', L.A, { position: 'absolute', width: '150px', height: '150px', left: (W / 2 - 75) + 'px', top: '250px' });
 mark.src = '../../_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png';
 const tTitle = Text(L.A, 'Devin Code Scans', 'h1', { left: 0, width: W + 'px', textAlign: 'center', top: '440px' });
-const tA1 = Text(L.A, 'Find issues across your repo.', 'h2', { left: 0, width: W + 'px', textAlign: 'center', top: '620px', color: '#8e8e93' });
+const tA1 = Text(L.A, 'Find issues across your repo.', 'h2', { left: 0, width: W + 'px', textAlign: 'center', top: '620px', color: '#6e6e73' });
 const tA2 = Text(L.A, 'Then fix them.', 'h2', { left: 0, width: W + 'px', textAlign: 'center', top: '700px' });
 
 // B. /scan + describe
@@ -179,9 +179,9 @@ const tH = Text(L.H, 'From scan to pull request', 'h2', { left: 0, width: W + 'p
 // I. end card
 mk('I');
 const lock = el('div', '', L.I, { position: 'absolute', left: (W / 2 - 450) + 'px', top: '330px', width: '900px', height: '309px', overflow: 'hidden' });
-const lockImg = el('img', '', lock, { position: 'absolute', left: 0, top: 0, width: '900px', height: '309px' });
+const lockImg = el('img', '', lock, { position: 'absolute', left: 0, top: 0, width: '900px', height: '309px', filter: 'brightness(0)' });
 lockImg.src = '../../_kit/brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png';
-const tI = Text(L.I, 'Try it today at devin.ai', 'h2', { left: 0, width: W + 'px', textAlign: 'center', top: '720px', color: '#d1d1d6' });
+const tI = Text(L.I, 'Try it today at devin.ai', 'h2', { left: 0, width: W + 'px', textAlign: 'center', top: '720px', color: '#3a3a3c' });
 
 // ---------- per-frame ----------
 const vis = (layer, t, a, b) => { const on = t >= a && t < b; layer.style.display = on ? 'block' : 'none'; return on; };
