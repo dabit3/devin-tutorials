@@ -2,7 +2,7 @@
 <html><head><meta charset="utf-8">
 <style>
 @font-face { font-family: 'Inter'; src: url('../../_kit/fonts/Inter-VF.ttf') format('truetype'); font-weight: 100 900; }
-html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #fff; }
 * { box-sizing: border-box; }
 #stage { position: absolute; inset: 0; overflow: hidden; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
 #bg { position: absolute; inset: 0; }
@@ -45,7 +45,7 @@ function track(keys, t, e = eio) { // keys: [[t, ...vals]]
 const mixColor = (c1, c2, k) => `rgb(${c1.map((v, i) => Math.round(lerp(v, c2[i], k))).join(',')})`;
 
 const stage = document.getElementById('stage'), bg = document.getElementById('bg');
-const BLACK = [0, 0, 0], GRAY = [236, 236, 238];
+const LIGHT = [255, 255, 255], GRAY = [236, 236, 238];
 
 // ---------- UI clips (real Devin screenshots) ----------
 // cam keys: [t, cx, cy, zoom] in screenshot CSS px (1440x810); spots: [tIn, tOut, x, y, w, h]
@@ -101,21 +101,21 @@ const capEls = CAPS.map(c => {
 });
 // title + payoff + end
 const title = el('div', null, stage);
-const tLabel = el('div', 'line', title, '<span><img src="../../_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png" style="width:58px;height:58px;vertical-align:-14px;margin-right:16px;filter:invert(1)">Devin Automations</span>');
-Object.assign(tLabel.style, { top: '330px', fontSize: '50px', color: '#a1a1a6', fontWeight: 560, letterSpacing: '-0.01em' });
+const tLabel = el('div', 'line', title, '<span><img src="../../_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png" style="width:58px;height:58px;vertical-align:-14px;margin-right:16px;">Devin Automations</span>');
+Object.assign(tLabel.style, { top: '330px', fontSize: '50px', color: '#6e6e73', fontWeight: 560, letterSpacing: '-0.01em' });
 const tWords = ['Recurring work,', 'on autopilot.'].map((txt, i) => {
-  const d = el('div', 'line', title); Object.assign(d.style, { top: (440 + i * 150) + 'px', fontSize: '140px', color: '#fff', fontWeight: 680, letterSpacing: '-0.04em' });
+  const d = el('div', 'line', title); Object.assign(d.style, { top: (440 + i * 150) + 'px', fontSize: '140px', color: '#111', fontWeight: 680, letterSpacing: '-0.04em' });
   return txt.split(' ').map((w, j) => { const s = el('span', null, d, w); if (j < txt.split(' ').length - 1) d.appendChild(document.createTextNode(' ')); return s; });
 });
 const pay = ['Define it once.', 'Devin handles every run.'].map((txt, i) => {
-  const d = el('div', 'line', stage); Object.assign(d.style, { top: (380 + i * 160) + 'px', fontSize: '128px', color: i ? '#b0b0b5' : '#fff', fontWeight: 680, letterSpacing: '-0.04em' });
+  const d = el('div', 'line', stage); Object.assign(d.style, { top: (380 + i * 160) + 'px', fontSize: '128px', color: i ? '#86868b' : '#111', fontWeight: 680, letterSpacing: '-0.04em' });
   const ws = txt.split(' '); return ws.map((w, j) => { const s = el('span', null, d, w); if (j < ws.length - 1) d.appendChild(document.createTextNode(' ')); return s; });
 });
 const end = el('div', null, stage); end.id = 'end';
-const logo = el('img', null, end); logo.src = '../../_kit/brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png';
+const logo = el('img', null, end); logo.src = 'devin-lockup-black.png';
 Object.assign(logo.style, { width: '760px', left: '580px', top: '330px' });
-const cta = el('div', 'line', end); Object.assign(cta.style, { top: '668px', fontSize: '60px', color: '#fff', fontWeight: 560, letterSpacing: '-0.02em' });
-const ctaWords = ['Try', 'it', 'today', 'at', 'devin.ai'].map((w, j, a) => { const s = el('span', null, cta, w); if (j < a.length - 1) cta.appendChild(document.createTextNode(' ')); if (w === 'devin.ai') s.style.color = '#fff'; return s; });
+const cta = el('div', 'line', end); Object.assign(cta.style, { top: '668px', fontSize: '60px', color: '#3a3a3c', fontWeight: 560, letterSpacing: '-0.02em' });
+const ctaWords = ['Try', 'it', 'today', 'at', 'devin.ai'].map((w, j, a) => { const s = el('span', null, cta, w); if (j < a.length - 1) cta.appendChild(document.createTextNode(' ')); if (w === 'devin.ai') s.style.color = '#111'; return s; });
 
 // ---------- word animation ----------
 function wordsIn(spans, t, t0, stagger = 0.055, dur = 0.5, rise = 46) {
@@ -132,9 +132,9 @@ function lineOut(node, t, t1, dur = 0.25) {
 
 // ---------- render one frame ----------
 function renderAt(t) {
-  // background: black title -> gray UI -> black payoff/end
-  const toGray = prog(t, 2.7, 0.5), toBlack = prog(t, 27.05, 0.4);
-  bg.style.background = mixColor(mixColor(BLACK, GRAY, toGray).match(/\d+/g).map(Number), BLACK, toBlack);
+  // background: white title -> light gray UI -> white payoff/end
+  const toGray = prog(t, 2.7, 0.5), toLight = prog(t, 27.05, 0.4);
+  bg.style.background = mixColor(mixColor(LIGHT, GRAY, toGray).match(/\d+/g).map(Number), LIGHT, toLight);
 
   // title
   const tOut = prog(t, 2.6, 0.45);
