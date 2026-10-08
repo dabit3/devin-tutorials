@@ -1,0 +1,315 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Devin Code Scans launch</title>
+<style>
+@font-face { font-family: Inter; src: url(../../_kit/fonts/Inter-VF.ttf) format('truetype'); font-weight: 100 900; }
+html, body { margin: 0; background: #0a0a0b; overflow: hidden; }
+#stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; font-family: Inter, sans-serif; color: #f5f5f7;
+  background: radial-gradient(1400px 900px at 50% 45%, #1a1a1c 0%, #0a0a0b 70%); }
+.layer { position: absolute; inset: 0; will-change: transform, opacity; }
+.vp { position: absolute; overflow: hidden; border-radius: 28px; background: #fafafa;
+  box-shadow: 0 40px 120px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.08); transform-origin: 50% 50%; }
+.cam { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; transform-origin: 0 0; }
+.cam img, .cam .shot { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; }
+.ring { position: absolute; border-radius: 10px; box-shadow: 0 0 0 3px #3b82f6, 0 0 24px 4px rgba(59,130,246,.45); opacity: 0; }
+.pulse { position: absolute; width: 40px; height: 40px; margin: -20px 0 0 -20px; border-radius: 50%; border: 3px solid #3b82f6; opacity: 0; }
+.cursor { position: absolute; width: 22px; height: 30px; opacity: 0; transform-origin: 2px 2px; }
+.patch { position: absolute; }
+.row { position: absolute; left: 0; background-repeat: no-repeat; background-size: 1440px 810px; }
+.caret { position: absolute; width: 2px; background: #3b82f6; }
+.txt { position: absolute; white-space: nowrap; }
+.txt .w { display: inline-block; will-change: transform, opacity; }
+.h1 { font-size: 104px; font-weight: 680; letter-spacing: -0.035em; line-height: 1.04; }
+.h2 { font-size: 64px; font-weight: 600; letter-spacing: -0.03em; line-height: 1.12; }
+.sub { font-size: 40px; font-weight: 500; letter-spacing: -0.015em; color: #8e8e93; }
+.lbl { font-size: 38px; font-weight: 600; letter-spacing: -0.02em; text-align: center; }
+.spot { position: absolute; inset: 0; background: rgba(6,6,7,.78); opacity: 0; }
+.flash { position: absolute; inset: 0; background: #fff; opacity: 0; pointer-events: none; }
+</style></head>
+<body><div id="stage"></div>
+<script>
+const W = 1920, H = 1080, FPS = 60, DURATION = 36.0;
+const S = (n) => `../shots/${n}.png`;
+const stage = document.getElementById('stage');
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const ease = {
+  lin: k => k,
+  io: k => k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2,
+  out: k => 1 - Math.pow(1 - k, 3),
+  expo: k => k === 1 ? 1 : 1 - Math.pow(2, -10 * k),
+  back: k => { const c = 1.4; return 1 + (c + 1) * Math.pow(k - 1, 3) + c * Math.pow(k - 1, 2); },
+};
+const prog = (t, t0, d, e = ease.out) => e(clamp((t - t0) / d));
+// keyframes: [[t, {a:..}], ...] -> interpolated object, eased per segment
+function kf(t, frames, e = ease.io) {
+  if (t <= frames[0][0]) return { ...frames[0][1] };
+  for (let i = 0; i < frames.length - 1; i++) {
+    const [t0, a] = frames[i], [t1, b] = frames[i + 1];
+    if (t <= t1) { const k = e(clamp((t - t0) / (t1 - t0))); const o = {}; for (const key in a) o[key] = lerp(a[key], b[key], k); return o; }
+  }
+  return { ...frames[frames.length - 1][1] };
+}
+const el = (tag, cls, parent, css = {}) => { const e = document.createElement(tag); if (cls) e.className = cls; Object.assign(e.style, css); parent.appendChild(e); return e; };
+
+// ---------- view: rounded viewport showing a camera onto 1440x810 screenshots ----------
+function View(parent, shots) {
+  const vp = el('div', 'vp', parent), cam = el('div', 'cam', vp);
+  const imgs = {}; for (const n of shots) { const i = el('img', '', cam); i.src = S(n); i.decoding = 'sync'; imgs[n] = i; }
+  return { vp, cam, imgs,
+    set({ x, y, w, h, op = 1, sc = 1, dx = 0, dy = 0, blur = 0 }, { cx, cy, s }, show) {
+      Object.assign(vp.style, { left: x + 'px', top: y + 'px', width: w + 'px', height: h + 'px', opacity: op,
+        transform: `translate(${dx}px,${dy}px) scale(${sc})`, filter: blur ? `blur(${blur}px)` : 'none', display: op > 0.001 ? 'block' : 'none' });
+      s = Math.max(s, w / 1440, h / 810);
+      cx = clamp(cx, w / (2 * s), 1440 - w / (2 * s)); cy = clamp(cy, h / (2 * s), 810 - h / (2 * s));
+      cam.style.transform = `translate(${w / 2 - cx * s}px,${h / 2 - cy * s}px) scale(${s})`;
+      this.map = (px, py) => ({ x: x + dx + w / 2 + (px - cx) * s, y: y + dy + h / 2 + (py - cy) * s });
+      for (const n in imgs) imgs[n].style.opacity = show[n] ?? 0;
+    } };
+}
+function Ring(view, r) { const e = el('div', 'ring', view.cam, { left: r.x - 6 + 'px', top: r.y - 5 + 'px', width: r.w + 12 + 'px', height: r.h + 10 + 'px' }); return e; }
+function Pulse(view, p) { return el('div', 'pulse', view.cam, { left: p.x + 'px', top: p.y + 'px' }); }
+function Cursor(view) {
+  const c = el('div', 'cursor', view.cam);
+  c.innerHTML = '<svg viewBox="0 0 22 30" width="22" height="30"><path d="M2 2 L2 24 L7.5 18.8 L11.2 27.5 L15 25.9 L11.4 17.4 L19 17.4 Z" fill="#111" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>';
+  return c;
+}
+const setCursor = (c, p, op, press = 0) => Object.assign(c.style, { left: p.x - 2 + 'px', top: p.y - 2 + 'px', opacity: op, transform: `scale(${1 - 0.15 * press})` });
+const setPulse = (e, t, t0) => { const k = clamp((t - t0) / 0.55); e.style.opacity = k > 0 && k < 1 ? (1 - k) : 0; e.style.transform = `scale(${0.6 + 2.2 * ease.out(k)})`; };
+const setRing = (e, t, t0, t1 = 99) => { const k = prog(t, t0, .3) * (1 - prog(t, t1, .25)); e.style.opacity = k; e.style.transform = `scale(${lerp(1.15, 1, ease.back(clamp((t - t0) / .35)))})`; };
+
+// ---------- kinetic text ----------
+function Text(parent, html, cls, css) {
+  const d = el('div', 'txt ' + cls, parent, css);
+  d.innerHTML = html.split(' ').map(w => `<span class="w">${w}</span>`).join(' ');
+  return { d, words: [...d.querySelectorAll('.w')] };
+}
+function setText(T, t, t0, t1, { stagger = 0.07, dur = 0.5, rise = 46, exitDur = 0.25 } = {}) {
+  const on = t >= t0 - 0.01 && t <= t1 + exitDur + 0.01; T.d.style.display = on ? 'block' : 'none'; if (!on) return;
+  const ex = prog(t, t1, exitDur, ease.io);
+  T.words.forEach((w, i) => {
+    const k = clamp((t - t0 - i * stagger) / dur), e = ease.expo(k);
+    w.style.opacity = Math.min(1, k * 2.2) * (1 - ex);
+    w.style.transform = `translateY(${(1 - e) * rise - ex * 24}px)`;
+    w.style.filter = k < 1 ? `blur(${(1 - e) * 10}px)` : 'none';
+  });
+}
+
+// ---------- scenes ----------
+const L = {}; // layers
+const mk = (name) => (L[name] = el('div', 'layer', stage));
+const SPLIT_R = { x: 760, y: 110, w: 1040, h: 860 }, SPLIT_L = { x: 120, y: 110, w: 1040, h: 860 };
+const WIDE = { x: 200, y: 290, w: 1520, h: 700 };
+
+// A. intro
+mk('A');
+const mark = el('img', '', L.A, { position: 'absolute', width: '150px', height: '150px', left: (W / 2 - 75) + 'px', top: '250px', filter: 'invert(1)' });
+mark.src = '../../_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png';
+const tTitle = Text(L.A, 'Devin Code Scans', 'h1', { left: 0, width: W + 'px', textAlign: 'center', top: '440px' });
+const tA1 = Text(L.A, 'Find issues across your repo.', 'h2', { left: 0, width: W + 'px', textAlign: 'center', top: '620px', color: '#8e8e93' });
+const tA2 = Text(L.A, 'Then fix them.', 'h2', { left: 0, width: W + 'px', textAlign: 'center', top: '700px' });
+
+// B. /scan + describe
+mk('B');
+const vB = View(L.B, ['0004', '0019']);
+const ringScan = Ring(vB, { x: 524, y: 355, w: 44, h: 26 });
+const patchB = el('div', 'patch', vB.cam), caretB = el('div', 'caret', vB.cam);
+const tB1 = Text(L.B, 'Type /scan', 'h1', { left: '120px', top: '420px' });
+const tB1s = Text(L.B, 'Pick a scan type', 'sub', { left: '124px', top: '560px' });
+const tB2 = Text(L.B, 'Or say what', 'h1', { left: '120px', top: '360px' });
+const tB2b = Text(L.B, 'to look for', 'h1', { left: '120px', top: '470px' });
+const pulseSend = Pulse(vB, { x: 1205, y: 442 });
+const curB = Cursor(vB);
+
+// C. setup card -> start scan -> started
+mk('C');
+const vC = View(L.C, ['0024', '0030']);
+const ringStart = Ring(vC, { x: 1171, y: 527, w: 82, h: 26 });
+const pulseStart = Pulse(vC, { x: 1212, y: 540 });
+const curC = Cursor(vC);
+const tC1 = Text(L.C, 'Confirm what to scan', 'h2', { left: 0, width: W + 'px', textAlign: 'center', top: '130px' });
+const tC2 = Text(L.C, 'The scan runs on its own', 'h2', { left: 0, width: W + 'px', textAlign: 'center', top: '130px' });
+
+// D. findings table
+mk('D');
+const vD = View(L.D, ['0095']);
+const patchD = el('div', 'patch', vD.cam, { left: '800px', top: '300px', width: '620px', height: '262px' });
+const ROWS = [319, 357, 394, 431, 469, 506, 544];
+const rowEls = ROWS.map(y => el('div', 'row', vD.cam, { top: (y - 18) + 'px', left: '812px', width: '600px', height: '36px',
+  backgroundImage: `url(${S('0095')})`, backgroundPosition: `-812px ${-(y - 18)}px` }));
+const ringRow = Ring(vD, { x: 822, y: 340, w: 588, h: 34 });
+const tD1 = Text(L.D, 'Findings,', 'h1', { left: '1250px', top: '380px' });
+const tD2 = Text(L.D, 'ranked by', 'h1', { left: '1250px', top: '490px' });
+const tD3 = Text(L.D, 'severity', 'h1', { left: '1250px', top: '600px' });
+
+// E. finding detail + Fix with Devin
+mk('E');
+const vE = View(L.E, ['0098']);
+const spot = el('div', 'spot', L.E);
+const ringFix = Ring(vE, { x: 1222, y: 748, w: 177, h: 30 });
+const pulseFix = Pulse(vE, { x: 1300, y: 763 });
+const curE = Cursor(vE);
+const tE1 = Text(L.E, 'Every finding, explained', 'h2', { left: 0, width: W + 'px', textAlign: 'center', top: '130px' });
+const tE2 = Text(L.E, 'Fix with Devin', 'h1', { left: 0, width: W + 'px', textAlign: 'center', top: '150px' });
+const flash = el('div', 'flash', stage);
+
+// F. fix session + PR
+mk('F');
+const vF = View(L.F, ['0133', '0138']);
+const ringSess = Ring(vF, { x: 92, y: 438, w: 222, h: 42 });
+const ringPR = Ring(vF, { x: 816, y: 122, w: 84, h: 28 });
+const tF1 = Text(L.F, 'Devin fixes it', 'h1', { left: '120px', top: '426px', fontSize: '88px' });
+const tF2 = Text(L.F, 'and opens a PR', 'h1', { left: '120px', top: '426px', fontSize: '88px' });
+
+// G. diff
+mk('G');
+const vG = View(L.G, ['0139', '0141']);
+const tG1 = Text(L.G, 'Review the diff', 'h1', { left: '1236px', top: '410px', fontSize: '88px' });
+const tG1s = Text(L.G, 'right inside the finding', 'sub', { left: '1240px', top: '522px' });
+
+// H. recap
+mk('H');
+const CARD = { w: 520, h: 600, y: 300 };
+const cardX = [150, 700, 1250];
+const vH = [View(L.H, ['0095']), View(L.H, ['0098']), View(L.H, ['0141'])];
+const camH = [{ cx: 1020, cy: 400, s: 1.3 }, { cx: 1080, cy: 330, s: 1.3 }, { cx: 1100, cy: 450, s: 1.3 }];
+const lblH = ['Scan', 'Review', 'Fix'].map((s, i) => Text(L.H, s, 'lbl', { left: cardX[i] + 'px', width: CARD.w + 'px', top: '935px' }));
+const tH = Text(L.H, 'From scan to pull request', 'h2', { left: 0, width: W + 'px', textAlign: 'center', top: '140px' });
+
+// I. end card
+mk('I');
+const lock = el('div', '', L.I, { position: 'absolute', left: (W / 2 - 450) + 'px', top: '330px', width: '900px', height: '309px', overflow: 'hidden' });
+const lockImg = el('img', '', lock, { position: 'absolute', left: 0, top: 0, width: '900px', height: '309px' });
+lockImg.src = '../../_kit/brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png';
+const tI = Text(L.I, 'Try it today at devin.ai', 'h2', { left: 0, width: W + 'px', textAlign: 'center', top: '720px', color: '#d1d1d6' });
+
+// ---------- per-frame ----------
+const vis = (layer, t, a, b) => { const on = t >= a && t < b; layer.style.display = on ? 'block' : 'none'; return on; };
+// enter/exit for a viewport card: slide in from below with scale, exit by scaling up and fading
+function cardAnim(t, t0, t1, from = { dy: 80 }) {
+  const i = ease.expo(clamp((t - t0) / 0.6)), o = ease.io(clamp((t - t1) / 0.35));
+  return { op: clamp((t - t0) / 0.18) * (1 - o), sc: lerp(0.9, 1, i) * lerp(1, 1.06, o), dx: (1 - i) * (from.dx || 0) + o * (from.ox || 0), dy: (1 - i) * (from.dy || 0) + o * (from.oy || 0), blur: o * 8 };
+}
+
+function render(t) {
+  // A 0-4
+  if (vis(L.A, t, 0, 4.1)) {
+    const k = ease.back(clamp((t - 0.15) / 0.7)), out = ease.io(clamp((t - 3.65) / 0.4));
+    const up = ease.io(clamp((t - 1.85) / 0.5)) * -90;
+    mark.style.opacity = clamp((t - 0.15) / 0.25) * (1 - out);
+    mark.style.transform = `translateY(${up}px) scale(${lerp(0.4, 1, k) * (1 + out * .3)}) rotate(${(1 - k) * -40}deg)`;
+    setText(tTitle, t, 0.55, 3.65, { stagger: 0.12, dur: 0.6, rise: 70, exitDur: .4 });
+    tTitle.d.style.transform = `translateY(${up}px) scale(${1 + out * .12})`;
+    setText(tA1, t, 2.0, 3.65, { stagger: 0.06, exitDur: .4 }); tA1.d.style.transform = `translateY(${up}px)`;
+    setText(tA2, t, 3.0, 3.65, { stagger: 0.08, exitDur: .4 }); tA2.d.style.transform = `translateY(${up}px)`;
+  }
+  // B 4-8
+  if (vis(L.B, t, 3.9, 8.4)) {
+    const a = cardAnim(t, 3.95, 7.9, { dy: 120, ox: -160 });
+    const c = kf(t, [[4.0, { cx: 860, cy: 520, s: 1.30 }], [5.9, { cx: 880, cy: 520, s: 1.42 }], [6.3, { cx: 800, cy: 400, s: 1.42 }], [8.0, { cx: 820, cy: 400, s: 1.55 }]]);
+    const x = prog(t, 5.95, .3, ease.io);
+    vB.set({ ...SPLIT_R, ...a }, c, { '0004': 1, '0019': x });
+    setRing(ringScan, t, 4.45, 5.8);
+    // typing reveal over the finished prompt
+    const rv = prog(t, 6.1, 0.75, ease.lin), x0 = 570, x1 = 1000, edge = lerp(x0, x1, rv);
+    const typing = t >= 5.95 && t < 6.95;
+    Object.assign(patchB.style, { display: t >= 5.95 && rv < 1 ? 'block' : 'none', left: edge + 'px', top: '352px', width: (x1 + 4 - edge) + 'px', height: '32px', background: L.bg19 });
+    Object.assign(caretB.style, { display: typing ? 'block' : 'none', left: (rv < 1 ? edge + 2 : 999) + 'px', top: '357px', height: '22px', opacity: x });
+    const cp = kf(t, [[6.9, { x: 1000, y: 520 }], [7.35, { x: 1207, y: 446 }]]);
+    setCursor(curB, cp, prog(t, 6.9, .15) * (1 - prog(t, 7.85, .1)), clamp(1 - Math.abs(t - 7.5) / .1));
+    setPulse(pulseSend, t, 7.5);
+    setText(tB1, t, 4.15, 5.8); setText(tB1s, t, 4.5, 5.8);
+    setText(tB2, t, 6.0, 7.8); setText(tB2b, t, 6.15, 7.8);
+  }
+  // C 8-12
+  if (vis(L.C, t, 7.9, 12.4)) {
+    const a = cardAnim(t, 7.95, 11.9, { dy: 140, oy: -40 });
+    const c = kf(t, [[8.0, { cx: 885, cy: 420, s: 1.55 }], [9.9, { cx: 920, cy: 440, s: 1.7 }], [10.4, { cx: 885, cy: 540, s: 1.7 }], [12, { cx: 885, cy: 540, s: 1.82 }]]);
+    vC.set({ ...WIDE, ...a }, c, { '0024': 1, '0030': prog(t, 10.2, .3, ease.io) });
+    setRing(ringStart, t, 9.25, 10.15);
+    const cp = kf(t, [[8.8, { x: 1000, y: 470 }], [9.65, { x: 1214, y: 544 }]]);
+    setCursor(curC, cp, prog(t, 8.8, .15) * (1 - prog(t, 10.2, .1)), clamp(1 - Math.abs(t - 10.0) / .1));
+    setPulse(pulseStart, t, 10.0);
+    setText(tC1, t, 8.1, 9.95); setText(tC2, t, 10.25, 11.8);
+  }
+  // D 12-16
+  if (vis(L.D, t, 11.9, 16.4)) {
+    const a = cardAnim(t, 11.95, 15.9, { dx: -140, ox: 0 });
+    const c = kf(t, [[12, { cx: 1100, cy: 330, s: 1.55 }], [14.6, { cx: 1100, cy: 340, s: 1.62 }], [16, { cx: 1050, cy: 360, s: 1.85 }]]);
+    vD.set({ ...SPLIT_L, ...a }, c, { '0095': 1 });
+    patchD.style.background = L.bg95;
+    rowEls.forEach((r, i) => { const k = clamp((t - 12.35 - i * 0.125) / 0.4), e = ease.expo(k); r.style.opacity = Math.min(1, k * 2); r.style.transform = `translateX(${(1 - e) * 60}px)`; });
+    setRing(ringRow, t, 14.6, 15.85);
+    setText(tD1, t, 12.1, 15.8); setText(tD2, t, 12.25, 15.8); setText(tD3, t, 12.4, 15.8);
+  }
+  // E 16-20
+  if (vis(L.E, t, 15.9, 20.25)) {
+    const a = cardAnim(t, 15.95, 99, { dy: 120 });
+    const c = kf(t, [[16, { cx: 1100, cy: 230, s: 1.6 }], [18.1, { cx: 1100, cy: 520, s: 1.6 }], [18.9, { cx: 1250, cy: 700, s: 1.9 }], [20.1, { cx: 1290, cy: 740, s: 2.1 }]]);
+    const big = prog(t, 18.85, .3, ease.io);
+    vE.set({ x: lerp(WIDE.x, 0, big), y: lerp(WIDE.y, 0, big), w: lerp(WIDE.w, W, big), h: lerp(WIDE.h, H, big), ...a }, c, { '0098': 1 });
+    vE.vp.style.borderRadius = lerp(28, 0, big) + 'px';
+    spot.style.opacity = prog(t, 19.0, .25) * 1;
+    // spotlight: punch a hole around the button by masking the dim layer with a radial gradient at the button's stage position
+    const m = vE.map(1310, 763);
+    spot.style.webkitMaskImage = spot.style.maskImage = `radial-gradient(ellipse 260px 95px at ${m.x}px ${m.y}px, transparent 62%, black 100%)`;
+    setRing(ringFix, t, 19.0, 99);
+    const cp = kf(t, [[18.6, { x: 1100, y: 680 }], [19.55, { x: 1302, y: 768 }]]);
+    setCursor(curE, cp, prog(t, 18.6, .15), clamp(1 - Math.abs(t - 20.0) / .1));
+    setPulse(pulseFix, t, 20.0);
+    setText(tE1, t, 16.1, 18.75); setText(tE2, t, 19.0, 99, { stagger: 0.1 });
+    tE2.d.style.zIndex = 5;
+  } else { spot.style.opacity = 0; }
+  flash.style.opacity = t >= 20 && t < 20.35 ? 0.85 * (1 - (t - 20) / 0.35) : 0;
+  // F 20-24
+  if (vis(L.F, t, 20.0, 24.4)) {
+    const a = cardAnim(t, 20.0, 23.9, { dy: 0, ox: -120 });
+    const c = kf(t, [[20, { cx: 200, cy: 420, s: 2.0 }], [21.9, { cx: 190, cy: 430, s: 1.9 }], [22.3, { cx: 1100, cy: 240, s: 1.55 }], [24, { cx: 1100, cy: 250, s: 1.68 }]]);
+    vF.set({ ...SPLIT_R, ...a }, c, { '0133': 1, '0138': prog(t, 22.0, .3, ease.io) });
+    setRing(ringSess, t, 20.6, 21.9); setRing(ringPR, t, 22.5, 23.8);
+    setText(tF1, t, 20.15, 21.85); setText(tF2, t, 22.1, 23.8);
+  }
+  // G 24-28
+  if (vis(L.G, t, 23.9, 28.4)) {
+    const a = cardAnim(t, 23.95, 27.9, { dx: -140, oy: 60 });
+    const c = kf(t, [[24, { cx: 1105, cy: 470, s: 1.6 }], [25.9, { cx: 1105, cy: 560, s: 1.6 }], [26.3, { cx: 1105, cy: 330, s: 1.6 }], [28, { cx: 1105, cy: 560, s: 1.6 }]]);
+    vG.set({ ...SPLIT_L, ...a }, c, { '0139': 1, '0141': prog(t, 26.0, .3, ease.io) });
+    setText(tG1, t, 24.15, 27.8); setText(tG1s, t, 24.5, 27.8);
+  }
+  // H 28-32
+  if (vis(L.H, t, 27.9, 32.4)) {
+    vH.forEach((v, i) => {
+      const t0 = 28.0 + i * 0.5, k = ease.expo(clamp((t - t0) / 0.6)), o = ease.io(clamp((t - 31.6 - i * 0.06) / 0.35));
+      const c = { ...camH[i], s: camH[i].s + (t - t0) * 0.02 };
+      v.set({ x: cardX[i], y: CARD.y, w: CARD.w, h: CARD.h, op: clamp((t - t0) / .15) * (1 - o), sc: lerp(0.85, 1, k) * lerp(1, 0.92, o), dy: (1 - k) * 160 - o * 30 }, c, { [Object.keys(v.imgs)[0]]: 1 });
+      setText(lblH[i], t, t0 + 0.15, 31.6);
+    });
+    setText(tH, t, 29.6, 31.6, { stagger: 0.08 });
+  }
+  // I 32-36
+  if (vis(L.I, t, 31.9, DURATION + 1)) {
+    const k = ease.expo(clamp((t - 32.0) / 0.9)), drift = 1 + (t - 32) * 0.008;
+    lock.style.opacity = clamp((t - 32.0) / 0.2);
+    lock.style.transform = `scale(${lerp(0.82, 1, k) * drift})`;
+    lockImg.style.clipPath = `inset(0 ${(1 - ease.expo(clamp((t - 32.25) / 0.8))) * 66}% 0 0)`;
+    setText(tI, t, 33.0, 99, { stagger: 0.07 });
+    L.I.style.opacity = 1 - prog(t, 35.5, 0.5, ease.io);
+  }
+}
+
+function sample(src, x, y) {
+  return new Promise(res => { const i = new Image(); i.onload = () => { const cv = document.createElement('canvas'); cv.width = i.width; cv.height = i.height;
+    const g = cv.getContext('2d'); g.drawImage(i, 0, 0); const d = g.getImageData(Math.round(x * i.width / 1440), Math.round(y * i.width / 1440), 1, 1).data; res(`rgb(${d[0]},${d[1]},${d[2]})`); }; i.src = src; });
+}
+window.film = {
+  frames: Math.round(DURATION * FPS), fps: FPS,
+  ready: (async () => {
+    await document.fonts.load('600 40px Inter'); await document.fonts.ready;
+    L.bg19 = await sample(S('0019'), 1100, 380); L.bg95 = await sample(S('0095'), 1330, 600);
+    await Promise.all([...document.images].map(i => i.decode().catch(() => {})));
+    render(0); return true;
+  })(),
+  renderFrame: f => render(f / FPS), render,
+};
+if (!navigator.webdriver) film.ready.then(() => { const t0 = performance.now(); const loop = () => { render(((performance.now() - t0) / 1000) % DURATION); requestAnimationFrame(loop); }; loop(); });
+</script></body></html>

@@ -187,3 +187,9 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - For a narrated video, a `voice-script.md` in the folder (each spoken line by section, the prompts typed on screen, and source links), linked from its README row and attached in the chat with the video.
 - One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Launch videos
+- A single HTML page with one `render(t)` function (absolute-positioned layers, keyframes, word-by-word text) rendered with Puppeteer at 1920×1080 CSS and `deviceScaleFactor: 2` gives sharp 4K frames; expose `renderFrame(f)` and await fonts and `img.decode()` before the first frame so no frame is half-loaded. `14-devin-code-scans/launch/` is a working example.
+- Render a sparse pass first (every 30th frame) and look at a contact sheet plus a few full frames before the full render. Big headlines (≈100 px on a 1920 stage) next to a split-screen UI card clip easily; check the longest line in each scene at full size.
+- Put the screenshot inside a fixed viewport and move a camera (`translate` + `scale`) inside it, clamped to the screenshot bounds, instead of scaling the whole card; zooms then never show empty edges. Crossfade between consecutive shots of the same screen for state changes (button pressed, findings arriving).
+- `ffmpeg ... -af "atrim=0:36,afade=t=out:st=33.6:d=2.4,loudnorm=I=-16:TP=-1.5"` cuts a generated music bed to length and lands it at −16 LUFS without clipping.
