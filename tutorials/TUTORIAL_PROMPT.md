@@ -190,6 +190,7 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 
 ## Launch videos
 
+- Launch videos are light mode: white / very light gray backgrounds everywhere (title cards, overlays, transitions, end card), near-black text, and the dark Devin logo (the white lockup with `filter: brightness(0)` works).
 - Build the edit on the music's beat grid: measure BPM and first-beat offset of the track once, express every cut as a beat index (`t = offset + k * 60 / BPM`), and put the strongest product moment on the drop.
 - The committed `shots/` are 3x captures (4320x2429 for a 1440x810 page), so a camera zoom up to about 2x into a 1920-wide card stays sharp at 4K; beyond that text goes soft.
 - To point at the control that matters without arrows or colored rings: dim the rest of the shot (`box-shadow: 0 0 0 6000px rgba(0,0,0,.4)` on a rect over the control) and lift a crop of the same screenshot slightly (scale 1.06 + soft shadow). It stays real UI and works on any background.

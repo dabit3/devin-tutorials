@@ -2,12 +2,12 @@
 <html><head><meta charset="utf-8">
 <style>
 @font-face { font-family: 'Inter'; src: url('../../_kit/fonts/Inter-VF.ttf') format('truetype'); font-weight: 100 900; }
-html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #fff; }
 * { box-sizing: border-box; }
-#stage { position: absolute; inset: 0; overflow: hidden; font-family: 'Inter', sans-serif; color: #fff;
-  background: radial-gradient(ellipse 80% 70% at 50% 42%, #1b1b1c 0%, #0b0b0c 55%, #030303 100%); }
+#stage { position: absolute; inset: 0; overflow: hidden; font-family: 'Inter', sans-serif; color: #0a0a0a;
+  background: radial-gradient(ellipse 80% 70% at 50% 42%, #ffffff 0%, #f7f7f8 55%, #ececee 100%); }
 .card { position: absolute; left: 200px; top: 196px; width: 1520px; height: 855px; border-radius: 26px; overflow: hidden;
-  background: #fff; box-shadow: 0 40px 120px rgba(0,0,0,.65), 0 0 0 1px rgba(255,255,255,.07); will-change: transform, opacity; }
+  background: #fff; box-shadow: 0 30px 90px rgba(0,0,0,.13), 0 6px 20px rgba(0,0,0,.06), 0 0 0 1px rgba(0,0,0,.08); will-change: transform, opacity; }
 .cam { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; transform-origin: 0 0; }
 .cam img { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; }
 .dim { position: absolute; border-radius: 10px; }
@@ -16,7 +16,8 @@ html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; backgro
   letter-spacing: -0.035em; line-height: 110px; white-space: nowrap; }
 .w { display: inline-block; will-change: transform, opacity, filter; }
 .big { position: absolute; left: 0; right: 0; text-align: center; font-weight: 750; letter-spacing: -0.045em; white-space: nowrap; }
-.sub { position: absolute; left: 0; right: 0; text-align: center; font-weight: 500; font-size: 46px; letter-spacing: -0.02em; color: #a8a8ab; }
+.sub { position: absolute; left: 0; right: 0; text-align: center; font-weight: 500; font-size: 46px; letter-spacing: -0.02em; color: #6e6e73; }
+#lock { position: absolute; inset: 0; filter: brightness(0); }
 #lockMark, #lockWord { position: absolute; background: url('../../_kit/brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png') no-repeat; }
 </style></head>
 <body><div id="stage"></div>
@@ -71,11 +72,12 @@ const tsub = el('div', 'sub'); tsub.style.top = '720px'; tsub.textContent = 'Eve
 const rec = el('div', 'big'); Object.assign(rec.style, { top: '455px', fontSize: '150px', lineHeight: '170px' });
 const recw = words(rec, 'Nobody had to ask.');
 const LW = 1020, LH = LW * 1024 / 2984, LX = (1920 - LW) / 2, LY = 330, SPLIT = 0.33;
-const mark = el('div'); mark.id = 'lockMark';
+const lock = el('div'); lock.id = 'lock';
+const mark = el('div', '', lock); mark.id = 'lockMark';
 Object.assign(mark.style, { left: LX + 'px', top: LY + 'px', width: LW * SPLIT + 'px', height: LH + 'px', backgroundSize: `${LW}px ${LH}px`, transformOrigin: '60% 50%' });
-const word = el('div'); word.id = 'lockWord';
+const word = el('div', '', lock); word.id = 'lockWord';
 Object.assign(word.style, { left: LX + LW * SPLIT + 'px', top: LY + 'px', width: LW * (1 - SPLIT) + 'px', height: LH + 'px', backgroundSize: `${LW}px ${LH}px`, backgroundPosition: `${-LW * SPLIT}px 0` });
-const cta = el('div', 'sub', stage, 'Try it today at <b style="color:#fff;font-weight:650">devin.ai</b>');
+const cta = el('div', 'sub', stage, 'Try it today at <b style="color:#000;font-weight:650">devin.ai</b>');
 Object.assign(cta.style, { top: '720px', fontSize: '52px' });
 
 const show = (e, o, tf = '', blur = 0) => { e.style.opacity = o; e.style.transform = tf; e.style.filter = blur > 0.05 ? `blur(${blur}px)` : 'none'; e.style.visibility = o > 0.001 ? 'visible' : 'hidden'; };
@@ -118,11 +120,11 @@ function sceneAt(s, t) {
   s.camEl.style.transform = `translate(${CW / 2}px, ${CH / 2}px) scale(${K * z}) translate(${-cx}px, ${-cy}px)`;
   // Spotlight: dim everything else, lift the control that matters.
   const ps = outCubic(seg(lt, s.drop ? 0.55 : 1.35, (s.drop ? 0.55 : 1.35) + 0.45));
-  s.dimEl.style.boxShadow = `0 0 0 6000px rgba(0,0,0,${0.42 * ps})`;
+  s.dimEl.style.boxShadow = `0 0 0 6000px rgba(255,255,255,${0.5 * ps})`;
   const lift = 1 + 0.06 * ps;
   s.popEl.style.opacity = ps;
   s.popEl.style.transform = `scale(${lift})`;
-  s.popEl.style.boxShadow = `0 ${18 * ps}px ${50 * ps}px rgba(0,0,0,${0.35 * ps}), 0 0 0 1px rgba(0,0,0,${0.06 * ps})`;
+  s.popEl.style.boxShadow = `0 ${18 * ps}px ${50 * ps}px rgba(0,0,0,${0.22 * ps}), 0 0 0 1px rgba(0,0,0,${0.1 * ps})`;
   wordsAt(s.words, t, inA + (s.drop ? 0 : 0.08), s.t1 - 0.3, s.drop ? 0.05 : 0.07, !!s.drop);
 }
 
