@@ -187,3 +187,11 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - For a narrated video, a `voice-script.md` in the folder (each spoken line by section, the prompts typed on screen, and source links), linked from its README row and attached in the chat with the video.
 - One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Launch videos
+
+- Drive the whole edit from one deterministic `render(t)` timeline (DOM + CSS transforms over the real `shots/` PNGs) and render it with headless Chrome piping JPEG screenshots straight into ffmpeg per worker segment; no frame directories touch the disk and a 35 s 4K/60 film renders in about 5 minutes.
+- Generate the music first at a fixed BPM, then put every section change on the bar grid (120 BPM = a cut every 2 s) and save the drop for the product payoff moment. Two-pass `loudnorm` with `linear=true` lands it at −16 LUFS without pumping.
+- Typing: show 5–7 consecutive typing frames over about 1 s, then cut to the finished field; never retype long text.
+- The spotlight on the control that matters reads better with a light dim (about 30 % black) than a heavy one; a heavy dim makes the light UI look gray and washed out.
+- Before rendering the full film, render ~30 half-scale stills across the timeline and tile them into 3×3 sheets; overlapping outgoing/incoming headlines and cards still visible under the end text show up immediately there.
