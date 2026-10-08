@@ -10,7 +10,15 @@ canvas { display: block; }
 // Launch film: iPhone and iPad apps on Mac VMs. 120 BPM, one beat = 0.5 s.
 // Shot coordinates are CSS px of the 1440x810 captures in ../shots (stored at 3x).
 const W = 3840, H = 2160, FPS = 60, DUR = 36;
-const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const cv = document.getElementById('c'); let ctx = cv.getContext('2d');
+let layerCv = null;
+// Draw fn into an offscreen layer, then composite it at alpha (so masks fade with their card).
+function layer(alpha, fn) {
+  layerCv = layerCv || new OffscreenCanvas(W, H);
+  const main = ctx, lc = layerCv.getContext('2d'); lc.clearRect(0, 0, W, H);
+  ctx = lc; try { fn(); } finally { ctx = main; }
+  ctx.save(); ctx.globalAlpha = alpha; ctx.drawImage(layerCv, 0, 0); ctx.restore();
+}
 const SHOT_W = 1440, SHOT_H = 810;
 const CARD = { x: 420, y: 352, w: 3000, h: 1688, r: 40 };
 const ACCENT = '#0A84FF';
@@ -173,7 +181,8 @@ const scenes = [
   } },
   // Describe the app.
   { t0: 8, t1: 12.15, draw(t) {
-    const env = envelope(t, 8, 12.15);
+    const env0 = envelope(t, 8, 12.15), env = { card: env0.card, a: 1 };
+    layer(env0.a, () => {
     const cam = kf(t, [[8, { fx: 885, fy: 420, z: 1.55 }], [10.8, { fx: 885, fy: 425, z: 1.75 }, E.io], [12.15, { fx: 960, fy: 440, z: 1.85 }, E.io]]);
     const m = uiCard(t, shot(65), env, cam);
     if (m) {
@@ -184,12 +193,13 @@ const scenes = [
         if (p >= 1) return;
         const [ax, ay] = m.map(522 + 720 * p, y0), [bx, by] = m.map(1250, y1);
         ctx.save(); rr(env.card.x, env.card.y, env.card.w, env.card.h, env.card.r); ctx.clip();
-        ctx.globalAlpha = env.a; ctx.fillStyle = '#ffffff'; ctx.fillRect(ax, ay, bx - ax, by - ay); ctx.restore();
+        ctx.fillStyle = '#ffffff'; ctx.fillRect(ax, ay, bx - ax, by - ay); ctx.restore();
       });
       const press = prog(t, 11, .12) * (1 - prog(t, 11.12, .25));
       spotlight(m, { x: 1190, y: 437, w: 50, h: 32 }, prog(t, 10.5, .35) * (1 - prog(t, 11.6, .3)), 4 + press * 6);
       ripple(m, 1205, 453, 11.0, t);
     }
+    });
     headline('Describe your app', t, 8.1, 11.85);
   } },
   // Devin writes and builds it, live on the Mac.
