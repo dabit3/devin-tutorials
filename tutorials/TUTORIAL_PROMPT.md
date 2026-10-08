@@ -190,6 +190,7 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 
 ## Launch videos
 
+- Launch videos are light mode: light background (white / very light gray) everywhere, near-black text, and the dark Devin logo on the end card.
 - In a frame-stepped timeline, a window that cuts in (no entrance animation) must stay invisible before its start time; otherwise it draws a blank white panel over the previous shot. Keep the first screenshot of each window visible from the moment the window appears.
 - Clear background motion graphics (card marquees, montages) before a headline arrives, so text never sits on busy UI.
 - Generated music often ends with a hard stop; place the end card a beat before the track's last hit and add a short fade, rather than holding the logo over silence.

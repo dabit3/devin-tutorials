@@ -8,7 +8,7 @@ rings on the control that matters, kinetic Inter headlines, and the Devin lockup
 `../../_kit/brand/` on the end card.
 
 ## Files
-- `index.html` — 1920×1080 stage, styles (Inter only; black/gray/white + Devin blue rings).
+- `index.html` — 1920×1080 stage, styles: light mode (very light gray stage, near-black Inter text, black Devin lockup via `filter: brightness(0)`), Devin blue only for highlight rings.
 - `timeline.js` — the whole edit; `window.film.renderFrame(f)` poses every element for frame `f`.
   Cuts land on the 120 BPM grid of `music.mp3` (one beat = 0.5 s).
 - `render.mjs` — Puppeteer (from `../../_kit/tools/node_modules`) renders JPEG frames at 2× scale.

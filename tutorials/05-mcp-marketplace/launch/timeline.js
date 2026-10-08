@@ -21,7 +21,7 @@ const heads = [];
 function head(text, at, until, o = {}) {
   const e = el('head');
   const size = o.size || 76;
-  e.style.fontSize = size + 'px'; e.style.top = (o.top ?? 78) + 'px'; e.style.color = o.color || '#fff';
+  e.style.fontSize = size + 'px'; e.style.top = (o.top ?? 78) + 'px'; e.style.color = o.color || '#111113';
   if (o.weight) e.style.fontWeight = o.weight;
   const lines = text.split('\n');
   const words = [];
@@ -123,10 +123,10 @@ function poseWin(w, t) {
     Object.assign(p.e.style, { display: 'block', width: cw + 'px', height: ch + 'px', backgroundSize: '1440px 810px', backgroundPosition: `${-cx}px ${-cy}px` });
     p.e.style.opacity = (1 - x).toFixed(3);
     p.e.style.transform = `translate(${X.toFixed(2)}px,${Y.toFixed(2)}px) scale(${k.toFixed(4)})`;
-    p.e.style.boxShadow = `0 ${(30 * a / k).toFixed(1)}px ${(80 * a / k).toFixed(1)}px rgba(0,0,0,${(0.5 * a).toFixed(3)}), 0 0 0 ${(1 / k).toFixed(2)}px rgba(0,0,0,0.08)`;
+    p.e.style.boxShadow = `0 ${(30 * a / k).toFixed(1)}px ${(80 * a / k).toFixed(1)}px rgba(0,0,0,${(0.22 * a).toFixed(3)}), 0 0 0 ${(1 / k).toFixed(2)}px rgba(0,0,0,0.08)`;
     p.e.style.borderRadius = (14 / k).toFixed(2) + 'px';
   });
-  w.dim.style.opacity = (dim * 0.42).toFixed(3);
+  w.dim.style.opacity = (dim * 0.14).toFixed(3);
 }
 
 // ---------- marquee of real marketplace rows (intro) ----------
@@ -212,7 +212,7 @@ const W7 = win({ t0: 26.0, t1: 28.15, enter: 'push', exit: 'away', shots: [[0, '
   cam_: [[0, 720, 405, 1], [0.9, 870, 352, 1.45, 0.75]],
   rings: [{ box: [1194, 340, 34, 21], at: 0.95, until: 2.5, r: 12 }] });
 head('Ready in every session', 26.0, 28.05);
-head('Try it today at devin.ai', 29.4, 99, { size: 64, top: 640, weight: 560, color: '#d6d6d6', stagger: 0.08 });
+head('Try it today at devin.ai', 29.4, 99, { size: 64, top: 640, weight: 560, color: '#3a3a3c', stagger: 0.08 });
 
 // ================= driver =================
 function renderAt(t) {
