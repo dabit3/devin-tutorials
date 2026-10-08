@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: Inter; src: url(../../_kit/fonts/Inter-VF.ttf); font-weight: 100 900; }
+html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #f5f5f7; }
+* { box-sizing: border-box; }
+body { font-family: Inter, -apple-system, Helvetica, Arial, sans-serif; color: #1d1d1f; -webkit-font-smoothing: antialiased; }
+#stage { position: absolute; inset: 0; background: radial-gradient(120% 90% at 50% 45%, #ffffff 0%, #f5f5f7 60%, #ebebed 100%); }
+#win { position: absolute; left: 216px; top: 196px; width: 1488px; height: 837px; border-radius: 22px; overflow: hidden;
+  background: #fbfbfb; box-shadow: 0 30px 90px rgba(0,0,0,.14), 0 8px 24px rgba(0,0,0,.06), 0 0 0 1px rgba(0,0,0,.08); transform-origin: 50% 50%; }
+#win .layer { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; transform-origin: 0 0; }
+#win img.layer { display: block; }
+#dim { position: absolute; inset: 0; background: #f5f5f7; opacity: 0; pointer-events: none; }
+#fx { position: absolute; inset: 0; pointer-events: none; }
+.ring { position: absolute; border-radius: 999px; border: 3px solid rgba(17,17,17,.9); }
+#cursor { position: absolute; width: 30px; height: 30px; left: 0; top: 0; opacity: 0; filter: drop-shadow(0 2px 3px rgba(0,0,0,.35)); }
+.head { position: absolute; left: 0; right: 0; text-align: center; font-weight: 700; letter-spacing: -0.035em; white-space: nowrap; }
+.head span { display: inline-block; will-change: transform, opacity, filter; }
+.card { position: absolute; overflow: hidden; border-radius: 18px; background: #fff;
+  box-shadow: 0 30px 80px rgba(0,0,0,.18), 0 0 0 1px rgba(0,0,0,.08); }
+.card img { position: absolute; }
+#end { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; }
+#logo { width: 720px; }
+#cta { margin-top: 56px; font-size: 54px; font-weight: 600; letter-spacing: -0.03em; color: #6e6e73; }
+#cta b { color: #1d1d1f; font-weight: 700; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="win">
+    <img id="la" class="layer">
+    <img id="lb" class="layer">
+    <div id="dim"></div>
+    <div id="fx"></div>
+    <svg id="cursor" viewBox="0 0 30 30"><path d="M7 3 L7 25 L12.5 19.8 L16.4 28 L20 26.4 L16.2 18.4 L23.5 18.4 Z" fill="#111" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg>
+  </div>
+  <div id="cards"></div>
+  <div id="heads"></div>
+  <div id="end">
+    <img id="logo" src="../../_kit/brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png">
+    <div id="cta">Try it today at <b>devin.ai</b></div>
+  </div>
+</div>
+<script src="timeline.js"></script>
+</body>
+</html>
