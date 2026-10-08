@@ -187,3 +187,11 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - For a narrated video, a `voice-script.md` in the folder (each spoken line by section, the prompts typed on screen, and source links), linked from its README row and attached in the chat with the video.
 - One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Launch videos
+
+- Launch videos are light mode: light background (white / very light gray), near-black text, dark Devin logo. The dark product screenshots sit on it as rounded panels with a soft shadow.
+- A beat-locked HTML/CSS timeline (`render(t)` driven by a bar grid from the music's BPM and first-downbeat offset) rendered frame by frame with Puppeteer works well; preview single moments with `?t=` and `--times` stills before a full 4K render.
+- Hide every element by default and give each scene's elements an explicit opacity that is zero outside the scene; otherwise elements from other scenes leak into frames (check a stills contact sheet across the whole timeline first).
+- Make UI state changes (a click that changes the screen) hard cuts, not crossfades: crossfading two screenshots whose content scrolled shows ghosted double text.
+- Generated music rarely ends at the edit's length: cut it on a downbeat to the song's final bars at the end card instead of fading mid-song, then two-pass `loudnorm` to −16 LUFS.

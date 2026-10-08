@@ -1,0 +1,326 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Devin Desktop launch</title>
+<style>
+@font-face { font-family: Inter; src: url(../../_kit/fonts/Inter-VF.ttf) format('truetype'); font-weight: 100 900; }
+html, body { margin: 0; background: #f2f2f4; overflow: hidden; }
+#stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: hidden; background: #f2f2f4;
+  font-family: Inter, -apple-system, Helvetica, Arial, sans-serif; color: #111; -webkit-font-smoothing: antialiased; }
+#bg { position: absolute; inset: -200px; }
+.panel { position: absolute; overflow: hidden; border-radius: 22px; background: #141414;
+  box-shadow: 0 30px 90px rgba(0,0,0,.22), 0 6px 20px rgba(0,0,0,.10), 0 0 0 1px rgba(0,0,0,.10); will-change: transform, opacity, filter; }
+.inner { position: absolute; left: 0; top: 0; width: 3840px; height: 2160px; transform-origin: 0 0; }
+.inner img { position: absolute; left: 0; top: 0; width: 3840px; height: 2160px; }
+.ring { position: absolute; border-style: solid; border-color: #fff; box-sizing: border-box; }
+.dim { position: absolute; inset: 0; background: #f2f2f4; pointer-events: none; }
+.head { position: absolute; left: 0; width: 1920px; text-align: center; white-space: nowrap; font-weight: 650; letter-spacing: -0.035em; }
+.head .w { display: inline-block; will-change: transform, opacity, filter; }
+.label { position: absolute; text-align: center; font-size: 30px; font-weight: 550; color: rgba(0,0,0,.78); letter-spacing: -0.01em; white-space: nowrap; }
+#logo { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+#logo .part { position: absolute; background-image: url(../../_kit/brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png); background-size: 100% 100%; filter: brightness(0); }
+#fade { position: absolute; inset: 0; background: #f2f2f4; opacity: 0; }
+</style></head>
+<body><div id="stage"><div id="bg"></div><div id="layers"></div><div id="logo"></div><div id="fade"></div></div>
+<script>
+// Beat grid of music_raw.mp3: 124 BPM, first downbeat at 0.04 s. B(k) = start of bar k, b(k, q) = q beats into bar k.
+const BPM = 124, P = 60 / BPM, OFF = 0.04;
+const B = k => OFF + 4 * P * k, b = (k, q = 0) => B(k) + q * P;
+const FPS = 60, DURATION = 36.8;
+
+const clamp = (x, a = 0, c = 1) => Math.min(c, Math.max(a, x));
+const lerp = (a, c, p) => a + (c - a) * p;
+const E = {
+  outExpo: x => x >= 1 ? 1 : 1 - Math.pow(2, -10 * x),
+  outCubic: x => 1 - Math.pow(1 - x, 3),
+  inCubic: x => x * x * x,
+  inOut: x => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2,
+  outBack: x => { const c1 = 1.3, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); },
+};
+const prog = (t, a, d, e = E.outExpo) => e(clamp((t - a) / d));
+const lerpR = (r1, r2, p) => r1.map((v, i) => lerp(v, r2[i], p));
+const FULL = [0, 0, 3840, 2160];
+const SHOT = n => `../shots/${String(n).padStart(4, '0')}.png`;
+const layers = document.getElementById('layers');
+const el = (tag, cls, parent) => { const e = document.createElement(tag); if (cls) e.className = cls; (parent || layers).appendChild(e); return e; };
+
+// A rounded window showing real screenshots; `region` (shot px) is the camera framing.
+class Shot {
+  constructor(srcs) {
+    this.el = el('div', 'panel'); this.el.style.display = 'none'; this.inner = el('div', 'inner', this.el);
+    this.imgs = {}; for (const s of srcs) { const i = el('img', '', this.inner); i.src = SHOT(s); this.imgs[s] = i; }
+    this.dim = el('div', 'dim', this.el); this.rings = [];
+  }
+  ring(r, rad) { const e = el('div', 'ring', this.inner); this.rings.push({ e, r, rad }); return this.rings.length - 1; }
+  set(o) {
+    const { cx = 960, cy = 600, w = 1560, h = 877.5, scale = 1, op = 1, blur = 0, ry = 0, rx = 0, region = FULL, show = {}, dim = 0, ringOp = [], radius = 22, x = 0 } = o;
+    const s = this.el.style;
+    if (op <= 0.001) { s.display = 'none'; return; } s.display = 'block';
+    s.left = (cx - w / 2) + 'px'; s.top = (cy - h / 2) + 'px'; s.width = w + 'px'; s.height = h + 'px'; s.borderRadius = radius + 'px';
+    s.opacity = op; s.filter = blur > 0.05 ? `blur(${blur}px)` : 'none';
+    s.transform = `perspective(2400px) translateX(${x}px) rotateX(${rx}deg) rotateY(${ry}deg) scale(${scale})`;
+    const [rX, rY, rW, rH] = region; const k = Math.max(w / rW, h / rH);
+    let tx = w / 2 - (rX + rW / 2) * k, ty = h / 2 - (rY + rH / 2) * k;
+    tx = clamp(tx, w - 3840 * k, 0); ty = clamp(ty, h - 2160 * k, 0);
+    this.inner.style.transform = `translate(${tx}px, ${ty}px) scale(${k})`;
+    for (const [n, img] of Object.entries(this.imgs)) { const v = show[n] || 0; img.style.opacity = v; img.style.display = v > 0 ? 'block' : 'none'; }
+    this.dim.style.opacity = dim;
+    this.rings.forEach((g, i) => {
+      const v = ringOp[i] || 0, rs = g.e.style; rs.display = v > 0 ? 'block' : 'none'; if (!v) return;
+      const grow = (1 - v) * 18 / k;
+      rs.left = (g.r[0] - grow) + 'px'; rs.top = (g.r[1] - grow) + 'px'; rs.width = (g.r[2] + 2 * grow) + 'px'; rs.height = (g.r[3] + 2 * grow) + 'px';
+      rs.borderWidth = (3.5 / k) + 'px'; rs.borderRadius = (g.rad / k) + 'px'; rs.opacity = v;
+      rs.boxShadow = `0 0 ${24 / k}px ${4 / k}px rgba(255,255,255,.35)`;
+    });
+  }
+}
+
+// Kinetic headline: words rise in with a stagger and lift out.
+class Head {
+  constructor(text, size, y, weight = 650, color = '#111') {
+    this.el = el('div', 'head'); this.el.style.display = 'none'; this.el.style.fontSize = size + 'px'; this.el.style.top = (y - size * 0.62) + 'px';
+    this.el.style.fontWeight = weight; this.el.style.color = color;
+    this.words = text.split(' ').map((w, i, a) => { const s = el('span', 'w', this.el); s.textContent = w + (i < a.length - 1 ? '\u00a0' : ''); return s; });
+  }
+  set(t, tin, tout, o = {}) {
+    const { stagger = 0.055, dy = 46, scale = 1, y = 0, dur = 0.55 } = o;
+    const vis = t >= tin - 0.01 && t <= tout + 0.25; this.el.style.display = vis ? 'block' : 'none'; if (!vis) return;
+    this.el.style.transform = `translateY(${y}px) scale(${scale})`;
+    const q = prog(t, tout, 0.2, E.inCubic);
+    this.words.forEach((s, i) => {
+      const p = prog(t, tin + i * stagger, dur);
+      s.style.opacity = p * (1 - q);
+      s.style.transform = `translateY(${(1 - p) * dy - q * 30}px)`;
+      const bl = (1 - p) * 10 + q * 8; s.style.filter = bl > 0.05 ? `blur(${bl}px)` : 'none';
+    });
+  }
+}
+
+// Standard window entrance/exit used by most scenes.
+function winState(t, tin, tout, enter = 'zoom', exit = 'zoom') {
+  const pi = prog(t, tin, 0.42), po = prog(t, tout, 0.3, E.inCubic);
+  let op = Math.min(clamp((t - tin) / 0.16), 1 - po), scale = 1, blur = 0, x = 0;
+  if (enter === 'zoom') { scale = lerp(1.07, 1, pi); blur = (1 - pi) * 10; }
+  if (enter === 'slide') { x = (1 - pi) * 1500; }
+  if (exit === 'zoom') { scale *= lerp(1, 0.93, po); blur += po * 8; }
+  if (exit === 'slide') { x -= po * 1500; op = Math.min(clamp((t - tin) / 0.16), 1 - prog(t, tout + 0.15, 0.15, E.inCubic)); }
+  // slow continuous push so the frame never sits still
+  scale *= 1 + 0.015 * clamp((t - tin) / Math.max(0.5, tout - tin));
+  return { op: Math.max(0, op), scale, blur, x };
+}
+
+const scenes = [];
+const scene = (start, end, fn) => scenes.push({ start, end, fn });
+const HEAD_Y = 104, HEAD_SIZE = 62;
+
+// 0. Riser: three words, one per beat.
+{
+  const words = ['Agent.', 'Editor.', 'Together.'].map(w => new Head(w, 190, 540, 700));
+  scene(0, B(1) + 0.4, t => {
+    words.forEach((h, i) => {
+      const at = j => 0.1 + j * P * 1.2, tin = at(i), tout = i < 2 ? at(i + 1) - 0.22 : B(1) - 0.24;
+      h.set(t, tin, tout, { stagger: 0, dy: 60, dur: 0.4, scale: 1 + 0.06 * clamp((t - tin) / 0.8) });
+    });
+  });
+}
+// 1. Title, then the real app window rises under it.
+{
+  const title = new Head('Devin Desktop', 170, 500, 700), sub = new Head('Agent and editor, in one app', 50, 640, 500, 'rgba(0,0,0,.6)');
+  const win = new Shot([0]);
+  scene(B(1) - 0.05, B(3), t => {
+    const up = prog(t, b(2, 0) - 0.15, 0.9, E.inOut);
+    title.set(t, B(1) - 0.05, B(3) - 0.05, { stagger: 0.06, y: lerp(0, HEAD_Y - 500 + 8, up), scale: lerp(1, 0.47, up) });
+    sub.set(t, B(1) + 0.3, b(2, 0) - 0.1);
+    const ws = winState(t, b(2, 0) - 0.15, B(3), 'none');
+    const r = prog(t, b(2, 0) - 0.15, 1.0, E.outExpo);
+    win.set({ ...ws, op: clamp((t - b(2, 0) + 0.15) / 0.2) * ws.op, cy: lerp(1500, 600, r), rx: lerp(26, 0, r), scale: lerp(0.86, 1, r) * ws.scale, show: { 0: 1 } });
+  });
+}
+// 2. Agent view: push into the composer, then the agent, location and model pickers pop out as cards.
+{
+  const head1 = new Head('Start in the Agent view', HEAD_SIZE, HEAD_Y), head2 = new Head('Your agent, your model', HEAD_SIZE, HEAD_Y);
+  const win = new Shot([0]);
+  const cards = [
+    { n: 2, r: [2378, 568, 632, 402], label: 'Pick the agent' },
+    { n: 7, r: [924, 630, 720, 480], label: 'Run locally or in the cloud' },
+    { n: 13, r: [1760, 942, 868, 1216], label: 'Choose the model' },
+  ].map(c => ({ ...c, shot: new Shot([c.n]), lab: (() => { const l = el('div', 'label'); l.textContent = c.label; return l; })() }));
+  // layout: equal visual height for the two menus, taller model list
+  const H = [300, 300, 560], Wc = cards.map((c, i) => H[i] * c.r[2] / c.r[3]), gap = 70;
+  const tot = Wc.reduce((a, c) => a + c, 0) + gap * 2; let x0 = 960 - tot / 2;
+  const CX = Wc.map(w => { const c = x0 + w / 2; x0 += w + gap; return c; });
+  scene(B(3) - 0.02, B(5), t => {
+    head1.set(t, B(3), B(4) - 0.2); head2.set(t, B(4) + 0.05, B(5) - 0.2);
+    const ws = winState(t, B(3) - 0.3, B(5), 'none');
+    const push = prog(t, B(3), 1.6, E.inOut);
+    win.set({ ...ws, op: (t >= B(3) - 0.02 ? 1 : 0) * (1 - prog(t, B(5), 0.3, E.inCubic)), region: lerpR(FULL, [640, 380, 2560, 1440], push), show: { 0: 1 }, dim: 0.8 * prog(t, B(4) - 0.1, 0.4, E.outCubic) });
+    cards.forEach((c, i) => {
+      const tin = b(4, i * 0.75) - 0.04, p = prog(t, tin, 0.6, E.outBack), q = prog(t, B(5) - 0.02, 0.28, E.inCubic);
+      const op = clamp((t - tin) / 0.12) * (1 - q);
+      const drift = (t - tin) * 6;
+      c.shot.set({ cx: CX[i], cy: 620 - drift + (1 - p) * 120, w: Wc[i], h: H[i], scale: lerp(0.7, 1, p) * lerp(1, 0.9, q), op, region: c.r, show: { [c.n]: 1 }, radius: 16 });
+      const ls = c.lab.style; ls.display = op > 0 ? 'block' : 'none';
+      ls.left = (CX[i] - 300) + 'px'; ls.width = '600px'; ls.top = (620 + H[i] / 2 + 34 + (1 - p) * 60 - drift) + 'px'; ls.opacity = op * prog(t, tin + 0.12, 0.4);
+    });
+  });
+}
+// 3. Describe the task (finished prompt, no typing), press send.
+{
+  const head = new Head('Describe the task', HEAD_SIZE, HEAD_Y);
+  const win = new Shot([18]); win.ring([2790, 953, 112, 112], 56);
+  scene(B(5) - 0.05, B(6) + 0.3, t => {
+    head.set(t, B(5), B(6) - 0.2);
+    const ws = winState(t, B(5) - 0.05, B(6));
+    const push = prog(t, B(5), 1.9, E.inOut);
+    const ring = prog(t, b(5, 2.4), 0.35) * (1 - prog(t, B(6) - 0.05, 0.2));
+    const press = 1 - 0.04 * Math.sin(Math.PI * clamp((t - b(5, 3)) / 0.18));
+    win.set({ ...ws, scale: ws.scale * press, region: lerpR([760, 560, 2320, 1305], [980, 620, 2000, 1125], push), show: { 18: 1 }, ringOp: [ring] });
+  });
+}
+// 4. Devin works: real progress frames, cut on eighth notes.
+{
+  const head = new Head('Devin builds it, locally', HEAD_SIZE, HEAD_Y);
+  const frames = []; for (let i = 0; i < 16; i++) frames.push(19 + Math.round(i * 40 / 15));
+  const win = new Shot(frames);
+  scene(B(6), B(8) + 0.4, t => {
+    head.set(t, B(6) + 0.05, B(8) - 0.2);
+    const ws = winState(t, B(6), B(8), 'zoom', 'slide');
+    const idx = clamp(Math.floor((t - B(6)) / (P / 2)), 0, 15);
+    const push = prog(t, B(6), 3.9, E.inOut);
+    win.set({ ...ws, region: lerpR([0, 120, 2700, 1519], [0, 260, 2300, 1294], push), show: { [frames[idx]]: 1 } });
+  });
+}
+// 5. Summary, then the app already running in the built-in localhost preview.
+{
+  const head1 = new Head('Done, with a summary', HEAD_SIZE, HEAD_Y), head2 = new Head('Already running on localhost', HEAD_SIZE, HEAD_Y);
+  const win = new Shot([60]); win.ring([2180, 236, 1460, 86], 22);
+  scene(B(8) - 0.05, B(10) + 0.3, t => {
+    head1.set(t, B(8) + 0.05, B(9) - 0.2); head2.set(t, B(9) + 0.02, B(10) - 0.2);
+    const ws = winState(t, B(8) - 0.05, B(10), 'slide');
+    const a = prog(t, B(8) + 0.3, 1.3, E.inOut), c = prog(t, B(9) - 0.15, 1.0, E.inOut);
+    let region = lerpR([0, 120, 2500, 1406], [0, 200, 2100, 1181], a);
+    region = lerpR(region, [1880, 170, 1960, 1102], c);
+    const ring = prog(t, b(9, 1.6), 0.35) * (1 - prog(t, B(10) - 0.05, 0.2));
+    win.set({ ...ws, region, show: { 60: 1 }, ringOp: [ring] });
+  });
+}
+// 6. Quick Review findings, then Accept all.
+{
+  const head1 = new Head('A second agent reviews it', HEAD_SIZE, HEAD_Y), head2 = new Head('Accept, and it’s yours', HEAD_SIZE, HEAD_Y);
+  const win = new Shot([83, 85]); win.ring([1655, 1648, 230, 84], 18);
+  scene(B(10) - 0.05, B(12) + 0.4, t => {
+    head1.set(t, B(10) + 0.05, B(11) - 0.2); head2.set(t, B(11) + 0.02, B(12) - 0.2);
+    const ws = winState(t, B(10) - 0.05, B(12), 'zoom', 'slide');
+    const a = prog(t, B(10), 1.6, E.inOut), c = prog(t, B(11) - 0.2, 0.9, E.inOut);
+    let region = lerpR([0, 330, 2200, 1238], [0, 380, 1960, 1103], a);
+    region = lerpR(region, [300, 1020, 2000, 1125], c);
+    const ring = prog(t, b(11, 0.8), 0.35) * (1 - prog(t, b(11, 2.6), 0.15));
+    const sw = t >= b(11, 2.6) ? 1 : 0;
+    const press = 1 - 0.03 * Math.sin(Math.PI * clamp((t - b(11, 2.35)) / 0.18));
+    win.set({ ...ws, scale: ws.scale * press, region, show: { 83: 1 - sw, 85: sw }, ringOp: [ring] });
+  });
+}
+// 7. Switch to the Editor.
+{
+  const head = new Head('A full editor, built in', HEAD_SIZE, HEAD_Y);
+  const win = new Shot([87]); win.ring([400, 22, 176, 74], 20);
+  scene(B(12) - 0.05, B(13) + 0.3, t => {
+    head.set(t, B(12) + 0.05, B(13) - 0.2);
+    const ws = winState(t, B(12) - 0.05, B(13), 'slide');
+    const a = prog(t, B(12) + 0.2, 1.7, E.inOut);
+    const ring = prog(t, b(12, 0.9), 0.35) * (1 - prog(t, B(13) - 0.1, 0.2));
+    win.set({ ...ws, region: lerpR(FULL, [0, 0, 2900, 1631], a), show: { 87: 1 }, ringOp: [ring] });
+  });
+}
+// 8. Codemaps: a step-by-step map, then the diagram.
+{
+  const head = new Head('Map any flow with Codemaps', HEAD_SIZE, HEAD_Y);
+  const win = new Shot([110, 114]);
+  scene(B(13) - 0.05, B(14) + 0.3, t => {
+    head.set(t, B(13) + 0.05, B(14) - 0.2);
+    const ws = winState(t, B(13) - 0.05, B(14));
+    const sw = prog(t, b(13, 2), 0.22, E.outCubic), a = prog(t, B(13), 1.9, E.inOut);
+    const region = lerpR([0, 120, 2700, 1519], [40, 560, 2500, 1406], a);
+    win.set({ ...ws, region, show: { 110: 1 - sw, 114: sw } });
+  });
+}
+// 9. DeepWiki: the explanation card lifts out of the sidebar next to the symbol.
+{
+  const head = new Head('Explain any symbol with DeepWiki', HEAD_SIZE, HEAD_Y);
+  const win = new Shot([120]); win.ring([1822, 1180, 214, 66], 14);
+  const card = new Shot([120]);
+  scene(B(14) - 0.05, B(15) + 0.3, t => {
+    head.set(t, B(14) + 0.05, B(15) - 0.2);
+    const ws = winState(t, B(14) - 0.05, B(15));
+    const ring = prog(t, b(14, 0.6), 0.35) * (1 - prog(t, B(15) - 0.05, 0.2));
+    const cp = prog(t, b(14, 1.2), 0.65, E.outBack), cq = prog(t, B(15), 0.25, E.inCubic);
+    win.set({ ...ws, region: [0, 0, 3840, 2160], show: { 120: 1 }, ringOp: [ring], dim: 0.45 * prog(t, b(14, 1.1), 0.4) });
+    const cr = [120, 130, 1450, 1250];
+    card.set({ cx: lerp(470, 560, cp), cy: 625, w: 700, h: 700 * cr[3] / cr[2], scale: lerp(0.8, 1, cp) * (1 - 0.06 * cq), op: clamp((t - b(14, 1.2)) / 0.12) * (1 - cq) * ws.op, region: cr, show: { 120: 1 }, radius: 16 });
+  });
+}
+// 10. Try the change in the built-in preview: collapse and expand a column.
+{
+  const head = new Head('Test it in the built-in preview', HEAD_SIZE, HEAD_Y);
+  const win = new Shot([125, 124]); win.ring([1928, 1228, 80, 80], 14);
+  scene(B(15) - 0.05, B(16) + 0.3, t => {
+    head.set(t, B(15) + 0.05, B(16) - 0.2);
+    const ws = winState(t, B(15) - 0.05, B(16));
+    const a = prog(t, B(15), 1.9, E.inOut);
+    const collapsed = (t >= b(15, 1.1) && t < b(15, 2.6)) ? 1 : 0;
+    const ring = prog(t, b(15, 0.5), 0.3) * (1 - prog(t, B(16) - 0.05, 0.2));
+    win.set({ ...ws, region: lerpR([1700, 900, 2140, 1204], [1880, 1100, 1900, 1069], a), show: { 125: 1 - collapsed, 124: collapsed }, ringOp: [ring] });
+  });
+}
+// 11. Sessions: every local and cloud session by status.
+{
+  const head = new Head('Every session in one place', HEAD_SIZE, HEAD_Y);
+  const win = new Shot([126]);
+  scene(B(16) - 0.05, B(17) + 0.3, t => {
+    head.set(t, B(16) + 0.05, B(17) - 0.2);
+    const ws = winState(t, B(16) - 0.05, B(17));
+    const a = prog(t, B(16), 1.9, E.inOut);
+    win.set({ ...ws, region: lerpR(FULL, [200, 0, 3300, 1856], a), show: { 126: 1 } });
+  });
+}
+// 12. End card: animated Devin lockup + CTA.
+{
+  const logo = document.getElementById('logo');
+  const LW = 2984, LH = 1024, h = 150, w = h * LW / LH, split = 0.315;
+  const mark = el('div', 'part', logo), word = el('div', 'part', logo), mask = el('div', '', logo);
+  mask.style.cssText = 'position:absolute;overflow:hidden'; mask.appendChild(word);
+  const cta = new Head('Try it today at devin.ai', 54, 690, 550, 'rgba(0,0,0,.86)');
+  const sub = new Head('Devin Desktop', 40, 610, 600, 'rgba(0,0,0,.5)');
+  scene(B(17) - 0.05, DURATION, t => {
+    const t0 = B(17), mp = prog(t, t0, 0.8, E.outBack), wp = prog(t, b(17, 1), 0.8, E.outExpo);
+    sub.set(t, b(17, 1.6), DURATION + 1, { stagger: 0.04 });
+    cta.set(t, b(17, 2.2), DURATION + 1, { stagger: 0.05 });
+    const vis = t >= t0; logo.style.display = vis ? 'block' : 'none'; if (!vis) return;
+    const total = w, left = 960 - total / 2, top = 470 - h / 2;
+    const markW = w * split, shift = (1 - wp) * (total - markW) / 2;  // mark starts centred, slides left as the wordmark opens
+    const ms = mark.style;
+    ms.left = (left + shift) + 'px'; ms.top = top + 'px'; ms.width = w + 'px'; ms.height = h + 'px';
+    ms.clipPath = `inset(0 ${100 - split * 100}% 0 0)`;
+    ms.transform = `scale(${lerp(0.3, 1, mp)}) rotate(${lerp(-90, 0, mp)}deg)`; ms.transformOrigin = `${markW / 2}px ${h / 2}px`; ms.opacity = clamp((t - t0) / 0.15);
+    const k = mask.style; k.left = (left + shift + markW) + 'px'; k.top = top + 'px'; k.width = ((w - markW) * wp) + 'px'; k.height = h + 'px';
+    const ws = word.style; ws.left = (-markW) + 'px'; ws.top = '0px'; ws.width = w + 'px'; ws.height = h + 'px';
+    ws.clipPath = `inset(0 0 0 ${split * 100}%)`; ws.transform = `translateX(${(1 - wp) * -60}px)`;
+    logo.style.transform = `scale(${1 + 0.03 * clamp((t - t0) / 3.8)})`; logo.style.transformOrigin = '960px 540px';
+  });
+}
+
+const bg = document.getElementById('bg'), fade = document.getElementById('fade');
+function render(t) {
+  // soft moving light behind the window
+  const gx = 50 + 12 * Math.sin(t * 0.35), gy = 38 + 8 * Math.cos(t * 0.27);
+  bg.style.background = `radial-gradient(1400px 900px at ${gx}% ${gy}%, rgba(255,255,255,.95), rgba(255,255,255,0) 70%), #ebebee`;
+  for (const s of scenes) s.fn(clamp(t, s.start - 1, s.end + 1));
+  fade.style.opacity = prog(t, DURATION - 0.45, 0.45, x => x);
+}
+const imgs = [...document.images];
+window.film = {
+  fps: FPS, duration: DURATION, frames: Math.round(DURATION * FPS),
+  ready: Promise.all([document.fonts.load('650 60px Inter'), document.fonts.ready, ...imgs.map(i => i.decode())]).then(() => { render(0); return true; }),
+  renderFrame: f => render(f / FPS), render,
+  beats: { BPM, OFF, B: [...Array(20)].map((_, k) => +B(k).toFixed(3)) },
+};
+const q = new URLSearchParams(location.search); if (q.has('t')) window.film.ready.then(() => render(+q.get('t')));
+</script></body></html>
