@@ -56,289 +56,484 @@
  {
   "img": "0004.png",
   "cur": {
-   "x": 563.75,
+   "x": 876.1500000000001,
    "y": 442.20000000000005
   },
+  "cap": "Let Devin generate it",
   "kind": "hover",
   "target": {
-   "x": 563.75,
+   "x": 876.1500000000001,
    "y": 442.20000000000005,
    "w": 299.20000000000005,
    "h": 149.60000000000002,
-   "text": "Create manually\nFill in custom prompts, file patterns, & remediation guides."
+   "text": "Recommended\nGenerate with Devin\nUse Devin to generate a profile best fit to your"
   }
  },
  {
   "img": "0005.png",
   "cur": {
-   "x": 563.75,
+   "x": 876.1500000000001,
    "y": 442.20000000000005
   },
   "kind": "click",
   "target": {
-   "x": 563.75,
+   "x": 876.1500000000001,
    "y": 442.20000000000005,
    "w": 299.20000000000005,
    "h": 149.60000000000002,
-   "text": "Create manually\nFill in custom prompts, file patterns, & remediation guides."
+   "text": "Recommended\nGenerate with Devin\nUse Devin to generate a profile best fit to your"
   },
   "clickAt": {
-   "x": 563.75,
+   "x": 876.1500000000001,
    "y": 442.20000000000005
-  }
+  },
+  "mark": "gen-session"
  },
  {
   "img": "0006.png",
   "cur": {
-   "x": 563.75,
-   "y": 440.00000000000006
+   "x": 876.1500000000001,
+   "y": 442.20000000000005
   },
-  "kind": "hover",
-  "target": {
-   "x": 563.75,
-   "y": 440.00000000000006,
-   "w": 261.8,
-   "h": 19.8,
-   "text": "Discover profile"
-  }
+  "hold": 3,
+  "capPos": "bottom",
+  "cap": "Devin checks the repo, then asks what to focus on",
+  "mark": "questions"
  },
  {
   "img": "0007.png",
   "cur": {
-   "x": 563.75,
-   "y": 440.00000000000006
+   "x": 566.2164062500001,
+   "y": 451.00000000000006
   },
-  "kind": "click",
+  "capPos": "bottom",
+  "cap": "Pick the repo",
+  "kind": "hover",
   "target": {
-   "x": 563.75,
-   "y": 440.00000000000006,
-   "w": 261.8,
+   "x": 566.2164062500001,
+   "y": 451.00000000000006,
+   "w": 372.81406250000003,
    "h": 19.8,
-   "text": "Discover profile"
-  },
-  "clickAt": {
-   "x": 563.75,
-   "y": 440.00000000000006
+   "text": "orbit-api-demo (new profile)"
   }
  },
  {
   "img": "0008.png",
   "cur": {
-   "x": 563.75,
-   "y": 440.00000000000006
+   "x": 566.2164062500001,
+   "y": 451.00000000000006
   },
-  "kind": "poll",
-  "at": 1,
-  "cap": null
+  "kind": "click",
+  "target": {
+   "x": 566.2164062500001,
+   "y": 451.00000000000006,
+   "w": 372.81406250000003,
+   "h": 19.8,
+   "text": "orbit-api-demo (new profile)"
+  },
+  "clickAt": {
+   "x": 566.2164062500001,
+   "y": 451.00000000000006
+  },
+  "mark": "pick"
  },
  {
   "img": "0009.png",
   "cur": {
-   "x": 885.5000000000001,
-   "y": 166.10000000000002
+   "x": 720,
+   "y": 600
   },
-  "cap": "Name it",
-  "kind": "hover",
-  "target": {
-   "x": 885.5000000000001,
-   "y": 166.10000000000002,
-   "w": 853.6,
-   "h": 41.800000000000004,
-   "text": ""
-  }
+  "hold": 3,
+  "capPos": "bottom",
+  "cap": null,
+  "mark": "q"
  },
  {
   "img": "0010.png",
   "cur": {
-   "x": 885.5000000000001,
-   "y": 166.10000000000002
+   "x": 552.86171875,
+   "y": 722.7
   },
-  "kind": "click",
+  "capPos": "bottom",
+  "cap": "Answer the optional settings, or say defaults",
+  "kind": "hover",
   "target": {
-   "x": 885.5000000000001,
-   "y": 166.10000000000002,
-   "w": 853.6,
-   "h": 41.800000000000004,
-   "text": ""
-  },
-  "clickAt": {
-   "x": 885.5000000000001,
-   "y": 166.10000000000002
+   "x": 552.86171875,
+   "y": 722.7,
+   "w": 375.3234375,
+   "h": 44,
+   "text": "Ask Devin to build features, fix bugs, or work on your code"
   }
  },
  {
   "img": "0011.png",
   "cur": {
-   "x": 885.5000000000001,
-   "y": 166.10000000000002
+   "x": 552.86171875,
+   "y": 722.7
   },
-  "kind": "type",
-  "chars": 2
+  "kind": "click",
+  "target": {
+   "x": 552.86171875,
+   "y": 722.7,
+   "w": 375.3234375,
+   "h": 44,
+   "text": "Ask Devin to build features, fix bugs, or work on your code"
+  },
+  "clickAt": {
+   "x": 552.86171875,
+   "y": 722.7
+  }
  },
  {
   "img": "0012.png",
   "cur": {
-   "x": 885.5000000000001,
-   "y": 166.10000000000002
+   "x": 552.86171875,
+   "y": 722.7
   },
   "kind": "type",
-  "chars": 2
+  "chars": 3
  },
  {
   "img": "0013.png",
   "cur": {
-   "x": 885.5000000000001,
-   "y": 166.10000000000002
+   "x": 552.86171875,
+   "y": 722.7
   },
   "kind": "type",
-  "chars": 2
+  "chars": 3
  },
  {
   "img": "0014.png",
   "cur": {
-   "x": 885.5000000000001,
-   "y": 166.10000000000002
+   "x": 552.86171875,
+   "y": 722.7
   },
   "kind": "type",
-  "chars": 2
+  "chars": 3
  },
  {
   "img": "0015.png",
   "cur": {
-   "x": 885.5000000000001,
-   "y": 166.10000000000002
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0016.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0017.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0018.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0019.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0020.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0021.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0022.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0023.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0024.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0025.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0026.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0027.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0028.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0029.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0030.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0031.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0032.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0033.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0034.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0035.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0036.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0037.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0038.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0039.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0040.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0041.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
+  },
+  "kind": "type",
+  "chars": 3
+ },
+ {
+  "img": "0042.png",
+  "cur": {
+   "x": 552.86171875,
+   "y": 722.7
   },
   "kind": "type",
   "chars": 1
  },
  {
-  "img": "0016.png",
+  "img": "0043.png",
   "cur": {
-   "x": 1296.9,
-   "y": 440.00000000000006
+   "x": 552.86171875,
+   "y": 722.7
   },
-  "cap": "Turn on sandbox validation",
-  "kind": "hover",
-  "target": {
-   "x": 1296.9,
-   "y": 440.00000000000006,
-   "w": 30.800000000000004,
-   "h": 17.6,
-   "text": ""
-  }
+  "hold": 1,
+  "capPos": "bottom",
+  "mark": "said"
  },
  {
-  "img": "0017.png",
+  "img": "0044.png",
   "cur": {
-   "x": 1296.9,
-   "y": 440.00000000000006
+   "x": 720,
+   "y": 600
   },
-  "kind": "click",
-  "target": {
-   "x": 1296.9,
-   "y": 440.00000000000006,
-   "w": 30.800000000000004,
-   "h": 17.6,
-   "text": ""
-  },
-  "clickAt": {
-   "x": 1296.9,
-   "y": 440.00000000000006
-  }
- },
- {
-  "img": "0018.png",
-  "cur": {
-   "x": 885.5000000000001,
-   "y": 542.3000000000001
-  },
-  "cap": "Tell Devin how to run and attack the app",
-  "kind": "hover",
-  "target": {
-   "x": 885.5000000000001,
-   "y": 542.3000000000001,
-   "w": 853.6,
-   "h": 132,
-   "text": ""
-  }
- },
- {
-  "img": "0019.png",
-  "cur": {
-   "x": 885.5000000000001,
-   "y": 542.3000000000001
-  },
-  "kind": "click",
-  "target": {
-   "x": 885.5000000000001,
-   "y": 542.3000000000001,
-   "w": 853.6,
-   "h": 132,
-   "text": ""
-  },
-  "clickAt": {
-   "x": 885.5000000000001,
-   "y": 542.3000000000001
-  }
- },
- {
-  "img": "0020.png",
-  "cur": {
-   "x": 885.5000000000001,
-   "y": 542.3000000000001
-  },
-  "kind": "type",
-  "chars": 308,
-  "paste": true,
   "hold": 3,
-  "cap": "Start it, seed it, prove each finding with curl"
+  "capPos": "bottom",
+  "cap": null,
+  "mark": "q"
  },
  {
-  "img": "0021.png",
+  "img": "0045.png",
   "cur": {
-   "x": 1254.12890625,
-   "y": 794.2
+   "x": 670.7765625000001,
+   "y": 324.5
   },
-  "cap": "Create the profile",
+  "capPos": "bottom",
+  "cap": "Review the change, then approve it",
   "kind": "hover",
   "target": {
-   "x": 1254.12890625,
-   "y": 794.2,
-   "w": 116.34218750000001,
-   "h": 30.800000000000004,
-   "text": "Create profile"
+   "x": 670.7765625000001,
+   "y": 324.5,
+   "w": 110.89375000000001,
+   "h": 17.6,
+   "text": "Approve changes"
   }
  },
  {
-  "img": "0022.png",
+  "img": "0046.png",
   "cur": {
-   "x": 1254.12890625,
-   "y": 794.2
+   "x": 670.7765625000001,
+   "y": 324.5
   },
   "kind": "click",
   "target": {
-   "x": 1254.12890625,
-   "y": 794.2,
-   "w": 116.34218750000001,
-   "h": 30.800000000000004,
-   "text": "Create profile"
+   "x": 670.7765625000001,
+   "y": 324.5,
+   "w": 110.89375000000001,
+   "h": 17.6,
+   "text": "Approve changes"
   },
   "clickAt": {
-   "x": 1254.12890625,
-   "y": 794.2
+   "x": 670.7765625000001,
+   "y": 324.5
   },
-  "mark": "profile-created"
+  "mark": "pick"
  },
  {
-  "img": "0023.png",
+  "img": "0047.png",
   "cur": {
-   "x": 1254.12890625,
-   "y": 794.2
+   "x": 720,
+   "y": 600
   },
-  "hold": 1.2
+  "hold": 3,
+  "capPos": "bottom",
+  "cap": null,
+  "mark": "q"
  },
  {
-  "img": "0024.png",
+  "img": "0048.png",
   "cur": {
    "x": 720,
    "y": 600
@@ -348,7 +543,162 @@
   "cap": null
  },
  {
-  "img": "0025.png",
+  "img": "0049.png",
+  "cur": {
+   "x": 885.5000000000001,
+   "y": 629.2
+  },
+  "cap": "Open the new profile",
+  "kind": "hover",
+  "target": {
+   "x": 885.5000000000001,
+   "y": 629.2,
+   "w": 827.2,
+   "h": 57.2,
+   "text": ""
+  }
+ },
+ {
+  "img": "0050.png",
+  "cur": {
+   "x": 885.5000000000001,
+   "y": 629.2
+  },
+  "kind": "click",
+  "target": {
+   "x": 885.5000000000001,
+   "y": 629.2,
+   "w": 827.2,
+   "h": 57.2,
+   "text": ""
+  },
+  "clickAt": {
+   "x": 885.5000000000001,
+   "y": 629.2
+  }
+ },
+ {
+  "img": "0051.png",
+  "cur": {
+   "x": 885.5000000000001,
+   "y": 629.2
+  },
+  "kind": "poll",
+  "at": 3,
+  "cap": null,
+  "mark": "profile"
+ },
+ {
+  "img": "0052.png",
+  "cur": {
+   "x": 885.5000000000001,
+   "y": 629.2
+  },
+  "hold": 2
+ },
+ {
+  "img": "0053.png",
+  "cur": {
+   "x": 885.5000000000001,
+   "y": 629.2
+  },
+  "hold": 3.4,
+  "cap": "Scan model: what to look for, and where",
+  "mark": "scan-model"
+ },
+ {
+  "img": "0054.png",
+  "cur": {
+   "x": 885.5000000000001,
+   "y": 629.2
+  },
+  "hold": 3,
+  "cap": "Triage guidance: auth bypass and cross-user leaks are always Critical",
+  "mark": "triage"
+ },
+ {
+  "img": "0055.png",
+  "cur": {
+   "x": 885.5000000000001,
+   "y": 629.2
+  },
+  "hold": 3.6,
+  "cap": "Sandbox validation: how to run the app and prove each finding",
+  "mark": "validation"
+ },
+ {
+  "img": "0056.png",
+  "cur": {
+   "x": 885.5000000000001,
+   "y": 629.2
+  },
+  "hold": 2,
+  "cap": "A summary report when the scan finishes"
+ },
+ {
+  "img": "0057.png",
+  "cur": {
+   "x": 885.5000000000001,
+   "y": 629.2
+  },
+  "hold": 0.8
+ },
+ {
+  "img": "0058.png",
+  "cur": {
+   "x": 885.5000000000001,
+   "y": 764.5000000000001
+  },
+  "kind": "hover",
+  "target": {
+   "x": 885.5000000000001,
+   "y": 764.5000000000001,
+   "w": 853.6,
+   "h": 28.6,
+   "text": "Advanced"
+  }
+ },
+ {
+  "img": "0059.png",
+  "cur": {
+   "x": 885.5000000000001,
+   "y": 764.5000000000001
+  },
+  "kind": "click",
+  "target": {
+   "x": 885.5000000000001,
+   "y": 764.5000000000001,
+   "w": 853.6,
+   "h": 28.6,
+   "text": "Advanced"
+  },
+  "clickAt": {
+   "x": 885.5000000000001,
+   "y": 764.5000000000001
+  }
+ },
+ {
+  "img": "0060.png",
+  "cur": {
+   "x": 885.5000000000001,
+   "y": 764.5000000000001
+  },
+  "hold": 3,
+  "cap": "Skip tests and seed scripts, and validate Medium and up",
+  "mark": "advanced"
+ },
+ {
+  "img": "0061.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 3,
+  "cap": null
+ },
+ {
+  "img": "0062.png",
   "cur": {
    "x": 720,
    "y": 600
@@ -357,7 +707,7 @@
   "mark": "security"
  },
  {
-  "img": "0026.png",
+  "img": "0063.png",
   "cur": {
    "x": 1248.1734375,
    "y": 532.4000000000001
@@ -373,7 +723,7 @@
   }
  },
  {
-  "img": "0027.png",
+  "img": "0064.png",
   "cur": {
    "x": 1248.1734375,
    "y": 532.4000000000001
@@ -392,7 +742,7 @@
   }
  },
  {
-  "img": "0028.png",
+  "img": "0065.png",
   "cur": {
    "x": 563.75,
    "y": 442.20000000000005
@@ -408,7 +758,7 @@
   }
  },
  {
-  "img": "0029.png",
+  "img": "0066.png",
   "cur": {
    "x": 563.75,
    "y": 442.20000000000005
@@ -428,7 +778,7 @@
   "mark": "form"
  },
  {
-  "img": "0030.png",
+  "img": "0067.png",
   "cur": {
    "x": 563.75,
    "y": 442.20000000000005
@@ -445,7 +795,7 @@
   }
  },
  {
-  "img": "0031.png",
+  "img": "0068.png",
   "cur": {
    "x": 1148.4,
    "y": 326.70000000000005
@@ -461,7 +811,7 @@
   }
  },
  {
-  "img": "0032.png",
+  "img": "0069.png",
   "cur": {
    "x": 1148.4,
    "y": 326.70000000000005
@@ -480,7 +830,7 @@
   }
  },
  {
-  "img": "0033.png",
+  "img": "0070.png",
   "cur": {
    "x": 1148.4,
    "y": 326.70000000000005
@@ -489,7 +839,7 @@
   "chars": 2
  },
  {
-  "img": "0034.png",
+  "img": "0071.png",
   "cur": {
    "x": 1148.4,
    "y": 326.70000000000005
@@ -498,7 +848,7 @@
   "chars": 2
  },
  {
-  "img": "0035.png",
+  "img": "0072.png",
   "cur": {
    "x": 1148.4,
    "y": 326.70000000000005
@@ -507,7 +857,7 @@
   "chars": 2
  },
  {
-  "img": "0036.png",
+  "img": "0073.png",
   "cur": {
    "x": 1148.4,
    "y": 326.70000000000005
@@ -516,7 +866,7 @@
   "chars": 2
  },
  {
-  "img": "0037.png",
+  "img": "0074.png",
   "cur": {
    "x": 1148.4,
    "y": 326.70000000000005
@@ -525,7 +875,7 @@
   "chars": 1
  },
  {
-  "img": "0038.png",
+  "img": "0075.png",
   "cur": {
    "x": 1148.4,
    "y": 408.1
@@ -540,7 +890,7 @@
   }
  },
  {
-  "img": "0039.png",
+  "img": "0076.png",
   "cur": {
    "x": 1148.4,
    "y": 408.1
@@ -560,7 +910,7 @@
   "mark": "repo"
  },
  {
-  "img": "0040.png",
+  "img": "0077.png",
   "cur": {
    "x": 1148.4,
    "y": 419.1
@@ -576,7 +926,7 @@
   }
  },
  {
-  "img": "0041.png",
+  "img": "0078.png",
   "cur": {
    "x": 1148.4,
    "y": 419.1
@@ -595,7 +945,7 @@
   }
  },
  {
-  "img": "0042.png",
+  "img": "0079.png",
   "cur": {
    "x": 1148.4,
    "y": 533.5
@@ -606,11 +956,11 @@
    "y": 533.5,
    "w": 521.4000000000001,
    "h": 33,
-   "text": "Orbit API"
+   "text": "Orbit API – auth, access control & file handling"
   }
  },
  {
-  "img": "0043.png",
+  "img": "0080.png",
   "cur": {
    "x": 1148.4,
    "y": 533.5
@@ -621,7 +971,7 @@
    "y": 533.5,
    "w": 521.4000000000001,
    "h": 33,
-   "text": "Orbit API"
+   "text": "Orbit API – auth, access control & file handling"
   },
   "clickAt": {
    "x": 1148.4,
@@ -630,7 +980,7 @@
   "mark": "profile"
  },
  {
-  "img": "0044.png",
+  "img": "0081.png",
   "cur": {
    "x": 1393.7,
    "y": 664.4000000000001
@@ -646,7 +996,7 @@
   }
  },
  {
-  "img": "0045.png",
+  "img": "0082.png",
   "cur": {
    "x": 1393.7,
    "y": 664.4000000000001
@@ -665,7 +1015,7 @@
   }
  },
  {
-  "img": "0046.png",
+  "img": "0083.png",
   "cur": {
    "x": 1393.7,
    "y": 664.4000000000001
@@ -673,7 +1023,7 @@
   "hold": 1.4
  },
  {
-  "img": "0047.png",
+  "img": "0084.png",
   "cur": {
    "x": 1369.37109375,
    "y": 776.6
@@ -689,7 +1039,7 @@
   }
  },
  {
-  "img": "0048.png",
+  "img": "0085.png",
   "cur": {
    "x": 1369.37109375,
    "y": 776.6
@@ -709,7 +1059,7 @@
   "mark": "run"
  },
  {
-  "img": "0049.png",
+  "img": "0086.png",
   "cur": {
    "x": 1369.37109375,
    "y": 776.6
@@ -717,7 +1067,7 @@
   "hold": 1.2
  },
  {
-  "img": "0050.png",
+  "img": "0087.png",
   "cur": {
    "x": 720,
    "y": 600
@@ -727,57 +1077,37 @@
   "cap": null
  },
  {
-  "img": "0051.png",
+  "img": "0088.png",
   "cur": {
    "x": 720,
    "y": 600
   },
   "kind": "poll",
-  "at": 6004,
+  "at": 6005,
   "cap": null
  },
  {
-  "img": "0052.png",
+  "img": "0089.png",
   "cur": {
    "x": 720,
    "y": 600
   },
   "kind": "poll",
-  "at": 12005,
+  "at": 12009,
   "cap": null
  },
  {
-  "img": "0053.png",
+  "img": "0090.png",
   "cur": {
    "x": 720,
    "y": 600
   },
   "kind": "poll",
-  "at": 18005,
+  "at": 18011,
   "cap": null
  },
  {
-  "img": "0054.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 24005,
-  "cap": null
- },
- {
-  "img": "0055.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 30007,
-  "cap": null
- },
- {
-  "img": "0056.png",
+  "img": "0091.png",
   "cur": {
    "x": 720,
    "y": 600
@@ -787,58 +1117,58 @@
   "mark": "model"
  },
  {
-  "img": "0057.png",
+  "img": "0092.png",
   "cur": {
    "x": 720,
    "y": 600
   },
   "kind": "hover",
-  "cap": "Rules name the trust boundaries it will attack",
+  "cap": "The X-Forwarded-User header is trusted before any token",
   "hold": 2.4,
   "target": {
    "x": 607.75,
-   "y": 459.8,
+   "y": 529.1,
    "w": 500.50000000000006,
-   "h": 184.8,
-   "text": "Express Auth Middleware\nCustom auth: requireUser, X-Forwarded-User trust, JWT si"
+   "h": 244.20000000000002,
+   "text": "Orbit Auth Identity\nIdentity, token and password handling in auth.js / routes/au"
   }
  },
  {
-  "img": "0058.png",
+  "img": "0093.png",
   "cur": {
    "x": 720,
    "y": 600
   },
   "kind": "hover",
-  "cap": "records fetched by ID without an owner check",
+  "cap": "Boards loaded by ID with no owner check",
   "hold": 2.2,
   "target": {
    "x": 607.75,
-   "y": 707.3000000000001,
+   "y": 697.4000000000001,
    "w": 500.50000000000006,
-   "h": 204.60000000000002,
-   "text": "Node Sqlite Record Lookup Idor\nnode:sqlite queries fetching records by client-su"
+   "h": 224.4,
+   "text": "Orbit Idor Ownership\nRecord lookups by id and the ownership/visibility checks (o"
   }
  },
  {
-  "img": "0059.png",
+  "img": "0094.png",
   "cur": {
    "x": 720,
    "y": 600
   },
   "kind": "hover",
-  "cap": "and file paths built from request input",
+  "cap": "File paths built from request input",
   "hold": 2,
   "target": {
    "x": 607.75,
-   "y": 717.2,
+   "y": 687.5,
    "w": 500.50000000000006,
-   "h": 184.8,
-   "text": "Node File Path Traversal\nFilesystem access with paths built from request input ("
+   "h": 244.20000000000002,
+   "text": "Orbit File Path Traversal\nAttachment download/upload file-system operations and "
   }
  },
  {
-  "img": "0060.png",
+  "img": "0095.png",
   "cur": {
    "x": 720,
    "y": 600
@@ -855,7 +1185,7 @@
   }
  },
  {
-  "img": "0061.png",
+  "img": "0096.png",
   "cur": {
    "x": 1162.7,
    "y": 590.7
@@ -871,7 +1201,7 @@
   }
  },
  {
-  "img": "0062.png",
+  "img": "0097.png",
   "cur": {
    "x": 1162.7,
    "y": 590.7
@@ -891,372 +1221,22 @@
   "mark": "approved"
  },
  {
-  "img": "0063.png",
-  "cur": {
-   "x": 1162.7,
-   "y": 590.7
-  },
-  "kind": "poll",
-  "at": 2,
-  "cap": null
- },
- {
-  "img": "0064.png",
-  "cur": {
-   "x": 1162.7,
-   "y": 590.7
-  },
-  "hold": 1.5
- },
- {
-  "img": "0065.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 2,
-  "cap": null
- },
- {
-  "img": "0066.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 20006,
-  "cap": null
- },
- {
-  "img": "0067.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 40007,
-  "cap": null
- },
- {
-  "img": "0068.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 60011,
-  "cap": null
- },
- {
-  "img": "0069.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 80014,
-  "cap": null
- },
- {
-  "img": "0070.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 100018,
-  "cap": null
- },
- {
-  "img": "0071.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 120020,
-  "cap": null
- },
- {
-  "img": "0072.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 140024,
-  "cap": null
- },
- {
-  "img": "0073.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 160027,
-  "cap": null
- },
- {
-  "img": "0074.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 180029,
-  "cap": null
- },
- {
-  "img": "0075.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 200029,
-  "cap": null
- },
- {
-  "img": "0076.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 220031,
-  "cap": null
- },
- {
-  "img": "0077.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 240033,
-  "cap": null
- },
- {
-  "img": "0078.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 260034,
-  "cap": null
- },
- {
-  "img": "0079.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 280034,
-  "cap": null
- },
- {
-  "img": "0080.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 300037,
-  "cap": null
- },
- {
-  "img": "0081.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 320037,
-  "cap": null
- },
- {
-  "img": "0082.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 340040,
-  "cap": null
- },
- {
-  "img": "0083.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 360043,
-  "cap": null
- },
- {
-  "img": "0084.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 380049,
-  "cap": null
- },
- {
-  "img": "0085.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 400043,
-  "cap": null
- },
- {
-  "img": "0086.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 420043,
-  "cap": null
- },
- {
-  "img": "0087.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 440043,
-  "cap": null
- },
- {
-  "img": "0088.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 460045,
-  "cap": null
- },
- {
-  "img": "0089.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 480048,
-  "cap": null
- },
- {
-  "img": "0090.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 500047,
-  "cap": null
- },
- {
-  "img": "0091.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 520048,
-  "cap": null
- },
- {
-  "img": "0092.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 540050,
-  "cap": null
- },
- {
-  "img": "0093.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 560051,
-  "cap": null
- },
- {
-  "img": "0094.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 580052,
-  "cap": null
- },
- {
-  "img": "0095.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 600056,
-  "cap": null
- },
- {
-  "img": "0096.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 620056,
-  "cap": null
- },
- {
-  "img": "0097.png",
-  "cur": {
-   "x": 720,
-   "y": 600
-  },
-  "kind": "poll",
-  "at": 640056,
-  "cap": null
- },
- {
   "img": "0098.png",
   "cur": {
-   "x": 720,
-   "y": 600
+   "x": 1162.7,
+   "y": 590.7
   },
   "kind": "poll",
-  "at": 660058,
+  "at": 2,
   "cap": null
  },
  {
   "img": "0099.png",
   "cur": {
-   "x": 720,
-   "y": 600
+   "x": 1162.7,
+   "y": 590.7
   },
-  "kind": "poll",
-  "at": 680058,
-  "cap": null
+  "hold": 1.5
  },
  {
   "img": "0100.png",
@@ -1265,7 +1245,7 @@
    "y": 600
   },
   "kind": "poll",
-  "at": 5,
+  "at": 1,
   "cap": null
  },
  {
@@ -1275,11 +1255,481 @@
    "y": 600
   },
   "kind": "poll",
-  "at": 3,
+  "at": 20003,
   "cap": null
  },
  {
   "img": "0102.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 40007,
+  "cap": null
+ },
+ {
+  "img": "0103.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 60009,
+  "cap": null
+ },
+ {
+  "img": "0104.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 80010,
+  "cap": null
+ },
+ {
+  "img": "0105.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 100014,
+  "cap": null
+ },
+ {
+  "img": "0106.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 120016,
+  "cap": null
+ },
+ {
+  "img": "0107.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 140019,
+  "cap": null
+ },
+ {
+  "img": "0108.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 160049,
+  "cap": null
+ },
+ {
+  "img": "0109.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 180020,
+  "cap": null
+ },
+ {
+  "img": "0110.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 200021,
+  "cap": null
+ },
+ {
+  "img": "0111.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 220022,
+  "cap": null
+ },
+ {
+  "img": "0112.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 240023,
+  "cap": null
+ },
+ {
+  "img": "0113.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 260024,
+  "cap": null
+ },
+ {
+  "img": "0114.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 280027,
+  "cap": null
+ },
+ {
+  "img": "0115.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 300029,
+  "cap": null
+ },
+ {
+  "img": "0116.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 320031,
+  "cap": null
+ },
+ {
+  "img": "0117.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 340033,
+  "cap": null
+ },
+ {
+  "img": "0118.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 360034,
+  "cap": null
+ },
+ {
+  "img": "0119.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 380035,
+  "cap": null
+ },
+ {
+  "img": "0120.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 400035,
+  "cap": null
+ },
+ {
+  "img": "0121.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 420037,
+  "cap": null
+ },
+ {
+  "img": "0122.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 440037,
+  "cap": null
+ },
+ {
+  "img": "0123.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 460036,
+  "cap": null
+ },
+ {
+  "img": "0124.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 480036,
+  "cap": null
+ },
+ {
+  "img": "0125.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 500040,
+  "cap": null
+ },
+ {
+  "img": "0126.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 520042,
+  "cap": null
+ },
+ {
+  "img": "0127.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 540043,
+  "cap": null
+ },
+ {
+  "img": "0128.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 560044,
+  "cap": null
+ },
+ {
+  "img": "0129.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 580044,
+  "cap": null
+ },
+ {
+  "img": "0130.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 600045,
+  "cap": null
+ },
+ {
+  "img": "0131.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 620046,
+  "cap": null
+ },
+ {
+  "img": "0132.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 640045,
+  "cap": null
+ },
+ {
+  "img": "0133.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 660059,
+  "cap": null
+ },
+ {
+  "img": "0134.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 680074,
+  "cap": null
+ },
+ {
+  "img": "0135.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 700076,
+  "cap": null
+ },
+ {
+  "img": "0136.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 720079,
+  "cap": null
+ },
+ {
+  "img": "0137.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 740081,
+  "cap": null
+ },
+ {
+  "img": "0138.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 760081,
+  "cap": null
+ },
+ {
+  "img": "0139.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 780088,
+  "cap": null
+ },
+ {
+  "img": "0140.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 800093,
+  "cap": null
+ },
+ {
+  "img": "0141.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 820095,
+  "cap": null
+ },
+ {
+  "img": "0142.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 840099,
+  "cap": null
+ },
+ {
+  "img": "0143.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 860102,
+  "cap": null
+ },
+ {
+  "img": "0144.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 880105,
+  "cap": null
+ },
+ {
+  "img": "0145.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 900118,
+  "cap": null
+ },
+ {
+  "img": "0146.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 920118,
+  "cap": null
+ },
+ {
+  "img": "0147.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 940115,
+  "cap": null
+ },
+ {
+  "img": "0148.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 2,
+  "cap": null
+ },
+ {
+  "img": "0149.png",
   "cur": {
    "x": 720,
    "y": 600
@@ -1289,7 +1739,7 @@
   "mark": "findings"
  },
  {
-  "img": "0103.png",
+  "img": "0150.png",
   "cur": {
    "x": 720,
    "y": 600
@@ -1298,239 +1748,241 @@
   "cap": "Open, Reviewed and Dismissed counts",
   "hold": 2,
   "target": {
-   "x": 585.43203125,
+   "x": 589.084375,
    "y": 74.80000000000001,
-   "w": 110.29218750000001,
+   "w": 110.653125,
    "h": 30.800000000000004,
-   "text": "Dismissed\n5"
+   "text": "Dismissed\n8"
   }
  },
  {
-  "img": "0104.png",
+  "img": "0151.png",
   "cur": {
    "x": 608.0250000000001,
-   "y": 171.60000000000002
+   "y": 288.20000000000005
   },
   "cap": "Open the worst one",
   "kind": "hover",
   "target": {
    "x": 608.0250000000001,
-   "y": 171.60000000000002,
+   "y": 288.20000000000005,
    "w": 527.45,
    "h": 57.2,
-   "text": "requireUser trusts client-supplied X-Forwarded-User header, allowing unauthentic"
+   "text": "X-Forwarded-User header trusted as identity → full authentication bypass / imper"
   }
  },
  {
-  "img": "0105.png",
+  "img": "0152.png",
   "cur": {
    "x": 608.0250000000001,
-   "y": 171.60000000000002
+   "y": 288.20000000000005
   },
   "kind": "click",
   "target": {
    "x": 608.0250000000001,
-   "y": 171.60000000000002,
+   "y": 288.20000000000005,
    "w": 527.45,
    "h": 57.2,
-   "text": "requireUser trusts client-supplied X-Forwarded-User header, allowing unauthentic"
+   "text": "X-Forwarded-User header trusted as identity → full authentication bypass / imper"
   },
   "clickAt": {
    "x": 608.0250000000001,
-   "y": 171.60000000000002
+   "y": 288.20000000000005
   },
   "mark": "finding"
  },
  {
-  "img": "0106.png",
+  "img": "0153.png",
   "cur": {
    "x": 608.0250000000001,
-   "y": 171.60000000000002
+   "y": 288.20000000000005
   },
   "hold": 2.6,
   "cap": "Critical, high confidence: anyone can become admin"
  },
  {
-  "img": "0107.png",
+  "img": "0154.png",
   "cur": {
    "x": 608.0250000000001,
-   "y": 171.60000000000002
+   "y": 288.20000000000005
   },
   "hold": 3,
   "cap": "The attack path, step by step"
  },
  {
-  "img": "0108.png",
+  "img": "0155.png",
   "cur": {
    "x": 608.0250000000001,
-   "y": 171.60000000000002
+   "y": 288.20000000000005
   },
   "hold": 3.2,
-  "cap": "The exact lines, across four files"
+  "cap": "The exact lines it depends on"
  },
  {
-  "img": "0109.png",
+  "img": "0156.png",
   "cur": {
    "x": 608.0250000000001,
-   "y": 171.60000000000002
+   "y": 288.20000000000005
   },
   "hold": 3.4,
   "cap": "Devin ran the exploit in a sandbox: Confirmed",
   "mark": "validated"
  },
  {
-  "img": "0110.png",
+  "img": "0157.png",
   "cur": {
    "x": 608.0250000000001,
-   "y": 171.60000000000002
+   "y": 288.20000000000005
   },
   "hold": 3.4,
   "cap": "The real request that proved it"
  },
  {
-  "img": "0111.png",
+  "img": "0158.png",
   "cur": {
    "x": 1361.9289062500002,
-   "y": 74.80000000000001
+   "y": 103.4
   },
   "cap": "Assign it to Devin",
   "kind": "hover",
   "target": {
    "x": 1361.9289062500002,
-   "y": 74.80000000000001,
+   "y": 103.4,
    "w": 129.5421875,
    "h": 30.800000000000004,
    "text": "Assign to Devin"
   }
  },
  {
-  "img": "0112.png",
+  "img": "0159.png",
   "cur": {
    "x": 1361.9289062500002,
-   "y": 74.80000000000001
+   "y": 103.4
   },
   "kind": "click",
   "target": {
    "x": 1361.9289062500002,
-   "y": 74.80000000000001,
+   "y": 103.4,
    "w": 129.5421875,
    "h": 30.800000000000004,
    "text": "Assign to Devin"
   },
   "clickAt": {
    "x": 1361.9289062500002,
-   "y": 74.80000000000001
+   "y": 103.4
   },
   "mark": "assign"
  },
  {
-  "img": "0113.png",
+  "img": "0160.png",
   "cur": {
    "x": 1361.9289062500002,
-   "y": 74.80000000000001
+   "y": 103.4
   },
   "hold": 1.5
  },
  {
-  "img": "0114.png",
+  "img": "0161.png",
   "cur": {
    "x": 165,
-   "y": 458.70000000000005
+   "y": 409.20000000000005
   },
   "cap": "Open the fix session",
   "kind": "hover",
   "target": {
    "x": 165,
-   "y": 458.70000000000005,
+   "y": 409.20000000000005,
    "w": 312.40000000000003,
    "h": 48.400000000000006,
    "text": ""
   }
  },
  {
-  "img": "0115.png",
+  "img": "0162.png",
   "cur": {
    "x": 165,
-   "y": 458.70000000000005
+   "y": 409.20000000000005
   },
   "kind": "click",
   "target": {
    "x": 165,
-   "y": 458.70000000000005,
+   "y": 409.20000000000005,
    "w": 312.40000000000003,
    "h": 48.400000000000006,
    "text": ""
   },
   "clickAt": {
    "x": 165,
-   "y": 458.70000000000005
+   "y": 409.20000000000005
   },
   "mark": "session"
  },
  {
-  "img": "0116.png",
+  "img": "0163.png",
   "cur": {
    "x": 165,
-   "y": 458.70000000000005
+   "y": 409.20000000000005
+  },
+  "kind": "poll",
+  "at": 6,
+  "cap": null
+ },
+ {
+  "img": "0164.png",
+  "cur": {
+   "x": 165,
+   "y": 409.20000000000005
   },
   "hold": 2.6,
   "cap": "Devin gets the finding, the evidence and the fix plan"
  },
  {
-  "img": "0117.png",
+  "img": "0165.png",
   "cur": {
    "x": 165,
-   "y": 458.70000000000005
+   "y": 409.20000000000005
   },
   "hold": 1.4
  },
  {
-  "img": "0118.png",
+  "img": "0166.png",
   "cur": {
    "x": 165,
-   "y": 458.70000000000005
+   "y": 409.20000000000005
   },
   "hold": 1.4
  },
  {
-  "img": "0119.png",
+  "img": "0167.png",
   "cur": {
    "x": 165,
-   "y": 458.70000000000005
-  },
-  "hold": 1.4
- },
- {
-  "img": "0120.png",
-  "cur": {
-   "x": 165,
-   "y": 458.70000000000005
+   "y": 409.20000000000005
   },
   "hold": 2.6,
   "cap": "It fixes the code, adds tests, and opens a PR",
   "mark": "session-end"
  },
  {
-  "img": "0121.png",
+  "img": "0168.png",
   "cur": {
    "x": 165,
-   "y": 458.70000000000005
+   "y": 409.20000000000005
   },
   "kind": "poll",
-  "at": 3,
+  "at": 1,
   "cap": null
  },
  {
-  "img": "0122.png",
+  "img": "0169.png",
   "cur": {
    "x": 165,
-   "y": 458.70000000000005
+   "y": 409.20000000000005
   },
   "hold": 2,
   "cap": "Back on the finding"
  },
  {
-  "img": "0123.png",
+  "img": "0170.png",
   "cur": {
    "x": 720,
    "y": 600
@@ -1540,14 +1992,14 @@
   "hold": 2.4,
   "target": {
    "x": 1162.9750000000001,
-   "y": 776.6,
+   "y": 787.6,
    "w": 463.65000000000003,
-   "h": 66,
-   "text": "Only trust X-Forwarded-User when the proxy presents ORBIT_PROXY_SECRET\norbit-api"
+   "h": 44,
+   "text": "thequantexplorer/orbit-api-demo\n#1"
   }
  },
  {
-  "img": "0124.png",
+  "img": "0171.png",
   "cur": {
    "x": 720,
    "y": 600
@@ -1557,7 +2009,17 @@
   "mark": "pr"
  },
  {
-  "img": "0125.png",
+  "img": "0172.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 5,
+  "cap": null
+ },
+ {
+  "img": "0173.png",
   "cur": {
    "x": 720,
    "y": 600
