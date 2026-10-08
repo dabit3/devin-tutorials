@@ -90,7 +90,7 @@ const dimKeys = [[8.7, 0], [9.1, 0.6], [11.75, 0.6], [12.05, 0]];
 // headlines: lines of words, optional per-word times
 const heads = [
   { lines: ['Devin Review'], t0: 1.0, t1: 2.0, y: 680, size: 120, stagger: 0.08 },
-  { lines: ['Catch bugs', 'before they merge.'], t0: 2.0, t1: 3.92, y: 540, size: 150, at: [2.0, 2.5, 3.0, 3.25, 3.5] },
+  { lines: ['Catch bugs', 'before they merge.'], t0: 2.0, t1: 3.92, y: 540, size: 150, at: [2.0, 2.25, 2.5, 2.75, 3.0] },
   { lines: ['Open any pull request'], t0: 4.15, t1: 5.95, y: 118, size: 78 },
   { lines: ['One click to analyze'], t0: 6.0, t1: 7.95, y: 118, size: 78 },
   { lines: ['Devin finds the bugs'], t0: 8.05, t1: 11.95, y: 118, size: 78 },
