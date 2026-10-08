@@ -187,3 +187,10 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - For a narrated video, a `voice-script.md` in the folder (each spoken line by section, the prompts typed on screen, and source links), linked from its README row and attached in the chat with the video.
 - One PR per round of changes. If the previous PR was merged, start a new branch from `main`.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Launch videos
+
+- Launch videos are light mode: white / very light gray backgrounds everywhere (title cards, overlays, transitions, end card), near-black text, and the dark Devin logo (`_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png`).
+- A deterministic HTML timeline with a `seek(t)` function, rendered frame by frame with puppeteer at 1920x1080 and deviceScaleFactor 2, gives crisp 4K from the 3x tutorial screenshots; zooms up to about 1.7x on a screenshot stay sharp.
+- Generate music first, measure its beat grid (an RMS envelope is enough), then put every cut, word reveal and click on a beat. ElevenLabs Music allows only two concurrent requests, so generate takes serially.
+- Lifting a real UI card (a finding, a bug popover) out of the screenshot onto the stage while the rest of the frame fades back reads better than a static spotlight, and keeps the UI authentic.

@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: Inter; src: url(../../_kit/fonts/Inter-VF.ttf); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1920px; height: 1080px; overflow: hidden; background: #f4f4f6; }
+#stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: hidden;
+  background: radial-gradient(120% 90% at 50% 0%, #ffffff 0%, #f6f6f8 55%, #ececef 100%);
+  font-family: Inter, sans-serif; color: #111; -webkit-font-smoothing: antialiased; }
+.abs { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform, opacity; }
+.frame { width: 1440px; height: 810px; border-radius: 22px; overflow: hidden; background: #fff;
+  box-shadow: 0 40px 110px rgba(0,0,0,.16), 0 8px 24px rgba(0,0,0,.06), 0 0 0 1px rgba(0,0,0,.08); transform-origin: 50% 50%; }
+.shot { width: 1440px; height: 810px; overflow: hidden; }
+.shot img, .lift img { position: absolute; left: 0; top: 0; width: 1440px; height: 810px; transform-origin: 0 0; }
+.dim { width: 1440px; height: 810px; background: #f6f6f8; }
+.spot { border-radius: 12px; box-shadow: 0 0 0 3000px rgba(246,246,248,.55), 0 0 0 3px rgba(17,17,17,.9), 0 12px 40px rgba(0,0,0,.18); }
+.ripple { width: 0; height: 0; border-radius: 50%; border: 3px solid rgba(17,17,17,.85); box-shadow: 0 0 24px rgba(0,0,0,.15); }
+.lift { overflow: hidden; border-radius: 16px; background: #fff; }
+.head { width: 1920px; text-align: center; font-weight: 700; letter-spacing: -0.035em; white-space: nowrap; }
+.head span { display: inline-block; will-change: transform, opacity, filter; }
+.sub { color: rgba(17,17,17,.6); font-weight: 500; letter-spacing: -0.02em; }
+</style></head>
+<body><div id="stage"></div>
+<script src="timeline.js"></script>
+</body></html>
