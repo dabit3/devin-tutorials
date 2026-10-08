@@ -196,3 +196,4 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - Pick one tempo and put every scene cut, word slam and click on a beat (120 BPM = 0.5 s grid), then synthesize the music from the same cut list so hits land on the cuts. Loudnorm to −16 LUFS in the encode.
 - Each scene's text needs ~1 s fully on screen after it finishes animating; anything shorter (a tagline squeezed in before a cut) doesn't read, so cut it.
 - In a JS timeline, don't store text elements on the same object as the scene's start/end times (`s.t1` as both a caption and an end time hid every scene).
+- Launch videos are light mode: white / very light gray backgrounds on title cards, overlays, transitions and the end card, near-black text, and the dark Devin logo (`_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png`, or the white lockup with CSS `filter: brightness(0)`). On light backgrounds, use soft card shadows plus a 1 px hairline, and a dark spotlight ring.

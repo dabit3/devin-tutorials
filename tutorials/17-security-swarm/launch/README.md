@@ -1,6 +1,6 @@
 # Devin Security Swarm: launch video
 
-A 37 s launch cut of the Security Swarm tutorial: no voiceover, a 120 BPM synthesized music bed, and the real captured UI from `../shots/` animated with kinetic type.
+A 37 s launch cut of the Security Swarm tutorial: no voiceover, a 120 BPM synthesized music bed, and the real captured UI from `../shots/` animated with kinetic type, in light mode (light backgrounds, near-black text, dark logo).
 
 - `index.html`: the motion timeline. Each scene is a time range with a `build` (DOM) and `update(t)` (pure function of time). Screenshot regions are shown in `Card`s whose view (centre + zoom), spotlight and position are keyframed. Scene cuts land on the beat (every 0.5 s).
 - `render.mjs`: renders `index.html` frame by frame at 3840×2160, 60 fps, to JPEGs with headless Chrome (uses `puppeteer-core` from `../../_kit/tools`).
