@@ -181,6 +181,32 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - Narration: builds run on simulators (no USB passthrough), but don't say "not physical devices"; the user cut it as unneeded. TestFlight upload can be said, never shown. Spell tool names for the voice (`voSay`: "x code build", "x code gen", "Swift UI"); `vo.py` has the matching `ALIAS`es.
 - Comma-ended lines followed by a short line (e.g. "Open the platform menu below the prompt box," / "and pick macOS.") can fail `vo.py`'s cut check when the voice doesn't pause; make them two sentences.
 
+## Launch videos
+
+A launch video is a separate 30–40 s marketing cut of a tutorial: `<folder>/launch/` (timeline source, renderer, music, `build.sh`, README) renders to `<folder>/<folder>-launch.mp4`, 3840×2160 at 60 fps, plus a 1080p preview. It never replaces the tutorial MP4s. No voice: music, kinetic type and motion over the real UI carry it. State the message plainly up front, show 3–5 real product moments, land the payoff, end on the Devin logo and "Try it today at devin.ai".
+
+Look
+- Light mode: white / very light gray backgrounds everywhere (title cards, overlays, transitions, end card), near-black text, and the dark Devin logo (`_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png`, or the white lockup with CSS `filter: brightness(0)`). The real UI shots stay as captured; give UI cards a soft shadow and a hairline border so white app UI separates from the light background.
+- Show the UI as cropped, zoomed and spotlit regions of the real `shots/` PNGs; never redraw it. Shots are 3× captures (4320×2430 for a 1440×810 page), so zooms up to about 2× stay sharp at 4K. Use the 1440×810 coordinates in `shots/beats.json` for camera, cursor and highlight positions, and fix rects by measuring a rendered still (guessed coordinates are off by 20–30 px).
+- Put each shot in a fixed viewport and move a camera (center + zoom in shot space) clamped to the image edges, instead of scaling the whole card; zooms then never show empty edges or crop row labels, line starts or a modal's edge. Don't slow-push into busy full-window shots (terminal scrollback, title bars); move the window instead.
+- Emphasize the control that matters with zoom plus an outline, or lift a crop of the same screenshot (a finding, a popover) onto the stage while the rest fades back. Keep any dim very light (a heavy dim turns light UI gray against the light background).
+- A UI state change (a click that changes the screen) is a hard cut or a very short crossfade between consecutive shots of the same screen; crossfading shots whose content scrolled shows ghosted double text.
+- Typing: show a few consecutive typing frames over about 1 s (or reveal the finished field with a growing clip rect), then hold the finished text; never retype long text.
+- Text: 2–6 words, each line fully on screen for about 1 s after it finishes animating, at least ~0.35 s between one heading's exit and the next one's entrance, and no headline over busy UI or a still-fading card. Per-word inline-block spans need `white-space: pre` or their spaces collapse.
+- Before using a capture frame, check its side panels: frames right after Send or a tab switch often show a spinner or an empty panel. Skip frames with confetti (pink/purple pieces).
+
+Build
+- One HTML page where every frame is a pure function of time (`renderAt(t)` / `renderFrame(f)`, no CSS animations or timers), rendered with Puppeteer at 1920×1080 CSS px and `deviceScaleFactor: 2`. Await fonts and `img.decode()` before the first frame.
+- Pipe JPEG screenshots straight into one ffmpeg per worker (`-f image2pipe -c:v mjpeg -i -`) and concat the segments; no frame folders on a tight Mac disk. Give each worker its own browser: tabs in a shared browser are background tabs and stall image decoding and animation frames. Load large shots lazily with a small cache, or Chrome runs out of memory.
+- Hide every element by default and give each scene's elements explicit visibility only inside the scene (`display: none`, not `visibility: hidden`, which a child can override); otherwise earlier scenes bleed into later ones or the end card. A window that cuts in must stay invisible before its start time.
+- Don't put CSS `blur()` on full-size UI cards: headless Chrome drops the card on random frames. Use offset, scale and opacity, and scan the encode for dropout frames.
+- Review a sparse pass first (stills every ~1 s tiled into contact sheets, plus full-size frames of the longest headline in each scene), then the full render, then consecutive frames around each transition.
+
+Music
+- Get the music first at a fixed BPM (about 100–120) and put every cut and headline on its beat grid (`t = offset + n × 60 / BPM`); save the strongest product moment for the drop. Trim leading silence so beat 0 is the first downbeat.
+- Generated music: ElevenLabs Music rejects artist or brand names (describe genre, instruments, BPM), `composition_plan` sections must be at least 3000 ms, and requested drop times are often ignored, so check the RMS envelope before using a take. It allows only two concurrent requests, so generate takes serially. Tracks often end abruptly: cut to the song's final bars on a downbeat at the end card, or add a short tail, rather than holding the logo over silence.
+- Two-pass `loudnorm` (I=-16, TP=-1.5, `linear=true`) after trimming and fading.
+
 ## Deliverables
 - A PR on `dabit3/devin-tutorials` containing the folder (MP4, poster, `capture.mjs`, `shots/`, `spec.js`) and a new row in the `tutorials/README.md` table and in the root `README.md` list (description + download link).
 - The 1080p preview attached in the chat.

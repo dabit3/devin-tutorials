@@ -49,6 +49,29 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Devin Security Swarm, narrated by Nader** (3:17): Devin writes the scan profile, then a real exploit chain in an Orbit-style API is found by the scan, proven in a sandbox and fixed in a PR by Devin. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/17-security-swarm/17-security-swarm-nader.mp4) · [Voice script](tutorials/17-security-swarm/voice-script.md)
 - **iPhone and iPad apps on Mac VMs, narrated by Nader** (1:35): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/18-ios-ipad-mac-vms/18-ios-ipad-mac-vms-nader.mp4) · [Voice script](tutorials/18-ios-ipad-mac-vms/voice-script.md)
 
+## Launch videos
+
+Short, music-only marketing cuts (no voice) built from each tutorial's real UI captures, in light mode. Each one's source is in `tutorials/<folder>/launch/`.
+
+- **Ask Devin, launch** (0:37): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/01-ask-devin/01-ask-devin-launch.mp4)
+- **Your First Session, launch** (0:34): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/02-first-session/02-first-session-launch.mp4)
+- **Introducing Devin, launch** (0:35): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/03-introducing-devin/03-introducing-devin-launch.mp4)
+- **Secrets & Site Cookies, launch** (0:39): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/04-secrets-cookies/04-secrets-cookies-launch.mp4)
+- **MCP Servers & Marketplace, launch** (0:32): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/05-mcp-marketplace/05-mcp-marketplace-launch.mp4)
+- **DeepWiki, launch** (0:35): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/06-deepwiki/06-deepwiki-launch.mp4)
+- **Automations, launch** (0:34): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/07-automations/07-automations-launch.mp4)
+- **Testing Apps with Devin, launch** (0:36): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/08-computer-use-testing/08-computer-use-testing-launch.mp4)
+- **Devin Review, launch** (0:37): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/09-devin-review/09-devin-review-launch.mp4)
+- **Devin CLI, launch** (0:37): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/10-devin-cli/10-devin-cli-launch.mp4)
+- **Devin Desktop, launch** (0:37): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-launch.mp4)
+- **Devin in Slack, launch** (0:33): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack-launch.mp4)
+- **Devin Memory, launch** (0:35): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-launch.mp4)
+- **Devin Code Scans, launch** (0:36): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/14-devin-code-scans/14-devin-code-scans-launch.mp4)
+- **Devin Playbooks, launch** (0:35): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/15-devin-playbooks/15-devin-playbooks-launch.mp4)
+- **Devin Automations: events, launch** (0:34): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/16-automation-triggers/16-automation-triggers-launch.mp4)
+- **Devin Security Swarm, launch** (0:37): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/17-security-swarm/17-security-swarm-launch.mp4)
+- **iPhone and iPad apps on Mac VMs, launch** (0:36): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/18-ios-ipad-mac-vms/18-ios-ipad-mac-vms-launch.mp4)
+
 ## Making a new tutorial
 
 Every video's capture script, screenshots and edit spec live in [`tutorials/`](tutorials/), which also explains how to rebuild them. To create a tutorial for another Devin feature, use the reusable prompt in [`tutorials/TUTORIAL_PROMPT.md`](tutorials/TUTORIAL_PROMPT.md).
