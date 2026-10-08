@@ -1,6 +1,8 @@
 // Launch video timeline: window.renderFrame(t) sets every element's state for time t (seconds).
-// Music is 120 BPM; B(n) is beat n (downbeats every 4 beats, phrase changes every 16).
-const W = 3840, H = 2160, FPS = 60, DUR = 34.5;
+// The timeline is authored on a 120 BPM grid (B(n) is beat n, phrase changes every 16) and
+// played back TS times slower so it lands on the music's beat (music BPM = 120 / TS).
+const W = 3840, H = 2160, FPS = 60;
+const TS = 1.1428, DUR = 39.4;
 const B = n => 0.05 + 0.5 * n;
 const clamp01 = x => Math.max(0, Math.min(1, x));
 const E = {
@@ -46,7 +48,6 @@ function setCard(c, p) {
   el.style.width = w + 'px'; el.style.height = h + 'px';
   el.style.transform = `translate3d(${p.x - w / 2}px,${p.y - h / 2}px,0) rotateX(${p.rx || 0}deg) rotateY(${p.ry || 0}deg) scale(${p.s ?? 1})`;
   el.style.opacity = p.op ?? 1;
-  el.style.filter = (p.blur || 0) > 0.05 ? `blur(${p.blur}px)` : 'none';
   el.style.zIndex = p.zi || 1;
   el.style.display = (p.op ?? 1) <= 0.001 ? 'none' : 'block';
   // shots
@@ -80,7 +81,7 @@ function setCard(c, p) {
 const texts = document.getElementById('texts');
 const HLS = [];
 // parts: [text, at?, opts] ; opts: {g: group, mono}
-function headline({ parts, tIn, tOut, y = 235, size = 150, color = '#f5f5f7', weight, active }) {
+function headline({ parts, tIn, tOut, y = 235, size = 150, color = '#1d1d1f', weight, active }) {
   const el = document.createElement('div'); el.className = 'hl';
   el.style.top = (y - size * 0.6) + 'px'; el.style.fontSize = size + 'px'; el.style.lineHeight = (size * 1.2) + 'px';
   if (weight) el.style.fontWeight = weight;
@@ -114,7 +115,7 @@ function renderHL(t) {
       if (h.active && w.g != null) {
         const ag = h.active(t);
         const dim = w.g === ag.g ? 1 - ag.u : (w.g === ag.prev ? ag.u : 1);
-        w.s.style.color = hexMix(h.color, '#6e6e73', dim * ag.on);
+        w.s.style.color = hexMix(h.color, '#c7c7cc', dim * ag.on);
       } else w.s.style.color = h.color;
     }
   }
@@ -187,7 +188,7 @@ const press = (t, at) => 1 - 0.07 * Math.sin(Math.PI * clamp01((t - at) / 0.28))
 
 // headlines
 headline({ parts: [['Secrets', 0.3], ['&', 0.5], ['Site', 0.7], ['Cookies', 0.9]], tIn: 0.3, tOut: 3.55, y: 960, size: 250, weight: 700 });
-headline({ parts: [['Give Devin credentials, safely.', 2.05]], tIn: 2.05, tOut: 3.55, y: 1230, size: 112, color: '#a1a1a6', weight: 560 });
+headline({ parts: [['Give Devin credentials, safely.', 2.05]], tIn: 2.05, tOut: 3.55, y: 1230, size: 112, color: '#6e6e73', weight: 560 });
 headline({ parts: ['Your secrets, in one place'], tIn: 4.15, tOut: 5.85 });
 headline({ parts: ['For your team, or just you'], tIn: B(12), tOut: 7.8 });
 headline({ parts: [['API keys.', B(17), { g: 0 }], ['Cookies.', B(19), { g: 1 }], ['2FA codes.', B(21), { g: 2 }]], tIn: B(17), tOut: 11.85,
@@ -208,9 +209,9 @@ bg.style.backgroundImage = "url('assets/bg.jpg')";
 const lockWrap = document.getElementById('lockWrap'), lock = document.getElementById('lock'), cta = document.getElementById('cta');
 
 function whip(t, at) { // card leaves left, next state arrives from the right
-  if (t >= at - 0.22 && t < at) { const u = E.inCubic((t - (at - 0.22)) / 0.22); return { dx: -u * 1700, op: 1 - u * 0.7, blur: u * 10 }; }
-  if (t >= at && t < at + 0.55) { const u = E.outExpo((t - at) / 0.55); return { dx: (1 - u) * 1700, op: 0.3 + 0.7 * Math.min(1, u * 2), blur: (1 - u) * 10 }; }
-  return { dx: 0, op: 1, blur: 0 };
+  if (t >= at - 0.22 && t < at) { const u = E.inCubic((t - (at - 0.22)) / 0.22); return { dx: -u * 1700, op: 1 - u * 0.7 }; }
+  if (t >= at && t < at + 0.55) { const u = E.outExpo((t - at) / 0.55); return { dx: (1 - u) * 1700, op: 0.3 + 0.7 * Math.min(1, u * 2) }; }
+  return { dx: 0, op: 1 };
 }
 function punch(t, at) {
   if (t >= at - 0.16 && t < at) return 1 - 0.05 * E.inCubic((t - (at - 0.16)) / 0.16);
@@ -218,7 +219,7 @@ function punch(t, at) {
   return 1;
 }
 
-window.renderFrame = function (t) {
+function render(t) {
   // intro backdrop
   bg.style.opacity = 0.16 * prog(t, 0, 0.8) * (1 - prog(t, 3.5, 4.1));
   bg.style.transform = `scale(${1 + 0.06 * t / 4})`;
@@ -238,7 +239,6 @@ window.renderFrame = function (t) {
     rx: lerp(28, 0, enter),
     s: lerp(0.9, 1, enter) * punch(t, B(32)) * punch(t, B(48)) * sFan * (1 + 0.2 * exit),
     op: Math.min(enter * 1.5, 1) * w1.op * w2.op * (1 - exit),
-    blur: w1.blur + w2.blur + exit * 16,
     zi: 3,
     cam: track(t, camA),
   };
@@ -254,7 +254,7 @@ window.renderFrame = function (t) {
     t, seq: [[0, shot]], cam,
     x: 1920 + dir * lerp(0, 1300, fb), y: 1265 + Math.sin((t - B(56)) * 1.6 + dir) * 10 * fb,
     ry: dir * lerp(0, -8, fb), s: lerp(0.38, 0.42, fb) * (1 + 0.2 * exit),
-    op: (t < B(56) ? 0 : Math.min(1, fb * 1.6)) * (1 - exit), blur: exit * 16, zi: 2,
+    op: (t < B(56) ? 0 : Math.min(1, fb * 1.6)) * (1 - exit), zi: 2,
   });
   side(Bc, -1, '0049', { cx: 1190, cy: 430, z: 1.5 });
   side(Cc, 1, '0084', { cx: 1190, cy: 560, z: 1.5 });
@@ -275,5 +275,6 @@ window.renderFrame = function (t) {
   cta.style.opacity = c; cta.style.transform = `translateY(${(1 - c) * 50}px)`;
   cta.style.filter = c < 0.99 ? `blur(${(1 - c) * 10}px)` : 'none';
 };
+window.renderFrame = t => render(t / TS);
 window.DUR = DUR; window.FPS = FPS;
 window.ready = Promise.all([document.fonts.ready, ...imgs.map(im => im.decode())]).then(() => { window.renderFrame(0); return true; });

@@ -191,4 +191,7 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 ## Launch videos
 - Get the music first, find its beat grid (e.g. `librosa.beat.beat_track`), and time every cut and headline as `B(n) = offset + n × beat` in the timeline, so the edit stays on the beat when you retime a scene.
 - When the camera zooms into a screenshot, check that the crop still shows the row labels (names in the first column, both tab names). A zoom that cuts `ACME_API_KEY` to `PI_KEY` reads as broken UI.
-- A spotlight dim over a light UI turns the whole card gray; keep the outside dim light (about 15% black) and let the zoom do the emphasis.
+- Nader wants launch videos fully light mode (white / light-gray background, near-black text, light end card; the white Devin lockup turns black with CSS `filter: brightness(0.11)`) and music that's upbeat but moderate (about 100–110 BPM, warm and steady, no drops). An energetic ~120 BPM track was too much.
+- A spotlight dim on a light UI turns the whole card gray. Keep the outside dim very light (about 5% black in light mode) and let the zoom and the outline ring do the emphasis.
+- Writing the timeline on a 120 BPM grid and playing it back `TS = 0.5 / beat period` times slower lets you swap the music without retiming every cut.
+- Don't put a CSS `blur()` filter on full-size UI cards. Headless Chrome dropped the whole card on random frames during blurred whips (blank frames at 60 fps). Use offset and opacity instead, and scan the encode for dropout frames (a frame whose pixel std-dev falls far below its neighbors').
