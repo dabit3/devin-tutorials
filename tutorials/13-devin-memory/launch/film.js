@@ -21,7 +21,7 @@ const setSrc = (img, src) => { if (img.dataset.src !== src) { img.dataset.src = 
 
 // ---------- kinetic text ----------
 const texts = [];
-function text(str, { y, size, weight = 600, color = '#fff', tin, tout, stagger = 0.07, dur = 0.6, outDur = 0.32, drift = 0 }) {
+function text(str, { y, size, weight = 600, color = '#1d1d1f', tin, tout, stagger = 0.07, dur = 0.6, outDur = 0.32, drift = 0 }) {
   const d = el('div', 'text');
   Object.assign(d.style, { top: y + 'px', fontSize: size + 'px', fontWeight: weight, color, letterSpacing: '-0.035em', lineHeight: '1.12', transformOrigin: '50% 50%' });
   const words = str.split(' ').map((w, i) => {
@@ -106,10 +106,10 @@ function renderClip(c, t) {
 const glow = document.getElementById('glow');
 
 // intro
-text('Introducing', { y: 760, size: 92, weight: 500, color: '#8c8c8c', tin: 0.15, tout: 1.75, drift: 0.02 });
+text('Introducing', { y: 760, size: 92, weight: 500, color: '#86868b', tin: 0.15, tout: 1.75, drift: 0.02 });
 text('Devin Memory', { y: 900, size: 280, weight: 650, tin: 0.4, tout: 1.8, stagger: 0.12, drift: 0.02 });
 text('Devin remembers', { y: 730, size: 230, weight: 650, tin: 2.0, tout: 3.55, stagger: 0.1, drift: 0.025 });
-text('how you work.', { y: 1010, size: 230, weight: 650, color: '#8f8f8f', tin: 2.3, tout: 3.6, stagger: 0.1, drift: 0.025 });
+text('how you work.', { y: 1010, size: 230, weight: 650, color: '#86868b', tin: 2.3, tout: 3.6, stagger: 0.1, drift: 0.025 });
 
 // headings over the UI
 const HY = 168, HS = 132;
@@ -179,7 +179,7 @@ const hexes = [
 ];
 const logoFull = piece(0, 0, 1000, 1024), word = piece(1000, 0, 2984, 1024);
 const logoShift = W / 2 - (LX + R(511));
-const cta = text('Try it today at devin.ai', { y: 1330, size: 96, weight: 500, color: '#cfcfcf', tin: 32.55, tout: 99, stagger: 0.06 });
+const cta = text('Try it today at devin.ai', { y: 1330, size: 96, weight: 500, color: '#3a3a3c', tin: 32.55, tout: 99, stagger: 0.06 });
 cta.d.remove(); end.appendChild(cta.d);
 
 function renderEnd(t) {
@@ -199,7 +199,7 @@ function renderEnd(t) {
   end.style.transform = `scale(${(1 + 0.012 * (t - 31)).toFixed(4)})`;
 }
 
-const fade = el('div', ''); Object.assign(fade.style, { position: 'absolute', inset: 0, background: '#0a0a0a', pointerEvents: 'none' });
+const fade = el('div', ''); Object.assign(fade.style, { position: 'absolute', inset: 0, background: '#f2f2f4', pointerEvents: 'none' });
 
 function bump(t, at) { return 0.028 * Math.sin(Math.PI * prog(t, at, 0.45)); }
 function renderCards(t) {

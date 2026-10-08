@@ -5,21 +5,21 @@
 <title>Devin Memory launch</title>
 <style>
 @font-face { font-family: 'Inter'; src: url('../../_kit/fonts/Inter-VF.ttf') format('truetype'); font-weight: 100 900; }
-html, body { margin: 0; padding: 0; background: #0a0a0a; overflow: hidden; }
-#stage { position: relative; width: 3840px; height: 2160px; overflow: hidden; background: #0a0a0a;
-  font-family: 'Inter', sans-serif; color: #fff; -webkit-font-smoothing: antialiased; }
+html, body { margin: 0; padding: 0; background: #f2f2f4; overflow: hidden; }
+#stage { position: relative; width: 3840px; height: 2160px; overflow: hidden; background: #f2f2f4;
+  font-family: 'Inter', sans-serif; color: #1d1d1f; -webkit-font-smoothing: antialiased; }
 #glow { position: absolute; width: 3600px; height: 3600px; left: 120px; top: -720px; border-radius: 50%;
-  background: radial-gradient(closest-side, rgba(255,255,255,0.075), rgba(255,255,255,0.02) 55%, rgba(255,255,255,0) 100%); }
+  background: radial-gradient(closest-side, rgba(255,255,255,0.95), rgba(255,255,255,0.4) 55%, rgba(255,255,255,0) 100%); }
 .text { position: absolute; left: 0; width: 3840px; text-align: center; white-space: nowrap; }
 .w { display: inline-block; overflow: hidden; vertical-align: bottom; padding: 0.06em 0.02em 0.14em; margin: -0.06em 0 -0.14em; }
 .w > span { display: inline-block; will-change: transform; }
 .card { position: absolute; overflow: hidden; border-radius: 40px; background: #fcfcfc;
-  box-shadow: 0 0 0 2px rgba(255,255,255,0.10), 0 60px 160px rgba(0,0,0,0.65); }
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.06), 0 50px 140px rgba(0,0,0,0.14); }
 .layer { position: absolute; left: 0; top: 0; overflow: hidden; }
 .layer img { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
-.spot { position: absolute; border-radius: 18px; box-shadow: 0 0 0 6px #fff, 0 0 0 9999px rgba(10,10,10,0.52); }
-.label { position: absolute; font-size: 64px; font-weight: 500; color: #9b9b9b; letter-spacing: -0.01em; }
-#end img { position: absolute; left: 0; top: 0; }
+.spot { position: absolute; border-radius: 18px; box-shadow: 0 0 0 5px #1d1d1f, 0 0 0 9999px rgba(242,242,244,0.68); }
+.label { position: absolute; font-size: 64px; font-weight: 500; color: #6e6e73; letter-spacing: -0.01em; }
+#end img { position: absolute; left: 0; top: 0; filter: brightness(0); }
 </style>
 </head>
 <body>
