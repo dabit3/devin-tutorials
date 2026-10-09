@@ -117,7 +117,7 @@ function film(s) {
   const fo = eIO(prog(s, T.focus, T.focus + 0.4));                // other tiles step back
   const fz = eIO(prog(s, T.focus + 0.15, T.focus + 1.25));        // focused tile grows to centre
   const ex = eIO(prog(s, T.exit, T.exit + 0.5));                  // focused tile leaves
-  const flip = prog(s, T.flip, T.flip + 0.14);
+  const flip = s >= T.flip ? 1 : 0;   // hard swap of the real off/on captures (a blend ghosts a double knob)
   tiles.forEach((t, i) => {
     const t0 = T.tiles + i * T.stagger, p = eQ(prog(s, t0, t0 + 0.8)); if (p <= 0) return;
     const focus = t.id === 'conn';
