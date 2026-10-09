@@ -23,7 +23,7 @@ window.SPEC = {
       },
       "ringFor": 2.6,
       "cap": "Ask for one managed Devin per component",
-      "vo": "Here, I asked Devin to find the four UI components in Orbit with the least test coverage, and start a managed Devin for each one."
+      "vo": "Here, I'm asking Devin to find the four UI components in Orbit with the least test coverage, and start a managed Devin for each one."
     },
     "0009.png": {
       "skip": true
@@ -191,7 +191,7 @@ window.SPEC = {
       },
       "ringFor": 2.6,
       "cap": "Steer the team through the coordinator",
-      "vo": "You can still steer the team. I asked the coordinator to have the CardModal Devin also test that pressing Escape closes the modal."
+      "vo": "You can still steer the team. I'm telling the coordinator to have the CardModal Devin also test that pressing Escape closes the modal."
     },
     "0118.png": {
       "cap": "Each managed Devin works in its own VM",
@@ -227,7 +227,7 @@ window.SPEC = {
     },
     "0159.png": {
       "cap": "Settings → Preferences → Auto-approve child sessions",
-      "vo": "Devin starts managed Devins without asking first when Auto-approve child sessions is on, under Settings, Preferences."
+      "vo": "With Auto-approve child sessions on, under Settings, Preferences, Devin starts managed Devins without asking you first."
     },
     "0165.png": {
       "ring": {
