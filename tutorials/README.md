@@ -21,6 +21,7 @@
 | 16 | Devin Automations: events | `16-automation-triggers/` |
 | 17 | Devin Security Swarm | `17-security-swarm/` |
 | 18 | iPhone and iPad apps on Mac VMs | `18-ios-ipad-mac-vms/` |
+| 23 | Managed Devins: how it works (overview) | `23-managed-devins-overview/` |
 | 27 | Code Scans, how it works (overview) | `27-code-scans-overview/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
