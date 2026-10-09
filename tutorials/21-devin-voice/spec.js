@@ -209,6 +209,9 @@ window.SPEC = {
       "skip": true
     },
     "0484.png": {
+      "skip": true
+    },
+    "0485.png": {
       "cap": "Every test run comes with a recording",
       "hold": 1.6,
       "vo": "Every test run comes with a recording. In Chrome, the wide layout puts the steps in their own column, and all five checks pass."
@@ -217,11 +220,17 @@ window.SPEC = {
       "cap": "Chrome: 5 passed"
     },
     "0501.png": {
+      "skip": true
+    },
+    "0502.png": {
       "hold": 1.2,
       "cap": "iPhone: list \u2192 recipe, 8 passed",
       "vo": "On the iPhone, the list opens the recipe, and all eight checks pass."
     },
     "0518.png": {
+      "skip": true
+    },
+    "0519.png": {
       "hold": 1.2,
       "cap": "iPad: sidebar + detail, 3 passed",
       "vo": "And on the iPad, the recipes sit in a sidebar next to the recipe, and all three checks pass."
