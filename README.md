@@ -27,6 +27,10 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 23. **Managed Devins: how it works** (overview, 1:16): A short diagram-led overview instead of a step-by-step run. One coordinator Devin splits a big task across managed Devins, each in its own isolated VM, monitors them, and compiles one summary; real shots from tutorial 19 show the four managed Devins, the sidebar tree, the PR summary and a message relayed through the coordinator, then Settings → Preferences → Auto-approve child sessions, the nesting tree, and four use cases (migrations, test coverage, one playbook across services, parallel research). [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/23-managed-devins-overview/23-managed-devins-overview.mp4)
 
+<!-- -->
+
+30. **Use your ChatGPT plan in Devin** (0:15): A 15-second feature clip. Settings → Connections with a linked ChatGPT account, the real **Use your ChatGPT plan** switch turning on, the same switch in the model picker's hover card on a GPT model, and a diagram of the billing split: GPT models bill to your ChatGPT plan, other models to your Devin quota. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/30-chatgpt-plan/30-chatgpt-plan.mp4)
+
 ## Narrated tutorials
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
