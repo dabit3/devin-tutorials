@@ -9,8 +9,7 @@ window.SPEC = {
     "0000.png": {
       "hold": 2.6,
       "cursor": false,
-      "vo": "This is MCP in Devin. MCP servers connect Devin to your tools and data, so it can use them in any session.",
-      "voSay": "This, is MCP in Devin. MCP servers connect Devin to your tools and data, so it can use them in any session."
+      "vo": "MCP servers connect Devin to the tools and data your team already uses. Add one once, and Devin can use it in every session."
     },
     "0001.png": {
       "vo": "Open Customize from the sidebar."
@@ -63,12 +62,9 @@ window.SPEC = {
       "camDur": 0.8
     },
     "0017.png": {
-      "voGap": 0.9,
-      "vo": "Or click Add MCP again,"
+      "vo": "Click Add MCP again, and choose the plugin marketplace."
     },
-    "0019.png": {
-      "vo": "and choose the plugin marketplace."
-    },
+    "0019.png": {},
     "0021.png": {
       "hold": 2.2,
       "vo": "The marketplace has hundreds of plugins. Most are a single MCP server, often with skills that teach Devin how to use it."

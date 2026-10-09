@@ -1,12 +1,12 @@
 # MCP Servers & Marketplace — voice script
 
-Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`). Each line plays over the shot named on the left.
+Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`), generated as one continuous take and cut into lines. Each line plays over the shot named on the left.
 
 ## Intro
 
 | Shot | Narration |
 | --- | --- |
-| Home screen | This is MCP in Devin. MCP servers connect Devin to your tools and data, so it can use them in any session. |
+| Home screen | MCP servers connect Devin to the tools and data your team already uses. Add one once, and Devin can use it in every session. |
 | Customize in the sidebar | Open Customize from the sidebar. |
 | MCPs tab | MCPs have their own tab, next to plugins, skills, hooks and rules. |
 | Personal / Organization | Add them just for you, or for your whole organization, so every member gets them. |
@@ -26,8 +26,7 @@ Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`). Each line pla
 
 | Shot | Narration |
 | --- | --- |
-| Add MCP again | Or click Add MCP again, |
-| From plugin marketplace | and choose the plugin marketplace. |
+| Add MCP again, From plugin marketplace | Click Add MCP again, and choose the plugin marketplace. |
 | Marketplace list | The marketplace has hundreds of plugins. Most are a single MCP server, often with skills that teach Devin how to use it. |
 | Search box | Search for the tool you need. |
 | Context7 result | Context7 gives Devin up-to-date docs for libraries and frameworks. |
@@ -39,7 +38,7 @@ Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`). Each line pla
 | Context7 toggle | Now Devin calls its tools on its own, whenever a task needs them. For servers that need an account, choose Connect, and sign in. |
 | Outro | Give Devin more tools. |
 
-Spoken spellings (`voSay`): "This, is MCP in Devin." (pause after the first sentence), "S T D I O, S S E, … H T T P", "Context seven".
+Spoken spellings (`voSay`): "S T D I O, S S E, … H T T P", "Context seven".
 
 ## Typed on screen
 
