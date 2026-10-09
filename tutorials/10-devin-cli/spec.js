@@ -83,13 +83,143 @@ window.SPEC = {
     },
     "0133.png": {
       "badge": "Sped up",
-      "cap": "Devin reads the code, edits files and runs checks"
+      "cap": "Devin reads the code, edits files and runs checks",
+      "hold": 0.1
+    },
+    "0134.png": {
+      "skip": true
+    },
+    "0135.png": {
+      "skip": true
+    },
+    "0136.png": {
+      "hold": 0.1
     },
     "0137.png": {
-      "hold": 0.6
+      "skip": true
+    },
+    "0138.png": {
+      "skip": true
+    },
+    "0139.png": {
+      "skip": true
+    },
+    "0140.png": {
+      "skip": true
+    },
+    "0141.png": {
+      "hold": 0.1
+    },
+    "0142.png": {
+      "skip": true
+    },
+    "0143.png": {
+      "skip": true
+    },
+    "0144.png": {
+      "skip": true
+    },
+    "0145.png": {
+      "hold": 0.1
+    },
+    "0146.png": {
+      "skip": true
+    },
+    "0147.png": {
+      "skip": true
+    },
+    "0148.png": {
+      "skip": true
+    },
+    "0149.png": {
+      "hold": 0.1
     },
     "0150.png": {
-      "hold": 0.6
+      "skip": true
+    },
+    "0151.png": {
+      "skip": true
+    },
+    "0152.png": {
+      "skip": true
+    },
+    "0153.png": {
+      "skip": true
+    },
+    "0154.png": {
+      "hold": 0.1
+    },
+    "0155.png": {
+      "skip": true
+    },
+    "0156.png": {
+      "skip": true
+    },
+    "0157.png": {
+      "skip": true
+    },
+    "0158.png": {
+      "hold": 0.1
+    },
+    "0159.png": {
+      "skip": true
+    },
+    "0160.png": {
+      "skip": true
+    },
+    "0161.png": {
+      "skip": true
+    },
+    "0162.png": {
+      "hold": 0.1
+    },
+    "0163.png": {
+      "skip": true
+    },
+    "0164.png": {
+      "skip": true
+    },
+    "0165.png": {
+      "skip": true
+    },
+    "0166.png": {
+      "hold": 0.1
+    },
+    "0167.png": {
+      "skip": true
+    },
+    "0168.png": {
+      "skip": true
+    },
+    "0169.png": {
+      "skip": true
+    },
+    "0170.png": {
+      "hold": 0.1
+    },
+    "0171.png": {
+      "skip": true
+    },
+    "0172.png": {
+      "skip": true
+    },
+    "0173.png": {
+      "skip": true
+    },
+    "0174.png": {
+      "hold": 0.1
+    },
+    "0175.png": {
+      "skip": true
+    },
+    "0176.png": {
+      "skip": true
+    },
+    "0177.png": {
+      "skip": true
+    },
+    "0178.png": {
+      "hold": 0.1
     },
     "0179.png": {
       "vo": "When it's done, you get a summary of what changed.",
