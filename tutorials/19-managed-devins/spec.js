@@ -11,7 +11,7 @@ window.SPEC = {
       "hold": 6.5,
       "cursor": false,
       "cap": "Migrations, tests per module, one playbook everywhere, research",
-      "vo": "This is managed Devins. One Devin splits a big task into pieces and gives each piece to its own Devin, all running in parallel. It's great for big migrations, adding tests module by module, running one playbook across every service, and parallel research. For structured fan-outs with a combine step, there are also dynamic workflows."
+      "vo": "Managed Devins let one Devin split a big task into pieces and hand each piece to its own Devin, all running in parallel. It's great for big migrations, adding tests module by module, running one playbook across every service, and parallel research. For structured fan-outs with a combine step, there are also dynamic workflows."
     },
     "0007.png": {
       "ring": {
