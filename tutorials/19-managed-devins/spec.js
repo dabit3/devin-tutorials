@@ -21,7 +21,7 @@ window.SPEC = {
         "w": 859,
         "h": 151
       },
-      "ringFor": 2.6,
+      "ringFor": 3,
       "cap": "Ask for one managed Devin per component",
       "vo": "Here, I'm asking Devin to find the four UI components in Orbit with the least test coverage, and start a managed Devin for each one."
     },
@@ -189,7 +189,7 @@ window.SPEC = {
         "w": 889,
         "h": 133
       },
-      "ringFor": 2.6,
+      "ringFor": 3,
       "cap": "Steer the team through the coordinator",
       "vo": "You can still steer the team. I'm telling the coordinator to have the CardModal Devin also test that pressing Escape closes the modal."
     },
@@ -204,7 +204,7 @@ window.SPEC = {
         "w": 800,
         "h": 56
       },
-      "ringFor": 2.6,
+      "ringFor": 3,
       "cap": "Two new Escape tests, 40 passing",
       "vo": "It pushes two new tests that press the real Escape key, and all forty CardModal tests pass."
     },

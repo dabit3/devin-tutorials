@@ -137,8 +137,10 @@ function build() {
         }
         dur = Math.max(3, Math.round(dur * runK[b.img]));
       }
+      // a ringed beat stays on screen until its ring has been seen (ringFor + delay + fade-out)
+      if (b.ring) dur = Math.max(dur, sec((b.ringFor ?? 2.5) + (b.ringDelay ?? 0.2) + 0.5));
       push(b.img, t, dur, b.fade ?? Math.min(8, Math.floor(dur / 2))); t += dur;
-    } else { const dur = hs(b.hold ?? 1.0); push(b.img, t, dur, b.fade ?? 6); t += dur; }
+    } else { const dur = Math.max(hs(b.hold ?? 1.0), b.ring ? sec((b.ringFor ?? 2.5) + (b.ringDelay ?? 0.2) + 0.5) : 0); push(b.img, t, dur, b.fade ?? 6); t += dur; }
   });
   if (VO) t = Math.max(t, voEnd + sec(0.5));
   t += sec(S.tailHold ?? 1.0);
