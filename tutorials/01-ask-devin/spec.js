@@ -18,6 +18,9 @@ window.SPEC = {
       "hl": true,
       "vo": "To ask questions instead of building, switch the composer to Ask mode."
     },
+    "0003.png": {
+      "waitVo": true
+    },
     "0005.png": {
       "hold": 1.6,
       "cap": "Auto picks Q&A or Plan for each question",
