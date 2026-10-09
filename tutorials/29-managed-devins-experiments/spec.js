@@ -2082,7 +2082,8 @@ window.SPEC = {
       "ringFor": 3.5,
       "cap": "Same machine, five runs: virtualization wins",
       "vo": "Back in the coordinator, it reruns all five builds on one machine and compares them in one table. With virtualization, the first keystroke shows results in fifty-eight milliseconds, compared with nine hundred ninety on main.",
-      "hold": 2.5
+      "hold": 2.5,
+      "capPos": "top"
     },
     "0673.png": {
       "ring": {
@@ -2567,7 +2568,13 @@ window.SPEC = {
       "fade": 24,
       "hold": 2.4,
       "cap": "Keep the winner, close the rest",
-      "vo": "You keep the winner, and close the rest."
+      "vo": "You keep the winner, and close the rest.",
+      "target": {
+        "x": 720,
+        "y": 745,
+        "w": 240,
+        "h": 50
+      }
     },
     "0815.png": {
       "fade": 24,
