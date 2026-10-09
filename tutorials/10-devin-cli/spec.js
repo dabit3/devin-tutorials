@@ -349,3 +349,19 @@ window.SPEC = {
     }
   }
 };
+{
+  // narrated cut only: shorter holds so no line waits more than ~1 s on the visuals
+  const NARRATED = !!new URLSearchParams(location.search).get("voice");
+  if (NARRATED) {
+    const E = window.SPEC.edit, set = (k, o) => { E[k] = { ...(E[k] || {}), ...o }; };
+    window.SPEC.pollRunMax = 1.0;
+    for (let n = 25; n <= 131; n++) if ((n - 25) % 3) set(String(n).padStart(4, '0') + '.png', { skip: true });
+    set('0179.png', { hold: 2.4 });
+    set('0180.png', { hold: 0.6 });
+    set('0181c.png', { hold: 2.0 });
+    set('0189.png', { hold: 0.4 });
+    set('0194.png', { ringFor: 1.4 });
+    set('0196.png', { skip: true });
+    set('0197.png', { skip: true });
+  }
+}
