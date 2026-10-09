@@ -7,61 +7,37 @@ window.SPEC = {
   "maxZoom": 1.6,
   "edit": {
     "0000.png": {
+      "scene": "lifecycle",
       "hold": 3.0,
       "cursor": false,
       "capPos": "bottom",
       "cap": "How Devin fits into your SDLC",
       "vo": "This is how Devin fits into the way your team already builds software.",
-      "hl": [
-        {
-          "x": 812.6220703125,
-          "y": 280.0,
-          "w": 717.255859375,
-          "h": 100
-        }
-      ]
+      "hl": null
     },
     "0001.png": {
+      "scene": "time",
       "hold": 3.6,
       "capPos": "bottom",
       "cap": "Writing code is under 20% of an engineer's time",
       "vo": "Writing code is less than a fifth of an engineer's time. The rest goes to understanding code, planning, review, and testing.",
-      "hl": [
-        {
-          "x": 915.1220703125,
-          "y": 319.98046875,
-          "w": 922.255859375,
-          "h": 140
-        }
-      ]
+      "hl": null
     },
     "0002.png": {
+      "scene": "phases",
       "hold": 3.4,
       "capPos": "bottom",
       "cap": "Devin helps across the whole lifecycle",
       "vo": "Devin helps in every phase: planning, building, testing, review, and security.",
-      "hl": [
-        {
-          "x": 915.1220703125,
-          "y": 416.19140625,
-          "w": 902.255859375,
-          "h": 507.421875
-        }
-      ]
+      "hl": null
     },
     "0003.png": {
-      "hold": 4.2,
+      "scene": "process",
+      "hold": 6.4,
       "capPos": "bottom",
       "cap": "Same branch protections, and humans decide what merges",
       "vo": "It works inside your process. Its pull requests follow the same branch protections as anyone's, and a human reviews them before anything merges.",
-      "hl": [
-        {
-          "x": 915.1220703125,
-          "y": 319.892578125,
-          "w": 922.255859375,
-          "h": 140
-        }
-      ]
+      "hl": null
     },
     "0004.png": {
       "hold": 1.2,
