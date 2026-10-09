@@ -13,8 +13,7 @@ window.SPEC = {
     "0000.png": {
       "hold": 3.0,
       "cursor": false,
-      "vo": "This is your first Devin session. Describe a task in plain English, and Devin builds it, tests it, and opens a pull request.",
-      "voSay": "This, is your first Devin session. Describe a task in plain English, and Devin builds it, tests it, and opens a pull request."
+      "vo": "Let's run your first Devin session. Describe a task in plain English, and Devin builds it, tests it, and opens a pull request."
     },
     "0001.png": {
       "hold": 1.6,

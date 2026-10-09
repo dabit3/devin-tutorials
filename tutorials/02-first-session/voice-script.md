@@ -6,7 +6,7 @@ Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`). Each line pla
 
 | Shot | Narration |
 | --- | --- |
-| Home screen | This is your first Devin session. Describe a task in plain English, and Devin builds it, tests it, and opens a pull request. |
+| Home screen | Let's run your first Devin session. Describe a task in plain English, and Devin builds it, tests it, and opens a pull request. |
 | Agent / Ask toggle | Agent mode writes, runs and ships code. Ask mode explores your code and plans the work, without changing anything. |
 | Agent selected | We'll stay in Agent mode. |
 | Capability button | Next, pick how much horsepower Devin brings. |
