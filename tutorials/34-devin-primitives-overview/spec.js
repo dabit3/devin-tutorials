@@ -1,0 +1,174 @@
+window.SPEC = {
+  "title": "Devin Primitives",
+  "subtitle": "When to use each one, where it lives, and how to build it",
+  "outro": "Teach it once, and every session starts smarter",
+  "voOutro": "Teach it once, and every session starts smarter.",
+  "speed": 3,
+  "cps": 48,
+  "maxZoom": 1.6,
+  "noZoom": [
+    [
+      "0003.png",
+      "0011.png"
+    ]
+  ],
+  "edit": {
+    "0000.png": {
+      "scene": "intro",
+      "hold": 4.1,
+      "cursor": false,
+      "capPos": "bottom",
+      "cap": "Each primitive teaches Devin something different",
+      "vo": "Devin gets better the more you teach it, and each primitive is a different way to teach it.",
+      "hl": null
+    },
+    "0001.png": {
+      "scene": "map",
+      "hold": 7.3,
+      "cursor": false,
+      "capPos": "bottom",
+      "cap": "Always-on context, reusable procedures, reach and sharing",
+      "vo": "They fall into three groups: always-on context, reusable procedures, and ways to reach new tools and share what you've built.",
+      "hl": null
+    },
+    "0002.png": {
+      "scene": "agents",
+      "hold": 6.5,
+      "cursor": false,
+      "capPos": "bottom",
+      "cap": "AGENTS.md: short, always-on context in your repo",
+      "vo": "For context every session needs, like build commands and conventions, commit a short agents file at the root of your repo, and Devin includes it automatically.",
+      "hl": null
+    },
+    "0003.png": {
+      "hold": 3.6,
+      "cursor": false,
+      "ring": {
+        "x": 757,
+        "y": 300,
+        "w": 310,
+        "h": 100
+      },
+      "ringFor": 3.2,
+      "cap": "Customize → Rules → Create rule, trigger Always on",
+      "vo": "You can also write a rule under Customize, Rules, and set its trigger to always on.",
+      "hl": null
+    },
+    "0004.png": {
+      "hold": 3.8,
+      "cursor": false,
+      "ring": {
+        "x": 681.4,
+        "y": 120,
+        "w": 946.5,
+        "h": 85
+      },
+      "ringFor": 3.4,
+      "cap": "Customize → Memory: learned automatically, personal to you",
+      "vo": "Memory is different, because Devin writes it itself as you work, it's personal to you, and you'll find it under Customize, Memory.",
+      "hl": null
+    },
+    "0005.png": {
+      "scene": "skill",
+      "hold": 6.5,
+      "cursor": false,
+      "capPos": "bottom",
+      "cap": "Skills: SKILL.md in .agents/skills, used when relevant",
+      "vo": "When a task should be done the same way every time, like testing before a pull request, write it as a skill file in your repo, and Devin uses it automatically when it's relevant.",
+      "hl": null
+    },
+    "0006.png": {
+      "hold": 3.6,
+      "cursor": false,
+      "ring": {
+        "x": 1010,
+        "y": 288,
+        "w": 800,
+        "h": 232
+      },
+      "ringFor": 3.2,
+      "cap": "Customize → Skills → Create skill",
+      "vo": "You can create one under Customize, Skills, or let Devin suggest one after it learns something new about your setup.",
+      "hl": null
+    },
+    "0007.png": {
+      "hold": 3.2,
+      "cursor": false,
+      "ring": {
+        "x": 720.6,
+        "y": 411.9,
+        "w": 343.7,
+        "h": 203.8
+      },
+      "ringFor": 2.8,
+      "cap": "Settings → Knowledge: it has moved to skills",
+      "vo": "If you used Knowledge before, it has moved to skills, so write new instructions as skills.",
+      "hl": null
+    },
+    "0008.png": {
+      "hold": 4.0,
+      "cursor": false,
+      "ring": {
+        "x": 725,
+        "y": 354.4,
+        "w": 1296.2,
+        "h": 183.8
+      },
+      "ringFor": 3.6,
+      "cap": "Settings → Playbooks: attach one with its macro",
+      "vo": "Playbooks are prompts for tasks that apply across repos or teams, and you attach one to a session with its macro.",
+      "hl": null
+    },
+    "0009.png": {
+      "hold": 3.8,
+      "cursor": false,
+      "ring": {
+        "x": 1045.7,
+        "y": 326.9,
+        "w": 374.0,
+        "h": 158.8
+      },
+      "ringFor": 3.4,
+      "cap": "Customize → MCPs → Add MCP → From plugin marketplace",
+      "vo": "MCP servers give Devin tools beyond its built-in ones, like Datadog, and the recommended way to add one is from the plugin marketplace.",
+      "hl": null
+    },
+    "0010.png": {
+      "hold": 3.4,
+      "cursor": false,
+      "ring": {
+        "x": 323.3,
+        "y": 240,
+        "w": 230.4,
+        "h": 60
+      },
+      "ringFor": 3.0,
+      "cap": "Install plugins for you, or for your organization",
+      "vo": "Plugins bundle skills, rules, hooks, and MCP servers, and you can install them just for you or for your whole organization.",
+      "hl": null
+    },
+    "0011.png": {
+      "hold": 3.2,
+      "cursor": false,
+      "ring": {
+        "x": 1083.8,
+        "y": 345.6,
+        "w": 300,
+        "h": 196.2
+      },
+      "ringFor": 2.8,
+      "cap": "Customize → Plugins → Add plugin",
+      "vo": "Add one from a repository, upload a zip, or create your own.",
+      "hl": null
+    },
+    "0012.png": {
+      "scene": "which",
+      "hold": 9.0,
+      "cursor": false,
+      "capPos": "bottom",
+      "cap": "Match the need to the primitive",
+      "vo": "So repeatable steps become a skill, conventions go in your agents file or a rule, preferences live in memory, shared prompts are playbooks, tools are MCP servers, and plugins share it all.",
+      "hl": null
+    }
+  }
+};
