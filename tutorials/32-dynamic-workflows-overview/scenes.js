@@ -82,49 +82,93 @@ function agentCard(ctx, k, x, y, w, t, a, { on = 0, sub, state, s = 0 } = {}) {
 }
 const ap = (k, s, t0, d = 0.6) => k.eOutQuint(k.prog(s, t0, t0 + d));
 
-// 1. The idea: you describe the task, Devin writes a Python script, the script runs a team of agents.
-function idea(ctx, s0, k) {
-  bg(ctx, k); const s = s0 / st('idea');
-  eyebrow(ctx, k, 'DYNAMIC WORKFLOWS', 112, ap(k, s, 0.05));
-  // you
-  const ya = ap(k, s, 0.2);
-  card(ctx, k, 110, 300 + 12 * (1 - ya), 300, 150, ya);
-  dot(ctx, k, 146, 336 + 12 * (1 - ya), 11, ink(0.16), ya);
-  txt(ctx, k, 'You', 168, 336 + 12 * (1 - ya), 18, 600, '#191919', ya, 'left');
-  txt(ctx, k, 'Describe the work', 136, 378 + 12 * (1 - ya), 15, 500, ink(0.75), ya, 'left');
-  [0.82, 0.6].forEach((f, j) => { ctx.save(); ctx.globalAlpha = k.alpha * ya; k.rr(136, 402 + j * 15 + 12 * (1 - ya), 248 * f, 5, 2.5); ctx.fillStyle = ink(0.09); ctx.fill(); ctx.restore(); });
-  const l1 = hc([410, 375], [520, 375]);
-  path(ctx, k, l1, k.eInOut(k.prog(s, 0.8, 1.3))); signal(ctx, k, l1, k.prog(s, 0.9, 1.6));
-  // the script Devin writes
-  const ca = ap(k, s, 1.2, 0.7), cy = 230 + 12 * (1 - ca);
-  card(ctx, k, 520, cy, 420, 290, ca, 0, 16);
-  avatar(ctx, k, 548, cy + 30, 18, ca);
-  txt(ctx, k, 'workflow.py', 566, cy + 30, 14, 500, ink(0.6), ca, 'left', 'JetBrains Mono', 0);
-  txt(ctx, k, 'Devin writes it', 920, cy + 30, 13, 500, ink(0.42), ca, 'right');
-  const code = [
-    ['await ', 'register_workflow', '(meta)'],
-    ['', '', ''],
-    ['async def ', 'review', '(file):'],
-    ['  return await ', 'agent', '(prompt, schema=...)'],
-    ['', '', ''],
-    ['reviews = await ', 'parallel', '(per_file)'],
-    ['merged = await ', 'agent', '(merge(reviews))'],
-  ];
-  code.forEach((ln, i) => {
-    const la = ap(k, s, 1.7 + i * 0.22, 0.4); if (!ln[1]) return;
-    let x = 548; const y = cy + 74 + i * 29;
-    x += txt(ctx, k, ln[0], x, y, 14, 500, ink(0.55), ca * la, 'left', 'JetBrains Mono', 0);
-    x += txt(ctx, k, ln[1], x, y, 14, 600, rgba(BLUE, 0.95), ca * la, 'left', 'JetBrains Mono', 0);
-    txt(ctx, k, ln[2], x, y, 14, 500, ink(0.55), ca * la, 'left', 'JetBrains Mono', 0);
+// 1. The value: hand Devin one big, multi-part job; many agents run it in parallel; one reliable result.
+const JOBS = ['Migrations', 'Codebase audits', 'Code reviews', 'Research comparisons'];
+function value(ctx, s0, k) {
+  bg(ctx, k); const s = s0 / st('value');
+  eyebrow(ctx, k, 'DYNAMIC WORKFLOWS', 150, ap(k, s, 0.05));
+  const ja = ap(k, s, 0.2), jx = 96, jy = 262 + 12 * (1 - ja), jw = 290, jh = 232;
+  card(ctx, k, jx, jy, jw, jh, ja);
+  avatar(ctx, k, jx + 34, jy + 38, 20, ja);
+  txt(ctx, k, 'One big job', jx + 54, jy + 38, 18, 600, '#191919', ja, 'left');
+  JOBS.forEach((t, i) => {
+    const ra = ap(k, s, 2.5 + i * 0.42, 0.5), ry = jy + 92 + i * 38 + 6 * (1 - ra);
+    dot(ctx, k, jx + 36, ry, 3.5, ink(0.35), ra);
+    txt(ctx, k, t, jx + 52, ry, 15.5, 500, ink(0.75), ra, 'left');
   });
-  // a team of agents
-  const ys = [262, 336, 410, 484];
-  ys.forEach((y, i) => {
-    const f = hc([940, 375], [1050, y]);
-    path(ctx, k, f, k.eInOut(k.prog(s, 3.6 + i * 0.12, 4.2 + i * 0.12))); signal(ctx, k, f, k.prog(s, 3.8 + i * 0.12, 4.6 + i * 0.12));
-    agentCard(ctx, k, 1170, y, 236, 'Devin agent', ap(k, s, 4.1 + i * 0.14), { state: s > 5.2 + i * 0.4 ? 'done' : 'run', s });
+  // many agents in parallel
+  const tw0 = 92, th = 60, gx = 16, gy = 18, x0 = 520, y0 = 378 - (3 * th + 2 * gy) / 2;
+  txt(ctx, k, 'Many agents in parallel', x0 + (4 * tw0 + 3 * gx) / 2, y0 - 34, 13.5, 500, ink(0.5), ap(k, s, 4.2));
+  for (let r = 0; r < 3; r++) {
+    const cy = y0 + r * (th + gy) + th / 2, f = hc([386, 378], [x0, cy]);
+    path(ctx, k, f, k.eInOut(k.prog(s, 3.9 + r * 0.08, 4.4 + r * 0.08))); signal(ctx, k, f, k.prog(s, 4.0 + r * 0.08, 4.7 + r * 0.08));
+    const g = hc([x0 + 4 * tw0 + 3 * gx, cy], [1060, 378]);
+    path(ctx, k, g, k.eInOut(k.prog(s, 6.0 + r * 0.06, 6.4 + r * 0.06))); signal(ctx, k, g, k.prog(s, 6.05 + r * 0.06, 6.6 + r * 0.06));
+    for (let c = 0; c < 4; c++) {
+      const i = r * 4 + c, ta = ap(k, s, 4.2 + i * 0.04, 0.5), x = x0 + c * (tw0 + gx), y = y0 + r * (th + gy) + 10 * (1 - ta);
+      card(ctx, k, x, y, tw0, th, ta, 0, 12); avatar(ctx, k, x + 28, y + th / 2, 18, ta);
+      if (s < 4.9 + ((i * 5) % 12) * 0.11) spinner(ctx, k, x + 64, y + th / 2, s + i * 0.3, ta, 7);
+      else check(ctx, k, x + 64, y + th / 2, ta, 8);
+    }
+  }
+  // one combined result
+  const ra = ap(k, s, 6.2), lit = ap(k, s, 6.5, 0.4) * (1 - k.prog(s, 7.6, 8.2)), ry = 300 + 12 * (1 - ra);
+  card(ctx, k, 1060, ry, 284, 156, ra, lit);
+  avatar(ctx, k, 1092, ry + 36, 20, ra);
+  txt(ctx, k, 'Done, reliably', 1112, ry + 36, 17, 600, '#191919', ra, 'left');
+  check(ctx, k, 1314, ry + 36, ap(k, s, 6.7, 0.3));
+  [0.86, 0.64, 0.76].forEach((f, j) => { ctx.save(); ctx.globalAlpha = k.alpha * ra; k.rr(1086, ry + 76 + j * 16, 232 * f, 5, 2.5); ctx.fillStyle = ink(0.09); ctx.fill(); ctx.restore(); });
+  txt(ctx, k, 'One combined result', 1202, ry + 186, 13.5, 500, ink(0.5), ra);
+}
+
+// 1b. Why it matters: parallel agents, steps that build on each other, runs you can watch and resume.
+function why(ctx, s0, k) {
+  bg(ctx, k); const s = s0 / st('why');
+  eyebrow(ctx, k, 'WHY IT MATTERS', 150, ap(k, s, 0.05));
+  const cw = 380, ch = 330, gap = 30, x0 = (k.VW - (3 * cw + 2 * gap)) / 2, y = 205;
+  const T = [0.1, 1.6, 3.1];
+  const meta = [['Many agents in parallel', 'Work fans out at once'], ['Each step builds on the last', 'Audit, then fix, then verify'], ['Watch it, or resume it', 'Finished work is kept']];
+  meta.forEach(([t, sub], i) => {
+    const t0 = T[i], a = ap(k, s, t0, 0.7), x = x0 + i * (cw + gap), yy = y + 16 * (1 - a), cx = x + cw / 2;
+    card(ctx, k, x, yy, cw, ch, a, 0, 18); if (a <= 0) return;
+    if (i === 0) {
+      for (let j = 0; j < 5; j++) {
+        const ry = yy + 48 + j * 34, p = k.eInOut(k.prog(s, t0 + 0.4 + j * 0.05, t0 + 1.3 + j * 0.1));
+        avatar(ctx, k, x + 44, ry, 16, a);
+        ctx.save(); ctx.globalAlpha = k.alpha * a; k.rr(x + 64, ry - 3, 250, 6, 3); ctx.fillStyle = ink(0.08); ctx.fill();
+        if (p > 0) { k.rr(x + 64, ry - 3, 250 * p, 6, 3); ctx.fillStyle = ink(0.5); ctx.fill(); } ctx.restore();
+        if (p >= 1) check(ctx, k, x + 336, ry, a, 8); else spinner(ctx, k, x + 336, ry, s + j * 0.4, a, 6.5);
+      }
+    } else if (i === 1) {
+      const ny = yy + 112, xs = [cx - 112, cx, cx + 112], names = ['Audit', 'Fix', 'Verify'];
+      xs.forEach((nx, j) => {
+        const reached = j === 0 ? 1 : ap(k, s, t0 + 0.9 + (j - 1) * 0.75, 0.3);
+        card(ctx, k, nx - 30, ny - 30, 60, 60, a, 0, 14); avatar(ctx, k, nx, ny, 22, a * (0.35 + 0.65 * reached));
+        txt(ctx, k, names[j], nx, ny + 52, 13.5, 500, ink(0.5), a);
+        if (j < 2) path(ctx, k, hc([nx + 30, ny], [xs[j + 1] - 30, ny]), k.eInOut(k.prog(s, t0 + 0.3 + j * 0.75, t0 + 0.6 + j * 0.75)));
+      });
+      for (let j = 0; j < 2; j++) {
+        const p = k.eInOut(k.prog(s, t0 + 0.35 + j * 0.75, t0 + 0.95 + j * 0.75)), f = hc([xs[j], ny - 50], [xs[j + 1], ny - 50]);
+        const ja = ap(k, s, t0 + 0.3 + j * 0.75, 0.25) * (1 - k.prog(s, t0 + 0.95 + j * 0.75, t0 + 1.15 + j * 0.75));
+        const [jx, jy] = f(Math.min(p, 0.999)); json(ctx, k, jx, jy, ja, ['{ result }'], 92, 0.8);
+      }
+    } else {
+      const n = 6, bw = 44, bg2 = 10, bx = cx - (n * bw + (n - 1) * bg2) / 2, by = yy + 64;
+      const cut = t0 + 1.3, back = t0 + 1.9;
+      for (let j = 0; j < n; j++) {
+        const sx = bx + j * (bw + bg2), done = j < 3 ? s > t0 + 0.5 + j * 0.25 : s > back + 0.3 + (j - 3) * 0.3;
+        const kept = j < 3 && s > back ? ap(k, s, back, 0.3) * (1 - k.prog(s, back + 0.8, back + 1.2)) : 0;
+        card(ctx, k, sx, by, bw, bw, a, kept, 11);
+        if (done) check(ctx, k, sx + bw / 2, by + bw / 2, a, 8);
+        else if ((j < 3 && s > t0 + 0.3) || (j >= 3 && s > back)) spinner(ctx, k, sx + bw / 2, by + bw / 2, s + j * 0.3, a, 6.5);
+      }
+      const ia = ap(k, s, cut, 0.3) * (1 - k.prog(s, back - 0.1, back)), ra2 = ap(k, s, back, 0.3);
+      pill(ctx, k, 'Interrupted', cx, yy + 160, ia * a);
+      pill(ctx, k, 'Resumed, 3 kept', cx, yy + 160, ra2 * a, true);
+    }
+    txt(ctx, k, t, cx, yy + 250, 20, 600, '#191919', a);
+    txt(ctx, k, sub, cx, yy + 282, 14, 500, ink(0.55), a);
   });
-  txt(ctx, k, 'Each agent is a Devin session', 1170, 548, 13.5, 500, ink(0.5), ap(k, s, 4.8));
 }
 
 // 2. How a run works: the script fans out agents; each returns structured output that builds the next prompt.
@@ -351,5 +395,5 @@ function uses(ctx, s0, k) {
   });
 }
 
-window.SCENES = { idea, flow, modes, resume, when, reuse, uses };
+window.SCENES = { value, why, flow, modes, resume, when, reuse, uses };
 })();

@@ -2,9 +2,11 @@
 
 Narrated by Nader (ElevenLabs voice T8iHhGIWPm2GVYpQD1Am, default settings), generated as one take and cut at sentence boundaries.
 
-With dynamic workflows, Devin writes a Python script that runs a whole team of Devin agents for you.
+Dynamic workflows let you hand Devin big, multi-part jobs, like migrations, audits, reviews, or research, and get them done reliably at scale.
 
-The script decides which agents run, in what order, and what each one is told, using earlier results to build later prompts.
+Many agents work in parallel, each step builds on the last, and you can watch the run live or resume it without losing finished work.
+
+Under the hood, Devin writes a Python script that decides which agents run and what each one is told, using earlier results to build later prompts.
 
 Here, I ask for one accessibility reviewer per component, then one merged list.
 
