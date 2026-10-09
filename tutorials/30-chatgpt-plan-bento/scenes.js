@@ -102,7 +102,7 @@ function headline(s) {
   const sp = 24, ws = words.map(w => ctx.measureText(w).width), tot = ws.reduce((p, c) => p + c, 0) + sp * (words.length - 1);
   // intro: the line centred with the lockup beneath it; header: one small line "Use your ChatGPT plan in <lockup>"
   const HS = 0.56, hLh = 96 * 0.727 * HS / LK.cap, hLw = hLh * ar, gap = 15, hx = 960 - (tot * HS + gap + hLw) / 2;
-  const lx = lerp(960 - tot / 2, hx, g), by = lerp(470, 168, g), sc = lerp(1, HS, g);
+  const IS = 0.85, lx = lerp(960 - tot * IS / 2, hx, g), by = lerp(470, 168, g), sc = lerp(IS, HS, g);   // IS: intro line scale
   ctx.save(); ctx.globalAlpha *= a; ctx.translate(lx, by); ctx.scale(sc, sc);
   let x = 0;
   words.forEach((w, i) => {
