@@ -1,0 +1,422 @@
+{
+ "0000.png": {
+  "text": "Code review usually takes a few round trips. With Auto-Fix, Devin closes that loop on its own, and you only read one final diff. Orbit is enrolled for automatic review, so Devin Review runs when a pull request opens, and again on every push.",
+  "dur": 13.095,
+  "at": 0.0,
+  "end": 13.095,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.136,
+    "text": "Code review usually takes a few round trips."
+   },
+   {
+    "t0": 2.31,
+    "t1": 4.435,
+    "text": "With Auto-Fix, Devin closes that loop on its"
+   },
+   {
+    "t0": 4.493,
+    "t1": 6.815,
+    "text": "own, and you only read one final diff."
+   },
+   {
+    "t0": 7.326,
+    "t1": 9.149,
+    "text": "Orbit is enrolled for automatic review,"
+   },
+   {
+    "t0": 9.195,
+    "t1": 11.099,
+    "text": "so Devin Review runs when a pull request"
+   },
+   {
+    "t0": 11.146,
+    "t1": 13.095,
+    "text": "opens, and again on every push."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "By default, Devin ignores comments from bots, including Devin Review.",
+  "dur": 3.525,
+  "at": 13.35,
+  "end": 16.875,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.141,
+    "t1": 2.381,
+    "text": "By default, Devin ignores comments from bots,"
+   },
+   {
+    "t0": 2.405,
+    "t1": 3.525,
+    "text": "including Devin Review."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "So set Responding to bots to Selected only.",
+  "dur": 2.665,
+  "at": 17.14,
+  "end": 19.805,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.147,
+    "t1": 2.665,
+    "text": "So set Responding to bots to Selected only."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Then allow Devin Review's bot. That one setting closes the loop.",
+  "dur": 3.82,
+  "at": 20.16,
+  "end": 23.98,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.099,
+    "t1": 1.748,
+    "text": "Then allow Devin Review's bot."
+   },
+   {
+    "t0": 2.131,
+    "t1": 3.82,
+    "text": "That one setting closes the loop."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "Now I ask Devin for a real feature: optional due dates on issues, with chips for due today and overdue, plus tests and a pull request.",
+  "dur": 7.73,
+  "at": 24.215,
+  "end": 31.945,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.096,
+    "t1": 1.884,
+    "text": "Now I ask Devin for a real feature:"
+   },
+   {
+    "t0": 2.268,
+    "t1": 3.939,
+    "text": "optional due dates on issues,"
+   },
+   {
+    "t0": 4.056,
+    "t1": 5.925,
+    "text": "with chips for due today and overdue,"
+   },
+   {
+    "t0": 6.099,
+    "t1": 7.73,
+    "text": "plus tests and a pull request."
+   }
+  ]
+ },
+ "0109.png": {
+  "text": "Devin builds it and opens the pull request. From here, no human touches it.",
+  "dur": 4.425,
+  "at": 32.53,
+  "end": 36.955,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.141,
+    "t1": 2.207,
+    "text": "Devin builds it and opens the pull request."
+   },
+   {
+    "t0": 2.59,
+    "t1": 4.402,
+    "text": "From here, no human touches it."
+   }
+  ]
+ },
+ "0117.png": {
+  "text": "Devin Review analyzes it right away, and finds two real bugs in the code Devin just wrote.",
+  "dur": 4.71,
+  "at": 37.28,
+  "end": 41.99,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.093,
+    "t1": 1.974,
+    "text": "Devin Review analyzes it right away,"
+   },
+   {
+    "t0": 2.008,
+    "t1": 3.82,
+    "text": "and finds two real bugs in the code"
+   },
+   {
+    "t0": 3.855,
+    "t1": 4.679,
+    "text": "Devin just wrote."
+   }
+  ]
+ },
+ "0120.png": {
+  "text": "Here's the first, on the diff line. If the board stays open past midnight, a card due today never turns overdue.",
+  "dur": 6.4,
+  "at": 42.135,
+  "end": 48.535,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.033,
+    "t1": 0.811,
+    "text": "Here's the first,"
+   },
+   {
+    "t0": 0.857,
+    "t1": 1.682,
+    "text": "on the diff line."
+   },
+   {
+    "t0": 2.007,
+    "t1": 4.038,
+    "text": "If the board stays open past midnight,"
+   },
+   {
+    "t0": 4.189,
+    "t1": 6.4,
+    "text": "a card due today never turns overdue."
+   }
+  ]
+ },
+ "0121.png": {
+  "text": "The Auto-fix section shows the session that owns this pull request is already on it.",
+  "dur": 4.05,
+  "at": 48.91,
+  "end": 52.96,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.073,
+    "t1": 2.325,
+    "text": "The Auto-fix section shows the session that owns"
+   },
+   {
+    "t0": 2.36,
+    "t1": 4.044,
+    "text": "this pull request is already on it."
+   }
+  ]
+ },
+ "0123.png": {
+  "text": "Nobody typed anything. The session read the findings by itself, and started fixing them.",
+  "dur": 4.505,
+  "at": 53.14,
+  "end": 57.645,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.139,
+    "t1": 1.254,
+    "text": "Nobody typed anything."
+   },
+   {
+    "t0": 1.695,
+    "t1": 3.436,
+    "text": "The session read the findings by itself,"
+   },
+   {
+    "t0": 3.46,
+    "t1": 4.505,
+    "text": "and started fixing them."
+   }
+  ]
+ },
+ "0145.png": {
+  "text": "Every push gets a fresh review. Review even caught new bugs in Devin's own fixes, and Devin fixed those too, until the latest round came back clean.",
+  "dur": 8.125,
+  "at": 57.87,
+  "end": 65.995,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.111,
+    "t1": 1.597,
+    "text": "Every push gets a fresh review."
+   },
+   {
+    "t0": 2.038,
+    "t1": 3.85,
+    "text": "Review even caught new bugs in Devin's own"
+   },
+   {
+    "t0": 3.908,
+    "t1": 5.939,
+    "text": "fixes, and Devin fixed those too,"
+   },
+   {
+    "t0": 6.264,
+    "t1": 8.125,
+    "text": "until the latest round came back clean."
+   }
+  ]
+ },
+ "0148.png": {
+  "text": "Three fix commits, all pushed by Devin.",
+  "dur": 2.03,
+  "at": 66.25,
+  "end": 68.28,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.044,
+    "t1": 0.972,
+    "text": "Three fix commits,"
+   },
+   {
+    "t0": 0.996,
+    "t1": 2.006,
+    "text": "all pushed by Devin."
+   }
+  ]
+ },
+ "0149.png": {
+  "text": "Five bugs found, five resolved.",
+  "dur": 2.035,
+  "at": 68.42,
+  "end": 70.455,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.045,
+    "t1": 2.018,
+    "text": "Five bugs found, five resolved."
+   }
+  ]
+ },
+ "0152.png": {
+  "text": "And CI is green. All checks passed.",
+  "dur": 2.6,
+  "at": 70.64,
+  "end": 73.24,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.042,
+    "t1": 1.122,
+    "text": "And CI is green."
+   },
+   {
+    "t0": 1.505,
+    "t1": 2.6,
+    "text": "All checks passed."
+   }
+  ]
+ },
+ "0155.png": {
+  "text": "Now the human's only job: read the final diff. The card now reads the current day from a shared hook, so the chip moves to overdue after midnight.",
+  "dur": 7.765,
+  "at": 73.395,
+  "end": 81.16,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.097,
+    "t1": 1.374,
+    "text": "Now the human's only job:"
+   },
+   {
+    "t0": 1.699,
+    "t1": 2.709,
+    "text": "read the final diff."
+   },
+   {
+    "t0": 3.034,
+    "t1": 4.787,
+    "text": "The card now reads the current day from"
+   },
+   {
+    "t0": 4.834,
+    "t1": 5.577,
+    "text": "a shared hook,"
+   },
+   {
+    "t0": 5.751,
+    "t1": 7.725,
+    "text": "so the chip moves to overdue after midnight."
+   }
+  ]
+ },
+ "0156.png": {
+  "text": "It looks right, so I merge it from Devin Review.",
+  "dur": 2.285,
+  "at": 81.255,
+  "end": 83.54,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.039,
+    "t1": 0.677,
+    "text": "It looks right,"
+   },
+   {
+    "t0": 0.712,
+    "t1": 2.245,
+    "text": "so I merge it from Devin Review."
+   }
+  ]
+ },
+ "0160.png": {
+  "text": "Merged. The loop closed itself.",
+  "dur": 1.945,
+  "at": 83.67,
+  "end": 85.615,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.108,
+    "t1": 1.945,
+    "text": "Merged. The loop closed itself."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Devin closes the review loop, and you only read the final diff.",
+  "dur": 2.8,
+  "at": 85.89,
+  "end": 88.69,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.071,
+    "t1": 1.464,
+    "text": "Devin closes the review loop,"
+   },
+   {
+    "t0": 1.487,
+    "t1": 2.8,
+    "text": "and you only read the final diff."
+   }
+  ]
+ }
+}
