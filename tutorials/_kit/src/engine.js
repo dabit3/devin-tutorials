@@ -82,12 +82,13 @@ function build() {
     }
     let camIn = null;
     if (b.cam) {
-      const k = { t: t + sec(b.camDelay ?? 0), to: b.cam === 'reset' ? { x: VW / 2, y: VH / 2, z: 1 } : b.cam, dur: sec(b.camDur ?? 1.0) };
+      const k = { t: t + sec(b.camDelay ?? (b.enter ? 0.32 : 0)), to: b.cam === 'reset' ? { x: VW / 2, y: VH / 2, z: 1 } : b.cam, dur: sec(b.camDur ?? 1.0) };
       tl.cams.push(k);
       if (k.to.z > 1) { camIn = k; settle = k.t + k.dur; }
     }
     if (b.cap !== undefined && b.cap !== cap) {
       cap = b.cap; capT = t + sec(b.capDelay ?? 0);
+      if (b.enter && b.capDelay) tl.caps.push({ t, text: '', pos: b.capPos || S.capPos || 'auto' });
       if (camIn && b.capDelay === undefined) capT = camIn.t + Math.round(camIn.dur * 0.75);
       tl.caps.push({ t: capT, text: cap, pos: b.capPos || S.capPos || 'auto', anchor: b.target || (b.ring && b.ring.w ? b.ring : null) || b.cur });
     }
@@ -142,7 +143,7 @@ function build() {
       // a ringed beat stays on screen until its ring has been seen (ringFor + delay + fade-out)
       if (b.ring) dur = Math.max(dur, sec((b.ringFor ?? 2.5) + (b.ringDelay ?? 0.2) + 0.5));
       push(b.img, t, dur, b.fade ?? Math.min(8, Math.floor(dur / 2))); t += dur;
-    } else { const dur = Math.max(hs(b.hold ?? 1.0), b.ring ? sec((b.ringFor ?? 2.5) + (b.ringDelay ?? 0.2) + 0.5) : 0); push(b.img, t, dur, b.fade ?? 6); t += dur; }
+    } else { const dur = Math.max(hs(b.hold ?? 1.0), b.ring ? sec((b.ringFor ?? 2.5) + (b.ringDelay ?? 0.2) + 0.5) : 0); push(b.img, t, dur, b.enter ? sec(0.75) : b.fade ?? 6, b.enter ? { enter: b.enter } : {}); t += dur; }
   });
   if (VO) t = Math.max(t, voEnd + sec(0.5));
   t += sec(S.tailHold ?? 1.0);
@@ -225,8 +226,17 @@ async function drawUI(f, alpha) {
   ctx.translate(W / 2, H / 2); ctx.scale(cam.z * K, cam.z * K); ctx.translate(-cam.x, -cam.y);
   ctx.imageSmoothingQuality = 'high';
   const fa = st.fade ? clamp((f - st.t0) / st.fade) : 1;
-  if (st.prev && fa < 1) await drawShot(st.prev, f);
-  ctx.globalAlpha = fa; await drawShot(st.img, f); ctx.globalAlpha = 1;
+  if (st.enter === 'rise' && fa < 1) {
+    // enter: 'rise' (still beats): the old shot fades to the page color, the camera cuts while it's empty, the new shot rises in
+    const a = 1 - eInOut(clamp(fa / 0.42)), e = eOutQuint(clamp((fa - 0.42) / 0.58));
+    ctx.fillStyle = SPEC.pageBg || '#fff'; ctx.fillRect(-VW, -VH, VW * 3, VH * 3);
+    if (st.prev && a > 0) { ctx.globalAlpha = a; await drawShot(st.prev, f); }
+    if (e > 0) { ctx.save(); ctx.translate(VW / 2, VH / 2 + 22 * (1 - e)); ctx.scale(lerp(0.985, 1, e), lerp(0.985, 1, e)); ctx.translate(-VW / 2, -VH / 2); ctx.globalAlpha = e; await drawShot(st.img, f); ctx.restore(); }
+    ctx.globalAlpha = 1;
+  } else {
+    if (st.prev && fa < 1) await drawShot(st.prev, f);
+    ctx.globalAlpha = fa; await drawShot(st.img, f); ctx.globalAlpha = 1;
+  }
   drawHighlights(f);
   // click ripple
   for (const c of TL.clicks) {
