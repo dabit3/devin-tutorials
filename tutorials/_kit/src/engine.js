@@ -37,12 +37,20 @@ function build() {
   const hs = x => sec(x * (S.pace ?? 1.2));
   const capMin = text => S.capMin ?? Math.max(2.6, 1.0 + text.split(/\s+/).length * 0.3);
   const beats = BEATS.map(b => ({ ...b, ...(edits[b.img] || {}) })).filter(b => !b.skip);
-  const push = (img, t0, dur, fade, extra = {}) => { tl.steps.push({ img, t0, t1: t0 + dur, fade, prev: shown, ...extra }); shown = img; };
-  let settle = 0, voEnd = 0, voStart = 0, voLast = '';
+  // a ring belongs to its beat's shot: fade it out before the next shot replaces it
+  const clipRing = (img, t0) => {
+    if (!ringOn || img === ringOn.img) return;
+    const end = Math.max(ringOn.t + sec(0.4), t0 - sec(0.35));
+    if (ringOn.until == null || ringOn.until > end) tl.rings.push({ t: end, box: null });
+    ringOn = null;
+  };
+  const push = (img, t0, dur, fade, extra = {}) => { clipRing(img, t0); tl.steps.push({ img, t0, t1: t0 + dur, fade, prev: shown, ...extra }); shown = img; };
+  let settle = 0, voEnd = 0, voStart = 0, voLast = '', voPrev = null, ringOn = null;
+  const runK = {}; tl.voLate = [];
   const VO = S.voLines; tl.vo = [];
   const say = (key, t0) => {
     const L = VO[key]; if (!L) return t0;
-    voLast = L.text; voStart = t0;
+    voLast = L.text; voStart = t0; voPrev = L;
     tl.vo.push({ t: t0, file: key });
     for (const c of L.chunks) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos: 'bottom' });
     tl.caps.push({ t: t0 + sec(L.dur + 0.3), text: '', pos: 'bottom' });
@@ -57,9 +65,13 @@ function build() {
     if (S.noCaps) b = { ...b, cap: undefined };
     if (VO) {
       b = { ...b, cap: undefined };
-      const gap = /[.?!]$/.test(voLast.trim()) ? Math.max(b.voGap ?? 0, S.voSentGap ?? 0.75) : (b.voGap ?? 0.35);
+      // lines cut from one take (vo_onetake.py records at/end) keep the take's own pause between them
+      const L = b.vo && VO[b.img];
+      const nat = S.voNatural !== false && L && voPrev && L.at != null && voPrev.end != null ? Math.max(0, L.at - voPrev.end) : null;
+      const gap = nat ?? /[.?!]$/.test(voLast.trim()) ? Math.max(b.voGap ?? 0, S.voSentGap ?? 0.75) : (b.voGap ?? 0.35);
       // voSync: a beat that illustrates a later part of the current line waits until that many seconds into it.
       if (b.voSync != null) t = Math.max(t, voStart + sec(b.voSync));
+      if (L && voPrev && t > voEnd + sec(gap) + sec(0.25)) tl.voLate.push(`${b.img} +${((t - voEnd - sec(gap)) / FPS).toFixed(1)}s`);
       if ((b.vo && VO[b.img]) || b.waitVo) t = Math.max(t, voEnd + sec(gap));
       if (b.vo && VO[b.img]) voEnd = say(b.img, t + sec(b.voDelay ?? 0));
     }
@@ -80,8 +92,10 @@ function build() {
     // ring: {x,y,w,h} (center + size, 1440x810 UI px) or true (the beat's target) draws a thin annotation border; false clears it
     if (b.ring !== undefined) {
       const box = b.ring === true ? b.target : b.ring || null;
-      tl.rings.push({ t: t + sec(b.ringDelay ?? 0.2), box: box && { ...box, pad: b.ringPad ?? 7, r: b.ringRadius ?? 12 } });
-      if (box && b.ringFor) tl.rings.push({ t: t + sec((b.ringDelay ?? 0.2) + b.ringFor), box: null });
+      const r0 = t + sec(b.ringDelay ?? 0.2);
+      tl.rings.push({ t: r0, box: box && { ...box, pad: b.ringPad ?? 7, r: b.ringRadius ?? 12 } });
+      ringOn = box ? { img: b.img, t: r0 } : null;
+      if (box && b.ringFor) { ringOn.until = r0 + sec(b.ringFor); tl.rings.push({ t: ringOn.until, box: null }); }
     }
     if (b.badge !== undefined && b.badge !== badge) { badge = b.badge; tl.badges.push({ t, text: badge }); }
     if (b.speed) speed = b.speed;
@@ -102,7 +116,24 @@ function build() {
       tl.typing.push({ t, dur, n: b.n || 2 }); push(b.img, t, dur + hs(b.hold ?? 0), 0); t += dur + hs(b.hold ?? 0);
     } else if (b.kind === 'poll') {
       const nx = beats[i + 1]; const dt = (nx && nx.kind === 'poll' && nx.at > b.at) ? (nx.at - b.at) / 1000 : 1;
-      const dur = Math.max(3, sec(b.hold ?? dt / speed)); push(b.img, t, dur, b.fade ?? Math.min(8, Math.floor(dur / 2))); t += dur;
+      let dur = Math.max(3, sec(b.hold ?? dt / speed));
+      // pollRunMax: a run of plain polls (Devin just working) lasts at most this many seconds past any narration still playing
+      if (S.pollRunMax != null && b.hold == null && !b.ring) {
+        if (!(b.img in runK)) {
+          const run = []; let sp = speed, sum = 0;
+          for (let j = i; j < beats.length; j++) {
+            const c = beats[j];
+            if (c.kind !== 'poll' || c.hold != null || c.ring || (j > i && c.vo)) break;
+            if (j > i && c.speed) sp = c.speed;
+            const n2 = beats[j + 1], d2 = (n2 && n2.kind === 'poll' && n2.at > c.at) ? (n2.at - c.at) / 1000 : 1;
+            run.push(c.img); sum += Math.max(3, sec(d2 / sp));
+          }
+          const budget = sec(S.pollRunMax) + (VO ? Math.max(0, voEnd - t) : 0);
+          for (const img of run) runK[img] = Math.min(1, budget / sum);
+        }
+        dur = Math.max(3, Math.round(dur * runK[b.img]));
+      }
+      push(b.img, t, dur, b.fade ?? Math.min(8, Math.floor(dur / 2))); t += dur;
     } else { const dur = hs(b.hold ?? 1.0); push(b.img, t, dur, b.fade ?? 6); t += dur; }
   });
   if (VO) t = Math.max(t, voEnd + sec(0.5));
@@ -111,6 +142,7 @@ function build() {
   tl.introEnd = INTRO; tl.enter = ENTER; tl.uiEnd = t; tl.outro = sec(3.6);
   if (VO && VO.outro) { const t0 = t + sec(1.0); tl.vo.push({ t: t0, file: 'outro' }); tl.outro = Math.max(tl.outro, sec(1.0 + VO.outro.dur + 1.4)); }
   tl.frames = t + tl.outro;
+  tl.rings.sort((a, b) => a.t - b.t);
   // clamp first step start to 0 so the window shows the first shot while entering
   const firstImg = tl.steps.find(s => s.img); firstImg.t0 = 0;
   tl.imgSteps = tl.steps.filter(s => s.img);
@@ -387,7 +419,7 @@ async function renderFrame(f) {
 }
 
 function cues() {
-  return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, clicks: TL.clicks.map(c => c.t), typing: TL.typing, caps: SPEC.voLines ? [] : TL.caps.filter(c => c.text).map(c => c.t), vo: TL.vo };
+  return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, clicks: TL.clicks.map(c => c.t), typing: TL.typing, caps: SPEC.voLines ? [] : TL.caps.filter(c => c.text).map(c => c.t), vo: TL.vo, voLate: TL.voLate };
 }
 const ready = (async () => {
   await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/spec.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });

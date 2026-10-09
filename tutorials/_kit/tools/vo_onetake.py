@@ -120,7 +120,7 @@ for i, (img, text, say) in enumerate(order):
     ch = chunks([U[c] for c in idx], [st[c] - s0 for c in idx], [en[c] - s0 for c in idx])
     if say != text: ch = [{**ch[0], 't1': ch[-1]['t1'], 'text': text}]
     dur = round(s1 - s0, 3)
-    res[img] = {'text': text, **({'say': say} if say != text else {}), 'dur': dur, 'mode': 'one-take', 'checked': True,
+    res[img] = {'text': text, **({'say': say} if say != text else {}), 'dur': dur, 'at': round(s0, 3), 'end': round(s1, 3), 'mode': 'one-take', 'checked': True,
                 'chunks': [{**c, 't0': round(max(0, c['t0']), 3), 't1': round(min(c['t1'], dur), 3)} for c in ch]}
     print(f'{img}: {dur:.2f}s  {text}')
 os.replace(wav, os.path.join(out, '_full-take.wav'))
