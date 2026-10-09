@@ -4,150 +4,201 @@ window.SPEC = {
   "outro": "Let Devin sign in for you",
   "speed": 1,
   "cps": 48,
+  "pollRunMax": 2.5,
   "voOutro": "Add a secret once, and let Devin sign in for you.",
   "edit": {
     "0000.png": {
       "hold": 2.6,
       "cursor": false,
-      "vo": "This is Secrets and Site Cookies. Give Devin the credentials it needs, without pasting them in chat.",
-      "voSay": "This, is Secrets and Site Cookies. Give Devin the credentials it needs, without pasting them in chat."
+      "vo": "Secrets give Devin the passwords, API keys and site cookies it needs, without pasting them into chat."
     },
     "0001.png": {
-      "vo": "Open Settings, then go to Secrets."
+      "vo": "To add one, open Settings → Secrets, where your organization and personal secrets live.",
+      "voSay": "To add one, open Settings, then Secrets, where your organization and personal secrets live."
+    },
+    "0002.png": {
+      "hold": 0.55
+    },
+    "0004.png": {
+      "hold": 0.55
+    },
+    "0006.png": {
+      "hold": 0.55
+    },
+    "0007.png": {
+      "hold": 0.5
+    },
+    "0008.png": {
+      "hold": 2.4,
+      "cap": "Reference a secret by name, with a dollar sign",
+      "vo": "Any secret can be referenced by its name, with a dollar sign in front.",
+      "ring": {
+        "x": 494.9,
+        "y": 163.8,
+        "w": 828.5,
+        "h": 22.5
+      },
+      "ringFor": 2.4
+    },
+    "0009.png": {
+      "hold": 2.6,
+      "cap": "Organization secrets are shared, personal ones are yours",
+      "vo": "Organization secrets are shared with your whole team. Personal secrets only work in sessions you start.",
+      "ring": {
+        "x": 720.6,
+        "y": 415,
+        "w": 1280,
+        "h": 35
+      },
+      "ringFor": 2.6
+    },
+    "0010.png": {
+      "vo": "Click Add secret, and set the scope to Personal, so only your sessions can use it."
+    },
+    "0011.png": {
+      "hold": 0.55
     },
     "0013.png": {
-      "hold": 2,
-      "voGap": 0.5,
-      "vo": "Organization secrets are shared with your whole team, and carry over to every future session."
-    },
-    "0014.png": {
-      "vo": "Personal secrets only work in sessions you start."
+      "hold": 0.55
     },
     "0015.png": {
-      "vo": "Click Add secret."
+      "hold": 0.55
     },
-    "0017.png": {
-      "hold": 1.2
+    "0016.png": {
+      "hold": 1.8,
+      "cap": "Raw secret, Cookie, or a one-time password",
+      "vo": "Then pick a type: a raw secret, a cookie, or a one-time password for two-factor sign-in.",
+      "ring": {
+        "x": 978.8,
+        "y": 332.5,
+        "w": 250,
+        "h": 122.5
+      },
+      "ringFor": 1.8
     },
     "0018.png": {
-      "cam": {
-        "x": 1180,
-        "y": 260,
-        "z": 1.7
+      "skip": true
+    },
+    "0019.png": {
+      "cap": "Name it, then enter the value",
+      "vo": "A raw secret holds one value, like an API key. Give it a name, the value, and a note so Devin knows when to use it."
+    },
+    "0032.png": {
+      "cap": "Add a note for Devin"
+    },
+    "0040.png": {
+      "vo": "Secrets are encrypted, and Redact value is on by default, so the value stays hidden in the dashboard.",
+      "ring": {
+        "x": 1020.6,
+        "y": 759.4,
+        "w": 333.8,
+        "h": 41.2
       },
-      "camDur": 1.1,
-      "vo": "Pick a scope. This one is personal."
+      "ringFor": 2.4
     },
-    "0020.png": {
-      "vo": "Then pick a type: a raw secret, a cookie, or a one-time password for two-factor sign-in."
-    },
-    "0022.png": {
-      "hold": 1.8
-    },
-    "0023.png": {
-      "vo": "A raw secret holds one value, like an API key or a password."
-    },
-    "0025.png": {
-      "cam": {
-        "x": 1180,
-        "y": 380,
-        "z": 1.6
+    "0044.png": {
+      "hold": 2.4,
+      "cap": "Saved under Personal, value hidden",
+      "vo": "The new secret shows up under Personal, with its note, and never its value.",
+      "ring": {
+        "x": 824.4,
+        "y": 582.5,
+        "w": 1470,
+        "h": 52.5
       },
-      "camDur": 0.9,
-      "vo": "Give it a name, and paste the value."
+      "ringFor": 2.4
     },
-    "0038.png": {
-      "vo": "Add a note, so Devin knows when to use it."
+    "0045.png": {
+      "vo": "Site cookies keep Devin signed in to web apps. Add another secret, and this time choose Cookie."
     },
-    "0039.png": {
-      "cam": {
-        "x": 1180,
-        "y": 560,
-        "z": 1.6
-      },
-      "camDur": 0.9
+    "0046.png": {
+      "hold": 0.55
+    },
+    "0048.png": {
+      "hold": 0.55
     },
     "0049.png": {
-      "hold": 1
-    },
-    "0050.png": {
-      "vo": "Click Store secret."
+      "hold": 0.8,
+      "ring": {
+        "x": 978.8,
+        "y": 332.5,
+        "w": 250,
+        "h": 122.5
+      },
+      "ringFor": 0.8
     },
     "0051.png": {
-      "cam": "reset"
+      "hold": 0.55
     },
     "0052.png": {
       "hold": 2.2,
-      "cam": {
-        "x": 800,
-        "y": 420,
-        "z": 1.5
+      "cap": "Paste cookie JSON, or a base64 string",
+      "vo": "Name it, then paste the cookies you exported from your browser, as JSON or base64.",
+      "ring": {
+        "x": 1131.9,
+        "y": 385,
+        "w": 513.8,
+        "h": 77.5
       },
-      "camDelay": 0.3,
-      "vo": "Secrets are encrypted at rest, and the value stays hidden in the dashboard."
+      "ringFor": 2.2
     },
     "0053.png": {
-      "cam": "reset",
-      "camDur": 0.8,
-      "voGap": 0.5,
-      "vo": "Site cookies keep Devin signed in to web apps."
+      "cap": "Name the cookie secret"
     },
-    "0057.png": {
-      "vo": "This time, choose Cookie."
+    "0054.png": {
+      "hold": 0.55
+    },
+    "0060.png": {
+      "cap": "Paste the cookie JSON"
     },
     "0061.png": {
-      "hold": 1.6,
-      "cam": {
-        "x": 1180,
-        "y": 260,
-        "z": 1.6
+      "hold": 0.55
+    },
+    "0063.png": {
+      "hold": 1.8,
+      "cap": "Each cookie is parsed and encoded for you",
+      "vo": "The form parses each cookie, and encodes it for you.",
+      "ring": {
+        "x": 1131.9,
+        "y": 738.8,
+        "w": 556.2,
+        "h": 82.5
       },
-      "camDur": 1.1
+      "ringFor": 1.8
     },
-    "0062.png": {
-      "cam": {
-        "x": 1180,
-        "y": 480,
-        "z": 1.6
+    "0064.png": {
+      "hold": 1.0,
+      "ring": {
+        "x": 1020.6,
+        "y": 759.4,
+        "w": 333.8,
+        "h": 41.2
       },
-      "camDur": 0.9,
-      "vo": "Give the cookie a name."
+      "ringFor": 1.0,
+      "cap": "Redact stays on"
     },
-    "0070.png": {
-      "cam": {
-        "x": 1180,
-        "y": 660,
-        "z": 1.6
+    "0066.png": {
+      "hold": 0.55
+    },
+    "0067.png": {
+      "hold": 3.6,
+      "cap": "Both secrets are ready for new sessions",
+      "vo": "Now both are ready in any new session you start. Devin types the values straight into the browser, and binds them as environment variables for the commands that need them.",
+      "ring": {
+        "x": 824.4,
+        "y": 610,
+        "w": 1470,
+        "h": 107.5
       },
-      "camDur": 0.9,
-      "vo": "Then paste the cookies you exported from your browser, as JSON or base64."
+      "ringFor": 3.6
     },
-    "0084.png": {
-      "cam": "reset",
-      "camDur": 0.8
+    "0041.png": {
+      "cap": "Store secret",
+      "capPos": "bottom"
     },
-    "0085.png": {
-      "hold": 1.4,
-      "vo": "The form parses each cookie, and encodes it for you."
-    },
-    "0086.png": {
-      "cap": null,
-      "vo": "Store it."
-    },
-    "0087.png": {
-      "cam": "reset"
-    },
-    "0090.png": {
-      "hold": 3.2,
-      "cam": {
-        "x": 760,
-        "y": 450,
-        "z": 1.5
-      },
-      "camDelay": 0.3,
-      "camDur": 1.4,
-      "voGap": 0.5,
-      "vo": "Now both are ready in any new session you start. Devin types the values straight into the browser, and binds them as environment variables for the commands that need them."
+    "0065.png": {
+      "cap": "Store secret",
+      "capPos": "bottom"
     }
   }
 };
