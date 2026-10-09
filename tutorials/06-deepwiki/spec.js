@@ -18,9 +18,10 @@ window.SPEC = {
     "0013.png": { "cap": "Relevant source files", "ring": true, "vo": "Every page lists the source files it was built from." },
     "0015.png": { "hold": 1.8, "cap": "The files this page was built from", "ring": true },
     "0016.png": { "hold": 1.6, "cap": "Generated architecture diagrams", "ring": true, "vo": "Architecture diagrams are generated for you, and you can expand them to look closer." },
-    "0017.png": { "cap": "Expand the diagram", "ring": true },
-    "0018.png": { "hold": 2.0, "cap": "" },
-    "0019.png": { "cap": "The wiki's pages are in the sidebar", "ring": true, "vo": "The sidebar becomes a table of contents for the whole wiki." },
+    "0017.png": { "cap": "Expand the diagram", "capDelay": 0.7, "ring": true, "ringDelay": 0.7, "dwell": 1.4 },
+    "0018.png": { "hold": 1.5, "cap": "" },
+    "0019.png": { "cap": "Open the sidebar", "capDelay": 0.9, "vo": "The sidebar becomes a table of contents for the whole wiki." },
+    "0020.png": { "hold": 2.4, "cap": "The wiki's pages are in the sidebar", "capDelay": 0.4, "ringDelay": 0.4, "ring": { "x": 187, "y": 561, "w": 355, "h": 358 } },
     "0021.png": { "cap": "Open another page", "ring": true, "vo": "Open another page, like this one on the kanban board app." },
     "0022.png": { "hold": 2.0, "cap": "" },
     "0023.png": { "cap": "More actions", "ring": true, "vo": "From this menu, you can re-index the wiki, edit it, or open DeepWiki settings." },
@@ -30,7 +31,7 @@ window.SPEC = {
     "0029.png": { "cap": "Send it" },
     "0031.png": { "badge": "Sped up", "hold": 0.6, "cap": "", "vo": "Devin searches the code to answer." },
     "0053.png": { "badge": "", "hold": 2.6, "cap": "Answers cite the files and lines they came from", "ring": { "x": 1015, "y": 332, "w": 827, "h": 198 }, "vo": "The answer cites the files and lines it came from, and shows that code right next to it." },
-    "0054.png": { "ring": true, "vo": "Click any citation to jump to those lines." },
+    "0054.png": { "ring": true, "ringDelay": 1.1, "dwell": 1.8, "vo": "Click any citation to jump to those lines." },
     "0056.png": { "hold": 3.0, "cap": "The cited lines, highlighted", "ring": true }
   }
 };
