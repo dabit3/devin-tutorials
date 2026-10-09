@@ -1,0 +1,34 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Inter;src:url(../../_kit/fonts/Inter-VF.ttf)}
+html,body{margin:0;width:1440px;height:810px;background:#fafafa;font-family:Inter;color:#111;overflow:hidden}
+body{background:radial-gradient(ellipse at 50% 40%,#fff 0,#fafafa 60%,#f3f3f3 100%)}
+svg{position:absolute;inset:0}
+.n{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;gap:9px;background:#fff;border:1px solid #e4e4e4;border-radius:14px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 6px 18px rgba(0,0,0,.05);white-space:nowrap;transition:none}
+.n img{display:block}
+.l0{padding:13px 20px;font-size:21px;font-weight:600}.l0 img{width:26px}
+.l1{padding:10px 15px;font-size:16px;font-weight:550}.l1 img{width:20px}
+.l2{width:38px;height:38px;justify-content:center;padding:0;border-radius:11px}.l2 img{width:17px}
+.l3{width:12px;height:12px;padding:0;border-radius:50%;background:#fff;opacity:.8;box-shadow:none}
+.lab{position:absolute;left:64px;transform:translateY(-50%);font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:#9a9a9a}
+.hide{opacity:0}
+</style></head><body><svg id=s width=1440 height=810></svg><div id=root></div>
+<script>
+const L=+new URLSearchParams(location.search).get('level')||1;
+const Y=[165,355,525,655];
+const kids=[['CardModal',300],['CommandMenu',580],['Dialog',860],['Sidebar',1140]];
+const nodes=[{l:0,x:720,y:Y[0],t:'Coordinator'}];
+kids.forEach(([t,x],i)=>nodes.push({l:1,x,y:Y[1],t,p:0}));
+const g2=[[-62,62],[-86,0,86],[-62,62],[-86,0,86]];
+const deep=[[0,[-16,16]],[2,[0]],[3,[-20,0,20]],[6,[-16,16]],[8,[0]],[9,[-16,16]]];
+const grand=[];
+g2.forEach((offs,i)=>offs.forEach(o=>{nodes.push({l:2,x:kids[i][1]+o,y:Y[2],p:1+i});grand.push(nodes.length-1);}));
+deep.forEach(([gi,offs])=>{const pi=grand[gi];offs.forEach(o=>nodes.push({l:3,x:nodes[pi].x+o,y:Y[3],p:pi}));});
+const s=document.getElementById('s'),root=document.getElementById('root');
+const vis=n=>n.l<=L;
+nodes.forEach(n=>{if(n.p==null||!vis(n))return;const p=nodes[n.p];const my=(p.y+n.y)/2;
+ const path=document.createElementNS('http://www.w3.org/2000/svg','path');
+ const top={0:28,1:22,2:19}[p.l],bot={1:22,2:19,3:6}[n.l];path.setAttribute('d',`M${p.x} ${p.y+top} C ${p.x} ${my}, ${n.x} ${my}, ${n.x} ${n.y-bot}`);if(n.l===3)path.setAttribute('opacity','.7');
+ path.setAttribute('fill','none');path.setAttribute('stroke',n.l===3?'#d6d6d6':'#cfcfcf');path.setAttribute('stroke-width',n.l===3?1.2:1.5);s.appendChild(path);});
+nodes.forEach(n=>{if(!vis(n))return;const d=document.createElement('div');d.className='n l'+n.l;d.style.left=n.x+'px';d.style.top=n.y+'px';
+ if(n.l<2)d.innerHTML=`<img src="../../_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png"><span>${n.t}</span>`;else if(n.l===2)d.innerHTML=`<img src="../../_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png">`;root.appendChild(d);});
+</script></body></html>
