@@ -8,6 +8,7 @@ window.SPEC = {
   "capPos": "auto",
   "capArrows": false,
   "pollRunMax": 3,
+  "tailHold": NARRATED ? 0 : 1.0,
   "voOutro": "That's Devin in Slack.",
   "edit": {
     "0000.png": {"hold": 2, "cursor": false, "vo": "Once Devin is in a Slack channel, you can tag it from any message. Just type at Devin, and pick it from the list."},
@@ -51,9 +52,9 @@ window.SPEC = {
     "0042.png": {"skip": true},
     "0043.png": {"skip": true},
     "0044.png": {"target": {"x": 1233.1, "y": 363.8, "w": 393.8, "h": 432.5}, "hl": true, "cap": "Devin replied with the total", "hold": 0.6},
-    "0045.png": {"vo": "Reply in the thread to keep going, you don't need to tag it again, it picks up right where it left off."},
+    "0045.png": {"vo": "Reply in the thread to keep going."},
     "0046.png": {"hold": NARRATED ? 0.4 : 0.6},
-    "0047.png": {"target": {"x": 1233.1, "y": 685, "w": 363.8, "h": 180}, "hl": true, "cap": "A plain reply, no tag needed"},
+    "0047.png": {"vo": "You don't need to tag it again, it picks up right where it left off.", "target": {"x": 1233.1, "y": 685, "w": 363.8, "h": 180}, "hl": true, "cap": "A plain reply, no tag needed"},
     "0048.png": {"hold": 0.5},
     "0049.png": {"badge": "Sped up", "hold": NARRATED ? 0.15 : 0.3},
     "0050.png": {"hold": NARRATED ? 0.15 : 0.3},
@@ -84,7 +85,7 @@ window.SPEC = {
     "0077.png": {"skip": true},
     "0078.png": {"skip": true},
     "0079.png": {"skip": true},
-    "0080.png": {"target": {"x": 1233.1, "y": 488.8, "w": 393.8, "h": 182.5}, "hl": true, "hold": 1.8, "badge": "", "cap": "Browser test passed, with the recording", "vo": "When the tests pass, Devin sends the recording of its browser test right back to the thread. Open it, and you can watch it click Clear done and empty the Done column, before you even open the pull request."},
+    "0080.png": {"target": {"x": 1233.1, "y": 488.8, "w": 393.8, "h": 182.5}, "hl": true, "hold": NARRATED ? 1.2 : 1.8, "badge": "", "cap": "Browser test passed, with the recording", "vo": "When the tests pass, Devin sends the recording of its browser test right back to the thread. Open it, and you can watch it click Clear done and empty the Done column, before you even open the pull request."},
     "0081.png": {"target": {"x": 1176.2, "y": 502.5, "w": 140, "h": 135}, "hl": true, "cap": "Open Devin's test recording"},
     "0083.png": {"hold": 0.6},
     "0084.png": {"hold": 0.083, "hl": true, "target": {"x": 912.6, "y": 376.9, "w": 189.1, "h": 123}, "cap": "Its recording: Clear done empties the Done column"},
@@ -158,9 +159,11 @@ window.SPEC = {
     "0152.png": {"hold": 0.092, "hl": "keep"},
     "0153.png": {"hold": 0.083, "hl": "keep"},
     "0154.png": {"hold": 0.083, "hl": "keep"},
-    "0155.png": {"hold": 0.8, "vo": "When you're done, type archive, and Devin reacts with a box and archives the session."},
-    "0156.png": {},
-    "0162.png": {"target": {"x": 1233.1, "y": 685, "w": 363.8, "h": 180}, "hl": true, "cap": "Type archive"},
-    "0165.png": {"target": {"x": 1133.1, "y": 555, "w": 53.7, "h": 30}, "hl": true, "hold": 2.6, "cap": "Devin archives the session"}
+    "0155.png": {"hold": NARRATED ? 0.2 : 0.8, "vo": "When you're done, type archive, and Devin reacts with a box and archives the session."},
+    "0156.png": {"hold": NARRATED ? 0.2 : undefined},
+    "0157.png": {"hold": NARRATED ? 0.25 : undefined},
+    "0162.png": {"target": {"x": 1233.1, "y": 685, "w": 363.8, "h": 180}, "hl": true, "cap": "Type archive", "hold": NARRATED ? 0.2 : 1.6},
+    "0163.png": {"hold": NARRATED ? 0.2 : 1},
+    "0165.png": {"target": {"x": 1133.1, "y": 555, "w": 53.7, "h": 30}, "hl": true, "hold": NARRATED ? 0.7 : 2.6, "cap": "Devin archives the session"}
   }
 };
