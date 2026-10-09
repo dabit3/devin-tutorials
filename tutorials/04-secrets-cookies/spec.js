@@ -66,9 +66,15 @@ window.SPEC = {
     },
     "0016.png": {
       "hold": 1.8,
-      "hl": true,
       "cap": "Raw secret, Cookie, or a one-time password",
-      "vo": "Then pick a type: a raw secret, a cookie, or a one-time password for two-factor sign-in."
+      "vo": "Then pick a type: a raw secret, a cookie, or a one-time password for two-factor sign-in.",
+      "ring": {
+        "x": 978.8,
+        "y": 332.5,
+        "w": 250,
+        "h": 122.5
+      },
+      "ringFor": 1.8
     },
     "0018.png": {
       "skip": true
@@ -81,8 +87,14 @@ window.SPEC = {
       "cap": "Add a note for Devin"
     },
     "0040.png": {
-      "hl": true,
-      "vo": "Secrets are encrypted, and Redact value is on by default, so the value stays hidden in the dashboard."
+      "vo": "Secrets are encrypted, and Redact value is on by default, so the value stays hidden in the dashboard.",
+      "ring": {
+        "x": 1020.6,
+        "y": 759.4,
+        "w": 333.8,
+        "h": 41.2
+      },
+      "ringFor": 2.4
     },
     "0044.png": {
       "hold": 2.4,
@@ -107,16 +119,28 @@ window.SPEC = {
     },
     "0049.png": {
       "hold": 0.8,
-      "hl": true
+      "ring": {
+        "x": 978.8,
+        "y": 332.5,
+        "w": 250,
+        "h": 122.5
+      },
+      "ringFor": 0.8
     },
     "0051.png": {
       "hold": 0.55
     },
     "0052.png": {
       "hold": 2.2,
-      "hl": true,
       "cap": "Paste cookie JSON, or a base64 string",
-      "vo": "Name it, then paste the cookies you exported from your browser, as JSON or base64."
+      "vo": "Name it, then paste the cookies you exported from your browser, as JSON or base64.",
+      "ring": {
+        "x": 1131.9,
+        "y": 385,
+        "w": 513.8,
+        "h": 77.5
+      },
+      "ringFor": 2.2
     },
     "0053.png": {
       "cap": "Name the cookie secret"
@@ -132,13 +156,26 @@ window.SPEC = {
     },
     "0063.png": {
       "hold": 1.8,
-      "hl": true,
       "cap": "Each cookie is parsed and encoded for you",
-      "vo": "The form parses each cookie, and encodes it for you."
+      "vo": "The form parses each cookie, and encodes it for you.",
+      "ring": {
+        "x": 1131.9,
+        "y": 738.8,
+        "w": 556.2,
+        "h": 82.5
+      },
+      "ringFor": 1.8
     },
     "0064.png": {
       "hold": 1.0,
-      "hl": true
+      "ring": {
+        "x": 1020.6,
+        "y": 759.4,
+        "w": 333.8,
+        "h": 41.2
+      },
+      "ringFor": 1.0,
+      "cap": "Redact stays on"
     },
     "0066.png": {
       "hold": 0.55
