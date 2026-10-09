@@ -44,65 +44,45 @@ window.SPEC = {
       "capPos": "auto"
     },
     "0011.png": {
-      "hold": 1.6,
-      "cap": "Add your own server, or pick one from the marketplace",
+      "hold": 1.4,
+      "cap": "Pick one from the plugin marketplace",
       "hl": true,
       "capPos": "auto",
-      "vo": "You can add your own server, or pick one from the plugin marketplace."
-    },
-    "0012.png": {
-      "cap": "New MCP points Devin at a server you run yourself",
-      "capPos": "auto",
-      "vo": "New MCP points Devin at a server you run yourself."
+      "vo": "The quickest way is to pick one from the plugin marketplace."
     },
     "0014.png": {
-      "hold": 0.8
-    },
-    "0017.png": {
-      "hold": 1.8,
-      "cap": "Connect over HTTP, STDIO or SSE",
-      "hl": true,
-      "capPos": "auto",
-      "vo": "It connects over HTTP, STDIO, or SSE."
-    },
-    "0020.png": {
-      "cap": "Or install one from the plugin marketplace",
-      "capPos": "auto",
-      "vo": "Or, install a ready-made one from the plugin marketplace."
-    },
-    "0024.png": {
       "hold": 1.8,
       "cap": "Browse over 200 plugins",
-      "vo": "The marketplace has over two hundred plugins to choose from."
+      "vo": "It has over two hundred plugins to choose from."
     },
-    "0025.png": {
+    "0015.png": {
       "cap": "Search for the tool you need",
       "capPos": "auto",
       "vo": "Search for the one you need, like Context7 for up-to-date library docs."
     },
-    "0032.png": {
+    "0022.png": {
       "cap": "Click Install and choose a scope",
       "capPos": "auto",
       "vo": "Click Install, and choose who gets it."
     },
-    "0034.png": {
+    "0024.png": {
       "hold": 0.8,
       "hl": true
     },
-    "0037.png": {
+    "0027.png": {
       "hold": 0.6,
       "cap": "Review what the plugin can access, then confirm",
       "hl": true,
       "vo": "Review the security notice, confirm, and install."
     },
-    "0042.png": {
+    "0032.png": {
       "hold": 2.0,
       "cap": "Context7 is installed",
       "hl": true,
       "capPos": "auto",
       "vo": "Context7 is now installed for you."
     },
-    "0045.png": {
+    "0035.png": {
       "hold": 2.6,
       "cap": "It brings an MCP server and a skill",
       "hl": {
@@ -114,9 +94,9 @@ window.SPEC = {
       "capPos": "auto",
       "vo": "It adds an MCP server, plus a skill that tells Devin when to use it."
     },
-    "0048.png": {
-      "hold": 3.0,
-      "cap": "Enabled, so its tools are ready in your sessions",
+    "0038.png": {
+      "hold": 2.2,
+      "cap": "Enabled under MCPs",
       "hl": {
         "x": 720,
         "y": 439,
@@ -124,7 +104,39 @@ window.SPEC = {
         "h": 80
       },
       "capPos": "auto",
-      "vo": "It shows up under MCPs, switched on, so its tools are ready in your sessions."
+      "vo": "It shows up under MCPs, switched on."
+    },
+    "0039.png": {
+      "cap": "Or add your own server",
+      "capPos": "auto",
+      "vo": "You can also add your own server."
+    },
+    "0042.png": {
+      "cap": "New MCP points Devin at a server you run yourself",
+      "capPos": "auto",
+      "vo": "New MCP points Devin at a server you run yourself."
+    },
+    "0044.png": {
+      "hold": 0.8
+    },
+    "0047.png": {
+      "hold": 1.8,
+      "cap": "Connect over HTTP, STDIO or SSE",
+      "hl": true,
+      "capPos": "auto",
+      "vo": "It connects over HTTP, STDIO, or SSE."
+    },
+    "0050.png": {
+      "hold": 2.6,
+      "cap": "Ready in your sessions",
+      "hl": {
+        "x": 720,
+        "y": 439,
+        "w": 1000,
+        "h": 80
+      },
+      "capPos": "auto",
+      "vo": "Either way, its tools are ready in your Devin sessions."
     }
   }
 };
