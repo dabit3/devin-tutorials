@@ -15,7 +15,7 @@ Voices: Nader `T8iHhGIWPm2GVYpQD1Am`, Megan `1FmDfZG0Nx2dCk793S1a`, Joseff `3TSt
 | 0016 | Then choose how much Devin can do on its own. |
 | 0017 | Describe the task. Here, a collapse toggle for each board column. |
 | 0018 | Devin reads the code, makes the edits, and checks its work. |
-| 0052 | It asks before it runs commands. |
+| 0051 | It asks before it runs commands. |
 | 0062 | When it's done, you get a summary of what changed. |
 | 0065 | Quick Review has a second agent check the changes. |
 | 0067 | Pick SWE-check, and it reviews the diff. |

@@ -358,6 +358,7 @@ async function placeCaptions() {
     const { w, h } = capSize(c.text), t1 = (caps[i + 1] || { t: TL.uiEnd }).t;
     const bottom = { x: W / 2 - w / 2, y: H - 110 - h, dir: 0 }, top = { x: W / 2 - w / 2, y: 110, dir: 0 };
     if (c.pos === 'bottom' || c.pos === 'top') { c.box = c.pos === 'top' ? top : bottom; continue; }
+    if (c.pos && typeof c.pos === 'object') { c.box = { x: c.pos.x * W, y: c.pos.y * H, dir: 0 }; continue; }
     const steps = TL.imgSteps.filter(s => s.t1 > c.t && s.t0 < t1), pick = [];
     const n = Math.min(14, steps.length);
     for (let k = 0; k < n; k++) pick.push(steps[Math.floor(k * (steps.length - 1) / Math.max(1, n - 1))].img);

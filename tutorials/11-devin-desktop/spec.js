@@ -4,7 +4,7 @@ window.SPEC = {
   "outro": "Build with Devin Desktop",
   "speed": 3,
   "cps": 14,
-  "capPos": "bottom",
+  "capPos": "auto",
   "capArrows": false,
   "maxZoom": 1.5,
   "noZoom": [
@@ -65,15 +65,17 @@ window.SPEC = {
       "badge": "Sped up"
     },
     "0052.png": {
-      "vo": "It asks before it runs commands.",
-      "hl": true,
-      "capPos": "auto",
-      "hold": 1.8
+      "cap": "It asks before running commands",
+      "hold": 0.6
     },
     "0062.png": {
       "vo": "When it's done, you get a summary of what changed.",
       "hold": 2.4,
-      "badge": ""
+      "badge": "",
+      "capPos": {
+        "x": 0.02,
+        "y": 0.615
+      }
     },
     "0065.png": {
       "vo": "Quick Review has a second agent check the changes.",
@@ -87,10 +89,18 @@ window.SPEC = {
     },
     "0085.png": {
       "vo": "Its findings land right in the chat.",
-      "hold": 2.0
+      "hold": 2.0,
+      "capPos": {
+        "x": 0.02,
+        "y": 0.615
+      }
     },
     "0087.png": {
-      "vo": "Accept all, and the changes are yours."
+      "vo": "Accept all, and the changes are yours.",
+      "capPos": {
+        "x": 0.02,
+        "y": 0.615
+      }
     },
     "0089.png": {
       "vo": "Switch to the Editor for the full IDE."
@@ -132,18 +142,29 @@ window.SPEC = {
     },
     "0117.png": {
       "vo": "Back in the Agent view, the app Devin started is running on localhost.",
-      "cap": "Back in the Agent view, the app Devin started runs on localhost"
+      "cap": "Back in the Agent view, the app Devin started runs on localhost",
+      "capPos": {
+        "x": 0.02,
+        "y": 0.615
+      }
     },
     "0119.png": {
       "vo": "Try the new toggle. The Backlog column collapses.",
       "hl": true,
-      "capPos": "auto",
+      "capPos": {
+        "x": 0.02,
+        "y": 0.615
+      },
       "cap": "Try the new toggle: the Backlog column collapses"
     },
     "0120.png": {
       "vo": "Click it again, and it expands.",
       "cap": "Click again, and it expands",
-      "hold": 1.4
+      "hold": 1.4,
+      "capPos": {
+        "x": 0.02,
+        "y": 0.615
+      }
     },
     "0125.png": {
       "vo": "Every session, local or cloud, lives in Sessions, grouped by status."
@@ -154,7 +175,7 @@ window.SPEC = {
     "0129.png": {
       "vo": "Filter by status, agent, repo, and more.",
       "hl": true,
-      "capPos": "auto",
+      "capPos": "bottom",
       "hold": 2.2
     },
     "0134.png": {
@@ -245,7 +266,16 @@ window.SPEC = {
       "hold": 0.5
     },
     "0051.png": {
-      "hold": 0.5
+      "vo": "It asks before it runs commands.",
+      "cap": "It asks before running commands",
+      "hl": {
+        "x": 514.7,
+        "y": 421.1,
+        "w": 317.9,
+        "h": 31.2
+      },
+      "capPos": "auto",
+      "hold": 1.8
     },
     "0055.png": {
       "hold": 0.5,
@@ -318,7 +348,8 @@ window.SPEC = {
       "hold": 1.0
     },
     "0122.png": {
-      "hold": 0.6
+      "hold": 1.0,
+      "cap": "Open Sessions from the Agent sidebar"
     },
     "0124.png": {
       "hold": 0.6
