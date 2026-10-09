@@ -19,7 +19,7 @@ Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`). Each line pla
 | Session, "Used playbook" | Devin shows which playbook it's using, and follows its steps. |
 | Session, sped up | It takes a before screenshot, makes the change, and takes an after screenshot. |
 | Session with PR #19 | Then it opens a pull request. |
-| PR #19 header link | Open it right from the session. |
+| PR #19 card in the session | Open it right from the session. |
 | PR Changes tab | The change is small, just like the playbook asks. |
 | PR description, Before / After | The description has the before and after screenshots, just like the playbook says. |
 | Outro | Write a procedure once, and reuse it with one macro. |
