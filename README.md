@@ -27,6 +27,10 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 23. **Managed Devins: how it works** (overview, 1:16): A short diagram-led overview instead of a step-by-step run. One coordinator Devin splits a big task across managed Devins, each in its own isolated VM, monitors them, and compiles one summary; real shots from tutorial 19 show the four managed Devins, the sidebar tree, the PR summary and a message relayed through the coordinator, then Settings → Preferences → Auto-approve child sessions, the nesting tree, and four use cases (migrations, test coverage, one playbook across services, parallel research). [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/23-managed-devins-overview/23-managed-devins-overview.mp4)
 
+<!-- -->
+
+32. **Dynamic Workflows: how it works** (overview, 1:31): A short diagram-led overview of dynamic workflows. Devin writes a deterministic Python script that runs a team of Devin agents, feeding earlier structured results into later prompts and merging them; then `pipeline` vs `parallel`, recorded and resumable runs, a real run in which 12 accessibility reviewers each review one component before a consolidation agent merges their findings (the prompt, the plan, the workflow panel, the script, and the final report), Settings → Preferences → Auto-approve workflows, when to use a workflow versus a plain session, trying a slice first and saving it as a skill, and five use cases. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/32-dynamic-workflows-overview/32-dynamic-workflows-overview.mp4)
+
 ## Narrated tutorials
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
@@ -55,6 +59,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **iPhone and iPad apps on Mac VMs, narrated by Nader** (1:35): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/18-ios-ipad-mac-vms/18-ios-ipad-mac-vms-nader.mp4) · [Voice script](tutorials/18-ios-ipad-mac-vms/voice-script.md)
 - **Managed Devins, narrated by Nader** (2:25): One coordinator Devin starts 4 managed Devins, each adding tests to one component in its own PR, then compiles one summary; one child UI-tests the card modal live on its own desktop, and a closing diagram shows how teams can nest several levels deep. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/19-managed-devins/19-managed-devins-nader.mp4) · [Voice script](tutorials/19-managed-devins/voice-script.md)
 - **Managed Devins: how it works (overview), narrated by Nader** (1:27): How a coordinator Devin splits work across managed Devins, keeps you in control, nests, and where it pays off. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/23-managed-devins-overview/23-managed-devins-overview-nader.mp4) · [Voice script](tutorials/23-managed-devins-overview/voice-script.md)
+- **Dynamic Workflows: how it works (overview), narrated by Nader** (1:38): How Devin writes a Python script that orchestrates a team of Devin agents, `pipeline` vs `parallel`, recorded and resumable runs, a real 12-reviewer run, and when to use a workflow. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/32-dynamic-workflows-overview/32-dynamic-workflows-overview-nader.mp4) · [Voice script](tutorials/32-dynamic-workflows-overview/voice-script.md)
 
 ## Making a new tutorial
 
