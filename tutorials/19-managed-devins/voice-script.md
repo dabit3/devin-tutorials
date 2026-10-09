@@ -16,12 +16,24 @@ Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, default settings),
 
 7. You can still steer the team. I'm telling the coordinator to have the CardModal Devin also test that pressing Escape closes the modal.
 
-8. Opening the CardModal Devin, you can watch it work on its own machine and add the Escape tests to its pull request.
+8. Opening the CardModal Devin, you can follow its work in its own VM.
 
 9. It pushes two new tests that press the real Escape key, and all forty CardModal tests pass.
 
-10. Back in the coordinator, the summary lists all four pull requests, each taking its component from zero to one hundred percent coverage.
+10. You can also message a managed Devin directly. I'm asking this one to open Orbit in its browser and test the card modal like a real user.
 
-11. With Auto-approve child sessions on, under Settings, Preferences, Devin starts managed Devins without asking you first.
+11. Its Computer tab shows its own desktop live, with Orbit running in Chrome.
 
-12. One task in, a team of Devins on it.
+12. It opens a card, changes the title, and presses Escape.
+
+13. The modal closes, and the board still shows the original title.
+
+14. Then it reopens the card, types a new title, and saves it.
+
+15. It reports back that Escape closes without saving, and that Save changes stores the new title.
+
+16. Back in the coordinator, the summary lists all four pull requests, each taking its component from zero to one hundred percent coverage.
+
+17. With Auto-approve child sessions on, under Settings, Preferences, Devin starts managed Devins without asking you first.
+
+18. One task in, a team of Devins on it.

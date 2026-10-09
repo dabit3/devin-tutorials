@@ -114,6 +114,37 @@ const scrollText = async (src, block = 'center', box = null) => {
   return ok;
 };
 
+if (PHASE === 'uitest') {
+  // message one managed Devin directly, then watch its own computer (Browser/Desktop tab) while it runs a UI test
+  const MSG = process.env.MSG;
+  await r.goto(process.env.SESSION, 6000); await collapseNav(); await settle();
+  if (await r.find({ attr: ['aria-label', 'Hide tabs panel'], sel: 'button' })) await clickAria('Hide tabs panel');
+  await r.shot({ hold: 1.0 }); r.mark('uitest-open');
+  const ed = await editorBox(p); await r.click(ed, { wait: 400 });
+  await r.type(MSG, { every: 3 }); await sleep(500);
+  await r.shot({ hold: 1.2 }); r.mark('uitest-typed');
+  const send = await r.find({ attr: ['aria-label', 'Send'], sel: 'main button' });
+  if (send) await p.mouse.click(send.x, send.y); else await p.keyboard.press('Enter');
+  await sleep(3000);
+  if (!(await main()).includes(MSG.slice(0, 40))) fail('uitest message not sent');
+  await r.shot({ hold: 1.0 }); r.mark('uitest-sent');
+  if (fs.existsSync(STOP)) fs.unlinkSync(STOP);
+  // open the child's own computer in the right panel (Add tab → Computer) and keep it there while Devin works
+  await sleep(+(process.env.TAB_AFTER || 15000));
+  if (await r.find({ attr: ['aria-label', 'Show tabs panel'], sel: 'button' })) await clickAria('Show tabs panel');
+  await clickAria('Add tab'); await sleep(800);
+  const ok = await p.evaluate(() => { const e = [...document.querySelectorAll('[role=menuitem],[role=option],button,div')].find(e => e.innerText && e.innerText.trim() === 'Computer' && e.getBoundingClientRect().width > 0); if (e) { e.click(); return true; } return false; });
+  if (!ok) fail('Computer tab not found');
+  await sleep(600); await p.keyboard.press('Escape'); await sleep(400);
+  await p.evaluate(() => { const e = [...document.querySelectorAll('[role=tablist] button[role=button]')].find(e => e.innerText.trim() === 'Computer'); if (e) e.click(); });
+  await p.mouse.move(300, 300);
+  await p.evaluate(() => document.activeElement && document.activeElement.blur());
+  await sleep(3000); await settle();
+  await r.shot({ hold: 1.2 }); r.mark('computer-tab');
+  await r.poll(4 * 3600e3, +(process.env.EVERY || 3000), { cap: null }, async () => fs.existsSync(STOP));
+  fs.existsSync(STOP) && fs.unlinkSync(STOP);
+}
+
 if (PHASE === 'payoff') {
   await r.goto(process.env.SESSION, 5000);
   await collapseNav();
