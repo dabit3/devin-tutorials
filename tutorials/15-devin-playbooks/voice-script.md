@@ -4,7 +4,7 @@ Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`). Each line pla
 
 | Shot | Narration |
 | --- | --- |
-| Settings → Playbooks (empty list) | This is Devin Playbooks. A playbook is a reusable prompt for a task you run again and again. |
+| Settings → Playbooks (empty list) | Devin Playbooks are reusable prompts for the tasks you run again and again. |
 | Create playbook | Create one in Settings, under Playbooks. |
 | Name field | Give it a name. |
 | Playbook body with all sections | Then write the procedure once, in Markdown. It has an overview, what Devin needs from you, the steps, specifications, advice, and forbidden actions. |
