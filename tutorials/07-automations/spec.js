@@ -130,8 +130,7 @@ window.SPEC = {
           "w": 938,
           "h": 134
         }
-      ],
-      "vo": "Set it to seven o'clock. A schedule keeps its own time zone, here Pacific time."
+      ]
     },
     "0095.png": {
       "cap": "Each run starts a fresh Devin session",
@@ -164,6 +163,9 @@ window.SPEC = {
     },
     "0105.png": {
       "skip": true
+    },
+    "0086.png": {
+      "vo": "Set it to seven o'clock. A schedule keeps its own time zone, here Pacific time."
     }
   }
 };
