@@ -16,7 +16,7 @@ Follow-up typed on camera after Devin asked where to push the app:
 
 | Shot | Line | Spoken as |
 |---|---|---|
-| 0000 | This is Devin on macOS. | This, is Devin on macOS. |
+| 0000 | Devin can also run on a macOS virtual machine, so it can build and test native iPhone and iPad apps. |  |
 | 0001 | To set your environment, open the platform menu below the prompt box and pick macOS. |  |
 | 0006 | Every macOS session comes with Xcode, the iOS Simulator and Homebrew already installed. |  |
 | 0007 | Ask for a universal SwiftUI app, and to test it on an iPhone and an iPad simulator. | Ask for a universal Swift UI app, and to test it on an iPhone and an iPad simulator. |

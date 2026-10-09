@@ -18,8 +18,7 @@ window.SPEC = {
     "0000.png": {
       "hold": 2.4,
       "cursor": false,
-      "vo": "This is Devin on macOS.",
-      "voSay": "This, is Devin on macOS."
+      "vo": "Devin can also run on a macOS virtual machine, so it can build and test native iPhone and iPad apps."
     },
     "0001.png": {
       "cap": "Open the platform menu below the prompt box",
