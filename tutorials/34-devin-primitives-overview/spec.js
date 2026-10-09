@@ -39,6 +39,7 @@ window.SPEC = {
       "capPos": "bottom",
       "cap": "AGENTS.md: short, always-on context in your repo",
       "vo": "For context every session needs, like build commands and conventions, commit a short agents file at the root of your repo, and Devin includes it automatically.",
+      "voSay": "For context every session needs like build commands and conventions, commit a short agents file at the root of your repo, and Devin includes it automatically.",
       "hl": null
     },
     "0003.png": {
