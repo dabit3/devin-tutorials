@@ -51,7 +51,7 @@ def stt(wav):
     req = urllib.request.Request('https://api.elevenlabs.io/v1/speech-to-text', data=body, headers={'xi-api-key': KEY, 'Content-Type': f'multipart/form-data; boundary={b}'})
     return [w for w in json.load(urllib.request.urlopen(req, timeout=600))['words'] if w['type'] == 'word']
 
-ALIAS = {'devon': 'devin', 'dev in': 'devin', '@': 'at', 'deep wiki': 'deepwiki', '2': 'two', '+': ' '}
+ALIAS = {'devon': 'devin', 'dev in': 'devin', '@': 'at', 'deep wiki': 'deepwiki', '2': 'two', '+': ' ', 'slash devin': 'devin'}
 def words(t):
     t = t.lower().replace('-', ' ')
     for a, b in ALIAS.items(): t = re.sub(rf'(?<![a-z]){re.escape(a)}(?![a-z])', b, t)
