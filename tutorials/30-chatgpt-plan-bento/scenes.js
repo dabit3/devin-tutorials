@@ -98,27 +98,36 @@ const LK = { cap: 0.587, base: 0.796 };
 function headline(s) {
   const a = 1 - eIO(prog(s, T.focus, T.focus + 0.4)); if (a <= 0) return;
   const g = eIO(prog(s, T.glide, T.glide + 0.9)), L = A[3], ar = L.width / L.height;
-  font(96, 600); const words = 'Use your ChatGPT plan in'.split(' ');
-  const sp = 24, ws = words.map(w => ctx.measureText(w).width), tot = ws.reduce((p, c) => p + c, 0) + sp * (words.length - 1);
-  // intro: the line centred with the lockup beneath it; header: one small line "Use your ChatGPT plan in <lockup>"
-  const HS = 0.56, hLh = 96 * 0.727 * HS / LK.cap, hLw = hLh * ar, gap = 15, hx = 960 - (tot * HS + gap + hLw) / 2;
+  // two-tone line: a quiet lead-in, then the point. Letters arrive soft and wide, then sharpen and settle.
+  const words = [['Use', GRAY], ['your', GRAY], ['ChatGPT', INK], ['plan', INK], ['in', INK]];
+  font(96, 600); const sp = 24, tr = 0.07 * 96 * (1 - eIO(prog(s, 0.2, 2.1)));
+  const gl = []; let x = 0, n = 0, tot0 = 0;
+  words.forEach(([w, c], wi) => {
+    for (let j = 0; j < w.length; j++) gl.push({ ch: w[j], c, x: x + ctx.measureText(w.slice(0, j)).width + tr * (n + j), k: n + j });
+    const ww = ctx.measureText(w).width; x += ww + sp + tr * w.length; n += w.length + 1; tot0 += ww + (wi ? sp : 0);
+  });
+  const tot = x - sp - tr;
+  const HS = 0.56, hLh = 96 * 0.727 * HS / LK.cap, hLw = hLh * ar, gap = 15, hx = 960 - (tot0 * HS + gap + hLw) / 2;
   const IS = 0.85, lx = lerp(960 - tot * IS / 2, hx, g), by = lerp(470, 168, g), sc = lerp(IS, HS, g);   // IS: intro line scale
   ctx.save(); ctx.globalAlpha *= a; ctx.translate(lx, by); ctx.scale(sc, sc);
-  let x = 0;
-  words.forEach((w, i) => {
-    const t0 = 0.3 + i * 0.09, p = eQ(prog(s, t0, t0 + 0.7));
-    if (p > 0) { ctx.save(); ctx.globalAlpha *= p; ctx.translate(0, 40 * (1 - p)); text(w, x, 0, 96, 600, INK); ctx.restore(); }
-    x += ws[i] + sp;
+  gl.forEach(q => {
+    const t0 = 0.25 + q.k * 0.026, p = eQ(prog(s, t0, t0 + 0.8)); if (p <= 0) return;
+    ctx.save(); ctx.globalAlpha *= p; ctx.translate(0, 16 * (1 - p));
+    if (p < 1) ctx.filter = `blur(${(9 * (1 - p)).toFixed(2)}px)`;
+    text(q.ch, q.x, 0, 96, 600, q.c); ctx.restore();
   });
   ctx.restore();
-  const lp = eQ(prog(s, 1.05, 2.0)); if (lp <= 0) return;
-  const lh = lerp(130, hLh, g), lw = lh * ar;
-  // the lockup slides out beside the line first, then rises onto its baseline, so it never crosses the text
-  const gx = eIO(prog(s, T.glide, T.glide + 0.7)), gy = eIO(prog(s, T.glide + 0.25, T.glide + 0.9));
-  const cx = lerp(960, lx + tot * sc + gap + lw / 2, gx), top = by + lerp(70, -LK.base * lh, gy) + 18 * (1 - lp), k = lerp(0.96, 1, lp);
-  ctx.save(); ctx.globalAlpha *= a * lp; ctx.translate(cx, top + lh / 2); ctx.scale(k, k);
-  if (lp < 1) ctx.filter = `blur(${(10 * (1 - lp)).toFixed(2)}px)`;
-  ctx.drawImage(L, -lw / 2, -lh / 2, lw, lh); ctx.restore();
+  // lockup: beneath the line in the intro, fades out as the line rises, then fades back in at the end of the header
+  const lin = eQ(prog(s, 1.05, 2.0)), lout = 1 - eIO(prog(s, T.glide, T.glide + 0.35));
+  const logo = (al, cx, top, lh, bl, k) => {
+    if (al <= 0) return; const lw = lh * ar;
+    ctx.save(); ctx.globalAlpha *= a * al; ctx.translate(cx, top + lh / 2); ctx.scale(k, k);
+    if (bl > 0.01) ctx.filter = `blur(${bl.toFixed(2)}px)`;
+    ctx.drawImage(L, -lw / 2, -lh / 2, lw, lh); ctx.restore();
+  };
+  logo(lin * lout, 960, 540 + 18 * (1 - lin), 130, 10 * (1 - lin), lerp(0.96, 1, lin));
+  const hin = eQ(prog(s, T.glide + 0.6, T.glide + 1.2));
+  logo(hin, hx + tot0 * HS + gap + hLw / 2, 168 - LK.base * hLh + 6 * (1 - hin), hLh, 6 * (1 - hin), 1);
 }
 
 function film(s) {
