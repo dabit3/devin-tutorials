@@ -2,13 +2,13 @@
 // The real Settings → Connections capture floats as one app window in subtle 3D perspective (WebGL quad,
 // perspective-correct, mipmapped), eases flat as the camera settles on the real switch flipping on (0001 → 0003),
 // then a crop of the real model-picker hover card (0007, below its title row) floats forward as a second layer.
-// Beat grid matches music.py: 100 BPM, bar = 2.4 s. Drop 2.4, flip 6.0, card lands 9.0, end lockup 12.0.
+// music/*.py lock to these times: window lands 3.4, switch flips 7.0, card lands 10.0, end lockup 12.6, total 14.8.
 (() => {
 const W = 3840, H = 2160, F = 4800;                       // focal length in px: gentle perspective
 const V = new URLSearchParams(location.search).get('v');
 const shot = n => `../../${V}/shots/${n}.png`;
 const BLUE = '42,108,246';
-const T = { winIn: 2.1, drop: 2.4, flip: 6.0, recede: 7.95, cardIn: 8.25, card: 9.0, out: 11.45, end: 12.0 };
+const T = { winIn: 3.1, drop: 3.4, flip: 7.0, recede: 8.95, cardIn: 9.25, card: 10.0, out: 12.05, end: 12.6, total: 14.8 };
 const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
 const lerp = (a, b, t) => a + (b - a) * t;
 const prog = (s, a, b) => clamp((s - a) / (b - a));
@@ -108,11 +108,11 @@ function drawLayer(ctx, lay, p) {
 
 // ---------- poses ----------
 function pagePose(s) {
-  const q = eInOut(prog(s, 2.1, T.flip)), e = eOutQuint(prog(s, T.winIn, 3.2));
+  const q = eInOut(prog(s, T.winIn, T.flip)), e = eOutQuint(prog(s, T.winIn, T.winIn + 1.1));
   const sc = lerp(1.9, 3.0, q), fx = lerp(730, 720, q), fy = lerp(405, 573, q);
   const p = {
     s: sc, cx: W / 2 + (720 - fx) * sc, cy: H / 2 + (405 - fy) * sc + lerp(-90, 0, q) + 300 * (1 - e),
-    rx: lerp(-0.15, 0, q), ry: lerp(-0.21, 0, q), z: 2600 * (1 - e), alpha: eOut(prog(s, T.winIn, 2.6)),
+    rx: lerp(-0.15, 0, q), ry: lerp(-0.21, 0, q), z: 2600 * (1 - e), alpha: eOut(prog(s, T.winIn, T.winIn + 0.5)),
     mix: prog(s, T.flip, T.flip + 0.12), fog: 0,
   };
   const r = eInOut(prog(s, T.recede, T.card));            // steps back while the card comes forward
@@ -157,9 +157,9 @@ function line(ctx, k, text, cx, y, size, wt, color, a, rise) {
 }
 // one label slot under the window: each line rises in, holds, and fades before the next one starts
 const LABELS = [
-  { t0: 2.9, t1: 5.75, text: 'Settings → Connections' },
-  { t0: 6.2, t1: 7.8, text: 'GPT usage bills to your ChatGPT plan' },
-  { t0: 8.7, t1: 11.1, text: 'Also in the model picker' },
+  { t0: 3.9, t1: 6.75, text: 'Settings → Connections' },
+  { t0: 7.2, t1: 8.8, text: 'GPT usage bills to your ChatGPT plan' },
+  { t0: 9.7, t1: 11.7, text: 'Also in the model picker' },
 ];
 function labels(ctx, k, s) {
   for (const l of LABELS) {
@@ -173,7 +173,7 @@ function lockup(ctx, k, cx, cy, h, a) {
   ctx.save(); ctx.globalAlpha = a; ctx.filter = 'invert(1) brightness(0.1)'; ctx.drawImage(k.LOCKUP, cx - w / 2, cy - h / 2, w, h); ctx.restore();
 }
 function intro(ctx, k, s) {
-  const out = eInOut(prog(s, 1.7, 2.1)); if (out >= 1) return;
+  const out = eInOut(prog(s, 2.7, 3.1)); if (out >= 1) return;
   ctx.save(); ctx.globalAlpha = 1 - out; ctx.translate(W / 2, 1000 - 70 * out); ctx.scale(lerp(1, 0.97, out), lerp(1, 0.97, out)); ctx.translate(-W / 2, -1000);
   const a = eOutQuint(prog(s, 0.1, 0.8));
   ctx.save(); ctx.translate(W / 2, 800); const g = lerp(0.92, 1, a); ctx.scale(g, g); lockup(ctx, k, 0, 0, 132, a); ctx.restore();
@@ -191,7 +191,7 @@ function intro(ctx, k, s) {
 }
 function outro(ctx, k, s) {
   if (s < T.end - 0.1) return;
-  const a = eOutQuint(prog(s, T.end - 0.06, T.end + 0.6)), drift = lerp(1, 1.018, prog(s, T.end, 14.4));
+  const a = eOutQuint(prog(s, T.end - 0.06, T.end + 0.6)), drift = lerp(1, 1.018, prog(s, T.end, T.total));
   ctx.save(); ctx.translate(W / 2, 1000); ctx.scale(drift, drift); ctx.translate(-W / 2, -1000);
   ctx.save(); ctx.translate(W / 2, 860); const g = lerp(0.9, 1, a); ctx.scale(g, g); lockup(ctx, k, 0, 0, 150, a); ctx.restore();
   const b = eOutQuint(prog(s, T.end + 0.15, T.end + 0.75)), c = eOutQuint(prog(s, T.end + 0.4, T.end + 1.0));
