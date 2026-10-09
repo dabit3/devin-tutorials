@@ -24,7 +24,7 @@ window.SPEC = {
     },
     "0001.png": {
       "scene": "map",
-      "hold": 7.3,
+      "hold": 6.4,
       "cursor": false,
       "capPos": "bottom",
       "cap": "Always-on context, reusable procedures, reach and sharing",
@@ -163,7 +163,7 @@ window.SPEC = {
     },
     "0012.png": {
       "scene": "which",
-      "hold": 9.0,
+      "hold": 8.2,
       "cursor": false,
       "capPos": "bottom",
       "cap": "Match the need to the primitive",
