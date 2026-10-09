@@ -17,9 +17,8 @@ const eIO = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 // Beat grid shared with music.py: 96 BPM, one beat = 0.625 s.
 const B = 0.625;
 const T = {
-  glide: 3 * B + 0.2,          // headline moves up to become the grid header
-  tiles: 4 * B,                // first tile lands on the downbeat of bar 2 (drums enter)
-  stagger: B / 2,
+  glide: 4 * B,                // intro (headline + lockup) folds into the grid header as the drums enter
+  tiles: 5 * B,                // the whole grid rises in at once
   focus: 11 * B,               // grid focuses into the Connections tile
   flip: 14 * B,                // the real switch turns on
   exit: 16 * B,
@@ -28,7 +27,7 @@ const T = {
 
 const img = n => fetch(`../../${V}/shots/${n}`).then(r => r.blob()).then(b => createImageBitmap(b));
 const assets = Promise.all([img('conn-off.png'), img('conn-on.png'), img('picker-switch.png'),
-  fetch('../brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png').then(r => r.blob()).then(b => createImageBitmap(b))]);
+  img('devin-lockup.png')]);
 let A;
 
 function font(px, wt = 500) { ctx.font = `${wt} ${px}px "Inter"`; ctx.letterSpacing = `${(-0.022 * px).toFixed(2)}px`; }
@@ -52,7 +51,7 @@ const CONN = { w: 1000, h: 1000 * 484 / 2576 }, PICK = { w: 432, h: 432 * 282 / 
 const SW = { x: 2455.6, y: 364.75, w: 135, h: 75 }; // the switch inside conn-*.png (px)
 const tiles = [
   { id: 'conn', x: 150, y: 250, w: 1080, h: 300, draw(s, t0, flip) {
-    reveal(s, t0 + 0.2, () => text('Settings  →  Connections', 40, 58, 24, 500, GRAY));
+    text('Settings  →  Connections', 40, 58, 24, 500, GRAY);
     ctx.save(); ctx.translate(40, 88);
     ctx.imageSmoothingQuality = 'high';
     ctx.drawImage(A[0], 0, 0, CONN.w, CONN.h);
@@ -60,24 +59,24 @@ const tiles = [
     ctx.restore();
   } },
   { id: 'pick', x: 1250, y: 250, w: 520, h: 300, draw(s, t0) {
-    reveal(s, t0 + 0.2, () => text('Or in the model picker', 40, 58, 24, 500, GRAY));
+    text('Or in the model picker', 40, 58, 24, 500, GRAY);
     ctx.drawImage(A[2], 44, 120, PICK.w, PICK.h);
   } },
   { id: 'gpt', x: 150, y: 570, w: 530, h: 200, draw(s, t0) {
     text('GPT models', 40, 88, 40, 600, INK);
-    reveal(s, t0 + 0.25, () => text('→  Your ChatGPT plan', 40, 146, 32, 500, blue()));
+    text('→  Your ChatGPT plan', 40, 146, 32, 500, blue());
   } },
   { id: 'other', x: 150, y: 790, w: 530, h: 200, draw(s, t0) {
     text('Other models', 40, 88, 40, 600, INK);
-    reveal(s, t0 + 0.25, () => text('→  Your Devin quota', 40, 146, 32, 500, GRAY));
+    text('→  Your Devin quota', 40, 146, 32, 500, GRAY);
   } },
   { id: 'where', x: 700, y: 570, w: 530, h: 420, draw(s, t0) {
     text('One toggle covers', 40, 64, 24, 500, GRAY);
-    ['Cloud', 'Desktop', 'CLI'].forEach((w, i) => reveal(s, t0 + 0.2 + i * 0.1, () => text(w, 38, 190 + i * 88, 76, 600, INK)));
+    ['Cloud', 'Desktop', 'CLI'].forEach((w, i) => text(w, 38, 190 + i * 88, 76, 600, INK));
   } },
   { id: 'plans', x: 1250, y: 570, w: 520, h: 420, draw(s, t0) {
     text('Works with ChatGPT', 40, 64, 24, 500, GRAY);
-    ['Go', 'Plus', 'Pro'].forEach((w, i) => reveal(s, t0 + 0.2 + i * 0.1, () => text(w, 38, 190 + i * 88, 76, 600, INK)));
+    ['Go', 'Plus', 'Pro'].forEach((w, i) => text(w, 38, 190 + i * 88, 76, 600, INK));
   } },
 ];
 
@@ -94,20 +93,32 @@ function ringAround(box, s, t0) {
   ctx.restore();
 }
 
+// The lockup's cap height and baseline as fractions of its height (shots/devin-lockup.png).
+const LK = { cap: 0.587, base: 0.796 };
 function headline(s) {
   const a = 1 - eIO(prog(s, T.focus, T.focus + 0.4)); if (a <= 0) return;
-  const g = eIO(prog(s, T.glide, T.glide + 0.85));
-  const y = lerp(565, 168, g), sc = lerp(1, 0.56, g);
-  font(96, 600); const words = 'Use your ChatGPT plan in Devin'.split(' ');
+  const g = eIO(prog(s, T.glide, T.glide + 0.9)), L = A[3], ar = L.width / L.height;
+  font(96, 600); const words = 'Use your ChatGPT plan in'.split(' ');
   const sp = 24, ws = words.map(w => ctx.measureText(w).width), tot = ws.reduce((p, c) => p + c, 0) + sp * (words.length - 1);
-  ctx.save(); ctx.globalAlpha *= a; ctx.translate(960, y); ctx.scale(sc, sc);
-  let x = -tot / 2;
+  // intro: the line centred with the lockup beneath it; header: one small line "Use your ChatGPT plan in <lockup>"
+  const HS = 0.56, hLh = 96 * 0.727 * HS / LK.cap, hLw = hLh * ar, gap = 15, hx = 960 - (tot * HS + gap + hLw) / 2;
+  const lx = lerp(960 - tot / 2, hx, g), by = lerp(470, 168, g), sc = lerp(1, HS, g);
+  ctx.save(); ctx.globalAlpha *= a; ctx.translate(lx, by); ctx.scale(sc, sc);
+  let x = 0;
   words.forEach((w, i) => {
     const t0 = 0.3 + i * 0.09, p = eQ(prog(s, t0, t0 + 0.7));
     if (p > 0) { ctx.save(); ctx.globalAlpha *= p; ctx.translate(0, 40 * (1 - p)); text(w, x, 0, 96, 600, INK); ctx.restore(); }
     x += ws[i] + sp;
   });
   ctx.restore();
+  const lp = eQ(prog(s, 1.05, 2.0)); if (lp <= 0) return;
+  const lh = lerp(130, hLh, g), lw = lh * ar;
+  // the lockup slides out beside the line first, then rises onto its baseline, so it never crosses the text
+  const gx = eIO(prog(s, T.glide, T.glide + 0.7)), gy = eIO(prog(s, T.glide + 0.25, T.glide + 0.9));
+  const cx = lerp(960, lx + tot * sc + gap + lw / 2, gx), top = by + lerp(70, -LK.base * lh, gy) + 18 * (1 - lp), k = lerp(0.96, 1, lp);
+  ctx.save(); ctx.globalAlpha *= a * lp; ctx.translate(cx, top + lh / 2); ctx.scale(k, k);
+  if (lp < 1) ctx.filter = `blur(${(10 * (1 - lp)).toFixed(2)}px)`;
+  ctx.drawImage(L, -lw / 2, -lh / 2, lw, lh); ctx.restore();
 }
 
 function film(s) {
@@ -119,7 +130,7 @@ function film(s) {
   const ex = eIO(prog(s, T.exit, T.exit + 0.5));                  // focused tile leaves
   const flip = s >= T.flip ? 1 : 0;   // hard swap of the real off/on captures (a blend ghosts a double knob)
   tiles.forEach((t, i) => {
-    const t0 = T.tiles + i * T.stagger, p = eQ(prog(s, t0, t0 + 0.8)); if (p <= 0) return;
+    const t0 = T.tiles, p = eQ(prog(s, t0, t0 + 0.9)); if (p <= 0) return;
     const focus = t.id === 'conn';
     let a = p, sc = lerp(0.965, 1, p), cx = t.x + t.w / 2, cy = t.y + t.h / 2 + 34 * (1 - p);
     if (focus) {
@@ -137,10 +148,10 @@ function film(s) {
     ctx.restore();
   });
   // end card
-  const L = A[3], lh = 66, lw = lh * L.width / L.height, la = eQ(prog(s, T.logo, T.logo + 0.7));
+  const L = A[3], lh = 84, lw = lh * L.width / L.height, la = eQ(prog(s, T.logo, T.logo + 0.7));
   if (la > 0) {
     ctx.save(); ctx.globalAlpha = la; ctx.translate(960, 492 + 16 * (1 - la)); const ls = lerp(0.94, 1, la); ctx.scale(ls, ls);
-    ctx.filter = 'invert(1) brightness(0.1)'; ctx.drawImage(L, -lw / 2, -lh / 2, lw, lh); ctx.restore();
+    ctx.drawImage(L, -lw / 2, -lh / 2, lw, lh); ctx.restore();
     reveal(s, T.logo + 0.3, () => text('Available on Devin Pro, Max and Teams', 960, 612, 40, 500, INK, 'center'), 0.7);
     reveal(s, T.logo + 0.5, () => text('docs.devin.ai', 960, 668, 28, 500, GRAY, 'center'), 0.7);
   }

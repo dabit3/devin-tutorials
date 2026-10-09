@@ -1,10 +1,10 @@
 # Tutorial 30 variant 3 (bento grid) music: a bright 96 BPM mallet-pop groove, cut to the edit. Runs inside
 # _kit/tools/audio.py (refills ML/MR). FM marimba ostinato over warm pads, two-step kick, finger snaps and swung
-# shakers. Each bento tile lands on an eighth note with a bell tone, the drums thin out while the grid focuses,
+# shakers. The whole bento grid lands on one bell chord, the drums thin out while the grid focuses,
 # return on the switch flip and resolve into a chord bloom on the logo. Times match scenes.js (T.*). All synthesized.
 from scipy.signal import fftconvolve
 BEAT = 60 / 96; BAR = 4 * BEAT; S16 = BEAT / 4
-TILES, STAG, FOCUS, FLIP, LOGO = 4 * BEAT, BEAT / 2, 11 * BEAT, 14 * BEAT, 17 * BEAT
+TILES, FOCUS, FLIP, LOGO = 5 * BEAT, 11 * BEAT, 14 * BEAT, 17 * BEAT
 END = N / SR
 CH = [[56, 59, 63, 66], [52, 56, 59, 63], [56, 59, 61, 64], [54, 59, 63, 68]]   # Emaj9  C#m9  Amaj9  B6
 BS = [40, 37, 33, 35]
@@ -67,9 +67,9 @@ for t in kicks:
     sc[i:j] = np.minimum(sc[i:j], 1 - 0.45 * np.exp(-x / 0.08))
 PL['pl'] *= sc; PL['pr'] *= sc
 
-# one bell per bento tile, climbing the chord
+# one soft bell chord as the grid lands together
 for i, m in enumerate([71, 75, 76, 80, 83, 87]):
-    put(bell(m, 1.0), TILES + i * STAG, 0.05, -0.4 + 0.16 * i, 'p')
+    put(bell(m, 1.4), TILES + 0.012 * i, 0.035, -0.4 + 0.16 * i, 'p')
 # soft lift into the focus, the switch "pop", the logo bloom
 def riser(d, peak): n = int(d * SR); return hp(noise(d), 0.4) * (np.arange(n) / n) ** 2.4 * peak
 put(riser(BEAT * 2, 0.07), FOCUS - BEAT * 2, 1, 0, 'd')
