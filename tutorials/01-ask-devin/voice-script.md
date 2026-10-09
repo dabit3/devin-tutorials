@@ -4,7 +4,7 @@ Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`), generated as 
 
 | Shot | Narration |
 | --- | --- |
-| Home screen | This is Ask Devin. Ask questions about any codebase, and get answers grounded in the code. |
+| Home screen | Ask Devin answers your questions about any codebase, with every answer grounded in the actual code. |
 | Clicking Ask | Switch the composer to Ask mode. |
 | Auto / Q&A / Plan menu | Auto picks the right mode for you, whether that's a quick answer or a plan. |
 | Opening All repositories | Then choose the repositories Devin should read. |
