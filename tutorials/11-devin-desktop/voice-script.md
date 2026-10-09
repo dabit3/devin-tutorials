@@ -1,7 +1,7 @@
 # Devin Desktop: voice script
 
 Generated as one ElevenLabs take per voice with `_kit/tools/vo_onetake.py` (default settings).
-Voices: Nader `T8iHhGIWPm2GVYpQD1Am`, Megan `1FmDfZG0Nx2dCk793S1a`, Joseff `3TStB8f3X3To0Uj5R7RK`.
+Voice: Nader `T8iHhGIWPm2GVYpQD1Am`.
 
 | Beat | Line |
 |---|---|
