@@ -48,5 +48,65 @@ function plan(ctx, s, k) {
   }
 }
 
-window.SCENES = { plan };
+// Launch-style title and end cards (engine hooks SCENES.titleCard / SCENES.endCard), drawn in 4K coords.
+// Beat times match music.py: 120 BPM, drums drop at introEnd, toggle snaps 4 beats earlier, end hit on the next beat >= uiEnd + 0.95 s (after the window has faded).
+const mix = (a, b, t) => a.map((v, i) => Math.round(v + (b[i] - v) * t));
+function words(ctx, k, text, y, size, wt, t0, s, gap = 0.09) {
+  k.font(size, wt); const track = -size * 0.028, sp = size * 0.27;
+  const ws = text.split(' '), w = ws.map(x => k.spacedW(x, track));
+  let x = k.W / 2 - (w.reduce((a, b) => a + b, 0) + sp * (ws.length - 1)) / 2;
+  ws.forEach((word, i) => {
+    const p = k.eOutQuint(k.prog(s, t0 + i * gap, t0 + i * gap + 0.55));
+    if (p > 0) {
+      ctx.save(); ctx.beginPath(); ctx.rect(x - 20, y - size * 1.05, w[i] + 40, size * 1.4); ctx.clip();
+      ctx.globalAlpha *= p; ctx.translate(0, size * 0.55 * (1 - p)); k.spaced(word, x, y, track); ctx.restore();
+    }
+    x += w[i] + sp;
+  });
+}
+function glow(ctx, k, x, y, r, a) {
+  if (a <= 0) return;
+  const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+  g.addColorStop(0, rgba(BLUE, 0.09 * a)); g.addColorStop(1, rgba(BLUE, 0));
+  ctx.fillStyle = g; ctx.fillRect(0, 0, k.W, k.H);
+}
+function titleCard(ctx, s, k) {
+  const { W, H } = k, o = k.eInOut(k.out), SNAP = k.introEnd - 2.5;
+  const f2 = Math.max(o, k.eInOut(k.prog(s, k.introEnd - 0.5, k.introEnd - 0.15)));
+  ctx.fillStyle = k.BG; ctx.fillRect(0, 0, W, H);
+  const on = k.eOutQuint(k.prog(s, SNAP, SNAP + 0.3));
+  const a = k.eOutQuint(k.prog(s, 0, 0.5)), up = k.eInOut(k.prog(s, SNAP + 0.3, SNAP + 0.9));
+  const cy = k.lerp(H / 2, 770, up);
+  glow(ctx, k, W / 2, cy, 1500, on * (1 - f2));
+  ctx.save(); ctx.globalAlpha = 1 - f2; ctx.translate(0, -120 * f2);
+  ctx.save(); ctx.translate(W / 2, cy); const sc = k.lerp(0.86, 1, a) * k.lerp(1, 0.74, up); ctx.scale(sc, sc); ctx.globalAlpha *= a;
+  const tw = 270, th = 150, r = th / 2;
+  ctx.shadowColor = 'rgba(0,0,0,.06)'; ctx.shadowBlur = 40; ctx.shadowOffsetY = 12;
+  k.rr(-tw / 2, -th / 2, tw, th, r); ctx.fillStyle = `rgb(${mix([226, 226, 229], BLUE, on)})`; ctx.fill(); ctx.shadowColor = 'transparent';
+  const q = k.prog(s, SNAP, SNAP + 0.9);
+  if (q > 0 && q < 1) { const e = k.eOut(q) * 46; k.rr(-tw / 2 - e, -th / 2 - e, tw + 2 * e, th + 2 * e, r + e); ctx.lineWidth = 4; ctx.strokeStyle = rgba(BLUE, 0.35 * (1 - q)); ctx.stroke(); }
+  const kx = k.lerp(-tw / 2 + r, tw / 2 - r, on);
+  ctx.shadowColor = 'rgba(0,0,0,.22)'; ctx.shadowBlur = 18; ctx.shadowOffsetY = 5;
+  ctx.beginPath(); ctx.arc(kx, 0, r - 13, 0, Math.PI * 2); ctx.fillStyle = '#fff'; ctx.fill();
+  ctx.restore();
+  ctx.textBaseline = 'alphabetic'; ctx.fillStyle = k.INK;
+  words(ctx, k, 'Use your ChatGPT plan in Devin', 1170, 156, 600, SNAP + 0.35, s);
+  ctx.fillStyle = 'rgba(25,25,25,.55)';
+  words(ctx, k, 'Works with ChatGPT Go, Plus and Pro', 1300, 62, 400, SNAP + 0.7, s, 0.035);
+  ctx.restore();
+}
+function endCard(ctx, s, k) {
+  const { W, H } = k, HIT = k.introEnd + Math.ceil((k.uiEnd + 0.95 - k.introEnd) / 0.5 - 1e-6) * 0.5 - k.uiEnd;
+  ctx.fillStyle = k.BG; ctx.fillRect(0, 0, W, H);
+  const a = k.eOutQuint(k.prog(s, HIT - 0.04, HIT + 0.55));
+  glow(ctx, k, W / 2, 930, 1500, a * (1 - 0.5 * k.prog(s, HIT + 0.4, HIT + 1.6)));
+  const h = 150, w = h * k.LOCKUP.width / k.LOCKUP.height, sc = k.lerp(0.9, 1, a);
+  ctx.save(); ctx.globalAlpha *= a; ctx.translate(W / 2, 900); ctx.scale(sc, sc);
+  ctx.filter = 'invert(1) brightness(0.1)'; ctx.drawImage(k.LOCKUP, -w / 2, -h / 2, w, h); ctx.restore();
+  ctx.textBaseline = 'alphabetic'; ctx.fillStyle = k.INK;
+  words(ctx, k, 'Available on Devin Pro, Max and Teams', 1170, 84, 500, HIT + 0.12, s, 0.05);
+  ctx.fillStyle = 'rgba(25,25,25,.5)';
+  words(ctx, k, 'docs.devin.ai', 1280, 54, 400, HIT + 0.4, s);
+}
+window.SCENES = { plan, titleCard, endCard };
 })();

@@ -29,7 +29,7 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 <!-- -->
 
-30. **Use your ChatGPT plan in Devin** (0:15): A 15-second feature clip. Settings → Connections with a linked ChatGPT account, the real **Use your ChatGPT plan** switch turning on, the same switch in the model picker's hover card on a GPT model, and a diagram of the billing split: GPT models bill to your ChatGPT plan, other models to your Devin quota. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/30-chatgpt-plan/30-chatgpt-plan.mp4)
+30. **Use your ChatGPT plan in Devin** (0:15): A 15-second launch clip. A toggle-snap title card, then Settings → Connections with a linked ChatGPT account, the real **Use your ChatGPT plan** switch turning on, the same switch in the model picker's hover card on a GPT model, and a diagram of the billing split: GPT models bill to your ChatGPT plan, other models to your Devin quota, on an upbeat synthesized track. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/30-chatgpt-plan/30-chatgpt-plan.mp4)
 
 ## Narrated tutorials
 

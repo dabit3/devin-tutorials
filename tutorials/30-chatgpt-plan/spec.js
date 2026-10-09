@@ -3,9 +3,9 @@ window.SPEC = {
   "subtitle": "Link ChatGPT Go, Plus or Pro",
   "outro": "One toggle for Cloud, Desktop and CLI",
   "outroSub": "docs.devin.ai",
-  "introHold": 2.3,
+  "introHold": 3.2,
   "tailHold": 0.3,
-  "outroHold": 2.3,
+  "outroHold": 2.2,
   "pace": 1.0,
   "maxZoom": 1.5,
   "edit": {
@@ -17,6 +17,6 @@ window.SPEC = {
     "0005.png": { "skip": true },
     "0006.png": { "kind": "still", "hold": 0.35, "cap": "Or from the model picker", "cam": { "x": 1010, "y": 330, "z": 1.15 }, "camDur": 0.7 },
     "0007.png": { "travel": 0.5, "dwell": 1.75, "ring": { "x": 1305, "y": 425, "w": 35, "h": 20 }, "ringPad": 6, "ringRadius": 17, "ringDelay": 0.55, "ringFor": 1.5 },
-    "0008.png": { "scene": "plan", "hold": 2.5, "cursor": false, "cap": "", "cam": "reset", "camDur": 0.01 }
+    "0008.png": { "scene": "plan", "hold": 2.0, "cursor": false, "cap": "", "cam": "reset", "camDur": 0.01 }
   }
 };
