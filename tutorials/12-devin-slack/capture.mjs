@@ -1,7 +1,8 @@
 // Records tutorial 12 from the real Slack desktop app, signed in to a workspace with the Devin app installed, in a fresh channel with Devin invited.
 // Prereq: /Applications/Slack.app/Contents/MacOS/Slack --remote-debugging-port=9336, and Chrome on CDP 9333 signed in to the Devin org Slack is linked to (Chrome is the default browser, so the thread's session link opens there).
 //   ZOOM=1.25 CHANNEL=<channel id> PHASE=1 node capture.mjs, then RESUME=1 PHASE=2|3|4 (21 resumes phase 2 at Devin's answer)
-// PHASE 1 !ask, 2 tagged !fast session + thread follow-up + open the session link, 3 the session in the Devin web app (Chrome CDP 9333), 4 archive.
+// PHASE 1 !ask, 2 tagged !fast session + thread follow-up + open the session link, 3 the session in the Devin web app (Chrome CDP 9333),
+// 5 a feature task in a new thread up to Devin's test recording (51 resumes the wait), 52 play the recording, 4 archive (ARCHIVE=feature archives the feature thread).
 // Slack's channel sidebar stays hidden and threads stay closed when unused; hlBox on a beat records a region spec.js can highlight (hl: true).
 import { Rec, sleep } from '../_kit/capture/rec.mjs';
 const PHASE = +(process.env.PHASE || 1);
@@ -9,6 +10,7 @@ const TEAM = process.env.TEAM || 'T0ADCMVEEC8', CHANNEL = process.env.CHANNEL;
 const ASK = '!ask how does build.sh turn a tutorial into an MP4?';
 const TASK = '!fast in dabit3/devin-tutorials, add up the video lengths of the main tutorials in the README and reply with the total. No PR needed.';
 const FOLLOW = 'Which tutorial is the longest?';
+const FEATURE = 'in dabit3/orbit-demo, add a "Clear done" button to the Done column header that removes every card in Done. Open a PR, then test it in the browser and send me the recording here.';
 
 process.env.CDP_URL = 'http://127.0.0.1:9336';
 const r = await new Rec('shots').init();
@@ -174,6 +176,60 @@ if (PHASE === 3) {
   console.log('origin', JSON.stringify(origin), await q.url());
   w.done(); process.exit(0);
 }
+// a real code change: Devin builds the feature, opens a PR, tests it in the browser and posts the recording in the thread
+const hasVideo = rs => rs.some(m => (m.files || []).some(f => /^video\//.test(f.mimetype || '')));
+if (PHASE === 5) {
+  await closeThread(); await tidy();
+  await tagAndSend(FEATURE, { typeTag: false });
+  await openThread(FEATURE.slice(0, 30));
+}
+// one frame each time a reply lands (the pane is otherwise static), until the recording is in the thread
+if (PHASE === 5 || PHASE === 51) {
+  const ts = await parentTs('Clear done');
+  let n = -1;
+  for (const t0 = Date.now(); Date.now() - t0 < 5400e3;) {
+    const rs = await threadReplies(ts);
+    if (rs.length !== n) {
+      n = rs.length; await sleep(2500); await scrollThread('end'); await park();
+      await r.shot({ kind: 'poll', at: Date.now() - t0, hlBox: n ? await threadMsg(-1) : undefined });
+      console.log('reply', n, JSON.stringify(rs.at(-1)?.text?.slice(0, 300)), (rs.at(-1)?.files || []).map(f => f.mimetype).join(','));
+    }
+    if (hasVideo(rs)) break;
+    await sleep(10000);
+  }
+  r.mark('recordingIn');
+}
+// PHASE 52: open Devin's test recording from the thread; Slack's media viewer autoplays it. It plays at quarter speed while we grab frames
+// (each tagged with the video's own clock, vt) up to PLAY_TO seconds: the click on Clear done and the emptied Done column.
+if (PHASE === 52) {
+  if (await p.evaluate(() => !!document.querySelector('video.p-media_viewer__video'))) { await p.keyboard.press('Escape'); await sleep(800); }
+  // reopen the feature thread off camera if it's closed
+  if (!(await threadText()).includes(FEATURE.slice(0, 30))) {
+    const pt = await repliesOf(FEATURE.slice(0, 30)); await p.mouse.click(pt.x, pt.y);
+    await waitFor(async () => (await threadText()).includes(FEATURE.slice(0, 30)), 15000, 500); await sleep(1000);
+  }
+  await scrollThread('end'); await park();
+  const vid = () => p.evaluate(() => { const e = [...document.querySelectorAll('[data-qa="threads_flexpane"] [data-qa="video_message_file"]')].pop(); const b = e?.getBoundingClientRect();
+    return b && { x: b.x + b.width / 2, y: b.y + b.height / 2, w: b.width, h: b.height }; });
+  await r.shot({ kind: 'still', mark: 'recording', hold: 1.6, hlBox: await vid() });
+  await r.click(await vid(), { wait: 700 });
+  r.cur = { x: 450, y: 788 }; await p.mouse.move(r.cur.x, r.cur.y);
+  // Slack remembers the last playback position: restart from 0
+  await p.evaluate(() => { const v = document.querySelector('video.p-media_viewer__video'); if (v) { v.currentTime = 0; v.playbackRate = 0.25; v.play(); } }); await sleep(300);
+  const vt = () => p.evaluate(() => { const v = document.querySelector('video.p-media_viewer__video'); return v ? { t: v.currentTime, end: v.ended, d: v.duration } : null; });
+  const player = await p.evaluate(() => { const b = document.querySelector('video.p-media_viewer__video')?.getBoundingClientRect(); return b && { x: b.x + b.width / 2, y: b.y + b.height / 2, w: b.width, h: b.height }; });
+  // the recording's Done column, as a share of the player (the board fills the recording's width)
+  const done = player && { x: player.x - player.w / 2 + player.w * 0.882, y: player.y - player.h / 2 + player.h * 0.45, w: player.w * 0.19, h: player.h * 0.17 };
+  const PLAY_TO = +(process.env.PLAY_TO || 7);
+  for (const t0 = Date.now(); Date.now() - t0 < 90e3;) {
+    const v = await vt(); if (!v || v.end || v.t >= PLAY_TO) break;
+    await r.shot({ kind: 'poll', at: Date.now() - t0, vt: +v.t.toFixed(2), play: true, hlBox: done });
+    await sleep(80);
+  }
+  r.mark('played');
+  await p.keyboard.press('Escape'); await sleep(1200); await park();
+  await r.shot({ kind: 'still', hold: 1.0 });
+}
 if (PHASE === 4) {
   await scrollThread('end');
   const ed = await editorBox(true);
@@ -182,7 +238,7 @@ if (PHASE === 4) {
   await r.shot({ kind: 'still', mark: 'archive', hold: 1.6, hlBox: await editorBox(true) });
   await p.keyboard.press('Enter'); await sleep(1500);
   await park(); await r.shot({ kind: 'still', hold: 1.0 });
-  const ts = await parentTs(TASK.slice(6, 40));
+  const ts = await parentTs(process.env.ARCHIVE === 'feature' ? 'Clear done' : TASK.slice(6, 40));
   await r.poll(120e3, 2000, { any: true }, async () => (await threadReplies(ts)).some(m => m.text === 'archive' && m.reactions?.length));
   await sleep(1500); await scrollThread('end');
   const rx = await p.evaluate(() => { const e = [...document.querySelectorAll('[data-qa="threads_flexpane"] [data-qa="message_container"]')].pop();
