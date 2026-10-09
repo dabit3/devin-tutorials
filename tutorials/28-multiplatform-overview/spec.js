@@ -33,8 +33,8 @@ window.SPEC = {
       "vo": "Here it is on Windows, testing a native WPF app it just built."
     },
     "0005.png": {
-      "hold": 3.2, "cursor": false, "capPos": "top", "hl": null,
-      "cam": { "x": 890, "y": 405, "z": 1.3 }, "camDur": 0.01, "camForce": true,
+      "hold": 3.2, "cursor": false, "capPos": "bottom", "hl": null,
+      "cam": { "x": 1000, "y": 400, "z": 1.3 }, "camDur": 0.01, "camForce": true,
       "cap": "iPhone and iPad Simulators on macOS",
       "vo": "On macOS, it tests a SwiftUI app in the iPhone and iPad Simulators."
     },
