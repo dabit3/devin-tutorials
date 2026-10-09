@@ -31,11 +31,11 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
 
-- **Devin Desktop, narrated by Joseff** (2:29): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-joseff.mp4)
-- **Devin Desktop, narrated by Megan** (2:28): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-megan.mp4)
+- **Devin Desktop, narrated by Joseff** (2:16): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-joseff.mp4)
+- **Devin Desktop, narrated by Megan** (2:15): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-megan.mp4)
 - **Devin in Slack, narrated by Megan** (1:14): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack-megan.mp4)
 - **Devin CLI, narrated by Nader** (1:41): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/10-devin-cli/10-devin-cli-nader.mp4)
-- **Devin Desktop, narrated by Nader** (2:25): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-nader.mp4)
+- **Devin Desktop, narrated by Nader** (2:11): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-nader.mp4)
 - **Devin in Slack, narrated by Nader** (1:13): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack-nader.mp4)
 - **Devin Memory, narrated by Nader** (1:13): Tell Devin a preference, watch it save to Memory, browse Customize → Memory and Dreaming, then see a new session follow it. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-nader.mp4) · [Voice script](tutorials/13-devin-memory/voice-script.md)
 - **Devin Memory, clean** (1:00): The same Memory footage with no captions and no voiceover, music only. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-clean.mp4)
