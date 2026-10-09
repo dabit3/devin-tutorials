@@ -438,6 +438,25 @@ window.SPEC = {
     },
     "0338.png": {
       "skip": true
+    },
+    "0339.png": {
+      "cursor": false,
+      "fade": 24,
+      "hold": 2.2,
+      "cap": "This run: one coordinator, four managed Devins",
+      "vo": "This run used one level, a coordinator with four managed Devins."
+    },
+    "0340.png": {
+      "fade": 24,
+      "hold": 2.2,
+      "cap": "Each managed Devin can start its own",
+      "vo": "But each managed Devin can also start managed Devins of its own."
+    },
+    "0341.png": {
+      "fade": 24,
+      "hold": 2.6,
+      "cap": "Teams of Devins can nest several levels deep",
+      "vo": "So one big task can branch into a whole tree of Devins, several levels deep."
     }
   }
 };

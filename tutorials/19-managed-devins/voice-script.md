@@ -36,4 +36,10 @@ Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, default settings),
 
 17. With Auto-approve child sessions on, under Settings, Preferences, Devin starts managed Devins without asking you first.
 
-18. One task in, a team of Devins on it.
+18. This run used one level, a coordinator with four managed Devins.
+
+19. But each managed Devin can also start managed Devins of its own.
+
+20. So one big task can branch into a whole tree of Devins, several levels deep.
+
+21. One task in, a team of Devins on it.
