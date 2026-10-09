@@ -2,707 +2,753 @@
  {
   "img": "0000.png",
   "cur": {
-   "x": 720,
-   "y": 620
+   "x": 1125,
+   "y": 750
   },
-  "hold": 1
+  "hold": 1.2,
+  "mark": "home"
  },
  {
   "img": "0001.png",
   "cur": {
-   "x": 150,
-   "y": 183
+   "x": 32.5,
+   "y": 27.5
   },
-  "cap": "Open Wiki from the sidebar",
   "kind": "hover",
   "target": {
-   "x": 150,
-   "y": 183,
-   "w": 284,
-   "h": 30,
+   "x": 32.5,
+   "y": 27.5,
+   "w": 35,
+   "h": 35,
    "text": ""
   }
  },
  {
   "img": "0002.png",
   "cur": {
-   "x": 150,
-   "y": 183
+   "x": 32.5,
+   "y": 27.5
   },
   "kind": "click",
   "target": {
-   "x": 150,
-   "y": 183,
-   "w": 284,
-   "h": 30,
+   "x": 32.5,
+   "y": 27.5,
+   "w": 35,
+   "h": 35,
    "text": ""
   },
   "clickAt": {
-   "x": 150,
-   "y": 183
-  },
-  "mark": "list",
-  "cap": "DeepWiki documents every repository you connect"
+   "x": 32.5,
+   "y": 27.5
+  }
  },
  {
   "img": "0003.png",
   "cur": {
-   "x": 612.5,
-   "y": 434
+   "x": 187.5,
+   "y": 228.75
   },
-  "cap": "Pick a repository to read its wiki",
   "kind": "hover",
   "target": {
-   "x": 612.5,
-   "y": 434,
-   "w": 508,
-   "h": 84,
-   "text": "product-demo-apps\nthequantexplorer\nyesterday\n·"
+   "x": 187.5,
+   "y": 228.75,
+   "w": 355,
+   "h": 37.5
   }
  },
  {
   "img": "0004.png",
   "cur": {
-   "x": 612.5,
-   "y": 434
+   "x": 187.5,
+   "y": 228.75
   },
   "kind": "click",
   "target": {
-   "x": 612.5,
-   "y": 434,
-   "w": 508,
-   "h": 84,
-   "text": "product-demo-apps\nthequantexplorer\nyesterday\n·"
+   "x": 187.5,
+   "y": 228.75,
+   "w": 355,
+   "h": 37.5
   },
   "clickAt": {
-   "x": 612.5,
-   "y": 434
+   "x": 187.5,
+   "y": 228.75
   },
-  "mark": "overview",
-  "cap": "Every page is written from your actual code"
+  "mark": "wikis"
  },
  {
   "img": "0005.png",
   "cur": {
-   "x": 587.4296875,
-   "y": 138
+   "x": 1224.08203125,
+   "y": 26.875
   },
-  "cap": "See which files each page was built from",
   "kind": "hover",
   "target": {
-   "x": 587.4296875,
-   "y": 138,
-   "w": 127.859375,
-   "h": 18,
-   "text": "Relevant source files"
+   "x": 1224.08203125,
+   "y": 26.875,
+   "w": 205,
+   "h": 32.5,
+   "text": ""
   }
  },
  {
   "img": "0006.png",
   "cur": {
-   "x": 587.4296875,
-   "y": 138
+   "x": 1224.08203125,
+   "y": 26.875
   },
   "kind": "click",
   "target": {
-   "x": 587.4296875,
-   "y": 138,
-   "w": 127.859375,
-   "h": 18,
-   "text": "Relevant source files"
+   "x": 1224.08203125,
+   "y": 26.875,
+   "w": 205,
+   "h": 32.5,
+   "text": ""
   },
   "clickAt": {
-   "x": 587.4296875,
-   "y": 138
+   "x": 1224.08203125,
+   "y": 26.875
   }
  },
  {
   "img": "0007.png",
   "cur": {
-   "x": 920,
-   "y": 420
-  },
-  "kind": "poll",
-  "at": 0,
-  "hold": 0.22,
-  "cap": "Scroll through the overview"
- },
- {
-  "img": "0008.png",
-  "cur": {
-   "x": 920,
-   "y": 420
-  },
-  "kind": "poll",
-  "at": 250,
-  "hold": 0.22,
-  "cap": "Scroll through the overview"
- },
- {
-  "img": "0009.png",
-  "cur": {
-   "x": 1162.5,
-   "y": 272
-  },
-  "cap": "Architecture diagrams are generated automatically",
-  "kind": "hover",
-  "target": {
-   "x": 1162.5,
-   "y": 272,
-   "w": 24,
-   "h": 24,
-   "text": ""
-  }
- },
- {
-  "img": "0010.png",
-  "cur": {
-   "x": 1162.5,
-   "y": 272
-  },
-  "kind": "click",
-  "target": {
-   "x": 1162.5,
-   "y": 272,
-   "w": 24,
-   "h": 24,
-   "text": ""
-  },
-  "clickAt": {
-   "x": 1162.5,
-   "y": 272
-  }
- },
- {
-  "img": "0011.png",
-  "cur": {
-   "x": 1162.5,
-   "y": 272
-  },
-  "hold": 1.8
- },
- {
-  "img": "0012.png",
-  "cur": {
-   "x": 164,
-   "y": 480
-  },
-  "cap": "Browse pages for each part of the codebase",
-  "kind": "hover",
-  "target": {
-   "x": 164,
-   "y": 480,
-   "w": 236,
-   "h": 18,
-   "text": "Productivity Web Apps: Kanban Board, PDF Form Signer, 3D Configurator"
-  }
- },
- {
-  "img": "0013.png",
-  "cur": {
-   "x": 164,
-   "y": 480
-  },
-  "kind": "click",
-  "target": {
-   "x": 164,
-   "y": 480,
-   "w": 236,
-   "h": 18,
-   "text": "Productivity Web Apps: Kanban Board, PDF Form Signer, 3D Configurator"
-  },
-  "clickAt": {
-   "x": 164,
-   "y": 480
-  }
- },
- {
-  "img": "0014.png",
-  "cur": {
-   "x": 164,
-   "y": 480
-  },
-  "hold": 1.4
- },
- {
-  "img": "0015.png",
-  "cur": {
-   "x": 920,
-   "y": 420
-  },
-  "kind": "poll",
-  "at": 0,
-  "hold": 0.22,
-  "cap": "Each page cites the exact source lines"
- },
- {
-  "img": "0016.png",
-  "cur": {
-   "x": 920,
-   "y": 420
-  },
-  "kind": "poll",
-  "at": 250,
-  "hold": 0.22,
-  "cap": "Each page cites the exact source lines"
- },
- {
-  "img": "0017.png",
-  "cur": {
-   "x": 920,
-   "y": 420
-  },
-  "kind": "poll",
-  "at": 500,
-  "hold": 0.22,
-  "cap": "Each page cites the exact source lines"
- },
- {
-  "img": "0018.png",
-  "cur": {
-   "x": 920,
-   "y": 420
-  },
-  "kind": "poll",
-  "at": 750,
-  "hold": 0.22,
-  "cap": "Each page cites the exact source lines"
- },
- {
-  "img": "0019.png",
-  "cur": {
-   "x": 920,
-   "y": 420
-  },
-  "kind": "poll",
-  "at": 1000,
-  "hold": 0.22,
-  "cap": "Each page cites the exact source lines"
- },
- {
-  "img": "0020.png",
-  "cur": {
-   "x": 920,
-   "y": 420
-  },
-  "hold": 1.4
- },
- {
-  "img": "0021.png",
-  "cur": {
-   "x": 1419,
-   "y": 21.5
-  },
-  "cap": "Re-index, edit, or tune DeepWiki settings",
-  "kind": "hover",
-  "target": {
-   "x": 1419,
-   "y": 21.5,
-   "w": 28,
-   "h": 28
-  }
- },
- {
-  "img": "0022.png",
-  "cur": {
-   "x": 1419,
-   "y": 21.5
-  },
-  "kind": "click",
-  "target": {
-   "x": 1419,
-   "y": 21.5,
-   "w": 28,
-   "h": 28
-  },
-  "clickAt": {
-   "x": 1419,
-   "y": 21.5
-  }
- },
- {
-  "img": "0023.png",
-  "cur": {
-   "x": 1419,
-   "y": 21.5
-  },
-  "hold": 1.6
- },
- {
-  "img": "0024.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "cap": "Ask Devin questions about this repository",
-  "kind": "hover",
-  "target": {
-   "x": 846.5,
-   "y": 661,
-   "w": 722,
-   "h": 20,
-   "text": ""
-  }
- },
- {
-  "img": "0025.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "click",
-  "target": {
-   "x": 846.5,
-   "y": 661,
-   "w": 722,
-   "h": 20,
-   "text": ""
-  },
-  "clickAt": {
-   "x": 846.5,
-   "y": 661
-  }
- },
- {
-  "img": "0026.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0027.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0028.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0029.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0030.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0031.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0032.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0033.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0034.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0035.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0036.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0037.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0038.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0039.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "type",
-  "chars": 4
- },
- {
-  "img": "0040.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1224.08203125,
+   "y": 26.875
   },
   "kind": "type",
   "chars": 2
  },
  {
+  "img": "0008.png",
+  "cur": {
+   "x": 1224.08203125,
+   "y": 26.875
+  },
+  "kind": "type",
+  "chars": 2
+ },
+ {
+  "img": "0009.png",
+  "cur": {
+   "x": 1224.08203125,
+   "y": 26.875
+  },
+  "kind": "type",
+  "chars": 2
+ },
+ {
+  "img": "0010.png",
+  "cur": {
+   "x": 1224.08203125,
+   "y": 26.875
+  },
+  "kind": "type",
+  "chars": 1
+ },
+ {
+  "img": "0011.png",
+  "cur": {
+   "x": 481.875,
+   "y": 521.25
+  },
+  "kind": "hover",
+  "target": {
+   "x": 481.875,
+   "y": 521.25,
+   "w": 462.5,
+   "h": 90
+  }
+ },
+ {
+  "img": "0012.png",
+  "cur": {
+   "x": 1325,
+   "y": 375
+  },
+  "kind": "click",
+  "target": {
+   "x": 481.875,
+   "y": 521.25,
+   "w": 462.5,
+   "h": 90
+  },
+  "clickAt": {
+   "x": 481.875,
+   "y": 521.25
+  },
+  "hold": 2,
+  "mark": "overview"
+ },
+ {
+  "img": "0013.png",
+  "cur": {
+   "x": 720.625,
+   "y": 172.5
+  },
+  "kind": "hover",
+  "target": {
+   "x": 720.625,
+   "y": 172.5,
+   "w": 807.5,
+   "h": 22.5
+  }
+ },
+ {
+  "img": "0014.png",
+  "cur": {
+   "x": 720.625,
+   "y": 172.5
+  },
+  "kind": "click",
+  "target": {
+   "x": 720.625,
+   "y": 172.5,
+   "w": 807.5,
+   "h": 22.5
+  },
+  "clickAt": {
+   "x": 720.625,
+   "y": 172.5
+  }
+ },
+ {
+  "img": "0015.png",
+  "cur": {
+   "x": 720.625,
+   "y": 172.5
+  },
+  "hold": 1.6,
+  "target": {
+   "x": 720.625,
+   "y": 265,
+   "w": 840,
+   "h": 230
+  },
+  "mark": "sources"
+ },
+ {
+  "img": "0016.png",
+  "cur": {
+   "x": 1250,
+   "y": 800
+  },
+  "hold": 1.4,
+  "target": {
+   "x": 720.625,
+   "y": 344.6484375,
+   "w": 840,
+   "h": 114.296875
+  },
+  "mark": "diagram"
+ },
+ {
+  "img": "0017.png",
+  "cur": {
+   "x": 1115.625,
+   "y": 312.5
+  },
+  "kind": "hover",
+  "target": {
+   "x": 1115.625,
+   "y": 312.5,
+   "w": 30,
+   "h": 30
+  }
+ },
+ {
+  "img": "0018.png",
+  "cur": {
+   "x": 1115.625,
+   "y": 312.5
+  },
+  "kind": "click",
+  "target": {
+   "x": 1115.625,
+   "y": 312.5,
+   "w": 30,
+   "h": 30
+  },
+  "clickAt": {
+   "x": 1115.625,
+   "y": 312.5
+  },
+  "hold": 1.6,
+  "mark": "diagram-open"
+ },
+ {
+  "img": "0019.png",
+  "cur": {
+   "x": 32.5,
+   "y": 27.5
+  },
+  "kind": "hover",
+  "target": {
+   "x": 32.5,
+   "y": 27.5,
+   "w": 35,
+   "h": 35,
+   "text": ""
+  }
+ },
+ {
+  "img": "0020.png",
+  "cur": {
+   "x": 32.5,
+   "y": 27.5
+  },
+  "kind": "click",
+  "target": {
+   "x": 32.5,
+   "y": 27.5,
+   "w": 35,
+   "h": 35,
+   "text": ""
+  },
+  "clickAt": {
+   "x": 32.5,
+   "y": 27.5
+  }
+ },
+ {
+  "img": "0021.png",
+  "cur": {
+   "x": 205,
+   "y": 600
+  },
+  "kind": "hover",
+  "target": {
+   "x": 205,
+   "y": 600,
+   "w": 320,
+   "h": 37.5
+  }
+ },
+ {
+  "img": "0022.png",
+  "cur": {
+   "x": 1325,
+   "y": 375
+  },
+  "kind": "click",
+  "target": {
+   "x": 205,
+   "y": 600,
+   "w": 320,
+   "h": 37.5
+  },
+  "clickAt": {
+   "x": 205,
+   "y": 600
+  },
+  "hold": 2,
+  "mark": "page"
+ },
+ {
+  "img": "0023.png",
+  "cur": {
+   "x": 1413.75,
+   "y": 26.875
+  },
+  "kind": "hover",
+  "target": {
+   "x": 1413.75,
+   "y": 26.875,
+   "w": 35,
+   "h": 35,
+   "text": ""
+  }
+ },
+ {
+  "img": "0024.png",
+  "cur": {
+   "x": 1413.75,
+   "y": 26.875
+  },
+  "kind": "click",
+  "target": {
+   "x": 1413.75,
+   "y": 26.875,
+   "w": 35,
+   "h": 35,
+   "text": ""
+  },
+  "clickAt": {
+   "x": 1413.75,
+   "y": 26.875
+  }
+ },
+ {
+  "img": "0025.png",
+  "cur": {
+   "x": 1413.75,
+   "y": 26.875
+  },
+  "hold": 1.8,
+  "target": {
+   "x": 1268.75,
+   "y": 157.5,
+   "w": 325,
+   "h": 220
+  },
+  "mark": "menu"
+ },
+ {
+  "img": "0026.png",
+  "cur": {
+   "x": 1349.58984375,
+   "y": 780
+  },
+  "kind": "hover",
+  "target": {
+   "x": 1349.58984375,
+   "y": 780,
+   "w": 140.8203125,
+   "h": 40
+  }
+ },
+ {
+  "img": "0027.png",
+  "cur": {
+   "x": 1349.58984375,
+   "y": 780
+  },
+  "kind": "click",
+  "target": {
+   "x": 1349.58984375,
+   "y": 780,
+   "w": 140.8203125,
+   "h": 40
+  },
+  "clickAt": {
+   "x": 1349.58984375,
+   "y": 780
+  }
+ },
+ {
+  "img": "0028.png",
+  "cur": {
+   "x": 1349.58984375,
+   "y": 780
+  },
+  "kind": "type",
+  "chars": 58,
+  "paste": true,
+  "hold": 1.4,
+  "target": {
+   "x": 720.625,
+   "y": 666.25,
+   "w": 945,
+   "h": 152.5
+  },
+  "mark": "ask"
+ },
+ {
+  "img": "0029.png",
+  "cur": {
+   "x": 1159.375,
+   "y": 708.75
+  },
+  "kind": "hover",
+  "target": {
+   "x": 1159.375,
+   "y": 708.75,
+   "w": 35,
+   "h": 35,
+   "text": ""
+  }
+ },
+ {
+  "img": "0030.png",
+  "cur": {
+   "x": 1159.375,
+   "y": 708.75
+  },
+  "kind": "click",
+  "target": {
+   "x": 1159.375,
+   "y": 708.75,
+   "w": 35,
+   "h": 35,
+   "text": ""
+  },
+  "clickAt": {
+   "x": 1159.375,
+   "y": 708.75
+  }
+ },
+ {
+  "img": "0031.png",
+  "cur": {
+   "x": 1250,
+   "y": 700
+  },
+  "hold": 0.6,
+  "mark": "answer-start"
+ },
+ {
+  "img": "0032.png",
+  "cur": {
+   "x": 1250,
+   "y": 700
+  },
+  "kind": "poll",
+  "at": 3,
+  "cap": null
+ },
+ {
+  "img": "0033.png",
+  "cur": {
+   "x": 1250,
+   "y": 700
+  },
+  "kind": "poll",
+  "at": 1504,
+  "cap": null
+ },
+ {
+  "img": "0034.png",
+  "cur": {
+   "x": 1250,
+   "y": 700
+  },
+  "kind": "poll",
+  "at": 3006,
+  "cap": null
+ },
+ {
+  "img": "0035.png",
+  "cur": {
+   "x": 1250,
+   "y": 700
+  },
+  "kind": "poll",
+  "at": 4511,
+  "cap": null
+ },
+ {
+  "img": "0036.png",
+  "cur": {
+   "x": 1250,
+   "y": 700
+  },
+  "kind": "poll",
+  "at": 6021,
+  "cap": null
+ },
+ {
+  "img": "0037.png",
+  "cur": {
+   "x": 1250,
+   "y": 700
+  },
+  "kind": "poll",
+  "at": 7524,
+  "cap": null
+ },
+ {
+  "img": "0038.png",
+  "cur": {
+   "x": 1250,
+   "y": 700
+  },
+  "kind": "poll",
+  "at": 9030,
+  "cap": null
+ },
+ {
+  "img": "0039.png",
+  "cur": {
+   "x": 1250,
+   "y": 700
+  },
+  "kind": "poll",
+  "at": 10531,
+  "cap": null
+ },
+ {
+  "img": "0040.png",
+  "cur": {
+   "x": 1250,
+   "y": 700
+  },
+  "kind": "poll",
+  "at": 12036,
+  "cap": null
+ },
+ {
   "img": "0041.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1250,
+   "y": 700
   },
-  "hold": 0.8
+  "kind": "poll",
+  "at": 13539,
+  "cap": null
  },
  {
   "img": "0042.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1250,
+   "y": 700
   },
-  "hold": 0.6,
-  "cap": "Devin reads the wiki and your code to answer"
+  "kind": "poll",
+  "at": 15038,
+  "cap": null
  },
  {
   "img": "0043.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1250,
+   "y": 700
   },
   "kind": "poll",
-  "at": 2,
-  "badge": "Sped up"
+  "at": 16547,
+  "cap": null
  },
  {
   "img": "0044.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1250,
+   "y": 700
   },
   "kind": "poll",
-  "at": 1513,
-  "badge": "Sped up"
+  "at": 18043,
+  "cap": null
  },
  {
   "img": "0045.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1250,
+   "y": 700
   },
   "kind": "poll",
-  "at": 3013,
-  "badge": "Sped up"
+  "at": 19544,
+  "cap": null
  },
  {
   "img": "0046.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1250,
+   "y": 700
   },
   "kind": "poll",
-  "at": 4536,
-  "badge": "Sped up"
+  "at": 21051,
+  "cap": null
  },
  {
   "img": "0047.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1250,
+   "y": 700
   },
   "kind": "poll",
-  "at": 6027,
-  "badge": "Sped up"
+  "at": 22553,
+  "cap": null
  },
  {
   "img": "0048.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1250,
+   "y": 700
   },
   "kind": "poll",
-  "at": 7527,
-  "badge": "Sped up"
+  "at": 24055,
+  "cap": null
  },
  {
   "img": "0049.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1250,
+   "y": 700
   },
   "kind": "poll",
-  "at": 9028,
-  "badge": "Sped up"
+  "at": 25558,
+  "cap": null
  },
  {
   "img": "0050.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1250,
+   "y": 700
   },
   "kind": "poll",
-  "at": 10530,
-  "badge": "Sped up"
+  "at": 27059,
+  "cap": null
  },
  {
   "img": "0051.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1250,
+   "y": 700
   },
   "kind": "poll",
-  "at": 12068,
-  "badge": "Sped up"
+  "at": 28561,
+  "cap": null
  },
  {
   "img": "0052.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1250,
+   "y": 700
   },
   "kind": "poll",
-  "at": 13550,
-  "badge": "Sped up"
+  "at": 30062,
+  "cap": null
  },
  {
   "img": "0053.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 1250,
+   "y": 700
   },
-  "kind": "poll",
-  "at": 15093,
-  "badge": "Sped up"
+  "hold": 2.2,
+  "mark": "answer"
  },
  {
   "img": "0054.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 192.587890625,
+   "y": 374.375
   },
-  "kind": "poll",
-  "at": 16573,
-  "badge": "Sped up"
+  "kind": "hover",
+  "target": {
+   "x": 192.587890625,
+   "y": 374.375,
+   "w": 123.45703125,
+   "h": 18.75
+  }
  },
  {
   "img": "0055.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 192.587890625,
+   "y": 374.375
   },
-  "kind": "poll",
-  "at": 18083,
-  "badge": "Sped up"
+  "kind": "click",
+  "target": {
+   "x": 192.587890625,
+   "y": 374.375,
+   "w": 123.45703125,
+   "h": 18.75
+  },
+  "clickAt": {
+   "x": 192.587890625,
+   "y": 374.375
+  }
  },
  {
   "img": "0056.png",
   "cur": {
-   "x": 846.5,
-   "y": 661
+   "x": 192.587890625,
+   "y": 374.375
   },
-  "kind": "poll",
-  "at": 19586,
-  "badge": "Sped up"
- },
- {
-  "img": "0057.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
+  "hold": 2.8,
+  "target": {
+   "x": 1006.7,
+   "y": 272.5,
+   "w": 836.5,
+   "h": 125
   },
-  "kind": "poll",
-  "at": 21088,
-  "badge": "Sped up"
- },
- {
-  "img": "0058.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "poll",
-  "at": 22591,
-  "badge": "Sped up"
- },
- {
-  "img": "0059.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "poll",
-  "at": 24088,
-  "badge": "Sped up"
- },
- {
-  "img": "0060.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "kind": "poll",
-  "at": 25594,
-  "badge": "Sped up"
- },
- {
-  "img": "0061.png",
-  "cur": {
-   "x": 846.5,
-   "y": 661
-  },
-  "hold": 2.6,
-  "badge": null,
-  "cap": "Answers cite the files they come from"
+  "mark": "files"
  }
 ]
