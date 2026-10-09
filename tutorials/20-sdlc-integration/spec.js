@@ -305,9 +305,9 @@ window.SPEC = {
     "0060.png": {
       "voGap": 1.3,
       "capPos": "bottom",
-      "cap": "Ask for the fix in a /devin comment",
-      "vo": "To fix it, leave a PR comment that starts with /devin and says what to change.",
-      "voSay": "To fix it, leave a PR comment that starts with slash devin, and says what to change.",
+      "cap": "Comment right in Devin Review",
+      "vo": "To fix it, comment right here in Devin Review. Start with /devin and say what to change.",
+      "voSay": "To fix it, comment right here in Devin Review. Start with slash devin, and say what to change.",
       "hl": null
     },
     "0098.png": {

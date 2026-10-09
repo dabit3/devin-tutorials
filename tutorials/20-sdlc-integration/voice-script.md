@@ -2,7 +2,7 @@
 
 Narrated by Nader (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one take cut locally with `_kit/tools/vo_onetake.py`).
 
-Real workflow: Ask Devin plan → Devin session builds [thequantexplorer/orbit-demo#11](https://github.com/thequantexplorer/orbit-demo/pull/11) → Devin Review first pass → `/devin` PR comment fix → browser test recording → human merge. Docs: https://docs.devin.ai/essential-guidelines/sdlc-integration
+Real workflow: Ask Devin plan → Devin session builds [thequantexplorer/orbit-demo#11](https://github.com/thequantexplorer/orbit-demo/pull/11) → Devin Review first pass → `/devin` comment in Devin Review → fix → browser test recording → human merge. Docs: https://docs.devin.ai/essential-guidelines/sdlc-integration
 
 1. This is how Devin fits into the way your team already builds software.  <!-- 0000.png -->
 2. Writing code is less than a fifth of an engineer's time. The rest goes to understanding code, planning, review, and testing.  <!-- 0001.png -->
@@ -22,7 +22,7 @@ Real workflow: Ask Devin plan → Devin session builds [thequantexplorer/orbit-d
 16. The description follows the repo's PR template, including exactly how it was tested.  <!-- 0106.png -->
 17. Devin Review makes a first pass on its own. It found no vulnerabilities and two bugs.  <!-- 0058.png -->
 18. One is that keyboard focus gets lost after you clear the column.  <!-- 0059.png -->
-19. To fix it, leave a PR comment that starts with /devin and says what to change.  <!-- 0060.png -->
+19. To fix it, comment right here in Devin Review. Start with /devin and say what to change.  <!-- 0060.png -->
 20. Devin pushes a fix commit and replies with what it changed and how it checked it.  <!-- 0110.png -->
 21. Devin Review runs again on the new commit and marks the focus bug resolved.  <!-- 0102.png -->
 22. Then ask the same session to fix the other bug and test the flow in its browser.  <!-- 0141.png -->
