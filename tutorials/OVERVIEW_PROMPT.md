@@ -33,6 +33,8 @@ Light mode, Chrome at 125% zoom (`ZOOM=1.25`), left sidebar collapsed unless the
 
 Two cuts by default: the captioned cut (no voice) and a cut narrated in Nader's voice (`T8iHhGIWPm2GVYpQD1Am`, `VO_NAME=nader`).
 
+Nader's voice is the only narration voice: never make Megan, Joseff or any other voice cut.
+
 - ElevenLabs default settings only (stability 0.5, similarity 0.75, style 0, speed 1); no tuning, seed, context or `next_text`.
 - Generate the whole script as ONE take with `_kit/tools/vo_onetake.py`, cut locally at sentence boundaries. Never send lines to ElevenLabs one by one. The STT check must pass. Run it from `tutorials/` with relative paths.
 - Write fewer, longer, whole sentences: one per scene, each standing alone (no lines starting with "And"/"Or", no lead-ins). Open with what it does, not "This is Devin X".
