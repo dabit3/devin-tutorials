@@ -48,7 +48,7 @@ function build() {
   const push = (img, t0, dur, fade, extra = {}) => { clipRing(img, t0); tl.steps.push({ img, t0, t1: t0 + dur, fade, prev: shown, ...extra }); shown = img; };
   let settle = 0, voEnd = 0, voStart = 0, voLast = '', voPrev = null, ringOn = null;
   const runK = {}; tl.voLate = [];
-  const VO = S.voLines; tl.vo = [];
+  const VO = S.voLines; tl.vo = []; tl.clips = [];
   const say = (key, t0) => {
     const L = VO[key]; if (!L) return t0;
     voLast = L.text; voStart = t0; voPrev = L;
@@ -73,7 +73,7 @@ function build() {
       // voSync: a beat that illustrates a later part of the current line waits until that many seconds into it.
       if (b.voSync != null) t = Math.max(t, voStart + sec(b.voSync));
       if (L && voPrev && t > voEnd + sec(gap) + sec(0.25)) tl.voLate.push(`${b.img} +${((t - voEnd - sec(gap)) / FPS).toFixed(1)}s`);
-      if ((b.vo && VO[b.img]) || b.waitVo) t = Math.max(t, voEnd + sec(gap));
+      if ((b.vo && VO[b.img]) || b.waitVo || b.clip) t = Math.max(t, voEnd + sec(gap));
       if (b.vo && VO[b.img]) voEnd = say(b.img, t + sec(b.voDelay ?? 0));
     }
     if (b.cap !== undefined && b.cap !== cap) {
@@ -103,6 +103,8 @@ function build() {
     if (b.cursor !== undefined) tl.cursorHide.push({ t, hide: b.cursor === false });
     // hl: true (the beat's captured hlBox, else its target), a centered {x, y, w, h, pad?} box, or an array of boxes draws a highlight ring that stays until the next beat without hl: 'keep'
     bt.push(t);
+    // clip: '<name>' plays <video>/audio/<name>.wav from this beat in every cut (e.g. a recorded voice call)
+    if (b.clip) tl.clips.push({ t, file: b.clip });
     if (b.hl && b.hl !== 'keep') for (const box of b.hl === true ? [b.hlBox || b.target] : [].concat(b.hl)) if (box && box.w) tl.hls.push({ t0: t + sec(b.hlDelay ?? 0.1), i, box, pad: box.pad ?? b.hlPad ?? 6 });
     const first = shown === null;
     if (b.kind === 'hover') {
@@ -443,7 +445,7 @@ async function renderFrame(f) {
 }
 
 function cues() {
-  return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, clicks: TL.clicks.map(c => c.t), typing: TL.typing, caps: SPEC.voLines ? [] : TL.caps.filter(c => c.text).map(c => c.t), vo: TL.vo, voLate: TL.voLate };
+  return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, clicks: TL.clicks.map(c => c.t), typing: TL.typing, clips: TL.clips, caps: SPEC.voLines ? [] : TL.caps.filter(c => c.text).map(c => c.t), vo: TL.vo, voLate: TL.voLate };
 }
 const ready = (async () => {
   await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/spec.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
