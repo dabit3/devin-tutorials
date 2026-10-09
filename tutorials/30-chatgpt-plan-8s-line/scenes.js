@@ -28,14 +28,14 @@ const assets = Promise.all([
   IMG.mark = c;
 });
 
-const SIZE = 176, TRACK = -0.025, WORDS = ['Use', 'your', 'ChatGPT', 'plan', 'in'];
+const SIZE = 132, TRACK = -0.025, WORDS = ['Use', 'your', 'ChatGPT', 'plan', 'in'];
 // lockup geometry in image px: visible x 184..2690, "D" cap 287..740 (baseline 740)
 const LK = { x0: 184, x1: 2690, cap: 453, base: 740 };
 let ctx, L;
 function layout() {
   ctx.font = `600 ${SIZE}px "Inter"`; ctx.letterSpacing = `${(TRACK * SIZE).toFixed(2)}px`;
   const ws = WORDS.map(w => ctx.measureText(w).width), sp = ctx.measureText(' ').width + 0.06 * SIZE;
-  const capH = 0.727 * SIZE, k = capH * 1.0 / LK.cap, lw = (LK.x1 - LK.x0) * k, logoGap = sp * 1.15;
+  const capH = 0.727 * SIZE, k = capH * 1.0 / LK.cap, lw = (LK.x1 - LK.x0) * k, logoGap = sp * 2.6;
   const total = ws.reduce((a, b) => a + b, 0) + sp * (WORDS.length - 1) + logoGap + lw;
   let x = W / 2 - total / 2; const xs = [];
   for (const w of ws) { xs.push(x); x += w + sp; }
@@ -73,7 +73,7 @@ function draw(s) {
   ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.filter = 'none';
   ctx.fillStyle = BG; ctx.fillRect(0, 0, W, H);
   if (!L) layout();
-  const { capH, ch } = L, GAP = 250;
+  const { capH, ch } = L, GAP = 230;
   // the sentence starts optically centred, then sentence + card settle as one centred group
   const up = eInOut(prog(s, T_CARD - 0.05, T_CARD + 1.0));
   const groupH = capH + GAP + ch, top0 = H / 2 - groupH / 2;
