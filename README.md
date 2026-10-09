@@ -25,6 +25,10 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 <!-- -->
 
+21. **Devin Voice** (3:44): Pick macOS, start a voice call and talk a cross-platform Expo recipe app into existence, interrupting to change the plan. Rejoin the call mid-build, then watch Devin test it with Computer Use in Chrome and on the iPhone and iPad Simulators, with a passing recording of each, and open a PR. The call audio is the real conversation. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/21-devin-voice/21-devin-voice.mp4)
+
+<!-- -->
+
 23. **Managed Devins: how it works** (overview, 1:16): A short diagram-led overview instead of a step-by-step run. One coordinator Devin splits a big task across managed Devins, each in its own isolated VM, monitors them, and compiles one summary; real shots from tutorial 19 show the four managed Devins, the sidebar tree, the PR summary and a message relayed through the coordinator, then Settings → Preferences → Auto-approve child sessions, the nesting tree, and four use cases (migrations, test coverage, one playbook across services, parallel research). [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/23-managed-devins-overview/23-managed-devins-overview.mp4)
 
 ## Narrated tutorials
@@ -54,6 +58,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Devin Security Swarm, narrated by Nader** (3:17): Devin writes the scan profile, then a real exploit chain in an Orbit-style API is found by the scan, proven in a sandbox and fixed in a PR by Devin. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/17-security-swarm/17-security-swarm-nader.mp4) · [Voice script](tutorials/17-security-swarm/voice-script.md)
 - **iPhone and iPad apps on Mac VMs, narrated by Nader** (1:35): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/18-ios-ipad-mac-vms/18-ios-ipad-mac-vms-nader.mp4) · [Voice script](tutorials/18-ios-ipad-mac-vms/voice-script.md)
 - **Managed Devins, narrated by Nader** (2:25): One coordinator Devin starts 4 managed Devins, each adding tests to one component in its own PR, then compiles one summary; one child UI-tests the card modal live on its own desktop, and a closing diagram shows how teams can nest several levels deep. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/19-managed-devins/19-managed-devins-nader.mp4) · [Voice script](tutorials/19-managed-devins/voice-script.md)
+- **Devin Voice, narrated by Nader** (3:49): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/21-devin-voice/21-devin-voice-nader.mp4) · [Voice script](tutorials/21-devin-voice/voice-script.md)
 - **Managed Devins: how it works (overview), narrated by Nader** (1:27): How a coordinator Devin splits work across managed Devins, keeps you in control, nests, and where it pays off. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/23-managed-devins-overview/23-managed-devins-overview-nader.mp4) · [Voice script](tutorials/23-managed-devins-overview/voice-script.md)
 
 ## Making a new tutorial
