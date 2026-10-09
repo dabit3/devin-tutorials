@@ -26,7 +26,8 @@ export async function testAndMerge(r, o = {}) {
   if (comp && (await vids()) === v0) { await r.click(comp, { pre: { cap: 'Watch it click through the app on its own computer' }, wait: 3000 }); r.mark('computer'); }
   await r.poll(3600000, 6000, { cap: null }, async () => (await vids()) > v0);
   // Devin can interrupt a run to fix a bug and record again; wait until it is done and use the final recording.
-  const working = () => p.evaluate(() => [...document.querySelectorAll('a[href*="/sessions/"]')].some(a => a.getAttribute('href').includes(location.pathname.split('/').pop()) && /\bWorking\b/.test(a.innerText)));
+  // the sidebar row has no text while the sidebar is collapsed, so also check the composer's Stop button
+  const working = () => p.evaluate(() => !!document.querySelector('main button[aria-label="Stop Devin"]') || [...document.querySelectorAll('a[href*="/sessions/"]')].some(a => a.getAttribute('href').includes(location.pathname.split('/').pop()) && /\bWorking\b/.test(a.innerText)));
   await r.poll(3600000, 6000, { cap: null }, async () => !(await working()));
   const title = await p.evaluate(() => { let c = [...document.querySelectorAll('main video')].pop(); while (c && !(c.innerText || '').trim()) c = c.parentElement; return (c?.innerText || '').split('\n').slice(0, 2).join(' '); });
   console.log('recording', title);
