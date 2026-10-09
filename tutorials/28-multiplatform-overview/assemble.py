@@ -2,10 +2,11 @@
 #   python3 assemble.py        (rewrites shots/ and prints the new name of every source beat)
 import json, os, shutil
 HERE = os.path.dirname(os.path.abspath(__file__))
+PLAIN = {'win/0003.png'}  # held as a still: a hover beat ignores hold, so the open menu flashed by
 SRC = {'win': 'shots-win', 'and': 'shots-android', 'mac': '../18-ios-ipad-mac-vms/shots'}
 ORDER = [
     ('scene', 'idea'),
-    ('win', '0003.png'), ('win', '0006.png'),
+    ('win', '0003.png'), ('win', '0004.png'), ('win', '0005.png'), ('win', '0006.png'),
     ('scene', 'flow'),
     ('win', 'WIN_APP'), ('mac', '0136.png'), ('and', 'AND_APP'),
     ('scene', 'platforms'),
@@ -22,7 +23,7 @@ for i, (src, img) in enumerate(ORDER):
     else:
         d = os.path.join(HERE, SRC[src]); b = next(x for x in json.load(open(os.path.join(d, 'beats.json'))) if x['img'] == img)
         shutil.copy(os.path.join(d, img), os.path.join(out, new)); b = {**b, 'img': new, 'src': f'{src}/{img}'}
-        b.pop('kind', None) if b.get('kind') == 'poll' else None; beats.append(b)
+        b.pop('kind', None) if b.get('kind') == 'poll' or f'{src}/{img}' in PLAIN else None; beats.append(b)
     names[new] = f'{src}/{img}'
 json.dump(beats, open(os.path.join(out, 'beats.json'), 'w'), indent=1)
 for k, v in names.items(): print(k, v)
