@@ -191,6 +191,14 @@ window.SPEC = {
         "h": 107.5
       },
       "ringFor": 3.6
+    },
+    "0041.png": {
+      "cap": "Store secret",
+      "capPos": "bottom"
+    },
+    "0065.png": {
+      "cap": "Store secret",
+      "capPos": "bottom"
     }
   }
 };
