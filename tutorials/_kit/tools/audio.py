@@ -79,8 +79,14 @@ for b in range(nbars):
         madd(C, t0 + 3 * BEAT, 0.05 if section else 0.035, pan=0.1)
         for k in range(8):
             madd(H, t0 + k * BEAT / 2, (0.03 if k % 2 else 0.018) + 0.006 * section, pan=0.25)
-fade_in = np.minimum(1, np.arange(N) / (1.5 * SR))
-fade_out = np.clip((total - np.arange(N) / SR) / 2.5, 0, 1)
+# optional per-video music: <video>/music.py runs with these globals, refills ML/MR and may set
+# FADE_IN / FADE_OUT (seconds), MUSIC_GAIN, and KIT_STINGERS = False to drop the title chime and swells.
+FADE_IN, FADE_OUT, KIT_STINGERS = 1.5, 2.5, True
+if os.path.exists(os.path.join(VD, 'music.py')):
+    ML[:] = 0; MR[:] = 0
+    exec(open(os.path.join(VD, 'music.py')).read(), globals())
+fade_in = np.minimum(1, np.arange(N) / (max(FADE_IN, 1e-3) * SR))
+fade_out = np.clip((total - np.arange(N) / SR) / max(FADE_OUT, 1e-3), 0, 1)
 # narration (vo/<voice>/<key>.wav) ducks the music bed while it plays
 VOICE = os.environ.get('VOICE'); VL = np.zeros(N)
 duck = np.ones(N)
@@ -96,15 +102,16 @@ mg = fade_in * fade_out * MUSIC_GAIN * 1.8 * duck
 L += ML * mg + VL; R += MR * mg + VL
 
 # title chime
-for i, m in enumerate([72, 76, 79, 84]):
+for i, m in enumerate([72, 76, 79, 84] if KIT_STINGERS else []):
     add(osc(mtof(m), 1.6) * env(int(1.6 * SR), 0.003, 0.9, 3), 0.15 + i * 0.07, 0.07, pan=-0.2 + i * 0.13)
 # soft tonal swell into UI and out to outro
 def swell(notes, dur=1.1):
     n = int(dur * SR); t = np.arange(n) / SR
     e = np.minimum(1, t / 0.35) * np.exp(-2.2 * np.maximum(0, t - 0.35) / dur)
     return lp(sum(osc(mtof(m), dur, 'tri') for m in notes), 0.25) * e
-add(swell([64, 71, 76]), T(cue['intro']) - 0.25, 0.05)
-add(swell([72, 67, 64]), T(cue['uiEnd']) - 0.1, 0.045)
+if KIT_STINGERS:
+    add(swell([64, 71, 76]), T(cue['intro']) - 0.25, 0.05)
+    add(swell([72, 67, 64]), T(cue['uiEnd']) - 0.1, 0.045)
 # clicks
 for f in cue['clicks']:
     c = lp(noise(0.03), 0.6) * env(int(0.03 * SR), 0.0003, 0.008)

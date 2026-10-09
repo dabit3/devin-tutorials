@@ -282,7 +282,10 @@ function spaced(text, x, y, track) { // letter-spaced text, left aligned
   let cx = x; for (const ch of text) { ctx.fillText(ch, cx, y); cx += ctx.measureText(ch).width + track; } return cx - x - track;
 }
 function spacedW(text, track) { let w = 0; for (const ch of text) w += ctx.measureText(ch).width + track; return w - track; }
+// Optional per-video intro/outro: scenes.js may define SCENES.titleCard(ctx, seconds, kit) and SCENES.endCard(ctx, seconds since uiEnd, kit), drawn in 4K coords.
+const kit4k = extra => ({ W, H, FPS, INK, BG, AVATAR, LOCKUP, font, rr, spaced, spacedW, clamp, lerp, prog, eOut, eInOut, eOutQuint, drawBackdrop, drawLockup, introEnd: TL.introEnd / FPS, uiEnd: TL.uiEnd / FPS, outro: TL.outro / FPS, ...extra });
 function drawTitleCard(f, out) {
+  if (window.SCENES?.titleCard) return window.SCENES.titleCard(ctx, f / FPS, kit4k({ out }));
   // out: 0..1 exit progress
   drawBackdrop();
   const S = SPEC, o = eInOut(out);
@@ -418,6 +421,7 @@ function drawBadge(f) {
   ctx.textBaseline = 'middle'; ctx.fillText(k.text, x + 106, y + h / 2 + 2); ctx.textBaseline = 'alphabetic'; ctx.restore();
 }
 function drawOutro(f, p) {
+  if (window.SCENES?.endCard) return window.SCENES.endCard(ctx, (f - TL.uiEnd) / FPS, kit4k({ p }));
   drawBackdrop();
   const a = eOutQuint(prog(p, 0.1, 0.45)), b = eOut(prog(p, 0.22, 0.55)), c = eOut(prog(p, 0.32, 0.65));
   drawLockup(W / 2, 880 + 30 * (1 - a), 150, a);
@@ -471,7 +475,7 @@ const ready = (async () => {
   order.splice(order.indexOf('../brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png'), 1);
   AVATAR = await bitmap('../brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png');
   order.splice(order.indexOf('../brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png'), 1);
-  if (BEATS.some(b => (SPEC.edit || {})[b.img]?.scene)) await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/scenes.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
+  if (SPEC.scenes || BEATS.some(b => (SPEC.edit || {})[b.img]?.scene)) await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/scenes.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
   TL = build(); await placeCaptions(); window.film.frames = TL.frames;
 })();
 window.film = { ready, frames: 0, renderFrame, cues, timeline: () => TL };
