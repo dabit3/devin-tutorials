@@ -31,7 +31,8 @@ const shotURL = img => `../../${V}/shots/${img}`;
 function build() {
   const S = SPEC, edits = S.edit || {};
   const INTRO = sec(S.introHold ?? 3.4), ENTER = sec(1.2);
-  const tl = { steps: [], caps: [], cams: [], badges: [], clicks: [], typing: [], cursorHide: [] };
+  const tl = { steps: [], caps: [], cams: [], badges: [], clicks: [], typing: [], cursorHide: [], hls: [] };
+  const bt = [];
   let t = INTRO, cur = { x: VW / 2 + 120, y: VH * 0.78 }, shown = null, speed = S.speed ?? 4;
   let cap = undefined, badge = undefined, capT = 0;
   const hs = x => sec(x * (S.pace ?? 1.2));
@@ -80,6 +81,9 @@ function build() {
     if (b.badge !== undefined && b.badge !== badge) { badge = b.badge; tl.badges.push({ t, text: badge }); }
     if (b.speed) speed = b.speed;
     if (b.cursor !== undefined) tl.cursorHide.push({ t, hide: b.cursor === false });
+    // hl: true (the beat's captured hlBox, else its target) or {x, y, w, h} draws a highlight ring that stays until the next beat without hl: 'keep'
+    bt.push(t);
+    if (b.hl && b.hl !== 'keep') { const box = b.hl === true ? (b.hlBox || b.target) : b.hl; if (box && box.w) tl.hls.push({ t0: t + sec(b.hlDelay ?? 0.1), i, box, pad: b.hlPad ?? 6 }); }
     const first = shown === null;
     if (b.kind === 'hover') {
       const tg = b.target || b.cur, d = Math.hypot(tg.x - cur.x, tg.y - cur.y);
@@ -101,6 +105,7 @@ function build() {
   });
   if (VO) t = Math.max(t, voEnd + sec(0.5));
   t += sec(S.tailHold ?? 1.0);
+  for (const h of tl.hls) { let j = h.i + 1; while (j < beats.length && beats[j].hl === 'keep') j++; h.t1 = j < beats.length ? bt[j] : t; }
   tl.steps[tl.steps.length - 1].t1 = t;
   tl.introEnd = INTRO; tl.enter = ENTER; tl.uiEnd = t; tl.outro = sec(3.6);
   if (VO && VO.outro) { const t0 = t + sec(1.0); tl.vo.push({ t: t0, file: 'outro' }); tl.outro = Math.max(tl.outro, sec(1.0 + VO.outro.dur + 1.4)); }
@@ -147,6 +152,22 @@ function drawCursor(x, y, s) {
   ctx.beginPath(); ctx.moveTo(1.3, 3); ctx.lineTo(1.3, 13.6); ctx.lineTo(4.3, 10.9); ctx.lineTo(7.2, 17.3); ctx.lineTo(7.9, 17); ctx.lineTo(5, 10.6); ctx.lineTo(9, 10.6); ctx.closePath();
   ctx.fillStyle = '#111'; ctx.fill(); ctx.restore();
 }
+// Highlight: the page dims slightly around the box while a soft blue ring settles in onto it, then both fade out before the next beat.
+function drawHighlights(f) {
+  for (const h of TL.hls) {
+    if (f < h.t0 || f > h.t1) continue;
+    const a = eOutQuint(prog(f, h.t0, h.t0 + sec(0.45))) * (1 - eInOut(prog(f, h.t1 - sec(0.35), h.t1)));
+    if (a <= 0) continue;
+    const pad = h.pad + 10 * (1 - eOutQuint(prog(f, h.t0, h.t0 + sec(0.6))));
+    const { x, y, w, h: hh } = h.box, bx = x - w / 2 - pad, by = y - hh / 2 - pad, bw = w + pad * 2, bh = hh + pad * 2, rad = Math.min(12, bh / 2);
+    ctx.save();
+    const dim = SPEC.hlDim ?? 0.10;
+    if (dim > 0) { ctx.beginPath(); ctx.rect(0, 0, VW, VH); ctx.roundRect(bx, by, bw, bh, rad); ctx.fillStyle = `rgba(20,20,20,${dim * a})`; ctx.fill('evenodd'); }
+    ctx.shadowColor = `rgba(32,120,255,${0.45 * a})`; ctx.shadowBlur = 36;
+    rr(bx, by, bw, bh, rad); ctx.lineWidth = 2.2; ctx.strokeStyle = `rgba(32,120,255,${0.95 * a})`; ctx.stroke();
+    ctx.restore();
+  }
+}
 async function drawUI(f, alpha) {
   const st = stepAt(f); const cam = camAt(f);
   ctx.save();
@@ -155,6 +176,7 @@ async function drawUI(f, alpha) {
   const fa = st.fade ? clamp((f - st.t0) / st.fade) : 1;
   if (st.prev && fa < 1) { ctx.drawImage(await bitmap(shotURL(st.prev)), 0, 0, VW, VH); }
   ctx.globalAlpha = fa; ctx.drawImage(await bitmap(shotURL(st.img)), 0, 0, VW, VH); ctx.globalAlpha = 1;
+  drawHighlights(f);
   // click ripple
   for (const c of TL.clicks) {
     const p = (f - c.t) / sec(0.5); if (p < 0 || p > 1) continue;
