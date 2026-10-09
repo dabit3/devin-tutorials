@@ -20,8 +20,19 @@ def place(x, t_ms):
     if b > a: out[a:b] += x[a - i:b - i]
 devin = load(os.path.join(SH, NAME + '.webm'), lufs=float(os.environ.get('DEVIN_LUFS', '-20')))
 place(devin, m['recStart'] + float(os.environ.get('DEVIN_OFFSET_MS', '0')))
+nader = np.zeros(n)
 for pl in m['plays']:
-    place(load(os.path.join(D, 'call', pl['name'] + '.wav')) * float(os.environ.get('NADER_GAIN', '1.0')), pl['t'])
+    x = load(os.path.join(D, 'call', pl['name'] + '.wav')) * float(os.environ.get('NADER_GAIN', '1.0'))
+    i = int((pl['t'] - m['t0']) / 1000 * SR); a, b = max(0, i), min(n, i + len(x))
+    if b > a: nader[a:b] += x[a - i:b - i]
+# call/pauses.json {"<call>": [[cut_s, pause_s, until_s], ...]}: where Devin's real "okay"/"mm-hmm" landed on top of a
+# pre-fed line, open a short pause in Nader's line at cut_s so it resumes after Devin; Nader's audio up to until_s shifts later
+PP = os.path.join(D, 'call', 'pauses.json')
+for cut, pause, until in (json.load(open(PP)).get(NAME, []) if os.path.exists(PP) else []):
+    c, p, u = int(cut * SR), int(pause * SR), int(until * SR)
+    assert not np.abs(nader[u:u + p]).any(), f'pause at {cut}s would run into the next line'
+    nader[c:u + p] = np.concatenate([np.zeros(p), nader[c:u]])
+out += nader
 out /= max(1.0, np.abs(out).max() / 0.95)
 os.makedirs(OUT, exist_ok=True)
 with wave.open(os.path.join(OUT, NAME + '.wav'), 'wb') as w:
