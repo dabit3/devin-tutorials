@@ -70,11 +70,12 @@ window.SPEC = {
           "h": 58
         }
       ],
-      "capPos": "bottom"
+      "capPos": "bottom",
+      "vo": "Devin found the cause and pushed a fix to the pull request branch."
     },
     "0006.png": {
       "cap": "The check went green, no one prompted Devin",
-      "vo": "Devin pushed a fix, and the check went green without anyone prompting it.",
+      "vo": "The check went green, and no one prompted Devin.",
       "hl": [
         {
           "x": 563.0,
@@ -88,7 +89,7 @@ window.SPEC = {
     "0007.png": {
       "scene": "ways",
       "cap": "Three ways to create one",
-      "vo": "There are three ways to create one.",
+      "vo": "There are three ways to create one: in plain English, from a template, or by hand.",
       "capPos": "bottom",
       "hl": null
     },
