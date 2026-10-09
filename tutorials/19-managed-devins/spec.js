@@ -22,7 +22,7 @@ window.SPEC = {
         "h": 151
       },
       "cap": "Ask for one managed Devin per component",
-      "vo": "Here, I ask Devin to find the four UI components in Orbit with the least test coverage, and start a managed Devin for each one.",
+      "vo": "Here, I asked Devin to find the four UI components in Orbit with the least test coverage, and start a managed Devin for each one.",
       "ringFor": 2.6
     },
     "0009.png": {

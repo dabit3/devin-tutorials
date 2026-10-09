@@ -17,7 +17,7 @@ Follow-up while the managed Devins were running:
 | Shot | Line | Spoken as |
 |---|---|---|
 | 0000 | Managed Devins let one Devin split a big task into pieces and hand each piece to its own Devin, all running in parallel. It's great for big migrations, adding tests module by module, running one playbook across every service, and parallel research. |  |
-| 0007 | Here, I ask Devin to find the four UI components in Orbit with the least test coverage, and start a managed Devin for each one. |  |
+| 0007 | Here, I asked Devin to find the four UI components in Orbit with the least test coverage, and start a managed Devin for each one. |  |
 | 0010 | The coordinator measures coverage, ranks the components, and pushes one shared test setup, so the pull requests won't conflict. |  |
 | 0034 | Then it starts four managed Devins, each in its own isolated machine. |  |
 | 0055 | While they work, I can still steer. I ask the coordinator to have the AddCardForm Devin also test a blank title. |  |
