@@ -152,6 +152,7 @@ function build() {
   tl.introEnd = INTRO; tl.enter = ENTER; tl.uiEnd = t; tl.outro = sec(S.outroHold ?? 3.6);
   if (VO && VO.outro) { const t0 = t + sec(1.0); tl.vo.push({ t: t0, file: 'outro' }); tl.outro = Math.max(tl.outro, sec(1.0 + VO.outro.dur + 1.4)); }
   tl.frames = t + tl.outro;
+  if (S.duration) tl.frames = sec(S.duration);
   tl.rings.sort((a, b) => a.t - b.t);
   // clamp first step start to 0 so the window shows the first shot while entering
   const firstImg = tl.steps.find(s => s.img); firstImg.t0 = 0;
@@ -443,6 +444,8 @@ function drawOutro(f, p) {
 
 async function renderFrame(f) {
   ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.filter = 'none';
+  // Optional full-film hook: SCENES.film(ctx, seconds, kit) draws every frame in 4K coords (spec `scenes: true`; `duration` sets the length).
+  if (window.SCENES?.film) return window.SCENES.film(ctx, f / FPS, kit4k({ f }));
   const I = TL.introEnd, E = TL.enter, U = TL.uiEnd, O = TL.outro;
   if (f < I + E) {
     const out = prog(f, I - 6, I + E * 0.55);
