@@ -54,8 +54,9 @@ function build() {
     const L = VO[key]; if (!L) return t0;
     voLast = L.text; voStart = t0; voPrev = L;
     tl.vo.push({ t: t0, file: key });
-    for (const c of L.chunks) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos: 'bottom' });
-    tl.caps.push({ t: t0 + sec(L.dur + 0.3), text: '', pos: 'bottom' });
+    const pos = (edits[key] || {}).subPos || S.subPos || 'bottom';
+    for (const c of L.chunks) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos });
+    tl.caps.push({ t: t0 + sec(L.dur + 0.3), text: '', pos });
     return t0 + sec(L.dur);
   };
   const zMax = S.maxZoom ?? 1.3;
@@ -358,6 +359,7 @@ async function placeCaptions() {
     const { w, h } = capSize(c.text), t1 = (caps[i + 1] || { t: TL.uiEnd }).t;
     const bottom = { x: W / 2 - w / 2, y: H - 110 - h, dir: 0 }, top = { x: W / 2 - w / 2, y: 110, dir: 0 };
     if (c.pos === 'bottom' || c.pos === 'top') { c.box = c.pos === 'top' ? top : bottom; continue; }
+    if (c.pos && typeof c.pos === 'object') { c.box = { x: clamp(c.pos.x * W - w / 2, 24, W - 24 - w), y: clamp(c.pos.y * H - h / 2, 24, H - 24 - h), dir: 0 }; continue; } // {x, y}: caption center as a fraction of the frame
     const steps = TL.imgSteps.filter(s => s.t1 > c.t && s.t0 < t1), pick = [];
     const n = Math.min(14, steps.length);
     for (let k = 0; k < n; k++) pick.push(steps[Math.floor(k * (steps.length - 1) / Math.max(1, n - 1))].img);

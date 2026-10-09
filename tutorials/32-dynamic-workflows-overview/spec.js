@@ -27,6 +27,7 @@ window.SPEC = {
       "hl": null
     },
     "0003.png": {
+      "subPos": { "x": 0.6, "y": 0.338 },
       "hold": 3.0, "cursor": false,
       "ring": { "x": 714, "y": 356, "w": 872, "h": 84 }, "ringFor": 2.6,
       "cap": "12 reviewers, then one consolidation",
@@ -34,6 +35,7 @@ window.SPEC = {
       "hl": null
     },
     "0004.png": {
+      "subPos": { "x": 0.72, "y": 0.61 },
       "hold": 3.2, "cursor": false,
       "ring": { "x": 1009, "y": 668, "w": 824, "h": 272 }, "ringFor": 2.8,
       "cap": "Phases, agents and live status",
@@ -41,6 +43,7 @@ window.SPEC = {
       "hl": null
     },
     "0005.png": {
+      "subPos": { "x": 0.77, "y": 0.085 },
       "hold": 3.2, "cursor": false,
       "ring": { "x": 1022, "y": 451, "w": 800, "h": 40 }, "ringFor": 2.8,
       "cap": "The script Devin wrote",
@@ -54,6 +57,7 @@ window.SPEC = {
       "hl": null
     },
     "0007.png": {
+      "subPos": { "x": 0.72, "y": 0.61 },
       "hold": 3.0, "cursor": false,
       "ring": { "x": 1009, "y": 608, "w": 830, "h": 156 }, "ringFor": 2.6,
       "cap": "The merge starts after all 12 reviews",
@@ -61,6 +65,7 @@ window.SPEC = {
       "hl": null
     },
     "0013.png": {
+      "subPos": { "x": 0.8, "y": 0.365 },
       "hold": 3.0, "cursor": false,
       "ring": { "x": 287, "y": 135, "w": 540, "h": 170 }, "ringFor": 2.6,
       "cap": "10 deduplicated findings, by severity",
@@ -74,6 +79,7 @@ window.SPEC = {
       "hl": null
     },
     "0009.png": {
+      "subPos": { "x": 0.5, "y": 0.77 },
       "hold": 3.0, "cursor": false,
       "ring": { "x": 721, "y": 445, "w": 860, "h": 60 }, "ringFor": 2.6,
       "cap": "Settings → Preferences → Auto-approve workflows",
