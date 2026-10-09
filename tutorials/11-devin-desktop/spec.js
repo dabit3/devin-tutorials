@@ -32,7 +32,6 @@ window.SPEC = {
       "capPos": "auto"
     },
     "0007.png": {
-      "vo": "Choose where it runs: on this Mac, in a worktree, or in the cloud.",
       "hl": true,
       "capPos": "auto"
     },
@@ -47,7 +46,6 @@ window.SPEC = {
       "hold": 1.8
     },
     "0014.png": {
-      "vo": "Choose a model, like Fusion or SWE-2.",
       "voSay": "Choose a model, like Fusion or swee two."
     },
     "0016.png": {
@@ -78,7 +76,6 @@ window.SPEC = {
       }
     },
     "0065.png": {
-      "vo": "Quick Review has a second agent check the changes.",
       "hl": true,
       "capPos": "auto"
     },
@@ -130,12 +127,10 @@ window.SPEC = {
       "hold": 2.2
     },
     "0110.png": {
-      "vo": "With DeepWiki, Command-Shift-click any symbol to have it explained.",
       "hl": true,
       "capPos": "auto"
     },
     "0115.png": {
-      "vo": "You get a written explanation in the sidebar.",
       "hl": true,
       "capPos": "auto",
       "hold": 2.2
@@ -166,20 +161,16 @@ window.SPEC = {
         "y": 0.615
       }
     },
-    "0125.png": {
-      "vo": "Every session, local or cloud, lives in Sessions, grouped by status."
-    },
+    "0125.png": {},
     "0127.png": {
       "vo": "Switch to a list to see them all."
     },
     "0129.png": {
-      "vo": "Filter by status, agent, repo, and more.",
       "hl": true,
       "capPos": "bottom",
       "hold": 2.2
     },
     "0134.png": {
-      "vo": "Here, it's just the Devin Cloud sessions.",
       "hl": {
         "x": 704.9,
         "y": 146.3,
@@ -191,12 +182,10 @@ window.SPEC = {
       "hold": 2.4
     },
     "0137.png": {
-      "vo": "Search to find one fast.",
       "hl": true,
       "capPos": "auto"
     },
     "0139.png": {
-      "vo": "And sort them however you like.",
       "hl": {
         "x": 1360.1,
         "y": 90,
@@ -250,7 +239,8 @@ window.SPEC = {
       "hold": 0.5
     },
     "0006.png": {
-      "hold": 0.5
+      "hold": 0.5,
+      "vo": "Choose where it runs: on this Mac, in a worktree, or in the cloud."
     },
     "0008.png": {
       "hold": 0.5
@@ -260,7 +250,8 @@ window.SPEC = {
       "skip": true
     },
     "0013.png": {
-      "hold": 0.5
+      "hold": 0.5,
+      "vo": "Choose a model, like Fusion or SWE-2."
     },
     "0015.png": {
       "hold": 0.5
@@ -282,7 +273,8 @@ window.SPEC = {
       "skip": true
     },
     "0063.png": {
-      "hold": 0.5
+      "hold": 0.5,
+      "vo": "Quick Review has a second agent check the changes."
     },
     "0066.png": {
       "hold": 0.5
@@ -306,7 +298,8 @@ window.SPEC = {
       "hold": 0.5
     },
     "0108.png": {
-      "hold": 0.5
+      "hold": 0.5,
+      "vo": "With DeepWiki, Command-Shift-click any symbol to have it explained."
     },
     "0111.png": {
       "hold": 0.5
@@ -327,7 +320,8 @@ window.SPEC = {
       "hold": 0.5
     },
     "0128.png": {
-      "hold": 0.5
+      "hold": 0.5,
+      "vo": "Filter by status, agent, repo, and more."
     },
     "0130.png": {
       "hold": 0.5
@@ -336,29 +330,34 @@ window.SPEC = {
       "hold": 0.8
     },
     "0135.png": {
-      "hold": 0.5
+      "hold": 0.5,
+      "vo": "Search to find one fast."
     },
     "0138.png": {
-      "hold": 0.5
+      "hold": 0.5,
+      "vo": "And sort them however you like."
     },
     "0012.png": {
       "hold": 0.8
     },
     "0112.png": {
-      "hold": 1.0
+      "hold": 1.0,
+      "vo": "You get a written explanation in the sidebar."
     },
     "0122.png": {
       "hold": 1.0,
       "cap": "Open Sessions from the Agent sidebar"
     },
     "0124.png": {
-      "hold": 0.6
+      "hold": 0.6,
+      "vo": "Every session, local or cloud, lives in Sessions, grouped by status."
     },
     "0131.png": {
       "hold": 0.6
     },
     "0133.png": {
-      "hold": 0.6
+      "hold": 0.6,
+      "vo": "Here, it's just the Devin Cloud sessions."
     },
     "0136.png": {
       "hold": 0.6
@@ -381,3 +380,7 @@ window.SPEC = {
   },
   "voOutro": "Build with Devin Desktop."
 };
+// Narrated cuts only: shorter holds where the next line would otherwise wait on visuals.
+const NARRATED = !!new URLSearchParams(location.search).get("voice");
+if (NARRATED) Object.entries({ "0064.png": 0.4, "0065.png": 1.0, "0110.png": 1.6, "0115.png": 0.8, "0120.png": 0.6, "0122.png": 0.5, "0129.png": 1.0, "0137.png": 1.1, "0087.png": 2.0 })
+  .forEach(([k, hold]) => { window.SPEC.edit[k] = { ...window.SPEC.edit[k], hold }; });
