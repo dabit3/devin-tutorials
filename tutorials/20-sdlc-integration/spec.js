@@ -11,25 +11,57 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "cap": "How Devin fits into your SDLC",
-      "vo": "This is how Devin fits into the way your team already builds software."
+      "vo": "This is how Devin fits into the way your team already builds software.",
+      "hl": [
+        {
+          "x": 812.6220703125,
+          "y": 280.0,
+          "w": 717.255859375,
+          "h": 100
+        }
+      ]
     },
     "0001.png": {
       "hold": 3.6,
       "capPos": "bottom",
       "cap": "Writing code is under 20% of an engineer's time",
-      "vo": "Writing code is less than a fifth of an engineer's time. The rest goes to understanding code, planning, review, and testing."
+      "vo": "Writing code is less than a fifth of an engineer's time. The rest goes to understanding code, planning, review, and testing.",
+      "hl": [
+        {
+          "x": 915.1220703125,
+          "y": 319.98046875,
+          "w": 922.255859375,
+          "h": 140
+        }
+      ]
     },
     "0002.png": {
       "hold": 3.4,
       "capPos": "bottom",
       "cap": "Devin helps across the whole lifecycle",
-      "vo": "Devin helps in every phase: planning, building, testing, review, and security."
+      "vo": "Devin helps in every phase: planning, building, testing, review, and security.",
+      "hl": [
+        {
+          "x": 915.1220703125,
+          "y": 416.19140625,
+          "w": 902.255859375,
+          "h": 507.421875
+        }
+      ]
     },
     "0003.png": {
       "hold": 4.2,
       "capPos": "bottom",
       "cap": "Same branch protections, and humans decide what merges",
-      "vo": "It works inside your process. Its pull requests follow the same branch protections as anyone's, and a human reviews them before anything merges."
+      "vo": "It works inside your process. Its pull requests follow the same branch protections as anyone's, and a human reviews them before anything merges.",
+      "hl": [
+        {
+          "x": 915.1220703125,
+          "y": 319.892578125,
+          "w": 922.255859375,
+          "h": 140
+        }
+      ]
     },
     "0004.png": {
       "hold": 1.2,
@@ -102,7 +134,15 @@ window.SPEC = {
       "hl": null
     },
     "0025.png": {
-      "skip": true
+      "skip": true,
+      "hl": [
+        {
+          "x": 212.001953125,
+          "y": 793.75,
+          "w": 175.703125,
+          "h": 35
+        }
+      ]
     },
     "0026.png": {
       "skip": true
@@ -125,13 +165,29 @@ window.SPEC = {
       "hold": 2.8,
       "capPos": "bottom",
       "cap": "Every new Orbit PR gets a first-pass review",
-      "vo": "Now every new pull request on Orbit gets a first-pass review."
+      "vo": "Now every new pull request on Orbit gets a first-pass review.",
+      "hl": [
+        {
+          "x": 714.375,
+          "y": 749.375,
+          "w": 1000,
+          "h": 113.75
+        }
+      ]
     },
     "0046.png": {
       "voGap": 1.3,
       "capPos": "bottom",
       "cap": "Start a Devin session from the plan",
-      "vo": "Back in Ask mode, hand the plan to a Devin session with one click."
+      "vo": "Back in Ask mode, hand the plan to a Devin session with one click.",
+      "hl": [
+        {
+          "x": 288.3642578125,
+          "y": 256.25,
+          "w": 514.228515625,
+          "h": 760
+        }
+      ]
     },
     "0049.png": {
       "hold": 1.6,
@@ -144,19 +200,43 @@ window.SPEC = {
       "hold": 3.6,
       "capPos": "bottom",
       "cap": "Lint and the build, which runs the type check",
-      "vo": "Devin builds the feature on its own. Before it opens the PR, it runs lint and the build, which includes the type check."
+      "vo": "Devin builds the feature on its own. Before it opens the PR, it runs lint and the build, which includes the type check.",
+      "hl": [
+        {
+          "x": 713.75,
+          "y": 438.125,
+          "w": 865,
+          "h": 51.25
+        }
+      ]
     },
     "0051.png": {
       "hold": 3.4,
       "capPos": "bottom",
       "cap": "Then it tests the flow in a browser",
-      "vo": "Orbit has no test suite, so it also runs the flow in a browser and checks that it survives a reload."
+      "vo": "Orbit has no test suite, so it also runs the flow in a browser and checks that it survives a reload.",
+      "hl": [
+        {
+          "x": 713.75,
+          "y": 332.5,
+          "w": 865,
+          "h": 95
+        }
+      ]
     },
     "0052.png": {
       "hold": 2.6,
       "capPos": "bottom",
       "cap": "Then it opens a pull request",
-      "vo": "Then it opens a pull request."
+      "vo": "Then it opens a pull request.",
+      "hl": [
+        {
+          "x": 713.75,
+          "y": 200.0,
+          "w": 865,
+          "h": 50
+        }
+      ]
     },
     "0053.png": {
       "voGap": 1.3,
@@ -167,7 +247,15 @@ window.SPEC = {
       "hl": null
     },
     "0056.png": {
-      "skip": true
+      "skip": true,
+      "hl": [
+        {
+          "x": 479.375,
+          "y": 266.875,
+          "w": 772.5,
+          "h": 33.75
+        }
+      ]
     },
     "0057.png": {
       "skip": true
@@ -176,7 +264,15 @@ window.SPEC = {
       "hold": 4.0,
       "capPos": "bottom",
       "cap": "The description follows the PR template",
-      "vo": "The description follows the repo's PR template, including exactly how it was tested."
+      "vo": "The description follows the repo's PR template, including exactly how it was tested.",
+      "hl": [
+        {
+          "x": 479.375,
+          "y": 386.875,
+          "w": 772.5,
+          "h": 301.25
+        }
+      ]
     },
     "0058.png": {
       "hold": 3.6,
@@ -184,8 +280,8 @@ window.SPEC = {
       "cap": "First pass: no vulnerabilities, two bugs",
       "hl": [
         {
-          "x": 967,
-          "y": 120,
+          "x": 1193.0,
+          "y": 270.0,
           "w": 452,
           "h": 300
         }
@@ -196,7 +292,15 @@ window.SPEC = {
       "hold": 3.0,
       "capPos": "bottom",
       "cap": "Keyboard focus is lost after clearing",
-      "vo": "One is that keyboard focus gets lost after you clear the column."
+      "vo": "One is that keyboard focus gets lost after you clear the column.",
+      "hl": [
+        {
+          "x": 1205.625,
+          "y": 326.25,
+          "w": 396.25,
+          "h": 47.5
+        }
+      ]
     },
     "0060.png": {
       "voGap": 1.3,
@@ -243,8 +347,8 @@ window.SPEC = {
       "cap": "Devin pushes a fix and replies",
       "hl": [
         {
-          "x": 163,
-          "y": 294,
+          "x": 509.0,
+          "y": 402.0,
           "w": 692,
           "h": 216
         }
@@ -257,8 +361,8 @@ window.SPEC = {
       "cap": "Review runs again: the focus bug is resolved",
       "hl": [
         {
-          "x": 975,
-          "y": 296,
+          "x": 1195.0,
+          "y": 327.0,
           "w": 440,
           "h": 62
         }
@@ -380,8 +484,8 @@ window.SPEC = {
       "cap": "It fixes the bug and tests the whole flow",
       "hl": [
         {
-          "x": 282,
-          "y": 110,
+          "x": 700.0,
+          "y": 148.0,
           "w": 836,
           "h": 76
         }
@@ -394,8 +498,8 @@ window.SPEC = {
       "cap": "A recording of the test: 8 passed",
       "hl": [
         {
-          "x": 282,
-          "y": 220,
+          "x": 507.0,
+          "y": 411.0,
           "w": 450,
           "h": 382
         }
@@ -449,7 +553,15 @@ window.SPEC = {
       "hold": 3.4,
       "capPos": "bottom",
       "cap": "Both review findings are resolved",
-      "vo": "Back in Devin Review, both findings are now resolved."
+      "vo": "Back in Devin Review, both findings are now resolved.",
+      "hl": [
+        {
+          "x": 1193.125,
+          "y": 270.0,
+          "w": 451.25,
+          "h": 190
+        }
+      ]
     },
     "0202.png": {
       "capPos": "bottom",
@@ -605,7 +717,15 @@ window.SPEC = {
       "hold": 2.6,
       "capPos": "bottom",
       "cap": "Merged",
-      "vo": "So you merge it."
+      "vo": "So you merge it.",
+      "hl": [
+        {
+          "x": 147.8857421875,
+          "y": 131.25,
+          "w": 109.521484375,
+          "h": 32.5
+        }
+      ]
     },
     "0253.png": {
       "voGap": 1.3,
@@ -614,8 +734,8 @@ window.SPEC = {
       "cap": "Security scans, with fixes as pull requests",
       "hl": [
         {
-          "x": 262,
-          "y": 179,
+          "x": 652.5,
+          "y": 207.0,
           "w": 781,
           "h": 56
         }
@@ -629,8 +749,8 @@ window.SPEC = {
       "cap": "Start by connecting your repos and tools",
       "hl": [
         {
-          "x": 287,
-          "y": 487,
+          "x": 715.5,
+          "y": 524.5,
           "w": 857,
           "h": 75
         }
