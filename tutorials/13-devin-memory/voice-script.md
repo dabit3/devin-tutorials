@@ -21,7 +21,7 @@ Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`). Each line pla
 
 ## Prompts typed on screen
 
-1. Remember this for future sessions: when you give me a status update, use three short bullets and no emojis.
+1. Save this to your memory: when you give me a status update, use three short bullets and no emojis.
 2. Write my status update for today: I recorded the Memory tutorial, fixed the narration timing, and opened the PR.
 
 ## Sources
