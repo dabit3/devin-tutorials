@@ -21,7 +21,7 @@ window.SPEC = {
     "0017.png": { "cap": "Expand the diagram", "capDelay": 0.7, "ring": true, "ringDelay": 0.7, "dwell": 1.4 },
     "0018.png": { "hold": 1.5, "cap": "" },
     "0019.png": { "cap": "Open the sidebar", "capDelay": 0.9, "vo": "The sidebar becomes a table of contents for the whole wiki." },
-    "0020.png": { "hold": 2.4, "cap": "The wiki's pages are in the sidebar", "capDelay": 0.4, "ringDelay": 0.4, "ring": { "x": 187, "y": 561, "w": 355, "h": 358 } },
+    "0020.png": { "hold": 2.4, "cap": "The wiki's pages are in the sidebar", "capPos": "bottom", "capDelay": 0.4, "ringDelay": 0.4, "target": { "x": 187, "y": 561, "w": 355, "h": 358 }, "ring": true },
     "0021.png": { "cap": "Open another page", "ring": true, "vo": "Open another page, like this one on the kanban board app." },
     "0022.png": { "hold": 2.0, "cap": "" },
     "0023.png": { "cap": "More actions", "ring": true, "vo": "From this menu, you can re-index the wiki, edit it, or open DeepWiki settings." },
