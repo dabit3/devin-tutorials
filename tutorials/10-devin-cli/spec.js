@@ -119,6 +119,9 @@ window.SPEC = {
         "h": 300
       }
     },
+    "0182.png": {
+      "cursor": false
+    },
     "0185.png": {
       "vo": "Start a new session for the next task.",
       "voGap": 0.4,
