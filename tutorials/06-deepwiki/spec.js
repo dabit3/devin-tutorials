@@ -9,7 +9,7 @@ window.SPEC = {
   "pollRunMax": 2.5,
   "edit": {
     "0000.png": { "hold": 2.4, "cursor": false, "vo": "DeepWiki turns every repository you connect into a wiki that Devin writes from the code, and keeps up to date." },
-    "0001.png": { "cap": "Open the sidebar", "ring": true, "vo": "Open the sidebar, and click Wiki." },
+    "0001.png": { "cap": "Open the sidebar", "capDelay": -0.8, "ring": true, "ringDelay": -0.8, "vo": "Open the sidebar, and click Wiki." },
     "0003.png": { "cap": "Click Wiki", "ring": true },
     "0004.png": { "hold": 1.6, "cap": "Every connected repo gets a wiki", "capPos": "top", "vo": "Every repo you connect gets its own wiki." },
     "0005.png": { "cap": "Search for a repo", "ring": true, "vo": "Search for a repo, and open its wiki." },
