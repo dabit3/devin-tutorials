@@ -14,9 +14,14 @@ const T = {
 };
 const S = 3;                                 // shots are 3x the 1440x810 UI
 const IMG = {};
-const LOADED = Promise.all(['0000', '0003', '0007'].map(async n => {
-  IMG[n] = await createImageBitmap(await (await fetch(`../../${V}/shots/${n}.png`)).blob());
+const LOADED = Promise.all([['0000', 'shots/0000.png'], ['0003', 'shots/0003.png'], ['0007', 'shots/0007.png'], ['logo', 'brand/devin-lockup.png']].map(async ([n, p]) => {
+  IMG[n] = await createImageBitmap(await (await fetch(`../../${V}/${p}`)).blob());
 }));
+// brand/devin-lockup.png: dark lockup; its content box is (184, 136, 2506, 752) of 2984x1024, the D's cap height is 0.606 of that
+function logo(cx, cy, h, a) {
+  if (a <= 0) return; const w = h * 2506 / 752;
+  ctx.save(); ctx.globalAlpha *= a; ctx.drawImage(IMG.logo, 184, 136, 2506, 752, cx - w / 2, cy - h / 2, w, h); ctx.restore(); return w;
+}
 const renderFrame = window.film.renderFrame;
 // The kit fades its default cursor out over frames 0-11; this film has no cursor, so redraw the scene over it.
 let KIT = null;
@@ -53,7 +58,22 @@ function sheet(x, y, w, h, r, a, fill = '#fff') {
 function edge(x, y, w, h, r, a, color = 'rgba(25,25,25,.09)', lw = 1) {
   ctx.save(); ctx.globalAlpha *= a; k.rr(x + 0.5, y + 0.5, w - 1, h - 1, r); ctx.lineWidth = lw; ctx.strokeStyle = color; ctx.stroke(); ctx.restore();
 }
-const PILL = { h: 60, size: 26, pad: 28, mark: 28, mgap: 12 };
+// title: "Use your ChatGPT plan in" + the Devin lockup, words rising in one by one
+function title(t, x, y) {
+  const size = 56, ws = ['Use', 'your', 'ChatGPT', 'plan', 'in'], sp = size * 0.27, hL = size * 0.73 / 0.606;
+  const w = ws.map(s => textW(s, 600 && size, 600)), wL = hL * 2506 / 752, gL = size * 0.36;
+  let cx = x - (w.reduce((p, q) => p + q, 0) + sp * (ws.length - 1) + gL + wL) / 2;
+  const rise = i => k.eOutQuint(k.prog(t, T.title + i * 0.07, T.title + i * 0.07 + 0.6));
+  ws.forEach((s, i) => {
+    const p = rise(i);
+    if (p > 0) { ctx.save(); ctx.translate(0, size * 0.45 * (1 - p)); text(s, cx, y, size, 600, k.INK, p, 'left'); ctx.restore(); }
+    cx += w[i] + sp;
+  });
+  const p = rise(ws.length);
+  if (p > 0) { ctx.save(); ctx.translate(0, size * 0.45 * (1 - p)); logo(cx - sp + gL + wL / 2, y + size * LOGO_DY, hL, p); ctx.restore(); }
+}
+const LOGO_DY = -0.035;
+const PILL = { h: 75, size: 32.5, pad: 35, mark: 35, mgap: 15 };
 function pillW(label, mark) { return textW(label, PILL.size, 600) + PILL.pad * 2 + (mark ? PILL.mark + PILL.mgap : 0); }
 function pill(cx, cy, label, a, { mark = false, color = k.INK, ring = null } = {}) {
   if (a <= 0) return;
@@ -94,15 +114,15 @@ function ring(cx, cy, w, h, t, t0, t1, pad = 7) {
 }
 
 // ---- 1. two marks drift together, a line connects them, the line becomes an "on" toggle
-const YP = 405, YT = 330, TW = 120, TH = 66;
+const YP = 405, YT = 318, TW = 150, TH = 82;
 const P1 = { cx: 720, cy: 440, s: 1.42, src: { x: 262, y: 500, w: 918, h: 242 } };   // Connections crop (UI px of 0000/0003)
 P1.w = P1.src.w * P1.s; P1.h = P1.src.h * P1.s; P1.x = P1.cx - P1.w / 2; P1.y = P1.cy - P1.h / 2;
 const SW = { x: P1.x + (1111.875 - P1.src.x) * P1.s, y: P1.y + (676.25 - P1.src.y) * P1.s, w: 45 * P1.s, h: 25 * P1.s };
 function intro(t) {
-  const wD = pillW('Devin', true), wC = pillW('ChatGPT', false), gap = 250;
+  const wD = pillW('Devin', true), wC = pillW('ChatGPT', false), gap = 312;
   const drift = k.eOut(k.prog(t, 0.08, 1.45)), fade = k.eOut(k.prog(t, 0.08, 0.7));
   const m = k.eInOut(k.prog(t, T.morph, T.snap)), gone = k.eOut(k.prog(t, T.morph, T.morph + 0.38));
-  const xD = 720 - gap - 240 * (1 - drift) + 26 * m, xC = 720 + gap + 240 * (1 - drift) - 26 * m;
+  const xD = 720 - gap - 240 * (1 - drift) + 32 * m, xC = 720 + gap + 240 * (1 - drift) - 32 * m;
   const pa = fade * (1 - gone);
   const Y0 = k.lerp(YP, YT, k.eInOut(k.prog(t, T.snap + 0.2, T.title + 0.45)));
   ctx.save(); const sc = k.lerp(1, 0.94, m);
@@ -114,23 +134,23 @@ function intro(t) {
   const l0 = 720 - gap + wD / 2 + 22, l1 = 720 + gap - wC / 2 - 22;
   const draw = k.eInOut(k.prog(t, T.line, T.morph));
   if (draw > 0 && t < T.panel + 2) {
-    const x0 = k.lerp(l0, 720 - TW / 2, m), xe = k.lerp(k.lerp(l0, l1, draw), 720 + TW / 2, m), th = k.lerp(1.8, TH, k.eInOut(k.prog(t, T.morph + 0.08, T.snap)));
+    const x0 = k.lerp(l0, 720 - TW / 2, m), xe = k.lerp(k.lerp(l0, l1, draw), 720 + TW / 2, m), th = k.lerp(2.2, TH, k.eInOut(k.prog(t, T.morph + 0.08, T.snap)));
     const dots = 1 - k.eOut(k.prog(t, T.morph, T.morph + 0.3));
     if (t < T.snap) {
       ctx.save(); k.rr(x0, YP - th / 2, Math.max(th, xe - x0), th, th / 2); ctx.fillStyle = rgba(BLUE, 1); ctx.fill(); ctx.restore();
-      dot(l0, YP, 4, dots); dot(xe, YP, 4, dots * k.prog(draw, 0.0, 0.15));
+      dot(l0, YP, 5, dots); dot(xe, YP, 5, dots * k.prog(draw, 0.0, 0.15));
     }
   }
   // knob snaps on, a single halo answers it
   const kn = eOutBack(k.prog(t, T.snap - 0.04, T.snap + 0.32));
-  halo(720, Y0, TW, TH, k.prog(t, T.snap, T.snap + 0.8), 30);
+  halo(720, Y0, TW, TH, k.prog(t, T.snap, T.snap + 0.8), 36);
   if (t >= T.snap - 0.04 && t < T.titleOut) toggle(720, Y0, TW, TH, kn, 1);
   // title
   const out = k.eInOut(k.prog(t, T.titleOut, T.titleOut + 0.32));
   if (t < T.titleOut + 0.4) {
     ctx.save(); ctx.globalAlpha *= 1 - out; ctx.translate(0, -10 * out);
-    words('Use your ChatGPT plan in Devin', 720, 452, 56, 600, k.INK, t, T.title);
-    words('Works with ChatGPT Go, Plus and Pro', 720, 512, 25, 400, 'rgba(25,25,25,.55)', t, T.title + 0.4, 0.03);
+    title(t, 720, 452);
+    words('Works with ChatGPT Go, Plus and Pro', 720, 514, 25, 400, 'rgba(25,25,25,.55)', t, T.title + 0.4, 0.03);
     ctx.restore();
   }
   // toggle glides into the real switch, then hands over to it
@@ -183,9 +203,9 @@ function split(t) {
   const o = k.eInOut(k.prog(t, T.splitOut, T.splitOut + 0.32));
   if (t < T.split || o >= 1) return;
   ctx.save(); ctx.globalAlpha *= 1 - o; ctx.translate(0, -12 * o);
-  const xL = 455, xR = 985, rows = [
-    { y: 330, from: 'GPT models', to: 'Your ChatGPT plan', t0: T.split, blue: true, mark: false },
-    { y: 480, from: 'Other models', to: 'Your Devin quota', t0: T.split2, blue: false, mark: true },
+  const xL = 410, xR = 1020, rows = [
+    { y: 318, from: 'GPT models', to: 'Your ChatGPT plan', t0: T.split, blue: true, mark: false },
+    { y: 500, from: 'Other models', to: 'Your Devin quota', t0: T.split2, blue: false, mark: true },
   ];
   for (const r of rows) {
     const a = k.eOutQuint(k.prog(t, r.t0, r.t0 + 0.5)), b = k.eOutQuint(k.prog(t, r.t0 + 0.5, r.t0 + 1.0));
@@ -194,10 +214,10 @@ function split(t) {
     const x0 = xL + wl / 2 + 18, x1 = xR - wr / 2 - 18, d = k.eInOut(k.prog(t, r.t0 + 0.2, r.t0 + 0.7));
     if (d > 0) {
       const c = r.blue ? rgba(BLUE, 1) : 'rgba(25,25,25,.26)';
-      ctx.save(); ctx.lineCap = 'round'; ctx.lineWidth = r.blue ? 2 : 1.5; ctx.strokeStyle = c;
+      ctx.save(); ctx.lineCap = 'round'; ctx.lineWidth = r.blue ? 2.5 : 1.9; ctx.strokeStyle = c;
       ctx.beginPath(); ctx.moveTo(x0, r.y); ctx.lineTo(k.lerp(x0, x1, d), r.y); ctx.stroke(); ctx.restore();
-      dot(x0, r.y, 4, 1, r.blue ? BLUE : [160, 160, 160]); dot(k.lerp(x0, x1, d), r.y, 4, 1, r.blue ? BLUE : [160, 160, 160]);
-      if (r.blue) { const q = k.prog(t, r.t0 + 1.25, r.t0 + 2.05); if (q > 0 && q < 1) { const e = k.eInOut(q); ctx.save(); ctx.shadowColor = rgba(BLUE, 0.6); ctx.shadowBlur = 12; dot(k.lerp(x0, x1, e), r.y, 6, Math.min(1, q * 6, (1 - q) * 6)); ctx.restore(); } }
+      dot(x0, r.y, 5, 1, r.blue ? BLUE : [160, 160, 160]); dot(k.lerp(x0, x1, d), r.y, 5, 1, r.blue ? BLUE : [160, 160, 160]);
+      if (r.blue) { const q = k.prog(t, r.t0 + 1.25, r.t0 + 2.05); if (q > 0 && q < 1) { const e = k.eInOut(q); ctx.save(); ctx.shadowColor = rgba(BLUE, 0.6); ctx.shadowBlur = 14; dot(k.lerp(x0, x1, e), r.y, 7.5, Math.min(1, q * 6, (1 - q) * 6)); ctx.restore(); } }
     }
     ctx.save(); ctx.translate(0, 10 * (1 - b));
     pill(xR, r.y, r.to, b, { mark: r.mark, color: r.blue ? rgba(BLUE, 1) : k.INK, ring: r.blue ? rgba(BLUE, 0.55) : null });
@@ -210,11 +230,10 @@ function split(t) {
 function end(t) {
   const e = k.eOutQuint(k.prog(t, T.end - 0.02, T.end + 0.65));
   if (e <= 0) return;
-  const L = k.LOCKUP, h = 62, w = h * L.width / L.height, sc = k.lerp(0.94, 1, e);
-  ctx.save(); ctx.globalAlpha *= e; ctx.translate(720, 368); ctx.scale(sc, sc);
-  ctx.filter = 'invert(1) brightness(0.1)'; ctx.drawImage(L, -w / 2, -h / 2, w, h); ctx.restore();
-  words('Available on Devin Pro, Max and Teams', 720, 462, 31, 500, k.INK, t, T.end + 0.18, 0.04);
-  words('docs.devin.ai', 720, 510, 22, 400, 'rgba(25,25,25,.5)', t, T.end + 0.45);
+  const sc = k.lerp(0.94, 1, e);
+  ctx.save(); ctx.translate(720, 352); ctx.scale(sc, sc); ctx.translate(-720, -352); logo(720, 352, 72, e); ctx.restore();
+  words('Available on Devin Pro, Max and Teams', 720, 470, 39, 500, k.INK, t, T.end + 0.18, 0.04);
+  words('docs.devin.ai', 720, 530, 27.5, 400, 'rgba(25,25,25,.5)', t, T.end + 0.45);
 }
 
 function film(c, s, kit) {
