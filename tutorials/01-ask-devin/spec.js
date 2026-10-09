@@ -11,12 +11,12 @@ window.SPEC = {
     "0000.png": {
       "hold": 2.4,
       "cursor": false,
-      "vo": "Ask Devin answers your questions about any codebase, with every answer grounded in the actual code."
+      "vo": "Ask Devin answers your questions about any codebase. With every answer grounded in actual code."
     },
     "0002.png": {
       "cap": "Switch the composer to Ask mode",
       "hl": true,
-      "vo": "Switch the composer to Ask mode."
+      "vo": "To ask questions instead of building, switch the composer to Ask mode."
     },
     "0005.png": {
       "hold": 1.6,

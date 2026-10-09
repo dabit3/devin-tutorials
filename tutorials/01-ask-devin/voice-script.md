@@ -4,8 +4,8 @@ Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`), generated as 
 
 | Shot | Narration |
 | --- | --- |
-| Home screen | Ask Devin answers your questions about any codebase, with every answer grounded in the actual code. |
-| Clicking Ask | Switch the composer to Ask mode. |
+| Home screen | Ask Devin answers your questions about any codebase. With every answer grounded in actual code. |
+| Clicking Ask | To ask questions instead of building, switch the composer to Ask mode. |
 | Auto / Q&A / Plan menu | Auto picks the right mode for you, whether that's a quick answer or a plan. |
 | Opening All repositories | Then choose the repositories Devin should read. |
 | Hovering Only on product-demo-apps | Click Only to keep just this one. |
