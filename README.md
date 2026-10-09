@@ -26,6 +26,10 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 <!-- -->
 22. **The review loop closes itself** (1:36): Enroll a repo for automatic Devin Review, allow devin-ai-integration[bot] under Responding to bots, and ask Devin for a feature. Devin Review flags real date bugs on the PR, the owning session fixes them with no human prompt, Review re-runs on every push until it's clean, CI goes green, and the human reads only the final diff before merging. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/22-review-loop/22-review-loop.mp4)
 
+<!-- -->
+
+23. **Managed Devins: how it works** (overview, 1:16): A short diagram-led overview instead of a step-by-step run. One coordinator Devin splits a big task across managed Devins, each in its own isolated VM, monitors them, and compiles one summary; real shots from tutorial 19 show the four managed Devins, the sidebar tree, the PR summary and a message relayed through the coordinator, then Settings → Preferences → Auto-approve child sessions, the nesting tree, and four use cases (migrations, test coverage, one playbook across services, parallel research). [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/23-managed-devins-overview/23-managed-devins-overview.mp4)
+
 ## Narrated tutorials
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
@@ -54,6 +58,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **iPhone and iPad apps on Mac VMs, narrated by Nader** (1:35): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/18-ios-ipad-mac-vms/18-ios-ipad-mac-vms-nader.mp4) · [Voice script](tutorials/18-ios-ipad-mac-vms/voice-script.md)
 - **Managed Devins, narrated by Nader** (2:25): One coordinator Devin starts 4 managed Devins, each adding tests to one component in its own PR, then compiles one summary; one child UI-tests the card modal live on its own desktop, and a closing diagram shows how teams can nest several levels deep. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/19-managed-devins/19-managed-devins-nader.mp4) · [Voice script](tutorials/19-managed-devins/voice-script.md)
 - **The review loop closes itself, narrated by Nader** (2:01): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/22-review-loop/22-review-loop-nader.mp4) · [Voice script](tutorials/22-review-loop/voice-script.md)
+- **Managed Devins: how it works (overview), narrated by Nader** (1:27): How a coordinator Devin splits work across managed Devins, keeps you in control, nests, and where it pays off. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/23-managed-devins-overview/23-managed-devins-overview-nader.mp4) · [Voice script](tutorials/23-managed-devins-overview/voice-script.md)
 
 ## Making a new tutorial
 
