@@ -1,9 +1,9 @@
 {
  "0000.png": {
   "text": "Managed Devins let one Devin split a big task into pieces and hand each piece to its own Devin, all running in parallel. It's great for big migrations, adding tests module by module, running one playbook across every service, and parallel research.",
-  "dur": 13.835,
+  "dur": 13.83,
   "at": 0.0,
-  "end": 13.835,
+  "end": 13.83,
   "mode": "one-take",
   "checked": true,
   "chunks": [
@@ -44,273 +44,287 @@
    },
    {
     "t0": 12.573,
-    "t1": 13.827,
+    "t1": 13.815,
     "text": "and parallel research."
    }
   ]
  },
  "0007.png": {
   "text": "Here, I asked Devin to find the four UI components in Orbit with the least test coverage, and start a managed Devin for each one.",
-  "dur": 6.59,
-  "at": 14.11,
-  "end": 20.7,
+  "dur": 6.515,
+  "at": 14.135,
+  "end": 20.65,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.042,
-    "t1": 1.702,
+    "t0": 0.064,
+    "t1": 1.689,
     "text": "Here, I asked Devin to find the four"
    },
    {
-    "t0": 1.784,
-    "t1": 3.769,
+    "t0": 1.747,
+    "t1": 3.721,
     "text": "UI components in Orbit with the least test"
    },
    {
-    "t0": 3.815,
-    "t1": 6.555,
+    "t0": 3.767,
+    "t1": 6.484,
     "text": "coverage, and start a managed Devin for each one."
    }
   ]
  },
  "0010.png": {
   "text": "The coordinator measures coverage, ranks the components, and pushes one shared test setup, so the pull requests won't conflict.",
-  "dur": 6.63,
-  "at": 20.99,
-  "end": 27.62,
+  "dur": 7.085,
+  "at": 20.93,
+  "end": 28.015,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.058,
-    "t1": 1.661,
+    "t0": 0.072,
+    "t1": 1.663,
     "text": "The coordinator measures coverage,"
    },
    {
-    "t0": 1.904,
-    "t1": 2.833,
+    "t0": 1.906,
+    "t1": 2.998,
     "text": "ranks the components,"
    },
    {
-    "t0": 2.856,
-    "t1": 4.703,
+    "t0": 3.033,
+    "t1": 5.053,
     "text": "and pushes one shared test setup,"
    },
    {
-    "t0": 4.877,
-    "t1": 6.595,
+    "t0": 5.332,
+    "t1": 7.027,
     "text": "so the pull requests won't conflict."
    }
   ]
  },
- "0034.png": {
-  "text": "Then it starts four managed Devins, each in its own isolated machine.",
-  "dur": 3.99,
-  "at": 27.75,
-  "end": 31.74,
+ "0054.png": {
+  "text": "Then it starts four managed Devins, one per component, each in its own isolated VM.",
+  "dur": 5.155,
+  "at": 28.16,
+  "end": 33.315,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.044,
-    "t1": 1.971,
+    "t0": 0.04,
+    "t1": 1.956,
     "text": "Then it starts four managed Devins,"
    },
    {
-    "t0": 2.215,
-    "t1": 3.922,
-    "text": "each in its own isolated machine."
+    "t0": 2.072,
+    "t1": 3.094,
+    "text": "one per component,"
+   },
+   {
+    "t0": 3.372,
+    "t1": 5.149,
+    "text": "each in its own isolated VM."
    }
   ]
  },
- "0055.png": {
-  "text": "While they work, I can still steer. I ask the coordinator to have the AddCardForm Devin also test a blank title.",
-  "dur": 6.25,
-  "at": 31.82,
-  "end": 38.07,
+ "0062.png": {
+  "text": "In the sidebar, the coordinator opens into a dropdown with its four Devins nested under it, and each one already has a pull request ready.",
+  "dur": 6.915,
+  "at": 33.63,
+  "end": 40.545,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.061,
-    "t1": 0.769,
-    "text": "While they work,"
+    "t0": 0.062,
+    "t1": 0.828,
+    "text": "In the sidebar,"
    },
    {
-    "t0": 0.804,
-    "t1": 1.791,
-    "text": "I can still steer."
+    "t0": 0.851,
+    "t1": 2.999,
+    "text": "the coordinator opens into a dropdown with its"
    },
    {
-    "t0": 2.174,
-    "t1": 4.299,
-    "text": "I ask the coordinator to have the AddCardForm"
+    "t0": 3.046,
+    "t1": 4.474,
+    "text": "four Devins nested under it,"
    },
    {
-    "t0": 4.357,
-    "t1": 6.214,
-    "text": "Devin also test a blank title."
+    "t0": 4.648,
+    "t1": 6.915,
+    "text": "and each one already has a pull request ready."
    }
   ]
  },
- "0090.png": {
-  "text": "The coordinator passes that message straight to the child session.",
-  "dur": 3.09,
-  "at": 38.35,
-  "end": 41.44,
+ "0064.png": {
+  "text": "The coordinator checks all four branches together, then writes one summary with what each Devin found.",
+  "dur": 5.04,
+  "at": 40.82,
+  "end": 45.86,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.068,
-    "t1": 3.051,
-    "text": "The coordinator passes that message straight to the child session."
+    "t0": 0.059,
+    "t1": 2.381,
+    "text": "The coordinator checks all four branches together,"
+   },
+   {
+    "t0": 2.59,
+    "t1": 5.004,
+    "text": "then writes one summary with what each Devin found."
    }
   ]
  },
- "0095.png": {
-  "text": "In the AddCardForm Devin, you can see it working in its own VM, and it pushes the new test to its pull request.",
-  "dur": 5.52,
-  "at": 41.695,
-  "end": 47.215,
+ "0104.png": {
+  "text": "You can still steer the team. I asked the coordinator to have the CardModal Devin also test that pressing Escape closes the modal.",
+  "dur": 6.895,
+  "at": 46.09,
+  "end": 52.985,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.031,
-    "t1": 1.309,
-    "text": "In the AddCardForm Devin,"
+    "t0": 0.06,
+    "t1": 1.348,
+    "text": "You can still steer the team."
    },
    {
-    "t0": 1.343,
-    "t1": 2.609,
-    "text": "you can see it working in its own"
+    "t0": 1.673,
+    "t1": 3.658,
+    "text": "I asked the coordinator to have the CardModal"
    },
    {
-    "t0": 2.655,
-    "t1": 4.583,
-    "text": "VM, and it pushes the new test to"
-   },
-   {
-    "t0": 4.652,
-    "t1": 5.52,
-    "text": "its pull request."
+    "t0": 3.728,
+    "t1": 6.895,
+    "text": "Devin also test that pressing Escape closes the modal."
    }
   ]
  },
- "0130.png": {
-  "text": "Meanwhile, the coordinator monitors every child, then merges all four branches to check that they pass together.",
-  "dur": 5.565,
-  "at": 47.5,
-  "end": 53.065,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.136,
-    "t1": 2.481,
-    "text": "Meanwhile, the coordinator monitors every child,"
-   },
-   {
-    "t0": 2.655,
-    "t1": 4.594,
-    "text": "then merges all four branches to check that"
-   },
-   {
-    "t0": 4.618,
-    "t1": 5.565,
-    "text": "they pass together."
-   }
-  ]
- },
- "0148.png": {
-  "text": "When they're done, it sends one summary: four pull requests, each component from zero to one hundred percent coverage, and a hundred and eight passing tests.",
-  "dur": 7.945,
+ "0118.png": {
+  "text": "Opening the CardModal Devin, you can watch it work on its own machine and add the Escape tests to its pull request.",
+  "dur": 5.64,
   "at": 53.35,
-  "end": 61.295,
+  "end": 58.99,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.056,
-    "t1": 0.695,
-    "text": "When they're done,"
+    "t0": 0.09,
+    "t1": 1.391,
+    "text": "Opening the CardModal Devin,"
    },
    {
-    "t0": 0.718,
-    "t1": 1.856,
-    "text": "it sends one summary:"
+    "t0": 1.414,
+    "t1": 2.598,
+    "text": "you can watch it work on its own"
    },
    {
-    "t0": 2.1,
-    "t1": 3.214,
-    "text": "four pull requests,"
-   },
-   {
-    "t0": 3.493,
-    "t1": 5.571,
-    "text": "each component from zero to one hundred percent"
-   },
-   {
-    "t0": 5.617,
-    "t1": 7.945,
-    "text": "coverage, and a hundred and eight passing tests."
+    "t0": 2.633,
+    "t1": 5.64,
+    "text": "machine and add the Escape tests to its pull request."
    }
   ]
  },
- "0170.png": {
-  "text": "Devin starts managed Devins on its own when it makes sense. You control the approval step in Settings \u2192 Preferences.",
-  "say": "Devin starts managed Devins on its own when it makes sense. You control the approval step in Settings, Preferences.",
-  "dur": 5.88,
-  "at": 61.58,
-  "end": 67.46,
+ "0150.png": {
+  "text": "It pushes two new tests that press the real Escape key, and all forty CardModal tests pass.",
+  "dur": 5.055,
+  "at": 59.315,
+  "end": 64.37,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.127,
-    "t1": 5.88,
-    "text": "Devin starts managed Devins on its own when it makes sense. You control the approval step in Settings \u2192 Preferences."
+    "t0": 0.035,
+    "t1": 1.823,
+    "text": "It pushes two new tests that press the"
+   },
+   {
+    "t0": 1.869,
+    "t1": 2.787,
+    "text": "real Escape key,"
+   },
+   {
+    "t0": 2.996,
+    "t1": 5.055,
+    "text": "and all forty CardModal tests pass."
    }
   ]
  },
- "0173.png": {
-  "text": "Turn on Auto-approve child sessions, and Devin starts them without asking first.",
-  "dur": 4.36,
-  "at": 67.81,
-  "end": 72.17,
+ "0154.png": {
+  "text": "Back in the coordinator, the summary lists all four pull requests, each taking its component from zero to one hundred percent coverage.",
+  "dur": 6.595,
+  "at": 64.7,
+  "end": 71.295,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.074,
-    "t1": 2.071,
-    "text": "Turn on Auto-approve child sessions,"
+    "t0": 0.06,
+    "t1": 1.024,
+    "text": "Back in the coordinator,"
    },
    {
-    "t0": 2.222,
-    "t1": 4.346,
-    "text": "and Devin starts them without asking first."
+    "t0": 1.059,
+    "t1": 3.241,
+    "text": "the summary lists all four pull requests,"
+   },
+   {
+    "t0": 3.485,
+    "t1": 5.517,
+    "text": "each taking its component from zero to one"
+   },
+   {
+    "t0": 5.552,
+    "t1": 6.595,
+    "text": "hundred percent coverage."
+   }
+  ]
+ },
+ "0159.png": {
+  "text": "Devin starts managed Devins without asking first when Auto-approve child sessions is on, under Settings, Preferences.",
+  "dur": 6.44,
+  "at": 71.61,
+  "end": 78.05,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.093,
+    "t1": 3.008,
+    "text": "Devin starts managed Devins without asking first when"
+   },
+   {
+    "t0": 3.066,
+    "t1": 4.795,
+    "text": "Auto-approve child sessions is on,"
+   },
+   {
+    "t0": 5.039,
+    "t1": 6.409,
+    "text": "under Settings, Preferences."
    }
   ]
  },
  "outro": {
   "text": "One task in, a team of Devins on it.",
-  "dur": 2.16,
-  "at": 72.4,
-  "end": 74.56,
+  "dur": 2.02,
+  "at": 78.23,
+  "end": 80.25,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.139,
-    "t1": 0.975,
+    "t0": 0.114,
+    "t1": 0.892,
     "text": "One task in,"
    },
    {
-    "t0": 1.01,
-    "t1": 2.16,
+    "t0": 0.915,
+    "t1": 2.02,
     "text": "a team of Devins on it."
    }
   ]

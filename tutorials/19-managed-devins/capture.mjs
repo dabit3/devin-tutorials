@@ -1,5 +1,5 @@
 // Live capture: one coordinator Devin fans out a task to managed Devins on Orbit and compiles their PRs.
-//   ZOOM=1.25 MASK_TEXT=<email name> PHASE=start|watch|child|prefs node capture.mjs   (RESUME=1 appends to shots/beats.json)
+//   ZOOM=1.25 MASK_TEXT=<email name> PHASE=start|watch|sidebar|child|guide|payoff|prefs node capture.mjs   (RESUME=1 appends to shots/beats.json)
 //   watch/child phases poll until /tmp/stop19 exists, so the operator decides when a phase ends.
 import fs from 'fs';
 import { Rec, sleep } from '../_kit/capture/rec.mjs';
@@ -67,6 +67,32 @@ if (PHASE === 'guide') {
   await watch(4000);
 }
 
+if (PHASE === 'sidebar') {
+  // the coordinator's sidebar row is a dropdown of its managed Devins; the sidebar list only loads reliably from the org home
+  const id = process.env.SESSION.split('/').pop().slice(0, 8);
+  const kids = (process.env.KIDS || '').split(',').filter(Boolean);
+  await r.goto(ORG, 5000);
+  if (await r.find({ attr: ['aria-label', 'Expand sidebar'], sel: 'button' })) await clickAria('Expand sidebar');
+  const rowSel = id => [...document.querySelectorAll('a[href*="/sessions/' + id + '"]')].find(a => { const r = a.getBoundingClientRect(); return r.width > 0 && r.x < 400; });
+  let ok = false;
+  for (let i = 0; i < 40 && !(ok = await p.evaluate(`!!(${rowSel})(${JSON.stringify(id)})`)); i++) await sleep(750);
+  if (!ok) fail('coordinator row not in sidebar');
+  await p.evaluate(`(${rowSel})(${JSON.stringify(id)}).click()`);
+  await sleep(4000); await hideEmptyPanel(); await settle();
+  await p.evaluate(`(() => { const a = (${rowSel})(${JSON.stringify(id)}); let e = a; for (let i = 0; i < 6 && e.parentElement && !e.querySelector('button[aria-label$="children"]'); i++) e = e.parentElement;
+    const b = e.querySelector('button[aria-label="Expand children"]'); if (b) b.click(); a.scrollIntoView({ block: 'center' }); })()`);
+  await sleep(1500); await settle();
+  const box = await p.evaluate(`(() => { const ids = [${JSON.stringify(id)}, ...${JSON.stringify(kids)}]; const rs = ids.map(i => (${rowSel})(i)).filter(Boolean).map(a => a.getBoundingClientRect());
+    const nav = (${rowSel})(${JSON.stringify(id)}).closest('nav,aside') || document.body; const w = Math.min(nav.getBoundingClientRect().width, 400);
+    const y0 = Math.min(...rs.map(r => r.top)), y1 = Math.max(...rs.map(r => r.bottom));
+    return { n: rs.length, x: 8 + (w - 16) / 2, y: (y0 + y1) / 2, w: w - 16, h: y1 - y0 + 6 }; })()`);
+  console.log('SIDEBAR', JSON.stringify(box));
+  if (kids.length && box.n !== kids.length + 1) fail('children not all visible: ' + box.n);
+  await r.shot({ hold: 3, hlBox: box }); r.mark('sidebar-tree');
+  await collapseNav(); await hideEmptyPanel(); await settle();
+  await r.shot({ hold: 0.8 }); r.mark('sidebar-collapsed');
+}
+
 const scrollText = async (src, block = 'center', box = null) => {
   let ok = false;
   for (let i = 0; i < 40 && !ok; i++) {
@@ -92,7 +118,7 @@ if (PHASE === 'payoff') {
   await r.goto(process.env.SESSION, 5000);
   await collapseNav();
   await hideEmptyPanel();
-  if (!(await scrollText('Created 4 Devin sessions', 'center', 'AddCardForm'))) fail('no child-session card');
+  if (!(await scrollText('Created 4 Devin sessions', 'center', 'Sidebar'))) fail('no child-session card');
   await settle();
   await r.shot({ hold: 2.5 }); r.mark('cards');
   if (!(await scrollText('from 0% to 100%', 'start'))) fail('no summary');
