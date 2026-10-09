@@ -25,6 +25,10 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 <!-- -->
 
+23. **Managed Devins: how it works** (overview, 1:16): A short diagram-led overview instead of a step-by-step run. One coordinator Devin splits a big task across managed Devins, each in its own isolated VM, monitors them, and compiles one summary; real shots from tutorial 19 show the four managed Devins, the sidebar tree, the PR summary and a message relayed through the coordinator, then Settings → Preferences → Auto-approve child sessions, the nesting tree, and four use cases (migrations, test coverage, one playbook across services, parallel research). [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/23-managed-devins-overview/23-managed-devins-overview.mp4)
+
+<!-- -->
+
 26. **Devin across the SDLC, overview** (1:23): An overview, mostly animated diagrams, of how Devin fits every stage of the software lifecycle: Ask Devin, DeepWiki and Jira or Linear for planning, sessions that build and open PRs from your template, tests, lint and type checks before the PR, a Devin Review first pass, fixes for what your security scanners flag, and the Auto-Fix loop that turns review comments and CI failures into fixes. Then four use cases and how a human still decides every merge, with real UI proof shots from tutorials 17 and 20. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/26-sdlc-overview/26-sdlc-overview.mp4)
 
 ## Narrated tutorials
@@ -54,6 +58,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Devin Security Swarm, narrated by Nader** (3:17): Devin writes the scan profile, then a real exploit chain in an Orbit-style API is found by the scan, proven in a sandbox and fixed in a PR by Devin. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/17-security-swarm/17-security-swarm-nader.mp4) · [Voice script](tutorials/17-security-swarm/voice-script.md)
 - **iPhone and iPad apps on Mac VMs, narrated by Nader** (1:35): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/18-ios-ipad-mac-vms/18-ios-ipad-mac-vms-nader.mp4) · [Voice script](tutorials/18-ios-ipad-mac-vms/voice-script.md)
 - **Managed Devins, narrated by Nader** (2:25): One coordinator Devin starts 4 managed Devins, each adding tests to one component in its own PR, then compiles one summary; one child UI-tests the card modal live on its own desktop, and a closing diagram shows how teams can nest several levels deep. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/19-managed-devins/19-managed-devins-nader.mp4) · [Voice script](tutorials/19-managed-devins/voice-script.md)
+- **Managed Devins: how it works (overview), narrated by Nader** (1:27): How a coordinator Devin splits work across managed Devins, keeps you in control, nests, and where it pays off. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/23-managed-devins-overview/23-managed-devins-overview-nader.mp4) · [Voice script](tutorials/23-managed-devins-overview/voice-script.md)
 - **Devin across the SDLC, overview, narrated by Nader** (1:32): The same overview of Devin at every stage of the lifecycle, narrated. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/26-sdlc-overview/26-sdlc-overview-nader.mp4) · [Voice script](tutorials/26-sdlc-overview/voice-script.md)
 
 ## Making a new tutorial
