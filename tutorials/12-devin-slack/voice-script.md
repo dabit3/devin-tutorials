@@ -1,6 +1,6 @@
 # Devin in Slack — voice script
 
-Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`) for `12-devin-slack-nader.mp4`, and by Megan (voice `1FmDfZG0Nx2dCk793S1a`) for `12-devin-slack-megan.mp4`. Each is generated as one take at the voice's default settings and cut into lines locally. Each line plays over the shot named on the left.
+Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`), generated as one take at the voice's default settings and cut into lines locally. Each line plays over the shot named on the left.
 
 | Shot | Narration |
 | --- | --- |
