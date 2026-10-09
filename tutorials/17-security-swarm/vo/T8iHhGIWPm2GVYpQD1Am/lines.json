@@ -1,662 +1,845 @@
 {
  "0001.png": {
-  "text": "This is Devin Security Swarm. It reads your code like an attacker, proves each bug is real, and fixes it.",
-  "dur": 5.62,
+  "text": "Devin Security Swarm reads your code like an attacker, proves each bug is real in a sandbox, and then fixes it.",
+  "dur": 6.22,
+  "at": 0.0,
+  "end": 6.22,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.649,
-    "text": "This is Devin Security Swarm."
+    "t1": 2.218,
+    "text": "Devin Security Swarm reads your code like an"
    },
    {
-    "t0": 1.927,
-    "t1": 3.634,
-    "text": "It reads your code like an attacker,"
+    "t0": 2.252,
+    "t1": 4.423,
+    "text": "attacker, proves each bug is real in a"
    },
    {
-    "t0": 3.785,
-    "t1": 4.876,
-    "text": "proves each bug is real,"
-   },
-   {
-    "t0": 4.899,
-    "t1": 5.596,
-    "text": "and fixes it."
+    "t0": 4.47,
+    "t1": 6.2,
+    "text": "sandbox, and then fixes it."
    }
   ]
  },
  "0002.png": {
-  "text": "First, let Devin write a scan profile for your repo.",
-  "dur": 2.74,
+  "text": "Start with a scan profile, and let Devin write it.",
+  "dur": 2.58,
+  "at": 6.4,
+  "end": 8.98,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.067,
-    "t1": 2.691,
-    "text": "First, let Devin write a scan profile for your repo."
+    "t0": 0.125,
+    "t1": 1.437,
+    "text": "Start with a scan profile,"
+   },
+   {
+    "t0": 1.46,
+    "t1": 2.528,
+    "text": "and let Devin write it."
    }
   ]
  },
- "0006.png": {
-  "text": "Devin opens a session, looks at your repos, and asks which one the profile is for.",
-  "dur": 4.54,
+ "0007.png": {
+  "text": "Devin opens a session and asks what the profile should scan, and what matters most.",
+  "dur": 4.395,
+  "at": 9.185,
+  "end": 13.58,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.146,
-    "t1": 1.411,
-    "text": "Devin opens a session,"
+    "t0": 0.126,
+    "t1": 1.903,
+    "text": "Devin opens a session and asks what the"
    },
    {
-    "t0": 1.585,
-    "t1": 2.642,
-    "text": "looks at your repos,"
+    "t0": 1.937,
+    "t1": 3.064,
+    "text": "profile should scan,"
    },
    {
-    "t0": 2.723,
-    "t1": 4.523,
-    "text": "and asks which one the profile is for."
-   }
-  ]
- },
- "0009.png": {
-  "text": "It drafts what to look for and how to validate it, then lists a few optional settings.",
-  "dur": 4.225,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.098,
-    "t1": 1.549,
-    "text": "It drafts what to look for and how"
-   },
-   {
-    "t0": 1.596,
-    "t1": 2.374,
-    "text": "to validate it,"
-   },
-   {
-    "t0": 2.525,
-    "t1": 4.225,
-    "text": "then lists a few optional settings."
+    "t0": 3.238,
+    "t1": 4.364,
+    "text": "and what matters most."
    }
   ]
  },
  "0010.png": {
-  "text": "Accept the defaults and add one triage rule: any auth bypass or cross-user leak is always critical.",
-  "dur": 5.465,
+  "text": "Answer in a few sentences: the repo, what to focus on, what to skip, and that any auth bypass or cross-user leak is always critical.",
+  "dur": 7.75,
+  "at": 13.68,
+  "end": 21.43,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.096,
-    "t1": 2.325,
-    "text": "Accept the defaults and add one triage rule:"
+    "t0": 0.078,
+    "t1": 1.494,
+    "text": "Answer in a few sentences:"
    },
    {
-    "t0": 2.534,
-    "t1": 5.465,
-    "text": "any auth bypass or cross-user leak is always critical."
-   }
-  ]
- },
- "0045.png": {
-  "text": "Devin shows the change as a diff, and you approve it.",
-  "dur": 2.63,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.074,
-    "t1": 1.734,
-    "text": "Devin shows the change as a diff,"
+    "t0": 1.668,
+    "t1": 3.352,
+    "text": "the repo, what to focus on,"
    },
    {
-    "t0": 1.757,
-    "t1": 2.63,
-    "text": "and you approve it."
+    "t0": 3.561,
+    "t1": 4.339,
+    "text": "what to skip,"
+   },
+   {
+    "t0": 4.513,
+    "t1": 6.742,
+    "text": "and that any auth bypass or cross-user leak"
+   },
+   {
+    "t0": 6.8,
+    "t1": 7.729,
+    "text": "is always critical."
    }
   ]
  },
- "0049.png": {
-  "text": "Now open the profile it created.",
-  "dur": 1.62,
+ "0012.png": {
+  "text": "Devin reads the repo, so the profile matches the real routes and scripts.",
+  "dur": 3.95,
+  "at": 21.665,
+  "end": 25.615,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.08,
-    "t1": 1.589,
-    "text": "Now open the profile it created."
+    "t0": 0.127,
+    "t1": 1.299,
+    "text": "Devin reads the repo,"
+   },
+   {
+    "t0": 1.381,
+    "t1": 3.95,
+    "text": "so the profile matches the real routes and scripts."
    }
   ]
  },
- "0053.png": {
-  "text": "The scan model tells the scanner what to hunt for: auth bypass, access between users, and file paths, with the exact files to check.",
-  "dur": 8.135,
+ "0030.png": {
+  "text": "It creates the profile, and even notices that the latest commit on main reverted an earlier auth fix.",
+  "dur": 5.1,
+  "at": 25.71,
+  "end": 30.81,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.087,
+    "t1": 1.236,
+    "text": "It creates the profile,"
+   },
+   {
+    "t0": 1.259,
+    "t1": 3.129,
+    "text": "and even notices that the latest commit on"
+   },
+   {
+    "t0": 3.187,
+    "t1": 5.1,
+    "text": "main reverted an earlier auth fix."
+   }
+  ]
+ },
+ "0031.png": {
+  "text": "Keep the optional settings on their defaults.",
+  "dur": 2.03,
+  "at": 31.15,
+  "end": 33.18,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
     "t0": 0.057,
-    "t1": 1.752,
-    "text": "The scan model tells the scanner what to"
-   },
-   {
-    "t0": 1.81,
-    "t1": 3.702,
-    "text": "hunt for: auth bypass,"
-   },
-   {
-    "t0": 3.877,
-    "t1": 5.212,
-    "text": "access between users,"
-   },
-   {
-    "t0": 5.386,
-    "t1": 6.431,
-    "text": "and file paths,"
-   },
-   {
-    "t0": 6.64,
-    "t1": 8.135,
-    "text": "with the exact files to check."
+    "t1": 2.03,
+    "text": "Keep the optional settings on their defaults."
    }
   ]
  },
- "0054.png": {
-  "text": "Triage guidance decides how findings are ranked, so our rule makes these always critical.",
-  "dur": 4.755,
+ "0036.png": {
+  "text": "The profile is ready.",
+  "dur": 1.135,
+  "at": 33.32,
+  "end": 34.455,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.067,
-    "t1": 2.552,
-    "text": "Triage guidance decides how findings are ranked,"
+    "t0": 0.058,
+    "t1": 1.135,
+    "text": "The profile is ready."
+   }
+  ]
+ },
+ "0038.png": {
+  "text": "Now open it.",
+  "dur": 0.88,
+  "at": 34.58,
+  "end": 35.46,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.11,
+    "t1": 0.841,
+    "text": "Now open it."
+   }
+  ]
+ },
+ "0042.png": {
+  "text": "The scan model tells the scanner what to hunt for, with the exact files and functions to check.",
+  "dur": 4.695,
+  "at": 35.775,
+  "end": 40.47,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.03,
+    "t1": 1.852,
+    "text": "The scan model tells the scanner what to"
    },
    {
-    "t0": 2.831,
-    "t1": 4.755,
+    "t0": 1.899,
+    "t1": 4.695,
+    "text": "hunt for, with the exact files and functions to check."
+   }
+  ]
+ },
+ "0043.png": {
+  "text": "Triage guidance ranks the findings, so our rule makes these always critical.",
+  "dur": 4.05,
+  "at": 41.27,
+  "end": 45.32,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.084,
+    "t1": 2.034,
+    "text": "Triage guidance ranks the findings,"
+   },
+   {
+    "t0": 2.15,
+    "t1": 4.031,
     "text": "so our rule makes these always critical."
    }
   ]
  },
- "0055.png": {
+ "0044.png": {
   "text": "Sandbox validation tells Devin how to start the API, which test users to log in as, and to prove every finding with curl.",
-  "dur": 7.305,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.119,
-    "t1": 2.546,
-    "text": "Sandbox validation tells Devin how to start the"
-   },
-   {
-    "t0": 2.592,
-    "t1": 5.355,
-    "text": "API, which test users to log in as,"
-   },
-   {
-    "t0": 5.529,
-    "t1": 7.305,
-    "text": "and to prove every finding with curl."
-   }
-  ]
- },
- "0056.png": {
-  "text": "A summary report is optional, and this profile leaves it off.",
-  "dur": 3.31,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.071,
-    "t1": 1.673,
-    "text": "A summary report is optional,"
-   },
-   {
-    "t0": 1.824,
-    "t1": 3.31,
-    "text": "and this profile leaves it off."
-   }
-  ]
- },
- "0060.png": {
-  "text": "Under Advanced, it skips tests and seed scripts, and validates every finding from medium up.",
-  "dur": 4.87,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.124,
-    "t1": 2.631,
-    "text": "Under Advanced, it skips tests and seed scripts,"
-   },
-   {
-    "t0": 2.748,
-    "t1": 4.87,
-    "text": "and validates every finding from medium up."
-   }
-  ]
- },
- "0063.png": {
-  "text": "Now start a scan, set it up manually on a single repo, and choose the new profile.",
-  "dur": 4.68,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.117,
-    "t1": 1.08,
-    "text": "Now start a scan,"
-   },
-   {
-    "t0": 1.173,
-    "t1": 3.135,
-    "text": "set it up manually on a single repo,"
-   },
-   {
-    "t0": 3.344,
-    "t1": 4.668,
-    "text": "and choose the new profile."
-   }
-  ]
- },
- "0081.png": {
-  "text": "Turn on Interactive mode, so you review the threat model before it scans.",
-  "dur": 3.88,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.081,
-    "t1": 1.428,
-    "text": "Turn on Interactive mode,"
-   },
-   {
-    "t0": 1.637,
-    "t1": 3.88,
-    "text": "so you review the threat model before it scans."
-   }
-  ]
- },
- "0084.png": {
-  "text": "Then run the scan.",
-  "dur": 0.915,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.043,
-    "t1": 0.915,
-    "text": "Then run the scan."
-   }
-  ]
- },
- "0091.png": {
-  "text": "Before it scans, Devin proposes a scan model of rules written for this exact code.",
-  "dur": 4.39,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.076,
-    "t1": 0.947,
-    "text": "Before it scans,"
-   },
-   {
-    "t0": 0.993,
-    "t1": 3.222,
-    "text": "Devin proposes a scan model of rules written"
-   },
-   {
-    "t0": 3.257,
-    "t1": 4.337,
-    "text": "for this exact code."
-   }
-  ]
- },
- "0092.png": {
-  "text": "It already suspects the forwarded user header, boards loaded by ID with no owner check, and file paths built from user input.",
-  "dur": 6.865,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.055,
-    "t1": 2.4,
-    "text": "It already suspects the forwarded user header,"
-   },
-   {
-    "t0": 2.574,
-    "t1": 4.746,
-    "text": "boards loaded by ID with no owner check,"
-   },
-   {
-    "t0": 4.92,
-    "t1": 6.865,
-    "text": "and file paths built from user input."
-   }
-  ]
- },
- "0096.png": {
-  "text": "This looks right, so start scanning.",
-  "dur": 1.695,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.05,
-    "t1": 0.735,
-    "text": "This looks right,"
-   },
-   {
-    "t0": 0.77,
-    "t1": 1.695,
-    "text": "so start scanning."
-   }
-  ]
- },
- "0115.png": {
-  "text": "Findings stream in, grouped by severity.",
-  "dur": 2.24,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.054,
-    "t1": 1.006,
-    "text": "Findings stream in,"
-   },
-   {
-    "t0": 1.122,
-    "t1": 2.202,
-    "text": "grouped by severity."
-   }
-  ]
- },
- "0124.png": {
-  "text": "Then Devin tries to exploit each one in a sandbox.",
-  "dur": 2.74,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.008,
-    "t1": 2.74,
-    "text": "Then Devin tries to exploit each one in a sandbox."
-   }
-  ]
- },
- "0145.png": {
-  "text": "Duplicates and false positives are dismissed, which leaves eleven open findings, and three of them are chained across files.",
-  "dur": 6.025,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.08,
-    "t1": 2.181,
-    "text": "Duplicates and false positives are dismissed,"
-   },
-   {
-    "t0": 2.297,
-    "t1": 4.016,
-    "text": "which leaves eleven open findings,"
-   },
-   {
-    "t0": 4.167,
-    "t1": 6.025,
-    "text": "and three of them are chained across files."
-   }
-  ]
- },
- "0151.png": {
-  "text": "Open the worst one.",
-  "dur": 0.975,
+  "dur": 7.33,
+  "at": 45.8,
+  "end": 53.13,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
     "t0": 0.105,
-    "t1": 0.964,
-    "text": "Open the worst one."
+    "t1": 2.508,
+    "text": "Sandbox validation tells Devin how to start the"
+   },
+   {
+    "t0": 2.554,
+    "t1": 5.503,
+    "text": "API, which test users to log in as,"
+   },
+   {
+    "t0": 5.619,
+    "t1": 7.33,
+    "text": "and to prove every finding with curl."
    }
   ]
  },
- "0153.png": {
-  "text": "It's critical, with high confidence, because anyone who sends one header becomes the admin, with no password.",
-  "dur": 5.68,
+ "0045.png": {
+  "text": "A summary report is optional, and this profile leaves it off.",
+  "dur": 3.04,
+  "at": 53.65,
+  "end": 56.69,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.012,
-    "t1": 1.823,
-    "text": "It's critical, with high confidence,"
+    "t0": 0.091,
+    "t1": 1.589,
+    "text": "A summary report is optional,"
    },
    {
-    "t0": 2.032,
-    "t1": 4.076,
-    "text": "because anyone who sends one header becomes the"
-   },
-   {
-    "t0": 4.134,
-    "t1": 5.678,
-    "text": "admin, with no password."
+    "t0": 1.636,
+    "t1": 3.04,
+    "text": "and this profile leaves it off."
    }
   ]
  },
- "0154.png": {
-  "text": "Here's the attack path, step by step.",
-  "dur": 2.09,
+ "0048.png": {
+  "text": "Under Advanced, it skips tests and seed scripts, and validates every severity.",
+  "dur": 4.38,
+  "at": 57.05,
+  "end": 61.43,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.047,
-    "t1": 1.161,
-    "text": "Here's the attack path,"
+    "t0": 0.105,
+    "t1": 2.612,
+    "text": "Under Advanced, it skips tests and seed scripts,"
    },
    {
-    "t0": 1.312,
-    "t1": 2.09,
-    "text": "step by step."
+    "t0": 2.787,
+    "t1": 4.38,
+    "text": "and validates every severity."
    }
   ]
  },
- "0155.png": {
-  "text": "And here are the exact lines in auth.js that make it possible.",
-  "dur": 3.22,
+ "0051.png": {
+  "text": "Now start a scan.",
+  "dur": 1.115,
+  "at": 61.685,
+  "end": 62.8,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.09,
+    "t1": 1.115,
+    "text": "Now start a scan."
+   }
+  ]
+ },
+ "0053.png": {
+  "text": "Set it up manually.",
+  "dur": 1.225,
+  "at": 63.19,
+  "end": 64.415,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.141,
+    "t1": 1.225,
+    "text": "Set it up manually."
+   }
+  ]
+ },
+ "0057.png": {
+  "text": "Pick the repo.",
+  "dur": 0.92,
+  "at": 64.9,
+  "end": 65.82,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.068,
+    "t1": 0.92,
+    "text": "Pick the repo."
+   }
+  ]
+ },
+ "0064.png": {
+  "text": "Then choose the new profile.",
+  "dur": 1.405,
+  "at": 66.39,
+  "end": 67.795,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.053,
+    "t1": 1.399,
+    "text": "Then choose the new profile."
+   }
+  ]
+ },
+ "0068.png": {
+  "text": "Turn on Interactive mode, so you can review the threat model before it scans.",
+  "dur": 3.77,
+  "at": 68.02,
+  "end": 71.79,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.094,
+    "t1": 1.337,
+    "text": "Turn on Interactive mode,"
+   },
+   {
+    "t0": 1.383,
+    "t1": 3.763,
+    "text": "so you can review the threat model before it scans."
+   }
+  ]
+ },
+ "0071.png": {
+  "text": "Then run the scan.",
+  "dur": 0.945,
+  "at": 71.87,
+  "end": 72.815,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
     "t0": 0.064,
-    "t1": 2.211,
-    "text": "And here are the exact lines in auth.js"
-   },
-   {
-    "t0": 2.258,
-    "t1": 3.21,
-    "text": "that make it possible."
+    "t1": 0.945,
+    "text": "Then run the scan."
    }
   ]
  },
- "0156.png": {
-  "text": "Devin ran the exploit in a sandbox, and it worked, so the finding is confirmed.",
-  "dur": 4.48,
+ "0074.png": {
+  "text": "Devin reads the code and drafts a threat model first.",
+  "dur": 2.66,
+  "at": 73.24,
+  "end": 75.9,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.085,
-    "t1": 2.244,
-    "text": "Devin ran the exploit in a sandbox,"
-   },
-   {
-    "t0": 2.419,
-    "t1": 3.034,
-    "text": "and it worked,"
-   },
-   {
-    "t0": 3.127,
-    "t1": 4.439,
-    "text": "so the finding is confirmed."
+    "t0": 0.122,
+    "t1": 2.653,
+    "text": "Devin reads the code and drafts a threat model first."
    }
   ]
  },
- "0157.png": {
-  "text": "These are the real requests that proved it.",
-  "dur": 1.785,
+ "0098.png": {
+  "text": "Before it scans, Devin proposes a scan model, with rules written for this exact code.",
+  "dur": 4.725,
+  "at": 76.185,
+  "end": 80.91,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.013,
-    "t1": 1.785,
-    "text": "These are the real requests that proved it."
-   }
-  ]
- },
- "0158.png": {
-  "text": "Now assign it to Devin.",
-  "dur": 1.215,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.109,
-    "t1": 1.215,
-    "text": "Now assign it to Devin."
-   }
-  ]
- },
- "0161.png": {
-  "text": "A fix session starts right away, so open it.",
-  "dur": 2.41,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.082,
-    "t1": 1.707,
-    "text": "A fix session starts right away,"
+    "t0": 0.033,
+    "t1": 0.927,
+    "text": "Before it scans,"
    },
    {
-    "t0": 1.754,
-    "t1": 2.41,
-    "text": "so open it."
+    "t0": 0.974,
+    "t1": 2.704,
+    "text": "Devin proposes a scan model,"
+   },
+   {
+    "t0": 2.831,
+    "t1": 4.689,
+    "text": "with rules written for this exact code."
    }
   ]
  },
- "0164.png": {
-  "text": "Devin gets the finding and its evidence, and checks that the bug is still real on main.",
-  "dur": 4.12,
+ "0099.png": {
+  "text": "It flags the forwarded user header, which is trusted before any token.",
+  "dur": 3.66,
+  "at": 81.02,
+  "end": 84.68,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.076,
-    "t1": 1.933,
-    "text": "Devin gets the finding and its evidence,"
+    "t0": 0.063,
+    "t1": 1.885,
+    "text": "It flags the forwarded user header,"
    },
    {
-    "t0": 2.014,
-    "t1": 4.093,
-    "text": "and checks that the bug is still real on main."
+    "t0": 2.002,
+    "t1": 3.627,
+    "text": "which is trusted before any token."
    }
   ]
  },
- "0165.png": {
-  "text": "An open pull request from an earlier run already fixes it, so Devin takes it over, reruns the tests, and checks that the header alone is now rejected.",
-  "dur": 8.0,
+ "0100.png": {
+  "text": "It flags boards loaded by ID, with no owner check.",
+  "dur": 3.015,
+  "at": 84.825,
+  "end": 87.84,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
     "t0": 0.066,
-    "t1": 1.993,
-    "text": "An open pull request from an earlier run"
+    "t1": 1.761,
+    "text": "It flags boards loaded by ID,"
    },
    {
-    "t0": 2.051,
-    "t1": 3.026,
-    "text": "already fixes it,"
+    "t0": 1.97,
+    "t1": 2.98,
+    "text": "with no owner check."
+   }
+  ]
+ },
+ "0101.png": {
+  "text": "And it flags file paths built from the request.",
+  "dur": 2.395,
+  "at": 87.93,
+  "end": 90.325,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.049,
+    "t1": 2.395,
+    "text": "And it flags file paths built from the request."
+   }
+  ]
+ },
+ "0102.png": {
+  "text": "This looks right, so start scanning.",
+  "dur": 1.635,
+  "at": 90.6,
+  "end": 92.235,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.084,
+    "t1": 0.781,
+    "text": "This looks right,"
    },
    {
-    "t0": 3.235,
-    "t1": 4.489,
-    "text": "so Devin takes it over,"
-   },
-   {
-    "t0": 4.663,
-    "t1": 5.732,
-    "text": "reruns the tests,"
-   },
-   {
-    "t0": 5.813,
-    "t1": 7.949,
-    "text": "and checks that the header alone is now rejected."
+    "t0": 0.804,
+    "t1": 1.635,
+    "text": "so start scanning."
    }
   ]
  },
  "0169.png": {
-  "text": "Back on the finding, the fix PR is attached.",
-  "dur": 2.345,
+  "text": "A few minutes later, there are seven open findings, and each one was confirmed in a sandbox.",
+  "dur": 4.505,
+  "at": 92.54,
+  "end": 97.045,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.043,
-    "t1": 0.983,
-    "text": "Back on the finding,"
+    "t0": 0.094,
+    "t1": 0.884,
+    "text": "A few minutes later,"
    },
    {
-    "t0": 1.03,
-    "t1": 2.345,
-    "text": "the fix PR is attached."
+    "t0": 0.907,
+    "t1": 2.381,
+    "text": "there are seven open findings,"
+   },
+   {
+    "t0": 2.532,
+    "t1": 4.505,
+    "text": "and each one was confirmed in a sandbox."
    }
   ]
  },
- "0171.png": {
-  "text": "A real exploit chain, found, proven, and fixed.",
-  "dur": 2.44,
+ "0170.png": {
+  "text": "Open the worst one.",
+  "dur": 1.08,
+  "at": 97.31,
+  "end": 98.39,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.083,
-    "t1": 1.186,
-    "text": "A real exploit chain,"
+    "t0": 0.096,
+    "t1": 1.048,
+    "text": "Open the worst one."
+   }
+  ]
+ },
+ "0172.png": {
+  "text": "A spoofed header gives anyone a full auth bypass, and lets them act as the admin.",
+  "dur": 4.495,
+  "at": 98.605,
+  "end": 103.1,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.078,
+    "t1": 2.005,
+    "text": "A spoofed header gives anyone a full auth"
    },
    {
-    "t0": 1.233,
-    "t1": 2.429,
-    "text": "found, proven, and fixed."
+    "t0": 2.04,
+    "t1": 4.478,
+    "text": "bypass, and lets them act as the admin."
+   }
+  ]
+ },
+ "0173.png": {
+  "text": "The attack path shows each step, from the forged header to the admin export.",
+  "dur": 4.095,
+  "at": 103.35,
+  "end": 107.445,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.058,
+    "t1": 1.765,
+    "text": "The attack path shows each step,"
+   },
+   {
+    "t0": 1.974,
+    "t1": 4.087,
+    "text": "from the forged header to the admin export."
+   }
+  ]
+ },
+ "0174.png": {
+  "text": "References point to the exact lines in auth dot js.",
+  "dur": 2.96,
+  "at": 107.71,
+  "end": 110.67,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.11,
+    "t1": 2.96,
+    "text": "References point to the exact lines in auth dot js."
+   }
+  ]
+ },
+ "0175.png": {
+  "text": "Sandbox validation ran the real API and confirmed it.",
+  "dur": 3.07,
+  "at": 110.85,
+  "end": 113.92,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.151,
+    "t1": 3.031,
+    "text": "Sandbox validation ran the real API and confirmed it."
+   }
+  ]
+ },
+ "0176.png": {
+  "text": "Here are the exact curl requests, and the admin data that came back, with no token at all.",
+  "dur": 5.065,
+  "at": 114.16,
+  "end": 119.225,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.046,
+    "t1": 1.985,
+    "text": "Here are the exact curl requests,"
+   },
+   {
+    "t0": 2.101,
+    "t1": 3.796,
+    "text": "and the admin data that came back,"
+   },
+   {
+    "t0": 3.947,
+    "t1": 5.05,
+    "text": "with no token at all."
+   }
+  ]
+ },
+ "0177.png": {
+  "text": "Now assign it to Devin.",
+  "dur": 1.26,
+  "at": 119.35,
+  "end": 120.61,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.069,
+    "t1": 1.23,
+    "text": "Now assign it to Devin."
+   }
+  ]
+ },
+ "0180.png": {
+  "text": "Within a minute, a fix session has already opened a pull request.",
+  "dur": 2.975,
+  "at": 121.075,
+  "end": 124.05,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.016,
+    "t1": 0.678,
+    "text": "Within a minute,"
+   },
+   {
+    "t0": 0.701,
+    "t1": 2.942,
+    "text": "a fix session has already opened a pull request."
+   }
+  ]
+ },
+ "0181.png": {
+  "text": "Open the fix session.",
+  "dur": 1.235,
+  "at": 124.23,
+  "end": 125.465,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.112,
+    "t1": 1.235,
+    "text": "Open the fix session."
+   }
+  ]
+ },
+ "0184.png": {
+  "text": "Devin gets the finding and its evidence, checks the code on main, and opens a pull request with the fix.",
+  "dur": 5.65,
+  "at": 125.64,
+  "end": 131.29,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.165,
+    "t1": 2.161,
+    "text": "Devin gets the finding and its evidence,"
+   },
+   {
+    "t0": 2.37,
+    "t1": 3.694,
+    "text": "checks the code on main,"
+   },
+   {
+    "t0": 3.845,
+    "t1": 5.65,
+    "text": "and opens a pull request with the fix."
+   }
+  ]
+ },
+ "0185.png": {
+  "text": "It even flags that an earlier fix was reverted on main, and asks you to check before merging.",
+  "dur": 5.04,
+  "at": 131.59,
+  "end": 136.63,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.066,
+    "t1": 1.982,
+    "text": "It even flags that an earlier fix was"
+   },
+   {
+    "t0": 2.04,
+    "t1": 3.015,
+    "text": "reverted on main,"
+   },
+   {
+    "t0": 3.166,
+    "t1": 5.0,
+    "text": "and asks you to check before merging."
+   }
+  ]
+ },
+ "0186.png": {
+  "text": "The tests pass, and the pull request is ready for review.",
+  "dur": 2.82,
+  "at": 136.79,
+  "end": 139.61,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.044,
+    "t1": 0.961,
+    "text": "The tests pass,"
+   },
+   {
+    "t0": 0.996,
+    "t1": 2.784,
+    "text": "and the pull request is ready for review."
+   }
+  ]
+ },
+ "0187.png": {
+  "text": "Open the pull request right in the session.",
+  "dur": 2.12,
+  "at": 139.91,
+  "end": 142.03,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.105,
+    "t1": 2.102,
+    "text": "Open the pull request right in the session."
+   }
+  ]
+ },
+ "0191.png": {
+  "text": "It's ready to merge, with three files changed.",
+  "dur": 2.48,
+  "at": 142.295,
+  "end": 144.775,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.042,
+    "t1": 1.087,
+    "text": "It's ready to merge,"
+   },
+   {
+    "t0": 1.238,
+    "t1": 2.48,
+    "text": "with three files changed."
+   }
+  ]
+ },
+ "0192.png": {
+  "text": "The header is now trusted only when the proxy signs it with a fresh HMAC, and the check fails closed when no secret is set.",
+  "dur": 6.065,
+  "at": 145.0,
+  "end": 151.065,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.054,
+    "t1": 1.668,
+    "text": "The header is now trusted only when the"
+   },
+   {
+    "t0": 1.703,
+    "t1": 3.653,
+    "text": "proxy signs it with a fresh HMAC,"
+   },
+   {
+    "t0": 3.827,
+    "t1": 6.065,
+    "text": "and the check fails closed when no secret is set."
    }
   ]
  },
  "outro": {
   "text": "Security Swarm. Real exploits, found, proven, and fixed.",
-  "dur": 3.31,
+  "dur": 3.71,
+  "at": 151.46,
+  "end": 155.17,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.114,
-    "t1": 2.145,
+    "t0": 0.107,
+    "t1": 2.162,
     "text": "Security Swarm. Real exploits,"
    },
    {
-    "t0": 2.18,
-    "t1": 3.31,
+    "t0": 2.22,
+    "t1": 3.71,
     "text": "found, proven, and fixed."
    }
   ]
