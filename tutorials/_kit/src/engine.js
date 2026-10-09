@@ -443,6 +443,8 @@ function drawOutro(f, p) {
 
 async function renderFrame(f) {
   ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.filter = 'none';
+  // Optional: scenes.js may draw the whole film itself (SCENES.film(ctx, seconds, kit), 4K coords); the spec's beats still set the length.
+  if (window.SCENES?.film) return window.SCENES.film(ctx, f / FPS, kit4k({ f }));
   const I = TL.introEnd, E = TL.enter, U = TL.uiEnd, O = TL.outro;
   if (f < I + E) {
     const out = prog(f, I - 6, I + E * 0.55);
@@ -486,6 +488,7 @@ const ready = (async () => {
   AVATAR = await bitmap('../brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png');
   order.splice(order.indexOf('../brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png'), 1);
   if (SPEC.scenes || BEATS.some(b => (SPEC.edit || {})[b.img]?.scene)) await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/scenes.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
+  if (window.SCENES?.ready) await window.SCENES.ready;
   TL = build(); await placeCaptions(); window.film.frames = TL.frames;
 })();
 window.film = { ready, frames: 0, renderFrame, cues, timeline: () => TL };
