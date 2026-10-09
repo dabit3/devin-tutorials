@@ -3,6 +3,7 @@ window.SPEC = {
   "subtitle": "Plan, build, test, review and merge one real change",
   "outro": "Devin covers the lifecycle. You stay in control",
   "speed": 3,
+  "pollRunMax": 2.2,
   "cps": 48,
   "maxZoom": 1.6,
   "edit": {
@@ -96,14 +97,14 @@ window.SPEC = {
     },
     "0023.png": {
       "badge": null,
-      "hold": 3.2,
+      "hold": 2.7,
       "capPos": "bottom",
       "cap": "A plan, with the files it touches",
       "vo": "Devin reads the repo and answers with a short plan.",
       "hl": null
     },
     "0024.png": {
-      "hold": 3.4,
+      "hold": 2.6,
       "capPos": "bottom",
       "cap": "Every step cites the exact lines",
       "vo": "Each step cites the exact files and lines, and the code shows up next to the answer.",
@@ -173,9 +174,9 @@ window.SPEC = {
     },
     "0050.png": {
       "voGap": 1.2,
-      "hold": 3.6,
+      "hold": 2.6,
       "capPos": "bottom",
-      "cap": "Lint and the build, which runs the type check",
+      "cap": "Lint, then a build with type checks",
       "vo": "Devin builds the feature on its own. Before it opens the PR, it runs lint and the build, which includes the type check.",
       "hl": [
         {
@@ -187,7 +188,7 @@ window.SPEC = {
       ]
     },
     "0051.png": {
-      "hold": 3.4,
+      "hold": 2.6,
       "capPos": "bottom",
       "cap": "Then it tests the flow in a browser",
       "vo": "Orbit has no test suite, so it also runs the flow in a browser and checks that it survives a reload.",
@@ -237,7 +238,7 @@ window.SPEC = {
       "skip": true
     },
     "0106.png": {
-      "hold": 4.0,
+      "hold": 2.5,
       "capPos": "bottom",
       "cap": "The description follows the PR template",
       "vo": "The description follows the repo's PR template, including exactly how it was tested.",
@@ -251,7 +252,7 @@ window.SPEC = {
       ]
     },
     "0058.png": {
-      "hold": 3.6,
+      "hold": 2.6,
       "capPos": "bottom",
       "cap": "First pass: no vulnerabilities, two bugs",
       "hl": [
@@ -265,7 +266,7 @@ window.SPEC = {
       "vo": "Devin Review makes a first pass on its own. It found no vulnerabilities and two bugs."
     },
     "0059.png": {
-      "hold": 3.0,
+      "hold": 2.7,
       "capPos": "bottom",
       "cap": "Keyboard focus is lost after clearing",
       "vo": "One is that keyboard focus gets lost after you clear the column.",
@@ -318,7 +319,7 @@ window.SPEC = {
     },
     "0110.png": {
       "voGap": 1.2,
-      "hold": 4.4,
+      "hold": 2.4,
       "capPos": "bottom",
       "cap": "Devin pushes a fix and replies",
       "hl": [
@@ -332,7 +333,7 @@ window.SPEC = {
       "vo": "Devin pushes a fix commit and replies with what it changed and how it checked it."
     },
     "0102.png": {
-      "hold": 3.6,
+      "hold": 2.6,
       "capPos": "bottom",
       "cap": "Review runs again: the focus bug is resolved",
       "hl": [
@@ -361,7 +362,7 @@ window.SPEC = {
     "0141.png": {
       "voGap": 1.3,
       "capPos": "bottom",
-      "cap": "Ask it to fix the other bug, then test it",
+      "cap": "Fix the other bug, then test it",
       "vo": "Then ask the same session to fix the other bug and test the flow in its browser.",
       "hl": null
     },
@@ -455,9 +456,9 @@ window.SPEC = {
     },
     "0171.png": {
       "voGap": 1.2,
-      "hold": 3.6,
+      "hold": 2.6,
       "capPos": "bottom",
-      "cap": "It fixes the bug and tests the whole flow",
+      "cap": "Fixed, then tested end to end",
       "hl": [
         {
           "x": 700.0,
@@ -526,7 +527,7 @@ window.SPEC = {
     },
     "0201.png": {
       "voGap": 1.3,
-      "hold": 3.4,
+      "hold": 2.6,
       "capPos": "bottom",
       "cap": "Both review findings are resolved",
       "vo": "Back in Devin Review, both findings are now resolved.",
@@ -705,7 +706,7 @@ window.SPEC = {
     },
     "0253.png": {
       "voGap": 1.3,
-      "hold": 3.6,
+      "hold": 2.6,
       "capPos": "bottom",
       "cap": "Security scans, with fixes as pull requests",
       "hl": [
