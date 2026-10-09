@@ -218,17 +218,13 @@ window.SPEC = {
     },
     "0501.png": {
       "hold": 1.2,
+      "cap": "iPhone: list \u2192 recipe, 8 passed",
       "vo": "On the iPhone, the list opens the recipe, and all eight checks pass."
-    },
-    "0503.png": {
-      "cap": "iPhone: 8 passed"
     },
     "0518.png": {
       "hold": 1.2,
+      "cap": "iPad: sidebar + detail, 3 passed",
       "vo": "And on the iPad, the recipes sit in a sidebar next to the recipe, and all three checks pass."
-    },
-    "0520.png": {
-      "cap": "iPad: sidebar + detail, 3 passed"
     },
     "0531.png": {
       "skip": true

@@ -58,10 +58,8 @@ skip(459, 459)
 ed(484, cap='Every test run comes with a recording', hold=1.6,
    vo="Every test run comes with a recording. In Chrome, the wide layout puts the steps in their own column, and all five checks pass.")
 ed(486, cap='Chrome: 5 passed')
-ed(501, hold=1.2, vo="On the iPhone, the list opens the recipe, and all eight checks pass.")
-ed(503, cap='iPhone: 8 passed')
-ed(518, hold=1.2, vo="And on the iPad, the recipes sit in a sidebar next to the recipe, and all three checks pass.")
-ed(520, cap='iPad: sidebar + detail, 3 passed')
+ed(501, hold=1.2, cap='iPhone: list → recipe, 8 passed', vo="On the iPhone, the list opens the recipe, and all eight checks pass.")
+ed(518, hold=1.2, cap='iPad: sidebar + detail, 3 passed', vo="And on the iPad, the recipes sit in a sidebar next to the recipe, and all three checks pass.")
 skip(531, 534)   # recording ended, same still
 skip(535, 538)   # summary stills: the idle Computer view shows a 'Take control' overlay; end on the passing iPad recording instead
 ed(530, cap='One conversation, three platforms, one PR', hold=2.2,
