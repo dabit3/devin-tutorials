@@ -4,22 +4,23 @@ Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`). Each line pla
 
 | Shot | Narration |
 | --- | --- |
-| Settings → Playbooks (empty list) | This is Devin Playbooks. A playbook is a reusable prompt for a task you run again and again. |
-| Create playbook | Create one in Settings → Playbooks. |
+| Settings → Playbooks (empty list) | Devin Playbooks are reusable prompts for the tasks you run again and again. |
+| Create playbook | Create one in Settings, under Playbooks. |
 | Name field | Give it a name. |
-| Playbook body | Then write the procedure once, in Markdown. |
-| Body with all sections | It has an overview, what Devin needs from you, the steps, specifications, advice, and forbidden actions. |
+| Playbook body with all sections | Then write the procedure once, in Markdown. It has an overview, what Devin needs from you, the steps, specifications, advice, and forbidden actions. |
 | Macro field | Give it a macro, so you can call it with one word. |
 | Save | Save it. |
 | Saved playbook in the Organization list | Now everyone in your organization can use it. |
 | Home screen | Start a new session. |
-| Typing `!before-after` | Type the macro, |
-| Macros menu | and pick it from the menu. |
+| `!before-after` and the Macros menu | Type the macro, and pick it from the Macros menu. |
 | Playbook pill in the composer | The playbook is attached before you send. |
 | `@thequantexplorer/orbit-demo` and the task | Add the repo, and say what to change. |
 | Send | Then send it. |
-| Session, sped up | Devin follows the playbook's steps. It takes a before screenshot, makes the change, and takes an after screenshot. |
-| Session with PR #2 | Then it opens a pull request. |
+| Session, "Used playbook" | Devin shows which playbook it's using, and follows its steps. |
+| Session, sped up | It takes a before screenshot, makes the change, and takes an after screenshot. |
+| Session with PR #19 | Then it opens a pull request. |
+| PR #19 card in the session | Open it right from the session. |
+| PR Changes tab | The change is small, just like the playbook asks. |
 | PR description, Before / After | The description has the before and after screenshots, just like the playbook says. |
 | Outro | Write a procedure once, and reuse it with one macro. |
 
