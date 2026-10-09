@@ -38,6 +38,7 @@ function build() {
   const hs = x => sec(x * (S.pace ?? 1.2));
   const capMin = text => S.capMin ?? Math.max(2.6, 1.0 + text.split(/\s+/).length * 0.3);
   const beats = BEATS.map(b => ({ ...b, ...(edits[b.img] || {}) })).filter(b => !b.skip);
+  tl.scenes = {};
   // a ring belongs to its beat's shot: fade it out before the next shot replaces it
   const clipRing = (img, t0) => {
     if (!ringOn || img === ringOn.img) return;
@@ -48,7 +49,7 @@ function build() {
   const push = (img, t0, dur, fade, extra = {}) => { clipRing(img, t0); tl.steps.push({ img, t0, t1: t0 + dur, fade, prev: shown, ...extra }); shown = img; };
   let settle = 0, voEnd = 0, voStart = 0, voLast = '', voPrev = null, ringOn = null;
   const runK = {}; tl.voLate = [];
-  const VO = S.voLines; tl.vo = []; tl.clips = [];
+  const VO = S.voLines; tl.vo = [];
   const say = (key, t0) => {
     const L = VO[key]; if (!L) return t0;
     voLast = L.text; voStart = t0; voPrev = L;
@@ -73,7 +74,7 @@ function build() {
       // voSync: a beat that illustrates a later part of the current line waits until that many seconds into it.
       if (b.voSync != null) t = Math.max(t, voStart + sec(b.voSync));
       if (L && voPrev && t > voEnd + sec(gap) + sec(0.25)) tl.voLate.push(`${b.img} +${((t - voEnd - sec(gap)) / FPS).toFixed(1)}s`);
-      if ((b.vo && VO[b.img]) || b.waitVo || b.clip) t = Math.max(t, voEnd + sec(gap));
+      if ((b.vo && VO[b.img]) || b.waitVo) t = Math.max(t, voEnd + sec(gap));
       if (b.vo && VO[b.img]) voEnd = say(b.img, t + sec(b.voDelay ?? 0));
     }
     if (b.cap !== undefined && b.cap !== cap) {
@@ -103,9 +104,8 @@ function build() {
     if (b.cursor !== undefined) tl.cursorHide.push({ t, hide: b.cursor === false });
     // hl: true (the beat's captured hlBox, else its target), a centered {x, y, w, h, pad?} box, or an array of boxes draws a highlight ring that stays until the next beat without hl: 'keep'
     bt.push(t);
-    // clip: '<name>' plays <video>/audio/<name>.wav from this beat in every cut (e.g. a recorded voice call)
-    if (b.clip) tl.clips.push({ t, file: b.clip });
     if (b.hl && b.hl !== 'keep') for (const box of b.hl === true ? [b.hlBox || b.target] : [].concat(b.hl)) if (box && box.w) tl.hls.push({ t0: t + sec(b.hlDelay ?? 0.1), i, box, pad: box.pad ?? b.hlPad ?? 6 });
+    if (b.scene && !tl.scenes[b.img]) tl.scenes[b.img] = { name: b.scene, t0: t };
     const first = shown === null;
     if (b.kind === 'hover') {
       const tg = b.target || b.cur, d = Math.hypot(tg.x - cur.x, tg.y - cur.y);
@@ -210,14 +210,23 @@ function drawHighlights(f) {
     ctx.restore();
   }
 }
+// scene: a beat drawn by the tutorial's scenes.js (window.SCENES[name](ctx, seconds, kit)) in 1440x810 UI coords instead of its screenshot.
+async function drawShot(img, f) {
+  const sc = TL.scenes[img];
+  if (!sc) return ctx.drawImage(await bitmap(shotURL(img)), 0, 0, VW, VH);
+  const a = ctx.globalAlpha;
+  ctx.save(); ctx.fillStyle = BG; ctx.fillRect(0, 0, VW, VH);
+  window.SCENES[sc.name](ctx, (f - sc.t0) / FPS, { VW, VH, INK, BG, AVATAR, LOCKUP, font, rr, spaced, spacedW, clamp, lerp, prog, eOut, eInOut, eOutQuint, alpha: a });
+  ctx.restore();
+}
 async function drawUI(f, alpha) {
   const st = stepAt(f); const cam = camAt(f);
   ctx.save();
   ctx.translate(W / 2, H / 2); ctx.scale(cam.z * K, cam.z * K); ctx.translate(-cam.x, -cam.y);
   ctx.imageSmoothingQuality = 'high';
   const fa = st.fade ? clamp((f - st.t0) / st.fade) : 1;
-  if (st.prev && fa < 1) { ctx.drawImage(await bitmap(shotURL(st.prev)), 0, 0, VW, VH); }
-  ctx.globalAlpha = fa; ctx.drawImage(await bitmap(shotURL(st.img)), 0, 0, VW, VH); ctx.globalAlpha = 1;
+  if (st.prev && fa < 1) await drawShot(st.prev, f);
+  ctx.globalAlpha = fa; await drawShot(st.img, f); ctx.globalAlpha = 1;
   drawHighlights(f);
   // click ripple
   for (const c of TL.clicks) {
@@ -316,6 +325,7 @@ function capSize(text) { font(CAP.font, 500); return { w: spacedW(text, -0.8) + 
 const BUSY = new Map(), BG_W = VW / 4, BG_H = Math.round(VH / 4);
 async function busyMap(img) {
   if (BUSY.has(img)) return BUSY.get(img);
+  if (TL.scenes[img]) { const z = new Uint8Array(BG_W * BG_H); BUSY.set(img, z); return z; }
   const oc = new OffscreenCanvas(BG_W, BG_H), c = oc.getContext('2d', { willReadFrequently: true });
   c.drawImage(await bitmap(shotURL(img)), 0, 0, BG_W, BG_H);
   const d = c.getImageData(0, 0, BG_W, BG_H).data, L = new Float32Array(BG_W * BG_H), m = new Uint8Array(BG_W * BG_H);
@@ -445,7 +455,7 @@ async function renderFrame(f) {
 }
 
 function cues() {
-  return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, clicks: TL.clicks.map(c => c.t), typing: TL.typing, clips: TL.clips, caps: SPEC.voLines ? [] : TL.caps.filter(c => c.text).map(c => c.t), vo: TL.vo, voLate: TL.voLate };
+  return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, clicks: TL.clicks.map(c => c.t), typing: TL.typing, caps: SPEC.voLines ? [] : TL.caps.filter(c => c.text).map(c => c.t), vo: TL.vo, voLate: TL.voLate };
 }
 const ready = (async () => {
   await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/spec.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
@@ -459,6 +469,9 @@ const ready = (async () => {
   for (const x of ff) { await x.load(); document.fonts.add(x); }
   LOCKUP = await bitmap('../brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png');
   order.splice(order.indexOf('../brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png'), 1);
+  AVATAR = await bitmap('../brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png');
+  order.splice(order.indexOf('../brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png'), 1);
+  if (BEATS.some(b => (SPEC.edit || {})[b.img]?.scene)) await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/scenes.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
   TL = build(); await placeCaptions(); window.film.frames = TL.frames;
 })();
 window.film = { ready, frames: 0, renderFrame, cues, timeline: () => TL };
