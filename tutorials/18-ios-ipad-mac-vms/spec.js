@@ -68,7 +68,15 @@ window.SPEC = {
       "hold": 2.0,
       "cap": "Open the Computer tab to watch Devin's Mac live",
       "vo": "In the Computer tab, you can watch Devin's Mac live as it builds the app with xcodebuild and boots the simulators.",
-      "voSay": "In the Computer tab, you can watch Devin's Mac live as it builds the app with x code build and boots the simulators."
+      "voSay": "In the Computer tab, you can watch Devin's Mac live as it builds the app with x code build and boots the simulators.",
+      "capPos": {
+        "x": 0.215,
+        "y": 0.32
+      },
+      "subPos": {
+        "x": 0.215,
+        "y": 0.32
+      }
     },
     "0012.png": {
       "skip": true
@@ -272,8 +280,15 @@ window.SPEC = {
         "h": 372
       },
       "ringFor": 2.6,
-      "capPos": "auto",
-      "vo": "A few minutes later, the app is built and tested, and Devin shares screenshots and the project."
+      "capPos": {
+        "x": 0.215,
+        "y": 0.105
+      },
+      "vo": "A few minutes later, the app is built and tested, and Devin shares screenshots and the project.",
+      "subPos": {
+        "x": 0.215,
+        "y": 0.105
+      }
     },
     "0077.png": {
       "skip": true
@@ -283,12 +298,27 @@ window.SPEC = {
     },
     "0080.png": {
       "cap": "Devin asks where to push it: add it to the demo repo",
-      "capPos": "auto",
-      "vo": "Devin asks whether to push it to GitHub, so tell it to add the app to the demo repo and open a pull request."
+      "capPos": {
+        "x": 0.215,
+        "y": 0.105
+      },
+      "vo": "Devin asks whether to push it to GitHub, so tell it to add the app to the demo repo and open a pull request.",
+      "subPos": {
+        "x": 0.215,
+        "y": 0.105
+      }
     },
     "0102.png": {
       "cap": "Devin adds the app and retakes screenshots on both simulators",
-      "vo": "Devin adds the app to the repo, and relaunches both simulators to take fresh screenshots for the README."
+      "vo": "Devin adds the app to the repo, and relaunches both simulators to take fresh screenshots for the README.",
+      "capPos": {
+        "x": 0.215,
+        "y": 0.105
+      },
+      "subPos": {
+        "x": 0.215,
+        "y": 0.105
+      }
     },
     "0130.png": {
       "hold": 2.4,
@@ -301,7 +331,11 @@ window.SPEC = {
       },
       "ringFor": 2.4,
       "capPos": "auto",
-      "vo": "Then it opens the pull request on its own."
+      "vo": "Then it opens the pull request on its own.",
+      "subPos": {
+        "x": 0.215,
+        "y": 0.13
+      }
     },
     "0131.png": {
       "hold": 2.8,
@@ -315,7 +349,11 @@ window.SPEC = {
       "ringFor": 2.8,
       "capPos": "auto",
       "vo": "It also suggests a blueprint change, so XcodeGen is ready next time.",
-      "voSay": "It also suggests a blueprint change, so x code gen is ready next time."
+      "voSay": "It also suggests a blueprint change, so x code gen is ready next time.",
+      "subPos": {
+        "x": 0.25,
+        "y": 0.785
+      }
     },
     "0132.png": {
       "skip": true
@@ -360,12 +398,22 @@ window.SPEC = {
         "h": 384.4
       },
       "ringFor": 2.2,
-      "capPos": "auto",
-      "vo": "Every test run comes with a recording."
+      "capPos": {
+        "x": 0.2,
+        "y": 0.215
+      },
+      "vo": "Every test run comes with a recording.",
+      "subPos": {
+        "x": 0.2,
+        "y": 0.215
+      }
     },
     "0144.png": {
       "cap": "Open the test recording",
-      "capPos": "auto"
+      "capPos": {
+        "x": 0.53,
+        "y": 0.13
+      }
     },
     "0147.png": {
       "cap": "iPhone: browse planets, favorite Earth, relaunch",
@@ -377,11 +425,23 @@ window.SPEC = {
       },
       "ringFor": 2.4,
       "capPos": "auto",
-      "vo": "On the iPhone, Devin taps through the planets, favorites Earth, and checks that it's still saved after a relaunch."
+      "vo": "On the iPhone, Devin taps through the planets, favorites Earth, and checks that it's still saved after a relaunch.",
+      "subPos": {
+        "x": 0.53,
+        "y": 0.13
+      }
     },
     "0172.png": {
       "cap": "iPad: sidebar and Favorite, landscape and portrait",
-      "vo": "On the iPad, it checks the sidebar and the Favorite button in landscape and portrait, and all eleven checks pass."
+      "vo": "On the iPad, it checks the sidebar and the Favorite button in landscape and portrait, and all eleven checks pass.",
+      "capPos": {
+        "x": 0.53,
+        "y": 0.13
+      },
+      "subPos": {
+        "x": 0.53,
+        "y": 0.13
+      }
     },
     "0195.png": {
       "ring": {
@@ -396,7 +456,11 @@ window.SPEC = {
     },
     "0205.png": {
       "hold": 1.5,
-      "vo": "And when you're ready to ship, Devin can also upload builds to TestFlight."
+      "vo": "And when you're ready to ship, Devin can also upload builds to TestFlight.",
+      "subPos": {
+        "x": 0.53,
+        "y": 0.13
+      }
     },
     "0010.png": {
       "skip": true
