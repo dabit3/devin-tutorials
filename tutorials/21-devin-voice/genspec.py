@@ -52,8 +52,8 @@ ed(404, cap='Devin opens the PR in product-demo-apps', hold=1.6,
 ed(444, cap='Ask for a proper iPhone test recording', hold=1.6,
    vo="The first iPhone run came back as a plain video, so I ask for a real test recording with pass and fail checks.")
 ed(456, hl=True)
-ed(458, cap='Watch the iPhone Simulator live in the Computer tab', hl=True,
-   vo="In the Computer tab, you can watch Devin tap through Cook Mode on the iPhone Simulator, timer and all.")
+ed(458, cap='Watch the iPhone Simulator live in the Computer tab', hl=True)
+ed(455, vo="In the Computer tab, you can watch Devin tap through Cook Mode on the iPhone Simulator, timer and all.")  # line starts as Devin opens the Computer tab
 skip(459, 459)
 skip(484, 484)   # 'Take control' overlay
 ed(485, cap='Every test run comes with a recording', hold=1.6,
@@ -70,5 +70,14 @@ ed(530, cap='One conversation, three platforms, one PR', hold=2.2,
 spec = {'title': 'Devin Voice', 'subtitle': 'Talk an app into existence, then watch Devin test it',
         'outro': 'One call, tested on web, iPhone and iPad', 'speed': 3, 'cps': 48, 'capPos': 'bottom',
         'pollRunMax': 2.5, 'edit': E}
-open(os.path.join(D, 'spec.js'), 'w').write('window.SPEC = ' + json.dumps(spec, indent=2) + ';\n')
+# narrated cut only: keep silences between lines near 1 s (calls untouched)
+NARRATED_JS = """const NARRATED = !!new URLSearchParams(location.search).get('voice');
+if (NARRATED) {
+  SPEC.pollRunMax = 1.0;
+  for (const [k, v] of Object.entries({ '0199.png': { travel: 0.45, dwell: 0.1 }, '0200.png': { hold: 0.35 },
+                                        '0294.png': { travel: 0.45, dwell: 0.1 }, '0295.png': { hold: 0.35 } }))
+    Object.assign(SPEC.edit[k] ??= {}, v);
+}
+"""
+open(os.path.join(D, 'spec.js'), 'w').write('window.SPEC = ' + json.dumps(spec, indent=2) + ';\n' + NARRATED_JS)
 subprocess.run(['python3', os.path.join(D, 'synccall.py')], check=True)

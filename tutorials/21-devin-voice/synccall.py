@@ -4,7 +4,8 @@ frames line up with the call audio. Run after editing spec.js by hand; it only t
 import json, os, re
 D = os.path.dirname(os.path.abspath(__file__))
 P = os.path.join(D, 'spec.js')
-spec = json.loads(re.sub(r'^\s*window\.SPEC\s*=\s*', '', open(P).read()).rstrip().rstrip(';'))
+head, _, tail = open(P).read().partition('\n};\n')  # tail: narrated-only JS after the JSON
+spec = json.loads(re.sub(r'^\s*window\.SPEC\s*=\s*', '', head) + '\n}')
 beats = json.load(open(os.path.join(D, 'shots', 'beats.json')))
 pace, E = spec.get('pace', 1.2), spec.setdefault('edit', {})
 TRIM = json.load(open(os.path.join(D, 'call', 'trim.json'))) if os.path.exists(os.path.join(D, 'call', 'trim.json')) else {}
@@ -22,4 +23,4 @@ for name in sorted({b['call'] for b in beats if b.get('call')}):
         e['hold'] = round((nxt - b['wall']) / 1000 / pace, 4)
         if i == 0: e['clip'] = name
     print(name, len(cs), 'stills', round((m['t1'] - cs[0]['wall']) / 1000, 1), 's')
-open(P, 'w').write('window.SPEC = ' + json.dumps(spec, indent=2) + ';\n')
+open(P, 'w').write('window.SPEC = ' + json.dumps(spec, indent=2) + ';\n' + tail)

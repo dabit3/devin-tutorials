@@ -202,7 +202,9 @@ window.SPEC = {
     },
     "0458.png": {
       "cap": "Watch the iPhone Simulator live in the Computer tab",
-      "hl": true,
+      "hl": true
+    },
+    "0455.png": {
       "vo": "In the Computer tab, you can watch Devin tap through Cook Mode on the iPhone Simulator, timer and all."
     },
     "0459.png": {
@@ -881,3 +883,10 @@ window.SPEC = {
     }
   }
 };
+const NARRATED = !!new URLSearchParams(location.search).get('voice');
+if (NARRATED) {
+  SPEC.pollRunMax = 1.0;
+  for (const [k, v] of Object.entries({ '0199.png': { travel: 0.45, dwell: 0.1 }, '0200.png': { hold: 0.35 },
+                                        '0294.png': { travel: 0.45, dwell: 0.1 }, '0295.png': { hold: 0.35 } }))
+    Object.assign(SPEC.edit[k] ??= {}, v);
+}
