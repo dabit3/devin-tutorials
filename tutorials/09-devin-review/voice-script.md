@@ -6,7 +6,7 @@ Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`), generated as 
 | --- | --- |
 | Home screen | Devin Review helps you understand a pull request, and catch its bugs before they merge. |
 | Review in the sidebar | Open Review from the sidebar. |
-| Review list | It lists the pull requests waiting on you. This one adds a card count to each column of a kanban board. |
+| Review list | It lists the pull requests waiting on you. For this demo, we had Devin open one that adds card counts to a kanban board, with a subtle bug planted on purpose. |
 | Opening the pull request | Open it. |
 | Devin's analysis | Devin reviewed it as soon as it opened, and sums up what it changes. |
 | Bugs list | It also found two bugs, each with the file and line. |

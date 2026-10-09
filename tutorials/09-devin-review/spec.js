@@ -28,11 +28,11 @@ window.SPEC = {
       "skip": true
     },
     "0004.png": {
-      "cap": "Pull requests waiting on you",
+      "cap": "A demo PR with a bug planted on purpose",
       "hl": true,
-      "hold": 2.4,
+      "hold": 2.8,
       "capPos": "bottom",
-      "vo": "It lists the pull requests waiting on you. This one adds a card count to each column of a kanban board."
+      "vo": "It lists the pull requests waiting on you. For this demo, we had Devin open one that adds card counts to a kanban board, with a subtle bug planted on purpose."
     },
     "0005.png": {
       "cap": "Open the pull request",
