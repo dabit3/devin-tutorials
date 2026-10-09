@@ -25,7 +25,7 @@ Nader voice `T8iHhGIWPm2GVYpQD1Am`, ElevenLabs default settings, generated as on
 - `0073.png`: Give it a name.
 - `0081.png`: Triggers decide when it runs, and if you add several, any one of them can start it.
 - `0083.png`: Pick Schedule, then every day.
-- `0094.png`: Set it to seven o'clock. A schedule keeps its own time zone, here Pacific time.
+- `0086.png`: Set it to seven o'clock. A schedule keeps its own time zone, here Pacific time.
 - `0095.png`: Start new session gives every run its own fresh Devin session.
 - `0096.png`: Then tell Devin what to do on every run.
 - `0100.png`: Type @ to mention the repository.
