@@ -20,7 +20,7 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "cap": "Each primitive teaches Devin something different",
-      "vo": "Devin gets better the more you teach it, and each primitive is a different way to teach it.",
+      "vo": "Devin gets better the more you teach it. Each primitive is a different way to teach it.",
       "hl": null
     },
     "0001.png": {
