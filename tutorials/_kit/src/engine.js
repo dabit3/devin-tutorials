@@ -31,19 +31,28 @@ const shotURL = img => `../../${V}/shots/${img}`;
 function build() {
   const S = SPEC, edits = S.edit || {};
   const INTRO = sec(S.introHold ?? 3.4), ENTER = sec(1.2);
-  const tl = { steps: [], caps: [], cams: [], badges: [], clicks: [], typing: [], cursorHide: [], hls: [] };
+  const tl = { steps: [], caps: [], cams: [], badges: [], clicks: [], typing: [], cursorHide: [], rings: [], hls: [] };
   const bt = [];
   let t = INTRO, cur = { x: VW / 2 + 120, y: VH * 0.78 }, shown = null, speed = S.speed ?? 4;
   let cap = undefined, badge = undefined, capT = 0;
   const hs = x => sec(x * (S.pace ?? 1.2));
   const capMin = text => S.capMin ?? Math.max(2.6, 1.0 + text.split(/\s+/).length * 0.3);
   const beats = BEATS.map(b => ({ ...b, ...(edits[b.img] || {}) })).filter(b => !b.skip);
-  const push = (img, t0, dur, fade, extra = {}) => { tl.steps.push({ img, t0, t1: t0 + dur, fade, prev: shown, ...extra }); shown = img; };
-  let settle = 0, voEnd = 0, voStart = 0, voLast = '';
+  tl.scenes = {};
+  // a ring belongs to its beat's shot: fade it out before the next shot replaces it
+  const clipRing = (img, t0) => {
+    if (!ringOn || img === ringOn.img) return;
+    const end = Math.max(ringOn.t + sec(0.4), t0 - sec(0.35));
+    if (ringOn.until == null || ringOn.until > end) tl.rings.push({ t: end, box: null });
+    ringOn = null;
+  };
+  const push = (img, t0, dur, fade, extra = {}) => { clipRing(img, t0); tl.steps.push({ img, t0, t1: t0 + dur, fade, prev: shown, ...extra }); shown = img; };
+  let settle = 0, voEnd = 0, voStart = 0, voLast = '', voPrev = null, ringOn = null;
+  const runK = {}; tl.voLate = [];
   const VO = S.voLines; tl.vo = [];
   const say = (key, t0) => {
     const L = VO[key]; if (!L) return t0;
-    voLast = L.text; voStart = t0;
+    voLast = L.text; voStart = t0; voPrev = L;
     tl.vo.push({ t: t0, file: key });
     for (const c of L.chunks) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos: 'bottom' });
     tl.caps.push({ t: t0 + sec(L.dur + 0.3), text: '', pos: 'bottom' });
@@ -58,9 +67,13 @@ function build() {
     if (S.noCaps) b = { ...b, cap: undefined };
     if (VO) {
       b = { ...b, cap: undefined };
-      const gap = /[.?!]$/.test(voLast.trim()) ? Math.max(b.voGap ?? 0, S.voSentGap ?? 0.75) : (b.voGap ?? 0.35);
+      // lines cut from one take (vo_onetake.py records at/end) keep the take's own pause between them
+      const L = b.vo && VO[b.img];
+      const nat = S.voNatural !== false && L && voPrev && L.at != null && voPrev.end != null ? Math.max(0, L.at - voPrev.end) : null;
+      const gap = nat ?? /[.?!]$/.test(voLast.trim()) ? Math.max(b.voGap ?? 0, S.voSentGap ?? 0.75) : (b.voGap ?? 0.35);
       // voSync: a beat that illustrates a later part of the current line waits until that many seconds into it.
       if (b.voSync != null) t = Math.max(t, voStart + sec(b.voSync));
+      if (L && voPrev && t > voEnd + sec(gap) + sec(0.25)) tl.voLate.push(`${b.img} +${((t - voEnd - sec(gap)) / FPS).toFixed(1)}s`);
       if ((b.vo && VO[b.img]) || b.waitVo) t = Math.max(t, voEnd + sec(gap));
       if (b.vo && VO[b.img]) voEnd = say(b.img, t + sec(b.voDelay ?? 0));
     }
@@ -76,14 +89,23 @@ function build() {
     if (b.cap !== undefined && b.cap !== cap) {
       cap = b.cap; capT = t + sec(b.capDelay ?? 0);
       if (camIn && b.capDelay === undefined) capT = camIn.t + Math.round(camIn.dur * 0.75);
-      tl.caps.push({ t: capT, text: cap, pos: b.capPos || S.capPos || 'auto', anchor: b.target || b.cur });
+      tl.caps.push({ t: capT, text: cap, pos: b.capPos || S.capPos || 'auto', anchor: b.target || (b.ring && b.ring.w ? b.ring : null) || b.cur });
+    }
+    // ring: {x,y,w,h} (center + size, 1440x810 UI px) or true (the beat's target) draws a thin annotation border; false clears it
+    if (b.ring !== undefined) {
+      const box = b.ring === true ? b.target : b.ring || null;
+      const r0 = t + sec(b.ringDelay ?? 0.2);
+      tl.rings.push({ t: r0, box: box && { ...box, pad: b.ringPad ?? 7, r: b.ringRadius ?? 12 } });
+      ringOn = box ? { img: b.img, t: r0 } : null;
+      if (box && b.ringFor) { ringOn.until = r0 + sec(b.ringFor); tl.rings.push({ t: ringOn.until, box: null }); }
     }
     if (b.badge !== undefined && b.badge !== badge) { badge = b.badge; tl.badges.push({ t, text: badge }); }
     if (b.speed) speed = b.speed;
     if (b.cursor !== undefined) tl.cursorHide.push({ t, hide: b.cursor === false });
-    // hl: true (the beat's captured hlBox, else its target) or {x, y, w, h} draws a highlight ring that stays until the next beat without hl: 'keep'
+    // hl: true (the beat's captured hlBox, else its target), a centered {x, y, w, h, pad?} box, or an array of boxes draws a highlight ring that stays until the next beat without hl: 'keep'
     bt.push(t);
-    if (b.hl && b.hl !== 'keep') { const box = b.hl === true ? (b.hlBox || b.target) : b.hl; if (box && box.w) tl.hls.push({ t0: t + sec(b.hlDelay ?? 0.1), i, box, pad: b.hlPad ?? 6 }); }
+    if (b.hl && b.hl !== 'keep') for (const box of b.hl === true ? [b.hlBox || b.target] : [].concat(b.hl)) if (box && box.w) tl.hls.push({ t0: t + sec(b.hlDelay ?? 0.1), i, box, pad: box.pad ?? b.hlPad ?? 6 });
+    if (b.scene && !tl.scenes[b.img]) tl.scenes[b.img] = { name: b.scene, t0: t };
     const first = shown === null;
     if (b.kind === 'hover') {
       const tg = b.target || b.cur, d = Math.hypot(tg.x - cur.x, tg.y - cur.y);
@@ -100,8 +122,27 @@ function build() {
       tl.typing.push({ t, dur, n: b.n || 2 }); push(b.img, t, dur + hs(b.hold ?? 0), 0); t += dur + hs(b.hold ?? 0);
     } else if (b.kind === 'poll') {
       const nx = beats[i + 1]; const dt = (nx && nx.kind === 'poll' && nx.at > b.at) ? (nx.at - b.at) / 1000 : 1;
-      const dur = Math.max(3, sec(b.hold ?? dt / speed)); push(b.img, t, dur, b.fade ?? Math.min(8, Math.floor(dur / 2))); t += dur;
-    } else { const dur = hs(b.hold ?? 1.0); push(b.img, t, dur, b.fade ?? 6); t += dur; }
+      let dur = Math.max(3, sec(b.hold ?? dt / speed));
+      // pollRunMax: a run of plain polls (Devin just working) lasts at most this many seconds past any narration still playing
+      if (S.pollRunMax != null && b.hold == null && !b.ring) {
+        if (!(b.img in runK)) {
+          const run = []; let sp = speed, sum = 0;
+          for (let j = i; j < beats.length; j++) {
+            const c = beats[j];
+            if (c.kind !== 'poll' || c.hold != null || c.ring || (j > i && c.vo)) break;
+            if (j > i && c.speed) sp = c.speed;
+            const n2 = beats[j + 1], d2 = (n2 && n2.kind === 'poll' && n2.at > c.at) ? (n2.at - c.at) / 1000 : 1;
+            run.push(c.img); sum += Math.max(3, sec(d2 / sp));
+          }
+          const budget = sec(S.pollRunMax) + (VO ? Math.max(0, voEnd - t) : 0);
+          for (const img of run) runK[img] = Math.min(1, budget / sum);
+        }
+        dur = Math.max(3, Math.round(dur * runK[b.img]));
+      }
+      // a ringed beat stays on screen until its ring has been seen (ringFor + delay + fade-out)
+      if (b.ring) dur = Math.max(dur, sec((b.ringFor ?? 2.5) + (b.ringDelay ?? 0.2) + 0.5));
+      push(b.img, t, dur, b.fade ?? Math.min(8, Math.floor(dur / 2))); t += dur;
+    } else { const dur = Math.max(hs(b.hold ?? 1.0), b.ring ? sec((b.ringFor ?? 2.5) + (b.ringDelay ?? 0.2) + 0.5) : 0); push(b.img, t, dur, b.fade ?? 6); t += dur; }
   });
   if (VO) t = Math.max(t, voEnd + sec(0.5));
   t += sec(S.tailHold ?? 1.0);
@@ -110,6 +151,7 @@ function build() {
   tl.introEnd = INTRO; tl.enter = ENTER; tl.uiEnd = t; tl.outro = sec(3.6);
   if (VO && VO.outro) { const t0 = t + sec(1.0); tl.vo.push({ t: t0, file: 'outro' }); tl.outro = Math.max(tl.outro, sec(1.0 + VO.outro.dur + 1.4)); }
   tl.frames = t + tl.outro;
+  tl.rings.sort((a, b) => a.t - b.t);
   // clamp first step start to 0 so the window shows the first shot while entering
   const firstImg = tl.steps.find(s => s.img); firstImg.t0 = 0;
   tl.imgSteps = tl.steps.filter(s => s.img);
@@ -168,14 +210,23 @@ function drawHighlights(f) {
     ctx.restore();
   }
 }
+// scene: a beat drawn by the tutorial's scenes.js (window.SCENES[name](ctx, seconds, kit)) in 1440x810 UI coords instead of its screenshot.
+async function drawShot(img, f) {
+  const sc = TL.scenes[img];
+  if (!sc) return ctx.drawImage(await bitmap(shotURL(img)), 0, 0, VW, VH);
+  const a = ctx.globalAlpha;
+  ctx.save(); ctx.fillStyle = BG; ctx.fillRect(0, 0, VW, VH);
+  window.SCENES[sc.name](ctx, (f - sc.t0) / FPS, { VW, VH, INK, BG, AVATAR, LOCKUP, font, rr, spaced, spacedW, clamp, lerp, prog, eOut, eInOut, eOutQuint, alpha: a });
+  ctx.restore();
+}
 async function drawUI(f, alpha) {
   const st = stepAt(f); const cam = camAt(f);
   ctx.save();
   ctx.translate(W / 2, H / 2); ctx.scale(cam.z * K, cam.z * K); ctx.translate(-cam.x, -cam.y);
   ctx.imageSmoothingQuality = 'high';
   const fa = st.fade ? clamp((f - st.t0) / st.fade) : 1;
-  if (st.prev && fa < 1) { ctx.drawImage(await bitmap(shotURL(st.prev)), 0, 0, VW, VH); }
-  ctx.globalAlpha = fa; ctx.drawImage(await bitmap(shotURL(st.img)), 0, 0, VW, VH); ctx.globalAlpha = 1;
+  if (st.prev && fa < 1) await drawShot(st.prev, f);
+  ctx.globalAlpha = fa; await drawShot(st.img, f); ctx.globalAlpha = 1;
   drawHighlights(f);
   // click ripple
   for (const c of TL.clicks) {
@@ -184,6 +235,7 @@ async function drawUI(f, alpha) {
     ctx.fillStyle = `rgba(32,120,255,${0.22 * (1 - p)})`; ctx.fill();
     ctx.lineWidth = 1.5; ctx.strokeStyle = `rgba(32,120,255,${0.55 * (1 - p)})`; ctx.stroke();
   }
+  drawRings(f, cam);
   const hideK = lastBefore(TL.cursorHide, f); let ca = 1;
   if (hideK) ca = hideK.hide ? 1 - prog(f, hideK.t, hideK.t + 12) : prog(f, hideK.t, hideK.t + 12);
   if (ca > 0) {
@@ -192,6 +244,27 @@ async function drawUI(f, alpha) {
     ctx.globalAlpha = ca; drawCursor(c.x, c.y, s); ctx.globalAlpha = 1;
   }
   ctx.restore();
+}
+// Annotation border: a thin rounded outline that draws itself in around the region the caption/narration refers to.
+const RING = { color: '42,108,246', width: 1.7 };
+function ring(box, f, t0, out) {
+  const pad = box.pad, x = box.x - box.w / 2 - pad, y = box.y - box.h / 2 - pad, w = box.w + pad * 2, h = box.h + pad * 2;
+  const draw = eOutQuint(prog(f, t0, t0 + sec(0.75))), a = eOut(prog(f, t0, t0 + sec(0.3))) * (1 - out), s = lerp(1.03, 1, eOutQuint(prog(f, t0, t0 + sec(0.6))));
+  if (a <= 0) return;
+  const len = 2 * (w + h);
+  ctx.save(); ctx.translate(x + w / 2, y + h / 2); ctx.scale(s, s); ctx.translate(-(x + w / 2), -(y + h / 2));
+  ctx.globalAlpha = a;
+  rr(x, y, w, h, box.r); ctx.fillStyle = `rgba(${RING.color},0.035)`; ctx.fill();
+  ctx.shadowColor = `rgba(${RING.color},0.35)`; ctx.shadowBlur = 10; ctx.shadowOffsetY = 1;
+  ctx.setLineDash([len * draw, len]); ctx.lineDashOffset = 0; ctx.lineCap = 'round';
+  ctx.lineWidth = RING.width; ctx.strokeStyle = `rgba(${RING.color},0.95)`; rr(x, y, w, h, box.r); ctx.stroke();
+  ctx.restore();
+}
+function drawRings(f) {
+  const k = lastBefore(TL.rings, f); if (!k) return;
+  const i = TL.rings.indexOf(k), prev = TL.rings[i - 1], OUT = sec(0.35);
+  if (prev && prev.box && f < k.t + OUT) ring(prev.box, f, prev.t, prog(f, k.t, k.t + OUT));
+  if (k.box) ring(k.box, f, k.t, 0);
 }
 function drawBackdrop(a = 1) {
   ctx.fillStyle = BG; ctx.fillRect(0, 0, W, H);
@@ -252,6 +325,7 @@ function capSize(text) { font(CAP.font, 500); return { w: spacedW(text, -0.8) + 
 const BUSY = new Map(), BG_W = VW / 4, BG_H = Math.round(VH / 4);
 async function busyMap(img) {
   if (BUSY.has(img)) return BUSY.get(img);
+  if (TL.scenes[img]) { const z = new Uint8Array(BG_W * BG_H); BUSY.set(img, z); return z; }
   const oc = new OffscreenCanvas(BG_W, BG_H), c = oc.getContext('2d', { willReadFrequently: true });
   c.drawImage(await bitmap(shotURL(img)), 0, 0, BG_W, BG_H);
   const d = c.getImageData(0, 0, BG_W, BG_H).data, L = new Float32Array(BG_W * BG_H), m = new Uint8Array(BG_W * BG_H);
@@ -381,7 +455,7 @@ async function renderFrame(f) {
 }
 
 function cues() {
-  return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, clicks: TL.clicks.map(c => c.t), typing: TL.typing, caps: SPEC.voLines ? [] : TL.caps.filter(c => c.text).map(c => c.t), vo: TL.vo };
+  return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, clicks: TL.clicks.map(c => c.t), typing: TL.typing, caps: SPEC.voLines ? [] : TL.caps.filter(c => c.text).map(c => c.t), vo: TL.vo, voLate: TL.voLate };
 }
 const ready = (async () => {
   await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/spec.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
@@ -395,6 +469,9 @@ const ready = (async () => {
   for (const x of ff) { await x.load(); document.fonts.add(x); }
   LOCKUP = await bitmap('../brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png');
   order.splice(order.indexOf('../brand/DEVIN_LOCKUP_HORIZONTAL_WHITE_TRANSPARENT.png'), 1);
+  AVATAR = await bitmap('../brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png');
+  order.splice(order.indexOf('../brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png'), 1);
+  if (BEATS.some(b => (SPEC.edit || {})[b.img]?.scene)) await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/scenes.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
   TL = build(); await placeCaptions(); window.film.frames = TL.frames;
 })();
 window.film = { ready, frames: 0, renderFrame, cues, timeline: () => TL };
