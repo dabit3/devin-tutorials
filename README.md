@@ -27,6 +27,7 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 23. **Managed Devins: how it works** (overview, 1:16): A short diagram-led overview instead of a step-by-step run. One coordinator Devin splits a big task across managed Devins, each in its own isolated VM, monitors them, and compiles one summary; real shots from tutorial 19 show the four managed Devins, the sidebar tree, the PR summary and a message relayed through the coordinator, then Settings → Preferences → Auto-approve child sessions, the nesting tree, and four use cases (migrations, test coverage, one playbook across services, parallel research). [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/23-managed-devins-overview/23-managed-devins-overview.mp4)
 24. **Devin Automations: how they work (overview)** (1:08): A short concept overview, mostly animated diagrams: an automation is a trigger plus instructions, triggers (schedule, GitHub, GitLab, Slack, Linear, Jira, PagerDuty, webhooks) each start a Devin session with your prompt and the event's details, the three ways to create one (plain English, a template, by hand), and four high-value use cases, with real UI proof shots of a GitHub Check run trigger fixing failing CI. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/24-automations-overview/24-automations-overview.mp4)
+
 ## Narrated tutorials
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
