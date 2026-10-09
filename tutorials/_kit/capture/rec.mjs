@@ -36,7 +36,7 @@ export class Rec {
     const f = `${String(this.n++).padStart(4, '0')}.png`;
     await this.p.evaluate(MASK).catch(() => {});
     await this.p.screenshot({ path: `${this.dir}/${f}` });
-    this.beats.push({ img: f, cur: sc(this.cur), ...meta, ...(meta.target && { target: sc(meta.target) }), ...(meta.clickAt && { clickAt: sc(meta.clickAt) }) }); this.save(); return f;
+    this.beats.push({ img: f, cur: sc(this.cur), ...meta, ...(meta.target && { target: sc(meta.target) }), ...(meta.clickAt && { clickAt: sc(meta.clickAt) }), ...(meta.hlBox && { hlBox: sc(meta.hlBox) }) }); this.save(); return f;
   }
   save() { fs.writeFileSync(`${this.dir}/beats.json`, JSON.stringify(this.beats, null, 1)); }
   async find(t) { if (typeof t === 'object' && 'x' in t) return t; return this.p.evaluate(locate, t); }
