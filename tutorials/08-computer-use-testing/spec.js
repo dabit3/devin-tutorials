@@ -5,7 +5,6 @@ window.SPEC = {
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
-  "capPos": "bottom",
   "capArrows": false,
   "pollRunMax": 3,
   "edit": {
