@@ -31,7 +31,8 @@ const shotURL = img => `../../${V}/shots/${img}`;
 function build() {
   const S = SPEC, edits = S.edit || {};
   const INTRO = sec(S.introHold ?? 3.4), ENTER = sec(1.2);
-  const tl = { steps: [], caps: [], cams: [], badges: [], clicks: [], typing: [], cursorHide: [] };
+  const tl = { steps: [], caps: [], cams: [], badges: [], clicks: [], typing: [], cursorHide: [], hls: [] };
+  let hl = null;
   let t = INTRO, cur = { x: VW / 2 + 120, y: VH * 0.78 }, shown = null, speed = S.speed ?? 4;
   let cap = undefined, badge = undefined, capT = 0;
   const hs = x => sec(x * (S.pace ?? 1.2));
@@ -78,6 +79,9 @@ function build() {
       tl.caps.push({ t: capT, text: cap, pos: b.capPos || S.capPos || 'auto', anchor: b.target || b.cur });
     }
     if (b.badge !== undefined && b.badge !== badge) { badge = b.badge; tl.badges.push({ t, text: badge }); }
+    if (b.hl !== undefined && JSON.stringify(b.hl) !== JSON.stringify(hl)) { // elegant outline around the UI being discussed
+      hl = b.hl; tl.hls.push({ t: t + sec(b.hlDelay ?? (camIn ? (camIn.t - t) / FPS + (b.camDur ?? 1.0) * 0.6 : 0.15)), box: hl && [].concat(hl) });
+    }
     if (b.speed) speed = b.speed;
     if (b.cursor !== undefined) tl.cursorHide.push({ t, hide: b.cursor === false });
     const first = shown === null;
@@ -162,6 +166,7 @@ async function drawUI(f, alpha) {
     ctx.fillStyle = `rgba(32,120,255,${0.22 * (1 - p)})`; ctx.fill();
     ctx.lineWidth = 1.5; ctx.strokeStyle = `rgba(32,120,255,${0.55 * (1 - p)})`; ctx.stroke();
   }
+  drawHighlight(f, cam);
   const hideK = lastBefore(TL.cursorHide, f); let ca = 1;
   if (hideK) ca = hideK.hide ? 1 - prog(f, hideK.t, hideK.t + 12) : prog(f, hideK.t, hideK.t + 12);
   if (ca > 0) {
@@ -170,6 +175,28 @@ async function drawUI(f, alpha) {
     ctx.globalAlpha = ca; drawCursor(c.x, c.y, s); ctx.globalAlpha = 1;
   }
   ctx.restore();
+}
+// Thin rounded outline that draws in around a region (UI coords), fades out when the next one replaces it.
+function drawHighlight(f, cam) {
+  const k = lastBefore(TL.hls, f); if (!k) return;
+  const i = TL.hls.indexOf(k), prev = TL.hls[i - 1];
+  const one = (h, a, p) => {
+    if (!h || !h.box || a <= 0) return;
+    for (const b of h.box) {
+      const pad = b.pad ?? 6, s = lerp(1.035, 1, p), cx = b.x + b.w / 2, cy = b.y + b.h / 2;
+      const w = (b.w + pad * 2) * s, ht = (b.h + pad * 2) * s, x = cx - w / 2, y = cy - ht / 2, r = b.r ?? 12;
+      ctx.save(); ctx.globalAlpha = a;
+      rr(x, y, w, ht, r); ctx.fillStyle = `rgba(38,110,255,${0.045 * p})`; ctx.fill();
+      ctx.shadowColor = 'rgba(38,110,255,.35)'; ctx.shadowBlur = 14 * K / 2; ctx.shadowOffsetY = 0;
+      const per = 2 * (w + ht);
+      ctx.setLineDash([per * p, per]); ctx.lineDashOffset = 0;
+      rr(x, y, w, ht, r); ctx.lineWidth = 2 / Math.sqrt(cam.z); ctx.strokeStyle = 'rgba(38,110,255,.95)'; ctx.stroke();
+      ctx.restore();
+    }
+  };
+  if (prev && f < k.t + 14) one(prev, 1 - prog(f, k.t, k.t + 12), 1);
+  const p = eOutQuint(prog(f, k.t, k.t + 34));
+  one(k, prog(f, k.t, k.t + 10), p);
 }
 function drawBackdrop(a = 1) {
   ctx.fillStyle = BG; ctx.fillRect(0, 0, W, H);

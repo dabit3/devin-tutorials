@@ -36,10 +36,12 @@ export class Rec {
     const f = `${String(this.n++).padStart(4, '0')}.png`;
     await this.p.evaluate(MASK).catch(() => {});
     await this.p.screenshot({ path: `${this.dir}/${f}` });
-    this.beats.push({ img: f, cur: sc(this.cur), ...meta, ...(meta.target && { target: sc(meta.target) }), ...(meta.clickAt && { clickAt: sc(meta.clickAt) }) }); this.save(); return f;
+    this.beats.push({ img: f, cur: sc(this.cur), ...meta, ...(meta.target && { target: sc(meta.target) }), ...(meta.clickAt && { clickAt: sc(meta.clickAt) }), ...(meta.hl && { hl: [].concat(meta.hl).map(sc) }) }); this.save(); return f;
   }
   save() { fs.writeFileSync(`${this.dir}/beats.json`, JSON.stringify(this.beats, null, 1)); }
   async find(t) { if (typeof t === 'object' && 'x' in t) return t; return this.p.evaluate(locate, t); }
+  // top-left rect of an element (for hl: thin outline drawn by the renderer)
+  async rect(t, pad = {}) { const b = await this.box(t); return { x: b.x - b.w / 2, y: b.y - b.h / 2, w: b.w, h: b.h, ...pad }; }
   async box(t) { const b = await this.find(t); if (!b) throw new Error('not found: ' + JSON.stringify(t)); return b; }
   async move(target, meta = {}) { const b = await this.box(target); this.cur = { x: b.x, y: b.y }; await this.p.mouse.move(b.x, b.y); await sleep(meta.settle ?? 300); return b; }
   // explain a control without hovering it (no tooltip, cursor stays put)
