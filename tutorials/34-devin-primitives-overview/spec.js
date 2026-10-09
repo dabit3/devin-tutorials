@@ -3,6 +3,7 @@ window.SPEC = {
   "subtitle": "When to use each one, where it lives, and how to build it",
   "outro": "Teach it once, and every session starts smarter",
   "voOutro": "Teach it once, and every session starts smarter.",
+  "outroVoDelay": 0.2,
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
@@ -50,9 +51,17 @@ window.SPEC = {
         "h": 100
       },
       "ringFor": 3.2,
-      "cap": "Customize → Rules → Create rule, trigger Always on",
+      "cap": "Customize → Rules: trigger Always on",
       "vo": "You can also write a rule under Customize, Rules, and set its trigger to always on.",
-      "hl": null
+      "hl": null,
+      "subPos": {
+        "x": 0.21,
+        "y": 0.82
+      },
+      "capPos": {
+        "x": 0.21,
+        "y": 0.82
+      }
     },
     "0004.png": {
       "hold": 3.8,
@@ -66,7 +75,15 @@ window.SPEC = {
       "ringFor": 3.4,
       "cap": "Customize → Memory: learned automatically, personal to you",
       "vo": "Memory is different, because Devin writes it itself as you work, it's personal to you, and you'll find it under Customize, Memory.",
-      "hl": null
+      "hl": null,
+      "subPos": {
+        "x": 0.74,
+        "y": 0.05
+      },
+      "capPos": {
+        "x": 0.72,
+        "y": 0.935
+      }
     },
     "0005.png": {
       "scene": "skill",
@@ -89,7 +106,15 @@ window.SPEC = {
       "ringFor": 3.2,
       "cap": "Customize → Skills → Create skill",
       "vo": "You can create one under Customize, Skills, or let Devin suggest one after it learns something new about your setup.",
-      "hl": null
+      "hl": null,
+      "subPos": {
+        "x": 0.21,
+        "y": 0.82
+      },
+      "capPos": {
+        "x": 0.21,
+        "y": 0.82
+      }
     },
     "0007.png": {
       "hold": 3.2,
@@ -103,7 +128,11 @@ window.SPEC = {
       "ringFor": 2.8,
       "cap": "Settings → Knowledge: it has moved to skills",
       "vo": "If you used Knowledge before, it has moved to skills, so write new instructions as skills.",
-      "hl": null
+      "hl": null,
+      "subPos": {
+        "x": 0.7,
+        "y": 0.1
+      }
     },
     "0008.png": {
       "hold": 4.0,
@@ -131,7 +160,8 @@ window.SPEC = {
       "ringFor": 3.4,
       "cap": "Customize → MCPs → Add MCP → From plugin marketplace",
       "vo": "MCP servers give Devin tools beyond its built-in ones, like Datadog, and the recommended way to add one is from the plugin marketplace.",
-      "hl": null
+      "hl": null,
+      "capPos": "bottom"
     },
     "0010.png": {
       "hold": 3.4,
@@ -145,7 +175,8 @@ window.SPEC = {
       "ringFor": 3.0,
       "cap": "Install plugins for you, or for your organization",
       "vo": "Plugins bundle skills, rules, hooks, and MCP servers, and you can install them just for you or for your whole organization.",
-      "hl": null
+      "hl": null,
+      "capPos": "bottom"
     },
     "0011.png": {
       "hold": 3.2,
@@ -159,7 +190,8 @@ window.SPEC = {
       "ringFor": 2.8,
       "cap": "Customize → Plugins → Add plugin",
       "vo": "Add one from a repository, upload a zip, or create your own.",
-      "hl": null
+      "hl": null,
+      "capPos": "bottom"
     },
     "0012.png": {
       "scene": "which",
@@ -172,3 +204,8 @@ window.SPEC = {
     }
   }
 };
+
+
+// Narrated cut only: end the last beat 0.5 s after its line so the outro line follows in about 1 s (captioned frame count unchanged).
+// vo_onetake.py json-parses this file, so remove this block before re-recording the take.
+if (new URLSearchParams(location.search).get("voice")) SPEC.tailHold = 0;
