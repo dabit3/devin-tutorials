@@ -25,10 +25,16 @@ window.SPEC = {
       "vo": "Under the hood, Devin writes a Python script that decides which agents run and what each one is told, using earlier results to build later prompts.",
       "hl": null
     },
+    "0015.png": {
+      "scene": "goal", "hold": 7.0, "voHold": 8.4, "capPos": "bottom",
+      "cap": "The example: audit every component, get one list",
+      "vo": "Let's try it on a real job: check every component in a small demo app for accessibility issues, and end up with one list of findings, ordered by severity.",
+      "hl": null
+    },
     "0002.png": {
       "hold": 3.2, "ring": { "x": 721, "y": 405, "w": 860, "h": 152 }, "ringFor": 2.8,
       "cap": "One reviewer per component, then a merge",
-      "vo": "Here, I ask for one accessibility reviewer per component, then one merged list.",
+      "vo": "So I ask Devin for one accessibility reviewer per component, then one merged list.",
       "hl": null
     },
     "0003.png": {

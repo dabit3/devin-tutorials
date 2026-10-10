@@ -212,6 +212,43 @@ function flow(ctx, s0, k) {
   [0.86, 0.66, 0.76].forEach((f, j) => { ctx.save(); ctx.globalAlpha = k.alpha * ra; k.rr(1212, 380 + j * 15 + 12 * (1 - ra), 146 * f, 5, 2.5); ctx.fillStyle = ink(0.09); ctx.fill(); ctx.restore(); });
 }
 
+// 2b. The example: audit every component of a demo app, end with one severity-ordered list.
+function goal(ctx, s0, k) {
+  bg(ctx, k); const s = s0 / st('goal');
+  eyebrow(ctx, k, 'THE EXAMPLE', 150, ap(k, s, 0.05));
+  // the app: twelve component files
+  const la = ap(k, s, 0.2), lx = 150, ly = 236 + 12 * (1 - la), lw = 340, lh = 316;
+  card(ctx, k, lx, ly, lw, lh, la);
+  txt(ctx, k, 'orbit-demo', lx + 32, ly + 40, 17, 600, '#191919', la, 'left', 'JetBrains Mono', 0);
+  txt(ctx, k, 'src/components · 12 files', lx + 32, ly + 68, 13, 500, ink(0.5), la, 'left');
+  const fw = 58, fh = 50, fg = 16, fx0 = lx + (lw - (4 * fw + 3 * fg)) / 2, fy0 = ly + 104;
+  for (let i = 0; i < 12; i++) {
+    const r = Math.floor(i / 4), c = i % 4, fa = ap(k, s, 0.6 + i * 0.06, 0.45), x = fx0 + c * (fw + fg), y = fy0 + r * (fh + fg) + 8 * (1 - fa);
+    card(ctx, k, x, y, fw, fh, fa * la, 0, 9);
+    [0.62, 0.42].forEach((f, j) => { ctx.save(); ctx.globalAlpha = k.alpha * fa * la; k.rr(x + 12, y + 17 + j * 12, (fw - 24) * f / 0.62, 4, 2); ctx.fillStyle = ink(0.12); ctx.fill(); ctx.restore(); });
+    const ck = ap(k, s, 3.0 + ((i * 5) % 12) * 0.07, 0.3);
+    if (ck > 0) check(ctx, k, x + fw - 4, y + 4, ck * la, 7.5);
+  }
+  // the ask in the middle
+  const f = hc([lx + lw, 394], [950, 394]);
+  path(ctx, k, f, k.eInOut(k.prog(s, 2.3, 3.1))); signal(ctx, k, f, k.prog(s, 2.4, 3.4));
+  const qa = ap(k, s, 2.4);
+  txt(ctx, k, 'Check every component', 720, 352, 15.5, 600, '#191919', qa);
+  txt(ctx, k, 'for accessibility issues', 720, 376, 14, 500, ink(0.55), qa);
+  // the result: one list, ordered by severity
+  const ra = ap(k, s, 4.4), rx = 950, ry = 254 + 12 * (1 - ra), rw = 340, rh = 280;
+  const lit = ap(k, s, 5.0, 0.4) * (1 - k.prog(s, 6.4, 7.0));
+  card(ctx, k, rx, ry, rw, rh, ra, lit);
+  avatar(ctx, k, rx + 34, ry + 40, 20, ra);
+  txt(ctx, k, 'One list of findings', rx + 54, ry + 40, 17, 600, '#191919', ra, 'left');
+  txt(ctx, k, 'Deduplicated, ordered by severity', rx + 32, ry + 70, 13, 500, ink(0.5), ra, 'left');
+  ['Medium', 'Medium', 'Medium', 'Low'].forEach((sev, j) => {
+    const ia = ap(k, s, 4.9 + j * 0.22, 0.4), iy = ry + 118 + j * 40;
+    pill(ctx, k, sev, rx + 32 + (sev === 'Low' ? 24 : 36), iy, ia * ra, false, 12.5);
+    ctx.save(); ctx.globalAlpha = k.alpha * ia * ra; k.rr(rx + 122, iy - 3, (rw - 160) * [0.9, 0.7, 0.8, 0.6][j], 6, 3); ctx.fillStyle = ink(0.09); ctx.fill(); ctx.restore();
+  });
+}
+
 // 3. pipeline vs parallel
 function modes(ctx, s0, k) {
   bg(ctx, k); const s = s0 / st('modes');
@@ -395,5 +432,5 @@ function uses(ctx, s0, k) {
   });
 }
 
-window.SCENES = { value, why, flow, modes, resume, when, reuse, uses };
+window.SCENES = { value, why, flow, goal, modes, resume, when, reuse, uses };
 })();

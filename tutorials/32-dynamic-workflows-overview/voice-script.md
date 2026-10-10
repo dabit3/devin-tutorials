@@ -8,7 +8,9 @@ Many agents work in parallel, each step builds on the last, and you can watch th
 
 Under the hood, Devin writes a Python script that decides which agents run and what each one is told, using earlier results to build later prompts.
 
-Here, I ask for one accessibility reviewer per component, then one merged list.
+Let's try it on a real job: check every component in a small demo app for accessibility issues, and end up with one list of findings, ordered by severity.
+
+So I ask Devin for one accessibility reviewer per component, then one merged list.
 
 Devin finds twelve files and plans twelve reviewers, plus a consolidation step.
 
