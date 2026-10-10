@@ -55,7 +55,7 @@ function build() {
     voLast = L.text; voStart = t0; voPrev = L;
     tl.vo.push({ t: t0, file: key });
     const pos = (edits[key] || {}).subPos || S.subPos || 'bottom';
-    for (const c of L.chunks) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos });
+    for (const c of L.chunks.flatMap(splitChunk)) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos });
     tl.caps.push({ t: t0 + sec(L.dur + 0.3), text: '', pos });
     return t0 + sec(L.dur);
   };
@@ -456,6 +456,16 @@ async function renderFrame(f) {
   if (f >= I && f < U + sec(0.4)) { ctx.save(); ctx.globalAlpha = 1 - prog(f, U, U + sec(0.4)); drawCaption(f); drawBadge(f); ctx.restore(); }
 }
 
+// a subtitle chunk of more than 10 words (vo_onetake falls back to one chunk when voSay differs) is split by character share of its time
+function splitChunk(c) {
+  const w = c.text.split(' '); if (w.length <= 10 || !(c.t1 > c.t0)) return [c];
+  const n = Math.ceil(w.length / 7), out = []; let acc = 0;
+  for (let k = 0; k < n; k++) {
+    const g = w.slice(Math.round(k * w.length / n), Math.round((k + 1) * w.length / n)).join(' ');
+    out.push({ text: g, t0: c.t0 + (c.t1 - c.t0) * acc / c.text.length }); acc += g.length + 1;
+  }
+  return out;
+}
 function cues() {
   return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, clicks: TL.clicks.map(c => c.t), typing: TL.typing, caps: SPEC.voLines ? [] : TL.caps.filter(c => c.text).map(c => c.t), vo: TL.vo, voLate: TL.voLate };
 }
