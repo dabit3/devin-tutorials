@@ -1,0 +1,437 @@
+{
+ "0000.png": {
+  "text": "When your work has real structure, like many units or stages that feed into each other, you can ask Devin for a workflow, and the orchestration becomes a script you can read, watch and resume.",
+  "dur": 9.945,
+  "at": 0.0,
+  "end": 9.945,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.672,
+    "text": "When your work has real structure,"
+   },
+   {
+    "t0": 1.765,
+    "t1": 3.82,
+    "text": "like many units or stages that feed into"
+   },
+   {
+    "t0": 3.878,
+    "t1": 5.573,
+    "text": "each other, you can ask Devin for a"
+   },
+   {
+    "t0": 5.619,
+    "t1": 8.162,
+    "text": "workflow, and the orchestration becomes a script you"
+   },
+   {
+    "t0": 8.208,
+    "t1": 9.903,
+    "text": "can read, watch and resume."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "Here, I'm asking Devin to audit five Orbit components for accessibility issues, and to run each one through its own pipeline, from the audit to a fix with its own pull request, and then a check in the browser.",
+  "dur": 10.89,
+  "at": 10.17,
+  "end": 21.06,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.058,
+    "t1": 2.264,
+    "text": "Here, I'm asking Devin to audit five Orbit"
+   },
+   {
+    "t0": 2.299,
+    "t1": 4.18,
+    "text": "components for accessibility issues,"
+   },
+   {
+    "t0": 4.354,
+    "t1": 5.898,
+    "text": "and to run each one through its own"
+   },
+   {
+    "t0": 5.945,
+    "t1": 8.186,
+    "text": "pipeline, from the audit to a fix with"
+   },
+   {
+    "t0": 8.232,
+    "t1": 9.288,
+    "text": "its own pull request,"
+   },
+   {
+    "t0": 9.463,
+    "t1": 10.844,
+    "text": "and then a check in the browser."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "Devin reads the repo and plans the run, with fifteen agents on separate VMs, three for each component.",
+  "dur": 5.97,
+  "at": 21.44,
+  "end": 27.41,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.178,
+    "t1": 2.233,
+    "text": "Devin reads the repo and plans the run,"
+   },
+   {
+    "t0": 2.407,
+    "t1": 4.531,
+    "text": "with fifteen agents on separate VMs,"
+   },
+   {
+    "t0": 4.705,
+    "t1": 5.925,
+    "text": "three for each component."
+   }
+  ]
+ },
+ "0052.png": {
+  "text": "Then it writes the workflow script, which registers the workflow and its three phases.",
+  "dur": 4.29,
+  "at": 27.655,
+  "end": 31.945,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.035,
+    "t1": 1.625,
+    "text": "Then it writes the workflow script,"
+   },
+   {
+    "t0": 1.753,
+    "t1": 4.29,
+    "text": "which registers the workflow and its three phases."
+   }
+  ]
+ },
+ "0053.png": {
+  "text": "Each step is an agent call with a schema, so every agent returns structured results that the next stage can build on.",
+  "dur": 6.425,
+  "at": 32.31,
+  "end": 38.735,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.128,
+    "t1": 1.753,
+    "text": "Each step is an agent call with a"
+   },
+   {
+    "t0": 1.8,
+    "t1": 5.085,
+    "text": "schema, so every agent returns structured results that"
+   },
+   {
+    "t0": 5.12,
+    "t1": 6.425,
+    "text": "the next stage can build on."
+   }
+  ]
+ },
+ "0054.png": {
+  "text": "And pipeline runs every component through audit, fix and verify on its own.",
+  "dur": 4.125,
+  "at": 39.03,
+  "end": 43.155,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.048,
+    "t1": 2.498,
+    "text": "And pipeline runs every component through audit,"
+   },
+   {
+    "t0": 2.672,
+    "t1": 4.1,
+    "text": "fix and verify on its own."
+   }
+  ]
+ },
+ "0055.png": {
+  "text": "The workflow panel shows each phase with its agents and their live status, starting with five audits running in parallel.",
+  "dur": 6.31,
+  "at": 43.46,
+  "end": 49.77,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.053,
+    "t1": 2.294,
+    "text": "The workflow panel shows each phase with its"
+   },
+   {
+    "t0": 2.341,
+    "t1": 3.838,
+    "text": "agents and their live status,"
+   },
+   {
+    "t0": 4.047,
+    "t1": 6.276,
+    "text": "starting with five audits running in parallel."
+   }
+  ]
+ },
+ "0089.png": {
+  "text": "There's no barrier between stages, so Dialog is already in browser verification while the other four are still fixing.",
+  "dur": 6.055,
+  "at": 49.915,
+  "end": 55.97,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.03,
+    "t1": 1.899,
+    "text": "There's no barrier between stages,"
+   },
+   {
+    "t0": 2.073,
+    "t1": 4.546,
+    "text": "so Dialog is already in browser verification while"
+   },
+   {
+    "t0": 4.57,
+    "t1": 5.986,
+    "text": "the other four are still fixing."
+   }
+  ]
+ },
+ "0215.png": {
+  "text": "Any agent opens as a real Devin session, and this audit found two contrast issues in AddCardForm.",
+  "dur": 5.525,
+  "at": 56.295,
+  "end": 61.82,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.242,
+    "text": "Any agent opens as a real Devin session,"
+   },
+   {
+    "t0": 2.416,
+    "t1": 5.492,
+    "text": "and this audit found two contrast issues in AddCardForm."
+   }
+  ]
+ },
+ "0216.png": {
+  "text": "It hands them back as structured output that's validated against the schema.",
+  "dur": 3.67,
+  "at": 62.145,
+  "end": 65.815,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.083,
+    "t1": 2.243,
+    "text": "It hands them back as structured output that's"
+   },
+   {
+    "t0": 2.289,
+    "t1": 3.67,
+    "text": "validated against the schema."
+   }
+  ]
+ },
+ "0243.png": {
+  "text": "When the browser checks found more focus problems in AddCardForm and CardModal, the workflow sent them back to be fixed in the same pull requests and verified again.",
+  "dur": 8.29,
+  "at": 66.11,
+  "end": 74.4,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.042,
+    "t1": 2.283,
+    "text": "When the browser checks found more focus problems"
+   },
+   {
+    "t0": 2.33,
+    "t1": 4.048,
+    "text": "in AddCardForm and CardModal,"
+   },
+   {
+    "t0": 4.199,
+    "t1": 6.01,
+    "text": "the workflow sent them back to be fixed"
+   },
+   {
+    "t0": 6.045,
+    "t1": 8.239,
+    "text": "in the same pull requests and verified again."
+   }
+  ]
+ },
+ "0492.png": {
+  "text": "After twenty agents the run is complete, with four pull requests that passed CI and the browser checks, and Dialog came back clean.",
+  "dur": 7.22,
+  "at": 74.63,
+  "end": 81.85,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.102,
+    "t1": 2.087,
+    "text": "After twenty agents the run is complete,"
+   },
+   {
+    "t0": 2.238,
+    "t1": 4.456,
+    "text": "with four pull requests that passed CI and"
+   },
+   {
+    "t0": 4.49,
+    "t1": 5.489,
+    "text": "the browser checks,"
+   },
+   {
+    "t0": 5.605,
+    "t1": 7.149,
+    "text": "and Dialog came back clean."
+   }
+  ]
+ },
+ "0493.png": {
+  "text": "The roll-up lists what was fixed, and what still needs manual attention, like screen reader checks and a shared avatar contrast issue.",
+  "dur": 6.825,
+  "at": 82.11,
+  "end": 88.935,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.052,
+    "t1": 1.55,
+    "text": "The roll-up lists what was fixed,"
+   },
+   {
+    "t0": 1.701,
+    "t1": 3.524,
+    "text": "and what still needs manual attention,"
+   },
+   {
+    "t0": 3.733,
+    "t1": 6.825,
+    "text": "like screen reader checks and a shared avatar contrast issue."
+   }
+  ]
+ },
+ "0495.png": {
+  "text": "Each fix is a normal pull request that you can review and merge.",
+  "dur": 3.23,
+  "at": 89.2,
+  "end": 92.43,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.103,
+    "t1": 1.96,
+    "text": "Each fix is a normal pull request that"
+   },
+   {
+    "t0": 1.995,
+    "t1": 3.214,
+    "text": "you can review and merge."
+   }
+  ]
+ },
+ "0496.png": {
+  "text": "So that's the whole run, one script that sent five components through audit, fix and verify, and then rolled everything up at the end.",
+  "dur": 6.5,
+  "at": 92.5,
+  "end": 99.0,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.088,
+    "t1": 1.284,
+    "text": "So that's the whole run,"
+   },
+   {
+    "t0": 1.493,
+    "t1": 3.885,
+    "text": "one script that sent five components through audit,"
+   },
+   {
+    "t0": 3.92,
+    "t1": 4.825,
+    "text": "fix and verify,"
+   },
+   {
+    "t0": 4.86,
+    "t1": 6.497,
+    "text": "and then rolled everything up at the end."
+   }
+  ]
+ },
+ "0501.png": {
+  "text": "You can use the same pattern for migrations, for research and evaluations, or for loops that run until your tests are green.",
+  "dur": 6.5,
+  "at": 99.26,
+  "end": 105.76,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.062,
+    "t1": 2.256,
+    "text": "You can use the same pattern for migrations,"
+   },
+   {
+    "t0": 2.326,
+    "t1": 4.032,
+    "text": "for research and evaluations,"
+   },
+   {
+    "t0": 4.207,
+    "t1": 6.424,
+    "text": "or for loops that run until your tests are green."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Structured work in, a workflow you can read and watch.",
+  "dur": 2.82,
+  "at": 105.88,
+  "end": 108.7,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.129,
+    "t1": 1.104,
+    "text": "Structured work in,"
+   },
+   {
+    "t0": 1.151,
+    "t1": 2.82,
+    "text": "a workflow you can read and watch."
+   }
+  ]
+ }
+}
