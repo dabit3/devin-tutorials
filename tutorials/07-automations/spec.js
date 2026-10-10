@@ -4,319 +4,90 @@ window.SPEC = {
   "outro": "Put recurring work on autopilot",
   "speed": 3,
   "cps": 48,
-  "voOutro": "Define the trigger once, and Devin handles every run for you.",
+  "pollRunMax": 2.5,
   "noZoom": [
     [
-      "0010.png",
-      "0300.png"
+      "0011.png",
+      "0065.png"
     ]
   ],
+  "voOutro": "Define the trigger once, and Devin handles every run for you.",
   "edit": {
     "0000.png": {
-      "hold": 2.6,
-      "vo": "This is Devin Automations.",
-      "voSay": "This... is Devin Automations."
+      "hold": 3.0,
+      "cursor": false,
+      "capPos": "bottom",
+      "cap": "Automations put recurring work on autopilot",
+      "hl": [
+        {
+          "x": 720,
+          "y": 405,
+          "w": 858,
+          "h": 150
+        }
+      ],
+      "vo": "Automations let Devin handle recurring and event-driven work on its own. Pick a trigger, like a schedule, a GitHub event, a Slack message or a Linear ticket, and every time it fires, Devin starts a session to do the job."
     },
     "0001.png": {
-      "voGap": 1,
-      "vo": "Pick a trigger, like a schedule, a GitHub event, a Slack message or a Linear ticket, and Devin starts a session to handle it every time. The quickest way to set one up is to just tell Devin what to automate, and when."
+      "vo": "The quickest way to set one up is to just tell Devin what to automate, and when."
     },
     "0003.png": {
-      "cursor": false,
-      "hold": 1,
-      "cap": "Say when it runs and what Devin should do",
-      "vo": "Here, every morning at seven, Devin should check the changelog and turn each new feature into a tutorial.",
-      "cam": {
-        "x": 870,
-        "y": 390,
-        "z": 1.35
-      },
-      "camDur": 1
+      "hold": 2.2,
+      "cap": "Every morning at 7, turn new features into tutorials",
+      "vo": "Here, every morning at seven, Devin should check the changelog and turn each new feature into a tutorial."
     },
-    "0006.png": {
-      "cursor": true,
-      "vo": "Mention the repo it should work in."
+    "0004.png": {
+      "cap": "Mention the repo with @",
+      "vo": "Then mention the repository the tutorials go in.",
+      "hold": 1.0
     },
     "0009.png": {
-      "cam": "reset",
-      "camDur": 0.8,
-      "vo": "Then send it."
+      "vo": "And send it."
     },
     "0010.png": {
-      "hold": 0.7,
-      "badge": "Sped up",
-      "cap": "Devin drafts the automation for you",
-      "vo": "Devin works out the trigger and the instructions, and drafts the automation for you."
-    },
-    "0012.png": {
       "skip": true
-    },
-    "0014.png": {
-      "hold": 0.7
-    },
-    "0016.png": {
-      "skip": true
-    },
-    "0018.png": {
-      "hold": 0.7
-    },
-    "0020.png": {
-      "skip": true
-    },
-    "0022.png": {
-      "hold": 0.7
-    },
-    "0024.png": {
-      "skip": true
-    },
-    "0026.png": {
-      "hold": 0.7
-    },
-    "0028.png": {
-      "skip": true
-    },
-    "0030.png": {
-      "hold": 0.7
-    },
-    "0032.png": {
-      "skip": true
-    },
-    "0034.png": {
-      "hold": 0.7
-    },
-    "0036.png": {
-      "skip": true
-    },
-    "0294.png": {
-      "hold": 2.6,
-      "badge": null,
-      "cap": "Check the schedule and instructions it wrote",
-      "vo": "Check the schedule and the instructions it wrote. Nothing is created until you approve it."
-    },
-    "0295.png": {
-      "hold": 0.6
-    },
-    "0297.png": {
-      "cap": "Approve it",
-      "vo": "Click Create automation to approve it."
-    },
-    "0300.png": {
-      "hold": 2.6,
-      "cap": "That's it. Your automation is live",
-      "vo": "That's it. Your automation is live."
-    },
-    "0301.png": {
-      "voGap": 0.9,
-      "vo": "Find it under Automations in the sidebar."
-    },
-    "0303.png": {
-      "hold": 2,
-      "vo": "Every automation you make lives here."
-    },
-    "0304.png": {
-      "voGap": 0.9,
-      "vo": "Prefer a form? You can build one yourself."
-    },
-    "0306.png": {
-      "vo": "Create automation also offers templates, and Generate with Devin. Pick Create for a blank editor."
-    },
-    "0308.png": {
-      "cam": {
-        "x": 1040,
-        "y": 200,
-        "z": 1.3
-      },
-      "camDur": 0.9,
-      "vo": "Give it a name."
-    },
-    "0317.png": {
-      "cam": {
-        "x": 1000,
-        "y": 260,
-        "z": 1.3
-      },
-      "camDur": 0.9,
-      "vo": "Triggers decide when it runs. One automation can have several triggers, and it fires when any of them match."
-    },
-    "0319.png": {
-      "vo": "Run it on a schedule."
-    },
-    "0322.png": {
-      "vo": "Every morning at seven, Pacific time."
-    },
-    "0330.png": {
-      "cam": "reset",
-      "camDur": 0.8,
-      "vo": "Each run starts a fresh Devin session."
-    },
-    "0331.png": {
-      "vo": "Then tell Devin what to do on every run."
-    },
-    "0333.png": {
-      "hold": 3.5,
-      "cam": {
-        "x": 1040,
-        "y": 470,
-        "z": 1.3
-      },
-      "camDur": 0.9
-    },
-    "0335.png": {
-      "vo": "Type an at sign to pick the repository."
-    },
-    "0339.png": {
-      "cam": "reset",
-      "camDur": 0.8,
-      "vo": "Save it."
-    },
-    "0344.png": {
-      "hold": 3.2,
-      "cap": "Devin now checks the changelog every morning",
-      "vo": "Now Devin checks the changelog every morning, and turns new features into tutorials.",
-      "cam": {
-        "x": 860,
-        "y": 280,
-        "z": 1.3
-      },
-      "camDelay": 0.3,
-      "camDur": 1.4
-    },
-    "0345.png": {
-      "dwell": 3,
-      "cap": "Test it anytime with Run automation",
-      "vo": "And you can test it anytime with Run automation.",
-      "cam": {
-        "x": 1180,
-        "y": 150,
-        "z": 1.3
-      },
-      "camDur": 1
     },
     "0011.png": {
-      "skip": true
-    },
-    "0013.png": {
-      "skip": true
-    },
-    "0015.png": {
-      "skip": true
-    },
-    "0017.png": {
-      "skip": true
-    },
-    "0019.png": {
-      "skip": true
-    },
-    "0021.png": {
-      "skip": true
-    },
-    "0023.png": {
-      "skip": true
-    },
-    "0025.png": {
-      "skip": true
-    },
-    "0027.png": {
-      "skip": true
-    },
-    "0029.png": {
-      "skip": true
-    },
-    "0031.png": {
-      "skip": true
-    },
-    "0033.png": {
-      "skip": true
-    },
-    "0035.png": {
-      "skip": true
-    },
-    "0037.png": {
-      "skip": true
-    },
-    "0038.png": {
-      "skip": true
-    },
-    "0039.png": {
-      "skip": true
-    },
-    "0040.png": {
-      "skip": true
-    },
-    "0041.png": {
-      "skip": true
-    },
-    "0042.png": {
-      "skip": true
-    },
-    "0043.png": {
-      "skip": true
-    },
-    "0044.png": {
-      "skip": true
-    },
-    "0045.png": {
-      "skip": true
-    },
-    "0046.png": {
-      "skip": true
-    },
-    "0047.png": {
-      "skip": true
-    },
-    "0048.png": {
-      "skip": true
-    },
-    "0049.png": {
-      "skip": true
-    },
-    "0050.png": {
-      "skip": true
-    },
-    "0051.png": {
-      "skip": true
-    },
-    "0052.png": {
-      "skip": true
-    },
-    "0053.png": {
-      "skip": true
-    },
-    "0054.png": {
-      "skip": true
+      "badge": "Sped up",
+      "cap": "Devin plans the automation",
+      "vo": "Devin reads the repository, works out the trigger and the instructions, and plans what each run should do."
     },
     "0055.png": {
-      "skip": true
-    },
-    "0056.png": {
-      "skip": true
-    },
-    "0057.png": {
-      "skip": true
+      "cap": "Devin asks about the choices that are yours",
+      "vo": "Before it drafts anything, it asks about the choices that are yours to make, like how runs log in and who they run as.",
+      "badge": null
     },
     "0058.png": {
-      "skip": true
-    },
-    "0059.png": {
-      "skip": true
-    },
-    "0060.png": {
-      "skip": true
+      "hold": 2.0
     },
     "0061.png": {
-      "skip": true
+      "cap": "Review the draft",
+      "capPos": "bottom",
+      "hl": [
+        {
+          "x": 720,
+          "y": 275,
+          "w": 850,
+          "h": 255
+        }
+      ],
+      "vo": "Then it drafts the whole automation for you to review: the schedule, the instructions, who it runs as, and the sites it can reach."
     },
     "0062.png": {
-      "skip": true
-    },
-    "0063.png": {
-      "skip": true
-    },
-    "0064.png": {
-      "skip": true
+      "vo": "Nothing is created until you approve it with Create automation."
     },
     "0065.png": {
-      "skip": true
+      "cap": "The automation is live",
+      "capPos": "bottom",
+      "hl": [
+        {
+          "x": 720,
+          "y": 365,
+          "w": 862,
+          "h": 238
+        }
+      ],
+      "vo": "And it's live, running every day at seven in the morning, Pacific time."
     },
     "0066.png": {
       "skip": true
@@ -325,691 +96,76 @@ window.SPEC = {
       "skip": true
     },
     "0068.png": {
-      "skip": true
+      "cap": "Every automation lives under Automations",
+      "capPos": "bottom",
+      "hl": [
+        {
+          "x": 721,
+          "y": 515,
+          "w": 927,
+          "h": 70
+        }
+      ],
+      "vo": "You'll find it under Automations, next to every other automation and when it last ran."
     },
     "0069.png": {
-      "skip": true
-    },
-    "0070.png": {
-      "skip": true
-    },
-    "0071.png": {
-      "skip": true
-    },
-    "0072.png": {
-      "skip": true
+      "vo": "Prefer to build one yourself? Create automation also offers templates and Generate with Devin. Pick Create for a blank form."
     },
     "0073.png": {
-      "skip": true
-    },
-    "0074.png": {
-      "skip": true
-    },
-    "0075.png": {
-      "skip": true
-    },
-    "0076.png": {
-      "skip": true
-    },
-    "0077.png": {
-      "skip": true
-    },
-    "0078.png": {
-      "skip": true
-    },
-    "0079.png": {
-      "skip": true
-    },
-    "0080.png": {
-      "skip": true
+      "vo": "Give it a name."
     },
     "0081.png": {
-      "skip": true
-    },
-    "0082.png": {
-      "skip": true
+      "vo": "Triggers decide when it runs, and if you add several, any one of them can start it."
     },
     "0083.png": {
-      "skip": true
-    },
-    "0084.png": {
-      "skip": true
-    },
-    "0085.png": {
-      "skip": true
-    },
-    "0086.png": {
-      "skip": true
-    },
-    "0087.png": {
-      "skip": true
-    },
-    "0088.png": {
-      "skip": true
-    },
-    "0089.png": {
-      "skip": true
-    },
-    "0090.png": {
-      "skip": true
-    },
-    "0091.png": {
-      "skip": true
-    },
-    "0092.png": {
-      "skip": true
-    },
-    "0093.png": {
-      "skip": true
+      "vo": "Pick Schedule, then every day."
     },
     "0094.png": {
-      "skip": true
+      "cap": "Every day at 7:00, Pacific time",
+      "capPos": "bottom",
+      "hl": [
+        {
+          "x": 941,
+          "y": 299,
+          "w": 938,
+          "h": 134
+        }
+      ]
     },
     "0095.png": {
-      "skip": true
+      "cap": "Each run starts a fresh Devin session",
+      "vo": "Start new session gives every run its own fresh Devin session."
     },
     "0096.png": {
-      "skip": true
-    },
-    "0097.png": {
-      "skip": true
-    },
-    "0098.png": {
-      "skip": true
-    },
-    "0099.png": {
-      "skip": true
+      "vo": "Then tell Devin what to do on every run."
     },
     "0100.png": {
-      "skip": true
-    },
-    "0101.png": {
-      "skip": true
-    },
-    "0102.png": {
-      "skip": true
+      "vo": "Type @ to mention the repository.",
+      "voSay": "Type at to mention the repository."
     },
     "0103.png": {
-      "skip": true
+      "cap": "Instructions for every run",
+      "capPos": "top"
     },
     "0104.png": {
-      "skip": true
-    },
-    "0105.png": {
-      "skip": true
+      "vo": "Save it with Create automation."
     },
     "0106.png": {
-      "skip": true
+      "cap": "Devin now checks the changelog every morning",
+      "vo": "Now Devin checks the changelog every morning, and turns new features into tutorials."
     },
     "0107.png": {
       "skip": true
     },
     "0108.png": {
-      "skip": true
-    },
-    "0109.png": {
-      "skip": true
-    },
-    "0110.png": {
-      "skip": true
-    },
-    "0111.png": {
-      "skip": true
-    },
-    "0112.png": {
-      "skip": true
-    },
-    "0113.png": {
-      "skip": true
-    },
-    "0114.png": {
-      "skip": true
-    },
-    "0115.png": {
-      "skip": true
-    },
-    "0116.png": {
-      "skip": true
-    },
-    "0117.png": {
-      "skip": true
-    },
-    "0118.png": {
-      "skip": true
-    },
-    "0119.png": {
-      "skip": true
-    },
-    "0120.png": {
-      "skip": true
-    },
-    "0121.png": {
-      "skip": true
-    },
-    "0122.png": {
-      "skip": true
-    },
-    "0123.png": {
-      "skip": true
-    },
-    "0124.png": {
-      "skip": true
-    },
-    "0125.png": {
-      "skip": true
-    },
-    "0126.png": {
-      "skip": true
-    },
-    "0127.png": {
-      "skip": true
-    },
-    "0128.png": {
-      "skip": true
-    },
-    "0129.png": {
-      "skip": true
-    },
-    "0130.png": {
-      "skip": true
-    },
-    "0131.png": {
-      "skip": true
-    },
-    "0132.png": {
-      "skip": true
-    },
-    "0133.png": {
-      "skip": true
-    },
-    "0134.png": {
-      "skip": true
-    },
-    "0135.png": {
-      "skip": true
-    },
-    "0136.png": {
-      "skip": true
-    },
-    "0137.png": {
-      "skip": true
-    },
-    "0138.png": {
-      "skip": true
-    },
-    "0139.png": {
-      "skip": true
-    },
-    "0140.png": {
-      "skip": true
-    },
-    "0141.png": {
-      "skip": true
-    },
-    "0142.png": {
-      "skip": true
-    },
-    "0143.png": {
-      "skip": true
-    },
-    "0144.png": {
-      "skip": true
-    },
-    "0145.png": {
-      "skip": true
-    },
-    "0146.png": {
-      "skip": true
-    },
-    "0147.png": {
-      "skip": true
-    },
-    "0148.png": {
-      "skip": true
-    },
-    "0149.png": {
-      "skip": true
-    },
-    "0150.png": {
-      "skip": true
-    },
-    "0151.png": {
-      "skip": true
-    },
-    "0152.png": {
-      "skip": true
-    },
-    "0153.png": {
-      "skip": true
-    },
-    "0154.png": {
-      "skip": true
-    },
-    "0155.png": {
-      "skip": true
-    },
-    "0156.png": {
-      "skip": true
-    },
-    "0157.png": {
-      "skip": true
-    },
-    "0158.png": {
-      "skip": true
-    },
-    "0159.png": {
-      "skip": true
-    },
-    "0160.png": {
-      "skip": true
-    },
-    "0161.png": {
-      "skip": true
-    },
-    "0162.png": {
-      "skip": true
-    },
-    "0163.png": {
-      "skip": true
-    },
-    "0164.png": {
-      "skip": true
-    },
-    "0165.png": {
-      "skip": true
-    },
-    "0166.png": {
-      "skip": true
-    },
-    "0167.png": {
-      "skip": true
-    },
-    "0168.png": {
-      "skip": true
-    },
-    "0169.png": {
-      "skip": true
-    },
-    "0170.png": {
-      "skip": true
-    },
-    "0171.png": {
-      "skip": true
-    },
-    "0172.png": {
-      "skip": true
-    },
-    "0173.png": {
-      "skip": true
-    },
-    "0174.png": {
-      "skip": true
-    },
-    "0175.png": {
-      "skip": true
-    },
-    "0176.png": {
-      "skip": true
-    },
-    "0177.png": {
-      "skip": true
-    },
-    "0178.png": {
-      "skip": true
-    },
-    "0179.png": {
-      "skip": true
-    },
-    "0180.png": {
-      "skip": true
-    },
-    "0181.png": {
-      "skip": true
-    },
-    "0182.png": {
-      "skip": true
-    },
-    "0183.png": {
-      "skip": true
-    },
-    "0184.png": {
-      "skip": true
-    },
-    "0185.png": {
-      "skip": true
-    },
-    "0186.png": {
-      "skip": true
-    },
-    "0187.png": {
-      "skip": true
-    },
-    "0188.png": {
-      "skip": true
-    },
-    "0189.png": {
-      "skip": true
-    },
-    "0190.png": {
-      "skip": true
-    },
-    "0191.png": {
-      "skip": true
-    },
-    "0192.png": {
-      "skip": true
-    },
-    "0193.png": {
-      "skip": true
-    },
-    "0194.png": {
-      "skip": true
-    },
-    "0195.png": {
-      "skip": true
-    },
-    "0196.png": {
-      "skip": true
-    },
-    "0197.png": {
-      "skip": true
-    },
-    "0198.png": {
-      "skip": true
-    },
-    "0199.png": {
-      "skip": true
-    },
-    "0200.png": {
-      "skip": true
-    },
-    "0201.png": {
-      "skip": true
+      "cap": "Test it anytime with Run automation",
+      "vo": "You can turn it off anytime, and test it with Run automation."
     },
-    "0202.png": {
+    "0105.png": {
       "skip": true
     },
-    "0203.png": {
-      "skip": true
-    },
-    "0204.png": {
-      "skip": true
-    },
-    "0205.png": {
-      "skip": true
-    },
-    "0206.png": {
-      "skip": true
-    },
-    "0207.png": {
-      "skip": true
-    },
-    "0208.png": {
-      "skip": true
-    },
-    "0209.png": {
-      "skip": true
-    },
-    "0210.png": {
-      "skip": true
-    },
-    "0211.png": {
-      "skip": true
-    },
-    "0212.png": {
-      "skip": true
-    },
-    "0213.png": {
-      "skip": true
-    },
-    "0214.png": {
-      "skip": true
-    },
-    "0215.png": {
-      "skip": true
-    },
-    "0216.png": {
-      "skip": true
-    },
-    "0217.png": {
-      "skip": true
-    },
-    "0218.png": {
-      "skip": true
-    },
-    "0219.png": {
-      "skip": true
-    },
-    "0220.png": {
-      "skip": true
-    },
-    "0221.png": {
-      "skip": true
-    },
-    "0222.png": {
-      "skip": true
-    },
-    "0223.png": {
-      "skip": true
-    },
-    "0224.png": {
-      "skip": true
-    },
-    "0225.png": {
-      "skip": true
-    },
-    "0226.png": {
-      "skip": true
-    },
-    "0227.png": {
-      "skip": true
-    },
-    "0228.png": {
-      "skip": true
-    },
-    "0229.png": {
-      "skip": true
-    },
-    "0230.png": {
-      "skip": true
-    },
-    "0231.png": {
-      "skip": true
-    },
-    "0232.png": {
-      "skip": true
-    },
-    "0233.png": {
-      "skip": true
-    },
-    "0234.png": {
-      "skip": true
-    },
-    "0235.png": {
-      "skip": true
-    },
-    "0236.png": {
-      "skip": true
-    },
-    "0237.png": {
-      "skip": true
-    },
-    "0238.png": {
-      "skip": true
-    },
-    "0239.png": {
-      "skip": true
-    },
-    "0240.png": {
-      "skip": true
-    },
-    "0241.png": {
-      "skip": true
-    },
-    "0242.png": {
-      "skip": true
-    },
-    "0243.png": {
-      "skip": true
-    },
-    "0244.png": {
-      "skip": true
-    },
-    "0245.png": {
-      "skip": true
-    },
-    "0246.png": {
-      "skip": true
-    },
-    "0247.png": {
-      "skip": true
-    },
-    "0248.png": {
-      "skip": true
-    },
-    "0249.png": {
-      "skip": true
-    },
-    "0250.png": {
-      "skip": true
-    },
-    "0251.png": {
-      "skip": true
-    },
-    "0252.png": {
-      "skip": true
-    },
-    "0253.png": {
-      "skip": true
-    },
-    "0254.png": {
-      "skip": true
-    },
-    "0255.png": {
-      "skip": true
-    },
-    "0256.png": {
-      "skip": true
-    },
-    "0257.png": {
-      "skip": true
-    },
-    "0258.png": {
-      "skip": true
-    },
-    "0259.png": {
-      "skip": true
-    },
-    "0260.png": {
-      "skip": true
-    },
-    "0261.png": {
-      "skip": true
-    },
-    "0262.png": {
-      "skip": true
-    },
-    "0263.png": {
-      "skip": true
-    },
-    "0264.png": {
-      "skip": true
-    },
-    "0265.png": {
-      "skip": true
-    },
-    "0266.png": {
-      "skip": true
-    },
-    "0267.png": {
-      "skip": true
-    },
-    "0268.png": {
-      "skip": true
-    },
-    "0269.png": {
-      "skip": true
-    },
-    "0270.png": {
-      "skip": true
-    },
-    "0271.png": {
-      "skip": true
-    },
-    "0272.png": {
-      "skip": true
-    },
-    "0273.png": {
-      "skip": true
-    },
-    "0274.png": {
-      "skip": true
-    },
-    "0275.png": {
-      "skip": true
-    },
-    "0276.png": {
-      "skip": true
-    },
-    "0277.png": {
-      "skip": true
-    },
-    "0278.png": {
-      "skip": true
-    },
-    "0279.png": {
-      "skip": true
-    },
-    "0280.png": {
-      "skip": true
-    },
-    "0281.png": {
-      "skip": true
-    },
-    "0282.png": {
-      "skip": true
-    },
-    "0283.png": {
-      "skip": true
-    },
-    "0284.png": {
-      "skip": true
-    },
-    "0285.png": {
-      "skip": true
-    },
-    "0286.png": {
-      "skip": true
-    },
-    "0287.png": {
-      "skip": true
-    },
-    "0288.png": {
-      "skip": true
-    },
-    "0289.png": {
-      "skip": true
-    },
-    "0290.png": {
-      "skip": true
-    },
-    "0291.png": {
-      "skip": true
-    },
-    "0292.png": {
-      "skip": true
-    },
-    "0293.png": {
-      "skip": true
-    },
-    "0341.png": {
-      "skip": true
-    },
-    "0342.png": {
-      "skip": true
-    },
-    "0343.png": {
-      "skip": true
+    "0086.png": {
+      "vo": "Set it to seven o'clock. A schedule keeps its own time zone, here Pacific time."
     }
   }
 };
