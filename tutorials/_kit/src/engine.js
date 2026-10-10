@@ -150,7 +150,7 @@ function build() {
   for (const h of tl.hls) { let j = h.i + 1; while (j < beats.length && beats[j].hl === 'keep') j++; h.t1 = j < beats.length ? bt[j] : t; }
   tl.steps[tl.steps.length - 1].t1 = t;
   tl.introEnd = INTRO; tl.enter = ENTER; tl.uiEnd = t; tl.outro = sec(3.6);
-  if (VO && VO.outro) { const t0 = t + sec(1.0); tl.vo.push({ t: t0, file: 'outro' }); tl.outro = Math.max(tl.outro, sec(1.0 + VO.outro.dur + 1.4)); }
+  if (VO && VO.outro) { const od = S.outroVoDelay ?? 1.0, t0 = t + sec(od); tl.vo.push({ t: t0, file: 'outro' }); tl.outro = Math.max(tl.outro, sec(od + VO.outro.dur + 1.4)); } // outroVoDelay: seconds from the end of the UI to the outro line
   tl.frames = t + tl.outro;
   tl.rings.sort((a, b) => a.t - b.t);
   // clamp first step start to 0 so the window shows the first shot while entering
