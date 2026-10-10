@@ -72,7 +72,7 @@ window.SPEC = {
       "badge": "",
       "capPos": {
         "x": 0.02,
-        "y": 0.615
+        "y": 0.644
       }
     },
     "0065.png": {
@@ -89,14 +89,14 @@ window.SPEC = {
       "hold": 2.0,
       "capPos": {
         "x": 0.02,
-        "y": 0.615
+        "y": 0.644
       }
     },
     "0087.png": {
       "vo": "Accept all, and the changes are yours.",
       "capPos": {
         "x": 0.02,
-        "y": 0.615
+        "y": 0.644
       }
     },
     "0089.png": {
@@ -140,7 +140,7 @@ window.SPEC = {
       "cap": "Back in the Agent view, the app Devin started runs on localhost",
       "capPos": {
         "x": 0.02,
-        "y": 0.615
+        "y": 0.644
       }
     },
     "0119.png": {
@@ -148,7 +148,7 @@ window.SPEC = {
       "hl": true,
       "capPos": {
         "x": 0.02,
-        "y": 0.615
+        "y": 0.644
       },
       "cap": "Try the new toggle: the Backlog column collapses"
     },
@@ -158,7 +158,7 @@ window.SPEC = {
       "hold": 1.4,
       "capPos": {
         "x": 0.02,
-        "y": 0.615
+        "y": 0.644
       }
     },
     "0125.png": {},
