@@ -60,8 +60,12 @@ window.SPEC = {
       "voSay": "Ask for a universal Swift UI app, and to test it on an iPhone and an iPad simulator."
     },
     "0008.png": {
+      "hold": 2.4,
       "cap": "Send it",
       "capPos": "auto"
+    },
+    "0009.png": {
+      "skip": true
     },
     "0011.png": {
       "hold": 2.0,
