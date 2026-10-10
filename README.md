@@ -28,11 +28,11 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 23. **Managed Devins: how it works** (overview, 1:16): A short diagram-led overview instead of a step-by-step run. One coordinator Devin splits a big task across managed Devins, each in its own isolated VM, monitors them, and compiles one summary; real shots from tutorial 19 show the four managed Devins, the sidebar tree, the PR summary and a message relayed through the coordinator, then Settings → Preferences → Auto-approve child sessions, the nesting tree, and four use cases (migrations, test coverage, one playbook across services, parallel research). [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/23-managed-devins-overview/23-managed-devins-overview.mp4)
 
 <!-- -->
-28. **Devin on every platform** (overview, 0:59): A short concept explainer, mostly animated diagrams: every session runs on its own machine, Linux by default or macOS or Windows, and Devin can build and test Android apps on an emulator. One prompt picks the platform, Devin builds and tests with Computer Use, and you get a recording and a PR. Real proof shots of a WPF app on Windows, the iPhone and iPad Simulators on macOS and a Compose app on the Android emulator, then what each platform unlocks and four use cases. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/28-multiplatform-overview/28-multiplatform-overview.mp4)
-
-<!-- -->
 
 26. **Devin across the SDLC, overview** (1:23): An overview, mostly animated diagrams, of how Devin fits every stage of the software lifecycle: Ask Devin, DeepWiki and Jira or Linear for planning, sessions that build and open PRs from your template, tests, lint and type checks before the PR, a Devin Review first pass, fixes for what your security scanners flag, and the Auto-Fix loop that turns review comments and CI failures into fixes. Then four use cases and how a human still decides every merge, with real UI proof shots from tutorials 17 and 20. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/26-sdlc-overview/26-sdlc-overview.mp4)
+
+<!-- -->
+28. **Devin on every platform** (overview, 0:59): A short concept explainer, mostly animated diagrams: every session runs on its own machine, Linux by default or macOS or Windows, and Devin can build and test Android apps on an emulator. One prompt picks the platform, Devin builds and tests with Computer Use, and you get a recording and a PR. Real proof shots of a WPF app on Windows, the iPhone and iPad Simulators on macOS and a Compose app on the Android emulator, then what each platform unlocks and four use cases. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/28-multiplatform-overview/28-multiplatform-overview.mp4)
 
 <!-- -->
 
