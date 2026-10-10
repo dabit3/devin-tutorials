@@ -180,8 +180,8 @@ function team(ctx, s, k) {
 function uses(ctx, s, k) {
   eyebrow(ctx, k, 'WHAT TEAMS HAVE DONE', 150, appear(k, s, 0.05));
   const C = [
-    ['Nightly HIL/SIL triage', 'Report before the team wakes up', 'One team: 2K–4K hours a month'],
-    ['Slack-reported issues', 'Logs, diagnostics, a report', 'RV Tech: 52 tickets, under 15 min'],
+    ['Nightly HIL/SIL triage', 'Report before the team wakes up', ['ONE TEAM', '2K–4K hours a month']],
+    ['Slack-reported issues', 'Logs, diagnostics, a report', ['RV TECH', '52 tickets in under 15 min']],
     ['Crash-report dedupe', 'Root cause, Jira, often a fix PR', null],
     ['HIL to SIL', 'Move bottlenecked bench tests', null],
     ['Per-subsystem playbooks', 'They improve between runs', null],
@@ -192,9 +192,17 @@ function uses(ctx, s, k) {
     box(ctx, k, x, yy, cw, ch, a, 0, 18);
     if (a <= 0) return;
     box(ctx, k, cx - 22, yy + 40, 44, 44, a, 0, 12); mark(ctx, k, cx, yy + 62, 20, a);
-    text(ctx, k, t, cx, yy + 130, 18, 600, k.INK, a);
+    let ts = 18; k.font(ts, 600); while (k.spacedW(t, -0.2) > cw - 36 && ts > 14) k.font(--ts, 600);
+    text(ctx, k, t, cx, yy + 130, ts, 600, k.INK, a);
     text(ctx, k, sub, cx, yy + 160, 13.5, 400, MUTED(1), a);
-    if (stat) pill(ctx, k, stat, cx, yy + 236, appear(k, s, 0.9 + i * 1.1), false);
+    if (stat) {
+      const b = appear(k, s, 0.9 + i * 1.1), sy = yy + 8 * (1 - b);
+      ctx.save(); ctx.globalAlpha = k.alpha * b; ctx.fillStyle = 'rgba(25,25,25,.09)'; ctx.fillRect(x + 28, sy + 206, cw - 56, 1); ctx.restore();
+      ctx.save(); ctx.globalAlpha = k.alpha * b; k.font(11, 500, 'JetBrains Mono'); ctx.fillStyle = 'rgba(25,25,25,.46)'; ctx.textBaseline = 'middle';
+      const lw = k.spacedW(stat[0], 2); k.spaced(stat[0], cx - lw / 2, sy + 236, 2); ctx.restore();
+      let fs = 16; k.font(fs, 600); while (k.spacedW(stat[1], -0.2) > cw - 40 && fs > 12) k.font(--fs, 600);
+      text(ctx, k, stat[1], cx, sy + 262, fs, 600, k.INK, b);
+    }
   });
   text(ctx, k, 'Source: Cognition, “How to Automate Failure Triages and 10x Test Generation”', 720, 570, 13, 400, MUTED(0.9), appear(k, s, 1.0));
 }
