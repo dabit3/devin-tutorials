@@ -76,7 +76,7 @@ window.SPEC = {
       },
       "ringFor": 3.4,
       "cap": "Customize → Memory: Devin writes it, you ask it to remember or forget",
-      "vo": "Memory is different, because Devin writes it as you work, and you can change it too by asking Devin to remember or forget something. It's personal to you, and you'll find it under Customize, Memory.",
+      "vo": "Memory is different, because Devin writes it as you work. You can change it too by asking Devin to remember or forget something. It's personal to you, and you'll find it under Customize, Memory.",
       "hl": null,
       "subPos": {
         "x": 0.74,

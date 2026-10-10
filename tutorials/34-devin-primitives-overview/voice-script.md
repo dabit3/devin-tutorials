@@ -10,7 +10,7 @@ Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, default settings: 
 
 4. You can also write a rule under Customize, Rules, and set its trigger to always on.
 
-5. Memory is different, because Devin writes it as you work, and you can change it too by asking Devin to remember or forget something. It's personal to you, and you'll find it under Customize, Memory.
+5. Memory is different, because Devin writes it as you work. You can change it too by asking Devin to remember or forget something. It's personal to you, and you'll find it under Customize, Memory.
 
 6. When a task should be done the same way every time, like testing before a pull request, write it as a skill file in your repo, and Devin uses it automatically when it's relevant.
 
