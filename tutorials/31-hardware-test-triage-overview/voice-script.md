@@ -1,6 +1,6 @@
 # Tutorial 31: Hardware and simulation test triage, how it works (voice script)
 
-Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, default settings: stability 0.5, similarity 0.75, style 0, speed 1), generated as one take with `_kit/tools/vo_onetake.py` and cut locally at sentence boundaries.
+Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, default settings: stability 0.5, similarity 0.75, style 0, speed 1), generated as one take with `_kit/tools/vo_onetake.py` (seed 6601) and cut locally at sentence boundaries. At Nader's request the closing line alone was regenerated afterwards (same voice and default settings, seed 303) because it came out flat in the take.
 
 1. Robotics teams often run simulation suites on powerful devboxes by hand, so failures pile up and get triaged a day late.
 
