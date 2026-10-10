@@ -27,6 +27,10 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 23. **Managed Devins: how it works** (overview, 1:16): A short diagram-led overview instead of a step-by-step run. One coordinator Devin splits a big task across managed Devins, each in its own isolated VM, monitors them, and compiles one summary; real shots from tutorial 19 show the four managed Devins, the sidebar tree, the PR summary and a message relayed through the coordinator, then Settings → Preferences → Auto-approve child sessions, the nesting tree, and four use cases (migrations, test coverage, one playbook across services, parallel research). [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/23-managed-devins-overview/23-managed-devins-overview.mp4)
 
+<!-- -->
+
+34. **Devin Primitives: when to use what** (overview, 1:17): A short diagram-led overview for teams setting Devin up. A map of the primitives (always-on context: AGENTS.md, rules and Memory; reusable procedures: Skills and Playbooks; reach and sharing: MCP servers and Plugins), then for each one when to use it, where it lives in the product (real Customize → Rules, Memory, Skills, MCPs and Plugins tabs, and Settings → Playbooks) and how to build one (a short AGENTS.md and a minimal SKILL.md on screen), ending on a "which one should I use?" diagram. A one-page [cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md) covers the same table. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview.mp4)
+
 ## Narrated tutorials
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
@@ -34,7 +38,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Devin Desktop, narrated by Joseff** (2:18): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-joseff.mp4)
 - **Devin Desktop, narrated by Megan** (2:17): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-megan.mp4)
 - **Devin in Slack, narrated by Megan** (1:14): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack-megan.mp4)
-- **Devin CLI, narrated by Nader** (1:41): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/10-devin-cli/10-devin-cli-nader.mp4)
+- **Devin CLI, narrated by Nader** (1:38): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/10-devin-cli/10-devin-cli-nader.mp4)
 - **Devin Desktop, narrated by Nader** (2:11): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-nader.mp4)
 - **Devin in Slack, narrated by Nader** (1:13): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack-nader.mp4)
 - **Devin Memory, narrated by Nader** (1:13): Tell Devin a preference, watch it save to Memory, browse Customize → Memory and Dreaming, then see a new session follow it. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-nader.mp4) · [Voice script](tutorials/13-devin-memory/voice-script.md)
@@ -47,7 +51,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **MCP Servers & Marketplace, narrated by Nader** (1:31): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/05-mcp-marketplace/05-mcp-marketplace-nader.mp4) · [Voice script](tutorials/05-mcp-marketplace/voice-script.md)
 - **DeepWiki, narrated by Nader** (1:18): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/06-deepwiki/06-deepwiki-nader.mp4) · [Voice script](tutorials/06-deepwiki/voice-script.md)
 - **Automating Tutorials with Devin, narrated by Nader** (1:49): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/07-automations/07-automations-nader.mp4) · [Voice script](tutorials/07-automations/voice-script.md)
-- **Testing Apps with Devin, narrated by Nader** (1:44): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/08-computer-use-testing/08-computer-use-testing-nader.mp4) · [Voice script](tutorials/08-computer-use-testing/voice-script.md)
+- **Testing Apps with Devin, narrated by Nader** (1:38): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/08-computer-use-testing/08-computer-use-testing-nader.mp4) · [Voice script](tutorials/08-computer-use-testing/voice-script.md)
 - **Devin Review, narrated by Nader** (1:52): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/09-devin-review/09-devin-review-nader.mp4) · [Voice script](tutorials/09-devin-review/voice-script.md)
 - **Devin Playbooks, narrated by Nader** (1:22): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/15-devin-playbooks/15-devin-playbooks-nader.mp4) · [Voice script](tutorials/15-devin-playbooks/voice-script.md)
 - **Devin Automations: events, narrated** (2:14): How automations can run, the MCPs they can use, natural-language setup, then a failing GitHub check triggers an automation, and Devin fixes the PR on its own. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/16-automation-triggers/16-automation-triggers-narrated.mp4) · [Voice script](tutorials/16-automation-triggers/voice-script.md)
@@ -55,6 +59,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **iPhone and iPad apps on Mac VMs, narrated by Nader** (1:35): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/18-ios-ipad-mac-vms/18-ios-ipad-mac-vms-nader.mp4) · [Voice script](tutorials/18-ios-ipad-mac-vms/voice-script.md)
 - **Managed Devins, narrated by Nader** (2:25): One coordinator Devin starts 4 managed Devins, each adding tests to one component in its own PR, then compiles one summary; one child UI-tests the card modal live on its own desktop, and a closing diagram shows how teams can nest several levels deep. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/19-managed-devins/19-managed-devins-nader.mp4) · [Voice script](tutorials/19-managed-devins/voice-script.md)
 - **Managed Devins: how it works (overview), narrated by Nader** (1:27): How a coordinator Devin splits work across managed Devins, keeps you in control, nests, and where it pays off. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/23-managed-devins-overview/23-managed-devins-overview-nader.mp4) · [Voice script](tutorials/23-managed-devins-overview/voice-script.md)
+- **Devin Primitives: when to use what (overview), narrated by Nader** (1:38): When to use AGENTS.md, rules, Memory, Skills, Playbooks, MCP servers and Plugins, where each lives in the product, and how to build one. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview-nader.mp4) · [Voice script](tutorials/34-devin-primitives-overview/voice-script.md) · [Cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md)
 
 ## Making a new tutorial
 
