@@ -22,6 +22,7 @@
 | 17 | Devin Security Swarm | `17-security-swarm/` |
 | 18 | iPhone and iPad apps on Mac VMs | `18-ios-ipad-mac-vms/` |
 | 23 | Managed Devins: how it works (overview) | `23-managed-devins-overview/` |
+| 28 | Devin on every platform (overview) | `28-multiplatform-overview/` |
 | 31 | Hardware and simulation test triage (overview) | `31-hardware-test-triage-overview/` |
 | 34 | Devin Primitives: when to use what (overview) | `34-devin-primitives-overview/` |
 
