@@ -29,7 +29,8 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "cap": "Always-on context, reusable procedures, reach and sharing",
-      "vo": "They fall into three groups: always-on context, reusable procedures, and ways to reach new tools and share what you've built.",
+      "vo": "They fall into three groups. There's always-on context, reusable procedures, and ways to reach new tools and share what you've built.",
+      "voSay": "They fall into three groups. There's always-on context, reusable procedures, and ways to reach new tools and share what you've built.\n",
       "hl": null
     },
     "0002.png": {

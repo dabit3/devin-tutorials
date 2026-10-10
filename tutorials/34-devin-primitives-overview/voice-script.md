@@ -4,7 +4,7 @@ Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, default settings: 
 
 1. Devin gets better the more you teach it. Each primitive is a different way to do that.
 
-2. They fall into three groups: always-on context, reusable procedures, and ways to reach new tools and share what you've built.
+2. They fall into three groups. There's always-on context, reusable procedures, and ways to reach new tools and share what you've built.
 
 3. For context every session needs, like build commands and conventions, commit a short agents file at the root of your repo, and Devin includes it automatically.
 
