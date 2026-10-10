@@ -2,7 +2,7 @@
 
 Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, default settings: stability 0.5, similarity 0.75, style 0, speed 1), generated as one take with `_kit/tools/vo_onetake.py` and cut locally at sentence boundaries.
 
-1. Devin gets better the more you teach it. Each primitive is a different way to teach it.
+1. Devin gets better the more you teach it. Each primitive is a different way to do that.
 
 2. They fall into three groups: always-on context, reusable procedures, and ways to reach new tools and share what you've built.
 
