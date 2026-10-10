@@ -22,6 +22,7 @@
 | 17 | Devin Security Swarm | `17-security-swarm/` |
 | 18 | iPhone and iPad apps on Mac VMs | `18-ios-ipad-mac-vms/` |
 | 23 | Managed Devins: how it works (overview) | `23-managed-devins-overview/` |
+| 28 | Devin on every platform (overview) | `28-multiplatform-overview/` |
 | 33 | Dynamic Workflows | `33-dynamic-workflows/` |
 | 34 | Devin Primitives: when to use what (overview) | `34-devin-primitives-overview/` |
 
