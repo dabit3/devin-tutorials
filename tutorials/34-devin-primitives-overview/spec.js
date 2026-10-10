@@ -74,8 +74,8 @@ window.SPEC = {
         "h": 85
       },
       "ringFor": 3.4,
-      "cap": "Customize → Memory: learned automatically, personal to you",
-      "vo": "Memory is different, because Devin writes it itself as you work, it's personal to you, and you'll find it under Customize, Memory.",
+      "cap": "Customize → Memory: Devin writes it, you ask it to remember or forget",
+      "vo": "Memory is different, because Devin writes it as you work, and you can change it too by asking Devin to remember or forget something. It's personal to you, and you'll find it under Customize, Memory.",
       "hl": null,
       "subPos": {
         "x": 0.74,
@@ -115,24 +115,6 @@ window.SPEC = {
       "capPos": {
         "x": 0.21,
         "y": 0.82
-      }
-    },
-    "0007.png": {
-      "hold": 3.2,
-      "cursor": false,
-      "ring": {
-        "x": 720.6,
-        "y": 411.9,
-        "w": 343.7,
-        "h": 203.8
-      },
-      "ringFor": 2.8,
-      "cap": "Settings → Knowledge: it has moved to skills",
-      "vo": "If you used Knowledge before, it has moved to skills, so write new instructions as skills.",
-      "hl": null,
-      "subPos": {
-        "x": 0.7,
-        "y": 0.1
       }
     },
     "0008.png": {
@@ -205,6 +187,7 @@ window.SPEC = {
     }
   }
 };
+
 
 
 // Narrated cut only: end the last beat 0.5 s after its line so the outro line follows in about 1 s (captioned frame count unchanged).

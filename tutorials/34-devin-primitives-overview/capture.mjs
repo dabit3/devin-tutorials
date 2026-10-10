@@ -1,4 +1,4 @@
-// Proof shots for the primitives overview: Customize tabs (Rules, Memory, Skills, MCPs, Plugins) and Settings (Knowledge, Playbooks).
+// Proof shots for the primitives overview: Customize tabs (Rules, Memory, Skills, MCPs, Plugins) and Settings (Playbooks).
 // Nothing is saved: create dialogs are cancelled. Raw shots go to $OUT; assemble.py builds shots/ with scene placeholders.
 //   ZOOM=1.25 MASK_TEXT=<email>,<email name> OUT=<dir> node capture.mjs
 import { Rec, sleep } from '../_kit/capture/rec.mjs';
@@ -41,9 +41,6 @@ await shot('memory', `() => [[...document.querySelectorAll('main *')].find(e => 
 await click({ text: 'devin-automations.md', sel: 'main button,main [role=treeitem],main div' });
 await shot('memory-file', `() => [[...document.querySelectorAll('main *')].find(e => e.children.length === 0 && /^What Devin remembers about you/.test((e.innerText||'').trim())), [...document.querySelectorAll('main h1, main h2, main h3')].find(e => (e.innerText||'').trim().startsWith('Memory'))]`);
 
-// Knowledge: moved to skills
-await open('settings/knowledge');
-await shot('knowledge', `() => [${byText('Knowledge has moved to skills')}, ${byText('View skills', 'a,button')}]`, 24);
 
 // Skills: create one in Customize
 await open('customize?tab=skills');

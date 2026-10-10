@@ -121,11 +121,11 @@ function curveH(ctx, k, x0, y0, x1, y1, p, dot = -1) {
   if (dot > 0 && dot < 1) { const [dx, dy] = pt(dot), f = Math.min(1, dot * 6, (1 - dot) * 6); ctx.beginPath(); ctx.arc(dx, dy, 5, 0, Math.PI * 2); ctx.fillStyle = rgba(BLUE, f); ctx.shadowColor = rgba(BLUE, 0.6 * f); ctx.shadowBlur = 14; ctx.fill(); }
   ctx.restore();
 }
-// Three groups, two primitives each, plus the Knowledge note.
+// Three groups, two primitives each.
 function map(ctx, s, k) {
   eyebrow(ctx, k, 'THREE KINDS OF TEACHING', 130, appear(k, s, 0.05));
   const G = [
-    ['Always-on context', 'What every session should know', [['AGENTS.md and rules', 'You write them, in the repo or Customize'], ['Memory', 'Devin learns it, personal to you']]],
+    ['Always-on context', 'What every session should know', [['AGENTS.md and rules', 'You write them, in the repo or Customize'], ['Memory', 'Devin learns it, you can change it']]],
     ['Reusable procedures', 'How to do a task the same way', [['Skills', 'SKILL.md in your repo, loaded on demand'], ['Playbooks', 'Prompts you attach to a session']]],
     ['Reach and sharing', 'What Devin can connect to and share', [['MCP servers', 'Tools beyond the built-in ones'], ['Plugins', 'Bundle skills, rules, hooks and MCPs']]],
   ];
@@ -136,12 +136,6 @@ function map(ctx, s, k) {
     text(ctx, k, sub, x + cw / 2, y + 34 + 12 * (1 - a), 15, 400, MUTED(1), a);
     items.forEach(([n, d], j) => card(ctx, k, x, y + 74 + j * 112, cw, 92, n, d, appear(k, s, t0 + 0.45 + j * 0.35, 0.6)));
   });
-  const ka = appear(k, s, 4.8, 0.7);
-  if (ka > 0) {
-    k.font(15, 500); const t = 'Knowledge has moved to skills', w = k.spacedW(t, -0.2) + 36, cx = x0 + cw + gap + cw / 2, yy = 600 + 8 * (1 - ka);
-    ctx.save(); ctx.globalAlpha = k.alpha * ka; ctx.setLineDash([5, 5]); k.rr(cx - w / 2, yy - 18, w, 36, 18); ctx.lineWidth = 1.2; ctx.strokeStyle = 'rgba(25,25,25,.28)'; ctx.stroke(); ctx.restore();
-    text(ctx, k, t, cx, yy, 15, 500, MUTED(1.3), ka);
-  }
 }
 // AGENTS.md at the repo root: short, always included.
 function agents(ctx, s, k) {
@@ -167,6 +161,18 @@ function skill(ctx, s, k) {
   card(ctx, k, 910, 404, 330, 92, 'Or on request', 'Mention @skills:test-before-pr', c);
 }
 // Needs on the left travel to the primitive that fits.
+// Narrated cut: when each cue word is spoken in a beat's line, estimated from its subtitle chunks (null in the captioned cut).
+function cueTimes(img, words) {
+  const L = window.SPEC.voLines && window.SPEC.voLines[img]; if (!L) return null;
+  const W = [];
+  for (const ch of L.chunks) {
+    let o = 0;
+    for (const w of ch.text.split(' ')) { W.push({ w: w.toLowerCase().replace(/[^a-z]/g, ''), t: ch.t0 + (ch.t1 - ch.t0) * o / ch.text.length }); o += w.length + 1; }
+  }
+  let from = 0;
+  return words.map(cw => { const j = W.findIndex((x, n) => n >= from && x.w === cw); if (j < 0) return null; from = j + 1; return W[j].t; })
+    .map((t, i, a) => t ?? (i ? a[i - 1] + 1.0 : 0.4));
+}
 function which(ctx, s, k) {
   eyebrow(ctx, k, 'WHICH ONE SHOULD I USE?', 118, appear(k, s, 0.05));
   const R = [
@@ -178,8 +184,9 @@ function which(ctx, s, k) {
     ['Share a bundle across the whole org', 'Plugin'],
   ];
   const y0 = 182, dy = 84, lw = 470, lx = 170, rx = 930, rw = 340;
+  const cue = cueTimes('0012.png', ['repeatable', 'conventions', 'preferences', 'shared', 'tools', 'plugins']);
   R.forEach(([need, prim], i) => {
-    const t0 = 0.4 + i * 1.0, y = y0 + i * dy, a = appear(k, s, t0, 0.6), p = k.eInOut(k.prog(s, t0 + 0.3, t0 + 0.9)), b = appear(k, s, t0 + 0.7, 0.5);
+    const t0 = cue ? Math.max(0.2, cue[i] - 0.3) : 0.4 + i * 1.0, y = y0 + i * dy, a = appear(k, s, t0, 0.6), p = k.eInOut(k.prog(s, t0 + 0.3, t0 + 0.9)), b = appear(k, s, t0 + 0.7, 0.5);
     box(ctx, k, lx, y + 10 * (1 - a), lw, 62, a, 0, 12);
     text(ctx, k, need, lx + 22, y + 31 + 10 * (1 - a), 17, 500, INK, a, 'left');
     curveH(ctx, k, lx + lw + 6, y + 31, rx - 6, y + 31, p, k.prog(s, t0 + 0.35, t0 + 1.2));
