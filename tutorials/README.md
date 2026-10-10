@@ -50,7 +50,7 @@ MASK_TEXT=<email name> node capture.mjs
 
 Native apps (macOS):
 
-- **Devin CLI** (`10-devin-cli/`): `_kit/capture/term/termrec.mjs` runs the real `devin` command in a tmux session and renders the pane with xterm.js at 3× in Chrome, so terminal text stays sharp at 4K. `app.mjs` then captures the result in the Orbit app at `http://localhost:5173`. Needs `brew install tmux`, a signed-in `devin` CLI and Chrome CDP on `127.0.0.1:9333`.
+- **Devin CLI** (`10-devin-cli/`): `_kit/capture/term/termrec.mjs` runs the real `devin` command in a tmux session and renders the pane with xterm.js at 3× in Chrome, so terminal text stays sharp at 4K (light theme, JetBrains Mono at 24 px). `capture.mjs` records the local task and permission modes, then `cloud.mjs` appends `/model`, `/handoff`, `/cloud` and `devin ssh`, run from a checkout whose origin is `thequantexplorer/orbit-demo`. Needs `brew install tmux`, a signed-in `devin` CLI and Chrome CDP on `127.0.0.1:9333`.
 - **Devin Desktop** (`11-devin-desktop/`): `_kit/capture/desktop.mjs` attaches to the Electron app over CDP. Launch it with `open -a /Applications/Devin.app --args --remote-debugging-port=9335`, sign in, and keep it frontmost while capturing (screenshots stall when the window is in the background).
 - **Slack** (`12-devin-slack/`): the same recorder attaches to the Slack desktop app. Launch it with `open -a /Applications/Slack.app --args --remote-debugging-port=9336`, open a channel with Devin invited, and run `PHASE=1 node capture.mjs` (the `!ask` and session parts), then `PHASE=3 SESSION=<session url>` (web app, Chrome CDP) and `PHASE=4` (archive).
 
