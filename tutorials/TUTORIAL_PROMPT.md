@@ -1,4 +1,6 @@
-# Prompt: create a Devin feature tutorial video
+# Prompt: create an in-depth Devin feature tutorial (step by step)
+
+For a short, diagram-led concept video ("how it works and what you can do") use `OVERVIEW_PROMPT.md` instead.
 
 Copy everything below the line into a new Devin session. Fill in the three fields at the top; leave the rest unchanged.
 
@@ -231,3 +233,68 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - One PR per round of changes, always branched from `main` (never stacked on another tutorial PR's branch). If the previous PR was merged, start a new branch from `main`, and after a merge check the files on `origin/main`.
 - Push large media in separate commits (docs and spec, then `shots/`, then each MP4): a ~300 MB push in one go fails with HTTP 504. When merging `main` into a tutorial branch, the root `README.md` usually conflicts; afterwards grep for all three marker kinds (`<<<<<<<`, `|||||||`, `>>>>>>>`), since a diff3 resolve can leave the middle one behind.
 - A short note, in the PR description too, listing everything the capture changed in real accounts (sessions started or archived, PRs opened or merged, automations, secrets created and deleted), so it can be cleaned up.
+
+## Lessons from the layout-rules redo round (tutorials 01–28)
+
+**Before recording**
+- Check the account state first and plan around what's really there: personal memory on (Customize → Memory → More actions), platform picker reset to Ubuntu, Ask mode scope reset, no leftover automations, secrets or MCPs. A dry run leaves pickers on the last choice, so the on-camera pick isn't real unless you reset it.
+- Make the on-camera task genuinely new: ask Devin (Ask mode) to list the demo app's existing features first. A natural feature request with dates (e.g. "Due today / Overdue" chips) reliably yields real Devin Review findings, so you rarely need to plant a bug. If you do plant one, have a separate session open the PR with one named bug, don't mention it in the PR text, stop that session after it opens the PR, and say on camera that it was planted.
+- Restoring a planted bug with a revert on main gets noticed and mentioned by Devin on camera. Narrate it, or restore it without a revert.
+- Use a fresh demo PR: opening old ones can wake their sessions or re-run analysis.
+- Home composer remembers Ask mode: force Agent (`main button[aria-pressed]` with text "Agent") and require a `/sessions/` URL, or the run silently becomes an Ask search with no PR.
+- Parallel tutorials share demo repos: expect real merge conflicts. Let Devin resolve them, then merge on camera.
+- If a feature needs an account or plan state the demo org doesn't have (a linked ChatGPT account, Slack workspace, Windows availability), stop and ask Nader before capturing. Never mock the missing UI.
+
+**Capture**
+- Sidebar collapsed hides the "Working" row: detect a running session with `main button[aria-label="Stop Devin"]`. Take the session ID from the URL only on `/sessions/` pages.
+- Session chat is virtualized: after a long test the PR card leaves the DOM. Open the PR from the session header's `#NN` link or `?tab=pr:N`, and use capture phases (`PHASE=merge SESSION=<url>`, `RESUME=1`, `KEEP=1`) instead of redoing a whole take. Trim `beats.json` before re-running a phase.
+- Open and play the test recording before merging. After a merge the PR icon turns purple, and reordering later means cropping it out. Pick the recording by its card text ("retest", "N passed"); the viewer has no `[role=dialog]`, so check via the `Close test recording viewer` button's ancestor. Reject any take whose recording reports a failure, unless the failure is the story (02 shows a real first-run failure, then a clean retest). Budget time for a second full test take.
+- Computer tab: open it only once the machine is live ("Watch and control Devin's Computer" is the empty state). Don't let `tidy()` close it while live, and park the cursor on the panel's header strip or the chat column, since a cursor over the remote screen shows a big "Take control" overlay (also on macOS VMs). A new session that opens on the empty Computer picker makes `r.clean()` reject every frame: call `tidy()` right after sending.
+- At 125% zoom many controls sit below the fold (finding panel buttons, Settings nav items, PR cards in nested scrollers): `scrollIntoView` and re-measure before clicking or ringing.
+- Some menus (automation **More actions** → Delete) open only with a real mouse click, not a synthetic pointerdown. Some header buttons sit outside `<main>`; don't scope lookups to `main`. Ctrl+B doesn't expand the sidebar inside a session page; click **Expand sidebar**.
+- Scripted composer typing: click in, then use real key input, and check Send is enabled before clicking it.
+- Monaco editors under the CDP viewport override lay out once at ~16 lines: clear and re-apply `Emulation.setDeviceMetricsOverride` at the same size, then find lines via `.view-line`. Code-panel line numbers are `[data-line-number]` attributes, not text. PR diff panes: wait for `.line-content` past "Loading diff...", close the analysis overlay, click Full width, and measure rings from the code lines.
+- `r.find({ text })` takes a string; a RegExp silently matches nothing. Select links that only have an aria-label with `a[aria-label^="<name>"]`.
+- Devin Review doesn't update CI checks in place: poll with `page.goto(reviewUrl)`, not `reload()`. Read PR links from `<a href>`; page text often only shows a Devin Review link.
+- Ask Devin chat now ends with "Waiting for questions", not "Ready": treat it as done when the text is stable, Stop/Cancel is gone and Send is back. `clean()` doesn't catch "PR analysis in progress" skeleton cards; skip those beats.
+- Decline the test agent's "save testing notes as a skill" card and any other approval cards you don't need, so none sit pending in the demo account.
+- Terminal (CLI): the kit's `TermRec` is dark-only, so 10 has a light-mode wrapper in `10-devin-cli/term/`. tmux doesn't pick up `~/.local/bin`: export PATH in the tmux start command. After browser beats spliced into a terminal capture, set `cursor:false` again on the first terminal beat.
+
+**Rings and captions**
+- Ring boxes and `target`s are 1440×810 frame units (CSS px × ZOOM). Measure them from the DOM or `beats.json`, never from scaled stills. The kit `hl` box `x/y` is the box centre. `hl: true` places the caption beside the cursor, not the box: when the cursor is outside the box use `ring: <hlBox>`.
+- Only ring what is on screen in that beat (the model picker shows SWE-2 first; Fusion appears after it's picked), and never ring a message that has scrolled off screen.
+- On session pages never use `capPos: 'bottom'`: it lands on the composer's buttons. Use the default placement beside the ring, `top`, or `capPos: {x, y}` (caption centre as a frame fraction, e.g. `{x:.215, y:.105}` at the top of the chat column); per-beat `subPos` moves narrated subtitles. Wide Simulator shots are the exception: caption at the bottom.
+- A click beat's caption persists through following poll beats: set `cap: ""` on the first poll beat. When a hover also scrolls a list, give the highlight `hlDelay` ~0.8 s.
+- Cramped drawers: if there's no clear space the caption falls to bottom-centre even over the target, so shorten it.
+- Check every ring and caption by rendering single frames (`render.mjs <dir> --frames N --out build/fix`) before the full build. `--out` is relative to the tutorial folder.
+
+**Narration timing**
+- Run `VOICE=<id> node _kit/tools/render.mjs <dir> --count` before every long build. Target "narration waits on visuals" of about 1 s or less (never more than ~1.5 s), and treat anything longer as a bug.
+- Fixes, in order: move the line onto the earlier click or hover beat where the action starts; rename that line's `.wav` and its `lines.json` entry to move it (keeps the single take); shorten holds or poll limits for the narrated cut only with `const NARRATED = !!new URLSearchParams(location.search).get("voice")` in spec.js; play long waits (approvals, Devin working) under a `Sped up` badge and keep a few frames. A poll stretch that starts on a narrated shot always runs its full limit past the line.
+- `badge: 'Sped up'` persists until a later beat sets `badge: null`.
+- Moving a line also re-splits poll stretches in the captioned cut: compare its frame count with the committed file before deciding whether to rebuild it.
+- After moving lines, re-run STT on the final narrated mix. STT transcribes the intro chime as "[on-hold music]", so check the first word's time instead.
+- Don't say file names in narration (`auth.js` spelled out made an 11.7 s subtitle); keep names on screen.
+
+**Repo hygiene**
+- Keep `tutorials/_kit` identical to main's. Put one-off CDP helpers in the tutorial folder, never in `_kit`. A kit change needs parent approval and must keep older videos rendering the same.
+- `vo_onetake.py` writes `vo/<voice>/_full-take.wav`: never commit it (`git add vo` picks it up). Don't delete `lines.json`.
+- After the spec is final, delete PNGs and `beats.json` rows for `skip: true` beats and failed takes, and remove narration WAVs the spec no longer uses (03 went from 386 MB to 67 MB).
+- Push commit by commit (`git push origin <sha>:refs/heads/<branch>`), with `shots/` in batches of ~50 PNGs and each MP4 alone: pushes of ~150 MB and up return 504 or "remote unpack failed".
+- Root README is a numbered list and GitHub renumbers it: put a blank line plus `<!-- -->` before any row whose number doesn't follow the previous one. Fetch and merge main right before opening the PR, and again after the review round.
+- Run `vo_onetake.py` and `render.mjs` from `tutorials/` with relative paths. Captioned and narrated builds of one folder share `build/`: run them one after the other.
+
+**Demo account and cleanup**
+- Capture sessions can't reach `thequantexplorer/*` with their own git token (403/404, can't close PRs). Close demo PRs, delete branches and push demo-repo fixes through a short off-camera Devin session in thequantexplorer, or ask the recorded session to do it.
+- Clean up right after recording: delete demo automations (a daily schedule saved minutes before its run time can fire that day) and recreate any automation before the final take so its events list is empty, delete demo secrets (with a `PHASE=cleanup` that doesn't call `r.done()`, which wipes `beats.json`), uninstall demo MCPs, close `/handoff` and dry-run PRs, archive Ask Devin `/search/` sessions and helper sessions, set org-wide toggles like "Responding to bots" back (remove its bot chip off camera first so you can show adding it). List all of it in the PR description.
+
+**Feature notes (current UI)**
+- Secrets: Add secret opens a right drawer with an Organization/Personal toggle; types are Raw secret, Cookie and TOTP; Cookie takes JSON/base64 and previews "1 cookie parsed"; Redact value is on by default.
+- MCP: **New MCP** (HTTP/STDIO/SSE) or **From plugin marketplace (Recommended)**, then **Install for me** and a security notice with a checkbox.
+- DeepWiki: click the sidebar "Wiki" row (its link is zero-size); page-tree entries are aria-label-only links; content scrolls in an inner container. Ask Devin opens a new `/search/` tab; citations are `span[role=link]` chips; pick a citation that's off screen so the jump shows.
+- Automations: natural-language creation asks two questions before drafting (log in for recordings? which identity runs it?); answer them on camera. Docs list three ways to create one, including templates.
+- Memory: "Save this to your memory: …" reliably produces an `Updated memory` card; click its visible text span to open the diff.
+- Security Swarm: the findings page never shows "Completed"; it's done when "Scan in progress" and "No findings yet" are gone and the Dismissed tab appears. Never claim full coverage.
+- Devin Review: the Review page has no Changes tab; click a finding in the sidebar to open the diff. Expect 2–3 Review rounds (~15 min), since Review also flags Devin's own fixes. "Responding to bots" is org-wide.
+- CLI: `/handoff`, `/cloud` and `devin ssh` need a demo repo the org's git integration can clone.
+- Platforms: the platform menu shows Ubuntu, macOS and Windows (limited availability), with no Android option. Android runs as an emulator set up in an Ubuntu session/blueprint.
