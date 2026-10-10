@@ -1,6 +1,6 @@
 # Tutorial 33: Dynamic Workflows, step by step (voice script)
 
-Narrator: Nader (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings: stability 0.5, similarity 0.75, style 0, speed 1). Generated as one take with `_kit/tools/vo_onetake.py` and cut locally at sentence boundaries.
+Narrator: Nader (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings: stability 0.5, similarity 0.75, style 0, speed 1). Generated as one take with no seed (`VO_SEED=none python3 _kit/tools/vo_onetake.py`) and cut locally at sentence boundaries.
 
 Real run: https://app.devin.ai/sessions/b4ed85ba851045e1bf816ffec056959d (thequantexplorer org, repo thequantexplorer/orbit-demo). Five component pipelines, 20 agents (15 planned plus 5 in correction rounds for AddCardForm and CardModal), PRs #29 to #32 with green CI and passing browser checks, Dialog clean with no PR. The demo PRs were closed unmerged and their branches deleted after recording.
 
