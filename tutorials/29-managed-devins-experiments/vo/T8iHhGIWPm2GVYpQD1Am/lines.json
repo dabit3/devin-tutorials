@@ -1,0 +1,457 @@
+{
+ "0000.png": {
+  "text": "When you don't know which approach is best, don't guess. Let several Devins try them in parallel, and compare real results.",
+  "dur": 5.855,
+  "at": 0.0,
+  "end": 5.855,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.718,
+    "text": "When you don't know which approach is best,"
+   },
+   {
+    "t0": 1.776,
+    "t1": 4.063,
+    "text": "don't guess. Let several Devins try them in"
+   },
+   {
+    "t0": 4.11,
+    "t1": 5.855,
+    "text": "parallel, and compare real results."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "First, the coordinator measures main, so every experiment is compared against the same baseline.",
+  "dur": 4.97,
+  "at": 15.19,
+  "end": 20.16,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.065,
+    "t1": 2.027,
+    "text": "First, the coordinator measures main,"
+   },
+   {
+    "t0": 2.236,
+    "t1": 4.942,
+    "text": "so every experiment is compared against the same baseline."
+   }
+  ]
+ },
+ "0052.png": {
+  "text": "Then it starts four managed Devins, one per approach, each on its own branch in its own isolated VM.",
+  "dur": 5.76,
+  "at": 20.3,
+  "end": 26.06,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.075,
+    "t1": 1.898,
+    "text": "Then it starts four managed Devins,"
+   },
+   {
+    "t0": 2.014,
+    "t1": 2.955,
+    "text": "one per approach,"
+   },
+   {
+    "t0": 3.198,
+    "t1": 5.706,
+    "text": "each on its own branch in its own isolated VM."
+   }
+  ]
+ },
+ "0097.png": {
+  "text": "You can still steer the experiment. I'm asking the coordinator to have each Devin also time the first keystroke in search.",
+  "dur": 6.175,
+  "at": 26.32,
+  "end": 32.495,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.069,
+    "t1": 1.613,
+    "text": "You can still steer the experiment."
+   },
+   {
+    "t0": 1.892,
+    "t1": 3.935,
+    "text": "I'm asking the coordinator to have each Devin"
+   },
+   {
+    "t0": 3.993,
+    "t1": 6.175,
+    "text": "also time the first keystroke in search."
+   }
+  ]
+ },
+ "0128.png": {
+  "text": "In the sidebar, the four experiments are nested under the coordinator.",
+  "dur": 3.14,
+  "at": 32.76,
+  "end": 35.9,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.061,
+    "t1": 0.827,
+    "text": "In the sidebar,"
+   },
+   {
+    "t0": 0.851,
+    "t1": 3.114,
+    "text": "the four experiments are nested under the coordinator."
+   }
+  ]
+ },
+ "0131.png": {
+  "text": "Inside the memoization Devin, the coordinator's message arrives, with one shared definition of the measurement.",
+  "dur": 5.53,
+  "at": 36.11,
+  "end": 41.64,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.089,
+    "t1": 1.714,
+    "text": "Inside the memoization Devin,"
+   },
+   {
+    "t0": 1.738,
+    "t1": 3.351,
+    "text": "the coordinator's message arrives,"
+   },
+   {
+    "t0": 3.468,
+    "t1": 5.488,
+    "text": "with one shared definition of the measurement."
+   }
+  ]
+ },
+ "0378.png": {
+  "text": "It benchmarks its branch against main, and its first keystroke drops from about nine hundred seventy-five milliseconds to about seven hundred thirty-four.",
+  "dur": 7.97,
+  "at": 41.86,
+  "end": 49.83,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 2.071,
+    "text": "It benchmarks its branch against main,"
+   },
+   {
+    "t0": 2.245,
+    "t1": 4.451,
+    "text": "and its first keystroke drops from about nine"
+   },
+   {
+    "t0": 4.475,
+    "t1": 7.911,
+    "text": "hundred seventy-five milliseconds to about seven hundred thirty-four."
+   }
+  ]
+ },
+ "0672.png": {
+  "text": "Back in the coordinator, it reruns all five builds on one machine and compares them in one table. With virtualization, the first keystroke shows results in fifty-eight milliseconds, compared with nine hundred ninety on main.",
+  "dur": 11.77,
+  "at": 50.22,
+  "end": 61.99,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.062,
+    "t1": 1.072,
+    "text": "Back in the coordinator,"
+   },
+   {
+    "t0": 1.095,
+    "t1": 3.382,
+    "text": "it reruns all five builds on one machine"
+   },
+   {
+    "t0": 3.533,
+    "t1": 5.054,
+    "text": "and compares them in one table."
+   },
+   {
+    "t0": 5.495,
+    "t1": 8.352,
+    "text": "With virtualization, the first keystroke shows results in"
+   },
+   {
+    "t0": 8.41,
+    "t1": 11.73,
+    "text": "fifty-eight milliseconds, compared with nine hundred ninety on main."
+   }
+  ]
+ },
+ "0673.png": {
+  "text": "It recommends virtualization, and lists what to review before you ship it, like offscreen focus and find-in-page.",
+  "dur": 6.17,
+  "at": 62.315,
+  "end": 68.485,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.018,
+    "t1": 1.528,
+    "text": "It recommends virtualization,"
+   },
+   {
+    "t0": 1.737,
+    "t1": 3.432,
+    "text": "and lists what to review before you ship"
+   },
+   {
+    "t0": 3.49,
+    "t1": 6.17,
+    "text": "it, like offscreen focus and find-in-page."
+   }
+  ]
+ },
+ "0674.png": {
+  "text": "I open the winning pull request in Devin Review and merge it.",
+  "dur": 2.85,
+  "at": 68.87,
+  "end": 71.72,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.093,
+    "t1": 1.765,
+    "text": "I open the winning pull request in Devin"
+   },
+   {
+    "t0": 1.823,
+    "t1": 2.85,
+    "text": "Review and merge it."
+   }
+  ]
+ },
+ "0794.png": {
+  "text": "It closes them without merging, and deletes their branches.",
+  "dur": 2.845,
+  "at": 74.675,
+  "end": 77.52,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.058,
+    "t1": 1.521,
+    "text": "It closes them without merging,"
+   },
+   {
+    "t0": 1.556,
+    "t1": 2.821,
+    "text": "and deletes their branches."
+   }
+  ]
+ },
+ "0808.png": {
+  "text": "With Auto-approve child sessions on, under Settings, Preferences, Devin starts managed Devins without asking you first.",
+  "dur": 6.26,
+  "at": 77.75,
+  "end": 84.01,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.072,
+    "t1": 1.86,
+    "text": "With Auto-approve child sessions on,"
+   },
+   {
+    "t0": 1.918,
+    "t1": 3.404,
+    "text": "under Settings, Preferences,"
+   },
+   {
+    "t0": 3.578,
+    "t1": 6.202,
+    "text": "Devin starts managed Devins without asking you first."
+   }
+  ]
+ },
+ "0811.png": {
+  "text": "One question went to the coordinator, which started four experiments in parallel.",
+  "dur": 3.455,
+  "at": 84.245,
+  "end": 87.7,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.09,
+    "t1": 1.472,
+    "text": "One question went to the coordinator,"
+   },
+   {
+    "t0": 1.495,
+    "t1": 3.422,
+    "text": "which started four experiments in parallel."
+   }
+  ]
+ },
+ "0813.png": {
+  "text": "Each one was measured the same way, and the results came back into one table.",
+  "dur": 3.365,
+  "at": 87.925,
+  "end": 91.29,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.067,
+    "t1": 1.507,
+    "text": "Each one was measured the same way,"
+   },
+   {
+    "t0": 1.53,
+    "t1": 3.33,
+    "text": "and the results came back into one table."
+   }
+  ]
+ },
+ "0814.png": {
+  "text": "You keep the winner, and close the rest.",
+  "dur": 1.76,
+  "at": 91.51,
+  "end": 93.27,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.07,
+    "t1": 0.801,
+    "text": "You keep the winner,"
+   },
+   {
+    "t0": 0.824,
+    "t1": 1.718,
+    "text": "and close the rest."
+   }
+  ]
+ },
+ "0815.png": {
+  "text": "You can use the same pattern for other research, like evaluating libraries before you adopt one, prototyping several UI designs, reproducing a bug across versions, or comparing approaches for a migration.",
+  "dur": 11.59,
+  "at": 93.47,
+  "end": 105.06,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.083,
+    "t1": 1.697,
+    "text": "You can use the same pattern for other"
+   },
+   {
+    "t0": 1.743,
+    "t1": 4.832,
+    "text": "research, like evaluating libraries before you adopt one,"
+   },
+   {
+    "t0": 5.041,
+    "t1": 7.049,
+    "text": "prototyping several UI designs,"
+   },
+   {
+    "t0": 7.328,
+    "t1": 9.348,
+    "text": "reproducing a bug across versions,"
+   },
+   {
+    "t0": 9.557,
+    "t1": 11.542,
+    "text": "or comparing approaches for a migration."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Four real experiments, one prompt, one winner.",
+  "dur": 2.975,
+  "at": 105.465,
+  "end": 108.44,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.058,
+    "t1": 1.335,
+    "text": "Four real experiments,"
+   },
+   {
+    "t0": 1.544,
+    "t1": 2.975,
+    "text": "one prompt, one winner."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "Orbit's board is slow with five thousand cards, so I'm asking Devin to start managed Devins that each try a different fix, run the benchmark, and open a draft pull request.",
+  "dur": 8.59,
+  "at": 6.25,
+  "end": 14.84,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.089,
+    "t1": 2.132,
+    "text": "Orbit's board is slow with five thousand cards,"
+   },
+   {
+    "t0": 2.167,
+    "t1": 4.269,
+    "text": "so I'm asking Devin to start managed Devins"
+   },
+   {
+    "t0": 4.303,
+    "t1": 5.871,
+    "text": "that each try a different fix,"
+   },
+   {
+    "t0": 6.08,
+    "t1": 6.985,
+    "text": "run the benchmark,"
+   },
+   {
+    "t0": 7.008,
+    "t1": 8.59,
+    "text": "and open a draft pull request."
+   }
+  ]
+ },
+ "0679.png": {
+  "text": "Then I ask the coordinator to close the other three.",
+  "dur": 2.345,
+  "at": 72.115,
+  "end": 74.46,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.053,
+    "t1": 2.293,
+    "text": "Then I ask the coordinator to close the other three."
+   }
+  ]
+ }
+}
