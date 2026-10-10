@@ -3,7 +3,7 @@ window.SPEC = {
   "subtitle": "From a plain-English task to a tested, merged pull request",
   "outro": "Describe it. Devin builds, tests, and ships it.",
   "speed": 12,
-  "cps": 30,
+  "cps": 48,
   "noZoom": [
     [
       "0046.png"
@@ -11,16 +11,22 @@ window.SPEC = {
   ],
   "edit": {
     "0000.png": {
-      "hold": 1.4
+      "hold": 3.0,
+      "cursor": false,
+      "vo": "Let's run your first Devin session. Describe a task in plain English, and Devin builds it, tests it, and opens a pull request."
     },
     "0001.png": {
-      "hold": 1.6
+      "hold": 1.6,
+      "vo": "Agent mode writes, runs and ships code. Ask mode explores your code and plans the work, without changing anything."
     },
     "0002.png": {
-      "hold": 1.4
+      "hold": 1.4,
+      "vo": "We'll stay in Agent mode."
     },
     "0005.png": {
-      "hold": 1.4
+      "hold": 1.4,
+      "vo": "Choose Fusion, Ultra, Normal or Lite, or try a preview model like SWE-2.",
+      "voSay": "Choose Fusion, Ultra, Normal or Lite, or try a preview model like swee two."
     },
     "0018.png": {
       "cam": {
@@ -28,7 +34,9 @@ window.SPEC = {
         "y": 430,
         "z": 1.3
       },
-      "camDur": 1
+      "camDur": 1,
+      "vo": "Type an @ sign to mention a repository.",
+      "voSay": "Type an at sign to mention a repository."
     },
     "0021.png": {
       "hold": 1.2
@@ -310,10 +318,13 @@ window.SPEC = {
     },
     "0046.png": {
       "cap": "Devin sets up, plans, and starts working",
-      "badge": "12× speed"
+      "badge": "12× speed",
+      "voGap": 1.0,
+      "vo": "Devin sets up its machine, makes a plan, and starts working on its own."
     },
     "0100.png": {
-      "cap": "Watch every command and edit as it happens"
+      "cap": "Watch every command and edit as it happens",
+      "vo": "Watch every command and edit as it happens. You can step in anytime, or just let it run."
     },
     "0150.png": {
       "skip": true
@@ -321,13 +332,16 @@ window.SPEC = {
     "0226.png": {
       "hold": 2.4,
       "badge": null,
-      "cap": "When Devin is done, it opens a PR and offers to test it"
+      "cap": "When Devin is done, it opens a PR and offers to test it",
+      "voGap": 1.0,
+      "vo": "When it's done, Devin opens a pull request, and offers to test the change."
     },
     "0236.png": {
       "hold": 0.7,
       "badge": "Sped up",
       "cap": "Devin opens the app and clicks through the feature",
-      "cursor": false
+      "cursor": false,
+      "vo": "Devin starts the app, plans a short test, and clicks through the feature itself."
     },
     "0237.png": {
       "skip": true
@@ -391,7 +405,8 @@ window.SPEC = {
     },
     "0257.png": {
       "hold": 0.7,
-      "cap": "It stars cards, drags them, and reloads the page"
+      "cap": "It stars cards, drags them, and reloads the page",
+      "vo": "It stars cards, drags them, and reloads the page to check they stay pinned."
     },
     "0258.png": {
       "skip": true
@@ -455,7 +470,8 @@ window.SPEC = {
     },
     "0278.png": {
       "hold": 1.8,
-      "badge": null
+      "badge": null,
+      "vo": "Then it sends you a recording of the test."
     },
     "0281.png": {
       "hold": 0.45
@@ -463,7 +479,8 @@ window.SPEC = {
     "0282.png": {
       "hold": 0.45,
       "cap": "Watch the recording: every check passed",
-      "cursor": true
+      "cursor": true,
+      "vo": "Play it back. All seven checks passed."
     },
     "0283.png": {
       "hold": 0.45
@@ -532,10 +549,12 @@ window.SPEC = {
       "hold": 0.45
     },
     "0310.png": {
-      "hold": 1.6
+      "hold": 1.6,
+      "vo": "Review the diff and the checks."
     },
     "0315.png": {
-      "hold": 3.4
+      "hold": 3.4,
+      "vo": "Merged. Your first change is shipped."
     },
     "0124.png": {
       "skip": true
@@ -686,6 +705,35 @@ window.SPEC = {
     },
     "0224.png": {
       "skip": true
+    },
+    "0003.png": {
+      "vo": "Next, pick how much horsepower Devin brings."
+    },
+    "0011.png": {
+      "vo": "Then choose the machine Devin works on: Linux, macOS or Windows."
+    },
+    "0016.png": {
+      "vo": "We'll stick with Linux."
+    },
+    "0023.png": {
+      "vo": "Then describe the task, and what done looks like."
+    },
+    "0045.png": {
+      "vo": "Send it."
+    },
+    "0229.png": {
+      "vo": "Click Test card starring to let it go ahead. You can also pre-approve testing in your settings."
+    },
+    "0234.png": {
+      "vo": "Open the Computer tab to watch."
+    },
+    "0307.png": {
+      "voGap": 1.0,
+      "vo": "Open the pull request right in the session."
+    },
+    "0311.png": {
+      "vo": "Happy with it? Merge the pull request."
     }
-  }
+  },
+  "voOutro": "Describe it. Devin builds, tests, and ships it."
 };
