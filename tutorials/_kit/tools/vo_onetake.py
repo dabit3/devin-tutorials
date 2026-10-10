@@ -12,7 +12,7 @@ MODEL = os.environ.get('VO_MODEL', 'eleven_multilingual_v2')
 STABILITY = float(os.environ.get('VO_STABILITY', '0.5'))
 STYLE = float(os.environ.get('VO_STYLE', '0'))
 SIMILARITY = float(os.environ.get('VO_SIMILARITY', '0.75'))  # ElevenLabs defaults: 0.5 / 0.75 / style 0
-SEED = int(os.environ.get('VO_SEED', '1234'))
+SEED = os.environ.get('VO_SEED', '1234')  # VO_SEED=none sends no seed, so every take is a fresh sample
 LUFS = float(os.environ.get('VO_LUFS', '-21'))
 PAD_IN, PAD_OUT = float(os.environ.get('VO_PAD_IN', '0.12')), float(os.environ.get('VO_PAD_OUT', '0.15'))
 SR = 48000
@@ -31,7 +31,7 @@ for _, _, say in order:
     bounds.append((len(U), len(U) + len(say))); U += say
 
 def tts(seed):
-    body = {'text': U, 'model_id': MODEL, 'seed': seed,
+    body = {'text': U, 'model_id': MODEL, **({} if seed is None else {'seed': seed}),
             'voice_settings': {'stability': STABILITY, 'similarity_boost': SIMILARITY, 'style': STYLE, 'use_speaker_boost': True}}
     req = urllib.request.Request(f'https://api.elevenlabs.io/v1/text-to-speech/{VOICE}/with-timestamps?output_format=mp3_44100_192',
                                  data=json.dumps(body).encode(), headers={'xi-api-key': KEY, 'Content-Type': 'application/json'})
@@ -82,7 +82,7 @@ def chunks(chars, st, en):
     return [{'t0': round(x[0]['t0'], 3), 't1': round(x[-1]['t1'], 3), 'text': ' '.join(w['text'] for w in x)} for x in gs]
 
 for attempt in range(4):
-    al, wav = tts(SEED + attempt)
+    al, wav = tts(None if SEED == 'none' else int(SEED) + attempt)
     track = pcm(wav)
     n = SR // 100
     db = [20 * math.log10(math.sqrt(sum(x * x for x in track[i:i + n]) / n) / 32768 + 1e-9) for i in range(0, len(track) - n + 1, n)]
