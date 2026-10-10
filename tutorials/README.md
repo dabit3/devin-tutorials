@@ -24,6 +24,7 @@
 | 23 | Managed Devins: how it works (overview) | `23-managed-devins-overview/` |
 | 28 | Devin on every platform (overview) | `28-multiplatform-overview/` |
 | 31 | Hardware and simulation test triage (overview) | `31-hardware-test-triage-overview/` |
+| 32 | Dynamic Workflows: how it works (overview) | `32-dynamic-workflows-overview/` |
 | 33 | Dynamic Workflows | `33-dynamic-workflows/` |
 | 34 | Devin Primitives: when to use what (overview) | `34-devin-primitives-overview/` |
 
