@@ -18,7 +18,7 @@ Real run: https://app.devin.ai/sessions/b4ed85ba851045e1bf816ffec056959d (thequa
 | 0216.png | Structured output, validated against the schema | It hands them back as structured output that's validated against the schema. |
 | 0243.png | Browser checks failed, so two fixes went back for another round | When the browser checks found more focus problems in AddCardForm and CardModal, the workflow sent them back to be fixed in the same pull requests and verified again. |
 | 0492.png | 20 agents, 4 PRs with green CI and browser checks | After twenty agents the run is complete, with four pull requests that passed CI and the browser checks, and Dialog came back clean. |
-| 0493.png | The roll-up: what was fixed and what needs manual attention | The roll-up lists what was fixed, and what still needs manual attention, like screen reader checks and a shared avatar contrast issue. |
+| 0493.png | Roll-up: fixed, plus manual follow-ups | The roll-up lists what was fixed, and what still needs manual attention, like screen reader checks and a shared avatar contrast issue. |
 | 0495.png | Each fix is a normal pull request | Each fix is a normal pull request that you can review and merge. |
 | 0496.png | The workflow you just watched | So that's one script, five pipelines, and a roll-up at the end. |
 | 0501.png | More ideas: migrations, research, loop until green | You can use the same pattern for migrations, for research and evaluations, or for loops that run until your tests are green. |

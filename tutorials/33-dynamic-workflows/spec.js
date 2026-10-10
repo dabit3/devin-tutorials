@@ -6,7 +6,7 @@ window.SPEC = {
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
-  "pollRunMax": 1.0,
+  "pollRunMax": 1,
   "edit": {
     "0000.png": {
       "hold": 6,
@@ -15,7 +15,11 @@ window.SPEC = {
       "vo": "When your work has real structure, like many units or stages that feed into each other, you can ask Devin for a workflow, and the orchestration becomes a script you can read, watch and resume."
     },
     "0001.png": {
-      "vo": "Here, I'm asking Devin to audit five Orbit components for accessibility issues, and to run each one through its own pipeline, from the audit to a fix with its own pull request, and then a check in the browser."
+      "vo": "Here, I'm asking Devin to audit five Orbit components for accessibility issues, and to run each one through its own pipeline, from the audit to a fix with its own pull request, and then a check in the browser.",
+      "subPos": {
+        "x": 0.7,
+        "y": 0.8
+      }
     },
     "0007.png": {
       "ring": {
@@ -30,7 +34,11 @@ window.SPEC = {
     "0010.png": {
       "badge": "Sped up",
       "cap": "Devin plans the run first",
-      "vo": "Devin reads the repo and plans the run, with fifteen agents on separate VMs, three for each component."
+      "vo": "Devin reads the repo and plans the run, with fifteen agents on separate VMs, three for each component.",
+      "subPos": {
+        "x": 0.15,
+        "y": 0.14
+      }
     },
     "0011.png": {
       "skip": true
@@ -135,7 +143,11 @@ window.SPEC = {
       "ringFor": 3,
       "cap": "register_workflow names the run and its three phases",
       "vo": "Then it writes the workflow script, which registers the workflow and its three phases.",
-      "badge": null
+      "badge": null,
+      "subPos": {
+        "x": 0.195,
+        "y": 0.145
+      }
     },
     "0053.png": {
       "ring": {
@@ -146,7 +158,11 @@ window.SPEC = {
       },
       "ringFor": 3,
       "cap": "Each agent call has a schema for structured results",
-      "vo": "Each step is an agent call with a schema, so every agent returns structured results that the next stage can build on."
+      "vo": "Each step is an agent call with a schema, so every agent returns structured results that the next stage can build on.",
+      "subPos": {
+        "x": 0.195,
+        "y": 0.145
+      }
     },
     "0054.png": {
       "ring": {
@@ -157,11 +173,23 @@ window.SPEC = {
       },
       "ringFor": 3,
       "cap": "pipeline runs each component through all three stages",
-      "vo": "And pipeline runs every component through audit, fix and verify on its own."
+      "vo": "And pipeline runs every component through audit, fix and verify on its own.",
+      "subPos": {
+        "x": 0.7,
+        "y": 0.725
+      }
     },
     "0055.png": {
       "cap": "The workflow panel: phases, agents and live status",
-      "vo": "The workflow panel shows each phase with its agents and their live status, starting with five audits running in parallel."
+      "vo": "The workflow panel shows each phase with its agents and their live status, starting with five audits running in parallel.",
+      "subPos": {
+        "x": 0.72,
+        "y": 0.605
+      },
+      "capPos": {
+        "x": 0.72,
+        "y": 0.605
+      }
     },
     "0056.png": {
       "badge": "Sped up",
@@ -249,7 +277,11 @@ window.SPEC = {
       },
       "ringFor": 3.5,
       "cap": "No barrier: Dialog is verifying while four are still fixing",
-      "vo": "There's no barrier between stages, so Dialog is already in browser verification while the other four are still fixing."
+      "vo": "There's no barrier between stages, so Dialog is already in browser verification while the other four are still fixing.",
+      "subPos": {
+        "x": 0.195,
+        "y": 0.145
+      }
     },
     "0090.png": {
       "badge": "Sped up",
@@ -601,7 +633,11 @@ window.SPEC = {
       },
       "ringFor": 3.5,
       "cap": "Each agent is a real Devin session",
-      "vo": "Any agent opens as a real Devin session, and this audit found two contrast issues in AddCardForm."
+      "vo": "Any agent opens as a real Devin session, and this audit found two contrast issues in AddCardForm.",
+      "subPos": {
+        "x": 0.5,
+        "y": 0.11
+      }
     },
     "0216.png": {
       "ring": {
@@ -612,7 +648,11 @@ window.SPEC = {
       },
       "ringFor": 3,
       "cap": "Structured output, validated against the schema",
-      "vo": "It hands them back as structured output that's validated against the schema."
+      "vo": "It hands them back as structured output that's validated against the schema.",
+      "subPos": {
+        "x": 0.7,
+        "y": 0.72
+      }
     },
     "0217.png": {
       "skip": true
@@ -684,6 +724,10 @@ window.SPEC = {
       "capPos": {
         "x": 0.6,
         "y": 0.474
+      },
+      "subPos": {
+        "x": 0.7,
+        "y": 0.095
       }
     },
     "0244.png": {
@@ -1373,6 +1417,10 @@ window.SPEC = {
       "capPos": {
         "x": 0.85,
         "y": 0.178
+      },
+      "subPos": {
+        "x": 0.72,
+        "y": 0.605
       }
     },
     "0493.png": {
@@ -1383,8 +1431,16 @@ window.SPEC = {
         "h": 105
       },
       "ringFor": 3.5,
-      "cap": "The roll-up: what was fixed and what needs manual attention",
-      "vo": "The roll-up lists what was fixed, and what still needs manual attention, like screen reader checks and a shared avatar contrast issue."
+      "cap": "Roll-up: fixed, plus manual follow-ups",
+      "vo": "The roll-up lists what was fixed, and what still needs manual attention, like screen reader checks and a shared avatar contrast issue.",
+      "subPos": {
+        "x": 0.76,
+        "y": 0.525
+      },
+      "capPos": {
+        "x": 0.78,
+        "y": 0.525
+      }
     },
     "0494.png": {
       "skip": true
@@ -1399,7 +1455,14 @@ window.SPEC = {
       "ringFor": 3,
       "cap": "Each fix is a normal PR",
       "vo": "Each fix is a normal pull request that you can review and merge.",
-      "capPos": "bottom"
+      "capPos": {
+        "x": 0.72,
+        "y": 0.328
+      },
+      "subPos": {
+        "x": 0.72,
+        "y": 0.328
+      }
     },
     "0496.png": {
       "cursor": false,
@@ -1410,15 +1473,15 @@ window.SPEC = {
     },
     "0497.png": {
       "fade": 18,
-      "hold": 1.0
+      "hold": 1
     },
     "0498.png": {
       "fade": 18,
-      "hold": 1.0
+      "hold": 1
     },
     "0499.png": {
       "fade": 18,
-      "hold": 1.0
+      "hold": 1
     },
     "0500.png": {
       "fade": 18,
