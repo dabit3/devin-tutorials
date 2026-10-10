@@ -1,0 +1,65 @@
+{
+  "note": "Every UI shot is a real screenshot captured for this tutorial by capture.mjs in the thequantexplorer Devin org (light mode, 125% zoom). Diagram beats are blank placeholders drawn live by scenes.js.",
+  "session": "https://app.devin.ai/sessions/73f6d00b97e2450faf4274b043061239",
+  "repo": "thequantexplorer/orbit-demo",
+  "shots": {
+    "0000.png": {
+      "scene": "value"
+    },
+    "0014.png": {
+      "scene": "why"
+    },
+    "0001.png": {
+      "scene": "flow"
+    },
+    "0002.png": {
+      "source": "new capture",
+      "raw": "0007.png",
+      "what": "Home composer with the workflow prompt and the orbit-demo repo chip"
+    },
+    "0003.png": {
+      "source": "new capture",
+      "raw": "0055.png",
+      "what": "Devin's plan: 12 component files, 12 reviewers on separate VMs, one consolidation reviewer; workflow card at 0/12 agents"
+    },
+    "0004.png": {
+      "source": "new capture",
+      "raw": "0066.png",
+      "what": "Workflow panel mid-run: 8 / 13 settled, Component reviews phase with live per-agent status"
+    },
+    "0005.png": {
+      "source": "new capture",
+      "raw": "0093.png",
+      "what": "Workflow panel Script section: register_workflow, parallel over every file, then the consolidation agent"
+    },
+    "0006.png": {
+      "scene": "modes"
+    },
+    "0007.png": {
+      "source": "new capture",
+      "raw": "raw2/0004.png",
+      "what": "Workflow panel: Component reviews 12/12 done, Consolidation 0/1 running (Deduplicate and rank)"
+    },
+    "0008.png": {
+      "scene": "resume"
+    },
+    "0009.png": {
+      "source": "new capture",
+      "what": "Settings \u2192 Preferences with the Auto-approve workflows toggle"
+    },
+    "0010.png": {
+      "scene": "when"
+    },
+    "0011.png": {
+      "scene": "reuse"
+    },
+    "0012.png": {
+      "scene": "uses"
+    },
+    "0013.png": {
+      "source": "new capture",
+      "raw": "raw2/0048.png",
+      "what": "Finished run: Devin's summary (12 files reviewed, 10 deduplicated findings ordered by severity) and the accessibility-report.md it produced"
+    }
+  }
+}
