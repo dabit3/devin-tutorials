@@ -52,7 +52,8 @@ window.SPEC = {
       "hl": null
     },
     "0005.png": {
-      "subPos": { "x": 0.77, "y": 0.085 },
+      "subPos": { "x": 0.28, "y": 0.285 },
+      "capPos": { "x": 0.28, "y": 0.285 },
       "hold": 3.2, "ring": { "x": 1022, "y": 451, "w": 800, "h": 40 }, "ringFor": 2.8,
       "cap": "The script Devin wrote",
       "vo": "The script Devin wrote is right there too, so you can read exactly how the run works.",
