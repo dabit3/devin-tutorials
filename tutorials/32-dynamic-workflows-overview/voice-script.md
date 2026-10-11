@@ -1,12 +1,12 @@
 # Dynamic Workflows: how it works (overview), voice script
 
-Narrated by Nader (ElevenLabs voice T8iHhGIWPm2GVYpQD1Am, default settings), generated as one take and cut at sentence boundaries.
+Narrated by Nader (ElevenLabs voice T8iHhGIWPm2GVYpQD1Am, default settings, no seed), generated as one take and cut at sentence boundaries.
 
-Dynamic workflows let you hand Devin big, multi-part jobs, like migrations, audits, reviews, or research, and get them done reliably at scale.
+Dynamic workflows turn big, multi-part jobs into a coordinated team effort, using a Python script that Devin writes to run multiple Devin sessions.
 
-Many agents work in parallel, each step builds on the last, and you can watch the run live or resume it without losing finished work.
+The script runs independent work in parallel, passes results between stages, and brings everything together.
 
-Under the hood, Devin writes a Python script that decides which agents run and what each one is told, using earlier results to build later prompts.
+You get a repeatable process for migrations, audits, or research, with live progress and the ability to resume without losing completed work.
 
 Let's try it on a real job: check every component in a small demo app for accessibility issues, and end up with one list of findings, ordered by severity.
 

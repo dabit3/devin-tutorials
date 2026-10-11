@@ -8,21 +8,21 @@ window.SPEC = {
   "maxZoom": 1.6,
   "edit": {
     "0000.png": {
-      "scene": "value", "hold": 7.4, "voHold": 7.4, "cursor": false, "capPos": "bottom",
-      "cap": "Big, multi-part jobs, done reliably at scale",
-      "vo": "Dynamic workflows let you hand Devin big, multi-part jobs, like migrations, audits, reviews, or research, and get them done reliably at scale.",
+      "scene": "value", "hold": 6.4, "voHold": 6.5, "cursor": false, "capPos": "bottom",
+      "cap": "One job, multiple Devins, coordination as code",
+      "vo": "Dynamic workflows turn big, multi-part jobs into a coordinated team effort, using a Python script that Devin writes to run multiple Devin sessions.",
       "hl": null
     },
     "0014.png": {
-      "scene": "why", "hold": 6.8, "voHold": 6.8, "capPos": "bottom",
-      "cap": "Parallel, step by step, and resumable",
-      "vo": "Many agents work in parallel, each step builds on the last, and you can watch the run live or resume it without losing finished work.",
+      "scene": "why", "hold": 6.8, "voHold": 7.0, "capPos": "bottom",
+      "cap": "Repeatable work, live progress, resumable runs",
+      "vo": "You get a repeatable process for migrations, audits, or research, with live progress and the ability to resume without losing completed work.",
       "hl": null
     },
     "0001.png": {
-      "scene": "flow", "hold": 7.6, "voHold": 6.4, "capPos": "bottom",
-      "cap": "Devin writes the orchestration as code",
-      "vo": "Under the hood, Devin writes a Python script that decides which agents run and what each one is told, using earlier results to build later prompts.",
+      "scene": "flow", "hold": 6.0, "voHold": 5.4, "capPos": "bottom",
+      "cap": "Parallel work, connected stages, one outcome",
+      "vo": "The script runs independent work in parallel, passes results between stages, and brings everything together.",
       "hl": null
     },
     "0015.png": {
