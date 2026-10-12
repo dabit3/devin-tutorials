@@ -1,8 +1,8 @@
 # Dynamic Workflows: how it works (overview), voice script
 
-Narrated by Nader (ElevenLabs voice T8iHhGIWPm2GVYpQD1Am, default settings, no seed), generated as one take and cut at sentence boundaries.
+Narrated by Nader (ElevenLabs voice T8iHhGIWPm2GVYpQD1Am, default settings, no seed), generated as one take and cut at sentence boundaries. The opening comma pause was shortened locally by 150 ms.
 
-Dynamic workflows turn big, multi-part jobs into a coordinated team effort, using a Python script that Devin writes to run multiple Devin sessions.
+Dynamic workflows turn big multi-part jobs into a coordinated team effort, using a Python script that Devin writes to run multiple Devin sessions.
 
 The script runs independent work in parallel, passes results between stages, and brings everything together.
 

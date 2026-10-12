@@ -10,7 +10,7 @@ window.SPEC = {
     "0000.png": {
       "scene": "value", "hold": 6.4, "voHold": 6.5, "cursor": false, "capPos": "bottom",
       "cap": "One job, multiple Devins, coordination as code",
-      "vo": "Dynamic workflows turn big, multi-part jobs into a coordinated team effort, using a Python script that Devin writes to run multiple Devin sessions.",
+      "vo": "Dynamic workflows turn big multi-part jobs into a coordinated team effort, using a Python script that Devin writes to run multiple Devin sessions.",
       "hl": null
     },
     "0014.png": {
