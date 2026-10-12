@@ -1,6 +1,6 @@
 # Dynamic Workflows: how it works (overview), voice script
 
-Narrated by Nader (ElevenLabs voice T8iHhGIWPm2GVYpQD1Am, default settings, no seed), generated as one take and cut at sentence boundaries. The opening comma pause was shortened locally by 150 ms.
+Narrated by Nader (ElevenLabs voice T8iHhGIWPm2GVYpQD1Am, default settings, no seed), re-recorded as one full-script take without the comma after "big" and cut at sentence boundaries. No within-sentence audio edits.
 
 Dynamic workflows turn big multi-part jobs into a coordinated team effort, using a Python script that Devin writes to run multiple Devin sessions.
 

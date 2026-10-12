@@ -26,7 +26,7 @@ window.SPEC = {
       "hl": null
     },
     "0015.png": {
-      "scene": "goal", "hold": 7.0, "voHold": 8.4, "capPos": "bottom",
+      "scene": "goal", "hold": 7.0, "voHold": 8.0, "capPos": "bottom",
       "cap": "The example: audit every component, get one list",
       "vo": "Let's try it on a real job: check every component in a small demo app for accessibility issues, and end up with one list of findings, ordered by severity.",
       "hl": null
