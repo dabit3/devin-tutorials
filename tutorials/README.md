@@ -30,6 +30,10 @@
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
 
+## Silent conference overview
+
+**35 · Meet Devin** (`35-conference-overview/`): 65.6 seconds, 12 capabilities, real UI captures and Devin branding. No audio streams in either the 4K master or 1080p preview. See [sources, chapter map and silent rebuild instructions](35-conference-overview/README.md).
+
 ## How it works
 
 1. **Capture** (`_kit/capture/`): `capture.mjs` connects to a signed-in Chrome over CDP, drives the UI, and records a screenshot per beat. The account email is masked in the DOM before every screenshot (`MASK_TEXT=<email name>`).

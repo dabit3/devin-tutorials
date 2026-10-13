@@ -77,6 +77,10 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Dynamic Workflows, narrated by Nader** (2:05): A real five-component audit, fix and verify workflow: the script, the live workflow panel, one agent's structured output, the roll-up and a fix PR. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/33-dynamic-workflows/33-dynamic-workflows-nader.mp4) · [Voice script](tutorials/33-dynamic-workflows/voice-script.md)
 - **Devin Primitives: when to use what (overview), narrated by Nader** (1:42): When to use AGENTS.md, rules, Memory, Skills, Playbooks, MCP servers and Plugins, where each lives in the product, and how to build one. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview-nader.mp4) · [Voice script](tutorials/34-devin-primitives-overview/voice-script.md) · [Cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md)
 
+## Silent conference video
+
+**35. Meet Devin — product overview** (1:06): A silent reel of 12 capabilities, including prompt → build → test → review, Slack, automations, skills, integrations, managed Devins, Dynamic Workflows and multiplatform development. Both files contain video only, with no audio track. [4K master](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/35-conference-overview/35-conference-overview.mp4) · [1080p preview](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/35-conference-overview/35-conference-overview-1080p.mp4) · [Sources and rebuild instructions](tutorials/35-conference-overview/README.md)
+
 ## Making a new tutorial
 
 Every video's capture script, screenshots and edit spec live in [`tutorials/`](tutorials/), which also explains how to rebuild them. To create a tutorial for another Devin feature, use the reusable prompt in [`tutorials/TUTORIAL_PROMPT.md`](tutorials/TUTORIAL_PROMPT.md).
