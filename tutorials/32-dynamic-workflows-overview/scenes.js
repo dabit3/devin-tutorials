@@ -82,56 +82,65 @@ function agentCard(ctx, k, x, y, w, t, a, { on = 0, sub, state, s = 0 } = {}) {
 }
 const ap = (k, s, t0, d = 0.6) => k.eOutQuint(k.prog(s, t0, t0 + d));
 
-// 1. The value: hand Devin one big, multi-part job; many agents run it in parallel; one reliable result.
-const JOBS = ['Migrations', 'Codebase audits', 'Code reviews', 'Research comparisons'];
-function value(ctx, s0, k) {
-  bg(ctx, k); const s = s0 / st('value');
-  eyebrow(ctx, k, 'DYNAMIC WORKFLOWS', 150, ap(k, s, 0.05));
-  const ja = ap(k, s, 0.2), jx = 96, jy = 262 + 12 * (1 - ja), jw = 290, jh = 232;
-  card(ctx, k, jx, jy, jw, jh, ja);
-  avatar(ctx, k, jx + 34, jy + 38, 20, ja);
-  txt(ctx, k, 'One big job', jx + 54, jy + 38, 18, 600, '#191919', ja, 'left');
-  JOBS.forEach((t, i) => {
-    const ra = ap(k, s, 2.5 + i * 0.42, 0.5), ry = jy + 92 + i * 38 + 6 * (1 - ra);
-    dot(ctx, k, jx + 36, ry, 3.5, ink(0.35), ra);
-    txt(ctx, k, t, jx + 52, ry, 15.5, 500, ink(0.75), ra, 'left');
-  });
-  // many agents in parallel
-  const tw0 = 92, th = 60, gx = 16, gy = 18, x0 = 520, y0 = 378 - (3 * th + 2 * gy) / 2;
-  txt(ctx, k, 'Many agents in parallel', x0 + (4 * tw0 + 3 * gx) / 2, y0 - 34, 13.5, 500, ink(0.5), ap(k, s, 4.2));
-  for (let r = 0; r < 3; r++) {
-    const cy = y0 + r * (th + gy) + th / 2, f = hc([386, 378], [x0, cy]);
-    path(ctx, k, f, k.eInOut(k.prog(s, 3.9 + r * 0.08, 4.4 + r * 0.08))); signal(ctx, k, f, k.prog(s, 4.0 + r * 0.08, 4.7 + r * 0.08));
-    const g = hc([x0 + 4 * tw0 + 3 * gx, cy], [1060, 378]);
-    path(ctx, k, g, k.eInOut(k.prog(s, 6.0 + r * 0.06, 6.4 + r * 0.06))); signal(ctx, k, g, k.prog(s, 6.05 + r * 0.06, 6.6 + r * 0.06));
-    for (let c = 0; c < 4; c++) {
-      const i = r * 4 + c, ta = ap(k, s, 4.2 + i * 0.04, 0.5), x = x0 + c * (tw0 + gx), y = y0 + r * (th + gy) + 10 * (1 - ta);
-      card(ctx, k, x, y, tw0, th, ta, 0, 12); avatar(ctx, k, x + 28, y + th / 2, 18, ta);
-      if (s < 4.9 + ((i * 5) % 12) * 0.11) spinner(ctx, k, x + 64, y + th / 2, s + i * 0.3, ta, 7);
-      else check(ctx, k, x + 64, y + th / 2, ta, 8);
-    }
+function cue(img, word, fallback) {
+  if (!NARRATED) return fallback;
+  const chunks = window.SPEC.voLines?.[img]?.chunks || [];
+  for (const c of chunks) {
+    const words = c.text.toLowerCase().replace(/[^a-z0-9 ]/g, '').split(/\s+/);
+    const i = words.indexOf(word);
+    if (i >= 0) return Math.max(0, c.t0 + (c.t1 - c.t0) * i / words.length - 0.15);
   }
-  // one combined result
-  const ra = ap(k, s, 6.2), lit = ap(k, s, 6.5, 0.4) * (1 - k.prog(s, 7.6, 8.2)), ry = 300 + 12 * (1 - ra);
-  card(ctx, k, 1060, ry, 284, 156, ra, lit);
-  avatar(ctx, k, 1092, ry + 36, 20, ra);
-  txt(ctx, k, 'Done, reliably', 1112, ry + 36, 17, 600, '#191919', ra, 'left');
-  check(ctx, k, 1314, ry + 36, ap(k, s, 6.7, 0.3));
-  [0.86, 0.64, 0.76].forEach((f, j) => { ctx.save(); ctx.globalAlpha = k.alpha * ra; k.rr(1086, ry + 76 + j * 16, 232 * f, 5, 2.5); ctx.fillStyle = ink(0.09); ctx.fill(); ctx.restore(); });
-  txt(ctx, k, 'One combined result', 1202, ry + 186, 13.5, 500, ink(0.5), ra);
+  return fallback;
 }
 
-// 1b. Why it matters: parallel agents, steps that build on each other, runs you can watch and resume.
+// One job, a team of sessions, and coordination as code.
+function value(ctx, s0, k) {
+  bg(ctx, k); const s = s0;
+  eyebrow(ctx, k, 'DYNAMIC WORKFLOWS', 150, ap(k, s, 0.05));
+  const ja = ap(k, s, cue('0000.png', 'big', 0.2)), jx = 96, jy = 290 + 12 * (1 - ja), jw = 260, jh = 170;
+  card(ctx, k, jx, jy, jw, jh, ja);
+  avatar(ctx, k, jx + 34, jy + 38, 20, ja);
+  txt(ctx, k, 'One multi-part job', jx + 54, jy + 38, 17, 600, '#191919', ja, 'left');
+  ['Part 1', 'Part 2', 'Part 3'].forEach((t, i) => {
+    const ry = jy + 78 + i * 26;
+    dot(ctx, k, jx + 36, ry, 3.5, ink(0.35), ja);
+    txt(ctx, k, t, jx + 52, ry, 14, 500, ink(0.65), ja, 'left');
+  });
+  const teamAt = cue('0000.png', 'coordinated', 1.6), ta = ap(k, s, teamAt), ty = 245 + 12 * (1 - ta);
+  card(ctx, k, 1010, ty, 320, 260, ta);
+  txt(ctx, k, 'A coordinated team', 1170, ty + 36, 18, 600, '#191919', ta);
+  for (let i = 0; i < 4; i++) {
+    const a = ap(k, s, teamAt + 0.25 + i * 0.1), x = 1090 + (i % 2) * 160, y = ty + 104 + Math.floor(i / 2) * 64;
+    card(ctx, k, x - 46, y - 23, 92, 46, a, 0, 10);
+    avatar(ctx, k, x - 14, y, 22, a); spinner(ctx, k, x + 21, y, s + i * 0.3, a, 7);
+  }
+  txt(ctx, k, 'Each agent is a Devin session', 1170, ty + 226, 14, 500, ink(0.55), ta);
+  const codeAt = cue('0000.png', 'python', 3.4), ca = ap(k, s, codeAt), cy = 270 + 12 * (1 - ca);
+  card(ctx, k, 496, cy, 330, 210, ca, ca * (1 - k.prog(s, codeAt + 1.8, codeAt + 2.4)));
+  txt(ctx, k, 'workflow.py', 661, cy + 36, 18, 600, '#191919', ca, 'center', 'JetBrains Mono', 0);
+  txt(ctx, k, 'Written by Devin', 661, cy + 66, 14, 500, ink(0.55), ca);
+  ['Which agents run', 'What each one is told', 'How their results flow'].forEach((t, i) => txt(ctx, k, t, 528, cy + 110 + i * 27, 14, 500, ink(0.72), ca, 'left'));
+  [[356, 496], [826, 1010]].forEach(([x0, x1], i) => {
+    const f = hc([x0, 375], [x1, 375]), at = codeAt + 0.3 + i * 0.35;
+    path(ctx, k, f, k.eInOut(k.prog(s, at, at + 0.5))); signal(ctx, k, f, k.prog(s, at + 0.1, at + 0.8));
+  });
+  txt(ctx, k, 'You describe the job. Devin writes the coordination.', 720, 610, 20, 500, ink(0.65), ap(k, s, codeAt + 0.8));
+}
+
+// A repeatable process, live progress, and recorded work on resume.
 function why(ctx, s0, k) {
-  bg(ctx, k); const s = s0 / st('why');
+  bg(ctx, k); const s = s0;
   eyebrow(ctx, k, 'WHY IT MATTERS', 150, ap(k, s, 0.05));
   const cw = 380, ch = 330, gap = 30, x0 = (k.VW - (3 * cw + 2 * gap)) / 2, y = 205;
-  const T = [0.1, 1.6, 3.1];
-  const meta = [['Many agents in parallel', 'Work fans out at once'], ['Each step builds on the last', 'Audit, then fix, then verify'], ['Watch it, or resume it', 'Finished work is kept']];
+  const T = [0.1, cue('0014.png', 'live', 2.2), cue('0014.png', 'resume', 4.0)];
+  const meta = [['A repeatable process', 'Coordination you can rerun'], ['Watch progress live', 'See each phase and agent'], ['Resume without starting over', 'Completed results are kept']];
   meta.forEach(([t, sub], i) => {
     const t0 = T[i], a = ap(k, s, t0, 0.7), x = x0 + i * (cw + gap), yy = y + 16 * (1 - a), cx = x + cw / 2;
     card(ctx, k, x, yy, cw, ch, a, 0, 18); if (a <= 0) return;
     if (i === 0) {
+      txt(ctx, k, 'workflow.py', cx, yy + 52, 17, 600, '#191919', a, 'center', 'JetBrains Mono', 0);
+      ['Migrations', 'Audits', 'Research'].forEach((t, j) => pill(ctx, k, t, cx, yy + 96 + j * 39, a * ap(k, s, cue('0014.png', t.toLowerCase(), 0.7 + j * 0.5)), false, 14));
+    } else if (i === 1) {
       for (let j = 0; j < 5; j++) {
         const ry = yy + 48 + j * 34, p = k.eInOut(k.prog(s, t0 + 0.4 + j * 0.05, t0 + 1.3 + j * 0.1));
         avatar(ctx, k, x + 44, ry, 16, a);
@@ -139,24 +148,11 @@ function why(ctx, s0, k) {
         if (p > 0) { k.rr(x + 64, ry - 3, 250 * p, 6, 3); ctx.fillStyle = ink(0.5); ctx.fill(); } ctx.restore();
         if (p >= 1) check(ctx, k, x + 336, ry, a, 8); else spinner(ctx, k, x + 336, ry, s + j * 0.4, a, 6.5);
       }
-    } else if (i === 1) {
-      const ny = yy + 112, xs = [cx - 112, cx, cx + 112], names = ['Audit', 'Fix', 'Verify'];
-      xs.forEach((nx, j) => {
-        const reached = j === 0 ? 1 : ap(k, s, t0 + 0.9 + (j - 1) * 0.75, 0.3);
-        card(ctx, k, nx - 30, ny - 30, 60, 60, a, 0, 14); avatar(ctx, k, nx, ny, 22, a * (0.35 + 0.65 * reached));
-        txt(ctx, k, names[j], nx, ny + 52, 13.5, 500, ink(0.5), a);
-        if (j < 2) path(ctx, k, hc([nx + 30, ny], [xs[j + 1] - 30, ny]), k.eInOut(k.prog(s, t0 + 0.3 + j * 0.75, t0 + 0.6 + j * 0.75)));
-      });
-      for (let j = 0; j < 2; j++) {
-        const p = k.eInOut(k.prog(s, t0 + 0.35 + j * 0.75, t0 + 0.95 + j * 0.75)), f = hc([xs[j], ny - 50], [xs[j + 1], ny - 50]);
-        const ja = ap(k, s, t0 + 0.3 + j * 0.75, 0.25) * (1 - k.prog(s, t0 + 0.95 + j * 0.75, t0 + 1.15 + j * 0.75));
-        const [jx, jy] = f(Math.min(p, 0.999)); json(ctx, k, jx, jy, ja, ['{ result }'], 92, 0.8);
-      }
     } else {
       const n = 6, bw = 44, bg2 = 10, bx = cx - (n * bw + (n - 1) * bg2) / 2, by = yy + 64;
-      const cut = t0 + 1.3, back = t0 + 1.9;
+      const cut = t0 + 0.25, back = t0 + 0.85;
       for (let j = 0; j < n; j++) {
-        const sx = bx + j * (bw + bg2), done = j < 3 ? s > t0 + 0.5 + j * 0.25 : s > back + 0.3 + (j - 3) * 0.3;
+        const sx = bx + j * (bw + bg2), done = j < 3 || s > back + 0.3 + (j - 3) * 0.3;
         const kept = j < 3 && s > back ? ap(k, s, back, 0.3) * (1 - k.prog(s, back + 0.8, back + 1.2)) : 0;
         card(ctx, k, sx, by, bw, bw, a, kept, 11);
         if (done) check(ctx, k, sx + bw / 2, by + bw / 2, a, 8);
@@ -166,49 +162,49 @@ function why(ctx, s0, k) {
       pill(ctx, k, 'Interrupted', cx, yy + 160, ia * a);
       pill(ctx, k, 'Resumed, 3 kept', cx, yy + 160, ra2 * a, true);
     }
-    txt(ctx, k, t, cx, yy + 250, 20, 600, '#191919', a);
+    txt(ctx, k, t, cx, yy + 250, 19, 600, '#191919', a);
     txt(ctx, k, sub, cx, yy + 282, 14, 500, ink(0.55), a);
   });
 }
 
 // 2. How a run works: the script fans out agents; each returns structured output that builds the next prompt.
-const FILES = ['Board', 'Card', 'Column', 'Modal', 'Toolbar'];
 function flow(ctx, s0, k) {
-  bg(ctx, k); const s = s0 / st('flow');
+  bg(ctx, k); const s = s0;
   eyebrow(ctx, k, 'HOW A RUN WORKS', 92, ap(k, s, 0.05));
   const sa = ap(k, s, 0.1);
   card(ctx, k, 80, 330 + 12 * (1 - sa), 200, 90, sa);
   txt(ctx, k, 'workflow.py', 180, 362 + 12 * (1 - sa), 15, 600, '#191919', sa, 'center', 'JetBrains Mono', 0);
   txt(ctx, k, 'decides who runs', 180, 392 + 12 * (1 - sa), 13, 500, ink(0.5), sa);
-  txt(ctx, k, 'REVIEW', 520, 152, 13, 500, ink(0.42), ap(k, s, 0.4), 'center', 'JetBrains Mono', 2);
-  txt(ctx, k, 'MERGE', 1010, 152, 13, 500, ink(0.42), ap(k, s, 0.4), 'center', 'JetBrains Mono', 2);
-  const ys = [212, 298, 384, 470, 556];
+  const fanAt = cue('0001.png', 'independent', 0.4), resultAt = cue('0001.png', 'passes', 2.2), combineAt = cue('0001.png', 'brings', 3.7);
+  txt(ctx, k, 'IN PARALLEL', 520, 152, 13, 500, ink(0.42), ap(k, s, fanAt), 'center', 'JetBrains Mono', 2);
+  txt(ctx, k, 'NEXT STAGE', 1010, 152, 13, 500, ink(0.42), ap(k, s, resultAt), 'center', 'JetBrains Mono', 2);
+  const ys = [274, 384, 494];
   ys.forEach((y, i) => {
-    const t0 = 0.6 + i * 0.16, f = hc([280, 375], [400, y]);
+    const t0 = fanAt + i * 0.12, f = hc([280, 375], [400, y]);
     path(ctx, k, f, k.eInOut(k.prog(s, t0, t0 + 0.6))); signal(ctx, k, f, k.prog(s, t0 + 0.1, t0 + 0.9));
-    const done = s > 2.6 + i * 0.35;
-    agentCard(ctx, k, 520, y, 240, 'Reviewer', ap(k, s, t0 + 0.45), { sub: FILES[i] + '.tsx', state: done ? 'done' : 'run', s });
+    const done = s > resultAt + i * 0.12;
+    agentCard(ctx, k, 520, y, 240, 'Agent ' + String.fromCharCode(65 + i), ap(k, s, t0 + 0.3), { sub: 'Devin session', state: done ? 'done' : 'run', s });
     // structured output travels from each reviewer into the merge agent's prompt
     const g = hc([640, y], [905, 384]);
-    path(ctx, k, g, k.eInOut(k.prog(s, 2.7 + i * 0.35, 3.2 + i * 0.35)));
+    path(ctx, k, g, k.eInOut(k.prog(s, resultAt + i * 0.1, resultAt + 0.5 + i * 0.1)));
     if (i === 1) {
-      const p = k.eInOut(k.prog(s, 3.3, 4.6)), [jx, jy] = g(Math.min(p, 0.999));
-      const a = ap(k, s, 3.0, 0.4) * (1 - k.prog(s, 4.5, 4.8));
-      json(ctx, k, jx, jy, a, ['{', '  "file": "Card.tsx",', '  "issues": [ ... ]', '}'], 196, 0.8);
-    } else signal(ctx, k, g, k.prog(s, 3.0 + i * 0.3, 3.9 + i * 0.3));
+      const p = k.eInOut(k.prog(s, resultAt + 0.1, combineAt)), [jx, jy] = g(Math.min(p, 0.999));
+      const a = ap(k, s, resultAt, 0.25) * (1 - k.prog(s, combineAt - 0.2, combineAt + 0.1));
+      json(ctx, k, jx, jy, a, ['{', '  "result": [ ... ]', '}'], 196, 0.8);
+    } else signal(ctx, k, g, k.prog(s, resultAt + i * 0.12, combineAt));
   });
-  const ma = ap(k, s, 1.0);
-  const lit = ap(k, s, 4.6, 0.4) * (1 - k.prog(s, 6.6, 7.2));
+  const ma = ap(k, s, resultAt);
+  const lit = ap(k, s, combineAt, 0.4) * (1 - k.prog(s, combineAt + 1.1, combineAt + 1.5));
   card(ctx, k, 905, 314 + 12 * (1 - ma), 210, 140, ma, lit);
   avatar(ctx, k, 935, 344 + 12 * (1 - ma), 20, ma);
-  txt(ctx, k, 'Merge agent', 955, 344 + 12 * (1 - ma), 15.5, 600, '#191919', ma, 'left');
+  txt(ctx, k, 'Combine agent', 955, 344 + 12 * (1 - ma), 15.5, 600, '#191919', ma, 'left');
   txt(ctx, k, 'prompt built from', 925, 380 + 12 * (1 - ma), 13, 500, ink(0.5), ma, 'left');
   txt(ctx, k, 'every result', 925, 400 + 12 * (1 - ma), 13, 500, ink(0.5), ma, 'left');
-  if (s > 4.7) check(ctx, k, 1090, 344, ap(k, s, 5.6, 0.3));
-  const l = hc([1115, 384], [1190, 384]); path(ctx, k, l, k.eInOut(k.prog(s, 5.7, 6.1))); signal(ctx, k, l, k.prog(s, 5.8, 6.4));
-  const ra = ap(k, s, 6.1);
+  check(ctx, k, 1090, 344, ap(k, s, combineAt + 0.15, 0.3));
+  const l = hc([1115, 384], [1190, 384]); path(ctx, k, l, k.eInOut(k.prog(s, combineAt + 0.2, combineAt + 0.55))); signal(ctx, k, l, k.prog(s, combineAt + 0.2, combineAt + 0.7));
+  const ra = ap(k, s, combineAt + 0.35);
   card(ctx, k, 1190, 324 + 12 * (1 - ra), 190, 120, ra);
-  txt(ctx, k, 'One report', 1285, 352 + 12 * (1 - ra), 16, 600, '#191919', ra);
+  txt(ctx, k, 'One outcome', 1285, 352 + 12 * (1 - ra), 16, 600, '#191919', ra);
   [0.86, 0.66, 0.76].forEach((f, j) => { ctx.save(); ctx.globalAlpha = k.alpha * ra; k.rr(1212, 380 + j * 15 + 12 * (1 - ra), 146 * f, 5, 2.5); ctx.fillStyle = ink(0.09); ctx.fill(); ctx.restore(); });
 }
 

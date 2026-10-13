@@ -8,25 +8,25 @@ window.SPEC = {
   "maxZoom": 1.6,
   "edit": {
     "0000.png": {
-      "scene": "value", "hold": 7.4, "voHold": 7.4, "cursor": false, "capPos": "bottom",
-      "cap": "Big, multi-part jobs, done reliably at scale",
-      "vo": "Dynamic workflows let you hand Devin big, multi-part jobs, like migrations, audits, reviews, or research, and get them done reliably at scale.",
+      "scene": "value", "hold": 6.4, "voHold": 6.5, "cursor": false, "capPos": "bottom",
+      "cap": "One job, multiple Devins, coordination as code",
+      "vo": "Dynamic workflows turn big multi-part jobs into a coordinated team effort, using a Python script that Devin writes to run multiple Devin sessions.",
       "hl": null
     },
     "0014.png": {
-      "scene": "why", "hold": 6.8, "voHold": 6.8, "capPos": "bottom",
-      "cap": "Parallel, step by step, and resumable",
-      "vo": "Many agents work in parallel, each step builds on the last, and you can watch the run live or resume it without losing finished work.",
+      "scene": "why", "hold": 6.8, "voHold": 7.0, "capPos": "bottom",
+      "cap": "Repeatable work, live progress, resumable runs",
+      "vo": "You get a repeatable process for migrations, audits, or research, with live progress and the ability to resume without losing completed work.",
       "hl": null
     },
     "0001.png": {
-      "scene": "flow", "hold": 7.6, "voHold": 6.4, "capPos": "bottom",
-      "cap": "Devin writes the orchestration as code",
-      "vo": "Under the hood, Devin writes a Python script that decides which agents run and what each one is told, using earlier results to build later prompts.",
+      "scene": "flow", "hold": 6.0, "voHold": 5.4, "capPos": "bottom",
+      "cap": "Parallel work, connected stages, one outcome",
+      "vo": "The script runs independent work in parallel, passes results between stages, and brings everything together.",
       "hl": null
     },
     "0015.png": {
-      "scene": "goal", "hold": 7.0, "voHold": 8.4, "capPos": "bottom",
+      "scene": "goal", "hold": 7.0, "voHold": 8.0, "capPos": "bottom",
       "cap": "The example: audit every component, get one list",
       "vo": "Let's try it on a real job: check every component in a small demo app for accessibility issues, and end up with one list of findings, ordered by severity.",
       "hl": null
@@ -52,7 +52,8 @@ window.SPEC = {
       "hl": null
     },
     "0005.png": {
-      "subPos": { "x": 0.77, "y": 0.085 },
+      "subPos": { "x": 0.28, "y": 0.285 },
+      "capPos": { "x": 0.28, "y": 0.285 },
       "hold": 3.2, "ring": { "x": 1022, "y": 451, "w": 800, "h": 40 }, "ringFor": 2.8,
       "cap": "The script Devin wrote",
       "vo": "The script Devin wrote is right there too, so you can read exactly how the run works.",
