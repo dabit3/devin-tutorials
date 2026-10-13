@@ -32,7 +32,7 @@ Each folder contains the final MP4, a poster frame, the `capture.mjs` script tha
 
 ## Silent conference overview
 
-**35 · Meet Devin** (`35-conference-overview/`): 65.6 seconds, 12 capabilities, real UI captures and Devin branding. No audio streams in either the 4K master or 1080p preview. See [sources, chapter map and silent rebuild instructions](35-conference-overview/README.md).
+**35 · Meet Devin** (`35-conference-overview/`): 101.5 seconds, 12 capabilities, real UI action, animated focus rings and gentle zooms on flat white/light-gray surfaces. No gradients or audio streams in either the 4K master or 1080p preview. See [sources, chapter map and silent rebuild instructions](35-conference-overview/README.md).
 
 ## How it works
 

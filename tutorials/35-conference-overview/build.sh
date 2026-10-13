@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
+node "$HERE/prepare.mjs"
 node "$HERE/render.mjs"
 ffmpeg -v error -y -framerate 60 -i "$HERE/build/frames/%05d.jpg" \
   -an -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p -movflags +faststart \

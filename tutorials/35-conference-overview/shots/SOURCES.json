@@ -1,7 +1,22 @@
 {
-  "revision": "73a13a7014dd50bcf59e6fb3a41d4abe00a01d85",
-  "notes": "Original real UI captures. Crops and motion are applied by scenes.js; separate examples, not one continuous session.",
+  "revision": "5195d9df7468b72b26b74f5a080b184b6a4e66e0",
+  "notes": "Real UI captures and an original Computer Use recording. Separate examples, not one continuous session. Presentation crops and focus overlays do not alter product content.",
   "shots": {
+    "test.mp4": {
+      "download": "kanban-duplicate-6d5649b-clean.mp4",
+      "session": "https://app.devin.ai/sessions/d9922e20721c42ec8bf4f135b44d08a0",
+      "recording": "84cb77de-01b3-4f4f-8ff4-a6ee6d0461bf",
+      "description": "Original 24fps recording, downloaded through the real test viewer. Retest: 11 passed, 0 failed.",
+      "excerpt": {
+        "start": 2,
+        "end": 14,
+        "speed": 1
+      }
+    },
+    "retest-viewer.png": {
+      "session": "https://app.devin.ai/sessions/d9922e20721c42ec8bf4f135b44d08a0",
+      "description": "Fresh native screen capture of the actual test viewer. The presentation crop excludes the browser, desktop, and merged PR."
+    },
     "wiki.png": {
       "source": "tutorials/06-deepwiki/shots/0053.png"
     },
@@ -49,6 +64,24 @@
     },
     "windows.png": {
       "source": "tutorials/28-multiplatform-overview/shots/0006.png"
+    },
+    "wikiCode.png": {
+      "source": "tutorials/06-deepwiki/shots/0056.png"
+    },
+    "promptStart.png": {
+      "source": "tutorials/02-first-session/shots/0024.png"
+    },
+    "promptMiddle.png": {
+      "source": "tutorials/02-first-session/shots/0034.png"
+    },
+    "reviewDetail.png": {
+      "source": "tutorials/09-devin-review/shots/0020.png"
+    },
+    "marketplace.png": {
+      "source": "tutorials/05-mcp-marketplace/shots/0028.png"
+    },
+    "workflowResult.png": {
+      "source": "tutorials/33-dynamic-workflows/shots/0493.png"
     }
   }
 }
