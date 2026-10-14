@@ -15,7 +15,10 @@ window.SPEC = {
     },
     "0001.png": {
       "cap": "Open the configuration menu",
+      "travel": 0.6,
+      "dwell": 1.8,
       "ring": true,
+      "ringDelay": 0.67,
       "vo": "This is an iPhone game, so first pick the machine Devin works on."
     },
     "0002.png": {},
@@ -23,15 +26,18 @@ window.SPEC = {
       "skip": true
     },
     "0004.png": {
-      "hold": 1.4,
+      "travel": 0.6,
+      "dwell": 1.8,
       "cap": "Virtual environment: choose macOS",
       "hl": true,
+      "hlDelay": 0.67,
       "vo": "Under Virtual environment, choose macOS, so Devin can run the iPhone Simulator."
     },
     "0005.png": {},
     "0006.png": {},
     "0007.png": {
       "hold": 1.6,
+      "hlDelay": 0.15,
       "cap": "The session now runs on macOS",
       "hl": {
         "x": 360.0,
@@ -45,10 +51,14 @@ window.SPEC = {
       "vo": "Then mention the repo."
     },
     "0012.png": {
-      "hl": true
+      "travel": 0.6,
+      "dwell": 1.8,
+      "hl": true,
+      "hlDelay": 0.67
     },
     "0015.png": {
       "hold": 2.6,
+      "hlDelay": 0.15,
       "cap": "Ask for a small feature",
       "hl": true,
       "vo": "And ask for a small feature: a line on the game-over card that shows how many hops you made."
@@ -63,6 +73,7 @@ window.SPEC = {
     },
     "0045.png": {
       "hold": 2.6,
+      "hlDelay": 0.15,
       "badge": "",
       "cap": "It opens a pull request",
       "hl": {
@@ -75,6 +86,7 @@ window.SPEC = {
     },
     "0046.png": {
       "hold": 3.4,
+      "hlDelay": 0.15,
       "cap": "It ran the app: HOPS sits right under BEST",
       "hl": {
         "x": 402.2,
@@ -89,7 +101,10 @@ window.SPEC = {
     },
     "0048.png": {
       "cap": "Click Test to have Devin play it by hand",
+      "travel": 0.6,
+      "dwell": 1.8,
       "hl": true,
+      "hlDelay": 0.67,
       "vo": "Then it offers to play the game by hand and record it. Click to approve."
     },
     "0049.png": {},
@@ -271,6 +286,7 @@ window.SPEC = {
     },
     "0108.png": {
       "hold": 2.6,
+      "hlDelay": 0.15,
       "cap": "Watch it live in the Computer tab",
       "hl": {
         "x": 844.9,
@@ -289,6 +305,7 @@ window.SPEC = {
     },
     "0130.png": {
       "hold": 2.6,
+      "hlDelay": 0.15,
       "badge": "",
       "cap": "After a retry, HOPS starts over",
       "hl": {
@@ -304,6 +321,7 @@ window.SPEC = {
     },
     "0160.png": {
       "hold": 2.4,
+      "hlDelay": 0.15,
       "badge": "",
       "cap": "A hop blocked by a tree doesn't count",
       "hl": {
@@ -382,6 +400,7 @@ window.SPEC = {
     },
     "0183.png": {
       "hold": 2.8,
+      "hlDelay": 0.15,
       "cap": "The recording lands in the chat: 5 passed",
       "hl": {
         "x": 512.9,
@@ -440,6 +459,7 @@ window.SPEC = {
     },
     "0200.png": {
       "hold": 2.8,
+      "hlDelay": 0.15,
       "cap": "5 passed, 0 failed, with a note for every check",
       "hl": {
         "x": 860.5,
