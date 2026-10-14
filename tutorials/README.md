@@ -32,7 +32,7 @@ Each folder contains the final MP4, a poster frame, the `capture.mjs` script tha
 
 ## Silent conference overview
 
-**35 · Meet Devin** (`35-conference-overview/`): 176.20-second silent overview of ten distinct capabilities. Large section introductions contract into the demo header; closer framing and precisely transformed emphasis guide the real actions. The fresh request → testing → genuine finding → fix → retest story remains central, with 54.5 seconds of browser interaction. 4K60 and 1080p60. See [coverage, provenance and rebuild instructions](35-conference-overview/README.md).
+**35 · Meet Devin** (`35-conference-overview/`): 177.30-second silent overview of ten distinct capabilities. Individual large-type introductions, smooth title docking and complete interface framing without editorial crops. The genuine request → testing → finding → fix → retest story includes 53 seconds in Devin's actual live testing interface and six seconds of native recorded evidence. Pure white/grayscale/black with blue only. 4K60 and 1080p60. See [coverage, provenance and rebuild instructions](35-conference-overview/README.md).
 
 ## How it works
 

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {cameraAt,mapBox,titleAt,ease} from './motion.mjs';
+import {cameraAt,mapBox,titleAt,ease,fitBox} from './motion.mjs';
 import {film} from './spec.js';
 test('camera holds and interpolates source-space crops without aspect distortion',()=>{
   const segment={camera:[{at:0,box:[0,0,1920,1080]},{at:2,box:[200,100,1280,720]}]};
@@ -26,4 +26,18 @@ test('feature title lands exactly on the demo header',()=>{
 test('easing is bounded, monotonic and lands at both endpoints',()=>{
   assert.equal(ease(-1),0);assert.equal(ease(2),1);
   let previous=0;for(let t=0;t<=1;t+=.001){const v=ease(t);assert.ok(v>=previous&&v<=1);previous=v;}
+});
+test('the conference cut preserves full interface context in every product frame',()=>{
+  for(const segment of film.segments.filter(s=>s.source)){
+    const full=segment.source==='01-request.mp4'?[0,0,1440,900]:[0,0,2880,1620];
+    for(let t=0;t<segment.duration;t+=1/film.fps)assert.deepEqual(cameraAt(segment,t),full);
+  }
+});
+test('source aspect is contained without cutting off or stretching the interface',()=>{
+  const viewport=[192,198,3456,1944];
+  assert.deepEqual(fitBox([0,0,2880,1620],viewport),viewport);
+  const [x,y,w,h]=fitBox([0,0,1440,900],viewport);
+  assert.ok(Math.abs(y-198)<1e-10);assert.ok(Math.abs(h-1944)<1e-10);
+  assert.ok(Math.abs(w/h-1440/900)<1e-10);
+  assert.ok(Math.abs(x-192-(3456-w)/2)<1e-10);
 });

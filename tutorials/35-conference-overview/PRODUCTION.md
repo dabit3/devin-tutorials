@@ -1,62 +1,63 @@
 # Conference production notes
 
-## Editorial redesign
+## Current editorial direction
 
-The 176.20-second silent film introduces ten distinct capabilities individually, rather than dropping the audience into unexplained product screens. Each section has a large capability name and one meaningful benefit, followed by a title-to-header move and expansion of the real demo. The opening is only Devin branding; the closing is branding and devin.ai. No filler slogans, technical title metadata, chapter numbers, tiny labels, progress lines or decorative shapes.
+177.30 seconds, ten distinct capabilities. Every feature is introduced individually with a large capability name and one meaningful benefit. Branding opens and closes the reel without slogans or a split background. Product footage dominates a 3456×1944 viewport on the 3840×2160 canvas. All editorial copy is at least 90px; no tiny metadata, numbered chapters or decorative shapes.
 
-The Computer Use hero is cut into search, filtering/day switching, conflict and resolution/export actions. These remain app test scenarios, not extra Devin capabilities. Original and held-revision interaction receive 54.5 seconds, with another four seconds of real Devin recording context. The actual keyboard-focus finding remains between testing and steering/fix/review/retest. No failure was planted.
+Computer Use is rebuilt around the actual live Devin conversation/Computer surface, not the standalone Northstar app. There are 53 seconds of live testing context and six seconds of native recorded-test evidence. The original archive exposes real focus failures; the fixed archive receives a fresh independent focused five-passed retest. Orbit is a separate code-intelligence example. Historical conversation/review/Skill panels are genuine recaptures, not invented live generation. Every source plays at 1×.
 
-All thirteen source files were captured during this production on 14 October 2026. This design revision recuts that fresh footage; it does not use any earlier tutorial media. Orbit is a separate DeepWiki/Ask example, then Northstar supplies a coherent engineering workflow. Historical conversation, Skill and PR panels were genuinely recaptured after completion, not manufactured to imply live code generation. Every selected source range plays at 1×. Waits between sessions are removed, not blindly sped up.
+## Framing, palette and motion
 
-## Visual hierarchy and motion
+- Pure white `#fff`, near-black `#17191d`, neutral grayscale and blue `#2463eb`. Source footage receives grayscale treatment; blue is the only editorial accent. No cream, yellow or presentation gradients.
+- Capability titles: 268px; benefit: 120px; header: 100px; action label: 90px.
+- Every product crop equals the complete encoded source. No general-purpose camera crop or pan is used. Standard 2880×1620 sources fill the viewport; the 1440×900 request is centered and contained at its native aspect ratio, never stretched.
+- 125% capture is implemented as a 1152×648 logical viewport with a 2.5× encoded coordinate scale and 2880×1620 visible surface. CSS zoom remains 1. Applying CSS zoom 1.25 had clipped the interface and was rejected; selected original-test ranges begin after that experiment was removed.
+- The opening brand fades/departs before DeepWiki. Major view changes use a 0.92-second quintic-eased white dissolve. No abrupt opening jump remains.
+- Feature titles dock over 0.8 seconds, ending 0.4 seconds before the demo. The complete interface fades in during the final 0.65 seconds, with only a contained 3.5% scale settle and 16px entrance offset. No title-relative wipe crops the interface. Feature-to-demo boundaries share the exact title and source frame, without a duplicate crossfade header.
+- Action captions crossfade over 0.38 seconds. Blue outline emphasis has no broad wash or shadow.
 
-- One flat warm-white surface, `#fafaf8`, with near-black Inter and restrained cobalt. No presentation gradients.
-- Capability names: 268px; benefit copy: 120px; docked feature headers: 100px; action labels: 90px. No smaller editorial copy.
-- Viewport: `[192,198,3456,1944]` on the 3840×2160 canvas, exactly 16:9. The demo uses 90% of the canvas width.
-- A 3.2-second feature introduction gives the title a readable hold, then contracts it to the header over 0.95 seconds. The demo rises/scales into place underneath. During the transition it is clipped below the moving title, never overprinted behind it.
-- Eased source-aware camera moves enlarge the actual action. Product motion remains the primary action; camera keys do not generate UI behavior.
-- Cobalt rounded rectangles have equal source-space padding, a restrained perimeter reveal and a soft outside wash. They do not replace native UI focus rings or imply clicks.
+## Alignment
 
-## Alignment and timing
+For source box `(x,y,w,h)`, equal padding `p`, crop `(cx,cy,cw,ch)` and contained destination `(dx,dy,dw,dh)`, `s=dw/cw=dh/ch`. The outline is `(dx+(x-p-cx)s, dy+(y-p-cy)s, (w+2p)s, (h+2p)s)`. Footage and emphasis use the same transform. The output stroke is 6px.
 
-For source box `(x,y,w,h)`, padding `p`, camera crop `(cx,cy,cw,ch)` and destination `(dx,dy,dw,dh)`, `s=dw/cw=dh/ch`. The emphasis rectangle is `(dx+(x-p-cx)s, dy+(y-p-cy)s, (w+2p)s, (h+2p)s)`. Video and emphasis use that same per-frame transform. Padding is 12 source pixels for the inline citation and 14 for app controls/banners; the output stroke is 6px.
+Ask's citation uses 12 source pixels of padding. The native five-passed/zero-failed badge union uses 14, measured from the two actual badge bounds rather than their wider flex container; its geometry is retained alongside source 40. Preflight checks padded targets at every delivery frame. Unit tests cover transforms, easing, docking, complete per-source framing and aspect-preserving containment.
 
-Preflight checks each highlight interval at the delivery frame rate and rejects a padded target leaving the crop. It checks every camera key against the encoded source dimensions, rather than the intended browser viewport. Unit tests cover transform/padding, interpolation, easing endpoints and exact title-to-header docking.
+Variable-frame-rate capture requires decoded presentation frames for timing. An isolated video seek can choose a future frame across a capture gap and is not safe for highlight alignment. Selected ranges are decoded/resampled at 60fps without changing their speed.
 
-Retest highlights are timed against the decoded presentation frames, not just input-event timestamps. VFR recordings can hold a previous visible state across a capture gap. A direct single-frame seek can instead pick the next future frame; that is not a safe guide for overlay timing. Decode the entire selected range, resample at 60fps without changing duration, and inspect the actual output sequence. This is why the renderer uses FFmpeg-decoded frames, not browser MP4 seeking.
+## Provenance and access
 
-## Authenticity and access limits
+`shots/SOURCES.json` pins thirteen selected source videos, available revisions, archive hashes, source bytes and edit ranges. Sources 38–40 are new real native testing/evidence captures from this revision. No UI replies, outcomes, PR states or merge ordering are fabricated. Original and held archive hashes and test limitations are in README and the manifest.
 
-`shots/SOURCES.json` pins source bytes, dates, ranges, repositories, available revisions, archive hashes, camera geometry and workflow linkage. No product text, response, result, PR status or merge ordering is invented.
+The original fresh test returned six passed/three failed. The new held-build focused retest returned five passed/zero failed for real ICS export, Export focus, Tab/Shift–Tab containment and Escape opener restoration. It did not repeat wider scenarios or Remove/disappeared-opener coverage. The Skill reran archive/source checks, lint, typecheck, 48 tests and build, not browser coverage. Held source/archive and PR 38 were unchanged.
 
-Original archive: `852411d08b18fee18fa532e99f49eca23f39e213`, SHA256 `552d3025ef1454919e0583d39193a91e58ef7de81200ad1eae574c43f07a29bc`.
+Automation and the capture login belong to different organizations; the demo org showed zero Automations. Its native Context7 connector failed to list/call tools. Direct public MCP access worked but is not depicted as a working installed connector. No settings-only substitutes, unrelated Automation, production deployment or merge occurred.
 
-Held archive: `3dbd344a03ae8c60decc841b192e011a07d3f7b1`, SHA256 `117e4b3445427dbe0c8ec430c3b24ebe43ffcf089438ec2db65b85ebf24170e7`.
-
-The Skill reran source/archive checks, lint, typecheck, 48 tests and build without changing the held archive. It did not add browser coverage. The independent retest and its limits remain credited separately.
-
-Native Automation management and the capture login belong to different organizations; the demo org showed zero Automations. Its Context7 connector failed to list/call tools. A direct public MCP fallback answered, but is not depicted as a working installed connector. Dynamic Workflows were not added to pad the count. No unrelated Automation, production deployment or merge occurred.
-
-## Reusable production lessons
+## Reusable lessons
 
 1. Keep the capture compositor session attached until recording stops.
-2. Probe encoded dimensions; do not rely on intended viewport geometry or multiply encoded coordinates twice.
-3. Preserve presentation timing for variable-frame-rate sources; input timestamps alone are not sufficient for overlay timing.
-4. Use one transform for footage and emphasis. Validate padded bounds for every highlight frame.
-5. Introduce each capability before its demo. Conference copy must earn its space and be large enough to read.
-6. Keep revision hashes and test metadata in provenance, not audience-facing headlines.
-7. Retest a held archive; distinguish source checks from actual browser observations.
-8. JPEG frame pipes carry full-range pixels. Convert to limited range explicitly before H.264 encoding; merely requesting yuv420p can still produce a yuvj420p stream. Assembly also normalizes older full-range segment caches.
+2. Probe encoded geometry; do not multiply source coordinates twice.
+3. Use a logical scaled viewport, not clipping CSS zoom.
+4. Establish the full interface; only emphasize a bounded target after context is clear.
+5. Contain non-16:9 sources without stretching or cutting off required UI.
+6. Measure target unions, not oversized layout containers. Validate beginning/middle/end alignment.
+7. Preserve VFR timing and use decoded frames for overlays.
+8. Introduce every capability; put revision hashes in provenance, not conference headlines.
+9. Separate source checks from browser observations and retest a held archive.
+10. Explicitly convert full-range JPEG pipes to limited range before H.264; yuv420p alone does not guarantee range normalization.
 
-## Release gates
+## Release gates and verification
 
-Both delivery exports must be H.264/yuv420p, 3840×2160 / 1920×1080, 60fps, 176.20 seconds, 10,572 frames, one video stream and no audio. Fully decode both; scan every preview frame for blank/low-luma intervals. Review the full cut and normal-speed playback, then separately inspect intro-to-demo transitions, camera edges and highlight beginning/middle/end frames. Extract stills from the final master. Keep PR 119 unmerged; shared kit files and both tutorial prompt documents stay unchanged.
+Required: H.264/yuv420p, limited range, 3840×2160 / 1920×1080, 60fps, 177.30 seconds, 10,638 frames, one video stream, no audio. Fully decode both and scan every preview frame for low luma. Review the entire cut at normal speed and inspect opening/title boundaries, full-context framing and beginning/middle/end emphasis. Extract stills from the final master. Keep PR 119 unmerged and both tutorial prompt documents unchanged.
 
-## Verification record
+Verified on 14 October 2026:
 
-Both final exports pass full FFmpeg decode and stream checks: H.264, yuv420p/limited range, 60fps, 10,572 frames, 176.20 seconds, one video stream, no audio. Every preview frame passed the low-luma scan: minimum average luma 174.684, zero frames below 20.
+- Both exports fully decode with FFmpeg and match every stream gate: H.264/yuv420p, limited (`tv`) range, 60fps, 177.30 seconds, 10,638 frames, one video stream and no audio. Master: 3840×2160; preview: 1920×1080.
+- The numeric luma scan covered all 10,638 preview frames. Minimum average luma was 208.152; zero frames fell below the low-luma threshold of 26.
+- The final 4K master played at 1× in QuickTime from zero to 177.30 seconds, stopping at the endpoint. Full-cut video review used a downscaled, timing-preserving final-master review copy. Opening/title boundaries, complete request framing, final-master stills and both highlights at beginning/middle/end were additionally inspected. This is not a claim that every encoded frame was visually inspected.
+- Syntax checks for every local JS/MJS file, shell syntax, six motion tests, source/hash/measured-geometry preflight and whitespace checks passed. No active repository pre-commit hook was installed; only sample hooks were present.
+- Final-master production stills were regenerated. Shared kit and both tutorial prompt documents remain unchanged. No merge or deployment was performed. Check the actual conference playback machine/projector before projection.
 
-Full-cut video review found no visual defects. Native QuickTime playback at 1× reached 176.20 seconds and stopped normally. Twenty-one beginning/middle/end highlight frames were separately inspected; targets, native focus states and symmetric padding are aligned. Feature transitions and final-master stills were reviewed. This is not a claim that every encoded frame was visually inspected; the decode/luma checks cover every frame. Check the actual conference machine/projector before playback.
-
-4K SHA256: `0d0321f85b1d03b5673fab710d0cce1cad917bcb3f073f1b5addf500bab1da16`.
-1080p SHA256: `3b58d90b67b8be27a3d7f19009326a8ca3bdaf146460205c53bed9de52ebf110`.
+| Export | SHA256 |
+|---|---|
+| 4K master | `a7e80c3966bc886a44b6840a279faf5d594d64b6980788209fa14173ae22c526` |
+| 1080p preview | `9390b47255926ce8cd9edc9e99774c5c2f7e78227f578a3b735fea91f4266bd8` |

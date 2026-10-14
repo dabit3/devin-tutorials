@@ -4,9 +4,9 @@ import {spawn} from 'node:child_process';
 import puppeteer from '../_kit/tools/node_modules/puppeteer-core/lib/esm/puppeteer/puppeteer-core.js';
 
 export const sleep = ms => new Promise(r => setTimeout(r, ms));
-export async function productionViewport(page, {nativePixels=false}={}) {
-  page.captureScale=nativePixels?1:2;
-  const width=nativePixels?2880:1440,height=nativePixels?1620:810;
+export async function productionViewport(page, {nativePixels=false,zoom=1}={}) {
+  page.captureScale=nativePixels?1:2*zoom;
+  const width=nativePixels?2880:Math.round(1440/zoom),height=nativePixels?1620:Math.round(810/zoom);
   await page.setViewport({width,height,deviceScaleFactor:1});
   await page.evaluate(()=>{document.documentElement.style.zoom='1';window.scrollTo(0,0);});
   const cdp=await page.createCDPSession();
@@ -71,7 +71,7 @@ export async function record(page, name, action, options={}) {
     await page.evaluate(()=>document.getElementById('__capture_pointer')?.remove()).catch(()=>{});
     await cdp.detach();
     const last=Date.now()/1000;
-    fs.writeFileSync(path.join(dir,'frames.json'),JSON.stringify({started,url:page.url(),viewport:page.viewport(),encodedCoordinateScale:page.captureScale,encodedSize:[2880,1620],frames},null,2));
+    fs.writeFileSync(path.join(dir,'frames.json'),JSON.stringify({started,url:page.url(),viewport:page.viewport(),pageZoom:options.zoom||1,encodedCoordinateScale:page.captureScale,encodedSize:[2880,1620],frames},null,2));
     const lines=frames.flatMap((f,n)=>[`file '${f.file}'`,'option framerate 1000',`duration ${Math.max(.001,(frames[n+1]?.ts||last)-f.ts)}`]);
     if(frames.length) lines.push(`file '${frames.at(-1).file}'`,'option framerate 1000');
     fs.writeFileSync(path.join(dir,'frames.txt'),lines.join('\n'));

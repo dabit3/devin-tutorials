@@ -11,11 +11,17 @@ const dir=path.dirname(fileURLToPath(import.meta.url)),root=path.dirname(dir);
 const args=process.argv.slice(2),arg=(key,fallback)=>args.includes(key)?args[args.indexOf(key)+1]:fallback;
 const draft=args.includes('--draft'),width=draft?1920:3840,fps=draft?30:film.fps;
 const only=arg('--only','').split(',').filter(Boolean),build=path.join(dir,'build'),cache=path.join(build,draft?'design-draft':'design-master');
+const samples=args.includes('--samples')?arg('--samples','').split(',').map(pair=>pair.split(':')[0]):[];
+const selected=new Set([...only,...samples]);
+for(const id of [...selected]){
+  const index=film.segments.findIndex(s=>s.id===id);
+  if(index>=0&&film.segments[index+1]?.source)selected.add(film.segments[index+1].id);
+}
 fs.mkdirSync(cache,{recursive:true});
 const frameRoot=path.join(build,'source-frames');
 const manifest=JSON.parse(fs.readFileSync(path.join(dir,'shots','SOURCES.json')));
 fs.mkdirSync(frameRoot,{recursive:true});
-for(const segment of film.segments.filter(s=>s.source)){
+for(const segment of film.segments.filter(s=>s.source&&(!selected.size||selected.has(s.id)))){
   const target=path.join(frameRoot,segment.id),stamp=JSON.stringify({source:segment.source,sha256:manifest.sources.find(s=>s.path==='captures/'+segment.source).sha256,in:segment.in,duration:segment.duration,fps:film.fps});
   if(fs.existsSync(path.join(target,'stamp.json'))&&fs.readFileSync(path.join(target,'stamp.json'),'utf8')===stamp)continue;
   fs.mkdirSync(target,{recursive:true});console.log('Decoding source '+segment.id);

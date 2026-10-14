@@ -79,7 +79,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 
 ## Silent conference video
 
-**35. Meet Devin — product overview** (2:56): Ten distinct capabilities introduced one at a time with large conference-readable type, choreographed title-to-demo transitions and action-focused camera moves. Fresh DeepWiki, Ask, delegation, Computer Use, collaboration, Managed Devins, Cloud IDE, Review, recorded tests and Skills. The genuine finding → fix → retest story anchors 54.5 seconds of browser interaction. Flat ivory, near-black and cobalt; no decorative clutter, presentation gradients or audio. [4K master](tutorials/35-conference-overview/35-conference-overview.mp4) · [1080p preview](tutorials/35-conference-overview/35-conference-overview-1080p.mp4) · [Coverage, provenance and rebuild instructions](tutorials/35-conference-overview/README.md)
+**35. Meet Devin — product overview** (2:57): Ten distinct capabilities introduced individually with large conference-readable type and smooth title docking. Complete product interfaces remain visible, without editorial camera crops. Fresh DeepWiki, Ask, delegation, Computer Use, collaboration, Managed Devins, Cloud IDE, Review, recorded tests and Skills. The genuine finding → fix → retest story includes 53 seconds inside Devin's live testing interface and six seconds of native recorded evidence. Pure white, neutral grayscale, near-black and blue; no decorative clutter, presentation gradients or audio. [4K master](tutorials/35-conference-overview/35-conference-overview.mp4) · [1080p preview](tutorials/35-conference-overview/35-conference-overview-1080p.mp4) · [Coverage, provenance and rebuild instructions](tutorials/35-conference-overview/README.md)
 
 ## Making a new tutorial
 

@@ -1,81 +1,87 @@
-# Meet Devin — rebuilt conference reel
+# Meet Devin — conference reel
 
-A **176.20-second silent reel** covering **ten distinct Devin capabilities**, built from entirely new product recordings captured on 14 October 2026. Orbit's DeepWiki and Ask introduce repository understanding. One Northstar engineering story then moves from a real request through browser testing, a genuine finding, steering, independent review, a live workspace, recorded retesting and an explicitly invoked release-check Skill.
+A **177.30-second silent reel**, covering **ten distinct Devin capabilities** with new real product captures made during this production on 14 October 2026. Orbit supplies DeepWiki/Ask; Northstar supplies the request → test → finding → steering → review → retest story. No earlier tutorial media is used.
 
-- [4K master](35-conference-overview.mp4): 3840×2160, 60fps, H.264.
-- [1080p preview](35-conference-overview-1080p.mp4): 1920×1080, 60fps, H.264.
-- Both contain exactly one video stream and **no audio stream**.
-- Full-frame stills: [opening](poster.png), [expanded demo](stills/expanded-demo.png), [highlight alignment](stills/highlight-alignment.png), [testing hero](stills/testing-hero.png), [feature introduction](stills/feature-introduction.png), [DeepWiki](stills/deepwiki.png), [Skill activation](stills/skill-activation.png), [keyboard retest](stills/keyboard-retest.png).
+- [4K master](35-conference-overview.mp4): 3840×2160, 60fps, H.264/yuv420p.
+- [1080p preview](35-conference-overview-1080p.mp4): 1920×1080, 60fps, H.264/yuv420p.
+- Both: one video stream, **no audio**, 10,638 frames.
+- Full-frame stills: [opening](poster.png), [introduction](stills/feature-introduction.png), [expanded interface](stills/expanded-demo.png), [aligned emphasis](stills/highlight-alignment.png), [testing hero](stills/testing-hero.png), [testing action](stills/testing-action.png), [native evidence](stills/testing-evidence.png), [keyboard retest](stills/keyboard-retest.png), [Skill activation](stills/skill-activation.png).
+
+## Design and framing
+
+Each capability receives a readable large-type introduction **before** the demonstration. Its title docks into the header before the complete interface fades into place. Pure white, near-black, neutral grayscale and blue only; no cream or yellow. Blue is the only editorial accent. Source footage is graded grayscale, without replacing authentic product text or behavior.
+
+Every product shot preserves the **complete encoded interface**, without camera cropping or stretching. Standard 2880×1620 sources fill the 3456×1944 product viewport. The 1440×900 request source is contained with equal side margins at its original aspect ratio. New fixed-revision testing captures use a 125%-scale logical viewport rather than clipping CSS zoom. All editorial copy is at least 90px on the 4K canvas; no chapter numbers, tiny metadata, progress strips, filler slogans, decorative shapes, gradients or audio.
+
+The live **Devin conversation and Computer panel** occupy 53 seconds, with another six seconds in Devin's actual recorded-test viewer. This is not an app-only testing montage. All selected footage plays at **1×**; idle waits between sessions are omitted.
 
 ## Chapters
-
-Each capability is introduced **before** its demonstration. The title contracts into the demo header while the footage expands below it. All editorial copy is at least 90px on the 4K canvas; native product text is authentic footage, enlarged through deliberate crops rather than replaced.
 
 | Introduction | Demo | Capability / action |
 |---|---|---|
 | 0:00.00 | — | Devin branding |
-| 0:03.20 | 0:06.40 | DeepWiki — navigate architecture and expand its diagram |
-| 0:16.40 | 0:19.60 | Ask — follow a code citation into its source |
-| 0:28.10 | 0:31.30 | Delegation — type the Northstar request |
-| 0:39.30 | 0:42.50 | Computer Use — search, filter, switch days, expose/resolve an overlap and export |
-| — | 1:22.00 | Computer Use — the genuine keyboard-focus finding |
-| 1:27.50 | 1:30.70 | Collaboration — precise steering and revision-hold instructions |
-| 1:39.20 | 1:42.40 | Managed Devins — completed independent reviewers |
-| 1:46.60 | 1:49.80 | Cloud IDE — find and open the live source file |
-| 1:57.30 | 2:00.50 | Devin Review — inspect the real PR branch |
-| 2:09.00 | 2:12.20 | Recorded tests — play evidence in the actual Devin conversation |
-| 2:16.20 | 2:19.00 | Verify the fix — forward/reverse Tab wrapping and Escape |
-| 2:34.00 | 2:37.20 | Skills — invoke the release-check playbook |
-| — | 2:44.20 | Skills — inspect activation, then the completed result |
-| 2:52.70 | — | Devin branding and devin.ai |
-
-Full-frame browser interaction occupies **54.5 seconds**, plus four seconds of native recording-playback context. Product shots use a **3456×1944** viewport inside the 3840×2160 frame. Large supporting copy stays above the demo. Source-coordinate emphasis follows the same camera transform as the footage, with equal padding on all sides. No progress strips, chapter numbers, tiny metadata, filler slogans, decorative shapes, presentation gradients or audio.
+| 0:03.80 | 0:07.00 | DeepWiki — architecture and diagram navigation |
+| 0:17.00 | 0:20.20 | Ask — follow an answer's source citation |
+| 0:28.70 | 0:31.90 | Delegation — type the Northstar request |
+| 0:39.90 | 0:43.10 | Computer Use — real live testing inside Devin |
+| — | 1:21.10 | The genuine keyboard-focus finding |
+| 1:26.60 | 1:29.80 | Collaboration — revision-hold steering |
+| 1:38.30 | 1:41.50 | Managed Devins — independent reviewers |
+| 1:45.70 | 1:48.90 | Cloud IDE — open the held source file |
+| 1:56.40 | 1:59.60 | Devin Review — inspect the real PR branch |
+| 2:08.10 | 2:11.30 | Recorded tests — replay five-passed evidence |
+| 2:17.30 | 2:20.10 | Verify the fix — forward/reverse Tab in Devin |
+| 2:35.10 | 2:38.30 | Skills — invoke the release-check playbook |
+| — | 2:45.30 | Skill activation and completed result |
+| 2:53.80 | — | Devin branding and devin.ai |
 
 ## Capability coverage
 
-These are product capabilities, not a count of chapters or Northstar app features. The finding and retest belong to Computer Use; the two Skill shots are one capability. Search, conflict detection and calendar export are test scenarios, not additional Devin capabilities.
+The finding and retest belong to Computer Use. The two Skill shots are one capability. Northstar's search, conflicts and export are test scenarios, **not additional Devin capabilities**.
 
-| # | Devin capability | Visible action → result | Selected source |
+| # | Capability | Visible action → result | Selected source |
 |---|---|---|---|
-| 1 | DeepWiki | Open Core Architecture and expand the real diagram → repository structure and source citations | `35-deepwiki.mp4` |
-| 2 | Ask | Open answer citations → the actual referenced source code | `10-code-proof.mp4` |
-| 3 | Natural-language delegation | Type the Northstar brief → the session whose working result follows | `01-request.mp4` |
-| 4 | Computer Use | Exercise the working app → a real finding, fix and keyboard retest | `hero-northstar-852411d.mp4`, `28-real-finding.mp4`, `retest-northstar-3dbd344.mp4` |
-| 5 | Steering and collaboration | Send precise revision-hold instructions → the subsequent review and verification stay on that revision | `21-steer.mp4` |
-| 6 | Managed Devins | Open Agents → inspect two completed independent reviewers and their findings | `24-agents-and-changes.mp4` |
-| 7 | Cloud IDE | Use the live file picker → open real held source in the connected workspace | `36-live-workspace.mp4` |
-| 8 | Devin Review / PR workflow | Open the PR and navigate purpose-grouped changes → inspect the real branch before merging | `25-pr-review.mp4` |
-| 9 | Recorded test evidence | Click Play in the Devin conversation → replay the actual independent retest | `30-recording-replay.mp4` |
-| 10 | Skills | Invoke `northstar-release-check`; expand its run → actual activation and passing checks with an evidence artifact | `33-skill-invoke.mp4`, `37-skill-run.mp4` |
+| 1 | DeepWiki | Open Core Architecture and expand its diagram → structure and citations | `35-deepwiki.mp4` |
+| 2 | Ask | Open answer citations → actual referenced code | `10-code-proof.mp4` |
+| 3 | Delegation | Type the brief → the session whose working result follows | `01-request.mp4` |
+| 4 | Computer Use | Watch native live testing → genuine finding and focused fixed-revision retest | `38-testing-ui-original.mp4`, `28-real-finding.mp4`, `39-testing-ui-retest.mp4` |
+| 5 | Collaboration | Send precise revision-hold instructions → verification stays on that revision | `21-steer.mp4` |
+| 6 | Managed Devins | Open Agents → two completed reviewers and findings | `24-agents-and-changes.mp4` |
+| 7 | Cloud IDE | Use the file picker → real source in the connected workspace | `36-live-workspace.mp4` |
+| 8 | Devin Review | Navigate purpose-grouped changes → inspect the open PR before merge | `25-pr-review.mp4` |
+| 9 | Recorded tests | Open the native evidence viewer → replay with five passed / zero failed assertions | `40-testing-evidence.mp4` |
+| 10 | Skills | Invoke the playbook and expand its run → native activation and passing checks | `33-skill-invoke.mp4`, `37-skill-run.mp4` |
 
-### Unavailable and omitted capabilities
+### Omitted capabilities
 
-- **Automation:** the authenticated capture account belongs to `thequantexplorer`, while native Automation management was scoped to a different organization. The demo UI had zero Automations. No unrelated Automation was created, triggered or changed; no settings list stands in for a run.
-- **Configured MCP integration:** the demo session's native Context7 connector returned `Error listing tools` and `Error calling resolve-library-id`. A direct HTTP JSON-RPC request to the real public Context7 MCP server succeeded, but this workaround is **not** presented as a working installed integration. That capture is excluded.
-- **Dynamic Workflows:** not added merely to increase the count; the coherent example already has real independent managed reviews. Slack and multiplatform are also omitted rather than fabricated or shown through old media.
+Automation management and the capture account belong to different organizations; the demo org showed zero Automations. No unrelated Automation was created or triggered. The native Context7 connector failed to list/call tools. Its direct public MCP fallback worked but is **not** presented as a working installed connector. Dynamic Workflows, Slack and multiplatform are omitted rather than fabricated, padded with settings cards or shown through old footage.
 
-## Evidence and limitations
+## Authentic evidence and limits
 
-Northstar is [product-demo-apps PR 38](https://github.com/thequantexplorer/product-demo-apps/pull/38). The film shows an open PR, not a merge. Conversation and review panels were recaptured after work completed: genuine messages and changes, not simulated live code generation.
+Northstar is [product-demo-apps PR 38](https://github.com/thequantexplorer/product-demo-apps/pull/38), shown open, not merged. Completed conversation/review panels were genuinely recaptured; they do not imply live code generation. The new original-archive test returned **six passed / three failed** assertions. Its genuine finding is followed by steering, review and an independent focused retest of the held fixed revision.
 
-The first hero uses `852411d08b18fee18fa532e99f49eca23f39e213`. It is **not** presented as passing strict dialog Tab wrapping. The genuine failure is followed by feedback, fixes and the independent Chrome retest of `3dbd344a03ae8c60decc841b192e011a07d3f7b1` (archive SHA256 `117e4b3445427dbe0c8ec430c3b24ebe43ffcf089438ec2db65b85ebf24170e7`).
+- Original: `852411d08b18fee18fa532e99f49eca23f39e213`; archive SHA256 `552d3025ef1454919e0583d39193a91e58ef7de81200ad1eae574c43f07a29bc`.
+- Held: `3dbd344a03ae8c60decc841b192e011a07d3f7b1`; archive SHA256 `117e4b3445427dbe0c8ec430c3b24ebe43ffcf089438ec2db65b85ebf24170e7`.
 
-Verified UI coverage: forward/reverse Tab wrap after export, Escape opener restoration, K1–K3 focus recovery, search/filter/day/save/conflict/reload, two-real-tab synchronization and actual `.ics` downloads. Repeated live-region DOM updates passed; actual screen-reader speech was not tested. Lone-CR browser fixtures, failed-storage-write browser recovery, external calendar import, mobile, other engines and exhaustive permutations remain untested. K5 is a source/lint check, not a browser scenario.
+The new held-build retest returned **five passed / zero failed** assertions: a real one-talk ICS download, retained Export focus, repeated Tab/Shift–Tab containment, and Escape restoring both existing openers. The selected live excerpt claims only visible Tab behavior; the native evidence viewer documents the full focused result. The recording viewer and following live capture are separately edited views of that test, not a purported seamless continuation.
 
-[SOURCES.json](shots/SOURCES.json) pins all **thirteen selected source videos** by SHA256 and records capture timestamps, frame logs, URLs, repositories, available revisions, archive hashes, clip in/out, speed and geometry. The Ask UI did not expose its indexed commit; its exact captured media is pinned instead. DeepWiki's source links exposed abbreviated indexed commit `26145cfd`; the film shows new navigation, not a claim that indexing occurred during the take. All clips play at **1×**. The retest source has variable frame timing; the film resamples it to 60fps without changing speed. The recording-context shot is followed by a full-resolution replay from the beginning, not a purported seamless live continuation. Only branding/font assets are reused.
+That focused pass did not retest Remove focus, a disappeared-opener fallback, two-talk export or broader search/filter/save behavior. Earlier independent runs covered wider app scenarios and two-tab synchronization. Actual screen-reader speech, failed-storage-write recovery, lone-CR browser fixtures, external calendar import, mobile, other engines and exhaustive permutations remain untested. Source/lint checks are not browser observations.
 
-The final Skill sequence explicitly shows a new invocation, the native **Activated skill: northstar-release-check** event, and its completed result. That run repeated source/archive checks, lint, typecheck, 48 tests and the production build. It did not claim new browser coverage; its report credits the independent retest and preserves its untested cases.
+The visible Skill invocation repeated archive/source checks, lint, typecheck, 48 tests and build without changing the held revision. It did not add browser coverage. No source fix, failure seeding, production deployment or merge occurred during the fresh read-only tests.
+
+[SOURCES.json](shots/SOURCES.json) pins **thirteen selected videos** by SHA256 and records dates, frame logs, URLs, repositories, available revisions, archive hashes, in/out, speed and geometry. DeepWiki exposed indexed commit `26145cfd`; Ask did not expose its indexed commit. Media bytes are pinned either way. Only branding/font assets are reused.
 
 ## Rebuild and verify
 
-Requires Node, Chrome, FFmpeg/ffprobe and the existing kit's `puppeteer-core` dependency. No new packages.
+Requires Node, Chrome, FFmpeg/ffprobe and the kit's existing `puppeteer-core`; no new packages.
 
 ```sh
+node --test tutorials/35-conference-overview/motion.test.mjs
 bash tutorials/35-conference-overview/build.sh
 ```
 
-`prepare.mjs` checks source hashes, every camera crop, 16:9 geometry, all highlight frames, intro-to-demo ordering and integral output frame counts. `render.mjs` decodes selected source ranges through FFmpeg at 60fps, then renders each frame through the same Canvas2D camera/highlight transform. Decoded-frame caches are keyed by pinned source hash and range. `verify.mjs` fully decodes both exports and checks codec, resolution, 60fps, 10,572 frames, duration and no audio. `node --test tutorials/35-conference-overview/motion.test.mjs` covers camera interpolation, symmetric padding, title docking and easing.
+Preflight rejects incomplete source framing, invalid source geometry, changed measured-target geometry, unsafe highlight padding, bad intro ordering and non-integral frame counts. The renderer decodes source ranges at 60fps and uses one source-to-destination transform for footage and emphasis. Verification fully decodes both exports and checks dimensions, H.264/yuv420p, limited range, duration, 60fps, 10,638 frames, one stream and no audio. Both exports passed; all 10,638 preview frames passed the low-luma scan. Final 4K 1× playback, full-cut review and beginning/middle/end highlight inspections are recorded in the production notes.
 
-For a quick design draft: `render.mjs --draft` (1080p30, not a delivery export). For still samples: `render.mjs --draft --samples wiki-intro:1.4,retest:7.8`. For selective iteration: `render.mjs --only code,hero-search`, then `render.mjs --assemble` **only after every current segment has been rendered**. `sources.mjs` deliberately repins provenance; the normal build does not run it. Frame logs retain timing evidence. Original capture JPEGs were discarded after source encoding; decoded edit frames are generated locally under the ignored build directory. The edit rebuild uses only committed MP4 sources.
+For iteration: `render.mjs --draft` (1080p30, not delivery), `--draft --samples wiki-intro:1.4,retest:7.8`, or `--only code,test-session`. Use `--assemble` only after every current segment is rendered. `sources.mjs` deliberately repins provenance; the normal build does not. Capture frame logs are retained; raw capture JPEGs are discarded after encoding. Edit-frame caches live in ignored `build/` and regenerate from committed MP4s.
 
-See [PRODUCTION.md](PRODUCTION.md) for alignment math and production lessons. Shared kit files and tutorial prompt documents are unchanged.
+See [PRODUCTION.md](PRODUCTION.md). Shared kit and both tutorial prompt documents are unchanged. Check the actual conference machine/projector before playback.

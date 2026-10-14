@@ -23,10 +23,11 @@ for(const [name,width,height] of [
   assert.equal(stream.height,height);
   assert.equal(stream.avg_frame_rate,'60/1');
   assert.equal(stream.pix_fmt,'yuv420p');
+  assert.equal(stream.color_range,'tv');
   assert.equal(Number(stream.nb_frames),Math.round(duration*film.fps));
   assert.ok(Math.abs(Number(probe.format.duration)-duration)<1/film.fps);
   execFileSync('ffmpeg',['-v','error','-xerror','-i',file,'-f','null','-'],{stdio:'inherit'});
-  results.push({file:name,width,height,fps:60,codec:'h264',streams:1,audio:false,frames:Number(stream.nb_frames),duration:Number(probe.format.duration),fullDecode:'passed'});
+  results.push({file:name,width,height,fps:60,codec:'h264',pixelFormat:stream.pix_fmt,colorRange:stream.color_range,streams:1,audio:false,frames:Number(stream.nb_frames),duration:Number(probe.format.duration),fullDecode:'passed'});
   console.log(name+': full decode and stream checks passed');
 }
 fs.writeFileSync(path.join(dir,'build','verification.json'),JSON.stringify({verifiedAt:new Date().toISOString(),results},null,2));
