@@ -21,6 +21,7 @@
 | 16 | Devin Automations: events | `16-automation-triggers/` |
 | 17 | Devin Security Swarm | `17-security-swarm/` |
 | 18 | iPhone and iPad apps on Mac VMs | `18-ios-ipad-mac-vms/` |
+| 22 | The review loop closes itself | `22-review-loop/` |
 | 23 | Managed Devins: how it works (overview) | `23-managed-devins-overview/` |
 | 26 | Devin across the SDLC (overview) | `26-sdlc-overview/` |
 | 28 | Devin on every platform (overview) | `28-multiplatform-overview/` |
