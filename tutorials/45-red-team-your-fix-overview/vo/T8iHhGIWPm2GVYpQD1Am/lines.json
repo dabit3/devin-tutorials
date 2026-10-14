@@ -1,0 +1,282 @@
+{
+ "0000.png": {
+  "text": "Red teaming your own fix means one Devin writes the patch, a second Devin tries to break it, and the loop keeps going until the breaker fails.",
+  "dur": 7.065,
+  "at": 0.0,
+  "end": 7.065,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.067,
+    "text": "Red teaming your own fix means one Devin"
+   },
+   {
+    "t0": 2.09,
+    "t1": 2.902,
+    "text": "writes the patch,"
+   },
+   {
+    "t0": 3.053,
+    "t1": 4.621,
+    "text": "a second Devin tries to break it,"
+   },
+   {
+    "t0": 4.795,
+    "t1": 7.036,
+    "text": "and the loop keeps going until the breaker fails."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "It matters because an agent checking its own patch shares its blind spots, while a separate breaker starts fresh, has to reproduce every break, and hands each one back to be fixed.",
+  "dur": 9.27,
+  "at": 7.28,
+  "end": 16.55,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.081,
+    "t1": 2.078,
+    "text": "It matters because an agent checking its own"
+   },
+   {
+    "t0": 2.136,
+    "t1": 3.749,
+    "text": "patch shares its blind spots,"
+   },
+   {
+    "t0": 3.924,
+    "t1": 5.781,
+    "text": "while a separate breaker starts fresh,"
+   },
+   {
+    "t0": 5.955,
+    "t1": 7.337,
+    "text": "has to reproduce every break,"
+   },
+   {
+    "t0": 7.453,
+    "t1": 9.27,
+    "text": "and hands each one back to be fixed."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "Here, I ask Devin for that loop on a real bug in a kanban demo app, with at most four rounds.",
+  "dur": 5.19,
+  "at": 16.91,
+  "end": 22.1,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.052,
+    "t1": 1.817,
+    "text": "Here, I ask Devin for that loop on"
+   },
+   {
+    "t0": 1.852,
+    "t1": 3.686,
+    "text": "a real bug in a kanban demo app,"
+   },
+   {
+    "t0": 3.86,
+    "t1": 5.19,
+    "text": "with at most four rounds."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "As a dynamic workflow, it's a short script: each round runs a fixer, gives its branch to a breaker, and stops as soon as the breaker comes back empty.",
+  "dur": 8.105,
+  "at": 22.37,
+  "end": 30.475,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.072,
+    "t1": 1.268,
+    "text": "As a dynamic workflow,"
+   },
+   {
+    "t0": 1.291,
+    "t1": 2.289,
+    "text": "it's a short script:"
+   },
+   {
+    "t0": 2.568,
+    "t1": 3.926,
+    "text": "each round runs a fixer,"
+   },
+   {
+    "t0": 4.1,
+    "t1": 5.505,
+    "text": "gives its branch to a breaker,"
+   },
+   {
+    "t0": 5.679,
+    "t1": 8.105,
+    "text": "and stops as soon as the breaker comes back empty."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "This is the loop Devin wrote, with the breaker getting the fixer's branch.",
+  "dur": 3.495,
+  "at": 30.83,
+  "end": 34.325,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.052,
+    "t1": 1.41,
+    "text": "This is the loop Devin wrote,"
+   },
+   {
+    "t0": 1.619,
+    "t1": 3.495,
+    "text": "with the breaker getting the fixer's branch."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "The workflow panel shows the fix and break phases, with every agent's live status.",
+  "dur": 4.34,
+  "at": 34.66,
+  "end": 39.0,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.053,
+    "t1": 1.981,
+    "text": "The workflow panel shows the fix and break"
+   },
+   {
+    "t0": 2.027,
+    "t1": 4.34,
+    "text": "phases, with every agent's live status."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "In the real run, round one's breaker found a card that vanished on reload, round two fixed it, and the second breaker came up empty.",
+  "dur": 6.875,
+  "at": 39.33,
+  "end": 46.205,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.086,
+    "t1": 0.794,
+    "text": "In the real run,"
+   },
+   {
+    "t0": 0.84,
+    "t1": 2.988,
+    "text": "round one's breaker found a card that vanished"
+   },
+   {
+    "t0": 3.035,
+    "t1": 4.997,
+    "text": "on reload, round two fixed it,"
+   },
+   {
+    "t0": 5.113,
+    "t1": 6.875,
+    "text": "and the second breaker came up empty."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "That first break was real, and the breaker reproduced it in tests before reporting it.",
+  "dur": 4.34,
+  "at": 46.55,
+  "end": 50.89,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.064,
+    "t1": 1.352,
+    "text": "That first break was real,"
+   },
+   {
+    "t0": 1.527,
+    "t1": 4.325,
+    "text": "and the breaker reproduced it in tests before reporting it."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "The result is one pull request, and it still gets a normal review before you merge.",
+  "dur": 4.09,
+  "at": 51.27,
+  "end": 55.36,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.046,
+    "t1": 1.648,
+    "text": "The result is one pull request,"
+   },
+   {
+    "t0": 1.822,
+    "t1": 4.09,
+    "text": "and it still gets a normal review before you merge."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "Use it for fixes where edge cases matter, like input validation, parsers, permission checks and data migrations.",
+  "dur": 6.375,
+  "at": 55.715,
+  "end": 62.09,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.094,
+    "t1": 2.137,
+    "text": "Use it for fixes where edge cases matter,"
+   },
+   {
+    "t0": 2.195,
+    "t1": 3.542,
+    "text": "like input validation,"
+   },
+   {
+    "t0": 3.786,
+    "t1": 6.363,
+    "text": "parsers, permission checks and data migrations."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Let one Devin write the fix, and let another one try to break it.",
+  "dur": 3.45,
+  "at": 62.35,
+  "end": 65.8,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.111,
+    "t1": 1.551,
+    "text": "Let one Devin write the fix,"
+   },
+   {
+    "t0": 1.574,
+    "t1": 3.176,
+    "text": "and let another one try to break it."
+   }
+  ]
+ }
+}

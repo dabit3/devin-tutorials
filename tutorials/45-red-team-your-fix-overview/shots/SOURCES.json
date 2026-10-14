@@ -1,0 +1,47 @@
+{
+  "note": "Every UI shot is a real screenshot reused from tutorial 44 (44-red-team-your-fix/shots), captured by its capture.mjs in the thequantexplorer Devin org (light mode, 125% zoom). Diagram beats are blank placeholders drawn live by scenes.js.",
+  "session": "https://app.devin.ai/sessions/b7781112cdbe4cd483b3896ea924cef6",
+  "repo": "thequantexplorer/orbit-demo",
+  "shots": {
+    "0000.png": {
+      "scene": "value"
+    },
+    "0001.png": {
+      "scene": "why"
+    },
+    "0002.png": {
+      "source": "44-red-team-your-fix",
+      "file": "0007.png",
+      "what": "Home composer: the typed red-team prompt with the orbit-demo repo chip"
+    },
+    "0003.png": {
+      "scene": "loop"
+    },
+    "0004.png": {
+      "source": "44-red-team-your-fix",
+      "file": "0231.png",
+      "what": "Workflow script: the breaker run_agent call that receives the fixer's branch, inside the round loop"
+    },
+    "0005.png": {
+      "source": "44-red-team-your-fix",
+      "file": "0099.png",
+      "what": "Workflow panel mid-run: fix and break phases, break-r2 working, 3/8 settled"
+    },
+    "0006.png": {
+      "scene": "rounds"
+    },
+    "0007.png": {
+      "source": "44-red-team-your-fix",
+      "file": "0238.png",
+      "what": "break-r1 child session: the confirmed break (cards numbered 1e9 or higher dropped on load), reproduced in vitest"
+    },
+    "0008.png": {
+      "source": "44-red-team-your-fix",
+      "file": "0243.png",
+      "what": "PR #41 tab: Open, Ready to merge, 4 files, Devin Review Bugs 2"
+    },
+    "0009.png": {
+      "scene": "uses"
+    }
+  }
+}
