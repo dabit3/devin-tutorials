@@ -29,7 +29,7 @@ window.SPEC = {
       "hold": 3.4,
       "capPos": "bottom",
       "cap": "Devin helps across the whole lifecycle",
-      "vo": "Devin helps in every phase: planning, building, testing, review, and security.",
+      "vo": "Devin helps with planning, building, testing, review, and security. That covers every phase of the lifecycle.",
       "hl": null
     },
     "0003.png": {

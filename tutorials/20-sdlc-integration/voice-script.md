@@ -8,7 +8,7 @@ Sources: [SDLC](https://docs.devin.ai/essential-guidelines/sdlc-integration), [M
 
 1. This is how Devin fits into the way your team already builds software.  <!-- 0000.png -->
 2. Writing code is less than a fifth of an engineer's time. The rest goes to understanding code, planning, review, and testing.  <!-- 0001.png -->
-3. Devin helps in every phase: planning, building, testing, review, and security.  <!-- 0002.png -->
+3. Devin helps with planning, building, testing, review, and security. That covers every phase of the lifecycle.  <!-- 0002.png -->
 4. It works inside your process. Its pull requests follow the same branch protections as anyone's, and a human reviews them before anything merges.  <!-- 0003.png -->
 5. Two connections make this bigger than a coding assistant. MCPs give Devin tools and context, and automations decide when work starts.  <!-- 0285.png -->
 6. Let's follow one change to Orbit, a kanban app, all the way through. First, plan it in Ask mode.  <!-- 0006.png -->
