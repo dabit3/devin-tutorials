@@ -3,7 +3,7 @@ window.SPEC = {
   "subtitle": "Your autonomous AI software engineer",
   "outro": "Clear task in, pull request out",
   "speed": 1,
-  "cps": 30,
+  "cps": 48,
   "capPos": "bottom",
   "noZoom": [
     [
@@ -12,20 +12,25 @@ window.SPEC = {
   ],
   "edit": {
     "0000.png": {
-      "hold": 2.6
+      "hold": 2.6,
+      "vo": "This is Devin. It's an autonomous AI software engineer that writes, runs, and tests its own code.",
+      "voSay": "This, is Devin. It's an autonomous AI software engineer that writes, runs, and tests its own code."
     },
     "0003.png": {
-      "hold": 1.4
+      "hold": 1.4,
+      "vo": "and Agent mode builds and ships."
     },
     "0006.png": {
-      "hold": 2.6
+      "hold": 2.6,
+      "vo": "Here's an earlier session, where Devin added starred cards to a kanban board."
     },
     "0008.png": {
       "hold": 1
     },
     "0011.png": {
       "hold": 3,
-      "cap": "Here it runs the app it is building in its own browser"
+      "cap": "Here it runs the app it is building in its own browser",
+      "vo": "Here, it runs the app it's building in its own browser. You can watch, or take over at any time."
     },
     "0014.png": {
       "hold": 2.9
@@ -52,14 +57,16 @@ window.SPEC = {
       "hold": 1.2
     },
     "0073.png": {
-      "hold": 1.4
+      "hold": 1.4,
+      "vo": "Press Enter, and Devin gets to work."
     },
     "0074.png": {
       "hold": 2
     },
     "0075.png": {
       "hold": 0.5,
-      "badge": "Sped up"
+      "badge": "Sped up",
+      "vo": "On its own, Devin reads the code, makes the change, and checks that the app still builds."
     },
     "0076.png": {
       "skip": true
@@ -298,7 +305,9 @@ window.SPEC = {
     "0154.png": {
       "hold": 2.2,
       "badge": null,
-      "cap": "Devin opens the PR and offers to test it"
+      "cap": "Devin opens the PR and offers to test it",
+      "vo": "Then it opens a pull request, and offers to test the change in the browser.",
+      "voGap": 0.8
     },
     "0162.png": {
       "hold": 0.6,
@@ -443,7 +452,9 @@ window.SPEC = {
     "0208.png": {
       "hold": 2,
       "badge": null,
-      "cursor": true
+      "cursor": true,
+      "vo": "When it's done, Devin sends a recording of the test.",
+      "voGap": 0.8
     },
     "0211.png": {
       "hold": 0.5
@@ -456,7 +467,8 @@ window.SPEC = {
     },
     "0214.png": {
       "hold": 0.5,
-      "cap": "Every check passed, with a video to prove it"
+      "cap": "Every check passed, with a video to prove it",
+      "vo": "Every check passed, with a video to prove it."
     },
     "0215.png": {
       "skip": true
@@ -519,7 +531,8 @@ window.SPEC = {
       "skip": true
     },
     "0245.png": {
-      "hold": 3.4
+      "hold": 3.4,
+      "vo": "Merged."
     },
     "0157.png": {
       "skip": true
@@ -529,6 +542,71 @@ window.SPEC = {
     },
     "0159.png": {
       "hold": 0.8
+    },
+    "0001.png": {
+      "vo": "Describe a task in plain English. If you could do it in a few hours, Devin can most likely handle it."
+    },
+    "0002.png": {
+      "vo": "Ask mode explores the code and makes a plan,"
+    },
+    "0004.png": {
+      "vo": "Every session is a conversation, plus Devin's own workspace.",
+      "voGap": 0.8
+    },
+    "0007.png": {
+      "vo": "Devin has its own computer, with a browser, a shell, and an editor."
+    },
+    "0012.png": {
+      "vo": "Every change Devin made is in its pull request, right in the session."
+    },
+    "0015.png": {
+      "vo": "Devin Review helps you review pull requests.",
+      "voGap": 0.8
+    },
+    "0018.png": {
+      "vo": "Wiki keeps living docs for your repos, generated from the code."
+    },
+    "0021.png": {
+      "vo": "Automations run Devin on a schedule, or when something happens, like a CI failure."
+    },
+    "0024.png": {
+      "vo": "And in Customize, you add plugins, skills, MCP servers, and rules."
+    },
+    "0027.png": {
+      "vo": "Now, let's start a new session.",
+      "voGap": 0.9
+    },
+    "0030.png": {
+      "vo": "Choose a model for the job, like Fusion, or a preview model like SWE-2.",
+      "voSay": "Choose a model for the job, like Fusion, or a preview model like swee two."
+    },
+    "0038.png": {
+      "vo": "Pick where Devin runs: Linux, macOS, or Windows."
+    },
+    "0043.png": {
+      "vo": "We'll stick with Linux."
+    },
+    "0045.png": {
+      "vo": "Give it a clear task, and say what done looks like."
+    },
+    "0049.png": {
+      "vo": "Mention the repo, then describe the change."
+    },
+    "0155.png": {
+      "vo": "Have Devin test it."
+    },
+    "0160.png": {
+      "vo": "Watch it click through the app on its own computer."
+    },
+    "0237.png": {
+      "vo": "Open the pull request right in the session,"
+    },
+    "0240.png": {
+      "vo": "and review the diff and the checks."
+    },
+    "0241.png": {
+      "vo": "Happy with it? Merge it."
     }
-  }
+  },
+  "voOutro": "Clear task in, pull request out."
 };

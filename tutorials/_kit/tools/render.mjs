@@ -27,7 +27,7 @@ const server = http.createServer((req, res) => {
 }).listen(0);
 const port = server.address().port;
 
-const browser = await puppeteer.launch({ executablePath: CHROME, headless: true, protocolTimeout: 600000,
+const browser = await puppeteer.launch({ executablePath: CHROME, headless: true, protocolTimeout: 600000, timeout: 180000,
   args: ['--force-color-profile=srgb', '--disable-gpu-vsync', '--font-render-hinting=none', '--hide-scrollbars', '--mute-audio'] });
 async function openPage() {
   const page = await browser.newPage();
@@ -40,7 +40,7 @@ async function openPage() {
 const first = await openPage();
 const total = await first.evaluate(() => window.film.frames);
 fs.mkdirSync(path.join(ROOT, VIDEO, 'build'), { recursive: true });
-if (args.includes('--count')) { console.log(total); process.exit(0); }
+if (args.includes('--count')) { const late = await first.evaluate(() => window.film.cues().voLate); if (late && late.length) console.error('narration waits on visuals:', late.join(', ')); console.log(total); process.exit(0); }
 fs.writeFileSync(path.join(ROOT, VIDEO, 'build', 'cues.json'), JSON.stringify(await first.evaluate(() => window.film.cues()), null, 1));
 const list = flag('--frames', null);
 const from = Number(flag('--from', 0)), to = Math.min(total, Number(flag('--to', total)));

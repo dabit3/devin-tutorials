@@ -79,7 +79,7 @@ class Page {
     await this.send('Page.navigate', { url }); await loaded;
   }
   // 1× layout scaled 3× at capture: a 3× device override breaks xterm canvases (giant or blank terminal text)
-  async screenshot({ path }) { const r = await this.send('Page.captureScreenshot', { format: 'png', fromSurface: true, clip: { x: 0, y: 0, width: VW, height: VH, scale: 4320 / VW } }); fs.writeFileSync(path, Buffer.from(r.data, 'base64')); }
+  async screenshot({ path }) { const o = await this.evaluate(() => [scrollX, scrollY]).catch(() => [0, 0]); const r = await this.send('Page.captureScreenshot', { format: 'png', fromSurface: true, clip: { x: o[0], y: o[1], width: VW, height: VH, scale: 4320 / VW } }); fs.writeFileSync(path, Buffer.from(r.data, 'base64')); }
   close() { this.ws.close(); }
 }
 export async function connect() {

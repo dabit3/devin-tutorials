@@ -1,34 +1,35 @@
 # DeepWiki — voice script
 
-Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`). Each line plays over the shot named on the left.
+Narrated by Nader (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one take cut into lines with `_kit/tools/vo_onetake.py`).
+Video: [06-deepwiki-nader.mp4](06-deepwiki-nader.mp4) · captioned cut: [06-deepwiki.mp4](06-deepwiki.mp4)
 
-| Shot | Narration |
-| --- | --- |
-| Home screen | This is DeepWiki. Devin indexes every repository you connect, and writes a wiki for it automatically. |
-| Hovering Wiki in the sidebar | Open Wiki from the sidebar. |
-| Repository list | Each connected repo has its own wiki, and you can generate one for any repo that doesn't have one yet. |
-| Hovering product-demo-apps | Pick a repository to read its wiki. |
-| Overview page | It opens on an overview of the whole codebase. |
-| Relevant source files | Every page lists the source files it was built from. |
-| Architecture diagram | Architecture diagrams are generated for you. |
-| Expanded diagram | Expand one to see the full picture. |
-| Page sidebar | The sidebar has a page for each part of the codebase. |
-| Kanban Board page, scrolling | And every claim links to the exact source lines it comes from. |
-| ⋯ menu | From this menu, you can re-index the wiki, edit it, or open DeepWiki settings. |
-| Menu open (Re-index now, Edit Wiki, DeepWiki settings) | To steer which pages get written, add a .devin/wiki.json file to the repo. |
-| Ask Devin box | You can also ask Devin about the repo, right from the wiki. |
-| Question sent, thinking | Devin uses the wiki to find the right context, then searches your code. |
-| Reading files (sped up) | It reads the files it needs, and writes up the answer. |
-| Answer with types.ts open | The answer cites the files and lines it came from, and opens them right next to it. |
-| Outro | Read your code like a book. |
+## Intro
+- DeepWiki turns every repository you connect into a wiki that Devin writes from the code, and keeps up to date.
 
-Spoken spellings (`voSay`): "This, is Deep Wiki." for the opening pause, "Deep Wiki settings", and "dot devin slash wiki dot json"; subtitles show the written form.
+## Open a repo's wiki
+- Open the sidebar, and click Wiki.
+- Every repo you connect gets its own wiki.
+- Search for a repo, and open its wiki.
 
-## Prompt typed on screen
+## Read the wiki
+- Devin writes these pages from the code itself, and organizes them by topic.
+- Every page lists the source files it was built from.
+- Architecture diagrams are generated for you, and you can expand them to look closer.
+- The sidebar becomes a table of contents for the whole wiki.
+- Open another page, like this one on the kanban board app.
+- From this menu, you can re-index the wiki, edit it, or open DeepWiki settings.
 
-1. How does the kanban board app store its cards and columns?
+## Ask Devin from the wiki
+- You can also ask Devin about the repo, right from the wiki.
+- Devin searches the code to answer.
+- The answer cites the files and lines it came from, and shows that code right next to it.
+- Click any citation to jump to those lines.
+
+## On screen
+- Search typed in the Wiki list: `product`
+- Question asked from the wiki: "How does the kanban board app store its cards and columns?"
+- Repo: `thequantexplorer/product-demo-apps`
 
 ## Sources
-
-- https://docs.devin.ai/work-with-devin/deepwiki
-- https://docs.devin.ai/work-with-devin/ask-devin
+- [DeepWiki docs](https://docs.devin.ai/work-with-devin/deepwiki)
+- [Ask Devin docs](https://docs.devin.ai/work-with-devin/ask-devin)
