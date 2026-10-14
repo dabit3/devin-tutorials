@@ -157,6 +157,7 @@ window.SPEC = {
     "0123.png": {
       "cap": "No human prompt: Devin reads the findings",
       "vo": "Nobody typed anything. The session read the findings by itself and started fixing them.",
+      "voSay": "Nobody typed anything. The session red the findings by itself and started fixing them.",
       "capPos": "bottom",
       "hl": [
         {
