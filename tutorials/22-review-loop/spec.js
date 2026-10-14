@@ -112,6 +112,7 @@ window.SPEC = {
       "badge": "Sped up"
     },
     "0109.png": {
+      "badge": "",
       "cap": "Devin opens the pull request",
       "vo": "Devin builds it and opens the pull request. These bugs weren't planted. From here, no human touches the code until the final diff.",
       "capPos": "bottom",
@@ -230,6 +231,7 @@ window.SPEC = {
       "badge": "Sped up"
     },
     "0145.png": {
+      "badge": "",
       "cap": "Review is clean, CI passed",
       "vo": "Every push gets a fresh review. Review even caught new bugs in Devin's own fixes. Devin fixed those too. The latest round came back clean.",
       "capPos": "bottom",
