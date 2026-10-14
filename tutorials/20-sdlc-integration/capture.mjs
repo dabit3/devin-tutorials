@@ -1,6 +1,6 @@
 // Live capture for tutorial 20 (Devin in your SDLC): the docs overview, then one Orbit change through
 // plan (Ask Devin) → build + test (Devin session) → PR (repo template) → Devin Review → fix from a PR comment → merge,
-// then the Security page and the integrations checklist.
+// then Security, MCP marketplace examples and Automation templates (preview only; nothing installed or enabled).
 //   ZOOM=1.25 MASK_TEXT=<email> PHASE=docs|plan|enroll|build|review|fix|merge|secure|setup node capture.mjs   (RESUME=1 appends)
 // state.json carries the session and PR URLs between phases.
 import fs from 'fs';
@@ -347,6 +347,71 @@ if (PHASE === 'setup') {
   await p.mouse.move(900, 500); r.cur = { x: 900, y: 500 };
   await r.shot({ hold: 2.6, hl: await byText('main div', '^GitHub[\\s\\S]{0,80}Connected') });
   r.mark('connections');
+}
+
+if (PHASE === 'mcps') {
+  await r.goto(ORG + '/customize?tab=mcps', 5000);
+  await sidebar(false);
+  r.cur = { x: 950, y: 550 };
+  await r.shot({ hold: 2.7 }); r.mark('mcp-home');
+  await r.click({ text: 'Add MCP', sel: 'button' }); r.mark('mcp-add');
+  await r.click({ text: 'From plugin marketplace (Recommended)', sel: 'a' }, { wait: 3500 });
+  r.mark('mcp-marketplace');
+  for (const name of ['Sentry', 'Datadog (OAuth)', 'Metabase']) {
+    if (name !== 'Sentry') await r.goto(ORG + '/customize?tab=plugins&scope=personal&browse=true', 3500);
+    const input = await r.box('input[aria-label="Search plugin marketplace"]');
+    await p.mouse.click(input.x, input.y);
+    await p.send('Input.insertText', { text: name });
+    await sleep(1600);
+    await r.shot({ kind: 'still', hold: 2.7, cursor: false });
+    r.mark('mcp-search-' + name.split(' ')[0].toLowerCase());
+    await r.click({ attr: ['aria-label', `View ${name} details`], sel: 'button' }, { wait: 1400 });
+    await p.mouse.move(900, 560); r.cur = { x: 900, y: 560 };
+    if (!(await main()).includes(name)) fail('MCP details missing: ' + name);
+    await r.shot({ hold: 2.8 });
+    r.mark('mcp-details-' + name.split(' ')[0].toLowerCase());
+  }
+}
+
+if (PHASE === 'automations') {
+  await r.goto(ORG + '/automations', 4500);
+  await sidebar(false);
+  r.cur = { x: 950, y: 550 };
+  await r.shot({ hold: 2.8 }); r.mark('automations-home');
+  const template = async name => {
+    const target = await p.evaluate(n => {
+      const el = [...document.querySelectorAll('a,[role=link]')].find(e => e.innerText.startsWith(n));
+      if (!el) throw new Error('Template missing: ' + n);
+      el.scrollIntoView({ block: 'center' });
+      return true;
+    }, name);
+    if (!target) fail('Template missing: ' + name);
+    await sleep(800);
+    const box = await r.rect({ text: name, sel: 'span' });
+    await r.shot({ hold: 2.8, hl: [box] });
+  };
+  await template('Fix Sentry Errors Daily'); r.mark('automation-sentry');
+  await template('Investigate Alerts Triggered'); r.mark('automation-datadog');
+  await r.click({ text: 'CI/CD & Release', sel: 'button' }, { wait: 900 });
+  await r.click({ attr: ['href', 'template=auto-fix-ci'], sel: 'a' }, { wait: 2200 });
+}
+if (PHASE === 'automations' || PHASE === 'automationdetail') {
+  if (!(await p.evaluate(() => document.body.innerText)).includes('Check run')) fail('CI template did not open');
+  await r.shot({ hold: 2.8 }); r.mark('automation-ci-trigger');
+  await scrollTo('h3,h4,label,div,span', '^Instructions$', 145);
+  await r.shot({ hold: 2.8 }); r.mark('automation-ci-instructions');
+  await scrollTo('h3,h4,label,div,span', '^MCPs$', 145);
+  await r.shot({ hold: 2.8 }); r.mark('automation-mcps');
+  await scrollTo('h3,h4,label,div,span', '^Limits$', 145);
+  await r.shot({ hold: 2.8 }); r.mark('automation-limits');
+  await r.click({ text: 'Cancel', sel: 'button' }, { wait: 700 });
+}
+if (['automations', 'automationdetail', 'automationcleanup'].includes(PHASE)) {
+  const discard = await r.find({ text: 'Discard changes', sel: 'button' });
+  if (discard) { await p.mouse.click(discard.x, discard.y); await sleep(1000); }
+  const closed = await p.evaluate(() => !/automations\/create/.test(location.pathname) && !document.body.innerText.includes('Discard unsaved changes?'));
+  if (!closed) fail('Automation draft did not close');
+  console.log('Automation draft discarded; no automation created or enabled.');
 }
 r.done();
 console.log('beats', r.beats.length);

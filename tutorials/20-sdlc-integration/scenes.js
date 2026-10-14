@@ -124,10 +124,82 @@ function process(ctx, s, k) {
   });
 }
 
+function flowPulse(ctx, s, k, x0, x1, y, start = 0) {
+  const p = ((Math.max(0, s - start) * 0.22) % 1);
+  line(ctx, k, x0, x1, y, k.eOut(k.prog(s, start, start + 0.8)), 'rgba(32,120,255,.25)');
+  if (s < start) return;
+  ctx.save(); ctx.globalAlpha = k.alpha * Math.sin(p * Math.PI);
+  ctx.beginPath(); ctx.arc(k.lerp(x0, x1, p), y, 4, 0, Math.PI * 2); ctx.fillStyle = rgba(BLUE, 1); ctx.fill(); ctx.restore();
+}
+
+function connected(ctx, s, k) {
+  eyebrow(ctx, k, 'CONNECTED TO THE WAY YOUR TEAM WORKS', 180, k.eOut(k.prog(s, 0, 0.6)));
+  const nodes = [
+    [180, 'Automations', 'When work starts'],
+    [530, 'Devin', 'Plan · build · test'],
+    [880, 'MCPs', 'Tools and context'],
+  ];
+  flowPulse(ctx, s, k, 445, 530, 365, 0.5);
+  flowPulse(ctx, s, k, 880, 795, 365, 1);
+  nodes.forEach(([x, title, sub], i) => {
+    const a = k.eOut(k.prog(s, i * 0.3, i * 0.3 + 0.6));
+    card(ctx, k, x, 285, 265, 160, a, i === 1 ? a : 0);
+    if (i === 1) mark(ctx, k, x + 132.5, 314, 27, a);
+    label(ctx, k, x + 132.5, i === 1 ? 378 : 365, title, sub, a, 28);
+  });
+  const a = k.eOut(k.prog(s, 1.6, 2.2));
+  label(ctx, k, 720, 545, 'Same lifecycle. Same human control.', '', a, 25);
+}
+
+function context(ctx, s, k) {
+  eyebrow(ctx, k, 'MCP: MODEL CONTEXT PROTOCOL', 160, k.eOut(k.prog(s, 0, 0.6)));
+  const rows = [['Sentry', 'Errors and stack traces'], ['Datadog', 'Logs, metrics and traces'], ['Metabase', 'Data and dashboards']];
+  rows.forEach(([title, sub], i) => {
+    const y = 238 + i * 130, a = k.eOut(k.prog(s, 0.2 + i * 0.35, 0.8 + i * 0.35));
+    flowPulse(ctx, s, k, 490, 670, y + 50, i * 0.35 + 0.5);
+    card(ctx, k, 150, y, 340, 102, a);
+    label(ctx, k, 320, y + 50, title, sub, a, 25);
+  });
+  const a = k.eOut(k.prog(s, 1, 1.7));
+  card(ctx, k, 670, 238, 610, 362, a, a);
+  mark(ctx, k, 975, 306, 46, a);
+  label(ctx, k, 975, 398, 'Devin session', 'Investigate with real runtime context', a, 33);
+  label(ctx, k, 975, 508, 'Connect and authorize first', 'Only the tools and data you grant', a, 22);
+}
+
+function automation(ctx, s, k) {
+  eyebrow(ctx, k, 'AUTOMATIONS: WHEN WORK STARTS', 190, k.eOut(k.prog(s, 0, 0.6)));
+  const nodes = [['Trigger', 'Schedule or event'], ['Conditions', 'Optional filters / checks'], ['Action', 'Start a Devin session']];
+  nodes.forEach(([title, sub], i) => {
+    const x = 130 + i * 420, a = k.eOut(k.prog(s, i * 0.45, i * 0.45 + 0.7));
+    if (i < 2) flowPulse(ctx, s, k, x + 340, x + 420, 386, i * 0.45 + 0.4);
+    card(ctx, k, x, 300, 340, 172, a, i === 2 ? a : 0);
+    label(ctx, k, x + 170, 386, title, sub, a, 29);
+  });
+  const a = k.eOut(k.prog(s, 1.5, 2.2));
+  label(ctx, k, 720, 565, 'GitHub · Slack · schedules · webhooks', '', a, 25);
+}
+
+function loop(ctx, s, k) {
+  eyebrow(ctx, k, 'FROM PRODUCTION SIGNAL TO REVIEWED CHANGE', 185, k.eOut(k.prog(s, 0, 0.6)));
+  const nodes = [['Signal', 'Error or alert'], ['Automation', 'Trigger + action'], ['Devin', 'Investigate + test'], ['Pull request', 'Your checks'], ['Human', 'Review + merge']];
+  nodes.forEach(([title, sub], i) => {
+    const x = 80 + i * 258, a = k.eOut(k.prog(s, i * 0.35, i * 0.35 + 0.6));
+    if (i < 4) flowPulse(ctx, s, k, x + 230, x + 258, 372, i * 0.35 + 0.3);
+    card(ctx, k, x, 300, 230, 145, a, i === 4 ? a : 0);
+    label(ctx, k, x + 115, 372, title, sub, a, 25);
+  });
+  const a = k.eOut(k.prog(s, 1.8, 2.5));
+  card(ctx, k, 542, 520, 356, 78, a);
+  label(ctx, k, 720, 559, 'MCP tools + context', '', a, 22);
+  ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.beginPath(); ctx.moveTo(711, 520); ctx.lineTo(711, 445); ctx.strokeStyle = rgba(BLUE, 0.4); ctx.lineWidth = 1.5; ctx.stroke(); ctx.restore();
+}
+
 window.SCENES = {
   lifecycle: (ctx, s, k) => phases(ctx, s, k, false, 'YOUR SOFTWARE LIFECYCLE'),
   time,
   phases: (ctx, s, k) => phases(ctx, s, k, true, 'DEVIN HELPS IN EVERY PHASE'),
   process,
+  connected, context, automation, loop,
 };
 })();

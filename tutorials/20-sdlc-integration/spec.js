@@ -1,6 +1,6 @@
 window.SPEC = {
   "title": "Devin in your SDLC",
-  "subtitle": "Plan, build, test, review and merge one real change",
+  "subtitle": "From a real change to automations and connected tools",
   "outro": "Devin covers the lifecycle. You stay in control",
   "speed": 3,
   "pollRunMax": 2.2,
@@ -43,6 +43,12 @@ window.SPEC = {
     "0004.png": {
       "hold": 1.2,
       "cap": null,
+      "hl": null
+    },
+    "0285.png": {
+      "scene": "connected", "hold": 4.6, "cursor": false,
+      "cam": "reset", "capPos": "bottom", "cap": "MCPs add context. Automations start work.",
+      "vo": "Two connections make this bigger than a coding assistant. MCPs give Devin tools and context, and automations decide when work starts.",
       "hl": null
     },
     "0006.png": {
@@ -705,6 +711,7 @@ window.SPEC = {
       ]
     },
     "0253.png": {
+      "badge": null,
       "voGap": 1.3,
       "hold": 2.6,
       "capPos": "bottom",
@@ -721,9 +728,9 @@ window.SPEC = {
     },
     "0254.png": {
       "voGap": 1.2,
-      "hold": 3.6,
+      "hold": 2.6,
       "capPos": "bottom",
-      "cap": "Start by connecting your repos and tools",
+      "cap": "Connect repos and team tools",
       "hl": [
         {
           "x": 715.5,
@@ -732,7 +739,7 @@ window.SPEC = {
           "h": 75
         }
       ],
-      "vo": "To get started, connect your repos here, then add tools like Jira, Linear, and Slack."
+      "vo": "To get started, connect your repos and team tools. Then connect runtime data through MCPs."
     },
     "0005.png": {
       "hl": null
@@ -1046,9 +1053,112 @@ window.SPEC = {
     "0200.png": {
       "hl": null
     },
-    "0203.png": {
+    "0203.png": { "hl": null },
+    "0286.png": {
+      "badge": null,
+      "scene": "context", "hold": 4.2, "cursor": false, "cam": "reset",
+      "capPos": "bottom", "cap": "MCPs connect tools and context",
+      "vo": "MCP stands for Model Context Protocol. It lets a Devin session use tools and data from services you authorize.",
+      "voGap": 1.2, "hl": null
+    },
+    "0255.png": {
+      "hold": 2.4, "cursor": true, "capPos": "bottom", "cap": "Customize → MCPs",
+      "vo": "Open Customize, then MCPs, to choose your connections.",
+      "cam": { "x": 740, "y": 260, "z": 1.25 }, "hl": null
+    },
+    "0256.png": { "hold": 0.15, "hl": null },
+    "0257.png": {
+      "hold": 0.5, "capPos": "bottom", "cap": "Browse the plugin marketplace",
+      "vo": "Browse the plugin marketplace to find the tools your team already uses.", "hl": null
+    },
+    "0258.png": { "hold": 0.15, "hl": null },
+    "0259.png": { "hold": 0.6, "cap": null, "hl": null },
+    "0260.png": { "hold": 0.5, "hl": null },
+    "0261.png": { "hold": 0.15, "hl": null },
+    "0262.png": { "skip": true },
+    "0263.png": {
+      "hold": 2.4, "capPos": "bottom", "cap": "Sentry: errors and stack traces",
+      "vo": "With Sentry connected, Devin can inspect errors and stack traces before tracing a failure back to code.",
+      "cam": { "x": 900, "y": 315, "z": 1.35 },
+      "hl": { "x": 930, "y": 143, "w": 880, "h": 119, "pad": 4 }
+    },
+    "0264.png": { "hold": 0.5, "cap": null, "cam": "reset", "hl": null },
+    "0265.png": { "hold": 0.15, "hl": null },
+    "0266.png": { "skip": true },
+    "0267.png": {
+      "hold": 2.4, "capPos": "bottom", "cap": "Datadog: logs, metrics and traces",
+      "vo": "Datadog adds logs, metrics, and traces, so an investigation can use production evidence instead of guesswork.",
+      "cam": { "x": 900, "y": 315, "z": 1.35 },
+      "hl": { "x": 930, "y": 143, "w": 880, "h": 119, "pad": 4 }
+    },
+    "0268.png": { "hold": 0.5, "cap": null, "cam": "reset", "hl": null },
+    "0269.png": { "hold": 0.15, "hl": null },
+    "0270.png": { "skip": true },
+    "0271.png": {
+      "hold": 2.4, "capPos": "bottom", "cap": "Metabase: data and dashboards",
+      "vo": "Metabase connects analytics data and dashboards, useful for investigating changes in product or business metrics.",
+      "cam": { "x": 900, "y": 315, "z": 1.35 },
+      "hl": { "x": 930, "y": 143, "w": 880, "h": 119, "pad": 4 }
+    },
+    "0289.png": {
+      "scene": "context", "hold": 4.0, "cursor": false, "cam": "reset",
+      "capPos": "bottom", "cap": "Install, then authorize the MCP",
+      "vo": "These are available integrations, not connections in this account. Install the plugin, then authorize its MCP with only the access it needs.",
+      "hl": null
+    },
+    "0287.png": {
+      "scene": "automation", "hold": 4.2, "cursor": false, "cam": "reset",
+      "capPos": "bottom", "cap": "Trigger → conditions → action",
+      "vo": "Automations handle the other half: when to start. A schedule or event can trigger a session, with optional conditions and checks before it runs.",
+      "voGap": 1.2, "hl": null
+    },
+    "0272.png": {
+      "hold": 2.4, "capPos": "bottom", "cap": "Recurring work and incoming events",
+      "vo": "Open Automations to see ready-made workflows for recurring work and incoming events.",
+      "cursor": true, "hl": null
+    },
+    "0273.png": {
+      "hold": 2.4, "capPos": "bottom", "cap": "Sentry: a scheduled error sweep",
+      "vo": "For example, Fix Sentry Errors Daily is a scheduled error sweep that can investigate issues and open fix pull requests."
+    },
+    "0274.png": {
+      "hold": 2.4, "capPos": "bottom", "cap": "Datadog: investigate alerts from Slack",
+      "vo": "Investigate Alerts Triggered uses an alert in Slack and Datadog context to produce a root-cause analysis."
+    },
+    "0275.png": { "hold": 0.15, "cap": null, "hl": null },
+    "0276.png": { "hold": 0.35, "hl": null },
+    "0277.png": { "hold": 0.15, "hl": null },
+    "0278.png": { "skip": true },
+    "0279.png": {
+      "hold": 2.4, "capPos": "bottom", "cap": "CI trigger: completed + failure",
+      "vo": "The Fix CI Failures template shows how this is wired. Choose a repository; the trigger matches a completed check run whose conclusion is failure.",
+      "cam": { "x": 930, "y": 315, "z": 1.35 },
+      "hl": { "x": 930, "y": 307, "w": 880, "h": 120, "pad": 4 }
+    },
+    "0280.png": {
+      "hold": 2.4, "capPos": "bottom", "cap": "Start a session with clear instructions",
+      "vo": "The action starts a session. Its instructions tell Devin to read the logs, fix the cause, and run the tests again.",
+      "hl": { "x": 930, "y": 336, "w": 880, "h": 352, "pad": 4 }
+    },
+    "0281.png": {
+      "hold": 2.4, "capPos": "bottom", "cap": "Choose the MCPs it can use",
+      "vo": "Choose which MCP connections that automation can use. The monitoring templates need the relevant services connected first.",
+      "hl": { "x": 930, "y": 290, "w": 880, "h": 230, "pad": 4 }
+    },
+    "0282.png": {
+      "hold": 2.4, "capPos": "bottom", "cap": "Set limits before enabling",
+      "vo": "Set spend and rate limits before enabling it. This is a preview only; nothing is being created or turned on.",
+      "cam": { "x": 930, "y": 505, "z": 1.25 },
+      "hl": { "x": 930, "y": 630, "w": 880, "h": 290, "pad": 4 }
+    },
+    "0283.png": { "skip": true },
+    "0284.png": { "skip": true },
+    "0288.png": {
+      "scene": "loop", "hold": 5.2, "cursor": false, "cam": "reset",
+      "capPos": "bottom", "cap": "Production feedback, still human-controlled",
+      "vo": "Now the loop is connected: a signal starts work, MCPs provide context, and Devin investigates and tests. Any proposed fix still goes through your pull requests and human review.",
       "hl": null
     }
   },
-  "voOutro": "Devin works across the whole lifecycle, and you stay in control of what ships."
+  "voOutro": "From planning to production feedback, Devin works across the lifecycle. You stay in control of what ships."
 };
