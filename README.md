@@ -79,7 +79,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 
 ## Silent conference video
 
-**35. Meet Devin — product overview** (2:52): An entirely rebuilt silent reel with new real workflows: code intelligence, delegation, browser testing, a genuine finding and fix, steering, managed review, code changes, PR review, exact-revision retesting and reusable release evidence. The expanded demo viewport and 80 seconds of browser interaction replace the old screenshot montage. Unified ivory, precise blue emphasis, no presentation gradients or audio. [4K master](tutorials/35-conference-overview/35-conference-overview.mp4) · [1080p preview](tutorials/35-conference-overview/35-conference-overview-1080p.mp4) · [Sources and rebuild instructions](tutorials/35-conference-overview/README.md)
+**35. Meet Devin — product overview** (3:05): Ten distinct capabilities shown through entirely new real workflows: DeepWiki, Ask, delegation, Computer Use, steering, Managed Devins, Cloud IDE, Review, recorded test evidence and Skills. A genuine finding → fix → retest cycle anchors 72 seconds of full-frame browser interaction. The expanded demo canvas, unified ivory surface and measured blue emphasis replace the old screenshot montage. No presentation gradients or audio. [4K master](tutorials/35-conference-overview/35-conference-overview.mp4) · [1080p preview](tutorials/35-conference-overview/35-conference-overview-1080p.mp4) · [Coverage, provenance and rebuild instructions](tutorials/35-conference-overview/README.md)
 
 ## Making a new tutorial
 

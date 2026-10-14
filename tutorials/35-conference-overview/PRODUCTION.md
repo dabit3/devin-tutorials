@@ -2,10 +2,11 @@
 
 ## Editorial decisions
 
-- Replace the rejected screenshot montage with nine new recordings and a Northstar engineering cycle. Orbit Ask is explicitly a separate opening example.
-- Show actual typing, pointer movement, clicks, code navigation and application state changes. Testing receives 80.15 seconds, including original and held-revision takes.
+- Replace the rejected screenshot montage with thirteen selected new recordings covering ten distinct capabilities in 185.20 seconds. Orbit DeepWiki/Ask is explicitly a separate opening example.
+- Show actual typing, pointer movement, clicks, code navigation and application state changes. Full-frame testing receives 72.4 seconds, including original and held-revision takes; native evidence playback adds four seconds of unmistakable Devin session context.
 - Preserve the genuine failure: the original archive did not satisfy strict dialog Tab wrapping. Show its actual feedback before the fix/review/retest material.
-- Show two real managed reviewers and a real release-check skill's evidence artifact. Omit optional Slack, scheduling, integration and multiplatform examples rather than reuse old media or pad with static settings.
+- Show two real managed reviewers, live source navigation in Cloud IDE, and the release-check Skill's actual invocation, activation event and result. The README coverage table groups finding/retest as Computer Use and both Skill shots as one feature. Northstar's app functions are not counted as Devin features.
+- Native Automation management and the capture login were scoped to different organizations; the demo organization showed zero Automations. Its native Context7 connector failed to list/call tools. A real direct-MCP fallback answered, but is not depicted as a working installed connector. Omit these examples rather than fabricate success or pad with settings. No unrelated Automation was touched.
 - All clips remain at 1×. Session waits are omitted. Historical panels were recaptured after completion; no live-generation claim is made. No merge or production deployment.
 
 ## Visual system and alignment
@@ -37,12 +38,14 @@ README lists coverage limits. Release evidence distinguishes export from externa
 
 ## Release gates
 
-Preflight hashes, crops, output-frame counts and highlight timing. Fully decode both outputs and verify one H.264 video stream, 60fps, exact dimensions, 172.35s/10,341 frames, no audio. Review the entire cut at normal speed, plus transition and highlight beginning/middle/end frames. Inspect camera easing and edge clipping separately. Export four full-frame stills from the final master, not a mockup. Update PR 119 only, leave it unmerged, attach both videos and stills.
+Preflight hashes, crops, output-frame counts and highlight timing. Fully decode both outputs and verify one H.264 video stream, 60fps, exact dimensions, 185.20s/11,112 frames, no audio. Review the entire cut at normal speed, plus transition and highlight beginning/middle/end frames. Inspect camera easing and edge clipping separately. Export full-frame stills from the final master, not a mockup. Update PR 119 only, leave it unmerged, attach both videos and stills.
 
-## Completed verification — 2026-10-14
+## Verification record
 
-- Source/hash/geometry preflight, JavaScript syntax, shell syntax and diff-whitespace checks passed.
-- Both delivery files passed full FFmpeg decode and exact stream/frame/duration checks, including no audio.
-- Full-duration video review and 1× browser playback completed. Individual full-resolution frames were also inspected for both highlight intervals (beginning/middle/end), modal zoom entrance/exit, chapter transitions, retest focus states and the close.
-- A technical scan covered all 10,341 preview frames: no black intervals, minimum per-frame luma range 214/255. This is a blank-frame check, not a claim of manual visual inspection of every frame.
-- The held Northstar archive independently passed lint, typecheck, 48 unit tests and production build. Browser coverage and remaining gaps are recorded separately in the README and source manifest.
+The revised source/hash/geometry preflight, JavaScript syntax, shell syntax and diff-whitespace checks pass. The held Northstar archive independently passed lint, typecheck, 48 unit tests and production build; the newly invoked Skill repeated these checks without changing the archive. Browser coverage and remaining gaps are recorded separately in the README and source manifest.
+
+Both revised exports fully decode with FFmpeg: H.264, yuv420p, 3840×2160 / 1920×1080, 60fps, 185.20 seconds, 11,112 frames, exactly one video stream and no audio. All 11,112 preview frames passed the technical blank-frame scan (minimum luma range 214; zero black intervals).
+
+Full-cut video review and normal-speed browser playback were completed, with additional opening, transition, retest, replay, Skill and highlight beginning/middle/end inspections. The browser reached 185.20 seconds at playbackRate 1 with zero corrupted frames, but the VM's Chromium player dropped approximately 10% of display frames; this is not a claim of frame-perfect playback on this host. Encoded-frame counts and full-decode checks pass independently. Check playback on the actual conference machine before projection.
+
+Six representative full-frame stills were exported from this final 4K master. The earlier evidence-document-only source is excluded from the production tree; thirteen selected recordings remain. Shared kit files and both tutorial prompt documents are unchanged.

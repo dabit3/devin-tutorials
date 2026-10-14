@@ -1,7 +1,7 @@
 {
   "production": "Entirely new conference reel; no rejected-reel footage or screenshots used.",
   "productionDateUTC": "2026-10-14",
-  "duration": 172.35000000000002,
+  "duration": 185.20000000000002,
   "fps": 60,
   "outputSize": [
     3840,
@@ -25,6 +25,23 @@
     }
   ],
   "editorial": "All product sources play at 1x. Waits between sessions are omitted. Historical conversation and review panels were recaptured after the work completed; this is not a claim of live code generation. The Orbit Ask example is separate from the Northstar workflow. No PR is merged.",
+  "featureCoverage": [
+    "DeepWiki",
+    "Ask",
+    "Delegation",
+    "Computer Use",
+    "Steering and collaboration",
+    "Managed Devins",
+    "Cloud IDE",
+    "Devin Review",
+    "Recorded test evidence",
+    "Skills"
+  ],
+  "omittedCapabilities": {
+    "automation": "The capture login is thequantexplorer; native Automation management is scoped to a different organization. The demo UI has zero Automations. No unrelated Automation was run or changed.",
+    "mcp": "The demo session reported Error listing tools and Error calling resolve-library-id from its native Context7 integration. A direct HTTP JSON-RPC call to the actual Context7 MCP server succeeded, but this workaround is not presented as a functioning installed connector. The request capture is excluded.",
+    "dynamicWorkflows": "Not added: the cohesive demo already has independent managed reviews, and adding an unwarranted orchestration would pad the reel."
+  },
   "testing": {
     "passed": "Strict forward/reverse Tab wrap after export, Escape focus restoration, K1–K3 focus recovery, search/filter/day/save/conflict/reload, real two-tab synchronization, actual ICS downloads. K4 repeated live-region DOM updates passed.",
     "untested": "Actual screen-reader speech; C1 lone-CR fixture in a browser; R1 failed-storage-write recovery in a browser; external calendar import; mobile; other browser engines; exhaustive permutations. K5 was a source/lint check, not a browser scenario.",
@@ -32,6 +49,34 @@
     "recordedEvidence": "https://app.devin.ai/attachments/f3ec8d41-4bac-4dd2-9790-5d36e71f616d/northstar-retest-3dbd344-edited.mp4"
   },
   "sources": [
+    {
+      "path": "captures/35-deepwiki.mp4",
+      "sha256": "dba38e594086aaf8261980ce41591c46f3930ce204062a1bb673dcd5150345bc",
+      "repository": "thequantexplorer/orbit-demo",
+      "revision": "26145cfd",
+      "action": "Navigate to Core Architecture, scroll to the reducer flow and expand its Mermaid diagram.",
+      "note": "Fresh DeepWiki navigation capture. Revision is the abbreviated indexed commit exposed by the source links; documentation is not claimed to have been generated during this take.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/org/thequantexplorer/wiki/thequantexplorer/orbit-demo/page/2?branch=main",
+      "captureStarted": "2026-10-14T03:12:15.619Z",
+      "firstFrameUTC": "2026-10-14T03:12:15.636Z",
+      "lastFrameUTC": "2026-10-14T03:12:21.652Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/org/thequantexplorer/wiki/thequantexplorer/orbit-demo/page/2?branch=main",
+      "frameLog": "captures/35-deepwiki/frames.json",
+      "sourceDuration": 11.216667,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 810,
+        "deviceScaleFactor": 1
+      },
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
     {
       "path": "captures/10-code-proof.mp4",
       "sha256": "59ef1cbaf6a9399b89040808ab0ae97ab8aeb3b67b2dcdaf0ace45df465f0c0a",
@@ -201,6 +246,34 @@
       "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
     },
     {
+      "path": "captures/36-live-workspace.mp4",
+      "sha256": "2ced6d192642c52e4222b70c346f2c8da581ec78afaf0be2cb3ac091aa3f0777",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
+      "action": "Use the Cloud IDE file picker to find and open ScheduleDialog.tsx in the live workspace.",
+      "note": "Read-only inspection of the real held source. No editing or new code generation is claimed.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T03:19:38.974Z",
+      "firstFrameUTC": "2026-10-14T03:19:39.000Z",
+      "lastFrameUTC": "2026-10-14T03:19:48.403Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e?tab=%2Fhome%2Fubuntu%2Frepos%2Fproduct-demo-apps%2Fnorthstar-conference%2Fsrc%2FScheduleDialog.tsx&fullscreen=true",
+      "frameLog": "captures/36-live-workspace/frames.json",
+      "sourceDuration": 9.833333,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 810,
+        "deviceScaleFactor": 1
+      },
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
       "path": "captures/25-pr-review.mp4",
       "sha256": "7644a9361ff0d9e6f71c90e195fc5079ccfff457cd997ef42b93f04f6a86a294",
       "repository": "thequantexplorer/product-demo-apps",
@@ -215,6 +288,34 @@
       "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e?tab=pr%3A38",
       "frameLog": "captures/25-pr-review/frames.json",
       "sourceDuration": 11.833333,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 810,
+        "deviceScaleFactor": 1
+      },
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/30-recording-replay.mp4",
+      "sha256": "48eed25939cc447e53ada9f64b8da8572dac66628dd2a0d4857a090ecb9db2d4",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
+      "action": "Click Play on the independent retest recording inside the real Devin conversation.",
+      "note": "Captured during this rebuild, not imported from any prior tutorial. The following full-resolution retest segment shows the same 22.4-second evidence clip. Its beginning is replayed rather than presented as a seamless real-time continuation.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T02:13:01.193Z",
+      "firstFrameUTC": "2026-10-14T02:13:01.228Z",
+      "lastFrameUTC": "2026-10-14T02:13:13.830Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "frameLog": "captures/30-recording-replay/frames.json",
+      "sourceDuration": 12.933333,
       "encodedSize": [
         2880,
         1620
@@ -258,20 +359,47 @@
       "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
     },
     {
-      "path": "captures/29-release-evidence.mp4",
-      "sha256": "ebbc85f8086cc54bf14fab6b93d09e62858383fa8f0471e33d14f8e281add8fe",
+      "path": "captures/33-skill-invoke.mp4",
+      "sha256": "90fb1380cb6dbda73b6c2335e8e3948bb5a3b1984bfddd2563fae66e9fccb1f5",
       "repository": "thequantexplorer/product-demo-apps",
       "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
-      "action": "Open the newly generated release-evidence artifact, expand its panel and scroll the source/browser evidence.",
-      "note": "Generated by the reusable northstar-release-check skill after receiving the independent test evidence. The report distinguishes source checks, browser checks and untested cases; it corrects the prior export/import wording.",
+      "action": "Type and send a new request to use northstar-release-check without changing code or PR.",
       "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
       "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
-      "captureStarted": "2026-10-14T02:11:35.010Z",
-      "firstFrameUTC": "2026-10-14T02:11:35.073Z",
-      "lastFrameUTC": "2026-10-14T02:11:42.670Z",
-      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e?tab=attachment%3Anorthstar-release-evidence-3dbd344.md&fullscreen=true",
-      "frameLog": "captures/29-release-evidence/frames.json",
-      "sourceDuration": 14.316667,
+      "captureStarted": "2026-10-14T03:05:23.117Z",
+      "firstFrameUTC": "2026-10-14T03:05:23.132Z",
+      "lastFrameUTC": "2026-10-14T03:05:38.040Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "frameLog": "captures/33-skill-invoke/frames.json",
+      "sourceDuration": 15.166667,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 810,
+        "deviceScaleFactor": 1
+      },
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/37-skill-run.mp4",
+      "sha256": "6bd75c46572a0ac0ca8fd512840451afafc8058b113c3dec5de8c21a5df23f4f",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
+      "action": "Expand the completed run to show Activated skill: northstar-release-check, then collapse it to reveal the passing release-check result.",
+      "note": "The actual invocation reran lint, typecheck, 48 tests, build and archive checks. It did not run new browser tests; those remain credited to the independent testing agent.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T03:23:19.881Z",
+      "firstFrameUTC": "2026-10-14T03:23:19.897Z",
+      "lastFrameUTC": "2026-10-14T03:23:26.204Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "frameLog": "captures/37-skill-run/frames.json",
+      "sourceDuration": 10.85,
       "encodedSize": [
         2880,
         1620
@@ -294,8 +422,23 @@
       "graphic": "intro"
     },
     {
-      "id": "code",
+      "id": "wiki",
       "timelineStart": 4.5,
+      "duration": 11,
+      "source": "35-deepwiki.mp4",
+      "in": 0,
+      "out": 11,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ]
+    },
+    {
+      "id": "code",
+      "timelineStart": 15.5,
       "duration": 12,
       "source": "10-code-proof.mp4",
       "in": 0,
@@ -321,7 +464,7 @@
     },
     {
       "id": "request",
-      "timelineStart": 16.5,
+      "timelineStart": 27.5,
       "duration": 9,
       "source": "01-request.mp4",
       "in": 1.2,
@@ -336,17 +479,17 @@
     },
     {
       "id": "testing-title",
-      "timelineStart": 25.5,
+      "timelineStart": 36.5,
       "duration": 3.5,
       "graphic": "chapter"
     },
     {
       "id": "hero",
-      "timelineStart": 29,
-      "duration": 57.75,
+      "timelineStart": 40,
+      "duration": 50,
       "source": "hero-northstar-852411d.mp4",
       "in": 0,
-      "out": 57.75,
+      "out": 50,
       "speed": 1,
       "crop": [
         0,
@@ -387,16 +530,12 @@
         {
           "start": 33,
           "title": "Resolve the overlap. Export a calendar."
-        },
-        {
-          "start": 50,
-          "title": "Check the keyboard shortcuts."
         }
       ]
     },
     {
       "id": "finding",
-      "timelineStart": 86.75,
+      "timelineStart": 90,
       "duration": 8.5,
       "source": "28-real-finding.mp4",
       "in": 0,
@@ -411,7 +550,7 @@
     },
     {
       "id": "steer",
-      "timelineStart": 95.25,
+      "timelineStart": 98.5,
       "duration": 9.8,
       "source": "21-steer.mp4",
       "in": 0,
@@ -426,7 +565,7 @@
     },
     {
       "id": "agents",
-      "timelineStart": 105.05,
+      "timelineStart": 108.3,
       "duration": 6.4,
       "source": "24-agents-and-changes.mp4",
       "in": 0,
@@ -440,12 +579,12 @@
       ]
     },
     {
-      "id": "changes",
-      "timelineStart": 111.45,
-      "duration": 7.9,
-      "source": "24-agents-and-changes.mp4",
-      "in": 6.4,
-      "out": 14.3,
+      "id": "workspace",
+      "timelineStart": 114.7,
+      "duration": 9.8,
+      "source": "36-live-workspace.mp4",
+      "in": 0,
+      "out": 9.8,
       "speed": 1,
       "crop": [
         0,
@@ -456,7 +595,7 @@
     },
     {
       "id": "review",
-      "timelineStart": 119.35000000000001,
+      "timelineStart": 124.5,
       "duration": 11.8,
       "source": "25-pr-review.mp4",
       "in": 0,
@@ -470,8 +609,23 @@
       ]
     },
     {
+      "id": "replay",
+      "timelineStart": 136.3,
+      "duration": 4,
+      "source": "30-recording-replay.mp4",
+      "in": 0,
+      "out": 4,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ]
+    },
+    {
       "id": "retest",
-      "timelineStart": 131.15,
+      "timelineStart": 140.3,
       "duration": 22.4,
       "source": "retest-northstar-3dbd344.mp4",
       "in": 0,
@@ -495,23 +649,38 @@
       ]
     },
     {
-      "id": "release",
-      "timelineStart": 153.55,
-      "duration": 14.3,
-      "source": "29-release-evidence.mp4",
+      "id": "skill-invoke",
+      "timelineStart": 162.70000000000002,
+      "duration": 7.5,
+      "source": "33-skill-invoke.mp4",
       "in": 0,
-      "out": 14.3,
+      "out": 7.5,
       "speed": 1,
       "crop": [
-        0,
-        0,
-        2880,
-        1620
+        608,
+        666,
+        1664,
+        936
+      ]
+    },
+    {
+      "id": "skill-result",
+      "timelineStart": 170.20000000000002,
+      "duration": 10.5,
+      "source": "37-skill-run.mp4",
+      "in": 0,
+      "out": 10.5,
+      "speed": 1,
+      "crop": [
+        608,
+        140,
+        1664,
+        936
       ]
     },
     {
       "id": "closing",
-      "timelineStart": 167.85000000000002,
+      "timelineStart": 180.70000000000002,
       "duration": 4.5,
       "graphic": "outro"
     }
