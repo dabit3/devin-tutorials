@@ -7,11 +7,20 @@ window.SPEC = {
   "maxZoom": 1.6,
   "pollRunMax": 2.5,
   "edit": {
+    "overview.png": {
+      "scene": "overview",
+      "hold": 12,
+      "cursor": false,
+      "cap": "Review → Auto-Fix → CI → your final diff",
+      "capPos": "bottom",
+      "vo": "Devin Review checks pull requests for bugs. Auto-Fix lets the owning session fix them without a new prompt. Here's the loop. Devin opens a pull request. Review flags a bug. Devin pushes a fix, and Review runs again. Once CI passes, you read the final diff and decide whether to merge."
+    },
     "0000.png": {
       "cap": "Automatic review on every push",
-      "vo": "Code review usually takes a few round trips. With Auto-Fix, Devin closes that loop on its own, and you only read one final diff. Orbit is enrolled for automatic review, so Devin Review runs when a pull request opens, and again on every push.",
+      "vo": "First, enroll the repo for automatic review. Orbit is already enrolled here. Devin Review runs when a pull request opens, and again on every push.",
       "hold": 3.4,
-      "capPos": "bottom"
+      "capPos": "bottom",
+      "cursor": true
     },
     "0001.png": {
       "cap": "By default, Devin ignores bot comments",
@@ -20,8 +29,7 @@ window.SPEC = {
     },
     "0005.png": {
       "cap": "Responding to bots → Selected only",
-      "vo": "So set Responding to bots to Selected only.",
-      "voSay": "So set Responding to bots to Selected only.",
+      "vo": "So, set Responding to bots to Selected only.",
       "capPos": "bottom"
     },
     "0008.png": {
@@ -31,7 +39,7 @@ window.SPEC = {
     },
     "0009.png": {
       "cap": "Ask Devin for a real feature",
-      "vo": "Now I ask Devin for a real feature: optional due dates on issues, with chips for due today and overdue, plus tests and a pull request.",
+      "vo": "Now I ask Devin to add due dates to issues. The cards should show due today and overdue chips. I also ask for tests and a pull request.",
       "capPos": "bottom"
     },
     "0086.png": {
@@ -105,7 +113,7 @@ window.SPEC = {
     },
     "0109.png": {
       "cap": "Devin opens the pull request",
-      "vo": "Devin builds it and opens the pull request. From here, no human touches it.",
+      "vo": "Devin builds it and opens the pull request. These bugs weren't planted. From here, no human touches the code until the final diff.",
       "capPos": "bottom",
       "hl": null
     },
@@ -147,7 +155,7 @@ window.SPEC = {
     },
     "0123.png": {
       "cap": "No human prompt: Devin reads the findings",
-      "vo": "Nobody typed anything. The session read the findings by itself, and started fixing them.",
+      "vo": "Nobody typed anything. The session read the findings by itself and started fixing them.",
       "capPos": "bottom",
       "hl": [
         {
@@ -223,7 +231,7 @@ window.SPEC = {
     },
     "0145.png": {
       "cap": "Review is clean, CI passed",
-      "vo": "Every push gets a fresh review. Review even caught new bugs in Devin's own fixes, and Devin fixed those too, until the latest round came back clean.",
+      "vo": "Every push gets a fresh review. Review even caught new bugs in Devin's own fixes. Devin fixed those too. The latest round came back clean.",
       "capPos": "bottom",
       "hl": [
         {
@@ -236,7 +244,7 @@ window.SPEC = {
     },
     "0148.png": {
       "cap": "Three fix commits, all from Devin",
-      "vo": "Three fix commits, all pushed by Devin.",
+      "vo": "Devin pushed all three fix commits.",
       "hl": [
         {
           "x": 486,
@@ -248,15 +256,15 @@ window.SPEC = {
     },
     "0149.png": {
       "cap": "5 bugs found, 5 resolved",
-      "vo": "Five bugs found, five resolved."
+      "vo": "Review found five bugs. All five are resolved."
     },
     "0152.png": {
       "cap": "CI green: all checks passed",
-      "vo": "And CI is green. All checks passed."
+      "vo": "CI is green. All checks passed."
     },
     "0155.png": {
       "cap": "The final diff: chips follow the current day",
-      "vo": "Now the human's only job: read the final diff. The card now reads the current day from a shared hook, so the chip moves to overdue after midnight.",
+      "vo": "Now I read the final diff. The card gets the current day from a shared hook. That keeps the chip up to date after midnight.",
       "hl": [
         {
           "x": 483,

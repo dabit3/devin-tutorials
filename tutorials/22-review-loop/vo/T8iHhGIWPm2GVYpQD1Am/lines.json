@@ -1,420 +1,2181 @@
 {
- "0000.png": {
-  "text": "Code review usually takes a few round trips. With Auto-Fix, Devin closes that loop on its own, and you only read one final diff. Orbit is enrolled for automatic review, so Devin Review runs when a pull request opens, and again on every push.",
-  "dur": 13.095,
+ "overview.png": {
+  "text": "Devin Review checks pull requests for bugs. Auto-Fix lets the owning session fix them without a new prompt. Here's the loop. Devin opens a pull request. Review flags a bug. Devin pushes a fix, and Review runs again. Once CI passes, you read the final diff and decide whether to merge.",
+  "dur": 16.3,
   "at": 0.0,
-  "end": 13.095,
+  "end": 16.3,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "Devin",
+    "t0": 0,
+    "t1": 0.337
+   },
+   {
+    "text": "Review",
+    "t0": 0.383,
+    "t1": 0.639
+   },
+   {
+    "text": "checks",
+    "t0": 0.708,
+    "t1": 0.998
+   },
+   {
+    "text": "pull",
+    "t0": 1.057,
+    "t1": 1.242
+   },
+   {
+    "text": "requests",
+    "t0": 1.3,
+    "t1": 1.637
+   },
+   {
+    "text": "for",
+    "t0": 1.672,
+    "t1": 1.765
+   },
+   {
+    "text": "bugs.",
+    "t0": 1.811,
+    "t1": 2.322
+   },
+   {
+    "text": "Auto-Fix",
+    "t0": 2.496,
+    "t1": 3.088
+   },
+   {
+    "text": "lets",
+    "t0": 3.181,
+    "t1": 3.39
+   },
+   {
+    "text": "the",
+    "t0": 3.425,
+    "t1": 3.495
+   },
+   {
+    "text": "owning",
+    "t0": 3.564,
+    "t1": 3.762
+   },
+   {
+    "text": "session",
+    "t0": 3.808,
+    "t1": 4.098
+   },
+   {
+    "text": "fix",
+    "t0": 4.156,
+    "t1": 4.342
+   },
+   {
+    "text": "them",
+    "t0": 4.4,
+    "t1": 4.54
+   },
+   {
+    "text": "without",
+    "t0": 4.586,
+    "t1": 4.853
+   },
+   {
+    "text": "a",
+    "t0": 4.888,
+    "t1": 4.911
+   },
+   {
+    "text": "new",
+    "t0": 4.957,
+    "t1": 5.062
+   },
+   {
+    "text": "prompt.",
+    "t0": 5.108,
+    "t1": 5.55
+   },
+   {
+    "text": "Here's",
+    "t0": 5.759,
+    "t1": 6.026
+   },
+   {
+    "text": "the",
+    "t0": 6.06,
+    "t1": 6.13
+   },
+   {
+    "text": "loop.",
+    "t0": 6.177,
+    "t1": 6.502
+   },
+   {
+    "text": "Devin",
+    "t0": 6.745,
+    "t1": 7.059
+   },
+   {
+    "text": "opens",
+    "t0": 7.105,
+    "t1": 7.349
+   },
+   {
+    "text": "a",
+    "t0": 7.384,
+    "t1": 7.407
+   },
+   {
+    "text": "pull",
+    "t0": 7.454,
+    "t1": 7.605
+   },
+   {
+    "text": "request.",
+    "t0": 7.651,
+    "t1": 8.231
+   },
+   {
+    "text": "Review",
+    "t0": 8.557,
+    "t1": 8.858
+   },
+   {
+    "text": "flags",
+    "t0": 8.916,
+    "t1": 9.207
+   },
+   {
+    "text": "a",
+    "t0": 9.242,
+    "t1": 9.265
+   },
+   {
+    "text": "bug.",
+    "t0": 9.311,
+    "t1": 9.683
+   },
+   {
+    "text": "Devin",
+    "t0": 10.008,
+    "t1": 10.333
+   },
+   {
+    "text": "pushes",
+    "t0": 10.379,
+    "t1": 10.67
+   },
+   {
+    "text": "a",
+    "t0": 10.716,
+    "t1": 10.751
+   },
+   {
+    "text": "fix,",
+    "t0": 10.809,
+    "t1": 11.273
+   },
+   {
+    "text": "and",
+    "t0": 11.401,
+    "t1": 11.54
+   },
+   {
+    "text": "Review",
+    "t0": 11.598,
+    "t1": 11.842
+   },
+   {
+    "text": "runs",
+    "t0": 11.889,
+    "t1": 12.086
+   },
+   {
+    "text": "again.",
+    "t0": 12.132,
+    "t1": 12.539
+   },
+   {
+    "text": "Once",
+    "t0": 12.864,
+    "t1": 13.142
+   },
+   {
+    "text": "CI",
+    "t0": 13.166,
+    "t1": 13.409
+   },
+   {
+    "text": "passes,",
+    "t0": 13.525,
+    "t1": 13.92
+   },
+   {
+    "text": "you",
+    "t0": 13.943,
+    "t1": 14.013
+   },
+   {
+    "text": "read",
+    "t0": 14.071,
+    "t1": 14.222
+   },
+   {
+    "text": "the",
+    "t0": 14.245,
+    "t1": 14.315
+   },
+   {
+    "text": "final",
+    "t0": 14.361,
+    "t1": 14.651
+   },
+   {
+    "text": "diff",
+    "t0": 14.709,
+    "t1": 14.918
+   },
+   {
+    "text": "and",
+    "t0": 14.965,
+    "t1": 15.035
+   },
+   {
+    "text": "decide",
+    "t0": 15.069,
+    "t1": 15.394
+   },
+   {
+    "text": "whether",
+    "t0": 15.418,
+    "t1": 15.638
+   },
+   {
+    "text": "to",
+    "t0": 15.685,
+    "t1": 15.743
+   },
+   {
+    "text": "merge.",
+    "t0": 15.812,
+    "t1": 16.242
+   }
+  ],
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.136,
-    "text": "Code review usually takes a few round trips."
+    "t1": 2.322,
+    "text": "Devin Review checks pull requests for bugs."
    },
    {
-    "t0": 2.31,
-    "t1": 4.435,
-    "text": "With Auto-Fix, Devin closes that loop on its"
+    "t0": 2.496,
+    "t1": 4.853,
+    "text": "Auto-Fix lets the owning session fix them without"
    },
    {
-    "t0": 4.493,
-    "t1": 6.815,
-    "text": "own, and you only read one final diff."
+    "t0": 4.888,
+    "t1": 5.55,
+    "text": "a new prompt."
    },
    {
-    "t0": 7.326,
-    "t1": 9.149,
-    "text": "Orbit is enrolled for automatic review,"
+    "t0": 5.759,
+    "t1": 6.502,
+    "text": "Here's the loop."
    },
    {
-    "t0": 9.195,
-    "t1": 11.099,
-    "text": "so Devin Review runs when a pull request"
+    "t0": 6.745,
+    "t1": 8.231,
+    "text": "Devin opens a pull request."
    },
    {
-    "t0": 11.146,
-    "t1": 13.095,
-    "text": "opens, and again on every push."
+    "t0": 8.557,
+    "t1": 9.683,
+    "text": "Review flags a bug."
+   },
+   {
+    "t0": 10.008,
+    "t1": 11.273,
+    "text": "Devin pushes a fix,"
+   },
+   {
+    "t0": 11.401,
+    "t1": 12.539,
+    "text": "and Review runs again."
+   },
+   {
+    "t0": 12.864,
+    "t1": 13.92,
+    "text": "Once CI passes,"
+   },
+   {
+    "t0": 13.943,
+    "t1": 15.638,
+    "text": "you read the final diff and decide whether"
+   },
+   {
+    "t0": 15.685,
+    "t1": 16.242,
+    "text": "to merge."
+   }
+  ]
+ },
+ "0000.png": {
+  "text": "First, enroll the repo for automatic review. Orbit is already enrolled here. Devin Review runs when a pull request opens, and again on every push.",
+  "dur": 8.335,
+  "at": 16.44,
+  "end": 24.775,
+  "mode": "one-take",
+  "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "First,",
+    "t0": 0.046,
+    "t1": 0.394
+   },
+   {
+    "text": "enroll",
+    "t0": 0.429,
+    "t1": 0.719
+   },
+   {
+    "text": "the",
+    "t0": 0.754,
+    "t1": 0.824
+   },
+   {
+    "text": "repo",
+    "t0": 0.87,
+    "t1": 1.184
+   },
+   {
+    "text": "for",
+    "t0": 1.265,
+    "t1": 1.369
+   },
+   {
+    "text": "automatic",
+    "t0": 1.416,
+    "t1": 1.834
+   },
+   {
+    "text": "review.",
+    "t0": 1.892,
+    "t1": 2.333
+   },
+   {
+    "text": "Orbit",
+    "t0": 2.612,
+    "t1": 2.948
+   },
+   {
+    "text": "is",
+    "t0": 2.995,
+    "t1": 3.076
+   },
+   {
+    "text": "already",
+    "t0": 3.122,
+    "t1": 3.448
+   },
+   {
+    "text": "enrolled",
+    "t0": 3.482,
+    "t1": 3.773
+   },
+   {
+    "text": "here.",
+    "t0": 3.807,
+    "t1": 4.167
+   },
+   {
+    "text": "Devin",
+    "t0": 4.492,
+    "t1": 4.806
+   },
+   {
+    "text": "Review",
+    "t0": 4.852,
+    "t1": 5.119
+   },
+   {
+    "text": "runs",
+    "t0": 5.177,
+    "t1": 5.433
+   },
+   {
+    "text": "when",
+    "t0": 5.479,
+    "t1": 5.607
+   },
+   {
+    "text": "a",
+    "t0": 5.642,
+    "t1": 5.665
+   },
+   {
+    "text": "pull",
+    "t0": 5.711,
+    "t1": 5.874
+   },
+   {
+    "text": "request",
+    "t0": 5.92,
+    "t1": 6.246
+   },
+   {
+    "text": "opens,",
+    "t0": 6.304,
+    "t1": 6.814
+   },
+   {
+    "text": "and",
+    "t0": 6.965,
+    "t1": 7.116
+   },
+   {
+    "text": "again",
+    "t0": 7.174,
+    "t1": 7.407
+   },
+   {
+    "text": "on",
+    "t0": 7.476,
+    "t1": 7.569
+   },
+   {
+    "text": "every",
+    "t0": 7.615,
+    "t1": 7.801
+   },
+   {
+    "text": "push.",
+    "t0": 7.848,
+    "t1": 8.324
+   }
+  ],
+  "chunks": [
+   {
+    "t0": 0.046,
+    "t1": 2.333,
+    "text": "First, enroll the repo for automatic review."
+   },
+   {
+    "t0": 2.612,
+    "t1": 4.167,
+    "text": "Orbit is already enrolled here."
+   },
+   {
+    "t0": 4.492,
+    "t1": 6.814,
+    "text": "Devin Review runs when a pull request opens,"
+   },
+   {
+    "t0": 6.965,
+    "t1": 8.324,
+    "text": "and again on every push."
    }
   ]
  },
  "0001.png": {
   "text": "By default, Devin ignores comments from bots, including Devin Review.",
-  "dur": 3.525,
-  "at": 13.35,
-  "end": 16.875,
+  "dur": 3.695,
+  "at": 24.93,
+  "end": 28.625,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "By",
+    "t0": 0.078,
+    "t1": 0.228
+   },
+   {
+    "text": "default,",
+    "t0": 0.286,
+    "t1": 0.728
+   },
+   {
+    "text": "Devin",
+    "t0": 0.774,
+    "t1": 1.064
+   },
+   {
+    "text": "ignores",
+    "t0": 1.099,
+    "t1": 1.436
+   },
+   {
+    "text": "comments",
+    "t0": 1.494,
+    "t1": 1.854
+   },
+   {
+    "text": "from",
+    "t0": 1.889,
+    "t1": 2.016
+   },
+   {
+    "text": "bots,",
+    "t0": 2.074,
+    "t1": 2.481
+   },
+   {
+    "text": "including",
+    "t0": 2.516,
+    "t1": 2.933
+   },
+   {
+    "text": "Devin",
+    "t0": 2.992,
+    "t1": 3.212
+   },
+   {
+    "text": "Review.",
+    "t0": 3.259,
+    "t1": 3.695
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.141,
-    "t1": 2.381,
+    "t0": 0.078,
+    "t1": 2.481,
     "text": "By default, Devin ignores comments from bots,"
    },
    {
-    "t0": 2.405,
-    "t1": 3.525,
+    "t0": 2.516,
+    "t1": 3.695,
     "text": "including Devin Review."
    }
   ]
  },
  "0005.png": {
-  "text": "So set Responding to bots to Selected only.",
-  "dur": 2.665,
-  "at": 17.14,
-  "end": 19.805,
+  "text": "So, set Responding to bots to Selected only.",
+  "dur": 2.64,
+  "at": 28.84,
+  "end": 31.48,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "So,",
+    "t0": 0.115,
+    "t1": 0.405
+   },
+   {
+    "text": "set",
+    "t0": 0.452,
+    "t1": 0.637
+   },
+   {
+    "text": "Responding",
+    "t0": 0.684,
+    "t1": 1.136
+   },
+   {
+    "text": "to",
+    "t0": 1.183,
+    "t1": 1.241
+   },
+   {
+    "text": "bots",
+    "t0": 1.311,
+    "t1": 1.566
+   },
+   {
+    "text": "to",
+    "t0": 1.613,
+    "t1": 1.694
+   },
+   {
+    "text": "Selected",
+    "t0": 1.763,
+    "t1": 2.181
+   },
+   {
+    "text": "only.",
+    "t0": 2.228,
+    "t1": 2.599
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.147,
-    "t1": 2.665,
-    "text": "So set Responding to bots to Selected only."
+    "t0": 0.115,
+    "t1": 2.599,
+    "text": "So, set Responding to bots to Selected only."
    }
   ]
  },
  "0008.png": {
   "text": "Then allow Devin Review's bot. That one setting closes the loop.",
-  "dur": 3.82,
-  "at": 20.16,
-  "end": 23.98,
+  "dur": 3.345,
+  "at": 31.62,
+  "end": 34.965,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "Then",
+    "t0": 0.098,
+    "t1": 0.284
+   },
+   {
+    "text": "allow",
+    "t0": 0.33,
+    "t1": 0.539
+   },
+   {
+    "text": "Devin",
+    "t0": 0.609,
+    "t1": 0.853
+   },
+   {
+    "text": "Review's",
+    "t0": 0.899,
+    "t1": 1.201
+   },
+   {
+    "text": "bot.",
+    "t0": 1.236,
+    "t1": 1.584
+   },
+   {
+    "text": "That",
+    "t0": 1.793,
+    "t1": 1.967
+   },
+   {
+    "text": "one",
+    "t0": 2.025,
+    "t1": 2.188
+   },
+   {
+    "text": "setting",
+    "t0": 2.234,
+    "t1": 2.513
+   },
+   {
+    "text": "closes",
+    "t0": 2.559,
+    "t1": 2.896
+   },
+   {
+    "text": "the",
+    "t0": 2.942,
+    "t1": 3.012
+   },
+   {
+    "text": "loop.",
+    "t0": 3.059,
+    "t1": 3.345
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.099,
-    "t1": 1.748,
+    "t0": 0.098,
+    "t1": 1.584,
     "text": "Then allow Devin Review's bot."
    },
    {
-    "t0": 2.131,
-    "t1": 3.82,
+    "t0": 1.793,
+    "t1": 3.345,
     "text": "That one setting closes the loop."
    }
   ]
  },
  "0009.png": {
-  "text": "Now I ask Devin for a real feature: optional due dates on issues, with chips for due today and overdue, plus tests and a pull request.",
-  "dur": 7.73,
-  "at": 24.215,
-  "end": 31.945,
+  "text": "Now I ask Devin to add due dates to issues. The cards should show due today and overdue chips. I also ask for tests and a pull request.",
+  "dur": 7.7,
+  "at": 35.23,
+  "end": 42.93,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "Now",
+    "t0": 0.099,
+    "t1": 0.261
+   },
+   {
+    "text": "I",
+    "t0": 0.331,
+    "t1": 0.354
+   },
+   {
+    "text": "ask",
+    "t0": 0.435,
+    "t1": 0.61
+   },
+   {
+    "text": "Devin",
+    "t0": 0.668,
+    "t1": 0.911
+   },
+   {
+    "text": "to",
+    "t0": 0.958,
+    "t1": 1.016
+   },
+   {
+    "text": "add",
+    "t0": 1.074,
+    "t1": 1.225
+   },
+   {
+    "text": "due",
+    "t0": 1.271,
+    "t1": 1.422
+   },
+   {
+    "text": "dates",
+    "t0": 1.445,
+    "t1": 1.678
+   },
+   {
+    "text": "to",
+    "t0": 1.724,
+    "t1": 1.782
+   },
+   {
+    "text": "issues.",
+    "t0": 1.852,
+    "t1": 2.386
+   },
+   {
+    "text": "The",
+    "t0": 2.664,
+    "t1": 2.781
+   },
+   {
+    "text": "cards",
+    "t0": 2.839,
+    "t1": 3.117
+   },
+   {
+    "text": "should",
+    "t0": 3.14,
+    "t1": 3.315
+   },
+   {
+    "text": "show",
+    "t0": 3.338,
+    "t1": 3.5
+   },
+   {
+    "text": "due",
+    "t0": 3.57,
+    "t1": 3.721
+   },
+   {
+    "text": "today",
+    "t0": 3.755,
+    "t1": 4.069
+   },
+   {
+    "text": "and",
+    "t0": 4.139,
+    "t1": 4.289
+   },
+   {
+    "text": "overdue",
+    "t0": 4.359,
+    "t1": 4.719
+   },
+   {
+    "text": "chips.",
+    "t0": 4.754,
+    "t1": 5.241
+   },
+   {
+    "text": "I",
+    "t0": 5.485,
+    "t1": 5.543
+   },
+   {
+    "text": "also",
+    "t0": 5.636,
+    "t1": 5.857
+   },
+   {
+    "text": "ask",
+    "t0": 5.926,
+    "t1": 6.089
+   },
+   {
+    "text": "for",
+    "t0": 6.135,
+    "t1": 6.24
+   },
+   {
+    "text": "tests",
+    "t0": 6.286,
+    "t1": 6.681
+   },
+   {
+    "text": "and",
+    "t0": 6.728,
+    "t1": 6.855
+   },
+   {
+    "text": "a",
+    "t0": 6.902,
+    "t1": 6.925
+   },
+   {
+    "text": "pull",
+    "t0": 6.96,
+    "t1": 7.111
+   },
+   {
+    "text": "request.",
+    "t0": 7.169,
+    "t1": 7.7
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.096,
-    "t1": 1.884,
-    "text": "Now I ask Devin for a real feature:"
+    "t0": 0.099,
+    "t1": 1.678,
+    "text": "Now I ask Devin to add due dates"
    },
    {
-    "t0": 2.268,
-    "t1": 3.939,
-    "text": "optional due dates on issues,"
+    "t0": 1.724,
+    "t1": 2.386,
+    "text": "to issues."
    },
    {
-    "t0": 4.056,
-    "t1": 5.925,
-    "text": "with chips for due today and overdue,"
+    "t0": 2.664,
+    "t1": 4.719,
+    "text": "The cards should show due today and overdue"
    },
    {
-    "t0": 6.099,
-    "t1": 7.73,
-    "text": "plus tests and a pull request."
+    "t0": 4.754,
+    "t1": 5.241,
+    "text": "chips."
+   },
+   {
+    "t0": 5.485,
+    "t1": 7.111,
+    "text": "I also ask for tests and a pull"
+   },
+   {
+    "t0": 7.169,
+    "t1": 7.7,
+    "text": "request."
    }
   ]
  },
  "0109.png": {
-  "text": "Devin builds it and opens the pull request. From here, no human touches it.",
-  "dur": 4.425,
-  "at": 32.53,
-  "end": 36.955,
+  "text": "Devin builds it and opens the pull request. These bugs weren't planted. From here, no human touches the code until the final diff.",
+  "dur": 6.85,
+  "at": 43.2,
+  "end": 50.05,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "Devin",
+    "t0": 0.139,
+    "t1": 0.418
+   },
+   {
+    "text": "builds",
+    "t0": 0.464,
+    "t1": 0.708
+   },
+   {
+    "text": "it",
+    "t0": 0.754,
+    "t1": 0.836
+   },
+   {
+    "text": "and",
+    "t0": 0.882,
+    "t1": 0.952
+   },
+   {
+    "text": "opens",
+    "t0": 1.022,
+    "t1": 1.277
+   },
+   {
+    "text": "the",
+    "t0": 1.312,
+    "t1": 1.381
+   },
+   {
+    "text": "pull",
+    "t0": 1.416,
+    "t1": 1.556
+   },
+   {
+    "text": "request.",
+    "t0": 1.614,
+    "t1": 2.206
+   },
+   {
+    "text": "These",
+    "t0": 2.531,
+    "t1": 2.763
+   },
+   {
+    "text": "bugs",
+    "t0": 2.809,
+    "t1": 3.03
+   },
+   {
+    "text": "weren't",
+    "t0": 3.053,
+    "t1": 3.227
+   },
+   {
+    "text": "planted.",
+    "t0": 3.251,
+    "t1": 3.773
+   },
+   {
+    "text": "From",
+    "t0": 4.052,
+    "t1": 4.214
+   },
+   {
+    "text": "here,",
+    "t0": 4.272,
+    "t1": 4.516
+   },
+   {
+    "text": "no",
+    "t0": 4.586,
+    "t1": 4.713
+   },
+   {
+    "text": "human",
+    "t0": 4.795,
+    "t1": 5.05
+   },
+   {
+    "text": "touches",
+    "t0": 5.097,
+    "t1": 5.41
+   },
+   {
+    "text": "the",
+    "t0": 5.445,
+    "t1": 5.515
+   },
+   {
+    "text": "code",
+    "t0": 5.573,
+    "t1": 5.851
+   },
+   {
+    "text": "until",
+    "t0": 5.886,
+    "t1": 6.095
+   },
+   {
+    "text": "the",
+    "t0": 6.13,
+    "t1": 6.2
+   },
+   {
+    "text": "final",
+    "t0": 6.234,
+    "t1": 6.501
+   },
+   {
+    "text": "diff.",
+    "t0": 6.548,
+    "t1": 6.85
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.141,
-    "t1": 2.207,
+    "t0": 0.139,
+    "t1": 2.206,
     "text": "Devin builds it and opens the pull request."
    },
    {
-    "t0": 2.59,
-    "t1": 4.402,
-    "text": "From here, no human touches it."
+    "t0": 2.531,
+    "t1": 3.773,
+    "text": "These bugs weren't planted."
+   },
+   {
+    "t0": 4.052,
+    "t1": 6.095,
+    "text": "From here, no human touches the code until"
+   },
+   {
+    "t0": 6.13,
+    "t1": 6.85,
+    "text": "the final diff."
    }
   ]
  },
  "0117.png": {
   "text": "Devin Review analyzes it right away, and finds two real bugs in the code Devin just wrote.",
-  "dur": 4.71,
-  "at": 37.28,
-  "end": 41.99,
+  "dur": 5.07,
+  "at": 50.35,
+  "end": 55.42,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "Devin",
+    "t0": 0.153,
+    "t1": 0.454
+   },
+   {
+    "text": "Review",
+    "t0": 0.512,
+    "t1": 0.791
+   },
+   {
+    "text": "analyzes",
+    "t0": 0.861,
+    "t1": 1.372
+   },
+   {
+    "text": "it",
+    "t0": 1.418,
+    "t1": 1.476
+   },
+   {
+    "text": "right",
+    "t0": 1.511,
+    "t1": 1.662
+   },
+   {
+    "text": "away,",
+    "t0": 1.685,
+    "t1": 2.149
+   },
+   {
+    "text": "and",
+    "t0": 2.277,
+    "t1": 2.428
+   },
+   {
+    "text": "finds",
+    "t0": 2.498,
+    "t1": 2.811
+   },
+   {
+    "text": "two",
+    "t0": 2.881,
+    "t1": 3.101
+   },
+   {
+    "text": "real",
+    "t0": 3.183,
+    "t1": 3.368
+   },
+   {
+    "text": "bugs",
+    "t0": 3.415,
+    "t1": 3.67
+   },
+   {
+    "text": "in",
+    "t0": 3.705,
+    "t1": 3.763
+   },
+   {
+    "text": "the",
+    "t0": 3.798,
+    "t1": 3.868
+   },
+   {
+    "text": "code",
+    "t0": 3.926,
+    "t1": 4.181
+   },
+   {
+    "text": "Devin",
+    "t0": 4.228,
+    "t1": 4.471
+   },
+   {
+    "text": "just",
+    "t0": 4.518,
+    "t1": 4.669
+   },
+   {
+    "text": "wrote.",
+    "t0": 4.704,
+    "t1": 5.07
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.093,
-    "t1": 1.974,
+    "t0": 0.153,
+    "t1": 2.149,
     "text": "Devin Review analyzes it right away,"
    },
    {
-    "t0": 2.008,
-    "t1": 3.82,
+    "t0": 2.277,
+    "t1": 4.181,
     "text": "and finds two real bugs in the code"
    },
    {
-    "t0": 3.855,
-    "t1": 4.679,
+    "t0": 4.228,
+    "t1": 5.07,
     "text": "Devin just wrote."
    }
   ]
  },
  "0120.png": {
   "text": "Here's the first, on the diff line. If the board stays open past midnight, a card due today never turns overdue.",
-  "dur": 6.4,
-  "at": 42.135,
-  "end": 48.535,
+  "dur": 5.97,
+  "at": 55.62,
+  "end": 61.59,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "Here's",
+    "t0": 0.037,
+    "t1": 0.293
+   },
+   {
+    "text": "the",
+    "t0": 0.328,
+    "t1": 0.397
+   },
+   {
+    "text": "first,",
+    "t0": 0.432,
+    "t1": 0.687
+   },
+   {
+    "text": "on",
+    "t0": 0.722,
+    "t1": 0.792
+   },
+   {
+    "text": "the",
+    "t0": 0.827,
+    "t1": 0.896
+   },
+   {
+    "text": "diff",
+    "t0": 0.931,
+    "t1": 1.071
+   },
+   {
+    "text": "line.",
+    "t0": 1.117,
+    "t1": 1.477
+   },
+   {
+    "text": "If",
+    "t0": 1.686,
+    "t1": 1.825
+   },
+   {
+    "text": "the",
+    "t0": 1.872,
+    "t1": 1.941
+   },
+   {
+    "text": "board",
+    "t0": 1.999,
+    "t1": 2.232
+   },
+   {
+    "text": "stays",
+    "t0": 2.278,
+    "t1": 2.545
+   },
+   {
+    "text": "open",
+    "t0": 2.615,
+    "t1": 2.824
+   },
+   {
+    "text": "past",
+    "t0": 2.882,
+    "t1": 3.114
+   },
+   {
+    "text": "midnight,",
+    "t0": 3.172,
+    "t1": 3.694
+   },
+   {
+    "text": "a",
+    "t0": 3.822,
+    "t1": 3.892
+   },
+   {
+    "text": "card",
+    "t0": 3.985,
+    "t1": 4.263
+   },
+   {
+    "text": "due",
+    "t0": 4.31,
+    "t1": 4.472
+   },
+   {
+    "text": "today",
+    "t0": 4.519,
+    "t1": 4.821
+   },
+   {
+    "text": "never",
+    "t0": 4.902,
+    "t1": 5.111
+   },
+   {
+    "text": "turns",
+    "t0": 5.157,
+    "t1": 5.389
+   },
+   {
+    "text": "overdue.",
+    "t0": 5.436,
+    "t1": 5.958
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.033,
-    "t1": 0.811,
+    "t0": 0.037,
+    "t1": 0.687,
     "text": "Here's the first,"
    },
    {
-    "t0": 0.857,
-    "t1": 1.682,
+    "t0": 0.722,
+    "t1": 1.477,
     "text": "on the diff line."
    },
    {
-    "t0": 2.007,
-    "t1": 4.038,
+    "t0": 1.686,
+    "t1": 3.694,
     "text": "If the board stays open past midnight,"
    },
    {
-    "t0": 4.189,
-    "t1": 6.4,
+    "t0": 3.822,
+    "t1": 5.958,
     "text": "a card due today never turns overdue."
    }
   ]
  },
  "0121.png": {
   "text": "The Auto-fix section shows the session that owns this pull request is already on it.",
-  "dur": 4.05,
-  "at": 48.91,
-  "end": 52.96,
+  "dur": 4.12,
+  "at": 61.775,
+  "end": 65.895,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "The",
+    "t0": 0.047,
+    "t1": 0.163
+   },
+   {
+    "text": "Auto-fix",
+    "t0": 0.221,
+    "t1": 0.651
+   },
+   {
+    "text": "section",
+    "t0": 0.709,
+    "t1": 1.057
+   },
+   {
+    "text": "shows",
+    "t0": 1.139,
+    "t1": 1.429
+   },
+   {
+    "text": "the",
+    "t0": 1.475,
+    "t1": 1.545
+   },
+   {
+    "text": "session",
+    "t0": 1.603,
+    "t1": 1.928
+   },
+   {
+    "text": "that",
+    "t0": 1.974,
+    "t1": 2.091
+   },
+   {
+    "text": "owns",
+    "t0": 2.149,
+    "t1": 2.38
+   },
+   {
+    "text": "this",
+    "t0": 2.415,
+    "t1": 2.543
+   },
+   {
+    "text": "pull",
+    "t0": 2.601,
+    "t1": 2.764
+   },
+   {
+    "text": "request",
+    "t0": 2.822,
+    "t1": 3.182
+   },
+   {
+    "text": "is",
+    "t0": 3.24,
+    "t1": 3.332
+   },
+   {
+    "text": "already",
+    "t0": 3.391,
+    "t1": 3.658
+   },
+   {
+    "text": "on",
+    "t0": 3.716,
+    "t1": 3.808
+   },
+   {
+    "text": "it.",
+    "t0": 3.855,
+    "t1": 4.087
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.073,
-    "t1": 2.325,
+    "t0": 0.047,
+    "t1": 2.38,
     "text": "The Auto-fix section shows the session that owns"
    },
    {
-    "t0": 2.36,
-    "t1": 4.044,
+    "t0": 2.415,
+    "t1": 4.087,
     "text": "this pull request is already on it."
    }
   ]
  },
  "0123.png": {
-  "text": "Nobody typed anything. The session read the findings by itself, and started fixing them.",
-  "dur": 4.505,
-  "at": 53.14,
-  "end": 57.645,
+  "text": "Nobody typed anything. The session read the findings by itself and started fixing them.",
+  "dur": 4.365,
+  "at": 65.895,
+  "end": 70.26,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "Nobody",
+    "t0": 0.048,
+    "t1": 0.362
+   },
+   {
+    "text": "typed",
+    "t0": 0.42,
+    "t1": 0.652
+   },
+   {
+    "text": "anything.",
+    "t0": 0.687,
+    "t1": 1.163
+   },
+   {
+    "text": "The",
+    "t0": 1.442,
+    "t1": 1.569
+   },
+   {
+    "text": "session",
+    "t0": 1.627,
+    "t1": 1.929
+   },
+   {
+    "text": "read",
+    "t0": 1.976,
+    "t1": 2.103
+   },
+   {
+    "text": "the",
+    "t0": 2.138,
+    "t1": 2.208
+   },
+   {
+    "text": "findings",
+    "t0": 2.254,
+    "t1": 2.614
+   },
+   {
+    "text": "by",
+    "t0": 2.661,
+    "t1": 2.777
+   },
+   {
+    "text": "itself",
+    "t0": 2.835,
+    "t1": 3.183
+   },
+   {
+    "text": "and",
+    "t0": 3.23,
+    "t1": 3.299
+   },
+   {
+    "text": "started",
+    "t0": 3.346,
+    "t1": 3.624
+   },
+   {
+    "text": "fixing",
+    "t0": 3.671,
+    "t1": 3.973
+   },
+   {
+    "text": "them.",
+    "t0": 4.019,
+    "t1": 4.286
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.139,
-    "t1": 1.254,
+    "t0": 0.048,
+    "t1": 1.163,
     "text": "Nobody typed anything."
    },
    {
-    "t0": 1.695,
-    "t1": 3.436,
-    "text": "The session read the findings by itself,"
+    "t0": 1.442,
+    "t1": 3.299,
+    "text": "The session read the findings by itself and"
    },
    {
-    "t0": 3.46,
-    "t1": 4.505,
-    "text": "and started fixing them."
+    "t0": 3.346,
+    "t1": 4.286,
+    "text": "started fixing them."
    }
   ]
  },
  "0145.png": {
-  "text": "Every push gets a fresh review. Review even caught new bugs in Devin's own fixes, and Devin fixed those too, until the latest round came back clean.",
-  "dur": 8.125,
-  "at": 57.87,
-  "end": 65.995,
+  "text": "Every push gets a fresh review. Review even caught new bugs in Devin's own fixes. Devin fixed those too. The latest round came back clean.",
+  "dur": 8.015,
+  "at": 70.425,
+  "end": 78.44,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "Every",
+    "t0": 0.081,
+    "t1": 0.325
+   },
+   {
+    "text": "push",
+    "t0": 0.371,
+    "t1": 0.58
+   },
+   {
+    "text": "gets",
+    "t0": 0.627,
+    "t1": 0.801
+   },
+   {
+    "text": "a",
+    "t0": 0.836,
+    "t1": 0.859
+   },
+   {
+    "text": "fresh",
+    "t0": 0.905,
+    "t1": 1.114
+   },
+   {
+    "text": "review.",
+    "t0": 1.161,
+    "t1": 1.625
+   },
+   {
+    "text": "Review",
+    "t0": 2.008,
+    "t1": 2.287
+   },
+   {
+    "text": "even",
+    "t0": 2.345,
+    "t1": 2.519
+   },
+   {
+    "text": "caught",
+    "t0": 2.566,
+    "t1": 2.763
+   },
+   {
+    "text": "new",
+    "t0": 2.809,
+    "t1": 2.914
+   },
+   {
+    "text": "bugs",
+    "t0": 2.96,
+    "t1": 3.216
+   },
+   {
+    "text": "in",
+    "t0": 3.251,
+    "t1": 3.309
+   },
+   {
+    "text": "Devin's",
+    "t0": 3.367,
+    "t1": 3.657
+   },
+   {
+    "text": "own",
+    "t0": 3.692,
+    "t1": 3.808
+   },
+   {
+    "text": "fixes.",
+    "t0": 3.854,
+    "t1": 4.481
+   },
+   {
+    "text": "Devin",
+    "t0": 4.806,
+    "t1": 5.085
+   },
+   {
+    "text": "fixed",
+    "t0": 5.143,
+    "t1": 5.364
+   },
+   {
+    "text": "those",
+    "t0": 5.387,
+    "t1": 5.584
+   },
+   {
+    "text": "too.",
+    "t0": 5.631,
+    "t1": 6.002
+   },
+   {
+    "text": "The",
+    "t0": 6.327,
+    "t1": 6.455
+   },
+   {
+    "text": "latest",
+    "t0": 6.501,
+    "t1": 6.768
+   },
+   {
+    "text": "round",
+    "t0": 6.815,
+    "t1": 7.012
+   },
+   {
+    "text": "came",
+    "t0": 7.07,
+    "t1": 7.244
+   },
+   {
+    "text": "back",
+    "t0": 7.267,
+    "t1": 7.43
+   },
+   {
+    "text": "clean.",
+    "t0": 7.476,
+    "t1": 7.964
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.111,
-    "t1": 1.597,
+    "t0": 0.081,
+    "t1": 1.625,
     "text": "Every push gets a fresh review."
    },
    {
-    "t0": 2.038,
-    "t1": 3.85,
+    "t0": 2.008,
+    "t1": 3.808,
     "text": "Review even caught new bugs in Devin's own"
    },
    {
-    "t0": 3.908,
-    "t1": 5.939,
-    "text": "fixes, and Devin fixed those too,"
+    "t0": 3.854,
+    "t1": 4.481,
+    "text": "fixes."
    },
    {
-    "t0": 6.264,
-    "t1": 8.125,
-    "text": "until the latest round came back clean."
+    "t0": 4.806,
+    "t1": 6.002,
+    "text": "Devin fixed those too."
+   },
+   {
+    "t0": 6.327,
+    "t1": 7.964,
+    "text": "The latest round came back clean."
    }
   ]
  },
  "0148.png": {
-  "text": "Three fix commits, all pushed by Devin.",
-  "dur": 2.03,
-  "at": 66.25,
-  "end": 68.28,
+  "text": "Devin pushed all three fix commits.",
+  "dur": 1.89,
+  "at": 78.6,
+  "end": 80.49,
   "mode": "one-take",
   "checked": true,
-  "chunks": [
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
    {
-    "t0": 0.044,
-    "t1": 0.972,
-    "text": "Three fix commits,"
+    "text": "Devin",
+    "t0": 0.068,
+    "t1": 0.346
    },
    {
-    "t0": 0.996,
-    "t1": 2.006,
-    "text": "all pushed by Devin."
+    "text": "pushed",
+    "t0": 0.393,
+    "t1": 0.625
+   },
+   {
+    "text": "all",
+    "t0": 0.683,
+    "t1": 0.846
+   },
+   {
+    "text": "three",
+    "t0": 0.892,
+    "t1": 1.078
+   },
+   {
+    "text": "fix",
+    "t0": 1.124,
+    "t1": 1.31
+   },
+   {
+    "text": "commits.",
+    "t0": 1.356,
+    "t1": 1.89
+   }
+  ],
+  "chunks": [
+   {
+    "t0": 0.068,
+    "t1": 1.89,
+    "text": "Devin pushed all three fix commits."
    }
   ]
  },
  "0149.png": {
-  "text": "Five bugs found, five resolved.",
-  "dur": 2.035,
-  "at": 68.42,
-  "end": 70.455,
+  "text": "Review found five bugs. All five are resolved.",
+  "dur": 2.7,
+  "at": 80.795,
+  "end": 83.495,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "Review",
+    "t0": 0.044,
+    "t1": 0.322
+   },
+   {
+    "text": "found",
+    "t0": 0.38,
+    "t1": 0.566
+   },
+   {
+    "text": "five",
+    "t0": 0.624,
+    "t1": 0.845
+   },
+   {
+    "text": "bugs.",
+    "t0": 0.88,
+    "t1": 1.425
+   },
+   {
+    "text": "All",
+    "t0": 1.599,
+    "t1": 1.785
+   },
+   {
+    "text": "five",
+    "t0": 1.855,
+    "t1": 2.099
+   },
+   {
+    "text": "are",
+    "t0": 2.122,
+    "t1": 2.203
+   },
+   {
+    "text": "resolved.",
+    "t0": 2.226,
+    "t1": 2.7
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.045,
-    "t1": 2.018,
-    "text": "Five bugs found, five resolved."
+    "t0": 0.044,
+    "t1": 1.425,
+    "text": "Review found five bugs."
+   },
+   {
+    "t0": 1.599,
+    "t1": 2.7,
+    "text": "All five are resolved."
    }
   ]
  },
  "0152.png": {
-  "text": "And CI is green. All checks passed.",
-  "dur": 2.6,
-  "at": 70.64,
-  "end": 73.24,
+  "text": "CI is green. All checks passed.",
+  "dur": 2.0,
+  "at": 83.86,
+  "end": 85.86,
   "mode": "one-take",
   "checked": true,
-  "chunks": [
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
    {
-    "t0": 0.042,
-    "t1": 1.122,
-    "text": "And CI is green."
+    "text": "CI",
+    "t0": 0.102,
+    "t1": 0.427
    },
    {
-    "t0": 1.505,
-    "t1": 2.6,
+    "text": "is",
+    "t0": 0.473,
+    "t1": 0.555
+   },
+   {
+    "text": "green.",
+    "t0": 0.601,
+    "t1": 0.949
+   },
+   {
+    "text": "All",
+    "t0": 0.973,
+    "t1": 1.158
+   },
+   {
+    "text": "checks",
+    "t0": 1.216,
+    "t1": 1.483
+   },
+   {
+    "text": "passed.",
+    "t0": 1.53,
+    "t1": 2.0
+   }
+  ],
+  "chunks": [
+   {
+    "t0": 0.102,
+    "t1": 0.949,
+    "text": "CI is green."
+   },
+   {
+    "t0": 0.973,
+    "t1": 2.0,
     "text": "All checks passed."
    }
   ]
  },
  "0155.png": {
-  "text": "Now the human's only job: read the final diff. The card now reads the current day from a shared hook, so the chip moves to overdue after midnight.",
-  "dur": 7.765,
-  "at": 73.395,
-  "end": 81.16,
+  "text": "Now I read the final diff. The card gets the current day from a shared hook. That keeps the chip up to date after midnight.",
+  "dur": 6.24,
+  "at": 86.3,
+  "end": 92.54,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "Now",
+    "t0": 0.1,
+    "t1": 0.262
+   },
+   {
+    "text": "I",
+    "t0": 0.32,
+    "t1": 0.344
+   },
+   {
+    "text": "read",
+    "t0": 0.425,
+    "t1": 0.564
+   },
+   {
+    "text": "the",
+    "t0": 0.588,
+    "t1": 0.657
+   },
+   {
+    "text": "final",
+    "t0": 0.692,
+    "t1": 0.936
+   },
+   {
+    "text": "diff.",
+    "t0": 0.982,
+    "t1": 1.354
+   },
+   {
+    "text": "The",
+    "t0": 1.795,
+    "t1": 1.911
+   },
+   {
+    "text": "card",
+    "t0": 1.969,
+    "t1": 2.19
+   },
+   {
+    "text": "gets",
+    "t0": 2.236,
+    "t1": 2.422
+   },
+   {
+    "text": "the",
+    "t0": 2.457,
+    "t1": 2.526
+   },
+   {
+    "text": "current",
+    "t0": 2.573,
+    "t1": 2.84
+   },
+   {
+    "text": "day",
+    "t0": 2.886,
+    "t1": 3.037
+   },
+   {
+    "text": "from",
+    "t0": 3.084,
+    "t1": 3.211
+   },
+   {
+    "text": "a",
+    "t0": 3.258,
+    "t1": 3.281
+   },
+   {
+    "text": "shared",
+    "t0": 3.327,
+    "t1": 3.583
+   },
+   {
+    "text": "hook.",
+    "t0": 3.618,
+    "t1": 3.954
+   },
+   {
+    "text": "That",
+    "t0": 4.198,
+    "t1": 4.372
+   },
+   {
+    "text": "keeps",
+    "t0": 4.43,
+    "t1": 4.639
+   },
+   {
+    "text": "the",
+    "t0": 4.686,
+    "t1": 4.755
+   },
+   {
+    "text": "chip",
+    "t0": 4.802,
+    "t1": 4.999
+   },
+   {
+    "text": "up",
+    "t0": 5.057,
+    "t1": 5.15
+   },
+   {
+    "text": "to",
+    "t0": 5.196,
+    "t1": 5.243
+   },
+   {
+    "text": "date",
+    "t0": 5.301,
+    "t1": 5.51
+   },
+   {
+    "text": "after",
+    "t0": 5.533,
+    "t1": 5.719
+   },
+   {
+    "text": "midnight.",
+    "t0": 5.765,
+    "t1": 6.24
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.097,
-    "t1": 1.374,
-    "text": "Now the human's only job:"
+    "t0": 0.1,
+    "t1": 1.354,
+    "text": "Now I read the final diff."
    },
    {
-    "t0": 1.699,
-    "t1": 2.709,
-    "text": "read the final diff."
+    "t0": 1.795,
+    "t1": 3.281,
+    "text": "The card gets the current day from a"
    },
    {
-    "t0": 3.034,
-    "t1": 4.787,
-    "text": "The card now reads the current day from"
+    "t0": 3.327,
+    "t1": 3.954,
+    "text": "shared hook."
    },
    {
-    "t0": 4.834,
-    "t1": 5.577,
-    "text": "a shared hook,"
+    "t0": 4.198,
+    "t1": 5.719,
+    "text": "That keeps the chip up to date after"
    },
    {
-    "t0": 5.751,
-    "t1": 7.725,
-    "text": "so the chip moves to overdue after midnight."
+    "t0": 5.765,
+    "t1": 6.24,
+    "text": "midnight."
    }
   ]
  },
  "0156.png": {
   "text": "It looks right, so I merge it from Devin Review.",
-  "dur": 2.285,
-  "at": 81.255,
-  "end": 83.54,
+  "dur": 2.33,
+  "at": 92.965,
+  "end": 95.295,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "It",
+    "t0": 0.029,
+    "t1": 0.168
+   },
+   {
+    "text": "looks",
+    "t0": 0.215,
+    "t1": 0.412
+   },
+   {
+    "text": "right,",
+    "t0": 0.459,
+    "t1": 0.714
+   },
+   {
+    "text": "so",
+    "t0": 0.737,
+    "t1": 0.853
+   },
+   {
+    "text": "I",
+    "t0": 0.923,
+    "t1": 0.946
+   },
+   {
+    "text": "merge",
+    "t0": 1.039,
+    "t1": 1.271
+   },
+   {
+    "text": "it",
+    "t0": 1.306,
+    "t1": 1.364
+   },
+   {
+    "text": "from",
+    "t0": 1.387,
+    "t1": 1.504
+   },
+   {
+    "text": "Devin",
+    "t0": 1.562,
+    "t1": 1.805
+   },
+   {
+    "text": "Review.",
+    "t0": 1.863,
+    "t1": 2.33
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.039,
-    "t1": 0.677,
+    "t0": 0.029,
+    "t1": 0.714,
     "text": "It looks right,"
    },
    {
-    "t0": 0.712,
-    "t1": 2.245,
+    "t0": 0.737,
+    "t1": 2.33,
     "text": "so I merge it from Devin Review."
    }
   ]
  },
  "0160.png": {
   "text": "Merged. The loop closed itself.",
-  "dur": 1.945,
-  "at": 83.67,
-  "end": 85.615,
+  "dur": 2.18,
+  "at": 95.47,
+  "end": 97.65,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "Merged.",
+    "t0": 0.125,
+    "t1": 0.705
+   },
+   {
+    "text": "The",
+    "t0": 0.949,
+    "t1": 1.077
+   },
+   {
+    "text": "loop",
+    "t0": 1.135,
+    "t1": 1.321
+   },
+   {
+    "text": "closed",
+    "t0": 1.39,
+    "t1": 1.669
+   },
+   {
+    "text": "itself.",
+    "t0": 1.704,
+    "t1": 2.18
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.108,
-    "t1": 1.945,
-    "text": "Merged. The loop closed itself."
+    "t0": 0.125,
+    "t1": 0.705,
+    "text": "Merged."
+   },
+   {
+    "t0": 0.949,
+    "t1": 2.18,
+    "text": "The loop closed itself."
    }
   ]
  },
  "outro": {
   "text": "Devin closes the review loop, and you only read the final diff.",
-  "dur": 2.8,
-  "at": 85.89,
-  "end": 88.69,
+  "dur": 3.15,
+  "at": 97.94,
+  "end": 101.09,
   "mode": "one-take",
   "checked": true,
+  "seed": null,
+  "voice_settings": "saved-defaults",
+  "words": [
+   {
+    "text": "Devin",
+    "t0": 0.116,
+    "t1": 0.395
+   },
+   {
+    "text": "closes",
+    "t0": 0.453,
+    "t1": 0.801
+   },
+   {
+    "text": "the",
+    "t0": 0.836,
+    "t1": 0.905
+   },
+   {
+    "text": "review",
+    "t0": 0.964,
+    "t1": 1.207
+   },
+   {
+    "text": "loop,",
+    "t0": 1.265,
+    "t1": 1.602
+   },
+   {
+    "text": "and",
+    "t0": 1.718,
+    "t1": 1.846
+   },
+   {
+    "text": "you",
+    "t0": 1.881,
+    "t1": 1.962
+   },
+   {
+    "text": "only",
+    "t0": 2.032,
+    "t1": 2.194
+   },
+   {
+    "text": "read",
+    "t0": 2.252,
+    "t1": 2.403
+   },
+   {
+    "text": "the",
+    "t0": 2.438,
+    "t1": 2.508
+   },
+   {
+    "text": "final",
+    "t0": 2.554,
+    "t1": 2.81
+   },
+   {
+    "text": "diff.",
+    "t0": 2.856,
+    "t1": 3.15
+   }
+  ],
   "chunks": [
    {
-    "t0": 0.071,
-    "t1": 1.464,
+    "t0": 0.116,
+    "t1": 1.602,
     "text": "Devin closes the review loop,"
    },
    {
-    "t0": 1.487,
-    "t1": 2.8,
+    "t0": 1.718,
+    "t1": 3.15,
     "text": "and you only read the final diff."
    }
   ]
