@@ -1,0 +1,322 @@
+{
+ "0000.png": {
+  "text": "Docs that test themselves means every code snippet on every docs page is run exactly as written, on a fresh machine, so you find out which examples are broken before your users do.",
+  "dur": 9.045,
+  "at": 0.0,
+  "end": 9.045,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.426,
+    "text": "Docs that test themselves means every code snippet"
+   },
+   {
+    "t0": 2.473,
+    "t1": 4.296,
+    "text": "on every docs page is run exactly as"
+   },
+   {
+    "t0": 4.331,
+    "t1": 5.933,
+    "text": "written, on a fresh machine,"
+   },
+   {
+    "t0": 6.06,
+    "t1": 7.872,
+    "text": "so you find out which examples are broken"
+   },
+   {
+    "t0": 7.906,
+    "t1": 9.033,
+    "text": "before your users do."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "One Devin coordinates the run, and it starts a managed Devin for each docs page, each on its own fresh VM, all in parallel.",
+  "dur": 6.235,
+  "at": 9.24,
+  "end": 15.475,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.118,
+    "t1": 1.499,
+    "text": "One Devin coordinates the run,"
+   },
+   {
+    "t0": 1.522,
+    "t1": 3.182,
+    "text": "and it starts a managed Devin for each"
+   },
+   {
+    "t0": 3.229,
+    "t1": 5.4,
+    "text": "docs page, each on its own fresh VM,"
+   },
+   {
+    "t0": 5.423,
+    "t1": 6.235,
+    "text": "all in parallel."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "Here's a real run on a small invoicing SDK, where we planted two broken examples on purpose.",
+  "dur": 5.03,
+  "at": 15.78,
+  "end": 20.81,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.032,
+    "t1": 1.855,
+    "text": "Here's a real run on a small invoicing"
+   },
+   {
+    "t0": 1.913,
+    "t1": 4.967,
+    "text": "SDK, where we planted two broken examples on purpose."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "The coordinator starts five managed Devins, one per page.",
+  "dur": 2.86,
+  "at": 20.955,
+  "end": 23.815,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.035,
+    "t1": 2.032,
+    "text": "The coordinator starts five managed Devins,"
+   },
+   {
+    "t0": 2.067,
+    "t1": 2.833,
+    "text": "one per page."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "Each one installs the SDK from scratch and runs every snippet, and here the invoices page fails.",
+  "dur": 5.14,
+  "at": 24.01,
+  "end": 29.15,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.104,
+    "t1": 2.205,
+    "text": "Each one installs the SDK from scratch and"
+   },
+   {
+    "t0": 2.24,
+    "t1": 3.087,
+    "text": "runs every snippet,"
+   },
+   {
+    "t0": 3.296,
+    "t1": 5.073,
+    "text": "and here the invoices page fails."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "When a snippet fails, Devin works out whether the page is stale or the SDK has a bug, and the answer decides what the pull request fixes.",
+  "dur": 6.8,
+  "at": 29.345,
+  "end": 36.145,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.016,
+    "t1": 0.991,
+    "text": "When a snippet fails,"
+   },
+   {
+    "t0": 1.026,
+    "t1": 2.872,
+    "text": "Devin works out whether the page is stale"
+   },
+   {
+    "t0": 2.919,
+    "t1": 4.254,
+    "text": "or the SDK has a bug,"
+   },
+   {
+    "t0": 4.428,
+    "t1": 6.8,
+    "text": "and the answer decides what the pull request fixes."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "That page still used a parameter name the SDK had renamed, so its pull request fixes the docs.",
+  "dur": 5.305,
+  "at": 36.48,
+  "end": 41.785,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.068,
+    "t1": 1.995,
+    "text": "That page still used a parameter name the"
+   },
+   {
+    "t0": 2.065,
+    "t1": 3.156,
+    "text": "SDK had renamed,"
+   },
+   {
+    "t0": 3.435,
+    "t1": 5.305,
+    "text": "so its pull request fixes the docs."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "The quickstart exposed a real bug in the SDK, so that pull request fixes the code and adds a test.",
+  "dur": 5.33,
+  "at": 42.12,
+  "end": 47.45,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.082,
+    "t1": 1.881,
+    "text": "The quickstart exposed a real bug in the"
+   },
+   {
+    "t0": 1.928,
+    "t1": 4.47,
+    "text": "SDK, so that pull request fixes the code"
+   },
+   {
+    "t0": 4.494,
+    "t1": 5.329,
+    "text": "and adds a test."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "The coordinator collects the results into one summary.",
+  "dur": 2.45,
+  "at": 47.74,
+  "end": 50.19,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.093,
+    "t1": 2.45,
+    "text": "The coordinator collects the results into one summary."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the docs change, and on a schedule.",
+  "dur": 7.105,
+  "at": 50.355,
+  "end": 57.46,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.055,
+    "t1": 0.972,
+    "text": "To keep it that way,"
+   },
+   {
+    "t0": 1.088,
+    "t1": 2.632,
+    "text": "save the procedure as a playbook,"
+   },
+   {
+    "t0": 2.807,
+    "t1": 4.85,
+    "text": "and create an automation that runs it whenever"
+   },
+   {
+    "t0": 4.896,
+    "t1": 5.86,
+    "text": "the docs change,"
+   },
+   {
+    "t0": 6.034,
+    "t1": 7.056,
+    "text": "and on a schedule."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "Here's the automation Devin created, with both triggers.",
+  "dur": 2.62,
+  "at": 57.605,
+  "end": 60.225,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.015,
+    "t1": 1.652,
+    "text": "Here's the automation Devin created,"
+   },
+   {
+    "t0": 1.675,
+    "t1": 2.62,
+    "text": "with both triggers."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+  "dur": 5.395,
+  "at": 60.52,
+  "end": 65.915,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.084,
+    "t1": 1.767,
+    "text": "It works for SDK docs,"
+   },
+   {
+    "t0": 1.976,
+    "t1": 3.95,
+    "text": "README quickstarts, API guides,"
+   },
+   {
+    "t0": 3.973,
+    "t1": 5.395,
+    "text": "and step-by-step tutorials."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Docs that stay true to your code.",
+  "dur": 1.77,
+  "at": 66.06,
+  "end": 67.83,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.14,
+    "t1": 1.77,
+    "text": "Docs that stay true to your code."
+   }
+  ]
+ }
+}
