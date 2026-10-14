@@ -1,0 +1,427 @@
+{
+ "0000.png": {
+  "text": "When a fix really matters, you can have one Devin write the patch, and a second Devin try to break it, in a loop that runs until the breaker fails.",
+  "dur": 7.04,
+  "at": 0.0,
+  "end": 7.04,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.196,
+    "text": "When a fix really matters,"
+   },
+   {
+    "t0": 1.219,
+    "t1": 2.937,
+    "text": "you can have one Devin write the patch,"
+   },
+   {
+    "t0": 3.053,
+    "t1": 4.702,
+    "text": "and a second Devin try to break it,"
+   },
+   {
+    "t0": 4.853,
+    "t1": 7.04,
+    "text": "in a loop that runs until the breaker fails."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "I start a new session and add Orbit, a small kanban board demo repo.",
+  "dur": 4.12,
+  "at": 7.23,
+  "end": 11.35,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.108,
+    "t1": 1.965,
+    "text": "I start a new session and add Orbit,"
+   },
+   {
+    "t0": 2.093,
+    "t1": 4.09,
+    "text": "a small kanban board demo repo."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "The bug is real: the board trusts whatever is saved in local storage, because its check only looks at the top-level shape. So I ask for a workflow where a fixer writes the patch and a breaker attacks it, for at most four rounds.",
+  "dur": 11.595,
+  "at": 11.58,
+  "end": 23.175,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.065,
+    "t1": 0.947,
+    "text": "The bug is real:"
+   },
+   {
+    "t0": 1.191,
+    "t1": 3.165,
+    "text": "the board trusts whatever is saved in local"
+   },
+   {
+    "t0": 3.2,
+    "t1": 5.243,
+    "text": "storage, because its check only looks at the"
+   },
+   {
+    "t0": 5.29,
+    "t1": 7.728,
+    "text": "top-level shape. So I ask for a workflow"
+   },
+   {
+    "t0": 7.762,
+    "t1": 9.225,
+    "text": "where a fixer writes the patch and a"
+   },
+   {
+    "t0": 9.272,
+    "t1": 10.235,
+    "text": "breaker attacks it,"
+   },
+   {
+    "t0": 10.444,
+    "t1": 11.595,
+    "text": "for at most four rounds."
+   }
+  ]
+ },
+ "0043.png": {
+  "text": "Devin plans the loop. Each agent is its own Devin session on its own machine, and the breaker only reports breaks it actually reproduces.",
+  "dur": 7.365,
+  "at": 23.49,
+  "end": 30.855,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.102,
+    "t1": 1.297,
+    "text": "Devin plans the loop."
+   },
+   {
+    "t0": 1.576,
+    "t1": 3.48,
+    "text": "Each agent is its own Devin session on"
+   },
+   {
+    "t0": 3.527,
+    "t1": 4.316,
+    "text": "its own machine,"
+   },
+   {
+    "t0": 4.525,
+    "t1": 7.365,
+    "text": "and the breaker only reports breaks it actually reproduces."
+   }
+  ]
+ },
+ "0099.png": {
+  "text": "The workflow panel shows the fix and break phases, with every agent's live status. Round one's breaker found a break, so round two is already running.",
+  "dur": 7.99,
+  "at": 31.3,
+  "end": 39.29,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.059,
+    "t1": 2.067,
+    "text": "The workflow panel shows the fix and break"
+   },
+   {
+    "t0": 2.114,
+    "t1": 4.505,
+    "text": "phases, with every agent's live status."
+   },
+   {
+    "t0": 4.83,
+    "t1": 6.467,
+    "text": "Round one's breaker found a break,"
+   },
+   {
+    "t0": 6.525,
+    "t1": 7.907,
+    "text": "so round two is already running."
+   }
+  ]
+ },
+ "0150.png": {
+  "text": "In round two, the breaker came up empty, so the loop stopped after four agents.",
+  "dur": 3.95,
+  "at": 39.32,
+  "end": 43.27,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.061,
+    "t1": 0.688,
+    "text": "In round two,"
+   },
+   {
+    "t0": 0.711,
+    "t1": 1.907,
+    "text": "the breaker came up empty,"
+   },
+   {
+    "t0": 2.023,
+    "t1": 3.939,
+    "text": "so the loop stopped after four agents."
+   }
+  ]
+ },
+ "0226.png": {
+  "text": "Here is the script Devin wrote.",
+  "dur": 1.48,
+  "at": 43.54,
+  "end": 45.02,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.044,
+    "t1": 1.425,
+    "text": "Here is the script Devin wrote."
+   }
+  ]
+ },
+ "0227.png": {
+  "text": "It registers the workflow with its two phases.",
+  "dur": 2.3,
+  "at": 45.045,
+  "end": 47.345,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.048,
+    "t1": 2.3,
+    "text": "It registers the workflow with its two phases."
+   }
+  ]
+ },
+ "0230.png": {
+  "text": "Then it loops for up to four rounds.",
+  "dur": 1.76,
+  "at": 47.49,
+  "end": 49.25,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.053,
+    "t1": 1.736,
+    "text": "Then it loops for up to four rounds."
+   }
+  ]
+ },
+ "0231.png": {
+  "text": "Each round, the breaker gets the fixer's branch, and returns structured results that match a schema.",
+  "dur": 4.92,
+  "at": 49.34,
+  "end": 54.26,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.13,
+    "t1": 2.266,
+    "text": "Each round, the breaker gets the fixer's branch,"
+   },
+   {
+    "t0": 2.441,
+    "t1": 4.92,
+    "text": "and returns structured results that match a schema."
+   }
+  ]
+ },
+ "0232.png": {
+  "text": "When the breaker finds no breaks, the loop stops. Otherwise, its breaks go to the next fixer.",
+  "dur": 4.835,
+  "at": 54.675,
+  "end": 59.51,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.459,
+    "text": "When the breaker finds no breaks,"
+   },
+   {
+    "t0": 1.494,
+    "t1": 2.388,
+    "text": "the loop stops."
+   },
+   {
+    "t0": 2.713,
+    "t1": 4.815,
+    "text": "Otherwise, its breaks go to the next fixer."
+   }
+  ]
+ },
+ "0233.png": {
+  "text": "You can open any agent's session from the panel.",
+  "dur": 2.275,
+  "at": 59.725,
+  "end": 62.0,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.043,
+    "t1": 2.249,
+    "text": "You can open any agent's session from the panel."
+   }
+  ]
+ },
+ "0238.png": {
+  "text": "In round one, the breaker found a real break: a valid card numbered one billion or higher vanished on reload, because the first fix capped card numbers.",
+  "dur": 7.87,
+  "at": 62.175,
+  "end": 70.045,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.043,
+    "t1": 0.763,
+    "text": "In round one,"
+   },
+   {
+    "t0": 0.786,
+    "t1": 2.144,
+    "text": "the breaker found a real break:"
+   },
+   {
+    "t0": 2.353,
+    "t1": 4.524,
+    "text": "a valid card numbered one billion or higher"
+   },
+   {
+    "t0": 4.617,
+    "t1": 5.662,
+    "text": "vanished on reload,"
+   },
+   {
+    "t0": 5.836,
+    "t1": 7.87,
+    "text": "because the first fix capped card numbers."
+   }
+  ]
+ },
+ "0239.png": {
+  "text": "The second fixer raised that limit and added a guard, and the round two breaker attacked the new patch.",
+  "dur": 4.855,
+  "at": 70.27,
+  "end": 75.125,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.051,
+    "t1": 1.967,
+    "text": "The second fixer raised that limit and added"
+   },
+   {
+    "t0": 2.013,
+    "t1": 4.126,
+    "text": "a guard, and the round two breaker attacked"
+   },
+   {
+    "t0": 4.15,
+    "t1": 4.855,
+    "text": "the new patch."
+   }
+  ]
+ },
+ "0242.png": {
+  "text": "It loaded bad saves in the browser, ran the tests, lint and build, and found no breaks.",
+  "dur": 4.52,
+  "at": 75.31,
+  "end": 79.83,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.096,
+    "t1": 1.873,
+    "text": "It loaded bad saves in the browser,"
+   },
+   {
+    "t0": 1.966,
+    "t1": 2.744,
+    "text": "ran the tests,"
+   },
+   {
+    "t0": 2.836,
+    "t1": 3.475,
+    "text": "lint and build,"
+   },
+   {
+    "t0": 3.498,
+    "t1": 4.485,
+    "text": "and found no breaks."
+   }
+  ]
+ },
+ "0243.png": {
+  "text": "The result is one pull request with passing checks. Devin Review still flagged two bugs on it, so review it like any other pull request before you merge.",
+  "dur": 7.62,
+  "at": 79.9,
+  "end": 87.52,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.069,
+    "t1": 2.101,
+    "text": "The result is one pull request with passing"
+   },
+   {
+    "t0": 2.147,
+    "t1": 4.655,
+    "text": "checks. Devin Review still flagged two bugs on"
+   },
+   {
+    "t0": 4.702,
+    "t1": 6.339,
+    "text": "it, so review it like any other pull"
+   },
+   {
+    "t0": 6.397,
+    "t1": 7.546,
+    "text": "request before you merge."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Let one Devin write the fix, and let another one try to break it.",
+  "dur": 2.97,
+  "at": 87.67,
+  "end": 90.64,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.101,
+    "t1": 1.436,
+    "text": "Let one Devin write the fix,"
+   },
+   {
+    "t0": 1.46,
+    "t1": 2.97,
+    "text": "and let another one try to break it."
+   }
+  ]
+ }
+}
