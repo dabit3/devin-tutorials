@@ -1,17 +1,17 @@
 {
   "production": "Entirely new conference reel; no rejected-reel footage or screenshots used.",
   "productionDateUTC": "2026-10-14",
-  "duration": 185.20000000000002,
+  "duration": 176.2,
   "fps": 60,
   "outputSize": [
     3840,
     2160
   ],
   "viewport": [
-    144,
-    128,
-    3552,
-    1998
+    192,
+    198,
+    3456,
+    1944
   ],
   "brandingException": "Only the existing Devin logo and Inter font are reused.",
   "archives": [
@@ -82,8 +82,8 @@
       "sha256": "59ef1cbaf6a9399b89040808ab0ae97ab8aeb3b67b2dcdaf0ace45df465f0c0a",
       "repository": "thequantexplorer/orbit-demo",
       "revision": null,
-      "action": "Open two code citations in a new Ask answer.",
-      "note": "Separate introductory example, explicitly named Orbit in the film. The Ask UI did not expose its indexed commit. Exact captured bytes are pinned below.",
+      "action": "Open code citations in a new Ask answer.",
+      "note": "Separate introductory Orbit example. The Ask UI did not expose its indexed commit. Exact captured bytes are pinned below.",
       "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
       "workflowSession": "https://app.devin.ai/search/thequantexplorerorbitdemo-how_9d9aa59f-e200-4dc3-8c8b-56a1553e2c23",
       "captureStarted": "2026-10-14T01:13:17.994Z",
@@ -418,57 +418,177 @@
     {
       "id": "opening",
       "timelineStart": 0,
-      "duration": 4.5,
+      "duration": 3.2,
       "graphic": "intro"
     },
     {
+      "id": "wiki-intro",
+      "timelineStart": 3.2,
+      "duration": 3.2,
+      "title": "DeepWiki",
+      "graphic": "feature",
+      "benefit": "Know your codebase.",
+      "next": "wiki"
+    },
+    {
       "id": "wiki",
-      "timelineStart": 4.5,
-      "duration": 11,
+      "timelineStart": 6.4,
+      "duration": 10,
+      "title": "DeepWiki",
+      "action": "Explore the architecture",
       "source": "35-deepwiki.mp4",
       "in": 0,
-      "out": 11,
+      "out": 10,
       "speed": 1,
       "crop": [
-        0,
-        0,
-        2880,
-        1620
+        160,
+        80,
+        2560,
+        1440
+      ],
+      "camera": [
+        {
+          "at": 0,
+          "box": [
+            160,
+            80,
+            2560,
+            1440
+          ]
+        },
+        {
+          "at": 2,
+          "box": [
+            160,
+            80,
+            2560,
+            1440
+          ]
+        },
+        {
+          "at": 3.2,
+          "box": [
+            850,
+            0,
+            1920,
+            1080
+          ]
+        },
+        {
+          "at": 5.6,
+          "box": [
+            480,
+            0,
+            1920,
+            1080
+          ]
+        }
       ]
     },
     {
+      "id": "code-intro",
+      "timelineStart": 16.4,
+      "duration": 3.2,
+      "title": "Ask",
+      "graphic": "feature",
+      "benefit": "Answers, grounded in code.",
+      "next": "code"
+    },
+    {
       "id": "code",
-      "timelineStart": 15.5,
-      "duration": 12,
+      "timelineStart": 19.599999999999998,
+      "duration": 8.5,
+      "title": "Ask",
+      "action": "Follow the source",
       "source": "10-code-proof.mp4",
-      "in": 0,
-      "out": 12,
+      "in": 4.5,
+      "out": 13,
       "speed": 1,
       "crop": [
-        0,
-        0,
-        2880,
-        1620
+        80,
+        380,
+        1920,
+        1080
       ],
-      "highlight": {
-        "box": [
-          262.71875,
-          633,
-          226.0625,
-          29
-        ],
-        "padding": 10,
-        "start": 6.6,
-        "end": 10.8
-      }
+      "highlights": [
+        {
+          "start": 2.25,
+          "end": 4.25,
+          "box": [
+            262.71875,
+            633,
+            226.0625,
+            29
+          ],
+          "padding": 12
+        }
+      ],
+      "camera": [
+        {
+          "at": 0,
+          "box": [
+            80,
+            380,
+            1920,
+            1080
+          ]
+        },
+        {
+          "at": 1.3,
+          "box": [
+            80,
+            380,
+            1920,
+            1080
+          ]
+        },
+        {
+          "at": 2.2,
+          "box": [
+            80,
+            440,
+            1280,
+            720
+          ]
+        },
+        {
+          "at": 4.3,
+          "box": [
+            80,
+            440,
+            1280,
+            720
+          ]
+        },
+        {
+          "at": 5.5,
+          "box": [
+            1160,
+            200,
+            1600,
+            900
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-intro",
+      "timelineStart": 28.099999999999998,
+      "duration": 3.2,
+      "title": "Delegation",
+      "graphic": "feature",
+      "benefit": "Describe it. Devin builds it.",
+      "next": "request"
     },
     {
       "id": "request",
-      "timelineStart": 27.5,
-      "duration": 9,
+      "timelineStart": 31.299999999999997,
+      "duration": 8,
+      "title": "Delegation",
+      "action": "Describe the outcome",
       "source": "01-request.mp4",
       "in": 1.2,
-      "out": 10.2,
+      "out": 9.2,
       "speed": 1,
       "crop": [
         320,
@@ -478,18 +598,23 @@
       ]
     },
     {
-      "id": "testing-title",
-      "timelineStart": 36.5,
-      "duration": 3.5,
-      "graphic": "chapter"
+      "id": "hero-search-intro",
+      "timelineStart": 39.3,
+      "duration": 3.2,
+      "title": "Computer Use",
+      "graphic": "feature",
+      "benefit": "Test like a user.",
+      "next": "hero-search"
     },
     {
-      "id": "hero",
-      "timelineStart": 40,
-      "duration": 50,
+      "id": "hero-search",
+      "timelineStart": 42.5,
+      "duration": 7,
+      "title": "Computer Use",
+      "action": "Search real content",
       "source": "hero-northstar-852411d.mp4",
-      "in": 0,
-      "out": 50,
+      "in": 2,
+      "out": 9,
       "speed": 1,
       "crop": [
         0,
@@ -497,49 +622,209 @@
         2880,
         1620
       ],
-      "highlight": {
-        "box": [
-          256,
-          786.0625,
-          2368,
-          155
-        ],
-        "padding": 12,
-        "start": 27,
-        "end": 30.8
-      },
-      "camera": {
-        "start": 33,
-        "end": 49,
-        "ramp": 0.8,
-        "zoom": 1.22
-      },
-      "titleBeats": [
+      "highlights": [
         {
-          "start": 4,
-          "title": "Search real content."
+          "start": 4.55,
+          "end": 6.5,
+          "box": [
+            256,
+            650.0625,
+            840,
+            88
+          ],
+          "padding": 14
+        }
+      ],
+      "camera": [
+        {
+          "at": 0,
+          "box": [
+            0,
+            0,
+            2880,
+            1620
+          ]
         },
         {
-          "start": 10,
-          "title": "Combine filters. Switch days."
+          "at": 1.1,
+          "box": [
+            0,
+            0,
+            2880,
+            1620
+          ]
         },
         {
-          "start": 21,
-          "title": "Save talks. Catch conflicts."
+          "at": 2.1,
+          "box": [
+            170,
+            520,
+            1920,
+            1080
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hero-filter",
+      "timelineStart": 49.5,
+      "duration": 9,
+      "title": "Computer Use",
+      "action": "Filter. Switch days.",
+      "source": "hero-northstar-852411d.mp4",
+      "in": 10,
+      "out": 19,
+      "speed": 1,
+      "crop": [
+        200,
+        170,
+        2560,
+        1440
+      ],
+      "camera": [
+        {
+          "at": 0,
+          "box": [
+            200,
+            170,
+            2560,
+            1440
+          ]
         },
         {
-          "start": 33,
-          "title": "Resolve the overlap. Export a calendar."
+          "at": 4.2,
+          "box": [
+            200,
+            170,
+            2560,
+            1440
+          ]
+        },
+        {
+          "at": 5.2,
+          "box": [
+            180,
+            500,
+            1920,
+            1080
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hero-conflict",
+      "timelineStart": 58.5,
+      "duration": 8.5,
+      "title": "Computer Use",
+      "action": "Catch an overlap",
+      "source": "hero-northstar-852411d.mp4",
+      "in": 21,
+      "out": 29.5,
+      "speed": 1,
+      "crop": [
+        950,
+        520,
+        1920,
+        1080
+      ],
+      "highlights": [
+        {
+          "start": 5.85,
+          "end": 8.2,
+          "box": [
+            256,
+            786.0625,
+            2368,
+            155
+          ],
+          "padding": 14
+        }
+      ],
+      "camera": [
+        {
+          "at": 0,
+          "box": [
+            950,
+            520,
+            1920,
+            1080
+          ]
+        },
+        {
+          "at": 4.5,
+          "box": [
+            950,
+            520,
+            1920,
+            1080
+          ]
+        },
+        {
+          "at": 5.7,
+          "box": [
+            170,
+            170,
+            2560,
+            1440
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hero-resolve",
+      "timelineStart": 67,
+      "duration": 15,
+      "title": "Computer Use",
+      "action": "Resolve it. Export.",
+      "source": "hero-northstar-852411d.mp4",
+      "in": 32,
+      "out": 47,
+      "speed": 1,
+      "crop": [
+        480,
+        180,
+        1920,
+        1080
+      ],
+      "camera": [
+        {
+          "at": 0,
+          "box": [
+            480,
+            180,
+            1920,
+            1080
+          ]
+        },
+        {
+          "at": 8.8,
+          "box": [
+            480,
+            180,
+            1920,
+            1080
+          ]
+        },
+        {
+          "at": 10,
+          "box": [
+            640,
+            360,
+            1600,
+            900
+          ]
         }
       ]
     },
     {
       "id": "finding",
-      "timelineStart": 90,
-      "duration": 8.5,
+      "timelineStart": 82,
+      "duration": 5.5,
+      "title": "Computer Use",
+      "action": "A real finding",
       "source": "28-real-finding.mp4",
-      "in": 0,
-      "out": 8.5,
+      "in": 1,
+      "out": 6.5,
       "speed": 1,
       "crop": [
         672,
@@ -549,12 +834,23 @@
       ]
     },
     {
+      "id": "steer-intro",
+      "timelineStart": 87.5,
+      "duration": 3.2,
+      "title": "Collaboration",
+      "graphic": "feature",
+      "benefit": "Steer the work.",
+      "next": "steer"
+    },
+    {
       "id": "steer",
-      "timelineStart": 98.5,
-      "duration": 9.8,
+      "timelineStart": 90.7,
+      "duration": 8.5,
+      "title": "Collaboration",
+      "action": "Keep control",
       "source": "21-steer.mp4",
       "in": 0,
-      "out": 9.8,
+      "out": 8.5,
       "speed": 1,
       "crop": [
         624,
@@ -564,97 +860,333 @@
       ]
     },
     {
+      "id": "agents-intro",
+      "timelineStart": 99.2,
+      "duration": 3.2,
+      "title": "Managed Devins",
+      "graphic": "feature",
+      "benefit": "Bring a team.",
+      "next": "agents"
+    },
+    {
       "id": "agents",
-      "timelineStart": 108.3,
-      "duration": 6.4,
+      "timelineStart": 102.4,
+      "duration": 4.2,
+      "title": "Managed Devins",
+      "action": "Independent reviewers",
       "source": "24-agents-and-changes.mp4",
-      "in": 0,
-      "out": 6.4,
+      "in": 1.8,
+      "out": 6,
       "speed": 1,
       "crop": [
+        1170,
         0,
-        0,
-        2880,
-        1620
+        1696,
+        954
+      ],
+      "camera": [
+        {
+          "at": 0,
+          "box": [
+            1170,
+            0,
+            1696,
+            954
+          ]
+        },
+        {
+          "at": 1.2,
+          "box": [
+            1170,
+            0,
+            1696,
+            954
+          ]
+        },
+        {
+          "at": 2.1,
+          "box": [
+            1250,
+            120,
+            1472,
+            828
+          ]
+        }
       ]
+    },
+    {
+      "id": "workspace-intro",
+      "timelineStart": 106.60000000000001,
+      "duration": 3.2,
+      "title": "Cloud IDE",
+      "graphic": "feature",
+      "benefit": "Step into the workspace.",
+      "next": "workspace"
     },
     {
       "id": "workspace",
-      "timelineStart": 114.7,
-      "duration": 9.8,
+      "timelineStart": 109.80000000000001,
+      "duration": 7.5,
+      "title": "Cloud IDE",
+      "action": "Open the live source",
       "source": "36-live-workspace.mp4",
-      "in": 0,
-      "out": 9.8,
+      "in": 1,
+      "out": 8.5,
       "speed": 1,
       "crop": [
-        0,
-        0,
-        2880,
-        1620
+        650,
+        60,
+        1920,
+        1080
+      ],
+      "camera": [
+        {
+          "at": 0,
+          "box": [
+            650,
+            60,
+            1920,
+            1080
+          ]
+        },
+        {
+          "at": 3.5,
+          "box": [
+            650,
+            60,
+            1920,
+            1080
+          ]
+        },
+        {
+          "at": 4.5,
+          "box": [
+            0,
+            40,
+            1920,
+            1080
+          ]
+        }
       ]
+    },
+    {
+      "id": "review-intro",
+      "timelineStart": 117.30000000000001,
+      "duration": 3.2,
+      "title": "Devin Review",
+      "graphic": "feature",
+      "benefit": "Review before you merge.",
+      "next": "review"
     },
     {
       "id": "review",
-      "timelineStart": 124.5,
-      "duration": 11.8,
+      "timelineStart": 120.50000000000001,
+      "duration": 8.5,
+      "title": "Devin Review",
+      "action": "Inspect the branch",
       "source": "25-pr-review.mp4",
-      "in": 0,
-      "out": 11.8,
+      "in": 1.5,
+      "out": 10,
       "speed": 1,
       "crop": [
+        1180,
         0,
-        0,
-        2880,
-        1620
+        1696,
+        954
+      ],
+      "camera": [
+        {
+          "at": 0,
+          "box": [
+            1180,
+            0,
+            1696,
+            954
+          ]
+        },
+        {
+          "at": 3.8,
+          "box": [
+            1180,
+            0,
+            1696,
+            954
+          ]
+        },
+        {
+          "at": 4.8,
+          "box": [
+            1250,
+            260,
+            1600,
+            900
+          ]
+        }
       ]
     },
     {
+      "id": "replay-intro",
+      "timelineStart": 129,
+      "duration": 3.2,
+      "title": "Recorded tests",
+      "graphic": "feature",
+      "benefit": "Watch what happened.",
+      "next": "replay"
+    },
+    {
       "id": "replay",
-      "timelineStart": 136.3,
+      "timelineStart": 132.2,
       "duration": 4,
+      "title": "Recorded tests",
+      "action": "Replay the evidence",
       "source": "30-recording-replay.mp4",
       "in": 0,
       "out": 4,
       "speed": 1,
       "crop": [
-        0,
-        0,
-        2880,
-        1620
+        608,
+        220,
+        1920,
+        1080
       ]
     },
     {
+      "id": "retest-intro",
+      "timelineStart": 136.2,
+      "duration": 2.8,
+      "title": "Verify the fix.",
+      "graphic": "feature",
+      "benefit": "Test again. With the keyboard.",
+      "next": "retest"
+    },
+    {
       "id": "retest",
-      "timelineStart": 140.3,
-      "duration": 22.4,
+      "timelineStart": 139,
+      "duration": 15,
+      "title": "Computer Use",
+      "action": "Verify the fix",
       "source": "retest-northstar-3dbd344.mp4",
-      "in": 0,
-      "out": 22.4,
+      "in": 5.5,
+      "out": 20.5,
       "speed": 1,
       "crop": [
-        0,
-        0,
-        2880,
-        1620
+        640,
+        360,
+        1600,
+        900
+      ],
+      "highlights": [
+        {
+          "start": 2.45,
+          "end": 3,
+          "box": [
+            1813.125,
+            1034,
+            208.875,
+            80
+          ],
+          "padding": 14
+        },
+        {
+          "start": 7.2,
+          "end": 8.3,
+          "box": [
+            1800.15625,
+            522,
+            221.84375,
+            80
+          ],
+          "padding": 14
+        },
+        {
+          "start": 9.25,
+          "end": 10.9,
+          "box": [
+            1813.125,
+            1034,
+            208.875,
+            80
+          ],
+          "padding": 14
+        },
+        {
+          "start": 13.1,
+          "end": 14.3,
+          "box": [
+            2324.4375,
+            31,
+            299.5625,
+            80
+          ],
+          "padding": 14
+        }
+      ],
+      "camera": [
+        {
+          "at": 0,
+          "box": [
+            640,
+            360,
+            1600,
+            900
+          ]
+        },
+        {
+          "at": 11.6,
+          "box": [
+            640,
+            360,
+            1600,
+            900
+          ]
+        },
+        {
+          "at": 12.8,
+          "box": [
+            1240,
+            0,
+            1600,
+            900
+          ]
+        }
       ],
       "titleBeats": [
         {
-          "start": 8.5,
-          "title": "Export. Then test focus in both directions."
+          "start": 2,
+          "title": "Export the calendar"
         },
         {
-          "start": 18,
-          "title": "Escape closes. Focus returns to the opener."
+          "start": 7,
+          "title": "Tab wraps forward"
+        },
+        {
+          "start": 9,
+          "title": "Shift–Tab wraps back"
+        },
+        {
+          "start": 13,
+          "title": "Escape restores focus"
         }
       ]
     },
     {
+      "id": "skill-invoke-intro",
+      "timelineStart": 154,
+      "duration": 3.2,
+      "title": "Skills",
+      "graphic": "feature",
+      "benefit": "Your playbook. On repeat.",
+      "next": "skill-invoke"
+    },
+    {
       "id": "skill-invoke",
-      "timelineStart": 162.70000000000002,
-      "duration": 7.5,
+      "timelineStart": 157.2,
+      "duration": 7,
+      "title": "Skills",
+      "action": "Invoke your playbook",
       "source": "33-skill-invoke.mp4",
       "in": 0,
-      "out": 7.5,
+      "out": 7,
       "speed": 1,
       "crop": [
         608,
@@ -665,23 +1197,69 @@
     },
     {
       "id": "skill-result",
-      "timelineStart": 170.20000000000002,
-      "duration": 10.5,
+      "timelineStart": 164.2,
+      "duration": 8.5,
+      "title": "Skills",
+      "action": "Activate your playbook",
       "source": "37-skill-run.mp4",
-      "in": 0,
-      "out": 10.5,
+      "in": 0.8,
+      "out": 9.3,
       "speed": 1,
       "crop": [
-        608,
-        140,
-        1664,
-        936
+        700,
+        220,
+        1600,
+        900
+      ],
+      "camera": [
+        {
+          "at": 0,
+          "box": [
+            700,
+            220,
+            1600,
+            900
+          ]
+        },
+        {
+          "at": 1.7,
+          "box": [
+            740,
+            200,
+            1056,
+            594
+          ]
+        },
+        {
+          "at": 3.9,
+          "box": [
+            740,
+            200,
+            1056,
+            594
+          ]
+        },
+        {
+          "at": 5.2,
+          "box": [
+            700,
+            310,
+            1600,
+            900
+          ]
+        }
+      ],
+      "titleBeats": [
+        {
+          "start": 5.2,
+          "title": "Checks passed"
+        }
       ]
     },
     {
       "id": "closing",
-      "timelineStart": 180.70000000000002,
-      "duration": 4.5,
+      "timelineStart": 172.7,
+      "duration": 3.5,
       "graphic": "outro"
     }
   ]

@@ -1,34 +1,35 @@
 # Meet Devin — rebuilt conference reel
 
-A **185.20-second silent reel** covering **ten distinct Devin capabilities**, built from entirely new product recordings captured on 14 October 2026. Orbit's DeepWiki and Ask introduce repository understanding. One Northstar engineering story then moves from a real request through browser testing, a genuine finding, steering, independent review, a live workspace, recorded retesting and an explicitly invoked release-check Skill.
+A **176.20-second silent reel** covering **ten distinct Devin capabilities**, built from entirely new product recordings captured on 14 October 2026. Orbit's DeepWiki and Ask introduce repository understanding. One Northstar engineering story then moves from a real request through browser testing, a genuine finding, steering, independent review, a live workspace, recorded retesting and an explicitly invoked release-check Skill.
 
 - [4K master](35-conference-overview.mp4): 3840×2160, 60fps, H.264.
 - [1080p preview](35-conference-overview-1080p.mp4): 1920×1080, 60fps, H.264.
 - Both contain exactly one video stream and **no audio stream**.
-- Full-frame stills: [opening](poster.png), [expanded demo](stills/expanded-demo.png), [highlight alignment](stills/highlight-alignment.png), [testing hero](stills/testing-hero.png), [DeepWiki](stills/deepwiki.png), [Skill activation](stills/skill-activation.png).
+- Full-frame stills: [opening](poster.png), [expanded demo](stills/expanded-demo.png), [highlight alignment](stills/highlight-alignment.png), [testing hero](stills/testing-hero.png), [feature introduction](stills/feature-introduction.png), [DeepWiki](stills/deepwiki.png), [Skill activation](stills/skill-activation.png), [keyboard retest](stills/keyboard-retest.png).
 
 ## Chapters
 
-| Start | Chapter | Actual action shown |
-|---|---|---|
-| 0:00.00 | Opening | Unified ivory surface and Devin branding |
-| 0:04.50 | DeepWiki · Orbit | Navigate to Core Architecture and expand its reducer-flow diagram |
-| 0:15.50 | Ask · Orbit | Open code citations in a fresh repository answer |
-| 0:27.50 | Delegate | Type the original Northstar request |
-| 0:36.50 | Testing title | Test like a user |
-| 0:40.00 | Computer Use | Search, filter, switch days, save talks, expose/resolve an overlap and export |
-| 1:30.00 | Computer Use · finding | The actual Tab-escape finding and builder acknowledgement |
-| 1:38.50 | Collaborate | Precise steering and revision-hold instructions |
-| 1:48.30 | Managed Devins | Inspect two completed independent read-only reviews |
-| 1:54.70 | Cloud IDE | Search for and open the live `ScheduleDialog.tsx` source |
-| 2:04.50 | Review | Open the PR and scroll its purpose-grouped diff |
-| 2:16.30 | Recorded tests | Click Play on the retest evidence inside the real Devin session |
-| 2:20.30 | Computer Use · retest | Verify the fix: forward/reverse Tab wrapping and Escape |
-| 2:42.70 | Skills · invocation | Type and send a request to run `northstar-release-check` |
-| 2:50.20 | Skills · result | Show the actual Skill activation and passing release-check result |
-| 3:00.70 | Closing | Build. Test. Review. |
+Each capability is introduced **before** its demonstration. The title contracts into the demo header while the footage expands below it. All editorial copy is at least 90px on the 4K canvas; native product text is authentic footage, enlarged through deliberate crops rather than replaced.
 
-Full-frame browser interaction occupies **72.4 seconds**, plus four seconds of native recording-playback context. Product shots use a 3552×1998 viewport inside the 3840×2160 frame. Copy stays above the demo. Two measured emphasis rectangles use equal padding; the modal zoom runs outside the highlight interval. No presentation gradients or reused product screenshots/recordings.
+| Introduction | Demo | Capability / action |
+|---|---|---|
+| 0:00.00 | — | Devin branding |
+| 0:03.20 | 0:06.40 | DeepWiki — navigate architecture and expand its diagram |
+| 0:16.40 | 0:19.60 | Ask — follow a code citation into its source |
+| 0:28.10 | 0:31.30 | Delegation — type the Northstar request |
+| 0:39.30 | 0:42.50 | Computer Use — search, filter, switch days, expose/resolve an overlap and export |
+| — | 1:22.00 | Computer Use — the genuine keyboard-focus finding |
+| 1:27.50 | 1:30.70 | Collaboration — precise steering and revision-hold instructions |
+| 1:39.20 | 1:42.40 | Managed Devins — completed independent reviewers |
+| 1:46.60 | 1:49.80 | Cloud IDE — find and open the live source file |
+| 1:57.30 | 2:00.50 | Devin Review — inspect the real PR branch |
+| 2:09.00 | 2:12.20 | Recorded tests — play evidence in the actual Devin conversation |
+| 2:16.20 | 2:19.00 | Verify the fix — forward/reverse Tab wrapping and Escape |
+| 2:34.00 | 2:37.20 | Skills — invoke the release-check playbook |
+| — | 2:44.20 | Skills — inspect activation, then the completed result |
+| 2:52.70 | — | Devin branding and devin.ai |
+
+Full-frame browser interaction occupies **54.5 seconds**, plus four seconds of native recording-playback context. Product shots use a **3456×1944** viewport inside the 3840×2160 frame. Large supporting copy stays above the demo. Source-coordinate emphasis follows the same camera transform as the footage, with equal padding on all sides. No progress strips, chapter numbers, tiny metadata, filler slogans, decorative shapes, presentation gradients or audio.
 
 ## Capability coverage
 
@@ -73,8 +74,8 @@ Requires Node, Chrome, FFmpeg/ffprobe and the existing kit's `puppeteer-core` de
 bash tutorials/35-conference-overview/build.sh
 ```
 
-`prepare.mjs` checks source hashes, crop aspect/bounds, timings, integral output frame counts and highlight/camera separation. `render.mjs` renders local Canvas2D graphics, composites footage, concatenates the 4K master and encodes the preview. `verify.mjs` fully decodes both and checks codec, resolution, 60fps, 11,112 frames, duration and no audio.
+`prepare.mjs` checks source hashes, every camera crop, 16:9 geometry, all highlight frames, intro-to-demo ordering and integral output frame counts. `render.mjs` decodes selected source ranges through FFmpeg at 60fps, then renders each frame through the same Canvas2D camera/highlight transform. Decoded-frame caches are keyed by pinned source hash and range. `verify.mjs` fully decodes both exports and checks codec, resolution, 60fps, 10,572 frames, duration and no audio. `node --test tutorials/35-conference-overview/motion.test.mjs` covers camera interpolation, symmetric padding, title docking and easing.
 
-For selective iteration: `render.mjs --only code,hero`, then `render.mjs --assemble` **only after every current segment has been rendered**. `sources.mjs` deliberately repins provenance; the normal build does not run it. Frame logs retain timing evidence; intermediate JPEGs are discarded after source encoding. The edit rebuild uses only committed MP4 sources.
+For a quick design draft: `render.mjs --draft` (1080p30, not a delivery export). For still samples: `render.mjs --draft --samples wiki-intro:1.4,retest:7.8`. For selective iteration: `render.mjs --only code,hero-search`, then `render.mjs --assemble` **only after every current segment has been rendered**. `sources.mjs` deliberately repins provenance; the normal build does not run it. Frame logs retain timing evidence. Original capture JPEGs were discarded after source encoding; decoded edit frames are generated locally under the ignored build directory. The edit rebuild uses only committed MP4 sources.
 
 See [PRODUCTION.md](PRODUCTION.md) for alignment math and production lessons. Shared kit files and tutorial prompt documents are unchanged.

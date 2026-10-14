@@ -14,7 +14,7 @@ const notes={
   '30-recording-replay':{revision:held,action:'Click Play on the independent retest recording inside the real Devin conversation.',note:'Captured during this rebuild, not imported from any prior tutorial. The following full-resolution retest segment shows the same 22.4-second evidence clip. Its beginning is replayed rather than presented as a seamless real-time continuation.'},
   '33-skill-invoke':{revision:held,action:'Type and send a new request to use northstar-release-check without changing code or PR.'},
   '37-skill-run':{revision:held,action:'Expand the completed run to show Activated skill: northstar-release-check, then collapse it to reveal the passing release-check result.',note:'The actual invocation reran lint, typecheck, 48 tests, build and archive checks. It did not run new browser tests; those remain credited to the independent testing agent.'},
-  '10-code-proof':{repository:'thequantexplorer/orbit-demo',revision:null,action:'Open two code citations in a new Ask answer.',note:'Separate introductory example, explicitly named Orbit in the film. The Ask UI did not expose its indexed commit. Exact captured bytes are pinned below.'},
+  '10-code-proof':{repository:'thequantexplorer/orbit-demo',revision:null,action:'Open code citations in a new Ask answer.',note:'Separate introductory Orbit example. The Ask UI did not expose its indexed commit. Exact captured bytes are pinned below.'},
   '01-request':{revision:null,action:'Type and submit the original Northstar brief.',note:'Captured before the implementation existed. The frame log URL is the resulting session URL; the request starts on the new-session composer.'},
   'hero-northstar-852411d':{revision:original,action:'Search, clear, filter, switch days, save overlapping talks, open schedule, remove the conflict, export and use keyboard shortcuts.',note:'Original-revision test demonstration. This is not a claim that the strict dialog Tab-wrap check passed; that genuine failure is reported next.'},
   '28-real-finding':{revision:original,action:'Show the actual Tab-escape feedback and the builder response.',note:'Recaptured historical conversation, including an intermediate source-archive update. The bug report refers to the independently tested original archive, not the intermediate archive.'},
@@ -24,7 +24,7 @@ const notes={
   'retest-northstar-3dbd344':{revision:held,action:'Open by keyboard; Tab to Export; download; wrap forward and backward; Escape restores opener focus.',note:'One continuous real-keyboard take. The source has variable frame timing; the edit resamples it to 60fps without changing playback speed.'},
 };
 let start=0;
-const clips=film.segments.map(s=>{const clip={id:s.id,timelineStart:start,duration:s.duration,...(s.source?{source:s.source,in:s.in,out:s.in+s.duration,speed:1,crop:s.crop,highlight:s.highlight,camera:s.camera,titleBeats:s.beats}:{graphic:s.kind})};start+=s.duration;return clip;});
+const clips=film.segments.map(s=>{const clip={id:s.id,timelineStart:start,duration:s.duration,title:s.title,action:s.action,...(s.source?{source:s.source,in:s.in,out:s.in+s.duration,speed:1,crop:s.crop,highlights:s.highlights,camera:s.camera,titleBeats:s.beats}:{graphic:s.kind,benefit:s.benefit,next:s.next})};start+=s.duration;return clip;});
 const sources=[...new Set(film.segments.map(s=>s.source).filter(Boolean))].map(file=>{
   const id=file.replace(/\.mp4$/,'');
   if(!notes[id])throw Error('Missing provenance: '+id);

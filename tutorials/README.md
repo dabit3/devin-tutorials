@@ -32,7 +32,7 @@ Each folder contains the final MP4, a poster frame, the `capture.mjs` script tha
 
 ## Silent conference overview
 
-**35 · Meet Devin** (`35-conference-overview/`): 185.20 seconds covering ten distinct capabilities through entirely new workflows, including a real request → test → finding → fix → retest cycle. DeepWiki, live Cloud IDE, recorded evidence and explicit Skill activation broaden the story around 72 seconds of full-frame browser testing. Both 4K60 and 1080p60 outputs are silent. See [capability coverage, provenance and rebuild instructions](35-conference-overview/README.md).
+**35 · Meet Devin** (`35-conference-overview/`): 176.20-second silent overview of ten distinct capabilities. Large section introductions contract into the demo header; closer framing and precisely transformed emphasis guide the real actions. The fresh request → testing → genuine finding → fix → retest story remains central, with 54.5 seconds of browser interaction. 4K60 and 1080p60. See [coverage, provenance and rebuild instructions](35-conference-overview/README.md).
 
 ## How it works
 
