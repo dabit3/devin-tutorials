@@ -1,176 +1,47 @@
 window.SPEC = {
   "title": "Devin across the SDLC",
-  "subtitle": "An overview: where Devin fits, from plan to merge",
-  "outro": "Every stage of the lifecycle. You stay in control",
+  "subtitle": "A connected system, from code understanding to production feedback",
+  "outro": "Devin does the work. Your team decides what ships.",
+  "voOutro": "Devin supports the entire software lifecycle, while your team stays in control of the priorities, the process, and what ships.",
+  "outroVoDelay": 0.3,
+  "introHold": 3.4,
+  "pace": 1,
   "speed": 3,
-  "cps": 48,
-  "maxZoom": 1.6,
-  "noZoom": [
-    [
-      "0000.png"
-    ]
-  ],
-  "voOutro": "Devin works across the whole lifecycle, and you stay in control of what ships.",
+  "capMin": 3,
+  "voSentGap": 0.5,
+  "maxZoom": 1.3,
+  "noZoom": [["0010.png", "0210.png"]],
   "edit": {
-    "0010.png": {
-      "scene": "idea",
-      "hold": 4.6,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "Devin plugs into every stage of the lifecycle",
-      "vo": "Devin isn't a single step in your process; it plugs into every stage of the software lifecycle.",
-      "hl": null
-    },
-    "0020.png": {
-      "scene": "plan",
-      "hold": 3.6,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "Plan: Ask Devin, DeepWiki, and your tickets",
-      "vo": "To plan, Ask Devin and DeepWiki explain your codebase, and with Jira or Linear connected, Devin can analyze and scope your tickets.",
-      "hl": null
-    },
-    "0021.png": {
-      "hold": 2.8,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "A plan that cites the exact files",
-      "ring": {
-        "x": 308,
-        "y": 473,
-        "w": 560,
-        "h": 340
-      },
-      "ringFor": 2.5
-    },
-    "0030.png": {
-      "scene": "build",
-      "hold": 3.6,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "Build: hand off the task, get a pull request",
-      "vo": "To build, you hand off the task, and Devin works in its own environment and opens a pull request that follows your team's template.",
-      "hl": null
-    },
-    "0031.png": {
-      "hold": 2.8,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "Devin opened the pull request",
-      "ring": {
-        "x": 712,
-        "y": 200,
-        "w": 900,
-        "h": 70
-      },
-      "ringFor": 2.5
-    },
-    "0040.png": {
-      "scene": "test",
-      "hold": 3.6,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "Test: your checks run before the PR opens",
-      "vo": "Before that pull request opens, Devin runs your tests, lint, and type checks, and it can write new tests from your playbooks.",
-      "hl": null
-    },
-    "0041.png": {
-      "hold": 2.8,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "How it was tested, in the PR description",
-      "ring": {
-        "x": 480,
-        "y": 363,
-        "w": 800,
-        "h": 345
-      },
-      "ringFor": 2.5
-    },
-    "0050.png": {
-      "scene": "review",
-      "hold": 3.6,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "Review: a first pass on every pull request",
-      "vo": "On every pull request, Devin Review makes a first pass, catching bugs and checking the change against your team's standards.",
-      "hl": null
-    },
-    "0051.png": {
-      "hold": 2.8,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "First pass: no vulnerabilities, two bugs",
-      "ring": {
-        "x": 1191,
-        "y": 269,
-        "w": 460,
-        "h": 180
-      },
-      "ringFor": 2.5
-    },
-    "0060.png": {
-      "scene": "secure",
-      "hold": 3.6,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "Secure: fix what your scanners flag",
-      "vo": "To secure, Devin fixes what scanners like SonarQube, Fortify, or Veracode flag in your pipeline, and it can roll out compliance changes across repositories.",
-      "hl": null
-    },
-    "0061.png": {
-      "hold": 2.8,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "A flagged vulnerability, with its fix PR",
-      "ring": {
-        "x": 611,
-        "y": 286,
-        "w": 540,
-        "h": 50
-      },
-      "ringFor": 2.5
-    },
-    "0070.png": {
-      "scene": "loop",
-      "hold": 8.0,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "Feedback flows back as fixes until it's merge-ready",
-      "vo": "The stages feed each other: with Auto-Fix on, Devin answers review comments, fixes flagged bugs, and iterates on CI failures until the pull request is ready to merge.",
-      "hl": null
-    },
-    "0071.png": {
-      "hold": 3.6,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "Comment /devin, and the session pushes a fix",
-      "ring": {
-        "x": 528,
-        "y": 332,
-        "w": 860,
-        "h": 360
-      },
-      "ringFor": 3.3000000000000003,
-      "vo": "You can also comment slash devin with what to change, and Devin pushes the fix."
-    },
-    "0080.png": {
-      "scene": "uses",
-      "hold": 7.6,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "Where the whole lifecycle pays off",
-      "vo": "That's where it pays off: delegating repetitive work across many sessions, migrating hundreds of repositories, raising test coverage, and clearing a backlog of security findings.",
-      "hl": null
-    },
-    "0090.png": {
-      "scene": "process",
-      "hold": 7.0,
-      "cursor": false,
-      "capPos": "bottom",
-      "cap": "Same branch protections. A human decides the merge",
-      "vo": "Through all of it, Devin's pull requests follow the same branch protections as anyone's, and a human reviews them before anything merges.",
-      "hl": null
-    }
+    "0010.png": { "scene": "overview", "hold": 10.67, "cap": "Devin connects every stage of the software lifecycle", "vo": "Devin is more than a coding assistant; it connects code understanding, implementation, testing, review, security, and production feedback into a software development lifecycle your team can direct." },
+    "0020.png": { "scene": "deepwiki", "hold": 10.98, "cap": "DeepWiki: a readable map of your codebase", "vo": "DeepWiki turns connected repositories into documentation, architecture diagrams, and source-linked explanations, giving both you and Devin a clearer understanding of the system before anyone makes a change." },
+    "0021.png": { "hold": 5.21, "cap": "Real architecture documentation, grounded in the source", "capPos": "top", "subPos": "top", "ring": {"x": 720, "y": 365, "w": 825, "h": 93}, "ringFor": 2.8, "vo": "This repository wiki shows generated architecture diagrams alongside links back to the source." },
+    "0030.png": { "scene": "plan", "hold": 9.4, "cap": "Ask Devin and your tickets turn context into a plan", "vo": "Ask Devin uses that codebase context to answer questions and help plan changes, while connected Jira and Linear tickets give Devin another way to analyze and scope the work." },
+    "0031.png": { "hold": 4.42, "cap": "The plan points to the files that need to change", "capPos": "top", "subPos": "top", "ring": {"x": 309, "y": 440, "w": 545, "h": 280}, "ringFor": 2.8, "vo": "The plan here identifies the relevant files, so the handoff starts with a concrete approach." },
+    "0040.png": { "scene": "build", "hold": 12.37, "cap": "A task becomes working code and a pull request", "vo": "Once you delegate a task, Devin works asynchronously in its own environment with code, a shell, and a browser; repository blueprints prepare the tools and dependencies, and the result is a pull request following your conventions." },
+    "0041.png": { "hold": 4.57, "cap": "The work lands in a normal pull request", "capPos": "bottom", "ring": {"x": 707, "y": 200, "w": 900, "h": 70}, "ringFor": 2.8, "vo": "This completed session opened a pull request in the demo repository, ready for review." },
+    "0050.png": { "scene": "fusion", "hold": 12.44, "cap": "Fusion: frontier reasoning with efficient implementation", "vo": "In Devin CLI and Desktop, Fusion pairs a frontier lead model that plans, investigates, and checks correctness with an efficient sidekick that implements the plan and runs builds and tests, while you interact with a single Devin." },
+    "0060.png": { "scene": "adaptive", "hold": 11.4, "cap": "Fusion collaborates; Adaptive routes requests", "vo": "Fusion is model collaboration rather than a single model router; Adaptive is the separate option that evaluates each request and selects an underlying model, balancing the complexity of the task with efficiency." },
+    "0070.png": { "scene": "managed", "hold": 11.77, "cap": "Managed Devins parallelize work under a coordinator", "vo": "For work spanning modules or repositories, a coordinator can delegate to managed Devins in separate virtual machines, monitor progress, resolve conflicts, and combine their results into a coordinated outcome." },
+    "0080.png": { "scene": "test", "hold": 10.95, "cap": "Use the repository’s tests, lint and type checks", "vo": "Testing is part of the implementation loop: Devin can write new tests using your team's patterns, run existing suites, lint, and type checks, fix failures, and report what it actually checked." },
+    "0081.png": { "hold": 4.54, "cap": "The PR explains the checks that were run", "capPos": "bottom", "ring": {"x": 491, "y": 335, "w": 820, "h": 237}, "ringFor": 2.8, "vo": "The pull request records the test commands and the browser checks used to verify this change." },
+    "0090.png": { "scene": "computer", "hold": 10.91, "cap": "Computer Use tests the application as a user would", "vo": "Computer Use adds behavioral testing by letting Devin operate a browser or desktop, interact with the running interface, visually verify the result, and produce recordings or screenshots you can inspect." },
+    "0091.png": { "hold": 4.22, "cap": "UI testing produces visible evidence", "capPos": "top", "subPos": "top", "ring": {"x": 1110, "y": 465, "w": 615, "h": 590}, "ringFor": 2.8, "vo": "Here, the session includes a recording of the application being exercised in the browser." },
+    "0100.png": { "scene": "review", "hold": 10.67, "cap": "Review findings and CI results can flow back as fixes", "vo": "Devin Review provides a first pass for correctness and team standards; when Auto-Fix is enabled, review comments, flagged bugs, and failing checks can flow back into the same pull request as fixes." },
+    "0101.png": { "hold": 4.38, "cap": "Review findings appear next to the diff", "capPos": "bottom", "ring": {"x": 1191, "y": 271, "w": 460, "h": 169}, "ringFor": 2.8, "vo": "This review found two bugs, with each finding available alongside the code under review." },
+    "0110.png": { "scene": "secure", "hold": 13.78, "cap": "Devin addresses findings from your security tools", "vo": "Security fits the same workflow: Devin can address findings from scanners such as SonarQube, Fortify, and Veracode, and implement compliance-related changes across repositories without replacing your existing security policies." },
+    "0111.png": { "hold": 5.15, "cap": "A flagged finding links to its fix pull request", "capPos": "top", "subPos": "top", "ring": {"x": 611, "y": 285, "w": 540, "h": 50}, "ringFor": 2.8, "vo": "This security finding has a linked change, so the proposed fix can be reviewed through a pull request." },
+    "0120.png": { "scene": "ship", "hold": 9.5, "cap": "Your team reviews, merges and ships through its pipeline", "vo": "Devin's pull requests follow the same branch protections as a human engineer's; your team reviews and decides what to merge, and existing applications ship through your own delivery pipeline." },
+    "0130.png": { "scene": "mcp", "hold": 13.16, "cap": "MCP adds authorized tools and data sources to the session", "vo": "MCP, the Model Context Protocol, extends Devin beyond the repository by exposing tools from external systems; install an integration's plugin, authorize its connection, and Devin can use the tools that server makes available." },
+    "0131.png": { "hold": 5.1, "cap": "A plugin can supply an enabled MCP server", "capPos": "bottom", "ring": {"x": 911, "y": 272, "w": 985, "h": 67}, "ringFor": 2.8, "vo": "This installed plugin includes an enabled MCP server, making its tools available to Devin." },
+    "0140.png": { "scene": "services", "hold": 12.6, "cap": "Datadog, Sentry and Metabase connect runtime and data context", "vo": "Datadog and Sentry connections let Devin investigate logs and errors, while Metabase brings analytics context; together, connected observability and data tools can help relate a production symptom to the code and the users it affects." },
+    "0150.png": { "scene": "data", "hold": 12.43, "cap": "The Data Analyst turns connected data into useful evidence", "vo": "For data-focused questions, Devin's Data Analyst can query connected sources, analyze metrics and trends, and create visualizations from Slack or the web app, giving engineering decisions more than code alone to work with." },
+    "0160.png": { "scene": "automation", "hold": 11.16, "cap": "Automations decide when the next Devin session starts", "vo": "Automations supply the timing: a trigger detects an event or schedule, conditions narrow what should run, and an action starts or messages a Devin session with the event payload included as context." },
+    "0161.png": { "hold": 5.36, "cap": "A failing GitHub check starts a session with defined instructions", "capPos": "bottom", "subPos": "bottom", "ring": {"x": 720, "y": 265, "w": 800, "h": 108}, "ringFor": 2.8, "vo": "This automation watches for a failing GitHub check and starts a session with instructions to fix that branch." },
+    "0170.png": { "scene": "triggers", "hold": 11.99, "cap": "Events, recurring schedules and webhooks keep the loop moving", "vo": "That can mean fixing a CI failure, sweeping Sentry errors every day, updating dependencies each week, or investigating a Datadog alert through a webhook, using connected MCP tools inside the resulting session." },
+    "0171.png": { "hold": 4.71, "cap": "The automation’s event history links to the work it started", "capPos": "top", "subPos": "top", "ring": {"x": 775, "y": 718, "w": 1295, "h": 107}, "ringFor": 2.8, "vo": "The event history here shows completed automation runs and links to the sessions they started." },
+    "0180.png": { "scene": "incident", "hold": 13.16, "cap": "Example: an alert becomes an investigated, tested, reviewed fix", "vo": "In a production-feedback workflow, an alert can start an investigation, MCP tools supply runtime evidence, Devin uses codebase context to investigate and test a fix, and your team reviews the pull request before releasing through its pipeline." },
+    "0190.png": { "scene": "practices", "hold": 13.9, "cap": "Skills and playbooks teach repeatable procedures", "vo": "Skills and playbooks make your team's procedures reusable, while personal memory carries preferences and project lessons into your future sessions; automation-started sessions do not use that personal memory, so shared workflows belong in reusable instructions." },
+    "0200.png": { "scene": "uses", "hold": 13.01, "cap": "Features, migrations, test coverage and security backlogs", "vo": "The highest-value work often connects several stages: shipping a feature, coordinating a migration, raising test coverage, or reducing a security backlog, with context, verification, and review built into the outcome." },
+    "0210.png": { "scene": "system", "hold": 13.31, "cap": "One system: understand, execute, connect and govern", "vo": "The pieces fit together: DeepWiki and Ask Devin explain the system, sessions execute the work, MCPs bring outside context, automations keep the loop moving, and your engineering process determines what ships." }
   }
 };

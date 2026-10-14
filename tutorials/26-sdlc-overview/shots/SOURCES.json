@@ -1,8 +1,173 @@
 {
- "0021.png": "20-sdlc-integration/shots/0024.png",
- "0031.png": "20-sdlc-integration/shots/0052.png",
- "0041.png": "20-sdlc-integration/shots/0106.png",
- "0051.png": "20-sdlc-integration/shots/0058.png",
- "0061.png": "17-security-swarm/shots/0170.png",
- "0071.png": "20-sdlc-integration/shots/0110.png"
+  "0021.png": {
+    "source": "06-deepwiki/shots/0016.png",
+    "kind": "real-ui"
+  },
+  "0031.png": {
+    "source": "20-sdlc-integration/shots/0024.png",
+    "kind": "real-ui"
+  },
+  "0041.png": {
+    "source": "20-sdlc-integration/shots/0052.png",
+    "kind": "real-ui"
+  },
+  "0081.png": {
+    "source": "20-sdlc-integration/shots/0106.png",
+    "kind": "real-ui"
+  },
+  "0091.png": {
+    "source": "08-computer-use-testing/shots/0149.png",
+    "kind": "real-ui",
+    "account_mask_pixels": [
+      75,
+      2328,
+      700,
+      2392
+    ]
+  },
+  "0101.png": {
+    "source": "20-sdlc-integration/shots/0058.png",
+    "kind": "real-ui"
+  },
+  "0111.png": {
+    "source": "17-security-swarm/shots/0170.png",
+    "kind": "real-ui",
+    "account_mask_pixels": [
+      75,
+      2328,
+      700,
+      2392
+    ]
+  },
+  "0131.png": {
+    "source": "05-mcp-marketplace/shots/0046.png",
+    "kind": "real-ui",
+    "crop_pixels": [
+      1050,
+      0,
+      4320,
+      1839
+    ],
+    "note": "Focus on the installed plugin, removing unrelated sidebar and account identity."
+  },
+  "0161.png": {
+    "source": "16-automation-triggers/shots/0037.png",
+    "kind": "real-ui",
+    "crop_pixels": [
+      1680,
+      0,
+      4320,
+      2429
+    ],
+    "note": "The unscaled editor crop is centered on a 4320x2430 light canvas, with 840px left padding, removing unrelated sidebar content while preserving the trigger, action, and filled instructions."
+  },
+  "0171.png": {
+    "source": "16-automation-triggers/shots/0061.png",
+    "kind": "real-ui"
+  },
+  "0010.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "overview"
+  },
+  "0020.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "deepwiki"
+  },
+  "0030.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "plan"
+  },
+  "0040.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "build"
+  },
+  "0050.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "fusion"
+  },
+  "0060.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "adaptive"
+  },
+  "0070.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "managed"
+  },
+  "0080.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "test"
+  },
+  "0090.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "computer"
+  },
+  "0100.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "review"
+  },
+  "0110.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "secure"
+  },
+  "0120.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "ship"
+  },
+  "0130.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "mcp"
+  },
+  "0140.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "services"
+  },
+  "0150.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "data"
+  },
+  "0160.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "automation"
+  },
+  "0170.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "triggers"
+  },
+  "0180.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "incident"
+  },
+  "0190.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "practices"
+  },
+  "0200.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "uses"
+  },
+  "0210.png": {
+    "kind": "animated-diagram",
+    "source": "26-sdlc-overview/scenes.js",
+    "scene": "system"
+  }
 }
