@@ -8,6 +8,7 @@
 import fs from 'fs';
 import { Rec, sleep } from '../_kit/capture/rec.mjs';
 import { clearComposer, closeMenus, editorBox } from '../_kit/capture/composer.mjs';
+import { Z } from '../_kit/capture/cdp.mjs';
 
 const ORG = process.env.DEVIN_ORG_URL || 'https://app.devin.ai/org/thequantexplorer';
 const REPO = process.env.REPO || 'thequantexplorer/orbit-ci-demo';
@@ -27,6 +28,7 @@ const settle = async (n = 30) => { for (let i = 0; i < n && !(await r.clean()); 
 const park = async (x, y) => { await p.mouse.move(x, y); r.cur = { x, y }; };
 // element box (center + size, CSS px) for ring annotations; fn runs in the page and returns the element
 const box = (fn, arg) => p.evaluate(new Function('arg', `const e = (${fn})(arg); if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2, w: b.width, h: b.height };`), arg);
+const markTarget = (label, b) => r.mark(label, { target: b && { x: b.x * Z, y: b.y * Z, w: b.w * Z, h: b.h * Z } });
 const leaf = (sel, re) => box(`a => { const m = [...document.querySelectorAll(${JSON.stringify(sel)})].filter(e => new RegExp(a).test((e.innerText || '').trim()) && e.getBoundingClientRect().width > 0); return m.find(e => !m.some(o => o !== e && e.contains(o))); }`, re);
 const scrollTo = async (sel, re, off = 170) => { await p.evaluate(([s, a, o]) => { const e = [...document.querySelectorAll(s)].find(x => new RegExp(a).test((x.innerText || '').trim()) && x.getBoundingClientRect().width > 0); if (!e) return; let sc = e.parentElement; while (sc && !(sc.scrollHeight > sc.clientHeight + 4 && /auto|scroll/.test(getComputedStyle(sc).overflowY))) sc = sc.parentElement; const d = e.getBoundingClientRect().top - o; if (sc) sc.scrollTop += d; else window.scrollBy(0, d); }, [sel, re, off]); await sleep(900); };
 
@@ -100,7 +102,7 @@ if (PHASE === 'intro') {
   await r.paste(ASK, { hold: 2.8 });
   const txt = await p.evaluate(() => document.querySelector('main [contenteditable=true]').innerText);
   if (!txt.includes('CI check fails')) fail('composer: ' + txt);
-  r.mark('nl', { target: await box(`() => document.querySelector('main [contenteditable=true]').closest('[class*=rounded]')`) });
+  markTarget('nl', await box(`() => document.querySelector('main [contenteditable=true]').closest('[class*=rounded]')`));
   await clearComposer(p);
 }
 
@@ -141,7 +143,7 @@ if (PHASE === 'form') {
   r.mark('action');
   await r.click('[role=textbox][contenteditable=true]', { wait: 400 });
   await r.paste(INSTRUCTIONS, { hold: 2.6 });
-  r.mark('instructions', { target: await box(`() => document.querySelector('[role=textbox][contenteditable=true]')`) });
+  markTarget('instructions', await box(`() => document.querySelector('[role=textbox][contenteditable=true]')`));
 
   await scrollTo('*', '^Limits$', 200);
   const spend = await r.box({ attr: ['placeholder', 'No limit'], sel: 'input' });

@@ -12,12 +12,12 @@ window.SPEC = {
     "0001.png": { "hold": 2.6, "capPos": "bottom", "cap": "Automations start Devin sessions for you", "vo": "Automations let Devin start work without anyone prompting it. You define a trigger once, and Devin handles each event as it arrives." },
     "0004.png": { "cap": "Templates show what they can do", "waitVo": true },
     "0006.png": { "hold": 1.0, "cap": null, "vo": "An automation can run on an event, like a message in a Slack channel or a failing GitHub check, or on a schedule." },
-    "0007.png": { "ring": true, "ringFor": 1.8, "cap": "A Slack message", "voSync": 2.6 },
-    "0008.png": { "ring": true, "ringFor": 1.8, "cap": "A GitHub event", "voSync": 4.4 },
-    "0009.png": { "ring": true, "ringFor": 1.8, "cap": "Or a schedule", "voSync": 5.6 },
-    "0010.png": { "ring": true, "ringFor": 1.6, "cap": "Datadog for logs and metrics", "voGap": 0.8, "vo": "The sessions it starts can use your MCP integrations, like Datadog, Sentry, and Notion, to pull in logs, errors, and docs." },
-    "0011.png": { "ring": true, "ringFor": 1.6, "cap": "Sentry for errors", "voSync": 2.6 },
-    "0012.png": { "ring": true, "ringFor": 1.8, "cap": "Notion, or any MCP you connect", "voSync": 3.6 },
+    "0007.png": { "ring": true, "ringFor": 1.8, "ringDelay": 0.7, "travel": 0.6, "dwell": 1.9, "capDelay": 0.7, "cap": "A Slack message", "voSync": 2.6 },
+    "0008.png": { "ring": true, "ringFor": 1.8, "ringDelay": 0.7, "travel": 0.6, "dwell": 1.9, "capDelay": 0.7, "cap": "A GitHub event", "voSync": 4.4 },
+    "0009.png": { "ring": true, "ringFor": 1.8, "ringDelay": 0.7, "travel": 0.6, "dwell": 1.9, "capDelay": 0.7, "cap": "Or a schedule", "voSync": 5.6 },
+    "0010.png": { "ring": true, "ringFor": 1.6, "ringDelay": 0.7, "travel": 0.6, "dwell": 1.75, "capDelay": 0.7, "cap": "Datadog for logs and metrics", "voGap": 0.8, "vo": "The sessions it starts can use your MCP integrations, like Datadog, Sentry, and Notion, to pull in logs, errors, and docs." },
+    "0011.png": { "ring": true, "ringFor": 1.6, "ringDelay": 0.7, "travel": 0.6, "dwell": 1.75, "capDelay": 0.7, "cap": "Sentry for errors", "voSync": 2.6 },
+    "0012.png": { "ring": true, "ringFor": 1.8, "ringDelay": 0.7, "travel": 0.6, "dwell": 1.9, "capDelay": 0.7, "cap": "Notion, or any MCP you connect", "voSync": 3.6 },
     "0013.png": { "cap": null, "waitVo": true },
     "0015.png": { "cap": "Or generate one with Devin", "vo": "You can also describe an automation in plain English, and Devin builds it with you." },
     "0018.png": { "ring": true, "ringFor": 2.4, "cap": "Describe it, and Devin drafts it", "hold": 1.6 },
@@ -33,7 +33,7 @@ window.SPEC = {
     "0047.png": { "skip": true },
     "0049.png": { "skip": true },
     "0051.png": { "ring": true, "ringFor": 2.2, "cap": "Only when the check fails", "hold": 0.9, "vo": "Each failure starts a new Devin session, with the event's details added to its prompt." },
-    "0052.png": { "ring": true, "ringFor": 2.4, "cap": "Each failure starts a new session" },
+    "0052.png": { "ring": true, "ringFor": 1.8, "ringDelay": 0.7, "travel": 0.6, "dwell": 1.9, "capDelay": 0.7, "cap": "Each failure starts a new session" },
     "0053.png": { "cap": "What Devin should do", "vo": "The instructions tell Devin to read the logs, fix the root cause, and push to the same branch." },
     "0055.png": { "ring": true, "ringFor": 2.4, "hold": 2.6 },
     "0056.png": { "cap": "Spend and rate limits", "vo": "Limits cap what each session can spend, and how often the automation can run." },
@@ -49,3 +49,14 @@ window.SPEC = {
     "0101.png": { "ring": true, "ringFor": 2.6, "capPos": "bottom", "cap": "A second commit, and the check is green", "hold": 3.2, "vo": "Back on the pull request, Devin's commit is on the branch, and the check is green." }
   }
 };
+
+if (new URLSearchParams(location.search).get('voice')) {
+  const E = window.SPEC.edit;
+  for (const img of ['0007.png', '0008.png', '0009.png']) {
+    Object.assign(E[img], { travel: 0.35, ringDelay: 0.45, ringFor: 0.65, dwell: 0.875 });
+  }
+  Object.assign(E['0010.png'], { travel: 0.35, ringDelay: 2.9, ringFor: 0.55, dwell: 2.8 });
+  Object.assign(E['0011.png'], { travel: 0.25, ringDelay: 0.35, ringFor: 0.55, dwell: 0.7 });
+  Object.assign(E['0012.png'], { travel: 0.4, ringDelay: 0.5, ringFor: 1.3, dwell: 1.8 });
+  Object.assign(E['0052.png'], { travel: 0.35, ringDelay: 0.45, ringFor: 1.15, dwell: 1.25 });
+}
