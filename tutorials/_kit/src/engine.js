@@ -54,8 +54,9 @@ function build() {
     const L = VO[key]; if (!L) return t0;
     voLast = L.text; voStart = t0; voPrev = L;
     tl.vo.push({ t: t0, file: key });
-    for (const c of L.chunks) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos: 'bottom' });
-    tl.caps.push({ t: t0 + sec(L.dur + 0.3), text: '', pos: 'bottom' });
+    const pos = (edits[key] || {}).subPos || S.subPos || 'bottom';
+    for (const c of L.chunks) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos });
+    tl.caps.push({ t: t0 + sec(L.dur + 0.3), text: '', pos });
     return t0 + sec(L.dur);
   };
   const zMax = S.maxZoom ?? 1.3;
@@ -149,7 +150,7 @@ function build() {
   for (const h of tl.hls) { let j = h.i + 1; while (j < beats.length && beats[j].hl === 'keep') j++; h.t1 = j < beats.length ? bt[j] : t; }
   tl.steps[tl.steps.length - 1].t1 = t;
   tl.introEnd = INTRO; tl.enter = ENTER; tl.uiEnd = t; tl.outro = sec(3.6);
-  if (VO && VO.outro) { const t0 = t + sec(1.0); tl.vo.push({ t: t0, file: 'outro' }); tl.outro = Math.max(tl.outro, sec(1.0 + VO.outro.dur + 1.4)); }
+  if (VO && VO.outro) { const od = S.outroVoDelay ?? 1.0, t0 = t + sec(od); tl.vo.push({ t: t0, file: 'outro' }); tl.outro = Math.max(tl.outro, sec(od + VO.outro.dur + 1.4)); } // outroVoDelay: seconds from the end of the UI to the outro line
   tl.frames = t + tl.outro;
   tl.rings.sort((a, b) => a.t - b.t);
   // clamp first step start to 0 so the window shows the first shot while entering
@@ -358,6 +359,7 @@ async function placeCaptions() {
     const { w, h } = capSize(c.text), t1 = (caps[i + 1] || { t: TL.uiEnd }).t;
     const bottom = { x: W / 2 - w / 2, y: H - 110 - h, dir: 0 }, top = { x: W / 2 - w / 2, y: 110, dir: 0 };
     if (c.pos === 'bottom' || c.pos === 'top') { c.box = c.pos === 'top' ? top : bottom; continue; }
+    if (c.pos && typeof c.pos === 'object') { c.box = { x: clamp(c.pos.x * W - w / 2, 24, W - 24 - w), y: clamp(c.pos.y * H - h / 2, 24, H - 24 - h), dir: 0 }; continue; } // {x, y}: caption center as a fraction of the frame
     const steps = TL.imgSteps.filter(s => s.t1 > c.t && s.t0 < t1), pick = [];
     const n = Math.min(14, steps.length);
     for (let k = 0; k < n; k++) pick.push(steps[Math.floor(k * (steps.length - 1) / Math.max(1, n - 1))].img);
