@@ -1,6 +1,6 @@
 # Tutorial 22: The review loop closes itself (voice script)
 
-Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`). One continuous ElevenLabs request for the entire script, with no seed and no voice-setting overrides. Clips are cut locally at whole-sentence boundaries. Subtitles never combine separate sentences.
+Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`). One continuous ElevenLabs request for the entire script, with no seed and no voice-setting overrides. Clips are cut locally at whole-sentence boundaries. Subtitles never combine separate sentences. In beat 0123 the take is sent "The session red the findings" (voSay), so it is spoken as past-tense "read" while the subtitle still shows "read".
 
 | Beat | Caption | Narration |
 |---|---|---|
