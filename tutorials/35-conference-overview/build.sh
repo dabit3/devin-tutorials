@@ -3,10 +3,9 @@ set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 node "$HERE/prepare.mjs"
 node "$HERE/render.mjs"
-ffmpeg -v error -y -framerate 60 -i "$HERE/build/frames/%05d.jpg" \
-  -an -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p -movflags +faststart \
-  "$HERE/35-conference-overview.mp4"
-ffmpeg -v error -y -i "$HERE/35-conference-overview.mp4" \
-  -an -vf scale=1920:1080 -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -movflags +faststart \
-  "$HERE/35-conference-overview-1080p.mp4"
+node "$HERE/verify.mjs"
 ffmpeg -v error -y -ss 1.8 -i "$HERE/35-conference-overview.mp4" -frames:v 1 "$HERE/poster.png"
+mkdir -p "$HERE/stills"
+ffmpeg -v error -y -ss 31.6 -i "$HERE/35-conference-overview.mp4" -frames:v 1 "$HERE/stills/expanded-demo.png"
+ffmpeg -v error -y -ss 12.5 -i "$HERE/35-conference-overview.mp4" -frames:v 1 "$HERE/stills/highlight-alignment.png"
+ffmpeg -v error -y -ss 67 -i "$HERE/35-conference-overview.mp4" -frames:v 1 "$HERE/stills/testing-hero.png"

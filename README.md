@@ -79,7 +79,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 
 ## Silent conference video
 
-**35. Meet Devin — product overview** (1:42): A silent reel of 12 capabilities, including prompt → build → test → review, Slack, automations, skills, integrations, managed Devins, Dynamic Workflows and multiplatform development. Real browser action, animated highlights, gentle zooms and longer reading holds; flat white and light-gray backgrounds with blue accents, no gradients. Both files contain video only, with no audio track. [4K master](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/35-conference-overview/35-conference-overview.mp4) · [1080p preview](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/35-conference-overview/35-conference-overview-1080p.mp4) · [Sources and rebuild instructions](tutorials/35-conference-overview/README.md)
+**35. Meet Devin — product overview** (2:52): An entirely rebuilt silent reel with new real workflows: code intelligence, delegation, browser testing, a genuine finding and fix, steering, managed review, code changes, PR review, exact-revision retesting and reusable release evidence. The expanded demo viewport and 80 seconds of browser interaction replace the old screenshot montage. Unified ivory, precise blue emphasis, no presentation gradients or audio. [4K master](tutorials/35-conference-overview/35-conference-overview.mp4) · [1080p preview](tutorials/35-conference-overview/35-conference-overview-1080p.mp4) · [Sources and rebuild instructions](tutorials/35-conference-overview/README.md)
 
 ## Making a new tutorial
 
