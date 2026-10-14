@@ -51,6 +51,14 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 34. **Devin Primitives: when to use what** (overview, 1:17): A short diagram-led overview for teams setting Devin up. A map of the primitives (always-on context: AGENTS.md, rules and Memory; reusable procedures: Skills and Playbooks; reach and sharing: MCP servers and Plugins), then for each one when to use it, where it lives in the product (real Customize → Rules, Memory, Skills, MCPs and Plugins tabs, and Settings → Playbooks) and how to build one (a short AGENTS.md and a minimal SKILL.md on screen), ending on a "which one should I use?" diagram. A one-page [cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md) covers the same table. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview.mp4)
 
+<!-- -->
+
+48. **A Devin that improves itself every week** (narrated by Nader, 1:57): A step-by-step run in real Devin. Open Session insights on a finished orbit-demo session, see its on-demand usage and size, and generate the analysis: a high-impact knowledge gap and actionable feedback. Then create an automation manually with a Schedule trigger set to every week, give it instructions to review last week's three most expensive sessions and open one pull request that adds or updates a skill, and click Run now. The run's session opens a real PR adding `.agents/skills/orbit-board-ui/SKILL.md`, its description lists what slowed those sessions down and what each cost, notes that Session insights wasn't available to the scheduled run (it read each session's timeline instead), and lists workflow prompt and blueprint changes as recommendations for review. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/48-self-improving-devin/48-self-improving-devin-nader.mp4)
+
+<!-- -->
+
+49. **A Devin that improves itself every week: overview** (overview, narrated by Nader, 1:16): A short diagram-led overview of the pattern and why it matters. An animated weekly loop (schedule, find costly sessions, find what went wrong, pull request, better sessions), why the costliest sessions hold the lessons, where fixes land (skills changed in the PR, playbook and blueprint ideas suggested in its description) and how you stay in control, with real proof shots from tutorial 48. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/49-self-improving-devin-overview/49-self-improving-devin-overview-nader.mp4)
+
 ## Narrated tutorials
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
