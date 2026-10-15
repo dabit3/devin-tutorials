@@ -1,0 +1,68 @@
+{
+ "note": "All UI proof is genuine footage reused from the tutorial 64 capture of the real run (thequantexplorer org, dark theme via prefers-color-scheme emulation in the capture Chrome). No Modal web dashboard shot: the capture browser has no Modal login, so the deploy proof is the real `modal deploy` step in the Devin session.",
+ "shots": {
+  "0000.png": {
+   "scene": "intro",
+   "source": "diagram placeholder (blank #0B0B0C), drawn by scenes.js"
+  },
+  "0001.png": {
+   "scene": "pipeline",
+   "source": "diagram placeholder (blank #0B0B0C), drawn by scenes.js"
+  },
+  "0001b.png": {
+   "scene": "modal",
+   "source": "diagram placeholder (blank #0B0B0C), drawn by scenes.js"
+  },
+  "0002.png": {
+   "scene": "rules",
+   "source": "diagram placeholder (blank #0B0B0C), drawn by scenes.js"
+  },
+  "0003.png": {
+   "source": "reused",
+   "from": "tutorials/64-hype-vs-reality/shots/0088.png",
+   "proves": "The prompt Devin was given (typed in the thequantexplorer org home composer, ZOOM 1.25 re-take of the same prompt text; the sent take is the 1.1 frame before session 0090)",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/c8075a40bc5444cfa92fb5004964efe2",
+   "zoom": 1.25
+  },
+  "0004.png": {
+   "source": "reused",
+   "from": "tutorials/64-hype-vs-reality/shots/0133.png",
+   "proves": "Devin runs `.venv/bin/modal deploy app.py` in the real session",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/c8075a40bc5444cfa92fb5004964efe2",
+   "zoom": 1.1
+  },
+  "0005.png": {
+   "source": "reused",
+   "from": "tutorials/64-hype-vs-reality/shots/0321.png",
+   "proves": "Devin Review page for PR #74: five review findings, all resolved",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/c8075a40bc5444cfa92fb5004964efe2",
+   "zoom": 1.25,
+   "url": "https://app.devin.ai/review/thequantexplorer/product-demo-apps/pull/74"
+  },
+  "0006.png": {
+   "source": "reused",
+   "from": "tutorials/64-hype-vs-reality/shots/0330.png",
+   "proves": "Deployed app stats row: 6 tracked, 1 right, 0 wrong, 5 pending (counts of posts found)",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/c8075a40bc5444cfa92fb5004964efe2",
+   "zoom": 1.25,
+   "url": "https://dabit3--hype-vs-reality.us-east.modal.run"
+  },
+  "0007.png": {
+   "source": "reused",
+   "from": "tutorials/64-hype-vs-reality/shots/0332.png",
+   "proves": "A pending prediction with its check date (2028-12-31)",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/c8075a40bc5444cfa92fb5004964efe2",
+   "zoom": 1.25,
+   "url": "https://dabit3--hype-vs-reality.us-east.modal.run"
+  },
+  "0008.png": {
+   "scene": "extend",
+   "source": "diagram placeholder (blank #0B0B0C), drawn by scenes.js"
+  }
+ }
+}

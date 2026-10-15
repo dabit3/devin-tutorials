@@ -1,0 +1,974 @@
+{
+ "0000.png": {
+  "text": "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due.",
+  "dur": 8.845,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due.",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due."
+   ],
+   [
+    "0001.png",
+    "Here's where Modal fits. Grok searches X through the xAI API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+    "Here's where Modal fits. Grok searches X through the ex A I API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open."
+   ],
+   [
+    "0001b.png",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work."
+   ],
+   [
+    "0002.png",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up.",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up."
+   ],
+   [
+    "0003.png",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo.",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo."
+   ],
+   [
+    "0004.png",
+    "It planned the Modal pieces, and shipped the app with modal deploy.",
+    "It planned the Modal pieces, and shipped the app with modal deploy."
+   ],
+   [
+    "0005.png",
+    "It opened a pull request, and fixed the five issues Devin Review flagged.",
+    "It opened a pull request, and fixed the five issues Devin Review flagged."
+   ],
+   [
+    "0006.png",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending.",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending."
+   ],
+   [
+    "0007.png",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost.",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost."
+   ],
+   [
+    "0008.png",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard.",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard."
+   ],
+   [
+    "outro",
+    "Bold predictions, checked later, with a source for every verdict.",
+    "Bold predictions, checked later, with a source for every verdict."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.159,
+    "text": "Tech predictions on X are easy to post"
+   },
+   {
+    "t0": 2.218,
+    "t1": 3.448,
+    "text": "and rarely checked later."
+   },
+   {
+    "t0": 3.831,
+    "t1": 5.689,
+    "text": "This app keeps the exact quote and a"
+   },
+   {
+    "t0": 5.747,
+    "t1": 6.792,
+    "text": "link to each post,"
+   },
+   {
+    "t0": 7.001,
+    "t1": 8.845,
+    "text": "then checks back when each one comes due."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "Here's where Modal fits. Grok searches X through the xAI API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+  "say": "Here's where Modal fits. Grok searches X through the ex A I API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+  "dur": 11.51,
+  "takeAt": 9.18,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due.",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due."
+   ],
+   [
+    "0001.png",
+    "Here's where Modal fits. Grok searches X through the xAI API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+    "Here's where Modal fits. Grok searches X through the ex A I API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open."
+   ],
+   [
+    "0001b.png",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work."
+   ],
+   [
+    "0002.png",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up.",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up."
+   ],
+   [
+    "0003.png",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo.",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo."
+   ],
+   [
+    "0004.png",
+    "It planned the Modal pieces, and shipped the app with modal deploy.",
+    "It planned the Modal pieces, and shipped the app with modal deploy."
+   ],
+   [
+    "0005.png",
+    "It opened a pull request, and fixed the five issues Devin Review flagged.",
+    "It opened a pull request, and fixed the five issues Devin Review flagged."
+   ],
+   [
+    "0006.png",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending.",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending."
+   ],
+   [
+    "0007.png",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost.",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost."
+   ],
+   [
+    "0008.png",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard.",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard."
+   ],
+   [
+    "outro",
+    "Bold predictions, checked later, with a source for every verdict.",
+    "Bold predictions, checked later, with a source for every verdict."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.466,
+    "text": "Here's where Modal fits."
+   },
+   {
+    "t0": 1.908,
+    "t1": 4.926,
+    "text": "Grok searches X through the xAI API."
+   },
+   {
+    "t0": 5.309,
+    "t1": 7.562,
+    "text": "It looks at posts from a few public accounts."
+   },
+   {
+    "t0": 7.771,
+    "t1": 9.547,
+    "text": "Everything after that runs on Modal,"
+   },
+   {
+    "t0": 9.756,
+    "t1": 11.51,
+    "text": "right up to the page anyone can open."
+   }
+  ]
+ },
+ "0001b.png": {
+  "text": "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+  "say": "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+  "dur": 31.595,
+  "takeAt": 21.005,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due.",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due."
+   ],
+   [
+    "0001.png",
+    "Here's where Modal fits. Grok searches X through the xAI API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+    "Here's where Modal fits. Grok searches X through the ex A I API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open."
+   ],
+   [
+    "0001b.png",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work."
+   ],
+   [
+    "0002.png",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up.",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up."
+   ],
+   [
+    "0003.png",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo.",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo."
+   ],
+   [
+    "0004.png",
+    "It planned the Modal pieces, and shipped the app with modal deploy.",
+    "It planned the Modal pieces, and shipped the app with modal deploy."
+   ],
+   [
+    "0005.png",
+    "It opened a pull request, and fixed the five issues Devin Review flagged.",
+    "It opened a pull request, and fixed the five issues Devin Review flagged."
+   ],
+   [
+    "0006.png",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending.",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending."
+   ],
+   [
+    "0007.png",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost.",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost."
+   ],
+   [
+    "0008.png",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard.",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard."
+   ],
+   [
+    "outro",
+    "Bold predictions, checked later, with a source for every verdict.",
+    "Bold predictions, checked later, with a source for every verdict."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.067,
+    "t1": 1.008,
+    "text": "Why use Modal?"
+   },
+   {
+    "t0": 1.391,
+    "t1": 2.842,
+    "text": "The job comes in bursts:"
+   },
+   {
+    "t0": 3.016,
+    "t1": 4.479,
+    "text": "one big parallel search,"
+   },
+   {
+    "t0": 4.653,
+    "t1": 6.313,
+    "text": "then nothing until the next check."
+   },
+   {
+    "t0": 6.754,
+    "t1": 9.273,
+    "text": "A laptop script stops when the lid closes,"
+   },
+   {
+    "t0": 9.389,
+    "t1": 11.63,
+    "text": "and a server of your own sits idle all day."
+   },
+   {
+    "t0": 11.955,
+    "t1": 14.138,
+    "text": "On Modal, a schedule runs the re-checks with"
+   },
+   {
+    "t0": 14.208,
+    "t1": 15.345,
+    "text": "no server to maintain."
+   },
+   {
+    "t0": 15.856,
+    "t1": 19.479,
+    "text": "Map spreads the xAI calls across many containers at once."
+   },
+   {
+    "t0": 19.862,
+    "t1": 21.51,
+    "text": "A Dict stores the results,"
+   },
+   {
+    "t0": 21.58,
+    "t1": 23.635,
+    "text": "and a web endpoint serves the page at"
+   },
+   {
+    "t0": 23.681,
+    "t1": 24.645,
+    "text": "a public URL."
+   },
+   {
+    "t0": 25.156,
+    "t1": 27.432,
+    "text": "The xAI key lives in a Modal Secret."
+   },
+   {
+    "t0": 27.675,
+    "t1": 28.685,
+    "text": "When nothing is running,"
+   },
+   {
+    "t0": 28.72,
+    "t1": 30.021,
+    "text": "the app scales to zero,"
+   },
+   {
+    "t0": 30.23,
+    "t1": 31.595,
+    "text": "so you pay per second of work."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up.",
+  "dur": 9.783,
+  "takeAt": 52.937,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due.",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due."
+   ],
+   [
+    "0001.png",
+    "Here's where Modal fits. Grok searches X through the xAI API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+    "Here's where Modal fits. Grok searches X through the ex A I API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open."
+   ],
+   [
+    "0001b.png",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work."
+   ],
+   [
+    "0002.png",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up.",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up."
+   ],
+   [
+    "0003.png",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo.",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo."
+   ],
+   [
+    "0004.png",
+    "It planned the Modal pieces, and shipped the app with modal deploy.",
+    "It planned the Modal pieces, and shipped the app with modal deploy."
+   ],
+   [
+    "0005.png",
+    "It opened a pull request, and fixed the five issues Devin Review flagged.",
+    "It opened a pull request, and fixed the five issues Devin Review flagged."
+   ],
+   [
+    "0006.png",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending.",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending."
+   ],
+   [
+    "0007.png",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost.",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost."
+   ],
+   [
+    "0008.png",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard.",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard."
+   ],
+   [
+    "outro",
+    "Bold predictions, checked later, with a source for every verdict.",
+    "Bold predictions, checked later, with a source for every verdict."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.154,
+    "text": "To stay factual,"
+   },
+   {
+    "t0": 1.177,
+    "t1": 3.568,
+    "text": "every quote is checked against the original post."
+   },
+   {
+    "t0": 3.812,
+    "t1": 6.413,
+    "text": "Each prediction stays pending until its check date,"
+   },
+   {
+    "t0": 6.587,
+    "t1": 8.363,
+    "text": "and it's only marked right or wrong when"
+   },
+   {
+    "t0": 8.398,
+    "t1": 9.783,
+    "text": "a cited source backs it up."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "Devin built the whole thing from one plain-language prompt in the product demo apps repo.",
+  "dur": 4.499,
+  "takeAt": 63.061,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due.",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due."
+   ],
+   [
+    "0001.png",
+    "Here's where Modal fits. Grok searches X through the xAI API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+    "Here's where Modal fits. Grok searches X through the ex A I API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open."
+   ],
+   [
+    "0001b.png",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work."
+   ],
+   [
+    "0002.png",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up.",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up."
+   ],
+   [
+    "0003.png",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo.",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo."
+   ],
+   [
+    "0004.png",
+    "It planned the Modal pieces, and shipped the app with modal deploy.",
+    "It planned the Modal pieces, and shipped the app with modal deploy."
+   ],
+   [
+    "0005.png",
+    "It opened a pull request, and fixed the five issues Devin Review flagged.",
+    "It opened a pull request, and fixed the five issues Devin Review flagged."
+   ],
+   [
+    "0006.png",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending.",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending."
+   ],
+   [
+    "0007.png",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost.",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost."
+   ],
+   [
+    "0008.png",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard.",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard."
+   ],
+   [
+    "outro",
+    "Bold predictions, checked later, with a source for every verdict.",
+    "Bold predictions, checked later, with a source for every verdict."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.512,
+    "text": "Devin built the whole thing from one plain-language"
+   },
+   {
+    "t0": 2.558,
+    "t1": 4.499,
+    "text": "prompt in the product demo apps repo."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "It planned the Modal pieces, and shipped the app with modal deploy.",
+  "dur": 3.357,
+  "takeAt": 67.693,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due.",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due."
+   ],
+   [
+    "0001.png",
+    "Here's where Modal fits. Grok searches X through the xAI API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+    "Here's where Modal fits. Grok searches X through the ex A I API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open."
+   ],
+   [
+    "0001b.png",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work."
+   ],
+   [
+    "0002.png",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up.",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up."
+   ],
+   [
+    "0003.png",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo.",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo."
+   ],
+   [
+    "0004.png",
+    "It planned the Modal pieces, and shipped the app with modal deploy.",
+    "It planned the Modal pieces, and shipped the app with modal deploy."
+   ],
+   [
+    "0005.png",
+    "It opened a pull request, and fixed the five issues Devin Review flagged.",
+    "It opened a pull request, and fixed the five issues Devin Review flagged."
+   ],
+   [
+    "0006.png",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending.",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending."
+   ],
+   [
+    "0007.png",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost.",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost."
+   ],
+   [
+    "0008.png",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard.",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard."
+   ],
+   [
+    "outro",
+    "Bold predictions, checked later, with a source for every verdict.",
+    "Bold predictions, checked later, with a source for every verdict."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.548,
+    "text": "It planned the Modal pieces,"
+   },
+   {
+    "t0": 1.641,
+    "t1": 3.357,
+    "text": "and shipped the app with modal deploy."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "It opened a pull request, and fixed the five issues Devin Review flagged.",
+  "dur": 3.815,
+  "takeAt": 71.315,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due.",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due."
+   ],
+   [
+    "0001.png",
+    "Here's where Modal fits. Grok searches X through the xAI API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+    "Here's where Modal fits. Grok searches X through the ex A I API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open."
+   ],
+   [
+    "0001b.png",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work."
+   ],
+   [
+    "0002.png",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up.",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up."
+   ],
+   [
+    "0003.png",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo.",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo."
+   ],
+   [
+    "0004.png",
+    "It planned the Modal pieces, and shipped the app with modal deploy.",
+    "It planned the Modal pieces, and shipped the app with modal deploy."
+   ],
+   [
+    "0005.png",
+    "It opened a pull request, and fixed the five issues Devin Review flagged.",
+    "It opened a pull request, and fixed the five issues Devin Review flagged."
+   ],
+   [
+    "0006.png",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending.",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending."
+   ],
+   [
+    "0007.png",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost.",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost."
+   ],
+   [
+    "0008.png",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard.",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard."
+   ],
+   [
+    "outro",
+    "Bold predictions, checked later, with a source for every verdict.",
+    "Bold predictions, checked later, with a source for every verdict."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.097,
+    "t1": 1.467,
+    "text": "It opened a pull request,"
+   },
+   {
+    "t0": 1.537,
+    "t1": 3.815,
+    "text": "and fixed the five issues Devin Review flagged."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending.",
+  "dur": 6.93,
+  "takeAt": 75.46,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due.",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due."
+   ],
+   [
+    "0001.png",
+    "Here's where Modal fits. Grok searches X through the xAI API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+    "Here's where Modal fits. Grok searches X through the ex A I API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open."
+   ],
+   [
+    "0001b.png",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work."
+   ],
+   [
+    "0002.png",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up.",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up."
+   ],
+   [
+    "0003.png",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo.",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo."
+   ],
+   [
+    "0004.png",
+    "It planned the Modal pieces, and shipped the app with modal deploy.",
+    "It planned the Modal pieces, and shipped the app with modal deploy."
+   ],
+   [
+    "0005.png",
+    "It opened a pull request, and fixed the five issues Devin Review flagged.",
+    "It opened a pull request, and fixed the five issues Devin Review flagged."
+   ],
+   [
+    "0006.png",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending.",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending."
+   ],
+   [
+    "0007.png",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost.",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost."
+   ],
+   [
+    "0008.png",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard.",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard."
+   ],
+   [
+    "outro",
+    "Bold predictions, checked later, with a source for every verdict.",
+    "Bold predictions, checked later, with a source for every verdict."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.502,
+    "text": "On the page running on Modal,"
+   },
+   {
+    "t0": 1.525,
+    "t1": 4.474,
+    "text": "it has found six predictions so far in sampled posts."
+   },
+   {
+    "t0": 4.799,
+    "t1": 5.74,
+    "text": "One is marked right,"
+   },
+   {
+    "t0": 5.763,
+    "t1": 6.93,
+    "text": "and five are still pending."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost.",
+  "dur": 5.695,
+  "takeAt": 82.605,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due.",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due."
+   ],
+   [
+    "0001.png",
+    "Here's where Modal fits. Grok searches X through the xAI API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+    "Here's where Modal fits. Grok searches X through the ex A I API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open."
+   ],
+   [
+    "0001b.png",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work."
+   ],
+   [
+    "0002.png",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up.",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up."
+   ],
+   [
+    "0003.png",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo.",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo."
+   ],
+   [
+    "0004.png",
+    "It planned the Modal pieces, and shipped the app with modal deploy.",
+    "It planned the Modal pieces, and shipped the app with modal deploy."
+   ],
+   [
+    "0005.png",
+    "It opened a pull request, and fixed the five issues Devin Review flagged.",
+    "It opened a pull request, and fixed the five issues Devin Review flagged."
+   ],
+   [
+    "0006.png",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending.",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending."
+   ],
+   [
+    "0007.png",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost.",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost."
+   ],
+   [
+    "0008.png",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard.",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard."
+   ],
+   [
+    "outro",
+    "Bold predictions, checked later, with a source for every verdict.",
+    "Bold predictions, checked later, with a source for every verdict."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.081,
+    "t1": 2.391,
+    "text": "Each pending one shows the date it can be checked."
+   },
+   {
+    "t0": 2.774,
+    "t1": 4.864,
+    "text": "After filming, the daily schedule was switched off"
+   },
+   {
+    "t0": 4.899,
+    "t1": 5.695,
+    "text": "to save cost."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard.",
+  "dur": 9.655,
+  "takeAt": 88.615,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due.",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due."
+   ],
+   [
+    "0001.png",
+    "Here's where Modal fits. Grok searches X through the xAI API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+    "Here's where Modal fits. Grok searches X through the ex A I API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open."
+   ],
+   [
+    "0001b.png",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work."
+   ],
+   [
+    "0002.png",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up.",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up."
+   ],
+   [
+    "0003.png",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo.",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo."
+   ],
+   [
+    "0004.png",
+    "It planned the Modal pieces, and shipped the app with modal deploy.",
+    "It planned the Modal pieces, and shipped the app with modal deploy."
+   ],
+   [
+    "0005.png",
+    "It opened a pull request, and fixed the five issues Devin Review flagged.",
+    "It opened a pull request, and fixed the five issues Devin Review flagged."
+   ],
+   [
+    "0006.png",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending.",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending."
+   ],
+   [
+    "0007.png",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost.",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost."
+   ],
+   [
+    "0008.png",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard.",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard."
+   ],
+   [
+    "outro",
+    "Bold predictions, checked later, with a source for every verdict.",
+    "Bold predictions, checked later, with a source for every verdict."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.782,
+    "text": "To extend it,"
+   },
+   {
+    "t0": 0.805,
+    "t1": 2.697,
+    "text": "you could track more accounts and topics,"
+   },
+   {
+    "t0": 2.871,
+    "t1": 4.938,
+    "text": "or send an alert when a check date arrives."
+   },
+   {
+    "t0": 5.321,
+    "t1": 6.76,
+    "text": "You could also add a page for each"
+   },
+   {
+    "t0": 6.784,
+    "t1": 9.655,
+    "text": "account, or feed the JSON into your own dashboard."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Bold predictions, checked later, with a source for every verdict.",
+  "dur": 3.349,
+  "takeAt": 98.541,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due.",
+    "Tech predictions on X are easy to post and rarely checked later. This app keeps the exact quote and a link to each post, then checks back when each one comes due."
+   ],
+   [
+    "0001.png",
+    "Here's where Modal fits. Grok searches X through the xAI API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+    "Here's where Modal fits. Grok searches X through the ex A I API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open."
+   ],
+   [
+    "0001b.png",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+    "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work."
+   ],
+   [
+    "0002.png",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up.",
+    "To stay factual, every quote is checked against the original post. Each prediction stays pending until its check date, and it's only marked right or wrong when a cited source backs it up."
+   ],
+   [
+    "0003.png",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo.",
+    "Devin built the whole thing from one plain-language prompt in the product demo apps repo."
+   ],
+   [
+    "0004.png",
+    "It planned the Modal pieces, and shipped the app with modal deploy.",
+    "It planned the Modal pieces, and shipped the app with modal deploy."
+   ],
+   [
+    "0005.png",
+    "It opened a pull request, and fixed the five issues Devin Review flagged.",
+    "It opened a pull request, and fixed the five issues Devin Review flagged."
+   ],
+   [
+    "0006.png",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending.",
+    "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending."
+   ],
+   [
+    "0007.png",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost.",
+    "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost."
+   ],
+   [
+    "0008.png",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard.",
+    "To extend it, you could track more accounts and topics, or send an alert when a check date arrives. You could also add a page for each account, or feed the JSON into your own dashboard."
+   ],
+   [
+    "outro",
+    "Bold predictions, checked later, with a source for every verdict.",
+    "Bold predictions, checked later, with a source for every verdict."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.745,
+    "text": "Bold predictions, checked later,"
+   },
+   {
+    "t0": 1.873,
+    "t1": 3.349,
+    "text": "with a source for every verdict."
+   }
+  ]
+ }
+}
