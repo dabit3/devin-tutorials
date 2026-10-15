@@ -15,7 +15,7 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 9. **Devin Review** (1:24): Open a pull request in Devin Review, run Devin's analysis to find bugs, ask about a finding, commit Devin's fix to the PR branch, and turn on automatic reviews. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/09-devin-review/09-devin-review.mp4)
 10. **Devin CLI** (1:58): Run Devin in your terminal: permission modes (Accept Edits, Smart, Bypass), model selection, @ file context, /handoff to the cloud, /cloud sessions and devin ssh. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/10-devin-cli/10-devin-cli.mp4)
 11. **Devin Desktop** (2:12): Devin's desktop app: the agent and model pickers, ACP agents, Quick Review, Codemaps, DeepWiki and a live localhost preview of the change. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop.mp4)
-12. **Devin in Slack** (1:13): Tag @Devin in Slack: `!ask` for a quick codebase answer, start a full session with a task, keep going in the thread, follow the same session in the web app and `archive` it when done. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack.mp4)
+12. **Devin in Slack** (1:28): Tag @Devin in Slack: `!ask` for a quick codebase answer, start a full session with a task, keep going in the thread, follow the same session in the web app, have Devin build a feature and send its browser-test recording back to the thread, and `archive` it when done. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack.mp4)
 
 <!-- -->
 
@@ -79,7 +79,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Devin in Slack, narrated by Megan** (1:14): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack-megan.mp4)
 - **Devin CLI, narrated by Nader** (1:45): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/10-devin-cli/10-devin-cli-nader.mp4)
 - **Devin Desktop, narrated by Nader** (2:42): Also tours the Sessions page for organizing many cloud sessions (board, list, filters, search, sort). [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/11-devin-desktop/11-devin-desktop-nader.mp4)
-- **Devin in Slack, narrated by Nader** (1:13): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack-nader.mp4)
+- **Devin in Slack, narrated by Nader** (1:12): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/12-devin-slack/12-devin-slack-nader.mp4)
 - **Devin Memory, narrated by Nader** (1:23): Tell Devin a preference, watch it save to Memory, browse Customize → Memory and Dreaming, then see a new session follow it. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-nader.mp4) · [Voice script](tutorials/13-devin-memory/voice-script.md)
 - **Devin Memory, clean** (1:10): The same Memory footage with no captions and no voiceover, music only. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/13-devin-memory/13-devin-memory-clean.mp4)
 - **Devin Code Scans, narrated by Nader** (1:35): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/14-devin-code-scans/14-devin-code-scans-nader.mp4) · [Voice script](tutorials/14-devin-code-scans/voice-script.md)
