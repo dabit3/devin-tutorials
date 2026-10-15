@@ -1,0 +1,306 @@
+{
+ "0010.png": {
+  "text": "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+  "dur": 10.0,
+  "at": 0.0,
+  "end": 10.0,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "Which AI coding tools are people actually using,",
+    "t0": 0.0,
+    "t1": 2.344
+   },
+   {
+    "text": "and which ones are they only talking about?",
+    "t0": 2.393,
+    "t1": 4.492
+   },
+   {
+    "text": "This app answers that with real posts from X,",
+    "t0": 4.541,
+    "t1": 6.738
+   },
+   {
+    "text": "so founders, investors and developers",
+    "t0": 6.787,
+    "t1": 8.594
+   },
+   {
+    "text": "can see what's catching on.",
+    "t0": 8.643,
+    "t1": 9.961
+   }
+  ]
+ },
+ "0020.png": {
+  "text": "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches on a daily schedule and keeps the results in a Modal Dict. A web endpoint on the same app serves the live page.",
+  "say": "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches on a daily schedule and keeps the results in a Modal Dict. A web endpoint on the same app serves the lyve page.",
+  "dur": 11.49,
+  "at": 10.245,
+  "end": 21.735,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "Here's how it works.",
+    "t0": 0.041,
+    "t1": 1.163
+   },
+   {
+    "text": "Grok searches posts on X through the xAI API.",
+    "t0": 1.22,
+    "t1": 3.745
+   },
+   {
+    "text": "Modal runs those searches on a daily schedule",
+    "t0": 3.801,
+    "t1": 6.327
+   },
+   {
+    "text": "and keeps the results in a Modal Dict.",
+    "t0": 6.383,
+    "t1": 8.516
+   },
+   {
+    "text": "A web endpoint on the same app",
+    "t0": 8.572,
+    "t1": 10.255
+   },
+   {
+    "text": "serves the live page.",
+    "t0": 10.311,
+    "t1": 11.49
+   }
+  ]
+ },
+ "0030.png": {
+  "text": "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+  "say": "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range.",
+  "dur": 6.845,
+  "at": 22.02,
+  "end": 28.865,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "That's ten tools across four weeks,",
+    "t0": 0.062,
+    "t1": 1.843
+   },
+   {
+    "text": "so each refresh runs forty searches",
+    "t0": 1.894,
+    "t1": 3.675
+   },
+   {
+    "text": "in parallel with .map().",
+    "t0": 3.726,
+    "t1": 4.947
+   },
+   {
+    "text": "Every search has its own date range.",
+    "t0": 4.998,
+    "t1": 6.83
+   }
+  ]
+ },
+ "0040.png": {
+  "text": "Grok labels each post it finds as a real usage report or as hype. The counts are posts found in the X search sample, not totals.",
+  "dur": 6.765,
+  "at": 29.01,
+  "end": 35.775,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "Grok labels each post it finds",
+    "t0": 0.084,
+    "t1": 1.65
+   },
+   {
+    "text": "as a real usage report or as hype.",
+    "t0": 1.702,
+    "t1": 3.477
+   },
+   {
+    "text": "The counts are posts found in the X search sample,",
+    "t0": 3.529,
+    "t1": 6.139
+   },
+   {
+    "text": "not totals.",
+    "t0": 6.191,
+    "t1": 6.765
+   }
+  ]
+ },
+ "0041.png": {
+  "text": "In the real run, Devin built the whole app from this one prompt.",
+  "dur": 2.96,
+  "at": 36.07,
+  "end": 39.03,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.083,
+    "t1": 0.873,
+    "text": "In the real run,"
+   },
+   {
+    "t0": 0.919,
+    "t1": 2.939,
+    "text": "Devin built the whole app from this one prompt."
+   }
+  ]
+ },
+ "0051.png": {
+  "text": "It deployed the app with modal deploy, then ran the linter and the tests.",
+  "dur": 3.425,
+  "at": 39.225,
+  "end": 42.65,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 1.746,
+    "text": "It deployed the app with modal deploy,"
+   },
+   {
+    "t0": 1.77,
+    "t1": 3.407,
+    "text": "then ran the linter and the tests."
+   }
+  ]
+ },
+ "0052.png": {
+  "text": "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+  "dur": 6.65,
+  "at": 42.84,
+  "end": 49.49,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.07,
+    "t1": 1.661,
+    "text": "The daily schedule is in the code,"
+   },
+   {
+    "t0": 1.707,
+    "t1": 3.762,
+    "text": "but this run deployed with it switched off,"
+   },
+   {
+    "t0": 3.936,
+    "t1": 6.641,
+    "text": "because the workspace had hit its limit of scheduled functions."
+   }
+  ]
+ },
+ "0061.png": {
+  "text": "Devin checked the live URL again after a small color fix, and the code is in a pull request.",
+  "say": "Devin checked the lyve URL again after a small color fix, and the code is in a pull request.",
+  "dur": 4.795,
+  "at": 49.66,
+  "end": 54.455,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "Devin checked the live URL again",
+    "t0": 0.065,
+    "t1": 1.708
+   },
+   {
+    "text": "after a small color fix,",
+    "t0": 1.76,
+    "t1": 2.992
+   },
+   {
+    "text": "and the code is in a pull request.",
+    "t0": 3.044,
+    "t1": 4.79
+   }
+  ]
+ },
+ "0071.png": {
+  "text": "Here's the live page with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+  "say": "Here's the lyve page with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+  "dur": 5.61,
+  "at": 54.62,
+  "end": 60.23,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "Here's the live page with real data.",
+    "t0": 0.039,
+    "t1": 1.855
+   },
+   {
+    "text": "In this sample, Codex and Cursor",
+    "t0": 1.906,
+    "t1": 3.52
+   },
+   {
+    "text": "have the highest share of usage reports.",
+    "t0": 3.571,
+    "t1": 5.589
+   }
+  ]
+ },
+ "0080.png": {
+  "text": "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+  "dur": 9.79,
+  "at": 60.41,
+  "end": 70.2,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "To take it further, add a weekly digest,",
+    "t0": 0.077,
+    "t1": 2.278
+   },
+   {
+    "text": "or alerts when a new tool starts to emerge.",
+    "t0": 2.333,
+    "t1": 4.698
+   },
+   {
+    "text": "You could also track more categories,",
+    "t0": 4.753,
+    "t1": 6.789
+   },
+   {
+    "text": "or add a second source",
+    "t0": 6.844,
+    "t1": 8.054
+   },
+   {
+    "text": "to check the X sample against.",
+    "t0": 8.109,
+    "t1": 9.76
+   }
+  ]
+ },
+ "outro": {
+  "text": "Let the data show what's catching on.",
+  "dur": 1.735,
+  "at": 70.445,
+  "end": 72.18,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.05,
+    "t1": 1.735,
+    "text": "Let the data show what's catching on."
+   }
+  ]
+ }
+}
