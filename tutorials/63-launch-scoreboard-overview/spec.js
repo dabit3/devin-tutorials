@@ -18,12 +18,12 @@ window.SPEC = {
     },
     "0001.png": {
       "scene": "pipeline",
-      "hold": 8.5,
+      "hold": 8,
       "cursor": false,
       "capPos": "bottom",
-      "cap": "X posts, Grok with X Search, Modal, a live page",
-      "vo": "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
-      "voSay": "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+      "cap": "X posts, Grok with X Search, then Modal",
+      "vo": "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+      "voSay": "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal."
     },
     "0002.png": {
       "scene": "fanout",
@@ -31,8 +31,17 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "cap": "A schedule, a parallel .map(), a Dict and a web endpoint",
-      "vo": "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-      "voSay": "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+      "vo": "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+      "voSay": "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page."
+    },
+    "0010.png": {
+      "scene": "modalwhy",
+      "hold": 10,
+      "cursor": false,
+      "capPos": "bottom",
+      "cap": "Why Modal: no idle server, no laptop left open",
+      "vo": "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+      "voSay": "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret."
     },
     "0003.png": {
       "scene": "honest",
@@ -53,27 +62,30 @@ window.SPEC = {
       "hold": 3,
       "cursor": false,
       "subPos": "top",
-      "cap": "Deployed with modal deploy",
-      "vo": "It deployed the app with modal deploy, then ran the first refresh."
+      "cap": "modal deploy, and the public URL answers",
+      "vo": "It deployed the app with modal deploy, and the page answered on its public URL.",
+      "ring": {
+        "x": 735,
+        "y": 516,
+        "w": 852,
+        "h": 146
+      },
+      "ringFor": 3.5
     },
     "0006.png": {
       "hold": 3,
       "cursor": false,
-      "subPos": {
-        "x": 0.2,
-        "y": 0.5
-      },
+      "subPos": "top",
       "cap": "A pull request in product-demo-apps",
-      "vo": "Then it opened a pull request, with the code and a screenshot of the live page.",
-      "voSay": "Then it opened a pull request, with the code and a screenshot of the lyve page."
+      "vo": "Then it opened a pull request in the demo apps repo."
     },
     "0007.png": {
       "hold": 3,
       "cursor": false,
       "subPos": "bottom",
-      "cap": "The live app on Modal, from a real run",
-      "vo": "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-      "voSay": "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
+      "cap": "The page running on Modal, from a real run",
+      "vo": "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+      "voSay": "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
     },
     "0008.png": {
       "hold": 3,

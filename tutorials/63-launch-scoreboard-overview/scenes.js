@@ -57,7 +57,7 @@ function intro(ctx, s, k) {
 function pipeline(ctx, s, k) {
   eyebrow(ctx, k, 'HOW IT WORKS', 130, ap(k, s, .1));
   const Y = 360, xs = [170, 440, 720, 1000, 1270];
-  const N = [['X posts', 'sampled per launch'], ['xAI API', 'Grok + X Search'], ['Modal functions', 'schedule · .map() · web'], [D.storage || 'modal.Dict', 'stored results'], ['Live page', D.host || '*.modal.run']];
+  const N = [['X posts', 'sampled per launch'], ['xAI API', 'Grok + X Search'], ['Modal functions', 'schedule · .map() · web'], [D.storage || 'modal.Dict', 'stored results'], ['Public page', D.host || '*.modal.run']];
   const T = [.3, 1.4, 2.6, 3.9, 5.0];
   N.forEach((n, i) => card(ctx, k, xs[i], Y, i === 2 ? 230 : 200, 92, n[0], n[1], ap(k, s, T[i]), k.clamp((s - T[i] - .2) * 2) * (1 - k.clamp((s - T[i] - 1.2) * 1.5)) * (i ? 1 : 0)));
   for (let i = 0; i < 4; i++) { const x0 = xs[i] + (i === 2 ? 115 : 100) + 8, x1 = xs[i + 1] - (i + 1 === 2 ? 115 : 100) - 8; arrow(ctx, k, x0, Y, x1, Y, k.clamp((s - T[i + 1] + .5) / .5), 1, loop(s, 6.2, 1.6) >= 0 ? k.clamp(loop(s, 6.2 + i * .4, 1.6) * 1) : -1); }
@@ -65,6 +65,10 @@ function pipeline(ctx, s, k) {
   const sub = [['schedule', D.schedule || 'modal.Period'], ['fan-out', '.map()'], ['web endpoint', D.web || '@modal.asgi_app']];
   sub.forEach((t, i) => card(ctx, k, xs[2] + (i - 1) * 200, 545, 180, 70, t[0], t[1], ap(k, s, 3.0 + i * .3), 0, false));
   if (s > 3) arrow(ctx, k, xs[2], Y + 46 + 8, xs[2], 510 - 8, k.clamp((s - 3) / .4), ap(k, s, 3));
+  // group the Modal-hosted parts
+  const g = ap(k, s, 5.6, .8);
+  if (g > 0) { ctx.save(); ctx.globalAlpha = k.alpha * g; ctx.setLineDash([6, 6]); ctx.lineWidth = 1.4; ctx.strokeStyle = rgba(BLUE, .7); ctx.beginPath(); ctx.moveTo(585, 294); ctx.lineTo(1390, 294); ctx.lineTo(1390, 600); ctx.lineTo(405, 600); ctx.lineTo(405, 480); ctx.lineTo(585, 480); ctx.closePath(); ctx.stroke(); ctx.restore();
+    text(ctx, k, 'RUNS ON MODAL', 605, 278, 13, 600, rgba(BLUE, 1), g, 'left', true); }
 }
 
 // 3. inside Modal: schedule fires, .map() fans out one call per launch, results land in storage, the endpoint reads them
@@ -84,14 +88,28 @@ function fanout(ctx, s, k) {
   card(ctx, k, 1180, 560, 210, 80, 'web endpoint', D.web || '@modal.asgi_app', ap(k, s, 5), 0, true);
 }
 
-// 4. honesty: what the numbers mean
+// 4. why Modal beats a laptop script or a self-managed server for this job
+function modalwhy(ctx, s, k) {
+  eyebrow(ctx, k, 'WHY MODAL', 160, ap(k, s, .1));
+  text(ctx, k, 'A few minutes of work, every six hours', k.VW / 2, 225, 40, 600, W2(1), ap(k, s, .3, .8));
+  const B = [['Laptop script', 'Stops when the laptop sleeps', 'No public URL'], ['Your own server', 'Always on', 'Idle between refreshes'], ['Modal', 'Scales to zero, billed per second', 'xAI key in a Modal Secret']], TW = [.9, 3.3, 5.7];
+  B.forEach((b, i) => {
+    const x = k.VW / 2 + (i - 1) * 400, y = 430, a = ap(k, s, TW[i]), m = i === 2, lift = 14 * (1 - a);
+    box(ctx, k, x - 175, y - 85 + lift, 350, 170, a * (m ? 1 : .9), m ? k.clamp((s - TW[i]) * 2) : 0);
+    text(ctx, k, b[0], x, y - 38 + lift, 22, 600, m ? rgba(BLUE, 1) : W2(1), a);
+    text(ctx, k, b[1], x, y + 6 + lift, 16, 400, W2(m ? .85 : .55), a);
+    text(ctx, k, b[2], x, y + 38 + lift, 16, 400, W2(m ? .85 : .55), a);
+  });
+}
+
+// 5. honesty: what the numbers mean
 function honest(ctx, s, k) {
   eyebrow(ctx, k, 'WHAT THE NUMBERS MEAN', 170, ap(k, s, .1));
   const R = [['Sampled', 'X Search returns a sample of posts, not the firehose'], ['Model-classified', 'Grok labels each sampled post positive, neutral or negative'], ['Linked', 'Every quoted post links back to the original on X']];
   R.forEach((r, i) => { const y = 290 + i * 120, a = ap(k, s, .5 + i * .6); box(ctx, k, 330, y - 44, 780, 88, a, 0); text(ctx, k, r[0], 370, y, 22, 600, W2(1), a, 'left'); text(ctx, k, r[1], 590, y, 17, 400, W2(.62), a, 'left'); });
 }
 
-// 5. extensions
+// 6. extensions
 function extend(ctx, s, k) {
   eyebrow(ctx, k, 'WAYS TO EXTEND IT', 150, ap(k, s, .1));
   const E = D.extend || [];
@@ -99,5 +117,5 @@ function extend(ctx, s, k) {
     text(ctx, k, String(i + 1), 340, y, 20, 600, rgba(BLUE, 1), a, 'left', true); text(ctx, k, e[0], 380, y, 20, 600, W2(1), a, 'left'); text(ctx, k, e[1], 1100, y, 15, 400, W2(.55), a, 'right'); });
 }
 
-window.SCENES = { intro, pipeline, fanout, honest, extend };
+window.SCENES = { intro, pipeline, fanout, modalwhy, honest, extend };
 })();

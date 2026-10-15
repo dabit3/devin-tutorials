@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
-  "dur": 7.055,
+  "dur": 6.505,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -12,13 +12,18 @@
    ],
    [
     "0001.png",
-    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
-    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal."
    ],
    [
     "0002.png",
-    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page."
+   ],
+   [
+    "0010.png",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret."
    ],
    [
     "0003.png",
@@ -32,18 +37,18 @@
    ],
    [
     "0005.png",
-    "It deployed the app with modal deploy, then ran the first refresh.",
-    "It deployed the app with modal deploy, then ran the first refresh."
+    "It deployed the app with modal deploy, and the page answered on its public URL.",
+    "It deployed the app with modal deploy, and the page answered on its public URL."
    ],
    [
     "0006.png",
-    "Then it opened a pull request, with the code and a screenshot of the live page.",
-    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+    "Then it opened a pull request in the demo apps repo.",
+    "Then it opened a pull request in the demo apps repo."
    ],
    [
     "0007.png",
-    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
+    "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
    ],
    [
     "0008.png",
@@ -64,31 +69,31 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.403,
+    "t1": 2.322,
     "text": "Every big launch starts an argument about who won it."
    },
    {
-    "t0": 2.844,
-    "t1": 4.69,
+    "t0": 2.647,
+    "t1": 4.18,
     "text": "This app answers it with posts from the"
    },
    {
-    "t0": 4.737,
-    "t1": 6.211,
+    "t0": 4.214,
+    "t1": 5.712,
     "text": "first seventy-two hours on X,"
    },
    {
-    "t0": 6.246,
-    "t1": 7.055,
+    "t0": 5.735,
+    "t1": 6.505,
     "text": "side by side."
    }
   ]
  },
  "0001.png": {
-  "text": "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
-  "say": "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page.",
-  "dur": 9.583,
-  "takeAt": 7.357,
+  "text": "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+  "say": "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal.",
+  "dur": 7.217,
+  "takeAt": 6.753,
   "mode": "single-take-1",
   "take": [
    [
@@ -98,13 +103,18 @@
    ],
    [
     "0001.png",
-    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
-    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal."
    ],
    [
     "0002.png",
-    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page."
+   ],
+   [
+    "0010.png",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret."
    ],
    [
     "0003.png",
@@ -118,18 +128,18 @@
    ],
    [
     "0005.png",
-    "It deployed the app with modal deploy, then ran the first refresh.",
-    "It deployed the app with modal deploy, then ran the first refresh."
+    "It deployed the app with modal deploy, and the page answered on its public URL.",
+    "It deployed the app with modal deploy, and the page answered on its public URL."
    ],
    [
     "0006.png",
-    "Then it opened a pull request, with the code and a screenshot of the live page.",
-    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+    "Then it opened a pull request in the demo apps repo.",
+    "Then it opened a pull request in the demo apps repo."
    ],
    [
     "0007.png",
-    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
+    "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
    ],
    [
     "0008.png",
@@ -150,26 +160,26 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.095,
+    "t1": 1.084,
     "text": "Here's how it works."
    },
    {
-    "t0": 1.339,
-    "t1": 5.751,
+    "t0": 1.409,
+    "t1": 5.31,
     "text": "Grok samples posts from X through the xAI API, with X Search."
    },
    {
-    "t0": 6.076,
-    "t1": 9.582,
-    "text": "Modal runs the functions, stores the results, and serves a live page."
+    "t0": 5.635,
+    "t1": 7.217,
+    "text": "Everything after that runs on Modal."
    }
   ]
  },
  "0002.png": {
-  "text": "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-  "say": "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-  "dur": 11.125,
-  "takeAt": 17.025,
+  "text": "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+  "say": "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+  "dur": 11.435,
+  "takeAt": 14.295,
   "mode": "single-take-1",
   "take": [
    [
@@ -179,13 +189,18 @@
    ],
    [
     "0001.png",
-    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
-    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal."
    ],
    [
     "0002.png",
-    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page."
+   ],
+   [
+    "0010.png",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret."
    ],
    [
     "0003.png",
@@ -199,18 +214,18 @@
    ],
    [
     "0005.png",
-    "It deployed the app with modal deploy, then ran the first refresh.",
-    "It deployed the app with modal deploy, then ran the first refresh."
+    "It deployed the app with modal deploy, and the page answered on its public URL.",
+    "It deployed the app with modal deploy, and the page answered on its public URL."
    ],
    [
     "0006.png",
-    "Then it opened a pull request, with the code and a screenshot of the live page.",
-    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+    "Then it opened a pull request in the demo apps repo.",
+    "Then it opened a pull request in the demo apps repo."
    ],
    [
     "0007.png",
-    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
+    "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
    ],
    [
     "0008.png",
@@ -230,36 +245,137 @@
   ],
   "chunks": [
    {
-    "t0": 0.088,
-    "t1": 3.641,
+    "t0": 0.067,
+    "t1": 3.225,
     "text": "Inside Modal, a cron schedule calls refresh every six hours."
    },
    {
-    "t0": 3.966,
-    "t1": 6.276,
+    "t0": 3.608,
+    "t1": 5.721,
     "text": "Refresh uses map to analyze each launch in"
    },
    {
-    "t0": 6.323,
-    "t1": 7.913,
+    "t0": 5.779,
+    "t1": 7.288,
     "text": "its own container, in parallel."
    },
    {
-    "t0": 8.192,
-    "t1": 9.678,
+    "t0": 7.671,
+    "t1": 9.274,
     "text": "Results land in a Modal Dict,"
    },
    {
-    "t0": 9.701,
-    "t1": 11.125,
-    "text": "and a web endpoint reads them."
+    "t0": 9.425,
+    "t1": 11.435,
+    "text": "and a web endpoint serves the public page."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+  "say": "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret.",
+  "dur": 11.205,
+  "takeAt": 25.945,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal."
+   ],
+   [
+    "0002.png",
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page."
+   ],
+   [
+    "0010.png",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0003.png",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X."
+   ],
+   [
+    "0004.png",
+    "Devin built all of this from one short prompt in the product demo apps repo.",
+    "Devin built all of this from one short prompt in the product demo apps repo."
+   ],
+   [
+    "0005.png",
+    "It deployed the app with modal deploy, and the page answered on its public URL.",
+    "It deployed the app with modal deploy, and the page answered on its public URL."
+   ],
+   [
+    "0006.png",
+    "Then it opened a pull request in the demo apps repo.",
+    "Then it opened a pull request in the demo apps repo."
+   ],
+   [
+    "0007.png",
+    "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
+   ],
+   [
+    "0008.png",
+    "Each column links the posts that shaped the conversation.",
+    "Each column links the posts that shaped the conversation."
+   ],
+   [
+    "0009.png",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />"
+   ],
+   [
+    "outro",
+    "Who won the launch? Now you can check.",
+    "Who won the launch? Now you can check."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.677,
+    "text": "Why Modal?"
+   },
+   {
+    "t0": 0.956,
+    "t1": 3.243,
+    "text": "A laptop script stops when the laptop sleeps,"
+   },
+   {
+    "t0": 3.359,
+    "t1": 5.507,
+    "text": "and a server sits idle between refreshes."
+   },
+   {
+    "t0": 5.832,
+    "t1": 7.98,
+    "text": "Modal scales to zero between runs and bills"
+   },
+   {
+    "t0": 8.026,
+    "t1": 8.665,
+    "text": "by the second."
+   },
+   {
+    "t0": 9.106,
+    "t1": 11.205,
+    "text": "The xAI key stays in a Modal Secret."
    }
   ]
  },
  "0003.png": {
   "text": "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
-  "dur": 6.895,
-  "takeAt": 28.325,
+  "dur": 5.983,
+  "takeAt": 37.427,
   "mode": "single-take-1",
   "take": [
    [
@@ -269,13 +385,18 @@
    ],
    [
     "0001.png",
-    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
-    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal."
    ],
    [
     "0002.png",
-    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page."
+   ],
+   [
+    "0010.png",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret."
    ],
    [
     "0003.png",
@@ -289,18 +410,18 @@
    ],
    [
     "0005.png",
-    "It deployed the app with modal deploy, then ran the first refresh.",
-    "It deployed the app with modal deploy, then ran the first refresh."
+    "It deployed the app with modal deploy, and the page answered on its public URL.",
+    "It deployed the app with modal deploy, and the page answered on its public URL."
    ],
    [
     "0006.png",
-    "Then it opened a pull request, with the code and a screenshot of the live page.",
-    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+    "Then it opened a pull request in the demo apps repo.",
+    "Then it opened a pull request in the demo apps repo."
    ],
    [
     "0007.png",
-    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
+    "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
    ],
    [
     "0008.png",
@@ -320,31 +441,31 @@
   ],
   "chunks": [
    {
-    "t0": 0.05,
-    "t1": 1.826,
+    "t0": 0.12,
+    "t1": 1.71,
     "text": "The numbers are honest about what they are."
    },
    {
-    "t0": 2.105,
-    "t1": 3.416,
+    "t0": 1.826,
+    "t1": 3.069,
     "text": "Counts are sampled posts,"
    },
    {
-    "t0": 3.533,
-    "t1": 4.961,
+    "t0": 3.15,
+    "t1": 4.462,
     "text": "Grok classifies each one,"
    },
    {
-    "t0": 5.17,
-    "t1": 6.895,
+    "t0": 4.485,
+    "t1": 5.983,
     "text": "and every quote links back to X."
    }
   ]
  },
  "0004.png": {
   "text": "Devin built all of this from one short prompt in the product demo apps repo.",
-  "dur": 3.828,
-  "takeAt": 35.592,
+  "dur": 3.698,
+  "takeAt": 43.592,
   "mode": "single-take-1",
   "take": [
    [
@@ -354,13 +475,18 @@
    ],
    [
     "0001.png",
-    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
-    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal."
    ],
    [
     "0002.png",
-    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page."
+   ],
+   [
+    "0010.png",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret."
    ],
    [
     "0003.png",
@@ -374,18 +500,18 @@
    ],
    [
     "0005.png",
-    "It deployed the app with modal deploy, then ran the first refresh.",
-    "It deployed the app with modal deploy, then ran the first refresh."
+    "It deployed the app with modal deploy, and the page answered on its public URL.",
+    "It deployed the app with modal deploy, and the page answered on its public URL."
    ],
    [
     "0006.png",
-    "Then it opened a pull request, with the code and a screenshot of the live page.",
-    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+    "Then it opened a pull request in the demo apps repo.",
+    "Then it opened a pull request in the demo apps repo."
    ],
    [
     "0007.png",
-    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
+    "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
    ],
    [
     "0008.png",
@@ -406,20 +532,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.931,
+    "t1": 1.803,
     "text": "Devin built all of this from one short"
    },
    {
-    "t0": 1.978,
-    "t1": 3.828,
+    "t0": 1.85,
+    "t1": 3.698,
     "text": "prompt in the product demo apps repo."
    }
   ]
  },
  "0005.png": {
-  "text": "It deployed the app with modal deploy, then ran the first refresh.",
-  "dur": 3.22,
-  "takeAt": 39.585,
+  "text": "It deployed the app with modal deploy, and the page answered on its public URL.",
+  "dur": 3.795,
+  "takeAt": 47.515,
   "mode": "single-take-1",
   "take": [
    [
@@ -429,13 +555,18 @@
    ],
    [
     "0001.png",
-    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
-    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal."
    ],
    [
     "0002.png",
-    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page."
+   ],
+   [
+    "0010.png",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret."
    ],
    [
     "0003.png",
@@ -449,18 +580,18 @@
    ],
    [
     "0005.png",
-    "It deployed the app with modal deploy, then ran the first refresh.",
-    "It deployed the app with modal deploy, then ran the first refresh."
+    "It deployed the app with modal deploy, and the page answered on its public URL.",
+    "It deployed the app with modal deploy, and the page answered on its public URL."
    ],
    [
     "0006.png",
-    "Then it opened a pull request, with the code and a screenshot of the live page.",
-    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+    "Then it opened a pull request in the demo apps repo.",
+    "Then it opened a pull request in the demo apps repo."
    ],
    [
     "0007.png",
-    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
+    "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
    ],
    [
     "0008.png",
@@ -480,22 +611,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.039,
-    "t1": 1.839,
+    "t0": 0.063,
+    "t1": 1.898,
     "text": "It deployed the app with modal deploy,"
    },
    {
-    "t0": 1.92,
-    "t1": 3.22,
-    "text": "then ran the first refresh."
+    "t0": 1.921,
+    "t1": 3.795,
+    "text": "and the page answered on its public URL."
    }
   ]
  },
  "0006.png": {
-  "text": "Then it opened a pull request, with the code and a screenshot of the live page.",
-  "say": "Then it opened a pull request, with the code and a screenshot of the lyve page.",
-  "dur": 3.708,
-  "takeAt": 43.022,
+  "text": "Then it opened a pull request in the demo apps repo.",
+  "dur": 2.385,
+  "takeAt": 51.505,
   "mode": "single-take-1",
   "take": [
    [
@@ -505,13 +635,18 @@
    ],
    [
     "0001.png",
-    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
-    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal."
    ],
    [
     "0002.png",
-    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page."
+   ],
+   [
+    "0010.png",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret."
    ],
    [
     "0003.png",
@@ -525,18 +660,18 @@
    ],
    [
     "0005.png",
-    "It deployed the app with modal deploy, then ran the first refresh.",
-    "It deployed the app with modal deploy, then ran the first refresh."
+    "It deployed the app with modal deploy, and the page answered on its public URL.",
+    "It deployed the app with modal deploy, and the page answered on its public URL."
    ],
    [
     "0006.png",
-    "Then it opened a pull request, with the code and a screenshot of the live page.",
-    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+    "Then it opened a pull request in the demo apps repo.",
+    "Then it opened a pull request in the demo apps repo."
    ],
    [
     "0007.png",
-    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
+    "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
    ],
    [
     "0008.png",
@@ -556,17 +691,22 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 3.708,
-    "text": "Then it opened a pull request, with the code and a screenshot of the live page."
+    "t0": 0.102,
+    "t1": 1.449,
+    "text": "Then it opened a pull request in the"
+   },
+   {
+    "t0": 1.484,
+    "t1": 2.385,
+    "text": "demo apps repo."
    }
   ]
  },
  "0007.png": {
-  "text": "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-  "say": "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four.",
-  "dur": 8.417,
-  "takeAt": 46.853,
+  "text": "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+  "say": "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four.",
+  "dur": 9.255,
+  "takeAt": 54.015,
   "mode": "single-take-1",
   "take": [
    [
@@ -576,13 +716,18 @@
    ],
    [
     "0001.png",
-    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
-    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal."
    ],
    [
     "0002.png",
-    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page."
+   ],
+   [
+    "0010.png",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret."
    ],
    [
     "0003.png",
@@ -596,18 +741,18 @@
    ],
    [
     "0005.png",
-    "It deployed the app with modal deploy, then ran the first refresh.",
-    "It deployed the app with modal deploy, then ran the first refresh."
+    "It deployed the app with modal deploy, and the page answered on its public URL.",
+    "It deployed the app with modal deploy, and the page answered on its public URL."
    ],
    [
     "0006.png",
-    "Then it opened a pull request, with the code and a screenshot of the live page.",
-    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+    "Then it opened a pull request in the demo apps repo.",
+    "Then it opened a pull request in the demo apps repo."
    ],
    [
     "0007.png",
-    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
+    "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
    ],
    [
     "0008.png",
@@ -627,21 +772,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.072,
-    "text": "Here's the real run."
+    "t0": 0.076,
+    "t1": 1.493,
+    "text": "Here's the real run, on Modal."
    },
    {
-    "t0": 1.246,
-    "t1": 8.417,
+    "t0": 1.737,
+    "t1": 9.255,
     "text": "Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four."
    }
   ]
  },
  "0008.png": {
   "text": "Each column links the posts that shaped the conversation.",
-  "dur": 2.675,
-  "takeAt": 55.515,
+  "dur": 2.515,
+  "takeAt": 63.585,
   "mode": "single-take-1",
   "take": [
    [
@@ -651,13 +796,18 @@
    ],
    [
     "0001.png",
-    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
-    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal."
    ],
    [
     "0002.png",
-    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page."
+   ],
+   [
+    "0010.png",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret."
    ],
    [
     "0003.png",
@@ -671,18 +821,18 @@
    ],
    [
     "0005.png",
-    "It deployed the app with modal deploy, then ran the first refresh.",
-    "It deployed the app with modal deploy, then ran the first refresh."
+    "It deployed the app with modal deploy, and the page answered on its public URL.",
+    "It deployed the app with modal deploy, and the page answered on its public URL."
    ],
    [
     "0006.png",
-    "Then it opened a pull request, with the code and a screenshot of the live page.",
-    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+    "Then it opened a pull request in the demo apps repo.",
+    "Then it opened a pull request in the demo apps repo."
    ],
    [
     "0007.png",
-    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
+    "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
    ],
    [
     "0008.png",
@@ -702,8 +852,8 @@
   ],
   "chunks": [
    {
-    "t0": 0.085,
-    "t1": 2.674,
+    "t0": 0.12,
+    "t1": 2.515,
     "text": "Each column links the posts that shaped the conversation."
    }
   ]
@@ -711,8 +861,8 @@
  "0009.png": {
   "text": "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
   "say": "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />",
-  "dur": 8.33,
-  "takeAt": 58.365,
+  "dur": 8.115,
+  "takeAt": 66.36,
   "mode": "single-take-1",
   "take": [
    [
@@ -722,13 +872,18 @@
    ],
    [
     "0001.png",
-    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
-    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal."
    ],
    [
     "0002.png",
-    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page."
+   ],
+   [
+    "0010.png",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret."
    ],
    [
     "0003.png",
@@ -742,18 +897,18 @@
    ],
    [
     "0005.png",
-    "It deployed the app with modal deploy, then ran the first refresh.",
-    "It deployed the app with modal deploy, then ran the first refresh."
+    "It deployed the app with modal deploy, and the page answered on its public URL.",
+    "It deployed the app with modal deploy, and the page answered on its public URL."
    ],
    [
     "0006.png",
-    "Then it opened a pull request, with the code and a screenshot of the live page.",
-    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+    "Then it opened a pull request in the demo apps repo.",
+    "Then it opened a pull request in the demo apps repo."
    ],
    [
     "0007.png",
-    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
+    "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
    ],
    [
     "0008.png",
@@ -773,36 +928,36 @@
   ],
   "chunks": [
    {
-    "t0": 0.068,
-    "t1": 0.846,
+    "t0": 0.12,
+    "t1": 0.805,
     "text": "To extend it,"
    },
    {
-    "t0": 0.962,
-    "t1": 2.541,
+    "t0": 0.839,
+    "t1": 2.291,
     "text": "add a launch with one new row,"
    },
    {
-    "t0": 2.715,
-    "t1": 3.829,
+    "t0": 2.534,
+    "t1": 3.603,
     "text": "track a longer window,"
    },
    {
-    "t0": 3.876,
-    "t1": 5.351,
+    "t0": 3.637,
+    "t1": 5.054,
     "text": "or chart sentiment over time."
    },
    {
-    "t0": 5.676,
-    "t1": 8.323,
+    "t0": 5.437,
+    "t1": 8.107,
     "text": "You could even post a daily recap."
    }
   ]
  },
  "outro": {
   "text": "Who won the launch? Now you can check.",
-  "dur": 2.305,
-  "takeAt": 66.695,
+  "dur": 1.735,
+  "takeAt": 74.475,
   "mode": "single-take-1",
   "take": [
    [
@@ -812,13 +967,18 @@
    ],
    [
     "0001.png",
-    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
-    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal."
    ],
    [
     "0002.png",
-    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
-    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page."
+   ],
+   [
+    "0010.png",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
+    "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret."
    ],
    [
     "0003.png",
@@ -832,18 +992,18 @@
    ],
    [
     "0005.png",
-    "It deployed the app with modal deploy, then ran the first refresh.",
-    "It deployed the app with modal deploy, then ran the first refresh."
+    "It deployed the app with modal deploy, and the page answered on its public URL.",
+    "It deployed the app with modal deploy, and the page answered on its public URL."
    ],
    [
     "0006.png",
-    "Then it opened a pull request, with the code and a screenshot of the live page.",
-    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+    "Then it opened a pull request in the demo apps repo.",
+    "Then it opened a pull request in the demo apps repo."
    ],
    [
     "0007.png",
-    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
+    "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
    ],
    [
     "0008.png",
@@ -868,8 +1028,8 @@
     "text": "Who won the launch?"
    },
    {
-    "t0": 1.502,
-    "t1": 2.305,
+    "t0": 0.979,
+    "t1": 1.735,
     "text": "Now you can check."
    }
   ]

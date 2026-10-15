@@ -1,6 +1,6 @@
 window.SPEC = {
   "title": "Launch Scoreboard",
-  "subtitle": "Build a live X reaction scoreboard on Modal with the xAI API",
+  "subtitle": "Build an X reaction scoreboard on Modal with the xAI API",
   "outro": "Who won the launch? Now there's data",
   "voOutro": "Who won the launch? Now there's data.",
   "dark": true,
@@ -13,12 +13,19 @@ window.SPEC = {
     "0000.png": {
       "hold": 6,
       "cursor": false,
-      "cap": "Compare how X reacted to big launches, live on Modal",
-      "vo": "Every big launch starts an argument about who won it. In this tutorial, Devin builds a live scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
-      "voSay": "Every big launch starts an argument about who won it. In this tutorial, Devin builds a lyve scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+      "cap": "Compare how X reacted to big launches, on Modal",
+      "vo": "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
     },
     "0001.png": {
-      "skip": true
+      "scene": "modaljobs",
+      "hold": 14,
+      "cursor": false,
+      "capPos": "bottom",
+      "subPos": "bottom",
+      "badge": false,
+      "cap": "Modal runs the whole back end",
+      "vo": "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+      "voSay": "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
     },
     "0002.png": {
       "skip": true
@@ -27,7 +34,14 @@ window.SPEC = {
       "skip": true
     },
     "0004.png": {
-      "skip": true
+      "scene": "modalwhy",
+      "hold": 10,
+      "cursor": false,
+      "capPos": "bottom",
+      "subPos": "bottom",
+      "badge": false,
+      "cap": "Why Modal: no idle server, no laptop left open",
+      "vo": "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
     },
     "0005.png": {
       "skip": true
@@ -38,7 +52,8 @@ window.SPEC = {
     "0007.png": {
       "hold": 4,
       "cap": "One plain-language prompt in the product-demo-apps repo",
-      "vo": "I pick the product demo apps repo and describe the app in plain language. Grok samples posts from each launch's first seventy-two hours with X Search, and Modal refreshes the results every six hours."
+      "vo": "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+      "voSay": "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
     },
     "0008.png": {
       "skip": true
@@ -53,11 +68,10 @@ window.SPEC = {
       "skip": true
     },
     "0012.png": {
-      "hold": 0.55,
-      "badge": "Sped up",
-      "cap": "Devin tests the xAI key with a real X Search call",
-      "vo": "Devin plans the build, then tests the xAI key with a real X Search call before it writes any code.",
-      "voSay": "Devin plans the build, then tests the ex A I key with a real X Search call before it writes any code."
+      "hold": 2,
+      "badge": false,
+      "cap": "Devin replies with a short plan",
+      "vo": "Devin replies with a short plan, then starts building."
     },
     "0013.png": {
       "skip": true
@@ -72,7 +86,7 @@ window.SPEC = {
       "skip": true
     },
     "0017.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0018.png": {
       "skip": true
@@ -87,7 +101,7 @@ window.SPEC = {
       "skip": true
     },
     "0022.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0023.png": {
       "skip": true
@@ -102,7 +116,7 @@ window.SPEC = {
       "skip": true
     },
     "0027.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0028.png": {
       "skip": true
@@ -117,7 +131,7 @@ window.SPEC = {
       "skip": true
     },
     "0032.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0033.png": {
       "skip": true
@@ -132,7 +146,7 @@ window.SPEC = {
       "skip": true
     },
     "0037.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0038.png": {
       "skip": true
@@ -147,7 +161,7 @@ window.SPEC = {
       "skip": true
     },
     "0042.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0043.png": {
       "skip": true
@@ -162,10 +176,7 @@ window.SPEC = {
       "skip": true
     },
     "0047.png": {
-      "hold": 0.55,
-      "badge": "Sped up",
-      "cap": "Then it writes the Modal app",
-      "vo": "Next it writes the Modal app, with one module for the Grok call and one for the page."
+      "skip": true
     },
     "0048.png": {
       "skip": true
@@ -180,7 +191,7 @@ window.SPEC = {
       "skip": true
     },
     "0052.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0053.png": {
       "skip": true
@@ -195,7 +206,7 @@ window.SPEC = {
       "skip": true
     },
     "0057.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0058.png": {
       "skip": true
@@ -210,7 +221,7 @@ window.SPEC = {
       "skip": true
     },
     "0062.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0063.png": {
       "skip": true
@@ -237,7 +248,7 @@ window.SPEC = {
       "skip": true
     },
     "0071.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0072.png": {
       "skip": true
@@ -264,7 +275,7 @@ window.SPEC = {
       "skip": true
     },
     "0080.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0081.png": {
       "skip": true
@@ -291,7 +302,7 @@ window.SPEC = {
       "skip": true
     },
     "0089.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0090.png": {
       "skip": true
@@ -318,7 +329,7 @@ window.SPEC = {
       "skip": true
     },
     "0098.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0099.png": {
       "skip": true
@@ -345,7 +356,7 @@ window.SPEC = {
       "skip": true
     },
     "0107.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0108.png": {
       "skip": true
@@ -382,9 +393,17 @@ window.SPEC = {
     },
     "0119.png": {
       "hold": 3,
-      "cap": "Deployed with modal deploy",
-      "vo": "Then it deploys with modal deploy and runs the first refresh on Modal.",
-      "badge": false
+      "badge": false,
+      "cap": "modal deploy, and the public URL answers",
+      "vo": "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+      "voSay": "It deploys with modal deploy, and the page answers on its public modal dot run URL.",
+      "ring": {
+        "x": 735,
+        "y": 516,
+        "w": 852,
+        "h": 146
+      },
+      "ringFor": 3.5
     },
     "0120.png": {
       "skip": true
@@ -507,7 +526,7 @@ window.SPEC = {
       "skip": true
     },
     "0160.png": {
-      "hold": 0.6
+      "skip": true
     },
     "0161.png": {
       "skip": true
@@ -519,7 +538,7 @@ window.SPEC = {
       "skip": true
     },
     "0164.png": {
-      "hold": 0.6
+      "skip": true
     },
     "0165.png": {
       "skip": true
@@ -532,88 +551,9 @@ window.SPEC = {
     },
     "0168.png": {
       "hold": 2.5,
+      "badge": false,
       "cap": "Devin opens a PR in product-demo-apps",
-      "vo": "When it's done, Devin opens a pull request in the demo apps repo.",
-      "badge": false
-    },
-    "0456.png": {
-      "hold": 3,
-      "subPos": {
-        "x": 0.2,
-        "y": 0.5
-      },
-      "cap": "The PR: seven files, ready to merge",
-      "vo": "Here's that pull request in Devin, with the code on the right.",
-      "badge": false
-    },
-    "0457.png": {
-      "hold": 3,
-      "subPos": {
-        "x": 0.2,
-        "y": 0.5
-      },
-      "cap": "Grok with the X Search tool, limited to the first 72 hours",
-      "vo": "The analyzer calls the xAI Responses API with the X Search tool, limited to each launch's first seventy-two hours.",
-      "voSay": "The analyzer calls the ex A I Responses API with the X Search tool, limited to each launch's first seventy-two hours.",
-      "badge": false,
-      "ring": {
-        "x": 1029,
-        "y": 404,
-        "w": 640,
-        "h": 32
-      },
-      "ringFor": 3.5
-    },
-    "0458.png": {
-      "hold": 3,
-      "subPos": {
-        "x": 0.2,
-        "y": 0.5
-      },
-      "cap": "A Modal cron schedule: refresh every 6 hours",
-      "vo": "A Modal cron schedule runs refresh every six hours.",
-      "badge": false,
-      "ring": {
-        "x": 927,
-        "y": 404,
-        "w": 592,
-        "h": 32
-      },
-      "ringFor": 3.5
-    },
-    "0459.png": {
-      "hold": 3,
-      "subPos": {
-        "x": 0.2,
-        "y": 0.5
-      },
-      "cap": ".map() analyzes every launch in parallel",
-      "vo": "Refresh uses map to analyze every launch in its own container, in parallel.",
-      "badge": false,
-      "ring": {
-        "x": 1088,
-        "y": 404,
-        "w": 186,
-        "h": 32
-      },
-      "ringFor": 3.5
-    },
-    "0460.png": {
-      "hold": 3,
-      "subPos": {
-        "x": 0.2,
-        "y": 0.5
-      },
-      "cap": "A web endpoint serves the page",
-      "vo": "And a web endpoint serves the page from the results that refresh saved in a Modal Dict.",
-      "badge": false,
-      "ring": {
-        "x": 720,
-        "y": 404,
-        "w": 176,
-        "h": 32
-      },
-      "ringFor": 3.5
+      "vo": "When it's done, Devin opens a pull request in the demo apps repo."
     },
     "0169.png": {
       "skip": true
@@ -649,11 +589,10 @@ window.SPEC = {
       "skip": true
     },
     "0180.png": {
-      "hold": 0.55,
-      "badge": "Sped up",
-      "cap": "Devin tests the live URL in a browser",
-      "vo": "Devin then opens the live URL in a browser, checks the posts and their links, and records the test.",
-      "voSay": "Devin then opens the lyve URL in a browser, checks the posts and their links, and records the test."
+      "hold": 2.5,
+      "badge": false,
+      "cap": "Devin tests the public URL in a browser",
+      "vo": "It opens the public URL in a browser to test the page."
     },
     "0181.png": {
       "skip": true
@@ -683,7 +622,7 @@ window.SPEC = {
       "skip": true
     },
     "0190.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0191.png": {
       "skip": true
@@ -713,7 +652,7 @@ window.SPEC = {
       "skip": true
     },
     "0200.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0201.png": {
       "skip": true
@@ -734,7 +673,8 @@ window.SPEC = {
       "skip": true
     },
     "0207.png": {
-      "hold": 1.5,
+      "hold": 2,
+      "badge": false,
       "cap": "Devin Review flags four issues",
       "vo": "Devin Review flagged four issues on the pull request."
     },
@@ -805,7 +745,7 @@ window.SPEC = {
       "skip": true
     },
     "0230.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0231.png": {
       "skip": true
@@ -895,7 +835,7 @@ window.SPEC = {
       "skip": true
     },
     "0260.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0261.png": {
       "skip": true
@@ -985,7 +925,7 @@ window.SPEC = {
       "skip": true
     },
     "0290.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0291.png": {
       "skip": true
@@ -1075,7 +1015,7 @@ window.SPEC = {
       "skip": true
     },
     "0320.png": {
-      "hold": 0.55
+      "skip": true
     },
     "0321.png": {
       "skip": true
@@ -1135,7 +1075,7 @@ window.SPEC = {
       "skip": true
     },
     "0340.png": {
-      "hold": 0.6
+      "skip": true
     },
     "0341.png": {
       "skip": true
@@ -1153,10 +1093,7 @@ window.SPEC = {
       "skip": true
     },
     "0346.png": {
-      "hold": 1.5,
-      "badge": "Sped up",
-      "cap": "Fixes, tests and a redeploy",
-      "vo": "Devin fixes them, reruns the tests and redeploys."
+      "skip": true
     },
     "0347.png": {
       "skip": true
@@ -1168,7 +1105,7 @@ window.SPEC = {
       "skip": true
     },
     "0350.png": {
-      "hold": 0.6
+      "skip": true
     },
     "0351.png": {
       "skip": true
@@ -1180,7 +1117,7 @@ window.SPEC = {
       "skip": true
     },
     "0354.png": {
-      "hold": 0.6
+      "skip": true
     },
     "0355.png": {
       "skip": true
@@ -1358,52 +1295,9 @@ window.SPEC = {
     },
     "0413.png": {
       "hold": 3,
-      "cap": "Devin's summary says what went wrong and what it didn't test",
-      "vo": "Its summary is upfront. On the first try, Grok skipped X Search and made up posts, so now the app keeps only posts the search returns.",
-      "badge": false
-    },
-    "0461.png": {
-      "hold": 3,
-      "subPos": "bottom",
-      "cap": "The live app on Modal, with real X data",
-      "vo": "Here's the live app on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
-      "voSay": "Here's the lyve app on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two.",
-      "badge": false
-    },
-    "0462.png": {
-      "hold": 3,
-      "subPos": "bottom",
-      "cap": "Counts are sampled posts, classified by Grok",
-      "vo": "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
       "badge": false,
-      "ring": {
-        "x": 580,
-        "y": 120,
-        "w": 1110,
-        "h": 74
-      },
-      "ringFor": 3.5
-    },
-    "0463.png": {
-      "hold": 2.2,
-      "subPos": "bottom",
-      "cap": "Top praise",
-      "vo": "Each column shows the top praise for that launch.",
-      "badge": false
-    },
-    "0464.png": {
-      "hold": 1.6,
-      "subPos": "bottom",
-      "cap": "Top complaints",
-      "vo": "Then the top complaints.",
-      "badge": false
-    },
-    "0465.png": {
-      "hold": 3,
-      "subPos": "bottom",
-      "cap": "Posts that shaped the conversation",
-      "vo": "And the posts that shaped the conversation link straight back to X.",
-      "badge": false
+      "cap": "Devin's summary: what it fixed, and what went wrong",
+      "vo": "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
     },
     "0414.png": {
       "skip": true
@@ -1530,6 +1424,64 @@ window.SPEC = {
     },
     "0455.png": {
       "skip": true
+    },
+    "0456.png": {
+      "skip": true
+    },
+    "0457.png": {
+      "skip": true
+    },
+    "0458.png": {
+      "skip": true
+    },
+    "0459.png": {
+      "skip": true
+    },
+    "0460.png": {
+      "skip": true
+    },
+    "0461.png": {
+      "hold": 3,
+      "subPos": "bottom",
+      "cap": "The page running on Modal, with real X data",
+      "vo": "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+      "voSay": "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two.",
+      "badge": false
+    },
+    "0462.png": {
+      "hold": 3,
+      "subPos": "bottom",
+      "cap": "Counts are sampled posts, classified by Grok",
+      "vo": "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+      "badge": false,
+      "ring": {
+        "x": 580,
+        "y": 120,
+        "w": 1110,
+        "h": 74
+      },
+      "ringFor": 3.5
+    },
+    "0463.png": {
+      "hold": 2.2,
+      "subPos": "bottom",
+      "cap": "Top praise",
+      "vo": "Each column shows the top praise for that launch.",
+      "badge": false
+    },
+    "0464.png": {
+      "hold": 1.6,
+      "subPos": "bottom",
+      "cap": "Top complaints",
+      "vo": "Then the top complaints.",
+      "badge": false
+    },
+    "0465.png": {
+      "hold": 3,
+      "subPos": "bottom",
+      "cap": "Posts that shaped the conversation",
+      "vo": "And the posts that shaped the conversation link straight back to X.",
+      "badge": false
     }
   }
 };
