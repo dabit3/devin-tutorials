@@ -2,9 +2,9 @@
 // URL: index.html?v=<video-folder>. Loads ../../<v>/spec.js (window.SPEC) and ../../<v>/shots/beats.json.
 (() => {
 const W = 3840, H = 2160, FPS = 60, VW = 1440, VH = 810, K = W / VW;
-// SPEC.dark (opt-in): near-black title/outro/scene palette with light text; unset keeps the default light look.
-let INK = '#191919', BG = '#FCFCFC', DARK = false;
-const tc = a => DARK ? `rgba(236,236,240,${a})` : `rgba(25,25,25,${a})`;
+let INK = '#191919', BG = '#FCFCFC';
+// SPEC.dark: opt-in dark palette for the title/outro cards, backdrop, captions and scenes (unset = the light defaults).
+let DARK = false, INKRGB = '25,25,25', BGRGB = '252,252,252';
 const cv = document.getElementById('c'), ctx = cv.getContext('2d');
 const V = new URLSearchParams(location.search).get('v');
 const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
@@ -221,7 +221,7 @@ async function drawShot(img, f) {
   if (!sc) return ctx.drawImage(await bitmap(shotURL(img)), 0, 0, VW, VH);
   const a = ctx.globalAlpha;
   ctx.save(); ctx.fillStyle = BG; ctx.fillRect(0, 0, VW, VH);
-  window.SCENES[sc.name](ctx, (f - sc.t0) / FPS, { VW, VH, INK, BG, AVATAR, LOCKUP, font, rr, spaced, spacedW, clamp, lerp, prog, eOut, eInOut, eOutQuint, alpha: a });
+  window.SCENES[sc.name](ctx, (f - sc.t0) / FPS, { VW, VH, INK, BG, DARK, AVATAR, LOCKUP, font, rr, spaced, spacedW, clamp, lerp, prog, eOut, eInOut, eOutQuint, alpha: a });
   ctx.restore();
 }
 async function drawUI(f, alpha) {
@@ -277,11 +277,11 @@ function drawBackdrop(a = 1) {
   for (let x = 60; x < W; x += 120) for (let y = 60; y < H; y += 120) { ctx.beginPath(); ctx.arc(x, y, 3.2, 0, Math.PI * 2); ctx.fill(); }
   ctx.restore();
   const g = ctx.createRadialGradient(W / 2, H * 0.45, 200, W / 2, H * 0.5, W * 0.7);
-  const gc = DARK ? '11,11,12' : '252,252,252'; g.addColorStop(0, `rgba(${gc},0.9)`); g.addColorStop(1, `rgba(${gc},0)`); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  g.addColorStop(0, `rgba(${BGRGB},0.9)`); g.addColorStop(1, `rgba(${BGRGB},0)`); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
 }
 function drawLockup(cx, cy, h, a) {
   const w = h * LOCKUP.width / LOCKUP.height;
-  ctx.save(); ctx.globalAlpha = a; ctx.filter = DARK ? 'none' : 'invert(1) brightness(0.1)'; ctx.drawImage(LOCKUP, cx - w / 2, cy - h / 2, w, h); ctx.restore();
+  ctx.save(); ctx.globalAlpha = a; if (!DARK) ctx.filter = 'invert(1) brightness(0.1)'; ctx.drawImage(LOCKUP, cx - w / 2, cy - h / 2, w, h); ctx.restore();
 }
 function spaced(text, x, y, track) { // letter-spaced text, left aligned
   let cx = x; for (const ch of text) { ctx.fillText(ch, cx, y); cx += ctx.measureText(ch).width + track; } return cx - x - track;
@@ -296,7 +296,7 @@ function drawTitleCard(f, out) {
   drawLockup(W / 2, 700 + 30 * (1 - a1), 120, a1);
   // eyebrow
   const a0 = eOut(prog(f, 18, 50));
-  font(40, 500, 'JetBrains Mono'); ctx.fillStyle = tc(0.5 * a0); ctx.textBaseline = 'alphabetic';
+  font(40, 500, 'JetBrains Mono'); ctx.fillStyle = `rgba(${INKRGB},${0.5 * a0})`; ctx.textBaseline = 'alphabetic';
   if (S.eyebrow) { const eb = S.eyebrow.toUpperCase(); const ew = spacedW(eb, 8); spaced(eb, W / 2 - ew / 2, 900, 8); }
   // title words
   font(172, 500); ctx.fillStyle = INK;
@@ -308,7 +308,7 @@ function drawTitleCard(f, out) {
     ctx.save(); ctx.globalAlpha = p; ctx.translate(0, 60 * (1 - p)); spaced(w, x, 1130, track); ctx.restore(); x += ws[i] + gap;
   });
   const a2 = eOut(prog(f, 60, 96));
-  font(64, 400); ctx.fillStyle = tc(0.56 * a2);
+  font(64, 400); ctx.fillStyle = `rgba(${INKRGB},${0.56 * a2})`;
   const sw = spacedW(S.subtitle, -1.2); ctx.save(); ctx.translate(0, 24 * (1 - a2)); spaced(S.subtitle, W / 2 - sw / 2, 1250, -1.2); ctx.restore();
   ctx.restore();
 }
@@ -316,12 +316,12 @@ function drawWindow(f, s, y, radius, shadow) {
   return async () => {
     ctx.save();
     const w = W * s, h = H * s, x = (W - w) / 2, yy = (H - h) / 2 + y;
-    if (shadow > 0) { ctx.save(); ctx.shadowColor = `rgba(0,0,0,${0.18 * shadow})`; ctx.shadowBlur = 120; ctx.shadowOffsetY = 40; rr(x, yy, w, h, radius); ctx.fillStyle = DARK ? '#000' : '#fff'; ctx.fill(); ctx.restore(); }
+    if (shadow > 0) { ctx.save(); ctx.shadowColor = `rgba(0,0,0,${0.18 * shadow})`; ctx.shadowBlur = 120; ctx.shadowOffsetY = 40; rr(x, yy, w, h, radius); ctx.fillStyle = DARK ? BG : '#fff'; ctx.fill(); ctx.restore(); }
     rr(x, yy, w, h, radius); ctx.clip();
     ctx.translate(x, yy); ctx.scale(s, s);
     await drawUI(f);
     ctx.restore();
-    if (shadow > 0) { ctx.save(); rr(x, yy, w, h, radius); ctx.lineWidth = 3; ctx.strokeStyle = DARK ? `rgba(255,255,255,${0.12 * shadow})` : `rgba(0,0,0,${0.08 * shadow})`; ctx.stroke(); ctx.restore(); }
+    if (shadow > 0) { ctx.save(); rr(x, yy, w, h, radius); ctx.lineWidth = 3; ctx.strokeStyle = DARK ? `rgba(255,255,255,${0.1 * shadow})` : `rgba(0,0,0,${0.08 * shadow})`; ctx.stroke(); ctx.restore(); }
   };
 }
 const CAP = { font: 54, padX: 56, h: 124, gap: 64, margin: 72 };
@@ -397,8 +397,8 @@ function drawCaption(f) {
     const x = bx.x, y = bx.y + dy * (bx.dir === 1 ? -1 : 1);
     ctx.save(); ctx.globalAlpha = a;
     ctx.shadowColor = 'rgba(0,0,0,.25)'; ctx.shadowBlur = 50; ctx.shadowOffsetY = 14;
-    rr(x, y, w, h, 30); ctx.fillStyle = 'rgba(25,25,25,.94)'; ctx.fill();
-    if (DARK) { ctx.save(); ctx.shadowColor = 'transparent'; ctx.lineWidth = 2; ctx.strokeStyle = 'rgba(255,255,255,.16)'; ctx.stroke(); ctx.restore(); }
+    rr(x, y, w, h, 30); ctx.fillStyle = DARK ? 'rgba(44,44,46,.96)' : 'rgba(25,25,25,.94)'; ctx.fill();
+    if (DARK) { ctx.save(); ctx.shadowColor = 'transparent'; rr(x + 1, y + 1, w - 2, h - 2, 29); ctx.lineWidth = 2; ctx.strokeStyle = 'rgba(255,255,255,.14)'; ctx.stroke(); ctx.restore(); }
     if (bx.dir && SPEC.capArrows === true) { // small pointer toward the action
       const px = clamp(c.ax, x + 44, x + w - 44), py = bx.dir === -1 ? y : y + h, s = bx.dir === -1 ? -1 : 1;
       ctx.beginPath(); ctx.moveTo(px - 18, py); ctx.lineTo(px, py + 16 * s); ctx.lineTo(px + 18, py); ctx.closePath(); ctx.fill();
@@ -419,8 +419,8 @@ function drawBadge(f) {
   const k = lastBefore(TL.badges, f); if (!k || !k.text) return;
   const a = eOut(prog(f, k.t, k.t + 16));
   font(40, 600); const tw = ctx.measureText(k.text).width; const w = tw + 130, h = 88, x = W - 90 - w, y = 90;
-  ctx.save(); ctx.globalAlpha = a; rr(x, y, w, h, 44); ctx.fillStyle = 'rgba(25,25,25,.9)'; ctx.fill();
-  if (DARK) { ctx.lineWidth = 2; ctx.strokeStyle = 'rgba(255,255,255,.16)'; ctx.stroke(); }
+  ctx.save(); ctx.globalAlpha = a; rr(x, y, w, h, 44); ctx.fillStyle = DARK ? 'rgba(44,44,46,.94)' : 'rgba(25,25,25,.9)'; ctx.fill();
+  if (DARK) { rr(x + 1, y + 1, w - 2, h - 2, 43); ctx.lineWidth = 2; ctx.strokeStyle = 'rgba(255,255,255,.14)'; ctx.stroke(); }
   ctx.fillStyle = '#fff'; // fast-forward glyph
   for (const o of [0, 26]) { ctx.beginPath(); ctx.moveTo(x + 36 + o, y + 28); ctx.lineTo(x + 60 + o, y + 44); ctx.lineTo(x + 36 + o, y + 60); ctx.closePath(); ctx.fill(); }
   ctx.textBaseline = 'middle'; ctx.fillText(k.text, x + 106, y + h / 2 + 2); ctx.textBaseline = 'alphabetic'; ctx.restore();
@@ -429,9 +429,9 @@ function drawOutro(f, p) {
   drawBackdrop();
   const a = eOutQuint(prog(p, 0.1, 0.45)), b = eOut(prog(p, 0.22, 0.55)), c = eOut(prog(p, 0.32, 0.65));
   drawLockup(W / 2, 880 + 30 * (1 - a), 150, a);
-  font(84, 500); ctx.fillStyle = tc(b); let t = SPEC.outro || 'Now try it yourself'; let w = spacedW(t, -2);
+  font(84, 500); ctx.fillStyle = `rgba(${INKRGB},${b})`; let t = SPEC.outro || 'Now try it yourself'; let w = spacedW(t, -2);
   ctx.save(); ctx.translate(0, 30 * (1 - b)); spaced(t, W / 2 - w / 2, 1160, -2); ctx.restore();
-  font(52, 400); ctx.fillStyle = tc(0.56 * c); t = SPEC.outroSub || 'app.devin.ai  ·  docs.devin.ai'; w = spacedW(t, -1);
+  font(52, 400); ctx.fillStyle = `rgba(${INKRGB},${0.56 * c})`; t = SPEC.outroSub || 'app.devin.ai  ·  docs.devin.ai'; w = spacedW(t, -1);
   spaced(t, W / 2 - w / 2, 1270, -1);
 }
 
@@ -478,7 +478,7 @@ function cues() {
 const ready = (async () => {
   await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/spec.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
   SPEC = window.SPEC;
-  if (SPEC.dark) { DARK = true; INK = '#F2F2F4'; BG = '#0B0B0C'; }
+  if (SPEC.dark) { DARK = true; INK = '#F2F2F3'; BG = '#0B0B0C'; INKRGB = '242,242,243'; BGRGB = '11,11,12'; }
   const VOICE = new URLSearchParams(location.search).get('voice');
   if (VOICE) { SPEC.voLines = await (await fetch(`../../${V}/vo/${VOICE}/lines.json`)).json(); SPEC.capScale = SPEC.voCapScale ?? 1.0; }
   const cs = SPEC.capScale ?? 1.18; for (const k of ['font', 'padX', 'h', 'gap']) CAP[k] = Math.round(CAP[k] * cs);
