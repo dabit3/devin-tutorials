@@ -107,7 +107,7 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "hl": null,
-      "hold": 6,
+      "hold": 2.5,
       "cap": "Ways to extend it",
       "vo": "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
     }
