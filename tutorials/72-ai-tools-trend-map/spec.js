@@ -8,17 +8,29 @@ window.SPEC = {
   "maxZoom": 1.3,
   "pollRunMax": 2.2,
   "dark": true,
+  "noZoom": [
+    [
+      "0000m.png",
+      "0000m.png"
+    ]
+  ],
   "edit": {
     "0000.png": {
-      "vo": "Founders, investors and developers all want to know which AI coding tools people actually use, and which ones they only talk about. By the end of this video, we'll have a live page on Modal that answers that with real posts from X.",
-      "voSay": "Founders, investors and developers all want to know which AI coding tools people actually use, and which ones they only talk about. By the end of this video, we'll have a lyve page on Modal that answers that with real posts from X.",
+      "vo": "Founders, investors and developers all want to know which AI coding tools people actually use, and which ones they only talk about. By the end of this video, we'll have a public page on Modal that answers that with real posts from X.",
       "hold": 2,
       "cursor": false,
-      "cap": "Goal: a live trend map of AI coding tools, usage vs hype"
+      "cap": "Goal: a trend map of AI coding tools, usage vs hype"
+    },
+    "0000m.png": {
+      "vo": "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between runs. On Modal, a scheduled function does the daily pull, and .map() runs the xAI searches in parallel across containers. A Modal Dict stores the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when it's idle, and you pay by the second.",
+      "voSay": "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between runs. On Modal, a scheduled function does the daily pull, and dot map runs the ex A I searches in parallel across containers. A Modal Dict stores the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when it's idle, and you pay by the second.",
+      "scene": "modal",
+      "hold": 1.5,
+      "cap": "Why Modal: schedule, parallel searches, storage, a public URL"
     },
     "0001.png": {
-      "vo": "I pick the product demo apps repo and give Devin one plain-language prompt. It asks for ten tools over the last four weeks, searched with Grok through the xAI API, with each post labeled as a usage report or hype. It also asks for a daily schedule on Modal, one parallel search per tool and week, and a dark page that labels every count as a sample.",
-      "voSay": "I pick the product demo apps repo and give Devin one plain-language prompt. It asks for ten tools over the last four weeks, searched with Grok through the ex A I API, with each post labeled as a usage report or hype. It also asks for a daily schedule on Modal, one parallel search per tool and week, and a dark page that labels every count as a sample.",
+      "vo": "I pick the product demo apps repo and give Devin one plain-language prompt. It asks for ten tools over the last four weeks, with each post labeled as a usage report or hype. Grok does the searching through the xAI API, and the app runs on Modal.",
+      "voSay": "I pick the product demo apps repo and give Devin one plain-language prompt. It asks for ten tools over the last four weeks, with each post labeled as a usage report or hype. Grok does the searching through the ex A I API, and the app runs on Modal.",
       "hold": 4,
       "cap": "One plain-language prompt"
     },
@@ -29,11 +41,12 @@ window.SPEC = {
       "skip": true
     },
     "0004.png": {
-      "vo": "Devin starts by looking at how this repo already uses Modal, and sets up the tools it needs.",
-      "badge": "Sped up",
-      "cap": "Devin checks the repo and sets up Modal"
+      "skip": true
     },
     "0005.png": {
+      "skip": true
+    },
+    "0006.png": {
       "skip": true
     },
     "0007.png": {
@@ -51,6 +64,9 @@ window.SPEC = {
     "0011.png": {
       "skip": true
     },
+    "0012.png": {
+      "skip": true
+    },
     "0013.png": {
       "skip": true
     },
@@ -64,6 +80,9 @@ window.SPEC = {
       "skip": true
     },
     "0017.png": {
+      "skip": true
+    },
+    "0018.png": {
       "skip": true
     },
     "0019.png": {
@@ -81,6 +100,9 @@ window.SPEC = {
     "0023.png": {
       "skip": true
     },
+    "0024.png": {
+      "skip": true
+    },
     "0025.png": {
       "skip": true
     },
@@ -94,6 +116,9 @@ window.SPEC = {
       "skip": true
     },
     "0029.png": {
+      "skip": true
+    },
+    "0030.png": {
       "skip": true
     },
     "0031.png": {
@@ -111,6 +136,9 @@ window.SPEC = {
     "0035.png": {
       "skip": true
     },
+    "0036.png": {
+      "skip": true
+    },
     "0037.png": {
       "skip": true
     },
@@ -124,6 +152,9 @@ window.SPEC = {
       "skip": true
     },
     "0041.png": {
+      "skip": true
+    },
+    "0042.png": {
       "skip": true
     },
     "0043.png": {
@@ -141,6 +172,9 @@ window.SPEC = {
     "0047.png": {
       "skip": true
     },
+    "0048.png": {
+      "skip": true
+    },
     "0049.png": {
       "skip": true
     },
@@ -154,6 +188,9 @@ window.SPEC = {
       "skip": true
     },
     "0053.png": {
+      "skip": true
+    },
+    "0054.png": {
       "skip": true
     },
     "0055.png": {
@@ -171,6 +208,9 @@ window.SPEC = {
     "0059.png": {
       "skip": true
     },
+    "0060.png": {
+      "skip": true
+    },
     "0061.png": {
       "skip": true
     },
@@ -186,6 +226,9 @@ window.SPEC = {
     "0065.png": {
       "skip": true
     },
+    "0066.png": {
+      "skip": true
+    },
     "0067.png": {
       "skip": true
     },
@@ -199,6 +242,9 @@ window.SPEC = {
       "skip": true
     },
     "0071.png": {
+      "skip": true
+    },
+    "0072.png": {
       "skip": true
     },
     "0073.png": {
@@ -217,7 +263,7 @@ window.SPEC = {
       "skip": true
     },
     "0078.png": {
-      "vo": "After writing the app, Devin deploys it with modal deploy, then runs the linter and the tests.",
+      "vo": "Devin writes the app and deploys it with modal deploy.",
       "ring": {
         "x": 488,
         "y": 117,
@@ -225,8 +271,8 @@ window.SPEC = {
         "h": 30
       },
       "ringFor": 3,
-      "hold": 3.5,
-      "cap": "modal deploy, then lint and tests",
+      "hold": 3,
+      "cap": "Deployed with modal deploy",
       "badge": null
     },
     "0079.png": {
@@ -260,9 +306,7 @@ window.SPEC = {
       "skip": true
     },
     "0086.png": {
-      "vo": "Next, it starts a manual refresh, which runs one search per tool and week, forty in all, in parallel.",
-      "badge": "Sped up",
-      "cap": "One manual refresh: 40 searches in parallel"
+      "skip": true
     },
     "0087.png": {
       "skip": true
@@ -271,6 +315,9 @@ window.SPEC = {
       "skip": true
     },
     "0089.png": {
+      "skip": true
+    },
+    "0090.png": {
       "skip": true
     },
     "0091.png": {
@@ -288,6 +335,9 @@ window.SPEC = {
     "0095.png": {
       "skip": true
     },
+    "0096.png": {
+      "skip": true
+    },
     "0097.png": {
       "skip": true
     },
@@ -301,6 +351,9 @@ window.SPEC = {
       "skip": true
     },
     "0101.png": {
+      "skip": true
+    },
+    "0102.png": {
       "skip": true
     },
     "0103.png": {
@@ -318,6 +371,9 @@ window.SPEC = {
     "0107.png": {
       "skip": true
     },
+    "0108.png": {
+      "skip": true
+    },
     "0109.png": {
       "skip": true
     },
@@ -333,6 +389,9 @@ window.SPEC = {
     "0113.png": {
       "skip": true
     },
+    "0114.png": {
+      "skip": true
+    },
     "0115.png": {
       "skip": true
     },
@@ -346,18 +405,10 @@ window.SPEC = {
       "skip": true
     },
     "0119.png": {
-      "vo": "Once the data is in, Devin tests the live URL, checking the page and the data endpoint.",
-      "voSay": "Once the data is in, Devin tests the lyve URL, checking the page and the data endpoint.",
-      "ring": {
-        "x": 708,
-        "y": 282,
-        "w": 794,
-        "h": 62
-      },
-      "ringFor": 3,
-      "hold": 3.5,
-      "cap": "Testing the live URL and /api/data",
-      "badge": null
+      "skip": true
+    },
+    "0120.png": {
+      "skip": true
     },
     "0121.png": {
       "skip": true
@@ -372,6 +423,9 @@ window.SPEC = {
       "skip": true
     },
     "0125.png": {
+      "skip": true
+    },
+    "0126.png": {
       "skip": true
     },
     "0127.png": {
@@ -389,6 +443,9 @@ window.SPEC = {
     "0131.png": {
       "skip": true
     },
+    "0132.png": {
+      "skip": true
+    },
     "0133.png": {
       "skip": true
     },
@@ -402,6 +459,9 @@ window.SPEC = {
       "skip": true
     },
     "0137.png": {
+      "skip": true
+    },
+    "0138.png": {
       "skip": true
     },
     "0139.png": {
@@ -419,6 +479,9 @@ window.SPEC = {
     "0143.png": {
       "skip": true
     },
+    "0144.png": {
+      "skip": true
+    },
     "0145.png": {
       "skip": true
     },
@@ -434,6 +497,20 @@ window.SPEC = {
     "0149.png": {
       "skip": true
     },
+    "0150.png": {
+      "vo": "Its task list shows the plan. It stored the xAI key as a Modal Secret, then wrote the app and its tests before the deploy.",
+      "voSay": "Its task list shows the plan. It stored the ex A I key as a Modal Secret, then wrote the app and its tests before the deploy.",
+      "ring": {
+        "x": 719,
+        "y": 185,
+        "w": 826,
+        "h": 134
+      },
+      "ringFor": 4,
+      "hold": 3.5,
+      "cap": "Devin's plan, task by task",
+      "badge": null
+    },
     "0151.png": {
       "skip": true
     },
@@ -447,6 +524,9 @@ window.SPEC = {
       "skip": true
     },
     "0155.png": {
+      "skip": true
+    },
+    "0156.png": {
       "skip": true
     },
     "0157.png": {
@@ -464,6 +544,9 @@ window.SPEC = {
     "0161.png": {
       "skip": true
     },
+    "0162.png": {
+      "skip": true
+    },
     "0163.png": {
       "skip": true
     },
@@ -479,15 +562,17 @@ window.SPEC = {
     "0167.png": {
       "skip": true
     },
+    "0168.png": {
+      "skip": true
+    },
     "0169.png": {
       "skip": true
     },
     "0170.png": {
-      "vo": "Then it pushes the branch and opens a pull request.",
-      "badge": "Sped up",
-      "cap": "Branch pushed, pull request next"
+      "skip": true
     },
     "0171.png": {
+      "vo": "Then it opens a pull request.",
       "ring": {
         "x": 308,
         "y": 28,
@@ -495,7 +580,7 @@ window.SPEC = {
         "h": 28
       },
       "ringFor": 2.5,
-      "hold": 3,
+      "hold": 2.5,
       "cap": "Pull request #76",
       "badge": null
     },
@@ -557,10 +642,10 @@ window.SPEC = {
       "skip": true
     },
     "0191.png": {
-      "vo": "Before finishing, Devin runs browser checks on the live page and fixes the issues its code review found.",
-      "voSay": "Before finishing, Devin runs browser checks on the lyve page and fixes the issues its code review found.",
-      "badge": "Sped up",
-      "cap": "Browser checks and review fixes"
+      "skip": true
+    },
+    "0192.png": {
+      "skip": true
     },
     "0193.png": {
       "skip": true
@@ -575,6 +660,9 @@ window.SPEC = {
       "skip": true
     },
     "0197.png": {
+      "skip": true
+    },
+    "0198.png": {
       "skip": true
     },
     "0199.png": {
@@ -592,6 +680,9 @@ window.SPEC = {
     "0203.png": {
       "skip": true
     },
+    "0204.png": {
+      "skip": true
+    },
     "0205.png": {
       "skip": true
     },
@@ -605,6 +696,9 @@ window.SPEC = {
       "skip": true
     },
     "0209.png": {
+      "skip": true
+    },
+    "0210.png": {
       "skip": true
     },
     "0211.png": {
@@ -622,6 +716,9 @@ window.SPEC = {
     "0215.png": {
       "skip": true
     },
+    "0216.png": {
+      "skip": true
+    },
     "0217.png": {
       "skip": true
     },
@@ -635,6 +732,9 @@ window.SPEC = {
       "skip": true
     },
     "0221.png": {
+      "skip": true
+    },
+    "0222.png": {
       "skip": true
     },
     "0223.png": {
@@ -652,6 +752,9 @@ window.SPEC = {
     "0227.png": {
       "skip": true
     },
+    "0228.png": {
+      "skip": true
+    },
     "0229.png": {
       "skip": true
     },
@@ -665,6 +768,9 @@ window.SPEC = {
       "skip": true
     },
     "0233.png": {
+      "skip": true
+    },
+    "0234.png": {
       "skip": true
     },
     "0235.png": {
@@ -682,6 +788,9 @@ window.SPEC = {
     "0239.png": {
       "skip": true
     },
+    "0240.png": {
+      "skip": true
+    },
     "0241.png": {
       "skip": true
     },
@@ -695,6 +804,9 @@ window.SPEC = {
       "skip": true
     },
     "0245.png": {
+      "skip": true
+    },
+    "0246.png": {
       "skip": true
     },
     "0247.png": {
@@ -712,6 +824,9 @@ window.SPEC = {
     "0251.png": {
       "skip": true
     },
+    "0252.png": {
+      "skip": true
+    },
     "0253.png": {
       "skip": true
     },
@@ -725,6 +840,9 @@ window.SPEC = {
       "skip": true
     },
     "0257.png": {
+      "skip": true
+    },
+    "0258.png": {
       "skip": true
     },
     "0259.png": {
@@ -742,6 +860,9 @@ window.SPEC = {
     "0263.png": {
       "skip": true
     },
+    "0264.png": {
+      "skip": true
+    },
     "0265.png": {
       "skip": true
     },
@@ -755,6 +876,9 @@ window.SPEC = {
       "skip": true
     },
     "0269.png": {
+      "skip": true
+    },
+    "0270.png": {
       "skip": true
     },
     "0271.png": {
@@ -772,6 +896,9 @@ window.SPEC = {
     "0275.png": {
       "skip": true
     },
+    "0276.png": {
+      "skip": true
+    },
     "0277.png": {
       "skip": true
     },
@@ -785,6 +912,9 @@ window.SPEC = {
       "skip": true
     },
     "0281.png": {
+      "skip": true
+    },
+    "0282.png": {
       "skip": true
     },
     "0283.png": {
@@ -802,6 +932,9 @@ window.SPEC = {
     "0287.png": {
       "skip": true
     },
+    "0288.png": {
+      "skip": true
+    },
     "0289.png": {
       "skip": true
     },
@@ -815,6 +948,9 @@ window.SPEC = {
       "skip": true
     },
     "0293.png": {
+      "skip": true
+    },
+    "0294.png": {
       "skip": true
     },
     "0295.png": {
@@ -832,6 +968,9 @@ window.SPEC = {
     "0299.png": {
       "skip": true
     },
+    "0300.png": {
+      "skip": true
+    },
     "0301.png": {
       "skip": true
     },
@@ -845,6 +984,9 @@ window.SPEC = {
       "skip": true
     },
     "0305.png": {
+      "skip": true
+    },
+    "0306.png": {
       "skip": true
     },
     "0307.png": {
@@ -862,6 +1004,9 @@ window.SPEC = {
     "0311.png": {
       "skip": true
     },
+    "0312.png": {
+      "skip": true
+    },
     "0313.png": {
       "skip": true
     },
@@ -876,6 +1021,19 @@ window.SPEC = {
     },
     "0317.png": {
       "skip": true
+    },
+    "0318.png": {
+      "vo": "Devin also tests the page in a browser at its public URL. All ten tools, both charts and the mobile layout pass.",
+      "ring": {
+        "x": 716,
+        "y": 522,
+        "w": 873,
+        "h": 56
+      },
+      "ringFor": 4,
+      "hold": 3.5,
+      "cap": "Browser test passed on the public URL",
+      "badge": null
     },
     "0319.png": {
       "skip": true
@@ -905,8 +1063,7 @@ window.SPEC = {
       "skip": true
     },
     "0327.png": {
-      "vo": "So I ask for a neutral grey, and another check of the live URL.",
-      "voSay": "So I ask for a neutral grey, and another check of the lyve URL.",
+      "vo": "So I ask for a neutral grey, and another check of the page.",
       "cap": "Follow-up: neutral grey for hype",
       "subPos": {
         "x": 0.5,
@@ -917,6 +1074,9 @@ window.SPEC = {
       "skip": true
     },
     "0329.png": {
+      "skip": true
+    },
+    "0330.png": {
       "skip": true
     },
     "0331.png": {
@@ -934,6 +1094,9 @@ window.SPEC = {
     "0335.png": {
       "skip": true
     },
+    "0336.png": {
+      "skip": true
+    },
     "0337.png": {
       "skip": true
     },
@@ -947,6 +1110,9 @@ window.SPEC = {
       "skip": true
     },
     "0341.png": {
+      "skip": true
+    },
+    "0342.png": {
       "skip": true
     },
     "0343.png": {
@@ -975,10 +1141,9 @@ window.SPEC = {
       "badge": null
     },
     "0347.png": {
-      "vo": "Here's the live app on Modal. Every count is posts found in the X search sample, not a total. In this sample, Codex and Cursor are ahead on usage share.",
-      "voSay": "Here's the lyve app on Modal. Every count is posts found in the X search sample, not a total. In this sample, Codex and Cursor are ahead on usage share.",
+      "vo": "Here's the app running on Modal at its public URL. Every count is posts found in the X search sample, not a total. In this sample, Codex and Cursor are ahead on usage share.",
       "hold": 5,
-      "cap": "The live app at its modal.run URL"
+      "cap": "The app at its modal.run URL"
     }
   }
 };
