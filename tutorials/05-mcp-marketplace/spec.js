@@ -2,148 +2,141 @@ window.SPEC = {
   "title": "MCP Servers & Marketplace",
   "subtitle": "Connect Devin to the tools your team already uses",
   "outro": "Give Devin more tools",
-  "speed": 1,
+  "speed": 3,
   "cps": 48,
-  "voOutro": "Give Devin more tools.",
+  "pollRunMax": 3,
+  "capPos": "bottom",
+  "capArrows": false,
   "edit": {
     "0000.png": {
       "hold": 2.6,
       "cursor": false,
-      "vo": "MCP servers connect Devin to the tools and data your team already uses. Add one once, and Devin can use it in every session."
+      "vo": "MCP servers give Devin tools beyond its built-in ones, like your docs, databases and issue trackers."
     },
     "0001.png": {
-      "vo": "Open Customize from the sidebar."
+      "cap": "Open the sidebar",
+      "vo": "Open the sidebar, and click Customize."
     },
     "0003.png": {
-      "vo": "MCPs have their own tab, next to plugins, skills, hooks and rules."
+      "cap": "Open Customize",
+      "hl": true,
+      "hlPad": 4,
+      "capPos": "auto"
     },
     "0005.png": {
-      "vo": "Add them just for you, or for your whole organization, so every member gets them."
+      "hold": 0.4
     },
     "0006.png": {
-      "vo": "Click Add MCP."
+      "cap": "Open the MCPs tab",
+      "vo": "Then open the MCPs tab.",
+      "capPos": "auto"
     },
     "0008.png": {
-      "hold": 1.2,
-      "vo": "You can bring your own server, or install one from the marketplace."
+      "hold": 1.6,
+      "cap": "Install just for you, or for your whole organization",
+      "hl": true,
+      "capPos": "auto",
+      "vo": "MCPs can be just for you, or shared with your whole organization."
     },
     "0009.png": {
-      "vo": "To bring your own, choose Add custom MCP."
-    },
-    "0010.png": {
-      "cam": {
-        "x": 1060,
-        "y": 330,
-        "z": 1.35
-      },
-      "camDelay": 0.3,
-      "camDur": 1.2
+      "cap": "Click Add MCP",
+      "vo": "Click Add MCP.",
+      "capPos": "auto"
     },
     "0011.png": {
-      "hold": 1.6,
-      "vo": "Give it a name, and point Devin at your server."
-    },
-    "0012.png": {
-      "cam": {
-        "x": 1100,
-        "y": 560,
-        "z": 1.45
-      },
-      "camDur": 0.9,
-      "vo": "It connects over STDIO, SSE, or streamable HTTP.",
-      "voSay": "It connects over S T D I O, S S E, or streamable H T T P."
+      "hold": 1.4,
+      "cap": "Pick one from the plugin marketplace",
+      "hl": true,
+      "capPos": "auto",
+      "vo": "The quickest way is to pick one from the plugin marketplace."
     },
     "0014.png": {
-      "hold": 2,
-      "vo": "Once it connects, its tools show up in your sessions."
+      "hold": 1.8,
+      "cap": "Browse over 200 plugins",
+      "vo": "It has over two hundred plugins to choose from."
     },
     "0015.png": {
-      "cam": "reset",
-      "camDur": 0.8
-    },
-    "0017.png": {
-      "vo": "Click Add MCP again, and choose the plugin marketplace."
-    },
-    "0019.png": {},
-    "0021.png": {
-      "hold": 2.2,
-      "vo": "The marketplace has hundreds of plugins. Most are a single MCP server, often with skills that teach Devin how to use it."
+      "cap": "Search for the tool you need",
+      "capPos": "auto",
+      "vo": "Search for the one you need, like Context7 for up-to-date library docs."
     },
     "0022.png": {
-      "vo": "Search for the tool you need."
+      "cap": "Click Install and choose a scope",
+      "capPos": "auto",
+      "vo": "Click Install, and choose who gets it."
     },
-    "0028.png": {
-      "vo": "Context7 gives Devin up-to-date docs for libraries and frameworks.",
-      "voSay": "Context seven gives Devin up-to-date docs for libraries and frameworks."
+    "0024.png": {
+      "hold": 0.8,
+      "hl": true
     },
-    "0029.png": {
-      "vo": "Click Install, and choose a scope."
+    "0027.png": {
+      "hold": 0.6,
+      "cap": "Review what the plugin can access, then confirm",
+      "hl": true,
+      "vo": "Review the security notice, confirm, and install."
     },
-    "0031.png": {
-      "hold": 1.4,
-      "cam": {
-        "x": 520,
-        "y": 260,
-        "z": 1.5
-      },
-      "camDur": 0.9
-    },
-    "0033.png": {
-      "cam": "reset"
-    },
-    "0034.png": {
-      "hold": 2.4,
-      "vo": "Devin shows what the plugin can do, including reaching external data through its MCP servers."
+    "0032.png": {
+      "hold": 2.0,
+      "cap": "Context7 is installed",
+      "hl": true,
+      "capPos": "auto",
+      "vo": "Context7 is now installed for you."
     },
     "0035.png": {
-      "vo": "Confirm, then install."
+      "hold": 2.6,
+      "cap": "It brings an MCP server and a skill",
+      "hl": {
+        "x": 941,
+        "y": 265,
+        "w": 960,
+        "h": 62
+      },
+      "capPos": "auto",
+      "vo": "It adds an MCP server, plus a skill that tells Devin when to use it."
+    },
+    "0038.png": {
+      "hold": 2.2,
+      "cap": "Enabled under MCPs",
+      "hl": {
+        "x": 720,
+        "y": 439,
+        "w": 1000,
+        "h": 80
+      },
+      "capPos": "auto",
+      "vo": "It shows up under MCPs, switched on."
     },
     "0039.png": {
-      "hold": 2.8,
-      "cap": "Context7 is enabled and ready to use",
-      "cam": {
-        "x": 1130,
-        "y": 300,
-        "z": 1.3
-      },
-      "camDur": 1.4,
-      "vo": "Context7 is installed, with its MCP server enabled and a skill.",
-      "voSay": "Context seven is installed, with its MCP server enabled and a skill."
-    },
-    "0040.png": {
-      "skip": true
-    },
-    "0041.png": {
-      "skip": true
+      "cap": "Or add your own server",
+      "capPos": "auto",
+      "vo": "You can also add your own server."
     },
     "0042.png": {
-      "skip": true
-    },
-    "0043.png": {
-      "skip": true
+      "cap": "New MCP points Devin at a server you run yourself",
+      "capPos": "auto",
+      "vo": "New MCP points Devin at a server you run yourself."
     },
     "0044.png": {
-      "skip": true
-    },
-    "0045.png": {
-      "skip": true
-    },
-    "0046.png": {
-      "hold": 1.4,
-      "cap": "It shows up under MCPs, toggled on",
-      "cam": "reset",
-      "vo": "It shows up under MCPs, toggled on."
+      "hold": 0.8
     },
     "0047.png": {
-      "hold": 3,
-      "cam": {
-        "x": 900,
-        "y": 330,
-        "z": 1.5
+      "hold": 1.8,
+      "cap": "Connect over HTTP, STDIO or SSE",
+      "hl": true,
+      "capPos": "auto",
+      "vo": "It connects over HTTP, STDIO, or SSE."
+    },
+    "0050.png": {
+      "hold": 2.6,
+      "cap": "Ready in your sessions",
+      "hl": {
+        "x": 720,
+        "y": 439,
+        "w": 1000,
+        "h": 80
       },
-      "camDelay": 0.6,
-      "camDur": 1.4,
-      "vo": "Now Devin calls its tools on its own, whenever a task needs them. For servers that need an account, choose Connect, and sign in."
+      "capPos": "auto",
+      "vo": "Either way, its tools are ready in your Devin sessions."
     }
   }
 };

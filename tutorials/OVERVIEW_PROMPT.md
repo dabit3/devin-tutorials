@@ -1,6 +1,6 @@
 # Prompt: create a high-level Devin overview video (diagrams)
 
-For a step-by-step walkthrough of one feature use `TUTORIAL_PROMPT.md` instead.
+For a step-by-step walkthrough of one feature use [TUTORIAL_PROMPT.md](TUTORIAL_PROMPT.md) instead.
 
 Copy everything below the line into a new Devin session. Fill in the fields at the top; leave the rest unchanged.
 
@@ -11,58 +11,76 @@ Create a short, high-level overview video that explains how one Devin capability
 - **Topic:** <e.g. "Managed Devins", "Automations", "Security Swarm">
 - **The one idea the viewer should leave with:** <one sentence>
 - **Docs:** <links>
-- **Source tutorials to reuse shots from:** <e.g. 19, 07 + 16; or "none, capture new">
+- **Source tutorials to reuse shots from:** <e.g. 19, 23, 26; or "none, capture new">
+
+## Scope and accuracy
+
+- These are reusable production rules from tutorials 01–34. A per-video brief can add constraints for that deliverable, but they do not become shared defaults. Tutorial 35 / conference-reel directions stay confined to that reel: do not import its silent format, palette, layout, fresh-footage mandate, testing-hero story, chapter count, animation geometry, pace or lengths. Keep independently approved pre-conference light/minimal styling, caption placement, genuine footage reuse and restrained rings.
+- Verify current official docs and product behavior before scripting. Use only supported features/primitives; omit deprecated features entirely, including migration notes. Do not invent features, settings, limits or guarantees, or claim complete scanner coverage. Use current Customize paths for plugins/MCPs and Customize → Memory. Users can ask Devin to remember/forget/change a preference; app memory files are read-only.
+- Claims and demonstrations must be honest. A conceptual diagram is not a live feature run; simulation is not hardware proof; Android via an emulator in an Ubuntu session/blueprint is not an Android picker option. Use real citation/source links, disclose deliberately planted bugs in captions/narration, and never claim untested checks passed. Show failure/fix/retest only if it genuinely occurred.
+- First Session / Introducing Devin-style examples need actual UI feature work and recorded browser testing before any authorized merge. Never hide a merged icon to imply false chronology. Explain the settled result/agent counts, not a plan that correction loops changed.
 
 ## What kind of video this is
 
-A concept explainer, not a walkthrough: "this is how it works and what you can do". Examples on main: 23 (Managed Devins overview). Others in review: 24 Automations, 25 Security Swarm, 26 SDLC, 27 Code Scans, 28 Multiplatform.
+A concept explainer, not a click-by-click walkthrough: "this is how it works and what you can do". Verified examples on main include `23-managed-devins-overview/scenes.js`, `26-sdlc-overview/scenes.js`, `28-multiplatform-overview/`, `31-hardware-test-triage-overview/`, `32-dynamic-workflows-overview/` and `34-devin-primitives-overview/`. Check actual folder availability before copying; do not depend on unmerged examples.
 
-- **Length:** about 55–90 s per cut. Shorter than a step-by-step tutorial; use judgment. A good shape is 4–5 diagram scenes alternating with 4–6 real UI shots, one sentence per beat (≈55 s captioned / ≈70 s narrated).
-- **Structure:** (1) one plain sentence on what it does; (2) how it works, as an animated diagram that builds up step by step; (3) "here's what that looks like": a real UI shot after each diagram step, with a ring on the one element that matters; (4) 3–5 highest-value use cases from the docs, each with its own small card or diagram; (5) one crisp closing line, then the Devin end card.
-- **Diagrams:** clean animated `scene:` beats drawn live by the kit engine so they really animate (nodes appearing level by level, a signal travelling along a connector, results flowing back). Visual language from tutorial 19's ending (`19-managed-devins/diagram/`) and 20's `scenes.js`: light `#fafafa` radial background, white rounded cards with soft shadows, Inter, thin connector curves, Devin avatar icons, one thin blue accent. No serif fonts, no purple, no dark backgrounds.
-- **Reusable scene factories:** a `flow(step)` factory (each beat adds one card of the same diagram, alternating with the real shot for that step, as in 27) and a `stage(i)` factory (top row + focus card + chips, as in 26) keep scenes consistent. Copy them from the closest example instead of drawing each scene from scratch.
-- **Real UI only:** every UI shot is a real screenshot. Reuse the step-by-step tutorial's shots first, and capture new UI only for a missing proof. Record the mapping in `shots/SOURCES.json` (shot → source tutorial and file) so "real UI only" is auditable. Pick proof shots from a contact sheet of captured frames; many frames only show Chrome or setup. Old 110%/sidebar-open shots can be cropped to the 125% framing instead of recaptured: `ffmpeg … -vf crop=3312:1863:1008:0,scale=4320:2430`.
-- **Accuracy:** every claim must match the docs. Don't invent features, limits, guarantees or settings, and check the docs for anything the brief asks you to show (nesting appears in tutorial 19 but not in the Managed Devins docs; keep it only if Nader asks). No full-coverage claims for scanners. If a capability isn't in the product UI (e.g. no Android option in the platform menu), show only what really exists and use the docs' wording.
-- **Tone:** calm, Apple-minimal explainer. No launch-video or marketing style (no music-video cuts, no hype text slams); Nader rejected those.
+- **Length:** about 55–90 s per cut as a starting point, not a mandatory limit. Shorter than a step-by-step tutorial; use judgment. A useful shape is 4–5 diagram scenes alternating with 4–6 real UI shots (roughly 55 s captioned / 70 s narrated), adjusted to explain the topic clearly.
+- **Structure:** (1) a concise opening explaining both what it does and why it matters, with a plain-language mental model and value; (2) how it works, as a diagram building step by step; (3) "here's what that looks like": a relevant real proof shot, with one restrained ring; (4) 3–5 highest-value use cases from current docs, with small cards/diagrams; (5) a crisp closing line and Devin end card. If showing a demo prompt, first explain its objective and expected outcome.
+- **Diagrams:** clean animated `scene:` beats drawn live by the kit (nodes appearing level by level, signals along connectors, results flowing back). Keep the approved visual language from `19-managed-devins/diagram/`, 23 and 26: light `#fafafa` radial background, white rounded cards with soft shadows, Inter, thin connector curves, Devin avatars and a thin blue accent. No serif, purple or dark backgrounds. This is the pre-conference overview recipe, not the conference reel's palette/layout.
+- **Reusable scenes:** copy the closest verified main example (23's node/connector diagram, 26's staged focus-card layout, or 34's cue-timed list/recap) rather than drawing every scene from scratch. Adapt factories to the actual concept; do not impose a special chapter count or animation template.
+- **Real UI and reuse:** every UI shot is genuine. Reuse relevant approved shots when they still match the current interface/task/claim; capture new UI when missing, stale or inaccurate. Record every proof shot in `shots/SOURCES.json`: reused shots map to their source tutorial/file; new captures record their source session/account and purpose (what claim/action they prove), without credentials. Choose proof shots from contact sheets, not setup/Chrome-only frames. Faithful crops may improve readability but cannot hide state/chronology or fabricate behavior. For matching older 4320×2430 shots, a crop such as `crop=3312:1863:1008:0,scale=4320:2430` can approximate the tighter framing; inspect the actual source rather than applying it blindly.
+- **Tone:** calm, Apple-minimal explainer; no rejected launch/marketing-experiment recipe, music-video cuts, hype text slams or empty slogans.
 
-## Standing layout rules (every real UI shot)
+## Standing layout and capture rules
 
-Light mode, Chrome at 125% zoom (`ZOOM=1.25`), left sidebar collapsed unless the step uses it, an empty or unused right panel hidden, and a thin animated blue ring with a soft shadow around whatever the line talks about, with the caption beside it, never over the control or text being described. Masks over the account email.
+- Prefer a macOS capture VM for new tutorials; the demonstrated session's platform must match the feature/brief. Use light mode and modest Chrome zoom around 125% (`ZOOM=1.25`) for legibility. Collapse the left sidebar unless the action uses it; hide an empty/unused right panel. Keep session/testing views wide enough to see the whole UI—do not keep zooming inside an active session. Mask the account email.
+- Use a thin animated blue ring with gentle shadow around the relevant visible element, never before it appears. Measure the final settled rectangle (slide-in dialogs can move after `hlBox` is recorded), pad it correctly, limit its lifetime with `ringFor`, and avoid ringing adjacent items.
+- Put captions beside relevant controls in clear empty space for setup/menu/terminal/dialog scenes. In running sessions, a safe bottom band is fine only if it avoids the composer, controls, helper/search text and described content. Use explicit placement when needed; narrated subtitles require `subPos`, not only `capPos`.
+- Hold important menus, selected platform states and dialogs for roughly 2.5–3 s, or cut them if they add nothing. Keep real-work waits around 2–2.5 s, with roughly 3 s maximum inactivity; use eligible-poll compression (`pollRunMax: 2.2`) plus explicit hold edits where needed and an honest "Sped up" badge.
+- Short prompt typing should be fast but readable (about `cps: 48`, roughly 3× the old 16 cps). If it would exceed about 3 s, show the completed prompt as a still with no typing SFX.
+- Review camera transitions at least at 30 fps and at the final exported rate. `cam`/`cam: 'reset'` begins at the crossfade start; a tiny `camDur` can jump the outgoing shot. Prefer stable framing or properly timed gentle movement. Do not ship flashes, skeletons, setup banners, oversized text, popups or "Take control" overlays.
 
 ## Narration
 
-Two cuts by default: the captioned cut (no voice) and a cut narrated in Nader's voice (`T8iHhGIWPm2GVYpQD1Am`, `VO_NAME=nader`).
+Two cuts by default: captioned (no voice) and Nader-narrated. Nader is the only narrator (`T8iHhGIWPm2GVYpQD1Am`, output name `nader`), even on redos whose old briefs/templates name another voice. Do not regenerate other narrator cuts or alter unrelated legacy files/rows on main.
 
-- ElevenLabs default settings only (stability 0.5, similarity 0.75, style 0, speed 1); no tuning, seed, context or `next_text`.
-- Generate the whole script as ONE take with `_kit/tools/vo_onetake.py`, cut locally at sentence boundaries. Never send lines to ElevenLabs one by one. The STT check must pass. Run it from `tutorials/` with relative paths.
-- Write fewer, longer, whole sentences: one per scene, each standing alone (no lines starting with "And"/"Or", no lead-ins). Open with what it does, not "This is Devin X".
-- Don't say file names or numbers that need respelling (spelling out `auth.js` made an 11.7 s subtitle); keep names in the diagram.
-- Animated diagrams need their own timings for the narrated cut, because lines run 1.5–2.5× longer than captioned holds. Sync scene builds to the line's word timings in `vo/<voice>/lines.json`, and set each scene's hold at least as long as its line.
-- Give every proof shot its own short line or a matching hold: a short scene line followed by silent proof shots leaves gaps.
-- Run `VOICE=<id> node _kit/tools/render.mjs <dir> --count` before building; keep every "narration waits on visuals" under ~1 s by trimming or lengthening scene holds.
-- After the build, check the opening: STT hears the intro chime as "[on-hold music]", so check the first word's time and the waveform.
+- With `ELEVEN_LABS_API_KEY` securely available, use the normal current path from `tutorials/`:
+  ```sh
+  python3 _kit/tools/vo.py <folder> T8iHhGIWPm2GVYpQD1Am
+  VOICE=T8iHhGIWPm2GVYpQD1Am VO_NAME=nader SEG=1500 JPEG_QUALITY=85 bash _kit/tools/build.sh <folder>
+  ```
+  One whole-script ElevenLabs request, then local cuts/transcript checks; it sends `text`/`model_id`, no `seed` or `voice_settings`. Use saved/default voice behavior, never hard-coded stability/similarity/style/speed or `next_text`, and never per-sentence requests.
+- Whole-take caching replaces old per-line assumptions. A text change regenerates the complete take; retries do not only redo failed lines. For an explicitly requested fresh take of identical text, preserve the approved files and remove the old `lines.json` cache before rerunning; current `vo.py` has no force flag.
+- Rerecord the entire script for wording/punctuation/tone changes or a full-redo request. Selective retakes need explicit request/approval, matching voice/default request and seam checks. Listen end to end; STT cannot judge tone.
+- Write fewer, fuller complete sentences over related actions. Do not split a sentence across beats, use dangling lead-ins, or cram distinct thoughts into run-on comma/colon lists. Fix odd comma pauses, repeated words, rushing, dull endings or rising/unfinished tone by rephrasing and rerecording, not just trimming silence. Preserve deliberate natural pauses rather than an identical gap after every sentence.
+- Use `voSay` only for pronunciation/punctuation differences from displayed `vo`; keep sentence structure compatible, regenerate the take/subtitle chunks and verify words/timings. Display menu paths with arrows; speak them naturally. Avoid file paths/numbers/acronyms that distract or require long respellings.
+- **Scene timing:** narrated lines often outlast captioned holds. Use narration-only scene holds/timing overrides, with `voSync`, `waitVo` and `voDelay` for real UI actions. Reveal cards, list/recap items, stats and attributions when the words name them, using actual spoken cues, not a fixed stagger. Proof shots need matching speech or a short deliberate hold; do not leave narration waiting silently on long proof shots.
+- **All-gap audit:** run `VOICE=T8iHhGIWPm2GVYpQD1Am node _kit/tools/render.mjs <folder> --count` for duration/late-cue feedback, then audit actual `window.film.cues().vo` / generated `build/cues.json` against `vo/<voice-id>/lines.json`, listen and measure rendered voice-word gaps (STT if needed; music can mask silence detection). Ordinary narration gaps should be about 1.5 s or less, with waiting-on-visuals gaps around 1 s or less. Retain purposeful natural pauses; explicitly justify any longer deliberate pause or real-call exception. Include the last narrated line to the outro.
+- **Current engine caveat:** `vo.py` emits `takeAt`, not the `at`/`end` fields tested by `voNatural`; do not claim original take pauses are automatically restored in the render. Verify actual cues and tune narration-only `hold`, `voGap`/`voSentGap`, `tailHold` and `outroVoDelay` where appropriate. The outro delay starts at UI end; earlier holds/tail also contribute. Do not unnecessarily rebuild an approved captioned cut.
+- After moving/skipping beats, verify every intended line, correct WAV/manifest key and subtitle chunk, including intro/outro. Rename/remap consistently; `--count` alone does not prove coverage or every gap. For opening STT "[on-hold music]", inspect the first spoken word time/waveform.
+- Verify the request and shared `take` value before claiming single-take provenance. Current `vo.py` removes temporary `_take.wav`; never commit it, `_full-take.wav` or other full-script scratch audio.
 
 ## Kit gotchas
 
-- A diagram-only `scene:` beat still needs a placeholder PNG in `shots/` (blank 4320×2430 `#FCFCFC`) and a `beats.json` row.
-- Bottom captions cover y ≈ 715–770 of the 810 frame: keep diagram content above ~700. Diagram eyebrow and subtitle text at least ~13 px in the 1440 layout so it reads at 1080p.
-- Kit `hl`/ring boxes are 1440×810 units, and `x/y` is the box centre. Render 2–4 frames (`render.mjs <dir> --frames … --out build/fix`) before the full build. On session pages never use `capPos: 'bottom'` (it covers the composer); on wide Simulator shots bottom is right.
-- Builds from existing shots render ~100 ms/frame, ~25 min per 4K cut. Captioned and narrated builds of one folder share `build/`, so run them one after the other.
+- Use the latest main kit and its current options, not an old combine branch or obsolete byte-identity requirement. One-off helpers belong in the tutorial folder; coordinate necessary shared kit changes separately instead of making parallel video PRs diverge. No adapter/kit change is needed for the normal narration recipe.
+- Current `vo.py` expects a strict JSON object after `window.SPEC =`, not arbitrary executable JS. Keep runtime narration-only layout code separate from that input and follow the chosen example's spec-generation workflow.
+- A diagram-only `scene:` beat still needs a placeholder PNG in `shots/` and a `beats.json` row; follow the closest working example.
+- Kit coordinates are 1440×810; `hl`/ring `x/y` is the box centre. Bottom captions/subtitles occupy roughly y 715–770: keep diagram content above about 690–700 where that band is used. Diagram eyebrow/subtitle text should be at least about 13 px in the 1440 layout for 1080p readability.
+- Keep text, stats and attribution labels inside their cards with safe padding/shrink-to-fit. Do not let pills, rings or subtitles spill over or collide. Inspect narrated diagrams separately; a captioned frame cannot prove narrated layout.
+- Before a full build, sample with `node _kit/tools/render.mjs <folder> --frames <frame-list> --out build/fix` from `tutorials/`; `--out` is relative to the tutorial folder. Then review frame sheets and transitions of both final cuts.
+- Captioned/narrated builds share `build/`; run them sequentially. Use the bare folder name for `bash _kit/tools/build.sh`, check its final built message/output freshness, and budget several GB or use `SEG` for large renders.
 
-## Sign-in (only if you need new real UI shots)
+## Sign-in and authorized cleanup (only for new captures)
 
-Record in the `thequantexplorer` Devin org. Demo repos are `thequantexplorer/*`, never `dabit3/*`. If `DEVIN_WEB_LOGIN_EIGENEXPLORER` is in your environment, start a CDP Chrome and run `CDP=http://127.0.0.1:<port> DEVIN_WEB_LOGIN="$DEVIN_WEB_LOGIN_EIGENEXPLORER" node tutorials/_kit/tools/devin-login-import.mjs`; it should land on https://app.devin.ai/org/thequantexplorer. Never print or commit the secret. If it's missing or expired, ask Nader to sign in through your Desktop tab. If a proof needs an account state the org doesn't have, stop and ask. Your own git token can't reach `thequantexplorer/*` repos: close demo PRs and delete branches through a short off-camera Devin session there. Clean up everything you create and list it in the PR description.
+Record in `thequantexplorer`, normally with `thequantexplorer/*` demo repos; an integration-specific account/repo needs explicit approval and verified access. Check existing login first. From `tutorials/`, import an available secret with `CDP=http://127.0.0.1:<port> DEVIN_WEB_LOGIN="$DEVIN_WEB_LOGIN_EIGENEXPLORER" node _kit/tools/devin-login-import.mjs`; expect https://app.devin.ai/org/thequantexplorer. Never print/commit credentials. If missing/expired, ask for sign-in through the Desktop tab. If required account/plan state is unavailable, ask rather than mock UI.
 
-## Rules for parallel sessions
+Inspect old demo sessions, PRs, automations/profiles and memory for stale work or answers before a take. Obtain permission before pushing a new repo, editing memory, archiving/closing demo work, reverting main, merging or deleting resources. Preserve memory before approved cleanup, and ask Devin to forget/update only demo-specific entries; app files are read-only. Never clean unrelated work or assume repo permissions. Record actual account changes and remaining authorized cleanup in the PR.
 
-- `tutorials/_kit` must stay byte-identical to main's. One-off helpers go in your tutorial folder. A kit change needs approval, must be tiny and additive, and must keep older videos rendering the same.
-- Don't edit `TUTORIAL_PROMPT.md` or `OVERVIEW_PROMPT.md`; report prompt lessons in your final message instead.
-- Never commit `vo/<voice>/_full-take.wav` (`git add vo` picks it up).
+## Shared prompts and deliverables
 
-## Deliverables (one PR to dabit3/devin-tutorials from a branch off main)
-
-- `<folder>.mp4` (captioned, no voice) and `<folder>-nader.mp4` (narrated), each a 4K60 master plus a 1080p preview, a hand-picked `poster.png` (a diagram or proof frame, not the default middle frame), `voice-script.md`, `shots/SOURCES.json`.
-- README rows in `tutorials/README.md` and the root `README.md`, marked as an overview. The root README is a numbered list that GitHub renumbers: put a blank line plus `<!-- -->` before a row whose number doesn't follow the previous one, and check it renders right. Fetch and merge main right before opening the PR.
-- Push commit by commit (`git push origin <sha>:refs/heads/<branch>`), each MP4 on its own: big pushes return 504 or "remote unpack failed".
-- Before you finish: frame sheets of both cuts (diagram legible at 1080p, nothing overlapping, captions never over what they describe), STT passed, opening checked.
-- Final message: PR link, durations, the 1080p previews and voice script attached, 3–4 key stills (diagrams plus a UI proof shot), and a short list of prompt lessons. Don't merge the PR.
+- Children report reusable lessons to the parent; one coordinator updates these prompt files in a focused PR. Do not let every video child edit shared prompts or promote per-video experiments into global policy.
+- One focused normal PR from latest main with `<folder>.mp4` (captioned) and `<folder>-nader.mp4` (narrated), 4K60 masters/1080p previews, a hand-picked settled `poster.png`, `voice-script.md`, capture/spec/scene sources and `shots/SOURCES.json`.
+- Update `tutorials/README.md` and root README accurately, marked as overview; root narrated entries go in "Narrated tutorials". Preserve numbering; use a blank line and `<!-- -->` before nonconsecutive numbered entries where necessary. Anchor duration edits by title so neighboring rows stay untouched.
+- Fetch main immediately before opening the PR and reconcile upstream changes without reverting newer kit work. Push large media in small targeted commits if needed; verify the remote head after a failed/ambiguous push. Leave the PR unmerged unless instructed.
+- Final checks: current supported claims, honest proof/provenance, what/why and demo context, cue-timed reveals, both cuts at 1080p and transition speed, transcript/tone/coverage/all-gap audits including outro, accurate scoped README diff. No build frames, secrets, full-take audio or unrelated legacy-output changes.
+- Final message: PR link, durations, 1080p previews/full Markdown voice script, 3–4 useful stills and any reusable lessons/authorized cleanup still needed. Keep the actual account-change inventory in the PR.

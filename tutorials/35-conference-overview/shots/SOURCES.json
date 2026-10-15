@@ -1,0 +1,865 @@
+{
+  "production": "Entirely new conference reel; no rejected-reel footage or screenshots used.",
+  "productionDateUTC": "2026-10-14",
+  "duration": 177.3,
+  "fps": 60,
+  "outputSize": [
+    3840,
+    2160
+  ],
+  "viewport": [
+    192,
+    198,
+    3456,
+    1944
+  ],
+  "brandingException": "Only the existing Devin logo and Inter font are reused.",
+  "archives": [
+    {
+      "revision": "852411d08b18fee18fa532e99f49eca23f39e213",
+      "sha256": "552d3025ef1454919e0583d39193a91e58ef7de81200ad1eae574c43f07a29bc"
+    },
+    {
+      "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
+      "sha256": "117e4b3445427dbe0c8ec430c3b24ebe43ffcf089438ec2db65b85ebf24170e7"
+    }
+  ],
+  "editorial": "All product sources play at 1x and show their complete encoded interface, fitted without stretch or crop. Source footage receives a neutral grayscale grade; blue is reserved for editorial emphasis. Waits between sessions are omitted. Historical conversation and review panels were recaptured after the work completed; this is not a claim of live code generation. The Orbit Ask example is separate from the Northstar workflow. No PR is merged.",
+  "featureCoverage": [
+    "DeepWiki",
+    "Ask",
+    "Delegation",
+    "Computer Use",
+    "Steering and collaboration",
+    "Managed Devins",
+    "Cloud IDE",
+    "Devin Review",
+    "Recorded test evidence",
+    "Skills"
+  ],
+  "omittedCapabilities": {
+    "automation": "The capture login is thequantexplorer; native Automation management is scoped to a different organization. The demo UI has zero Automations. No unrelated Automation was run or changed.",
+    "mcp": "The demo session reported Error listing tools and Error calling resolve-library-id from its native Context7 integration. A direct HTTP JSON-RPC call to the actual Context7 MCP server succeeded, but this workaround is not presented as a functioning installed connector. The request capture is excluded.",
+    "dynamicWorkflows": "Not added: the cohesive demo already has independent managed reviews, and adding an unwarranted orchestration would pad the reel."
+  },
+  "testing": {
+    "passed": "Strict forward/reverse Tab wrap after export, Escape focus restoration, K1–K3 focus recovery, search/filter/day/save/conflict/reload, real two-tab synchronization, actual ICS downloads. K4 repeated live-region DOM updates passed.",
+    "untested": "Actual screen-reader speech; C1 lone-CR fixture in a browser; R1 failed-storage-write recovery in a browser; external calendar import; mobile; other browser engines; exhaustive permutations. K5 was a source/lint check, not a browser scenario.",
+    "integrity": "Earlier independent testing reported all 30 archive files byte-identical. Fresh original and focused held tests used separate extracted archives; the held checkout and PR stayed unchanged.",
+    "earlierRecordedEvidence": "https://app.devin.ai/attachments/f3ec8d41-4bac-4dd2-9790-5d36e71f616d/northstar-retest-3dbd344-edited.mp4",
+    "freshOriginal": {
+      "passed": 6,
+      "failed": 3,
+      "source": "38-testing-ui-original.mp4",
+      "note": "Read-only original archive. Strict keyboard checks exposed genuine failures; no defect was seeded."
+    },
+    "freshFocusedRetest": {
+      "passed": 5,
+      "failed": 0,
+      "sources": [
+        "39-testing-ui-retest.mp4",
+        "40-testing-evidence.mp4"
+      ],
+      "checks": "Real one-talk ICS download and Export focus; repeated forward/reverse Tab containment; Escape restoring both existing openers.",
+      "untested": "Calendar-app import, two-talk export, Remove focus, disappeared-opener fallback and wider search/filter/save coverage were not repeated in this focused pass."
+    }
+  },
+  "sources": [
+    {
+      "path": "captures/35-deepwiki.mp4",
+      "sha256": "dba38e594086aaf8261980ce41591c46f3930ce204062a1bb673dcd5150345bc",
+      "repository": "thequantexplorer/orbit-demo",
+      "revision": "26145cfd",
+      "action": "Navigate to Core Architecture, scroll to the reducer flow and expand its Mermaid diagram.",
+      "note": "Fresh DeepWiki navigation capture. Revision is the abbreviated indexed commit exposed by the source links; documentation is not claimed to have been generated during this take.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/org/thequantexplorer/wiki/thequantexplorer/orbit-demo/page/2?branch=main",
+      "captureStarted": "2026-10-14T03:12:15.619Z",
+      "firstFrameUTC": "2026-10-14T03:12:15.636Z",
+      "lastFrameUTC": "2026-10-14T03:12:21.652Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/org/thequantexplorer/wiki/thequantexplorer/orbit-demo/page/2?branch=main",
+      "frameLog": "captures/35-deepwiki/frames.json",
+      "sourceDuration": 11.216667,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 810,
+        "deviceScaleFactor": 1
+      },
+      "pageZoom": 1,
+      "encodedCoordinateScale": 2,
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/10-code-proof.mp4",
+      "sha256": "59ef1cbaf6a9399b89040808ab0ae97ab8aeb3b67b2dcdaf0ace45df465f0c0a",
+      "repository": "thequantexplorer/orbit-demo",
+      "revision": null,
+      "action": "Open code citations in a new Ask answer.",
+      "note": "Separate introductory Orbit example. The Ask UI did not expose its indexed commit. Exact captured bytes are pinned below.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/search/thequantexplorerorbitdemo-how_9d9aa59f-e200-4dc3-8c8b-56a1553e2c23",
+      "captureStarted": "2026-10-14T01:13:17.994Z",
+      "firstFrameUTC": "2026-10-14T01:13:18.028Z",
+      "lastFrameUTC": "2026-10-14T01:13:24.823Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/search/thequantexplorerorbitdemo-how_9d9aa59f-e200-4dc3-8c8b-56a1553e2c23",
+      "frameLog": "captures/10-code-proof/frames.json",
+      "sourceDuration": 17.583333,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 2880,
+        "height": 1620,
+        "deviceScaleFactor": 1
+      },
+      "pageZoom": 1,
+      "encodedCoordinateScale": 1,
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/01-request.mp4",
+      "sha256": "5f947f2b5f02b30a403a12910903ba037c2dc1939764b38f4727ce27d341f709",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": null,
+      "action": "Type and submit the original Northstar brief.",
+      "note": "Captured before the implementation existed. The frame log URL is the resulting session URL; the request starts on the new-session composer.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T01:06:50.005Z",
+      "firstFrameUTC": "2026-10-14T01:06:50.035Z",
+      "lastFrameUTC": "2026-10-14T01:07:09.470Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "frameLog": "captures/01-request/frames.json",
+      "sourceDuration": 19.916667,
+      "encodedSize": [
+        1440,
+        900
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 2
+      },
+      "pageZoom": 1,
+      "encodedCoordinateScale": 1,
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/38-testing-ui-original.mp4",
+      "sha256": "7e8724d36625ffca28db3af393c5c457c0094ebb4f4e41d44e477ee9e9f2114b",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": "852411d08b18fee18fa532e99f49eca23f39e213",
+      "action": "Watch the real Devin testing-mode conversation and live Computer panel while the testing agent exercises the untouched original archive.",
+      "note": "New live testing-interface capture. Selected ranges begin after the experimental CSS zoom was removed. No source edits, seeded failures, merges or deployments. The historical genuine finding follows separately.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T20:26:06.232Z",
+      "firstFrameUTC": "2026-10-14T20:26:06.249Z",
+      "lastFrameUTC": "2026-10-14T20:29:08.761Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e?tab=browser",
+      "frameLog": "captures/38-testing-ui-original/frames.json",
+      "sourceDuration": 182.883333,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 810,
+        "deviceScaleFactor": 1
+      },
+      "pageZoom": 1.25,
+      "encodedCoordinateScale": 2,
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/28-real-finding.mp4",
+      "sha256": "4eba193f4a3ba794f529130df7bfa80bdb8d4d9eea5fa8d83cdfb752f623d4c5",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": "852411d08b18fee18fa532e99f49eca23f39e213",
+      "action": "Show the actual Tab-escape feedback and the builder response.",
+      "note": "Recaptured historical conversation, including an intermediate source-archive update. The bug report refers to the independently tested original archive, not the intermediate archive.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T02:10:38.676Z",
+      "firstFrameUTC": "2026-10-14T02:10:38.703Z",
+      "lastFrameUTC": "2026-10-14T02:10:43.519Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "frameLog": "captures/28-real-finding/frames.json",
+      "sourceDuration": 9.7,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 810,
+        "deviceScaleFactor": 1
+      },
+      "pageZoom": 1,
+      "encodedCoordinateScale": 2,
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/21-steer.mp4",
+      "sha256": "cc498ba4344ab5ce99da209cb6ed2e8f21c3a0b0bd4ca3400767e74f0d5450ba",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
+      "action": "Type precise revision-hold and retest instructions.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T01:45:15.458Z",
+      "firstFrameUTC": "2026-10-14T01:45:15.471Z",
+      "lastFrameUTC": "2026-10-14T01:45:25.093Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "frameLog": "captures/21-steer/frames.json",
+      "sourceDuration": 9.883333,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 810,
+        "deviceScaleFactor": 1
+      },
+      "pageZoom": 1,
+      "encodedCoordinateScale": 1,
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/24-agents-and-changes.mp4",
+      "sha256": "6b4dda71f1b10329994f1639123eb4e88e6a73ac546d7368619bab4379d7f9b4",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
+      "action": "Open the two completed managed reviewers, then inspect the calendar code change.",
+      "note": "Calendar correctness and keyboard accessibility were separate read-only managed reviews. The diff is an actual review-driven fix, not a planted issue.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T01:47:24.191Z",
+      "firstFrameUTC": "2026-10-14T01:47:24.218Z",
+      "lastFrameUTC": "2026-10-14T01:47:31.764Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e?tab=diff",
+      "frameLog": "captures/24-agents-and-changes/frames.json",
+      "sourceDuration": 14.366667,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 810,
+        "deviceScaleFactor": 1
+      },
+      "pageZoom": 1,
+      "encodedCoordinateScale": 2,
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/36-live-workspace.mp4",
+      "sha256": "2ced6d192642c52e4222b70c346f2c8da581ec78afaf0be2cb3ac091aa3f0777",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
+      "action": "Use the Cloud IDE file picker to find and open ScheduleDialog.tsx in the live workspace.",
+      "note": "Read-only inspection of the real held source. No editing or new code generation is claimed.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T03:19:38.974Z",
+      "firstFrameUTC": "2026-10-14T03:19:39.000Z",
+      "lastFrameUTC": "2026-10-14T03:19:48.403Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e?tab=%2Fhome%2Fubuntu%2Frepos%2Fproduct-demo-apps%2Fnorthstar-conference%2Fsrc%2FScheduleDialog.tsx&fullscreen=true",
+      "frameLog": "captures/36-live-workspace/frames.json",
+      "sourceDuration": 9.833333,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 810,
+        "deviceScaleFactor": 1
+      },
+      "pageZoom": 1,
+      "encodedCoordinateScale": 2,
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/25-pr-review.mp4",
+      "sha256": "7644a9361ff0d9e6f71c90e195fc5079ccfff457cd997ef42b93f04f6a86a294",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
+      "action": "Open the real PR tab and scroll its purpose-grouped diff.",
+      "note": "The UI displays an open PR and a merge control. No merge is performed.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T02:01:44.716Z",
+      "firstFrameUTC": "2026-10-14T02:01:44.728Z",
+      "lastFrameUTC": "2026-10-14T02:01:52.358Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e?tab=pr%3A38",
+      "frameLog": "captures/25-pr-review/frames.json",
+      "sourceDuration": 11.833333,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 810,
+        "deviceScaleFactor": 1
+      },
+      "pageZoom": 1,
+      "encodedCoordinateScale": 2,
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/40-testing-evidence.mp4",
+      "sha256": "b1d845895316812ba821580168fc51c3d7a178084e917e08e83b8155a919b010",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
+      "action": "Open the newly completed five-passed focused retest recording in the native Devin testing-evidence viewer.",
+      "note": "Fresh actual product evidence from the same read-only held-revision retest as source 39. The next section separately shows its live Computer capture, not a seamless continuation of this replay.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T20:45:40.363Z",
+      "firstFrameUTC": "2026-10-14T20:45:40.378Z",
+      "lastFrameUTC": "2026-10-14T20:45:50.575Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e?testRecording=fd86c37f-3b93-4176-b126-3dd4a4d38fca&tab=browser",
+      "frameLog": "captures/40-testing-evidence/frames.json",
+      "geometry": "captures/40-testing-evidence.geometry.json",
+      "geometrySha256": "875d86bbfaec24b3c0df44bcaba431719b2c3deb68fe63ef1e5611409f42152f",
+      "sourceDuration": 10.466667,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1152,
+        "height": 648,
+        "deviceScaleFactor": 1
+      },
+      "pageZoom": 1.25,
+      "encodedCoordinateScale": 2.5,
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/39-testing-ui-retest.mp4",
+      "sha256": "50454e7b84a1f26facc8466be44debc5871c53a0a95d232d827ddfa37eefd3c7",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
+      "action": "Watch the actual Devin testing interface while the testing agent independently repeats the keyboard and calendar checks against the held fixed revision.",
+      "note": "New live product capture at 125% viewport scale. The complete product interface remains visible; this is not a standalone app-only recording.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T20:35:48.513Z",
+      "firstFrameUTC": "2026-10-14T20:35:48.531Z",
+      "lastFrameUTC": "2026-10-14T20:38:21.027Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e?tab=browser",
+      "frameLog": "captures/39-testing-ui-retest/frames.json",
+      "sourceDuration": 152.883333,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1152,
+        "height": 648,
+        "deviceScaleFactor": 1
+      },
+      "pageZoom": 1.25,
+      "encodedCoordinateScale": 2.5,
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/33-skill-invoke.mp4",
+      "sha256": "90fb1380cb6dbda73b6c2335e8e3948bb5a3b1984bfddd2563fae66e9fccb1f5",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
+      "action": "Type and send a new request to use northstar-release-check without changing code or PR.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T03:05:23.117Z",
+      "firstFrameUTC": "2026-10-14T03:05:23.132Z",
+      "lastFrameUTC": "2026-10-14T03:05:38.040Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "frameLog": "captures/33-skill-invoke/frames.json",
+      "sourceDuration": 15.166667,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 810,
+        "deviceScaleFactor": 1
+      },
+      "pageZoom": 1,
+      "encodedCoordinateScale": 2,
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    },
+    {
+      "path": "captures/37-skill-run.mp4",
+      "sha256": "6bd75c46572a0ac0ca8fd512840451afafc8058b113c3dec5de8c21a5df23f4f",
+      "repository": "thequantexplorer/product-demo-apps",
+      "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
+      "action": "Expand the completed run to show Activated skill: northstar-release-check, then collapse it to reveal the passing release-check result.",
+      "note": "The actual invocation reran lint, typecheck, 48 tests, build and archive checks. It did not run new browser tests; those remain credited to the independent testing agent.",
+      "capturedInSession": "https://app.devin.ai/sessions/89682daaa5b84f1f8ef620c8422f10f5",
+      "workflowSession": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "captureStarted": "2026-10-14T03:23:19.881Z",
+      "firstFrameUTC": "2026-10-14T03:23:19.897Z",
+      "lastFrameUTC": "2026-10-14T03:23:26.204Z",
+      "urlAtCaptureEnd": "https://app.devin.ai/sessions/090b277fff5c4036a729ec3f70a1962e",
+      "frameLog": "captures/37-skill-run/frames.json",
+      "sourceDuration": 10.85,
+      "encodedSize": [
+        2880,
+        1620
+      ],
+      "nominalFrameRate": "60/1",
+      "averageFrameRate": "60/1",
+      "capturedViewport": {
+        "width": 1440,
+        "height": 810,
+        "deviceScaleFactor": 1
+      },
+      "pageZoom": 1,
+      "encodedCoordinateScale": 2,
+      "coordinateSpace": "All spec.js crop/highlight rectangles are in encoded source-frame pixels. Do not multiply geometry a second time."
+    }
+  ],
+  "clips": [
+    {
+      "id": "opening",
+      "timelineStart": 0,
+      "duration": 3.8,
+      "graphic": "intro"
+    },
+    {
+      "id": "wiki-intro",
+      "timelineStart": 3.8,
+      "duration": 3.2,
+      "title": "DeepWiki",
+      "graphic": "feature",
+      "benefit": "Know your codebase.",
+      "next": "wiki"
+    },
+    {
+      "id": "wiki",
+      "timelineStart": 7,
+      "duration": 10,
+      "title": "DeepWiki",
+      "action": "Explore the architecture",
+      "source": "35-deepwiki.mp4",
+      "in": 0,
+      "out": 10,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ]
+    },
+    {
+      "id": "code-intro",
+      "timelineStart": 17,
+      "duration": 3.2,
+      "title": "Ask",
+      "graphic": "feature",
+      "benefit": "Answers, grounded in code.",
+      "next": "code"
+    },
+    {
+      "id": "code",
+      "timelineStart": 20.2,
+      "duration": 8.5,
+      "title": "Ask",
+      "action": "Follow the source",
+      "source": "10-code-proof.mp4",
+      "in": 4.5,
+      "out": 13,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ],
+      "highlights": [
+        {
+          "start": 2.25,
+          "end": 4.25,
+          "box": [
+            262.71875,
+            633,
+            226.0625,
+            29
+          ],
+          "padding": 12
+        }
+      ]
+    },
+    {
+      "id": "request-intro",
+      "timelineStart": 28.7,
+      "duration": 3.2,
+      "title": "Delegation",
+      "graphic": "feature",
+      "benefit": "Describe it. Devin builds it.",
+      "next": "request"
+    },
+    {
+      "id": "request",
+      "timelineStart": 31.9,
+      "duration": 8,
+      "title": "Delegation",
+      "action": "Describe the outcome",
+      "source": "01-request.mp4",
+      "in": 1.2,
+      "out": 9.2,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        1440,
+        900
+      ]
+    },
+    {
+      "id": "test-session-intro",
+      "timelineStart": 39.9,
+      "duration": 3.2,
+      "title": "Computer Use",
+      "graphic": "feature",
+      "benefit": "Devin tests in a real browser.",
+      "next": "test-session"
+    },
+    {
+      "id": "test-session",
+      "timelineStart": 43.1,
+      "duration": 10.5,
+      "title": "Computer Use",
+      "action": "A test you can watch",
+      "source": "38-testing-ui-original.mp4",
+      "in": 55,
+      "out": 65.5,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ]
+    },
+    {
+      "id": "test-interactions",
+      "timelineStart": 53.6,
+      "duration": 13.5,
+      "title": "Computer Use",
+      "action": "Act. Observe. Verify.",
+      "source": "38-testing-ui-original.mp4",
+      "in": 117,
+      "out": 130.5,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ]
+    },
+    {
+      "id": "test-keyboard",
+      "timelineStart": 67.1,
+      "duration": 14,
+      "title": "Computer Use",
+      "action": "Test the keyboard",
+      "source": "38-testing-ui-original.mp4",
+      "in": 153,
+      "out": 167,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ]
+    },
+    {
+      "id": "finding",
+      "timelineStart": 81.1,
+      "duration": 5.5,
+      "title": "Computer Use",
+      "action": "A real finding",
+      "source": "28-real-finding.mp4",
+      "in": 1,
+      "out": 6.5,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ]
+    },
+    {
+      "id": "steer-intro",
+      "timelineStart": 86.6,
+      "duration": 3.2,
+      "title": "Collaboration",
+      "graphic": "feature",
+      "benefit": "Steer the work.",
+      "next": "steer"
+    },
+    {
+      "id": "steer",
+      "timelineStart": 89.8,
+      "duration": 8.5,
+      "title": "Collaboration",
+      "action": "Keep control",
+      "source": "21-steer.mp4",
+      "in": 0,
+      "out": 8.5,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ]
+    },
+    {
+      "id": "agents-intro",
+      "timelineStart": 98.3,
+      "duration": 3.2,
+      "title": "Managed Devins",
+      "graphic": "feature",
+      "benefit": "Bring a team.",
+      "next": "agents"
+    },
+    {
+      "id": "agents",
+      "timelineStart": 101.5,
+      "duration": 4.2,
+      "title": "Managed Devins",
+      "action": "Independent reviewers",
+      "source": "24-agents-and-changes.mp4",
+      "in": 1.8,
+      "out": 6,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ]
+    },
+    {
+      "id": "workspace-intro",
+      "timelineStart": 105.7,
+      "duration": 3.2,
+      "title": "Cloud IDE",
+      "graphic": "feature",
+      "benefit": "Step into the workspace.",
+      "next": "workspace"
+    },
+    {
+      "id": "workspace",
+      "timelineStart": 108.9,
+      "duration": 7.5,
+      "title": "Cloud IDE",
+      "action": "Open the live source",
+      "source": "36-live-workspace.mp4",
+      "in": 1,
+      "out": 8.5,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ]
+    },
+    {
+      "id": "review-intro",
+      "timelineStart": 116.4,
+      "duration": 3.2,
+      "title": "Devin Review",
+      "graphic": "feature",
+      "benefit": "Review before you merge.",
+      "next": "review"
+    },
+    {
+      "id": "review",
+      "timelineStart": 119.60000000000001,
+      "duration": 8.5,
+      "title": "Devin Review",
+      "action": "Inspect the branch",
+      "source": "25-pr-review.mp4",
+      "in": 1.5,
+      "out": 10,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ]
+    },
+    {
+      "id": "replay-intro",
+      "timelineStart": 128.10000000000002,
+      "duration": 3.2,
+      "title": "Recorded tests",
+      "graphic": "feature",
+      "benefit": "Watch what happened.",
+      "next": "replay"
+    },
+    {
+      "id": "replay",
+      "timelineStart": 131.3,
+      "duration": 6,
+      "title": "Recorded tests",
+      "action": "Replay the evidence",
+      "source": "40-testing-evidence.mp4",
+      "in": 1,
+      "out": 7,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ],
+      "highlights": [
+        {
+          "box": [
+            1541.9921875,
+            286.484375,
+            351.5234375,
+            45
+          ],
+          "padding": 14,
+          "start": 3.4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "retest-intro",
+      "timelineStart": 137.3,
+      "duration": 2.8,
+      "title": "Verify the fix.",
+      "graphic": "feature",
+      "benefit": "Test again. With the keyboard.",
+      "next": "retest"
+    },
+    {
+      "id": "retest",
+      "timelineStart": 140.10000000000002,
+      "duration": 15,
+      "title": "Computer Use",
+      "action": "Retest keyboard focus",
+      "source": "39-testing-ui-retest.mp4",
+      "in": 123,
+      "out": 138,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ],
+      "titleBeats": [
+        {
+          "start": 4,
+          "title": "Tab in both directions"
+        }
+      ]
+    },
+    {
+      "id": "skill-invoke-intro",
+      "timelineStart": 155.10000000000002,
+      "duration": 3.2,
+      "title": "Skills",
+      "graphic": "feature",
+      "benefit": "Your playbook. On repeat.",
+      "next": "skill-invoke"
+    },
+    {
+      "id": "skill-invoke",
+      "timelineStart": 158.3,
+      "duration": 7,
+      "title": "Skills",
+      "action": "Invoke your playbook",
+      "source": "33-skill-invoke.mp4",
+      "in": 0,
+      "out": 7,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ]
+    },
+    {
+      "id": "skill-result",
+      "timelineStart": 165.3,
+      "duration": 8.5,
+      "title": "Skills",
+      "action": "Activate your playbook",
+      "source": "37-skill-run.mp4",
+      "in": 0.8,
+      "out": 9.3,
+      "speed": 1,
+      "crop": [
+        0,
+        0,
+        2880,
+        1620
+      ],
+      "titleBeats": [
+        {
+          "start": 5.2,
+          "title": "Checks passed"
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "timelineStart": 173.8,
+      "duration": 3.5,
+      "graphic": "outro"
+    }
+  ]
+}

@@ -92,8 +92,21 @@ if VOICE and cue.get('vo'):
         duck[max(0, i - int(0.25 * SR)):j + int(0.4 * SR)] = float(os.environ.get('DUCK', '0.45'))
     duck = lfilter([0.0004], [1, -0.9996], duck - 1) + 1  # smooth the duck envelope (~50 ms)
     VL *= 0.5 / max(1e-9, np.abs(VL).max())
+# recorded clips (audio/<name>.wav, e.g. a real voice call) play in every cut and duck the music harder
+CL = np.zeros(N)
+if cue.get('clips'):
+    cduck = np.ones(N)
+    for c in cue['clips']:
+        with wave.open(os.path.join(VD, 'audio', c['file'] + '.wav')) as w:
+            ch, sr = w.getnchannels(), w.getframerate()
+            x = np.frombuffer(w.readframes(w.getnframes()), '<i2').astype(float).reshape(-1, ch).mean(1) / 32767
+        if sr != SR: x = np.interp(np.arange(int(len(x) * SR / sr)) * sr / SR, np.arange(len(x)), x)
+        i = int(T(c['t']) * SR); j = min(N, i + len(x)); CL[i:j] += x[:j - i]
+        cduck[max(0, i - int(0.4 * SR)):j + int(0.4 * SR)] = float(os.environ.get('CLIP_DUCK', '0.25'))
+    duck = np.minimum(duck, lfilter([0.0004], [1, -0.9996], cduck - 1) + 1)
+    CL *= float(os.environ.get('CLIP_PEAK', '0.55')) / max(1e-9, np.abs(CL).max())
 mg = fade_in * fade_out * MUSIC_GAIN * 1.8 * duck
-L += ML * mg + VL; R += MR * mg + VL
+L += ML * mg + VL + CL; R += MR * mg + VL + CL
 
 # title chime
 for i, m in enumerate([72, 76, 79, 84]):
