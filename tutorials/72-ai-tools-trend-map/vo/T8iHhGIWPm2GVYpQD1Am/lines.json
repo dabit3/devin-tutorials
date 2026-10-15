@@ -1,0 +1,383 @@
+{
+ "0000.png": {
+  "text": "Founders, investors and developers all want to know which AI coding tools people actually use, and which ones they only talk about. By the end of this video, we'll have a live page on Modal that answers that with real posts from X.",
+  "say": "Founders, investors and developers all want to know which AI coding tools people actually use, and which ones they only talk about. By the end of this video, we'll have a lyve page on Modal that answers that with real posts from X.",
+  "dur": 11.35,
+  "at": 0.0,
+  "end": 11.35,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "Founders, investors and developers all want to know",
+    "t0": 0.0,
+    "t1": 2.504
+   },
+   {
+    "text": "which AI coding tools people actually use,",
+    "t0": 2.553,
+    "t1": 4.616
+   },
+   {
+    "text": "and which ones they only talk about.",
+    "t0": 4.665,
+    "t1": 6.433
+   },
+   {
+    "text": "By the end of this video,",
+    "t0": 6.482,
+    "t1": 7.709
+   },
+   {
+    "text": "we'll have a live page on Modal",
+    "t0": 7.758,
+    "t1": 9.281
+   },
+   {
+    "text": "that answers that with real posts from X.",
+    "t0": 9.33,
+    "t1": 11.343
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "I pick the product demo apps repo and give Devin one plain-language prompt. It asks for ten tools over the last four weeks, searched with Grok through the xAI API, with each post labeled as a usage report or hype. It also asks for a daily schedule on Modal, one parallel search per tool and week, and a dark page that labels every count as a sample.",
+  "say": "I pick the product demo apps repo and give Devin one plain-language prompt. It asks for ten tools over the last four weeks, searched with Grok through the ex A I API, with each post labeled as a usage report or hype. It also asks for a daily schedule on Modal, one parallel search per tool and week, and a dark page that labels every count as a sample.",
+  "dur": 19.385,
+  "at": 11.625,
+  "end": 31.01,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "I pick the product demo apps repo",
+    "t0": 0.043,
+    "t1": 1.871
+   },
+   {
+    "text": "and give Devin one plain-language prompt.",
+    "t0": 1.926,
+    "t1": 4.197
+   },
+   {
+    "text": "It asks for ten tools over the last four weeks,",
+    "t0": 4.253,
+    "t1": 6.856
+   },
+   {
+    "text": "searched with Grok through the xAI API,",
+    "t0": 6.911,
+    "t1": 9.072
+   },
+   {
+    "text": "with each post labeled as a usage report or hype.",
+    "t0": 9.127,
+    "t1": 11.841
+   },
+   {
+    "text": "It also asks for a daily schedule on Modal,",
+    "t0": 11.896,
+    "t1": 14.278
+   },
+   {
+    "text": "one parallel search per tool and week,",
+    "t0": 14.334,
+    "t1": 16.438
+   },
+   {
+    "text": "and a dark page",
+    "t0": 16.494,
+    "t1": 17.325
+   },
+   {
+    "text": "that labels every count as a sample.",
+    "t0": 17.38,
+    "t1": 19.374
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "Devin starts by looking at how this repo already uses Modal, and sets up the tools it needs.",
+  "dur": 5.05,
+  "at": 31.31,
+  "end": 36.36,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.13,
+    "t1": 2.069,
+    "text": "Devin starts by looking at how this repo"
+   },
+   {
+    "t0": 2.139,
+    "t1": 3.288,
+    "text": "already uses Modal,"
+   },
+   {
+    "t0": 3.462,
+    "t1": 5.05,
+    "text": "and sets up the tools it needs."
+   }
+  ]
+ },
+ "0078.png": {
+  "text": "After writing the app, Devin deploys it with modal deploy, then runs the linter and the tests.",
+  "dur": 4.925,
+  "at": 36.695,
+  "end": 41.62,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.109,
+    "t1": 1.119,
+    "text": "After writing the app,"
+   },
+   {
+    "t0": 1.201,
+    "t1": 3.023,
+    "text": "Devin deploys it with modal deploy,"
+   },
+   {
+    "t0": 3.197,
+    "t1": 4.916,
+    "text": "then runs the linter and the tests."
+   }
+  ]
+ },
+ "0082.png": {
+  "text": "The first deploy hit the workspace's limit of five scheduled functions. So Devin deployed with the daily schedule switched off, and kept the schedule in the code for later.",
+  "dur": 8.6,
+  "at": 41.87,
+  "end": 50.47,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "The first deploy hit the workspace's limit",
+    "t0": 0.066,
+    "t1": 2.147
+   },
+   {
+    "text": "of five scheduled functions.",
+    "t0": 2.196,
+    "t1": 3.583
+   },
+   {
+    "text": "So Devin deployed with the daily schedule switched off,",
+    "t0": 3.633,
+    "t1": 6.358
+   },
+   {
+    "text": "and kept the schedule in the code for later.",
+    "t0": 6.407,
+    "t1": 8.587
+   }
+  ]
+ },
+ "0086.png": {
+  "text": "Next, it starts a manual refresh, which runs one search per tool and week, forty in all, in parallel.",
+  "dur": 5.855,
+  "at": 50.57,
+  "end": 56.425,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.131,
+    "t1": 2.07,
+    "text": "Next, it starts a manual refresh,"
+   },
+   {
+    "t0": 2.244,
+    "t1": 4.38,
+    "text": "which runs one search per tool and week,"
+   },
+   {
+    "t0": 4.589,
+    "t1": 5.855,
+    "text": "forty in all, in parallel."
+   }
+  ]
+ },
+ "0119.png": {
+  "text": "Once the data is in, Devin tests the live URL, checking the page and the data endpoint.",
+  "say": "Once the data is in, Devin tests the lyve URL, checking the page and the data endpoint.",
+  "dur": 4.815,
+  "at": 56.75,
+  "end": 61.565,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "Once the data is in,",
+    "t0": 0.093,
+    "t1": 1.179
+   },
+   {
+    "text": "Devin tests the live URL,",
+    "t0": 1.233,
+    "t1": 2.59
+   },
+   {
+    "text": "checking the page and the data endpoint.",
+    "t0": 2.644,
+    "t1": 4.815
+   }
+  ]
+ },
+ "0170.png": {
+  "text": "Then it pushes the branch and opens a pull request.",
+  "dur": 2.45,
+  "at": 61.97,
+  "end": 64.42,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.051,
+    "t1": 2.45,
+    "text": "Then it pushes the branch and opens a pull request."
+   }
+  ]
+ },
+ "0191.png": {
+  "text": "Before finishing, Devin runs browser checks on the live page and fixes the issues its code review found.",
+  "say": "Before finishing, Devin runs browser checks on the lyve page and fixes the issues its code review found.",
+  "dur": 5.53,
+  "at": 64.56,
+  "end": 70.09,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "Before finishing, Devin runs browser checks",
+    "t0": 0.062,
+    "t1": 2.323
+   },
+   {
+    "text": "on the live page",
+    "t0": 2.375,
+    "t1": 3.217
+   },
+   {
+    "text": "and fixes the issues its code review found.",
+    "t0": 3.269,
+    "t1": 5.53
+   }
+  ]
+ },
+ "0324.png": {
+  "text": "The hype bars came out purple, which I don't want on this page.",
+  "dur": 3.195,
+  "at": 70.305,
+  "end": 73.5,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.041,
+    "t1": 1.596,
+    "text": "The hype bars came out purple,"
+   },
+   {
+    "t0": 1.689,
+    "t1": 3.195,
+    "text": "which I don't want on this page."
+   }
+  ]
+ },
+ "0327.png": {
+  "text": "So I ask for a neutral grey, and another check of the live URL.",
+  "say": "So I ask for a neutral grey, and another check of the lyve URL.",
+  "dur": 3.9,
+  "at": 73.73,
+  "end": 77.63,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "So I ask for a neutral grey,",
+    "t0": 0.11,
+    "t1": 1.792
+   },
+   {
+    "text": "and another check of the live URL.",
+    "t0": 1.852,
+    "t1": 3.895
+   }
+  ]
+ },
+ "0346u.png": {
+  "text": "Less than a minute later, the bars are grey and the page is redeployed.",
+  "dur": 3.175,
+  "at": 77.845,
+  "end": 81.02,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.059,
+    "t1": 1.057,
+    "text": "Less than a minute later,"
+   },
+   {
+    "t0": 1.081,
+    "t1": 3.175,
+    "text": "the bars are grey and the page is redeployed."
+   }
+  ]
+ },
+ "0347.png": {
+  "text": "Here's the live app on Modal. Every count is posts found in the X search sample, not a total. In this sample, Codex and Cursor are ahead on usage share.",
+  "say": "Here's the lyve app on Modal. Every count is posts found in the X search sample, not a total. In this sample, Codex and Cursor are ahead on usage share.",
+  "dur": 8.505,
+  "at": 81.43,
+  "end": 89.935,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "text": "Here's the live app on Modal.",
+    "t0": 0.05,
+    "t1": 1.663
+   },
+   {
+    "text": "Every count is posts found in the X search sample,",
+    "t0": 1.719,
+    "t1": 4.5
+   },
+   {
+    "text": "not a total.",
+    "t0": 4.556,
+    "t1": 5.223
+   },
+   {
+    "text": "In this sample,",
+    "t0": 5.279,
+    "t1": 6.113
+   },
+   {
+    "text": "Codex and Cursor are ahead on usage share.",
+    "t0": 6.169,
+    "t1": 8.505
+   }
+  ]
+ },
+ "outro": {
+  "text": "Let the data show what's catching on.",
+  "dur": 1.73,
+  "at": 90.11,
+  "end": 91.84,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.077,
+    "t1": 1.73,
+    "text": "Let the data show what's catching on."
+   }
+  ]
+ }
+}
