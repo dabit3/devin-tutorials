@@ -31,10 +31,17 @@ window.SPEC = {
     },
     "0020.png": {
       "hold": 12,
-      "cap": "X posts, the xAI API, Modal, storage, a live page",
-      "vo": "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches on a daily schedule and keeps the results in a Modal Dict. A web endpoint on the same app serves the live page.",
+      "cap": "X posts, the xAI API, Modal, storage, a public page",
+      "vo": "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
       "scene": "pipeline",
-      "voSay": "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches on a daily schedule and keeps the results in a Modal Dict. A web endpoint on the same app serves the lyve page."
+      "voSay": "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page."
+    },
+    "0025.png": {
+      "hold": 1.5,
+      "cap": "Why Modal: schedule, parallel searches, storage, a public URL",
+      "vo": "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+      "scene": "modal",
+      "voSay": "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs."
     },
     "0030.png": {
       "hold": 8,
@@ -46,7 +53,7 @@ window.SPEC = {
     "0040.png": {
       "hold": 9,
       "cap": "Usage report or hype: counts are a sample, not totals",
-      "vo": "Grok labels each post it finds as a real usage report or as hype. The counts are posts found in the X search sample, not totals.",
+      "vo": "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
       "scene": "classify"
     },
     "0041.png": {
@@ -56,7 +63,7 @@ window.SPEC = {
     },
     "0051.png": {
       "hold": 4,
-      "cap": "modal deploy, then lint and tests",
+      "cap": "Deployed with modal deploy",
       "ring": {
         "x": 488,
         "y": 117,
@@ -64,7 +71,7 @@ window.SPEC = {
         "h": 30
       },
       "ringFor": 3,
-      "vo": "It deployed the app with modal deploy, then ran the linter and the tests."
+      "vo": "It deployed the app to Modal with modal deploy."
     },
     "0052.png": {
       "hold": 4,
@@ -80,7 +87,7 @@ window.SPEC = {
     },
     "0061.png": {
       "hold": 4,
-      "cap": "Live URL checked, pull request #76",
+      "cap": "Public URL checked, pull request #76",
       "ring": {
         "x": 572,
         "y": 459,
@@ -88,14 +95,12 @@ window.SPEC = {
         "h": 24
       },
       "ringFor": 3,
-      "vo": "Devin checked the live URL again after a small color fix, and the code is in a pull request.",
-      "voSay": "Devin checked the lyve URL again after a small color fix, and the code is in a pull request."
+      "vo": "Devin checked the public URL again after a small color fix, and the code is in a pull request."
     },
     "0071.png": {
       "hold": 6,
-      "cap": "The live app, with real data from X",
-      "vo": "Here's the live page with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
-      "voSay": "Here's the lyve page with real data. In this sample, Codex and Cursor have the highest share of usage reports."
+      "cap": "The app on Modal, with real data from X",
+      "vo": "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports."
     },
     "0080.png": {
       "hold": 9,

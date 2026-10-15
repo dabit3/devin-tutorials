@@ -100,7 +100,7 @@ function pipeline(ctx, s, k) {
     { x: 440, t: 'xAI API', sub: 'Grok + X search' },
     { x: 760, t: 'Modal', sub: 'functions', w: 300 },
     { x: 1060, t: 'modal.Dict', sub: 'storage', mono: true },
-    { x: 1300, t: 'Live page', sub: '*.modal.run' },
+    { x: 1300, t: 'Public page', sub: '*.modal.run' },
   ];
   const T = [at(cue, 0, 0.3), at(cue, 1, 1.4), at(cue, 2, 2.6), at(cue, 5, 6.0), at(cue, 6, 7.2)];
   N.forEach((n, i) => {
@@ -120,6 +120,39 @@ function pipeline(ctx, s, k) {
     text(ctx, k, t, x, y - 8 + 10 * (1 - a), 16, 600, FG(0.95), a, 'center', true);
     text(ctx, k, sub, x, y + 18 + 10 * (1 - a), 14, 400, FG(0.55), a);
   });
+}
+
+// Why Modal: what a laptop script or own server can't do, then the Modal pieces this app uses.
+function modal(ctx, s, k) {
+  const L = window.SPEC.voLines || {}, key = Object.keys(L).find(i => (L[i].chunks || []).some(c => /laptop/i.test(c.text)));
+  const cue = key ? cueTimes(key, ['laptop', 'server', 'scheduled', 'map', 'dict', 'endpoint', 'secret', 'zero']) : null;
+  const T = [0.6, 2.4, 5.0, 6.6, 8.4, 9.6, 11.6, 13.2].map((fb, i) => at(cue, i, fb));
+  eyebrow(ctx, k, 'WHY MODAL', 112, appear(k, s, 0.05));
+  text(ctx, k, 'The whole backend runs on Modal, with no server to manage', k.VW / 2, 162, 30, 600, FG(0.96), appear(k, s, 0.2, 0.7));
+  // before: the alternatives, faded out once the Modal pieces start
+  const gone = 1 - k.clamp(k.prog(s, T[2] - 0.6, T[2] - 0.1), 0, 1);
+  [['Laptop script', 'has to stay on, no public URL', 470, T[0]], ['Self-managed server', 'sits idle and bills between runs', 970, T[1]]].forEach(([t, sub, x, t0]) => {
+    const a = appear(k, s, t0) * gone; if (a <= 0) return;
+    box(ctx, k, x - 210, 330 + 10 * (1 - a), 420, 120, a, 0, 16);
+    text(ctx, k, t, x, 372 + 10 * (1 - a), 21, 600, FG(0.9), a);
+    text(ctx, k, sub, x, 406 + 10 * (1 - a), 16, 400, FG(0.55), a);
+  });
+  const C = [
+    ['modal.Cron', 'Daily pull on a timer', 'no server kept running', 300, 250, T[2]],
+    ['.map()', '40 xAI searches in parallel', 'across up to 20 containers', 720, 250, T[3]],
+    ['modal.Dict', 'Stores the results', 'between runs', 1140, 250, T[4]],
+    ['@modal.asgi_app', 'Serves the public page', 'at a *.modal.run URL', 510, 400, T[5]],
+    ['modal.Secret', 'Holds the xAI API key', 'outside the code', 930, 400, T[6]],
+  ];
+  C.forEach(([t, l1, l2, x, y, t0]) => {
+    const a = appear(k, s, t0); if (a <= 0) return;
+    const on = k.clamp(k.prog(s, t0 + 0.15, t0 + 0.5), 0, 1) * (1 - k.clamp(k.prog(s, t0 + 1.4, t0 + 2.0), 0, 1));
+    box(ctx, k, x - 190, y + 10 * (1 - a), 380, 124, a, on, 14);
+    text(ctx, k, t, x, y + 36 + 10 * (1 - a), 18, 600, FG(0.96), a, 'center', true);
+    text(ctx, k, l1, x, y + 70 + 10 * (1 - a), 16, 500, FG(0.78), a);
+    text(ctx, k, l2, x, y + 96 + 10 * (1 - a), 14, 400, FG(0.5), a);
+  });
+  pill(ctx, k, 'Scales to zero when idle, billed per second', k.VW / 2, 590, appear(k, s, T[7]), 1, 16);
 }
 
 const TOOLS = ['Cursor', 'Claude Code', 'Codex', 'GitHub Copilot', 'Devin', 'Windsurf', 'Replit', 'Lovable', 'v0', 'Bolt'];
@@ -183,5 +216,5 @@ function extend(ctx, s, k) {
   });
 }
 
-window.SCENES = { intro, pipeline, fanout, classify, extend };
+window.SCENES = { intro, pipeline, modal, fanout, classify, extend };
 })();
