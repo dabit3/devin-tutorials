@@ -109,5 +109,10 @@ window.SPEC = {
       "vo": "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
     }
   },
-  "tailHold": 0
+  "tailHold": 0,
+  "noZoom": [
+    [
+      "0000.png"
+    ]
+  ]
 };

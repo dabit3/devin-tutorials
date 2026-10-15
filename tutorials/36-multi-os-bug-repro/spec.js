@@ -2342,5 +2342,10 @@ window.SPEC = {
       "skip": true
     }
   },
-  "tailHold": 0
+  "tailHold": 0,
+  "noZoom": [
+    [
+      "0000.png"
+    ]
+  ]
 };
