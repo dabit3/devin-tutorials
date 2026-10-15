@@ -1,0 +1,56 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Inter;src:url(../../_kit/fonts/Inter-VF.ttf)}
+html,body{margin:0;width:1440px;height:810px;font-family:Inter;color:#111;overflow:hidden}
+body{background:radial-gradient(ellipse at 50% 40%,#fff 0,#fafafa 60%,#f3f3f3 100%)}
+svg{position:absolute;inset:0}
+.n{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;gap:9px;background:#fff;border:1px solid #e4e4e4;border-radius:14px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 6px 18px rgba(0,0,0,.05);white-space:nowrap}
+.n img{display:block}
+.q{padding:12px 20px;font-size:19px;font-weight:550;color:#333}
+.q b{font-weight:650;color:#111}
+.c{padding:12px 19px;font-size:20px;font-weight:600}.c img{width:24px}
+.e{flex-direction:column;align-items:flex-start;gap:6px;padding:12px 16px;width:200px}
+.e .t{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:600}.e .t img{width:18px}
+.e .m{font-size:13.5px;color:#666;font-weight:450;font-variant-numeric:tabular-nums}
+.e .m b{color:#111;font-weight:600}
+.tbl{flex-direction:column;align-items:stretch;padding:10px 6px;gap:0;width:520px}
+.row{display:grid;grid-template-columns:1.6fr 1fr 1fr;padding:6px 14px;font-size:14px;font-variant-numeric:tabular-nums;border-radius:8px}
+.row.h{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#9a9a9a;font-weight:550}
+.row.win{box-shadow:inset 0 0 0 1.6px rgba(32,120,255,.9);background:rgba(32,120,255,.04)}
+.w{padding:12px 20px;font-size:19px;font-weight:600;border-color:rgba(32,120,255,.9);box-shadow:0 0 0 1px rgba(32,120,255,.35),0 6px 22px rgba(32,120,255,.18)}
+.w img{width:22px}
+.dim{opacity:.38}
+</style></head><body><svg id=s width=1440 height=810></svg><div id=root></div>
+<script>
+// D is filled with the real numbers from the recorded run (see ../voice-script.md for the source table)
+const D = window.D || {
+  question: 'Which fix makes the board fast?',
+  metricA: 'Ready',
+  metricB: 'First keystroke',
+  base: ['2,133 ms', '990 ms'],
+  exps: [
+    ['Virtualization', '122 ms', '58 ms'],
+    ['Memoization', '2,081 ms', '785 ms'],
+    ['Web worker', '2,187 ms', '1,349 ms'],
+    ['Incremental', '2,484 ms', '937 ms']
+  ],
+  winner: 0,
+  winLine: 'Virtualization wins'
+};
+const L = +new URLSearchParams(location.search).get('level') || 1;
+const s = document.getElementById('s'), root = document.getElementById('root');
+const curve = (x1, y1, x2, y2, op = 1) => { const my = (y1 + y2) / 2; const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  p.setAttribute('d', `M${x1} ${y1} C ${x1} ${my}, ${x2} ${my}, ${x2} ${y2}`); p.setAttribute('fill', 'none'); p.setAttribute('stroke', '#cfcfcf'); p.setAttribute('stroke-width', 1.5); p.setAttribute('opacity', op); s.appendChild(p); };
+const node = (cls, x, y, html) => { const d = document.createElement('div'); d.className = 'n ' + cls; d.style.left = x + 'px'; d.style.top = y + 'px'; d.innerHTML = html; root.appendChild(d); return d; };
+const AV = '<img src="../../_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png">';
+const Y = { q: 90, c: 205, e: 375, t: 590, w: 745 };
+const X = [255, 575, 865, 1185];
+node('q', 720, Y.q, D.question);
+if (L >= 2) { curve(720, Y.q + 24, 720, Y.c - 25); node('c', 720, Y.c, AV + '<span>Coordinator</span>'); }
+if (L >= 3) D.exps.forEach(([t], i) => { curve(720, Y.c + 26, X[i], Y.e - 44); });
+if (L >= 3) D.exps.forEach(([t, a, b], i) => node('e', X[i], Y.e, `<div class=t>${AV}<span>${t}</span></div>` + (L >= 4 ? `<div class=m>${D.metricA} <b>${a}</b></div><div class=m>${D.metricB} <b>${b}</b></div>` : `<div class=m>running <b>npm run bench</b></div><div class=m>&nbsp;</div>`)));
+if (L >= 5) { X.forEach(x => curve(x, Y.e + 44, 720, Y.t - 92, .9));
+  const rows = [`<div class="row h"><span>Approach</span><span>${D.metricA}</span><span>${D.metricB}</span></div>`, `<div class=row style="color:#888"><span>Baseline (main)</span><span>${D.base[0]}</span><span>${D.base[1]}</span></div>`]
+    .concat(D.exps.map(([t, a, b], i) => `<div class="row${L >= 6 && i === D.winner ? ' win' : ''}"><span>${t}</span><span>${a}</span><span>${b}</span></div>`));
+  node('tbl', 720, Y.t, rows.join('')); }
+if (L >= 6) { curve(720, Y.t + 92, 720, Y.w - 25); node('w', 720, Y.w, AV + `<span>${D.winLine}</span>`); }
+</script></body></html>
