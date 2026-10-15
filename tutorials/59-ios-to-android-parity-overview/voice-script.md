@@ -15,7 +15,7 @@ Diagram scenes are drawn live by `scenes.js`; every UI shot is a real capture fr
 | 0006 | diagram `why` | That's the point of the pattern: the spec gives the port a clear target, and the screenshots let a reviewer check the result instead of trusting it. |
 | 0007 | proof: tutorial 58 `shots/0046.png` | Anything that can't match exactly, like system fonts and icons, is listed as a known difference. |
 | 0008 | diagram `usecases` | Use it to port an app one screen at a time, check a redesign on both platforms, or catch drift between two apps. |
-| 0009 | diagram `setup` | To set it up, pick macOS for the first session, then ask an Ubuntu session to set up an Android emulator, and approve the blueprint Devin proposes. |
+| 0009 | diagram `setup` | To set it up, pick macOS for the first session, then ask an Ubuntu session to set up an Android emulator. |
 | 0010 | proof: tutorial 58 `shots/0022.png` | Here, one prompt asked for the emulator, the port and the side by side screenshots. |
 | outro | end card | Run the original, build the port, and let the screenshots prove they match. |
 

@@ -182,7 +182,7 @@ function setup(ctx, s, k) {
   const cw = 470, ch = 230, gap = 40, x0 = (k.VW - (2 * cw + gap)) / 2, y = 220;
   const cols = [
     { g: 'macOS', t: 'Session 1: pick macOS', rows: ['In the platform menu below the prompt box', 'Xcode and the iOS Simulator are ready'], t0: 0.3 },
-    { g: 'Android', t: 'Session 2: Ubuntu', rows: ['Ask it to set up an Android emulator', 'Approve the blueprint Devin proposes'], t0: 2.6 },
+    { g: 'Android', t: 'Session 2: Ubuntu', rows: ['Ask it to set up an Android emulator', 'It builds, runs and screenshots the port'], t0: 2.6 },
   ];
   cols.forEach((c, i) => {
     const a = k.eOutQuint(k.prog(s, c.t0, c.t0 + 0.7)), x = x0 + i * (cw + gap), yy = y + 16 * (1 - a);
@@ -191,9 +191,9 @@ function setup(ctx, s, k) {
     text(ctx, k, c.t, x + 84, yy + 56, 24, 600, k.INK, a, 'left', -0.4);
     c.rows.forEach((r, j) => bullet(ctx, k, r, x + 40, yy + 122 + j * 50, a * k.eOut(k.prog(s, c.t0 + 0.6 + j * 0.9, c.t0 + 1.1 + j * 0.9))));
   });
-  const a = k.eOut(k.prog(s, 6.8, 7.4)), cx = k.VW / 2;
-  curve(ctx, k, x0 + cw / 2, y + ch, cx - 8, 560, k.eInOut(k.prog(s, 6.4, 7.0)), MUTED(0.16), 1.5, false);
-  curve(ctx, k, x0 + cw * 1.5 + gap, y + ch, cx + 8, 560, k.eInOut(k.prog(s, 6.4, 7.0)), MUTED(0.16), 1.5, false);
+  const a = k.eOut(k.prog(s, 5.0, 5.6)), cx = k.VW / 2;
+  curve(ctx, k, x0 + cw / 2, y + ch, cx - 8, 560, k.eInOut(k.prog(s, 4.6, 5.2)), MUTED(0.16), 1.5, false);
+  curve(ctx, k, x0 + cw * 1.5 + gap, y + ch, cx + 8, 560, k.eInOut(k.prog(s, 4.6, 5.2)), MUTED(0.16), 1.5, false);
   pill(ctx, k, 'Same branch, one pull request', cx, 580, a, true);
 }
 

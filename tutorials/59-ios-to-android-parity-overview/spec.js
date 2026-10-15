@@ -120,13 +120,13 @@ window.SPEC = {
     },
     "0009.png": {
       "scene": "setup",
-      "hold": 7.0,
+      "hold": 5.4,
       "cursor": false,
       "capPos": "bottom",
       "hl": null,
       "voGap": 1.0,
       "cap": "Pick macOS, then ask Ubuntu for an emulator",
-      "vo": "To set it up, pick macOS for the first session, then ask an Ubuntu session to set up an Android emulator, and approve the blueprint Devin proposes."
+      "vo": "To set it up, pick macOS for the first session, then ask an Ubuntu session to set up an Android emulator."
     },
     "0010.png": {
       "hold": 4.6,
