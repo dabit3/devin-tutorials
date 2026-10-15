@@ -13,7 +13,8 @@ window.SPEC = {
       "cap": "Record it once, and Devin runs it on a schedule",
       "vo": "Record a repetitive web chore once, and Devin turns it into a Playwright script that runs on a schedule without you.",
       "cursor": false,
-      "voHold": 5.8
+      "voHold": 5.8,
+      "capPos": "bottom"
     },
     "0001.png": {
       "scene": "flow1",
@@ -21,7 +22,8 @@ window.SPEC = {
       "cap": "1. Record the chore once",
       "vo": "First, you screen-record yourself doing the chore one time.",
       "cursor": false,
-      "voHold": 3.4
+      "voHold": 3.4,
+      "capPos": "bottom"
     },
     "0002.png": {
       "hold": 3.4,
@@ -35,7 +37,8 @@ window.SPEC = {
       "cap": "2. Attach it to a Devin session",
       "vo": "Then you attach the video to a Devin session, with the goal in plain words.",
       "cursor": false,
-      "voHold": 4.2
+      "voHold": 4.2,
+      "capPos": "bottom"
     },
     "0004.png": {
       "hold": 2.6,
@@ -56,7 +59,8 @@ window.SPEC = {
       "cap": "3. Devin extracts the workflow",
       "vo": "Devin pulls frames from the video and works out the steps, and the rule behind them.",
       "cursor": false,
-      "voHold": 4.3
+      "voHold": 4.3,
+      "capPos": "bottom"
     },
     "0006.png": {
       "hold": 3.4,
@@ -77,7 +81,8 @@ window.SPEC = {
       "cap": "4. It writes Playwright and runs it",
       "vo": "Next, it writes a Playwright script and runs it in its own browser to prove it matches.",
       "cursor": false,
-      "voHold": 4.4
+      "voHold": 4.4,
+      "capPos": "bottom"
     },
     "0008.png": {
       "hold": 3.2,
@@ -111,7 +116,8 @@ window.SPEC = {
       "cap": "5. Devin schedules future runs",
       "vo": "Finally, Devin sets up an Automation with a schedule trigger, so the chore runs without you.",
       "cursor": false,
-      "voHold": 4.8
+      "voHold": 4.8,
+      "capPos": "bottom"
     },
     "0012.png": {
       "hold": 2.6,
@@ -145,7 +151,8 @@ window.SPEC = {
       "cap": "Approvals, exports, data entry, smoke checks",
       "vo": "It works for approval queues, morning exports, data entry from a spreadsheet, and smoke checks of a key flow.",
       "cursor": false,
-      "voHold": 6.6
+      "voHold": 6.6,
+      "capPos": "bottom"
     }
   }
 };
