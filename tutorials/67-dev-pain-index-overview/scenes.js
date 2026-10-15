@@ -103,10 +103,16 @@ function flow(ctx, s, k) {
     text(ctx, k, sub, x + w / 2, y + 82, 13, 500, MUTED(1), a, 'center', i >= 3 ? 'JetBrains Mono' : undefined);
     if (i < 5) link(ctx, k, x + w, y + h / 2, x + w + gap, y + h / 2, C(k, k.prog(s, t0 + 0.4, t0 + 0.8)), k.prog(s, t0 + 0.5, t0 + 1.1));
   });
+  // the Modal part of the pipeline: functions, Volume and web endpoint
+  const bx0 = x0 + 2 * (w + gap) - 18, bx1 = x0 + 5 * (w + gap) - gap + 18, ab = appear(k, s, 4.4);
+  if (ab > 0) {
+    ctx.save(); ctx.globalAlpha = k.alpha * ab; k.rr(bx0, y - 46, bx1 - bx0, h + 64, 22); ctx.setLineDash([6, 6]); ctx.lineWidth = 1.5; ctx.strokeStyle = rgba(BLUE, 0.8); ctx.stroke(); ctx.restore();
+    text(ctx, k, 'RUNS ON MODAL', (bx0 + bx1) / 2, y - 24, 13, 600, rgba(BLUE, 1), ab, 'center', 'JetBrains Mono');
+  }
   const xm = x0 + 2 * (w + gap) + w / 2, ap = appear(k, s, 4.9);
-  pill(ctx, k, 'modal.Cron · 1st of each month', xm, 230, ap, false, 'JetBrains Mono');
-  link(ctx, k, xm, 248, xm, y, C(k, k.prog(s, 5.1, 5.5)), k.prog(s, 5.2, 5.9));
-  pill(ctx, k, 'parallel .map() over categories × months', xm, 540, appear(k, s, 5.6), false, 'JetBrains Mono');
+  pill(ctx, k, 'modal.Cron · 1st of each month', xm, 200, ap, false, 'JetBrains Mono');
+  link(ctx, k, xm, 218, xm, y - 46, C(k, k.prog(s, 5.1, 5.5)), k.prog(s, 5.2, 5.9));
+  pill(ctx, k, 'parallel .map() over categories × months', xm, 580, appear(k, s, 5.6), false, 'JetBrains Mono');
 }
 
 // 3. In parallel: one .map() call runs 5 categories × 6 months of X searches at once.
@@ -132,6 +138,30 @@ function fanout(ctx, s, k) {
   pill(ctx, k, '30 X searches at once · 704 posts kept', gx + (6 * cw + 5 * g) / 2, gy + 5 * (ch + g) + 30, appear(k, s, 3.4), true);
 }
 
+// Why Modal: what it runs for this app, instead of a laptop script or a server of your own.
+const ALT = [['Laptop script', 'Has to be awake on the 1st'], ['Your own server', 'Running and billed all month']];
+const MODAL_PARTS = [['modal.Cron', 'Starts the pull on the 1st of each month'], ['.map()', 'Runs the X searches in parallel containers'], ['Volume', 'Keeps the classified dataset'], ['Web endpoint', 'Serves the report at a public URL'], ['Secret', 'Holds the xAI API key']];
+function modal(ctx, s, k) {
+  s /= st('modal');
+  eyebrow(ctx, k, 'WHY MODAL', 120, appear(k, s, 0.05));
+  ALT.forEach(([t, sub], i) => {
+    const a = appear(k, s, 0.3 + i * 0.4), y = 262 + i * 170;
+    box(ctx, k, 130, y, 340, 118, a);
+    text(ctx, k, t, 300, y + 46, 19, 600, MUTED(1), a);
+    text(ctx, k, sub, 300, y + 78, 14, 400, MUTED(0.8), a);
+  });
+  link(ctx, k, 470, 406, 560, 406, C(k, k.prog(s, 1.3, 1.7)), k.prog(s, 1.4, 2.0));
+  const am = appear(k, s, 1.5);
+  box(ctx, k, 560, 196, 750, 420, am, k.prog(s, 1.8, 2.2) * (1 - k.prog(s, 2.6, 3.2)), 20);
+  text(ctx, k, 'Modal runs the whole job', 935, 244, 22, 600, INK, am);
+  MODAL_PARTS.forEach(([t, sub], i) => {
+    const a = appear(k, s, 2.0 + i * 0.45), y = 306 + i * 60;
+    text(ctx, k, t, 612, y, 16, 600, rgba(BLUE, 1), a, 'left', 'JetBrains Mono');
+    text(ctx, k, sub, 800, y, 16, 400, 'rgba(245,245,247,.82)', a, 'left');
+  });
+  pill(ctx, k, 'Scales to zero between runs · billed per second', 935, 662, appear(k, s, 4.6), true);
+}
+
 // 4. Ways to extend it.
 const USES = [['Spike alerts', 'Ping Slack when a theme jumps'], ['Tool drill-downs', 'A page per tool or vendor'], ['Weekly edition', 'Same pipeline, shorter window'], ['Embed the data', 'Charts and /data.json in posts']];
 function uses(ctx, s, k) {
@@ -146,5 +176,5 @@ function uses(ctx, s, k) {
   });
 }
 
-window.SCENES = { why, flow, fanout, uses };
+window.SCENES = { why, flow, modal, fanout, uses };
 })();

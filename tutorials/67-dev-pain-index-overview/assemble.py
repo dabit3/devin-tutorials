@@ -1,7 +1,7 @@
 # Builds shots/ for the overview: blank placeholders for scene beats, proof shots copied from tutorial 66.
 import json, os, shutil, subprocess
 T66 = '../66-dev-pain-index/shots'
-SEQ = ['why', 'flow', 'fanout', 7, 140, 314, 195, 328, 331, 'uses']
+SEQ = ['why', 'flow', 'modal', 'fanout', 7, 140, 314, 195, 328, 331, 'uses']
 b66 = {b['img']: b for b in json.load(open(f'{T66}/beats.json'))}
 shutil.rmtree('shots', ignore_errors=True); os.makedirs('shots')
 blank = 'shots/_blank.png'

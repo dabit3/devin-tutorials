@@ -24,15 +24,23 @@ window.SPEC = {
       "vo": "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover."
     },
     "0004.png": {
-      "vo": "The goal is a live report page on Modal with real data from X, plus a pull request in the demo repo.",
-      "voSay": "The goal is a lyve report page on Modal with real data from X, plus a pull request in the demo repo."
+      "vo": "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo."
     },
     "0007.png": {
       "hold": 4,
       "cursor": false,
       "cap": "Plain-language prompt in @thequantexplorer/product-demo-apps",
-      "vo": "The prompt asks for a Modal app that finds the posts with the xAI API's X search. It also asks for a monthly schedule, a parallel search per category and a backfill of earlier months, so every trend line has real data points.",
-      "voSay": "The prompt asks for a Modal app that finds the posts with the ex A I A P I's X search. It also asks for a monthly schedule, a parallel search per category and a backfill of earlier months, so every trend line has real data points."
+      "vo": "The prompt asks for a Modal app that calls Grok from xAI, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points.",
+      "voSay": "The prompt asks for a Modal app that calls Grok from ex A I, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points."
+    },
+    "0007a.png": {
+      "cursor": false,
+      "scene": "modal",
+      "hold": 7,
+      "capPos": "bottom",
+      "cap": "Why Modal: schedule, parallel searches, storage, public URL",
+      "vo": "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and .map() runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The xAI key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works.",
+      "voSay": "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and dot map runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The ex A I key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works."
     },
     "0008.png": {
       "cursor": true
@@ -43,12 +51,12 @@ window.SPEC = {
     "0011.png": {
       "hold": 2.5,
       "cap": "Devin starts with a plan",
-      "vo": "Devin replies with its plan, then reads the repo to see how the existing Modal app is set up."
+      "vo": "Devin replies with a short plan before it starts."
     },
     "0015.png": {
       "badge": "Sped up",
-      "cap": "Devin writes and runs the app on its own",
-      "vo": "From there it works on its own, writing the search, grouping and report code, and running a real backfill against X."
+      "cap": "Devin builds and runs the app on its own",
+      "vo": "From there it works on its own, and runs a real six month backfill of posts from X."
     },
     "0140.png": {
       "badge": "",
@@ -98,7 +106,7 @@ window.SPEC = {
     },
     "0152.png": {
       "cursor": true,
-      "vo": "I tell it to leave the cron off for now, which keeps the schedule in the code and ships the web page with the backfilled data."
+      "vo": "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet."
     },
     "0154.png": {
       "cap": "Leave the cron off for now"
@@ -106,8 +114,7 @@ window.SPEC = {
     "0155.png": {
       "cursor": false,
       "badge": "Sped up",
-      "vo": "Devin redeploys with the schedule turned off and tests the live URL.",
-      "voSay": "Devin redeploys with the schedule turned off and tests the lyve URL."
+      "vo": "Devin redeploys without the schedule and checks the page at its public URL."
     },
     "0195.png": {
       "badge": "",
@@ -119,7 +126,7 @@ window.SPEC = {
         "w": 872,
         "h": 150
       },
-      "vo": "Then it opens a pull request in the demo repo with the whole dev-pain-index folder."
+      "vo": "Then it opens a pull request in the demo repo with the whole app."
     },
     "0196.png": {
       "skip": true
@@ -224,22 +231,20 @@ window.SPEC = {
       "skip": true
     },
     "0230.png": {
-      "badge": "Sped up",
-      "cap": "Review fixes, tests, redeploy",
-      "vo": "An automated review flags three issues, so Devin fixes them, reruns the tests and redeploys."
+      "skip": true
     },
     "0269.png": {
       "badge": "",
       "hold": 4,
-      "cap": "704 posts kept across six months",
+      "cap": "704 posts kept, 14 tests pass",
       "ring": {
         "x": 728,
         "y": 224,
         "w": 856,
         "h": 78
       },
-      "vo": "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage. All 14 unit tests pass, and the cron stays off until a scheduled slot is free.",
-      "voSay": "When it finishes, the summary says the backfill kept seven hundred and four posts across six months, for about twenty four dollars and fifty cents of ex A I usage. All fourteen unit tests pass, and the cron stays off until a scheduled slot is free."
+      "vo": "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage. All 14 unit tests pass.",
+      "voSay": "When it finishes, the summary says the backfill kept seven hundred and four posts across six months, for about twenty four dollars and fifty cents of ex A I usage. All fourteen unit tests pass."
     },
     "0270.png": {
       "skip": true
@@ -368,28 +373,29 @@ window.SPEC = {
       "skip": true
     },
     "0312.png": {
-      "cursor": true,
-      "vo": "Clicking the deploy step in the timeline shows the real modal deploy output, ending with the app deployed."
+      "skip": true
     },
     "0314.png": {
-      "cap": "modal deploy: App deployed",
+      "hold": 3.5,
+      "cap": "modal deploy: the functions Modal created",
       "ring": {
-        "x": 731,
-        "y": 412,
-        "w": 240,
-        "h": 34
-      }
+        "x": 808,
+        "y": 337,
+        "w": 352,
+        "h": 118
+      },
+      "vo": "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint."
     },
     "0315.png": {
-      "cap": "The web endpoint's modal.run URL",
+      "cap": "The public modal.run URL",
       "ring": {
         "x": 943,
         "y": 393,
         "w": 682,
         "h": 34
       },
-      "vo": "The web endpoint gets its own modal.run URL.",
-      "voSay": "The web endpoint gets its own modal dot run URL."
+      "vo": "The web endpoint gets its own modal.run URL, which is the public address of the report.",
+      "voSay": "The web endpoint gets its own modal dot run URL, which is the public address of the report."
     },
     "0316.png": {
       "skip": true
@@ -404,81 +410,37 @@ window.SPEC = {
       "skip": true
     },
     "0320.png": {
-      "vo": "The pull request tab shows the code, and app.py holds the whole pipeline.",
-      "voSay": "The pull request tab shows the code, and app dot pie holds the whole pipeline."
+      "skip": true
     },
     "0322.png": {
-      "cursor": false,
-      "cap": "PR #75: Add dev-pain-index",
-      "ring": {
-        "x": 1009,
-        "y": 161,
-        "w": 867,
-        "h": 52
-      }
+      "skip": true
     },
     "0323.png": {
-      "hold": 3,
-      "cap": "modal.Cron: the first of every month",
-      "ring": {
-        "x": 1013,
-        "y": 462,
-        "w": 756,
-        "h": 65
-      },
-      "vo": "A modal.Cron schedule runs the refresh on the first of every month, behind a flag so it can stay off for now.",
-      "voSay": "A modal dot Cron schedule runs the refresh on the first of every month, behind a flag so it can stay off for now."
+      "skip": true
     },
     "0324.png": {
-      "hold": 3,
-      "cap": "xAI Responses API with the x_search tool",
-      "ring": {
-        "x": 1014,
-        "y": 462,
-        "w": 612,
-        "h": 40
-      },
-      "vo": "Each search calls the xAI Responses API with the X search tool, limited to one month of dates.",
-      "voSay": "Each search calls the ex A I Responses API with the X search tool, limited to one month of dates."
+      "skip": true
     },
     "0325.png": {
-      "hold": 3,
-      "cap": "search_category.map: every category and month at once",
-      "ring": {
-        "x": 990,
-        "y": 489,
-        "w": 294,
-        "h": 34
-      },
-      "vo": "The .map() call runs every category and month in parallel, so the six-month backfill was 30 searches at once.",
-      "voSay": "The dot map call runs every category and month in parallel, so the six month backfill was thirty searches at once."
+      "skip": true
     },
     "0326.png": {
-      "hold": 3,
-      "cap": "@modal.asgi_app serves the report",
-      "ring": {
-        "x": 782,
-        "y": 462,
-        "w": 294,
-        "h": 40
-      },
-      "vo": "The web function serves the report page from the stored dataset as an ASGI app.",
-      "voSay": "The web function serves the report page from the stored dataset as an A S G I app."
+      "skip": true
     },
     "0327.png": {
       "skip": true
     },
     "0328.png": {
       "hold": 4,
-      "cap": "Live at dabit3--dev-pain-index.modal.run",
+      "cap": "Public URL: dabit3--dev-pain-index.modal.run",
       "ring": {
         "x": 181,
         "y": 509,
         "w": 276,
         "h": 34
       },
-      "vo": "The live page shows September's index at 44 out of 100, built from 109 posts found in September.",
-      "voSay": "The lyve page shows September's index at forty four out of a hundred, built from a hundred and nine posts found in September."
+      "vo": "The page running on Modal shows September's index at 44 out of 100, built from 109 posts found in September.",
+      "voSay": "The page running on Modal shows September's index at forty four out of a hundred, built from a hundred and nine posts found in September."
     },
     "0329.png": {
       "cap": "Six real months per category, never extrapolated",
@@ -517,6 +479,513 @@ window.SPEC = {
       },
       "cap": "Samples from X search, not totals",
       "vo": "A methodology note explains that these numbers come from a sample of posts, not a total count."
+    },
+    "0040.png": {
+      "skip": true
+    },
+    "0041.png": {
+      "skip": true
+    },
+    "0042.png": {
+      "skip": true
+    },
+    "0043.png": {
+      "skip": true
+    },
+    "0044.png": {
+      "skip": true
+    },
+    "0045.png": {
+      "skip": true
+    },
+    "0046.png": {
+      "skip": true
+    },
+    "0047.png": {
+      "skip": true
+    },
+    "0048.png": {
+      "skip": true
+    },
+    "0049.png": {
+      "skip": true
+    },
+    "0050.png": {
+      "skip": true
+    },
+    "0051.png": {
+      "skip": true
+    },
+    "0052.png": {
+      "skip": true
+    },
+    "0053.png": {
+      "skip": true
+    },
+    "0054.png": {
+      "skip": true
+    },
+    "0055.png": {
+      "skip": true
+    },
+    "0056.png": {
+      "skip": true
+    },
+    "0057.png": {
+      "skip": true
+    },
+    "0058.png": {
+      "skip": true
+    },
+    "0059.png": {
+      "skip": true
+    },
+    "0060.png": {
+      "skip": true
+    },
+    "0061.png": {
+      "skip": true
+    },
+    "0062.png": {
+      "skip": true
+    },
+    "0063.png": {
+      "skip": true
+    },
+    "0064.png": {
+      "skip": true
+    },
+    "0065.png": {
+      "skip": true
+    },
+    "0066.png": {
+      "skip": true
+    },
+    "0067.png": {
+      "skip": true
+    },
+    "0068.png": {
+      "skip": true
+    },
+    "0069.png": {
+      "skip": true
+    },
+    "0070.png": {
+      "skip": true
+    },
+    "0071.png": {
+      "skip": true
+    },
+    "0072.png": {
+      "skip": true
+    },
+    "0073.png": {
+      "skip": true
+    },
+    "0074.png": {
+      "skip": true
+    },
+    "0075.png": {
+      "skip": true
+    },
+    "0076.png": {
+      "skip": true
+    },
+    "0077.png": {
+      "skip": true
+    },
+    "0078.png": {
+      "skip": true
+    },
+    "0079.png": {
+      "skip": true
+    },
+    "0080.png": {
+      "skip": true
+    },
+    "0081.png": {
+      "skip": true
+    },
+    "0082.png": {
+      "skip": true
+    },
+    "0083.png": {
+      "skip": true
+    },
+    "0084.png": {
+      "skip": true
+    },
+    "0085.png": {
+      "skip": true
+    },
+    "0086.png": {
+      "skip": true
+    },
+    "0087.png": {
+      "skip": true
+    },
+    "0088.png": {
+      "skip": true
+    },
+    "0089.png": {
+      "skip": true
+    },
+    "0090.png": {
+      "skip": true
+    },
+    "0091.png": {
+      "skip": true
+    },
+    "0092.png": {
+      "skip": true
+    },
+    "0093.png": {
+      "skip": true
+    },
+    "0094.png": {
+      "skip": true
+    },
+    "0095.png": {
+      "skip": true
+    },
+    "0096.png": {
+      "skip": true
+    },
+    "0097.png": {
+      "skip": true
+    },
+    "0098.png": {
+      "skip": true
+    },
+    "0099.png": {
+      "skip": true
+    },
+    "0100.png": {
+      "skip": true
+    },
+    "0101.png": {
+      "skip": true
+    },
+    "0102.png": {
+      "skip": true
+    },
+    "0103.png": {
+      "skip": true
+    },
+    "0104.png": {
+      "skip": true
+    },
+    "0105.png": {
+      "skip": true
+    },
+    "0106.png": {
+      "skip": true
+    },
+    "0107.png": {
+      "skip": true
+    },
+    "0108.png": {
+      "skip": true
+    },
+    "0109.png": {
+      "skip": true
+    },
+    "0110.png": {
+      "skip": true
+    },
+    "0111.png": {
+      "skip": true
+    },
+    "0112.png": {
+      "skip": true
+    },
+    "0113.png": {
+      "skip": true
+    },
+    "0114.png": {
+      "skip": true
+    },
+    "0115.png": {
+      "skip": true
+    },
+    "0116.png": {
+      "skip": true
+    },
+    "0117.png": {
+      "skip": true
+    },
+    "0118.png": {
+      "skip": true
+    },
+    "0119.png": {
+      "skip": true
+    },
+    "0120.png": {
+      "skip": true
+    },
+    "0121.png": {
+      "skip": true
+    },
+    "0122.png": {
+      "skip": true
+    },
+    "0123.png": {
+      "skip": true
+    },
+    "0124.png": {
+      "skip": true
+    },
+    "0125.png": {
+      "skip": true
+    },
+    "0126.png": {
+      "skip": true
+    },
+    "0127.png": {
+      "skip": true
+    },
+    "0128.png": {
+      "skip": true
+    },
+    "0129.png": {
+      "skip": true
+    },
+    "0130.png": {
+      "skip": true
+    },
+    "0131.png": {
+      "skip": true
+    },
+    "0132.png": {
+      "skip": true
+    },
+    "0133.png": {
+      "skip": true
+    },
+    "0134.png": {
+      "skip": true
+    },
+    "0135.png": {
+      "skip": true
+    },
+    "0136.png": {
+      "skip": true
+    },
+    "0137.png": {
+      "skip": true
+    },
+    "0138.png": {
+      "skip": true
+    },
+    "0139.png": {
+      "skip": true
+    },
+    "0165.png": {
+      "skip": true
+    },
+    "0166.png": {
+      "skip": true
+    },
+    "0167.png": {
+      "skip": true
+    },
+    "0168.png": {
+      "skip": true
+    },
+    "0169.png": {
+      "skip": true
+    },
+    "0170.png": {
+      "skip": true
+    },
+    "0171.png": {
+      "skip": true
+    },
+    "0172.png": {
+      "skip": true
+    },
+    "0173.png": {
+      "skip": true
+    },
+    "0174.png": {
+      "skip": true
+    },
+    "0175.png": {
+      "skip": true
+    },
+    "0176.png": {
+      "skip": true
+    },
+    "0177.png": {
+      "skip": true
+    },
+    "0178.png": {
+      "skip": true
+    },
+    "0179.png": {
+      "skip": true
+    },
+    "0180.png": {
+      "skip": true
+    },
+    "0181.png": {
+      "skip": true
+    },
+    "0182.png": {
+      "skip": true
+    },
+    "0183.png": {
+      "skip": true
+    },
+    "0184.png": {
+      "skip": true
+    },
+    "0185.png": {
+      "skip": true
+    },
+    "0186.png": {
+      "skip": true
+    },
+    "0187.png": {
+      "skip": true
+    },
+    "0188.png": {
+      "skip": true
+    },
+    "0189.png": {
+      "skip": true
+    },
+    "0190.png": {
+      "skip": true
+    },
+    "0191.png": {
+      "skip": true
+    },
+    "0192.png": {
+      "skip": true
+    },
+    "0193.png": {
+      "skip": true
+    },
+    "0231.png": {
+      "skip": true
+    },
+    "0232.png": {
+      "skip": true
+    },
+    "0233.png": {
+      "skip": true
+    },
+    "0234.png": {
+      "skip": true
+    },
+    "0235.png": {
+      "skip": true
+    },
+    "0236.png": {
+      "skip": true
+    },
+    "0237.png": {
+      "skip": true
+    },
+    "0238.png": {
+      "skip": true
+    },
+    "0239.png": {
+      "skip": true
+    },
+    "0240.png": {
+      "skip": true
+    },
+    "0241.png": {
+      "skip": true
+    },
+    "0242.png": {
+      "skip": true
+    },
+    "0243.png": {
+      "skip": true
+    },
+    "0244.png": {
+      "skip": true
+    },
+    "0245.png": {
+      "skip": true
+    },
+    "0246.png": {
+      "skip": true
+    },
+    "0247.png": {
+      "skip": true
+    },
+    "0248.png": {
+      "skip": true
+    },
+    "0249.png": {
+      "skip": true
+    },
+    "0250.png": {
+      "skip": true
+    },
+    "0251.png": {
+      "skip": true
+    },
+    "0252.png": {
+      "skip": true
+    },
+    "0253.png": {
+      "skip": true
+    },
+    "0254.png": {
+      "skip": true
+    },
+    "0255.png": {
+      "skip": true
+    },
+    "0256.png": {
+      "skip": true
+    },
+    "0257.png": {
+      "skip": true
+    },
+    "0258.png": {
+      "skip": true
+    },
+    "0259.png": {
+      "skip": true
+    },
+    "0260.png": {
+      "skip": true
+    },
+    "0261.png": {
+      "skip": true
+    },
+    "0262.png": {
+      "skip": true
+    },
+    "0263.png": {
+      "skip": true
+    },
+    "0264.png": {
+      "skip": true
+    },
+    "0265.png": {
+      "skip": true
+    },
+    "0266.png": {
+      "skip": true
+    },
+    "0267.png": {
+      "skip": true
+    },
+    "0268.png": {
+      "skip": true
+    },
+    "0321.png": {
+      "skip": true
+    },
+    "0313.png": {
+      "skip": true
     }
   }
 };

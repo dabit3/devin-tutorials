@@ -9,7 +9,7 @@ window.SPEC = {
   "maxZoom": 1.3,
   "noZoom": [
     [
-      "0003.png"
+      "0004.png"
     ]
   ],
   "edit": {
@@ -26,51 +26,60 @@ window.SPEC = {
       "scene": "flow",
       "hold": 8,
       "capPos": "bottom",
-      "cap": "X posts → xAI → Modal → Volume → web page",
-      "vo": "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
-      "voSay": "Each month, Grok searches X through the ex A I A P I to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page."
+      "cap": "X posts → xAI API → Modal → public page",
+      "vo": "Each month, Grok from xAI searches X for complaint posts in each category, and rates how severe each one is. Everything after that runs on Modal, which groups the complaints into themes, saves the dataset to a Volume and serves the report page.",
+      "voSay": "Each month, Grok from ex A I searches X for complaint posts in each category, and rates how severe each one is. Everything after that runs on Modal, which groups the complaints into themes, saves the dataset to a Volume and serves the report page."
     },
     "0002.png": {
+      "cursor": false,
+      "scene": "modal",
+      "hold": 7,
+      "capPos": "bottom",
+      "cap": "Why Modal: schedule, storage, public URL, scale to zero",
+      "vo": "Why Modal? This job runs once a month, so a laptop script would have to stay awake for it, and your own server would sit idle the rest of the time. Modal starts the pull on a cron schedule and keeps the xAI key in a Secret. A Volume stores the results, and a web endpoint serves the page at a public URL. Between runs it scales to zero, so you only pay for the seconds it works.",
+      "voSay": "Why Modal? This job runs once a month, so a laptop script would have to stay awake for it, and your own server would sit idle the rest of the time. Modal starts the pull on a cron schedule and keeps the ex A I key in a Secret. A Volume stores the results, and a web endpoint serves the page at a public URL. Between runs it scales to zero, so you only pay for the seconds it works."
+    },
+    "0003.png": {
       "cursor": false,
       "scene": "fanout",
       "hold": 7,
       "capPos": "bottom",
-      "cap": "refresh() fans out with .map()",
-      "vo": "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts.",
-      "voSay": "The refresh function fans out with dot map, so every category and month runs at once, and the six month backfill was thirty searches that kept seven hundred and four posts."
+      "cap": ".map(): 30 searches in parallel",
+      "vo": "When it runs, one .map() call spreads the searches across containers, so the six-month backfill ran 30 searches in parallel and kept 704 posts.",
+      "voSay": "When it runs, one dot map call spreads the searches across containers, so the six month backfill ran thirty searches in parallel and kept seven hundred and four posts."
     },
-    "0003.png": {
+    "0004.png": {
       "cursor": false,
       "hold": 3,
       "cap": "One plain-language prompt to Devin",
       "vo": "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
     },
-    "0004.png": {
+    "0005.png": {
       "cursor": false,
       "hold": 3,
-      "cap": "Modal's cron limit: Devin asked first",
+      "cap": "Modal's 5-schedule limit: Devin asked first",
       "ring": {
         "x": 720,
         "y": 583,
         "w": 900,
         "h": 130
       },
-      "vo": "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off."
+      "vo": "The workspace had already used all five of its scheduled functions, so Devin asked first. The schedule stayed in the code but switched off, and it hasn't run yet."
     },
-    "0005.png": {
+    "0006.png": {
       "cursor": false,
       "hold": 3,
-      "cap": "modal deploy: App deployed",
+      "cap": "modal deploy: functions and a modal.run URL",
       "ring": {
-        "x": 731,
-        "y": 412,
-        "w": 240,
-        "h": 34
+        "x": 808,
+        "y": 337,
+        "w": 352,
+        "h": 118
       },
       "vo": "Then modal deploy created each function and gave the report its own modal.run URL.",
       "voSay": "Then modal deploy created each function and gave the report its own modal dot run URL."
     },
-    "0006.png": {
+    "0007.png": {
       "cursor": false,
       "hold": 3,
       "cap": "PR #75 in product-demo-apps",
@@ -82,20 +91,20 @@ window.SPEC = {
       },
       "vo": "Devin opened a pull request with the whole app and its tests."
     },
-    "0007.png": {
+    "0008.png": {
       "cursor": false,
       "hold": 3.5,
-      "cap": "September: 44/100 from 109 posts",
+      "cap": "September: 44/100 from 109 posts found",
       "ring": {
         "x": 181,
         "y": 509,
         "w": 276,
         "h": 34
       },
-      "vo": "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line.",
-      "voSay": "The deployed report shows September's index at forty four out of a hundred from a hundred and nine posts, with six real months on the trend line."
+      "vo": "The page running on Modal shows September's index at 44 out of 100 from 109 posts found, with six real months on the trend line.",
+      "voSay": "The page running on Modal shows September's index at forty four out of a hundred from a hundred and nine posts found, with six real months on the trend line."
     },
-    "0008.png": {
+    "0009.png": {
       "cursor": false,
       "hold": 3,
       "cap": "Top themes and the real posts behind them",
@@ -107,7 +116,7 @@ window.SPEC = {
       },
       "vo": "Each category lists its top themes and the loudest real posts behind them."
     },
-    "0009.png": {
+    "0010.png": {
       "cursor": false,
       "scene": "uses",
       "hold": 8,
