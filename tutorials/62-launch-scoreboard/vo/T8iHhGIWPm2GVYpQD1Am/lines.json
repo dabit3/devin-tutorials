@@ -1,0 +1,1656 @@
+{
+ "0000.png": {
+  "text": "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+  "dur": 10.6,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.601,
+    "text": "Every big launch starts an argument about who won it."
+   },
+   {
+    "t0": 2.926,
+    "t1": 3.866,
+    "text": "In this tutorial,"
+   },
+   {
+    "t0": 3.936,
+    "t1": 6.687,
+    "text": "Devin builds a scoreboard that compares launches side"
+   },
+   {
+    "t0": 6.722,
+    "t1": 9.276,
+    "text": "by side, using real posts from X,"
+   },
+   {
+    "t0": 9.451,
+    "t1": 10.6,
+    "text": "and deploys it to Modal."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+  "say": "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page.",
+  "dur": 16.165,
+  "takeAt": 10.875,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.35,
+    "text": "So where does Modal fit?"
+   },
+   {
+    "t0": 1.733,
+    "t1": 3.045,
+    "text": "It runs the whole back end."
+   },
+   {
+    "t0": 3.428,
+    "t1": 9.361,
+    "text": "A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel."
+   },
+   {
+    "t0": 9.744,
+    "t1": 13.854,
+    "text": "Results go into a Modal Dict, and the xAI key lives in a Modal Secret."
+   },
+   {
+    "t0": 14.179,
+    "t1": 16.165,
+    "text": "A web endpoint serves the public page."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+  "dur": 10.549,
+  "takeAt": 27.221,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.291,
+    "text": "Why not a laptop script or your own server?"
+   },
+   {
+    "t0": 2.535,
+    "t1": 4.648,
+    "text": "A script stops when the laptop sleeps,"
+   },
+   {
+    "t0": 4.776,
+    "t1": 7.156,
+    "text": "and a server sits idle between refreshes."
+   },
+   {
+    "t0": 7.481,
+    "t1": 9.826,
+    "text": "Modal scales to zero between runs and bills"
+   },
+   {
+    "t0": 9.884,
+    "t1": 10.549,
+    "text": "by the second."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+  "say": "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets.",
+  "dur": 6.965,
+  "takeAt": 37.995,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.059,
+    "text": "I pick the product demo apps repo and"
+   },
+   {
+    "t0": 2.094,
+    "t1": 3.777,
+    "text": "describe the app in plain language."
+   },
+   {
+    "t0": 3.87,
+    "t1": 6.965,
+    "text": "The Modal and xAI keys are already saved as org secrets."
+   }
+  ]
+ },
+ "0012.png": {
+  "text": "Devin replies with a short plan, then starts building.",
+  "dur": 2.778,
+  "takeAt": 45.112,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.792,
+    "text": "Devin replies with a short plan,"
+   },
+   {
+    "t0": 1.827,
+    "t1": 2.778,
+    "text": "then starts building."
+   }
+  ]
+ },
+ "0119.png": {
+  "text": "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+  "say": "It deploys with modal deploy, and the page answers on its public modal dot run URL.",
+  "dur": 4.665,
+  "takeAt": 48.255,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.066,
+    "t1": 4.665,
+    "text": "It deploys with modal deploy, and the page answers on its public modal.run URL."
+   }
+  ]
+ },
+ "0168.png": {
+  "text": "When it's done, Devin opens a pull request in the demo apps repo.",
+  "dur": 3.335,
+  "takeAt": 53.205,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.781,
+    "text": "When it's done,"
+   },
+   {
+    "t0": 0.828,
+    "t1": 3.335,
+    "text": "Devin opens a pull request in the demo apps repo."
+   }
+  ]
+ },
+ "0180.png": {
+  "text": "It opens the public URL in a browser to test the page.",
+  "dur": 2.995,
+  "takeAt": 56.915,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.067,
+    "t1": 2.017,
+    "text": "It opens the public URL in a browser"
+   },
+   {
+    "t0": 2.075,
+    "t1": 2.995,
+    "text": "to test the page."
+   }
+  ]
+ },
+ "0207.png": {
+  "text": "Devin Review flagged four issues on the pull request.",
+  "dur": 2.72,
+  "takeAt": 60.24,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.72,
+    "text": "Devin Review flagged four issues on the pull request."
+   }
+  ]
+ },
+ "0413.png": {
+  "text": "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+  "dur": 9.685,
+  "takeAt": 63.085,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.627,
+    "text": "Its summary says it fixed all four and redeployed."
+   },
+   {
+    "t0": 2.952,
+    "t1": 5.123,
+    "text": "It's also upfront that Grok skipped X Search"
+   },
+   {
+    "t0": 5.17,
+    "t1": 7.016,
+    "text": "on the first try and made up posts,"
+   },
+   {
+    "t0": 7.19,
+    "t1": 9.685,
+    "text": "so the app now keeps only posts the search returns."
+   }
+  ]
+ },
+ "0461.png": {
+  "text": "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+  "say": "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two.",
+  "dur": 13.105,
+  "takeAt": 73.165,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.059,
+    "t1": 1.533,
+    "text": "Here's the page running on Modal."
+   },
+   {
+    "t0": 1.858,
+    "t1": 6.886,
+    "text": "In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts."
+   },
+   {
+    "t0": 7.327,
+    "t1": 13.105,
+    "text": "GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two."
+   }
+  ]
+ },
+ "0462.png": {
+  "text": "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+  "dur": 4.883,
+  "takeAt": 86.827,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.397,
+    "text": "Counts are sampled posts,"
+   },
+   {
+    "t0": 1.479,
+    "t1": 2.535,
+    "text": "not total volume,"
+   },
+   {
+    "t0": 2.686,
+    "t1": 4.883,
+    "text": "and Grok classifies each post's sentiment."
+   }
+  ]
+ },
+ "0463.png": {
+  "text": "Each column shows the top praise for that launch.",
+  "dur": 2.515,
+  "takeAt": 92.065,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.107,
+    "t1": 2.515,
+    "text": "Each column shows the top praise for that launch."
+   }
+  ]
+ },
+ "0464.png": {
+  "text": "Then the top complaints.",
+  "dur": 1.305,
+  "takeAt": 94.815,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.305,
+    "text": "Then the top complaints."
+   }
+  ]
+ },
+ "0465.png": {
+  "text": "And the posts that shaped the conversation link straight back to X.",
+  "dur": 3.035,
+  "takeAt": 96.395,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.084,
+    "t1": 2.0,
+    "text": "And the posts that shaped the conversation link"
+   },
+   {
+    "t0": 2.046,
+    "t1": 3.035,
+    "text": "straight back to X."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Who won the launch? Now there's data.",
+  "dur": 1.505,
+  "takeAt": 99.665,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal.",
+    "Every big launch starts an argument about who won it. In this tutorial, Devin builds a scoreboard that compares launches side by side, using real posts from X, and deploys it to Modal."
+   ],
+   [
+    "0001.png",
+    "So where does Modal fit? It runs the whole back end. A cron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the xAI key lives in a Modal Secret. A web endpoint serves the public page.",
+    "So where does Modal fit? It runs the whole back end. A kron schedule refreshes the data every six hours, and map runs one Grok call per launch in parallel. Results go into a Modal Dict, and the ex A I key lives in a Modal Secret. A web endpoint serves the public page."
+   ],
+   [
+    "0004.png",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second.",
+    "Why not a laptop script or your own server? A script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second."
+   ],
+   [
+    "0007.png",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and xAI keys are already saved as org secrets.",
+    "I pick the product demo apps repo and describe the app in plain language. The Modal and ex A I keys are already saved as org secrets."
+   ],
+   [
+    "0012.png",
+    "Devin replies with a short plan, then starts building.",
+    "Devin replies with a short plan, then starts building."
+   ],
+   [
+    "0119.png",
+    "It deploys with modal deploy, and the page answers on its public modal.run URL.",
+    "It deploys with modal deploy, and the page answers on its public modal dot run URL."
+   ],
+   [
+    "0168.png",
+    "When it's done, Devin opens a pull request in the demo apps repo.",
+    "When it's done, Devin opens a pull request in the demo apps repo."
+   ],
+   [
+    "0180.png",
+    "It opens the public URL in a browser to test the page.",
+    "It opens the public URL in a browser to test the page."
+   ],
+   [
+    "0207.png",
+    "Devin Review flagged four issues on the pull request.",
+    "Devin Review flagged four issues on the pull request."
+   ],
+   [
+    "0413.png",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns.",
+    "Its summary says it fixed all four and redeployed. It's also upfront that Grok skipped X Search on the first try and made up posts, so the app now keeps only posts the search returns."
+   ],
+   [
+    "0461.png",
+    "Here's the page running on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
+    "Here's the page running on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two."
+   ],
+   [
+    "0462.png",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment.",
+    "Counts are sampled posts, not total volume, and Grok classifies each post's sentiment."
+   ],
+   [
+    "0463.png",
+    "Each column shows the top praise for that launch.",
+    "Each column shows the top praise for that launch."
+   ],
+   [
+    "0464.png",
+    "Then the top complaints.",
+    "Then the top complaints."
+   ],
+   [
+    "0465.png",
+    "And the posts that shaped the conversation link straight back to X.",
+    "And the posts that shaped the conversation link straight back to X."
+   ],
+   [
+    "outro",
+    "Who won the launch? Now there's data.",
+    "Who won the launch? Now there's data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.03,
+    "t1": 0.75,
+    "text": "Who won the launch?"
+   },
+   {
+    "t0": 0.785,
+    "t1": 1.505,
+    "text": "Now there's data."
+   }
+  ]
+ }
+}
