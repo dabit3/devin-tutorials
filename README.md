@@ -67,6 +67,14 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 34. **Devin Primitives: when to use what** (overview, 1:17): A short diagram-led overview for teams setting Devin up. A map of the primitives (always-on context: AGENTS.md, rules and Memory; reusable procedures: Skills and Playbooks; reach and sharing: MCP servers and Plugins), then for each one when to use it, where it lives in the product (real Customize → Rules, Memory, Skills, MCPs and Plugins tabs, and Settings → Playbooks) and how to build one (a short AGENTS.md and a minimal SKILL.md on screen), ending on a "which one should I use?" diagram. A one-page [cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md) covers the same table. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview.mp4)
 
+<!-- -->
+
+38. **A customer’s bug video becomes a fix** (1:47): A customer’s screen recording (we planted the bug and recorded the clip playing the customer) is attached to a real session with a plain customer-style message. Devin reads the video, replays the same clicks in its own browser (Computer tab) until the checkout total goes negative, fixes the discount math, adds a regression test, replays the clicks to confirm the fix and opens a [real PR](https://github.com/thequantexplorer/product-demo-apps/pull/52). [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/38-bug-video-to-fix/38-bug-video-to-fix.mp4)
+
+<!-- -->
+
+39. **A customer’s bug video becomes a fix: how it works** (overview, 0:57): A short diagram-led overview: customer video → replay in Devin’s browser → reproduce → fix → re-check → PR, with real shots from tutorial 38 and what kinds of recordings you can hand it. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/39-bug-video-to-fix-overview/39-bug-video-to-fix-overview.mp4)
+
 ## Narrated tutorials
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
@@ -107,6 +115,8 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Dynamic Workflows: how it works (overview), narrated by Nader** (1:59): What a dynamic workflow is, why scripted coordination helps with multi-part jobs, parallel work and connected stages, live progress and resumability, `pipeline` vs `parallel`, a real 12-reviewer accessibility audit, and when to use a workflow. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/32-dynamic-workflows-overview/32-dynamic-workflows-overview-nader.mp4) · [Voice script](tutorials/32-dynamic-workflows-overview/voice-script.md)
 - **Dynamic Workflows, narrated by Nader** (2:05): A real five-component audit, fix and verify workflow: the script, the live workflow panel, one agent's structured output, the roll-up and a fix PR. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/33-dynamic-workflows/33-dynamic-workflows-nader.mp4) · [Voice script](tutorials/33-dynamic-workflows/voice-script.md)
 - **Devin Primitives: when to use what (overview), narrated by Nader** (1:42): When to use AGENTS.md, rules, Memory, Skills, Playbooks, MCP servers and Plugins, where each lives in the product, and how to build one. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview-nader.mp4) · [Voice script](tutorials/34-devin-primitives-overview/voice-script.md) · [Cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md)
+- **A customer’s bug video becomes a fix, narrated by Nader** (1:54): Attach a customer’s screen recording, and Devin replays the clicks in its own browser, reproduces the bug, fixes it, re-checks it and opens a PR. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/38-bug-video-to-fix/38-bug-video-to-fix-nader.mp4) · [Voice script](tutorials/38-bug-video-to-fix/voice-script.md)
+- **A customer’s bug video becomes a fix: how it works (overview), narrated by Nader** (1:00): How a bug video becomes a verified PR, in a short diagram-led overview. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/39-bug-video-to-fix-overview/39-bug-video-to-fix-overview-nader.mp4) · [Voice script](tutorials/39-bug-video-to-fix-overview/voice-script.md)
 
 ## Making a new tutorial
 

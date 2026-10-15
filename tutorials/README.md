@@ -33,6 +33,8 @@
 | 32 | Dynamic Workflows: how it works (overview) | `32-dynamic-workflows-overview/` |
 | 33 | Dynamic Workflows | `33-dynamic-workflows/` |
 | 34 | Devin Primitives: when to use what (overview) | `34-devin-primitives-overview/` |
+| 38 | A customer’s bug video becomes a fix | `38-bug-video-to-fix/` |
+| 39 | A customer’s bug video becomes a fix (overview) | `39-bug-video-to-fix-overview/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
 
