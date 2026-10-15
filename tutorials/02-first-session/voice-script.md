@@ -1,51 +1,31 @@
 # Your First Session — voice script
 
-Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`). Each line plays over the shot named on the left.
-
-## Set up the session
+Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`), generated as one take at the voice's default settings and cut into lines locally. Each line plays over the shot named on the left.
 
 | Shot | Narration |
 | --- | --- |
-| Home screen | Let's run your first Devin session. Describe a task in plain English, and Devin builds it, tests it, and opens a pull request. |
-| Agent / Ask toggle | Agent mode writes, runs and ships code. Ask mode explores your code and plans the work, without changing anything. |
-| Agent selected | We'll stay in Agent mode. |
-| Capability button | Next, pick how much horsepower Devin brings. |
-| Capability menu | Choose Fusion, Ultra, Normal or Lite, or try a preview model like SWE-2. *(spoken "swee two")* |
-| Machine menu | Then choose the machine Devin works on: Linux, macOS or Windows. |
-| Linux | We'll stick with Linux. |
-| Composer, typing @ | Type an @ sign to mention a repository. *(spoken "at sign")* |
-| Typing the task | Then describe the task, and what done looks like. |
-| Send button | Send it. |
-
-## Devin works
-
-| Shot | Narration |
-| --- | --- |
-| Session starts | Devin sets up its machine, makes a plan, and starts working on its own. |
-| Progress panel | Watch every command and edit as it happens. You can step in anytime, or just let it run. |
-| PR opened | When it's done, Devin opens a pull request, and offers to test the change. |
-| Test card starring button | Click Test card starring to let it go ahead. You can also pre-approve testing in your settings. |
-| Computer tab | Open the Computer tab to watch. |
-| Devin's browser | Devin starts the app, plans a short test, and clicks through the feature itself. |
-| Starring and dragging cards | It stars cards, drags them, and reloads the page to check they stay pinned. |
-| Recording card | Then it sends you a recording of the test. |
-| Playing the recording | Play it back. All seven checks passed. |
-
-## Review and merge
-
-| Shot | Narration |
-| --- | --- |
-| PR card | Open the pull request right in the session. |
-| PR diff | Review the diff and the checks. |
-| Merge button | Happy with it? Merge the pull request. |
-| Merged | Merged. Your first change is shipped. |
-| Outro | Describe it. Devin builds, tests, and ships it. |
-
-## Prompt typed on screen
-
-1. @thequantexplorer/product-demo-apps in the kanban-board app, let people star a card so starred cards stay at the top of their column.
-
-## Sources
-
-- https://docs.devin.ai/get-started/first-run
-- https://docs.devin.ai/work-with-devin/testing-and-recordings
+| Home screen | Here's your first Devin session, from a plain-English task to a merged pull request. |
+| Agent mode | Start in Agent mode, so Devin does the work instead of just answering questions. |
+| Model picker | Then pick a model. |
+| Fusion description | Fusion and Ultra go deeper, and Lite is the fastest. |
+| Selecting Normal | Normal is a good default. |
+| Configuration button | Next, pick the operating system Devin works on. |
+| Ubuntu, macOS and Windows | Ubuntu is perfect for a web app. |
+| Mentioning the repo and typing the task | Mention the repo with the at sign, and describe the feature in plain English. |
+| Finished prompt | Here, we want a Duplicate button in the Kanban card editor that puts the copy right below the original. |
+| Send | Send it. |
+| Devin working, sped up | Devin plans the change, writes the code, and runs the app. |
+| Pull request card, No issues found | When it's done, Devin opens a pull request, and Devin Review checks it. No issues found. |
+| Test offer | Devin also offers to test the feature end-to-end in a real browser. |
+| Clicking Test | Click Test. |
+| Computer tab | You can watch it work on its own computer. |
+| Devin finds and fixes the notification bug | The test catches a real bug. The notification hides behind the editor, so Devin fixes it. |
+| Follow-up message | Ask Devin to record the test again on the latest commit. |
+| Re-test, sped up | Devin runs the whole test again from the start, on the new commit. |
+| Duplicate card retest recording | When it's done, Devin sends a recording of the test. |
+| Recording playing, 11 passed, 0 failed | Eleven checks passed, and none failed. The editor closes, and the copy lands right below the original. |
+| Opening the PR card | Open the pull request right in the session. |
+| PR view, Ready to merge | Review the diff and the checks. |
+| Merge button | Then click Merge. |
+| Merged badge | Merged. Your first change is shipped. |
+| Outro | Describe it. Devin builds, tests and ships it. |
