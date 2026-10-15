@@ -1,0 +1,302 @@
+{
+ "0000.png": {
+  "text": "Devin can post-train a small open model on Modal and swap it in for a frontier API on one narrow task: text-to-SQL.",
+  "dur": 6.755,
+  "at": 0.0,
+  "end": 6.755,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.02,
+    "text": "Devin can post-train a small open model on"
+   },
+   {
+    "t0": 2.067,
+    "t1": 3.785,
+    "text": "Modal and swap it in for a frontier"
+   },
+   {
+    "t0": 3.855,
+    "t1": 6.755,
+    "text": "API on one narrow task: text-to-SQL."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "It runs the whole loop an ML engineer would, from dataset to deploy.",
+  "dur": 3.645,
+  "at": 7.06,
+  "end": 10.705,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.08,
+    "t1": 1.764,
+    "text": "It runs the whole loop an ML engineer"
+   },
+   {
+    "t0": 1.822,
+    "t1": 3.645,
+    "text": "would, from dataset to deploy."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "I ask for Spider splits with their databases, and a reward that runs the SQL.",
+  "dur": 4.315,
+  "at": 11.06,
+  "end": 15.375,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.109,
+    "t1": 2.454,
+    "text": "I ask for Spider splits with their databases,"
+   },
+   {
+    "t0": 2.547,
+    "t1": 4.315,
+    "text": "and a reward that runs the SQL."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
+  "dur": 7.65,
+  "at": 15.58,
+  "end": 23.23,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.059,
+    "t1": 1.638,
+    "text": "The reward is checked by the computer,"
+   },
+   {
+    "t0": 1.696,
+    "t1": 2.775,
+    "text": "not an AI judge:"
+   },
+   {
+    "t0": 3.158,
+    "t1": 4.412,
+    "text": "right rows score one,"
+   },
+   {
+    "t0": 4.691,
+    "t1": 5.771,
+    "text": "wrong rows zero,"
+   },
+   {
+    "t0": 5.922,
+    "t1": 7.65,
+    "text": "and failed SQL minus a half."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
+  "dur": 4.945,
+  "at": 23.675,
+  "end": 28.62,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.067,
+    "t1": 1.89,
+    "text": "On two hundred held-out questions,"
+   },
+   {
+    "t0": 2.064,
+    "t1": 4.874,
+    "text": "the base 7B already matched gpt-4.1."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
+  "dur": 6.92,
+  "at": 28.77,
+  "end": 35.69,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.104,
+    "t1": 2.031,
+    "text": "After fine-tuning and GRPO,"
+   },
+   {
+    "t0": 2.275,
+    "t1": 4.713,
+    "text": "one coordinator starts four managed Devins,"
+   },
+   {
+    "t0": 4.992,
+    "t1": 6.92,
+    "text": "each with its own VM and Modal job."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+  "dur": 5.55,
+  "at": 35.975,
+  "end": 41.525,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.062,
+    "t1": 1.839,
+    "text": "Each one tries a different learning rate,"
+   },
+   {
+    "t0": 2.082,
+    "t1": 4.254,
+    "text": "LoRA rank, generation count,"
+   },
+   {
+    "t0": 4.532,
+    "t1": 5.55,
+    "text": "or reward shaping."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
+  "dur": 5.37,
+  "at": 41.7,
+  "end": 47.07,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.154,
+    "t1": 2.406,
+    "text": "Devin promotes the winner by validation score:"
+   },
+   {
+    "t0": 2.615,
+    "t1": 3.996,
+    "text": "eighty-two percent on eval,"
+   },
+   {
+    "t0": 4.078,
+    "t1": 5.308,
+    "text": "within noise of the others."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
+  "dur": 5.62,
+  "at": 47.23,
+  "end": 52.85,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.103,
+    "t1": 2.228,
+    "text": "Then it deploys the winner with modal deploy,"
+   },
+   {
+    "t0": 2.344,
+    "t1": 3.401,
+    "text": "behind a feature flag,"
+   },
+   {
+    "t0": 3.494,
+    "t1": 5.595,
+    "text": "shown here on gpt-4.1."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "With the flag flipped, the same question goes to our own model on Modal.",
+  "dur": 3.3,
+  "at": 53.205,
+  "end": 56.505,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.061,
+    "t1": 1.025,
+    "text": "With the flag flipped,"
+   },
+   {
+    "t0": 1.048,
+    "t1": 3.3,
+    "text": "the same question goes to our own model on Modal."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
+  "dur": 15.975,
+  "at": 56.72,
+  "end": 72.695,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.064,
+    "t1": 3.245,
+    "text": "The tuned 7B beat gpt-4.1 by eight and"
+   },
+   {
+    "t0": 3.268,
+    "t1": 4.092,
+    "text": "a half points,"
+   },
+   {
+    "t0": 4.266,
+    "t1": 6.426,
+    "text": "though each training step's gain alone was within"
+   },
+   {
+    "t0": 6.484,
+    "t1": 9.526,
+    "text": "noise. On a warm H100 it cost forty-nine"
+   },
+   {
+    "t0": 9.56,
+    "t1": 13.218,
+    "text": "dollars per million queries to gpt-4.1's nine hundred"
+   },
+   {
+    "t0": 13.334,
+    "t1": 15.97,
+    "text": "ninety-three, before cold starts and idle time."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Save the recipe as a playbook, and Devin can run it again on your own data.",
+  "dur": 3.67,
+  "at": 72.9,
+  "end": 76.57,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.173,
+    "t1": 1.612,
+    "text": "Save the recipe as a playbook,"
+   },
+   {
+    "t0": 1.636,
+    "t1": 3.67,
+    "text": "and Devin can run it again on your own data."
+   }
+  ]
+ }
+}
