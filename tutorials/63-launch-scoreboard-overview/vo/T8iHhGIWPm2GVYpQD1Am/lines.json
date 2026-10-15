@@ -1,0 +1,877 @@
+{
+ "0000.png": {
+  "text": "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
+  "dur": 7.225,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+   ],
+   [
+    "0002.png",
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+   ],
+   [
+    "0003.png",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X."
+   ],
+   [
+    "0004.png",
+    "Devin built all of this from one short prompt in the product demo apps repo.",
+    "Devin built all of this from one short prompt in the product demo apps repo."
+   ],
+   [
+    "0005.png",
+    "It deployed the app with modal deploy, then ran the first refresh.",
+    "It deployed the app with modal deploy, then ran the first refresh."
+   ],
+   [
+    "0006.png",
+    "Then it opened a pull request, with the code and a screenshot of the live page.",
+    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+   ],
+   [
+    "0007.png",
+    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four."
+   ],
+   [
+    "0008.png",
+    "Each column links the posts that shaped the conversation.",
+    "Each column links the posts that shaped the conversation."
+   ],
+   [
+    "0009.png",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />"
+   ],
+   [
+    "outro",
+    "Who won the launch? Now you can check.",
+    "Who won the launch? Now you can check."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.531,
+    "text": "Every big launch starts an argument about who won it."
+   },
+   {
+    "t0": 2.775,
+    "t1": 4.516,
+    "text": "This app answers it with posts from the"
+   },
+   {
+    "t0": 4.574,
+    "t1": 6.188,
+    "text": "first seventy-two hours on X,"
+   },
+   {
+    "t0": 6.362,
+    "t1": 7.225,
+    "text": "side by side."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
+  "say": "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page.",
+  "dur": 10.405,
+  "takeAt": 7.45,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+   ],
+   [
+    "0002.png",
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+   ],
+   [
+    "0003.png",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X."
+   ],
+   [
+    "0004.png",
+    "Devin built all of this from one short prompt in the product demo apps repo.",
+    "Devin built all of this from one short prompt in the product demo apps repo."
+   ],
+   [
+    "0005.png",
+    "It deployed the app with modal deploy, then ran the first refresh.",
+    "It deployed the app with modal deploy, then ran the first refresh."
+   ],
+   [
+    "0006.png",
+    "Then it opened a pull request, with the code and a screenshot of the live page.",
+    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+   ],
+   [
+    "0007.png",
+    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four."
+   ],
+   [
+    "0008.png",
+    "Each column links the posts that shaped the conversation.",
+    "Each column links the posts that shaped the conversation."
+   ],
+   [
+    "0009.png",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />"
+   ],
+   [
+    "outro",
+    "Who won the launch? Now you can check.",
+    "Who won the launch? Now you can check."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.13,
+    "text": "Here's how it works."
+   },
+   {
+    "t0": 1.513,
+    "t1": 6.029,
+    "text": "Grok samples posts from X through the xAI API, with X Search."
+   },
+   {
+    "t0": 6.354,
+    "t1": 10.405,
+    "text": "Modal runs the functions, stores the results, and serves a live page."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
+  "say": "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
+  "dur": 12.418,
+  "takeAt": 18.282,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+   ],
+   [
+    "0002.png",
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+   ],
+   [
+    "0003.png",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X."
+   ],
+   [
+    "0004.png",
+    "Devin built all of this from one short prompt in the product demo apps repo.",
+    "Devin built all of this from one short prompt in the product demo apps repo."
+   ],
+   [
+    "0005.png",
+    "It deployed the app with modal deploy, then ran the first refresh.",
+    "It deployed the app with modal deploy, then ran the first refresh."
+   ],
+   [
+    "0006.png",
+    "Then it opened a pull request, with the code and a screenshot of the live page.",
+    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+   ],
+   [
+    "0007.png",
+    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four."
+   ],
+   [
+    "0008.png",
+    "Each column links the posts that shaped the conversation.",
+    "Each column links the posts that shaped the conversation."
+   ],
+   [
+    "0009.png",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />"
+   ],
+   [
+    "outro",
+    "Who won the launch? Now you can check.",
+    "Who won the launch? Now you can check."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 3.893,
+    "text": "Inside Modal, a cron schedule calls refresh every six hours."
+   },
+   {
+    "t0": 4.276,
+    "t1": 6.679,
+    "text": "Refresh uses map to analyze each launch in"
+   },
+   {
+    "t0": 6.737,
+    "t1": 8.548,
+    "text": "its own container, in parallel."
+   },
+   {
+    "t0": 9.059,
+    "t1": 10.766,
+    "text": "Results land in a Modal Dict,"
+   },
+   {
+    "t0": 10.917,
+    "t1": 12.418,
+    "text": "and a web endpoint reads them."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
+  "dur": 7.7,
+  "takeAt": 30.96,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+   ],
+   [
+    "0002.png",
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+   ],
+   [
+    "0003.png",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X."
+   ],
+   [
+    "0004.png",
+    "Devin built all of this from one short prompt in the product demo apps repo.",
+    "Devin built all of this from one short prompt in the product demo apps repo."
+   ],
+   [
+    "0005.png",
+    "It deployed the app with modal deploy, then ran the first refresh.",
+    "It deployed the app with modal deploy, then ran the first refresh."
+   ],
+   [
+    "0006.png",
+    "Then it opened a pull request, with the code and a screenshot of the live page.",
+    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+   ],
+   [
+    "0007.png",
+    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four."
+   ],
+   [
+    "0008.png",
+    "Each column links the posts that shaped the conversation.",
+    "Each column links the posts that shaped the conversation."
+   ],
+   [
+    "0009.png",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />"
+   ],
+   [
+    "outro",
+    "Who won the launch? Now you can check.",
+    "Who won the launch? Now you can check."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.943,
+    "text": "The numbers are honest about what they are."
+   },
+   {
+    "t0": 2.221,
+    "t1": 3.824,
+    "text": "Counts are sampled posts,"
+   },
+   {
+    "t0": 4.033,
+    "t1": 5.728,
+    "text": "Grok classifies each one,"
+   },
+   {
+    "t0": 5.902,
+    "t1": 7.7,
+    "text": "and every quote links back to X."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "Devin built all of this from one short prompt in the product demo apps repo.",
+  "dur": 3.925,
+  "takeAt": 39.215,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+   ],
+   [
+    "0002.png",
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+   ],
+   [
+    "0003.png",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X."
+   ],
+   [
+    "0004.png",
+    "Devin built all of this from one short prompt in the product demo apps repo.",
+    "Devin built all of this from one short prompt in the product demo apps repo."
+   ],
+   [
+    "0005.png",
+    "It deployed the app with modal deploy, then ran the first refresh.",
+    "It deployed the app with modal deploy, then ran the first refresh."
+   ],
+   [
+    "0006.png",
+    "Then it opened a pull request, with the code and a screenshot of the live page.",
+    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+   ],
+   [
+    "0007.png",
+    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four."
+   ],
+   [
+    "0008.png",
+    "Each column links the posts that shaped the conversation.",
+    "Each column links the posts that shaped the conversation."
+   ],
+   [
+    "0009.png",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />"
+   ],
+   [
+    "outro",
+    "Who won the launch? Now you can check.",
+    "Who won the launch? Now you can check."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.931,
+    "text": "Devin built all of this from one short"
+   },
+   {
+    "t0": 1.977,
+    "t1": 3.925,
+    "text": "prompt in the product demo apps repo."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "It deployed the app with modal deploy, then ran the first refresh.",
+  "dur": 3.265,
+  "takeAt": 43.475,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+   ],
+   [
+    "0002.png",
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+   ],
+   [
+    "0003.png",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X."
+   ],
+   [
+    "0004.png",
+    "Devin built all of this from one short prompt in the product demo apps repo.",
+    "Devin built all of this from one short prompt in the product demo apps repo."
+   ],
+   [
+    "0005.png",
+    "It deployed the app with modal deploy, then ran the first refresh.",
+    "It deployed the app with modal deploy, then ran the first refresh."
+   ],
+   [
+    "0006.png",
+    "Then it opened a pull request, with the code and a screenshot of the live page.",
+    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+   ],
+   [
+    "0007.png",
+    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four."
+   ],
+   [
+    "0008.png",
+    "Each column links the posts that shaped the conversation.",
+    "Each column links the posts that shaped the conversation."
+   ],
+   [
+    "0009.png",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />"
+   ],
+   [
+    "outro",
+    "Who won the launch? Now you can check.",
+    "Who won the launch? Now you can check."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.874,
+    "text": "It deployed the app with modal deploy,"
+   },
+   {
+    "t0": 1.897,
+    "t1": 3.265,
+    "text": "then ran the first refresh."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "Then it opened a pull request, with the code and a screenshot of the live page.",
+  "say": "Then it opened a pull request, with the code and a screenshot of the lyve page.",
+  "dur": 4.057,
+  "takeAt": 47.063,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+   ],
+   [
+    "0002.png",
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+   ],
+   [
+    "0003.png",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X."
+   ],
+   [
+    "0004.png",
+    "Devin built all of this from one short prompt in the product demo apps repo.",
+    "Devin built all of this from one short prompt in the product demo apps repo."
+   ],
+   [
+    "0005.png",
+    "It deployed the app with modal deploy, then ran the first refresh.",
+    "It deployed the app with modal deploy, then ran the first refresh."
+   ],
+   [
+    "0006.png",
+    "Then it opened a pull request, with the code and a screenshot of the live page.",
+    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+   ],
+   [
+    "0007.png",
+    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four."
+   ],
+   [
+    "0008.png",
+    "Each column links the posts that shaped the conversation.",
+    "Each column links the posts that shaped the conversation."
+   ],
+   [
+    "0009.png",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />"
+   ],
+   [
+    "outro",
+    "Who won the launch? Now you can check.",
+    "Who won the launch? Now you can check."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 4.057,
+    "text": "Then it opened a pull request, with the code and a screenshot of the live page."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+  "say": "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four.",
+  "dur": 8.695,
+  "takeAt": 51.235,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+   ],
+   [
+    "0002.png",
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+   ],
+   [
+    "0003.png",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X."
+   ],
+   [
+    "0004.png",
+    "Devin built all of this from one short prompt in the product demo apps repo.",
+    "Devin built all of this from one short prompt in the product demo apps repo."
+   ],
+   [
+    "0005.png",
+    "It deployed the app with modal deploy, then ran the first refresh.",
+    "It deployed the app with modal deploy, then ran the first refresh."
+   ],
+   [
+    "0006.png",
+    "Then it opened a pull request, with the code and a screenshot of the live page.",
+    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+   ],
+   [
+    "0007.png",
+    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four."
+   ],
+   [
+    "0008.png",
+    "Each column links the posts that shaped the conversation.",
+    "Each column links the posts that shaped the conversation."
+   ],
+   [
+    "0009.png",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />"
+   ],
+   [
+    "outro",
+    "Who won the launch? Now you can check.",
+    "Who won the launch? Now you can check."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.081,
+    "t1": 1.01,
+    "text": "Here's the real run."
+   },
+   {
+    "t0": 1.614,
+    "t1": 8.695,
+    "text": "Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Each column links the posts that shaped the conversation.",
+  "dur": 2.805,
+  "takeAt": 60.345,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+   ],
+   [
+    "0002.png",
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+   ],
+   [
+    "0003.png",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X."
+   ],
+   [
+    "0004.png",
+    "Devin built all of this from one short prompt in the product demo apps repo.",
+    "Devin built all of this from one short prompt in the product demo apps repo."
+   ],
+   [
+    "0005.png",
+    "It deployed the app with modal deploy, then ran the first refresh.",
+    "It deployed the app with modal deploy, then ran the first refresh."
+   ],
+   [
+    "0006.png",
+    "Then it opened a pull request, with the code and a screenshot of the live page.",
+    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+   ],
+   [
+    "0007.png",
+    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four."
+   ],
+   [
+    "0008.png",
+    "Each column links the posts that shaped the conversation.",
+    "Each column links the posts that shaped the conversation."
+   ],
+   [
+    "0009.png",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />"
+   ],
+   [
+    "outro",
+    "Who won the launch? Now you can check.",
+    "Who won the launch? Now you can check."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.805,
+    "text": "Each column links the posts that shaped the conversation."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
+  "say": "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />",
+  "dur": 8.777,
+  "takeAt": 63.468,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+   ],
+   [
+    "0002.png",
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+   ],
+   [
+    "0003.png",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X."
+   ],
+   [
+    "0004.png",
+    "Devin built all of this from one short prompt in the product demo apps repo.",
+    "Devin built all of this from one short prompt in the product demo apps repo."
+   ],
+   [
+    "0005.png",
+    "It deployed the app with modal deploy, then ran the first refresh.",
+    "It deployed the app with modal deploy, then ran the first refresh."
+   ],
+   [
+    "0006.png",
+    "Then it opened a pull request, with the code and a screenshot of the live page.",
+    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+   ],
+   [
+    "0007.png",
+    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four."
+   ],
+   [
+    "0008.png",
+    "Each column links the posts that shaped the conversation.",
+    "Each column links the posts that shaped the conversation."
+   ],
+   [
+    "0009.png",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />"
+   ],
+   [
+    "outro",
+    "Who won the launch? Now you can check.",
+    "Who won the launch? Now you can check."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.898,
+    "text": "To extend it,"
+   },
+   {
+    "t0": 0.933,
+    "t1": 2.453,
+    "text": "add a launch with one new row,"
+   },
+   {
+    "t0": 2.628,
+    "t1": 3.905,
+    "text": "track a longer window,"
+   },
+   {
+    "t0": 4.079,
+    "t1": 5.646,
+    "text": "or chart sentiment over time."
+   },
+   {
+    "t0": 5.925,
+    "t1": 8.758,
+    "text": "You could even post a daily recap."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Who won the launch? Now you can check.",
+  "dur": 1.465,
+  "takeAt": 72.245,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
+    "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Modal runs the functions, stores the results, and serves a live page.",
+    "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Modal runs the functions, stores the results, and serves a lyve page."
+   ],
+   [
+    "0002.png",
+    "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them.",
+    "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint reads them."
+   ],
+   [
+    "0003.png",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
+    "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X."
+   ],
+   [
+    "0004.png",
+    "Devin built all of this from one short prompt in the product demo apps repo.",
+    "Devin built all of this from one short prompt in the product demo apps repo."
+   ],
+   [
+    "0005.png",
+    "It deployed the app with modal deploy, then ran the first refresh.",
+    "It deployed the app with modal deploy, then ran the first refresh."
+   ],
+   [
+    "0006.png",
+    "Then it opened a pull request, with the code and a screenshot of the live page.",
+    "Then it opened a pull request, with the code and a screenshot of the lyve page."
+   ],
+   [
+    "0007.png",
+    "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
+    "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four."
+   ],
+   [
+    "0008.png",
+    "Each column links the posts that shaped the conversation.",
+    "Each column links the posts that shaped the conversation."
+   ],
+   [
+    "0009.png",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
+    "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />"
+   ],
+   [
+    "outro",
+    "Who won the launch? Now you can check.",
+    "Who won the launch? Now you can check."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 0.712,
+    "text": "Who won the launch?"
+   },
+   {
+    "t0": 0.747,
+    "t1": 1.465,
+    "text": "Now you can check."
+   }
+  ]
+ }
+}
