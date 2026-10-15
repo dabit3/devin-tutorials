@@ -37,6 +37,7 @@
 | 34 | Devin Primitives: when to use what (overview) | `34-devin-primitives-overview/` |
 | 46 | Post-train a model on Modal (3:32 captioned / 5:12 Nader) | `46-modal-post-training/` |
 | 47 | Post-training on Modal: how it works (overview; 1:11 captioned / 1:30 Nader) | `47-modal-post-training-overview/` |
+| 76 | Devin CLI: what's new in v3000.11.92 (overview) | `76-cli-whats-new-overview/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
 
