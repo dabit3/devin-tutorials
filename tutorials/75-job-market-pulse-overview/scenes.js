@@ -89,8 +89,39 @@ function intro(ctx, s, k) {
   });
 }
 
-// 2. The pipeline: X posts -> xAI API (Grok + X search) -> Modal (cron, .map() fan-out, web endpoint) -> Volume -> live page.
+// 2. Why Modal: the job (wake hourly, many Grok calls, store, serve) vs a laptop script or own server, then the Modal pieces this app uses.
+// MT = seconds into the narration when each piece is named (refit after each take).
+const MT = { job: 1.0, alt: 7.0, modal: 12.0, cron: 12.2, map: 16.2, vol: 20.1, sec: 22.3, web: 24.7, zero: 27.5 };
+function modal(ctx, s, k) {
+  eyebrow(ctx, k, 'WHY MODAL', 86, appear(k, s, 0.05));
+  ['Wake up every hour', 'Many Grok calls', 'Store each run', 'Serve a page'].forEach((t, i) => pill(ctx, k, t, 300 + i * 280, 150, appear(k, s, MT.job + i * 0.5)));
+  const la = appear(k, s, MT.alt), dim = 1 - 0.45 * appear(k, s, MT.modal, 0.8);
+  box(ctx, k, 110, 220 + 12 * (1 - la), 420, 360, la * dim, 0, 16);
+  text(ctx, k, 'Laptop script or own server', 140, 262 + 12 * (1 - la), 18, 600, k.INK, la * dim, 'left');
+  ['Stops when the lid closes', 'Or sits idle most of the day', 'Calls run one at a time', 'You host the page and the key'].forEach((t, i) => {
+    const a = appear(k, s, MT.alt + 0.4 + i * 0.35) * dim, yy = 322 + i * 56 + 12 * (1 - la);
+    if (a <= 0) return;
+    ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.beginPath(); ctx.arc(150, yy, 4, 0, Math.PI * 2); ctx.fillStyle = W(0.3); ctx.fill(); ctx.restore();
+    text(ctx, k, t, 168, yy, 16, 400, W(0.62), a, 'left');
+  });
+  const ma = appear(k, s, MT.modal);
+  text(ctx, k, 'On Modal', 600, 205 + 12 * (1 - ma), 18, 600, k.INK, ma, 'left');
+  const parts = [['Scheduled function', 'modal.Cron, every hour', 'cron'], ['.map()', 'parallel xAI calls', 'map'], ['Volume', 'stores every run', 'vol'],
+    ['Secret', 'holds the xAI key', 'sec'], ['Web endpoint', 'serves *.modal.run', 'web'], ['Scales to zero', 'pay per second used', 'zero']];
+  const keys = parts.map(p => p[2]);
+  parts.forEach(([t, sub, key], i) => {
+    const x = 600 + (i % 2) * 360, y = 240 + Math.floor(i / 2) * 118, t0 = MT[key], a = appear(k, s, t0);
+    const nxt = MT[keys[i + 1]] ?? 99, on = appear(k, s, t0 + 0.1, 0.4) * (1 - appear(k, s, nxt, 0.5));
+    box(ctx, k, x, y + 12 * (1 - a), 330, 96, a, on, 14);
+    text(ctx, k, t, x + 26, y + 36 + 12 * (1 - a), 18, 600, k.INK, a, 'left');
+    text(ctx, k, sub, x + 26, y + 64 + 12 * (1 - a), 13, 400, W(0.5), a, 'left', 'JetBrains Mono');
+  });
+}
+
+// 3. The pipeline: X posts -> xAI API (Grok + X search) -> Modal (cron, .map() fan-out, web endpoint) -> Volume -> live page.
+const PIPE_PACE = 1.6;
 function pipeline(ctx, s, k) {
+  s = s / PIPE_PACE;
   eyebrow(ctx, k, 'HOW IT WORKS', 86, appear(k, s, 0.05));
   const x = node(ctx, k, { x: 150, y: 405, t: 'X posts', w: 170 }, appear(k, s, 0.2));
   const ai = node(ctx, k, { x: 405, y: 405, t: 'xAI API', sub: 'Grok + X search', w: 210 }, appear(k, s, 0.9), appear(k, s, 1.4, 0.5) * (1 - appear(k, s, 3.0, 0.5)));
@@ -98,18 +129,19 @@ function pipeline(ctx, s, k) {
   const ma = appear(k, s, 2.0);
   box(ctx, k, 580, 205 + 12 * (1 - ma), 300, 400, ma, 0, 18, BLUE, '#121214');
   text(ctx, k, 'Modal', 730, 240 + 12 * (1 - ma), 18, 600, k.INK, ma);
-  const subs = [{ t: 'Cron', sub: 'runs every hour', t0: 2.6 }, { t: '.map()', sub: 'search + classify', t0: 3.6 }, { t: 'Web endpoint', sub: '@modal.asgi_app', t0: 4.6 }];
+  const subs = [{ t: 'Scheduled function', sub: 'modal.Cron, every hour', t0: 2.6 }, { t: '.map()', sub: 'search + classify', t0: 3.6 }, { t: 'Web endpoint', sub: '@modal.asgi_app', t0: 4.6 }];
   const ns = subs.map((n, i) => node(ctx, k, { x: 730, y: 318 + i * 100, t: n.t, sub: n.sub, w: 250, size: 17 }, appear(k, s, n.t0), appear(k, s, n.t0 + 0.3, 0.4) * (1 - appear(k, s, n.t0 + 1.2, 0.5))));
   curve(ctx, k, ai.r, 405, 580, 405, k.eInOut(k.prog(s, 2.3, 2.8)), [k.prog(s, 3.9, 4.8), k.prog(s, 4.2, 5.1)]);
-  const v = node(ctx, k, { x: 1040, y: 300, t: 'Volume', sub: 'one JSON file per run', w: 230 }, appear(k, s, 5.4), appear(k, s, 5.7, 0.4) * (1 - appear(k, s, 6.6, 0.5)));
+  const v = node(ctx, k, { x: 1040, y: 300, t: 'Modal Volume', sub: 'one JSON file per run', w: 230 }, appear(k, s, 5.4), appear(k, s, 5.7, 0.4) * (1 - appear(k, s, 6.6, 0.5)));
   curve(ctx, k, 880, 405, v.l, 300, k.eInOut(k.prog(s, 5.2, 5.7)), k.prog(s, 5.6, 6.5));
-  const lp = node(ctx, k, { x: 1040, y: 520, t: 'Live page', sub: '*.modal.run', w: 230 }, appear(k, s, 6.6), appear(k, s, 6.9, 0.4));
+  const lp = node(ctx, k, { x: 1040, y: 520, t: 'Public page', sub: '*.modal.run', w: 230 }, appear(k, s, 6.6), appear(k, s, 6.9, 0.4));
   curve(ctx, k, v.r - 30, v.bot, lp.r - 30, lp.top, k.eInOut(k.prog(s, 6.4, 6.9)), k.prog(s, 6.8, 7.6));
   curve(ctx, k, 855, 518, lp.l, 520, k.eInOut(k.prog(s, 6.4, 6.9)));
+  pill(ctx, k, 'xAI key in a Modal Secret', 405, 500, appear(k, s, 1.6));
   pill(ctx, k, 'Counts of sampled posts', 1040, 640, appear(k, s, 7.4));
 }
 
-// 3. Honest numbers: X search returns a sample, and people are only ever counted, never named.
+// 4. Honest numbers: X search returns a sample, and people are only ever counted, never named.
 function honest(ctx, s, k) {
   eyebrow(ctx, k, 'HONEST NUMBERS', 86, appear(k, s, 0.05));
   const a = appear(k, s, 0.3);
@@ -128,7 +160,7 @@ function honest(ctx, s, k) {
   });
 }
 
-// 4. Ways to extend it.
+// 5. Ways to extend it.
 function extend(ctx, s, k) {
   eyebrow(ctx, k, 'WAYS TO EXTEND IT', 110, appear(k, s, 0.05));
   const items = [['Track one role over time', 'e.g. forward deployed engineer'], ['Post a weekly digest', 'to Slack or email'], ['Split by region or seniority', 'add fields to the schema'], ['Alert on a skill spike', 'compare against earlier runs']];
@@ -140,5 +172,5 @@ function extend(ctx, s, k) {
   });
 }
 
-window.SCENES = { intro, pipeline, honest, extend };
+window.SCENES = { intro, modal, pipeline, honest, extend };
 })();

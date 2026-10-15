@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
-  "dur": 13.47,
+  "dur": 13.76,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -11,9 +11,14 @@
     "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
    ],
    [
+    "0001a.png",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
+   ],
+   [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the xAI API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page.",
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the ex A I API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page."
    ],
    [
     "0002.png",
@@ -24,16 +29,6 @@
     "0003.png",
     "It ran the tests, deployed with modal deploy, and checked the public URL.",
     "It ran the tests, deployed with modal deploy, and checked the public URL."
-   ],
-   [
-    "0004.png",
-    "In the code, a Modal Cron schedule runs the collection every hour.",
-    "In the code, a Modal Cron schedule runs the collection every hour."
-   ],
-   [
-    "0005.png",
-    "And search dot map runs the six searches in parallel.",
-    "And search dot map runs the six searches in parallel."
    ],
    [
     "0006.png",
@@ -69,51 +64,51 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.474,
+    "t1": 1.602,
     "text": "This is a job-market pulse."
    },
    {
-    "t0": 1.753,
-    "t1": 4.029,
+    "t0": 1.985,
+    "t1": 4.249,
     "text": "Every hour it samples tech posts on X,"
    },
    {
-    "t0": 4.203,
-    "t1": 5.399,
+    "t0": 4.458,
+    "t1": 5.7,
     "text": "sorts them into hiring,"
    },
    {
-    "t0": 5.608,
-    "t1": 6.954,
+    "t0": 5.909,
+    "t1": 7.279,
     "text": "layoffs and looking for work,"
    },
    {
-    "t0": 7.129,
-    "t1": 8.243,
+    "t0": 7.488,
+    "t1": 8.522,
     "text": "and counts the roles,"
    },
    {
-    "t0": 8.313,
-    "t1": 9.81,
+    "t0": 8.568,
+    "t1": 10.019,
     "text": "companies and skills they mention."
    },
    {
-    "t0": 10.194,
-    "t1": 11.714,
+    "t0": 10.298,
+    "t1": 11.912,
     "text": "You get your own up-to-date numbers,"
    },
    {
-    "t0": 11.749,
-    "t1": 13.47,
+    "t0": 12.028,
+    "t1": 13.76,
     "text": "instead of waiting for a monthly report."
    }
   ]
  },
- "0001.png": {
-  "text": "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-  "say": "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-  "dur": 14.548,
-  "takeAt": 13.742,
+ "0001a.png": {
+  "text": "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+  "say": "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+  "dur": 30.411,
+  "takeAt": 14.009,
   "mode": "single-take-1",
   "take": [
    [
@@ -122,9 +117,14 @@
     "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
    ],
    [
+    "0001a.png",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
+   ],
+   [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the xAI API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page.",
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the ex A I API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page."
    ],
    [
     "0002.png",
@@ -135,16 +135,6 @@
     "0003.png",
     "It ran the tests, deployed with modal deploy, and checked the public URL.",
     "It ran the tests, deployed with modal deploy, and checked the public URL."
-   ],
-   [
-    "0004.png",
-    "In the code, a Modal Cron schedule runs the collection every hour.",
-    "In the code, a Modal Cron schedule runs the collection every hour."
-   ],
-   [
-    "0005.png",
-    "And search dot map runs the six searches in parallel.",
-    "And search dot map runs the six searches in parallel."
    ],
    [
     "0006.png",
@@ -180,45 +170,186 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.142,
-    "text": "Here's how it works."
+    "t1": 0.829,
+    "text": "Why Modal?"
    },
    {
-    "t0": 1.525,
-    "t1": 4.369,
-    "text": "Grok searches X through the xAI API."
+    "t0": 1.154,
+    "t1": 2.512,
+    "text": "The app has to wake up every hour"
    },
    {
-    "t0": 4.752,
-    "t1": 6.773,
-    "text": "A Modal Cron job runs every hour,"
+    "t0": 2.559,
+    "t1": 3.847,
+    "text": "and make many Grok calls."
    },
    {
-    "t0": 6.982,
-    "t1": 9.164,
-    "text": "and dot map fans the searches and labels"
+    "t0": 4.126,
+    "t1": 5.682,
+    "text": "Then it has to store the results and"
    },
    {
-    "t0": 9.222,
-    "t1": 10.081,
-    "text": "out in parallel."
+    "t0": 5.728,
+    "t1": 6.692,
+    "text": "serve them on a page."
    },
    {
-    "t0": 10.523,
-    "t1": 12.543,
-    "text": "Each run is saved to a Modal Volume,"
+    "t0": 6.97,
+    "t1": 9.118,
+    "text": "A laptop script stops when the lid closes,"
    },
    {
-    "t0": 12.752,
-    "t1": 14.548,
-    "text": "and a web endpoint serves the page."
+    "t0": 9.234,
+    "t1": 11.394,
+    "text": "and your own server sits idle most of the day."
+   },
+   {
+    "t0": 11.835,
+    "t1": 13.96,
+    "text": "On Modal, the collection is a scheduled function,"
+   },
+   {
+    "t0": 13.995,
+    "t1": 15.318,
+    "text": "so there's nothing to keep running."
+   },
+   {
+    "t0": 15.701,
+    "t1": 19.242,
+    "text": "Dot map runs the xAI calls in parallel across containers."
+   },
+   {
+    "t0": 19.451,
+    "t1": 21.245,
+    "text": "A Modal Volume stores each run,"
+   },
+   {
+    "t0": 21.295,
+    "t1": 23.445,
+    "text": "and a Modal Secret holds the xAI key."
+   },
+   {
+    "t0": 23.829,
+    "t1": 26.371,
+    "text": "A web endpoint serves the page at a public URL."
+   },
+   {
+    "t0": 26.545,
+    "t1": 28.414,
+    "text": "And between runs it scales to zero,"
+   },
+   {
+    "t0": 28.565,
+    "t1": 30.411,
+    "text": "so you only pay for the seconds it works."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the xAI API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page.",
+  "say": "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the ex A I API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page.",
+  "dur": 12.77,
+  "takeAt": 44.635,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
+   ],
+   [
+    "0001a.png",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
+   ],
+   [
+    "0001.png",
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the xAI API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page.",
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the ex A I API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page."
+   ],
+   [
+    "0002.png",
+    "Devin built it from one plain prompt in the demo apps repo.",
+    "Devin built it from one plain prompt in the demo apps repo."
+   ],
+   [
+    "0003.png",
+    "It ran the tests, deployed with modal deploy, and checked the public URL.",
+    "It ran the tests, deployed with modal deploy, and checked the public URL."
+   ],
+   [
+    "0006.png",
+    "It all landed in one pull request.",
+    "It all landed in one pull request."
+   ],
+   [
+    "0007.png",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
+   ],
+   [
+    "0008.png",
+    "A chart counts the posts from each hourly run.",
+    "A chart counts the posts from each hourly run."
+   ],
+   [
+    "0009.png",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
+   ],
+   [
+    "0010.png",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.052,
+    "t1": 1.329,
+    "text": "Here's how the pieces connect."
+   },
+   {
+    "t0": 1.713,
+    "t1": 2.355,
+    "text": "Every hour,"
+   },
+   {
+    "t0": 2.405,
+    "t1": 4.451,
+    "text": "the scheduled function asks Grok to"
+   },
+   {
+    "t0": 4.501,
+    "t1": 6.205,
+    "text": "search X through the xAI API."
+   },
+   {
+    "t0": 6.531,
+    "t1": 8.644,
+    "text": "Dot map classifies the posts in parallel."
+   },
+   {
+    "t0": 9.027,
+    "t1": 10.478,
+    "text": "Each run lands in the Volume,"
+   },
+   {
+    "t0": 10.594,
+    "t1": 12.77,
+    "text": "and the web endpoint reads it to serve the page."
    }
   ]
  },
  "0002.png": {
   "text": "Devin built it from one plain prompt in the demo apps repo.",
-  "dur": 3.115,
-  "takeAt": 28.615,
+  "dur": 2.855,
+  "takeAt": 57.675,
   "mode": "single-take-1",
   "take": [
    [
@@ -227,9 +358,14 @@
     "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
    ],
    [
+    "0001a.png",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
+   ],
+   [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the xAI API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page.",
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the ex A I API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page."
    ],
    [
     "0002.png",
@@ -240,16 +376,6 @@
     "0003.png",
     "It ran the tests, deployed with modal deploy, and checked the public URL.",
     "It ran the tests, deployed with modal deploy, and checked the public URL."
-   ],
-   [
-    "0004.png",
-    "In the code, a Modal Cron schedule runs the collection every hour.",
-    "In the code, a Modal Cron schedule runs the collection every hour."
-   ],
-   [
-    "0005.png",
-    "And search dot map runs the six searches in parallel.",
-    "And search dot map runs the six searches in parallel."
    ],
    [
     "0006.png",
@@ -285,20 +411,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.954,
+    "t1": 1.792,
     "text": "Devin built it from one plain prompt in"
    },
    {
-    "t0": 2.001,
-    "t1": 3.115,
+    "t0": 1.838,
+    "t1": 2.855,
     "text": "the demo apps repo."
    }
   ]
  },
  "0003.png": {
   "text": "It ran the tests, deployed with modal deploy, and checked the public URL.",
-  "dur": 4.152,
-  "takeAt": 31.958,
+  "dur": 3.85,
+  "takeAt": 60.67,
   "mode": "single-take-1",
   "take": [
    [
@@ -307,9 +433,14 @@
     "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
    ],
    [
+    "0001a.png",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
+   ],
+   [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the xAI API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page.",
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the ex A I API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page."
    ],
    [
     "0002.png",
@@ -320,16 +451,6 @@
     "0003.png",
     "It ran the tests, deployed with modal deploy, and checked the public URL.",
     "It ran the tests, deployed with modal deploy, and checked the public URL."
-   ],
-   [
-    "0004.png",
-    "In the code, a Modal Cron schedule runs the collection every hour.",
-    "In the code, a Modal Cron schedule runs the collection every hour."
-   ],
-   [
-    "0005.png",
-    "And search dot map runs the six searches in parallel.",
-    "And search dot map runs the six searches in parallel."
    ],
    [
     "0006.png",
@@ -365,180 +486,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.049,
+    "t1": 1.095,
     "text": "It ran the tests,"
    },
    {
-    "t0": 1.119,
-    "t1": 2.535,
+    "t0": 1.176,
+    "t1": 2.5,
     "text": "deployed with modal deploy,"
    },
    {
-    "t0": 2.709,
-    "t1": 4.152,
+    "t0": 2.523,
+    "t1": 3.85,
     "text": "and checked the public URL."
-   }
-  ]
- },
- "0004.png": {
-  "text": "In the code, a Modal Cron schedule runs the collection every hour.",
-  "dur": 3.454,
-  "takeAt": 36.626,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
-    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
-   ],
-   [
-    "0001.png",
-    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
-   ],
-   [
-    "0002.png",
-    "Devin built it from one plain prompt in the demo apps repo.",
-    "Devin built it from one plain prompt in the demo apps repo."
-   ],
-   [
-    "0003.png",
-    "It ran the tests, deployed with modal deploy, and checked the public URL.",
-    "It ran the tests, deployed with modal deploy, and checked the public URL."
-   ],
-   [
-    "0004.png",
-    "In the code, a Modal Cron schedule runs the collection every hour.",
-    "In the code, a Modal Cron schedule runs the collection every hour."
-   ],
-   [
-    "0005.png",
-    "And search dot map runs the six searches in parallel.",
-    "And search dot map runs the six searches in parallel."
-   ],
-   [
-    "0006.png",
-    "It all landed in one pull request.",
-    "It all landed in one pull request."
-   ],
-   [
-    "0007.png",
-    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
-    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
-   ],
-   [
-    "0008.png",
-    "A chart counts the posts from each hourly run.",
-    "A chart counts the posts from each hourly run."
-   ],
-   [
-    "0009.png",
-    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
-    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
-   ],
-   [
-    "0010.png",
-    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
-    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
-   ],
-   [
-    "outro",
-    "Your own job-market numbers, every hour.",
-    "Your own job-market numbers, every hour."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 0.7,
-    "text": "In the code,"
-   },
-   {
-    "t0": 0.723,
-    "t1": 3.454,
-    "text": "a Modal Cron schedule runs the collection every hour."
-   }
-  ]
- },
- "0005.png": {
-  "text": "And search dot map runs the six searches in parallel.",
-  "dur": 2.945,
-  "takeAt": 40.395,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
-    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
-   ],
-   [
-    "0001.png",
-    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
-   ],
-   [
-    "0002.png",
-    "Devin built it from one plain prompt in the demo apps repo.",
-    "Devin built it from one plain prompt in the demo apps repo."
-   ],
-   [
-    "0003.png",
-    "It ran the tests, deployed with modal deploy, and checked the public URL.",
-    "It ran the tests, deployed with modal deploy, and checked the public URL."
-   ],
-   [
-    "0004.png",
-    "In the code, a Modal Cron schedule runs the collection every hour.",
-    "In the code, a Modal Cron schedule runs the collection every hour."
-   ],
-   [
-    "0005.png",
-    "And search dot map runs the six searches in parallel.",
-    "And search dot map runs the six searches in parallel."
-   ],
-   [
-    "0006.png",
-    "It all landed in one pull request.",
-    "It all landed in one pull request."
-   ],
-   [
-    "0007.png",
-    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
-    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
-   ],
-   [
-    "0008.png",
-    "A chart counts the posts from each hourly run.",
-    "A chart counts the posts from each hourly run."
-   ],
-   [
-    "0009.png",
-    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
-    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
-   ],
-   [
-    "0010.png",
-    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
-    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
-   ],
-   [
-    "outro",
-    "Your own job-market numbers, every hour.",
-    "Your own job-market numbers, every hour."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.054,
-    "t1": 2.945,
-    "text": "And search dot map runs the six searches in parallel."
    }
   ]
  },
  "0006.png": {
   "text": "It all landed in one pull request.",
-  "dur": 1.885,
-  "takeAt": 43.505,
+  "dur": 1.834,
+  "takeAt": 64.756,
   "mode": "single-take-1",
   "take": [
    [
@@ -547,9 +513,14 @@
     "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
    ],
    [
+    "0001a.png",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
+   ],
+   [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the xAI API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page.",
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the ex A I API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page."
    ],
    [
     "0002.png",
@@ -560,16 +531,6 @@
     "0003.png",
     "It ran the tests, deployed with modal deploy, and checked the public URL.",
     "It ran the tests, deployed with modal deploy, and checked the public URL."
-   ],
-   [
-    "0004.png",
-    "In the code, a Modal Cron schedule runs the collection every hour.",
-    "In the code, a Modal Cron schedule runs the collection every hour."
-   ],
-   [
-    "0005.png",
-    "And search dot map runs the six searches in parallel.",
-    "And search dot map runs the six searches in parallel."
    ],
    [
     "0006.png",
@@ -604,16 +565,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.091,
-    "t1": 1.885,
+    "t0": 0.12,
+    "t1": 1.834,
     "text": "It all landed in one pull request."
    }
   ]
  },
  "0007.png": {
   "text": "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
-  "dur": 6.805,
-  "takeAt": 45.735,
+  "dur": 5.965,
+  "takeAt": 66.905,
   "mode": "single-take-1",
   "take": [
    [
@@ -622,9 +583,14 @@
     "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
    ],
    [
+    "0001a.png",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
+   ],
+   [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the xAI API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page.",
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the ex A I API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page."
    ],
    [
     "0002.png",
@@ -635,16 +601,6 @@
     "0003.png",
     "It ran the tests, deployed with modal deploy, and checked the public URL.",
     "It ran the tests, deployed with modal deploy, and checked the public URL."
-   ],
-   [
-    "0004.png",
-    "In the code, a Modal Cron schedule runs the collection every hour.",
-    "In the code, a Modal Cron schedule runs the collection every hour."
-   ],
-   [
-    "0005.png",
-    "And search dot map runs the six searches in parallel.",
-    "And search dot map runs the six searches in parallel."
    ],
    [
     "0006.png",
@@ -679,26 +635,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.032,
-    "t1": 3.283,
+    "t0": 0.073,
+    "t1": 3.057,
     "text": "The page shows seventy-eight sampled posts from the last day."
    },
    {
-    "t0": 3.608,
-    "t1": 5.105,
+    "t0": 3.335,
+    "t1": 4.612,
     "text": "Fifty-eight are about hiring,"
    },
    {
-    "t0": 5.256,
-    "t1": 6.805,
+    "t0": 4.647,
+    "t1": 5.965,
     "text": "and twenty are about layoffs."
    }
   ]
  },
  "0008.png": {
   "text": "A chart counts the posts from each hourly run.",
-  "dur": 2.575,
-  "takeAt": 52.775,
+  "dur": 2.315,
+  "takeAt": 73.135,
   "mode": "single-take-1",
   "take": [
    [
@@ -707,9 +663,14 @@
     "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
    ],
    [
+    "0001a.png",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
+   ],
+   [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the xAI API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page.",
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the ex A I API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page."
    ],
    [
     "0002.png",
@@ -720,16 +681,6 @@
     "0003.png",
     "It ran the tests, deployed with modal deploy, and checked the public URL.",
     "It ran the tests, deployed with modal deploy, and checked the public URL."
-   ],
-   [
-    "0004.png",
-    "In the code, a Modal Cron schedule runs the collection every hour.",
-    "In the code, a Modal Cron schedule runs the collection every hour."
-   ],
-   [
-    "0005.png",
-    "And search dot map runs the six searches in parallel.",
-    "And search dot map runs the six searches in parallel."
    ],
    [
     "0006.png",
@@ -764,16 +715,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.575,
+    "t0": 0.043,
+    "t1": 2.315,
     "text": "A chart counts the posts from each hourly run."
    }
   ]
  },
  "0009.png": {
   "text": "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
-  "dur": 7.305,
-  "takeAt": 55.665,
+  "dur": 6.735,
+  "takeAt": 75.475,
   "mode": "single-take-1",
   "take": [
    [
@@ -782,9 +733,14 @@
     "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
    ],
    [
+    "0001a.png",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
+   ],
+   [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the xAI API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page.",
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the ex A I API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page."
    ],
    [
     "0002.png",
@@ -795,16 +751,6 @@
     "0003.png",
     "It ran the tests, deployed with modal deploy, and checked the public URL.",
     "It ran the tests, deployed with modal deploy, and checked the public URL."
-   ],
-   [
-    "0004.png",
-    "In the code, a Modal Cron schedule runs the collection every hour.",
-    "In the code, a Modal Cron schedule runs the collection every hour."
-   ],
-   [
-    "0005.png",
-    "And search dot map runs the six searches in parallel.",
-    "And search dot map runs the six searches in parallel."
    ],
    [
     "0006.png",
@@ -839,31 +785,31 @@
   ],
   "chunks": [
    {
-    "t0": 0.063,
-    "t1": 1.909,
+    "t0": 0.059,
+    "t1": 1.836,
     "text": "These are counts of posts in a sample,"
    },
    {
-    "t0": 2.153,
-    "t1": 3.511,
+    "t0": 2.01,
+    "t1": 3.275,
     "text": "not labor statistics."
    },
    {
-    "t0": 3.836,
-    "t1": 5.821,
+    "t0": 3.449,
+    "t1": 5.469,
     "text": "And the page never names anyone who posted"
    },
    {
-    "t0": 5.856,
-    "t1": 7.305,
+    "t0": 5.493,
+    "t1": 6.735,
     "text": "about layoffs or job hunting."
    }
   ]
  },
  "0010.png": {
   "text": "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
-  "dur": 12.944,
-  "takeAt": 63.166,
+  "dur": 11.804,
+  "takeAt": 82.496,
   "mode": "single-take-1",
   "take": [
    [
@@ -872,9 +818,14 @@
     "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
    ],
    [
+    "0001a.png",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
+   ],
+   [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the xAI API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page.",
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the ex A I API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page."
    ],
    [
     "0002.png",
@@ -885,16 +836,6 @@
     "0003.png",
     "It ran the tests, deployed with modal deploy, and checked the public URL.",
     "It ran the tests, deployed with modal deploy, and checked the public URL."
-   ],
-   [
-    "0004.png",
-    "In the code, a Modal Cron schedule runs the collection every hour.",
-    "In the code, a Modal Cron schedule runs the collection every hour."
-   ],
-   [
-    "0005.png",
-    "And search dot map runs the six searches in parallel.",
-    "And search dot map runs the six searches in parallel."
    ],
    [
     "0006.png",
@@ -930,40 +871,45 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.118,
+    "t1": 1.014,
     "text": "To take it further,"
    },
    {
-    "t0": 1.327,
-    "t1": 2.999,
+    "t0": 1.107,
+    "t1": 2.373,
     "text": "track one role over time,"
    },
    {
-    "t0": 3.208,
-    "t1": 5.043,
+    "t0": 2.431,
+    "t1": 4.114,
     "text": "such as forward deployed engineers."
    },
    {
-    "t0": 5.251,
-    "t1": 7.411,
+    "t0": 4.357,
+    "t1": 6.343,
     "text": "You could post a weekly digest to Slack."
    },
    {
-    "t0": 7.585,
-    "t1": 10.151,
+    "t0": 6.668,
+    "t1": 9.036,
     "text": "You could split the counts by region or seniority."
    },
    {
-    "t0": 10.325,
-    "t1": 12.944,
-    "text": "And you could get an alert when a skill suddenly spikes."
+    "t0": 9.361,
+    "t1": 10.638,
+    "text": "And you could get an alert when a"
+   },
+   {
+    "t0": 10.685,
+    "t1": 11.804,
+    "text": "skill suddenly spikes."
    }
   ]
  },
  "outro": {
   "text": "Your own job-market numbers, every hour.",
-  "dur": 2.183,
-  "takeAt": 76.227,
+  "dur": 1.785,
+  "takeAt": 94.435,
   "mode": "single-take-1",
   "take": [
    [
@@ -972,9 +918,14 @@
     "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
    ],
    [
+    "0001a.png",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+    "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
+   ],
+   [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
-    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the xAI API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page.",
+    "Here's how the pieces connect. Every hour, the scheduled function asks Grok to search X through the ex A I API. Dot map classifies the posts in parallel. Each run lands in the Volume, and the web endpoint reads it to serve the page."
    ],
    [
     "0002.png",
@@ -985,16 +936,6 @@
     "0003.png",
     "It ran the tests, deployed with modal deploy, and checked the public URL.",
     "It ran the tests, deployed with modal deploy, and checked the public URL."
-   ],
-   [
-    "0004.png",
-    "In the code, a Modal Cron schedule runs the collection every hour.",
-    "In the code, a Modal Cron schedule runs the collection every hour."
-   ],
-   [
-    "0005.png",
-    "And search dot map runs the six searches in parallel.",
-    "And search dot map runs the six searches in parallel."
    ],
    [
     "0006.png",
@@ -1029,8 +970,8 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.183,
+    "t0": 0.093,
+    "t1": 1.785,
     "text": "Your own job-market numbers, every hour."
    }
   ]

@@ -15,6 +15,14 @@ window.SPEC = {
       "cap": "Hourly job-market counts from sampled X posts",
       "vo": "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
     },
+    "0000a.png": {
+      "scene": "modal",
+      "hold": 4,
+      "cursor": false,
+      "cap": "Modal runs it hourly, in parallel, with no server",
+      "vo": "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+      "voSay": "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
+    },
     "0001.png": {
       "skip": true
     },
@@ -78,9 +86,9 @@ window.SPEC = {
     },
     "0020.png": {
       "badge": "Sped up",
-      "cap": "Devin checks the current Modal and xAI docs first",
-      "vo": "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
-      "voSay": "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code.",
+      "cap": "Current xAI docs, and the key in a Modal Secret",
+      "vo": "First, Devin checks the current xAI docs for X search, and plans to keep the API key in a Modal Secret.",
+      "voSay": "First, Devin checks the current ex A I docs for X search, and plans to keep the API key in a Modal Secret.",
       "hold": 3.5
     },
     "0021.png": {
@@ -258,10 +266,7 @@ window.SPEC = {
       "skip": true
     },
     "0079.png": {
-      "badge": "Sped up",
-      "cap": "App, dark page and tests, then a first run",
-      "vo": "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
-      "hold": 3.5
+      "skip": true
     },
     "0080.png": {
       "skip": true
@@ -430,8 +435,8 @@ window.SPEC = {
     },
     "0135.png": {
       "badge": "Sped up",
-      "cap": "Lint, tests, modal deploy, then the public URL",
-      "vo": "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+      "cap": "modal deploy, then a test of the public URL",
+      "vo": "Then it writes the app, deploys it with modal deploy, and tests the public URL.",
       "hold": 3.5
     },
     "0136.png": {
@@ -489,9 +494,9 @@ window.SPEC = {
       "skip": true
     },
     "0154.png": {
-      "cap": "Pull request #72 in product-demo-apps",
-      "vo": "And it opens a pull request in the demo apps repo.",
-      "hold": 3.0,
+      "cap": "Deployed, with PR #72 open",
+      "vo": "It's deployed, and the pull request is open in the demo apps repo.",
+      "hold": 3,
       "badge": ""
     },
     "0155.png": {
@@ -930,10 +935,7 @@ window.SPEC = {
       "skip": true
     },
     "0300.png": {
-      "badge": "Sped up",
-      "cap": "Devin Review findings, fixed in the same PR",
-      "vo": "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
-      "hold": 3.5
+      "skip": true
     },
     "0301.png": {
       "skip": true
@@ -1020,10 +1022,7 @@ window.SPEC = {
       "skip": true
     },
     "0329.png": {
-      "cap": "8 tests and the linter pass",
-      "vo": "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
-      "hold": 3.5,
-      "badge": ""
+      "skip": true
     },
     "0330.png": {
       "skip": true
@@ -1038,68 +1037,25 @@ window.SPEC = {
       "skip": true
     },
     "0334.png": {
-      "cap": "PR #72, open for review",
-      "vo": "The pull request is open for review, so let's look at the code.",
-      "hold": 2.9
+      "skip": true
     },
     "0335.png": {
       "skip": true
     },
     "0336.png": {
-      "ring": {
-        "x": 350.0,
-        "y": 490.9,
-        "w": 110.0,
-        "h": 24
-      },
-      "ringFor": 3,
-      "cap": "xAI Responses API with the X search tool",
-      "vo": "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
-      "voSay": "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+      "skip": true
     },
     "0337.png": {
-      "ring": {
-        "x": 260.0,
-        "y": 490.9,
-        "w": 117.0,
-        "h": 24
-      },
-      "ringFor": 3,
-      "cap": "modal.Cron runs it at the top of every hour",
-      "vo": "A Modal Cron schedule runs the collection at the top of every hour."
+      "skip": true
     },
     "0338.png": {
-      "ring": {
-        "x": 306.0,
-        "y": 492,
-        "w": 118.0,
-        "h": 24
-      },
-      "ringFor": 3,
-      "cap": ".map() runs the six searches in parallel",
-      "vo": "With search dot map, the six searches run in parallel."
+      "skip": true
     },
     "0339.png": {
-      "ring": {
-        "x": 297.0,
-        "y": 491.5,
-        "w": 136.0,
-        "h": 24
-      },
-      "ringFor": 3,
-      "cap": "Each post gets a structured label from Grok",
-      "vo": "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+      "skip": true
     },
     "0340.png": {
-      "ring": {
-        "x": 143.0,
-        "y": 491.8,
-        "w": 150.0,
-        "h": 24
-      },
-      "ringFor": 3,
-      "cap": "A Modal web endpoint serves the page",
-      "vo": "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+      "skip": true
     },
     "0341.png": {
       "skip": true
