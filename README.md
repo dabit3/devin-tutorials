@@ -121,6 +121,10 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Dynamic Workflows, narrated by Nader** (2:05): A real five-component audit, fix and verify workflow: the script, the live workflow panel, one agent's structured output, the roll-up and a fix PR. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/33-dynamic-workflows/33-dynamic-workflows-nader.mp4) · [Voice script](tutorials/33-dynamic-workflows/voice-script.md)
 - **Devin Primitives: when to use what (overview), narrated by Nader** (1:42): When to use AGENTS.md, rules, Memory, Skills, Playbooks, MCP servers and Plugins, where each lives in the product, and how to build one. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview-nader.mp4) · [Voice script](tutorials/34-devin-primitives-overview/voice-script.md) · [Cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md)
 
+## Silent conference video
+
+**35. Meet Devin — product overview** (2:57): Ten distinct capabilities introduced individually with large conference-readable type and smooth title docking. Complete product interfaces remain visible, without editorial camera crops. Fresh DeepWiki, Ask, delegation, Computer Use, collaboration, Managed Devins, Cloud IDE, Review, recorded tests and Skills. The genuine finding → fix → retest story includes 53 seconds inside Devin's live testing interface and six seconds of native recorded evidence. Pure white, neutral grayscale, near-black and blue; no decorative clutter, presentation gradients or audio. [4K master](tutorials/35-conference-overview/35-conference-overview.mp4) · [1080p preview](tutorials/35-conference-overview/35-conference-overview-1080p.mp4) · [Coverage, provenance and rebuild instructions](tutorials/35-conference-overview/README.md)
+
 ## Making a new tutorial
 
 Every video's capture script, screenshots and edit spec live in [`tutorials/`](tutorials/), which also explains how to rebuild them. To create a tutorial for another Devin feature, use the reusable prompt in [`tutorials/TUTORIAL_PROMPT.md`](tutorials/TUTORIAL_PROMPT.md).
