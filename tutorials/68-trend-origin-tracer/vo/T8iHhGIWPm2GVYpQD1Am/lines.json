@@ -1,0 +1,549 @@
+{
+ "0000.png": {
+  "text": "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+  "dur": 9.865,
+  "at": 0.0,
+  "end": 9.865,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 0.871,
+    "text": "In this tutorial,"
+   },
+   {
+    "t0": 0.917,
+    "t1": 2.763,
+    "text": "Devin builds a trend origin tracer."
+   },
+   {
+    "t0": 2.937,
+    "t1": 4.748,
+    "text": "You paste a phrase like vibe coding,"
+   },
+   {
+    "t0": 4.923,
+    "t1": 6.606,
+    "text": "and it shows the earliest post it can"
+   },
+   {
+    "t0": 6.664,
+    "t1": 7.523,
+    "text": "find on X,"
+   },
+   {
+    "t0": 7.674,
+    "t1": 8.522,
+    "text": "who amplified it,"
+   },
+   {
+    "t0": 8.545,
+    "t1": 9.865,
+    "text": "and how it spread over time."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "By the end, it'll be deployed on Modal and pulling real posts from X through the xAI API. Here's the whole prompt.",
+  "say": "By the end, it'll be deployed on Modal and pulling real posts from X through the ex A I API. Here's the whole prompt.",
+  "dur": 6.62,
+  "at": 10.18,
+  "end": 16.8,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.072,
+    "t1": 0.667,
+    "text": "By the end,"
+   },
+   {
+    "t0": 0.717,
+    "t1": 3.19,
+    "text": "it'll be deployed on Modal and pulling real"
+   },
+   {
+    "t0": 3.24,
+    "t1": 5.127,
+    "text": "posts from X through the xAI API."
+   },
+   {
+    "t0": 5.177,
+    "t1": 6.535,
+    "text": "Here's the whole prompt."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "Grok's X search finds the posts, and Modal does the rest. It runs the searches in parallel, stores the results and serves a dark page, and it refreshes saved phrases once a day.",
+  "dur": 10.455,
+  "at": 16.85,
+  "end": 27.305,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.124,
+    "t1": 2.144,
+    "text": "Grok's X search finds the posts,"
+   },
+   {
+    "t0": 2.353,
+    "t1": 3.63,
+    "text": "and Modal does the rest."
+   },
+   {
+    "t0": 3.874,
+    "t1": 5.569,
+    "text": "It runs the searches in parallel,"
+   },
+   {
+    "t0": 5.813,
+    "t1": 7.995,
+    "text": "stores the results and serves a dark page,"
+   },
+   {
+    "t0": 8.17,
+    "t1": 10.445,
+    "text": "and it refreshes saved phrases once a day."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "Edges in the graph have to come from real quotes, replies, reposts or mentions. Then Devin should deploy it, test it and open a pull request.",
+  "dur": 7.7,
+  "at": 27.71,
+  "end": 35.41,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.096,
+    "t1": 1.558,
+    "text": "Edges in the graph have to come from"
+   },
+   {
+    "t0": 1.64,
+    "t1": 3.045,
+    "text": "real quotes, replies,"
+   },
+   {
+    "t0": 3.103,
+    "t1": 4.252,
+    "text": "reposts or mentions."
+   },
+   {
+    "t0": 4.763,
+    "t1": 6.017,
+    "text": "Then Devin should deploy it,"
+   },
+   {
+    "t0": 6.133,
+    "t1": 7.7,
+    "text": "test it and open a pull request."
+   }
+  ]
+ },
+ "0014.png": {
+  "text": "Devin confirms the plan and starts by looking around the repo.",
+  "dur": 2.995,
+  "at": 35.55,
+  "end": 38.545,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.127,
+    "t1": 2.205,
+    "text": "Devin confirms the plan and starts by looking"
+   },
+   {
+    "t0": 2.24,
+    "t1": 2.995,
+    "text": "around the repo."
+   }
+  ]
+ },
+ "0018.png": {
+  "text": "It plans to call X search as a tool through the xAI Responses API.",
+  "say": "It plans to call X search as a tool, through the ex A I Responses API.",
+  "dur": 4.585,
+  "at": 38.85,
+  "end": 43.435,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.066,
+    "t1": 1.963,
+    "text": "It plans to call X search as"
+   },
+   {
+    "t0": 2.013,
+    "t1": 4.535,
+    "text": "a tool through the xAI Responses API."
+   }
+  ]
+ },
+ "0847.png": {
+  "text": "Here's the xAI call. Each search sends a prompt to Grok with the X search tool, and asks for structured JSON back.",
+  "say": "Here's the ex A I call. Each search sends a prompt to Grok with the X search tool, and asks for structured JSON back.",
+  "dur": 6.775,
+  "at": 43.68,
+  "end": 50.455,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.054,
+    "t1": 1.215,
+    "text": "Here's the xAI call."
+   },
+   {
+    "t0": 1.265,
+    "t1": 2.971,
+    "text": "Each search sends a prompt to"
+   },
+   {
+    "t0": 3.021,
+    "t1": 4.666,
+    "text": "Grok with the X search tool,"
+   },
+   {
+    "t0": 4.716,
+    "t1": 6.725,
+    "text": "and asks for structured JSON back."
+   }
+  ]
+ },
+ "0844.png": {
+  "text": "On Modal, run search dot map fans out one search per time window, so they all run in parallel.",
+  "dur": 5.265,
+  "at": 50.85,
+  "end": 56.115,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.082,
+    "t1": 2.242,
+    "text": "On Modal, run search dot map fans out"
+   },
+   {
+    "t0": 2.3,
+    "t1": 3.705,
+    "text": "one search per time window,"
+   },
+   {
+    "t0": 3.832,
+    "t1": 5.265,
+    "text": "so they all run in parallel."
+   }
+  ]
+ },
+ "0845.png": {
+  "text": "The daily refresh is a Modal cron on the refresh function, set for six every morning.",
+  "dur": 4.53,
+  "at": 56.42,
+  "end": 60.95,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.062,
+    "t1": 1.954,
+    "text": "The daily refresh is a Modal cron on"
+   },
+   {
+    "t0": 1.989,
+    "t1": 2.999,
+    "text": "the refresh function,"
+   },
+   {
+    "t0": 3.208,
+    "t1": 4.485,
+    "text": "set for six every morning."
+   }
+  ]
+ },
+ "0846.png": {
+  "text": "And the ASGI app decorator serves the page and its API from one web function.",
+  "say": "And the A S G I app decorator serves the page and its API, from one web function.",
+  "dur": 4.78,
+  "at": 61.115,
+  "end": 65.895,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.034,
+    "t1": 2.576,
+    "text": "And the ASGI app decorator serves the page"
+   },
+   {
+    "t0": 2.626,
+    "t1": 4.674,
+    "text": "and its API from one web function."
+   }
+  ]
+ },
+ "0236.png": {
+  "text": "Devin deploys it with modal deploy. This workspace had no free schedule slots, so it turns the cron off and the page starts the daily refresh instead.",
+  "say": "Devin deploys it with modal deploy. This workspace had no free schedule slots, so it turns the cron off, and the page starts the daily refresh instead.",
+  "dur": 9.09,
+  "at": 65.99,
+  "end": 75.08,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.174,
+    "t1": 2.244,
+    "text": "Devin deploys it with modal deploy."
+   },
+   {
+    "t0": 2.294,
+    "t1": 4.789,
+    "text": "This workspace had no free schedule slots,"
+   },
+   {
+    "t0": 4.839,
+    "t1": 6.485,
+    "text": "so it turns the cron off and"
+   },
+   {
+    "t0": 6.535,
+    "t1": 9.029,
+    "text": "the page starts the daily refresh instead."
+   }
+  ]
+ },
+ "0289.png": {
+  "text": "Then it runs a real trace for vibe coding against the deployed endpoint, and waits for it to finish.",
+  "dur": 4.785,
+  "at": 75.405,
+  "end": 80.19,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.614,
+    "text": "Then it runs a real trace for vibe"
+   },
+   {
+    "t0": 1.649,
+    "t1": 3.298,
+    "text": "coding against the deployed endpoint,"
+   },
+   {
+    "t0": 3.472,
+    "t1": 4.726,
+    "text": "and waits for it to finish."
+   }
+  ]
+ },
+ "0446.png": {
+  "text": "With the pull request open, Devin switches to test mode and clicks through the live page itself.",
+  "say": "With the pull request open, Devin switches to test mode, and clicks through the lyve page itself.",
+  "dur": 4.785,
+  "at": 80.385,
+  "end": 85.17,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.024,
+    "t1": 1.342,
+    "text": "With the pull request open,"
+   },
+   {
+    "t0": 1.392,
+    "t1": 2.912,
+    "text": "Devin switches to test mode and"
+   },
+   {
+    "t0": 2.962,
+    "t1": 4.735,
+    "text": "clicks through the live page itself."
+   }
+  ]
+ },
+ "0478.png": {
+  "text": "Devin Review flags five bugs and two security findings on the pull request, and Devin works through them before redeploying.",
+  "dur": 6.39,
+  "at": 85.48,
+  "end": 91.87,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.119,
+    "t1": 2.511,
+    "text": "Devin Review flags five bugs and two security"
+   },
+   {
+    "t0": 2.569,
+    "t1": 3.962,
+    "text": "findings on the pull request,"
+   },
+   {
+    "t0": 4.09,
+    "t1": 6.353,
+    "text": "and Devin works through them before redeploying."
+   }
+  ]
+ },
+ "0836.png": {
+  "text": "When it's done, Devin reports the live URL and the pull request. It also notes that a plain modal deploy turns the real schedule on once a slot is free.",
+  "say": "When it's done, Devin reports the lyve U R L and the pull request. It also notes that a plain modal deploy turns the real schedule on, once a slot is free.",
+  "dur": 8.87,
+  "at": 92.1,
+  "end": 100.97,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.058,
+    "t1": 0.895,
+    "text": "When it's done,"
+   },
+   {
+    "t0": 0.945,
+    "t1": 3.734,
+    "text": "Devin reports the live URL and the pull request."
+   },
+   {
+    "t0": 3.784,
+    "t1": 6.395,
+    "text": "It also notes that a plain modal deploy turns"
+   },
+   {
+    "t0": 6.445,
+    "t1": 8.82,
+    "text": "the real schedule on once a slot is free."
+   }
+  ]
+ },
+ "0838.png": {
+  "text": "And here's the deployed app on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+  "dur": 9.685,
+  "at": 101.415,
+  "end": 111.1,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.008,
+    "t1": 1.634,
+    "text": "And here's the deployed app on Modal."
+   },
+   {
+    "t0": 1.959,
+    "t1": 2.83,
+    "text": "For vibe coding,"
+   },
+   {
+    "t0": 2.853,
+    "t1": 4.78,
+    "text": "the earliest post it found is from May"
+   },
+   {
+    "t0": 4.838,
+    "t1": 7.474,
+    "text": "twenty twenty-two. That's the oldest post the search"
+   },
+   {
+    "t0": 7.52,
+    "t1": 9.656,
+    "text": "returned, not proof of where it started."
+   }
+  ]
+ },
+ "0841.png": {
+  "text": "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+  "dur": 8.595,
+  "at": 111.28,
+  "end": 119.875,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.07,
+    "t1": 2.218,
+    "text": "It found sixty-nine posts with the phrase,"
+   },
+   {
+    "t0": 2.392,
+    "t1": 3.588,
+    "text": "which is a sample of X,"
+   },
+   {
+    "t0": 3.669,
+    "t1": 4.413,
+    "text": "not a total."
+   },
+   {
+    "t0": 4.796,
+    "t1": 6.456,
+    "text": "The graph shows how they connect,"
+   },
+   {
+    "t0": 6.665,
+    "t1": 8.595,
+    "text": "with Karpathy as the top amplifier."
+   }
+  ]
+ },
+ "0842.png": {
+  "text": "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+  "dur": 7.29,
+  "at": 120.14,
+  "end": 127.43,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.104,
+    "t1": 2.17,
+    "text": "Every line is backed by a real reply,"
+   },
+   {
+    "t0": 2.321,
+    "t1": 3.273,
+    "text": "quote or mention,"
+   },
+   {
+    "t0": 3.482,
+    "t1": 5.363,
+    "text": "and this table lists the post behind each"
+   },
+   {
+    "t0": 5.421,
+    "t1": 7.29,
+    "text": "one, so you can check it on X."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Paste a phrase, and see how it spread.",
+  "dur": 1.89,
+  "at": 127.79,
+  "end": 129.68,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.082,
+    "t1": 0.848,
+    "text": "Paste a phrase,"
+   },
+   {
+    "t0": 0.871,
+    "t1": 1.89,
+    "text": "and see how it spread."
+   }
+  ]
+ }
+}

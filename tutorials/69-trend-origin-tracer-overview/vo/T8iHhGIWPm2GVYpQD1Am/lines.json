@@ -1,0 +1,353 @@
+{
+ "0000.png": {
+  "text": "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+  "dur": 10.66,
+  "at": 0.0,
+  "end": 10.66,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 0.94,
+    "text": "How did this blow up?"
+   },
+   {
+    "t0": 0.964,
+    "t1": 2.891,
+    "text": "It's one of the internet's favourite questions."
+   },
+   {
+    "t0": 3.1,
+    "t1": 4.841,
+    "text": "Paste a phrase like vibe coding,"
+   },
+   {
+    "t0": 4.992,
+    "t1": 6.896,
+    "text": "and this app shows the earliest post it"
+   },
+   {
+    "t0": 6.931,
+    "t1": 7.976,
+    "text": "can find on X,"
+   },
+   {
+    "t0": 8.092,
+    "t1": 9.033,
+    "text": "who amplified it,"
+   },
+   {
+    "t0": 9.207,
+    "t1": 10.612,
+    "text": "and how it spread over time."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "It starts with real posts on X. The app asks Grok through the xAI API, with the X search tool turned on, and gets structured JSON back.",
+  "say": "It starts with real posts on X. The app asks Grok through the ex A I API, with the X search tool turned on, and gets structured JSON back.",
+  "dur": 9.29,
+  "at": 10.725,
+  "end": 20.015,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.061,
+    "t1": 2.178,
+    "text": "It starts with real posts on X."
+   },
+   {
+    "t0": 2.228,
+    "t1": 4.835,
+    "text": "The app asks Grok through the xAI API,"
+   },
+   {
+    "t0": 4.885,
+    "t1": 7.142,
+    "text": "with the X search tool turned on,"
+   },
+   {
+    "t0": 7.192,
+    "t1": 9.24,
+    "text": "and gets structured JSON back."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "On Modal, one function fans out the searches with dot map, one per time window, so they all run at once. For vibe coding, that was twenty-five searches.",
+  "dur": 9.13,
+  "at": 20.37,
+  "end": 29.5,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.098,
+    "t1": 2.455,
+    "text": "On Modal, one function fans out the searches"
+   },
+   {
+    "t0": 2.49,
+    "t1": 3.326,
+    "text": "with dot map,"
+   },
+   {
+    "t0": 3.569,
+    "t1": 4.846,
+    "text": "one per time window,"
+   },
+   {
+    "t0": 5.021,
+    "t1": 6.298,
+    "text": "so they all run at once."
+   },
+   {
+    "t0": 6.739,
+    "t1": 7.61,
+    "text": "For vibe coding,"
+   },
+   {
+    "t0": 7.633,
+    "t1": 9.108,
+    "text": "that was twenty-five searches."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "The results go into a Modal Dict, and a web endpoint serves the page and its API from that storage.",
+  "dur": 5.9,
+  "at": 29.595,
+  "end": 35.495,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.034,
+    "t1": 1.845,
+    "text": "The results go into a Modal Dict,"
+   },
+   {
+    "t0": 2.019,
+    "t1": 4.26,
+    "text": "and a web endpoint serves the page and"
+   },
+   {
+    "t0": 4.306,
+    "t1": 5.885,
+    "text": "its API from that storage."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+  "dur": 8.15,
+  "at": 35.73,
+  "end": 43.88,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.075,
+    "t1": 2.409,
+    "text": "A Modal cron can refresh saved phrases every"
+   },
+   {
+    "t0": 2.455,
+    "t1": 5.578,
+    "text": "morning. This workspace had no free schedule slot,"
+   },
+   {
+    "t0": 5.752,
+    "t1": 8.15,
+    "text": "so for now the page starts that refresh itself."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+  "dur": 11.145,
+  "at": 44.12,
+  "end": 55.265,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.056,
+    "t1": 1.333,
+    "text": "The labels stay honest."
+   },
+   {
+    "t0": 1.658,
+    "t1": 4.084,
+    "text": "The earliest post found isn't proof of origin."
+   },
+   {
+    "t0": 4.409,
+    "t1": 6.07,
+    "text": "Counts are posts found in a sample,"
+   },
+   {
+    "t0": 6.105,
+    "t1": 8.392,
+    "text": "not totals. And every edge comes from a"
+   },
+   {
+    "t0": 8.473,
+    "t1": 11.145,
+    "text": "real reply, quote or mention in the data."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "Devin built the whole thing from one short prompt, in a single session.",
+  "dur": 3.44,
+  "at": 55.52,
+  "end": 58.96,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.15,
+    "t1": 1.984,
+    "text": "Devin built the whole thing from one short"
+   },
+   {
+    "t0": 2.031,
+    "t1": 3.401,
+    "text": "prompt, in a single session."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "It deployed the app with modal deploy, then tested the deployed endpoint with a real trace.",
+  "dur": 4.85,
+  "at": 59.3,
+  "end": 64.15,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.062,
+    "t1": 2.036,
+    "text": "It deployed the app with modal deploy,"
+   },
+   {
+    "t0": 2.361,
+    "t1": 4.85,
+    "text": "then tested the deployed endpoint with a real trace."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Here's the deployed app. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+  "dur": 5.06,
+  "at": 64.53,
+  "end": 69.59,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.045,
+    "t1": 1.09,
+    "text": "Here's the deployed app."
+   },
+   {
+    "t0": 1.299,
+    "t1": 2.251,
+    "text": "For vibe coding,"
+   },
+   {
+    "t0": 2.309,
+    "t1": 5.037,
+    "text": "the earliest post it found is from May twenty twenty-two."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+  "dur": 6.7,
+  "at": 70.1,
+  "end": 76.8,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.071,
+    "t1": 2.335,
+    "text": "It found sixty-nine posts with the phrase,"
+   },
+   {
+    "t0": 2.579,
+    "t1": 4.228,
+    "text": "and the graph shows who passed it to"
+   },
+   {
+    "t0": 4.274,
+    "t1": 6.689,
+    "text": "whom, with Karpathy as the top amplifier."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+  "dur": 11.97,
+  "at": 77.195,
+  "end": 89.165,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.035,
+    "t1": 1.405,
+    "text": "There's plenty to build on top."
+   },
+   {
+    "t0": 2.009,
+    "t1": 3.913,
+    "text": "You could alert when a saved phrase starts"
+   },
+   {
+    "t0": 3.959,
+    "t1": 6.746,
+    "text": "climbing, compare two phrases side by side,"
+   },
+   {
+    "t0": 6.92,
+    "t1": 8.661,
+    "text": "or export the graph for a write-up."
+   },
+   {
+    "t0": 8.986,
+    "t1": 10.844,
+    "text": "You could also trace a product launch from"
+   },
+   {
+    "t0": 10.891,
+    "t1": 11.97,
+    "text": "its very first post."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Paste a phrase, and watch how it spread.",
+  "dur": 1.98,
+  "at": 89.54,
+  "end": 91.52,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.09,
+    "t1": 0.856,
+    "text": "Paste a phrase,"
+   },
+   {
+    "t0": 0.879,
+    "t1": 1.98,
+    "text": "and watch how it spread."
+   }
+  ]
+ }
+}
