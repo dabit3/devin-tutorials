@@ -24,7 +24,9 @@ window.ready = document.fonts.load(`${FS}px JBM`).then(() => {
   const cols = Math.floor(el.clientWidth / cell.width), rows = Math.floor(el.clientHeight / cell.height);
   term.resize(cols, rows); return { cols, rows };
 });
+// U+23FA (the CLI's tool-call dot) is in no installed font, so draw it as U+25CF, which JetBrains Mono has.
 window.render = (text, cx, cy, show, title) => new Promise(r => {
+  text = text.split('\u23fa').join('\u25cf');
   if (title) document.getElementById('title').textContent = title;
   const lines = text.replace(/\n$/, '').split('\n');
   let s = '\x1b[0m\x1b[2J\x1b[H' + (show ? '\x1b[?25h' : '\x1b[?25l');
