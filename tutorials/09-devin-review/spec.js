@@ -3,7 +3,7 @@ window.SPEC = {
   "subtitle": "Find the bugs in a pull request, ask why, and commit the fix",
   "outro": "Catch bugs before they merge",
   "speed": 3,
-  "cps": 30,
+  "cps": 48,
   "noZoom": [
     [
       "0000.png"
@@ -11,11 +11,15 @@ window.SPEC = {
   ],
   "edit": {
     "0000.png": {
-      "hold": 1.4
+      "hold": 2.4,
+      "voSay": "This, is Devin Review. It lays out a pull request so it's easy to follow, catches bugs before they merge, and fixes them right from the review.",
+      "cursor": false,
+      "vo": "This is Devin Review. It lays out a pull request so it's easy to follow, catches bugs before they merge, and fixes them right from the review."
     },
     "0010.png": {
       "hold": 2.8,
-      "cap": "Devin reads the diff and hunts for bugs"
+      "cap": "Devin reads the diff and hunts for bugs",
+      "vo": "Devin reads the diff, with context from the rest of the codebase, and hunts for bugs."
     },
     "0011.png": {
       "skip": true
@@ -33,7 +37,8 @@ window.SPEC = {
       "kind": "still",
       "hold": 3.0,
       "capPos": "bottom",
-      "cap": "Results: a summary plus categorized findings"
+      "cap": "Results: a summary plus categorized findings",
+      "vo": "It sums up the change, and sorts what it finds into bugs, flags and security issues."
     },
     "0016.png": {
       "skip": true
@@ -347,7 +352,8 @@ window.SPEC = {
     },
     "0141.png": {
       "hold": 3.4,
-      "badge": null
+      "badge": null,
+      "vo": "Devin explains the bug, cites the code in this pull request, and offers to fix it."
     },
     "0151.png": {
       "hold": 0.8,
@@ -377,7 +383,8 @@ window.SPEC = {
     "0159.png": {
       "hold": 2.8,
       "badge": null,
-      "cap": "Devin proposes an edit for you to approve"
+      "cap": "Devin proposes an edit for you to approve",
+      "vo": "Devin proposes the edit in the chat. Nothing is committed yet."
     },
     "0162.png": {
       "hold": 0.6
@@ -398,13 +405,83 @@ window.SPEC = {
       "skip": true
     },
     "0175.png": {
-      "hold": 3.0
+      "hold": 3.0,
+      "vo": "Merge when you're ready, right from here."
     },
     "0180.png": {
       "skip": true
     },
     "0182.png": {
       "skip": true
+    },
+    "0001.png": {
+      "voGap": 0.6,
+      "vo": "Open Review from the sidebar."
+    },
+    "0004.png": {
+      "vo": "It lists your open pull requests, including the ones Devin opened."
+    },
+    "0005.png": {
+      "vo": "Open a pull request."
+    },
+    "0008.png": {
+      "vo": "You get the description, the files, and the diff, all in one view."
+    },
+    "0009.png": {
+      "vo": "Now click Run Devin's AI analysis."
+    },
+    "0017.png": {
+      "vo": "Here, it found two bugs in this pull request."
+    },
+    "0018.png": {
+      "vo": "Click a finding to jump to the code."
+    },
+    "0020.png": {
+      "vo": "Then ask Devin about it."
+    },
+    "0028.png": {
+      "vo": "Ask a follow-up question about the diff."
+    },
+    "0142.png": {
+      "vo": "Ask Devin to make the fix."
+    },
+    "0160.png": {
+      "vo": "Click Review to check it."
+    },
+    "0163.png": {
+      "vo": "Look over the diff and the commit message,"
+    },
+    "0164.png": {
+      "vo": "then commit it to the pull request branch."
+    },
+    "0168.png": {
+      "vo": "The fix is now a commit on the branch."
+    },
+    "0170.png": {
+      "vo": "Refresh to load the new commit."
+    },
+    "0174.png": {
+      "vo": "The diff now uses the live board counts."
+    },
+    "0176.png": {
+      "voGap": 1.0,
+      "vo": "To have Devin review pull requests on its own, open Settings,"
+    },
+    "0178.png": {
+      "vo": "and go to Review."
+    },
+    "0181.png": {
+      "vo": "These settings apply to the whole organization, like which findings get posted as comments on GitHub."
+    },
+    "0183.png": {
+      "vo": "Under Automatic review, Devin reviews new pull requests by itself, and again whenever new commits are pushed."
+    },
+    "0184.png": {
+      "vo": "Click Add,"
+    },
+    "0185.png": {
+      "vo": "and choose the repos or the authors to review automatically."
     }
-  }
+  },
+  "voOutro": "Catch bugs before they merge."
 };
