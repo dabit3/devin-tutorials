@@ -1,0 +1,1012 @@
+{
+ "0000.png": {
+  "text": "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed.",
+  "dur": 5.49,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed.",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed."
+   ],
+   [
+    "0001.png",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests.",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "Here it is: one automation that runs every day at two in the morning.",
+    "Here it is: one automation that runs every day at two in the morning."
+   ],
+   [
+    "0003.png",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode.",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode."
+   ],
+   [
+    "0004.png",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try.",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try."
+   ],
+   [
+    "0005.png",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main.",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main."
+   ],
+   [
+    "0006.png",
+    "Then it wrote one note per pull request.",
+    "Then it wrote one note per pull request."
+   ],
+   [
+    "0007.png",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack.",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack."
+   ],
+   [
+    "0008.png",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack.",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack."
+   ],
+   [
+    "0009.png",
+    "The build log ends with archive succeeded.",
+    "The build log ends with archive succeeded."
+   ],
+   [
+    "0010.png",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand.",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand."
+   ],
+   [
+    "outro",
+    "A fresh build every morning, with notes your testers can use.",
+    "A fresh build every morning, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.322,
+    "text": "Many iOS teams still cut test builds by"
+   },
+   {
+    "t0": 2.392,
+    "t1": 4.481,
+    "text": "hand, so testers get them late and have"
+   },
+   {
+    "t0": 4.505,
+    "t1": 5.49,
+    "text": "to guess what changed."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests.",
+  "dur": 8.315,
+  "takeAt": 5.865,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed.",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed."
+   ],
+   [
+    "0001.png",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests.",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "Here it is: one automation that runs every day at two in the morning.",
+    "Here it is: one automation that runs every day at two in the morning."
+   ],
+   [
+    "0003.png",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode.",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode."
+   ],
+   [
+    "0004.png",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try.",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try."
+   ],
+   [
+    "0005.png",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main.",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main."
+   ],
+   [
+    "0006.png",
+    "Then it wrote one note per pull request.",
+    "Then it wrote one note per pull request."
+   ],
+   [
+    "0007.png",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack.",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack."
+   ],
+   [
+    "0008.png",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack.",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack."
+   ],
+   [
+    "0009.png",
+    "The build log ends with archive succeeded.",
+    "The build log ends with archive succeeded."
+   ],
+   [
+    "0010.png",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand.",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand."
+   ],
+   [
+    "outro",
+    "A fresh build every morning, with notes your testers can use.",
+    "A fresh build every morning, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.044,
+    "t1": 2.308,
+    "text": "With Devin, a nightly schedule starts a session"
+   },
+   {
+    "t0": 2.366,
+    "t1": 4.909,
+    "text": "on a macOS machine that archives the app"
+   },
+   {
+    "t0": 4.955,
+    "t1": 6.802,
+    "text": "and writes What to Test notes from the"
+   },
+   {
+    "t0": 6.86,
+    "t1": 8.315,
+    "text": "day's merged pull requests."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "Here it is: one automation that runs every day at two in the morning.",
+  "dur": 3.442,
+  "takeAt": 14.428,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed.",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed."
+   ],
+   [
+    "0001.png",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests.",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "Here it is: one automation that runs every day at two in the morning.",
+    "Here it is: one automation that runs every day at two in the morning."
+   ],
+   [
+    "0003.png",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode.",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode."
+   ],
+   [
+    "0004.png",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try.",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try."
+   ],
+   [
+    "0005.png",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main.",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main."
+   ],
+   [
+    "0006.png",
+    "Then it wrote one note per pull request.",
+    "Then it wrote one note per pull request."
+   ],
+   [
+    "0007.png",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack.",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack."
+   ],
+   [
+    "0008.png",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack.",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack."
+   ],
+   [
+    "0009.png",
+    "The build log ends with archive succeeded.",
+    "The build log ends with archive succeeded."
+   ],
+   [
+    "0010.png",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand.",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand."
+   ],
+   [
+    "outro",
+    "A fresh build every morning, with notes your testers can use.",
+    "A fresh build every morning, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.735,
+    "text": "Here it is:"
+   },
+   {
+    "t0": 1.014,
+    "t1": 2.871,
+    "text": "one automation that runs every day at two"
+   },
+   {
+    "t0": 2.918,
+    "t1": 3.442,
+    "text": "in the morning."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "Its virtual environment is macOS, so every run gets a Mac with Xcode.",
+  "dur": 4.265,
+  "takeAt": 18.285,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed.",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed."
+   ],
+   [
+    "0001.png",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests.",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "Here it is: one automation that runs every day at two in the morning.",
+    "Here it is: one automation that runs every day at two in the morning."
+   ],
+   [
+    "0003.png",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode.",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode."
+   ],
+   [
+    "0004.png",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try.",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try."
+   ],
+   [
+    "0005.png",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main.",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main."
+   ],
+   [
+    "0006.png",
+    "Then it wrote one note per pull request.",
+    "Then it wrote one note per pull request."
+   ],
+   [
+    "0007.png",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack.",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack."
+   ],
+   [
+    "0008.png",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack.",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack."
+   ],
+   [
+    "0009.png",
+    "The build log ends with archive succeeded.",
+    "The build log ends with archive succeeded."
+   ],
+   [
+    "0010.png",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand.",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand."
+   ],
+   [
+    "outro",
+    "A fresh build every morning, with notes your testers can use.",
+    "A fresh build every morning, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.048,
+    "t1": 2.021,
+    "text": "Its virtual environment is macOS,"
+   },
+   {
+    "t0": 2.195,
+    "t1": 4.265,
+    "text": "so every run gets a Mac with Xcode."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try.",
+  "dur": 5.755,
+  "takeAt": 23.005,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed.",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed."
+   ],
+   [
+    "0001.png",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests.",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "Here it is: one automation that runs every day at two in the morning.",
+    "Here it is: one automation that runs every day at two in the morning."
+   ],
+   [
+    "0003.png",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode.",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode."
+   ],
+   [
+    "0004.png",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try.",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try."
+   ],
+   [
+    "0005.png",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main.",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main."
+   ],
+   [
+    "0006.png",
+    "Then it wrote one note per pull request.",
+    "Then it wrote one note per pull request."
+   ],
+   [
+    "0007.png",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack.",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack."
+   ],
+   [
+    "0008.png",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack.",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack."
+   ],
+   [
+    "0009.png",
+    "The build log ends with archive succeeded.",
+    "The build log ends with archive succeeded."
+   ],
+   [
+    "0010.png",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand.",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand."
+   ],
+   [
+    "outro",
+    "A fresh build every morning, with notes your testers can use.",
+    "A fresh build every morning, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.076,
+    "t1": 1.852,
+    "text": "The notes come from the pull requests that"
+   },
+   {
+    "t0": 1.899,
+    "t1": 4.604,
+    "text": "actually landed, so each line tells testers what"
+   },
+   {
+    "t0": 4.662,
+    "t1": 5.755,
+    "text": "changed and what to try."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main.",
+  "dur": 5.427,
+  "takeAt": 29.033,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed.",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed."
+   ],
+   [
+    "0001.png",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests.",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "Here it is: one automation that runs every day at two in the morning.",
+    "Here it is: one automation that runs every day at two in the morning."
+   ],
+   [
+    "0003.png",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode.",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode."
+   ],
+   [
+    "0004.png",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try.",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try."
+   ],
+   [
+    "0005.png",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main.",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main."
+   ],
+   [
+    "0006.png",
+    "Then it wrote one note per pull request.",
+    "Then it wrote one note per pull request."
+   ],
+   [
+    "0007.png",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack.",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack."
+   ],
+   [
+    "0008.png",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack.",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack."
+   ],
+   [
+    "0009.png",
+    "The build log ends with archive succeeded.",
+    "The build log ends with archive succeeded."
+   ],
+   [
+    "0010.png",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand.",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand."
+   ],
+   [
+    "outro",
+    "A fresh build every morning, with notes your testers can use.",
+    "A fresh build every morning, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.898,
+    "text": "In the real run,"
+   },
+   {
+    "t0": 1.014,
+    "t1": 3.15,
+    "text": "Devin found the four pull requests merged that"
+   },
+   {
+    "t0": 3.185,
+    "t1": 5.427,
+    "text": "day and checked each one against the code on main."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "Then it wrote one note per pull request.",
+  "dur": 1.955,
+  "takeAt": 34.745,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed.",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed."
+   ],
+   [
+    "0001.png",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests.",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "Here it is: one automation that runs every day at two in the morning.",
+    "Here it is: one automation that runs every day at two in the morning."
+   ],
+   [
+    "0003.png",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode.",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode."
+   ],
+   [
+    "0004.png",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try.",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try."
+   ],
+   [
+    "0005.png",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main.",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main."
+   ],
+   [
+    "0006.png",
+    "Then it wrote one note per pull request.",
+    "Then it wrote one note per pull request."
+   ],
+   [
+    "0007.png",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack.",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack."
+   ],
+   [
+    "0008.png",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack.",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack."
+   ],
+   [
+    "0009.png",
+    "The build log ends with archive succeeded.",
+    "The build log ends with archive succeeded."
+   ],
+   [
+    "0010.png",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand.",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand."
+   ],
+   [
+    "outro",
+    "A fresh build every morning, with notes your testers can use.",
+    "A fresh build every morning, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.955,
+    "text": "Then it wrote one note per pull request."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack.",
+  "dur": 8.411,
+  "takeAt": 37.009,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed.",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed."
+   ],
+   [
+    "0001.png",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests.",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "Here it is: one automation that runs every day at two in the morning.",
+    "Here it is: one automation that runs every day at two in the morning."
+   ],
+   [
+    "0003.png",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode.",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode."
+   ],
+   [
+    "0004.png",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try.",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try."
+   ],
+   [
+    "0005.png",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main.",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main."
+   ],
+   [
+    "0006.png",
+    "Then it wrote one note per pull request.",
+    "Then it wrote one note per pull request."
+   ],
+   [
+    "0007.png",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack.",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack."
+   ],
+   [
+    "0008.png",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack.",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack."
+   ],
+   [
+    "0009.png",
+    "The build log ends with archive succeeded.",
+    "The build log ends with archive succeeded."
+   ],
+   [
+    "0010.png",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand.",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand."
+   ],
+   [
+    "outro",
+    "A fresh build every morning, with notes your testers can use.",
+    "A fresh build every morning, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.002,
+    "text": "In this demo,"
+   },
+   {
+    "t0": 1.049,
+    "t1": 3.974,
+    "text": "the TestFlight upload and the Slack post are stub scripts."
+   },
+   {
+    "t0": 4.218,
+    "t1": 4.88,
+    "text": "To go live,"
+   },
+   {
+    "t0": 4.903,
+    "t1": 6.749,
+    "text": "you save your App Store Connect keys as"
+   },
+   {
+    "t0": 6.842,
+    "t1": 8.411,
+    "text": "Devin secrets and connect Slack."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack.",
+  "dur": 4.925,
+  "takeAt": 45.775,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed.",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed."
+   ],
+   [
+    "0001.png",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests.",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "Here it is: one automation that runs every day at two in the morning.",
+    "Here it is: one automation that runs every day at two in the morning."
+   ],
+   [
+    "0003.png",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode.",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode."
+   ],
+   [
+    "0004.png",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try.",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try."
+   ],
+   [
+    "0005.png",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main.",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main."
+   ],
+   [
+    "0006.png",
+    "Then it wrote one note per pull request.",
+    "Then it wrote one note per pull request."
+   ],
+   [
+    "0007.png",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack.",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack."
+   ],
+   [
+    "0008.png",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack.",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack."
+   ],
+   [
+    "0009.png",
+    "The build log ends with archive succeeded.",
+    "The build log ends with archive succeeded."
+   ],
+   [
+    "0010.png",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand.",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand."
+   ],
+   [
+    "outro",
+    "A fresh build every morning, with notes your testers can use.",
+    "A fresh build every morning, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.108,
+    "t1": 1.466,
+    "text": "Devin says so plainly:"
+   },
+   {
+    "t0": 1.71,
+    "t1": 2.743,
+    "text": "the archive built,"
+   },
+   {
+    "t0": 2.894,
+    "t1": 4.925,
+    "text": "and nothing reached TestFlight or Slack."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "The build log ends with archive succeeded.",
+  "dur": 2.125,
+  "takeAt": 51.085,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed.",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed."
+   ],
+   [
+    "0001.png",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests.",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "Here it is: one automation that runs every day at two in the morning.",
+    "Here it is: one automation that runs every day at two in the morning."
+   ],
+   [
+    "0003.png",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode.",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode."
+   ],
+   [
+    "0004.png",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try.",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try."
+   ],
+   [
+    "0005.png",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main.",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main."
+   ],
+   [
+    "0006.png",
+    "Then it wrote one note per pull request.",
+    "Then it wrote one note per pull request."
+   ],
+   [
+    "0007.png",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack.",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack."
+   ],
+   [
+    "0008.png",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack.",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack."
+   ],
+   [
+    "0009.png",
+    "The build log ends with archive succeeded.",
+    "The build log ends with archive succeeded."
+   ],
+   [
+    "0010.png",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand.",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand."
+   ],
+   [
+    "outro",
+    "A fresh build every morning, with notes your testers can use.",
+    "A fresh build every morning, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.08,
+    "t1": 2.125,
+    "text": "The build log ends with archive succeeded."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand.",
+  "dur": 5.345,
+  "takeAt": 53.485,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed.",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed."
+   ],
+   [
+    "0001.png",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests.",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "Here it is: one automation that runs every day at two in the morning.",
+    "Here it is: one automation that runs every day at two in the morning."
+   ],
+   [
+    "0003.png",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode.",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode."
+   ],
+   [
+    "0004.png",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try.",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try."
+   ],
+   [
+    "0005.png",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main.",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main."
+   ],
+   [
+    "0006.png",
+    "Then it wrote one note per pull request.",
+    "Then it wrote one note per pull request."
+   ],
+   [
+    "0007.png",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack.",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack."
+   ],
+   [
+    "0008.png",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack.",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack."
+   ],
+   [
+    "0009.png",
+    "The build log ends with archive succeeded.",
+    "The build log ends with archive succeeded."
+   ],
+   [
+    "0010.png",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand.",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand."
+   ],
+   [
+    "outro",
+    "A fresh build every morning, with notes your testers can use.",
+    "A fresh build every morning, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.095,
+    "t1": 2.046,
+    "text": "Testers start each day with a fresh build"
+   },
+   {
+    "t0": 2.092,
+    "t1": 3.393,
+    "text": "and know exactly what to try,"
+   },
+   {
+    "t0": 3.427,
+    "t1": 4.762,
+    "text": "and nobody on the team has to cut"
+   },
+   {
+    "t0": 4.797,
+    "t1": 5.345,
+    "text": "it by hand."
+   }
+  ]
+ },
+ "outro": {
+  "text": "A fresh build every morning, with notes your testers can use.",
+  "dur": 2.995,
+  "takeAt": 59.185,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed.",
+    "Many iOS teams still cut test builds by hand, so testers get them late and have to guess what changed."
+   ],
+   [
+    "0001.png",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests.",
+    "With Devin, a nightly schedule starts a session on a macOS machine that archives the app and writes What to Test notes from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "Here it is: one automation that runs every day at two in the morning.",
+    "Here it is: one automation that runs every day at two in the morning."
+   ],
+   [
+    "0003.png",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode.",
+    "Its virtual environment is macOS, so every run gets a Mac with Xcode."
+   ],
+   [
+    "0004.png",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try.",
+    "The notes come from the pull requests that actually landed, so each line tells testers what changed and what to try."
+   ],
+   [
+    "0005.png",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main.",
+    "In the real run, Devin found the four pull requests merged that day and checked each one against the code on main."
+   ],
+   [
+    "0006.png",
+    "Then it wrote one note per pull request.",
+    "Then it wrote one note per pull request."
+   ],
+   [
+    "0007.png",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack.",
+    "In this demo, the TestFlight upload and the Slack post are stub scripts. To go live, you save your App Store Connect keys as Devin secrets and connect Slack."
+   ],
+   [
+    "0008.png",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack.",
+    "Devin says so plainly: the archive built, and nothing reached TestFlight or Slack."
+   ],
+   [
+    "0009.png",
+    "The build log ends with archive succeeded.",
+    "The build log ends with archive succeeded."
+   ],
+   [
+    "0010.png",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand.",
+    "Testers start each day with a fresh build and know exactly what to try, and nobody on the team has to cut it by hand."
+   ],
+   [
+    "outro",
+    "A fresh build every morning, with notes your testers can use.",
+    "A fresh build every morning, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.049,
+    "t1": 1.361,
+    "text": "A fresh build every morning,"
+   },
+   {
+    "t0": 1.384,
+    "t1": 2.995,
+    "text": "with notes your testers can use."
+   }
+  ]
+ }
+}

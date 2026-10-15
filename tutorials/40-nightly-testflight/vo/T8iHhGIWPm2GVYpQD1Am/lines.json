@@ -1,0 +1,1528 @@
+{
+ "0001.png": {
+  "text": "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+  "dur": 6.92,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.904,
+    "text": "Devin can build your iOS app every night"
+   },
+   {
+    "t0": 1.95,
+    "t1": 2.543,
+    "text": "on a Mac,"
+   },
+   {
+    "t0": 2.659,
+    "t1": 4.145,
+    "text": "and write the What to Test notes for"
+   },
+   {
+    "t0": 4.191,
+    "t1": 6.92,
+    "text": "your testers from the day's merged pull requests."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "To set it up, open Automations, then Create automation, and pick Create manually.",
+  "dur": 4.892,
+  "takeAt": 7.148,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.782,
+    "text": "To set it up,"
+   },
+   {
+    "t0": 0.816,
+    "t1": 3.417,
+    "text": "open Automations, then Create automation,"
+   },
+   {
+    "t0": 3.626,
+    "t1": 4.892,
+    "text": "and pick Create manually."
+   }
+  ]
+ },
+ "0014.png": {
+  "text": "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+  "dur": 5.75,
+  "takeAt": 12.5,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.745,
+    "text": "Add a Schedule trigger and set it to"
+   },
+   {
+    "t0": 1.838,
+    "t1": 3.011,
+    "text": "every day at two in the morning,"
+   },
+   {
+    "t0": 3.069,
+    "t1": 4.601,
+    "text": "so a fresh build is waiting when your"
+   },
+   {
+    "t0": 4.636,
+    "t1": 5.75,
+    "text": "testers start their day."
+   }
+  ]
+ },
+ "0030.png": {
+  "text": "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+  "say": "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request.",
+  "dur": 10.205,
+  "takeAt": 18.595,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.027,
+    "t1": 2.094,
+    "text": "The instructions say what each run does."
+   },
+   {
+    "t0": 2.222,
+    "t1": 4.404,
+    "text": "It lists the pull requests merged into main"
+   },
+   {
+    "t0": 4.462,
+    "t1": 5.333,
+    "text": "in the last day."
+   },
+   {
+    "t0": 5.612,
+    "t1": 7.527,
+    "text": "It archives the app with xcodebuild."
+   },
+   {
+    "t0": 7.806,
+    "t1": 10.205,
+    "text": "Then it writes one tester note per pull request."
+   }
+  ]
+ },
+ "0035.png": {
+  "text": "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+  "dur": 9.607,
+  "takeAt": 29.033,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.954,
+    "text": "Then it uploads the archive and posts the"
+   },
+   {
+    "t0": 2.012,
+    "t1": 2.86,
+    "text": "notes to Slack."
+   },
+   {
+    "t0": 3.301,
+    "t1": 4.044,
+    "text": "In this demo,"
+   },
+   {
+    "t0": 4.079,
+    "t1": 5.599,
+    "text": "both of those are stub scripts in the"
+   },
+   {
+    "t0": 5.646,
+    "t1": 7.991,
+    "text": "repo, because this org has no App Store"
+   },
+   {
+    "t0": 8.015,
+    "t1": 9.607,
+    "text": "Connect keys or Slack connection."
+   }
+  ]
+ },
+ "0036.png": {
+  "text": "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+  "dur": 5.906,
+  "takeAt": 38.774,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.188,
+    "text": "Under Virtual environment,"
+   },
+   {
+    "t0": 1.223,
+    "t1": 3.533,
+    "text": "pick macOS, so every run gets a Mac"
+   },
+   {
+    "t0": 3.579,
+    "t1": 5.906,
+    "text": "with Xcode, and then create the automation."
+   }
+  ]
+ },
+ "0045.png": {
+  "text": "The automation is now active, with its schedule and instructions.",
+  "dur": 3.305,
+  "takeAt": 44.995,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.11,
+    "t1": 1.596,
+    "text": "The automation is now active,"
+   },
+   {
+    "t0": 1.77,
+    "t1": 3.305,
+    "text": "with its schedule and instructions."
+   }
+  ]
+ },
+ "0048.png": {
+  "text": "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+  "dur": 5.087,
+  "takeAt": 48.723,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.711,
+    "text": "To try it without waiting for the night,"
+   },
+   {
+    "t0": 1.769,
+    "t1": 2.651,
+    "text": "click Run now."
+   },
+   {
+    "t0": 2.825,
+    "t1": 5.087,
+    "text": "It starts a new session with the same instructions."
+   }
+  ]
+ },
+ "0053.png": {
+  "text": "The run shows up under Events, with a link to the session it started.",
+  "dur": 3.35,
+  "takeAt": 54.065,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.072,
+    "t1": 1.628,
+    "text": "The run shows up under Events,"
+   },
+   {
+    "t0": 1.744,
+    "t1": 3.35,
+    "text": "with a link to the session it started."
+   }
+  ]
+ },
+ "0059.png": {
+  "text": "The session starts from the automation's instructions, on a macOS machine.",
+  "dur": 3.945,
+  "takeAt": 57.5,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.628,
+    "text": "The session starts from the automation's instructions,"
+   },
+   {
+    "t0": 2.779,
+    "t1": 3.945,
+    "text": "on a macOS machine."
+   }
+  ]
+ },
+ "0066.png": {
+  "text": "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+  "dur": 7.93,
+  "takeAt": 61.82,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.954,
+    "text": "In under two minutes the archive is built,"
+   },
+   {
+    "t0": 2.07,
+    "t1": 3.452,
+    "text": "and Devin says it plainly:"
+   },
+   {
+    "t0": 3.73,
+    "t1": 5.762,
+    "text": "the upload and Slack scripts are stubs,"
+   },
+   {
+    "t0": 5.936,
+    "t1": 7.93,
+    "text": "so nothing reached TestFlight or Slack."
+   }
+  ]
+ },
+ "0068.png": {
+  "text": "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+  "dur": 5.456,
+  "takeAt": 70.214,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.151,
+    "text": "It found the four pull requests merged that"
+   },
+   {
+    "t0": 2.198,
+    "t1": 3.277,
+    "text": "day that change the app,"
+   },
+   {
+    "t0": 3.556,
+    "t1": 5.456,
+    "text": "and checked each one against the code on main."
+   }
+  ]
+ },
+ "0071.png": {
+  "text": "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+  "dur": 5.006,
+  "takeAt": 75.844,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.699,
+    "text": "Here are the What to Test notes,"
+   },
+   {
+    "t0": 1.815,
+    "t1": 3.267,
+    "text": "one line per pull request,"
+   },
+   {
+    "t0": 3.418,
+    "t1": 5.006,
+    "text": "with what changed and what to try."
+   }
+  ]
+ },
+ "0074.png": {
+  "text": "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+  "dur": 7.195,
+  "takeAt": 81.175,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.072,
+    "t1": 2.208,
+    "text": "The build log ends with archive succeeded."
+   },
+   {
+    "t0": 2.591,
+    "t1": 3.276,
+    "text": "To go live,"
+   },
+   {
+    "t0": 3.323,
+    "t1": 5.621,
+    "text": "save your App Store Connect API key as"
+   },
+   {
+    "t0": 5.702,
+    "t1": 7.195,
+    "text": "Devin secrets and connect Slack."
+   }
+  ]
+ },
+ "outro": {
+  "text": "A fresh build every night, with notes your testers can use.",
+  "dur": 2.955,
+  "takeAt": 88.505,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests.",
+    "Devin can build your iOS app every night on a Mac, and write the What to Test notes for your testers from the day's merged pull requests."
+   ],
+   [
+    "0002.png",
+    "To set it up, open Automations, then Create automation, and pick Create manually.",
+    "To set it up, open Automations, then Create automation, and pick Create manually."
+   ],
+   [
+    "0014.png",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day.",
+    "Add a Schedule trigger and set it to every day at two in the morning, so a fresh build is waiting when your testers start their day."
+   ],
+   [
+    "0030.png",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with xcodebuild. Then it writes one tester note per pull request.",
+    "The instructions say what each run does. It lists the pull requests merged into main in the last day. It archives the app with x code build. Then it writes one tester note per pull request."
+   ],
+   [
+    "0035.png",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection.",
+    "Then it uploads the archive and posts the notes to Slack. In this demo, both of those are stub scripts in the repo, because this org has no App Store Connect keys or Slack connection."
+   ],
+   [
+    "0036.png",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation.",
+    "Under Virtual environment, pick macOS, so every run gets a Mac with Xcode, and then create the automation."
+   ],
+   [
+    "0045.png",
+    "The automation is now active, with its schedule and instructions.",
+    "The automation is now active, with its schedule and instructions."
+   ],
+   [
+    "0048.png",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions.",
+    "To try it without waiting for the night, click Run now. It starts a new session with the same instructions."
+   ],
+   [
+    "0053.png",
+    "The run shows up under Events, with a link to the session it started.",
+    "The run shows up under Events, with a link to the session it started."
+   ],
+   [
+    "0059.png",
+    "The session starts from the automation's instructions, on a macOS machine.",
+    "The session starts from the automation's instructions, on a macOS machine."
+   ],
+   [
+    "0066.png",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack.",
+    "In under two minutes the archive is built, and Devin says it plainly: the upload and Slack scripts are stubs, so nothing reached TestFlight or Slack."
+   ],
+   [
+    "0068.png",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main.",
+    "It found the four pull requests merged that day that change the app, and checked each one against the code on main."
+   ],
+   [
+    "0071.png",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try.",
+    "Here are the What to Test notes, one line per pull request, with what changed and what to try."
+   ],
+   [
+    "0074.png",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack.",
+    "The build log ends with archive succeeded. To go live, save your App Store Connect API key as Devin secrets and connect Slack."
+   ],
+   [
+    "outro",
+    "A fresh build every night, with notes your testers can use.",
+    "A fresh build every night, with notes your testers can use."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.102,
+    "t1": 1.275,
+    "text": "A fresh build every night,"
+   },
+   {
+    "t0": 1.449,
+    "t1": 2.955,
+    "text": "with notes your testers can use."
+   }
+  ]
+ }
+}
