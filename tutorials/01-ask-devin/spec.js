@@ -2,69 +2,124 @@ window.SPEC = {
   "title": "Ask Devin",
   "subtitle": "Understand any codebase, then plan the change",
   "outro": "Ask first, then build",
-  "speed": 4,
+  "speed": 3,
   "cps": 48,
-  "noZoom": [
-    [
-      "0009.png"
-    ]
-  ],
-  "voOutro": "Ask first, then build.",
+  "pollRunMax": 3,
+  "capPos": "auto",
+  "capArrows": false,
   "edit": {
     "0000.png": {
       "hold": 2.4,
-      "vo": "This is Ask Devin. Ask questions about any codebase, and get answers grounded in the code.",
-      "voSay": "This, is Ask Devin. Ask questions about any codebase, and get answers grounded in the code.",
-      "voGap": 1
+      "cursor": false,
+      "vo": "Ask Devin answers your questions about any codebase. With every answer grounded in actual code."
     },
-    "0001.png": {
-      "vo": "Switch the composer to Ask mode."
+    "0002.png": {
+      "cap": "Switch the composer to Ask mode",
+      "hl": true,
+      "vo": "To ask questions instead of building, switch the composer to Ask mode."
     },
     "0003.png": {
-      "vo": "Ask works on your indexed repos. It uses the one you have selected, or you can tag one."
+      "waitVo": true
     },
-    "0004.png": {
-      "vo": "Type @, then pick the repo.",
-      "voSay": "Type at, then pick the repo."
+    "0005.png": {
+      "hold": 1.6,
+      "cap": "Auto picks Q&A or Plan for each question",
+      "hl": true,
+      "vo": "Auto picks the right mode for you, whether that's a quick answer or a plan."
     },
-    "0009.png": {
-      "vo": "Now ask anything about the code, in plain English."
+    "0007.png": {
+      "cap": "Choose which repos Devin should read",
+      "vo": "Then choose the repositories Devin should read."
+    },
+    "0008.png": {
+      "cap": "Click Only to keep just this one",
+      "hl": true,
+      "vo": "Click Only to keep just this one.",
+      "hlDelay": 0.8
+    },
+    "0010.png": {
+      "cap": "Confirm the selection"
+    },
+    "0012.png": {
+      "hold": 1.6,
+      "cap": "Ask is now scoped to this repo",
+      "hl": true,
+      "vo": "Now every answer comes from this repo."
+    },
+    "0014.png": {
+      "cap": "Ask how the kanban-board app is built",
+      "vo": "Ask how the kanban board app is built."
     },
     "0033.png": {
-      "vo": "Devin searches the codebase on its own, and reads the files it needs to answer.",
-      "voGap": 0.6
+      "cap": "Send it"
+    },
+    "0034.png": {
+      "badge": "Sped up",
+      "vo": "Devin reads the code, and writes up an answer.",
+      "cap": ""
+    },
+    "0067.png": {
+      "hold": 1.8,
+      "vo": "You get a walkthrough of the app, file by file."
     },
     "0068.png": {
-      "hold": 2.6,
+      "hold": 1.6,
+      "cap": "Every answer cites the exact lines it came from",
+      "hl": true,
       "vo": "Every answer cites the exact files and lines it came from."
     },
-    "0069.png": {
-      "hold": 1.4,
+    "0070.png": {
       "vo": "Click a citation to jump straight to those lines."
     },
-    "0070.png": {
-      "hold": 2.6,
-      "vo": "The file panel jumps right to the cited lines."
-    },
     "0071.png": {
-      "vo": "When you are ready to build, describe the change you want.",
-      "voGap": 0.8
+      "hold": 2.2,
+      "cap": "The code panel jumps to the cited lines",
+      "hl": true,
+      "vo": "The code panel scrolls right to them, highlighted."
     },
-    "0089.png": {
+    "0073.png": {
+      "cap": "Describe the change you want",
+      "vo": "When you're ready to build, describe the change you want."
+    },
+    "0088.png": {
+      "cap": "Click Construct Devin Prompt",
+      "hl": true,
+      "hlPad": 5,
       "vo": "Then click Construct Devin Prompt."
     },
-    "0091.png": {
-      "vo": "Devin turns everything it learned into a ready-to-run prompt."
+    "0090.png": {
+      "badge": "Sped up",
+      "cap": ""
     },
-    "0112.png": {
-      "hold": 2.6,
-      "vo": "Review the plan, and edit it if you like."
+    "0098.png": {
+      "vo": "Devin turns the answer into a full prompt, with the exact files to change."
     },
-    "0113.png": {
+    "0103.png": {
+      "hold": 2.2,
+      "cap": "Review the prompt, and edit it if you like",
+      "hl": true,
+      "vo": "Review it, and edit it if you like."
+    },
+    "0104.png": {
+      "cap": "Start a Devin session",
+      "hl": true,
+      "hlPad": 5,
       "vo": "Then start a Devin session with all of that context."
     },
-    "0115.png": {
-      "vo": "The new session shows up right in the conversation, so you can track it without switching context."
+    "0106.png": {
+      "skip": true
+    },
+    "0107.png": {
+      "hold": 2.6,
+      "cap": "Devin gets to work in its own session",
+      "hl": {
+        "x": 294,
+        "y": 510,
+        "w": 524,
+        "h": 104
+      },
+      "vo": "Devin starts working right away, in its own session."
     }
-  }
+  },
+  "voOutro": "Ask first, then build."
 };
