@@ -1,0 +1,1038 @@
+{
+ "0000.png": {
+  "text": "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+  "dur": 13.47,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+   ],
+   [
+    "0002.png",
+    "Devin built it from one plain prompt in the demo apps repo.",
+    "Devin built it from one plain prompt in the demo apps repo."
+   ],
+   [
+    "0003.png",
+    "It ran the tests, deployed with modal deploy, and checked the public URL.",
+    "It ran the tests, deployed with modal deploy, and checked the public URL."
+   ],
+   [
+    "0004.png",
+    "In the code, a Modal Cron schedule runs the collection every hour.",
+    "In the code, a Modal Cron schedule runs the collection every hour."
+   ],
+   [
+    "0005.png",
+    "And search dot map runs the six searches in parallel.",
+    "And search dot map runs the six searches in parallel."
+   ],
+   [
+    "0006.png",
+    "It all landed in one pull request.",
+    "It all landed in one pull request."
+   ],
+   [
+    "0007.png",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
+   ],
+   [
+    "0008.png",
+    "A chart counts the posts from each hourly run.",
+    "A chart counts the posts from each hourly run."
+   ],
+   [
+    "0009.png",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
+   ],
+   [
+    "0010.png",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.474,
+    "text": "This is a job-market pulse."
+   },
+   {
+    "t0": 1.753,
+    "t1": 4.029,
+    "text": "Every hour it samples tech posts on X,"
+   },
+   {
+    "t0": 4.203,
+    "t1": 5.399,
+    "text": "sorts them into hiring,"
+   },
+   {
+    "t0": 5.608,
+    "t1": 6.954,
+    "text": "layoffs and looking for work,"
+   },
+   {
+    "t0": 7.129,
+    "t1": 8.243,
+    "text": "and counts the roles,"
+   },
+   {
+    "t0": 8.313,
+    "t1": 9.81,
+    "text": "companies and skills they mention."
+   },
+   {
+    "t0": 10.194,
+    "t1": 11.714,
+    "text": "You get your own up-to-date numbers,"
+   },
+   {
+    "t0": 11.749,
+    "t1": 13.47,
+    "text": "instead of waiting for a monthly report."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+  "say": "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+  "dur": 14.548,
+  "takeAt": 13.742,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+   ],
+   [
+    "0002.png",
+    "Devin built it from one plain prompt in the demo apps repo.",
+    "Devin built it from one plain prompt in the demo apps repo."
+   ],
+   [
+    "0003.png",
+    "It ran the tests, deployed with modal deploy, and checked the public URL.",
+    "It ran the tests, deployed with modal deploy, and checked the public URL."
+   ],
+   [
+    "0004.png",
+    "In the code, a Modal Cron schedule runs the collection every hour.",
+    "In the code, a Modal Cron schedule runs the collection every hour."
+   ],
+   [
+    "0005.png",
+    "And search dot map runs the six searches in parallel.",
+    "And search dot map runs the six searches in parallel."
+   ],
+   [
+    "0006.png",
+    "It all landed in one pull request.",
+    "It all landed in one pull request."
+   ],
+   [
+    "0007.png",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
+   ],
+   [
+    "0008.png",
+    "A chart counts the posts from each hourly run.",
+    "A chart counts the posts from each hourly run."
+   ],
+   [
+    "0009.png",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
+   ],
+   [
+    "0010.png",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.142,
+    "text": "Here's how it works."
+   },
+   {
+    "t0": 1.525,
+    "t1": 4.369,
+    "text": "Grok searches X through the xAI API."
+   },
+   {
+    "t0": 4.752,
+    "t1": 6.773,
+    "text": "A Modal Cron job runs every hour,"
+   },
+   {
+    "t0": 6.982,
+    "t1": 9.164,
+    "text": "and dot map fans the searches and labels"
+   },
+   {
+    "t0": 9.222,
+    "t1": 10.081,
+    "text": "out in parallel."
+   },
+   {
+    "t0": 10.523,
+    "t1": 12.543,
+    "text": "Each run is saved to a Modal Volume,"
+   },
+   {
+    "t0": 12.752,
+    "t1": 14.548,
+    "text": "and a web endpoint serves the page."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "Devin built it from one plain prompt in the demo apps repo.",
+  "dur": 3.115,
+  "takeAt": 28.615,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+   ],
+   [
+    "0002.png",
+    "Devin built it from one plain prompt in the demo apps repo.",
+    "Devin built it from one plain prompt in the demo apps repo."
+   ],
+   [
+    "0003.png",
+    "It ran the tests, deployed with modal deploy, and checked the public URL.",
+    "It ran the tests, deployed with modal deploy, and checked the public URL."
+   ],
+   [
+    "0004.png",
+    "In the code, a Modal Cron schedule runs the collection every hour.",
+    "In the code, a Modal Cron schedule runs the collection every hour."
+   ],
+   [
+    "0005.png",
+    "And search dot map runs the six searches in parallel.",
+    "And search dot map runs the six searches in parallel."
+   ],
+   [
+    "0006.png",
+    "It all landed in one pull request.",
+    "It all landed in one pull request."
+   ],
+   [
+    "0007.png",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
+   ],
+   [
+    "0008.png",
+    "A chart counts the posts from each hourly run.",
+    "A chart counts the posts from each hourly run."
+   ],
+   [
+    "0009.png",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
+   ],
+   [
+    "0010.png",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.954,
+    "text": "Devin built it from one plain prompt in"
+   },
+   {
+    "t0": 2.001,
+    "t1": 3.115,
+    "text": "the demo apps repo."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "It ran the tests, deployed with modal deploy, and checked the public URL.",
+  "dur": 4.152,
+  "takeAt": 31.958,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+   ],
+   [
+    "0002.png",
+    "Devin built it from one plain prompt in the demo apps repo.",
+    "Devin built it from one plain prompt in the demo apps repo."
+   ],
+   [
+    "0003.png",
+    "It ran the tests, deployed with modal deploy, and checked the public URL.",
+    "It ran the tests, deployed with modal deploy, and checked the public URL."
+   ],
+   [
+    "0004.png",
+    "In the code, a Modal Cron schedule runs the collection every hour.",
+    "In the code, a Modal Cron schedule runs the collection every hour."
+   ],
+   [
+    "0005.png",
+    "And search dot map runs the six searches in parallel.",
+    "And search dot map runs the six searches in parallel."
+   ],
+   [
+    "0006.png",
+    "It all landed in one pull request.",
+    "It all landed in one pull request."
+   ],
+   [
+    "0007.png",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
+   ],
+   [
+    "0008.png",
+    "A chart counts the posts from each hourly run.",
+    "A chart counts the posts from each hourly run."
+   ],
+   [
+    "0009.png",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
+   ],
+   [
+    "0010.png",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.049,
+    "text": "It ran the tests,"
+   },
+   {
+    "t0": 1.119,
+    "t1": 2.535,
+    "text": "deployed with modal deploy,"
+   },
+   {
+    "t0": 2.709,
+    "t1": 4.152,
+    "text": "and checked the public URL."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "In the code, a Modal Cron schedule runs the collection every hour.",
+  "dur": 3.454,
+  "takeAt": 36.626,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+   ],
+   [
+    "0002.png",
+    "Devin built it from one plain prompt in the demo apps repo.",
+    "Devin built it from one plain prompt in the demo apps repo."
+   ],
+   [
+    "0003.png",
+    "It ran the tests, deployed with modal deploy, and checked the public URL.",
+    "It ran the tests, deployed with modal deploy, and checked the public URL."
+   ],
+   [
+    "0004.png",
+    "In the code, a Modal Cron schedule runs the collection every hour.",
+    "In the code, a Modal Cron schedule runs the collection every hour."
+   ],
+   [
+    "0005.png",
+    "And search dot map runs the six searches in parallel.",
+    "And search dot map runs the six searches in parallel."
+   ],
+   [
+    "0006.png",
+    "It all landed in one pull request.",
+    "It all landed in one pull request."
+   ],
+   [
+    "0007.png",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
+   ],
+   [
+    "0008.png",
+    "A chart counts the posts from each hourly run.",
+    "A chart counts the posts from each hourly run."
+   ],
+   [
+    "0009.png",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
+   ],
+   [
+    "0010.png",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.7,
+    "text": "In the code,"
+   },
+   {
+    "t0": 0.723,
+    "t1": 3.454,
+    "text": "a Modal Cron schedule runs the collection every hour."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "And search dot map runs the six searches in parallel.",
+  "dur": 2.945,
+  "takeAt": 40.395,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+   ],
+   [
+    "0002.png",
+    "Devin built it from one plain prompt in the demo apps repo.",
+    "Devin built it from one plain prompt in the demo apps repo."
+   ],
+   [
+    "0003.png",
+    "It ran the tests, deployed with modal deploy, and checked the public URL.",
+    "It ran the tests, deployed with modal deploy, and checked the public URL."
+   ],
+   [
+    "0004.png",
+    "In the code, a Modal Cron schedule runs the collection every hour.",
+    "In the code, a Modal Cron schedule runs the collection every hour."
+   ],
+   [
+    "0005.png",
+    "And search dot map runs the six searches in parallel.",
+    "And search dot map runs the six searches in parallel."
+   ],
+   [
+    "0006.png",
+    "It all landed in one pull request.",
+    "It all landed in one pull request."
+   ],
+   [
+    "0007.png",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
+   ],
+   [
+    "0008.png",
+    "A chart counts the posts from each hourly run.",
+    "A chart counts the posts from each hourly run."
+   ],
+   [
+    "0009.png",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
+   ],
+   [
+    "0010.png",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.054,
+    "t1": 2.945,
+    "text": "And search dot map runs the six searches in parallel."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "It all landed in one pull request.",
+  "dur": 1.885,
+  "takeAt": 43.505,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+   ],
+   [
+    "0002.png",
+    "Devin built it from one plain prompt in the demo apps repo.",
+    "Devin built it from one plain prompt in the demo apps repo."
+   ],
+   [
+    "0003.png",
+    "It ran the tests, deployed with modal deploy, and checked the public URL.",
+    "It ran the tests, deployed with modal deploy, and checked the public URL."
+   ],
+   [
+    "0004.png",
+    "In the code, a Modal Cron schedule runs the collection every hour.",
+    "In the code, a Modal Cron schedule runs the collection every hour."
+   ],
+   [
+    "0005.png",
+    "And search dot map runs the six searches in parallel.",
+    "And search dot map runs the six searches in parallel."
+   ],
+   [
+    "0006.png",
+    "It all landed in one pull request.",
+    "It all landed in one pull request."
+   ],
+   [
+    "0007.png",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
+   ],
+   [
+    "0008.png",
+    "A chart counts the posts from each hourly run.",
+    "A chart counts the posts from each hourly run."
+   ],
+   [
+    "0009.png",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
+   ],
+   [
+    "0010.png",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.091,
+    "t1": 1.885,
+    "text": "It all landed in one pull request."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+  "dur": 6.805,
+  "takeAt": 45.735,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+   ],
+   [
+    "0002.png",
+    "Devin built it from one plain prompt in the demo apps repo.",
+    "Devin built it from one plain prompt in the demo apps repo."
+   ],
+   [
+    "0003.png",
+    "It ran the tests, deployed with modal deploy, and checked the public URL.",
+    "It ran the tests, deployed with modal deploy, and checked the public URL."
+   ],
+   [
+    "0004.png",
+    "In the code, a Modal Cron schedule runs the collection every hour.",
+    "In the code, a Modal Cron schedule runs the collection every hour."
+   ],
+   [
+    "0005.png",
+    "And search dot map runs the six searches in parallel.",
+    "And search dot map runs the six searches in parallel."
+   ],
+   [
+    "0006.png",
+    "It all landed in one pull request.",
+    "It all landed in one pull request."
+   ],
+   [
+    "0007.png",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
+   ],
+   [
+    "0008.png",
+    "A chart counts the posts from each hourly run.",
+    "A chart counts the posts from each hourly run."
+   ],
+   [
+    "0009.png",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
+   ],
+   [
+    "0010.png",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.032,
+    "t1": 3.283,
+    "text": "The page shows seventy-eight sampled posts from the last day."
+   },
+   {
+    "t0": 3.608,
+    "t1": 5.105,
+    "text": "Fifty-eight are about hiring,"
+   },
+   {
+    "t0": 5.256,
+    "t1": 6.805,
+    "text": "and twenty are about layoffs."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "A chart counts the posts from each hourly run.",
+  "dur": 2.575,
+  "takeAt": 52.775,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+   ],
+   [
+    "0002.png",
+    "Devin built it from one plain prompt in the demo apps repo.",
+    "Devin built it from one plain prompt in the demo apps repo."
+   ],
+   [
+    "0003.png",
+    "It ran the tests, deployed with modal deploy, and checked the public URL.",
+    "It ran the tests, deployed with modal deploy, and checked the public URL."
+   ],
+   [
+    "0004.png",
+    "In the code, a Modal Cron schedule runs the collection every hour.",
+    "In the code, a Modal Cron schedule runs the collection every hour."
+   ],
+   [
+    "0005.png",
+    "And search dot map runs the six searches in parallel.",
+    "And search dot map runs the six searches in parallel."
+   ],
+   [
+    "0006.png",
+    "It all landed in one pull request.",
+    "It all landed in one pull request."
+   ],
+   [
+    "0007.png",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
+   ],
+   [
+    "0008.png",
+    "A chart counts the posts from each hourly run.",
+    "A chart counts the posts from each hourly run."
+   ],
+   [
+    "0009.png",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
+   ],
+   [
+    "0010.png",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.575,
+    "text": "A chart counts the posts from each hourly run."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+  "dur": 7.305,
+  "takeAt": 55.665,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+   ],
+   [
+    "0002.png",
+    "Devin built it from one plain prompt in the demo apps repo.",
+    "Devin built it from one plain prompt in the demo apps repo."
+   ],
+   [
+    "0003.png",
+    "It ran the tests, deployed with modal deploy, and checked the public URL.",
+    "It ran the tests, deployed with modal deploy, and checked the public URL."
+   ],
+   [
+    "0004.png",
+    "In the code, a Modal Cron schedule runs the collection every hour.",
+    "In the code, a Modal Cron schedule runs the collection every hour."
+   ],
+   [
+    "0005.png",
+    "And search dot map runs the six searches in parallel.",
+    "And search dot map runs the six searches in parallel."
+   ],
+   [
+    "0006.png",
+    "It all landed in one pull request.",
+    "It all landed in one pull request."
+   ],
+   [
+    "0007.png",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
+   ],
+   [
+    "0008.png",
+    "A chart counts the posts from each hourly run.",
+    "A chart counts the posts from each hourly run."
+   ],
+   [
+    "0009.png",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
+   ],
+   [
+    "0010.png",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 1.909,
+    "text": "These are counts of posts in a sample,"
+   },
+   {
+    "t0": 2.153,
+    "t1": 3.511,
+    "text": "not labor statistics."
+   },
+   {
+    "t0": 3.836,
+    "t1": 5.821,
+    "text": "And the page never names anyone who posted"
+   },
+   {
+    "t0": 5.856,
+    "t1": 7.305,
+    "text": "about layoffs or job hunting."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+  "dur": 12.944,
+  "takeAt": 63.166,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+   ],
+   [
+    "0002.png",
+    "Devin built it from one plain prompt in the demo apps repo.",
+    "Devin built it from one plain prompt in the demo apps repo."
+   ],
+   [
+    "0003.png",
+    "It ran the tests, deployed with modal deploy, and checked the public URL.",
+    "It ran the tests, deployed with modal deploy, and checked the public URL."
+   ],
+   [
+    "0004.png",
+    "In the code, a Modal Cron schedule runs the collection every hour.",
+    "In the code, a Modal Cron schedule runs the collection every hour."
+   ],
+   [
+    "0005.png",
+    "And search dot map runs the six searches in parallel.",
+    "And search dot map runs the six searches in parallel."
+   ],
+   [
+    "0006.png",
+    "It all landed in one pull request.",
+    "It all landed in one pull request."
+   ],
+   [
+    "0007.png",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
+   ],
+   [
+    "0008.png",
+    "A chart counts the posts from each hourly run.",
+    "A chart counts the posts from each hourly run."
+   ],
+   [
+    "0009.png",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
+   ],
+   [
+    "0010.png",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.118,
+    "text": "To take it further,"
+   },
+   {
+    "t0": 1.327,
+    "t1": 2.999,
+    "text": "track one role over time,"
+   },
+   {
+    "t0": 3.208,
+    "t1": 5.043,
+    "text": "such as forward deployed engineers."
+   },
+   {
+    "t0": 5.251,
+    "t1": 7.411,
+    "text": "You could post a weekly digest to Slack."
+   },
+   {
+    "t0": 7.585,
+    "t1": 10.151,
+    "text": "You could split the counts by region or seniority."
+   },
+   {
+    "t0": 10.325,
+    "t1": 12.944,
+    "text": "And you could get an alert when a skill suddenly spikes."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Your own job-market numbers, every hour.",
+  "dur": 2.183,
+  "takeAt": 76.227,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report.",
+    "This is a job-market pulse. Every hour it samples tech posts on X, sorts them into hiring, layoffs and looking for work, and counts the roles, companies and skills they mention. You get your own up-to-date numbers, instead of waiting for a monthly report."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page.",
+    "Here's how it works. Grok searches X through the ex A I API. A Modal Cron job runs every hour, and dot map fans the searches and labels out in parallel. Each run is saved to a Modal Volume, and a web endpoint serves the page."
+   ],
+   [
+    "0002.png",
+    "Devin built it from one plain prompt in the demo apps repo.",
+    "Devin built it from one plain prompt in the demo apps repo."
+   ],
+   [
+    "0003.png",
+    "It ran the tests, deployed with modal deploy, and checked the public URL.",
+    "It ran the tests, deployed with modal deploy, and checked the public URL."
+   ],
+   [
+    "0004.png",
+    "In the code, a Modal Cron schedule runs the collection every hour.",
+    "In the code, a Modal Cron schedule runs the collection every hour."
+   ],
+   [
+    "0005.png",
+    "And search dot map runs the six searches in parallel.",
+    "And search dot map runs the six searches in parallel."
+   ],
+   [
+    "0006.png",
+    "It all landed in one pull request.",
+    "It all landed in one pull request."
+   ],
+   [
+    "0007.png",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs.",
+    "The page shows seventy-eight sampled posts from the last day. Fifty-eight are about hiring, and twenty are about layoffs."
+   ],
+   [
+    "0008.png",
+    "A chart counts the posts from each hourly run.",
+    "A chart counts the posts from each hourly run."
+   ],
+   [
+    "0009.png",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting.",
+    "These are counts of posts in a sample, not labor statistics. And the page never names anyone who posted about layoffs or job hunting."
+   ],
+   [
+    "0010.png",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
+    "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.183,
+    "text": "Your own job-market numbers, every hour."
+   }
+  ]
+ }
+}

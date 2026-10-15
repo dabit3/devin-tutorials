@@ -1,0 +1,2075 @@
+{
+ "0000.png": {
+  "text": "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+  "dur": 11.24,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.474,
+    "text": "This is a job-market pulse."
+   },
+   {
+    "t0": 1.8,
+    "t1": 3.831,
+    "text": "Every hour, it samples tech posts on X"
+   },
+   {
+    "t0": 3.901,
+    "t1": 6.745,
+    "text": "about hiring, layoffs and people looking for work,"
+   },
+   {
+    "t0": 6.989,
+    "t1": 8.173,
+    "text": "sorts them with Grok,"
+   },
+   {
+    "t0": 8.382,
+    "t1": 9.509,
+    "text": "and shows which roles,"
+   },
+   {
+    "t0": 9.567,
+    "t1": 11.24,
+    "text": "companies and skills come up most."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+  "say": "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+  "dur": 11.215,
+  "takeAt": 11.575,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.105,
+    "t1": 0.941,
+    "text": "Here's the prompt."
+   },
+   {
+    "t0": 1.091,
+    "t1": 2.787,
+    "text": "I'm asking Devin to build it on"
+   },
+   {
+    "t0": 2.837,
+    "t1": 4.812,
+    "text": "Modal with the xAI API and X search,"
+   },
+   {
+    "t0": 4.862,
+    "t1": 7.6,
+    "text": "to label every number as a count of sampled posts,"
+   },
+   {
+    "t0": 7.65,
+    "t1": 9.186,
+    "text": "and to never name people who"
+   },
+   {
+    "t0": 9.236,
+    "t1": 11.215,
+    "text": "posted about layoffs or job hunting."
+   }
+  ]
+ },
+ "0012.png": {
+  "text": "Devin also deploys it, tests the public URL, and opens a pull request.",
+  "dur": 4.162,
+  "takeAt": 23.158,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.444,
+    "text": "Devin also deploys it,"
+   },
+   {
+    "t0": 1.571,
+    "t1": 2.93,
+    "text": "tests the public URL,"
+   },
+   {
+    "t0": 2.965,
+    "t1": 4.162,
+    "text": "and opens a pull request."
+   }
+  ]
+ },
+ "0020.png": {
+  "text": "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+  "say": "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code.",
+  "dur": 5.018,
+  "takeAt": 27.652,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.569,
+    "text": "Devin sets up Modal and reads the current xAI"
+   },
+   {
+    "t0": 2.619,
+    "t1": 5.018,
+    "text": "docs for X search before it writes any code."
+   }
+  ]
+ },
+ "0079.png": {
+  "text": "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+  "dur": 5.235,
+  "takeAt": 32.905,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.103,
+    "t1": 1.171,
+    "text": "Then it writes the app,"
+   },
+   {
+    "t0": 1.415,
+    "t1": 3.226,
+    "text": "a dark web page and the tests,"
+   },
+   {
+    "t0": 3.435,
+    "t1": 5.235,
+    "text": "and runs a first collection on Modal."
+   }
+  ]
+ },
+ "0135.png": {
+  "text": "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+  "dur": 4.88,
+  "takeAt": 38.46,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.77,
+    "text": "It runs the linter and the tests,"
+   },
+   {
+    "t0": 1.92,
+    "t1": 3.383,
+    "text": "deploys with modal deploy,"
+   },
+   {
+    "t0": 3.511,
+    "t1": 4.88,
+    "text": "and checks the public URL."
+   }
+  ]
+ },
+ "0154.png": {
+  "text": "And it opens a pull request in the demo apps repo.",
+  "dur": 2.845,
+  "takeAt": 43.735,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.012,
+    "t1": 1.719,
+    "text": "And it opens a pull request in the"
+   },
+   {
+    "t0": 1.765,
+    "t1": 2.845,
+    "text": "demo apps repo."
+   }
+  ]
+ },
+ "0300.png": {
+  "text": "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+  "dur": 5.514,
+  "takeAt": 47.076,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.976,
+    "text": "Devin Review flagged privacy and accuracy issues,"
+   },
+   {
+    "t0": 3.301,
+    "t1": 5.514,
+    "text": "so Devin fixed them in the same pull request."
+   }
+  ]
+ },
+ "0329.png": {
+  "text": "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+  "dur": 6.481,
+  "takeAt": 53.159,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.071,
+    "text": "Its summary says the eight tests and the"
+   },
+   {
+    "t0": 2.117,
+    "t1": 4.811,
+    "text": "linter pass, and the fresh run kept forty-six"
+   },
+   {
+    "t0": 4.892,
+    "t1": 6.481,
+    "text": "of a hundred and twenty-five posts."
+   }
+  ]
+ },
+ "0334.png": {
+  "text": "The pull request is open for review, so let's look at the code.",
+  "dur": 3.035,
+  "takeAt": 60.085,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.855,
+    "text": "The pull request is open for review,"
+   },
+   {
+    "t0": 1.913,
+    "t1": 3.035,
+    "text": "so let's look at the code."
+   }
+  ]
+ },
+ "0336.png": {
+  "text": "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+  "say": "Each search calls the ex A I Responses API with the X search tool, limited to recent posts.",
+  "dur": 5.945,
+  "takeAt": 63.535,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.042,
+    "t1": 2.39,
+    "text": "Each search calls the xAI Responses"
+   },
+   {
+    "t0": 2.44,
+    "t1": 4.268,
+    "text": "API with the X search tool,"
+   },
+   {
+    "t0": 4.318,
+    "t1": 5.945,
+    "text": "limited to recent posts."
+   }
+  ]
+ },
+ "0337.png": {
+  "text": "A Modal Cron schedule runs the collection at the top of every hour.",
+  "dur": 3.135,
+  "takeAt": 70.175,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.008,
+    "t1": 2.098,
+    "text": "A Modal Cron schedule runs the collection at"
+   },
+   {
+    "t0": 2.144,
+    "t1": 3.135,
+    "text": "the top of every hour."
+   }
+  ]
+ },
+ "0338.png": {
+  "text": "With search dot map, the six searches run in parallel.",
+  "dur": 2.924,
+  "takeAt": 73.906,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.258,
+    "text": "With search dot map,"
+   },
+   {
+    "t0": 1.304,
+    "t1": 2.924,
+    "text": "the six searches run in parallel."
+   }
+  ]
+ },
+ "0339.png": {
+  "text": "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+  "dur": 5.246,
+  "takeAt": 77.424,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.453,
+    "text": "Then classify dot map sends each post to"
+   },
+   {
+    "t0": 2.511,
+    "t1": 3.51,
+    "text": "Grok in parallel,"
+   },
+   {
+    "t0": 3.684,
+    "t1": 5.246,
+    "text": "and gets back a structured label."
+   }
+  ]
+ },
+ "0340.png": {
+  "text": "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+  "dur": 4.743,
+  "takeAt": 82.997,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.558,
+    "text": "And the asgi app decorator serves the page"
+   },
+   {
+    "t0": 2.593,
+    "t1": 4.743,
+    "text": "and its data from a Modal web endpoint."
+   }
+  ]
+ },
+ "0346.png": {
+  "text": "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+  "dur": 8.235,
+  "takeAt": 87.995,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.079,
+    "t1": 2.018,
+    "text": "And here's the page running on Modal."
+   },
+   {
+    "t0": 2.297,
+    "t1": 4.596,
+    "text": "In the last day it has seventy-eight sampled"
+   },
+   {
+    "t0": 4.619,
+    "t1": 8.235,
+    "text": "posts, fifty-eight about hiring and twenty about layoffs."
+   }
+  ]
+ },
+ "0350.png": {
+  "text": "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+  "dur": 10.998,
+  "takeAt": 96.522,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.943,
+    "text": "The top role is Software Engineer,"
+   },
+   {
+    "t0": 1.978,
+    "t1": 3.533,
+    "text": "and the top skill is Python."
+   },
+   {
+    "t0": 3.975,
+    "t1": 6.32,
+    "text": "No looking-for-work posts turned up in this sample"
+   },
+   {
+    "t0": 6.355,
+    "t1": 8.398,
+    "text": "yet, and every number here is a count"
+   },
+   {
+    "t0": 8.444,
+    "t1": 9.524,
+    "text": "of sampled posts,"
+   },
+   {
+    "t0": 9.768,
+    "t1": 10.998,
+    "text": "not a labor statistic."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Your own job-market numbers, every hour.",
+  "dur": 2.129,
+  "takeAt": 107.981,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
+    "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+   ],
+   [
+    "0007.png",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
+    "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting."
+   ],
+   [
+    "0012.png",
+    "Devin also deploys it, tests the public URL, and opens a pull request.",
+    "Devin also deploys it, tests the public URL, and opens a pull request."
+   ],
+   [
+    "0020.png",
+    "Devin sets up Modal and reads the current xAI docs for X search before it writes any code.",
+    "Devin sets up Modal and reads the current ex A I docs for X search before it writes any code."
+   ],
+   [
+    "0079.png",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal.",
+    "Then it writes the app, a dark web page and the tests, and runs a first collection on Modal."
+   ],
+   [
+    "0135.png",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL.",
+    "It runs the linter and the tests, deploys with modal deploy, and checks the public URL."
+   ],
+   [
+    "0154.png",
+    "And it opens a pull request in the demo apps repo.",
+    "And it opens a pull request in the demo apps repo."
+   ],
+   [
+    "0300.png",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request.",
+    "Devin Review flagged privacy and accuracy issues, so Devin fixed them in the same pull request."
+   ],
+   [
+    "0329.png",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts.",
+    "Its summary says the eight tests and the linter pass, and the fresh run kept forty-six of a hundred and twenty-five posts."
+   ],
+   [
+    "0334.png",
+    "The pull request is open for review, so let's look at the code.",
+    "The pull request is open for review, so let's look at the code."
+   ],
+   [
+    "0336.png",
+    "Each search calls the xAI Responses API with the X search tool, limited to recent posts.",
+    "Each search calls the ex A I Responses API with the X search tool, limited to recent posts."
+   ],
+   [
+    "0337.png",
+    "A Modal Cron schedule runs the collection at the top of every hour.",
+    "A Modal Cron schedule runs the collection at the top of every hour."
+   ],
+   [
+    "0338.png",
+    "With search dot map, the six searches run in parallel.",
+    "With search dot map, the six searches run in parallel."
+   ],
+   [
+    "0339.png",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label.",
+    "Then classify dot map sends each post to Grok in parallel, and gets back a structured label."
+   ],
+   [
+    "0340.png",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint.",
+    "And the asgi app decorator serves the page and its data from a Modal web endpoint."
+   ],
+   [
+    "0346.png",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
+    "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs."
+   ],
+   [
+    "0350.png",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
+    "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic."
+   ],
+   [
+    "outro",
+    "Your own job-market numbers, every hour.",
+    "Your own job-market numbers, every hour."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.129,
+    "text": "Your own job-market numbers, every hour."
+   }
+  ]
+ }
+}
