@@ -36,10 +36,10 @@ window.SPEC = {
         "z": 1.8
       },
       "ring": {
-        "x": 1005,
-        "y": 397,
-        "w": 150,
-        "h": 50
+        "x": 1008.5,
+        "y": 388.65,
+        "w": 99.6,
+        "h": 33.3
       },
       "cap": "New counters under HI-SCORE in the iOS Simulator",
       "vo": "Here it plays the game in the Simulator, with the new counters under the high score."
@@ -84,10 +84,10 @@ window.SPEC = {
         "z": 1.8
       },
       "ring": {
-        "x": 982,
-        "y": 376,
-        "w": 160,
-        "h": 50
+        "x": 982.5,
+        "y": 364.5,
+        "w": 117,
+        "h": 39
       },
       "cap": "GAMES 2 · HOPS 5, kept after a force stop",
       "vo": "On the emulator, the counters still read two games and five hops after a force stop."
@@ -114,10 +114,10 @@ window.SPEC = {
         "z": 1.15
       },
       "ring": {
-        "x": 1007,
-        "y": 700,
-        "w": 822,
-        "h": 170
+        "x": 954.17,
+        "y": 702.5,
+        "w": 715,
+        "h": 177
       },
       "subPos": {
         "x": 0.2,
@@ -131,10 +131,10 @@ window.SPEC = {
       "cursor": false,
       "hl": null,
       "ring": {
-        "x": 1030,
-        "y": 620,
-        "w": 760,
-        "h": 330
+        "x": 1020.33,
+        "y": 541.17,
+        "w": 735.33,
+        "h": 231.67
       },
       "subPos": {
         "x": 0.2,

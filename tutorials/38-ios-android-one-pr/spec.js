@@ -118,10 +118,10 @@ window.SPEC = {
         "z": 1.8
       },
       "ring": {
-        "x": 1005,
-        "y": 397,
-        "w": 150,
-        "h": 50
+        "x": 1008.5,
+        "y": 388.65,
+        "w": 99.6,
+        "h": 33.3
       },
       "cap": "New: games played and total hops under HI-SCORE",
       "vo": "The new counters sit right under the high score, with games played on the left and total hops on the right.",
@@ -294,10 +294,10 @@ window.SPEC = {
         "z": 1.8
       },
       "ring": {
-        "x": 982,
-        "y": 383,
-        "w": 160,
-        "h": 50
+        "x": 982.5,
+        "y": 364.5,
+        "w": 117,
+        "h": 39
       },
       "cap": "Fresh install: GAMES 0 · HOPS 0",
       "vo": "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
@@ -314,10 +314,10 @@ window.SPEC = {
         "z": 1.8
       },
       "ring": {
-        "x": 982,
-        "y": 376,
-        "w": 160,
-        "h": 50
+        "x": 982.5,
+        "y": 364.5,
+        "w": 117,
+        "h": 39
       },
       "cap": "After two runs and a force stop: GAMES 2 · HOPS 5",
       "vo": "After two runs and a force stop, it still shows two games and five hops.",
@@ -348,10 +348,10 @@ window.SPEC = {
     },
     "0253.png": {
       "ring": {
-        "x": 282.75,
-        "y": 432.5,
-        "w": 460.5,
-        "h": 187.5
+        "x": 278.5,
+        "y": 434.17,
+        "w": 461.67,
+        "h": 190.33
       },
       "cap": "A suggested blueprint update for next time",
       "vo": "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
@@ -375,10 +375,10 @@ window.SPEC = {
       "hold": 2.0,
       "cap": "The iOS test from the macOS session",
       "ring": {
-        "x": 1007,
-        "y": 700,
-        "w": 822,
-        "h": 170
+        "x": 954.17,
+        "y": 702.5,
+        "w": 715,
+        "h": 177
       },
       "vo": "First comes the iOS test from the macOS session, run in the iPhone simulator.",
       "subPos": {
@@ -395,10 +395,10 @@ window.SPEC = {
       "hold": 2.4,
       "cap": "The Android test from the Ubuntu session, on the same PR",
       "ring": {
-        "x": 1030,
-        "y": 620,
-        "w": 760,
-        "h": 330
+        "x": 1020.33,
+        "y": 541.17,
+        "w": 735.33,
+        "h": 231.67
       },
       "vo": "Right below it is the Android test from the Ubuntu session, on the same pull request.",
       "subPos": {
