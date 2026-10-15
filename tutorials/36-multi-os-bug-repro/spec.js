@@ -1,12 +1,12 @@
 window.SPEC = {
   "title": "One bug, three operating systems",
   "subtitle": "Multi-platform blueprints, managed Devins and recordings",
-  "outro": "One bug, three operating systems, one verified fix",
-  "voOutro": "One bug, three operating systems, one verified fix.",
+  "outro": "Fix one bug on Linux, macOS and Windows",
+  "voOutro": "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.3,
-  "pollRunMax": 2.2,
+  "pollRunMax": 0.8,
   "edit": {
     "0001.png": {
       "skip": true
@@ -1227,10 +1227,10 @@ window.SPEC = {
       "hold": 6,
       "cursor": false,
       "cap": "One bug, sent to Linux, macOS and Windows",
-      "vo": "Some bugs only show up on one operating system. With a multi-platform blueprint and managed Devins, one coordinator sends the same bug to Linux, macOS and Windows. Each Devin records a repro, and one fix gets verified on all three."
+      "vo": "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
     },
     "0007.png": {
-      "hold": 5.5,
+      "hold": 4.5,
       "cursor": false,
       "cap": "Ask Devin to set up the environment",
       "voGap": 1.2,
@@ -1240,22 +1240,24 @@ window.SPEC = {
       "badge": "Sped up"
     },
     "0019.png": {
-      "hold": 4,
+      "hold": 2.7,
       "cap": "Devin inspects the repo and tries the setup",
       "vo": "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
     },
     "0077.png": {
       "badge": null,
       "cap": "Approve each test machine",
-      "vo": "Before it tests macOS and Windows, it asks me to approve each test machine."
+      "vo": "Before it tests macOS and Windows, it asks me to approve each test machine.",
+      "hold": 2.2
     },
     "0080.png": {
-      "hold": 1.2
+      "hold": 0.3
     },
     "0347.png": {
       "cap": "Devin proposes the blueprint, I approve",
-      "voGap": 1.0,
-      "vo": "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+      "voGap": 0.5,
+      "vo": "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+      "hold": 2.5
     },
     "0351.png": {
       "badge": "Sped up",
@@ -1264,14 +1266,14 @@ window.SPEC = {
     "0420.png": {
       "badge": null,
       "cap": "Windows needs Node 22: pick the fix",
-      "voGap": 1.0,
+      "voGap": 0.5,
       "vo": "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
     },
     "0423.png": {
       "hold": 1.2
     },
     "0545.png": {
-      "hold": 3,
+      "hold": 1.2,
       "cap": "The Windows test machine never comes up",
       "vo": "The Windows test machine never comes up."
     },
@@ -1284,25 +1286,26 @@ window.SPEC = {
       "badge": "Sped up"
     },
     "0561.png": {
-      "hold": 4,
+      "hold": 2.0,
       "cap": "A managed Devin checks Node 22 on Windows",
       "vo": "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
     },
     "0661.png": {
       "badge": null,
       "cap": "Approve the Windows update",
-      "vo": "Then it proposes the Windows update, and I approve it.",
-      "hold": 2.8
+      "vo": "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+      "hold": 2.2
     },
     "0665.png": {
       "badge": "Sped up",
-      "hold": 0.6
+      "hold": 0.6,
+      "skip": true
     },
     "0769.png": {
       "badge": null,
       "hold": 4.5,
       "cap": "Active snapshots: Ubuntu, macOS and Windows",
-      "voGap": 1.2,
+      "voGap": 0.5,
       "vo": "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
     },
     "0773.png": {
@@ -1312,7 +1315,7 @@ window.SPEC = {
       "vo": "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
     },
     "0780.png": {
-      "hold": 6,
+      "hold": 5.2,
       "cursor": false,
       "cap": "One prompt: three managed Devins, one fix",
       "voGap": 1.2,
@@ -1322,20 +1325,20 @@ window.SPEC = {
       "badge": "Sped up"
     },
     "0799.png": {
-      "hold": 4,
+      "hold": 3.3,
       "cap": "Three managed Devins, one per OS",
       "voGap": 1.0,
       "vo": "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
     },
     "0839.png": {
-      "hold": 3.5,
+      "hold": 2.7,
       "cap": "It writes the fix and opens a PR",
       "vo": "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
     },
     "0882.png": {
       "badge": null,
       "cap": "The Agents tab lists all three children",
-      "voGap": 1.2,
+      "voGap": 0.5,
       "vo": "The Agents tab lists all three children, and each one is done."
     },
     "0883.png": {
@@ -1349,36 +1352,40 @@ window.SPEC = {
     },
     "0887.png": {
       "cap": "Precondition passes, Reset check fails",
-      "vo": "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+      "vo": "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+      "hold": 2.4
     },
     "0909.png": {
       "cap": "Linux re-tests the fix branch",
-      "voGap": 1.0,
-      "vo": "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+      "voGap": 0.5,
+      "vo": "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+      "hold": 2.0
     },
     "0932.png": {
       "cap": "Linux: 3 passed",
-      "badge": null
+      "badge": null,
+      "hold": 0.6
     },
     "0933.png": {
       "skip": true
     },
     "0971.png": {
-      "hold": 2.5,
+      "hold": 2.0,
       "cap": "macOS: 3 passed"
     },
     "0972.png": {
       "skip": true
     },
     "1023.png": {
-      "hold": 2.5,
+      "hold": 2.0,
       "cap": "Windows: 4 passed"
     },
     "0888.png": {
       "badge": "Sped up"
     },
     "0908.png": {
-      "badge": null
+      "badge": null,
+      "hold": 0.6
     },
     "0913.png": {
       "badge": "Sped up"
@@ -1387,10 +1394,10 @@ window.SPEC = {
       "skip": true
     },
     "0951.png": {
-      "hold": 3.5,
+      "hold": 2.4,
       "badge": null,
       "cap": "macOS: the same bug",
-      "voGap": 1.0,
+      "voGap": 0.5,
       "vo": "macOS shows the same bug on main, and every check passes on the fix branch."
     },
     "0956.png": {
@@ -1400,10 +1407,10 @@ window.SPEC = {
       "skip": true
     },
     "0997.png": {
-      "hold": 3.5,
+      "hold": 2.4,
       "badge": null,
       "cap": "Windows: the same bug",
-      "voGap": 1.0,
+      "voGap": 0.5,
       "vo": "Windows tells the same story, with the bug on main and every check passing on the fix."
     },
     "1002.png": {
@@ -1412,7 +1419,7 @@ window.SPEC = {
     "1030.png": {
       "hold": 4,
       "cap": "One PR: Reset now clears the history",
-      "voGap": 1.2,
+      "voGap": 0.5,
       "vo": "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
     },
     "1027.png": {
@@ -1736,7 +1743,8 @@ window.SPEC = {
       "skip": true
     },
     "0690.png": {
-      "hold": 0.6
+      "hold": 0.6,
+      "skip": true
     },
     "0691.png": {
       "skip": true
@@ -1811,7 +1819,8 @@ window.SPEC = {
       "skip": true
     },
     "0715.png": {
-      "hold": 0.6
+      "hold": 0.6,
+      "skip": true
     },
     "0716.png": {
       "skip": true
@@ -1886,7 +1895,8 @@ window.SPEC = {
       "skip": true
     },
     "0740.png": {
-      "hold": 0.6
+      "hold": 0.6,
+      "skip": true
     },
     "0741.png": {
       "skip": true
@@ -2027,7 +2037,8 @@ window.SPEC = {
       "skip": true
     },
     "0370.png": {
-      "hold": 0.6
+      "hold": 0.6,
+      "skip": true
     },
     "0371.png": {
       "skip": true
@@ -2102,7 +2113,8 @@ window.SPEC = {
       "skip": true
     },
     "0395.png": {
-      "hold": 0.6
+      "hold": 0.6,
+      "skip": true
     },
     "0396.png": {
       "skip": true
@@ -2177,7 +2189,158 @@ window.SPEC = {
       "skip": true
     },
     "0664.png": {
+      "hold": 0.5
+    },
+    "0350.png": {
+      "hold": 0.6
+    },
+    "0549.png": {
+      "hold": 0.4
+    },
+    "0770.png": {
+      "hold": 0.6
+    },
+    "0912.png": {
       "hold": 1.0
+    },
+    "0841.png": {
+      "skip": true
+    },
+    "0842.png": {
+      "skip": true
+    },
+    "0844.png": {
+      "skip": true
+    },
+    "0845.png": {
+      "skip": true
+    },
+    "0847.png": {
+      "skip": true
+    },
+    "0848.png": {
+      "skip": true
+    },
+    "0850.png": {
+      "skip": true
+    },
+    "0851.png": {
+      "skip": true
+    },
+    "0853.png": {
+      "skip": true
+    },
+    "0854.png": {
+      "skip": true
+    },
+    "0856.png": {
+      "skip": true
+    },
+    "0857.png": {
+      "skip": true
+    },
+    "0859.png": {
+      "skip": true
+    },
+    "0860.png": {
+      "skip": true
+    },
+    "0862.png": {
+      "skip": true
+    },
+    "0863.png": {
+      "skip": true
+    },
+    "0865.png": {
+      "skip": true
+    },
+    "0866.png": {
+      "skip": true
+    },
+    "0869.png": {
+      "skip": true
+    },
+    "0870.png": {
+      "skip": true
+    },
+    "0872.png": {
+      "skip": true
+    },
+    "0873.png": {
+      "skip": true
+    },
+    "0875.png": {
+      "skip": true
+    },
+    "0876.png": {
+      "skip": true
+    },
+    "0878.png": {
+      "skip": true
+    },
+    "0879.png": {
+      "skip": true
+    },
+    "0881.png": {
+      "skip": true
+    },
+    "0889.png": {
+      "skip": true
+    },
+    "0891.png": {
+      "skip": true
+    },
+    "0893.png": {
+      "skip": true
+    },
+    "0895.png": {
+      "skip": true
+    },
+    "0897.png": {
+      "skip": true
+    },
+    "0899.png": {
+      "skip": true
+    },
+    "0901.png": {
+      "skip": true
+    },
+    "0903.png": {
+      "skip": true
+    },
+    "0905.png": {
+      "skip": true
+    },
+    "0907.png": {
+      "skip": true
+    },
+    "0914.png": {
+      "skip": true
+    },
+    "0916.png": {
+      "skip": true
+    },
+    "0918.png": {
+      "skip": true
+    },
+    "0920.png": {
+      "skip": true
+    },
+    "0922.png": {
+      "skip": true
+    },
+    "0924.png": {
+      "skip": true
+    },
+    "0926.png": {
+      "skip": true
+    },
+    "0928.png": {
+      "skip": true
+    },
+    "0930.png": {
+      "skip": true
     }
-  }
+  },
+  "tailHold": 0
 };

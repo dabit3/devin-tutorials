@@ -2,7 +2,7 @@
 
 Narrated in Nader's voice (`T8iHhGIWPm2GVYpQD1Am`), generated as one ElevenLabs take with default voice settings and cut locally (`_kit/tools/vo_onetake.py`). Diagram beats are drawn by `scenes.js`; every UI shot is a real frame from tutorial 36 (see `shots/SOURCES.json`).
 
-- **0000.png** (diagram `idea`): When a bug shows up in a desktop app, one coordinator Devin can reproduce it on Linux, macOS and Windows at the same time, and verify a single fix on all three.
+- **0000.png** (diagram `idea`): In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.
 - **0001.png** (proof: 36/shots/0006.png): A multi-platform blueprint gives the repo a snapshot for each operating system.
 - **0002.png** (diagram `fan`): The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.
 - **0003.png** (proof: 36/shots/0031.png): Here are the three children, working on the same bug report in parallel.
@@ -14,7 +14,7 @@ Narrated in Nader's voice (`T8iHhGIWPm2GVYpQD1Am`), generated as one ElevenLabs 
 - **0009.png** (proof: 36/shots/0214.png): The coordinator's summary closes the loop, with the fix verified on all three systems.
 - **0010.png** (diagram `usecases`): Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.
 
-**Outro:** Reproduce it on every platform, fix it once, and verify it everywhere.
+**Outro:** That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.
 
 ## Sources
 

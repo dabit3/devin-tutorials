@@ -4,7 +4,7 @@ Narrated in Nader's voice (`T8iHhGIWPm2GVYpQD1Am`), generated as one ElevenLabs 
 
 ## Intro
 
-- Some bugs only show up on one operating system. With a multi-platform blueprint and managed Devins, one coordinator sends the same bug to Linux, macOS and Windows. Each Devin records a repro, and one fix gets verified on all three.
+- In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.
 
 ## Environment setup in plain English
 
@@ -24,7 +24,7 @@ Narrated in Nader's voice (`T8iHhGIWPm2GVYpQD1Am`), generated as one ElevenLabs 
 
 - It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.
 
-- Then it proposes the Windows update, and I approve it.
+- Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.
 
 - After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.
 
@@ -64,7 +64,7 @@ Narrated in Nader's voice (`T8iHhGIWPm2GVYpQD1Am`), generated as one ElevenLabs 
 
 - Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.
 
-**Outro:** One bug, three operating systems, one verified fix.
+**Outro:** That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.
 
 ## Prompts typed on screen
 

@@ -199,11 +199,23 @@ const USES = [
   { t: 'Release checks', sub: 'Verify one branch on each platform in parallel', p: ['Linux', 'macOS', 'Windows'] },
   { t: 'Proof for reviewers', sub: 'A recording from every platform on one PR', p: ['Linux'] },
 ];
+function cueTimes(img, words) {
+  const L = window.SPEC.voLines && window.SPEC.voLines[img]; if (!L) return null;
+  const W = [];
+  for (const ch of L.chunks) {
+    let o = 0;
+    for (const w of ch.text.split(' ')) { W.push({ w: w.toLowerCase().replace(/[^a-z]/g, ''), t: ch.t0 + (ch.t1 - ch.t0) * o / ch.text.length }); o += w.length + 1; }
+  }
+  let from = 0;
+  return words.map(cw => { const j = W.findIndex((x, n) => n >= from && x.w === cw); if (j < 0) return null; from = j + 1; return W[j].t; })
+    .map((t, i, a) => t ?? (i ? a[i - 1] + 1.0 : 0.4));
+}
 function usecases(ctx, s, k) {
+  const cue = cueTimes('0010.png', ['bugs', 'desktop', 'any']);
   eyebrow(ctx, k, 'WHERE IT PAYS OFF', 196, k.eOut(k.prog(s, 0.05, 0.6)));
   const cw = 560, ch = 150, gx = 28, gy = 26, x0 = (k.VW - (2 * cw + gx)) / 2, y0 = 248;
   USES.forEach((u, i) => {
-    const t0 = 0.3 + i * 0.9, a = up(k, s, t0);
+    const t0 = cue ? Math.max(0.2, cue[i] - 0.25) : 0.3 + i * 0.9, a = up(k, s, t0);
     const x = x0 + (i % 2) * (cw + gx), y = y0 + Math.floor(i / 2) * (ch + gy) + 16 * (1 - a);
     const on = k.eOutQuint(k.prog(s, t0, t0 + 0.4)) * (1 - k.eInOut(k.prog(s, t0 + 1.0, t0 + 1.6)));
     card(ctx, k, x, y, cw, ch, a, on);

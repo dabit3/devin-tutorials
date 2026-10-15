@@ -1,20 +1,20 @@
 window.SPEC = {
   "title": "One bug, three operating systems",
   "subtitle": "Multi-platform blueprints, managed Devins and recordings, an overview",
-  "outro": "Reproduce on every OS, fix once, verify everywhere",
-  "voOutro": "Reproduce it on every platform, fix it once, and verify it everywhere.",
+  "outro": "One fix, verified on Linux, macOS and Windows",
+  "voOutro": "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.3,
   "edit": {
     "0000.png": {
       "scene": "idea",
-      "hold": 8.5,
+      "hold": 8.0,
       "cursor": false,
       "capPos": "bottom",
       "hl": null,
       "cap": "One bug, reproduced on three operating systems",
-      "vo": "When a bug shows up in a desktop app, one coordinator Devin can reproduce it on Linux, macOS and Windows at the same time, and verify a single fix on all three."
+      "vo": "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three."
     },
     "0001.png": {
       "hold": 5,
@@ -27,7 +27,7 @@ window.SPEC = {
     },
     "0002.png": {
       "scene": "fan",
-      "hold": 6.8,
+      "hold": 6.3,
       "cursor": false,
       "capPos": "bottom",
       "hl": null,
@@ -100,7 +100,7 @@ window.SPEC = {
     },
     "0010.png": {
       "scene": "usecases",
-      "hold": 8.5,
+      "hold": 6.0,
       "cursor": false,
       "capPos": "bottom",
       "hl": null,
@@ -108,5 +108,6 @@ window.SPEC = {
       "voGap": 1.2,
       "vo": "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
     }
-  }
+  },
+  "tailHold": 0
 };
