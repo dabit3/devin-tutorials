@@ -16,6 +16,7 @@ SEED = os.environ.get('VO_SEED', '1234')  # VO_SEED=none sends no seed, so every
 LUFS = float(os.environ.get('VO_LUFS', '-21'))
 PAD_IN, PAD_OUT = float(os.environ.get('VO_PAD_IN', '0.12')), float(os.environ.get('VO_PAD_OUT', '0.15'))
 SR = 48000
+JOIN = os.environ.get('VO_JOIN', ' ').encode().decode('unicode_escape')  # VO_JOIN='\n\n' makes each line its own paragraph, so it ends on a falling tone
 spec = json.loads(re.sub(r'^\s*window\.SPEC\s*=\s*', '', open(os.path.join(VD, 'spec.js')).read()).rstrip().rstrip(';'))
 beats = json.load(open(os.path.join(VD, 'shots', 'beats.json')))
 E = spec.get('edit', {})
@@ -27,7 +28,7 @@ for img, text, _ in order:
 out = os.path.join(VD, 'vo', VOICE); os.makedirs(out, exist_ok=True)
 U, bounds = '', []
 for _, _, say in order:
-    if U: U += ' '
+    if U: U += JOIN
     bounds.append((len(U), len(U) + len(say))); U += say
 
 def tts(seed):
