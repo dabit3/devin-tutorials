@@ -2,8 +2,12 @@ window.SPEC = {
   "title": "Devin Review",
   "subtitle": "Find the bugs in a pull request, ask why, and commit the fix",
   "outro": "Catch bugs before they merge",
+  "voOutro": "Catch bugs before they merge.",
   "speed": 3,
-  "cps": 30,
+  "cps": 48,
+  "capPos": "auto",
+  "capArrows": false,
+  "pollRunMax": 2.5,
   "noZoom": [
     [
       "0000.png"
@@ -11,400 +15,179 @@ window.SPEC = {
   ],
   "edit": {
     "0000.png": {
-      "hold": 1.4
+      "hold": 2.6,
+      "cursor": false,
+      "vo": "Devin Review helps you understand a pull request, and catch its bugs before they merge."
+    },
+    "0001.png": {
+      "cap": "Open Review in the sidebar",
+      "hl": true,
+      "vo": "Open Review from the sidebar."
+    },
+    "0003.png": {
+      "skip": true
+    },
+    "0004.png": {
+      "cap": "A demo PR with a bug planted on purpose",
+      "hl": true,
+      "hold": 2.8,
+      "capPos": "bottom",
+      "vo": "It lists the pull requests waiting on you. For this demo, we had Devin open one that adds card counts to a kanban board, with a subtle bug planted on purpose."
+    },
+    "0005.png": {
+      "cap": "Open the pull request",
+      "hl": true,
+      "vo": "Open it."
+    },
+    "0007.png": {
+      "skip": true
+    },
+    "0008.png": {
+      "hold": 0.6
+    },
+    "0009.png": {
+      "cap": "Devin's summary of the changes",
+      "hl": true,
+      "hold": 2.6,
+      "capPos": "bottom",
+      "vo": "Devin reviewed it as soon as it opened, and sums up what it changes."
     },
     "0010.png": {
-      "hold": 2.8,
-      "cap": "Devin reads the diff and hunts for bugs"
+      "cap": "Bugs it found, with file and line",
+      "hl": true,
+      "hold": 2.4,
+      "capPos": "left",
+      "vo": "It also found two bugs, each with the file and line."
     },
     "0011.png": {
-      "skip": true
-    },
-    "0012.png": {
-      "skip": true
+      "cap": "Open a finding",
+      "hl": true,
+      "capPos": "left",
+      "vo": "Open the first one."
     },
     "0013.png": {
-      "skip": true
+      "cap": "Why it breaks, and a suggested fix",
+      "hl": {
+        "x": 1195,
+        "y": 590,
+        "w": 447,
+        "h": 432
+      },
+      "hold": 3.2,
+      "capPos": "left",
+      "vo": "Devin explains why the counts freeze after the first render, and suggests a fix."
     },
     "0014.png": {
+      "cap": "Ask Devin about it",
+      "hl": true,
+      "capPos": "left",
+      "vo": "Click Ask Devin to talk it through."
+    },
+    "0017.png": {
       "skip": true
     },
-    "0015.png": {
-      "kind": "still",
-      "hold": 3.0,
-      "capPos": "bottom",
-      "cap": "Results: a summary plus categorized findings"
-    },
-    "0016.png": {
+    "0018.png": {
       "skip": true
     },
-    "0023.png": {
+    "0019.png": {
       "skip": true
     },
-    "0024.png": {
-      "skip": true
+    "0021.png": {
+      "cap": "Ask a follow-up question",
+      "capPos": "left",
+      "vo": "Ask why the empty array freezes the counts."
     },
-    "0025.png": {
-      "skip": true
+    "0038.png": {
+      "hold": 0.4
     },
-    "0026.png": {
-      "skip": true
-    },
-    "0027.png": {
-      "skip": true
-    },
-    "0022.png": {
-      "hold": 1.4
-    },
-    "0045.png": {
-      "hold": 0.8,
+    "0039.png": {
       "badge": "Sped up"
     },
-    "0046.png": {
-      "skip": true
-    },
-    "0047.png": {
-      "hold": 0.8
-    },
     "0048.png": {
-      "skip": true
+      "cap": "Devin answers from the PR's code",
+      "hold": 3.0,
+      "capPos": "left",
+      "vo": "Devin answers from the code in the pull request, and offers a fix.",
+      "badge": null
     },
     "0049.png": {
-      "hold": 0.8
-    },
-    "0050.png": {
-      "skip": true
-    },
-    "0051.png": {
-      "skip": true
-    },
-    "0052.png": {
-      "skip": true
-    },
-    "0053.png": {
-      "skip": true
-    },
-    "0054.png": {
-      "skip": true
-    },
-    "0055.png": {
-      "skip": true
-    },
-    "0056.png": {
-      "skip": true
-    },
-    "0057.png": {
-      "skip": true
+      "cap": "Ask Devin to fix it",
+      "capPos": "left",
+      "vo": "Ask it to make that fix."
     },
     "0058.png": {
-      "skip": true
-    },
-    "0059.png": {
-      "skip": true
-    },
-    "0060.png": {
-      "skip": true
-    },
-    "0061.png": {
-      "skip": true
-    },
-    "0062.png": {
-      "skip": true
-    },
-    "0063.png": {
-      "skip": true
-    },
-    "0064.png": {
-      "skip": true
-    },
-    "0065.png": {
-      "skip": true
+      "badge": "Sped up"
     },
     "0066.png": {
-      "skip": true
+      "cap": "A one-line edit, ready to review",
+      "hold": 1.8,
+      "capPos": "left",
+      "vo": "Devin proposes a one-line edit.",
+      "badge": null
     },
     "0067.png": {
-      "skip": true
-    },
-    "0068.png": {
-      "skip": true
+      "cap": "Review the proposed change",
+      "hl": true,
+      "capPos": "left",
+      "vo": "Click Review to see it."
     },
     "0069.png": {
       "skip": true
     },
-    "0070.png": {
-      "skip": true
-    },
     "0071.png": {
-      "skip": true
+      "cap": "Check the diff and commit message",
+      "hold": 2.8,
+      "capPos": "bottom",
+      "vo": "Check the diff and the commit message, then commit it to the pull request branch."
     },
     "0072.png": {
-      "skip": true
-    },
-    "0073.png": {
-      "skip": true
-    },
-    "0074.png": {
-      "skip": true
+      "cap": "Commit the fix to the PR branch",
+      "capPos": "bottom"
     },
     "0075.png": {
       "skip": true
     },
-    "0076.png": {
-      "skip": true
-    },
     "0077.png": {
-      "skip": true
-    },
-    "0078.png": {
-      "skip": true
-    },
-    "0079.png": {
-      "skip": true
+      "cap": "Refresh to load the new commit",
+      "hl": true,
+      "capPos": "bottom",
+      "vo": "Refresh to load the new commit."
     },
     "0080.png": {
-      "skip": true
+      "cap": "Counts now update with the board",
+      "hl": true,
+      "hold": 2.8,
+      "capPos": "bottom",
+      "vo": "Now the counts update whenever the board changes."
     },
     "0081.png": {
-      "skip": true
+      "cap": "Merge when you're ready",
+      "hl": true,
+      "hold": 2.2,
+      "capPos": "bottom",
+      "vo": "When you're happy, merge it right here."
     },
     "0082.png": {
-      "skip": true
-    },
-    "0083.png": {
-      "skip": true
+      "cap": "Open Settings",
+      "hl": true,
+      "capPos": "right",
+      "vo": "To have Devin review pull requests on its own, open Settings."
     },
     "0084.png": {
-      "skip": true
-    },
-    "0085.png": {
-      "skip": true
+      "cap": "Then Review",
+      "hl": true,
+      "capPos": "bottom",
+      "vo": "Then go to Review."
     },
     "0086.png": {
       "skip": true
     },
     "0087.png": {
-      "skip": true
-    },
-    "0088.png": {
-      "skip": true
-    },
-    "0089.png": {
-      "skip": true
-    },
-    "0090.png": {
-      "skip": true
-    },
-    "0091.png": {
-      "skip": true
-    },
-    "0092.png": {
-      "skip": true
-    },
-    "0093.png": {
-      "skip": true
-    },
-    "0094.png": {
-      "skip": true
-    },
-    "0095.png": {
-      "skip": true
-    },
-    "0096.png": {
-      "skip": true
-    },
-    "0097.png": {
-      "skip": true
-    },
-    "0098.png": {
-      "skip": true
-    },
-    "0099.png": {
-      "skip": true
-    },
-    "0100.png": {
-      "skip": true
-    },
-    "0101.png": {
-      "skip": true
-    },
-    "0102.png": {
-      "skip": true
-    },
-    "0103.png": {
-      "skip": true
-    },
-    "0104.png": {
-      "skip": true
-    },
-    "0105.png": {
-      "skip": true
-    },
-    "0106.png": {
-      "skip": true
-    },
-    "0107.png": {
-      "skip": true
-    },
-    "0108.png": {
-      "skip": true
-    },
-    "0109.png": {
-      "skip": true
-    },
-    "0110.png": {
-      "skip": true
-    },
-    "0111.png": {
-      "skip": true
-    },
-    "0112.png": {
-      "skip": true
-    },
-    "0113.png": {
-      "skip": true
-    },
-    "0114.png": {
-      "skip": true
-    },
-    "0115.png": {
-      "skip": true
-    },
-    "0116.png": {
-      "skip": true
-    },
-    "0117.png": {
-      "skip": true
-    },
-    "0118.png": {
-      "skip": true
-    },
-    "0119.png": {
-      "skip": true
-    },
-    "0120.png": {
-      "skip": true
-    },
-    "0121.png": {
-      "skip": true
-    },
-    "0122.png": {
-      "skip": true
-    },
-    "0123.png": {
-      "skip": true
-    },
-    "0124.png": {
-      "skip": true
-    },
-    "0125.png": {
-      "skip": true
-    },
-    "0126.png": {
-      "skip": true
-    },
-    "0127.png": {
-      "skip": true
-    },
-    "0128.png": {
-      "skip": true
-    },
-    "0129.png": {
-      "skip": true
-    },
-    "0130.png": {
-      "skip": true
-    },
-    "0131.png": {
-      "skip": true
-    },
-    "0132.png": {
-      "skip": true
-    },
-    "0133.png": {
-      "skip": true
-    },
-    "0134.png": {
-      "skip": true
-    },
-    "0135.png": {
-      "skip": true
-    },
-    "0136.png": {
-      "skip": true
-    },
-    "0137.png": {
-      "skip": true
-    },
-    "0138.png": {
-      "skip": true
-    },
-    "0139.png": {
-      "skip": true
-    },
-    "0140.png": {
-      "skip": true
-    },
-    "0141.png": {
+      "cap": "Repos Devin reviews on every push",
+      "hl": true,
       "hold": 3.4,
-      "badge": null
-    },
-    "0151.png": {
-      "hold": 0.8,
-      "badge": "Sped up"
-    },
-    "0152.png": {
-      "skip": true
-    },
-    "0153.png": {
-      "hold": 0.8
-    },
-    "0154.png": {
-      "skip": true
-    },
-    "0155.png": {
-      "hold": 0.8
-    },
-    "0156.png": {
-      "skip": true
-    },
-    "0157.png": {
-      "skip": true
-    },
-    "0158.png": {
-      "hold": 0.8
-    },
-    "0159.png": {
-      "hold": 2.8,
-      "badge": null,
-      "cap": "Devin proposes an edit for you to approve"
-    },
-    "0162.png": {
-      "hold": 0.6
-    },
-    "0166.png": {
-      "hold": 0.8
-    },
-    "0167.png": {
-      "hold": 0.8
-    },
-    "0169.png": {
-      "hold": 0.6
-    },
-    "0172.png": {
-      "hold": 0.6
-    },
-    "0173.png": {
-      "skip": true
-    },
-    "0175.png": {
-      "hold": 3.0
-    },
-    "0180.png": {
-      "skip": true
-    },
-    "0182.png": {
-      "skip": true
+      "capPos": "bottom",
+      "vo": "Under Automatic review, add a repository, and Devin reviews every push to its pull requests."
     }
   }
 };
