@@ -48,7 +48,7 @@ window.SPEC = {
     "0007.png": {
       "hl": true,
       "cap": "Grok's X search for the posts; Modal for the rest",
-      "vo": "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+      "vo": "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the public page on Modal."
     },
     "0009.png": {
       "cap": "Edges only from real quotes, replies, reposts or mentions",

@@ -10,7 +10,7 @@ Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, saved default voic
 
 4. Now for the prompt. It's short, and written in plain language.
 
-5. It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.
+5. It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the public page on Modal.
 
 6. Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.
 
