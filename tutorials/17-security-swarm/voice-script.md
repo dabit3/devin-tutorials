@@ -4,37 +4,46 @@ Voice: ElevenLabs `T8iHhGIWPm2GVYpQD1Am` (`17-security-swarm-nader.mp4`). Genera
 
 | Shot | Narration |
 |---|---|
-| 0001 | This is Devin Security Swarm. It reads your code like an attacker, proves each bug is real, and fixes it. |
-| 0002 | First, let Devin write a scan profile for your repo. |
-| 0006 | Devin opens a session, looks at your repos, and asks which one the profile is for. |
-| 0009 | It drafts what to look for and how to validate it, then lists a few optional settings. |
-| 0010 | Accept the defaults and add one triage rule: any auth bypass or cross-user leak is always critical. |
-| 0045 | Devin shows the change as a diff, and you approve it. |
-| 0049 | Now open the profile it created. |
-| 0053 | The scan model tells the scanner what to hunt for: auth bypass, access between users, and file paths, with the exact files to check. |
-| 0054 | Triage guidance decides how findings are ranked, so our rule makes these always critical. |
-| 0055 | Sandbox validation tells Devin how to start the API, which test users to log in as, and to prove every finding with curl. |
-| 0056 | A summary report is optional, and this profile leaves it off. |
-| 0060 | Under Advanced, it skips tests and seed scripts, and validates every finding from medium up. |
-| 0063 | Now start a scan, set it up manually on a single repo, and choose the new profile. |
-| 0081 | Turn on Interactive mode, so you review the threat model before it scans. |
-| 0084 | Then run the scan. |
-| 0091 | Before it scans, Devin proposes a scan model of rules written for this exact code. |
-| 0092 | It already suspects the forwarded user header, boards loaded by ID with no owner check, and file paths built from user input. |
-| 0096 | This looks right, so start scanning. |
-| 0115 | Findings stream in, grouped by severity. |
-| 0124 | Then Devin tries to exploit each one in a sandbox. |
-| 0145 | Duplicates and false positives are dismissed, which leaves eleven open findings, and three of them are chained across files. |
-| 0151 | Open the worst one. |
-| 0153 | It's critical, with high confidence, because anyone who sends one header becomes the admin, with no password. |
-| 0154 | Here's the attack path, step by step. |
-| 0155 | And here are the exact lines in auth.js that make it possible. |
-| 0156 | Devin ran the exploit in a sandbox, and it worked, so the finding is confirmed. |
-| 0157 | These are the real requests that proved it. |
-| 0158 | Now assign it to Devin. |
-| 0161 | A fix session starts right away, so open it. |
-| 0164 | Devin gets the finding and its evidence, and checks that the bug is still real on main. |
-| 0165 | An open pull request from an earlier run already fixes it, so Devin takes it over, reruns the tests, and checks that the header alone is now rejected. |
-| 0169 | Back on the finding, the fix PR is attached. |
-| 0171 | A real exploit chain, found, proven, and fixed. |
+| 0001 | Devin Security Swarm reads your code like an attacker, proves each bug is real in a sandbox, and then fixes it. |
+| 0002 | Start with a scan profile, and let Devin write it. |
+| 0007 | Devin opens a session and asks what the profile should scan, and what matters most. |
+| 0010 | Answer in a few sentences: the repo, what to focus on, what to skip, and that any auth bypass or cross-user leak is always critical. |
+| 0012 | Devin reads the repo, so the profile matches the real routes and scripts. |
+| 0030 | It creates the profile, and even notices that the latest commit on main reverted an earlier auth fix. |
+| 0031 | Keep the optional settings on their defaults. |
+| 0036 | The profile is ready. |
+| 0038 | Now open it. |
+| 0042 | The scan model tells the scanner what to hunt for, with the exact files and functions to check. |
+| 0043 | Triage guidance ranks the findings, so our rule makes these always critical. |
+| 0044 | Sandbox validation tells Devin how to start the API, which test users to log in as, and to prove every finding with curl. |
+| 0045 | A summary report is optional, and this profile leaves it off. |
+| 0048 | Under Advanced, it skips tests and seed scripts, and validates every severity. |
+| 0051 | Now start a scan. |
+| 0053 | Set it up manually. |
+| 0057 | Pick the repo. |
+| 0064 | Then choose the new profile. |
+| 0068 | Turn on Interactive mode, so you can review the threat model before it scans. |
+| 0071 | Then run the scan. |
+| 0074 | Devin reads the code and drafts a threat model first. |
+| 0098 | Before it scans, Devin proposes a scan model, with rules written for this exact code. |
+| 0099 | It flags the forwarded user header, which is trusted before any token. |
+| 0100 | It flags boards loaded by ID, with no owner check. |
+| 0101 | And it flags file paths built from the request. |
+| 0102 | This looks right, so start scanning. |
+| 0169 | A few minutes later, there are seven open findings, and each one was confirmed in a sandbox. |
+| 0170 | Open the worst one. |
+| 0172 | A spoofed header gives anyone a full auth bypass, and lets them act as the admin. |
+| 0173 | The attack path shows each step, from the forged header to the admin export. |
+| 0174 | References point to the exact lines in auth dot js. |
+| 0175 | Sandbox validation ran the real API and confirmed it. |
+| 0176 | Here are the exact curl requests, and the admin data that came back, with no token at all. |
+| 0177 | Now assign it to Devin. |
+| 0180 | Within a minute, a fix session has already opened a pull request. |
+| 0181 | Open the fix session. |
+| 0184 | Devin gets the finding and its evidence, checks the code on main, and opens a pull request with the fix. |
+| 0185 | It even flags that an earlier fix was reverted on main, and asks you to check before merging. |
+| 0186 | The tests pass, and the pull request is ready for review. |
+| 0187 | Open the pull request right in the session. |
+| 0191 | It's ready to merge, with three files changed. |
+| 0192 | The header is now trusted only when the proxy signs it with a fresh HMAC, and the check fails closed when no secret is set. |
 | outro | Security Swarm. Real exploits, found, proven, and fixed. |
