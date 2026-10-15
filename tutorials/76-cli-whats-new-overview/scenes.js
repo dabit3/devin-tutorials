@@ -5,9 +5,7 @@ const ACC = '#71b7ff', ACCRGB = '113,183,255';
 const ink = a => `rgba(242,242,243,${a})`;
 const R = n => (window.SPEC.reveal || {})[n] || [];
 function bg(ctx, k) {
-  const g = ctx.createRadialGradient(k.VW / 2, k.VH * 0.4, 40, k.VW / 2, k.VH * 0.4, k.VW * 0.75);
-  g.addColorStop(0, '#15171c'); g.addColorStop(1, '#0b0b0c');
-  ctx.save(); ctx.globalAlpha = k.alpha; ctx.fillStyle = g; ctx.fillRect(0, 0, k.VW, k.VH); ctx.restore();
+  ctx.save(); ctx.globalAlpha = k.alpha; ctx.fillStyle = '#0b0b0c'; ctx.fillRect(0, 0, k.VW, k.VH); ctx.restore();
 }
 function txt(ctx, k, t, x, y, size, weight, color, a = 1, align = 'left', fam, track = -0.2) {
   if (a <= 0) return 0;

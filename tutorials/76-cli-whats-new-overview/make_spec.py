@@ -50,7 +50,7 @@ ed(218, hold=1.2, vo="Typing /goal on its own shows the status.", voSay="Typing 
     ring=find('0218.png', '✓ Goal Complete (1 turn)'), ringFor=2.0)
 ed(219, scene='goalcmds', hold=1.0, cursor=False,
    vo="And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-   voSay="And slash goal resume picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns.")
+   voSay="And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns.")
 ed(220, hold=1.2, vo="In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
     voSay="In the model picker, Alt Enter switches for this session only, and Enter still saves a default.")
 ed(221, hold=1.4, ring=find('0221.png', 'alt+↵ this session only'), ringFor=2.0)

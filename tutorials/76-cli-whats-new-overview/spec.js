@@ -11,46 +11,46 @@ window.SPEC = {
   "voSentGap": 0.45,
   "reveal": {
     "themes": [
-      1.45,
-      1.93,
-      3.66,
-      5.72
+      1.58,
+      2.13,
+      3.88,
+      5.89
     ],
     "goalcmds": [
       0.15,
       0.5,
-      0.59,
-      3.31,
-      5.71
+      0.56,
+      3.3,
+      5.72
     ],
     "config": [
       0,
-      4.06,
-      5.43,
-      6.59,
-      8.51
+      3.8,
+      5.29,
+      6.41,
+      7.98
     ],
     "ext": [
-      1.62,
-      3.61,
-      5.42,
-      7.53,
-      9.52,
-      10.94
+      1.5,
+      3.38,
+      5.07,
+      7.03,
+      8.92,
+      10.27
     ],
     "terminal": [
-      1.14,
-      2.12,
-      4.82,
-      6.54,
-      9.85
+      1.1,
+      2.06,
+      4.68,
+      6.35,
+      9.57
     ],
     "fixes": [
       0,
       0,
-      2.27,
-      4.04,
-      5.6
+      2.15,
+      3.77,
+      4.94
     ]
   },
   "edit": {
@@ -645,7 +645,7 @@ window.SPEC = {
       "hold": 1.0,
       "cursor": false,
       "vo": "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-      "voSay": "And slash goal resume picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+      "voSay": "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
     },
     "0220.png": {
       "hold": 1.2,

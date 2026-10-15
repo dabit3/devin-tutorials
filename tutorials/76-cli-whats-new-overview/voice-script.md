@@ -25,7 +25,7 @@ Narrated by Nader (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`), one whole-script ta
   - spoken: Typing slash goal on its own shows the status.
 
 **0219.png** (scene: goalcmds): And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.
-  - spoken: And slash goal resume picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns.
+  - spoken: And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns.
 
 **0220.png**: In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.
   - spoken: In the model picker, Alt Enter switches for this session only, and Enter still saves a default.
