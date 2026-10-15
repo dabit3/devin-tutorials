@@ -85,33 +85,49 @@ function intro(ctx, s, k) {
     text(ctx, k, sub, 1010, y + 8 * (1 - a), 17, 400, MUTED(1.2), a, 'left');
   });
 }
-// The pipeline: X posts → xAI API → Modal functions → storage → page.
+// The pipeline: X posts → xAI API → everything else on Modal (functions + Dict) → page.
 function pipeline(ctx, s, k) {
-  eyebrow(ctx, k, 'HOW IT WORKS', 120, appear(k, s, 0.05));
-  const cue = cueTimes('0001.png', ['grok', 'map', 'dict', 'cron', 'endpoint']);
-  const T = cue ? cue.map(t => Math.max(0.2, t - 0.25)) : [0.4, 1.6, 2.8, 4.0, 5.2];
-  const y = 330;
-  // modal frame around the three functions
+  eyebrow(ctx, k, 'WHERE MODAL FITS', 120, appear(k, s, 0.05));
+  const img = Object.keys(window.SPEC.edit).find(i => window.SPEC.edit[i].scene === 'pipeline');
+  const cue = cueTimes(img, ['grok', 'modal', 'page']);
+  const T = cue ? cue.map(t => Math.max(0.2, t - 0.25)) : [0.4, 1.8, 3.6];
+  const glow = t0 => k.clamp(k.prog(s, t0, t0 + 0.4), 0, 1) * (1 - k.clamp(k.prog(s, t0 + 1.4, t0 + 2), 0, 1));
+  const y = 330, M = [T[1], T[1] + 0.35, T[1] + 0.7, T[1] + 1.05];
   const fa = appear(k, s, T[1], 0.7);
   if (fa > 0) {
-    ctx.save(); ctx.globalAlpha = k.alpha * fa; k.rr(560, 178, 320, 448, 20); ctx.setLineDash([5, 6]); ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(242,242,243,.2)'; ctx.stroke(); ctx.restore();
-    text(ctx, k, 'MODAL APP', 720, 200, 13, 500, 'rgba(242,242,243,.5)', fa, 'center', 'JetBrains Mono');
+    ctx.save(); ctx.globalAlpha = k.alpha * fa; k.rr(560, 178, 570, 448, 20); ctx.fillStyle = rgba(BLUE, 0.04); ctx.fill(); ctx.setLineDash([5, 6]); ctx.lineWidth = 1.2; ctx.strokeStyle = rgba(BLUE, 0.55); ctx.stroke(); ctx.restore();
+    text(ctx, k, 'RUNS ON MODAL', 845, 202, 13, 500, rgba(BLUE, 0.95), fa, 'center', 'JetBrains Mono');
   }
   node(ctx, k, 160, y, 200, 74, 'X posts', 'public accounts', appear(k, s, 0.2));
-  node(ctx, k, 420, y, 210, 74, 'xAI API', 'Grok + X search', appear(k, s, T[0]), k.clamp(k.prog(s, T[0], T[0] + 0.4), 0, 1) * (1 - k.clamp(k.prog(s, T[0] + 1.4, T[0] + 2), 0, 1)));
+  node(ctx, k, 420, y, 210, 74, 'xAI API', 'Grok + X search', appear(k, s, T[0]), glow(T[0]));
   curveH(ctx, k, 262, y, 313, y, k.eInOut(k.prog(s, T[0] - 0.2, T[0] + 0.3)), k.prog(s, T[0], T[0] + 1));
-  const F = [['.map()', 'extract in parallel', 270, T[1]], ['Cron schedule', 're-check daily', 400, T[3]], ['Web endpoint', 'serves the page', 530, T[4]]];
-  F.forEach(([t, sub, fy, t0]) => {
-    const on = k.clamp(k.prog(s, t0, t0 + 0.4), 0, 1) * (1 - k.clamp(k.prog(s, t0 + 1.4, t0 + 2), 0, 1));
-    node(ctx, k, 720, fy, 260, 74, t, sub, appear(k, s, t0), on);
-  });
-  curveH(ctx, k, 527, y, 588, 270, k.eInOut(k.prog(s, T[1] - 0.2, T[1] + 0.3)), k.prog(s, T[1], T[1] + 1));
-  node(ctx, k, 1010, 335, 190, 74, 'Modal Dict', 'storage', appear(k, s, T[2]), k.clamp(k.prog(s, T[2], T[2] + 0.4), 0, 1) * (1 - k.clamp(k.prog(s, T[2] + 1.4, T[2] + 2), 0, 1)));
-  curveH(ctx, k, 852, 270, 913, 335, k.eInOut(k.prog(s, T[2] - 0.2, T[2] + 0.3)), k.prog(s, T[2], T[2] + 1));
-  curveH(ctx, k, 852, 400, 913, 340, k.eInOut(k.prog(s, T[3] - 0.1, T[3] + 0.4)), k.prog(s, T[3], T[3] + 1));
-  curveH(ctx, k, 913, 345, 852, 530, k.eInOut(k.prog(s, T[4] - 0.1, T[4] + 0.4)), k.prog(s, T[4], T[4] + 1));
-  node(ctx, k, 1250, 530, 190, 74, 'Leaderboard', 'a page anyone can open', appear(k, s, T[4] + 0.5));
-  curveH(ctx, k, 852, 538, 1153, 530, k.eInOut(k.prog(s, T[4] + 0.3, T[4] + 0.8)), k.prog(s, T[4] + 0.5, T[4] + 1.5));
+  const F = [['.map()', 'extract in parallel', 270, M[0]], ['Cron schedule', 're-check daily', 400, M[1]], ['Web endpoint', 'serves the page', 530, M[2]]];
+  F.forEach(([t, sub, fy, t0]) => node(ctx, k, 720, fy, 260, 74, t, sub, appear(k, s, t0), glow(t0)));
+  curveH(ctx, k, 527, y, 588, 270, k.eInOut(k.prog(s, M[0] - 0.2, M[0] + 0.3)), k.prog(s, M[0], M[0] + 1));
+  node(ctx, k, 1010, 335, 190, 74, 'Modal Dict', 'storage', appear(k, s, M[3]), glow(M[3]));
+  curveH(ctx, k, 852, 270, 913, 335, k.eInOut(k.prog(s, M[3] - 0.2, M[3] + 0.3)), k.prog(s, M[3], M[3] + 1));
+  curveH(ctx, k, 852, 400, 913, 340, k.eInOut(k.prog(s, M[3] - 0.1, M[3] + 0.4)), k.prog(s, M[3], M[3] + 1));
+  curveH(ctx, k, 913, 345, 852, 530, k.eInOut(k.prog(s, M[3] - 0.1, M[3] + 0.4)), k.prog(s, M[3] + 0.2, M[3] + 1.2));
+  node(ctx, k, 1250, 530, 190, 74, 'Public page', 'on modal.run', appear(k, s, T[2]), glow(T[2]));
+  curveH(ctx, k, 852, 538, 1153, 530, k.eInOut(k.prog(s, T[2] - 0.2, T[2] + 0.3)), k.prog(s, T[2], T[2] + 1));
+}
+// Why Modal: what a laptop script or your own server would mean, and the Modal pieces this app uses.
+function modal(ctx, s, k) {
+  eyebrow(ctx, k, 'WHY MODAL', 120, appear(k, s, 0.05));
+  const img = Object.keys(window.SPEC.edit).find(i => window.SPEC.edit[i].scene === 'modal');
+  const cue = cueTimes(img, ['laptop', 'server', 'schedule', 'map', 'dict', 'endpoint', 'secret', 'zero']);
+  const T = cue ? cue.map(t => Math.max(0.2, t - 0.3)) : [0.4, 1.0, 1.8, 2.4, 3.0, 3.6, 4.2, 4.8];
+  const glow = t0 => k.clamp(k.prog(s, t0, t0 + 0.4), 0, 1) * (1 - k.clamp(k.prog(s, t0 + 1.4, t0 + 2), 0, 1));
+  const intro = appear(k, s, 0.3) * (1 - k.clamp(k.prog(s, T[0] - 0.6, T[0] - 0.1), 0, 1));
+  text(ctx, k, 'Bursty work', k.VW / 2, 340, 34, 600, INK, intro);
+  text(ctx, k, 'One big parallel search, then nothing until the next check', k.VW / 2, 392, 19, 400, MUTED(1.3), intro);
+  text(ctx, k, 'WITHOUT MODAL', 150, 188, 13, 500, 'rgba(242,242,243,.5)', appear(k, s, T[0]), 'left', 'JetBrains Mono');
+  card(ctx, k, 150, 212, 380, 96, 'Laptop script', 'Stops when the lid closes', appear(k, s, T[0]), 0, 19);
+  card(ctx, k, 150, 326, 380, 96, 'Your own server', 'Sits idle, and billed, all day', appear(k, s, T[1]), 0, 19);
+  text(ctx, k, 'ON MODAL', 610, 188, 13, 500, rgba(BLUE, 0.95), appear(k, s, T[2]), 'left', 'JetBrains Mono');
+  const R = [['Cron schedule', 'Re-checks pending predictions, no server to run'], ['.map()', 'xAI calls in parallel across containers'], ['Modal Dict', 'Stores every prediction'], ['Web endpoint', 'Serves the public modal.run page'], ['Modal Secret', 'Holds the xAI key']];
+  R.forEach(([t, sub], i) => card(ctx, k, 610, 212 + i * 84, 680, 72, t, sub, appear(k, s, T[2 + i]), glow(T[2 + i]), 19));
+  pill(ctx, k, 'Scales to zero \u00b7 billed per second', 950, 660, appear(k, s, T[7]), BLUE, 15);
 }
 // The honesty rules.
 function rules(ctx, s, k) {
@@ -136,5 +152,5 @@ function extend(ctx, s, k) {
   C.forEach(([t, sub], i) => card(ctx, k, x0 + (i % 2) * (w + 30), 210 + Math.floor(i / 2) * 134, w, h, t, sub, appear(k, s, T[i], 0.6)));
 }
 
-window.SCENES = { intro, pipeline, rules, extend };
+window.SCENES = { intro, pipeline, modal, rules, extend };
 })();

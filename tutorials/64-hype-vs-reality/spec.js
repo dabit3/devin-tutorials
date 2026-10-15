@@ -2,8 +2,8 @@ window.SPEC = {
   "title": "Hype vs. Reality",
   "subtitle": "Build a prediction tracker with Modal and the xAI API",
   "dark": true,
-  "outro": "Predictions from X, checked on a schedule, every verdict cited",
-  "voOutro": "Predictions from X, checked on a schedule, with every verdict cited.",
+  "outro": "Predictions from X, checked when they come due, every verdict cited",
+  "voOutro": "Predictions from X, checked when they come due, every verdict cited.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.3,
@@ -23,8 +23,18 @@ window.SPEC = {
       "hold": 2,
       "cursor": false,
       "cap": "Track tech predictions from X, then check them later",
-      "vo": "Tech predictions get posted on X all the time, but almost nobody checks back later. Here, Devin builds a tracker that keeps the exact quote and a link, and re-checks each prediction when it comes due. It ends deployed on Modal, with a live page of real posts pulled from X through the xAI API.",
-      "voSay": "Tech predictions get posted on X all the time, but almost nobody checks back later. Here, Devin builds a tracker that keeps the exact quote and a link, and re-checks each prediction when it comes due. It ends deployed on Modal, with a lyve page of real posts pulled from X through the ex A I API."
+      "vo": "Tech predictions get posted on X all the time, but almost nobody checks back later. Here, Devin builds a tracker that keeps the exact quote and a link, and re-checks each prediction when it comes due. It ends on a public modal.run page. Its posts come from X, through the xAI API.",
+      "voSay": "Tech predictions get posted on X all the time, but almost nobody checks back later. Here, Devin builds a tracker that keeps the exact quote and a link, and re-checks each prediction when it comes due. It ends on a public modal dot run page. Its posts come from X, through the ex A I API."
+    },
+    "0000b.png": {
+      "scene": "modal",
+      "hold": 5,
+      "cursor": false,
+      "capPos": "bottom",
+      "waitVo": true,
+      "vo": "Why Modal? Grok does the searching, through the xAI API. Modal runs everything around it. The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Modal Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+      "cap": "Why Modal: no server to run, parallel calls, storage, a public URL",
+      "voSay": "Why Modal? Grok does the searching, through the ex A I API. Modal runs everything around it. The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Modal Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work."
     },
     "0001.png": {
       "skip": true
@@ -293,13 +303,10 @@ window.SPEC = {
       "cursor": false,
       "hl": true,
       "cap": "A plain-language prompt in the product-demo-apps repo",
-      "vo": "In plain language, I ask for a Modal app that uses the xAI API with X search to find prediction posts, extracts them in parallel, and re-checks the pending ones every day.",
-      "voSay": "In plain language, I ask for a Modal app that uses the ex A I API with X search to find prediction posts, extracts them in parallel, and re-checks the pending ones every day."
+      "vo": "The prompt is plain language. It asks for a Modal app that finds prediction posts with X search, and extracts them in parallel. A prediction can only be marked right or wrong with a cited source."
     },
     "0089.png": {
-      "hold": 0.8,
-      "cap": "Only cited sources can settle a prediction",
-      "vo": "A prediction can only be marked right or wrong with a cited source, and the job ends with a deploy, a test and a pull request."
+      "skip": true
     },
     "0090.png": {
       "skip": true
@@ -308,11 +315,7 @@ window.SPEC = {
       "skip": true
     },
     "0092.png": {
-      "hold": 0.7,
-      "badge": "Sped up",
-      "cap": "Devin probes X search first",
-      "vo": "Devin starts by probing the xAI API, to see exactly how X search returns posts and citations.",
-      "voSay": "Devin starts by probing the ex A I API, to see exactly how X search returns posts and citations."
+      "skip": true
     },
     "0093.png": {
       "skip": true
@@ -330,7 +333,7 @@ window.SPEC = {
       "skip": true
     },
     "0098.png": {
-      "hold": 0.7
+      "skip": true
     },
     "0099.png": {
       "skip": true
@@ -348,7 +351,7 @@ window.SPEC = {
       "skip": true
     },
     "0104.png": {
-      "hold": 0.7
+      "skip": true
     },
     "0105.png": {
       "skip": true
@@ -381,7 +384,7 @@ window.SPEC = {
       "skip": true
     },
     "0115.png": {
-      "hold": 0.7
+      "skip": true
     },
     "0116.png": {
       "skip": true
@@ -396,9 +399,7 @@ window.SPEC = {
       "skip": true
     },
     "0120.png": {
-      "hold": 0.7,
-      "cap": "Tracker logic, dark page and Modal app",
-      "vo": "Then it writes the tracker logic, the dark leaderboard page and the Modal app around them."
+      "skip": true
     },
     "0121.png": {
       "skip": true
@@ -413,7 +414,7 @@ window.SPEC = {
       "skip": true
     },
     "0125.png": {
-      "hold": 0.7
+      "skip": true
     },
     "0126.png": {
       "skip": true
@@ -422,7 +423,7 @@ window.SPEC = {
       "skip": true
     },
     "0128.png": {
-      "hold": 0.7
+      "skip": true
     },
     "0129.png": {
       "skip": true
@@ -434,24 +435,21 @@ window.SPEC = {
       "skip": true
     },
     "0132.png": {
-      "hold": 0.7
+      "skip": true
     },
     "0133.png": {
       "hold": 1.2,
       "ring": {
-        "x": 487.6,
-        "y": 599,
-        "w": 246,
-        "h": 20
+        "x": 693,
+        "y": 550,
+        "w": 670,
+        "h": 116
       },
-      "ringFor": 2.2,
-      "cap": "modal deploy ships it",
-      "vo": "Once the tests pass, it ships the app with modal deploy."
+      "vo": "Devin plans the Modal pieces, writes the app and its tests, then ships it with modal deploy.",
+      "cap": "Devin's plan, then modal deploy"
     },
     "0134.png": {
-      "hold": 0.7,
-      "cap": "A real search on the deployed app",
-      "vo": "Then it calls the deployed endpoint and runs a real search for predictions."
+      "skip": true
     },
     "0135.png": {
       "skip": true
@@ -484,7 +482,7 @@ window.SPEC = {
       "skip": true
     },
     "0145.png": {
-      "hold": 0.7
+      "skip": true
     },
     "0146.png": {
       "skip": true
@@ -544,7 +542,7 @@ window.SPEC = {
       "skip": true
     },
     "0165.png": {
-      "hold": 0.7
+      "skip": true
     },
     "0166.png": {
       "skip": true
@@ -616,7 +614,7 @@ window.SPEC = {
       "skip": true
     },
     "0189.png": {
-      "hold": 0.7
+      "skip": true
     },
     "0190.png": {
       "skip": true
@@ -664,7 +662,7 @@ window.SPEC = {
       "skip": true
     },
     "0205.png": {
-      "hold": 0.7
+      "skip": true
     },
     "0206.png": {
       "skip": true
@@ -676,9 +674,7 @@ window.SPEC = {
       "skip": true
     },
     "0209.png": {
-      "hold": 0.7,
-      "cap": "Devin opens a pull request",
-      "vo": "With real data on the page, Devin pushes a branch and opens a pull request."
+      "skip": true
     },
     "0210.png": {
       "skip": true
@@ -726,9 +722,7 @@ window.SPEC = {
       "skip": true
     },
     "0225.png": {
-      "hold": 0.7,
-      "cap": "Devin tests the deployed page in its browser",
-      "vo": "It also tests the deployed page in its own browser, and checks that the counts match the JSON."
+      "skip": true
     },
     "0226.png": {
       "skip": true
@@ -758,7 +752,7 @@ window.SPEC = {
       "skip": true
     },
     "0235.png": {
-      "hold": 0.7
+      "skip": true
     },
     "0236.png": {
       "skip": true
@@ -869,7 +863,7 @@ window.SPEC = {
       "skip": true
     },
     "0272.png": {
-      "hold": 0.7
+      "skip": true
     },
     "0273.png": {
       "skip": true
@@ -965,7 +959,9 @@ window.SPEC = {
       "skip": true
     },
     "0304.png": {
-      "hold": 0.8
+      "hold": 1.0,
+      "vo": "Then it opens the public URL in its own browser, to test the page.",
+      "cap": "Devin tests the page at its public URL"
     },
     "0305.png": {
       "skip": true
@@ -995,22 +991,13 @@ window.SPEC = {
       "skip": true
     },
     "0314.png": {
-      "badge": "",
-      "hold": 1.0,
-      "cap": "Devin sums up the run",
-      "vo": "When Devin is done, it sums up the run."
+      "skip": true
     },
     "0315.png": {
-      "ring": true,
-      "hold": 1.6,
-      "cap": "Six predictions found so far",
-      "vo": "So far, it has found six predictions from four well-known accounts."
+      "skip": true
     },
     "0316.png": {
-      "ring": true,
-      "hold": 1.6,
-      "cap": "One resolved with a source, five pending",
-      "vo": "One is marked right with a cited source, and the other five stay pending until their check dates."
+      "skip": true
     },
     "0317.png": {
       "skip": true
@@ -1019,7 +1006,7 @@ window.SPEC = {
       "skip": true
     },
     "0319.png": {
-      "hold": 0.8
+      "skip": true
     },
     "0320.png": {
       "hold": 1.0
@@ -1027,63 +1014,46 @@ window.SPEC = {
     "0321.png": {
       "ring": true,
       "hold": 1.8,
-      "cap": "Five review findings, all resolved",
-      "vo": "Devin Review flagged five issues while it worked, and Devin fixed every one and redeployed."
+      "cap": "A pull request, with five review findings fixed",
+      "vo": "It opens a pull request in the demo repo, and fixes the five issues Devin Review flagged."
     },
     "0322.png": {
-      "ring": true,
-      "cap": "The xAI Responses API",
-      "vo": "In the code, the tracker calls the xAI Responses API.",
-      "voSay": "In the code, the tracker calls the ex A I Responses API."
+      "skip": true
     },
     "0323.png": {
-      "ring": true,
-      "cap": "X search, one account and a date range",
-      "vo": "Each search uses the X search tool, limited to one account and a date range."
+      "skip": true
     },
     "0324.png": {
-      "ring": true,
-      "cap": "Stored in a Modal Dict",
-      "vo": "Predictions are stored in a Modal Dict, keyed by the post's ID."
+      "skip": true
     },
     "0325.png": {
-      "ring": true,
-      "cap": "starmap: one container per account",
-      "vo": "Discovery fans out with starmap, one container per account."
+      "skip": true
     },
     "0326.png": {
-      "ring": true,
-      "cap": "map: every new post in parallel",
-      "vo": "Then extract.map processes every new post in parallel.",
-      "voSay": "Then extract dot map processes every new post in parallel."
+      "skip": true
     },
     "0327.png": {
-      "ring": true,
-      "cap": "A daily Cron re-checks pending predictions",
-      "vo": "A Modal Cron schedule re-checks the pending predictions every day."
+      "skip": true
     },
     "0328.png": {
-      "ring": true,
-      "cap": "The web endpoint serves the page",
-      "vo": "And a web endpoint serves the leaderboard page."
+      "skip": true
     },
     "0329.png": {
       "hold": 1.6,
-      "cap": "The deployed app on modal.run",
-      "vo": "Here's the deployed app at its modal.run URL, with real posts pulled from X.",
-      "voSay": "Here's the deployed app at its modal dot run URL, with real posts pulled from X."
+      "cap": "The app at its public modal.run URL",
+      "vo": "Here's the app running on Modal at its public URL, with real posts pulled from X."
     },
     "0330.png": {
       "ring": true,
       "hold": 1.6,
-      "cap": "Counts of posts found, not totals",
-      "vo": "These are counts of posts found so far, not totals for everything on X."
+      "cap": "Counts of sampled posts found, not totals",
+      "vo": "These are counts of sampled posts found so far, not totals for everything on X."
     },
     "0331.png": {
       "ring": true,
       "hold": 2.0,
       "cap": "Verdict date and cited source",
-      "vo": "The one marked right shows when it happened and the source it was checked against, so you can open it and judge for yourself."
+      "vo": "The one marked right shows when it happened, and the source it was checked against."
     },
     "0332.png": {
       "ring": true,
@@ -1100,7 +1070,7 @@ window.SPEC = {
     "0335.png": {
       "hold": 1.4,
       "cap": "Exact quotes, linked to the original posts",
-      "vo": "Each card keeps the exact quote and a link to the original post."
+      "vo": "Each card keeps the exact quote and a link to the original post. After filming, the daily schedule was switched off to save cost."
     }
   }
 };

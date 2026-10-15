@@ -25,12 +25,21 @@ window.SPEC = {
     },
     "0001.png": {
       "scene": "pipeline",
-      "hold": 7,
+      "hold": 4,
       "cursor": false,
       "capPos": "bottom",
-      "cap": "X posts, xAI search, Modal functions, storage, page",
-      "vo": "It runs as one Modal app. Grok, through the xAI API, searches X for recent posts from a few public accounts. Modal extracts them in parallel with map, and stores the results in a Modal Dict. A daily Cron job re-checks the pending ones, and a web endpoint serves the leaderboard.",
-      "voSay": "It runs as one Modal app. Grok, through the ex A I API, searches X for recent posts from a few public accounts. Modal extracts them in parallel with map, and stores the results in a Modal Dict. A daily cron job re-checks the pending ones, and a web endpoint serves the leaderboard."
+      "cap": "Where Modal fits: everything after the X search",
+      "vo": "Here's where Modal fits. Grok searches X through the xAI API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open.",
+      "voSay": "Here's where Modal fits. Grok searches X through the ex A I API. It looks at posts from a few public accounts. Everything after that runs on Modal, right up to the page anyone can open."
+    },
+    "0001b.png": {
+      "scene": "modal",
+      "hold": 5,
+      "cursor": false,
+      "capPos": "bottom",
+      "vo": "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the xAI calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The xAI key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work.",
+      "cap": "Why Modal: no server to run, parallel calls, storage, a public URL",
+      "voSay": "Why use Modal? The job comes in bursts: one big parallel search, then nothing until the next check. A laptop script stops when the lid closes, and a server of your own sits idle all day. On Modal, a schedule runs the re-checks with no server to maintain. Map spreads the ex A I calls across many containers at once. A Dict stores the results, and a web endpoint serves the page at a public URL. The ex A I key lives in a Modal Secret. When nothing is running, the app scales to zero, so you pay per second of work."
     },
     "0002.png": {
       "scene": "rules",
@@ -51,13 +60,13 @@ window.SPEC = {
       "hold": 3,
       "cursor": false,
       "ring": {
-        "x": 487.6,
-        "y": 599,
-        "w": 246,
-        "h": 20
+        "x": 693,
+        "y": 550,
+        "w": 670,
+        "h": 116
       },
-      "cap": "Deployed with modal deploy",
-      "vo": "It shipped the app with modal deploy, then tested the deployed page."
+      "cap": "Devin's plan, then modal deploy",
+      "vo": "It planned the Modal pieces, and shipped the app with modal deploy."
     },
     "0005.png": {
       "hold": 3.4,
@@ -70,15 +79,15 @@ window.SPEC = {
       "hold": 3.6,
       "cursor": false,
       "ring": true,
-      "cap": "Counts of posts found so far",
-      "vo": "On the deployed page, it has found six predictions so far, with one marked right and five still pending."
+      "cap": "Counts of sampled posts found so far",
+      "vo": "On the page running on Modal, it has found six predictions so far in sampled posts. One is marked right, and five are still pending."
     },
     "0007.png": {
       "hold": 3,
       "cursor": false,
       "ring": true,
       "cap": "Each pending prediction shows its check date",
-      "vo": "Each pending one shows the date it can be checked."
+      "vo": "Each pending one shows the date it can be checked. After filming, the daily schedule was switched off to save cost."
     },
     "0008.png": {
       "scene": "extend",
