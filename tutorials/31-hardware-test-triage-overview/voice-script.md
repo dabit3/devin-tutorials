@@ -2,6 +2,8 @@
 
 Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, default settings: stability 0.5, similarity 0.75, style 0, speed 1), generated as one take with `_kit/tools/vo_onetake.py` (seed 6601) and cut locally at sentence boundaries. At Nader's request the closing line alone was regenerated afterwards (same voice and default settings, seed 303) because it came out flat in the take.
 
+The narrated use-case scene reveals each card at its topic's spoken onset in the approved `0016.png.wav` clip (verified with STT): nightly triage at 1.12 s, Slack-reported issues at 3.64 s, crash reports at 5.14 s, HIL-to-SIL at 8.10 s, and subsystem playbooks at 10.32 s. The first two cards' attribution blocks follow their own card by 0.5 s. The captioned cut keeps its original faster sequence. No narration audio or overall timing changed.
+
 1. Robotics teams often run simulation suites on powerful devboxes by hand, so failures pile up and get triaged a day late.
 
 2. With Devin, a nightly schedule or a Slack message starts the run, and one managed Devin per failure triages them all in parallel.
