@@ -25,70 +25,73 @@ for b in beats:
         ed(n, skip=True)
 
 ed(0, scene='themes', hold=1.0, cursor=False,
-   vo="This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.")
-ed(1, hold=1.0,
-   vo="Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-   voSay="Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable.")
+   vo="Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.")
+ed(1, hold=1.0, vo="Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.")
 ed(9, hold=0.8)
-ed(10, vo="The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    voSay="The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked.")
-ed(40, hold=1.0, vo="I'll ask for a collapse toggle, done when tests, lint and build pass.",
+ed(10, vo="The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    voSay="The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.")
+ed(40, hold=1.0, vo="I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
     ring=find('0040.png', '/goal'), ringFor=2.4)
 ed(43, hold=0.8, ring=find('0043.png', 'Goal Running'), ringFor=1.0)
-ed(49, hold=1.0, vo="Pressing Ctrl+C now clears a draft without stopping the task.", voSay="Pressing Control C now clears a draft without stopping the task.",
+ed(49, hold=1.0, vo="Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    voSay="Pressing Control C while it works now clears what I've typed, without stopping the task.",
     ring=find('0049.png', 'Also rename the Backlog column'), ringFor=1.4)
 ed(50, hold=1.4, ring=find('0050.png', 'Guide Devin while it works'), ringFor=1.2)
-ed(55, vo="And messages typed while it works go straight to the running turn.")
+ed(55, vo="A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.")
 ed(64, hold=0.6)
 ed(65, hold=0.8)
 ed(96, hold=1.4, vo="Devin reads it at its next step.")
 ed(186, hold=0.9)
 ed(206, hold=0.9)
-ed(216, hold=1.2, vo="When the checks pass, it reports the goal complete.", ring=find('0216.png', '✓ Goal Complete'), ringFor=2.0)
+ed(216, hold=1.2, vo="When all the checks pass, it reports the goal complete.", ring=find('0216.png', '✓ Goal Complete'), ringFor=2.0)
 ed(217, hold=0.4)
 ed(218, hold=1.2, vo="Typing /goal on its own shows the status.", voSay="Typing slash goal on its own shows the status.",
     ring=find('0218.png', '✓ Goal Complete (1 turn)'), ringFor=2.0)
 ed(219, scene='goalcmds', hold=1.0, cursor=False,
-   vo="And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-   voSay="And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns.")
-ed(220, hold=1.2, vo="In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    voSay="In the model picker, Alt Enter switches for this session only, and Enter still saves a default.")
-ed(221, hold=1.4, ring=find('0221.png', 'alt+↵ this session only'), ringFor=2.0)
+   vo="If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+   voSay="If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns.")
+ed(220, hold=1.2, vo="That covers goals, so let's move on to the rest of the release, starting with the model picker.")
+ed(221, hold=1.4, vo="Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    voSay="Alt Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    ring=find('0221.png', 'alt+↵ this session only'), ringFor=2.0)
 ed(222, hold=1.4, ring=find('0222.png', 'Model set to Adaptive for this session'), ringFor=1.8)
-ed(223, scene='config', hold=1.0, cursor=False,
-   vo="Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.")
-for n in range(224, 243): ed(n, skip=True)
-ed(243, vo="And devin mcp list now shows a Source line naming where each server came from.")
-ed(252, hold=1.6, ring=find('0252.png', 'Source: plugin https://github.com/CognitionAI/devin-marketplace#plugins/metabase'), ringFor=2.0)
+ed(223, scene='billing', hold=1.0, cursor=False,
+   vo="If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+   voSay="If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off.")
+ed(224, scene='config', hold=1.0, cursor=False,
+   vo="Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.")
+for n in range(225, 243): ed(n, skip=True)
+ed(243, vo="Next, let's look at plugins and MCP servers.")
+ed(252, hold=1.6, vo="Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+   ring=find('0252.png', 'Source: plugin https://github.com/CognitionAI/devin-marketplace#plugins/metabase'), ringFor=2.0)
 ed(253, scene='ext', hold=1.0, cursor=False,
-   vo="Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.")
-ed(254, vo="Running devin cloud on its own now opens a Devin Cloud session.")
+   vo="Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.")
+ed(254, vo="The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.")
 ed(267, hold=1.4, ring=find('0267.png', 'Cloud · Normal'), ringFor=1.6)
 ed(268, scene='terminal', hold=1.0, cursor=False,
-   vo="Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-   voSay="Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open.")
+   vo="Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.")
 ed(269, scene='fixes', hold=1.0, cursor=False,
-   vo="Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.")
+   vo="On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.")
 
-# scene rows appear as the narration names them: keyword -> time in the cut line (chunk times, interpolated by characters)
-KEYS = {'0000.png': ['goals', 'model and config', 'plugin and MCP', 'terminal and cloud'],
-        '0219.png': [None, None, 'resume', 'clear', '50 turns'],
-        '0223.png': ['Provider plans', 'typewriter', 'subagent', 'local tools', 'sessions folder'],
-        '0253.png': ['skills-only', 'target cloud', 'hook paths', 'compaction', 'newest protocol', 'remote MCPs'],
-        '0268.png': ['session status', 'sandbox', 'devin connect', 'Ctrl+U', 'forced open'],
-        '0269.png': ['Org-required', 'Org-required', 'smart mode', 'startup', 'session history']}
-LP = f'{D}/vo/T8iHhGIWPm2GVYpQD1Am/lines.json'
+# scene rows appear as the narration says each cue word: times come from STT word timestamps of each line's clip (cues.json, made by cues.py)
+KEYS = {'0000.png': ['goals', 'models', 'plugins', 'terminal'],
+        '0219.png': [None, None, 'resume|rezoom', 'clear', 'fifty|50'],
+        '0223.png': ['marks', 'billing'],
+        '0224.png': ['typewriter', 'subagents'],
+        '0253.png': ['skills', 'compaction', 'remote'],
+        '0268.png': ['sessions', 'files', 'sandbox'],
+        '0269.png': ['smart', 'startup', 'network']}
+CP = f'{D}/cues.json'
 REVEAL = {}
-if os.path.exists(LP):
-    L = json.load(open(LP))
+if os.path.exists(CP):
+    C = json.load(open(CP))
     def when(img, kw, i):
         if kw is None: return round(0.15 + 0.35 * i, 2)
-        for c in L[img]['chunks']:
-            if kw in c['text']:
-                return round(max(0, c['t0'] + (c['t1'] - c['t0']) * c['text'].index(kw) / len(c['text']) - 0.15), 2)
-        print(f'warning: {img}: {kw!r} not in narration (regenerate vo)'); return round(0.15 + 0.35 * i, 2)
+        for w in C.get(img, []):
+            if any(w['w'].startswith(k) for k in kw.split('|')): return round(max(0, w['t'] - 0.1), 2)
+        print(f'warning: {img}: {kw!r} not in cues (run cues.py)'); return round(0.15 + 0.35 * i, 2)
     for img, kws in KEYS.items():
-        if img in L: REVEAL[E[img]['scene']] = [when(img, k, i) for i, k in enumerate(kws)]
+        REVEAL[E[img]['scene']] = [when(img, k, i) for i, k in enumerate(kws)]
 spec = {
     'title': 'Devin CLI: What\'s new', 'subtitle': 'Stable v3000.11.92 · Oct 14, 2026',
     'outro': 'Update the CLI and give Devin a goal', 'voOutro': 'Run devin update, and give Devin a goal.',

@@ -11,46 +11,40 @@ window.SPEC = {
   "voSentGap": 0.45,
   "reveal": {
     "themes": [
-      1.58,
-      2.13,
-      3.88,
-      5.89
+      3.42,
+      4.4,
+      4.9,
+      5.56
     ],
     "goalcmds": [
       0.15,
       0.5,
-      0.56,
-      3.3,
-      5.72
+      1.86,
+      3.84,
+      6.28
+    ],
+    "billing": [
+      3.4,
+      6.56
     ],
     "config": [
-      0,
-      3.8,
-      5.29,
-      6.41,
-      7.98
+      1.7,
+      5.1
     ],
     "ext": [
-      1.5,
-      3.38,
-      5.07,
-      7.03,
-      8.92,
-      10.27
+      2.66,
+      5.0,
+      6.16
     ],
     "terminal": [
-      1.1,
-      2.06,
-      4.68,
-      6.35,
-      9.57
+      1.62,
+      4.36,
+      8.92
     ],
     "fixes": [
-      0,
-      0,
-      2.15,
-      3.77,
-      4.94
+      0.94,
+      3.36,
+      5.94
     ]
   },
   "edit": {
@@ -538,23 +532,22 @@ window.SPEC = {
       "scene": "themes",
       "hold": 1.0,
       "cursor": false,
-      "vo": "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+      "vo": "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
     },
     "0001.png": {
       "hold": 1.0,
-      "vo": "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-      "voSay": "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+      "vo": "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
     },
     "0009.png": {
       "hold": 0.8
     },
     "0010.png": {
-      "vo": "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-      "voSay": "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+      "vo": "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+      "voSay": "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
     },
     "0040.png": {
       "hold": 1.0,
-      "vo": "I'll ask for a collapse toggle, done when tests, lint and build pass.",
+      "vo": "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
       "ring": {
         "x": 95,
         "y": 416,
@@ -575,8 +568,8 @@ window.SPEC = {
     },
     "0049.png": {
       "hold": 1.0,
-      "vo": "Pressing Ctrl+C now clears a draft without stopping the task.",
-      "voSay": "Pressing Control C now clears a draft without stopping the task.",
+      "vo": "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+      "voSay": "Pressing Control C while it works now clears what I've typed, without stopping the task.",
       "ring": {
         "x": 275,
         "y": 649,
@@ -596,7 +589,7 @@ window.SPEC = {
       "ringFor": 1.2
     },
     "0055.png": {
-      "vo": "And messages typed while it works go straight to the running turn."
+      "vo": "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
     },
     "0064.png": {
       "hold": 0.6
@@ -616,7 +609,7 @@ window.SPEC = {
     },
     "0216.png": {
       "hold": 1.2,
-      "vo": "When the checks pass, it reports the goal complete.",
+      "vo": "When all the checks pass, it reports the goal complete.",
       "ring": {
         "x": 138,
         "y": 716,
@@ -644,16 +637,17 @@ window.SPEC = {
       "scene": "goalcmds",
       "hold": 1.0,
       "cursor": false,
-      "vo": "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-      "voSay": "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+      "vo": "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+      "voSay": "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
     },
     "0220.png": {
       "hold": 1.2,
-      "vo": "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-      "voSay": "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+      "vo": "That covers goals, so let's move on to the rest of the release, starting with the model picker."
     },
     "0221.png": {
       "hold": 1.4,
+      "vo": "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+      "voSay": "Alt Enter now switches models for this session only, while Enter still saves your pick as the default.",
       "ring": {
         "x": 541,
         "y": 749,
@@ -673,13 +667,17 @@ window.SPEC = {
       "ringFor": 1.8
     },
     "0223.png": {
+      "scene": "billing",
+      "hold": 1.0,
+      "cursor": false,
+      "vo": "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+      "voSay": "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+    },
+    "0224.png": {
       "scene": "config",
       "hold": 1.0,
       "cursor": false,
-      "vo": "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
-    },
-    "0224.png": {
-      "skip": true
+      "vo": "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
     },
     "0225.png": {
       "skip": true
@@ -730,10 +728,11 @@ window.SPEC = {
       "skip": true
     },
     "0243.png": {
-      "vo": "And devin mcp list now shows a Source line naming where each server came from."
+      "vo": "Next, let's look at plugins and MCP servers."
     },
     "0252.png": {
       "hold": 1.6,
+      "vo": "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
       "ring": {
         "x": 664,
         "y": 249,
@@ -746,10 +745,10 @@ window.SPEC = {
       "scene": "ext",
       "hold": 1.0,
       "cursor": false,
-      "vo": "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+      "vo": "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
     },
     "0254.png": {
-      "vo": "Running devin cloud on its own now opens a Devin Cloud session."
+      "vo": "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
     },
     "0267.png": {
       "hold": 1.4,
@@ -765,14 +764,13 @@ window.SPEC = {
       "scene": "terminal",
       "hold": 1.0,
       "cursor": false,
-      "vo": "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-      "voSay": "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+      "vo": "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
     },
     "0269.png": {
       "scene": "fixes",
       "hold": 1.0,
       "cursor": false,
-      "vo": "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+      "vo": "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
     }
   }
 };

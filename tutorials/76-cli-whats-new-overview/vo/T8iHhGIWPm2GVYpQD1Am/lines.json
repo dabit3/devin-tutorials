@@ -1,39 +1,39 @@
 {
  "0000.png": {
-  "text": "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-  "dur": 7.51,
+  "text": "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+  "dur": 6.5,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -42,8 +42,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -52,43 +52,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -99,62 +114,61 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.067,
-    "text": "This release adds long-running goals,"
+    "t1": 1.474,
+    "text": "Let's look at what's new in the Devin"
    },
    {
-    "t0": 2.276,
-    "t1": 3.855,
-    "text": "model and config controls,"
+    "t0": 1.521,
+    "t1": 4.04,
+    "text": "CLI, starting with long-running goals,"
    },
    {
-    "t0": 4.029,
-    "t1": 5.724,
-    "text": "plugin and MCP upgrades,"
+    "t0": 4.214,
+    "t1": 5.468,
+    "text": "then models, plugins,"
    },
    {
-    "t0": 5.851,
-    "t1": 7.51,
-    "text": "and terminal and cloud improvements."
+    "t0": 5.492,
+    "t1": 6.5,
+    "text": "and terminal features."
    }
   ]
  },
  "0001.png": {
-  "text": "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-  "say": "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable.",
-  "dur": 5.09,
-  "takeAt": 7.905,
+  "text": "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+  "dur": 3.79,
+  "takeAt": 6.73,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -163,8 +177,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -173,43 +187,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -219,48 +248,58 @@
   ],
   "chunks": [
    {
-    "t0": 0.036,
-    "t1": 5.09,
-    "text": "Here in Ghostty, I'm on version 3000.11.92, the latest stable."
+    "t0": 0.12,
+    "t1": 0.909,
+    "text": "Here in Ghostty,"
+   },
+   {
+    "t0": 0.944,
+    "t1": 2.918,
+    "text": "I've updated to the latest version of Devin,"
+   },
+   {
+    "t0": 2.941,
+    "t1": 3.79,
+    "text": "so let's dive in."
    }
   ]
  },
  "0010.png": {
-  "text": "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-  "say": "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked.",
-  "dur": 5.49,
-  "takeAt": 13.22,
+  "text": "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+  "say": "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+  "dur": 6.829,
+  "takeAt": 10.851,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -269,8 +308,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -279,43 +318,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -326,46 +380,46 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 5.49,
-    "text": "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked."
+    "t1": 6.829,
+    "text": "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    }
   ]
  },
  "0040.png": {
-  "text": "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-  "dur": 3.877,
-  "takeAt": 19.083,
+  "text": "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+  "dur": 5.404,
+  "takeAt": 17.946,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -374,8 +428,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -384,43 +438,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -431,57 +500,57 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.699,
-    "text": "I'll ask for a collapse toggle,"
+    "t1": 1.733,
+    "text": "I'll ask for a collapse toggle on each"
    },
    {
-    "t0": 1.873,
-    "t1": 2.79,
-    "text": "done when tests,"
+    "t0": 1.78,
+    "t1": 4.044,
+    "text": "column, and tell it to finish when tests,"
    },
    {
-    "t0": 2.906,
-    "t1": 3.877,
-    "text": "lint and build pass."
+    "t0": 4.253,
+    "t1": 5.404,
+    "text": "lint and build all pass."
    }
   ]
  },
  "0049.png": {
-  "text": "Pressing Ctrl+C now clears a draft without stopping the task.",
-  "say": "Pressing Control C now clears a draft without stopping the task.",
-  "dur": 3.367,
-  "takeAt": 23.553,
+  "text": "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+  "say": "Pressing Control C while it works now clears what I've typed, without stopping the task.",
+  "dur": 4.825,
+  "takeAt": 23.685,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -490,8 +559,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -500,43 +569,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -546,47 +630,47 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 3.367,
-    "text": "Pressing Ctrl+C now clears a draft without stopping the task."
+    "t0": 0,
+    "t1": 4.825,
+    "text": "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task."
    }
   ]
  },
  "0055.png": {
-  "text": "And messages typed while it works go straight to the running turn.",
-  "dur": 3.09,
-  "takeAt": 27.21,
+  "text": "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+  "dur": 5.692,
+  "takeAt": 28.778,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -595,8 +679,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -605,43 +689,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -652,51 +751,56 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.245,
-    "text": "And messages typed while it works go straight"
+    "t1": 2.175,
+    "text": "A message sent while it works now goes"
    },
    {
-    "t0": 2.28,
-    "t1": 3.09,
-    "text": "to the running turn."
+    "t0": 2.221,
+    "t1": 3.464,
+    "text": "straight to the running turn,"
+   },
+   {
+    "t0": 3.673,
+    "t1": 5.692,
+    "text": "so you can steer it without cancelling anything."
    }
   ]
  },
  "0096.png": {
   "text": "Devin reads it at its next step.",
-  "dur": 1.7,
-  "takeAt": 30.67,
+  "dur": 1.639,
+  "takeAt": 34.711,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -705,8 +809,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -715,43 +819,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -762,46 +881,46 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.7,
+    "t1": 1.639,
     "text": "Devin reads it at its next step."
    }
   ]
  },
  "0216.png": {
-  "text": "When the checks pass, it reports the goal complete.",
-  "dur": 2.345,
-  "takeAt": 32.795,
+  "text": "When all the checks pass, it reports the goal complete.",
+  "dur": 2.651,
+  "takeAt": 36.684,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -810,8 +929,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -820,43 +939,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -866,13 +1000,13 @@
   ],
   "chunks": [
    {
-    "t0": 0.027,
-    "t1": 1.002,
-    "text": "When the checks pass,"
+    "t0": 0.12,
+    "t1": 1.235,
+    "text": "When all the checks pass,"
    },
    {
-    "t0": 1.025,
-    "t1": 2.345,
+    "t0": 1.27,
+    "t1": 2.651,
     "text": "it reports the goal complete."
    }
   ]
@@ -880,39 +1014,39 @@
  "0218.png": {
   "text": "Typing /goal on its own shows the status.",
   "say": "Typing slash goal on its own shows the status.",
-  "dur": 2.451,
-  "takeAt": 35.279,
+  "dur": 2.864,
+  "takeAt": 39.436,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -921,8 +1055,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -931,43 +1065,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -978,47 +1127,47 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.451,
+    "t1": 2.864,
     "text": "Typing /goal on its own shows the status."
    }
   ]
  },
  "0219.png": {
-  "text": "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-  "say": "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns.",
-  "dur": 6.455,
-  "takeAt": 38.015,
+  "text": "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+  "say": "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns.",
+  "dur": 7.115,
+  "takeAt": 42.485,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -1027,8 +1176,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -1037,43 +1186,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -1083,48 +1247,47 @@
   ],
   "chunks": [
    {
-    "t0": 0.054,
-    "t1": 6.455,
-    "text": "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns."
+    "t0": 0.089,
+    "t1": 7.115,
+    "text": "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns."
    }
   ]
  },
  "0220.png": {
-  "text": "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-  "say": "In the model picker, Alt Enter switches for this session only, and Enter still saves a default.",
-  "dur": 4.715,
-  "takeAt": 45.045,
+  "text": "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+  "dur": 4.205,
+  "takeAt": 49.905,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -1133,8 +1296,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -1143,43 +1306,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -1189,47 +1367,179 @@
   ],
   "chunks": [
    {
-    "t0": 0.025,
-    "t1": 4.715,
-    "text": "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default."
+    "t0": 0,
+    "t1": 0.831,
+    "text": "That covers goals,"
+   },
+   {
+    "t0": 0.854,
+    "t1": 2.119,
+    "text": "so let's move on to the rest of"
+   },
+   {
+    "t0": 2.166,
+    "t1": 4.205,
+    "text": "the release, starting with the model picker."
+   }
+  ]
+ },
+ "0221.png": {
+  "text": "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+  "say": "Alt Enter now switches models for this session only, while Enter still saves your pick as the default.",
+  "dur": 5.145,
+  "takeAt": 54.425,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
+   ],
+   [
+    "0001.png",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
+   ],
+   [
+    "0010.png",
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
+   ],
+   [
+    "0040.png",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
+   ],
+   [
+    "0049.png",
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
+   ],
+   [
+    "0055.png",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
+   ],
+   [
+    "0096.png",
+    "Devin reads it at its next step.",
+    "Devin reads it at its next step."
+   ],
+   [
+    "0216.png",
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
+   ],
+   [
+    "0218.png",
+    "Typing /goal on its own shows the status.",
+    "Typing slash goal on its own shows the status."
+   ],
+   [
+    "0219.png",
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
+   ],
+   [
+    "0220.png",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
+   ],
+   [
+    "0223.png",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
+   ],
+   [
+    "0243.png",
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
+   ],
+   [
+    "0253.png",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
+   ],
+   [
+    "0254.png",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
+   ],
+   [
+    "0268.png",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
+   ],
+   [
+    "0269.png",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
+   ],
+   [
+    "outro",
+    "Run devin update, and give Devin a goal.",
+    "Run devin update, and give Devin a goal."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.061,
+    "t1": 5.145,
+    "text": "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default."
    }
   ]
  },
  "0223.png": {
-  "text": "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-  "dur": 8.839,
-  "takeAt": 50.151,
+  "text": "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+  "say": "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off.",
+  "dur": 8.045,
+  "takeAt": 59.865,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -1238,8 +1548,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -1248,43 +1558,178 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
+   ],
+   [
+    "outro",
+    "Run devin update, and give Devin a goal.",
+    "Run devin update, and give Devin a goal."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.019,
+    "t1": 8.045,
+    "text": "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off."
+   }
+  ]
+ },
+ "0224.png": {
+  "text": "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+  "dur": 6.113,
+  "takeAt": 68.297,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
+   ],
+   [
+    "0001.png",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
+   ],
+   [
+    "0010.png",
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
+   ],
+   [
+    "0040.png",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
+   ],
+   [
+    "0049.png",
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
+   ],
+   [
+    "0055.png",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
+   ],
+   [
+    "0096.png",
+    "Devin reads it at its next step.",
+    "Devin reads it at its next step."
+   ],
+   [
+    "0216.png",
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
+   ],
+   [
+    "0218.png",
+    "Typing /goal on its own shows the status.",
+    "Typing slash goal on its own shows the status."
+   ],
+   [
+    "0219.png",
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
+   ],
+   [
+    "0220.png",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
+   ],
+   [
+    "0223.png",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
+   ],
+   [
+    "0243.png",
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
+   ],
+   [
+    "0253.png",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
+   ],
+   [
+    "0254.png",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
+   ],
+   [
+    "0268.png",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
+   ],
+   [
+    "0269.png",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -1295,66 +1740,56 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.535,
-    "text": "Provider plans can now pay for marked models,"
+    "t1": 1.734,
+    "text": "Two new settings let you turn off the"
    },
    {
-    "t0": 2.709,
-    "t1": 4.81,
-    "text": "and new settings cover typewriter text,"
+    "t0": 1.781,
+    "t1": 4.033,
+    "text": "typewriter effect so text appears instantly,"
    },
    {
-    "t0": 5.193,
-    "t1": 6.354,
-    "text": "the subagent model,"
-   },
-   {
-    "t0": 6.563,
-    "t1": 7.759,
-    "text": "local tools permissions,"
-   },
-   {
-    "t0": 7.782,
-    "t1": 8.839,
-    "text": "and the sessions folder."
+    "t0": 4.161,
+    "t1": 6.113,
+    "text": "and pick the model your subagents use."
    }
   ]
  },
  "0243.png": {
-  "text": "And devin mcp list now shows a Source line naming where each server came from.",
-  "dur": 4.099,
-  "takeAt": 59.311,
+  "text": "Next, let's look at plugins and MCP servers.",
+  "dur": 2.639,
+  "takeAt": 74.741,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -1363,8 +1798,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -1373,43 +1808,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -1420,51 +1870,176 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.349,
-    "text": "And devin mcp list now shows a Source"
+    "t1": 2.639,
+    "text": "Next, let's look at plugins and MCP servers."
+   }
+  ]
+ },
+ "0252.png": {
+  "text": "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+  "dur": 6.265,
+  "takeAt": 77.655,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
+   ],
+   [
+    "0001.png",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
+   ],
+   [
+    "0010.png",
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
+   ],
+   [
+    "0040.png",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
+   ],
+   [
+    "0049.png",
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
+   ],
+   [
+    "0055.png",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
+   ],
+   [
+    "0096.png",
+    "Devin reads it at its next step.",
+    "Devin reads it at its next step."
+   ],
+   [
+    "0216.png",
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
+   ],
+   [
+    "0218.png",
+    "Typing /goal on its own shows the status.",
+    "Typing slash goal on its own shows the status."
+   ],
+   [
+    "0219.png",
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
+   ],
+   [
+    "0220.png",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
+   ],
+   [
+    "0223.png",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
+   ],
+   [
+    "0243.png",
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
+   ],
+   [
+    "0253.png",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
+   ],
+   [
+    "0254.png",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
+   ],
+   [
+    "0268.png",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
+   ],
+   [
+    "0269.png",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
+   ],
+   [
+    "outro",
+    "Run devin update, and give Devin a goal.",
+    "Run devin update, and give Devin a goal."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.593,
+    "text": "Running devin mcp list now shows a Source"
    },
    {
-    "t0": 2.384,
-    "t1": 4.099,
-    "text": "line naming where each server came from."
+    "t0": 2.628,
+    "t1": 5.38,
+    "text": "line, naming the configuration file or plugin each"
+   },
+   {
+    "t0": 5.426,
+    "t1": 6.265,
+    "text": "server came from."
    }
   ]
  },
  "0253.png": {
-  "text": "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-  "dur": 12.341,
-  "takeAt": 63.769,
+  "text": "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+  "dur": 9.42,
+  "takeAt": 84.25,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -1473,8 +2048,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -1483,43 +2058,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -1530,66 +2120,61 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.755,
-    "text": "Plugin installs now take skills-only repos,"
+    "t1": 2.708,
+    "text": "Plugin installs also accept repos that only ship"
    },
    {
-    "t0": 2.929,
-    "t1": 5.193,
-    "text": "plugins can target cloud or local with stable"
+    "t0": 2.743,
+    "t1": 5.75,
+    "text": "skills, new hooks run around context compaction,"
    },
    {
-    "t0": 5.216,
-    "t1": 7.829,
-    "text": "hook paths, new hooks run around compaction,"
+    "t0": 6.029,
+    "t1": 8.525,
+    "text": "and remote MCP servers from Devin Cloud are"
    },
    {
-    "t0": 8.038,
-    "t1": 10.046,
-    "text": "MCP supports the newest protocol,"
-   },
-   {
-    "t0": 10.197,
-    "t1": 12.341,
-    "text": "and remote MCPs are in private preview."
+    "t0": 8.56,
+    "t1": 9.42,
+    "text": "in private preview."
    }
   ]
  },
  "0254.png": {
-  "text": "Running devin cloud on its own now opens a Devin Cloud session.",
-  "dur": 3.23,
-  "takeAt": 76.47,
+  "text": "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+  "dur": 5.445,
+  "takeAt": 94.055,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -1598,8 +2183,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -1608,43 +2193,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -1654,53 +2254,57 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.094,
-    "text": "Running devin cloud on its own now opens"
+    "t0": 0.044,
+    "t1": 1.994,
+    "text": "The last group is the terminal and cloud,"
    },
    {
-    "t0": 2.14,
-    "t1": 3.23,
-    "text": "a Devin Cloud session."
+    "t0": 2.168,
+    "t1": 3.968,
+    "text": "where running devin cloud on its own now"
+   },
+   {
+    "t0": 4.049,
+    "t1": 5.445,
+    "text": "opens a Devin Cloud session."
    }
   ]
  },
  "0268.png": {
-  "text": "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-  "say": "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open.",
-  "dur": 10.431,
-  "takeAt": 79.999,
+  "text": "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+  "dur": 9.591,
+  "takeAt": 99.819,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -1709,8 +2313,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -1719,43 +2323,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -1766,46 +2385,66 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 10.431,
-    "text": "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open."
+    "t1": 2.314,
+    "text": "Your terminal can now show which sessions need"
+   },
+   {
+    "t0": 2.361,
+    "t1": 5.112,
+    "text": "you, cloud sessions can copy files to and"
+   },
+   {
+    "t0": 5.159,
+    "t1": 6.018,
+    "text": "from your machine,"
+   },
+   {
+    "t0": 6.296,
+    "t1": 8.282,
+    "text": "and you can let a trusted command always"
+   },
+   {
+    "t0": 8.34,
+    "t1": 9.591,
+    "text": "run outside the sandbox."
    }
   ]
  },
  "0269.png": {
-  "text": "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-  "dur": 7.011,
-  "takeAt": 90.739,
+  "text": "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+  "dur": 6.812,
+  "takeAt": 109.838,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -1814,8 +2453,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -1824,43 +2463,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -1871,61 +2525,61 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.059,
-    "text": "Org-required prompts now say so,"
+    "t1": 0.898,
+    "text": "On top of that,"
    },
    {
-    "t0": 2.302,
-    "t1": 3.765,
-    "text": "smart mode asks less,"
+    "t0": 0.979,
+    "t1": 3.173,
+    "text": "smart mode asks for approval less often,"
    },
    {
-    "t0": 3.916,
-    "t1": 4.88,
+    "t0": 3.382,
+    "t1": 4.543,
     "text": "startup is faster,"
    },
    {
-    "t0": 4.903,
-    "t1": 7.011,
+    "t0": 4.694,
+    "t1": 6.812,
     "text": "and session history works on network drives."
    }
   ]
  },
  "outro": {
   "text": "Run devin update, and give Devin a goal.",
-  "dur": 1.935,
-  "takeAt": 98.025,
+  "dur": 1.992,
+  "takeAt": 116.978,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements.",
-    "This release adds long-running goals, model and config controls, plugin and MCP upgrades, and terminal and cloud improvements."
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.",
+    "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
    ],
    [
     "0001.png",
-    "Here in Ghostty, I'm on version 3000.11.92, the latest stable.",
-    "Here in Ghostty, I'm on version three thousand, point eleven, point ninety-two, the latest stable."
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.",
+    "Here in Ghostty, I've updated to the latest version of Devin, so let's dive in."
    ],
    [
     "0010.png",
-    "The headline is /goal: Devin keeps working across turns until the goal is complete or blocked.",
-    "The headline is slash goal: Devin keeps working across turns until the goal is complete or blocked."
+    "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
    ],
    [
     "0040.png",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass.",
-    "I'll ask for a collapse toggle, done when tests, lint and build pass."
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
+    "I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass."
    ],
    [
     "0049.png",
-    "Pressing Ctrl+C now clears a draft without stopping the task.",
-    "Pressing Control C now clears a draft without stopping the task."
+    "Pressing Ctrl+C while it works now clears what I've typed, without stopping the task.",
+    "Pressing Control C while it works now clears what I've typed, without stopping the task."
    ],
    [
     "0055.png",
-    "And messages typed while it works go straight to the running turn.",
-    "And messages typed while it works go straight to the running turn."
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything.",
+    "A message sent while it works now goes straight to the running turn, so you can steer it without cancelling anything."
    ],
    [
     "0096.png",
@@ -1934,8 +2588,8 @@
    ],
    [
     "0216.png",
-    "When the checks pass, it reports the goal complete.",
-    "When the checks pass, it reports the goal complete."
+    "When all the checks pass, it reports the goal complete.",
+    "When all the checks pass, it reports the goal complete."
    ],
    [
     "0218.png",
@@ -1944,43 +2598,58 @@
    ],
    [
     "0219.png",
-    "And /goal resume picks up after an interrupt, /goal clear drops it, and runs pause after 50 turns.",
-    "And slash goal rezoom picks up after an interrupt, slash goal clear drops it, and runs pause after fifty turns."
+    "If a run gets interrupted, /goal resume picks it back up, /goal clear drops it, and a run pauses itself after 50 turns.",
+    "If a run gets interrupted, slash goal rezoom picks it back up, slash goal clear drops it, and a run pauses itself after fifty turns."
    ],
    [
     "0220.png",
-    "In the model picker, Alt+Enter switches for this session only, and Enter still saves a default.",
-    "In the model picker, Alt Enter switches for this session only, and Enter still saves a default."
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker.",
+    "That covers goals, so let's move on to the rest of the release, starting with the model picker."
+   ],
+   [
+    "0221.png",
+    "Alt+Enter now switches models for this session only, while Enter still saves your pick as the default.",
+    "Alt Enter now switches models for this session only, while Enter still saves your pick as the default."
    ],
    [
     "0223.png",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder.",
-    "Provider plans can now pay for marked models, and new settings cover typewriter text, the subagent model, local tools permissions, and the sessions folder."
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and /billing turns that on or off.",
+    "If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off."
+   ],
+   [
+    "0224.png",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.",
+    "Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use."
    ],
    [
     "0243.png",
-    "And devin mcp list now shows a Source line naming where each server came from.",
-    "And devin mcp list now shows a Source line naming where each server came from."
+    "Next, let's look at plugins and MCP servers.",
+    "Next, let's look at plugins and MCP servers."
+   ],
+   [
+    "0252.png",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
+    "Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from."
    ],
    [
     "0253.png",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview.",
-    "Plugin installs now take skills-only repos, plugins can target cloud or local with stable hook paths, new hooks run around compaction, MCP supports the newest protocol, and remote MCPs are in private preview."
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.",
+    "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
    ],
    [
     "0254.png",
-    "Running devin cloud on its own now opens a Devin Cloud session.",
-    "Running devin cloud on its own now opens a Devin Cloud session."
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.",
+    "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
    ],
    [
     "0268.png",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Ctrl+U clears line by line, and stuck sessions can be forced open.",
-    "Terminals can show session status, sandbox prompts can always allow a command, devin connect copies files, Control U clears line by line, and stuck sessions can be forced open."
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.",
+    "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
    ],
    [
     "0269.png",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives.",
-    "Org-required prompts now say so, smart mode asks less, startup is faster, and session history works on network drives."
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.",
+    "On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives."
    ],
    [
     "outro",
@@ -1990,13 +2659,13 @@
   ],
   "chunks": [
    {
-    "t0": 0.113,
-    "t1": 1.007,
+    "t0": 0.12,
+    "t1": 1.06,
     "text": "Run devin update,"
    },
    {
-    "t0": 1.03,
-    "t1": 1.935,
+    "t0": 1.084,
+    "t1": 1.992,
     "text": "and give Devin a goal."
    }
   ]
