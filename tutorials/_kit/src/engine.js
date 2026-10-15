@@ -2,7 +2,7 @@
 // URL: index.html?v=<video-folder>. Loads ../../<v>/spec.js (window.SPEC) and ../../<v>/shots/beats.json.
 (() => {
 const W = 3840, H = 2160, FPS = 60, VW = 1440, VH = 810, K = W / VW;
-const INK = '#191919', BG = '#FCFCFC';
+let INK = '#191919', BG = '#FCFCFC', TXT = '25,25,25';
 const cv = document.getElementById('c'), ctx = cv.getContext('2d');
 const V = new URLSearchParams(location.search).get('v');
 const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
@@ -271,15 +271,15 @@ function drawRings(f) {
 }
 function drawBackdrop(a = 1) {
   ctx.fillStyle = BG; ctx.fillRect(0, 0, W, H);
-  ctx.save(); ctx.globalAlpha = a * 0.55; ctx.fillStyle = 'rgba(25,25,25,.09)';
+  ctx.save(); ctx.globalAlpha = a * 0.55; ctx.fillStyle = SPEC.dark ? 'rgba(255,255,255,.07)' : 'rgba(25,25,25,.09)';
   for (let x = 60; x < W; x += 120) for (let y = 60; y < H; y += 120) { ctx.beginPath(); ctx.arc(x, y, 3.2, 0, Math.PI * 2); ctx.fill(); }
   ctx.restore();
   const g = ctx.createRadialGradient(W / 2, H * 0.45, 200, W / 2, H * 0.5, W * 0.7);
-  g.addColorStop(0, 'rgba(252,252,252,0.9)'); g.addColorStop(1, 'rgba(252,252,252,0)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  const gc = SPEC.dark ? '11,11,12' : '252,252,252'; g.addColorStop(0, `rgba(${gc},0.9)`); g.addColorStop(1, `rgba(${gc},0)`); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
 }
 function drawLockup(cx, cy, h, a) {
   const w = h * LOCKUP.width / LOCKUP.height;
-  ctx.save(); ctx.globalAlpha = a; ctx.filter = 'invert(1) brightness(0.1)'; ctx.drawImage(LOCKUP, cx - w / 2, cy - h / 2, w, h); ctx.restore();
+  ctx.save(); ctx.globalAlpha = a; ctx.filter = SPEC.dark ? 'none' : 'invert(1) brightness(0.1)'; ctx.drawImage(LOCKUP, cx - w / 2, cy - h / 2, w, h); ctx.restore();
 }
 function spaced(text, x, y, track) { // letter-spaced text, left aligned
   let cx = x; for (const ch of text) { ctx.fillText(ch, cx, y); cx += ctx.measureText(ch).width + track; } return cx - x - track;
@@ -294,7 +294,7 @@ function drawTitleCard(f, out) {
   drawLockup(W / 2, 700 + 30 * (1 - a1), 120, a1);
   // eyebrow
   const a0 = eOut(prog(f, 18, 50));
-  font(40, 500, 'JetBrains Mono'); ctx.fillStyle = `rgba(25,25,25,${0.5 * a0})`; ctx.textBaseline = 'alphabetic';
+  font(40, 500, 'JetBrains Mono'); ctx.fillStyle = `rgba(${TXT},${0.5 * a0})`; ctx.textBaseline = 'alphabetic';
   if (S.eyebrow) { const eb = S.eyebrow.toUpperCase(); const ew = spacedW(eb, 8); spaced(eb, W / 2 - ew / 2, 900, 8); }
   // title words
   font(172, 500); ctx.fillStyle = INK;
@@ -306,7 +306,7 @@ function drawTitleCard(f, out) {
     ctx.save(); ctx.globalAlpha = p; ctx.translate(0, 60 * (1 - p)); spaced(w, x, 1130, track); ctx.restore(); x += ws[i] + gap;
   });
   const a2 = eOut(prog(f, 60, 96));
-  font(64, 400); ctx.fillStyle = `rgba(25,25,25,${0.56 * a2})`;
+  font(64, 400); ctx.fillStyle = `rgba(${TXT},${0.56 * a2})`;
   const sw = spacedW(S.subtitle, -1.2); ctx.save(); ctx.translate(0, 24 * (1 - a2)); spaced(S.subtitle, W / 2 - sw / 2, 1250, -1.2); ctx.restore();
   ctx.restore();
 }
@@ -314,7 +314,7 @@ function drawWindow(f, s, y, radius, shadow) {
   return async () => {
     ctx.save();
     const w = W * s, h = H * s, x = (W - w) / 2, yy = (H - h) / 2 + y;
-    if (shadow > 0) { ctx.save(); ctx.shadowColor = `rgba(0,0,0,${0.18 * shadow})`; ctx.shadowBlur = 120; ctx.shadowOffsetY = 40; rr(x, yy, w, h, radius); ctx.fillStyle = '#fff'; ctx.fill(); ctx.restore(); }
+    if (shadow > 0) { ctx.save(); ctx.shadowColor = `rgba(0,0,0,${0.18 * shadow})`; ctx.shadowBlur = 120; ctx.shadowOffsetY = 40; rr(x, yy, w, h, radius); ctx.fillStyle = SPEC.dark ? '#141414' : '#fff'; ctx.fill(); ctx.restore(); }
     rr(x, yy, w, h, radius); ctx.clip();
     ctx.translate(x, yy); ctx.scale(s, s);
     await drawUI(f);
@@ -425,9 +425,9 @@ function drawOutro(f, p) {
   drawBackdrop();
   const a = eOutQuint(prog(p, 0.1, 0.45)), b = eOut(prog(p, 0.22, 0.55)), c = eOut(prog(p, 0.32, 0.65));
   drawLockup(W / 2, 880 + 30 * (1 - a), 150, a);
-  font(84, 500); ctx.fillStyle = `rgba(25,25,25,${b})`; let t = SPEC.outro || 'Now try it yourself'; let w = spacedW(t, -2);
+  font(84, 500); ctx.fillStyle = `rgba(${TXT},${b})`; let t = SPEC.outro || 'Now try it yourself'; let w = spacedW(t, -2);
   ctx.save(); ctx.translate(0, 30 * (1 - b)); spaced(t, W / 2 - w / 2, 1160, -2); ctx.restore();
-  font(52, 400); ctx.fillStyle = `rgba(25,25,25,${0.56 * c})`; t = SPEC.outroSub || 'app.devin.ai  ·  docs.devin.ai'; w = spacedW(t, -1);
+  font(52, 400); ctx.fillStyle = `rgba(${TXT},${0.56 * c})`; t = SPEC.outroSub || 'app.devin.ai  ·  docs.devin.ai'; w = spacedW(t, -1);
   spaced(t, W / 2 - w / 2, 1270, -1);
 }
 
@@ -474,6 +474,7 @@ function cues() {
 const ready = (async () => {
   await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/spec.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
   SPEC = window.SPEC;
+  if (SPEC.dark) { INK = '#F5F5F7'; BG = '#0B0B0C'; TXT = '245,245,247'; }
   const VOICE = new URLSearchParams(location.search).get('voice');
   if (VOICE) { SPEC.voLines = await (await fetch(`../../${V}/vo/${VOICE}/lines.json`)).json(); SPEC.capScale = SPEC.voCapScale ?? 1.0; }
   const cs = SPEC.capScale ?? 1.18; for (const k of ['font', 'padX', 'h', 'gap']) CAP[k] = Math.round(CAP[k] * cs);

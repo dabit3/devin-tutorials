@@ -1,0 +1,857 @@
+{
+ "0000.png": {
+  "text": "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
+  "dur": 12.87,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates."
+   ],
+   [
+    "0001.png",
+    "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
+    "Each month, Grok searches X through the ex A I A P I to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page."
+   ],
+   [
+    "0002.png",
+    "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts.",
+    "The refresh function fans out with dot map, so every category and month runs at once, and the six month backfill was thirty searches that kept seven hundred and four posts."
+   ],
+   [
+    "0003.png",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
+   ],
+   [
+    "0004.png",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off.",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off."
+   ],
+   [
+    "0005.png",
+    "Then modal deploy created each function and gave the report its own modal.run URL.",
+    "Then modal deploy created each function and gave the report its own modal dot run URL."
+   ],
+   [
+    "0006.png",
+    "Devin opened a pull request with the whole app and its tests.",
+    "Devin opened a pull request with the whole app and its tests."
+   ],
+   [
+    "0007.png",
+    "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line.",
+    "The deployed report shows September's index at forty four out of a hundred from a hundred and nine posts, with six real months on the trend line."
+   ],
+   [
+    "0008.png",
+    "Each category lists its top themes and the loudest real posts behind them.",
+    "Each category lists its top themes and the loudest real posts behind them."
+   ],
+   [
+    "0009.png",
+    "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
+    "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers."
+   ],
+   [
+    "outro",
+    "Real posts from X, turned into a monthly report you can cite.",
+    "Real posts from X, turned into a monthly report you can cite."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.206,
+    "text": "Developers complain on X every day about their"
+   },
+   {
+    "t0": 2.252,
+    "t1": 4.423,
+    "text": "tools, their cloud bills and the job market,"
+   },
+   {
+    "t0": 4.54,
+    "t1": 5.7,
+    "text": "but nobody adds it up."
+   },
+   {
+    "t0": 6.026,
+    "t1": 8.533,
+    "text": "The Developer Pain Index turns those posts into"
+   },
+   {
+    "t0": 8.603,
+    "t1": 10.124,
+    "text": "a monthly report you can cite,"
+   },
+   {
+    "t0": 10.298,
+    "t1": 12.87,
+    "text": "with every chart showing its sample size and dates."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
+  "say": "Each month, Grok searches X through the ex A I A P I to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
+  "dur": 14.975,
+  "takeAt": 13.235,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates."
+   ],
+   [
+    "0001.png",
+    "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
+    "Each month, Grok searches X through the ex A I A P I to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page."
+   ],
+   [
+    "0002.png",
+    "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts.",
+    "The refresh function fans out with dot map, so every category and month runs at once, and the six month backfill was thirty searches that kept seven hundred and four posts."
+   ],
+   [
+    "0003.png",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
+   ],
+   [
+    "0004.png",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off.",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off."
+   ],
+   [
+    "0005.png",
+    "Then modal deploy created each function and gave the report its own modal.run URL.",
+    "Then modal deploy created each function and gave the report its own modal dot run URL."
+   ],
+   [
+    "0006.png",
+    "Devin opened a pull request with the whole app and its tests.",
+    "Devin opened a pull request with the whole app and its tests."
+   ],
+   [
+    "0007.png",
+    "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line.",
+    "The deployed report shows September's index at forty four out of a hundred from a hundred and nine posts, with six real months on the trend line."
+   ],
+   [
+    "0008.png",
+    "Each category lists its top themes and the loudest real posts behind them.",
+    "Each category lists its top themes and the loudest real posts behind them."
+   ],
+   [
+    "0009.png",
+    "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
+    "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers."
+   ],
+   [
+    "outro",
+    "Real posts from X, turned into a monthly report you can cite.",
+    "Real posts from X, turned into a monthly report you can cite."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.117,
+    "t1": 7.605,
+    "text": "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is."
+   },
+   {
+    "t0": 7.988,
+    "t1": 11.1,
+    "text": "Modal functions group similar complaints into themes and"
+   },
+   {
+    "t0": 11.169,
+    "t1": 12.771,
+    "text": "save the dataset to a Volume,"
+   },
+   {
+    "t0": 12.887,
+    "t1": 14.954,
+    "text": "and a web endpoint serves the report page."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts.",
+  "say": "The refresh function fans out with dot map, so every category and month runs at once, and the six month backfill was thirty searches that kept seven hundred and four posts.",
+  "dur": 9.242,
+  "takeAt": 28.278,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates."
+   ],
+   [
+    "0001.png",
+    "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
+    "Each month, Grok searches X through the ex A I A P I to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page."
+   ],
+   [
+    "0002.png",
+    "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts.",
+    "The refresh function fans out with dot map, so every category and month runs at once, and the six month backfill was thirty searches that kept seven hundred and four posts."
+   ],
+   [
+    "0003.png",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
+   ],
+   [
+    "0004.png",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off.",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off."
+   ],
+   [
+    "0005.png",
+    "Then modal deploy created each function and gave the report its own modal.run URL.",
+    "Then modal deploy created each function and gave the report its own modal dot run URL."
+   ],
+   [
+    "0006.png",
+    "Devin opened a pull request with the whole app and its tests.",
+    "Devin opened a pull request with the whole app and its tests."
+   ],
+   [
+    "0007.png",
+    "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line.",
+    "The deployed report shows September's index at forty four out of a hundred from a hundred and nine posts, with six real months on the trend line."
+   ],
+   [
+    "0008.png",
+    "Each category lists its top themes and the loudest real posts behind them.",
+    "Each category lists its top themes and the loudest real posts behind them."
+   ],
+   [
+    "0009.png",
+    "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
+    "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers."
+   ],
+   [
+    "outro",
+    "Real posts from X, turned into a monthly report you can cite.",
+    "Real posts from X, turned into a monthly report you can cite."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 9.242,
+    "text": "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
+  "dur": 4.515,
+  "takeAt": 37.765,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates."
+   ],
+   [
+    "0001.png",
+    "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
+    "Each month, Grok searches X through the ex A I A P I to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page."
+   ],
+   [
+    "0002.png",
+    "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts.",
+    "The refresh function fans out with dot map, so every category and month runs at once, and the six month backfill was thirty searches that kept seven hundred and four posts."
+   ],
+   [
+    "0003.png",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
+   ],
+   [
+    "0004.png",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off.",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off."
+   ],
+   [
+    "0005.png",
+    "Then modal deploy created each function and gave the report its own modal.run URL.",
+    "Then modal deploy created each function and gave the report its own modal dot run URL."
+   ],
+   [
+    "0006.png",
+    "Devin opened a pull request with the whole app and its tests.",
+    "Devin opened a pull request with the whole app and its tests."
+   ],
+   [
+    "0007.png",
+    "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line.",
+    "The deployed report shows September's index at forty four out of a hundred from a hundred and nine posts, with six real months on the trend line."
+   ],
+   [
+    "0008.png",
+    "Each category lists its top themes and the loudest real posts behind them.",
+    "Each category lists its top themes and the loudest real posts behind them."
+   ],
+   [
+    "0009.png",
+    "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
+    "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers."
+   ],
+   [
+    "outro",
+    "Real posts from X, turned into a monthly report you can cite.",
+    "Real posts from X, turned into a monthly report you can cite."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.06,
+    "t1": 0.931,
+    "text": "In the real run,"
+   },
+   {
+    "t0": 1.105,
+    "t1": 3.195,
+    "text": "Devin built all of this from one plain-language"
+   },
+   {
+    "t0": 3.241,
+    "t1": 4.515,
+    "text": "prompt in the demo repo."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off.",
+  "dur": 7.295,
+  "takeAt": 42.685,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates."
+   ],
+   [
+    "0001.png",
+    "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
+    "Each month, Grok searches X through the ex A I A P I to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page."
+   ],
+   [
+    "0002.png",
+    "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts.",
+    "The refresh function fans out with dot map, so every category and month runs at once, and the six month backfill was thirty searches that kept seven hundred and four posts."
+   ],
+   [
+    "0003.png",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
+   ],
+   [
+    "0004.png",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off.",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off."
+   ],
+   [
+    "0005.png",
+    "Then modal deploy created each function and gave the report its own modal.run URL.",
+    "Then modal deploy created each function and gave the report its own modal dot run URL."
+   ],
+   [
+    "0006.png",
+    "Devin opened a pull request with the whole app and its tests.",
+    "Devin opened a pull request with the whole app and its tests."
+   ],
+   [
+    "0007.png",
+    "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line.",
+    "The deployed report shows September's index at forty four out of a hundred from a hundred and nine posts, with six real months on the trend line."
+   ],
+   [
+    "0008.png",
+    "Each category lists its top themes and the loudest real posts behind them.",
+    "Each category lists its top themes and the loudest real posts behind them."
+   ],
+   [
+    "0009.png",
+    "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
+    "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers."
+   ],
+   [
+    "outro",
+    "Real posts from X, turned into a monthly report you can cite.",
+    "Real posts from X, turned into a monthly report you can cite."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.028,
+    "t1": 2.686,
+    "text": "When Modal's scheduled-function limit blocked the cron,"
+   },
+   {
+    "t0": 2.93,
+    "t1": 4.753,
+    "text": "Devin asked before touching anything,"
+   },
+   {
+    "t0": 4.927,
+    "t1": 7.295,
+    "text": "so the schedule stayed in the code but switched off."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "Then modal deploy created each function and gave the report its own modal.run URL.",
+  "say": "Then modal deploy created each function and gave the report its own modal dot run URL.",
+  "dur": 4.594,
+  "takeAt": 50.256,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates."
+   ],
+   [
+    "0001.png",
+    "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
+    "Each month, Grok searches X through the ex A I A P I to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page."
+   ],
+   [
+    "0002.png",
+    "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts.",
+    "The refresh function fans out with dot map, so every category and month runs at once, and the six month backfill was thirty searches that kept seven hundred and four posts."
+   ],
+   [
+    "0003.png",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
+   ],
+   [
+    "0004.png",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off.",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off."
+   ],
+   [
+    "0005.png",
+    "Then modal deploy created each function and gave the report its own modal.run URL.",
+    "Then modal deploy created each function and gave the report its own modal dot run URL."
+   ],
+   [
+    "0006.png",
+    "Devin opened a pull request with the whole app and its tests.",
+    "Devin opened a pull request with the whole app and its tests."
+   ],
+   [
+    "0007.png",
+    "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line.",
+    "The deployed report shows September's index at forty four out of a hundred from a hundred and nine posts, with six real months on the trend line."
+   ],
+   [
+    "0008.png",
+    "Each category lists its top themes and the loudest real posts behind them.",
+    "Each category lists its top themes and the loudest real posts behind them."
+   ],
+   [
+    "0009.png",
+    "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
+    "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers."
+   ],
+   [
+    "outro",
+    "Real posts from X, turned into a monthly report you can cite.",
+    "Real posts from X, turned into a monthly report you can cite."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 4.594,
+    "text": "Then modal deploy created each function and gave the report its own modal.run URL."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "Devin opened a pull request with the whole app and its tests.",
+  "dur": 2.948,
+  "takeAt": 55.132,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates."
+   ],
+   [
+    "0001.png",
+    "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
+    "Each month, Grok searches X through the ex A I A P I to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page."
+   ],
+   [
+    "0002.png",
+    "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts.",
+    "The refresh function fans out with dot map, so every category and month runs at once, and the six month backfill was thirty searches that kept seven hundred and four posts."
+   ],
+   [
+    "0003.png",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
+   ],
+   [
+    "0004.png",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off.",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off."
+   ],
+   [
+    "0005.png",
+    "Then modal deploy created each function and gave the report its own modal.run URL.",
+    "Then modal deploy created each function and gave the report its own modal dot run URL."
+   ],
+   [
+    "0006.png",
+    "Devin opened a pull request with the whole app and its tests.",
+    "Devin opened a pull request with the whole app and its tests."
+   ],
+   [
+    "0007.png",
+    "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line.",
+    "The deployed report shows September's index at forty four out of a hundred from a hundred and nine posts, with six real months on the trend line."
+   ],
+   [
+    "0008.png",
+    "Each category lists its top themes and the loudest real posts behind them.",
+    "Each category lists its top themes and the loudest real posts behind them."
+   ],
+   [
+    "0009.png",
+    "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
+    "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers."
+   ],
+   [
+    "outro",
+    "Real posts from X, turned into a monthly report you can cite.",
+    "Real posts from X, turned into a monthly report you can cite."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.931,
+    "text": "Devin opened a pull request with the whole"
+   },
+   {
+    "t0": 1.966,
+    "t1": 2.948,
+    "text": "app and its tests."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line.",
+  "say": "The deployed report shows September's index at forty four out of a hundred from a hundred and nine posts, with six real months on the trend line.",
+  "dur": 6.804,
+  "takeAt": 58.336,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates."
+   ],
+   [
+    "0001.png",
+    "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
+    "Each month, Grok searches X through the ex A I A P I to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page."
+   ],
+   [
+    "0002.png",
+    "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts.",
+    "The refresh function fans out with dot map, so every category and month runs at once, and the six month backfill was thirty searches that kept seven hundred and four posts."
+   ],
+   [
+    "0003.png",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
+   ],
+   [
+    "0004.png",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off.",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off."
+   ],
+   [
+    "0005.png",
+    "Then modal deploy created each function and gave the report its own modal.run URL.",
+    "Then modal deploy created each function and gave the report its own modal dot run URL."
+   ],
+   [
+    "0006.png",
+    "Devin opened a pull request with the whole app and its tests.",
+    "Devin opened a pull request with the whole app and its tests."
+   ],
+   [
+    "0007.png",
+    "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line.",
+    "The deployed report shows September's index at forty four out of a hundred from a hundred and nine posts, with six real months on the trend line."
+   ],
+   [
+    "0008.png",
+    "Each category lists its top themes and the loudest real posts behind them.",
+    "Each category lists its top themes and the loudest real posts behind them."
+   ],
+   [
+    "0009.png",
+    "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
+    "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers."
+   ],
+   [
+    "outro",
+    "Real posts from X, turned into a monthly report you can cite.",
+    "Real posts from X, turned into a monthly report you can cite."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 6.796,
+    "text": "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Each category lists its top themes and the loudest real posts behind them.",
+  "dur": 3.665,
+  "takeAt": 65.405,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates."
+   ],
+   [
+    "0001.png",
+    "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
+    "Each month, Grok searches X through the ex A I A P I to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page."
+   ],
+   [
+    "0002.png",
+    "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts.",
+    "The refresh function fans out with dot map, so every category and month runs at once, and the six month backfill was thirty searches that kept seven hundred and four posts."
+   ],
+   [
+    "0003.png",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
+   ],
+   [
+    "0004.png",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off.",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off."
+   ],
+   [
+    "0005.png",
+    "Then modal deploy created each function and gave the report its own modal.run URL.",
+    "Then modal deploy created each function and gave the report its own modal dot run URL."
+   ],
+   [
+    "0006.png",
+    "Devin opened a pull request with the whole app and its tests.",
+    "Devin opened a pull request with the whole app and its tests."
+   ],
+   [
+    "0007.png",
+    "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line.",
+    "The deployed report shows September's index at forty four out of a hundred from a hundred and nine posts, with six real months on the trend line."
+   ],
+   [
+    "0008.png",
+    "Each category lists its top themes and the loudest real posts behind them.",
+    "Each category lists its top themes and the loudest real posts behind them."
+   ],
+   [
+    "0009.png",
+    "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
+    "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers."
+   ],
+   [
+    "outro",
+    "Real posts from X, turned into a monthly report you can cite.",
+    "Real posts from X, turned into a monthly report you can cite."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.11,
+    "t1": 2.211,
+    "text": "Each category lists its top themes and the"
+   },
+   {
+    "t0": 2.269,
+    "t1": 3.665,
+    "text": "loudest real posts behind them."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
+  "say": "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers.",
+  "dur": 11.045,
+  "takeAt": 69.385,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates."
+   ],
+   [
+    "0001.png",
+    "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
+    "Each month, Grok searches X through the ex A I A P I to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page."
+   ],
+   [
+    "0002.png",
+    "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts.",
+    "The refresh function fans out with dot map, so every category and month runs at once, and the six month backfill was thirty searches that kept seven hundred and four posts."
+   ],
+   [
+    "0003.png",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
+   ],
+   [
+    "0004.png",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off.",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off."
+   ],
+   [
+    "0005.png",
+    "Then modal deploy created each function and gave the report its own modal.run URL.",
+    "Then modal deploy created each function and gave the report its own modal dot run URL."
+   ],
+   [
+    "0006.png",
+    "Devin opened a pull request with the whole app and its tests.",
+    "Devin opened a pull request with the whole app and its tests."
+   ],
+   [
+    "0007.png",
+    "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line.",
+    "The deployed report shows September's index at forty four out of a hundred from a hundred and nine posts, with six real months on the trend line."
+   ],
+   [
+    "0008.png",
+    "Each category lists its top themes and the loudest real posts behind them.",
+    "Each category lists its top themes and the loudest real posts behind them."
+   ],
+   [
+    "0009.png",
+    "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
+    "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers."
+   ],
+   [
+    "outro",
+    "Real posts from X, turned into a monthly report you can cite.",
+    "Real posts from X, turned into a monthly report you can cite."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.089,
+    "t1": 4.245,
+    "text": "You could extend it with alerts when a theme spikes and with drill-downs for a single tool."
+   },
+   {
+    "t0": 4.571,
+    "t1": 11.045,
+    "text": "A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Real posts from X, turned into a monthly report you can cite.",
+  "dur": 3.125,
+  "takeAt": 80.695,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates."
+   ],
+   [
+    "0001.png",
+    "Each month, Grok searches X through the xAI API to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page.",
+    "Each month, Grok searches X through the ex A I A P I to find complaint posts for each category, and rates how severe each one is. Modal functions group similar complaints into themes and save the dataset to a Volume, and a web endpoint serves the report page."
+   ],
+   [
+    "0002.png",
+    "The refresh function fans out with .map(), so every category and month runs at once, and the six-month backfill was 30 searches that kept 704 posts.",
+    "The refresh function fans out with dot map, so every category and month runs at once, and the six month backfill was thirty searches that kept seven hundred and four posts."
+   ],
+   [
+    "0003.png",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
+   ],
+   [
+    "0004.png",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off.",
+    "When Modal's scheduled-function limit blocked the cron, Devin asked before touching anything, so the schedule stayed in the code but switched off."
+   ],
+   [
+    "0005.png",
+    "Then modal deploy created each function and gave the report its own modal.run URL.",
+    "Then modal deploy created each function and gave the report its own modal dot run URL."
+   ],
+   [
+    "0006.png",
+    "Devin opened a pull request with the whole app and its tests.",
+    "Devin opened a pull request with the whole app and its tests."
+   ],
+   [
+    "0007.png",
+    "The deployed report shows September's index at 44 out of 100 from 109 posts, with six real months on the trend line.",
+    "The deployed report shows September's index at forty four out of a hundred from a hundred and nine posts, with six real months on the trend line."
+   ],
+   [
+    "0008.png",
+    "Each category lists its top themes and the loudest real posts behind them.",
+    "Each category lists its top themes and the loudest real posts behind them."
+   ],
+   [
+    "0009.png",
+    "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
+    "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers."
+   ],
+   [
+    "outro",
+    "Real posts from X, turned into a monthly report you can cite.",
+    "Real posts from X, turned into a monthly report you can cite."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.11,
+    "t1": 1.179,
+    "text": "Real posts from X,"
+   },
+   {
+    "t0": 1.213,
+    "t1": 3.125,
+    "text": "turned into a monthly report you can cite."
+   }
+  ]
+ }
+}
