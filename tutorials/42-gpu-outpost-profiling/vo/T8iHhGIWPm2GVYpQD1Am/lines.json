@@ -1,0 +1,445 @@
+{
+ "0000.png": {
+  "text": "Outposts let Devin run sessions on machines you control, so when a problem only shows up on a real GPU, Devin can debug it on that GPU.",
+  "dur": 7.355,
+  "at": 0.0,
+  "end": 7.355,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.159,
+    "text": "Outposts let Devin run sessions on machines you"
+   },
+   {
+    "t0": 2.206,
+    "t1": 4.284,
+    "text": "control, so when a problem only shows up"
+   },
+   {
+    "t0": 4.342,
+    "t1": 5.399,
+    "text": "on a real GPU,"
+   },
+   {
+    "t0": 5.573,
+    "t1": 7.355,
+    "text": "Devin can debug it on that GPU."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "Use it to profile slow training, to chase errors that only happen on GPU hardware, or to benchmark a change where it will actually run.",
+  "dur": 6.94,
+  "at": 7.62,
+  "end": 14.56,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.135,
+    "t1": 1.691,
+    "text": "Use it to profile slow training,"
+   },
+   {
+    "t0": 1.726,
+    "t1": 3.735,
+    "text": "to chase errors that only happen on GPU"
+   },
+   {
+    "t0": 3.769,
+    "t1": 5.975,
+    "text": "hardware, or to benchmark a change where it"
+   },
+   {
+    "t0": 5.998,
+    "t1": 6.904,
+    "text": "will actually run."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "To set one up, open Settings \u2192 Environment \u2192 Outposts and create an outpost.",
+  "say": "To set one up, open Settings, Environment, Outposts, and create an outpost.",
+  "dur": 4.08,
+  "at": 14.66,
+  "end": 18.74,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.073,
+    "t1": 4.08,
+    "text": "To set one up, open Settings \u2192 Environment \u2192 Outposts and create an outpost."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
+  "say": "I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
+  "dur": 7.3,
+  "at": 19.07,
+  "end": 26.37,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.075,
+    "t1": 7.3,
+    "text": "I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux."
+   }
+  ]
+ },
+ "0013.png": {
+  "text": "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog.",
+  "dur": 8.565,
+  "at": 26.605,
+  "end": 35.17,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.051,
+    "t1": 2.362,
+    "text": "Devin generates a token for the outpost and"
+   },
+   {
+    "t0": 2.396,
+    "t1": 4.115,
+    "text": "the worker command that connects a machine to"
+   },
+   {
+    "t0": 4.208,
+    "t1": 6.367,
+    "text": "it, and the token is only shown once,"
+   },
+   {
+    "t0": 6.576,
+    "t1": 8.515,
+    "text": "so copy it before you close the dialog."
+   }
+  ]
+ },
+ "0018.png": {
+  "text": "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200.",
+  "say": "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H two hundred.",
+  "dur": 8.29,
+  "at": 35.45,
+  "end": 43.74,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.053,
+    "t1": 8.215,
+    "text": "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200."
+   }
+  ]
+ },
+ "0031.png": {
+  "text": "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H200 in the background.",
+  "say": "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H two hundred in the background.",
+  "dur": 6.925,
+  "at": 43.995,
+  "end": 50.92,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.053,
+    "t1": 6.925,
+    "text": "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H200 in the background."
+   }
+  ]
+ },
+ "0061.png": {
+  "text": "When it prints worker started, the outpost is online.",
+  "dur": 2.51,
+  "at": 51.09,
+  "end": 53.6,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.052,
+    "t1": 1.248,
+    "text": "When it prints worker started,"
+   },
+   {
+    "t0": 1.271,
+    "t1": 2.478,
+    "text": "the outpost is online."
+   }
+  ]
+ },
+ "0062.png": {
+  "text": "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu.",
+  "dur": 6.195,
+  "at": 53.78,
+  "end": 59.975,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.067,
+    "t1": 0.845,
+    "text": "Back in Devin,"
+   },
+   {
+    "t0": 0.903,
+    "t1": 3.074,
+    "text": "open Configuration below the prompt box,"
+   },
+   {
+    "t0": 3.167,
+    "t1": 6.174,
+    "text": "and under Virtual environment pick the outpost instead of Ubuntu."
+   }
+  ]
+ },
+ "0068.png": {
+  "text": "The demo repo, gpu-train-demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck.",
+  "say": "The demo repo, gpu train demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck.",
+  "dur": 8.02,
+  "at": 60.33,
+  "end": 68.35,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.065,
+    "t1": 7.994,
+    "text": "The demo repo, gpu-train-demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck."
+   }
+  ]
+ },
+ "0076.png": {
+  "text": "The session waits for the outpost, and the Modal worker picks it up within seconds.",
+  "dur": 3.515,
+  "at": 68.795,
+  "end": 72.31,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.433,
+    "text": "The session waits for the outpost,"
+   },
+   {
+    "t0": 1.456,
+    "t1": 3.515,
+    "text": "and the Modal worker picks it up within seconds."
+   }
+  ]
+ },
+ "0077.png": {
+  "text": "From there Devin works on the H200 on its own, running the training script, profiling it and changing the code.",
+  "say": "From there Devin works on the H two hundred on its own, running the training script, profiling it and changing the code.",
+  "dur": 5.61,
+  "at": 72.625,
+  "end": 78.235,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.03,
+    "t1": 5.603,
+    "text": "From there Devin works on the H200 on its own, running the training script, profiling it and changing the code."
+   }
+  ]
+ },
+ "0084.png": {
+  "text": "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected.",
+  "dur": 7.39,
+  "at": 78.46,
+  "end": 85.85,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.046,
+    "t1": 0.697,
+    "text": "When it's done,"
+   },
+   {
+    "t0": 0.743,
+    "t1": 2.229,
+    "text": "every step is in the timeline,"
+   },
+   {
+    "t0": 2.345,
+    "t1": 4.18,
+    "text": "and clicking a step shows its command and"
+   },
+   {
+    "t0": 4.214,
+    "t1": 7.326,
+    "text": "output, starting with the moment the outpost machine connected."
+   }
+  ]
+ },
+ "0090.png": {
+  "text": "First it checks the hardware, and nvidia-smi shows an NVIDIA H200.",
+  "say": "First it checks the hardware, and nvidia S M I shows an NVIDIA H two hundred.",
+  "dur": 4.71,
+  "at": 85.96,
+  "end": 90.67,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.07,
+    "t1": 4.691,
+    "text": "First it checks the hardware, and nvidia-smi shows an NVIDIA H200."
+   }
+  ]
+ },
+ "0093.png": {
+  "text": "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step.",
+  "dur": 5.62,
+  "at": 90.94,
+  "end": 96.56,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.036,
+    "t1": 1.8,
+    "text": "Then it times each half on its own,"
+   },
+   {
+    "t0": 2.044,
+    "t1": 3.809,
+    "text": "and preparing the images turns out to be"
+   },
+   {
+    "t0": 3.855,
+    "t1": 5.62,
+    "text": "far slower than the GPU step."
+   }
+  ]
+ },
+ "0096.png": {
+  "text": "The torch profiler confirms it, with most of each step spent waiting on the data loader.",
+  "dur": 4.07,
+  "at": 96.84,
+  "end": 100.91,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.068,
+    "t1": 1.589,
+    "text": "The torch profiler confirms it,"
+   },
+   {
+    "t0": 1.613,
+    "t1": 3.261,
+    "text": "with most of each step spent waiting on"
+   },
+   {
+    "t0": 3.296,
+    "t1": 4.039,
+    "text": "the data loader."
+   }
+  ]
+ },
+ "0099.png": {
+  "text": "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical.",
+  "dur": 8.475,
+  "at": 101.26,
+  "end": 109.735,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.06,
+    "t1": 2.173,
+    "text": "The cause is a Python loop that normalizes"
+   },
+   {
+    "t0": 2.255,
+    "t1": 3.752,
+    "text": "each image one row at a time,"
+   },
+   {
+    "t0": 3.903,
+    "t1": 6.399,
+    "text": "so Devin replaces it with one vectorized NumPy"
+   },
+   {
+    "t0": 6.457,
+    "t1": 8.475,
+    "text": "call and checks that the output is identical."
+   }
+  ]
+ },
+ "0102.png": {
+  "text": "Then it opens a pull request, and the diff is small, with the row by row loop replaced by a single NumPy expression.",
+  "dur": 6.28,
+  "at": 110.04,
+  "end": 116.32,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.069,
+    "t1": 1.567,
+    "text": "Then it opens a pull request,"
+   },
+   {
+    "t0": 1.683,
+    "t1": 2.809,
+    "text": "and the diff is small,"
+   },
+   {
+    "t0": 3.018,
+    "t1": 4.702,
+    "text": "with the row by row loop replaced by"
+   },
+   {
+    "t0": 4.76,
+    "t1": 6.234,
+    "text": "a single NumPy expression."
+   }
+  ]
+ },
+ "0104.png": {
+  "text": "On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script.",
+  "say": "On the H two hundred, training is about fourteen times faster, and since the repo has no tests, Devin checked the speedup by running the training script.",
+  "dur": 8.18,
+  "at": 116.58,
+  "end": 124.76,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.077,
+    "t1": 8.158,
+    "text": "On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Your GPU, your outpost, and Devin doing the profiling.",
+  "dur": 2.82,
+  "at": 124.99,
+  "end": 127.81,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.073,
+    "t1": 1.373,
+    "text": "Your GPU, your outpost,"
+   },
+   {
+    "t0": 1.396,
+    "t1": 2.82,
+    "text": "and Devin doing the profiling."
+   }
+  ]
+ }
+}
