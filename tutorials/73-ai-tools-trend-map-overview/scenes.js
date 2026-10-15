@@ -140,7 +140,7 @@ function fanout(ctx, s, k) {
     }
   });
   const a = appear(k, s, 4.4, 0.7);
-  text(ctx, k, '40 searches run in parallel, each with its own date range', k.VW / 2, 630, 19, 500, FG(0.62), a);
+  text(ctx, k, '40 searches run in parallel, each with its own date range', k.VW / 2, 688, 19, 500, FG(0.62), a);
 }
 
 // Each post is classified; counts are posts found in the sample.
