@@ -51,6 +51,14 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 34. **Devin Primitives: when to use what** (overview, 1:17): A short diagram-led overview for teams setting Devin up. A map of the primitives (always-on context: AGENTS.md, rules and Memory; reusable procedures: Skills and Playbooks; reach and sharing: MCP servers and Plugins), then for each one when to use it, where it lives in the product (real Customize → Rules, Memory, Skills, MCPs and Plugins tabs, and Settings → Playbooks) and how to build one (a short AGENTS.md and a minimal SKILL.md on screen), ending on a "which one should I use?" diagram. A one-page [cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md) covers the same table. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview.mp4)
 
+<!-- -->
+
+42. **Session replays to UX fixes** (2:03): A real Devin session reads a Metabase checkout funnel through the Metabase MCP, finds the Shipping drop-off, watches rrweb session replays in its Computer tab, states a hypothesis and ships the fix behind the `forgiving_shipping_form` flag in a PR, then tests it in its browser; flag off vs on. The bug and the 320 sessions are planted and simulated for the demo. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/42-session-replays-ux/42-session-replays-ux.mp4)
+
+<!-- -->
+
+43. **Session replays to UX fixes: how it works** (overview, 1:09): A diagram-led overview of the loop: funnel, drop-off step, replays, hypothesis, flagged PR, with proof shots from tutorial 42 and use cases. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/43-session-replays-ux-overview/43-session-replays-ux-overview.mp4)
+
 ## Narrated tutorials
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
@@ -87,6 +95,8 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Dynamic Workflows: how it works (overview), narrated by Nader** (1:59): What a dynamic workflow is, why scripted coordination helps with multi-part jobs, parallel work and connected stages, live progress and resumability, `pipeline` vs `parallel`, a real 12-reviewer accessibility audit, and when to use a workflow. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/32-dynamic-workflows-overview/32-dynamic-workflows-overview-nader.mp4) · [Voice script](tutorials/32-dynamic-workflows-overview/voice-script.md)
 - **Dynamic Workflows, narrated by Nader** (2:05): A real five-component audit, fix and verify workflow: the script, the live workflow panel, one agent's structured output, the roll-up and a fix PR. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/33-dynamic-workflows/33-dynamic-workflows-nader.mp4) · [Voice script](tutorials/33-dynamic-workflows/voice-script.md)
 - **Devin Primitives: when to use what (overview), narrated by Nader** (1:42): When to use AGENTS.md, rules, Memory, Skills, Playbooks, MCP servers and Plugins, where each lives in the product, and how to build one. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview-nader.mp4) · [Voice script](tutorials/34-devin-primitives-overview/voice-script.md) · [Cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md)
+- **Session replays to UX fixes, narrated by Nader** (2:35): Devin reads the funnel through the Metabase MCP, watches the replays at the Shipping drop-off in its browser, forms a hypothesis and ships a flagged fix as a PR, then tests it. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/42-session-replays-ux/42-session-replays-ux-nader.mp4) · [Voice script](tutorials/42-session-replays-ux/voice-script.md)
+- **Session replays to UX fixes: how it works (overview), narrated by Nader** (1:15): Analytics to drop-off to replay to hypothesis to flagged PR, as diagrams plus real shots. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/43-session-replays-ux-overview/43-session-replays-ux-overview-nader.mp4) · [Voice script](tutorials/43-session-replays-ux-overview/voice-script.md)
 
 ## Making a new tutorial
 
