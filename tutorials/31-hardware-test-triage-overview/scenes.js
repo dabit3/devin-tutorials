@@ -187,8 +187,9 @@ function uses(ctx, s, k) {
     ['Per-subsystem playbooks', 'They improve between runs', null],
   ];
   const cw = 238, ch = 300, gap = 20, x0 = (k.VW - (5 * cw + 4 * gap)) / 2, y = 225;
+  const starts = window.SPEC.voLines ? [1.12, 3.64, 5.14, 8.10, 10.32] : [0.4, 1.5, 2.6, 3.7, 4.8];
   C.forEach(([t, sub, stat], i) => {
-    const a = appear(k, s, 0.4 + i * 1.1, 0.7), x = x0 + i * (cw + gap), yy = y + 16 * (1 - a), cx = x + cw / 2;
+    const t0 = starts[i], a = appear(k, s, t0, 0.7), x = x0 + i * (cw + gap), yy = y + 16 * (1 - a), cx = x + cw / 2;
     box(ctx, k, x, yy, cw, ch, a, 0, 18);
     if (a <= 0) return;
     box(ctx, k, cx - 22, yy + 40, 44, 44, a, 0, 12); mark(ctx, k, cx, yy + 62, 20, a);
@@ -196,7 +197,7 @@ function uses(ctx, s, k) {
     text(ctx, k, t, cx, yy + 130, ts, 600, k.INK, a);
     text(ctx, k, sub, cx, yy + 160, 13.5, 400, MUTED(1), a);
     if (stat) {
-      const b = appear(k, s, 0.9 + i * 1.1), sy = yy + 8 * (1 - b);
+      const b = appear(k, s, t0 + 0.5), sy = yy + 8 * (1 - b);
       ctx.save(); ctx.globalAlpha = k.alpha * b; ctx.fillStyle = 'rgba(25,25,25,.09)'; ctx.fillRect(x + 28, sy + 206, cw - 56, 1); ctx.restore();
       ctx.save(); ctx.globalAlpha = k.alpha * b; k.font(11, 500, 'JetBrains Mono'); ctx.fillStyle = 'rgba(25,25,25,.46)'; ctx.textBaseline = 'middle';
       const lw = k.spacedW(stat[0], 2); k.spaced(stat[0], cx - lw / 2, sy + 236, 2); ctx.restore();
