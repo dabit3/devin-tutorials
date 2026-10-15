@@ -251,6 +251,8 @@ The following sections preserve useful observations from earlier takes. Reverify
 
 ## Modal + xAI apps (tutorials 60–75)
 
+- Explain early, before or around the prompt, why the app uses Modal, where it fits and what it does. Name only the pieces the app really uses: a scheduled function instead of a server kept running, `.map()` for parallel xAI calls, a Dict or Volume for results, the web endpoint for the `*.modal.run` page, a Secret for the xAI key, scaling to zero. Say why that beats a laptop script or a self-managed server.
+- Don't walk through any code, diffs or file contents. Show Devin's logs and terminal output only when a line is worth highlighting, such as `modal deploy` printing the URL.
 - dabit3's Modal workspace allows 5 scheduled functions in total, shared by every sibling session. Film the schedule running, then redeploy web-only with the cron off so the slot is free. Narrate it honestly if a schedule never ran, and don't leave page text such as "Refreshes every 6 hours" when the schedule is off.
 - Label X data as sampled posts found and classified, never totals or full-firehose coverage. Label the earliest post found as "earliest found", not the origin. Keep source links, and use a pending/unclear state when evidence is thin. Don't rank a named person on a single data point.
 - An X-search backfill through the xAI API (months of posts, or one deep trace) cost about $20–25 per app, so pull once and reuse the stored result for retakes.
