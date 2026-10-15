@@ -1,5 +1,6 @@
 // Overview diagrams (spec `scene:`), drawn in 1440x810 UI coords on the dark palette (spec `dark: true`). s = seconds since the beat started.
 // Factories follow 23-managed-devins-overview/scenes.js, recoloured for dark mode.
+window.SPEC_PIPE_AT = [4.0, 5.5, 6.0, 6.5];
 (() => {
 const BLUE = [64, 140, 255];
 const rgba = (c, a) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
@@ -81,25 +82,53 @@ function idea(ctx, s, k) {
   text(ctx, k, 'Quiet? It shows the real quiet baseline, not a fake spike.', 720, 590, 18, 500, MUTED(1), appear(k, s, 3.4));
 }
 
-// 2. The pipeline: X posts -> xAI API (Grok + X search) -> Modal functions -> storage -> live page.
+// 2. The pipeline: X posts -> xAI API (Grok + X search) -> Modal (schedule, parallel scans, web endpoint) -> modal.Dict -> public page.
 function pipeline(ctx, s, k) {
-  eyebrow(ctx, k, 'HOW IT WORKS', 120, appear(k, s, 0.05));
+  eyebrow(ctx, k, 'WHERE MODAL FITS', 120, appear(k, s, 0.05));
   const Y = 330, xs = [170, 430, 720, 1010, 1270];
+  const cue = window.SPEC_PIPE_AT || [3.2, 4.4, 5.6, 6.8];
+  const ga = appear(k, s, cue[0], 0.8);
+  if (ga > 0) {
+    ctx.save(); ctx.globalAlpha = k.alpha * ga; ctx.setLineDash([6, 6]); k.rr(570, 262, 820, 330, 22);
+    ctx.lineWidth = 1.4; ctx.strokeStyle = rgba(BLUE, 0.55); ctx.stroke(); ctx.setLineDash([]); ctx.restore();
+    text(ctx, k, 'RUNS ON MODAL', 594, 240, 14, 600, rgba(BLUE, 1), ga, 'left', true);
+  }
   const nodes = [
     { t: 'X posts', sub: 'people saying it\'s down' },
     { t: 'xAI API', sub: 'Grok with X search' },
-    { t: 'Modal', sub: 'classify + count' },
-    { t: 'Storage', sub: STORE },
-    { t: 'Live page', sub: '*.modal.run' },
+    { t: 'Modal', sub: 'runs the app' },
+    { t: 'Storage', sub: 'modal.Dict' },
+    { t: 'Public page', sub: '*.modal.run' },
   ];
   const R = [];
   nodes.forEach((n, i) => {
-    const t0 = 0.2 + i * 0.75;
+    const t0 = 0.2 + i * 0.6;
     if (i) hline(ctx, k, R[i - 1].r + 8, xs[i] - 102, Y, k.eInOut(k.prog(s, t0 - 0.35, t0)), k.prog(s, t0 - 0.3, t0 + 0.6));
-    R.push(node(ctx, k, { x: xs[i], y: Y, ...n, w: 196, size: 20 }, appear(k, s, t0), i === 2 ? appear(k, s, 4.2) * (1 - k.prog(s, 8.5, 9.2)) : 0));
+    R.push(node(ctx, k, { x: xs[i], y: Y, ...n, w: 196, size: 20 }, appear(k, s, t0), i >= 2 ? ga * (1 - k.prog(s, 11, 12)) : 0));
   });
-  const fx = [500, 720, 940], fn = [['Every minute', 'modal.Cron("* * * * *")'], ['In parallel', '.starmap() per service'], ['Web endpoint', '@modal.asgi_app()']];
-  fn.forEach(([t, code], i) => { const t0 = 4.3 + i * 0.45; curve(ctx, k, 720, R[2].bot, fx[i], 500, k.eInOut(k.prog(s, t0 - 0.2, t0 + 0.3)), k.prog(s, t0, t0 + 0.8)); node(ctx, k, { x: fx[i], y: 545, t, code, w: 210, size: 17 }, appear(k, s, t0 + 0.2)); });
+  const fx = [680, 900, 1120], fn = [['Every minute', 'scheduled job'], ['In parallel', 'one scan per service'], ['Web endpoint', 'serves the page']];
+  fn.forEach(([t, sub], i) => { const t0 = cue[i + 1]; curve(ctx, k, 720, R[2].bot, fx[i], 482, k.eInOut(k.prog(s, t0 - 0.2, t0 + 0.3)), k.prog(s, t0, t0 + 0.8)); node(ctx, k, { x: fx[i], y: 520, t, sub, w: 196, size: 18 }, appear(k, s, t0 + 0.2)); });
+}
+
+// 2b. Why Modal: a laptop script or your own server vs a scheduled, scale-to-zero Modal app.
+function whymodal(ctx, s, k) {
+  eyebrow(ctx, k, 'WHY MODAL', 120, appear(k, s, 0.05));
+  const cue = window.SPEC_WHY_AT || [1.1, 4.1, 7.1, 7.6, 9.3, 10.9, 12.5];
+  const dim = 1 - 0.5 * k.prog(s, cue[2], cue[2] + 0.6);
+  [['Laptop script', 'stops when the laptop sleeps'], ['Your own server', 'runs all day for seconds of work']].forEach(([t, sub], i) => {
+    const a = appear(k, s, cue[i]) * dim, y = 330 + i * 140 + 10 * (1 - appear(k, s, cue[i]));
+    box(ctx, k, 230, y - 50, 420, 100, a);
+    text(ctx, k, t, 262, y - 14, 21, 600, k.INK, a, 'left');
+    text(ctx, k, sub, 262, y + 18, 16, 400, MUTED(1), a, 'left');
+  });
+  const ma = appear(k, s, cue[2]);
+  box(ctx, k, 760, 248, 460, 320, ma, ma);
+  text(ctx, k, 'Modal', 796, 292, 24, 600, k.INK, ma, 'left');
+  ['Wakes up on a schedule', 'Scales to zero between runs', 'Billed per second', 'xAI key in a Modal Secret'].forEach((t, i) => {
+    const a = appear(k, s, cue[3 + i]), y = 360 + i * 54;
+    ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.beginPath(); ctx.arc(806, y, 5, 0, Math.PI * 2); ctx.fillStyle = rgba(BLUE, 1); ctx.fill(); ctx.restore();
+    text(ctx, k, t, 828, y, 19, 500, k.INK, a, 'left');
+  });
 }
 
 // 3. Each minute: the schedule fans out with .starmap(), one xAI search per service, results merged into storage.
@@ -144,5 +173,5 @@ function extend(ctx, s, k) {
   });
 }
 
-window.SCENES = { idea, pipeline, fanout, honest, extend };
+window.SCENES = { idea, pipeline, whymodal, fanout, honest, extend };
 })();

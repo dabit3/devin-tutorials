@@ -1,67 +1,72 @@
 {
  "0000.png": {
-  "text": "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-  "dur": 4.72,
+  "text": "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+  "dur": 5.18,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X."
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
    ],
    [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-    "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else."
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
    ],
    [
     "0002.png",
-    "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-    "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict."
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
    ],
    [
     "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
     "In the real run, Devin built it from one plain-language prompt.",
     "In the real run, Devin built it from one plain-language prompt."
    ],
    [
-    "0004.png",
-    "It planned the work, then wrote the detection logic and the Modal app.",
-    "It planned the work, then wrote the detection logic and the Modal app."
-   ],
-   [
     "0005.png",
-    "This is the Cron schedule, straight from its pull request.",
-    "This is the Cron schedule, straight from its pull request."
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
    ],
    [
     "0006.png",
-    "Then Devin deployed it with modal deploy.",
-    "Then Devin deployed it with modal deploy."
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
    ],
    [
     "0007.png",
-    "It tested the app, and opened a pull request that's ready to merge.",
-    "It tested the app, and opened a pull request that's ready to merge."
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
    ],
    [
     "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
     "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
     "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
    ],
    [
-    "0009.png",
-    "On the deployed page, ChatGPT had six posts found in the last six hours.",
-    "On the deployed page, ChatGPT had six posts found in the last six hours."
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
    ],
    [
-    "0010.png",
+    "0011.png",
     "For AWS, one post named the Middle East, quoted straight from X.",
     "For AWS, one post named the Middle East, quoted straight from X."
    ],
    [
-    "0011.png",
+    "0012.png",
     "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
     "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
    ],
@@ -74,85 +79,90 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 0.731,
+    "t1": 0.824,
     "text": "Is it just me,"
    },
    {
-    "t0": 0.766,
-    "t1": 2.218,
-    "text": "or is Slack down for everyone?"
+    "t0": 0.859,
+    "t1": 2.461,
+    "text": "or is Slack not working for everyone?"
    },
    {
-    "t0": 2.392,
-    "t1": 4.72,
+    "t0": 2.786,
+    "t1": 5.18,
     "text": "This app answers that from real posts on X."
    }
   ]
  },
  "0001.png": {
-  "text": "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-  "say": "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else.",
-  "dur": 5.888,
-  "takeAt": 4.872,
+  "text": "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+  "say": "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+  "dur": 8.565,
+  "takeAt": 5.285,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X."
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
    ],
    [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-    "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else."
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
    ],
    [
     "0002.png",
-    "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-    "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict."
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
    ],
    [
     "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
     "In the real run, Devin built it from one plain-language prompt.",
     "In the real run, Devin built it from one plain-language prompt."
    ],
    [
-    "0004.png",
-    "It planned the work, then wrote the detection logic and the Modal app.",
-    "It planned the work, then wrote the detection logic and the Modal app."
-   ],
-   [
     "0005.png",
-    "This is the Cron schedule, straight from its pull request.",
-    "This is the Cron schedule, straight from its pull request."
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
    ],
    [
     "0006.png",
-    "Then Devin deployed it with modal deploy.",
-    "Then Devin deployed it with modal deploy."
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
    ],
    [
     "0007.png",
-    "It tested the app, and opened a pull request that's ready to merge.",
-    "It tested the app, and opened a pull request that's ready to merge."
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
    ],
    [
     "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
     "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
     "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
    ],
    [
-    "0009.png",
-    "On the deployed page, ChatGPT had six posts found in the last six hours.",
-    "On the deployed page, ChatGPT had six posts found in the last six hours."
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
    ],
    [
-    "0010.png",
+    "0011.png",
     "For AWS, one post named the Middle East, quoted straight from X.",
     "For AWS, one post named the Middle East, quoted straight from X."
    ],
    [
-    "0011.png",
+    "0012.png",
     "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
     "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
    ],
@@ -164,86 +174,101 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.096,
+    "t0": 0.056,
+    "t1": 1.066,
     "text": "Here's how it works."
    },
    {
-    "t0": 1.479,
-    "t1": 3.813,
-    "text": "Grok searches X through the xAI API,"
+    "t0": 1.391,
+    "t1": 4.061,
+    "text": "Grok searches X through the xAI API."
    },
    {
-    "t0": 3.833,
-    "t1": 5.888,
-    "text": "and Modal runs everything else."
+    "t0": 4.386,
+    "t1": 5.756,
+    "text": "Modal runs everything else,"
+   },
+   {
+    "t0": 5.837,
+    "t1": 7.614,
+    "text": "from a scheduled job to the page at"
+   },
+   {
+    "t0": 7.66,
+    "t1": 8.565,
+    "text": "its public URL."
    }
   ]
  },
  "0002.png": {
-  "text": "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-  "say": "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-  "dur": 7.227,
-  "takeAt": 11.153,
+  "text": "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+  "say": "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+  "dur": 9.013,
+  "takeAt": 14.207,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X."
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
    ],
    [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-    "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else."
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
    ],
    [
     "0002.png",
-    "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-    "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict."
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
    ],
    [
     "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
     "In the real run, Devin built it from one plain-language prompt.",
     "In the real run, Devin built it from one plain-language prompt."
    ],
    [
-    "0004.png",
-    "It planned the work, then wrote the detection logic and the Modal app.",
-    "It planned the work, then wrote the detection logic and the Modal app."
-   ],
-   [
     "0005.png",
-    "This is the Cron schedule, straight from its pull request.",
-    "This is the Cron schedule, straight from its pull request."
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
    ],
    [
     "0006.png",
-    "Then Devin deployed it with modal deploy.",
-    "Then Devin deployed it with modal deploy."
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
    ],
    [
     "0007.png",
-    "It tested the app, and opened a pull request that's ready to merge.",
-    "It tested the app, and opened a pull request that's ready to merge."
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
    ],
    [
     "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
     "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
     "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
    ],
    [
-    "0009.png",
-    "On the deployed page, ChatGPT had six posts found in the last six hours.",
-    "On the deployed page, ChatGPT had six posts found in the last six hours."
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
    ],
    [
-    "0010.png",
+    "0011.png",
     "For AWS, one post named the Middle East, quoted straight from X.",
     "For AWS, one post named the Middle East, quoted straight from X."
    ],
    [
-    "0011.png",
+    "0012.png",
     "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
     "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
    ],
@@ -256,84 +281,225 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 3.134,
-    "text": "Every minute, a Modal Cron job fans out with starmap,"
+    "t1": 0.864,
+    "text": "Every minute,"
    },
    {
-    "t0": 3.154,
-    "t1": 5.124,
+    "t0": 0.884,
+    "t1": 2.159,
+    "text": "a Modal Cron job wakes"
+   },
+   {
+    "t0": 2.179,
+    "t1": 3.898,
+    "text": "up and fans out with starmap,"
+   },
+   {
+    "t0": 3.918,
+    "t1": 5.902,
     "text": "one scan per service, in parallel."
    },
    {
-    "t0": 5.368,
-    "t1": 7.227,
-    "text": "The counts are stored in a Modal Dict."
+    "t0": 6.181,
+    "t1": 7.55,
+    "text": "The counts land in a Modal Dict,"
+   },
+   {
+    "t0": 7.585,
+    "t1": 9.013,
+    "text": "so they persist between runs."
    }
   ]
  },
  "0003.png": {
-  "text": "In the real run, Devin built it from one plain-language prompt.",
-  "dur": 3.325,
-  "takeAt": 18.665,
+  "text": "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+  "say": "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret.",
+  "dur": 15.245,
+  "takeAt": 23.495,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X."
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
    ],
    [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-    "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else."
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
    ],
    [
     "0002.png",
-    "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-    "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict."
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
    ],
    [
     "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
     "In the real run, Devin built it from one plain-language prompt.",
     "In the real run, Devin built it from one plain-language prompt."
    ],
    [
-    "0004.png",
-    "It planned the work, then wrote the detection logic and the Modal app.",
-    "It planned the work, then wrote the detection logic and the Modal app."
-   ],
-   [
     "0005.png",
-    "This is the Cron schedule, straight from its pull request.",
-    "This is the Cron schedule, straight from its pull request."
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
    ],
    [
     "0006.png",
-    "Then Devin deployed it with modal deploy.",
-    "Then Devin deployed it with modal deploy."
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
    ],
    [
     "0007.png",
-    "It tested the app, and opened a pull request that's ready to merge.",
-    "It tested the app, and opened a pull request that's ready to merge."
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
    ],
    [
     "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
     "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
     "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
    ],
    [
-    "0009.png",
-    "On the deployed page, ChatGPT had six posts found in the last six hours.",
-    "On the deployed page, ChatGPT had six posts found in the last six hours."
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
    ],
    [
-    "0010.png",
+    "0011.png",
     "For AWS, one post named the Middle East, quoted straight from X.",
     "For AWS, one post named the Middle East, quoted straight from X."
    ],
    [
+    "0012.png",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
+   ],
+   [
+    "outro",
+    "Is it just me? Now you know.",
+    "Is it just me? Now you know."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.062,
+    "t1": 0.701,
+    "text": "Why Modal?"
+   },
+   {
+    "t0": 0.944,
+    "t1": 3.672,
+    "text": "A script on your laptop stops when your laptop sleeps."
+   },
+   {
+    "t0": 3.951,
+    "t1": 5.576,
+    "text": "Your own server runs all day for a"
+   },
+   {
+    "t0": 5.634,
+    "t1": 6.9,
+    "text": "job that takes seconds."
+   },
+   {
+    "t0": 7.225,
+    "t1": 9.036,
+    "text": "On Modal, it wakes up on schedule,"
+   },
+   {
+    "t0": 9.315,
+    "t1": 10.812,
+    "text": "scales to zero in between,"
+   },
+   {
+    "t0": 10.987,
+    "t1": 12.867,
+    "text": "and you only pay for the seconds it runs."
+   },
+   {
+    "t0": 13.192,
+    "t1": 15.245,
+    "text": "The xAI key stays in a Modal Secret."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "In the real run, Devin built it from one plain-language prompt.",
+  "dur": 3.171,
+  "takeAt": 39.029,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
+   ],
+   [
+    "0002.png",
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
+   ],
+   [
+    "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
+    "In the real run, Devin built it from one plain-language prompt.",
+    "In the real run, Devin built it from one plain-language prompt."
+   ],
+   [
+    "0005.png",
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
+   ],
+   [
+    "0006.png",
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
+   ],
+   [
+    "0007.png",
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
+   ],
+   [
+    "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
+   ],
+   [
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
+   ],
+   [
     "0011.png",
+    "For AWS, one post named the Middle East, quoted straight from X.",
+    "For AWS, one post named the Middle East, quoted straight from X."
+   ],
+   [
+    "0012.png",
     "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
     "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
    ],
@@ -350,160 +516,80 @@
     "text": "In the real run,"
    },
    {
-    "t0": 1.026,
-    "t1": 3.325,
+    "t0": 1.002,
+    "t1": 3.171,
     "text": "Devin built it from one plain-language prompt."
    }
   ]
  },
- "0004.png": {
-  "text": "It planned the work, then wrote the detection logic and the Modal app.",
-  "dur": 3.445,
-  "takeAt": 22.345,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X."
-   ],
-   [
-    "0001.png",
-    "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-    "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else."
-   ],
-   [
-    "0002.png",
-    "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-    "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict."
-   ],
-   [
-    "0003.png",
-    "In the real run, Devin built it from one plain-language prompt.",
-    "In the real run, Devin built it from one plain-language prompt."
-   ],
-   [
-    "0004.png",
-    "It planned the work, then wrote the detection logic and the Modal app.",
-    "It planned the work, then wrote the detection logic and the Modal app."
-   ],
-   [
-    "0005.png",
-    "This is the Cron schedule, straight from its pull request.",
-    "This is the Cron schedule, straight from its pull request."
-   ],
-   [
-    "0006.png",
-    "Then Devin deployed it with modal deploy.",
-    "Then Devin deployed it with modal deploy."
-   ],
-   [
-    "0007.png",
-    "It tested the app, and opened a pull request that's ready to merge.",
-    "It tested the app, and opened a pull request that's ready to merge."
-   ],
-   [
-    "0008.png",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
-   ],
-   [
-    "0009.png",
-    "On the deployed page, ChatGPT had six posts found in the last six hours.",
-    "On the deployed page, ChatGPT had six posts found in the last six hours."
-   ],
-   [
-    "0010.png",
-    "For AWS, one post named the Middle East, quoted straight from X.",
-    "For AWS, one post named the Middle East, quoted straight from X."
-   ],
-   [
-    "0011.png",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
-   ],
-   [
-    "outro",
-    "Is it just me? Now you know.",
-    "Is it just me? Now you know."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0,
-    "t1": 0.991,
-    "text": "It planned the work,"
-   },
-   {
-    "t0": 1.2,
-    "t1": 3.445,
-    "text": "then wrote the detection logic and the Modal app."
-   }
-  ]
- },
  "0005.png": {
-  "text": "This is the Cron schedule, straight from its pull request.",
-  "dur": 2.739,
-  "takeAt": 26.061,
+  "text": "It checked the setup, made one real search call, and shared its plan.",
+  "dur": 3.564,
+  "takeAt": 42.326,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X."
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
    ],
    [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-    "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else."
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
    ],
    [
     "0002.png",
-    "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-    "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict."
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
    ],
    [
     "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
     "In the real run, Devin built it from one plain-language prompt.",
     "In the real run, Devin built it from one plain-language prompt."
    ],
    [
-    "0004.png",
-    "It planned the work, then wrote the detection logic and the Modal app.",
-    "It planned the work, then wrote the detection logic and the Modal app."
-   ],
-   [
     "0005.png",
-    "This is the Cron schedule, straight from its pull request.",
-    "This is the Cron schedule, straight from its pull request."
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
    ],
    [
     "0006.png",
-    "Then Devin deployed it with modal deploy.",
-    "Then Devin deployed it with modal deploy."
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
    ],
    [
     "0007.png",
-    "It tested the app, and opened a pull request that's ready to merge.",
-    "It tested the app, and opened a pull request that's ready to merge."
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
    ],
    [
     "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
     "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
     "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
    ],
    [
-    "0009.png",
-    "On the deployed page, ChatGPT had six posts found in the last six hours.",
-    "On the deployed page, ChatGPT had six posts found in the last six hours."
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
    ],
    [
-    "0010.png",
+    "0011.png",
     "For AWS, one post named the Middle East, quoted straight from X.",
     "For AWS, one post named the Middle East, quoted straight from X."
    ],
    [
-    "0011.png",
+    "0012.png",
     "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
     "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
    ],
@@ -516,619 +602,89 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.373,
-    "text": "This is the Cron schedule,"
+    "t1": 1.153,
+    "text": "It checked the setup,"
    },
    {
-    "t0": 1.408,
-    "t1": 2.739,
-    "text": "straight from its pull request."
+    "t0": 1.304,
+    "t1": 2.57,
+    "text": "made one real search call,"
+   },
+   {
+    "t0": 2.593,
+    "t1": 3.564,
+    "text": "and shared its plan."
    }
   ]
  },
  "0006.png": {
-  "text": "Then Devin deployed it with modal deploy.",
-  "dur": 2.066,
-  "takeAt": 28.974,
+  "text": "Then it wrote the app, and deployed it with modal deploy.",
+  "dur": 2.558,
+  "takeAt": 46.122,
   "mode": "single-take-1",
   "take": [
    [
     "0000.png",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X."
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
    ],
    [
     "0001.png",
-    "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-    "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else."
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
    ],
    [
     "0002.png",
-    "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-    "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict."
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
    ],
    [
     "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
     "In the real run, Devin built it from one plain-language prompt.",
     "In the real run, Devin built it from one plain-language prompt."
    ],
    [
-    "0004.png",
-    "It planned the work, then wrote the detection logic and the Modal app.",
-    "It planned the work, then wrote the detection logic and the Modal app."
-   ],
-   [
     "0005.png",
-    "This is the Cron schedule, straight from its pull request.",
-    "This is the Cron schedule, straight from its pull request."
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
    ],
    [
     "0006.png",
-    "Then Devin deployed it with modal deploy.",
-    "Then Devin deployed it with modal deploy."
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
    ],
    [
     "0007.png",
-    "It tested the app, and opened a pull request that's ready to merge.",
-    "It tested the app, and opened a pull request that's ready to merge."
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
    ],
    [
     "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
     "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
     "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
    ],
    [
-    "0009.png",
-    "On the deployed page, ChatGPT had six posts found in the last six hours.",
-    "On the deployed page, ChatGPT had six posts found in the last six hours."
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
    ],
    [
-    "0010.png",
+    "0011.png",
     "For AWS, one post named the Middle East, quoted straight from X.",
     "For AWS, one post named the Middle East, quoted straight from X."
    ],
    [
-    "0011.png",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
-   ],
-   [
-    "outro",
-    "Is it just me? Now you know.",
-    "Is it just me? Now you know."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 2.066,
-    "text": "Then Devin deployed it with modal deploy."
-   }
-  ]
- },
- "0007.png": {
-  "text": "It tested the app, and opened a pull request that's ready to merge.",
-  "dur": 3.015,
-  "takeAt": 31.255,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X."
-   ],
-   [
-    "0001.png",
-    "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-    "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else."
-   ],
-   [
-    "0002.png",
-    "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-    "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict."
-   ],
-   [
-    "0003.png",
-    "In the real run, Devin built it from one plain-language prompt.",
-    "In the real run, Devin built it from one plain-language prompt."
-   ],
-   [
-    "0004.png",
-    "It planned the work, then wrote the detection logic and the Modal app.",
-    "It planned the work, then wrote the detection logic and the Modal app."
-   ],
-   [
-    "0005.png",
-    "This is the Cron schedule, straight from its pull request.",
-    "This is the Cron schedule, straight from its pull request."
-   ],
-   [
-    "0006.png",
-    "Then Devin deployed it with modal deploy.",
-    "Then Devin deployed it with modal deploy."
-   ],
-   [
-    "0007.png",
-    "It tested the app, and opened a pull request that's ready to merge.",
-    "It tested the app, and opened a pull request that's ready to merge."
-   ],
-   [
-    "0008.png",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
-   ],
-   [
-    "0009.png",
-    "On the deployed page, ChatGPT had six posts found in the last six hours.",
-    "On the deployed page, ChatGPT had six posts found in the last six hours."
-   ],
-   [
-    "0010.png",
-    "For AWS, one post named the Middle East, quoted straight from X.",
-    "For AWS, one post named the Middle East, quoted straight from X."
-   ],
-   [
-    "0011.png",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
-   ],
-   [
-    "outro",
-    "Is it just me? Now you know.",
-    "Is it just me? Now you know."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.01,
-    "t1": 0.928,
-    "text": "It tested the app,"
-   },
-   {
-    "t0": 0.951,
-    "t1": 3.015,
-    "text": "and opened a pull request that's ready to merge."
-   }
-  ]
- },
- "0008.png": {
-  "text": "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
-  "dur": 9.031,
-  "takeAt": 34.489,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X."
-   ],
-   [
-    "0001.png",
-    "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-    "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else."
-   ],
-   [
-    "0002.png",
-    "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-    "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict."
-   ],
-   [
-    "0003.png",
-    "In the real run, Devin built it from one plain-language prompt.",
-    "In the real run, Devin built it from one plain-language prompt."
-   ],
-   [
-    "0004.png",
-    "It planned the work, then wrote the detection logic and the Modal app.",
-    "It planned the work, then wrote the detection logic and the Modal app."
-   ],
-   [
-    "0005.png",
-    "This is the Cron schedule, straight from its pull request.",
-    "This is the Cron schedule, straight from its pull request."
-   ],
-   [
-    "0006.png",
-    "Then Devin deployed it with modal deploy.",
-    "Then Devin deployed it with modal deploy."
-   ],
-   [
-    "0007.png",
-    "It tested the app, and opened a pull request that's ready to merge.",
-    "It tested the app, and opened a pull request that's ready to merge."
-   ],
-   [
-    "0008.png",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
-   ],
-   [
-    "0009.png",
-    "On the deployed page, ChatGPT had six posts found in the last six hours.",
-    "On the deployed page, ChatGPT had six posts found in the last six hours."
-   ],
-   [
-    "0010.png",
-    "For AWS, one post named the Middle East, quoted straight from X.",
-    "For AWS, one post named the Middle East, quoted straight from X."
-   ],
-   [
-    "0011.png",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
-   ],
-   [
-    "outro",
-    "Is it just me? Now you know.",
-    "Is it just me? Now you know."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 1.583,
-    "text": "The app is honest by design."
-   },
-   {
-    "t0": 1.908,
-    "t1": 3.742,
-    "text": "A region or error only shows up if"
-   },
-   {
-    "t0": 3.789,
-    "t1": 4.985,
-    "text": "a post actually says it."
-   },
-   {
-    "t0": 5.31,
-    "t1": 6.75,
-    "text": "The counts are posts found,"
-   },
-   {
-    "t0": 6.901,
-    "t1": 7.934,
-    "text": "a sample of X,"
-   },
-   {
-    "t0": 8.108,
-    "t1": 9.031,
-    "text": "not every report."
-   }
-  ]
- },
- "0009.png": {
-  "text": "On the deployed page, ChatGPT had six posts found in the last six hours.",
-  "dur": 4.41,
-  "takeAt": 44.01,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X."
-   ],
-   [
-    "0001.png",
-    "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-    "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else."
-   ],
-   [
-    "0002.png",
-    "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-    "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict."
-   ],
-   [
-    "0003.png",
-    "In the real run, Devin built it from one plain-language prompt.",
-    "In the real run, Devin built it from one plain-language prompt."
-   ],
-   [
-    "0004.png",
-    "It planned the work, then wrote the detection logic and the Modal app.",
-    "It planned the work, then wrote the detection logic and the Modal app."
-   ],
-   [
-    "0005.png",
-    "This is the Cron schedule, straight from its pull request.",
-    "This is the Cron schedule, straight from its pull request."
-   ],
-   [
-    "0006.png",
-    "Then Devin deployed it with modal deploy.",
-    "Then Devin deployed it with modal deploy."
-   ],
-   [
-    "0007.png",
-    "It tested the app, and opened a pull request that's ready to merge.",
-    "It tested the app, and opened a pull request that's ready to merge."
-   ],
-   [
-    "0008.png",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
-   ],
-   [
-    "0009.png",
-    "On the deployed page, ChatGPT had six posts found in the last six hours.",
-    "On the deployed page, ChatGPT had six posts found in the last six hours."
-   ],
-   [
-    "0010.png",
-    "For AWS, one post named the Middle East, quoted straight from X.",
-    "For AWS, one post named the Middle East, quoted straight from X."
-   ],
-   [
-    "0011.png",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
-   ],
-   [
-    "outro",
-    "Is it just me? Now you know.",
-    "Is it just me? Now you know."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 1.199,
-    "text": "On the deployed page,"
-   },
-   {
-    "t0": 1.281,
-    "t1": 4.41,
-    "text": "ChatGPT had six posts found in the last six hours."
-   }
-  ]
- },
- "0010.png": {
-  "text": "For AWS, one post named the Middle East, quoted straight from X.",
-  "dur": 3.722,
-  "takeAt": 48.688,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X."
-   ],
-   [
-    "0001.png",
-    "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-    "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else."
-   ],
-   [
-    "0002.png",
-    "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-    "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict."
-   ],
-   [
-    "0003.png",
-    "In the real run, Devin built it from one plain-language prompt.",
-    "In the real run, Devin built it from one plain-language prompt."
-   ],
-   [
-    "0004.png",
-    "It planned the work, then wrote the detection logic and the Modal app.",
-    "It planned the work, then wrote the detection logic and the Modal app."
-   ],
-   [
-    "0005.png",
-    "This is the Cron schedule, straight from its pull request.",
-    "This is the Cron schedule, straight from its pull request."
-   ],
-   [
-    "0006.png",
-    "Then Devin deployed it with modal deploy.",
-    "Then Devin deployed it with modal deploy."
-   ],
-   [
-    "0007.png",
-    "It tested the app, and opened a pull request that's ready to merge.",
-    "It tested the app, and opened a pull request that's ready to merge."
-   ],
-   [
-    "0008.png",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
-   ],
-   [
-    "0009.png",
-    "On the deployed page, ChatGPT had six posts found in the last six hours.",
-    "On the deployed page, ChatGPT had six posts found in the last six hours."
-   ],
-   [
-    "0010.png",
-    "For AWS, one post named the Middle East, quoted straight from X.",
-    "For AWS, one post named the Middle East, quoted straight from X."
-   ],
-   [
-    "0011.png",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
-   ],
-   [
-    "outro",
-    "Is it just me? Now you know.",
-    "Is it just me? Now you know."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 2.524,
-    "text": "For AWS, one post named the Middle East,"
-   },
-   {
-    "t0": 2.605,
-    "t1": 3.722,
-    "text": "quoted straight from X."
-   }
-  ]
- },
- "0011.png": {
-  "text": "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
-  "dur": 10.355,
-  "takeAt": 52.745,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X."
-   ],
-   [
-    "0001.png",
-    "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-    "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else."
-   ],
-   [
-    "0002.png",
-    "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-    "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict."
-   ],
-   [
-    "0003.png",
-    "In the real run, Devin built it from one plain-language prompt.",
-    "In the real run, Devin built it from one plain-language prompt."
-   ],
-   [
-    "0004.png",
-    "It planned the work, then wrote the detection logic and the Modal app.",
-    "It planned the work, then wrote the detection logic and the Modal app."
-   ],
-   [
-    "0005.png",
-    "This is the Cron schedule, straight from its pull request.",
-    "This is the Cron schedule, straight from its pull request."
-   ],
-   [
-    "0006.png",
-    "Then Devin deployed it with modal deploy.",
-    "Then Devin deployed it with modal deploy."
-   ],
-   [
-    "0007.png",
-    "It tested the app, and opened a pull request that's ready to merge.",
-    "It tested the app, and opened a pull request that's ready to merge."
-   ],
-   [
-    "0008.png",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
-   ],
-   [
-    "0009.png",
-    "On the deployed page, ChatGPT had six posts found in the last six hours.",
-    "On the deployed page, ChatGPT had six posts found in the last six hours."
-   ],
-   [
-    "0010.png",
-    "For AWS, one post named the Middle East, quoted straight from X.",
-    "For AWS, one post named the Middle East, quoted straight from X."
-   ],
-   [
-    "0011.png",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
-    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
-   ],
-   [
-    "outro",
-    "Is it just me? Now you know.",
-    "Is it just me? Now you know."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.057,
-    "t1": 1.439,
-    "text": "From here, you can extend it."
-   },
-   {
-    "t0": 1.718,
-    "t1": 3.784,
-    "text": "Watch the services your team depends on."
-   },
-   {
-    "t0": 4.11,
-    "t1": 6.35,
-    "text": "Alert a Slack channel when posts spike."
-   },
-   {
-    "t0": 6.675,
-    "t1": 8.951,
-    "text": "Or compare it against the official status page,"
-   },
-   {
-    "t0": 9.102,
-    "t1": 10.355,
-    "text": "and keep weeks of history."
-   }
-  ]
- },
- "outro": {
-  "text": "Is it just me? Now you know.",
-  "dur": 2.063,
-  "takeAt": 63.317,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X.",
-    "Is it just me, or is Slack down for everyone? This app answers that from real posts on X."
-   ],
-   [
-    "0001.png",
-    "Here's how it works. Grok searches X through the xAI API, and Modal runs everything else.",
-    "Here's how it works. Grok searches X through the ex A I API, and Modal runs everything else."
-   ],
-   [
-    "0002.png",
-    "Every minute, a Modal Cron job fans out with starmap, one scan per service, in parallel. The counts are stored in a Modal Dict.",
-    "Every minute, a Modal Cron job fans out with star map, one scan per service, in parallel. The counts are stored in a Modal Dict."
-   ],
-   [
-    "0003.png",
-    "In the real run, Devin built it from one plain-language prompt.",
-    "In the real run, Devin built it from one plain-language prompt."
-   ],
-   [
-    "0004.png",
-    "It planned the work, then wrote the detection logic and the Modal app.",
-    "It planned the work, then wrote the detection logic and the Modal app."
-   ],
-   [
-    "0005.png",
-    "This is the Cron schedule, straight from its pull request.",
-    "This is the Cron schedule, straight from its pull request."
-   ],
-   [
-    "0006.png",
-    "Then Devin deployed it with modal deploy.",
-    "Then Devin deployed it with modal deploy."
-   ],
-   [
-    "0007.png",
-    "It tested the app, and opened a pull request that's ready to merge.",
-    "It tested the app, and opened a pull request that's ready to merge."
-   ],
-   [
-    "0008.png",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
-    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
-   ],
-   [
-    "0009.png",
-    "On the deployed page, ChatGPT had six posts found in the last six hours.",
-    "On the deployed page, ChatGPT had six posts found in the last six hours."
-   ],
-   [
-    "0010.png",
-    "For AWS, one post named the Middle East, quoted straight from X.",
-    "For AWS, one post named the Middle East, quoted straight from X."
-   ],
-   [
-    "0011.png",
+    "0012.png",
     "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
     "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
    ],
@@ -1142,11 +698,671 @@
    {
     "t0": 0.12,
     "t1": 1.014,
+    "text": "Then it wrote the app,"
+   },
+   {
+    "t0": 1.038,
+    "t1": 2.558,
+    "text": "and deployed it with modal deploy."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "It tested the deployed page, and all twelve unit tests passed.",
+  "dur": 3.105,
+  "takeAt": 49.005,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
+   ],
+   [
+    "0002.png",
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
+   ],
+   [
+    "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
+    "In the real run, Devin built it from one plain-language prompt.",
+    "In the real run, Devin built it from one plain-language prompt."
+   ],
+   [
+    "0005.png",
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
+   ],
+   [
+    "0006.png",
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
+   ],
+   [
+    "0007.png",
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
+   ],
+   [
+    "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
+   ],
+   [
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
+   ],
+   [
+    "0011.png",
+    "For AWS, one post named the Middle East, quoted straight from X.",
+    "For AWS, one post named the Middle East, quoted straight from X."
+   ],
+   [
+    "0012.png",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
+   ],
+   [
+    "outro",
+    "Is it just me? Now you know.",
+    "Is it just me? Now you know."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.047,
+    "t1": 1.452,
+    "text": "It tested the deployed page,"
+   },
+   {
+    "t0": 1.475,
+    "t1": 3.105,
+    "text": "and all twelve unit tests passed."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "And it opened a pull request that's ready to merge.",
+  "dur": 2.41,
+  "takeAt": 52.445,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
+   ],
+   [
+    "0002.png",
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
+   ],
+   [
+    "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
+    "In the real run, Devin built it from one plain-language prompt.",
+    "In the real run, Devin built it from one plain-language prompt."
+   ],
+   [
+    "0005.png",
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
+   ],
+   [
+    "0006.png",
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
+   ],
+   [
+    "0007.png",
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
+   ],
+   [
+    "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
+   ],
+   [
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
+   ],
+   [
+    "0011.png",
+    "For AWS, one post named the Middle East, quoted straight from X.",
+    "For AWS, one post named the Middle East, quoted straight from X."
+   ],
+   [
+    "0012.png",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
+   ],
+   [
+    "outro",
+    "Is it just me? Now you know.",
+    "Is it just me? Now you know."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.102,
+    "t1": 2.41,
+    "text": "And it opened a pull request that's ready to merge."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
+  "dur": 8.583,
+  "takeAt": 55.062,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
+   ],
+   [
+    "0002.png",
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
+   ],
+   [
+    "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
+    "In the real run, Devin built it from one plain-language prompt.",
+    "In the real run, Devin built it from one plain-language prompt."
+   ],
+   [
+    "0005.png",
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
+   ],
+   [
+    "0006.png",
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
+   ],
+   [
+    "0007.png",
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
+   ],
+   [
+    "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
+   ],
+   [
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
+   ],
+   [
+    "0011.png",
+    "For AWS, one post named the Middle East, quoted straight from X.",
+    "For AWS, one post named the Middle East, quoted straight from X."
+   ],
+   [
+    "0012.png",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
+   ],
+   [
+    "outro",
+    "Is it just me? Now you know.",
+    "Is it just me? Now you know."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.757,
+    "text": "The app is honest by design."
+   },
+   {
+    "t0": 2.036,
+    "t1": 3.928,
+    "text": "A region or error only shows up if"
+   },
+   {
+    "t0": 3.974,
+    "t1": 5.112,
+    "text": "a post actually says it."
+   },
+   {
+    "t0": 5.495,
+    "t1": 6.796,
+    "text": "The counts are posts found,"
+   },
+   {
+    "t0": 6.831,
+    "t1": 7.632,
+    "text": "a sample of X,"
+   },
+   {
+    "t0": 7.69,
+    "t1": 8.583,
+    "text": "not every report."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+  "dur": 4.643,
+  "takeAt": 63.897,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
+   ],
+   [
+    "0002.png",
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
+   ],
+   [
+    "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
+    "In the real run, Devin built it from one plain-language prompt.",
+    "In the real run, Devin built it from one plain-language prompt."
+   ],
+   [
+    "0005.png",
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
+   ],
+   [
+    "0006.png",
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
+   ],
+   [
+    "0007.png",
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
+   ],
+   [
+    "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
+   ],
+   [
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
+   ],
+   [
+    "0011.png",
+    "For AWS, one post named the Middle East, quoted straight from X.",
+    "For AWS, one post named the Middle East, quoted straight from X."
+   ],
+   [
+    "0012.png",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
+   ],
+   [
+    "outro",
+    "Is it just me? Now you know.",
+    "Is it just me? Now you know."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.583,
+    "text": "On the page running on Modal,"
+   },
+   {
+    "t0": 1.641,
+    "t1": 4.643,
+    "text": "ChatGPT had six posts found in the last six hours."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "For AWS, one post named the Middle East, quoted straight from X.",
+  "dur": 3.925,
+  "takeAt": 68.915,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
+   ],
+   [
+    "0002.png",
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
+   ],
+   [
+    "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
+    "In the real run, Devin built it from one plain-language prompt.",
+    "In the real run, Devin built it from one plain-language prompt."
+   ],
+   [
+    "0005.png",
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
+   ],
+   [
+    "0006.png",
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
+   ],
+   [
+    "0007.png",
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
+   ],
+   [
+    "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
+   ],
+   [
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
+   ],
+   [
+    "0011.png",
+    "For AWS, one post named the Middle East, quoted straight from X.",
+    "For AWS, one post named the Middle East, quoted straight from X."
+   ],
+   [
+    "0012.png",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
+   ],
+   [
+    "outro",
+    "Is it just me? Now you know.",
+    "Is it just me? Now you know."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.048,
+    "t1": 2.661,
+    "text": "For AWS, one post named the Middle East,"
+   },
+   {
+    "t0": 2.777,
+    "t1": 3.925,
+    "text": "quoted straight from X."
+   }
+  ]
+ },
+ "0012.png": {
+  "text": "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
+  "dur": 9.569,
+  "takeAt": 73.081,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
+   ],
+   [
+    "0002.png",
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
+   ],
+   [
+    "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
+    "In the real run, Devin built it from one plain-language prompt.",
+    "In the real run, Devin built it from one plain-language prompt."
+   ],
+   [
+    "0005.png",
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
+   ],
+   [
+    "0006.png",
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
+   ],
+   [
+    "0007.png",
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
+   ],
+   [
+    "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
+   ],
+   [
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
+   ],
+   [
+    "0011.png",
+    "For AWS, one post named the Middle East, quoted straight from X.",
+    "For AWS, one post named the Middle East, quoted straight from X."
+   ],
+   [
+    "0012.png",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
+   ],
+   [
+    "outro",
+    "Is it just me? Now you know.",
+    "Is it just me? Now you know."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.374,
+    "text": "From here, you can extend it."
+   },
+   {
+    "t0": 1.699,
+    "t1": 3.673,
+    "text": "Watch the services your team depends on."
+   },
+   {
+    "t0": 3.998,
+    "t1": 6.053,
+    "text": "Alert a Slack channel when posts spike."
+   },
+   {
+    "t0": 6.297,
+    "t1": 8.41,
+    "text": "Or compare it against the official status page,"
+   },
+   {
+    "t0": 8.433,
+    "t1": 9.569,
+    "text": "and keep weeks of history."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Is it just me? Now you know.",
+  "dur": 1.425,
+  "takeAt": 82.715,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
+    "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X."
+   ],
+   [
+    "0001.png",
+    "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
+    "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL."
+   ],
+   [
+    "0002.png",
+    "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
+    "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs."
+   ],
+   [
+    "0003.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0004.png",
+    "In the real run, Devin built it from one plain-language prompt.",
+    "In the real run, Devin built it from one plain-language prompt."
+   ],
+   [
+    "0005.png",
+    "It checked the setup, made one real search call, and shared its plan.",
+    "It checked the setup, made one real search call, and shared its plan."
+   ],
+   [
+    "0006.png",
+    "Then it wrote the app, and deployed it with modal deploy.",
+    "Then it wrote the app, and deployed it with modal deploy."
+   ],
+   [
+    "0007.png",
+    "It tested the deployed page, and all twelve unit tests passed.",
+    "It tested the deployed page, and all twelve unit tests passed."
+   ],
+   [
+    "0008.png",
+    "And it opened a pull request that's ready to merge.",
+    "And it opened a pull request that's ready to merge."
+   ],
+   [
+    "0009.png",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
+    "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report."
+   ],
+   [
+    "0010.png",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
+    "On the page running on Modal, ChatGPT had six posts found in the last six hours."
+   ],
+   [
+    "0011.png",
+    "For AWS, one post named the Middle East, quoted straight from X.",
+    "For AWS, one post named the Middle East, quoted straight from X."
+   ],
+   [
+    "0012.png",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
+    "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history."
+   ],
+   [
+    "outro",
+    "Is it just me? Now you know.",
+    "Is it just me? Now you know."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.007,
+    "t1": 0.808,
     "text": "Is it just me?"
    },
    {
-    "t0": 1.398,
-    "t1": 2.063,
+    "t0": 0.889,
+    "t1": 1.425,
     "text": "Now you know."
    }
   ]
