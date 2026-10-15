@@ -92,6 +92,7 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 
 *Setup*
 - New feature tutorials ship two cuts by default: the captioned original and a cut narrated in Nader's voice (`T8iHhGIWPm2GVYpQD1Am`, `VO_NAME=nader`). Offer the narrated cut up front even when the brief only asks for captions.
+- Nader's voice is the only narration voice. Never make Megan, Joseff or any other voice cut, for new tutorials or redos, and don't update older non-Nader cuts already on main.
 - Add a `vo` line to the spec edit of the beat where each line should start (`voGap` = pause before it, 1.2–1.4 s at section changes so a line doesn't start on the scene cut; `voOutro` for the outro). Spell out symbols as they're said (Command-Shift-click, not ⌘⇧). Use `voSay` when the voice needs a different spelling from the subtitle; subtitles always show `vo`.
 - `ELEVEN_LABS_API_KEY=… python3 _kit/tools/vo.py <folder> <voice-id>` writes `vo/<voice-id>/` (one WAV per line + `lines.json` with timings); unchanged lines are reused. Then `VOICE=<voice-id> VO_NAME=<name> bash _kit/tools/build.sh <folder>` (run from `tutorials/` with the bare folder name) builds `<folder>-<name>.mp4`.
 - With a voice, the timeline waits for each line to finish before the next narrated beat, the `cap` captions are replaced by bottom subtitles of the spoken words (short chunks, no pop sounds), and the music ducks under the voice.
