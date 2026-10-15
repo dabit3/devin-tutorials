@@ -90,7 +90,7 @@ function fusion(ctx,s,k) {
   link(ctx,k,650,357,460,417,s,t0); link(ctx,k,790,357,980,417,s,t1);
   node(ctx,k,460,489,'Frontier lead',['Plans and investigates','Checks correctness'],enter(k,s,t0),.6,370,144);
   node(ctx,k,980,489,'Efficient sidekick',['Implements the plan','Runs builds and tests'],enter(k,s,t1),0,370,144);
-  pill(ctx,k,'Choose Fusion in Devin CLI or Desktop',720,620,enter(k,s,6));
+  pill(ctx,k,'Available in Devin Cloud',720,620,enter(k,s,6));
 }
 function adaptive(ctx,s,k) {
   header(ctx,s,k,'MODEL CHOICE','Model routing and model collaboration are different',1);
@@ -100,19 +100,19 @@ function adaptive(ctx,s,k) {
 }
 function managed(ctx,s,k) {
   header(ctx,s,k,'PARALLEL EXECUTION','A coordinator for work that spans many modules',1);
-  node(ctx,k,720,321,'Coordinator',['Scopes work and combines results'],enter(k,s,.6),.7,380,100,true);
+  node(ctx,k,720,321,'Coordinator',['Scopes work and combines results'],enter(k,s,.6),.7,380,144,true);
   [350,720,1090].forEach((x,i) => {
-    link(ctx,k,720,372,x,432,s,1.7+i*.3);
-    node(ctx,k,x,490,'Managed Devin',[['Module A','Module B','Module C'][i],'Its own isolated VM'],enter(k,s,2.3+i*.3),0,290,154,true);
+    link(ctx,k,720,393,x,428,s,1.7+i*.3);
+    node(ctx,k,x,505,'Managed Devin',[['Module A','Module B','Module C'][i],'Its own isolated VM'],enter(k,s,2.3+i*.3),0,290,154,true);
   });
   pill(ctx,k,'Migrations • Test coverage • Work across repositories',720,620,enter(k,s,4));
 }
 function services(ctx,s,k) {
   header(ctx,s,k,'MCP IN PRACTICE','Bring runtime evidence into the investigation',5);
-  node(ctx,k,720,334,'Devin',['Investigates with connected tools'],enter(k,s,.5),.7,410,108,true);
+  node(ctx,k,720,334,'Devin',['Investigates with connected tools'],enter(k,s,.5),.7,410,144,true);
   const data = [['Datadog',['Logs and observability']],['Sentry',['Errors and event context']],['Metabase',['Data and analytics context']]];
   data.forEach(([title,lines],i) => {
-    const x=[300,720,1140][i],t=at('services',title,1.4+i*1.5); link(ctx,k,x,474,720,389,s,t);
+    const x=[300,720,1140][i],t=at('services',title,1.4+i*1.5); link(ctx,k,x,474,720,406,s,t);
     node(ctx,k,x,532,title,lines,enter(k,s,t),0,320,116);
   });
   text(ctx,k,'Available tools depend on the server and permissions you connect',720,640,18,enter(k,s,6),400,SUB);
