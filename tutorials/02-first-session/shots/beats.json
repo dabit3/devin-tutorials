@@ -3,108 +3,83 @@
   "img": "0000.png",
   "cur": {
    "x": 720,
-   "y": 620
+   "y": 587.5
   },
-  "hold": 1.4
+  "hold": 1.4,
+  "mark": "home"
  },
  {
   "img": "0001.png",
   "cur": {
    "x": 720,
-   "y": 620
+   "y": 587.5
   },
   "kind": "hover",
-  "hold": 1.2,
-  "cap": "Ask explores and plans. Agent writes, runs, and ships code",
+  "cap": "Agent mode: Devin does the work",
+  "hold": 1.6,
+  "hlBox": {
+   "x": 1073.173828125,
+   "y": 291.25,
+   "w": 139.90234375,
+   "h": 35
+  },
   "target": {
-   "x": 1184.109375,
-   "y": 314,
-   "w": 48.78125,
-   "h": 28,
-   "text": "Ask"
+   "x": 1042.060546875,
+   "y": 291.25,
+   "w": 77.67578125,
+   "h": 35,
+   "text": "Agent"
   }
  },
  {
   "img": "0002.png",
   "cur": {
-   "x": 720,
-   "y": 620
+   "x": 945.537109375,
+   "y": 447.5
   },
+  "cap": "Pick a model",
   "kind": "hover",
-  "hold": 1,
-  "cap": "We'll stay in Agent mode",
   "target": {
-   "x": 1127.6484375,
-   "y": 314,
-   "w": 62.140625,
-   "h": 28,
-   "text": "Agent"
+   "x": 945.537109375,
+   "y": 447.5
   }
  },
  {
   "img": "0003.png",
   "cur": {
-   "x": 1050.4296875,
-   "y": 439
+   "x": 945.537109375,
+   "y": 447.5
   },
-  "cap": "Pick how much horsepower Devin brings to the task",
-  "kind": "hover",
+  "kind": "click",
   "target": {
-   "x": 1050.4296875,
-   "y": 439,
-   "w": 66.140625,
-   "h": 28
+   "x": 945.537109375,
+   "y": 447.5
+  },
+  "clickAt": {
+   "x": 945.537109375,
+   "y": 447.5
   }
  },
  {
   "img": "0004.png",
   "cur": {
-   "x": 1050.4296875,
-   "y": 439
+   "x": 945.537109375,
+   "y": 447.5
   },
-  "kind": "click",
-  "target": {
-   "x": 1050.4296875,
-   "y": 439,
-   "w": 66.140625,
-   "h": 28
-  },
-  "clickAt": {
-   "x": 1050.4296875,
-   "y": 439
+  "hold": 1.4,
+  "mark": "models",
+  "hlBox": {
+   "x": 850,
+   "y": 228.75,
+   "w": 275,
+   "h": 397.5
   }
  },
  {
   "img": "0005.png",
   "cur": {
-   "x": 1050.4296875,
-   "y": 439
-  },
-  "hold": 1
- },
- {
-  "img": "0006.png",
-  "cur": {
-   "x": 920.015625,
-   "y": 500
-  },
-  "kind": "hover",
-  "hold": 0.5
- },
- {
-  "img": "0007.png",
-  "cur": {
-   "x": 914.5703125,
-   "y": 530
-  },
-  "kind": "hover",
-  "hold": 0.5
- },
- {
-  "img": "0008.png",
-  "cur": {
-   "x": 910.9765625,
-   "y": 590
+   "x": 782.51953125,
+   "y": 86.25
   },
   "kind": "hover",
   "hold": 0.5
@@ -112,3152 +87,3419 @@
  {
   "img": "0009.png",
   "cur": {
-   "x": 922.0703125,
-   "y": 560
+   "x": 785.087890625,
+   "y": 161.25
   },
-  "kind": "hover",
+  "kind": "click",
   "target": {
-   "x": 922.0703125,
-   "y": 560,
-   "w": 44.140625,
-   "h": 18,
+   "x": 785.087890625,
+   "y": 161.25,
+   "w": 55.17578125,
+   "h": 22.5,
    "text": "Normal"
+  },
+  "clickAt": {
+   "x": 785.087890625,
+   "y": 161.25
   }
  },
  {
   "img": "0010.png",
   "cur": {
-   "x": 922.0703125,
-   "y": 560
+   "x": 396.875,
+   "y": 447.5
   },
-  "kind": "click",
+  "cap": "Pick the OS Devin works on",
+  "kind": "hover",
   "target": {
-   "x": 922.0703125,
-   "y": 560,
-   "w": 44.140625,
-   "h": 18,
-   "text": "Normal"
-  },
-  "clickAt": {
-   "x": 922.0703125,
-   "y": 560
+   "x": 396.875,
+   "y": 447.5,
+   "w": 35,
+   "h": 35,
+   "text": ""
   }
  },
  {
   "img": "0011.png",
   "cur": {
-   "x": 611.5,
-   "y": 439
+   "x": 396.875,
+   "y": 447.5
   },
-  "cap": "Run Devin on Linux, macOS, or Windows",
-  "kind": "hover",
+  "kind": "click",
   "target": {
-   "x": 611.5,
-   "y": 439,
-   "w": 28,
-   "h": 28,
+   "x": 396.875,
+   "y": 447.5,
+   "w": 35,
+   "h": 35,
    "text": ""
+  },
+  "clickAt": {
+   "x": 396.875,
+   "y": 447.5
   }
  },
  {
   "img": "0012.png",
   "cur": {
-   "x": 611.5,
-   "y": 439
+   "x": 469.130859375,
+   "y": 491.25
   },
-  "kind": "click",
-  "target": {
-   "x": 611.5,
-   "y": 439,
-   "w": 28,
-   "h": 28,
-   "text": ""
-  },
-  "clickAt": {
-   "x": 611.5,
-   "y": 439
+  "kind": "hover",
+  "hold": 0.8,
+  "mark": "envs",
+  "hlBox": {
+   "x": 855,
+   "y": 543.75,
+   "w": 275,
+   "h": 155
   }
- },
- {
-  "img": "0013.png",
-  "cur": {
-   "x": 669.3046875,
-   "y": 474
-  },
-  "kind": "hover",
-  "hold": 0.8
- },
- {
-  "img": "0014.png",
-  "cur": {
-   "x": 926.0390625,
-   "y": 529
-  },
-  "kind": "hover",
-  "hold": 0.6
  },
  {
   "img": "0015.png",
   "cur": {
-   "x": 932.109375,
-   "y": 559
+   "x": 790.3515625,
+   "y": 522.5
   },
+  "cap": "Stick with Linux",
   "kind": "hover",
-  "hold": 0.6
+  "target": {
+   "x": 790.3515625,
+   "y": 522.5
+  }
  },
  {
   "img": "0016.png",
   "cur": {
-   "x": 926.28125,
-   "y": 499
+   "x": 790.3515625,
+   "y": 522.5
   },
-  "cap": "We'll stick with Linux",
-  "kind": "hover",
+  "kind": "click",
   "target": {
-   "x": 926.28125,
-   "y": 499
+   "x": 790.3515625,
+   "y": 522.5
+  },
+  "clickAt": {
+   "x": 790.3515625,
+   "y": 522.5
   }
  },
  {
   "img": "0017.png",
   "cur": {
-   "x": 926.28125,
-   "y": 499
+   "x": 461.875,
+   "y": 362.5
   },
-  "kind": "click",
-  "target": {
-   "x": 926.28125,
-   "y": 499
-  },
-  "clickAt": {
-   "x": 926.28125,
-   "y": 499
-  }
+  "kind": "type",
+  "chars": 13
  },
  {
   "img": "0018.png",
   "cur": {
-   "x": 663.5,
-   "y": 371
+   "x": 461.875,
+   "y": 362.5
   },
-  "cap": "Type @ to mention a repository",
-  "kind": "hover",
-  "target": {
-   "x": 663.5,
-   "y": 371
-  }
+  "hold": 0.8
  },
  {
   "img": "0019.png",
   "cur": {
-   "x": 663.5,
-   "y": 371
+   "x": 433.232421875,
+   "y": 402.5
   },
-  "kind": "click",
+  "kind": "hover",
   "target": {
-   "x": 663.5,
-   "y": 371
-  },
-  "clickAt": {
-   "x": 663.5,
-   "y": 371
+   "x": 433.232421875,
+   "y": 402.5,
+   "w": 153.96484375,
+   "h": 20,
+   "text": "product-demo-apps"
   }
  },
  {
   "img": "0020.png",
   "cur": {
-   "x": 663.5,
-   "y": 371
+   "x": 433.232421875,
+   "y": 402.5
   },
-  "kind": "type",
-  "chars": 14
+  "kind": "click",
+  "target": {
+   "x": 433.232421875,
+   "y": 402.5,
+   "w": 153.96484375,
+   "h": 20,
+   "text": "product-demo-apps"
+  },
+  "clickAt": {
+   "x": 433.232421875,
+   "y": 402.5
+  },
+  "mark": "repo"
  },
  {
   "img": "0021.png",
   "cur": {
-   "x": 663.5,
-   "y": 371
+   "x": 433.232421875,
+   "y": 402.5
   },
-  "hold": 0.8
+  "kind": "type",
+  "chars": 4
  },
  {
   "img": "0022.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
-  "kind": "hover",
-  "target": {
-   "x": 640.5859375,
-   "y": 431,
-   "w": 123.171875,
-   "h": 16,
-   "text": "product-demo-apps"
-  }
+  "kind": "type",
+  "chars": 4
  },
  {
   "img": "0023.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
-  "kind": "click",
-  "target": {
-   "x": 640.5859375,
-   "y": 431,
-   "w": 123.171875,
-   "h": 16,
-   "text": "product-demo-apps"
-  },
-  "clickAt": {
-   "x": 640.5859375,
-   "y": 431
-  },
-  "mark": "prompt",
-  "cap": "Describe the task and what done looks like"
+  "kind": "type",
+  "chars": 4
  },
  {
   "img": "0024.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0025.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0026.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0027.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0028.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0029.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0030.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0031.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0032.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0033.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0034.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0035.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0036.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0037.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0038.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0039.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0040.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0041.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0042.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 5
+  "chars": 4
  },
  {
   "img": "0043.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
   "kind": "type",
-  "chars": 3
+  "chars": 4
  },
  {
   "img": "0044.png",
   "cur": {
-   "x": 640.5859375,
-   "y": 431
+   "x": 433.232421875,
+   "y": 402.5
   },
-  "hold": 1.6
+  "kind": "type",
+  "chars": 4
  },
  {
   "img": "0045.png",
   "cur": {
-   "x": 1161.5,
-   "y": 439
+   "x": 433.232421875,
+   "y": 402.5
   },
-  "kind": "hover",
-  "cap": "Send it",
-  "hold": 0.6,
-  "mark": "session"
+  "kind": "type",
+  "chars": 4
  },
  {
   "img": "0046.png",
   "cur": {
-   "x": 1161.5,
-   "y": 439
+   "x": 433.232421875,
+   "y": 402.5
   },
-  "kind": "poll",
-  "at": 13031,
-  "cap": null
+  "kind": "type",
+  "chars": 4
  },
  {
   "img": "0047.png",
   "cur": {
-   "x": 1161.5,
-   "y": 439
+   "x": 433.232421875,
+   "y": 402.5
   },
-  "kind": "poll",
-  "at": 14034,
-  "cap": null
+  "kind": "type",
+  "chars": 4
  },
  {
   "img": "0048.png",
   "cur": {
-   "x": 1161.5,
-   "y": 439
+   "x": 433.232421875,
+   "y": 402.5
   },
-  "kind": "poll",
-  "at": 15035,
-  "cap": null
+  "kind": "type",
+  "chars": 4
  },
  {
   "img": "0049.png",
   "cur": {
-   "x": 1161.5,
-   "y": 439
+   "x": 433.232421875,
+   "y": 402.5
   },
-  "kind": "poll",
-  "at": 16039,
-  "cap": null
+  "hold": 1.6,
+  "mark": "prompt",
+  "hlBox": {
+   "x": 720.625,
+   "y": 375,
+   "w": 817.5,
+   "h": 50
+  }
  },
  {
   "img": "0050.png",
   "cur": {
-   "x": 1161.5,
-   "y": 439
+   "x": 1084.375,
+   "y": 447.5
   },
-  "kind": "poll",
-  "at": 17040,
-  "cap": null
+  "kind": "hover",
+  "hold": 0.6,
+  "mark": "session"
  },
  {
   "img": "0051.png",
   "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 18057,
-  "cap": null
- },
- {
-  "img": "0052.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 19046,
-  "cap": null
- },
- {
-  "img": "0053.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 20049,
-  "cap": null
- },
- {
-  "img": "0054.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 21050,
-  "cap": null
- },
- {
-  "img": "0055.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 22053,
-  "cap": null
- },
- {
-  "img": "0056.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 23055,
-  "cap": null
- },
- {
-  "img": "0057.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 24058,
-  "cap": null
- },
- {
-  "img": "0058.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 25060,
-  "cap": null
- },
- {
-  "img": "0059.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 26063,
-  "cap": null
- },
- {
-  "img": "0060.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 27064,
-  "cap": null
- },
- {
-  "img": "0061.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 28069,
-  "cap": null
- },
- {
-  "img": "0062.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 29073,
-  "cap": null
- },
- {
-  "img": "0063.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 30076,
-  "cap": null
- },
- {
-  "img": "0064.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 31085,
-  "cap": null
- },
- {
-  "img": "0065.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 32080,
-  "cap": null
- },
- {
-  "img": "0066.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 33088,
-  "cap": null
- },
- {
-  "img": "0067.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 34086,
-  "cap": null
- },
- {
-  "img": "0068.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 35089,
-  "cap": null
- },
- {
-  "img": "0069.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 36090,
-  "cap": null
- },
- {
-  "img": "0070.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 37092,
-  "cap": null
- },
- {
-  "img": "0071.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 38094,
-  "cap": null
- },
- {
-  "img": "0072.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 39097,
-  "cap": null
- },
- {
-  "img": "0073.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 40100,
-  "cap": null
- },
- {
-  "img": "0074.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 41102,
-  "cap": null
- },
- {
-  "img": "0075.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 42104,
-  "cap": null
- },
- {
-  "img": "0076.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 43108,
-  "cap": null
- },
- {
-  "img": "0077.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 44113,
-  "cap": null
- },
- {
-  "img": "0078.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 45118,
-  "cap": null
- },
- {
-  "img": "0079.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 46130,
-  "cap": null
- },
- {
-  "img": "0080.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 47122,
-  "cap": null
- },
- {
-  "img": "0081.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 48124,
-  "cap": null
- },
- {
-  "img": "0082.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 49129,
-  "cap": null
- },
- {
-  "img": "0083.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 50127,
-  "cap": null
- },
- {
-  "img": "0084.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 51129,
-  "cap": null
- },
- {
-  "img": "0085.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 52133,
-  "cap": null
- },
- {
-  "img": "0086.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 53134,
-  "cap": null
- },
- {
-  "img": "0087.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 54135,
-  "cap": null
- },
- {
-  "img": "0088.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 55137,
-  "cap": null
- },
- {
-  "img": "0089.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 56137,
-  "cap": null
- },
- {
-  "img": "0090.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 57140,
-  "cap": null
- },
- {
-  "img": "0091.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 58143,
-  "cap": null
- },
- {
-  "img": "0092.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 59146,
-  "cap": null
- },
- {
-  "img": "0093.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 60148,
-  "cap": null
- },
- {
-  "img": "0094.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 61168,
-  "cap": null
- },
- {
-  "img": "0095.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 62152,
-  "cap": null
- },
- {
-  "img": "0096.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 63156,
-  "cap": null
- },
- {
-  "img": "0097.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 64160,
-  "cap": null
- },
- {
-  "img": "0098.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 65163,
-  "cap": null
- },
- {
-  "img": "0099.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 66166,
-  "cap": null
- },
- {
-  "img": "0100.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 67166,
-  "cap": null
- },
- {
-  "img": "0101.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 68169,
-  "cap": null
- },
- {
-  "img": "0102.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 69170,
-  "cap": null
- },
- {
-  "img": "0103.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 70171,
-  "cap": null
- },
- {
-  "img": "0104.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 71174,
-  "cap": null
- },
- {
-  "img": "0105.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 72177,
-  "cap": null
- },
- {
-  "img": "0106.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 73178,
-  "cap": null
- },
- {
-  "img": "0107.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 74181,
-  "cap": null
- },
- {
-  "img": "0108.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 75185,
-  "cap": null
- },
- {
-  "img": "0109.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 76186,
-  "cap": null
- },
- {
-  "img": "0110.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 77187,
-  "cap": null
- },
- {
-  "img": "0111.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 78204,
-  "cap": null
- },
- {
-  "img": "0112.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 79190,
-  "cap": null
- },
- {
-  "img": "0113.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 80194,
-  "cap": null
- },
- {
-  "img": "0114.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 81196,
-  "cap": null
- },
- {
-  "img": "0115.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 82198,
-  "cap": null
- },
- {
-  "img": "0116.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 83203,
-  "cap": null
- },
- {
-  "img": "0117.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 84207,
-  "cap": null
- },
- {
-  "img": "0118.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 85209,
-  "cap": null
- },
- {
-  "img": "0119.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 86215,
-  "cap": null
- },
- {
-  "img": "0120.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 87216,
-  "cap": null
- },
- {
-  "img": "0121.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 88218,
-  "cap": null
- },
- {
-  "img": "0122.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 89221,
-  "cap": null
- },
- {
-  "img": "0123.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 90227,
-  "cap": null
- },
- {
-  "img": "0124.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 91225,
-  "cap": null
- },
- {
-  "img": "0125.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 92226,
-  "cap": null
- },
- {
-  "img": "0126.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 93231,
-  "cap": null
- },
- {
-  "img": "0127.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 94233,
-  "cap": null
- },
- {
-  "img": "0128.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 95233,
-  "cap": null
- },
- {
-  "img": "0129.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 96236,
-  "cap": null
- },
- {
-  "img": "0130.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 97241,
-  "cap": null
- },
- {
-  "img": "0131.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 98242,
-  "cap": null
- },
- {
-  "img": "0132.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 99245,
-  "cap": null
- },
- {
-  "img": "0133.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 100246,
-  "cap": null
- },
- {
-  "img": "0134.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 101248,
-  "cap": null
- },
- {
-  "img": "0135.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 102252,
-  "cap": null
- },
- {
-  "img": "0136.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 103254,
-  "cap": null
- },
- {
-  "img": "0137.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 104254,
-  "cap": null
- },
- {
-  "img": "0138.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 105256,
-  "cap": null
- },
- {
-  "img": "0139.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 106257,
-  "cap": null
- },
- {
-  "img": "0140.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 107260,
-  "cap": null
- },
- {
-  "img": "0141.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 108262,
-  "cap": null
- },
- {
-  "img": "0142.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 109266,
-  "cap": null
- },
- {
-  "img": "0143.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 110270,
-  "cap": null
- },
- {
-  "img": "0144.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 111272,
-  "cap": null
- },
- {
-  "img": "0145.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 112275,
-  "cap": null
- },
- {
-  "img": "0146.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 113279,
-  "cap": null
- },
- {
-  "img": "0147.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 114283,
-  "cap": null
- },
- {
-  "img": "0148.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 115287,
-  "cap": null
- },
- {
-  "img": "0149.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 116288,
-  "cap": null
- },
- {
-  "img": "0150.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 117291,
-  "cap": null
- },
- {
-  "img": "0151.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 118294,
-  "cap": null
- },
- {
-  "img": "0152.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 119297,
-  "cap": null
- },
- {
-  "img": "0153.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 120299,
-  "cap": null
- },
- {
-  "img": "0154.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 121300,
-  "cap": null
- },
- {
-  "img": "0155.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 122302,
-  "cap": null
- },
- {
-  "img": "0156.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 123305,
-  "cap": null
- },
- {
-  "img": "0157.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 124308,
-  "cap": null
- },
- {
-  "img": "0158.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 125309,
-  "cap": null
- },
- {
-  "img": "0159.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 126315,
-  "cap": null
- },
- {
-  "img": "0160.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 127322,
-  "cap": null
- },
- {
-  "img": "0161.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 128325,
-  "cap": null
- },
- {
-  "img": "0162.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 129328,
-  "cap": null
- },
- {
-  "img": "0163.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 130331,
-  "cap": null
- },
- {
-  "img": "0164.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 131335,
-  "cap": null
- },
- {
-  "img": "0165.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 132336,
-  "cap": null
- },
- {
-  "img": "0166.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 133338,
-  "cap": null
- },
- {
-  "img": "0167.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 134341,
-  "cap": null
- },
- {
-  "img": "0168.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 135343,
-  "cap": null
- },
- {
-  "img": "0169.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 136347,
-  "cap": null
- },
- {
-  "img": "0170.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 137348,
-  "cap": null
- },
- {
-  "img": "0171.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 138349,
-  "cap": null
- },
- {
-  "img": "0172.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 139351,
-  "cap": null
- },
- {
-  "img": "0173.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 140353,
-  "cap": null
- },
- {
-  "img": "0174.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 141357,
-  "cap": null
- },
- {
-  "img": "0175.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 142359,
-  "cap": null
- },
- {
-  "img": "0176.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 143361,
-  "cap": null
- },
- {
-  "img": "0177.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 144365,
-  "cap": null
- },
- {
-  "img": "0178.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 145368,
-  "cap": null
- },
- {
-  "img": "0179.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 146369,
-  "cap": null
- },
- {
-  "img": "0180.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 147371,
-  "cap": null
- },
- {
-  "img": "0181.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 148375,
-  "cap": null
- },
- {
-  "img": "0182.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 149375,
-  "cap": null
- },
- {
-  "img": "0183.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 150376,
-  "cap": null
- },
- {
-  "img": "0184.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 151381,
-  "cap": null
- },
- {
-  "img": "0185.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 152382,
-  "cap": null
- },
- {
-  "img": "0186.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 153384,
-  "cap": null
- },
- {
-  "img": "0187.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 154386,
-  "cap": null
- },
- {
-  "img": "0188.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 155389,
-  "cap": null
- },
- {
-  "img": "0189.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 156390,
-  "cap": null
- },
- {
-  "img": "0190.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 157392,
-  "cap": null
- },
- {
-  "img": "0191.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 158393,
-  "cap": null
- },
- {
-  "img": "0192.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 159396,
-  "cap": null
- },
- {
-  "img": "0193.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 160398,
-  "cap": null
- },
- {
-  "img": "0194.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 161402,
-  "cap": null
- },
- {
-  "img": "0195.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 162402,
-  "cap": null
- },
- {
-  "img": "0196.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 163405,
-  "cap": null
- },
- {
-  "img": "0197.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 164407,
-  "cap": null
- },
- {
-  "img": "0198.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 165409,
-  "cap": null
- },
- {
-  "img": "0199.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 166411,
-  "cap": null
- },
- {
-  "img": "0200.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 167414,
-  "cap": null
- },
- {
-  "img": "0201.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 168416,
-  "cap": null
- },
- {
-  "img": "0202.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 169419,
-  "cap": null
- },
- {
-  "img": "0203.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 170421,
-  "cap": null
- },
- {
-  "img": "0204.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 171423,
-  "cap": null
- },
- {
-  "img": "0205.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 172424,
-  "cap": null
- },
- {
-  "img": "0206.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 173425,
-  "cap": null
- },
- {
-  "img": "0207.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 174428,
-  "cap": null
- },
- {
-  "img": "0208.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 175430,
-  "cap": null
- },
- {
-  "img": "0209.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 176432,
-  "cap": null
- },
- {
-  "img": "0210.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 177434,
-  "cap": null
- },
- {
-  "img": "0211.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 178437,
-  "cap": null
- },
- {
-  "img": "0212.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 179441,
-  "cap": null
- },
- {
-  "img": "0213.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 180442,
-  "cap": null
- },
- {
-  "img": "0214.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 181444,
-  "cap": null
- },
- {
-  "img": "0215.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 182448,
-  "cap": null
- },
- {
-  "img": "0216.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 183450,
-  "cap": null
- },
- {
-  "img": "0217.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 184451,
-  "cap": null
- },
- {
-  "img": "0218.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 185453,
-  "cap": null
- },
- {
-  "img": "0219.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 186456,
-  "cap": null
- },
- {
-  "img": "0220.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 187456,
-  "cap": null
- },
- {
-  "img": "0221.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 188459,
-  "cap": null
- },
- {
-  "img": "0222.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 189463,
-  "cap": null
- },
- {
-  "img": "0223.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 190466,
-  "cap": null
- },
- {
-  "img": "0224.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 191470,
-  "cap": null
- },
- {
-  "img": "0225.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 192472,
-  "cap": null,
-  "mark": "pr"
- },
- {
-  "img": "0226.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 5006,
-  "cap": null
- },
- {
-  "img": "0227.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "kind": "poll",
-  "at": 10019,
-  "cap": null
- },
- {
-  "img": "0228.png",
-  "cur": {
-   "x": 1161.5,
-   "y": 439
-  },
-  "hold": 1.2
- },
- {
-  "img": "0229.png",
-  "cur": {
-   "x": 389.734375,
-   "y": 614
-  },
-  "cap": "Have Devin test it in the browser",
-  "kind": "hover",
-  "target": {
-   "x": 389.734375,
-   "y": 614,
-   "text": "Test card starring"
-  }
- },
- {
-  "img": "0230.png",
-  "cur": {
-   "x": 389.734375,
-   "y": 614
-  },
-  "kind": "click",
-  "target": {
-   "x": 389.734375,
-   "y": 614,
-   "text": "Test card starring"
-  },
-  "clickAt": {
-   "x": 389.734375,
-   "y": 614
-  },
-  "mark": "testing"
- },
- {
-  "img": "0231.png",
-  "cur": {
-   "x": 389.734375,
-   "y": 614
-  },
-  "kind": "poll",
-  "at": 18,
-  "cap": null
- },
- {
-  "img": "0232.png",
-  "cur": {
-   "x": 389.734375,
-   "y": 614
-  },
-  "kind": "poll",
-  "at": 5018,
-  "cap": null
- },
- {
-  "img": "0233.png",
-  "cur": {
-   "x": 389.734375,
-   "y": 614
-  },
-  "kind": "poll",
-  "at": 10031,
-  "cap": null
- },
- {
-  "img": "0234.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "cap": "Watch it click through the app on its own computer",
-  "kind": "hover",
-  "target": {
-   "x": 984.65625,
-   "y": 22,
-   "text": "Computer"
-  }
- },
- {
-  "img": "0235.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "click",
-  "target": {
-   "x": 984.65625,
-   "y": 22,
-   "text": "Computer"
-  },
-  "clickAt": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "mark": "computer"
- },
- {
-  "img": "0236.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 11,
-  "cap": null
- },
- {
-  "img": "0237.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 6012,
-  "cap": null
- },
- {
-  "img": "0238.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 12018,
-  "cap": null
- },
- {
-  "img": "0239.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 18017,
-  "cap": null
- },
- {
-  "img": "0240.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 24023,
-  "cap": null
- },
- {
-  "img": "0241.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 30025,
-  "cap": null
- },
- {
-  "img": "0242.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 36028,
-  "cap": null
- },
- {
-  "img": "0243.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 42028,
-  "cap": null
- },
- {
-  "img": "0244.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 48028,
-  "cap": null
- },
- {
-  "img": "0245.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 54035,
-  "cap": null
- },
- {
-  "img": "0246.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 60031,
-  "cap": null
- },
- {
-  "img": "0247.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 66029,
-  "cap": null
- },
- {
-  "img": "0248.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 72034,
-  "cap": null
- },
- {
-  "img": "0249.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 78035,
-  "cap": null
- },
- {
-  "img": "0250.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 84038,
-  "cap": null
- },
- {
-  "img": "0251.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 90051,
-  "cap": null
- },
- {
-  "img": "0252.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 96050,
-  "cap": null
- },
- {
-  "img": "0253.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 102051,
-  "cap": null
- },
- {
-  "img": "0254.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 108048,
-  "cap": null
- },
- {
-  "img": "0255.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 114051,
-  "cap": null
- },
- {
-  "img": "0256.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 120061,
-  "cap": null
- },
- {
-  "img": "0257.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 126056,
-  "cap": null
- },
- {
-  "img": "0258.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 132057,
-  "cap": null
- },
- {
-  "img": "0259.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 138063,
-  "cap": null
- },
- {
-  "img": "0260.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 144061,
-  "cap": null
- },
- {
-  "img": "0261.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 150064,
-  "cap": null
- },
- {
-  "img": "0262.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 156068,
-  "cap": null
- },
- {
-  "img": "0263.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 162072,
-  "cap": null
- },
- {
-  "img": "0264.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 168086,
-  "cap": null
- },
- {
-  "img": "0265.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 174068,
-  "cap": null
- },
- {
-  "img": "0266.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 180068,
-  "cap": null
- },
- {
-  "img": "0267.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 186075,
-  "cap": null
- },
- {
-  "img": "0268.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 192073,
-  "cap": null
- },
- {
-  "img": "0269.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 198082,
-  "cap": null
- },
- {
-  "img": "0270.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 204075,
-  "cap": null
- },
- {
-  "img": "0271.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 210082,
-  "cap": null
- },
- {
-  "img": "0272.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 216083,
-  "cap": null
- },
- {
-  "img": "0273.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 222084,
-  "cap": null
- },
- {
-  "img": "0274.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 228089,
-  "cap": null
- },
- {
-  "img": "0275.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 234083,
-  "cap": null
- },
- {
-  "img": "0276.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 240086,
-  "cap": null
- },
- {
-  "img": "0277.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "kind": "poll",
-  "at": 14,
-  "cap": null
- },
- {
-  "img": "0278.png",
-  "cur": {
-   "x": 984.65625,
-   "y": 22
-  },
-  "hold": 1.6,
-  "cap": "Devin sends a recording of the test"
- },
- {
-  "img": "0279.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "hover",
-  "target": {
-   "x": 505,
-   "y": 426.75
-  }
- },
- {
-  "img": "0280.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "click",
-  "target": {
-   "x": 505,
-   "y": 426.75
-  },
-  "clickAt": {
-   "x": 505,
-   "y": 426.75
-  },
-  "mark": "playing"
- },
- {
-  "img": "0281.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 0
- },
- {
-  "img": "0282.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 1000
- },
- {
-  "img": "0283.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 2000
- },
- {
-  "img": "0284.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 3000
- },
- {
-  "img": "0285.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 4000
- },
- {
-  "img": "0286.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 5000
- },
- {
-  "img": "0287.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 6000
- },
- {
-  "img": "0288.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 7000
- },
- {
-  "img": "0289.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 8000
- },
- {
-  "img": "0290.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 9000
- },
- {
-  "img": "0291.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 10000
- },
- {
-  "img": "0292.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 11000
- },
- {
-  "img": "0293.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 12000
- },
- {
-  "img": "0294.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 13000
- },
- {
-  "img": "0295.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 14000
- },
- {
-  "img": "0296.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 15000
- },
- {
-  "img": "0297.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 16000
- },
- {
-  "img": "0298.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 17000
- },
- {
-  "img": "0299.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 18000
- },
- {
-  "img": "0300.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 19000
- },
- {
-  "img": "0301.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 20000
- },
- {
-  "img": "0302.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 21000
- },
- {
-  "img": "0303.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 22000
- },
- {
-  "img": "0304.png",
-  "cur": {
-   "x": 505,
-   "y": 426.75
-  },
-  "kind": "poll",
-  "at": 23000
- },
- {
-  "img": "0305.png",
-  "cur": {
-   "x": 1274,
-   "y": 82.75
-  },
-  "kind": "hover",
-  "target": {
-   "x": 1274,
-   "y": 82.75,
-   "w": 24,
-   "h": 24,
-   "text": ""
-  }
- },
- {
-  "img": "0306.png",
-  "cur": {
-   "x": 1274,
-   "y": 82.75
-  },
-  "kind": "click",
-  "target": {
-   "x": 1274,
-   "y": 82.75,
-   "w": 24,
-   "h": 24,
-   "text": ""
-  },
-  "clickAt": {
-   "x": 1274,
-   "y": 82.75
-  }
- },
- {
-  "img": "0307.png",
-  "cur": {
-   "x": 462,
-   "y": 331
-  },
-  "cap": "Open the PR right in the session",
-  "kind": "hover",
-  "target": {
-   "x": 462,
-   "y": 331,
-   "text": "product-demo-apps#23\n•\n+114\n−4\n•\ndevin-ai-integration[bot]"
-  }
- },
- {
-  "img": "0308.png",
-  "cur": {
-   "x": 462,
-   "y": 331
-  },
-  "kind": "click",
-  "target": {
-   "x": 462,
-   "y": 331,
-   "text": "product-demo-apps#23\n•\n+114\n−4\n•\ndevin-ai-integration[bot]"
-  },
-  "clickAt": {
-   "x": 462,
-   "y": 331
-  }
- },
- {
-  "img": "0309.png",
-  "cur": {
-   "x": 462,
-   "y": 331
-  },
-  "kind": "poll",
-  "at": 42,
-  "cap": null
- },
- {
-  "img": "0310.png",
-  "cur": {
-   "x": 462,
-   "y": 331
-  },
-  "hold": 1.8,
-  "cap": "Review the diff and checks"
- },
- {
-  "img": "0311.png",
-  "cur": {
-   "x": 1366,
-   "y": 259
-  },
-  "cap": "Happy with it? Merge the pull request",
-  "kind": "hover",
-  "target": {
-   "x": 1366,
-   "y": 259,
-   "w": 64,
-   "h": 28,
-   "text": "Merge"
-  }
- },
- {
-  "img": "0312.png",
-  "cur": {
-   "x": 1366,
-   "y": 259
-  },
-  "kind": "click",
-  "target": {
-   "x": 1366,
-   "y": 259,
-   "w": 64,
-   "h": 28,
-   "text": "Merge"
-  },
-  "clickAt": {
-   "x": 1366,
-   "y": 259
-  }
- },
- {
-  "img": "0313.png",
-  "cur": {
-   "x": 1366,
-   "y": 259
+   "x": 720,
+   "y": 600
   },
   "kind": "poll",
   "at": 12,
   "cap": null
  },
  {
-  "img": "0314.png",
+  "img": "0052.png",
   "cur": {
-   "x": 1366,
-   "y": 259
+   "x": 720,
+   "y": 600
   },
   "kind": "poll",
-  "at": 2518,
+  "at": 6013,
+  "cap": null
+ },
+ {
+  "img": "0053.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 12028,
+  "cap": null
+ },
+ {
+  "img": "0054.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 18029,
+  "cap": null
+ },
+ {
+  "img": "0055.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 24029,
+  "cap": null
+ },
+ {
+  "img": "0056.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 30029,
+  "cap": null
+ },
+ {
+  "img": "0057.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 36029,
+  "cap": null
+ },
+ {
+  "img": "0058.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 42028,
+  "cap": null
+ },
+ {
+  "img": "0059.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 48045,
+  "cap": null
+ },
+ {
+  "img": "0060.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 54047,
+  "cap": null
+ },
+ {
+  "img": "0061.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 60045,
+  "cap": null
+ },
+ {
+  "img": "0062.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 66044,
+  "cap": null
+ },
+ {
+  "img": "0063.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 72044,
+  "cap": null
+ },
+ {
+  "img": "0064.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 78060,
+  "cap": null
+ },
+ {
+  "img": "0065.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 84061,
+  "cap": null
+ },
+ {
+  "img": "0066.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 90062,
+  "cap": null
+ },
+ {
+  "img": "0067.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 96055,
+  "cap": null
+ },
+ {
+  "img": "0068.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 102060,
+  "cap": null
+ },
+ {
+  "img": "0069.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 108061,
+  "cap": null
+ },
+ {
+  "img": "0070.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 114071,
+  "cap": null
+ },
+ {
+  "img": "0071.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 120080,
+  "cap": null
+ },
+ {
+  "img": "0072.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 126081,
+  "cap": null
+ },
+ {
+  "img": "0073.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 132077,
+  "cap": null
+ },
+ {
+  "img": "0074.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 138073,
+  "cap": null
+ },
+ {
+  "img": "0075.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 144072,
+  "cap": null
+ },
+ {
+  "img": "0076.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 150072,
+  "cap": null
+ },
+ {
+  "img": "0077.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 156090,
+  "cap": null
+ },
+ {
+  "img": "0078.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 162071,
+  "cap": null
+ },
+ {
+  "img": "0079.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 168092,
+  "cap": null
+ },
+ {
+  "img": "0080.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 174089,
+  "cap": null
+ },
+ {
+  "img": "0081.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 180088,
+  "cap": null
+ },
+ {
+  "img": "0082.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 186099,
+  "cap": null
+ },
+ {
+  "img": "0083.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 192107,
+  "cap": null
+ },
+ {
+  "img": "0084.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 198425,
+  "cap": null
+ },
+ {
+  "img": "0085.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 204282,
+  "cap": null
+ },
+ {
+  "img": "0086.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 210395,
+  "cap": null
+ },
+ {
+  "img": "0087.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 216156,
+  "cap": null
+ },
+ {
+  "img": "0088.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 222156,
+  "cap": null
+ },
+ {
+  "img": "0089.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 228160,
+  "cap": null
+ },
+ {
+  "img": "0090.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 234173,
+  "cap": null
+ },
+ {
+  "img": "0091.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 240186,
+  "cap": null
+ },
+ {
+  "img": "0092.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 246186,
+  "cap": null
+ },
+ {
+  "img": "0093.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "kind": "poll",
+  "at": 16,
+  "cap": null
+ },
+ {
+  "img": "0094.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "hold": 2,
+  "mark": "pr",
+  "hlBox": {
+   "x": 720,
+   "y": 388.75,
+   "w": 822.5,
+   "h": 20
+  }
+ },
+ {
+  "img": "0095.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "hold": 1.6,
+  "mark": "offer",
+  "hlBox": {
+   "x": 382.51953125,
+   "y": 565,
+   "w": 190.0390625,
+   "h": 35,
+   "text": "Test Duplicate button"
+  }
+ },
+ {
+  "img": "0096.png",
+  "cur": {
+   "x": 382.51953125,
+   "y": 565
+  },
+  "cap": "Have Devin test it in the browser",
+  "kind": "hover",
+  "target": {
+   "x": 382.51953125,
+   "y": 565,
+   "w": 190.0390625,
+   "h": 35,
+   "text": "Test Duplicate button"
+  }
+ },
+ {
+  "img": "0097.png",
+  "cur": {
+   "x": 382.51953125,
+   "y": 565
+  },
+  "kind": "click",
+  "target": {
+   "x": 382.51953125,
+   "y": 565,
+   "w": 190.0390625,
+   "h": 35,
+   "text": "Test Duplicate button"
+  },
+  "clickAt": {
+   "x": 382.51953125,
+   "y": 565
+  },
+  "mark": "testing"
+ },
+ {
+  "img": "0173.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "cap": "Watch it on its own computer",
+  "hlBox": {
+   "x": 748.14453125,
+   "y": 27.5,
+   "w": 116.7578125,
+   "h": 35,
+   "text": "Computer"
+  },
+  "kind": "hover",
+  "target": {
+   "x": 748.14453125,
+   "y": 27.5,
+   "w": 116.7578125,
+   "h": 35,
+   "text": "Computer"
+  }
+ },
+ {
+  "img": "0174.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "click",
+  "target": {
+   "x": 748.14453125,
+   "y": 27.5,
+   "w": 116.7578125,
+   "h": 35,
+   "text": "Computer"
+  },
+  "clickAt": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "mark": "computer"
+ },
+ {
+  "img": "0175.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 0
+ },
+ {
+  "img": "0176.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 1500
+ },
+ {
+  "img": "0177.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 3000
+ },
+ {
+  "img": "0178.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 4500
+ },
+ {
+  "img": "0179.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 6000
+ },
+ {
+  "img": "0180.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 7500
+ },
+ {
+  "img": "0181.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 11,
+  "cap": null
+ },
+ {
+  "img": "0182.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 5011,
+  "cap": null
+ },
+ {
+  "img": "0183.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 10009,
+  "cap": null
+ },
+ {
+  "img": "0184.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 15012,
+  "cap": null
+ },
+ {
+  "img": "0185.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 20017,
+  "cap": null
+ },
+ {
+  "img": "0186.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 25019,
+  "cap": null
+ },
+ {
+  "img": "0187.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 30022,
+  "cap": null
+ },
+ {
+  "img": "0188.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 35025,
+  "cap": null
+ },
+ {
+  "img": "0189.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 40028,
+  "cap": null
+ },
+ {
+  "img": "0190.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 45029,
+  "cap": null
+ },
+ {
+  "img": "0191.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 50031,
+  "cap": null
+ },
+ {
+  "img": "0192.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 55038,
+  "cap": null
+ },
+ {
+  "img": "0193.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 60042,
+  "cap": null
+ },
+ {
+  "img": "0194.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 65044,
+  "cap": null
+ },
+ {
+  "img": "0195.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 70046,
+  "cap": null
+ },
+ {
+  "img": "0196.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 75050,
+  "cap": null
+ },
+ {
+  "img": "0197.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 80053,
+  "cap": null
+ },
+ {
+  "img": "0198.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 85055,
+  "cap": null
+ },
+ {
+  "img": "0199.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 90058,
+  "cap": null
+ },
+ {
+  "img": "0200.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 95057,
+  "cap": null
+ },
+ {
+  "img": "0201.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 100059,
+  "cap": null
+ },
+ {
+  "img": "0202.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 105063,
+  "cap": null
+ },
+ {
+  "img": "0203.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 110064,
+  "cap": null
+ },
+ {
+  "img": "0204.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 115066,
+  "cap": null
+ },
+ {
+  "img": "0205.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 120069,
+  "cap": null
+ },
+ {
+  "img": "0206.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 125072,
+  "cap": null
+ },
+ {
+  "img": "0207.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 130074,
+  "cap": null
+ },
+ {
+  "img": "0208.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 135077,
+  "cap": null
+ },
+ {
+  "img": "0209.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 140079,
+  "cap": null
+ },
+ {
+  "img": "0210.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 145080,
+  "cap": null
+ },
+ {
+  "img": "0211.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 150081,
+  "cap": null
+ },
+ {
+  "img": "0212.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 155082,
+  "cap": null
+ },
+ {
+  "img": "0213.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 160088,
+  "cap": null
+ },
+ {
+  "img": "0214.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 165090,
+  "cap": null
+ },
+ {
+  "img": "0215.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 170090,
+  "cap": null
+ },
+ {
+  "img": "0216.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 175091,
+  "cap": null
+ },
+ {
+  "img": "0217.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 180102,
+  "cap": null
+ },
+ {
+  "img": "0218.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 185104,
+  "cap": null
+ },
+ {
+  "img": "0219.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 190104,
+  "cap": null
+ },
+ {
+  "img": "0220.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 195108,
+  "cap": null
+ },
+ {
+  "img": "0221.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 200114,
+  "cap": null
+ },
+ {
+  "img": "0222.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 205115,
+  "cap": null
+ },
+ {
+  "img": "0223.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 210116,
+  "cap": null
+ },
+ {
+  "img": "0224.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 215119,
+  "cap": null
+ },
+ {
+  "img": "0225.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 220119,
+  "cap": null
+ },
+ {
+  "img": "0226.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 225251,
+  "cap": null
+ },
+ {
+  "img": "0227.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 230137,
+  "cap": null
+ },
+ {
+  "img": "0228.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 235127,
+  "cap": null
+ },
+ {
+  "img": "0229.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 240124,
+  "cap": null
+ },
+ {
+  "img": "0230.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 245132,
+  "cap": null
+ },
+ {
+  "img": "0231.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 250214,
+  "cap": null
+ },
+ {
+  "img": "0232.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 255148,
+  "cap": null
+ },
+ {
+  "img": "0233.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 260149,
+  "cap": null
+ },
+ {
+  "img": "0234.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 265151,
+  "cap": null
+ },
+ {
+  "img": "0235.png",
+  "cur": {
+   "x": 748.14453125,
+   "y": 27.5
+  },
+  "kind": "poll",
+  "at": 5,
+  "cap": null
+ },
+ {
+  "img": "0236.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "hold": 0.8,
+  "mark": "followup"
+ },
+ {
+  "img": "0237.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 4
+ },
+ {
+  "img": "0238.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 4
+ },
+ {
+  "img": "0239.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 4
+ },
+ {
+  "img": "0240.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 4
+ },
+ {
+  "img": "0241.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 4
+ },
+ {
+  "img": "0242.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 4
+ },
+ {
+  "img": "0243.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 4
+ },
+ {
+  "img": "0244.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 4
+ },
+ {
+  "img": "0245.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 4
+ },
+ {
+  "img": "0246.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 4
+ },
+ {
+  "img": "0247.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 4
+ },
+ {
+  "img": "0248.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 4
+ },
+ {
+  "img": "0249.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 4
+ },
+ {
+  "img": "0250.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "type",
+  "chars": 2
+ },
+ {
+  "img": "0251.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "hold": 1.6,
+  "mark": "retesting",
+  "hlBox": {
+   "x": 289.00390625,
+   "y": 698.75,
+   "w": 498.0078125,
+   "h": 25
+  }
+ },
+ {
+  "img": "0252.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 8,
+  "cap": null
+ },
+ {
+  "img": "0253.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 5008,
+  "cap": null
+ },
+ {
+  "img": "0254.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 10011,
+  "cap": null
+ },
+ {
+  "img": "0255.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 15012,
+  "cap": null
+ },
+ {
+  "img": "0256.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 20015,
+  "cap": null
+ },
+ {
+  "img": "0257.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 25018,
+  "cap": null
+ },
+ {
+  "img": "0258.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 30021,
+  "cap": null
+ },
+ {
+  "img": "0259.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 35025,
+  "cap": null
+ },
+ {
+  "img": "0260.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 40025,
+  "cap": null
+ },
+ {
+  "img": "0261.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 45026,
+  "cap": null
+ },
+ {
+  "img": "0262.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 50026,
+  "cap": null
+ },
+ {
+  "img": "0263.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 55030,
+  "cap": null
+ },
+ {
+  "img": "0264.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 60031,
+  "cap": null
+ },
+ {
+  "img": "0265.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 65034,
+  "cap": null
+ },
+ {
+  "img": "0266.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 70036,
+  "cap": null
+ },
+ {
+  "img": "0267.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 75038,
+  "cap": null
+ },
+ {
+  "img": "0268.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 80041,
+  "cap": null
+ },
+ {
+  "img": "0269.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 85043,
+  "cap": null
+ },
+ {
+  "img": "0270.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 90046,
+  "cap": null
+ },
+ {
+  "img": "0271.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 95048,
+  "cap": null
+ },
+ {
+  "img": "0272.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 100099,
+  "cap": null
+ },
+ {
+  "img": "0273.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 105096,
+  "cap": null
+ },
+ {
+  "img": "0274.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 110082,
+  "cap": null
+ },
+ {
+  "img": "0275.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 115090,
+  "cap": null
+ },
+ {
+  "img": "0276.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 120087,
+  "cap": null
+ },
+ {
+  "img": "0277.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 125094,
+  "cap": null
+ },
+ {
+  "img": "0278.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 130225,
+  "cap": null
+ },
+ {
+  "img": "0279.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 135102,
+  "cap": null
+ },
+ {
+  "img": "0280.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 140124,
+  "cap": null
+ },
+ {
+  "img": "0281.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 145106,
+  "cap": null
+ },
+ {
+  "img": "0282.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 150462,
+  "cap": null
+ },
+ {
+  "img": "0283.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 155118,
+  "cap": null
+ },
+ {
+  "img": "0284.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 160163,
+  "cap": null
+ },
+ {
+  "img": "0285.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 165131,
+  "cap": null
+ },
+ {
+  "img": "0286.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 171110,
+  "cap": null
+ },
+ {
+  "img": "0287.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 175182,
+  "cap": null
+ },
+ {
+  "img": "0288.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 180510,
+  "cap": null
+ },
+ {
+  "img": "0289.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 185236,
+  "cap": null
+ },
+ {
+  "img": "0290.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 190223,
+  "cap": null
+ },
+ {
+  "img": "0291.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 195267,
+  "cap": null
+ },
+ {
+  "img": "0292.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 200228,
+  "cap": null
+ },
+ {
+  "img": "0293.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 205230,
+  "cap": null
+ },
+ {
+  "img": "0294.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 210238,
+  "cap": null
+ },
+ {
+  "img": "0295.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 215243,
+  "cap": null
+ },
+ {
+  "img": "0296.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 220244,
+  "cap": null
+ },
+ {
+  "img": "0297.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 225417,
+  "cap": null
+ },
+ {
+  "img": "0298.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 230275,
+  "cap": null
+ },
+ {
+  "img": "0299.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 235275,
+  "cap": null
+ },
+ {
+  "img": "0300.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 240278,
+  "cap": null
+ },
+ {
+  "img": "0301.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 245301,
+  "cap": null
+ },
+ {
+  "img": "0302.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 250306,
+  "cap": null
+ },
+ {
+  "img": "0303.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 255298,
+  "cap": null
+ },
+ {
+  "img": "0304.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 260299,
+  "cap": null
+ },
+ {
+  "img": "0305.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 265301,
+  "cap": null
+ },
+ {
+  "img": "0306.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 270305,
+  "cap": null
+ },
+ {
+  "img": "0307.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 275309,
+  "cap": null
+ },
+ {
+  "img": "0308.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 280310,
+  "cap": null
+ },
+ {
+  "img": "0309.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 285312,
+  "cap": null
+ },
+ {
+  "img": "0310.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 290315,
+  "cap": null
+ },
+ {
+  "img": "0311.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 295322,
+  "cap": null
+ },
+ {
+  "img": "0312.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 300320,
+  "cap": null
+ },
+ {
+  "img": "0313.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 305322,
+  "cap": null
+ },
+ {
+  "img": "0314.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 310323,
   "cap": null
  },
  {
   "img": "0315.png",
   "cur": {
-   "x": 1366,
-   "y": 259
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 315323,
+  "cap": null
+ },
+ {
+  "img": "0316.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 320325,
+  "cap": null
+ },
+ {
+  "img": "0317.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 325334,
+  "cap": null
+ },
+ {
+  "img": "0318.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 330333,
+  "cap": null
+ },
+ {
+  "img": "0319.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 335337,
+  "cap": null
+ },
+ {
+  "img": "0320.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 340340,
+  "cap": null
+ },
+ {
+  "img": "0321.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 345341,
+  "cap": null
+ },
+ {
+  "img": "0322.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 350341,
+  "cap": null
+ },
+ {
+  "img": "0323.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 355368,
+  "cap": null
+ },
+ {
+  "img": "0324.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 360347,
+  "cap": null
+ },
+ {
+  "img": "0325.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 365349,
+  "cap": null
+ },
+ {
+  "img": "0326.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 370352,
+  "cap": null
+ },
+ {
+  "img": "0327.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 375353,
+  "cap": null
+ },
+ {
+  "img": "0328.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 380358,
+  "cap": null
+ },
+ {
+  "img": "0329.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 385358,
+  "cap": null
+ },
+ {
+  "img": "0330.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 390360,
+  "cap": null
+ },
+ {
+  "img": "0331.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 395362,
+  "cap": null
+ },
+ {
+  "img": "0332.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 400365,
+  "cap": null
+ },
+ {
+  "img": "0333.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 405366,
+  "cap": null
+ },
+ {
+  "img": "0334.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 410367,
+  "cap": null
+ },
+ {
+  "img": "0335.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 415369,
+  "cap": null
+ },
+ {
+  "img": "0336.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 420371,
+  "cap": null
+ },
+ {
+  "img": "0337.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 425377,
+  "cap": null
+ },
+ {
+  "img": "0338.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 430380,
+  "cap": null
+ },
+ {
+  "img": "0339.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 435383,
+  "cap": null
+ },
+ {
+  "img": "0340.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 440383,
+  "cap": null
+ },
+ {
+  "img": "0341.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 445387,
+  "cap": null
+ },
+ {
+  "img": "0342.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 450388,
+  "cap": null
+ },
+ {
+  "img": "0343.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 455393,
+  "cap": null
+ },
+ {
+  "img": "0344.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 460398,
+  "cap": null
+ },
+ {
+  "img": "0345.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 465432,
+  "cap": null
+ },
+ {
+  "img": "0346.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 470400,
+  "cap": null
+ },
+ {
+  "img": "0347.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 475402,
+  "cap": null
+ },
+ {
+  "img": "0348.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 480404,
+  "cap": null
+ },
+ {
+  "img": "0349.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 485407,
+  "cap": null
+ },
+ {
+  "img": "0350.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 490407,
+  "cap": null
+ },
+ {
+  "img": "0351.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 495408,
+  "cap": null
+ },
+ {
+  "img": "0352.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 500411,
+  "cap": null
+ },
+ {
+  "img": "0353.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 505414,
+  "cap": null
+ },
+ {
+  "img": "0354.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 510417,
+  "cap": null
+ },
+ {
+  "img": "0355.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 515419,
+  "cap": null
+ },
+ {
+  "img": "0356.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 520422,
+  "cap": null
+ },
+ {
+  "img": "0357.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 525423,
+  "cap": null
+ },
+ {
+  "img": "0358.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 530426,
+  "cap": null
+ },
+ {
+  "img": "0359.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 535427,
+  "cap": null
+ },
+ {
+  "img": "0360.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 540426,
+  "cap": null
+ },
+ {
+  "img": "0361.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 545433,
+  "cap": null
+ },
+ {
+  "img": "0362.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 550433,
+  "cap": null
+ },
+ {
+  "img": "0363.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 555437,
+  "cap": null
+ },
+ {
+  "img": "0364.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 560438,
+  "cap": null
+ },
+ {
+  "img": "0365.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 565440,
+  "cap": null
+ },
+ {
+  "img": "0366.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 570442,
+  "cap": null
+ },
+ {
+  "img": "0367.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 575445,
+  "cap": null
+ },
+ {
+  "img": "0368.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 580449,
+  "cap": null
+ },
+ {
+  "img": "0369.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 585449,
+  "cap": null
+ },
+ {
+  "img": "0370.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 590454,
+  "cap": null
+ },
+ {
+  "img": "0371.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 595454,
+  "cap": null
+ },
+ {
+  "img": "0372.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 600456,
+  "cap": null
+ },
+ {
+  "img": "0373.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 605458,
+  "cap": null
+ },
+ {
+  "img": "0374.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 610459,
+  "cap": null
+ },
+ {
+  "img": "0375.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 615463,
+  "cap": null
+ },
+ {
+  "img": "0376.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 620461,
+  "cap": null
+ },
+ {
+  "img": "0377.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 625466,
+  "cap": null
+ },
+ {
+  "img": "0378.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 630469,
+  "cap": null
+ },
+ {
+  "img": "0379.png",
+  "cur": {
+   "x": 289.00390625,
+   "y": 698.75
+  },
+  "kind": "poll",
+  "at": 635474,
+  "cap": null
+ },
+ {
+  "img": "0415.png",
+  "cur": {
+   "x": 720,
+   "y": 600
+  },
+  "hold": 1.8,
+  "mark": "recording",
+  "hlBox": {
+   "x": 720,
+   "y": 411.5625,
+   "w": 865,
+   "h": 404.375
+  },
+  "cap": "Devin sends a recording of the test"
+ },
+ {
+  "img": "0416.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "hover",
+  "target": {
+   "x": 720,
+   "y": 411.5625,
+   "w": 865,
+   "h": 404.375
+  }
+ },
+ {
+  "img": "0417.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "click",
+  "target": {
+   "x": 720,
+   "y": 411.5625,
+   "w": 865,
+   "h": 404.375
+  },
+  "clickAt": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "mark": "playing"
+ },
+ {
+  "img": "0418.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 0
+ },
+ {
+  "img": "0419.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 1000
+ },
+ {
+  "img": "0420.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 2000
+ },
+ {
+  "img": "0421.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 3000
+ },
+ {
+  "img": "0422.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 4000
+ },
+ {
+  "img": "0423.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 5000
+ },
+ {
+  "img": "0424.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 6000
+ },
+ {
+  "img": "0425.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 7000
+ },
+ {
+  "img": "0426.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 8000
+ },
+ {
+  "img": "0427.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 9000
+ },
+ {
+  "img": "0428.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 10000
+ },
+ {
+  "img": "0429.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 11000
+ },
+ {
+  "img": "0430.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 12000
+ },
+ {
+  "img": "0431.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 13000
+ },
+ {
+  "img": "0432.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 14000
+ },
+ {
+  "img": "0433.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 15000
+ },
+ {
+  "img": "0434.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 16000
+ },
+ {
+  "img": "0435.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 17000
+ },
+ {
+  "img": "0436.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 18000
+ },
+ {
+  "img": "0437.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 19000
+ },
+ {
+  "img": "0438.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 20000
+ },
+ {
+  "img": "0439.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 21000
+ },
+ {
+  "img": "0440.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 22000
+ },
+ {
+  "img": "0441.png",
+  "cur": {
+   "x": 720,
+   "y": 411.5625
+  },
+  "kind": "poll",
+  "at": 23000
+ },
+ {
+  "img": "0442.png",
+  "cur": {
+   "x": 1268.49609375,
+   "y": 88.2421875
+  },
+  "kind": "hover",
+  "target": {
+   "x": 1268.49609375,
+   "y": 88.2421875
+  }
+ },
+ {
+  "img": "0443.png",
+  "cur": {
+   "x": 1268.49609375,
+   "y": 88.2421875
+  },
+  "kind": "click",
+  "target": {
+   "x": 1268.49609375,
+   "y": 88.2421875
+  },
+  "clickAt": {
+   "x": 1268.49609375,
+   "y": 88.2421875
+  }
+ },
+ {
+  "img": "0409.png",
+  "cur": {
+   "x": 458.75,
+   "y": 361.25
+  },
+  "cap": "Open the PR right in the session",
+  "hlBox": {
+   "x": 720,
+   "y": 373.75,
+   "w": 865,
+   "h": 142.5
+  },
+  "kind": "hover",
+  "target": {
+   "x": 458.75,
+   "y": 361.25,
+   "box": {
+    "x": 576,
+    "y": 299,
+    "w": 692,
+    "h": 114
+   },
+   "text": "No issues found\nkanban-board: add Duplicate button to the issue editor\nproduct-d"
+  }
+ },
+ {
+  "img": "0410.png",
+  "cur": {
+   "x": 458.75,
+   "y": 361.25
+  },
+  "kind": "click",
+  "target": {
+   "x": 458.75,
+   "y": 361.25,
+   "box": {
+    "x": 576,
+    "y": 299,
+    "w": 692,
+    "h": 114
+   },
+   "text": "No issues found\nkanban-board: add Duplicate button to the issue editor\nproduct-d"
+  },
+  "clickAt": {
+   "x": 458.75,
+   "y": 361.25
+  }
+ },
+ {
+  "img": "0411.png",
+  "cur": {
+   "x": 458.75,
+   "y": 361.25
+  },
+  "hold": 2,
+  "mark": "prview",
+  "hlBox": {
+   "x": 1011.50390625,
+   "y": 323.75,
+   "w": 814.4921875,
+   "h": 35
+  },
+  "cap": "Review the diff and checks"
+ },
+ {
+  "img": "0412.png",
+  "cur": {
+   "x": 1347.5,
+   "y": 323.75
+  },
+  "cap": "Merge the pull request",
+  "hlBox": {
+   "x": 1347.5,
+   "y": 323.75,
+   "w": 80,
+   "h": 35,
+   "text": "Merge"
+  },
+  "kind": "hover",
+  "target": {
+   "x": 1347.5,
+   "y": 323.75,
+   "w": 80,
+   "h": 35,
+   "text": "Merge"
+  }
+ },
+ {
+  "img": "0413.png",
+  "cur": {
+   "x": 1347.5,
+   "y": 323.75
+  },
+  "kind": "click",
+  "target": {
+   "x": 1347.5,
+   "y": 323.75,
+   "w": 80,
+   "h": 35,
+   "text": "Merge"
+  },
+  "clickAt": {
+   "x": 1347.5,
+   "y": 323.75
+  }
+ },
+ {
+  "img": "0414.png",
+  "cur": {
+   "x": 1347.5,
+   "y": 323.75
   },
   "hold": 3,
+  "mark": "merged",
+  "hlBox": {
+   "x": 644.0234375,
+   "y": 82.5,
+   "w": 112.03125,
+   "h": 32.5
+  },
   "cap": "Merged. Your first change is shipped"
  }
 ]
