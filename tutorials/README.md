@@ -22,6 +22,7 @@
 | 17 | Devin Security Swarm | `17-security-swarm/` |
 | 18 | iPhone and iPad apps on Mac VMs | `18-ios-ipad-mac-vms/` |
 | 20 | How Devin fits into your SDLC | `20-sdlc-integration/` |
+| 21 | Devin Voice | `21-devin-voice/` |
 | 22 | The review loop closes itself | `22-review-loop/` |
 | 23 | Managed Devins: how it works (overview) | `23-managed-devins-overview/` |
 | 24 | Devin Automations: how they work (overview) | `24-automations-overview/` |
