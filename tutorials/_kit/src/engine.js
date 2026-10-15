@@ -478,7 +478,7 @@ function cues() {
 const ready = (async () => {
   await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/spec.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
   SPEC = window.SPEC;
-  if (SPEC.dark) { DARK = true; INK = '#F2F2F3'; BG = '#0F0F10'; INKRGB = '242,242,243'; BGRGB = '15,15,16'; }
+  if (SPEC.dark) { DARK = true; INK = '#F2F2F3'; BG = '#0B0B0C'; INKRGB = '242,242,243'; BGRGB = '11,11,12'; }
   const VOICE = new URLSearchParams(location.search).get('voice');
   if (VOICE) { SPEC.voLines = await (await fetch(`../../${V}/vo/${VOICE}/lines.json`)).json(); SPEC.capScale = SPEC.voCapScale ?? 1.0; }
   const cs = SPEC.capScale ?? 1.18; for (const k of ['font', 'padX', 'h', 'gap']) CAP[k] = Math.round(CAP[k] * cs);
