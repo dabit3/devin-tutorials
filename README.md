@@ -52,6 +52,11 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 34. **Devin Primitives: when to use what** (overview, 1:17): A short diagram-led overview for teams setting Devin up. A map of the primitives (always-on context: AGENTS.md, rules and Memory; reusable procedures: Skills and Playbooks; reach and sharing: MCP servers and Plugins), then for each one when to use it, where it lives in the product (real Customize → Rules, Memory, Skills, MCPs and Plugins tabs, and Settings → Playbooks) and how to build one (a short AGENTS.md and a minimal SKILL.md on screen), ending on a "which one should I use?" diagram. A one-page [cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md) covers the same table. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview.mp4)
 
+<!-- -->
+
+36. **One bug, three operating systems** (narrated by Nader, DUR36): Add a second YAML document to the repo's blueprint so Ubuntu, macOS and Windows snapshots build from one file, then ask one coordinator Devin to send a desktop-app bug to three managed Devins, one per operating system. Each records a repro, the coordinator opens one fix PR with a unit test, and every child re-tests the branch and records all checks passing. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/36-multi-os-bug-repro/36-multi-os-bug-repro-nader.mp4)
+37. **One bug, three operating systems: how it works** (overview, narrated by Nader, DUR37): A short diagram-led overview of the pattern: one bug report fans out to Linux, macOS and Windows sessions built from one multi-platform blueprint, each Devin records the repro, and one fix is verified on all three. Real shots from tutorial 36 show the snapshots, the managed Devins, the recordings, the diff and the summary, then where it pays off: platform-specific bug reports, desktop app releases and fixes reviewers need to see working everywhere. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/37-multi-os-bug-repro-overview/37-multi-os-bug-repro-overview-nader.mp4)
+
 ## Narrated tutorials
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
