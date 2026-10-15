@@ -78,6 +78,14 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 34. **Devin Primitives: when to use what** (overview, 1:17): A short diagram-led overview for teams setting Devin up. A map of the primitives (always-on context: AGENTS.md, rules and Memory; reusable procedures: Skills and Playbooks; reach and sharing: MCP servers and Plugins), then for each one when to use it, where it lives in the product (real Customize → Rules, Memory, Skills, MCPs and Plugins tabs, and Settings → Playbooks) and how to build one (a short AGENTS.md and a minimal SKILL.md on screen), ending on a "which one should I use?" diagram. A one-page [cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md) covers the same table. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview.mp4)
 
+<!-- -->
+
+66. **Build a Developer Pain Index on Modal** (narrated, 3:06): From a short plain-language prompt, Devin builds a monthly report of what developers complain about on X: a Modal app that finds posts with the xAI API's X Search, groups similar complaints into themes, backfills six months with a parallel `.map()` fan-out and serves the report from an `@modal.asgi_app` endpoint at a `*.modal.run` URL. On camera, Modal's scheduled-function limit blocks the monthly cron, Devin asks before touching anything, ships with the cron switched off, tests the deploy and opens the PR. It ends on the real report: 704 sampled posts from April to September 2026, each chart labelled with its sample size. Dark mode throughout. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/66-dev-pain-index/66-dev-pain-index-nader.mp4) · [Voice script](tutorials/66-dev-pain-index/voice-script.md)
+
+<!-- -->
+
+67. **Developer Pain Index: how it works** (overview, narrated, 1:35): A short dark diagram-led overview of the same app: X posts → xAI API (Grok with X Search) → Modal functions (monthly schedule, parallel `.map()`, web endpoint) → Volume → report page, then real proof shots reused from tutorial 66 (the prompt, the schedule-limit question, the deploy, the PR and the live report) and ways to extend it. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/67-dev-pain-index-overview/67-dev-pain-index-overview-nader.mp4) · [Voice script](tutorials/67-dev-pain-index-overview/voice-script.md)
+
 ## Narrated tutorials
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
@@ -120,6 +128,8 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Dynamic Workflows: how it works (overview), narrated by Nader** (1:59): What a dynamic workflow is, why scripted coordination helps with multi-part jobs, parallel work and connected stages, live progress and resumability, `pipeline` vs `parallel`, a real 12-reviewer accessibility audit, and when to use a workflow. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/32-dynamic-workflows-overview/32-dynamic-workflows-overview-nader.mp4) · [Voice script](tutorials/32-dynamic-workflows-overview/voice-script.md)
 - **Dynamic Workflows, narrated by Nader** (2:05): A real five-component audit, fix and verify workflow: the script, the live workflow panel, one agent's structured output, the roll-up and a fix PR. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/33-dynamic-workflows/33-dynamic-workflows-nader.mp4) · [Voice script](tutorials/33-dynamic-workflows/voice-script.md)
 - **Devin Primitives: when to use what (overview), narrated by Nader** (1:42): When to use AGENTS.md, rules, Memory, Skills, Playbooks, MCP servers and Plugins, where each lives in the product, and how to build one. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview-nader.mp4) · [Voice script](tutorials/34-devin-primitives-overview/voice-script.md) · [Cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md)
+- **Build a Developer Pain Index on Modal, narrated by Nader** (3:06): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/66-dev-pain-index/66-dev-pain-index-nader.mp4) · [Voice script](tutorials/66-dev-pain-index/voice-script.md)
+- **Developer Pain Index: how it works (overview), narrated by Nader** (1:35): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/67-dev-pain-index-overview/67-dev-pain-index-overview-nader.mp4) · [Voice script](tutorials/67-dev-pain-index-overview/voice-script.md)
 
 ## Silent conference video
 
