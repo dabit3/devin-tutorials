@@ -12,48 +12,51 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "scene": "value",
-      "hold": 6,
+      "hold": 6.0,
       "cap": "Viral AI claims, checked against primary sources",
-      "vo": "Claim Check watches X for viral AI posts that make technical claims, then finds the primary sources and checks each claim against them.",
-      "voHold": 6.6
+      "vo": "Claim Check watches X for viral AI posts that make technical claims, then finds the primary sources and checks each claim against them."
     },
     "0001.png": {
       "cursor": false,
       "capPos": "bottom",
       "scene": "why",
-      "hold": 6,
+      "hold": 5.4,
       "cap": "A checker that shows its links earns trust",
-      "vo": "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust.",
-      "voHold": 6
+      "vo": "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
+    },
+    "modal.png": {
+      "cursor": false,
+      "capPos": "bottom",
+      "scene": "modal",
+      "hold": 22.4,
+      "cap": "Modal: schedule, parallel .map(), Dict, endpoint, Secret",
+      "vo": "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+      "voSay": "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
     },
     "0002.png": {
       "cursor": false,
       "capPos": "bottom",
       "scene": "pipe1",
-      "hold": 6,
-      "cap": "X posts, the xAI API, and an hourly Modal Cron job",
-      "vo": "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-      "voSay": "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-      "voHold": 6.7
+      "hold": 6.3,
+      "cap": "X posts come in through the xAI API, on a schedule",
+      "vo": "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+      "voSay": "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
     },
     "0003.png": {
       "cursor": false,
       "capPos": "bottom",
       "scene": "pipe2",
-      "hold": 6,
+      "hold": 6.0,
       "cap": ".map() checks every claim in parallel",
-      "vo": "Then check claim dot map fans the posts out, so the claims are checked in parallel, with Grok searching the web for primary sources.",
-      "voHold": 6.6
+      "vo": "Then check claim dot map fans the posts out, so the claims are checked in parallel, with Grok searching the web for primary sources."
     },
     "0004.png": {
       "cursor": false,
       "capPos": "bottom",
       "scene": "pipe3",
-      "hold": 6,
-      "cap": "A modal.Dict, a web endpoint, a dark page",
-      "vo": "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-      "voSay": "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL.",
-      "voHold": 6
+      "hold": 4,
+      "cap": "Results in a modal.Dict, served by a web endpoint",
+      "vo": "The verdicts land in the Modal Dict, and the page running on Modal shows them."
     },
     "0005.png": {
       "cursor": false,
@@ -68,20 +71,6 @@ window.SPEC = {
       "hold": 3.5,
       "cap": "Tests, modal deploy, and a check of the URL",
       "vo": "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-    },
-    "0007.png": {
-      "cursor": false,
-      "capPos": "bottom",
-      "hold": 3,
-      "ring": {
-        "x": 393.3,
-        "y": 443.9,
-        "w": 670.7,
-        "h": 29.7
-      },
-      "cap": "The .map() fan-out in the code Devin wrote",
-      "vo": "Here's the fan out with dot map, in the code it wrote.",
-      "ringFor": 2.6
     },
     "0008.png": {
       "cursor": false,
@@ -123,10 +112,9 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "scene": "extend",
-      "hold": 8,
+      "hold": 10.3,
       "cap": "Four ways to extend it",
-      "vo": "You can take it further. Let people paste a post to check it on demand. Send unclear verdicts to a person for review. Add filings and press releases as sources for funding claims. Or send a Slack alert when a claim is not supported.",
-      "voHold": 11.7
+      "vo": "You can take it further. Let people paste a post to check it on demand. Send unclear verdicts to a person for review. Add filings and press releases as sources for funding claims. Or send a Slack alert when a claim is not supported."
     }
   }
 };

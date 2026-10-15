@@ -166,5 +166,23 @@ function extend(ctx, s, k) {
   });
 }
 
-window.SCENES = { value, why, pipe1, pipe2, pipe3, extend };
+// Why Modal: the Modal pieces this app uses, and what they replace.
+function modal(ctx, s, k) {
+  bg(ctx, k); const I = Object.keys(window.SPEC.edit).find(n => window.SPEC.edit[n].scene === 'modal');
+  eyebrow(ctx, k, 'WHY MODAL', 140, ap(k, s, 0.05));
+  const ga = ap(k, s, 0.2, 0.8);
+  ctx.save(); ctx.globalAlpha = k.alpha * ga; k.rr(250, 190, 940, 400, 24); ctx.setLineDash([5, 6]); ctx.lineWidth = 1.2; ctx.strokeStyle = rgba(BLUE, 0.45); ctx.stroke(); ctx.restore();
+  txt(ctx, k, 'MODAL', 272, 214, 12, 600, rgba(BLUE, 0.85), ga, 'left', 'JetBrains Mono', 2);
+  const items = [['Scheduled function', 'modal.Cron, every hour', 'scheduled', 1.0], ['Parallel .map()', 'checks run in parallel', 'map', 2.5], ['modal.Dict', 'stores the results', 'dict', 4.0], ['Web endpoint', 'public *.modal.run page', 'endpoint', 5.0], ['Modal Secret', 'holds the xAI key', 'secret', 6.0], ['Scales to zero', 'billed per second', 'zero', 7.5]];
+  items.forEach(([t, sub, w, fb], i) => {
+    const tc = cue(I, w, fb), a = ap(k, s, tc, 0.7), on = Math.max(0, 1 - k.prog(s, tc + 1.4, tc + 2.2));
+    const x = 290 + (i % 3) * 292, y = 250 + Math.floor(i / 3) * 160;
+    card(ctx, k, x, y + 10 * (1 - a), 272, 120, a, on, 16);
+    txt(ctx, k, t, x + 24, y + 46 + 10 * (1 - a), 18, 600, ink(0.94), a, 'left');
+    txt(ctx, k, sub, x + 24, y + 80 + 10 * (1 - a), 12.5, 500, ink(0.52), a, 'left', 'JetBrains Mono', 0);
+  });
+  txt(ctx, k, 'No laptop left on, no idle server to run', 720, 640, 16, 500, ink(0.6), ap(k, s, cue(I, 'laptop', 9), 0.7));
+}
+
+window.SCENES = { value, why, modal, pipe1, pipe2, pipe3, extend };
 })();

@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-  "dur": 7.1,
+  "dur": 6.5,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -12,8 +12,13 @@
    ],
    [
     "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
    ],
    [
     "0003.png",
@@ -21,19 +26,14 @@
     "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
    ],
    [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
    ],
    [
     "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
    ],
    [
     "0016.png",
@@ -41,49 +41,9 @@
     "Next, Devin pushes a branch and opens a pull request."
    ],
    [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
     "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
    ],
    [
     "0028.png",
@@ -92,8 +52,8 @@
    ],
    [
     "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
    ],
    [
     "0030.png",
@@ -124,26 +84,26 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.612,
+    "t1": 2.322,
     "text": "Viral AI posts often make technical claims,"
    },
    {
-    "t0": 2.786,
-    "t1": 4.946,
+    "t0": 2.357,
+    "t1": 4.377,
     "text": "like a benchmark record or a funding round,"
    },
    {
-    "t0": 5.12,
-    "t1": 7.1,
+    "t0": 4.586,
+    "t1": 6.5,
     "text": "and few people check the sources behind them."
    }
   ]
  },
  "0001.png": {
-  "text": "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-  "say": "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-  "dur": 8.785,
-  "takeAt": 7.605,
+  "text": "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+  "say": "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+  "dur": 8.215,
+  "takeAt": 6.765,
   "mode": "single-take-1",
   "take": [
    [
@@ -153,8 +113,13 @@
    ],
    [
     "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
    ],
    [
     "0003.png",
@@ -162,19 +127,14 @@
     "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
    ],
    [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
    ],
    [
     "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
    ],
    [
     "0016.png",
@@ -182,49 +142,9 @@
     "Next, Devin pushes a branch and opens a pull request."
    ],
    [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
     "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
    ],
    [
     "0028.png",
@@ -233,8 +153,8 @@
    ],
    [
     "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
    ],
    [
     "0030.png",
@@ -264,31 +184,177 @@
   ],
   "chunks": [
    {
-    "t0": 0.046,
-    "t1": 2.771,
-    "text": "Here, Devin builds a claim checker on Modal that"
+    "t0": 0.12,
+    "t1": 2.845,
+    "text": "Here, Devin builds a claim checker that uses the"
    },
    {
-    "t0": 2.821,
-    "t1": 5.251,
-    "text": "uses the xAI API to find those posts on X,"
+    "t0": 2.895,
+    "t1": 4.754,
+    "text": "xAI API to find those posts on X,"
    },
    {
-    "t0": 5.301,
-    "t1": 6.609,
+    "t0": 4.804,
+    "t1": 6.083,
     "text": "and shows a verdict for"
    },
    {
-    "t0": 6.659,
-    "t1": 8.735,
+    "t0": 6.133,
+    "t1": 8.165,
     "text": "each claim with its primary sources."
+   }
+  ]
+ },
+ "modal.png": {
+  "text": "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+  "say": "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+  "dur": 25.076,
+  "takeAt": 15.124,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
+    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
+   ],
+   [
+    "0001.png",
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
+   ],
+   [
+    "0003.png",
+    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
+    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
+   ],
+   [
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
+   ],
+   [
+    "0011.png",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
+   ],
+   [
+    "0016.png",
+    "Next, Devin pushes a branch and opens a pull request.",
+    "Next, Devin pushes a branch and opens a pull request."
+   ],
+   [
+    "0018.png",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
+   ],
+   [
+    "0028.png",
+    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
+    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
+   ],
+   [
+    "0029.png",
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
+   ],
+   [
+    "0030.png",
+    "This run found five posts, and all five claims were supported by their sources.",
+    "This run found five posts, and all five claims were supported by their sources."
+   ],
+   [
+    "0031.png",
+    "Each card shows the post, the claim Grok pulled out, and the verdict.",
+    "Each card shows the post, the claim Grok pulled out, and the verdict."
+   ],
+   [
+    "0032.png",
+    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
+    "Below that are the primary source links, like the archive paper behind this benchmark claim."
+   ],
+   [
+    "0034.png",
+    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
+    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
+   ],
+   [
+    "outro",
+    "Viral claims in, verdicts with primary sources out.",
+    "Viral claims in, verdicts with primary sources out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.142,
+    "text": "It runs on Modal."
+   },
+   {
+    "t0": 1.421,
+    "t1": 3.986,
+    "text": "A scheduled function pulls new posts every hour,"
+   },
+   {
+    "t0": 4.137,
+    "t1": 5.728,
+    "text": "so there's no server to keep running."
+   },
+   {
+    "t0": 6.239,
+    "t1": 9.64,
+    "text": "Calling .map() checks the claims in parallel across containers."
+   },
+   {
+    "t0": 9.965,
+    "t1": 12.055,
+    "text": "A Modal Dict stores the results,"
+   },
+   {
+    "t0": 12.105,
+    "t1": 13.727,
+    "text": "a web endpoint serves the"
+   },
+   {
+    "t0": 13.777,
+    "t1": 15.8,
+    "text": "page at a public modal.run URL,"
+   },
+   {
+    "t0": 15.85,
+    "t1": 18.274,
+    "text": "and a Modal Secret holds the xAI key."
+   },
+   {
+    "t0": 18.649,
+    "t1": 20.507,
+    "text": "Between runs it scales to zero,"
+   },
+   {
+    "t0": 20.658,
+    "t1": 21.923,
+    "text": "and you pay by the second,"
+   },
+   {
+    "t0": 22.202,
+    "t1": 24.083,
+    "text": "instead of leaving a laptop script or a"
+   },
+   {
+    "t0": 24.129,
+    "t1": 25.076,
+    "text": "server on all day."
    }
   ]
  },
  "0003.png": {
   "text": "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-  "dur": 12.682,
-  "takeAt": 16.668,
+  "dur": 12.49,
+  "takeAt": 40.48,
   "mode": "single-take-1",
   "take": [
    [
@@ -298,8 +364,13 @@
    ],
    [
     "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
    ],
    [
     "0003.png",
@@ -307,19 +378,14 @@
     "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
    ],
    [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
    ],
    [
     "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
    ],
    [
     "0016.png",
@@ -327,49 +393,9 @@
     "Next, Devin pushes a branch and opens a pull request."
    ],
    [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
     "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
    ],
    [
     "0028.png",
@@ -378,8 +404,8 @@
    ],
    [
     "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
    ],
    [
     "0030.png",
@@ -410,46 +436,45 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 0.828,
+    "t1": 0.805,
     "text": "In the prompt,"
    },
    {
-    "t0": 0.863,
-    "t1": 2.674,
+    "t0": 0.84,
+    "t1": 2.57,
     "text": "I ask for an hourly scan with X"
    },
    {
-    "t0": 2.72,
-    "t1": 4.473,
+    "t0": 2.628,
+    "t1": 4.381,
     "text": "Search and parallel claim checks,"
    },
    {
-    "t0": 4.601,
-    "t1": 6.331,
+    "t0": 4.59,
+    "t1": 6.378,
     "text": "with results saved in a Modal Dict and"
    },
    {
-    "t0": 6.378,
-    "t1": 7.724,
+    "t0": 6.424,
+    "t1": 7.817,
     "text": "shown on a dark web page."
    },
    {
-    "t0": 8.049,
-    "t1": 9.559,
+    "t0": 8.201,
+    "t1": 9.745,
     "text": "It must never post to X,"
    },
    {
-    "t0": 9.733,
-    "t1": 12.682,
+    "t0": 9.919,
+    "t1": 12.49,
     "text": "and it labels counts as posts found, not totals."
    }
   ]
  },
- "0004.png": {
-  "text": "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-  "say": "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-  "dur": 6.692,
-  "takeAt": 29.648,
+ "0005.png": {
+  "text": "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+  "dur": 4.883,
+  "takeAt": 53.332,
   "mode": "single-take-1",
   "take": [
    [
@@ -459,8 +484,13 @@
    ],
    [
     "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
    ],
    [
     "0003.png",
@@ -468,19 +498,14 @@
     "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
    ],
    [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
    ],
    [
     "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
    ],
    [
     "0016.png",
@@ -488,49 +513,9 @@
     "Next, Devin pushes a branch and opens a pull request."
    ],
    [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
     "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
    ],
    [
     "0028.png",
@@ -539,8 +524,8 @@
    ],
    [
     "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
    ],
    [
     "0030.png",
@@ -571,30 +556,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.025,
-    "text": "Devin starts by reading the xAI docs"
+    "t1": 2.234,
+    "text": "Devin replies with a short plan that matches"
    },
    {
-    "t0": 2.075,
-    "t1": 3.926,
-    "text": "and running a small X Search probe,"
+    "t0": 2.268,
+    "t1": 4.045,
+    "text": "the prompt, and then it writes the app"
    },
    {
-    "t0": 3.976,
-    "t1": 5.393,
-    "text": "and then it writes the app,"
-   },
-   {
-    "t0": 5.443,
-    "t1": 6.642,
-    "text": "its tests and a README."
+    "t0": 4.114,
+    "t1": 4.883,
+    "text": "and its tests."
    }
   ]
  },
  "0011.png": {
-  "text": "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-  "dur": 5.925,
-  "takeAt": 36.575,
+  "text": "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+  "dur": 4.676,
+  "takeAt": 58.464,
   "mode": "single-take-1",
   "take": [
    [
@@ -604,8 +584,13 @@
    ],
    [
     "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
    ],
    [
     "0003.png",
@@ -613,19 +598,14 @@
     "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
    ],
    [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
    ],
    [
     "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
    ],
    [
     "0016.png",
@@ -633,49 +613,9 @@
     "Next, Devin pushes a branch and opens a pull request."
    ],
    [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
     "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
    ],
    [
     "0028.png",
@@ -684,153 +624,8 @@
    ],
    [
     "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.031,
-    "t1": 1.018,
-    "text": "It runs the tests,"
-   },
-   {
-    "t0": 1.099,
-    "t1": 2.574,
-    "text": "deploys with modal deploy,"
-   },
-   {
-    "t0": 2.667,
-    "t1": 4.617,
-    "text": "and checks that the page and the JSON"
-   },
-   {
-    "t0": 4.664,
-    "t1": 5.925,
-    "text": "endpoint both respond."
-   }
-  ]
- },
- "0014.png": {
-  "text": "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-  "dur": 4.405,
-  "takeAt": 42.895,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
-   ],
-   [
-    "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
-    "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
    ],
    [
     "0030.png",
@@ -861,20 +656,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.804,
-    "text": "Then it runs the hourly job on the"
+    "t1": 1.571,
+    "text": "Then it runs modal deploy,"
    },
    {
-    "t0": 1.838,
-    "t1": 4.405,
-    "text": "deployed app to test it with real posts from X."
+    "t0": 1.722,
+    "t1": 3.719,
+    "text": "and calls the public URL to check that"
+   },
+   {
+    "t0": 3.754,
+    "t1": 4.676,
+    "text": "the page responds."
    }
   ]
  },
  "0016.png": {
   "text": "Next, Devin pushes a branch and opens a pull request.",
-  "dur": 2.976,
-  "takeAt": 47.864,
+  "dur": 2.815,
+  "takeAt": 63.555,
   "mode": "single-take-1",
   "take": [
    [
@@ -884,8 +684,13 @@
    ],
    [
     "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
    ],
    [
     "0003.png",
@@ -893,19 +698,14 @@
     "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
    ],
    [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
    ],
    [
     "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
    ],
    [
     "0016.png",
@@ -913,49 +713,9 @@
     "Next, Devin pushes a branch and opens a pull request."
    ],
    [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
     "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
    ],
    [
     "0028.png",
@@ -964,8 +724,8 @@
    ],
    [
     "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
    ],
    [
     "0030.png",
@@ -995,151 +755,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.976,
+    "t0": 0.103,
+    "t1": 2.815,
     "text": "Next, Devin pushes a branch and opens a pull request."
    }
   ]
  },
- "0017.png": {
-  "text": "Devin Review checks the pull request and flags a few bugs and security findings.",
-  "dur": 4.5,
-  "takeAt": 51.15,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
-   ],
-   [
-    "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
-    "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 2.64,
-    "text": "Devin Review checks the pull request and flags"
-   },
-   {
-    "t0": 2.686,
-    "t1": 4.5,
-    "text": "a few bugs and security findings."
-   }
-  ]
- },
  "0018.png": {
-  "text": "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-  "dur": 5.106,
-  "takeAt": 55.934,
+  "text": "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+  "dur": 4.565,
+  "takeAt": 66.685,
   "mode": "single-take-1",
   "take": [
    [
@@ -1149,8 +774,13 @@
    ],
    [
     "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
    ],
    [
     "0003.png",
@@ -1158,19 +788,14 @@
     "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
    ],
    [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
    ],
    [
     "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
    ],
    [
     "0016.png",
@@ -1178,49 +803,9 @@
     "Next, Devin pushes a branch and opens a pull request."
    ],
    [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
     "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
    ],
    [
     "0028.png",
@@ -1229,8 +814,213 @@
    ],
    [
     "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
+   ],
+   [
+    "0030.png",
+    "This run found five posts, and all five claims were supported by their sources.",
+    "This run found five posts, and all five claims were supported by their sources."
+   ],
+   [
+    "0031.png",
+    "Each card shows the post, the claim Grok pulled out, and the verdict.",
+    "Each card shows the post, the claim Grok pulled out, and the verdict."
+   ],
+   [
+    "0032.png",
+    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
+    "Below that are the primary source links, like the archive paper behind this benchmark claim."
+   ],
+   [
+    "0034.png",
+    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
+    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
+   ],
+   [
+    "outro",
+    "Viral claims in, verdicts with primary sources out.",
+    "Viral claims in, verdicts with primary sources out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.049,
+    "t1": 1.849,
+    "text": "Devin Review checks the pull request."
+   },
+   {
+    "t0": 2.174,
+    "t1": 3.462,
+    "text": "Three findings are resolved,"
+   },
+   {
+    "t0": 3.486,
+    "t1": 4.565,
+    "text": "and four are still open."
+   }
+  ]
+ },
+ "0028.png": {
+  "text": "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
+  "dur": 6.36,
+  "takeAt": 71.565,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
+    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
+   ],
+   [
+    "0001.png",
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
+   ],
+   [
+    "0003.png",
+    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
+    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
+   ],
+   [
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
+   ],
+   [
+    "0011.png",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
+   ],
+   [
+    "0016.png",
+    "Next, Devin pushes a branch and opens a pull request.",
+    "Next, Devin pushes a branch and opens a pull request."
+   ],
+   [
+    "0018.png",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
+   ],
+   [
+    "0028.png",
+    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
+    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
+   ],
+   [
+    "0029.png",
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
+   ],
+   [
+    "0030.png",
+    "This run found five posts, and all five claims were supported by their sources.",
+    "This run found five posts, and all five claims were supported by their sources."
+   ],
+   [
+    "0031.png",
+    "Each card shows the post, the claim Grok pulled out, and the verdict.",
+    "Each card shows the post, the claim Grok pulled out, and the verdict."
+   ],
+   [
+    "0032.png",
+    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
+    "Below that are the primary source links, like the archive paper behind this benchmark claim."
+   ],
+   [
+    "0034.png",
+    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
+    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
+   ],
+   [
+    "outro",
+    "Viral claims in, verdicts with primary sources out.",
+    "Viral claims in, verdicts with primary sources out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.057,
+    "t1": 0.649,
+    "text": "When it's done,"
+   },
+   {
+    "t0": 0.684,
+    "t1": 2.982,
+    "text": "Devin reports the deployed URL and how it"
+   },
+   {
+    "t0": 3.017,
+    "t1": 3.853,
+    "text": "tested the app,"
+   },
+   {
+    "t0": 4.027,
+    "t1": 6.36,
+    "text": "and notes that every verdict so far was supported."
+   }
+  ]
+ },
+ "0029.png": {
+  "text": "Here's the page running on Modal.",
+  "dur": 1.514,
+  "takeAt": 78.166,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
+    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
+   ],
+   [
+    "0001.png",
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
+   ],
+   [
+    "0003.png",
+    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
+    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
+   ],
+   [
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
+   ],
+   [
+    "0011.png",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
+   ],
+   [
+    "0016.png",
+    "Next, Devin pushes a branch and opens a pull request.",
+    "Next, Devin pushes a branch and opens a pull request."
+   ],
+   [
+    "0018.png",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
+   ],
+   [
+    "0028.png",
+    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
+    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
+   ],
+   [
+    "0029.png",
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
    ],
    [
     "0030.png",
@@ -1261,26 +1051,15 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.164,
-    "text": "In Devin Review,"
-   },
-   {
-    "t0": 1.339,
-    "t1": 2.801,
-    "text": "three findings are resolved,"
-   },
-   {
-    "t0": 2.952,
-    "t1": 5.106,
-    "text": "and two bugs and two warnings are still open."
+    "t1": 1.514,
+    "text": "Here's the page running on Modal."
    }
   ]
  },
- "0019.png": {
-  "text": "The find posts function calls the xAI Responses API with the X Search tool.",
-  "say": "The find posts function calls the ex A I Responses API with the X Search tool.",
-  "dur": 4.355,
-  "takeAt": 61.555,
+ "0030.png": {
+  "text": "This run found five posts, and all five claims were supported by their sources.",
+  "dur": 4.118,
+  "takeAt": 80.012,
   "mode": "single-take-1",
   "take": [
    [
@@ -1290,8 +1069,13 @@
    ],
    [
     "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
    ],
    [
     "0003.png",
@@ -1299,19 +1083,14 @@
     "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
    ],
    [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
    ],
    [
     "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
    ],
    [
     "0016.png",
@@ -1319,49 +1098,9 @@
     "Next, Devin pushes a branch and opens a pull request."
    ],
    [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
     "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
    ],
    [
     "0028.png",
@@ -1370,143 +1109,8 @@
    ],
    [
     "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.06,
-    "t1": 2.158,
-    "text": "The find posts function calls the xAI"
-   },
-   {
-    "t0": 2.208,
-    "t1": 4.305,
-    "text": "Responses API with the X Search tool."
-   }
-  ]
- },
- "0020.png": {
-  "text": "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-  "dur": 5.014,
-  "takeAt": 66.266,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
-   ],
-   [
-    "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
-    "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
    ],
    [
     "0030.png",
@@ -1537,20 +1141,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.769,
-    "text": "Each post goes to check claim,"
+    "t1": 1.641,
+    "text": "This run found five posts,"
    },
    {
-    "t0": 1.943,
-    "t1": 5.014,
-    "text": "where Grok searches for primary sources and returns a verdict."
+    "t0": 1.676,
+    "t1": 4.118,
+    "text": "and all five claims were supported by their sources."
    }
   ]
  },
- "0021.png": {
-  "text": "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-  "dur": 5.114,
-  "takeAt": 71.526,
+ "0031.png": {
+  "text": "Each card shows the post, the claim Grok pulled out, and the verdict.",
+  "dur": 3.841,
+  "takeAt": 84.459,
   "mode": "single-take-1",
   "take": [
    [
@@ -1560,8 +1164,13 @@
    ],
    [
     "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
    ],
    [
     "0003.png",
@@ -1569,19 +1178,14 @@
     "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
    ],
    [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
    ],
    [
     "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
    ],
    [
     "0016.png",
@@ -1589,49 +1193,9 @@
     "Next, Devin pushes a branch and opens a pull request."
    ],
    [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
     "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
    ],
    [
     "0028.png",
@@ -1640,8 +1204,109 @@
    ],
    [
     "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
+   ],
+   [
+    "0030.png",
+    "This run found five posts, and all five claims were supported by their sources.",
+    "This run found five posts, and all five claims were supported by their sources."
+   ],
+   [
+    "0031.png",
+    "Each card shows the post, the claim Grok pulled out, and the verdict.",
+    "Each card shows the post, the claim Grok pulled out, and the verdict."
+   ],
+   [
+    "0032.png",
+    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
+    "Below that are the primary source links, like the archive paper behind this benchmark claim."
+   ],
+   [
+    "0034.png",
+    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
+    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
+   ],
+   [
+    "outro",
+    "Viral claims in, verdicts with primary sources out.",
+    "Viral claims in, verdicts with primary sources out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.524,
+    "text": "Each card shows the post,"
+   },
+   {
+    "t0": 1.849,
+    "t1": 3.092,
+    "text": "the claim Grok pulled out,"
+   },
+   {
+    "t0": 3.126,
+    "t1": 3.841,
+    "text": "and the verdict."
+   }
+  ]
+ },
+ "0032.png": {
+  "text": "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
+  "say": "Below that are the primary source links, like the archive paper behind this benchmark claim.",
+  "dur": 4.647,
+  "takeAt": 88.603,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
+    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
+   ],
+   [
+    "0001.png",
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
+   ],
+   [
+    "0003.png",
+    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
+    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
+   ],
+   [
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
+   ],
+   [
+    "0011.png",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
+   ],
+   [
+    "0016.png",
+    "Next, Devin pushes a branch and opens a pull request.",
+    "Next, Devin pushes a branch and opens a pull request."
+   ],
+   [
+    "0018.png",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
+   ],
+   [
+    "0028.png",
+    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
+    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
+   ],
+   [
+    "0029.png",
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
    ],
    [
     "0030.png",
@@ -1673,1250 +1338,19 @@
    {
     "t0": 0.12,
     "t1": 2.105,
-    "text": "The hourly job fans the posts out with"
-   },
-   {
-    "t0": 2.14,
-    "t1": 3.347,
-    "text": "check claim dot map,"
-   },
-   {
-    "t0": 3.475,
-    "t1": 5.114,
-    "text": "so the claims are checked in parallel."
-   }
-  ]
- },
- "0022.png": {
-  "text": "A Modal Cron schedule runs that job at the top of every hour.",
-  "dur": 3.205,
-  "takeAt": 77.055,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
-   ],
-   [
-    "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
-    "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.071,
-    "t1": 2.137,
-    "text": "A Modal Cron schedule runs that job at"
-   },
-   {
-    "t0": 2.172,
-    "t1": 3.205,
-    "text": "the top of every hour."
-   }
-  ]
- },
- "0023.png": {
-  "text": "The results go into a Modal Dict, which keeps the latest run and a short history.",
-  "dur": 4.527,
-  "takeAt": 80.663,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
-   ],
-   [
-    "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
-    "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 1.943,
-    "text": "The results go into a Modal Dict,"
-   },
-   {
-    "t0": 2.093,
-    "t1": 4.527,
-    "text": "which keeps the latest run and a short history."
-   }
-  ]
- },
- "0024.png": {
-  "text": "And a FastAPI app behind modal asgi app serves the page.",
-  "dur": 3.415,
-  "takeAt": 85.635,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
-   ],
-   [
-    "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
-    "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.047,
-    "t1": 2.509,
-    "text": "And a FastAPI app behind modal asgi app"
-   },
-   {
-    "t0": 2.578,
-    "t1": 3.415,
-    "text": "serves the page."
-   }
-  ]
- },
- "0025.png": {
-  "text": "Devin works through the review comments, pushes fixes and deploys again.",
-  "dur": 3.805,
-  "takeAt": 89.415,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
-   ],
-   [
-    "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
-    "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.029,
-    "t1": 1.863,
-    "text": "Devin works through the review comments,"
-   },
-   {
-    "t0": 2.142,
-    "t1": 3.805,
-    "text": "pushes fixes and deploys again."
-   }
-  ]
- },
- "0028.png": {
-  "text": "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-  "dur": 6.778,
-  "takeAt": 93.492,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
-   ],
-   [
-    "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
-    "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 0.851,
-    "text": "When it's done,"
-   },
-   {
-    "t0": 1.002,
-    "t1": 3.312,
-    "text": "Devin reports the deployed URL and how it"
-   },
-   {
-    "t0": 3.347,
-    "t1": 4.137,
-    "text": "tested the app,"
-   },
-   {
-    "t0": 4.311,
-    "t1": 6.778,
-    "text": "and notes that every verdict so far was supported."
-   }
-  ]
- },
- "0029.png": {
-  "text": "Here's the deployed page at its modal dot run URL.",
-  "dur": 2.795,
-  "takeAt": 100.645,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
-   ],
-   [
-    "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
-    "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.049,
-    "t1": 2.795,
-    "text": "Here's the deployed page at its modal dot run URL."
-   }
-  ]
- },
- "0030.png": {
-  "text": "This run found five posts, and all five claims were supported by their sources.",
-  "dur": 4.305,
-  "takeAt": 103.755,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
-   ],
-   [
-    "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
-    "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 1.71,
-    "text": "This run found five posts,"
-   },
-   {
-    "t0": 1.745,
-    "t1": 4.305,
-    "text": "and all five claims were supported by their sources."
-   }
-  ]
- },
- "0031.png": {
-  "text": "Each card shows the post, the claim Grok pulled out, and the verdict.",
-  "dur": 4.005,
-  "takeAt": 108.255,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
-   ],
-   [
-    "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
-    "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.078,
-    "t1": 1.541,
-    "text": "Each card shows the post,"
-   },
-   {
-    "t0": 1.692,
-    "t1": 3.015,
-    "text": "the claim Grok pulled out,"
-   },
-   {
-    "t0": 3.224,
-    "t1": 4.005,
-    "text": "and the verdict."
-   }
-  ]
- },
- "0032.png": {
-  "text": "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-  "say": "Below that are the primary source links, like the archive paper behind this benchmark claim.",
-  "dur": 4.882,
-  "takeAt": 112.718,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
-   ],
-   [
-    "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
-    "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 2.21,
     "text": "Below that are the primary source links,"
    },
    {
-    "t0": 2.26,
-    "t1": 4.832,
+    "t0": 2.155,
+    "t1": 4.597,
     "text": "like the arXiv paper behind this benchmark claim."
    }
   ]
  },
  "0034.png": {
   "text": "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-  "dur": 6.107,
-  "takeAt": 118.523,
+  "dur": 5.841,
+  "takeAt": 93.769,
   "mode": "single-take-1",
   "take": [
    [
@@ -2926,8 +1360,13 @@
    ],
    [
     "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
    ],
    [
     "0003.png",
@@ -2935,19 +1374,14 @@
     "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
    ],
    [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
    ],
    [
     "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
    ],
    [
     "0016.png",
@@ -2955,49 +1389,9 @@
     "Next, Devin pushes a branch and opens a pull request."
    ],
    [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
     "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
    ],
    [
     "0028.png",
@@ -3006,8 +1400,8 @@
    ],
    [
     "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
    ],
    [
     "0030.png",
@@ -3038,25 +1432,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.989,
+    "t1": 2.175,
     "text": "X Search returns a sample of posts,"
    },
    {
-    "t0": 2.059,
-    "t1": 4.114,
+    "t0": 2.291,
+    "t1": 4.219,
     "text": "so the page labels its counts as posts"
    },
    {
-    "t0": 4.183,
-    "t1": 6.107,
+    "t0": 4.277,
+    "t1": 5.841,
     "text": "found by each search, not totals."
    }
   ]
  },
  "outro": {
   "text": "Viral claims in, verdicts with primary sources out.",
-  "dur": 2.994,
-  "takeAt": 125.036,
+  "dur": 2.742,
+  "takeAt": 99.888,
   "mode": "single-take-1",
   "take": [
    [
@@ -3066,8 +1460,13 @@
    ],
    [
     "0001.png",
-    "Here, Devin builds a claim checker on Modal that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker on Modal that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
    ],
    [
     "0003.png",
@@ -3075,19 +1474,14 @@
     "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
    ],
    [
-    "0004.png",
-    "Devin starts by reading the xAI docs and running a small X Search probe, and then it writes the app, its tests and a README.",
-    "Devin starts by reading the ex A I docs and running a small X Search probe, and then it writes the app, its tests and a README."
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
    ],
    [
     "0011.png",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond.",
-    "It runs the tests, deploys with modal deploy, and checks that the page and the JSON endpoint both respond."
-   ],
-   [
-    "0014.png",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X.",
-    "Then it runs the hourly job on the deployed app to test it with real posts from X."
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
    ],
    [
     "0016.png",
@@ -3095,49 +1489,9 @@
     "Next, Devin pushes a branch and opens a pull request."
    ],
    [
-    "0017.png",
-    "Devin Review checks the pull request and flags a few bugs and security findings.",
-    "Devin Review checks the pull request and flags a few bugs and security findings."
-   ],
-   [
     "0018.png",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open.",
-    "In Devin Review, three findings are resolved, and two bugs and two warnings are still open."
-   ],
-   [
-    "0019.png",
-    "The find posts function calls the xAI Responses API with the X Search tool.",
-    "The find posts function calls the ex A I Responses API with the X Search tool."
-   ],
-   [
-    "0020.png",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict.",
-    "Each post goes to check claim, where Grok searches for primary sources and returns a verdict."
-   ],
-   [
-    "0021.png",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel.",
-    "The hourly job fans the posts out with check claim dot map, so the claims are checked in parallel."
-   ],
-   [
-    "0022.png",
-    "A Modal Cron schedule runs that job at the top of every hour.",
-    "A Modal Cron schedule runs that job at the top of every hour."
-   ],
-   [
-    "0023.png",
-    "The results go into a Modal Dict, which keeps the latest run and a short history.",
-    "The results go into a Modal Dict, which keeps the latest run and a short history."
-   ],
-   [
-    "0024.png",
-    "And a FastAPI app behind modal asgi app serves the page.",
-    "And a FastAPI app behind modal asgi app serves the page."
-   ],
-   [
-    "0025.png",
-    "Devin works through the review comments, pushes fixes and deploys again.",
-    "Devin works through the review comments, pushes fixes and deploys again."
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
    ],
    [
     "0028.png",
@@ -3146,8 +1500,8 @@
    ],
    [
     "0029.png",
-    "Here's the deployed page at its modal dot run URL.",
-    "Here's the deployed page at its modal dot run URL."
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
    ],
    [
     "0030.png",
@@ -3178,12 +1532,12 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.165,
+    "t1": 1.095,
     "text": "Viral claims in,"
    },
    {
-    "t0": 1.339,
-    "t1": 2.994,
+    "t0": 1.165,
+    "t1": 2.742,
     "text": "verdicts with primary sources out."
    }
   ]

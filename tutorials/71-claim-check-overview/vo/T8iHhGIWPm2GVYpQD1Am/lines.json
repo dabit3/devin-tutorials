@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "Claim Check watches X for viral AI posts that make technical claims, then finds the primary sources and checks each claim against them.",
-  "dur": 7.31,
+  "dur": 7.49,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -16,9 +16,14 @@
     "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
    ],
    [
+    "modal.png",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
+   ],
+   [
     "0002.png",
-    "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-    "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour."
+    "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+    "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
    ],
    [
     "0003.png",
@@ -27,8 +32,8 @@
    ],
    [
     "0004.png",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL."
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them."
    ],
    [
     "0005.png",
@@ -39,11 +44,6 @@
     "0006.png",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-   ],
-   [
-    "0007.png",
-    "Here's the fan out with dot map, in the code it wrote.",
-    "Here's the fan out with dot map, in the code it wrote."
    ],
    [
     "0008.png",
@@ -74,30 +74,30 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.612,
+    "t1": 2.659,
     "text": "Claim Check watches X for viral AI posts"
    },
    {
-    "t0": 2.647,
-    "t1": 4.017,
+    "t0": 2.694,
+    "t1": 4.029,
     "text": "that make technical claims,"
    },
    {
-    "t0": 4.145,
-    "t1": 6.467,
+    "t0": 4.272,
+    "t1": 6.56,
     "text": "then finds the primary sources and checks each"
    },
    {
-    "t0": 6.513,
-    "t1": 7.31,
+    "t0": 6.618,
+    "t1": 7.49,
     "text": "claim against them."
    }
   ]
  },
  "0001.png": {
   "text": "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust.",
-  "dur": 6.526,
-  "takeAt": 7.554,
+  "dur": 6.724,
+  "takeAt": 7.926,
   "mode": "single-take-1",
   "take": [
    [
@@ -111,9 +111,14 @@
     "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
    ],
    [
+    "modal.png",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
+   ],
+   [
     "0002.png",
-    "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-    "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour."
+    "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+    "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
    ],
    [
     "0003.png",
@@ -122,8 +127,8 @@
    ],
    [
     "0004.png",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL."
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them."
    ],
    [
     "0005.png",
@@ -134,11 +139,6 @@
     "0006.png",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-   ],
-   [
-    "0007.png",
-    "Here's the fan out with dot map, in the code it wrote.",
-    "Here's the fan out with dot map, in the code it wrote."
    ],
    [
     "0008.png",
@@ -169,31 +169,31 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.734,
+    "t1": 1.768,
     "text": "Claims like these spread fast,"
    },
    {
-    "t0": 1.885,
-    "t1": 3.777,
+    "t0": 1.942,
+    "t1": 3.87,
     "text": "and checking them takes real sources,"
    },
    {
-    "t0": 3.986,
-    "t1": 5.589,
+    "t0": 4.114,
+    "t1": 5.785,
     "text": "so a checker that shows its links is"
    },
    {
-    "t0": 5.647,
-    "t1": 6.526,
+    "t0": 5.843,
+    "t1": 6.724,
     "text": "easier to trust."
    }
   ]
  },
- "0002.png": {
-  "text": "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-  "say": "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-  "dur": 7.435,
-  "takeAt": 14.395,
+ "modal.png": {
+  "text": "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+  "say": "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+  "dur": 26.258,
+  "takeAt": 14.892,
   "mode": "single-take-1",
   "take": [
    [
@@ -207,9 +207,14 @@
     "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
    ],
    [
+    "modal.png",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
+   ],
+   [
     "0002.png",
-    "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-    "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour."
+    "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+    "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
    ],
    [
     "0003.png",
@@ -218,8 +223,8 @@
    ],
    [
     "0004.png",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL."
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them."
    ],
    [
     "0005.png",
@@ -230,11 +235,6 @@
     "0006.png",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-   ],
-   [
-    "0007.png",
-    "Here's the fan out with dot map, in the code it wrote.",
-    "Here's the fan out with dot map, in the code it wrote."
    ],
    [
     "0008.png",
@@ -264,26 +264,172 @@
   ],
   "chunks": [
    {
-    "t0": 0.036,
-    "t1": 2.54,
+    "t0": 0.12,
+    "t1": 1.443,
+    "text": "Modal is where it all runs."
+   },
+   {
+    "t0": 1.594,
+    "t1": 3.556,
+    "text": "A scheduled function wakes up every hour,"
+   },
+   {
+    "t0": 3.591,
+    "t1": 5.46,
+    "text": "so there's no server to keep running."
+   },
+   {
+    "t0": 5.843,
+    "t1": 8.823,
+    "text": "Calling .map() spreads the claim checks across containers,"
+   },
+   {
+    "t0": 8.873,
+    "t1": 10.077,
+    "text": "so they run in parallel."
+   },
+   {
+    "t0": 10.569,
+    "t1": 12.597,
+    "text": "A Modal Dict stores the results,"
+   },
+   {
+    "t0": 12.647,
+    "t1": 14.22,
+    "text": "a web endpoint serves the"
+   },
+   {
+    "t0": 14.27,
+    "t1": 16.233,
+    "text": "page at a public modal.run URL,"
+   },
+   {
+    "t0": 16.283,
+    "t1": 18.051,
+    "text": "and a Modal Secret keeps the"
+   },
+   {
+    "t0": 18.101,
+    "t1": 19.609,
+    "text": "xAI key out of the code."
+   },
+   {
+    "t0": 20.042,
+    "t1": 22.179,
+    "text": "Between runs it scales to zero and bills"
+   },
+   {
+    "t0": 22.225,
+    "t1": 22.968,
+    "text": "by the second,"
+   },
+   {
+    "t0": 23.142,
+    "t1": 25.047,
+    "text": "which beats leaving a laptop script or a"
+   },
+   {
+    "t0": 25.105,
+    "t1": 26.258,
+    "text": "server on all day."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+  "say": "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule.",
+  "dur": 7.871,
+  "takeAt": 41.409,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Claim Check watches X for viral AI posts that make technical claims, then finds the primary sources and checks each claim against them.",
+    "Claim Check watches X for viral AI posts that make technical claims, then finds the primary sources and checks each claim against them."
+   ],
+   [
+    "0001.png",
+    "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust.",
+    "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
+   ],
+   [
+    "modal.png",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
+   ],
+   [
+    "0002.png",
+    "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+    "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
+   ],
+   [
+    "0003.png",
+    "Then check claim dot map fans the posts out, so the claims are checked in parallel, with Grok searching the web for primary sources.",
+    "Then check claim dot map fans the posts out, so the claims are checked in parallel, with Grok searching the web for primary sources."
+   ],
+   [
+    "0004.png",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them."
+   ],
+   [
+    "0005.png",
+    "Devin built all of this from one short prompt in the product demo apps repo.",
+    "Devin built all of this from one short prompt in the product demo apps repo."
+   ],
+   [
+    "0006.png",
+    "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
+    "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
+   ],
+   [
+    "0008.png",
+    "Devin then opened a pull request, where Devin Review shows three findings resolved and four still open.",
+    "Devin then opened a pull request, where Devin Review shows three findings resolved and four still open."
+   ],
+   [
+    "0009.png",
+    "In this run, it found five posts on X, and all five claims were supported.",
+    "In this run, it found five posts on X, and all five claims were supported."
+   ],
+   [
+    "0010.png",
+    "Each verdict links to its primary sources, like the arXiv paper behind a benchmark claim.",
+    "Each verdict links to its primary sources, like the archive paper behind a benchmark claim."
+   ],
+   [
+    "0011.png",
+    "You can take it further. Let people paste a post to check it on demand. Send unclear verdicts to a person for review. Add filings and press releases as sources for funding claims. Or send a Slack alert when a claim is not supported.",
+    "You can take it further. Let people paste a post to check it on demand. Send unclear verdicts to a person for review. Add filings and press releases as sources for funding claims. Or send a Slack alert when a claim is not supported."
+   ],
+   [
+    "outro",
+    "Every viral claim, checked against its sources.",
+    "Every viral claim, checked against its sources."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.63,
+    "text": "Here's the path a claim takes."
+   },
+   {
+    "t0": 1.955,
+    "t1": 4.549,
     "text": "Posts on X come in through the xAI API,"
    },
    {
-    "t0": 2.59,
-    "t1": 4.177,
-    "text": "where Grok runs X Search,"
-   },
-   {
-    "t0": 4.227,
-    "t1": 7.385,
-    "text": "and a Modal Cron job runs that search every hour."
+    "t0": 4.599,
+    "t1": 7.803,
+    "text": "where Grok runs X Search on the hourly schedule."
    }
   ]
  },
  "0003.png": {
   "text": "Then check claim dot map fans the posts out, so the claims are checked in parallel, with Grok searching the web for primary sources.",
-  "dur": 7.276,
-  "takeAt": 22.194,
+  "dur": 7.505,
+  "takeAt": 49.595,
   "mode": "single-take-1",
   "take": [
    [
@@ -297,9 +443,14 @@
     "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
    ],
    [
+    "modal.png",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
+   ],
+   [
     "0002.png",
-    "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-    "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour."
+    "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+    "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
    ],
    [
     "0003.png",
@@ -308,8 +459,8 @@
    ],
    [
     "0004.png",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL."
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them."
    ],
    [
     "0005.png",
@@ -320,11 +471,6 @@
     "0006.png",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-   ],
-   [
-    "0007.png",
-    "Here's the fan out with dot map, in the code it wrote.",
-    "Here's the fan out with dot map, in the code it wrote."
    ],
    [
     "0008.png",
@@ -354,27 +500,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.373,
+    "t0": 0.108,
+    "t1": 2.476,
     "text": "Then check claim dot map fans the posts"
    },
    {
-    "t0": 2.431,
-    "t1": 4.776,
+    "t0": 2.534,
+    "t1": 4.787,
     "text": "out, so the claims are checked in parallel,"
    },
    {
-    "t0": 4.927,
-    "t1": 7.276,
+    "t0": 4.996,
+    "t1": 7.505,
     "text": "with Grok searching the web for primary sources."
    }
   ]
  },
  "0004.png": {
-  "text": "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-  "say": "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL.",
-  "dur": 6.367,
-  "takeAt": 29.903,
+  "text": "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+  "dur": 4.175,
+  "takeAt": 57.535,
   "mode": "single-take-1",
   "take": [
    [
@@ -388,9 +533,14 @@
     "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
    ],
    [
+    "modal.png",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
+   ],
+   [
     "0002.png",
-    "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-    "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour."
+    "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+    "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
    ],
    [
     "0003.png",
@@ -399,8 +549,8 @@
    ],
    [
     "0004.png",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL."
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them."
    ],
    [
     "0005.png",
@@ -411,11 +561,6 @@
     "0006.png",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-   ],
-   [
-    "0007.png",
-    "Here's the fan out with dot map, in the code it wrote.",
-    "Here's the fan out with dot map, in the code it wrote."
    ],
    [
     "0008.png",
@@ -445,26 +590,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.397,
-    "text": "The results are saved in a Modal Dict,"
+    "t0": 0.074,
+    "t1": 1.862,
+    "text": "The verdicts land in the Modal Dict,"
    },
    {
-    "t0": 2.447,
-    "t1": 4.418,
-    "text": "and a web endpoint serves them as"
-   },
-   {
-    "t0": 4.468,
-    "t1": 6.317,
-    "text": "a dark page on a modal.run URL."
+    "t0": 2.141,
+    "t1": 4.175,
+    "text": "and the page running on Modal shows them."
    }
   ]
  },
  "0005.png": {
   "text": "Devin built all of this from one short prompt in the product demo apps repo.",
-  "dur": 3.872,
-  "takeAt": 36.788,
+  "dur": 3.929,
+  "takeAt": 61.971,
   "mode": "single-take-1",
   "take": [
    [
@@ -478,9 +618,14 @@
     "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
    ],
    [
+    "modal.png",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
+   ],
+   [
     "0002.png",
-    "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-    "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour."
+    "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+    "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
    ],
    [
     "0003.png",
@@ -489,8 +634,8 @@
    ],
    [
     "0004.png",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL."
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them."
    ],
    [
     "0005.png",
@@ -501,11 +646,6 @@
     "0006.png",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-   ],
-   [
-    "0007.png",
-    "Here's the fan out with dot map, in the code it wrote.",
-    "Here's the fan out with dot map, in the code it wrote."
    ],
    [
     "0008.png",
@@ -536,20 +676,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.943,
+    "t1": 1.931,
     "text": "Devin built all of this from one short"
    },
    {
     "t0": 1.989,
-    "t1": 3.872,
+    "t1": 3.929,
     "text": "prompt in the product demo apps repo."
    }
   ]
  },
  "0006.png": {
   "text": "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
-  "dur": 4.237,
-  "takeAt": 41.153,
+  "dur": 4.405,
+  "takeAt": 66.125,
   "mode": "single-take-1",
   "take": [
    [
@@ -563,9 +703,14 @@
     "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
    ],
    [
+    "modal.png",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
+   ],
+   [
     "0002.png",
-    "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-    "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour."
+    "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+    "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
    ],
    [
     "0003.png",
@@ -574,8 +719,8 @@
    ],
    [
     "0004.png",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL."
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them."
    ],
    [
     "0005.png",
@@ -586,11 +731,6 @@
     "0006.png",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-   ],
-   [
-    "0007.png",
-    "Here's the fan out with dot map, in the code it wrote.",
-    "Here's the fan out with dot map, in the code it wrote."
    ],
    [
     "0008.png",
@@ -620,111 +760,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.595,
+    "t0": 0.053,
+    "t1": 1.643,
     "text": "It wrote the app and its tests,"
    },
    {
-    "t0": 1.711,
-    "t1": 2.826,
+    "t0": 1.852,
+    "t1": 2.932,
     "text": "ran modal deploy,"
    },
    {
-    "t0": 2.849,
-    "t1": 4.237,
+    "t0": 2.955,
+    "t1": 4.405,
     "text": "and checked the deployed URL."
-   }
-  ]
- },
- "0007.png": {
-  "text": "Here's the fan out with dot map, in the code it wrote.",
-  "dur": 2.638,
-  "takeAt": 45.832,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Claim Check watches X for viral AI posts that make technical claims, then finds the primary sources and checks each claim against them.",
-    "Claim Check watches X for viral AI posts that make technical claims, then finds the primary sources and checks each claim against them."
-   ],
-   [
-    "0001.png",
-    "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust.",
-    "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
-   ],
-   [
-    "0002.png",
-    "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-    "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour."
-   ],
-   [
-    "0003.png",
-    "Then check claim dot map fans the posts out, so the claims are checked in parallel, with Grok searching the web for primary sources.",
-    "Then check claim dot map fans the posts out, so the claims are checked in parallel, with Grok searching the web for primary sources."
-   ],
-   [
-    "0004.png",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL."
-   ],
-   [
-    "0005.png",
-    "Devin built all of this from one short prompt in the product demo apps repo.",
-    "Devin built all of this from one short prompt in the product demo apps repo."
-   ],
-   [
-    "0006.png",
-    "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
-    "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-   ],
-   [
-    "0007.png",
-    "Here's the fan out with dot map, in the code it wrote.",
-    "Here's the fan out with dot map, in the code it wrote."
-   ],
-   [
-    "0008.png",
-    "Devin then opened a pull request, where Devin Review shows three findings resolved and four still open.",
-    "Devin then opened a pull request, where Devin Review shows three findings resolved and four still open."
-   ],
-   [
-    "0009.png",
-    "In this run, it found five posts on X, and all five claims were supported.",
-    "In this run, it found five posts on X, and all five claims were supported."
-   ],
-   [
-    "0010.png",
-    "Each verdict links to its primary sources, like the arXiv paper behind a benchmark claim.",
-    "Each verdict links to its primary sources, like the archive paper behind a benchmark claim."
-   ],
-   [
-    "0011.png",
-    "You can take it further. Let people paste a post to check it on demand. Send unclear verdicts to a person for review. Add filings and press releases as sources for funding claims. Or send a Slack alert when a claim is not supported.",
-    "You can take it further. Let people paste a post to check it on demand. Send unclear verdicts to a person for review. Add filings and press releases as sources for funding claims. Or send a Slack alert when a claim is not supported."
-   ],
-   [
-    "outro",
-    "Every viral claim, checked against its sources.",
-    "Every viral claim, checked against its sources."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 1.711,
-    "text": "Here's the fan out with dot map,"
-   },
-   {
-    "t0": 1.734,
-    "t1": 2.628,
-    "text": "in the code it wrote."
    }
   ]
  },
  "0008.png": {
   "text": "Devin then opened a pull request, where Devin Review shows three findings resolved and four still open.",
-  "dur": 5.561,
-  "takeAt": 48.549,
+  "dur": 5.675,
+  "takeAt": 70.835,
   "mode": "single-take-1",
   "take": [
    [
@@ -738,9 +793,14 @@
     "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
    ],
    [
+    "modal.png",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
+   ],
+   [
     "0002.png",
-    "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-    "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour."
+    "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+    "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
    ],
    [
     "0003.png",
@@ -749,8 +809,8 @@
    ],
    [
     "0004.png",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL."
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them."
    ],
    [
     "0005.png",
@@ -761,11 +821,6 @@
     "0006.png",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-   ],
-   [
-    "0007.png",
-    "Here's the fan out with dot map, in the code it wrote.",
-    "Here's the fan out with dot map, in the code it wrote."
    ],
    [
     "0008.png",
@@ -795,26 +850,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.861,
+    "t0": 0.103,
+    "t1": 1.902,
     "text": "Devin then opened a pull request,"
    },
    {
-    "t0": 1.978,
-    "t1": 4.648,
+    "t0": 2.146,
+    "t1": 4.77,
     "text": "where Devin Review shows three findings resolved and"
    },
    {
-    "t0": 4.706,
-    "t1": 5.561,
+    "t0": 4.828,
+    "t1": 5.675,
     "text": "four still open."
    }
   ]
  },
  "0009.png": {
   "text": "In this run, it found five posts on X, and all five claims were supported.",
-  "dur": 4.272,
-  "takeAt": 54.308,
+  "dur": 4.345,
+  "takeAt": 76.825,
   "mode": "single-take-1",
   "take": [
    [
@@ -828,9 +883,14 @@
     "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
    ],
    [
+    "modal.png",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
+   ],
+   [
     "0002.png",
-    "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-    "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour."
+    "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+    "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
    ],
    [
     "0003.png",
@@ -839,8 +899,8 @@
    ],
    [
     "0004.png",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL."
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them."
    ],
    [
     "0005.png",
@@ -851,11 +911,6 @@
     "0006.png",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-   ],
-   [
-    "0007.png",
-    "Here's the fan out with dot map, in the code it wrote.",
-    "Here's the fan out with dot map, in the code it wrote."
    ],
    [
     "0008.png",
@@ -885,18 +940,18 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 0.805,
+    "t0": 0.104,
+    "t1": 0.8,
     "text": "In this run,"
    },
    {
-    "t0": 0.828,
-    "t1": 2.511,
+    "t0": 0.823,
+    "t1": 2.437,
     "text": "it found five posts on X,"
    },
    {
-    "t0": 2.604,
-    "t1": 4.272,
+    "t0": 2.611,
+    "t1": 4.345,
     "text": "and all five claims were supported."
    }
   ]
@@ -904,8 +959,8 @@
  "0010.png": {
   "text": "Each verdict links to its primary sources, like the arXiv paper behind a benchmark claim.",
   "say": "Each verdict links to its primary sources, like the archive paper behind a benchmark claim.",
-  "dur": 4.855,
-  "takeAt": 58.975,
+  "dur": 4.765,
+  "takeAt": 81.505,
   "mode": "single-take-1",
   "take": [
    [
@@ -919,9 +974,14 @@
     "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
    ],
    [
+    "modal.png",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
+   ],
+   [
     "0002.png",
-    "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-    "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour."
+    "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+    "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
    ],
    [
     "0003.png",
@@ -930,8 +990,8 @@
    ],
    [
     "0004.png",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL."
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them."
    ],
    [
     "0005.png",
@@ -942,11 +1002,6 @@
     "0006.png",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-   ],
-   [
-    "0007.png",
-    "Here's the fan out with dot map, in the code it wrote.",
-    "Here's the fan out with dot map, in the code it wrote."
    ],
    [
     "0008.png",
@@ -976,21 +1031,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.027,
-    "t1": 2.281,
+    "t0": 0.091,
+    "t1": 2.272,
     "text": "Each verdict links to its primary sources,"
    },
    {
-    "t0": 2.331,
-    "t1": 4.805,
+    "t0": 2.322,
+    "t1": 4.715,
     "text": "like the arXiv paper behind a benchmark claim."
    }
   ]
  },
  "0011.png": {
   "text": "You can take it further. Let people paste a post to check it on demand. Send unclear verdicts to a person for review. Add filings and press releases as sources for funding claims. Or send a Slack alert when a claim is not supported.",
-  "dur": 12.44,
-  "takeAt": 64.195,
+  "dur": 12.65,
+  "takeAt": 86.635,
   "mode": "single-take-1",
   "take": [
    [
@@ -1004,9 +1059,14 @@
     "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
    ],
    [
+    "modal.png",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
+   ],
+   [
     "0002.png",
-    "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-    "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour."
+    "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+    "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
    ],
    [
     "0003.png",
@@ -1015,8 +1075,8 @@
    ],
    [
     "0004.png",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL."
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them."
    ],
    [
     "0005.png",
@@ -1027,11 +1087,6 @@
     "0006.png",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-   ],
-   [
-    "0007.png",
-    "Here's the fan out with dot map, in the code it wrote.",
-    "Here's the fan out with dot map, in the code it wrote."
    ],
    [
     "0008.png",
@@ -1061,41 +1116,41 @@
   ],
   "chunks": [
    {
-    "t0": 0.066,
-    "t1": 1.111,
+    "t0": 0.081,
+    "t1": 1.16,
     "text": "You can take it further."
    },
    {
-    "t0": 1.262,
-    "t1": 3.549,
+    "t0": 1.602,
+    "t1": 3.808,
     "text": "Let people paste a post to check it on demand."
    },
    {
-    "t0": 3.793,
-    "t1": 6.115,
+    "t0": 4.191,
+    "t1": 6.42,
     "text": "Send unclear verdicts to a person for review."
    },
    {
-    "t0": 6.498,
-    "t1": 9.703,
+    "t0": 6.803,
+    "t1": 9.915,
     "text": "Add filings and press releases as sources for funding claims."
    },
    {
-    "t0": 9.912,
-    "t1": 11.56,
+    "t0": 10.24,
+    "t1": 11.772,
     "text": "Or send a Slack alert when a claim"
    },
    {
-    "t0": 11.607,
-    "t1": 12.44,
+    "t0": 11.83,
+    "t1": 12.65,
     "text": "is not supported."
    }
   ]
  },
  "outro": {
   "text": "Every viral claim, checked against its sources.",
-  "dur": 2.448,
-  "takeAt": 76.912,
+  "dur": 2.723,
+  "takeAt": 99.657,
   "mode": "single-take-1",
   "take": [
    [
@@ -1109,9 +1164,14 @@
     "Claims like these spread fast, and checking them takes real sources, so a checker that shows its links is easier to trust."
    ],
    [
+    "modal.png",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling .map() spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret keeps the xAI key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day.",
+    "Modal is where it all runs. A scheduled function wakes up every hour, so there's no server to keep running. Calling dot map spreads the claim checks across containers, so they run in parallel. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret keeps the ex A I key out of the code. Between runs it scales to zero and bills by the second, which beats leaving a laptop script or a server on all day."
+   ],
+   [
     "0002.png",
-    "Posts on X come in through the xAI API, where Grok runs X Search, and a Modal Cron job runs that search every hour.",
-    "Posts on X come in through the ex A I API, where Grok runs X Search, and a Modal Cron job runs that search every hour."
+    "Here's the path a claim takes. Posts on X come in through the xAI API, where Grok runs X Search on the hourly schedule.",
+    "Here's the path a claim takes. Posts on X come in through the ex A I API, where Grok runs X Search on the hourly schedule."
    ],
    [
     "0003.png",
@@ -1120,8 +1180,8 @@
    ],
    [
     "0004.png",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal.run URL.",
-    "The results are saved in a Modal Dict, and a web endpoint serves them as a dark page on a modal dot run URL."
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them.",
+    "The verdicts land in the Modal Dict, and the page running on Modal shows them."
    ],
    [
     "0005.png",
@@ -1132,11 +1192,6 @@
     "0006.png",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL.",
     "It wrote the app and its tests, ran modal deploy, and checked the deployed URL."
-   ],
-   [
-    "0007.png",
-    "Here's the fan out with dot map, in the code it wrote.",
-    "Here's the fan out with dot map, in the code it wrote."
    ],
    [
     "0008.png",
@@ -1167,12 +1222,12 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.072,
+    "t1": 1.246,
     "text": "Every viral claim,"
    },
    {
-    "t0": 1.107,
-    "t1": 2.448,
+    "t0": 1.42,
+    "t1": 2.723,
     "text": "checked against its sources."
    }
   ]
