@@ -37,8 +37,11 @@ window.SPEC = {
       "capPos": "bottom",
       "hl": null
     },
-    "0003.png": {
+    "0001.png": {
       "cursor": true,
+      "waitVo": true
+    },
+    "0003.png": {
       "cap": "A short, plain-language prompt",
       "vo": "Now for the prompt. It's short, and written in plain language."
     },
