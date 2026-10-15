@@ -70,6 +70,9 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 <!-- -->
 
 38. **Ship a mobile feature to iOS and Android at once** (narrated by Nader, 2:22): Two real Devin sessions ship one feature to both apps of a small game (Jumpy Otter) on one PR. A macOS session, picked from the platform menu, adds lifetime stats (games played and total hops) on iOS and Android, tests the iPhone app in the iOS Simulator, sends a recording and opens the PR. Then an Ubuntu session sets up an Android emulator on the same branch, plays two runs (the stats survive a force stop), posts its recording on the same PR and suggests a blueprint update so the emulator is ready next time. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/38-ios-android-one-pr/38-ios-android-one-pr-nader.mp4) · [Voice script](tutorials/38-ios-android-one-pr/voice-script.md)
+
+<!-- -->
+
 39. **Ship a mobile feature to iOS and Android at once** (overview, narrated by Nader, 1:11): A short diagram-led overview of the pattern: one prompt, a macOS session that builds the feature and tests it in the iOS Simulator, an Ubuntu session that tests the same branch on an Android emulator, and one pull request with both recordings. Real proof shots from tutorial 38, then where it helps: features and bug fixes that touch both apps, one review, and a saved blueprint. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/39-ios-android-one-pr-overview/39-ios-android-one-pr-overview-nader.mp4) · [Voice script](tutorials/39-ios-android-one-pr-overview/voice-script.md)
 
 ## Narrated tutorials
