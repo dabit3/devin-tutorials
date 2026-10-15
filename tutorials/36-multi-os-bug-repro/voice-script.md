@@ -4,15 +4,29 @@ Narrated in Nader's voice (`T8iHhGIWPm2GVYpQD1Am`), generated as one ElevenLabs 
 
 ## Intro
 
-- Some bugs only show up on one operating system. With a multi-platform blueprint and managed Devins, one coordinator sends the same bug to Linux, macOS and Windows, each Devin records a repro, and one fix gets verified on all three.
+- Some bugs only show up on one operating system. With a multi-platform blueprint and managed Devins, one coordinator sends the same bug to Linux, macOS and Windows. Each Devin records a repro, and one fix gets verified on all three.
 
-## Multi-platform blueprint
+## Environment setup in plain English
 
-- First, open the repo's blueprint in Settings → Environment, and add a second YAML document for macOS and Windows, after three dashes.
+- First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.
 
-- Save it, and Devin builds one snapshot for each platform.
+- Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.
 
-- When the builds finish, the active snapshots show Ubuntu, macOS and Windows, all from the same blueprint.
+- Before it tests macOS and Windows, it asks me to approve each test machine.
+
+- Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.
+
+- The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.
+
+- The Windows test machine never comes up.
+
+- So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.
+
+- It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.
+
+- Then it proposes the Windows update, and I approve it.
+
+- After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.
 
 ## Platform picker
 
@@ -24,49 +38,57 @@ Narrated in Nader's voice (`T8iHhGIWPm2GVYpQD1Am`), generated as one ElevenLabs 
 
 ## Managed Devins
 
-- The coordinator reads the code, finds the cause, and starts three managed Devins, one for each operating system, each in its own VM.
+- The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.
 
 - While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.
-
-- Each child reports back what it saw. On Linux, the old history entries are still there after Reset.
 
 ## Children and recordings
 
 - The Agents tab lists all three children, and each one is done.
 
-- Open a child to see its work. Each Devin attaches a recording of the repro to its message.
+- Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.
+
+- Each Devin attaches a recording of the repro to its message.
 
 - The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.
 
-- Once the fix is up, the coordinator sends the branch back to each child. Linux tests it on the same machine and records again, and this time every check passes.
+- Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.
 
-- macOS shows the same bug on main, and passes on the fix branch.
+- macOS shows the same bug on main, and every check passes on the fix branch.
 
-- Windows does the same, with the bug on main and every check passing on the fix.
+- Windows tells the same story, with the bug on main and every check passing on the fix.
 
 ## One fix, verified on all three
 
-- Back in the coordinator, the diff shows the fix: one new line in Reset that clears the history.
+- Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.
 
-- Its summary confirms it. The bug reproduced on all three systems, the fix passed on all three, and CI is green.
+- Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.
 
 **Outro:** One bug, three operating systems, one verified fix.
 
-## Prompt typed on screen
+## Prompts typed on screen
 
-In the `thequantexplorer` org, Agent mode, platform picker on Ubuntu, with `@thequantexplorer/product-demo-apps` mentioned:
+Environment setup, in the `thequantexplorer` org, Agent mode, with `@thequantexplorer/product-demo-apps` mentioned:
+
+> Set up your environment for this repo. The Tally app in desktop/tally has to run and be tested on Linux, macOS and Windows sessions, so build a snapshot for each of those platforms.
+
+Plain-English reply when the Windows test machine didn't start:
+
+> Skip the test machine. Check the Node 22 step with a managed Devin on Windows, like last time, then send me the blueprint update.
+
+Coordinator, platform picker on Ubuntu, with `@thequantexplorer/product-demo-apps` mentioned:
 
 > Bug in desktop/tally: after you click Reset, the History list still shows the old entries. Start three managed Devins, one each on Linux, macOS and Windows. Each one runs the app, reproduces the bug and sends me a recording. Then fix it in one PR, and have all three verify the fix on their OS with a new recording.
 
-## Blueprint saved on screen
+## No configuration typed
 
-See [`blueprint.yaml`](blueprint.yaml): the existing Linux block (`runs-on: default`), then a second YAML document after `---` with `runs-on: [macos, windows]` that installs Node 24 with `actions/setup-node` and runs `npm install` in `desktop/tally`.
+Nothing in this video is configured by typing YAML or settings. Devin wrote the multi-platform blueprint from the plain-English request, proposed it as suggestion cards (the Linux, macOS and Windows sections, then a Windows Node 22 update), and the only actions on camera are Approve clicks, one option pick and plain-English replies.
 
 ## Sources
 
+- Set it up by asking Devin: https://docs.devin.ai/onboard-devin/environment#set-it-up-by-asking-devin
 - Blueprints: https://docs.devin.ai/onboard-devin/environment/blueprints
-- Blueprint reference (`runs-on`, multi-platform documents): https://docs.devin.ai/onboard-devin/environment/blueprint-reference
-- macOS support: https://docs.devin.ai/onboard-devin/environment/macos-support
+- Multi-platform blueprint: https://docs.devin.ai/onboard-devin/environment/macos-support#multi-platform-blueprint
 - Windows support (limited availability): https://docs.devin.ai/onboard-devin/environment/windows-support
 - Managed Devins: https://docs.devin.ai/work-with-devin/managed-devins
 - Testing and recordings: https://docs.devin.ai/work-with-devin/testing-and-recordings

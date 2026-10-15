@@ -1,12 +1,11 @@
-// Live capture: a multi-platform blueprint, then one coordinator sends a desktop-app bug to Linux, macOS and Windows managed Devins.
-//   ZOOM=1.25 MASK_TEXT=<email name> PHASE=blueprint|snapshots|start|watch|child|rec|shot node capture.mjs   (RESUME=1 appends to shots/beats.json)
+// Live capture: environment set up for Linux, macOS and Windows by asking Devin in plain English, then one coordinator sends a desktop-app bug to Linux, macOS and Windows managed Devins.
+//   ZOOM=1.25 MASK_TEXT=<email name> PHASE=setup|approve|snapshots|start|watch|child|rec|shot node capture.mjs   (RESUME=1 appends to shots/beats.json)
 //   watch/child phases poll until /tmp/stop36 exists, so the operator decides when a phase ends.
 import fs from 'fs';
 import { Rec, sleep } from '../_kit/capture/rec.mjs';
 import { ensureAgent, clearComposer, closeMenus, mentionRepo, editorBox } from '../_kit/capture/composer.mjs';
 
 const ORG = process.env.DEVIN_ORG_URL || 'https://app.devin.ai/org/thequantexplorer';
-const BP = ORG + '/settings/environment/blueprints/thequantexplorer/product-demo-apps';
 const TASK = process.env.TASK || 'Bug in desktop/tally: after you click Reset, the History list still shows the old entries. ' +
   'Start three managed Devins, one each on Linux, macOS and Windows. Each one runs the app, reproduces the bug and sends me a recording. ' +
   'Then fix it in one PR, and have all three verify the fix on their OS with a new recording.';
@@ -31,34 +30,6 @@ const textBox = (src, sel = 'main *') => p.evaluate((src, sel) => {
   if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2, w: b.width, h: b.height };
 }, src, sel);
 const editorText = () => p.evaluate(() => [...document.querySelectorAll('.monaco-editor')].filter(e => e.getBoundingClientRect().width > 0).flatMap(e => [...e.querySelectorAll('.view-line')]).map(l => l.innerText).join('\n'));
-
-if (PHASE === 'blueprint') {
-  // repo blueprint for product-demo-apps: replace it with a two-document (Linux + macOS/Windows) blueprint and save
-  const yaml = fs.readFileSync(new URL('./blueprint.yaml', import.meta.url), 'utf8');
-  await r.goto(BP, 6000); await collapseNav(); await settle();
-  await p.evaluate(() => { const h = [...document.querySelectorAll('main *')].find(e => e.children.length === 0 && e.textContent.trim() === 'Blueprint'); h && h.scrollIntoView({ block: 'start' }); window.scrollBy(0, -20); });
-  await sleep(1200);
-  await p.mouse.move(1100, 700); r.cur = { x: 1100, y: 700 };
-  await r.shot({ hold: 1.5 }); r.mark('bp-open');
-  const ed = await p.evaluate(() => { const e = document.querySelector('.monaco-editor .view-lines'); const b = e.getBoundingClientRect(); return { x: b.x + 300, y: b.y + 60 }; });
-  await p.mouse.click(ed.x, ed.y); await sleep(300);
-  // the kit keyboard only tracks Shift/Meta, so send Ctrl+A / Delete as raw CDP key events
-  const key = async (key, code, vk, modifiers = 0) => { for (const type of ['rawKeyDown', 'keyUp']) await p.send('Input.dispatchKeyEvent', { type, key, code, windowsVirtualKeyCode: vk, modifiers }); };
-  for (let i = 0; i < 3 && (await editorText()).trim(); i++) { await key('a', 'KeyA', 65, 2); await sleep(200); await key('Delete', 'Delete', 46); await sleep(400); }
-  if ((await editorText()).trim()) fail('editor not empty: ' + (await editorText()).slice(0, 200));
-  await p.evaluate(t => { const ta = document.activeElement; const dt = new DataTransfer(); dt.setData('text/plain', t); ta.dispatchEvent(new ClipboardEvent('paste', { clipboardData: dt, bubbles: true, cancelable: true })); }, yaml);
-  await sleep(1200);
-  await p.evaluate(() => document.activeElement?.blur());
-  await p.mouse.move(1100, 860); r.cur = { x: 1100, y: 860 };
-  const sep = await textBox('^---$', '.monaco-editor .view-line');
-  const ro = await textBox('^runs-on: \\[macos, windows\\]$', '.monaco-editor .view-line');
-  if (!sep || !ro) fail('pasted yaml not visible');
-  await r.shot({ hold: 3, mark: 'bp-pasted', hl: [ro] });
-  if (process.env.DRY) { await clickAria('Discard'); const d = await textBox('^Discard$', 'button'); if (d) await p.mouse.click(d.x, d.y); r.done(); process.exit(0); }
-  await r.click({ text: 'Save blueprint', sel: 'button' }, { wait: 3000 });
-  await settle();
-  await r.shot({ hold: 1.5 }); r.mark('bp-saved');
-}
 
 if (PHASE === 'snapshots') {
   await r.goto(ORG + '/settings/environment?tab=snapshots', 6000); await collapseNav(); await settle();
@@ -136,10 +107,10 @@ if (PHASE === 'agents') {
 }
 
 const seek = async (sel, src, which = 'first', block = 'center') => {
-  await p.evaluate(which => { const sc = [...document.querySelectorAll('main *')].filter(e => e.scrollHeight > e.clientHeight + 50 && /auto|scroll/.test(getComputedStyle(e).overflowY)).sort((a, b) => b.scrollHeight - a.scrollHeight)[0]; sc.scrollTop = which === 'last' ? sc.scrollHeight : 0; }, which);
+  await p.evaluate(which => { const sc = [...document.querySelectorAll('main *')].filter(e => e.scrollHeight > e.clientHeight + 50 && /auto|scroll/.test(getComputedStyle(e).overflowY)).sort((a, b) => b.scrollHeight - a.scrollHeight)[0]; if (sc) sc.scrollTop = which === 'last' ? sc.scrollHeight : 0; }, which);
   for (let k = 0; k < 40; k++) {
     if (await showEl(sel, src, which, block)) { await sleep(900); await showEl(sel, src, which, block); await sleep(900); return true; }
-    await p.evaluate(dir => { const sc = [...document.querySelectorAll('main *')].filter(e => e.scrollHeight > e.clientHeight + 50 && /auto|scroll/.test(getComputedStyle(e).overflowY)).sort((a, b) => b.scrollHeight - a.scrollHeight)[0]; sc.scrollTop += dir * 400; }, which === 'last' ? -1 : 1);
+    await p.evaluate(dir => { const sc = [...document.querySelectorAll('main *')].filter(e => e.scrollHeight > e.clientHeight + 50 && /auto|scroll/.test(getComputedStyle(e).overflowY)).sort((a, b) => b.scrollHeight - a.scrollHeight)[0]; if (sc) sc.scrollTop += dir * 400; }, which === 'last' ? -1 : 1);
     await sleep(500);
   }
   return false;
@@ -159,10 +130,82 @@ async function openRec(which, label) {
   await p.keyboard.press('Escape'); await sleep(1200);
 }
 
+const SETUP = process.env.SETUP || 'Set up your environment for this repo. The Tally app in desktop/tally has to run and be tested on Linux, macOS and Windows sessions, so build a snapshot for each of those platforms.';
+const SETUP_SESSION = process.env.SETUP_SESSION || (fs.existsSync('/tmp/setup36') ? fs.readFileSync('/tmp/setup36', 'utf8').trim() : '');
+
+async function home() {
+  await r.goto(ORG, 5000); await collapseNav(); await closeMenus(p); await clearComposer(p); await ensureAgent(r);
+  await settle();
+  if (/macOS|Windows/.test(await p.evaluate(() => [...document.querySelectorAll('main button')].map(b => b.innerText).join('|')))) fail('picker is not Ubuntu');
+}
+async function typePrompt(text, mark, must) {
+  const ed = await editorBox(p); await r.click(ed, { wait: 300 });
+  await mentionRepo(r, 'product-demo', 'product-demo-apps');
+  await p.send('Input.insertText', { text }); await sleep(800);
+  const txt = await p.evaluate(() => document.querySelector('main [contenteditable=true]').innerText);
+  if (!/product-demo-apps/.test(txt) || !txt.includes(must)) fail('composer: ' + txt);
+  await r.shot({ kind: 'still', hold: 3.2 }); r.mark(mark);
+  console.log('COMPOSER', JSON.stringify(txt));
+  if (process.env.DRY) { await clearComposer(p); await clearComposer(p); r.done(); process.exit(0); }
+  await r.click({ attr: ['aria-label', 'Send'], sel: 'main button' }, { wait: 4000 });
+  r.mark(mark + '-sent');
+}
+
+if (PHASE === 'setup') {
+  // environment setup in plain English: Devin proposes the blueprint, nothing is typed into config
+  await home();
+  await p.mouse.move(760, 560); r.cur = { x: 760, y: 560 };
+  await r.shot({ hold: 1.2 }); r.mark('setup-home');
+  await typePrompt(SETUP, 'setup-prompt', 'Windows');
+  console.log('SETUP_SESSION', await p.url()); fs.writeFileSync('/tmp/setup36', await p.url());
+  await hideEmptyPanel();
+  await watch(5000);
+}
+
+if (PHASE === 'approve') {
+  await r.goto(SETUP_SESSION, 7000); await collapseNav(); await hideEmptyPanel(); await settle();
+  const src = process.env.APPROVE || '^Approve';
+  await seek('main button', src, 'last'); await sleep(800);
+  const btn = await boxOf('main button', src, 'last'); if (!btn) fail('no approve button');
+  await park(btn.x - 260, btn.y - 120);
+  await r.shot({ hold: 3.2, hl: [btn] }); r.mark('suggestion');
+  await r.click(btn, { wait: 3000 }); await settle();
+  await r.shot({ hold: 1.5 }); r.mark('approved');
+  if (!process.env.NOWATCH) await watch(+(process.env.EVERY || 5000));
+}
+
+if (PHASE === 'choose') {
+  // answer a question card from Devin by clicking one of its options
+  await r.goto(SETUP_SESSION, 7000); await collapseNav(); await hideEmptyPanel(); await settle();
+  const src = process.env.CHOICE; const sel = process.env.SEL || 'main button, main [role=radio], main [role=option]';
+  await seek(sel, src, 'last'); await sleep(800);
+  const opt = await boxOf(sel, src, 'last'); if (!opt) fail('no option ' + src);
+  await park(opt.x + opt.w / 2 + 80, opt.y + 40);
+  await r.shot({ hold: 3, hl: [opt] }); r.mark('choose');
+  await r.click(opt, { wait: 2500 }); await settle();
+  await r.shot({ hold: 1.5 }); r.mark('chosen');
+  if (!process.env.NOWATCH) await watch(+(process.env.EVERY || 5000));
+}
+
+if (PHASE === 'reply') {
+  // a plain-English follow-up typed into a running session
+  const target = process.env.TARGET || SETUP_SESSION;
+  await r.goto(target, 7000); await collapseNav(); await hideEmptyPanel(); await settle();
+  const ed = await p.evaluate(() => { const e = [...document.querySelectorAll('main [contenteditable=true]')].pop(); const b = e.getBoundingClientRect(); return { x: b.x + 60, y: b.y + b.height / 2, w: b.width, h: b.height }; });
+  await r.click(ed, { wait: 400 });
+  await p.send('Input.insertText', { text: process.env.MSG }); await sleep(800);
+  const txt = await p.evaluate(() => [...document.querySelectorAll('main [contenteditable=true]')].pop().innerText);
+  if (!txt.includes(process.env.MSG.slice(0, 20))) fail('reply composer: ' + txt);
+  await r.shot({ kind: 'still', hold: 3 }); r.mark('reply');
+  await p.keyboard.press('Enter'); await sleep(3000); await settle();
+  await r.shot({ hold: 1.2 }); r.mark('reply-sent');
+  if (!process.env.NOWATCH) await watch(+(process.env.EVERY || 8000));
+}
+
 if (PHASE === 'kid') {
   const OS = process.env.OS || '';
   await r.goto(SESSION, 9000); await collapseNav(); await clickAria('Hide tabs panel'); await settle();
-  await seek('main p', '^(I )?[Rr]eproduced the bug', 'first', 'start'); await park();
+  await seek('main p', '^(I )?[Rr]eproduced', 'first', 'start'); await park();
   await r.shot({ hold: 3 }); r.mark('child-repro-' + OS);
   await seek('main button', '^Tally Reset', 'first');
   await openRec('first', 'repro-' + OS);
@@ -174,15 +217,29 @@ if (PHASE === 'kid') {
 
 if (PHASE === 'pr') {
   await r.goto(SESSION, 7000); await collapseNav(); await settle();
-  if (!(await boxOf('button, [role=tab]', '^PR #51$'))) await clickAria('Show tabs panel');
+  if (!(await boxOf('button, [role=tab]', '^PR #' + process.env.PR + '$'))) await clickAria('Show tabs panel');
   await sleep(1500);
-  await r.click({ text: 'PR #51', exact: false, sel: 'button, [role=tab]' }, { wait: 3000 });
+  await r.click({ text: 'PR #' + process.env.PR, exact: false, sel: 'button, [role=tab]' }, { wait: 3000 });
   await park(300, 600);
   const diff = await textBox('^history\\.length = 0;$', '.view-line, td, span, div');
   await r.shot({ hold: 3.2, ...(diff && { hl: [diff] }) }); r.mark('pr-diff');
-  await showEl('main p', '^The fix works on Linux, macOS and Windows', 'last', 'start'); await sleep(1200); await park(1180, 640);
-  const sum = await boxOf('main p', '^The fix works on Linux, macOS and Windows', 'last');
+  await showEl('main p', '^The Reset fix works on all three', 'last', 'start'); await sleep(1200); await park(1180, 640);
+  const sum = await boxOf('main p', '^The Reset fix works on all three', 'last');
   await r.shot({ hold: 3.5, ...(sum && { hl: [sum] }) }); r.mark('summary');
+}
+
+if (PHASE === 'prdiff') {
+  await r.goto(SESSION, 7000); await collapseNav(); await settle();
+  if (!(await boxOf('button, [role=tab]', '^PR #' + process.env.PR + '$'))) await clickAria('Show tabs panel');
+  await sleep(1500);
+  await r.click({ text: 'PR #' + process.env.PR, exact: false, sel: 'button, [role=tab]' }, { wait: 3000 });
+  { const vw = await p.evaluate(() => [innerWidth, innerHeight]); const x = Math.round(vw[0] * 0.7), y = Math.round(vw[1] * 0.75);
+    await p.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x, y });
+    await p.send('Input.dispatchMouseEvent', { type: 'mouseWheel', x, y, deltaX: 0, deltaY: +(process.env.DY || 280) }); }
+  await sleep(1500); await park(300, 600);
+  const diff = await textBox('^\\s*history\\.length = 0;\\s*$', '.view-line, td, span, div');
+  if (!diff) fail('no added line');
+  await r.shot({ hold: 3.2, hl: [diff] }); r.mark('pr-diff2');
 }
 
 if (PHASE === 'shot') { if (process.env.SESSION) { await r.goto(process.env.SESSION, 6000); await collapseNav(); await hideEmptyPanel(); } await settle(); await r.shot({ hold: +(process.env.HOLD || 1.5) }); if (process.env.MARK) r.mark(process.env.MARK); }

@@ -17,13 +17,13 @@ window.SPEC = {
       "vo": "When a bug shows up in a desktop app, one coordinator Devin can reproduce it on Linux, macOS and Windows at the same time, and verify a single fix on all three."
     },
     "0001.png": {
-      "hold": 4.5,
+      "hold": 5,
       "cursor": false,
       "capPos": "auto",
       "hl": null,
-      "cap": "One snapshot per operating system",
+      "cap": "Ask Devin for a snapshot per OS",
       "voGap": 1.2,
-      "vo": "A multi-platform blueprint gives the repo a snapshot for each operating system."
+      "vo": "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it."
     },
     "0002.png": {
       "scene": "fan",
@@ -40,9 +40,9 @@ window.SPEC = {
       "cursor": false,
       "capPos": "auto",
       "hl": true,
-      "cap": "Linux, macOS and Windows, on the same report",
+      "cap": "Linux, macOS and Windows, all done",
       "voGap": 1.0,
-      "vo": "Here are the three children, working on the same bug report in parallel."
+      "vo": "Here are the three children, one per system, and each one is done."
     },
     "0004.png": {
       "scene": "record",
