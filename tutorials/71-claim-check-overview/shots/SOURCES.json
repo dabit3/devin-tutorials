@@ -1,0 +1,56 @@
+{
+  "note": "Every UI shot is a real dark-theme screenshot from the 70-claim-check capture in the thequantexplorer Devin org (125% zoom). Diagram beats are blank placeholders drawn live by scenes.js.",
+  "session": "https://app.devin.ai/sessions/fc4836d867d04b1d9a93986d16498736",
+  "repo": "thequantexplorer/product-demo-apps (claim-check/, PR #71)",
+  "app": "https://dabit3--claim-check-web.us-east.modal.run",
+  "shots": {
+    "0000.png": {
+      "scene": "value"
+    },
+    "0001.png": {
+      "scene": "why"
+    },
+    "0002.png": {
+      "scene": "pipe1"
+    },
+    "0003.png": {
+      "scene": "pipe2"
+    },
+    "0004.png": {
+      "scene": "pipe3"
+    },
+    "0005.png": {
+      "source": "reused from 70-claim-check capture",
+      "raw": "70 raw shots/0007.png",
+      "what": "Home composer with the full claim-check prompt and the product-demo-apps repo chip (dark theme)"
+    },
+    "0006.png": {
+      "source": "reused from 70-claim-check capture",
+      "raw": "70 raw shots/0075.png",
+      "what": "Devin session: pytest, modal deploy claim_check.py, curl of the modal.run URL"
+    },
+    "0007.png": {
+      "source": "reused from 70-claim-check capture",
+      "raw": "code/0004.png",
+      "what": "Devin Review diff of claim_check.py: check_claim.map(posts) fan-out inside hourly_check"
+    },
+    "0008.png": {
+      "source": "reused from 70-claim-check capture",
+      "raw": "review/0000.png",
+      "what": "Devin Review of product-demo-apps PR #71: summary plus open and resolved findings"
+    },
+    "0009.png": {
+      "source": "reused from 70-claim-check capture",
+      "raw": "live2/0001.png",
+      "what": "Deployed page: 5 posts found this run, 5 supported, 0 not supported, 0 unclear"
+    },
+    "0010.png": {
+      "source": "reused from 70-claim-check capture",
+      "raw": "live2/0003.png",
+      "what": "Deployed page: first card primary sources (arXiv TheoPhysEval paper and a write-up)"
+    },
+    "0011.png": {
+      "scene": "extend"
+    }
+  }
+}
