@@ -121,6 +121,7 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - Listen end to end for clipped consonants, dull closing lines, rushing, unnatural comma pauses and rising/unfinished endings. Transcript checks do not judge tone. Rephrase and rerecord when a pause problem affects tone instead of mechanically trimming silence. Preserve deliberate natural sentence pauses, not an identical imposed gap after every line.
 - Display menu paths with arrows in `vo`/captions (e.g. "Settings → Playbooks"); use `voSay` only when spoken pronunciation/punctuation needs to differ. Keep its sentence structure compatible with displayed `vo`, regenerate the take and subtitle chunks, and check timing/word coverage. Say "Devin" except when clicking the "Devin Local" label; display "SWE-2" while `voSay` says "swee two".
 - Keep names, digits and file paths pronounceable. The transcript check compares against displayed `vo` with existing aliases, not just `voSay`; prefer natural wording it can verify. `voOutro` has no separate `voSay` field, so avoid words needing a pronunciation override there.
+- The Nader voice reads the heteronym "live" as "liv". Respelling it as "lyve" in `voSay` gave mixed results, so reword instead ("public URL", "the page running on Modal"). Say "xAI" as "ex A I".
 
 ### Layout, timing and coverage
 
@@ -134,6 +135,7 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 
 ### Files and delivery
 
+- Style overrides from a per-video brief (e.g. "dark mode") use the kit's opt-in switches, such as `dark: true` in `spec.js` (`SPEC.dark`; scenes get `o.DARK`/`o.INK`/`o.BG`). Do not fork `_kit/src/engine.js` per video. If a batch needs a new kit option, the coordinator lands one shared kit PR before fanning out.
 - Voice builds write `<folder>-nader.mp4` without overwriting the captioned original/poster. Keep narrated README entries in the root "Narrated tutorials" section. Use separate focused PRs when adding narration to an existing captioned delivery; never base a follow-up on an already merged tutorial branch—use current main.
 - Current `vo.py` removes its temporary `_take.wav` at completion. Never commit that file, `_full-take.wav` or any full-script scratch audio. When ElevenLabs throttles parallel work, coordinate/retry the whole-take path rather than reverting to per-line synthesis.
 - Older loose-JS specs need a strict-JSON narration spec before using `vo.py`. Keep runtime-only layout code separate from that input; do not invent unsupported command flags.
@@ -246,6 +248,15 @@ The following sections preserve useful observations from earlier takes. Reverify
 - Preferences is only in the Settings sidebar ("Back to app" → Personal → Preferences), not in the app sidebar, which only has the Settings gear. In headless Chrome the app sidebar's session list stayed as skeleton rows, so skip those beats and cut straight to the Settings page.
 - Run watch phases as polling captures that stop when a flag file appears (`/tmp/stop19`), so the operator ends each phase once the real UI reaches the next state.
 - Before resetting a fan-out take, obtain approval for closing its demo PRs, deleting branches or archiving the coordinator/children. Never merge, revert shared main or delete unrelated work to reset a take.
+
+## Modal + xAI apps (tutorials 60–75)
+
+- Explain early, before or around the prompt, why the app uses Modal, where it fits and what it does. Name only the pieces the app really uses: a scheduled function instead of a server kept running, `.map()` for parallel xAI calls, a Dict or Volume for results, the web endpoint for the `*.modal.run` page, a Secret for the xAI key, scaling to zero. Say why that beats a laptop script or a self-managed server.
+- Don't walk through any code, diffs or file contents. Show Devin's logs and terminal output only when a line is worth highlighting, such as `modal deploy` printing the URL.
+- dabit3's Modal workspace allows 5 scheduled functions in total, shared by every sibling session. Film the schedule running, then redeploy web-only with the cron off so the slot is free. Narrate it honestly if a schedule never ran, and don't leave page text such as "Refreshes every 6 hours" when the schedule is off.
+- Label X data as sampled posts found and classified, never totals or full-firehose coverage. Label the earliest post found as "earliest found", not the origin. Keep source links, and use a pending/unclear state when evidence is thin. Don't rank a named person on a single data point.
+- An X-search backfill through the xAI API (months of posts, or one deep trace) cost about $20–25 per app, so pull once and reuse the stored result for retakes.
+- Modal dashboard pages stayed on loading spinners in the capture Chrome. Use Devin's `modal deploy` output and the public `*.modal.run` page as proof shots instead.
 
 ## Deliverables
 - Parallel child sessions report reusable lessons to the parent; one coordinator updates shared prompt files in a focused PR. Do not impose every video experiment as a shared default or have each child change the same prompts.
