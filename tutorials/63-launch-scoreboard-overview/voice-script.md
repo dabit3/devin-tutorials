@@ -15,5 +15,5 @@ Narrator: Nader (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`), one-request full-scri
    - Spoken as: Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four.
 9. **0008.png** Each column links the posts that shaped the conversation.
 10. **0009.png** To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.
-11. **Outro** So, who won the launch? Now you can check.
+11. **Outro** Who won the launch? Now you can check.
 The UI shots are reused from tutorial 62's real run (see `shots/SOURCES.json`); the diagrams are drawn by `scenes.js`. Numbers come from the same refresh as tutorial 62 (2026-10-15 05:31–05:32 UTC).

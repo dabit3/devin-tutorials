@@ -1367,7 +1367,7 @@ window.SPEC = {
       "subPos": "bottom",
       "cap": "The live app on Modal, with real X data",
       "vo": "Here's the live app on Modal. In this run, Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts. GPT-6 Sol landed at plus four, and Gemini 4 Argon at plus twenty-two.",
-      "voSay": "Here's the lyve app on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six Sol landed at plus four, and Gemini four Argon at plus twenty-two.",
+      "voSay": "Here's the lyve app on Modal. In this run, Claude Opus five point five netted plus fifty-eight from fifty sampled posts. G P T six, Sole, landed at plus four, and Gemini four Argon at plus twenty-two.",
       "badge": false
     },
     "0462.png": {

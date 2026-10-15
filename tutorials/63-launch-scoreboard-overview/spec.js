@@ -73,7 +73,7 @@ window.SPEC = {
       "subPos": "bottom",
       "cap": "The live app on Modal, from a real run",
       "vo": "Here's the real run. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
-      "voSay": "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six Sol came in at plus four."
+      "voSay": "Here's the real run. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four."
     },
     "0008.png": {
       "hold": 3,
