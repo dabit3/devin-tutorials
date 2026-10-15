@@ -1,298 +1,47 @@
+const NARRATED = !!new URLSearchParams(location.search).get("voice");
 window.SPEC = {
   "title": "Devin Playbooks",
   "subtitle": "Write a procedure once, reuse it with one macro",
-  "outro": "Write it once, reuse it everywhere",
+  "outro": "Write a procedure once, reuse it with one macro",
+  "voOutro": "Write a procedure once, and reuse it with one macro.",
   "speed": 3,
   "cps": 48,
-  "maxZoom": 1.75,
+  "capPos": "auto",
+  "capArrows": false,
+  "pollRunMax": NARRATED ? 1.5 : 3,
   "edit": {
-    "0000.png": {
-      "hold": 1.8,
-      "cursor": false,
-      "cap": "Playbooks live in Settings",
-      "vo": "This is Devin Playbooks. A playbook is a reusable prompt for a task you run again and again."
-    },
-    "0001.png": {
-      "cursor": true,
-      "cap": "Create a playbook",
-      "vo": "Create one in Settings → Playbooks.",
-      "voSay": "Create one in Settings, Playbooks."
-    },
-    "0003.png": {
-      "cap": "Give it a name",
-      "vo": "Give it a name."
-    },
-    "0018.png": {
-      "cap": "Write the procedure once",
-      "vo": "Then write the procedure once, in Markdown."
-    },
-    "0020.png": {
-      "hold": 3.6,
-      "cursor": false,
-      "cap": "Overview, steps, specs, advice and forbidden actions",
-      "cam": {
-        "x": 860,
-        "y": 330,
-        "z": 1.3
-      },
-      "camDur": 1.0,
-      "vo": "It has an overview, what Devin needs from you, the steps, specifications, advice, and forbidden actions."
-    },
-    "0021.png": {
-      "cursor": true,
-      "cam": "reset",
-      "camDur": 0.8
-    },
-    "0022.png": {
-      "cap": "Give it a macro",
-      "vo": "Give it a macro, so you can call it with one word."
-    },
-    "0031.png": {
-      "hold": 1.4
-    },
-    "0032.png": {
-      "cap": "Save it",
-      "vo": "Save it."
-    },
-    "0034.png": {
-      "hold": 0.8
-    },
-    "0035.png": {
-      "hold": 1.0,
-      "cap": "Start a new session",
-      "vo": "Start a new session."
-    },
-    "0036.png": {
-      "cap": "Type the macro",
-      "vo": "Type the macro,"
-    },
-    "0045.png": {
-      "hold": 1.8,
-      "cap": "Pick it from Macros",
-      "vo": "and pick it from the menu."
-    },
-    "0048.png": {
-      "hold": 2.6,
-      "cap": "The playbook attaches before you send",
-      "cam": {
-        "x": 760,
-        "y": 370,
-        "z": 1.3
-      },
-      "camDur": 0.9,
-      "vo": "The playbook is attached before you send."
-    },
-    "0049.png": {
-      "cam": "reset",
-      "camDur": 0.8,
-      "cap": "Add the repo",
-      "vo": "Add the repo, and say what to change."
-    },
-    "0053.png": {
-      "cap": "Then just say what to change"
-    },
-    "0065.png": {
-      "hold": 1.6
-    },
-    "0066.png": {
-      "cap": "Send",
-      "vo": "Then send it."
-    },
-    "0068.png": {
-      "skip": true
-    },
-    "0069.png": {
-      "skip": true
-    },
-    "0070.png": {
-      "skip": true
-    },
-    "0071.png": {
-      "skip": true
-    },
-    "0072.png": {
-      "skip": true
-    },
-    "0073.png": {
-      "hold": 1.6,
-      "badge": "Sped up",
-      "capPos": "bottom",
-      "cap": "Devin follows the playbook's steps",
-      "vo": "Devin follows the playbook's steps. It takes a before screenshot, makes the change, and takes an after screenshot."
-    },
-    "0074.png": {
-      "hold": 1.0
-    },
-    "0075.png": {
-      "hold": 1.0
-    },
-    "0076.png": {
-      "hold": 1.0
-    },
-    "0077.png": {
-      "skip": true
-    },
-    "0078.png": {
-      "skip": true
-    },
-    "0079.png": {
-      "skip": true
-    },
-    "0080.png": {
-      "skip": true
-    },
-    "0081.png": {
-      "skip": true
-    },
-    "0082.png": {
-      "skip": true
-    },
-    "0083.png": {
-      "skip": true
-    },
-    "0084.png": {
-      "skip": true
-    },
-    "0085.png": {
-      "skip": true
-    },
-    "0086.png": {
-      "skip": true
-    },
-    "0087.png": {
-      "skip": true
-    },
-    "0088.png": {
-      "skip": true
-    },
-    "0089.png": {
-      "skip": true
-    },
-    "0090.png": {
-      "skip": true
-    },
-    "0091.png": {
-      "skip": true
-    },
-    "0092.png": {
-      "skip": true
-    },
-    "0093.png": {
-      "skip": true
-    },
-    "0094.png": {
-      "skip": true
-    },
-    "0095.png": {
-      "skip": true
-    },
-    "0096.png": {
-      "skip": true
-    },
-    "0097.png": {
-      "skip": true
-    },
-    "0098.png": {
-      "skip": true
-    },
-    "0099.png": {
-      "skip": true
-    },
-    "0100.png": {
-      "skip": true
-    },
-    "0101.png": {
-      "skip": true
-    },
-    "0102.png": {
-      "skip": true
-    },
-    "0103.png": {
-      "skip": true
-    },
-    "0104.png": {
-      "skip": true
-    },
-    "0105.png": {
-      "hold": 1.4,
-      "badge": null,
-      "capPos": "bottom",
-      "cap": "Devin opened a PR",
-      "vo": "Then it opens a pull request."
-    },
-    "0106.png": {
-      "cap": "Open it"
-    },
-    "0110.png": {
-      "hold": 0.5
-    },
-    "0111.png": {
-      "capPos": "bottom",
-      "cap": "Check the description",
-      "vo": "The description has the before and after screenshots, just like the playbook says."
-    },
-    "0113.png": {
-      "hold": 0.22,
-      "cursor": false
-    },
-    "0114.png": {
-      "hold": 0.22
-    },
-    "0115.png": {
-      "hold": 0.22
-    },
-    "0116.png": {
-      "hold": 0.22
-    },
-    "0117.png": {
-      "hold": 0.22
-    },
-    "0118.png": {
-      "hold": 0.22
-    },
-    "0119.png": {
-      "hold": 0.22
-    },
-    "0120.png": {
-      "hold": 0.22
-    },
-    "0121.png": {
-      "hold": 0.22
-    },
-    "0122.png": {
-      "hold": 0.22
-    },
-    "0123.png": {
-      "hold": 0.22
-    },
-    "0124.png": {
-      "hold": 0.22
-    },
-    "0125.png": {
-      "hold": 0.22
-    },
-    "0126.png": {
-      "hold": 0.22
-    },
-    "0127.png": {
-      "hold": 5.0,
-      "capPos": "bottom",
-      "cap": "Before and after screenshots, just like the playbook says",
-      "cam": {
-        "x": 1095,
-        "y": 545,
-        "z": 1.75
-      },
-      "camDur": 1.2
-    },
-    "0033.png": {
-      "hold": 2.6,
-      "cap": "Now anyone in your org can use it",
-      "vo": "Now everyone in your organization can use it."
-    },
-    "0067.png": {
-      "hold": 0.5
-    }
-  },
-  "voOutro": "Write a procedure once, and reuse it with one macro."
+    "0000.png": { "hold": 2.6, "cursor": false, "hl": true, "cap": "Playbooks live in Settings", "vo": "Devin Playbooks are reusable prompts for the tasks you run again and again." },
+    "0001.png": { "cap": "Click Create playbook", "vo": "Create one in Settings, under Playbooks." },
+    "0003.png": { "cap": "Give it a name" },
+    "0004.png": { "vo": "Give it a name." },
+    "0018.png": { "vo": "Then write the procedure once, in Markdown. It has an overview, what Devin needs from you, the steps, specifications, advice, and forbidden actions.", "hl": true, "hold": 0.6 },
+    "0021.png": { "hold": 3.4, "cap": "Write the procedure once, in Markdown", "capPos": "bottom" },
+    "0022.png": { "hl": true, "cap": "Give it a macro", "vo": "Give it a macro, so you can call it with one word." },
+    "0032.png": { "hl": true, "hold": NARRATED ? 0.4 : 1.2 },
+    "0033.png": { "cap": "Save it", "vo": "Save it." },
+    "0035.png": { "hold": 2.2, "hlDelay": 0.75, "hl": true, "cap": "Everyone in your organization can use it", "vo": "Now everyone in your organization can use it." },
+    "0036.png": { "cap": "Start a new session", "vo": "Start a new session." },
+    "0037.png": { "vo": "Type the macro, and pick it from the Macros menu." },
+    "0046.png": { "hold": NARRATED ? 0.6 : 1.6, "hl": true, "cap": "Type the macro, then pick it from the Macros menu" },
+    "0048.png": { "vo": "The playbook is attached before you send." },
+    "0049.png": { "hold": 2.0, "hl": { "x": 721, "y": 404, "w": 859, "h": 151 }, "cap": "The playbook is attached before you send" },
+    "0050.png": { "cap": "Add the repo, and say what to change", "vo": "Add the repo, and say what to change." },
+    "0051.png": { "hold": 0.3 },
+    "0052.png": { "hold": 0.3 },
+    "0053.png": { "hold": 0.3 },
+    "0066.png": { "hold": 0.6 },
+    "0067.png": { "cap": "Send it", "vo": "Then send it." },
+    "0069.png": { "hold": 1.6, "hlDelay": 0.75, "hl": { "x": 518, "y": 189, "w": 470, "h": 30 }, "capPos": "bottom", "cap": "Devin shows the playbook it's using", "vo": "Devin shows which playbook it's using, and follows its steps." },
+    "0071.png": { "badge": "Sped up", "capPos": "bottom", "cap": "Before screenshot, the change, after screenshot", "vo": "It takes a before screenshot, makes the change, and takes an after screenshot." },
+    "0081.png": { "vo": "Then it opens a pull request." },
+    "0082.png": { "badge": "", "capPos": "bottom", "cap": "Then it opens a pull request" },
+    "0083.png": { "skip": NARRATED },
+    "0084.png": { "vo": "Open it right from the session.", "hold": NARRATED ? 0.6 : 1.4, "hl": { "x": 720, "y": 351, "w": 863, "h": 146 } },
+    "0085.png": { "skip": true },
+    "0086.png": { "cap": "Open the PR from the session" },
+    "0088.png": { "hold": 2.4, "capPos": "bottom", "cap": "A small change, as the playbook asks", "vo": "The change is small, just like the playbook asks." },
+    "0089.png": { "cap": "Open the Description" },
+    "0090.png": { "vo": "The description has the before and after screenshots, just like the playbook says." },
+    "0107.png": { "hold": 4.2, "hlDelay": 0.75, "hl": true, "capPos": "bottom", "cap": "Before and after screenshots, side by side" }
+  }
 };
