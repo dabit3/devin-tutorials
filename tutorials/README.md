@@ -21,7 +21,14 @@
 | 16 | Devin Automations: events | `16-automation-triggers/` |
 | 17 | Devin Security Swarm | `17-security-swarm/` |
 | 18 | iPhone and iPad apps on Mac VMs | `18-ios-ipad-mac-vms/` |
+| 20 | How Devin fits into your SDLC | `20-sdlc-integration/` |
+| 22 | The review loop closes itself | `22-review-loop/` |
 | 23 | Managed Devins: how it works (overview) | `23-managed-devins-overview/` |
+| 26 | Devin across the SDLC — expanded introduction (overview; 5:05 captioned / 5:25 Nader) | [Sources](26-sdlc-overview/) · [Captioned 4K](26-sdlc-overview/26-sdlc-overview.mp4) · [Nader 4K](26-sdlc-overview/26-sdlc-overview-nader.mp4) · [Captioned 1080p](26-sdlc-overview/26-sdlc-overview-1080p.mp4) · [Nader 1080p](26-sdlc-overview/26-sdlc-overview-nader-1080p.mp4) · [Script](26-sdlc-overview/voice-script.md) |
+| 28 | Devin on every platform (overview) | `28-multiplatform-overview/` |
+| 31 | Hardware and simulation test triage (overview) | `31-hardware-test-triage-overview/` |
+| 32 | Dynamic Workflows: how it works (overview) | `32-dynamic-workflows-overview/` |
+| 33 | Dynamic Workflows | `33-dynamic-workflows/` |
 | 34 | Devin Primitives: when to use what (overview) | `34-devin-primitives-overview/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
