@@ -26,10 +26,34 @@ window.SPEC = {
       "cursor": false,
       "scene": "modal",
       "capPos": "bottom",
-      "hold": 21.4,
+      "hold": 5,
       "vo": "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
       "voSay": "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
-      "cap": "Why Modal: no server, parallel checks, pay per second"
+      "cap": "Modal runs it on a schedule, no server to keep on"
+    },
+    "modal-2.png": {
+      "scene": "modal2",
+      "fade": 0,
+      "cursor": false,
+      "capPos": "bottom",
+      "hold": 5,
+      "cap": "Parallel .map() checks the claims across containers"
+    },
+    "modal-3.png": {
+      "scene": "modal3",
+      "fade": 0,
+      "cursor": false,
+      "capPos": "bottom",
+      "hold": 5,
+      "cap": "A modal.Dict keeps results, a Secret holds the xAI key"
+    },
+    "modal-4.png": {
+      "scene": "modal4",
+      "fade": 0,
+      "cursor": false,
+      "capPos": "bottom",
+      "hold": 6.40282,
+      "cap": "A public modal.run page that scales to zero"
     },
     "0002.png": {
       "cursor": false,
