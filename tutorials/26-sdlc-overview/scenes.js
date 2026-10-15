@@ -1,274 +1,190 @@
-// Overview diagrams (spec `scene:`), drawn in 1440x810 UI coords. s = seconds since the beat started.
-// Same language as tutorial 20's lifecycle intro: white cards, one thin blue accent, Devin marks.
 (() => {
-const BLUE = [32, 120, 255];
-const STAGES = [
-  ['Plan', 'Understand and scope'],
-  ['Build', 'Write the change'],
-  ['Test', 'Tests, lint, types'],
-  ['Review', 'First-pass review'],
-  ['Secure', 'Fix findings'],
-];
-const DETAIL = [
-  { line: 'Explore the codebase and scope the work', chips: ['Ask Devin', 'DeepWiki', 'Jira', 'Linear'] },
-  { line: 'Hand off the task; Devin works in its own environment', chips: ['Sessions', 'Slack', 'Microsoft Teams', 'Your PR template'] },
-  { line: 'Runs your checks before it opens the pull request', chips: ['Test suites', 'Lint', 'Type checks', 'Test playbooks'] },
-  { line: 'A first pass on every pull request', chips: ['Devin Review', 'Auto-Fix', '/devin comments', 'Your standards'] },
-  { line: 'Fixes what your security scanners flag', chips: ['SonarQube', 'Fortify', 'Veracode', 'Compliance changes'] },
-];
-const rgba = (c, a) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
-const GREY = 'rgba(25,25,25,.14)', SUB = 'rgba(25,25,25,.52)';
+const BLUE = '#2078ff', INK = '#191919', SUB = 'rgba(25,25,25,.55)', LINE = 'rgba(25,25,25,.15)';
+const STAGES = ['Understand', 'Build', 'Test', 'Review', 'Secure', 'Operate'];
+const enter = (k, s, t = 0, d = .75) => k.eOutQuint(k.prog(s, t, t + d));
 
-function eyebrow(ctx, k, text, y, a) {
-  ctx.save(); ctx.globalAlpha = k.alpha * a;
-  k.font(15, 500, 'JetBrains Mono'); ctx.fillStyle = 'rgba(25,25,25,.48)'; ctx.textBaseline = 'middle';
-  const w = k.spacedW(text, 2.6); k.spaced(text, k.VW / 2 - w / 2, y, 2.6); ctx.restore();
-}
-function card(ctx, k, x, y, w, h, a, on = 0, r = 16) {
+function text(ctx, k, value, x, y, size = 24, a = 1, weight = 500, color = INK, family = 'Inter') {
   if (a <= 0) return;
-  ctx.save(); ctx.globalAlpha = k.alpha * a;
-  ctx.shadowColor = 'rgba(0,0,0,.07)'; ctx.shadowBlur = 28; ctx.shadowOffsetY = 10;
-  k.rr(x, y, w, h, r); ctx.fillStyle = '#fff'; ctx.fill(); ctx.shadowColor = 'transparent';
-  k.rr(x + 0.5, y + 0.5, w - 1, h - 1, r); ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(25,25,25,.10)'; ctx.stroke();
-  if (on > 0) {
-    ctx.shadowColor = rgba(BLUE, 0.28 * on); ctx.shadowBlur = 24;
-    k.rr(x, y, w, h, r); ctx.lineWidth = 1.6; ctx.strokeStyle = rgba(BLUE, 0.95 * on); ctx.stroke();
+  ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.fillStyle = color; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  k.font(size, weight, family); ctx.fillText(value, x, y); ctx.restore();
+}
+function card(ctx, k, x, y, w, h, a = 1, active = 0, r = 20) {
+  if (a <= 0) return;
+  ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.shadowColor = 'rgba(0,0,0,.055)'; ctx.shadowBlur = 28; ctx.shadowOffsetY = 9;
+  k.rr(x - w / 2, y - h / 2, w, h, r); ctx.fillStyle = '#fff'; ctx.fill(); ctx.shadowColor = 'transparent';
+  ctx.lineWidth = active ? 1.6 : 1; ctx.strokeStyle = active ? `rgba(32,120,255,${active})` : 'rgba(25,25,25,.10)'; ctx.stroke(); ctx.restore();
+}
+function mark(ctx, k, x, y, size = 44, a = 1) {
+  ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.drawImage(k.AVATAR, x - size / 2, y - size / 2, size, size); ctx.restore();
+}
+function pill(ctx, k, value, x, y, a = 1) {
+  k.font(17, 500); const w = ctx.measureText(value).width + 38;
+  card(ctx, k, x, y, w, 42, a, 0, 21); text(ctx, k, value, x, y, 17, a);
+}
+function node(ctx, k, x, y, title, lines = [], a = 1, active = 0, w = 320, h = 144, avatar = false) {
+  const yy = y + 14 * (1 - a); card(ctx, k, x, yy, w, h, a, active);
+  if (avatar) mark(ctx, k, x, yy - 43, 34, a);
+  text(ctx, k, title, x, yy + (avatar ? -3 : -25), 27, a, 600);
+  lines.forEach((l, i) => text(ctx, k, l, x, yy + (avatar ? 34 : 17) + i * 26, 18, a, 400, SUB));
+}
+function link(ctx, k, x0, y0, x1, y1, s, t = 0, horizontal = false) {
+  const p = k.eInOut(k.prog(s, t, t + .9)), mx = (x0 + x1) / 2, my = (y0 + y1) / 2;
+  const P = u => {
+    const v = 1 - u, a = horizontal ? [mx, y0] : [x0, my], b = horizontal ? [mx, y1] : [x1, my];
+    return [v*v*v*x0 + 3*v*v*u*a[0] + 3*v*u*u*b[0] + u*u*u*x1, v*v*v*y0 + 3*v*v*u*a[1] + 3*v*u*u*b[1] + u*u*u*y1];
+  };
+  ctx.save(); ctx.globalAlpha = k.alpha;
+  ctx.beginPath(); ctx.moveTo(x0, y0); ctx.bezierCurveTo(horizontal ? mx : x0, horizontal ? y0 : my, horizontal ? mx : x1, horizontal ? y1 : my, x1, y1);
+  ctx.strokeStyle = LINE; ctx.lineWidth = 1.4; ctx.stroke();
+  if (p > 0) {
+    ctx.beginPath(); ctx.moveTo(x0, y0); for (let i = 1; i <= Math.ceil(48*p); i++) ctx.lineTo(...P(Math.min(p, i/48)));
+    ctx.strokeStyle = 'rgba(32,120,255,.6)'; ctx.stroke();
+  }
+  const u = (s - t) / 3.8 % 1;
+  if (s > t && u > .02 && u < .98) {
+    const [x, y] = P(u); ctx.beginPath(); ctx.arc(x, y, 4, 0, Math.PI*2); ctx.fillStyle = BLUE; ctx.globalAlpha *= Math.min(1, u*8, (1-u)*8); ctx.fill();
   }
   ctx.restore();
 }
-function text(ctx, k, s, x, y, size, weight, color, a, align = 'center', track = -0.2) {
-  if (a <= 0) return;
-  ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.textBaseline = 'middle'; k.font(size, weight); ctx.fillStyle = color;
-  const w = k.spacedW(s, track); k.spaced(s, align === 'center' ? x - w / 2 : x, y, track); ctx.restore();
-  return w;
+function rail(ctx, k, active) {
+  const w = 166, gap = 24, x0 = 720 - (6*w + 5*gap)/2;
+  ctx.save(); ctx.globalAlpha = k.alpha; ctx.strokeStyle = LINE; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x0+83, 65); ctx.lineTo(1440-x0-83, 65); ctx.stroke(); ctx.restore();
+  STAGES.forEach((l, i) => { const x = x0 + i*(w+gap) + w/2; card(ctx, k, x, 65, w, 44, 1, active === i ? .8 : 0, 22); text(ctx, k, l, x, 65, 16, 1, active === i ? 600 : 400, active === i ? BLUE : SUB); });
 }
-function label(ctx, k, x, y, title, sub, a, size = 27) {
-  text(ctx, k, title, x, y - (sub ? 15 : 0), size, 600, k.INK, a, 'center', -0.3);
-  if (sub) text(ctx, k, sub, x, y + 19, 16, 400, SUB, a, 'center', -0.1);
+function header(ctx, s, k, section, title, active = -1) {
+  rail(ctx, k, active); const a = enter(k, s, .05);
+  text(ctx, k, section, 720, 145, 14, a, 500, SUB, 'JetBrains Mono'); text(ctx, k, title, 720, 198, 38, a, 600);
 }
-function line(ctx, k, x0, x1, y, p, color, width = 1.5) {
-  if (p <= 0) return;
-  ctx.save(); ctx.globalAlpha = k.alpha; ctx.beginPath(); ctx.moveTo(x0, y); ctx.lineTo(k.lerp(x0, x1, p), y);
-  ctx.lineWidth = width; ctx.lineCap = 'round'; ctx.strokeStyle = color; ctx.stroke(); ctx.restore();
+function at(scene, phrase, fallback) {
+  const spec = window.SPEC, key = Object.keys(spec.edit).find(key => spec.edit[key].scene === scene);
+  const line = spec.voLines?.[key];
+  if (!line) return fallback;
+  const chunk = line.chunks.find(c => c.text.toLowerCase().includes(phrase.toLowerCase()));
+  return chunk ? Math.max(.4, chunk.t0) : fallback;
 }
-// Vertical-tangent cubic from (x0,y0) to (x1,y1), drawn up to p; returns the point at p.
-function curve(ctx, k, x0, y0, x1, y1, p, color, width = 1.5) {
-  const my = (y0 + y1) / 2, P = t => {
-    const u = 1 - t;
-    return [u * u * u * x0 + 3 * u * u * t * x0 + 3 * u * t * t * x1 + t * t * t * x1,
-            u * u * u * y0 + 3 * u * u * t * my + 3 * u * t * t * my + t * t * t * y1];
-  };
-  if (p <= 0) return P(0);
-  ctx.save(); ctx.globalAlpha = k.alpha; ctx.beginPath(); ctx.moveTo(x0, y0);
-  const n = 48; for (let i = 1; i <= n * p; i++) ctx.lineTo(...P(i / n)); ctx.lineTo(...P(p));
-  ctx.lineWidth = width; ctx.lineCap = 'round'; ctx.strokeStyle = color; ctx.stroke(); ctx.restore();
-  return P(p);
-}
-function dot(ctx, k, x, y, a, r = 5) {
-  if (a <= 0) return;
-  ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.shadowColor = rgba(BLUE, 0.5); ctx.shadowBlur = 14;
-  ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fillStyle = rgba(BLUE, 1); ctx.fill(); ctx.restore();
-}
-function check(ctx, k, cx, cy, p, a = 1) {
-  if (p <= 0) return;
-  ctx.save(); ctx.globalAlpha = k.alpha * a;
-  ctx.beginPath(); ctx.arc(cx, cy, 11, 0, Math.PI * 2); ctx.fillStyle = k.INK; ctx.fill();
-  const pts = [[cx - 4.6, cy + 0.2], [cx - 1.2, cy + 3.6], [cx + 5, cy - 3.4]];
-  ctx.beginPath(); ctx.moveTo(...pts[0]);
-  const seg = p * 2; ctx.lineTo(k.lerp(pts[0][0], pts[1][0], Math.min(1, seg)), k.lerp(pts[0][1], pts[1][1], Math.min(1, seg)));
-  if (seg > 1) ctx.lineTo(k.lerp(pts[1][0], pts[2][0], seg - 1), k.lerp(pts[1][1], pts[2][1], seg - 1));
-  ctx.lineWidth = 2; ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = '#fff'; ctx.stroke(); ctx.restore();
-}
-function mark(ctx, k, cx, cy, size, a) {
-  if (a <= 0) return;
-  ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.drawImage(k.AVATAR, cx - size / 2, cy - size / 2, size, size); ctx.restore();
-}
-function chip(ctx, k, x, y, s, a) {
-  k.font(17, 500); const w = k.spacedW(s, -0.1) + 32, h = 40, yy = y + 10 * (1 - a);
-  if (a > 0) {
-    ctx.save(); ctx.globalAlpha = k.alpha * a; k.rr(x, yy, w, h, 20); ctx.fillStyle = 'rgba(25,25,25,.04)'; ctx.fill();
-    k.rr(x + 0.5, yy + 0.5, w - 1, h - 1, 20); ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(25,25,25,.12)'; ctx.stroke(); ctx.restore();
-    text(ctx, k, s, x + 16, yy + h / 2 + 1, 17, 500, k.INK, a, 'left', -0.1);
-  }
-  return w;
-}
-
-// One Devin, every stage: the avatar on top, curves travelling down into each of the five stages.
-function idea(ctx, s, k) {
-  const n = STAGES.length, cw = 222, ch = 150, gap = 26, x0 = (k.VW - (n * cw + (n - 1) * gap)) / 2, y = 420;
-  const top = { x: k.VW / 2, y: 200 };
-  eyebrow(ctx, k, 'ONE DEVIN, EVERY STAGE', 108, k.eOut(k.prog(s, 0.05, 0.6)));
-  const ta = k.eOutQuint(k.prog(s, 0.1, 0.7));
-  card(ctx, k, top.x - 70, top.y - 62 + 14 * (1 - ta), 140, 124, ta, 0, 20);
-  mark(ctx, k, top.x, top.y - 12 + 14 * (1 - ta), 46, ta);
-  text(ctx, k, 'Devin', top.x, top.y + 36 + 14 * (1 - ta), 20, 600, k.INK, ta);
-  STAGES.forEach(([t, sub], i) => {
-    const x = x0 + i * (cw + gap), cx = x + cw / 2, d = 0.9 + i * 0.22;
-    const a = k.eOutQuint(k.prog(s, 0.4 + i * 0.08, 1.0 + i * 0.08)), yy = y + 18 * (1 - a);
-    const p = k.eInOut(k.prog(s, d, d + 0.9));
-    curve(ctx, k, top.x, top.y + 62, cx, y, 1, GREY);
-    const pt = curve(ctx, k, top.x, top.y + 62, cx, y, p, rgba(BLUE, 0.9), 1.8);
-    dot(ctx, k, pt[0], pt[1], p > 0 && p < 1 ? 1 : 0);
-    const on = k.eOutQuint(k.prog(s, d + 0.8, d + 1.2));
-    card(ctx, k, x, yy, cw, ch, a, on);
-    label(ctx, k, cx, yy + ch / 2, t, sub, a);
-  });
-}
-
-// One stage in focus: the row of five on top (earlier ones checked), a curve down to what Devin does there.
-function stage(i) {
+function flow(scene, section, title, active, nodes, footer) {
   return (ctx, s, k) => {
-    const n = STAGES.length, pw = 182, ph = 56, gap = 22, x0 = (k.VW - (n * pw + (n - 1) * gap)) / 2, py = 120;
-    const lx0 = x0 + pw / 2, lx1 = x0 + (n - 1) * (pw + gap) + pw / 2;
-    line(ctx, k, lx0, lx1, py + ph / 2, 1, GREY);
-    const prev = x0 + Math.max(0, i - 1) * (pw + gap) + pw / 2, cur = x0 + i * (pw + gap) + pw / 2;
-    line(ctx, k, lx0, k.lerp(prev, cur, k.eInOut(k.prog(s, 0.05, 0.6))), py + ph / 2, 1, rgba(BLUE, 0.9), 1.8);
-    const on = k.eOutQuint(k.prog(s, 0.45, 0.9));
-    STAGES.forEach(([t], j) => {
-      const x = x0 + j * (pw + gap);
-      card(ctx, k, x, py, pw, ph, 1, j === i ? on : 0, 28);
-      text(ctx, k, t, x + pw / 2, py + ph / 2 + 1, 20, 600, j > i ? 'rgba(25,25,25,.42)' : k.INK, 1);
-      if (j < i) check(ctx, k, x + pw - 4, py + 4, 1, 1);
+    header(ctx, s, k, section, title, active);
+    nodes.forEach((n, i) => {
+      const t = at(scene, n.cue || n.title, .6+i*1.05), x = [300,720,1140][i];
+      if (i) link(ctx, k, x-260, 401, x-160, 401, s, t, true);
+      node(ctx, k, x, 401, n.title, n.lines, enter(k,s,t), i===1 ? .6 : 0, 320, 154, n.avatar);
     });
-    const D = DETAIL[i], cx = 260, cy = 330, cw = 920, chh = 250;
-    const cp = k.eInOut(k.prog(s, 0.6, 1.2));
-    curve(ctx, k, cur, py + ph, k.VW / 2, cy, cp, rgba(BLUE, 0.9), 1.6);
-    const a = k.eOutQuint(k.prog(s, 1.0, 1.6)), yy = cy + 16 * (1 - a);
-    card(ctx, k, cx, yy, cw, chh, a, 0, 20);
-    mark(ctx, k, cx + 82, yy + 82, 52, a);
-    text(ctx, k, STAGES[i][0], cx + 140, yy + 66, 40, 650, k.INK, a, 'left', -0.6);
-    text(ctx, k, D.line, cx + 140, yy + 112, 22, 400, SUB, a, 'left', -0.2);
-    let x = cx + 140;
-    D.chips.forEach((c, j) => { x += chip(ctx, k, x, yy + 160, c, k.eOutQuint(k.prog(s, 1.5 + j * 0.28, 2.0 + j * 0.28))) + 12; });
+    if (footer) pill(ctx, k, footer, 720, 594, enter(k,s,3.5));
   };
 }
-
-// The loop: review findings and CI results flow back to Devin as fixes until the PR is merge-ready.
-function loop(ctx, s, k) {
-  eyebrow(ctx, k, 'THE STAGES FEED EACH OTHER', 108, k.eOut(k.prog(s, 0.05, 0.6)));
-  const C = { x: k.VW / 2, y: 385 }, R = { x: 390, y: 195 };
-  const nodes = [
-    { a: -Math.PI / 2, t: 'Pull request', sub: 'Devin opens it' },
-    { a: 0, t: 'Review and CI', sub: 'Devin Review, checks' },
-    { a: Math.PI / 2, t: 'Feedback', sub: 'Comments, bugs, CI failures' },
-    { a: Math.PI, t: 'Devin fixes', sub: 'Pushes to the same PR' },
-  ];
-  const at = ang => [C.x + R.x * Math.cos(ang), C.y + R.y * Math.sin(ang)];
-  const draw = k.eInOut(k.prog(s, 0.3, 1.8));
-  const ring = (p, color, width) => {
-    if (p <= 0) return; ctx.save(); ctx.globalAlpha = k.alpha; ctx.beginPath();
-    ctx.ellipse(C.x, C.y, R.x, R.y, 0, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * p);
-    ctx.lineWidth = width; ctx.strokeStyle = color; ctx.lineCap = 'round'; ctx.stroke(); ctx.restore();
-  };
-  ring(draw, GREY, 1.5);
-  // Signal goes round twice, then settles at the top as merge-ready.
-  const sig = k.prog(s, 2.0, 7.0), turns = 2 * k.eInOut(sig), ang = -Math.PI / 2 + Math.PI * 2 * turns;
-  if (sig > 0 && sig < 1) {
-    ctx.save(); ctx.globalAlpha = k.alpha; ctx.beginPath();
-    ctx.ellipse(C.x, C.y, R.x, R.y, 0, ang - 0.7, ang); ctx.lineWidth = 2; ctx.strokeStyle = rgba(BLUE, 0.85); ctx.lineCap = 'round'; ctx.stroke(); ctx.restore();
-    const [dx, dy] = at(ang); dot(ctx, k, dx, dy, 1);
-  }
-  const ca = k.eOutQuint(k.prog(s, 0.6, 1.2));
-  mark(ctx, k, C.x, C.y - 30, 50, ca);
-  text(ctx, k, 'Auto-Fix', C.x, C.y + 22, 27, 600, k.INK, ca, 'center', -0.3);
-  text(ctx, k, 'Iterates until the PR is ready', C.x, C.y + 56, 17, 400, SUB, ca);
-  nodes.forEach((n, i) => {
-    const [x, y] = at(n.a), w = 262, h = 92, a = k.eOutQuint(k.prog(s, 0.5 + i * 0.35, 1.1 + i * 0.35));
-    const d = Math.abs(Math.atan2(Math.sin(ang - n.a), Math.cos(ang - n.a)));
-    const glow = sig > 0 && sig < 1 ? Math.max(0, 1 - d / 0.5) : 0;
-    card(ctx, k, x - w / 2, y - h / 2 + 12 * (1 - a), w, h, a, glow);
-    label(ctx, k, x, y + 12 * (1 - a), n.t, n.sub, a, 22);
+function overview(ctx, s, k) {
+  text(ctx,k,'DEVIN ACROSS THE SOFTWARE LIFECYCLE',720,112,15,enter(k,s),500,SUB,'JetBrains Mono');
+  const labels = [['Understand','Code and context'],['Build','Implement the change'],['Test','Verify the behavior'],['Review','Find and fix issues'],['Secure','Address findings'],['Operate','Turn signals into work']];
+  const pos = [[300,262],[720,262],[1140,262],[1140,552],[720,552],[300,552]];
+  pos.forEach(([x,y],i) => {
+    const from = i < 3 ? [720,354] : [720,464]; link(ctx,k,...from,x,y+(i<3?52:-52),s,1+i*.45);
+    node(ctx,k,x,y,labels[i][0],[labels[i][1]],enter(k,s,.5+i*.2),0,280,104);
   });
-  const done = k.eOut(k.prog(s, 7.0, 7.5)), [tx, ty] = at(-Math.PI / 2);
-  check(ctx, k, tx + 131 - 4, ty - 46 + 4, done, 1);
-  if (done > 0) text(ctx, k, 'Merge-ready', tx + 131 + 24, ty - 42, 17, 600, k.INK, done, 'left');
+  card(ctx,k,720,409,168,112,enter(k,s,.2),.7); mark(ctx,k,720,390,38,enter(k,s,.2)); text(ctx,k,'Devin',720,434,23,enter(k,s,.2),600);
 }
-
-// Where the whole lifecycle pays off: four cards, each with a small diagram.
-function uses(ctx, s, k) {
-  eyebrow(ctx, k, 'WHERE IT PAYS OFF', 108, k.eOut(k.prog(s, 0.05, 0.6)));
-  const cards = [
-    ['Parallel delegation', 'Repetitive work, many sessions'],
-    ['Migrations', 'Across hundreds of repositories'],
-    ['Test coverage', 'New tests from your playbooks'],
-    ['Security backlog', 'Scanner findings fixed as PRs'],
-  ];
-  const n = cards.length, cw = 300, ch = 360, gap = 28, x0 = (k.VW - (n * cw + (n - 1) * gap)) / 2, y = 190;
-  cards.forEach(([t, sub], i) => {
-    const t0 = 0.3 + i * 1.6, a = k.eOutQuint(k.prog(s, t0, t0 + 0.6)), x = x0 + i * (cw + gap), yy = y + 18 * (1 - a);
-    const p = q => k.prog(s, t0 + 0.4 + q, t0 + 1.4 + q), cx = x + cw / 2, top = yy + 30;
-    card(ctx, k, x, yy, cw, ch, a, 0, 20);
-    ctx.save(); ctx.globalAlpha = a; // diagram area: top ~200px
-    if (i === 0) {
-      mark(ctx, k, cx, top + 30, 34, a);
-      [-1, 0, 1].forEach((d, j) => {
-        const bx = cx + d * 82, by = top + 150, q = k.eInOut(p(j * 0.15));
-        curve(ctx, k, cx, top + 52, bx, by - 24, 1, GREY);
-        const pt = curve(ctx, k, cx, top + 52, bx, by - 24, q, rgba(BLUE, 0.9), 1.6);
-        dot(ctx, k, pt[0], pt[1], q > 0 && q < 1 ? a : 0, 4);
-        card(ctx, k, bx - 28, by - 24, 56, 48, a * k.eOut(k.prog(s, t0 + 1.1 + j * 0.15, t0 + 1.4 + j * 0.15)), 0, 12);
-        mark(ctx, k, bx, by, 24, a * k.eOut(k.prog(s, t0 + 1.1 + j * 0.15, t0 + 1.4 + j * 0.15)));
-      });
-    } else if (i === 1) {
-      const cols = 6, rows = 4, sz = 26, g = 10, gx = cx - (cols * sz + (cols - 1) * g) / 2;
-      for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) {
-        const j = r * cols + c, f = k.eOut(k.prog(s, t0 + 0.5 + j * 0.045, t0 + 0.75 + j * 0.045));
-        const bx = gx + c * (sz + g), by = top + 14 + r * (sz + g);
-        ctx.save(); ctx.globalAlpha = k.alpha * a; k.rr(bx, by, sz, sz, 6);
-        ctx.fillStyle = 'rgba(25,25,25,.06)'; ctx.fill(); if (f > 0) { ctx.globalAlpha = k.alpha * a * f; ctx.fillStyle = rgba(BLUE, 0.85); ctx.fill(); } ctx.restore();
-      }
-    } else if (i === 2) {
-      const bw = 220, bh = 18, bx = cx - bw / 2, f = k.eInOut(p(0));
-      [['Before', 0.45, 0], ['After', k.lerp(0.45, 0.92, f), 1]].forEach(([l, v, blue], j) => {
-        const by = top + 34 + j * 72;
-        text(ctx, k, l, bx, by - 18, 15, 500, SUB, a, 'left');
-        ctx.save(); ctx.globalAlpha = k.alpha * a; k.rr(bx, by, bw, bh, 9); ctx.fillStyle = 'rgba(25,25,25,.06)'; ctx.fill();
-        k.rr(bx, by, bw * v, bh, 9); ctx.fillStyle = blue ? rgba(BLUE, 0.85) : 'rgba(25,25,25,.28)'; ctx.fill(); ctx.restore();
-      });
-      text(ctx, k, '90%+', bx + bw, top + 34 + 72 - 18, 15, 600, k.INK, a * k.eOut(p(0.8)), 'left');
-    } else {
-      [0, 1, 2, 3].forEach(j => {
-        const by = top + 6 + j * 40, f = k.eOut(p(j * 0.25)), rx = cx - 110;
-        ctx.save(); ctx.globalAlpha = k.alpha * a; k.rr(rx, by, 220, 30, 8); ctx.fillStyle = 'rgba(25,25,25,.04)'; ctx.fill();
-        k.rr(rx + 14, by + 11, 120 - j * 14, 8, 4); ctx.fillStyle = 'rgba(25,25,25,.16)'; ctx.fill(); ctx.restore();
-        check(ctx, k, rx + 200, by + 15, f, a);
-      });
-    }
-    ctx.restore();
-    label(ctx, k, cx, yy + ch - 74, t, sub, a, 24);
+function fusion(ctx,s,k) {
+  header(ctx,s,k,'HOW THE WORK GETS DONE','Fusion: one Devin, two complementary models',1);
+  const t0 = at('fusion','lead',1), t1 = at('fusion','sidekick',4);
+  card(ctx,k,720,311,230,92,enter(k,s,.6),.6); mark(ctx,k,655,311,38,enter(k,s,.6)); text(ctx,k,'Your task',752,311,24,enter(k,s,.6),600);
+  link(ctx,k,650,357,460,417,s,t0); link(ctx,k,790,357,980,417,s,t1);
+  node(ctx,k,460,489,'Frontier lead',['Plans and investigates','Checks correctness'],enter(k,s,t0),.6,370,144);
+  node(ctx,k,980,489,'Efficient sidekick',['Implements the plan','Runs builds and tests'],enter(k,s,t1),0,370,144);
+  pill(ctx,k,'Choose Fusion in Devin CLI or Desktop',720,620,enter(k,s,6));
+}
+function adaptive(ctx,s,k) {
+  header(ctx,s,k,'MODEL CHOICE','Model routing and model collaboration are different',1);
+  const a = enter(k,s,.6); node(ctx,k,435,402,'Fusion',['Lead + sidekick','Collaborate on the same task'],a,.6,450,185);
+  node(ctx,k,1005,402,'Adaptive',['Routes each request','Selects an underlying model'],enter(k,s,at('adaptive','Adaptive',3)),0,450,185);
+  pill(ctx,k,'The right level of intelligence for the work',720,594,enter(k,s,5));
+}
+function managed(ctx,s,k) {
+  header(ctx,s,k,'PARALLEL EXECUTION','A coordinator for work that spans many modules',1);
+  node(ctx,k,720,321,'Coordinator',['Scopes work and combines results'],enter(k,s,.6),.7,380,100,true);
+  [350,720,1090].forEach((x,i) => {
+    link(ctx,k,720,372,x,432,s,1.7+i*.3);
+    node(ctx,k,x,490,'Managed Devin',[['Module A','Module B','Module C'][i],'Its own isolated VM'],enter(k,s,2.3+i*.3),0,290,154,true);
+  });
+  pill(ctx,k,'Migrations • Test coverage • Work across repositories',720,620,enter(k,s,4));
+}
+function services(ctx,s,k) {
+  header(ctx,s,k,'MCP IN PRACTICE','Bring runtime evidence into the investigation',5);
+  node(ctx,k,720,334,'Devin',['Investigates with connected tools'],enter(k,s,.5),.7,410,108,true);
+  const data = [['Datadog',['Logs and observability']],['Sentry',['Errors and event context']],['Metabase',['Data and analytics context']]];
+  data.forEach(([title,lines],i) => {
+    const x=[300,720,1140][i],t=at('services',title,1.4+i*1.5); link(ctx,k,x,474,720,389,s,t);
+    node(ctx,k,x,532,title,lines,enter(k,s,t),0,320,116);
+  });
+  text(ctx,k,'Available tools depend on the server and permissions you connect',720,640,18,enter(k,s,6),400,SUB);
+}
+function automation(ctx,s,k) {
+  header(ctx,s,k,'WHEN WORK STARTS','Automations connect a signal to an action',5);
+  const data=[['Trigger',['Event or schedule']],['Conditions',['Match only what matters']],['Action',['Start or message a session']]];
+  data.forEach(([title,lines],i)=>{
+    const x=[300,720,1140][i],t=.8+i*1.2; if(i) link(ctx,k,x-260,393,x-160,393,s,t,true);
+    node(ctx,k,x,393,title,lines,enter(k,s,t),i===2?.7:0,320,145,i===2);
+  });
+  pill(ctx,k,'The event payload becomes session context',720,572,enter(k,s,4.5));
+}
+function triggers(ctx,s,k) {
+  header(ctx,s,k,'RECURRING AND EVENT-DRIVEN WORK','Start the right task at the right time',5);
+  [['CI failure','Fix the failing branch'],['Schedule','Sweep errors or update dependencies'],['Webhook','Investigate an external alert']].forEach(([title,sub],i)=>{
+    const x=[300,720,1140][i],t=.5+i*1.25; node(ctx,k,x,377,title,[sub],enter(k,s,t),0,338,132);
+    link(ctx,k,x,444,720,528,s,t+.7);
+  });
+  card(ctx,k,720,572,560,88,enter(k,s,4),.6); mark(ctx,k,500,572,36,enter(k,s,4)); text(ctx,k,'Devin picks up the work automatically',750,572,23,enter(k,s,4),600);
+}
+function incident(ctx,s,k) {
+  header(ctx,s,k,'AN EXAMPLE OF THE FULL LOOP','Production feedback becomes the next improvement',5);
+  const labels=[['Alert','Webhook or schedule'],['Investigate','MCP tools + code'],['Fix and verify','Tests + a pull request'],['Human review','Merge and release']];
+  const pos=[[370,329],[1070,329],[1070,556],[370,556]], starts=[.5,at('incident','investigate',2.5),at('incident','test',5.5),at('incident','team',8.5)];
+  pos.forEach(([x,y],i)=>{
+    const [nx,ny]=pos[(i+1)%4],horizontal=y===ny;
+    link(ctx,k,x+(horizontal?(nx>x?160:-160):0),y+(horizontal?0:(ny>y?55:-55)),nx+(horizontal?(nx>x?-160:160):0),ny+(horizontal?0:(ny>y?-55:55)),s,starts[i]+.7,horizontal);
+  });
+  pos.forEach(([x,y],i)=>node(ctx,k,x,y,labels[i][0],[labels[i][1]],enter(k,s,starts[i]),0,320,110));
+  mark(ctx,k,720,428,48,enter(k,s,1)); text(ctx,k,'Your engineering process',720,477,18,enter(k,s,1),500,SUB);
+}
+function practices(ctx,s,k) {
+  header(ctx,s,k,'HOW YOUR TEAM WORKS','Reusable procedures, not a new prompt every time');
+  node(ctx,k,310,403,'Skills',['Discoverable procedures','Versioned with your code'],enter(k,s,at('practices','Skills',.6)),.6,335,166);
+  node(ctx,k,720,403,'Playbooks',['Reusable task instructions','Attached to sessions'],enter(k,s,at('practices','playbooks',2.5)),0,335,166);
+  node(ctx,k,1130,403,'Personal memory',['Preferences and lessons','For your future sessions'],enter(k,s,at('practices','memory',4.5)),0,335,166);
+  text(ctx,k,'Automation-started sessions do not use personal memory',720,593,18,enter(k,s,6.5),400,SUB);
+}
+function uses(ctx,s,k) {
+  header(ctx,s,k,'WHERE THE LIFECYCLE PAYS OFF','Delegate an outcome, not just a coding step');
+  const cards=[['Ship a feature',['Understand → build → verify']],['Migrate a system',['Coordinate parallel changes']],['Raise test coverage',['Write tests → run checks']],['Reduce security backlog',['Findings → reviewed fixes']]];
+  cards.forEach(([title,lines],i)=>{
+    const x=i%2?1015:425,y=i<2?350:548,a=enter(k,s,.5+i*1.6);
+    node(ctx,k,x,y,title,lines,a,0,490,138);
   });
 }
-
-// Inside your process: Devin's PR passes the same gates as anyone's, and a human decides the merge.
-function process(ctx, s, k) {
-  eyebrow(ctx, k, 'INSIDE YOUR PROCESS', 262, k.eOut(k.prog(s, 0.05, 0.6)));
-  const nodes = [
-    { t: 'Devin', w: 168 }, { t: 'Pull request', sub: 'Your PR template', w: 228 },
-    { t: 'Branch protections', sub: 'Required checks', w: 276 }, { t: 'Human review', sub: 'You decide', w: 228 }, { t: 'Merge', w: 168 },
-  ];
-  const gap = 40, total = nodes.reduce((a, b) => a + b.w, 0) + gap * (nodes.length - 1), y = 334, h = 160, cy = y + h / 2;
-  let x = (k.VW - total) / 2; nodes.forEach(n => { n.x = x; n.cx = x + n.w / 2; x += n.w + gap; });
-  const first = nodes[0].cx, last = nodes[nodes.length - 1].cx;
-  line(ctx, k, first, last, cy, k.eInOut(k.prog(s, 0.2, 1.2)), GREY);
-  const T = i => 1.3 + i * 1.15;
-  const flow = k.prog(s, T(0), T(nodes.length - 1));
-  const seg = flow * (nodes.length - 1), i0 = Math.floor(seg), f0 = k.eInOut(seg - i0);
-  const px = i0 >= nodes.length - 1 ? last : k.lerp(nodes[i0].cx, nodes[i0 + 1].cx, f0);
-  line(ctx, k, first, px, cy, flow > 0 ? 1 : 0, rgba(BLUE, 0.9), 1.8);
-  nodes.forEach((n, i) => {
-    const a = k.eOutQuint(k.prog(s, 0.1 + i * 0.09, 0.7 + i * 0.09)), yy = y + 18 * (1 - a);
-    const on = k.eOutQuint(k.prog(s, T(i) - 0.1, T(i) + 0.35));
-    if (i === nodes.length - 1) {
-      card(ctx, k, n.x, yy, n.w, h, a);
-      ctx.save(); ctx.globalAlpha = k.alpha * a * on; k.rr(n.x, yy, n.w, h, 16); ctx.fillStyle = k.INK; ctx.fill(); ctx.restore();
-      text(ctx, k, n.t, n.cx, yy + h / 2, 27, 600, on > 0.5 ? '#fff' : k.INK, a, 'center', -0.3);
-      return;
-    }
-    card(ctx, k, n.x, yy, n.w, h, a, i === 0 ? 0 : on * (1 - k.prog(s, T(i + 1) - 0.2, T(i + 1) + 0.4) * 0.65));
-    if (i === 0) { mark(ctx, k, n.cx, yy + 62, 42, a); text(ctx, k, n.t, n.cx, yy + 116, 22, 600, k.INK, a, 'center', -0.3); }
-    else { label(ctx, k, n.cx, yy + h / 2, n.t, n.sub, a); check(ctx, k, n.x + n.w - 4, yy + 4, k.eOut(k.prog(s, T(i) + 0.15, T(i) + 0.55)), on); }
+function system(ctx,s,k) {
+  header(ctx,s,k,'ONE CONNECTED SYSTEM','Context, execution, feedback and human control');
+  const data=[['Understand',['DeepWiki + Ask Devin']],['Execute',['Sessions + managed Devins']],['Connect',['MCP tools + automations']],['Govern',['Tests + review + your pipeline']]];
+  data.forEach(([title,lines],i)=>{
+    const x=[240,560,880,1200][i],t=.6+i*1.25;
+    if(i)link(ctx,k,x-185,409,x-135,409,s,t,true);
+    node(ctx,k,x,409,title,lines,enter(k,s,t),0,270,150);
   });
+  pill(ctx,k,'Devin does the work. Your team decides what ships.',720,596,enter(k,s,5.5));
 }
 
-window.SCENES = { idea, plan: stage(0), build: stage(1), test: stage(2), review: stage(3), secure: stage(4), loop, uses, process };
+window.SCENES = {
+  overview,
+  deepwiki: flow('deepwiki','UNDERSTAND THE SYSTEM','DeepWiki gives the codebase a readable map',0,[{title:'Your repository',lines:['Source code and structure'],cue:'repositories'},{title:'DeepWiki',lines:['Documentation and diagrams'],avatar:true},{title:'Shared understanding',lines:['Architecture and source links'],cue:'architecture'}],'Start with context, before making a change'),
+  plan: flow('plan','SCOPE THE CHANGE','Turn codebase questions and tickets into a plan',0,[{title:'Ask Devin',lines:['Answers grounded in code'],cue:'Ask Devin'},{title:'Plan the work',lines:['Relevant files and approach'],cue:'plan'},{title:'Jira or Linear',lines:['Analyze and scope tickets'],cue:'tickets'}],'Explore first. Delegate with the right context.'),
+  build: flow('build','IMPLEMENT THE CHANGE','Devin works in its own development environment',1,[{title:'Your task',lines:['A goal and acceptance criteria'],cue:'task'},{title:'Devin session',lines:['Code, shell and browser'],avatar:true,cue:'environment'},{title:'Pull request',lines:['Your repository conventions'],cue:'pull request'}],'Repo blueprints prepare tools and dependencies'),
+  fusion, adaptive, managed,
+  test: flow('test','VERIFY THE CHANGE','Run the checks your repository already uses',2,[{title:'Implementation',lines:['Code under test'],cue:'tests'},{title:'Test and fix',lines:['Test suites, lint and types'],avatar:true,cue:'lint'},{title:'Evidence',lines:['Report what was checked'],cue:'checked'}],'Write new tests using your team’s patterns'),
+  computer: flow('computer','TEST BEHAVIOR, NOT ONLY CODE','Computer Use adds the user’s point of view',2,[{title:'Running application',lines:['Browser or desktop'],cue:'Computer Use'},{title:'Devin tests the UI',lines:['Clicks, types and observes'],avatar:true,cue:'interface'},{title:'Visual evidence',lines:['Recordings and screenshots'],cue:'recordings'}],'Exercise the flow a real user would follow'),
+  review: flow('review','REVIEW AND ITERATE','A first pass, followed by a feedback loop',3,[{title:'Devin Review',lines:['Correctness and team standards'],cue:'Review'},{title:'Feedback',lines:['Bugs, comments and CI failures'],cue:'comments'},{title:'Auto-Fix',lines:['Responds when enabled'],avatar:true,cue:'Auto-Fix'}],'Push fixes back to the same pull request'),
+  secure: flow('secure','SECURITY AND COMPLIANCE','Address findings from your existing scanners',4,[{title:'Your scanners',lines:['SonarQube, Fortify, Veracode'],cue:'security'},{title:'Devin investigates',lines:['Works through the finding'],avatar:true,cue:'scanners'},{title:'Fix pull requests',lines:['Reviewed changes across repos'],cue:'changes'}],'Not a replacement for your security policies'),
+  ship: flow('ship','SHIP THROUGH YOUR PROCESS','Human review stays in the delivery path',3,[{title:'Devin’s pull request',lines:['Normal branch protections'],cue:'pull requests'},{title:'Your team',lines:['Reviews and decides to merge'],cue:'team'},{title:'Your delivery pipeline',lines:['Existing CI/CD and releases'],cue:'pipeline'}],'Your controls. Your infrastructure. Your decision.'),
+  mcp: flow('mcp','EXTEND DEVIN’S REACH','MCP connects Devin to external tools and data',5,[{title:'Connected systems',lines:['Tools and data sources'],cue:'MCP'},{title:'MCP servers',lines:['Expose authorized tools'],cue:'servers'},{title:'Devin session',lines:['Uses tools in the task'],avatar:true,cue:'tools'}],'Install a plugin, then authorize its connection'),
+  services,
+  data: flow('data','UNDERSTAND THE IMPACT','Connected data can inform the next decision',5,[{title:'Connected data',lines:['Database and analytics MCPs'],cue:'data'},{title:'Data Analyst',lines:['Queries and visualizations'],avatar:true,cue:'Data Analyst'},{title:'Engineering context',lines:['Metrics, trends and anomalies'],cue:'metrics'}],'Available from Slack or the web app'),
+  automation, triggers, incident, practices, uses, system
+};
 })();
