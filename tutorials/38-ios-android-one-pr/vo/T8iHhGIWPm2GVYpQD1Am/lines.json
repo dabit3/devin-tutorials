@@ -1,0 +1,3198 @@
+{
+ "0000.png": {
+  "text": "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+  "dur": 4.32,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.113,
+    "text": "Let's ship one mobile feature to both iPhone"
+   },
+   {
+    "t0": 2.136,
+    "t1": 4.32,
+    "text": "and Android, using two Devin sessions."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+  "dur": 8.615,
+  "takeAt": 4.565,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.044,
+    "t1": 2.134,
+    "text": "A macOS session will test the iPhone app"
+   },
+   {
+    "t0": 2.18,
+    "t1": 3.341,
+    "text": "in the iOS Simulator,"
+   },
+   {
+    "t0": 3.516,
+    "t1": 5.466,
+    "text": "and an Ubuntu session will test the Android"
+   },
+   {
+    "t0": 5.512,
+    "t1": 6.511,
+    "text": "app in an emulator,"
+   },
+   {
+    "t0": 6.662,
+    "t1": 8.615,
+    "text": "with both results on one pull request."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+  "dur": 6.284,
+  "takeAt": 13.556,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.198,
+    "text": "Open the platform menu below the prompt box"
+   },
+   {
+    "t0": 2.256,
+    "t1": 3.359,
+    "text": "and pick macOS,"
+   },
+   {
+    "t0": 3.475,
+    "t1": 6.284,
+    "text": "which comes with Xcode and the iOS Simulator installed."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+  "dur": 4.085,
+  "takeAt": 20.375,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.105,
+    "t1": 1.591,
+    "text": "Mention the Jumpy Otter repo,"
+   },
+   {
+    "t0": 1.765,
+    "t1": 3.332,
+    "text": "a small game with an iPhone app and"
+   },
+   {
+    "t0": 3.367,
+    "t1": 4.085,
+    "text": "an Android app."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+  "dur": 10.915,
+  "takeAt": 24.855,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.06,
+    "t1": 2.219,
+    "text": "Ask for lifetime stats on both apps,"
+   },
+   {
+    "t0": 2.347,
+    "t1": 4.321,
+    "text": "showing games played and total hops under the"
+   },
+   {
+    "t0": 4.367,
+    "t1": 6.387,
+    "text": "high score, saved between launches."
+   },
+   {
+    "t0": 6.666,
+    "t1": 8.222,
+    "text": "Then ask Devin to test it in the"
+   },
+   {
+    "t0": 8.28,
+    "t1": 10.915,
+    "text": "iPhone simulator and post a recording on the pull request."
+   }
+  ]
+ },
+ "0013.png": {
+  "text": "Devin starts a macOS session and gets to work.",
+  "dur": 2.387,
+  "takeAt": 36.103,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.387,
+    "text": "Devin starts a macOS session and gets to work."
+   }
+  ]
+ },
+ "0014.png": {
+  "text": "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+  "dur": 5.275,
+  "takeAt": 38.785,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.05,
+    "t1": 0.979,
+    "text": "In the Computer tab,"
+   },
+   {
+    "t0": 1.002,
+    "t1": 2.628,
+    "text": "you can watch it change both apps,"
+   },
+   {
+    "t0": 2.778,
+    "t1": 3.951,
+    "text": "build the iOS version,"
+   },
+   {
+    "t0": 3.986,
+    "t1": 5.275,
+    "text": "and play it in the Simulator."
+   }
+  ]
+ },
+ "0035.png": {
+  "text": "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+  "dur": 4.905,
+  "takeAt": 44.295,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.078,
+    "t1": 1.75,
+    "text": "The new counters sit right under the high"
+   },
+   {
+    "t0": 1.785,
+    "t1": 3.782,
+    "text": "score, with games played on the left and"
+   },
+   {
+    "t0": 3.84,
+    "t1": 4.905,
+    "text": "total hops on the right."
+   }
+  ]
+ },
+ "0099.png": {
+  "text": "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+  "dur": 4.805,
+  "takeAt": 49.565,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.091,
+    "t1": 0.822,
+    "text": "When it's done,"
+   },
+   {
+    "t0": 0.973,
+    "t1": 2.715,
+    "text": "Devin sends a recording of its test,"
+   },
+   {
+    "t0": 2.831,
+    "t1": 4.805,
+    "text": "and posts its results on the pull request."
+   }
+  ]
+ },
+ "0104.png": {
+  "text": "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+  "dur": 4.485,
+  "takeAt": 54.705,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.059,
+    "t1": 1.847,
+    "text": "The counters go from zero to one,"
+   },
+   {
+    "t0": 2.056,
+    "t1": 2.985,
+    "text": "survive a relaunch,"
+   },
+   {
+    "t0": 3.008,
+    "t1": 4.485,
+    "text": "and reach two after a second run."
+   }
+  ]
+ },
+ "0116.png": {
+  "text": "Now for Android, which runs in an Ubuntu session.",
+  "dur": 2.433,
+  "takeAt": 59.567,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.933,
+    "text": "Now for Android,"
+   },
+   {
+    "t0": 0.956,
+    "t1": 2.433,
+    "text": "which runs in an Ubuntu session."
+   }
+  ]
+ },
+ "0119.png": {
+  "text": "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+  "dur": 4.495,
+  "takeAt": 62.275,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.048,
+    "t1": 2.091,
+    "text": "There's no Android option in the platform menu,"
+   },
+   {
+    "t0": 2.126,
+    "t1": 3.147,
+    "text": "so pick Ubuntu,"
+   },
+   {
+    "t0": 3.264,
+    "t1": 4.495,
+    "text": "and mention the same repo."
+   }
+  ]
+ },
+ "0127.png": {
+  "text": "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+  "dur": 6.625,
+  "takeAt": 66.975,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.119,
+    "t1": 1.977,
+    "text": "Point Devin at the same pull request,"
+   },
+   {
+    "t0": 2.093,
+    "t1": 3.451,
+    "text": "and ask it to set up an Android"
+   },
+   {
+    "t0": 3.486,
+    "t1": 5.007,
+    "text": "emulator, play a run,"
+   },
+   {
+    "t0": 5.181,
+    "t1": 6.625,
+    "text": "and post its recording there too."
+   }
+  ]
+ },
+ "0129.png": {
+  "text": "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+  "dur": 4.455,
+  "takeAt": 73.925,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.008,
+    "t1": 1.935,
+    "text": "The Ubuntu session checks out the branch,"
+   },
+   {
+    "t0": 1.97,
+    "t1": 3.398,
+    "text": "installs the Android tools,"
+   },
+   {
+    "t0": 3.421,
+    "t1": 4.455,
+    "text": "and starts an emulator."
+   }
+  ]
+ },
+ "0144.png": {
+  "text": "Then it builds the app and plays it with adb taps on the emulator.",
+  "say": "Then it builds the app and plays it with A D B taps on the emulator.",
+  "dur": 3.174,
+  "takeAt": 78.736,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 3.174,
+    "text": "Then it builds the app and plays it with adb taps on the emulator."
+   }
+  ]
+ },
+ "0168.png": {
+  "text": "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+  "dur": 4.445,
+  "takeAt": 82.225,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.021,
+    "t1": 2.018,
+    "text": "A fresh install starts at zero games and"
+   },
+   {
+    "t0": 2.064,
+    "t1": 4.445,
+    "text": "zero hops, and then Devin plays two runs."
+   }
+  ]
+ },
+ "0192.png": {
+  "text": "After two runs and a force stop, it still shows two games and five hops.",
+  "dur": 3.602,
+  "takeAt": 87.118,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.676,
+    "text": "After two runs and a force stop,"
+   },
+   {
+    "t0": 1.699,
+    "t1": 3.602,
+    "text": "it still shows two games and five hops."
+   }
+  ]
+ },
+ "0234.png": {
+  "text": "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+  "dur": 4.783,
+  "takeAt": 91.367,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.548,
+    "text": "Devin sends its own recording,"
+   },
+   {
+    "t0": 1.571,
+    "t1": 3.533,
+    "text": "and since the Android code worked as written,"
+   },
+   {
+    "t0": 3.649,
+    "t1": 4.783,
+    "text": "it pushes no fixes."
+   }
+  ]
+ },
+ "0253.png": {
+  "text": "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+  "dur": 5.755,
+  "takeAt": 96.855,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.065,
+    "t1": 1.772,
+    "text": "It also suggests a blueprint update,"
+   },
+   {
+    "t0": 1.807,
+    "t1": 4.222,
+    "text": "so future Ubuntu sessions start with the Android"
+   },
+   {
+    "t0": 4.268,
+    "t1": 5.755,
+    "text": "SDK and emulator ready."
+   }
+  ]
+ },
+ "0260.png": {
+  "text": "Open the pull request's discussion, and both test results are there.",
+  "dur": 3.151,
+  "takeAt": 102.849,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.711,
+    "text": "Open the pull request's discussion,"
+   },
+   {
+    "t0": 1.734,
+    "t1": 3.15,
+    "text": "and both test results are there."
+   }
+  ]
+ },
+ "0264.png": {
+  "text": "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+  "dur": 4.385,
+  "takeAt": 106.295,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.087,
+    "t1": 2.212,
+    "text": "First comes the iOS test from the macOS"
+   },
+   {
+    "t0": 2.247,
+    "t1": 4.385,
+    "text": "session, run in the iPhone simulator."
+   }
+  ]
+ },
+ "0266.png": {
+  "text": "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+  "dur": 4.183,
+  "takeAt": 110.987,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.792,
+    "text": "Right below it is the Android test from"
+   },
+   {
+    "t0": 1.827,
+    "t1": 2.79,
+    "text": "the Ubuntu session,"
+   },
+   {
+    "t0": 2.907,
+    "t1": 4.183,
+    "text": "on the same pull request."
+   }
+  ]
+ },
+ "outro": {
+  "text": "One feature, tested on iPhone and Android, in one pull request.",
+  "dur": 3.148,
+  "takeAt": 115.492,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions.",
+    "Let's ship one mobile feature to both iPhone and Android, using two Devin sessions."
+   ],
+   [
+    "0001.png",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request.",
+    "A macOS session will test the iPhone app in the iOS Simulator, and an Ubuntu session will test the Android app in an emulator, with both results on one pull request."
+   ],
+   [
+    "0003.png",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed.",
+    "Open the platform menu below the prompt box and pick macOS, which comes with Xcode and the iOS Simulator installed."
+   ],
+   [
+    "0007.png",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app.",
+    "Mention the Jumpy Otter repo, a small game with an iPhone app and an Android app."
+   ],
+   [
+    "0011.png",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request.",
+    "Ask for lifetime stats on both apps, showing games played and total hops under the high score, saved between launches. Then ask Devin to test it in the iPhone simulator and post a recording on the pull request."
+   ],
+   [
+    "0013.png",
+    "Devin starts a macOS session and gets to work.",
+    "Devin starts a macOS session and gets to work."
+   ],
+   [
+    "0014.png",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator.",
+    "In the Computer tab, you can watch it change both apps, build the iOS version, and play it in the Simulator."
+   ],
+   [
+    "0035.png",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right.",
+    "The new counters sit right under the high score, with games played on the left and total hops on the right."
+   ],
+   [
+    "0099.png",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request.",
+    "When it's done, Devin sends a recording of its test, and posts its results on the pull request."
+   ],
+   [
+    "0104.png",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
+    "The counters go from zero to one, survive a relaunch, and reach two after a second run."
+   ],
+   [
+    "0116.png",
+    "Now for Android, which runs in an Ubuntu session.",
+    "Now for Android, which runs in an Ubuntu session."
+   ],
+   [
+    "0119.png",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo.",
+    "There's no Android option in the platform menu, so pick Ubuntu, and mention the same repo."
+   ],
+   [
+    "0127.png",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too.",
+    "Point Devin at the same pull request, and ask it to set up an Android emulator, play a run, and post its recording there too."
+   ],
+   [
+    "0129.png",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator.",
+    "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
+   ],
+   [
+    "0144.png",
+    "Then it builds the app and plays it with adb taps on the emulator.",
+    "Then it builds the app and plays it with A D B taps on the emulator."
+   ],
+   [
+    "0168.png",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
+    "A fresh install starts at zero games and zero hops, and then Devin plays two runs."
+   ],
+   [
+    "0192.png",
+    "After two runs and a force stop, it still shows two games and five hops.",
+    "After two runs and a force stop, it still shows two games and five hops."
+   ],
+   [
+    "0234.png",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes.",
+    "Devin sends its own recording, and since the Android code worked as written, it pushes no fixes."
+   ],
+   [
+    "0253.png",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready.",
+    "It also suggests a blueprint update, so future Ubuntu sessions start with the Android SDK and emulator ready."
+   ],
+   [
+    "0260.png",
+    "Open the pull request's discussion, and both test results are there.",
+    "Open the pull request's discussion, and both test results are there."
+   ],
+   [
+    "0264.png",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator.",
+    "First comes the iOS test from the macOS session, run in the iPhone simulator."
+   ],
+   [
+    "0266.png",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request.",
+    "Right below it is the Android test from the Ubuntu session, on the same pull request."
+   ],
+   [
+    "outro",
+    "One feature, tested on iPhone and Android, in one pull request.",
+    "One feature, tested on iPhone and Android, in one pull request."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.186,
+    "text": "One feature, tested on iPhone and Android,"
+   },
+   {
+    "t0": 2.21,
+    "t1": 3.148,
+    "text": "in one pull request."
+   }
+  ]
+ }
+}

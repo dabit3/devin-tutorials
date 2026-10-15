@@ -125,7 +125,7 @@ window.SPEC = {
       },
       "cap": "New: games played and total hops under HI-SCORE",
       "vo": "The new counters sit right under the high score, with games played on the left and total hops on the right.",
-      "hold": 1.2
+      "hold": 5.4
     },
     "0036.png": {
       "skip": true
@@ -215,102 +215,6 @@ window.SPEC = {
     "0064.png": {
       "skip": true
     },
-    "0065.png": {
-      "skip": true
-    },
-    "0066.png": {
-      "skip": true
-    },
-    "0067.png": {
-      "skip": true
-    },
-    "0068.png": {
-      "skip": true
-    },
-    "0069.png": {
-      "skip": true
-    },
-    "0071.png": {
-      "skip": true
-    },
-    "0072.png": {
-      "skip": true
-    },
-    "0073.png": {
-      "skip": true
-    },
-    "0074.png": {
-      "skip": true
-    },
-    "0075.png": {
-      "skip": true
-    },
-    "0076.png": {
-      "skip": true
-    },
-    "0077.png": {
-      "skip": true
-    },
-    "0078.png": {
-      "skip": true
-    },
-    "0079.png": {
-      "skip": true
-    },
-    "0080.png": {
-      "skip": true
-    },
-    "0081.png": {
-      "skip": true
-    },
-    "0082.png": {
-      "skip": true
-    },
-    "0083.png": {
-      "skip": true
-    },
-    "0084.png": {
-      "skip": true
-    },
-    "0085.png": {
-      "skip": true
-    },
-    "0086.png": {
-      "skip": true
-    },
-    "0087.png": {
-      "skip": true
-    },
-    "0088.png": {
-      "skip": true
-    },
-    "0089.png": {
-      "skip": true
-    },
-    "0090.png": {
-      "skip": true
-    },
-    "0091.png": {
-      "skip": true
-    },
-    "0092.png": {
-      "skip": true
-    },
-    "0093.png": {
-      "skip": true
-    },
-    "0094.png": {
-      "skip": true
-    },
-    "0095.png": {
-      "skip": true
-    },
-    "0096.png": {
-      "skip": true
-    },
-    "0097.png": {
-      "skip": true
-    },
     "0099.png": {
       "badge": null,
       "ring": {
@@ -330,9 +234,6 @@ window.SPEC = {
     "0102.png": {
       "cap": ""
     },
-    "0103.png": {
-      "skip": true
-    },
     "0104.png": {
       "cap": "0/0 → 1/1, still 1/1 after a relaunch, then 2/2",
       "vo": "The counters go from zero to one, survive a relaunch, and reach two after a second run.",
@@ -340,30 +241,6 @@ window.SPEC = {
         "x": 0.5,
         "y": 0.06
       }
-    },
-    "0105.png": {
-      "skip": true
-    },
-    "0106.png": {
-      "skip": true
-    },
-    "0107.png": {
-      "skip": true
-    },
-    "0109.png": {
-      "skip": true
-    },
-    "0111.png": {
-      "skip": true
-    },
-    "0112.png": {
-      "skip": true
-    },
-    "0113.png": {
-      "skip": true
-    },
-    "0114.png": {
-      "skip": true
     },
     "0116.png": {
       "voGap": 1.3,
@@ -400,48 +277,6 @@ window.SPEC = {
       "capPos": "top",
       "vo": "The Ubuntu session checks out the branch, installs the Android tools, and starts an emulator."
     },
-    "0130.png": {
-      "skip": true
-    },
-    "0131.png": {
-      "skip": true
-    },
-    "0132.png": {
-      "skip": true
-    },
-    "0133.png": {
-      "skip": true
-    },
-    "0134.png": {
-      "skip": true
-    },
-    "0135.png": {
-      "skip": true
-    },
-    "0136.png": {
-      "skip": true
-    },
-    "0137.png": {
-      "skip": true
-    },
-    "0138.png": {
-      "skip": true
-    },
-    "0139.png": {
-      "skip": true
-    },
-    "0140.png": {
-      "skip": true
-    },
-    "0141.png": {
-      "skip": true
-    },
-    "0142.png": {
-      "skip": true
-    },
-    "0143.png": {
-      "skip": true
-    },
     "0144.png": {
       "cap": "",
       "badge": "Sped up",
@@ -451,69 +286,6 @@ window.SPEC = {
         "x": 0.2,
         "y": 0.86
       }
-    },
-    "0145.png": {
-      "skip": true
-    },
-    "0146.png": {
-      "skip": true
-    },
-    "0147.png": {
-      "skip": true
-    },
-    "0148.png": {
-      "skip": true
-    },
-    "0149.png": {
-      "skip": true
-    },
-    "0151.png": {
-      "skip": true
-    },
-    "0152.png": {
-      "skip": true
-    },
-    "0153.png": {
-      "skip": true
-    },
-    "0154.png": {
-      "skip": true
-    },
-    "0155.png": {
-      "skip": true
-    },
-    "0156.png": {
-      "skip": true
-    },
-    "0157.png": {
-      "skip": true
-    },
-    "0158.png": {
-      "skip": true
-    },
-    "0160.png": {
-      "skip": true
-    },
-    "0161.png": {
-      "skip": true
-    },
-    "0162.png": {
-      "skip": true
-    },
-    "0163.png": {
-      "skip": true
-    },
-    "0164.png": {
-      "skip": true
-    },
-    "0165.png": {
-      "skip": true
-    },
-    "0166.png": {
-      "skip": true
-    },
-    "0167.png": {
-      "skip": true
     },
     "0168.png": {
       "cam": {
@@ -531,69 +303,9 @@ window.SPEC = {
       "vo": "A fresh install starts at zero games and zero hops, and then Devin plays two runs.",
       "hold": 1.2
     },
-    "0169.png": {
-      "skip": true
-    },
-    "0170.png": {
-      "skip": true
-    },
-    "0171.png": {
-      "skip": true
-    },
-    "0172.png": {
-      "skip": true
-    },
-    "0173.png": {
-      "skip": true
-    },
     "0174.png": {
       "cam": "reset",
       "cap": ""
-    },
-    "0175.png": {
-      "skip": true
-    },
-    "0176.png": {
-      "skip": true
-    },
-    "0177.png": {
-      "skip": true
-    },
-    "0178.png": {
-      "skip": true
-    },
-    "0179.png": {
-      "skip": true
-    },
-    "0181.png": {
-      "skip": true
-    },
-    "0182.png": {
-      "skip": true
-    },
-    "0183.png": {
-      "skip": true
-    },
-    "0184.png": {
-      "skip": true
-    },
-    "0185.png": {
-      "skip": true
-    },
-    "0186.png": {
-      "skip": true
-    },
-    "0187.png": {
-      "skip": true
-    },
-    "0188.png": {
-      "skip": true
-    },
-    "0190.png": {
-      "skip": true
-    },
-    "0191.png": {
-      "skip": true
     },
     "0192.png": {
       "cam": {
@@ -611,129 +323,9 @@ window.SPEC = {
       "vo": "After two runs and a force stop, it still shows two games and five hops.",
       "hold": 1.2
     },
-    "0193.png": {
-      "skip": true
-    },
-    "0194.png": {
-      "skip": true
-    },
-    "0195.png": {
-      "skip": true
-    },
-    "0196.png": {
-      "skip": true
-    },
-    "0197.png": {
-      "skip": true
-    },
-    "0198.png": {
-      "skip": true
-    },
-    "0199.png": {
-      "skip": true
-    },
-    "0200.png": {
-      "skip": true
-    },
-    "0201.png": {
-      "skip": true
-    },
-    "0202.png": {
-      "skip": true
-    },
-    "0203.png": {
-      "skip": true
-    },
-    "0204.png": {
-      "skip": true
-    },
-    "0205.png": {
-      "skip": true
-    },
-    "0206.png": {
-      "skip": true
-    },
-    "0207.png": {
-      "skip": true
-    },
-    "0208.png": {
-      "skip": true
-    },
-    "0209.png": {
-      "skip": true
-    },
-    "0210.png": {
-      "skip": true
-    },
-    "0211.png": {
-      "skip": true
-    },
-    "0212.png": {
-      "skip": true
-    },
     "0213.png": {
       "cam": "reset",
       "cap": ""
-    },
-    "0214.png": {
-      "skip": true
-    },
-    "0215.png": {
-      "skip": true
-    },
-    "0216.png": {
-      "skip": true
-    },
-    "0217.png": {
-      "skip": true
-    },
-    "0218.png": {
-      "skip": true
-    },
-    "0219.png": {
-      "skip": true
-    },
-    "0220.png": {
-      "skip": true
-    },
-    "0221.png": {
-      "skip": true
-    },
-    "0222.png": {
-      "skip": true
-    },
-    "0223.png": {
-      "skip": true
-    },
-    "0224.png": {
-      "skip": true
-    },
-    "0225.png": {
-      "skip": true
-    },
-    "0226.png": {
-      "skip": true
-    },
-    "0227.png": {
-      "skip": true
-    },
-    "0228.png": {
-      "skip": true
-    },
-    "0229.png": {
-      "skip": true
-    },
-    "0230.png": {
-      "skip": true
-    },
-    "0231.png": {
-      "skip": true
-    },
-    "0232.png": {
-      "skip": true
-    },
-    "0233.png": {
-      "skip": true
     },
     "0234.png": {
       "badge": null,
@@ -754,48 +346,6 @@ window.SPEC = {
     "0237.png": {
       "cap": ""
     },
-    "0238.png": {
-      "skip": true
-    },
-    "0239.png": {
-      "skip": true
-    },
-    "0240.png": {
-      "skip": true
-    },
-    "0241.png": {
-      "skip": true
-    },
-    "0242.png": {
-      "skip": true
-    },
-    "0243.png": {
-      "skip": true
-    },
-    "0244.png": {
-      "skip": true
-    },
-    "0245.png": {
-      "skip": true
-    },
-    "0246.png": {
-      "skip": true
-    },
-    "0247.png": {
-      "skip": true
-    },
-    "0248.png": {
-      "skip": true
-    },
-    "0249.png": {
-      "skip": true
-    },
-    "0251.png": {
-      "skip": true
-    },
-    "0252.png": {
-      "skip": true
-    },
     "0253.png": {
       "ring": {
         "x": 282.75,
@@ -808,32 +358,18 @@ window.SPEC = {
       "subPos": {
         "x": 0.7,
         "y": 0.9
-      }
+      },
+      "hold": 6.6
     },
     "0254.png": {
       "cap": "Open the PR"
     },
-    "0256.png": {
-      "skip": true
-    },
     "0257.png": {
       "cap": ""
-    },
-    "0258.png": {
-      "skip": true
-    },
-    "0259.png": {
-      "skip": true
     },
     "0260.png": {
       "cap": "Discussion",
       "vo": "Open the pull request's discussion, and both test results are there."
-    },
-    "0262.png": {
-      "skip": true
-    },
-    "0263.png": {
-      "skip": true
     },
     "0264.png": {
       "hold": 2.0,
@@ -854,9 +390,6 @@ window.SPEC = {
         "y": 600,
         "z": 1.15
       }
-    },
-    "0265.png": {
-      "skip": true
     },
     "0266.png": {
       "hold": 2.4,
