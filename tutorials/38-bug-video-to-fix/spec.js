@@ -216,6 +216,7 @@ window.SPEC = {
       "skip": true
     },
     "0061.png": {
+      "badge": "",
       "hold": 1.8,
       "cap": "Start a new session",
       "vo": "To hand it to Devin, start a new session."
