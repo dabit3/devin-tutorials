@@ -1,27 +1,29 @@
 # Tutorial 69: Trend Origin Tracer overview, how it works and what you can do (voice script)
 
-Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, default settings: stability 0.5, similarity 0.75, style 0, speed 1), generated as one take with `_kit/tools/vo_onetake.py` (`VO_SEED=none`) and cut locally at sentence boundaries. Spoken spellings (`voSay`): "xAI" is said "ex A I", "ASGI" is said "A S G I".
+Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, saved default voice settings), generated as one whole-script request with `_kit/tools/vo.py` and cut locally at sentence boundaries. Spoken spelling (`voSay`): "xAI" is said "ex A I".
 
 1. How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.
 
-2. It starts with real posts on X. The app asks Grok through the xAI API, with the X search tool turned on, and gets structured JSON back.
+2. It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.
 
-3. On Modal, one function fans out the searches with dot map, one per time window, so they all run at once. For vibe coding, that was twenty-five searches.
+3. Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.
 
-4. The results go into a Modal Dict, and a web endpoint serves the page and its API from that storage.
+4. The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.
 
 5. A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.
 
-6. The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.
+6. So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.
 
-7. Devin built the whole thing from one short prompt, in a single session.
+7. The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.
 
-8. It deployed the app with modal deploy, then tested the deployed endpoint with a real trace.
+8. Devin built the whole thing from one short prompt, in a single session.
 
-9. Here's the deployed app. For vibe coding, the earliest post it found is from May twenty twenty-two.
+9. It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.
 
-10. It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.
+10. Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.
 
-11. There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.
+11. It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.
 
-12. Paste a phrase, and watch how it spread.
+12. There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.
+
+13. Paste a phrase, and watch how it spread.

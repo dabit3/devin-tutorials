@@ -1,11 +1,76 @@
 {
  "0000.png": {
   "text": "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
-  "dur": 10.66,
-  "at": 0.0,
-  "end": 10.66,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 10.72,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "0001.png",
+    "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+    "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+   ],
+   [
+    "0002.png",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+   ],
+   [
+    "0003.png",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+   ],
+   [
+    "0004.png",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+   ],
+   [
+    "m01.png",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs."
+   ],
+   [
+    "0005.png",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
+   ],
+   [
+    "0006.png",
+    "Devin built the whole thing from one short prompt, in a single session.",
+    "Devin built the whole thing from one short prompt, in a single session."
+   ],
+   [
+    "0007.png",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace."
+   ],
+   [
+    "0008.png",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
+   ],
+   [
+    "0009.png",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier."
+   ],
+   [
+    "0010.png",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and watch how it spread.",
+    "Paste a phrase, and watch how it spread."
+   ]
+  ],
   "chunks": [
    {
     "t0": 0,
@@ -13,339 +78,1179 @@
     "text": "How did this blow up?"
    },
    {
-    "t0": 0.964,
-    "t1": 2.891,
+    "t0": 1.115,
+    "t1": 2.937,
     "text": "It's one of the internet's favourite questions."
    },
    {
-    "t0": 3.1,
-    "t1": 4.841,
+    "t0": 3.146,
+    "t1": 4.83,
     "text": "Paste a phrase like vibe coding,"
    },
    {
-    "t0": 4.992,
-    "t1": 6.896,
+    "t0": 5.108,
+    "t1": 7.036,
     "text": "and this app shows the earliest post it"
    },
    {
-    "t0": 6.931,
-    "t1": 7.976,
+    "t0": 7.07,
+    "t1": 8.115,
     "text": "can find on X,"
    },
    {
-    "t0": 8.092,
-    "t1": 9.033,
+    "t0": 8.231,
+    "t1": 9.16,
     "text": "who amplified it,"
    },
    {
-    "t0": 9.207,
-    "t1": 10.612,
+    "t0": 9.334,
+    "t1": 10.72,
     "text": "and how it spread over time."
    }
   ]
  },
  "0001.png": {
-  "text": "It starts with real posts on X. The app asks Grok through the xAI API, with the X search tool turned on, and gets structured JSON back.",
-  "say": "It starts with real posts on X. The app asks Grok through the ex A I API, with the X search tool turned on, and gets structured JSON back.",
-  "dur": 9.29,
-  "at": 10.725,
-  "end": 20.015,
-  "mode": "one-take",
-  "checked": true,
+  "text": "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+  "say": "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code.",
+  "dur": 9.795,
+  "takeAt": 10.855,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "0001.png",
+    "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+    "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+   ],
+   [
+    "0002.png",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+   ],
+   [
+    "0003.png",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+   ],
+   [
+    "0004.png",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+   ],
+   [
+    "m01.png",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs."
+   ],
+   [
+    "0005.png",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
+   ],
+   [
+    "0006.png",
+    "Devin built the whole thing from one short prompt, in a single session.",
+    "Devin built the whole thing from one short prompt, in a single session."
+   ],
+   [
+    "0007.png",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace."
+   ],
+   [
+    "0008.png",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
+   ],
+   [
+    "0009.png",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier."
+   ],
+   [
+    "0010.png",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and watch how it spread.",
+    "Paste a phrase, and watch how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.061,
-    "t1": 2.178,
+    "t0": 0.082,
+    "t1": 2.039,
     "text": "It starts with real posts on X."
    },
    {
-    "t0": 2.228,
-    "t1": 4.835,
-    "text": "The app asks Grok through the xAI API,"
+    "t0": 2.089,
+    "t1": 4.405,
+    "text": "The app asks Grok through the xAI API"
    },
    {
-    "t0": 4.885,
-    "t1": 7.142,
-    "text": "with the X search tool turned on,"
+    "t0": 4.455,
+    "t1": 5.989,
+    "text": "with X search turned on,"
    },
    {
-    "t0": 7.192,
-    "t1": 9.24,
-    "text": "and gets structured JSON back."
+    "t0": 6.039,
+    "t1": 8.709,
+    "text": "and the xAI key is kept in a Modal Secret,"
+   },
+   {
+    "t0": 8.759,
+    "t1": 9.745,
+    "text": "not in the code."
    }
   ]
  },
  "0002.png": {
-  "text": "On Modal, one function fans out the searches with dot map, one per time window, so they all run at once. For vibe coding, that was twenty-five searches.",
-  "dur": 9.13,
-  "at": 20.37,
-  "end": 29.5,
-  "mode": "one-take",
-  "checked": true,
+  "text": "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+  "dur": 10.561,
+  "takeAt": 20.929,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "0001.png",
+    "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+    "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+   ],
+   [
+    "0002.png",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+   ],
+   [
+    "0003.png",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+   ],
+   [
+    "0004.png",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+   ],
+   [
+    "m01.png",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs."
+   ],
+   [
+    "0005.png",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
+   ],
+   [
+    "0006.png",
+    "Devin built the whole thing from one short prompt, in a single session.",
+    "Devin built the whole thing from one short prompt, in a single session."
+   ],
+   [
+    "0007.png",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace."
+   ],
+   [
+    "0008.png",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
+   ],
+   [
+    "0009.png",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier."
+   ],
+   [
+    "0010.png",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and watch how it spread.",
+    "Paste a phrase, and watch how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.098,
-    "t1": 2.455,
-    "text": "On Modal, one function fans out the searches"
+    "t0": 0.12,
+    "t1": 1.571,
+    "text": "Modal runs everything else."
    },
    {
-    "t0": 2.49,
-    "t1": 3.326,
-    "text": "with dot map,"
+    "t0": 1.896,
+    "t1": 4.032,
+    "text": "One function fans out the searches with dot"
    },
    {
-    "t0": 3.569,
-    "t1": 4.846,
-    "text": "one per time window,"
+    "t0": 4.09,
+    "t1": 5.994,
+    "text": "map, one per time window,"
    },
    {
-    "t0": 5.021,
-    "t1": 6.298,
-    "text": "so they all run at once."
+    "t0": 6.168,
+    "t1": 8.107,
+    "text": "across up to twenty-four containers."
    },
    {
-    "t0": 6.739,
-    "t1": 7.61,
+    "t0": 8.351,
+    "t1": 9.221,
     "text": "For vibe coding,"
    },
    {
-    "t0": 7.633,
-    "t1": 9.108,
+    "t0": 9.245,
+    "t1": 10.561,
     "text": "that was twenty-five searches."
    }
   ]
  },
  "0003.png": {
-  "text": "The results go into a Modal Dict, and a web endpoint serves the page and its API from that storage.",
-  "dur": 5.9,
-  "at": 29.595,
-  "end": 35.495,
-  "mode": "one-take",
-  "checked": true,
+  "text": "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+  "dur": 7.503,
+  "takeAt": 31.807,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "0001.png",
+    "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+    "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+   ],
+   [
+    "0002.png",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+   ],
+   [
+    "0003.png",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+   ],
+   [
+    "0004.png",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+   ],
+   [
+    "m01.png",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs."
+   ],
+   [
+    "0005.png",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
+   ],
+   [
+    "0006.png",
+    "Devin built the whole thing from one short prompt, in a single session.",
+    "Devin built the whole thing from one short prompt, in a single session."
+   ],
+   [
+    "0007.png",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace."
+   ],
+   [
+    "0008.png",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
+   ],
+   [
+    "0009.png",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier."
+   ],
+   [
+    "0010.png",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and watch how it spread.",
+    "Paste a phrase, and watch how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.034,
-    "t1": 1.845,
+    "t0": 0.12,
+    "t1": 2.186,
     "text": "The results go into a Modal Dict,"
    },
    {
-    "t0": 2.019,
-    "t1": 4.26,
-    "text": "and a web endpoint serves the page and"
+    "t0": 2.36,
+    "t1": 4.473,
+    "text": "and a Modal web endpoint serves the page"
    },
    {
-    "t0": 4.306,
-    "t1": 5.885,
-    "text": "its API from that storage."
+    "t0": 4.497,
+    "t1": 7.503,
+    "text": "and its API at a public modal dot run URL."
    }
   ]
  },
  "0004.png": {
   "text": "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
-  "dur": 8.15,
-  "at": 35.73,
-  "end": 43.88,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 8.203,
+  "takeAt": 39.597,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "0001.png",
+    "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+    "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+   ],
+   [
+    "0002.png",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+   ],
+   [
+    "0003.png",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+   ],
+   [
+    "0004.png",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+   ],
+   [
+    "m01.png",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs."
+   ],
+   [
+    "0005.png",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
+   ],
+   [
+    "0006.png",
+    "Devin built the whole thing from one short prompt, in a single session.",
+    "Devin built the whole thing from one short prompt, in a single session."
+   ],
+   [
+    "0007.png",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace."
+   ],
+   [
+    "0008.png",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
+   ],
+   [
+    "0009.png",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier."
+   ],
+   [
+    "0010.png",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and watch how it spread.",
+    "Paste a phrase, and watch how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.075,
-    "t1": 2.409,
-    "text": "A Modal cron can refresh saved phrases every"
+    "t0": 0.12,
+    "t1": 3.0,
+    "text": "A Modal cron can refresh saved phrases every morning."
    },
    {
-    "t0": 2.455,
-    "t1": 5.578,
-    "text": "morning. This workspace had no free schedule slot,"
+    "t0": 3.383,
+    "t1": 5.623,
+    "text": "This workspace had no free schedule slot,"
    },
    {
-    "t0": 5.752,
-    "t1": 8.15,
+    "t0": 5.798,
+    "t1": 8.203,
     "text": "so for now the page starts that refresh itself."
+   }
+  ]
+ },
+ "m01.png": {
+  "text": "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+  "dur": 14.194,
+  "takeAt": 48.166,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "0001.png",
+    "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+    "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+   ],
+   [
+    "0002.png",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+   ],
+   [
+    "0003.png",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+   ],
+   [
+    "0004.png",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+   ],
+   [
+    "m01.png",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs."
+   ],
+   [
+    "0005.png",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
+   ],
+   [
+    "0006.png",
+    "Devin built the whole thing from one short prompt, in a single session.",
+    "Devin built the whole thing from one short prompt, in a single session."
+   ],
+   [
+    "0007.png",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace."
+   ],
+   [
+    "0008.png",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
+   ],
+   [
+    "0009.png",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier."
+   ],
+   [
+    "0010.png",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and watch how it spread.",
+    "Paste a phrase, and watch how it spread."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.106,
+    "text": "So why Modal?"
+   },
+   {
+    "t0": 1.431,
+    "t1": 3.486,
+    "text": "A laptop script would run the searches one"
+   },
+   {
+    "t0": 3.51,
+    "t1": 4.171,
+    "text": "at a time,"
+   },
+   {
+    "t0": 4.346,
+    "t1": 5.623,
+    "text": "with no public URL."
+   },
+   {
+    "t0": 5.948,
+    "t1": 7.701,
+    "text": "Your own server would sit there idle,"
+   },
+   {
+    "t0": 7.724,
+    "t1": 9.001,
+    "text": "and you'd pay for it anyway."
+   },
+   {
+    "t0": 9.384,
+    "t1": 12.031,
+    "text": "On Modal, it scales to zero between traces,"
+   },
+   {
+    "t0": 12.205,
+    "t1": 14.194,
+    "text": "and you pay by the second while it runs."
    }
   ]
  },
  "0005.png": {
   "text": "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
-  "dur": 11.145,
-  "at": 44.12,
-  "end": 55.265,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 11.105,
+  "takeAt": 62.915,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "0001.png",
+    "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+    "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+   ],
+   [
+    "0002.png",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+   ],
+   [
+    "0003.png",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+   ],
+   [
+    "0004.png",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+   ],
+   [
+    "m01.png",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs."
+   ],
+   [
+    "0005.png",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
+   ],
+   [
+    "0006.png",
+    "Devin built the whole thing from one short prompt, in a single session.",
+    "Devin built the whole thing from one short prompt, in a single session."
+   ],
+   [
+    "0007.png",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace."
+   ],
+   [
+    "0008.png",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
+   ],
+   [
+    "0009.png",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier."
+   ],
+   [
+    "0010.png",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and watch how it spread.",
+    "Paste a phrase, and watch how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.056,
-    "t1": 1.333,
+    "t0": 0.057,
+    "t1": 1.508,
     "text": "The labels stay honest."
    },
    {
-    "t0": 1.658,
-    "t1": 4.084,
+    "t0": 1.752,
+    "t1": 4.132,
     "text": "The earliest post found isn't proof of origin."
    },
    {
-    "t0": 4.409,
-    "t1": 6.07,
-    "text": "Counts are posts found in a sample,"
+    "t0": 4.457,
+    "t1": 7.174,
+    "text": "Counts are posts found in a sample, not totals."
    },
    {
-    "t0": 6.105,
-    "t1": 8.392,
-    "text": "not totals. And every edge comes from a"
+    "t0": 7.383,
+    "t1": 9.438,
+    "text": "And every edge comes from a real reply,"
    },
    {
-    "t0": 8.473,
-    "t1": 11.145,
-    "text": "real reply, quote or mention in the data."
+    "t0": 9.612,
+    "t1": 11.105,
+    "text": "quote or mention in the data."
    }
   ]
  },
  "0006.png": {
   "text": "Devin built the whole thing from one short prompt, in a single session.",
-  "dur": 3.44,
-  "at": 55.52,
-  "end": 58.96,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 3.562,
+  "takeAt": 74.288,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "0001.png",
+    "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+    "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+   ],
+   [
+    "0002.png",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+   ],
+   [
+    "0003.png",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+   ],
+   [
+    "0004.png",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+   ],
+   [
+    "m01.png",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs."
+   ],
+   [
+    "0005.png",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
+   ],
+   [
+    "0006.png",
+    "Devin built the whole thing from one short prompt, in a single session.",
+    "Devin built the whole thing from one short prompt, in a single session."
+   ],
+   [
+    "0007.png",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace."
+   ],
+   [
+    "0008.png",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
+   ],
+   [
+    "0009.png",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier."
+   ],
+   [
+    "0010.png",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and watch how it spread.",
+    "Paste a phrase, and watch how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.15,
-    "t1": 1.984,
+    "t0": 0.12,
+    "t1": 1.908,
     "text": "Devin built the whole thing from one short"
    },
    {
-    "t0": 2.031,
-    "t1": 3.401,
+    "t0": 1.955,
+    "t1": 3.562,
     "text": "prompt, in a single session."
    }
   ]
  },
  "0007.png": {
-  "text": "It deployed the app with modal deploy, then tested the deployed endpoint with a real trace.",
-  "dur": 4.85,
-  "at": 59.3,
-  "end": 64.15,
-  "mode": "one-take",
-  "checked": true,
+  "text": "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+  "dur": 6.914,
+  "takeAt": 78.166,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "0001.png",
+    "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+    "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+   ],
+   [
+    "0002.png",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+   ],
+   [
+    "0003.png",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+   ],
+   [
+    "0004.png",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+   ],
+   [
+    "m01.png",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs."
+   ],
+   [
+    "0005.png",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
+   ],
+   [
+    "0006.png",
+    "Devin built the whole thing from one short prompt, in a single session.",
+    "Devin built the whole thing from one short prompt, in a single session."
+   ],
+   [
+    "0007.png",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace."
+   ],
+   [
+    "0008.png",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
+   ],
+   [
+    "0009.png",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier."
+   ],
+   [
+    "0010.png",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and watch how it spread.",
+    "Paste a phrase, and watch how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.062,
-    "t1": 2.036,
+    "t0": 0.12,
+    "t1": 2.082,
     "text": "It deployed the app with modal deploy,"
    },
    {
-    "t0": 2.361,
-    "t1": 4.85,
-    "text": "then tested the deployed endpoint with a real trace."
+    "t0": 2.21,
+    "t1": 3.916,
+    "text": "which printed the public URL."
+   },
+   {
+    "t0": 4.195,
+    "t1": 6.914,
+    "text": "Then it tested the deployed endpoint with a real trace."
    }
   ]
  },
  "0008.png": {
-  "text": "Here's the deployed app. For vibe coding, the earliest post it found is from May twenty twenty-two.",
-  "dur": 5.06,
-  "at": 64.53,
-  "end": 69.59,
-  "mode": "one-take",
-  "checked": true,
+  "text": "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+  "dur": 5.955,
+  "takeAt": 85.945,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "0001.png",
+    "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+    "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+   ],
+   [
+    "0002.png",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+   ],
+   [
+    "0003.png",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+   ],
+   [
+    "0004.png",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+   ],
+   [
+    "m01.png",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs."
+   ],
+   [
+    "0005.png",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
+   ],
+   [
+    "0006.png",
+    "Devin built the whole thing from one short prompt, in a single session.",
+    "Devin built the whole thing from one short prompt, in a single session."
+   ],
+   [
+    "0007.png",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace."
+   ],
+   [
+    "0008.png",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
+   ],
+   [
+    "0009.png",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier."
+   ],
+   [
+    "0010.png",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and watch how it spread.",
+    "Paste a phrase, and watch how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.045,
-    "t1": 1.09,
-    "text": "Here's the deployed app."
+    "t0": 0.096,
+    "t1": 1.815,
+    "text": "Here's the page running on Modal."
    },
    {
-    "t0": 1.299,
-    "t1": 2.251,
+    "t0": 2.418,
+    "t1": 3.277,
     "text": "For vibe coding,"
    },
    {
-    "t0": 2.309,
-    "t1": 5.037,
+    "t0": 3.301,
+    "t1": 5.955,
     "text": "the earliest post it found is from May twenty twenty-two."
    }
   ]
  },
  "0009.png": {
   "text": "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
-  "dur": 6.7,
-  "at": 70.1,
-  "end": 76.8,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 6.952,
+  "takeAt": 92.458,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "0001.png",
+    "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+    "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+   ],
+   [
+    "0002.png",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+   ],
+   [
+    "0003.png",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+   ],
+   [
+    "0004.png",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+   ],
+   [
+    "m01.png",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs."
+   ],
+   [
+    "0005.png",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
+   ],
+   [
+    "0006.png",
+    "Devin built the whole thing from one short prompt, in a single session.",
+    "Devin built the whole thing from one short prompt, in a single session."
+   ],
+   [
+    "0007.png",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace."
+   ],
+   [
+    "0008.png",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
+   ],
+   [
+    "0009.png",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier."
+   ],
+   [
+    "0010.png",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and watch how it spread.",
+    "Paste a phrase, and watch how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.071,
-    "t1": 2.335,
+    "t0": 0.12,
+    "t1": 2.43,
     "text": "It found sixty-nine posts with the phrase,"
    },
    {
-    "t0": 2.579,
-    "t1": 4.228,
+    "t0": 2.674,
+    "t1": 4.381,
     "text": "and the graph shows who passed it to"
    },
    {
-    "t0": 4.274,
-    "t1": 6.689,
+    "t0": 4.439,
+    "t1": 6.952,
     "text": "whom, with Karpathy as the top amplifier."
    }
   ]
  },
  "0010.png": {
   "text": "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
-  "dur": 11.97,
-  "at": 77.195,
-  "end": 89.165,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 11.365,
+  "takeAt": 99.815,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "0001.png",
+    "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+    "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+   ],
+   [
+    "0002.png",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+   ],
+   [
+    "0003.png",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+   ],
+   [
+    "0004.png",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+   ],
+   [
+    "m01.png",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs."
+   ],
+   [
+    "0005.png",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
+   ],
+   [
+    "0006.png",
+    "Devin built the whole thing from one short prompt, in a single session.",
+    "Devin built the whole thing from one short prompt, in a single session."
+   ],
+   [
+    "0007.png",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace."
+   ],
+   [
+    "0008.png",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
+   ],
+   [
+    "0009.png",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier."
+   ],
+   [
+    "0010.png",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and watch how it spread.",
+    "Paste a phrase, and watch how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.035,
-    "t1": 1.405,
+    "t0": 0.1,
+    "t1": 1.552,
     "text": "There's plenty to build on top."
    },
    {
-    "t0": 2.009,
-    "t1": 3.913,
+    "t0": 1.796,
+    "t1": 3.618,
     "text": "You could alert when a saved phrase starts"
    },
    {
-    "t0": 3.959,
-    "t1": 6.746,
+    "t0": 3.665,
+    "t1": 6.37,
     "text": "climbing, compare two phrases side by side,"
    },
    {
-    "t0": 6.92,
-    "t1": 8.661,
+    "t0": 6.544,
+    "t1": 8.181,
     "text": "or export the graph for a write-up."
    },
    {
-    "t0": 8.986,
-    "t1": 10.844,
+    "t0": 8.506,
+    "t1": 10.294,
     "text": "You could also trace a product launch from"
    },
    {
-    "t0": 10.891,
-    "t1": 11.97,
+    "t0": 10.34,
+    "t1": 11.365,
     "text": "its very first post."
    }
   ]
  },
  "outro": {
   "text": "Paste a phrase, and watch how it spread.",
-  "dur": 1.98,
-  "at": 89.54,
-  "end": 91.52,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 1.795,
+  "takeAt": 111.565,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "0001.png",
+    "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+    "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+   ],
+   [
+    "0002.png",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.",
+    "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+   ],
+   [
+    "0003.png",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.",
+    "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+   ],
+   [
+    "0004.png",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
+    "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+   ],
+   [
+    "m01.png",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+    "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs."
+   ],
+   [
+    "0005.png",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
+    "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
+   ],
+   [
+    "0006.png",
+    "Devin built the whole thing from one short prompt, in a single session.",
+    "Devin built the whole thing from one short prompt, in a single session."
+   ],
+   [
+    "0007.png",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
+    "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace."
+   ],
+   [
+    "0008.png",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
+    "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
+   ],
+   [
+    "0009.png",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier."
+   ],
+   [
+    "0010.png",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
+    "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and watch how it spread.",
+    "Paste a phrase, and watch how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.09,
-    "t1": 0.856,
+    "t0": 0.065,
+    "t1": 0.796,
     "text": "Paste a phrase,"
    },
    {
-    "t0": 0.879,
-    "t1": 1.98,
+    "t0": 0.82,
+    "t1": 1.795,
     "text": "and watch how it spread."
    }
   ]

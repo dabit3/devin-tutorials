@@ -20,14 +20,15 @@ window.SPEC = {
       "vo": "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
     },
     "0001.png": {
+      "cursor": false,
       "scene": "pipeIn",
       "cursor": false,
       "capPos": "bottom",
       "hl": null,
       "hold": 5,
-      "cap": "X posts → xAI API: Grok with X search",
-      "vo": "It starts with real posts on X. The app asks Grok through the xAI API, with the X search tool turned on, and gets structured JSON back.",
-      "voSay": "It starts with real posts on X. The app asks Grok through the ex A I API, with the X search tool turned on, and gets structured JSON back."
+      "cap": "X posts → xAI API, key in a Modal Secret",
+      "vo": "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
+      "voSay": "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
     },
     "0002.png": {
       "scene": "pipeMap",
@@ -35,8 +36,8 @@ window.SPEC = {
       "capPos": "bottom",
       "hl": null,
       "hold": 3,
-      "cap": ".map() runs one search per time window",
-      "vo": "On Modal, one function fans out the searches with dot map, one per time window, so they all run at once. For vibe coding, that was twenty-five searches."
+      "cap": "Modal: .map() runs the searches in parallel",
+      "vo": "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
     },
     "0003.png": {
       "scene": "pipeStore",
@@ -44,8 +45,8 @@ window.SPEC = {
       "capPos": "bottom",
       "hl": null,
       "hold": 3,
-      "cap": "Results in a Modal Dict, served by a web endpoint",
-      "vo": "The results go into a Modal Dict, and a web endpoint serves the page and its API from that storage."
+      "cap": "A Modal Dict stores results; a web endpoint serves the page",
+      "vo": "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
     },
     "0004.png": {
       "scene": "pipeCron",
@@ -55,6 +56,15 @@ window.SPEC = {
       "hold": 3,
       "cap": "A Modal Cron can refresh saved phrases daily",
       "vo": "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+    },
+    "m01.png": {
+      "scene": "modalWhy",
+      "hold": 4,
+      "cap": "Why Modal: no laptop, no server to run",
+      "vo": "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
+      "cursor": false,
+      "capPos": "bottom",
+      "hl": null
     },
     "0005.png": {
       "scene": "honest",
@@ -66,6 +76,7 @@ window.SPEC = {
       "vo": "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data."
     },
     "0006.png": {
+      "cursor": true,
       "cursor": false,
       "capPos": "bottom",
       "cap": "Devin builds it from one short prompt",
@@ -77,13 +88,13 @@ window.SPEC = {
       "capPos": "bottom",
       "ring": {
         "x": 582,
-        "y": 174,
+        "y": 190,
         "w": 545,
-        "h": 36
+        "h": 62
       },
       "ringFor": 3,
-      "cap": "modal deploy, then a real trace",
-      "vo": "It deployed the app with modal deploy, then tested the deployed endpoint with a real trace.",
+      "cap": "modal deploy prints the public URL",
+      "vo": "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
       "hl": null
     },
     "0008.png": {
@@ -92,7 +103,7 @@ window.SPEC = {
       "hl": true,
       "hold": 2,
       "cap": "Earliest post found: May 2022",
-      "vo": "Here's the deployed app. For vibe coding, the earliest post it found is from May twenty twenty-two."
+      "vo": "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two."
     },
     "0009.png": {
       "cursor": false,

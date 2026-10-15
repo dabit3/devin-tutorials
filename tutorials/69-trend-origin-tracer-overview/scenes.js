@@ -90,7 +90,7 @@ Object.assign(window.SCENES, { intro, honest, extend });
 
 (() => {
 const T = window.TOT, { text: TX, ccard: CC, line: LN, appear: AP, loop: LP, box: BX, W: WW } = T;
-// X posts -> xAI (Grok + X search) -> Modal (schedule / .map() fan-out / web endpoint) -> Modal Dict -> live page.
+// X posts -> xAI (Grok + X search, key in a Modal Secret) -> Modal (schedule / .map() fan-out / web endpoint) -> Modal Dict -> public page.
 // build: animate everything in; focus: which part glows ('xai' | 'map' | 'store' | 'cron').
 function pipe(ctx, s, k, build, focus) {
   const A = t0 => build ? AP(k, s, t0, 0.6) : 1, L = (t0, d = 0.6) => build ? k.eInOut(k.prog(s, t0, t0 + d)) : 1;
@@ -112,13 +112,33 @@ function pipe(ctx, s, k, build, focus) {
   CC(ctx, k, cxM, Y.cron, 300, 68, 'Daily refresh', 'modal.Cron("0 6 * * *")', A(3.6), on('cron'), 17);
   CC(ctx, k, cxM, Y.map, 300, 68, 'Parallel searches', 'run_search.map(tasks)', A(1.4), on('map'), 17);
   CC(ctx, k, cxM, Y.web, 300, 68, 'Web endpoint', '@modal.asgi_app()', A(4.4), on('store'), 17);
-  CC(ctx, k, 1110, 330, 200, 86, 'Storage', 'modal.Dict', A(2.8), on('store'), 19);
-  CC(ctx, k, 1110, 520, 200, 86, 'Live page', '*.modal.run', A(5.0), on('store'), 19);
+  CC(ctx, k, 1110, 330, 200, 86, 'Modal Dict', 'stored traces', A(2.8), on('store'), 19);
+  CC(ctx, k, 1110, 520, 200, 86, 'Public page', '*.modal.run', A(5.0), on('store'), 19);
+  T.pill(ctx, k, 'Modal Secret: xAI key', 370, 512, A(1.0), 13, on('xai'));
+}
+// Why Modal: a laptop script and a self-managed server vs what Modal does for this app.
+function modalWhy(ctx, s, k) {
+  T.eyebrow(ctx, k, 'WHY MODAL', 140, AP(k, s, 0.05));
+  const alt = [['Laptop script', 'One search at a time, and no public URL'], ['Your own server', 'Always on and always billed, even when idle']];
+  alt.forEach(([t, sub], i) => T.card(ctx, k, 170, 250 + i * 134, 440, 96, t, sub, AP(k, s, 0.3 + i * 0.4) * 0.7, 0, 19));
+  const bx = 680, by = 200, bw = 590, bh = 330, a = AP(k, s, 1.0);
+  BX(ctx, k, bx, by, bw, bh, a, k.clamp(k.prog(s, 1.4, 2.0), 0, 1), 18);
+  TX(ctx, k, 'On Modal', bx + 32, by + 42, 22, 600, T.INK, a, 'left');
+  const R = [['Parallel searches', '.map() across up to 24 containers'], ['Built-in storage', 'traces kept in a modal.Dict'], ['Key kept safe', 'the xAI key in a modal.Secret'], ['Public URL', 'a web endpoint at *.modal.run'], ['Scales to zero', 'billed per second while it runs']];
+  R.forEach(([t, sub], i) => {
+    const ra = AP(k, s, 1.6 + i * 0.45), y = by + 98 + i * 50;
+    if (ra <= 0) return;
+    ctx.save(); ctx.globalAlpha = k.alpha * ra; ctx.beginPath(); ctx.arc(bx + 40, y, 4.5, 0, Math.PI * 2); ctx.fillStyle = T.rgba(T.BLUE, 1); ctx.fill(); ctx.restore();
+    const w = TX(ctx, k, t, bx + 60, y, 18, 600, T.INK, ra, 'left');
+    TX(ctx, k, sub, bx + 60 + w + 14, y, 16, 400, T.MUTED(1), ra, 'left');
+  });
 }
 Object.assign(window.SCENES, {
   pipeIn: (c, s, k) => pipe(c, s, k, true, 'xai'),
   pipeMap: (c, s, k) => pipe(c, s, k, false, 'map'),
   pipeStore: (c, s, k) => pipe(c, s, k, false, 'store'),
   pipeCron: (c, s, k) => pipe(c, s, k, false, 'cron'),
+  pipeAll: (c, s, k) => pipe(c, s, k, true, null),
+  modalWhy,
 });
 })();

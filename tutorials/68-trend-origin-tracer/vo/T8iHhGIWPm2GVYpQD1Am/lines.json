@@ -1,547 +1,1596 @@
 {
  "0000.png": {
   "text": "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
-  "dur": 9.865,
-  "at": 0.0,
-  "end": 9.865,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 9.9,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
   "chunks": [
    {
     "t0": 0,
-    "t1": 0.871,
+    "t1": 0.848,
     "text": "In this tutorial,"
    },
    {
-    "t0": 0.917,
-    "t1": 2.763,
+    "t0": 0.882,
+    "t1": 2.775,
     "text": "Devin builds a trend origin tracer."
    },
    {
-    "t0": 2.937,
-    "t1": 4.748,
+    "t0": 3.019,
+    "t1": 4.772,
     "text": "You paste a phrase like vibe coding,"
    },
    {
     "t0": 4.923,
-    "t1": 6.606,
+    "t1": 6.478,
     "text": "and it shows the earliest post it can"
    },
    {
-    "t0": 6.664,
-    "t1": 7.523,
+    "t0": 6.536,
+    "t1": 7.361,
     "text": "find on X,"
    },
    {
-    "t0": 7.674,
-    "t1": 8.522,
+    "t0": 7.477,
+    "t1": 8.406,
     "text": "who amplified it,"
    },
    {
-    "t0": 8.545,
-    "t1": 9.865,
+    "t0": 8.615,
+    "t1": 9.9,
     "text": "and how it spread over time."
    }
   ]
  },
- "0003.png": {
-  "text": "By the end, it'll be deployed on Modal and pulling real posts from X through the xAI API. Here's the whole prompt.",
-  "say": "By the end, it'll be deployed on Modal and pulling real posts from X through the ex A I API. Here's the whole prompt.",
-  "dur": 6.62,
-  "at": 10.18,
-  "end": 16.8,
-  "mode": "one-take",
-  "checked": true,
+ "m01.png": {
+  "text": "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+  "say": "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+  "dur": 13.692,
+  "takeAt": 10.178,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.072,
-    "t1": 0.667,
-    "text": "By the end,"
+    "t0": 0.12,
+    "t1": 1.374,
+    "text": "Here's where Modal fits."
    },
    {
-    "t0": 0.717,
-    "t1": 3.19,
-    "text": "it'll be deployed on Modal and pulling real"
+    "t0": 1.699,
+    "t1": 6.018,
+    "text": "Grok's X search, through the xAI API, finds the posts."
    },
    {
-    "t0": 3.24,
-    "t1": 5.127,
-    "text": "posts from X through the xAI API."
+    "t0": 6.343,
+    "t1": 8.236,
+    "text": "Modal runs the searches in parallel,"
    },
    {
-    "t0": 5.177,
-    "t1": 6.535,
-    "text": "Here's the whole prompt."
+    "t0": 8.515,
+    "t1": 10.395,
+    "text": "stores the results in a Modal Dict,"
+   },
+   {
+    "t0": 10.57,
+    "t1": 12.508,
+    "text": "and serves the page at a public modal"
+   },
+   {
+    "t0": 12.566,
+    "t1": 13.692,
+    "text": "dot run URL."
+   }
+  ]
+ },
+ "m02.png": {
+  "text": "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+  "dur": 12.36,
+  "takeAt": 24.18,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.537,
+    "text": "That beats a laptop script,"
+   },
+   {
+    "t0": 1.56,
+    "t1": 3.266,
+    "text": "which runs one search at a time,"
+   },
+   {
+    "t0": 3.44,
+    "t1": 5.901,
+    "text": "and a server you'd pay for while it sits idle."
+   },
+   {
+    "t0": 6.18,
+    "t1": 7.829,
+    "text": "On Modal, the key stays in a Modal"
+   },
+   {
+    "t0": 7.887,
+    "t1": 10.151,
+    "text": "Secret, and the app scales to zero,"
+   },
+   {
+    "t0": 10.36,
+    "t1": 12.36,
+    "text": "so you pay by the second while it runs."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "Now for the prompt. It's short, and written in plain language.",
+  "dur": 3.307,
+  "takeAt": 36.893,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.072,
+    "text": "Now for the prompt."
+   },
+   {
+    "t0": 1.455,
+    "t1": 3.307,
+    "text": "It's short, and written in plain language."
    }
   ]
  },
  "0007.png": {
-  "text": "Grok's X search finds the posts, and Modal does the rest. It runs the searches in parallel, stores the results and serves a dark page, and it refreshes saved phrases once a day.",
-  "dur": 10.455,
-  "at": 16.85,
-  "end": 27.305,
-  "mode": "one-take",
-  "checked": true,
+  "text": "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+  "dur": 7.025,
+  "takeAt": 40.445,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.124,
-    "t1": 2.144,
-    "text": "Grok's X search finds the posts,"
+    "t0": 0.12,
+    "t1": 2.384,
+    "text": "It asks for Grok's X search to find"
    },
    {
-    "t0": 2.353,
-    "t1": 3.63,
-    "text": "and Modal does the rest."
+    "t0": 2.419,
+    "t1": 4.579,
+    "text": "the posts, and Modal for everything else,"
    },
    {
-    "t0": 3.874,
-    "t1": 5.569,
-    "text": "It runs the searches in parallel,"
-   },
-   {
-    "t0": 5.813,
-    "t1": 7.995,
-    "text": "stores the results and serves a dark page,"
-   },
-   {
-    "t0": 8.17,
-    "t1": 10.445,
-    "text": "and it refreshes saved phrases once a day."
+    "t0": 4.73,
+    "t1": 7.025,
+    "text": "from the parallel searches to the dark web page."
    }
   ]
  },
  "0009.png": {
-  "text": "Edges in the graph have to come from real quotes, replies, reposts or mentions. Then Devin should deploy it, test it and open a pull request.",
-  "dur": 7.7,
-  "at": 27.71,
-  "end": 35.41,
-  "mode": "one-take",
-  "checked": true,
+  "text": "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+  "dur": 10.003,
+  "takeAt": 47.887,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.096,
-    "t1": 1.558,
-    "text": "Edges in the graph have to come from"
+    "t0": 0.12,
+    "t1": 2.326,
+    "text": "Graph edges must come from real quotes,"
    },
    {
-    "t0": 1.64,
-    "t1": 3.045,
-    "text": "real quotes, replies,"
+    "t0": 2.501,
+    "t1": 4.335,
+    "text": "replies, reposts or mentions."
    },
    {
-    "t0": 3.103,
-    "t1": 4.252,
-    "text": "reposts or mentions."
+    "t0": 4.718,
+    "t1": 5.391,
+    "text": "Once it's built,"
    },
    {
-    "t0": 4.763,
-    "t1": 6.017,
-    "text": "Then Devin should deploy it,"
+    "t0": 5.426,
+    "t1": 6.506,
+    "text": "Devin should deploy it,"
    },
    {
-    "t0": 6.133,
-    "t1": 7.7,
-    "text": "test it and open a pull request."
+    "t0": 6.657,
+    "t1": 8.143,
+    "text": "test the public URL,"
+   },
+   {
+    "t0": 8.294,
+    "t1": 10.003,
+    "text": "and open a pull request for review."
    }
   ]
  },
  "0014.png": {
-  "text": "Devin confirms the plan and starts by looking around the repo.",
-  "dur": 2.995,
-  "at": 35.55,
-  "end": 38.545,
-  "mode": "one-take",
-  "checked": true,
+  "text": "Devin confirms the plan, then gets to work in the repo.",
+  "dur": 2.886,
+  "takeAt": 58.174,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.127,
-    "t1": 2.205,
-    "text": "Devin confirms the plan and starts by looking"
+    "t0": 0.12,
+    "t1": 1.409,
+    "text": "Devin confirms the plan,"
    },
    {
-    "t0": 2.24,
-    "t1": 2.995,
-    "text": "around the repo."
-   }
-  ]
- },
- "0018.png": {
-  "text": "It plans to call X search as a tool through the xAI Responses API.",
-  "say": "It plans to call X search as a tool, through the ex A I Responses API.",
-  "dur": 4.585,
-  "at": 38.85,
-  "end": 43.435,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.066,
-    "t1": 1.963,
-    "text": "It plans to call X search as"
-   },
-   {
-    "t0": 2.013,
-    "t1": 4.535,
-    "text": "a tool through the xAI Responses API."
-   }
-  ]
- },
- "0847.png": {
-  "text": "Here's the xAI call. Each search sends a prompt to Grok with the X search tool, and asks for structured JSON back.",
-  "say": "Here's the ex A I call. Each search sends a prompt to Grok with the X search tool, and asks for structured JSON back.",
-  "dur": 6.775,
-  "at": 43.68,
-  "end": 50.455,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.054,
-    "t1": 1.215,
-    "text": "Here's the xAI call."
-   },
-   {
-    "t0": 1.265,
-    "t1": 2.971,
-    "text": "Each search sends a prompt to"
-   },
-   {
-    "t0": 3.021,
-    "t1": 4.666,
-    "text": "Grok with the X search tool,"
-   },
-   {
-    "t0": 4.716,
-    "t1": 6.725,
-    "text": "and asks for structured JSON back."
-   }
-  ]
- },
- "0844.png": {
-  "text": "On Modal, run search dot map fans out one search per time window, so they all run in parallel.",
-  "dur": 5.265,
-  "at": 50.85,
-  "end": 56.115,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.082,
-    "t1": 2.242,
-    "text": "On Modal, run search dot map fans out"
-   },
-   {
-    "t0": 2.3,
-    "t1": 3.705,
-    "text": "one search per time window,"
-   },
-   {
-    "t0": 3.832,
-    "t1": 5.265,
-    "text": "so they all run in parallel."
-   }
-  ]
- },
- "0845.png": {
-  "text": "The daily refresh is a Modal cron on the refresh function, set for six every morning.",
-  "dur": 4.53,
-  "at": 56.42,
-  "end": 60.95,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.062,
-    "t1": 1.954,
-    "text": "The daily refresh is a Modal cron on"
-   },
-   {
-    "t0": 1.989,
-    "t1": 2.999,
-    "text": "the refresh function,"
-   },
-   {
-    "t0": 3.208,
-    "t1": 4.485,
-    "text": "set for six every morning."
-   }
-  ]
- },
- "0846.png": {
-  "text": "And the ASGI app decorator serves the page and its API from one web function.",
-  "say": "And the A S G I app decorator serves the page and its API, from one web function.",
-  "dur": 4.78,
-  "at": 61.115,
-  "end": 65.895,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.034,
-    "t1": 2.576,
-    "text": "And the ASGI app decorator serves the page"
-   },
-   {
-    "t0": 2.626,
-    "t1": 4.674,
-    "text": "and its API from one web function."
+    "t0": 1.525,
+    "t1": 2.886,
+    "text": "then gets to work in the repo."
    }
   ]
  },
  "0236.png": {
-  "text": "Devin deploys it with modal deploy. This workspace had no free schedule slots, so it turns the cron off and the page starts the daily refresh instead.",
-  "say": "Devin deploys it with modal deploy. This workspace had no free schedule slots, so it turns the cron off, and the page starts the daily refresh instead.",
-  "dur": 9.09,
-  "at": 65.99,
-  "end": 75.08,
-  "mode": "one-take",
-  "checked": true,
+  "text": "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+  "dur": 10.179,
+  "takeAt": 61.611,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.174,
-    "t1": 2.244,
-    "text": "Devin deploys it with modal deploy."
+    "t0": 0.12,
+    "t1": 1.432,
+    "text": "About fifteen minutes in,"
    },
    {
-    "t0": 2.294,
-    "t1": 4.789,
-    "text": "This workspace had no free schedule slots,"
+    "t0": 1.559,
+    "t1": 3.51,
+    "text": "Devin deploys it with modal deploy,"
    },
    {
-    "t0": 4.839,
-    "t1": 6.485,
-    "text": "so it turns the cron off and"
+    "t0": 3.626,
+    "t1": 5.158,
+    "text": "which prints the public URL."
    },
    {
-    "t0": 6.535,
-    "t1": 9.029,
-    "text": "the page starts the daily refresh instead."
+    "t0": 5.484,
+    "t1": 7.794,
+    "text": "The workspace had no free schedule slot,"
+   },
+   {
+    "t0": 8.003,
+    "t1": 10.179,
+    "text": "so it deploys with the daily cron turned off."
    }
   ]
  },
  "0289.png": {
-  "text": "Then it runs a real trace for vibe coding against the deployed endpoint, and waits for it to finish.",
-  "dur": 4.785,
-  "at": 75.405,
-  "end": 80.19,
-  "mode": "one-take",
-  "checked": true,
+  "text": "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+  "dur": 4.658,
+  "takeAt": 72.072,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0,
-    "t1": 1.614,
-    "text": "Then it runs a real trace for vibe"
+    "t0": 0.12,
+    "t1": 1.907,
+    "text": "Then it tests the deployed endpoint with a"
    },
    {
-    "t0": 1.649,
-    "t1": 3.298,
-    "text": "coding against the deployed endpoint,"
+    "t0": 1.977,
+    "t1": 3.394,
+    "text": "real trace for vibe coding,"
    },
    {
-    "t0": 3.472,
-    "t1": 4.726,
+    "t0": 3.417,
+    "t1": 4.658,
     "text": "and waits for it to finish."
    }
   ]
  },
  "0446.png": {
-  "text": "With the pull request open, Devin switches to test mode and clicks through the live page itself.",
-  "say": "With the pull request open, Devin switches to test mode, and clicks through the lyve page itself.",
-  "dur": 4.785,
-  "at": 80.385,
-  "end": 85.17,
-  "mode": "one-take",
-  "checked": true,
+  "text": "With the pull request open, Devin also clicks through the page in a browser to test it.",
+  "dur": 4.359,
+  "takeAt": 77.006,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.024,
-    "t1": 1.342,
+    "t0": 0.12,
+    "t1": 1.408,
     "text": "With the pull request open,"
    },
    {
-    "t0": 1.392,
-    "t1": 2.912,
-    "text": "Devin switches to test mode and"
+    "t0": 1.478,
+    "t1": 3.242,
+    "text": "Devin also clicks through the page in a"
    },
    {
-    "t0": 2.962,
-    "t1": 4.735,
-    "text": "clicks through the live page itself."
-   }
-  ]
- },
- "0478.png": {
-  "text": "Devin Review flags five bugs and two security findings on the pull request, and Devin works through them before redeploying.",
-  "dur": 6.39,
-  "at": 85.48,
-  "end": 91.87,
-  "mode": "one-take",
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0.119,
-    "t1": 2.511,
-    "text": "Devin Review flags five bugs and two security"
-   },
-   {
-    "t0": 2.569,
-    "t1": 3.962,
-    "text": "findings on the pull request,"
-   },
-   {
-    "t0": 4.09,
-    "t1": 6.353,
-    "text": "and Devin works through them before redeploying."
+    "t0": 3.289,
+    "t1": 4.359,
+    "text": "browser to test it."
    }
   ]
  },
  "0836.png": {
-  "text": "When it's done, Devin reports the live URL and the pull request. It also notes that a plain modal deploy turns the real schedule on once a slot is free.",
-  "say": "When it's done, Devin reports the lyve U R L and the pull request. It also notes that a plain modal deploy turns the real schedule on, once a slot is free.",
-  "dur": 8.87,
-  "at": 92.1,
-  "end": 100.97,
-  "mode": "one-take",
-  "checked": true,
+  "text": "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+  "dur": 8.012,
+  "takeAt": 81.638,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.058,
-    "t1": 0.895,
+    "t0": 0.12,
+    "t1": 0.77,
     "text": "When it's done,"
    },
    {
-    "t0": 0.945,
-    "t1": 3.734,
-    "text": "Devin reports the live URL and the pull request."
+    "t0": 0.805,
+    "t1": 3.324,
+    "text": "Devin reports the public URL and the pull request."
    },
    {
-    "t0": 3.784,
-    "t1": 6.395,
-    "text": "It also notes that a plain modal deploy turns"
+    "t0": 3.649,
+    "t1": 5.785,
+    "text": "It also notes that the daily refresh moves"
    },
    {
-    "t0": 6.445,
-    "t1": 8.82,
-    "text": "the real schedule on once a slot is free."
+    "t0": 5.832,
+    "t1": 7.898,
+    "text": "to a Modal schedule once a slot is free."
    }
   ]
  },
  "0838.png": {
-  "text": "And here's the deployed app on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
-  "dur": 9.685,
-  "at": 101.415,
-  "end": 111.1,
-  "mode": "one-take",
-  "checked": true,
+  "text": "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+  "dur": 10.179,
+  "takeAt": 89.741,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.008,
-    "t1": 1.634,
-    "text": "And here's the deployed app on Modal."
+    "t0": 0.12,
+    "t1": 1.27,
+    "text": "And here's the deployed app,"
    },
    {
-    "t0": 1.959,
-    "t1": 2.83,
+    "t0": 1.305,
+    "t1": 2.187,
+    "text": "running on Modal."
+   },
+   {
+    "t0": 2.512,
+    "t1": 3.383,
     "text": "For vibe coding,"
    },
    {
-    "t0": 2.853,
-    "t1": 4.78,
-    "text": "the earliest post it found is from May"
+    "t0": 3.417,
+    "t1": 6.204,
+    "text": "the earliest post it found is from May twenty twenty-two."
    },
    {
-    "t0": 4.838,
-    "t1": 7.474,
-    "text": "twenty twenty-two. That's the oldest post the search"
+    "t0": 6.413,
+    "t1": 8.445,
+    "text": "That's the oldest post the search returned,"
    },
    {
-    "t0": 7.52,
-    "t1": 9.656,
-    "text": "returned, not proof of where it started."
+    "t0": 8.654,
+    "t1": 10.07,
+    "text": "not proof of where it started."
    }
   ]
  },
  "0841.png": {
   "text": "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
-  "dur": 8.595,
-  "at": 111.28,
-  "end": 119.875,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 8.445,
+  "takeAt": 100.025,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.07,
-    "t1": 2.218,
+    "t0": 0,
+    "t1": 2.468,
     "text": "It found sixty-nine posts with the phrase,"
    },
    {
-    "t0": 2.392,
-    "t1": 3.588,
+    "t0": 2.619,
+    "t1": 3.768,
     "text": "which is a sample of X,"
    },
    {
-    "t0": 3.669,
-    "t1": 4.413,
+    "t0": 3.826,
+    "t1": 4.616,
     "text": "not a total."
    },
    {
-    "t0": 4.796,
-    "t1": 6.456,
+    "t0": 4.86,
+    "t1": 6.543,
     "text": "The graph shows how they connect,"
    },
    {
-    "t0": 6.665,
-    "t1": 8.595,
+    "t0": 6.66,
+    "t1": 8.445,
     "text": "with Karpathy as the top amplifier."
    }
   ]
  },
  "0842.png": {
   "text": "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
-  "dur": 7.29,
-  "at": 120.14,
-  "end": 127.43,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 6.951,
+  "takeAt": 108.759,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.104,
-    "t1": 2.17,
+    "t0": 0.12,
+    "t1": 1.931,
     "text": "Every line is backed by a real reply,"
    },
    {
-    "t0": 2.321,
-    "t1": 3.273,
+    "t0": 2.047,
+    "t1": 2.987,
     "text": "quote or mention,"
    },
    {
-    "t0": 3.482,
-    "t1": 5.363,
+    "t0": 3.162,
+    "t1": 5.112,
     "text": "and this table lists the post behind each"
    },
    {
-    "t0": 5.421,
-    "t1": 7.29,
+    "t0": 5.182,
+    "t1": 6.951,
     "text": "one, so you can check it on X."
    }
   ]
  },
  "outro": {
   "text": "Paste a phrase, and see how it spread.",
-  "dur": 1.89,
-  "at": 127.79,
-  "end": 129.68,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 1.934,
+  "takeAt": 115.876,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.",
+    "In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time."
+   ],
+   [
+    "m01.png",
+    "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+    "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL."
+   ],
+   [
+    "m02.png",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+    "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs."
+   ],
+   [
+    "0003.png",
+    "Now for the prompt. It's short, and written in plain language.",
+    "Now for the prompt. It's short, and written in plain language."
+   ],
+   [
+    "0007.png",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page.",
+    "It asks for Grok's X search to find the posts, and Modal for everything else, from the parallel searches to the dark web page."
+   ],
+   [
+    "0009.png",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review.",
+    "Graph edges must come from real quotes, replies, reposts or mentions. Once it's built, Devin should deploy it, test the public URL, and open a pull request for review."
+   ],
+   [
+    "0014.png",
+    "Devin confirms the plan, then gets to work in the repo.",
+    "Devin confirms the plan, then gets to work in the repo."
+   ],
+   [
+    "0236.png",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off.",
+    "About fifteen minutes in, Devin deploys it with modal deploy, which prints the public URL. The workspace had no free schedule slot, so it deploys with the daily cron turned off."
+   ],
+   [
+    "0289.png",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish.",
+    "Then it tests the deployed endpoint with a real trace for vibe coding, and waits for it to finish."
+   ],
+   [
+    "0446.png",
+    "With the pull request open, Devin also clicks through the page in a browser to test it.",
+    "With the pull request open, Devin also clicks through the page in a browser to test it."
+   ],
+   [
+    "0836.png",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free.",
+    "When it's done, Devin reports the public URL and the pull request. It also notes that the daily refresh moves to a Modal schedule once a slot is free."
+   ],
+   [
+    "0838.png",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started.",
+    "And here's the deployed app, running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two. That's the oldest post the search returned, not proof of where it started."
+   ],
+   [
+    "0841.png",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier.",
+    "It found sixty-nine posts with the phrase, which is a sample of X, not a total. The graph shows how they connect, with Karpathy as the top amplifier."
+   ],
+   [
+    "0842.png",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X.",
+    "Every line is backed by a real reply, quote or mention, and this table lists the post behind each one, so you can check it on X."
+   ],
+   [
+    "outro",
+    "Paste a phrase, and see how it spread.",
+    "Paste a phrase, and see how it spread."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.082,
-    "t1": 0.848,
+    "t0": 0.12,
+    "t1": 0.805,
     "text": "Paste a phrase,"
    },
    {
-    "t0": 0.871,
-    "t1": 1.89,
+    "t0": 0.828,
+    "t1": 1.934,
     "text": "and see how it spread."
    }
   ]
