@@ -52,6 +52,12 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 34. **Devin Primitives: when to use what** (overview, 1:17): A short diagram-led overview for teams setting Devin up. A map of the primitives (always-on context: AGENTS.md, rules and Memory; reusable procedures: Skills and Playbooks; reach and sharing: MCP servers and Plugins), then for each one when to use it, where it lives in the product (real Customize → Rules, Memory, Skills, MCPs and Plugins tabs, and Settings → Playbooks) and how to build one (a short AGENTS.md and a minimal SKILL.md on screen), ending on a "which one should I use?" diagram. A one-page [cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md) covers the same table. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview.mp4)
 
+<!-- -->
+
+40. **Nightly TestFlight builds with What to Test notes** (narrated by Nader, 1:52): Create an automation with an Every day schedule and a macOS virtual environment, click Run now, and watch the macOS session archive an iOS app with xcodebuild and write one What to Test note per merged PR. The TestFlight upload and Slack post are stub scripts in the demo repo, and Devin says so. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/40-nightly-testflight/40-nightly-testflight-nader.mp4) · [Voice script](tutorials/40-nightly-testflight/voice-script.md)
+
+41. **Nightly TestFlight builds: how it works** (overview, narrated by Nader, 1:19): A diagram-led overview of the pattern: a nightly schedule starts a macOS session that archives the app and writes What to Test notes from the day's merged PRs, with real proof shots from tutorial 40. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/41-nightly-testflight-overview/41-nightly-testflight-overview-nader.mp4) · [Voice script](tutorials/41-nightly-testflight-overview/voice-script.md)
+
 ## Narrated tutorials
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
@@ -89,6 +95,8 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Dynamic Workflows: how it works (overview), narrated by Nader** (1:59): What a dynamic workflow is, why scripted coordination helps with multi-part jobs, parallel work and connected stages, live progress and resumability, `pipeline` vs `parallel`, a real 12-reviewer accessibility audit, and when to use a workflow. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/32-dynamic-workflows-overview/32-dynamic-workflows-overview-nader.mp4) · [Voice script](tutorials/32-dynamic-workflows-overview/voice-script.md)
 - **Dynamic Workflows, narrated by Nader** (2:05): A real five-component audit, fix and verify workflow: the script, the live workflow panel, one agent's structured output, the roll-up and a fix PR. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/33-dynamic-workflows/33-dynamic-workflows-nader.mp4) · [Voice script](tutorials/33-dynamic-workflows/voice-script.md)
 - **Devin Primitives: when to use what (overview), narrated by Nader** (1:42): When to use AGENTS.md, rules, Memory, Skills, Playbooks, MCP servers and Plugins, where each lives in the product, and how to build one. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview-nader.mp4) · [Voice script](tutorials/34-devin-primitives-overview/voice-script.md) · [Cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md)
+- **Nightly TestFlight builds with What to Test notes, narrated by Nader** (1:52): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/40-nightly-testflight/40-nightly-testflight-nader.mp4) · [Voice script](tutorials/40-nightly-testflight/voice-script.md)
+- **Nightly TestFlight builds: how it works (overview), narrated by Nader** (1:19): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/41-nightly-testflight-overview/41-nightly-testflight-overview-nader.mp4) · [Voice script](tutorials/41-nightly-testflight-overview/voice-script.md)
 
 ## Making a new tutorial
 
