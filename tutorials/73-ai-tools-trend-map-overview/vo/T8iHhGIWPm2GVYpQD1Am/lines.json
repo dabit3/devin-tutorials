@@ -1,0 +1,1105 @@
+{
+ "0010.png": {
+  "text": "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+  "dur": 9.89,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0010.png",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on."
+   ],
+   [
+    "0020.png",
+    "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+    "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page."
+   ],
+   [
+    "0025.png",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs."
+   ],
+   [
+    "0030.png",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range."
+   ],
+   [
+    "0040.png",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals."
+   ],
+   [
+    "0041.png",
+    "In the real run, Devin built the whole app from this one prompt.",
+    "In the real run, Devin built the whole app from this one prompt."
+   ],
+   [
+    "0051.png",
+    "It deployed the app to Modal with modal deploy.",
+    "It deployed the app to Modal with modal deploy."
+   ],
+   [
+    "0052.png",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions."
+   ],
+   [
+    "0061.png",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request."
+   ],
+   [
+    "0071.png",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports."
+   ],
+   [
+    "0080.png",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against."
+   ],
+   [
+    "outro",
+    "Let the data show what's catching on.",
+    "Let the data show what's catching on."
+   ]
+  ],
+  "chunks": [
+   {
+    "text": "Which AI coding tools are people actually using,",
+    "t0": 0.0,
+    "t1": 2.241
+   },
+   {
+    "text": "and which ones are they only talking about?",
+    "t0": 2.264,
+    "t1": 3.913
+   },
+   {
+    "text": "This app answers that with real posts from X,",
+    "t0": 4.296,
+    "t1": 6.496
+   },
+   {
+    "text": "so founders, investors and developers",
+    "t0": 6.58,
+    "t1": 8.666
+   },
+   {
+    "text": "can see what's catching on.",
+    "t0": 8.709,
+    "t1": 9.89
+   }
+  ]
+ },
+ "0020.png": {
+  "text": "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+  "say": "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+  "dur": 10.665,
+  "takeAt": 10.235,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0010.png",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on."
+   ],
+   [
+    "0020.png",
+    "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+    "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page."
+   ],
+   [
+    "0025.png",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs."
+   ],
+   [
+    "0030.png",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range."
+   ],
+   [
+    "0040.png",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals."
+   ],
+   [
+    "0041.png",
+    "In the real run, Devin built the whole app from this one prompt.",
+    "In the real run, Devin built the whole app from this one prompt."
+   ],
+   [
+    "0051.png",
+    "It deployed the app to Modal with modal deploy.",
+    "It deployed the app to Modal with modal deploy."
+   ],
+   [
+    "0052.png",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions."
+   ],
+   [
+    "0061.png",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request."
+   ],
+   [
+    "0071.png",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports."
+   ],
+   [
+    "0080.png",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against."
+   ],
+   [
+    "outro",
+    "Let the data show what's catching on.",
+    "Let the data show what's catching on."
+   ]
+  ],
+  "chunks": [
+   {
+    "text": "Here's how it works.",
+    "t0": 0.028,
+    "t1": 1.027
+   },
+   {
+    "text": "Grok searches posts on X through the xAI API.",
+    "t0": 1.236,
+    "t1": 4.58
+   },
+   {
+    "text": "Modal runs those searches",
+    "t0": 4.858,
+    "t1": 6.038
+   },
+   {
+    "text": "and keeps the results in a Modal Dict.",
+    "t0": 6.085,
+    "t1": 7.923
+   },
+   {
+    "text": "A web endpoint on the same app serves the page.",
+    "t0": 8.307,
+    "t1": 10.663
+   }
+  ]
+ },
+ "0025.png": {
+  "text": "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+  "say": "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+  "dur": 27.965,
+  "takeAt": 21.085,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0010.png",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on."
+   ],
+   [
+    "0020.png",
+    "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+    "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page."
+   ],
+   [
+    "0025.png",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs."
+   ],
+   [
+    "0030.png",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range."
+   ],
+   [
+    "0040.png",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals."
+   ],
+   [
+    "0041.png",
+    "In the real run, Devin built the whole app from this one prompt.",
+    "In the real run, Devin built the whole app from this one prompt."
+   ],
+   [
+    "0051.png",
+    "It deployed the app to Modal with modal deploy.",
+    "It deployed the app to Modal with modal deploy."
+   ],
+   [
+    "0052.png",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions."
+   ],
+   [
+    "0061.png",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request."
+   ],
+   [
+    "0071.png",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports."
+   ],
+   [
+    "0080.png",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against."
+   ],
+   [
+    "outro",
+    "Let the data show what's catching on.",
+    "Let the data show what's catching on."
+   ]
+  ],
+  "chunks": [
+   {
+    "text": "So why Modal?",
+    "t0": 0.057,
+    "t1": 0.882
+   },
+   {
+    "text": "A laptop script can't keep running on a timer,",
+    "t0": 1.16,
+    "t1": 3.469
+   },
+   {
+    "text": "and it has no public URL.",
+    "t0": 3.538,
+    "t1": 5.27
+   },
+   {
+    "text": "A server you manage would sit idle",
+    "t0": 5.549,
+    "t1": 7.232
+   },
+   {
+    "text": "and cost money between refreshes.",
+    "t0": 7.281,
+    "t1": 9.09
+   },
+   {
+    "text": "On Modal, a scheduled function does the daily pull,",
+    "t0": 9.415,
+    "t1": 12.162
+   },
+   {
+    "text": "and .map() runs the searches",
+    "t0": 12.216,
+    "t1": 13.724
+   },
+   {
+    "text": "in parallel across containers.",
+    "t0": 13.778,
+    "t1": 15.394
+   },
+   {
+    "text": "A Modal Dict keeps the results,",
+    "t0": 15.835,
+    "t1": 17.748
+   },
+   {
+    "text": "and a web endpoint serves the page",
+    "t0": 17.809,
+    "t1": 19.907
+   },
+   {
+    "text": "at a modal.run URL.",
+    "t0": 19.969,
+    "t1": 21.141
+   },
+   {
+    "text": "The xAI key lives in a Modal Secret.",
+    "t0": 21.315,
+    "t1": 23.486
+   },
+   {
+    "text": "The app scales to zero when nobody is using it,",
+    "t0": 23.765,
+    "t1": 25.953
+   },
+   {
+    "text": "and you only pay for the seconds it runs.",
+    "t0": 25.999,
+    "t1": 27.965
+   }
+  ]
+ },
+ "0030.png": {
+  "text": "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+  "say": "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range.",
+  "dur": 7.784,
+  "takeAt": 49.316,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0010.png",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on."
+   ],
+   [
+    "0020.png",
+    "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+    "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page."
+   ],
+   [
+    "0025.png",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs."
+   ],
+   [
+    "0030.png",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range."
+   ],
+   [
+    "0040.png",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals."
+   ],
+   [
+    "0041.png",
+    "In the real run, Devin built the whole app from this one prompt.",
+    "In the real run, Devin built the whole app from this one prompt."
+   ],
+   [
+    "0051.png",
+    "It deployed the app to Modal with modal deploy.",
+    "It deployed the app to Modal with modal deploy."
+   ],
+   [
+    "0052.png",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions."
+   ],
+   [
+    "0061.png",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request."
+   ],
+   [
+    "0071.png",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports."
+   ],
+   [
+    "0080.png",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against."
+   ],
+   [
+    "outro",
+    "Let the data show what's catching on.",
+    "Let the data show what's catching on."
+   ]
+  ],
+  "chunks": [
+   {
+    "text": "That's ten tools across four weeks,",
+    "t0": 0.12,
+    "t1": 2.054
+   },
+   {
+    "text": "so each refresh runs forty searches",
+    "t0": 2.11,
+    "t1": 4.044
+   },
+   {
+    "text": "in parallel with .map().",
+    "t0": 4.099,
+    "t1": 5.426
+   },
+   {
+    "text": "Every search has its own date range.",
+    "t0": 6.029,
+    "t1": 7.784
+   }
+  ]
+ },
+ "0040.png": {
+  "text": "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
+  "dur": 7.325,
+  "takeAt": 57.315,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0010.png",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on."
+   ],
+   [
+    "0020.png",
+    "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+    "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page."
+   ],
+   [
+    "0025.png",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs."
+   ],
+   [
+    "0030.png",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range."
+   ],
+   [
+    "0040.png",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals."
+   ],
+   [
+    "0041.png",
+    "In the real run, Devin built the whole app from this one prompt.",
+    "In the real run, Devin built the whole app from this one prompt."
+   ],
+   [
+    "0051.png",
+    "It deployed the app to Modal with modal deploy.",
+    "It deployed the app to Modal with modal deploy."
+   ],
+   [
+    "0052.png",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions."
+   ],
+   [
+    "0061.png",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request."
+   ],
+   [
+    "0071.png",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports."
+   ],
+   [
+    "0080.png",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against."
+   ],
+   [
+    "outro",
+    "Let the data show what's catching on.",
+    "Let the data show what's catching on."
+   ]
+  ],
+  "chunks": [
+   {
+    "text": "Each post that Grok finds gets a label,",
+    "t0": 0.12,
+    "t1": 2.233
+   },
+   {
+    "text": "real usage report or hype.",
+    "t0": 2.558,
+    "t1": 4.009
+   },
+   {
+    "text": "The counts are posts found in the X search sample,",
+    "t0": 4.392,
+    "t1": 6.727
+   },
+   {
+    "text": "not totals.",
+    "t0": 6.777,
+    "t1": 7.325
+   }
+  ]
+ },
+ "0041.png": {
+  "text": "In the real run, Devin built the whole app from this one prompt.",
+  "dur": 2.945,
+  "takeAt": 65.035,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0010.png",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on."
+   ],
+   [
+    "0020.png",
+    "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+    "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page."
+   ],
+   [
+    "0025.png",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs."
+   ],
+   [
+    "0030.png",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range."
+   ],
+   [
+    "0040.png",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals."
+   ],
+   [
+    "0041.png",
+    "In the real run, Devin built the whole app from this one prompt.",
+    "In the real run, Devin built the whole app from this one prompt."
+   ],
+   [
+    "0051.png",
+    "It deployed the app to Modal with modal deploy.",
+    "It deployed the app to Modal with modal deploy."
+   ],
+   [
+    "0052.png",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions."
+   ],
+   [
+    "0061.png",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request."
+   ],
+   [
+    "0071.png",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports."
+   ],
+   [
+    "0080.png",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against."
+   ],
+   [
+    "outro",
+    "Let the data show what's catching on.",
+    "Let the data show what's catching on."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.84,
+    "text": "In the real run,"
+   },
+   {
+    "t0": 0.875,
+    "t1": 2.945,
+    "text": "Devin built the whole app from this one prompt."
+   }
+  ]
+ },
+ "0051.png": {
+  "text": "It deployed the app to Modal with modal deploy.",
+  "dur": 2.305,
+  "takeAt": 68.285,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0010.png",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on."
+   ],
+   [
+    "0020.png",
+    "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+    "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page."
+   ],
+   [
+    "0025.png",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs."
+   ],
+   [
+    "0030.png",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range."
+   ],
+   [
+    "0040.png",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals."
+   ],
+   [
+    "0041.png",
+    "In the real run, Devin built the whole app from this one prompt.",
+    "In the real run, Devin built the whole app from this one prompt."
+   ],
+   [
+    "0051.png",
+    "It deployed the app to Modal with modal deploy.",
+    "It deployed the app to Modal with modal deploy."
+   ],
+   [
+    "0052.png",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions."
+   ],
+   [
+    "0061.png",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request."
+   ],
+   [
+    "0071.png",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports."
+   ],
+   [
+    "0080.png",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against."
+   ],
+   [
+    "outro",
+    "Let the data show what's catching on.",
+    "Let the data show what's catching on."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 2.305,
+    "text": "It deployed the app to Modal with modal deploy."
+   }
+  ]
+ },
+ "0052.png": {
+  "text": "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+  "dur": 6.937,
+  "takeAt": 70.863,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0010.png",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on."
+   ],
+   [
+    "0020.png",
+    "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+    "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page."
+   ],
+   [
+    "0025.png",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs."
+   ],
+   [
+    "0030.png",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range."
+   ],
+   [
+    "0040.png",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals."
+   ],
+   [
+    "0041.png",
+    "In the real run, Devin built the whole app from this one prompt.",
+    "In the real run, Devin built the whole app from this one prompt."
+   ],
+   [
+    "0051.png",
+    "It deployed the app to Modal with modal deploy.",
+    "It deployed the app to Modal with modal deploy."
+   ],
+   [
+    "0052.png",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions."
+   ],
+   [
+    "0061.png",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request."
+   ],
+   [
+    "0071.png",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports."
+   ],
+   [
+    "0080.png",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against."
+   ],
+   [
+    "outro",
+    "Let the data show what's catching on.",
+    "Let the data show what's catching on."
+   ]
+  ],
+  "chunks": [
+   {
+    "text": "The daily schedule is in the code,",
+    "t0": 0.12,
+    "t1": 1.746
+   },
+   {
+    "text": "but this run deployed with it switched off,",
+    "t0": 1.955,
+    "t1": 3.987
+   },
+   {
+    "text": "because the workspace had hit",
+    "t0": 4.265,
+    "t1": 5.495
+   },
+   {
+    "text": "its limit of scheduled functions.",
+    "t0": 5.537,
+    "t1": 6.937
+   }
+  ]
+ },
+ "0061.png": {
+  "text": "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
+  "dur": 5.014,
+  "takeAt": 78.166,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0010.png",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on."
+   ],
+   [
+    "0020.png",
+    "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+    "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page."
+   ],
+   [
+    "0025.png",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs."
+   ],
+   [
+    "0030.png",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range."
+   ],
+   [
+    "0040.png",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals."
+   ],
+   [
+    "0041.png",
+    "In the real run, Devin built the whole app from this one prompt.",
+    "In the real run, Devin built the whole app from this one prompt."
+   ],
+   [
+    "0051.png",
+    "It deployed the app to Modal with modal deploy.",
+    "It deployed the app to Modal with modal deploy."
+   ],
+   [
+    "0052.png",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions."
+   ],
+   [
+    "0061.png",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request."
+   ],
+   [
+    "0071.png",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports."
+   ],
+   [
+    "0080.png",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against."
+   ],
+   [
+    "outro",
+    "Let the data show what's catching on.",
+    "Let the data show what's catching on."
+   ]
+  ],
+  "chunks": [
+   {
+    "text": "Devin checked the public URL again",
+    "t0": 0.12,
+    "t1": 1.84
+   },
+   {
+    "text": "after a small color fix,",
+    "t0": 1.891,
+    "t1": 3.301
+   },
+   {
+    "text": "and the code is in a pull request.",
+    "t0": 3.417,
+    "t1": 5.014
+   }
+  ]
+ },
+ "0071.png": {
+  "text": "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+  "dur": 6.397,
+  "takeAt": 83.553,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0010.png",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on."
+   ],
+   [
+    "0020.png",
+    "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+    "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page."
+   ],
+   [
+    "0025.png",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs."
+   ],
+   [
+    "0030.png",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range."
+   ],
+   [
+    "0040.png",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals."
+   ],
+   [
+    "0041.png",
+    "In the real run, Devin built the whole app from this one prompt.",
+    "In the real run, Devin built the whole app from this one prompt."
+   ],
+   [
+    "0051.png",
+    "It deployed the app to Modal with modal deploy.",
+    "It deployed the app to Modal with modal deploy."
+   ],
+   [
+    "0052.png",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions."
+   ],
+   [
+    "0061.png",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request."
+   ],
+   [
+    "0071.png",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports."
+   ],
+   [
+    "0080.png",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against."
+   ],
+   [
+    "outro",
+    "Let the data show what's catching on.",
+    "Let the data show what's catching on."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.326,
+    "text": "Here's the page running on Modal with real data."
+   },
+   {
+    "t0": 2.709,
+    "t1": 3.522,
+    "text": "In this sample,"
+   },
+   {
+    "t0": 3.615,
+    "t1": 6.397,
+    "text": "Codex and Cursor have the highest share of usage reports."
+   }
+  ]
+ },
+ "0080.png": {
+  "text": "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+  "dur": 10.203,
+  "takeAt": 90.287,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0010.png",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on."
+   ],
+   [
+    "0020.png",
+    "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+    "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page."
+   ],
+   [
+    "0025.png",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs."
+   ],
+   [
+    "0030.png",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range."
+   ],
+   [
+    "0040.png",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals."
+   ],
+   [
+    "0041.png",
+    "In the real run, Devin built the whole app from this one prompt.",
+    "In the real run, Devin built the whole app from this one prompt."
+   ],
+   [
+    "0051.png",
+    "It deployed the app to Modal with modal deploy.",
+    "It deployed the app to Modal with modal deploy."
+   ],
+   [
+    "0052.png",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions."
+   ],
+   [
+    "0061.png",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request."
+   ],
+   [
+    "0071.png",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports."
+   ],
+   [
+    "0080.png",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against."
+   ],
+   [
+    "outro",
+    "Let the data show what's catching on.",
+    "Let the data show what's catching on."
+   ]
+  ],
+  "chunks": [
+   {
+    "text": "To take it further,",
+    "t0": 0.12,
+    "t1": 1.13
+   },
+   {
+    "text": "add a weekly digest,",
+    "t0": 1.305,
+    "t1": 2.628
+   },
+   {
+    "text": "or alerts when a new tool starts to emerge.",
+    "t0": 2.837,
+    "t1": 5.008
+   },
+   {
+    "text": "You could also track more categories,",
+    "t0": 5.449,
+    "t1": 7.388
+   },
+   {
+    "text": "or add a second source",
+    "t0": 7.597,
+    "t1": 8.582
+   },
+   {
+    "text": "to check the X sample against.",
+    "t0": 8.627,
+    "t1": 10.203
+   }
+  ]
+ },
+ "outro": {
+  "text": "Let the data show what's catching on.",
+  "dur": 1.715,
+  "takeAt": 100.825,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0010.png",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
+    "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on."
+   ],
+   [
+    "0020.png",
+    "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
+    "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page."
+   ],
+   [
+    "0025.png",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
+    "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs."
+   ],
+   [
+    "0030.png",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
+    "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range."
+   ],
+   [
+    "0040.png",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
+    "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals."
+   ],
+   [
+    "0041.png",
+    "In the real run, Devin built the whole app from this one prompt.",
+    "In the real run, Devin built the whole app from this one prompt."
+   ],
+   [
+    "0051.png",
+    "It deployed the app to Modal with modal deploy.",
+    "It deployed the app to Modal with modal deploy."
+   ],
+   [
+    "0052.png",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
+    "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions."
+   ],
+   [
+    "0061.png",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
+    "Devin checked the public URL again after a small color fix, and the code is in a pull request."
+   ],
+   [
+    "0071.png",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
+    "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports."
+   ],
+   [
+    "0080.png",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
+    "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against."
+   ],
+   [
+    "outro",
+    "Let the data show what's catching on.",
+    "Let the data show what's catching on."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.113,
+    "t1": 1.715,
+    "text": "Let the data show what's catching on."
+   }
+  ]
+ }
+}
