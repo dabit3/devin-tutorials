@@ -1,0 +1,176 @@
+{
+ "note": "Every shot is a real screenshot from the signed-in Devin web app (thequantexplorer org) or the live GitHub Pages previews, captured by capture.mjs in segments and assembled with tools/pick-shots.mjs. Segment captures are not committed; the segment column records where each canonical shot came from.",
+ "workflow_session": "https://app.devin.ai/sessions/69d5d42c3aa64dfba240a070f7485741",
+ "workflow": "orbit-board-five-directions",
+ "repo": "thequantexplorer/orbit-demo",
+ "prs": {
+  "calm-minimal": 49,
+  "bold-high-contrast": 50,
+  "dense-power-user": 51,
+  "dark-editorial": 52,
+  "playful": 53
+ },
+ "previews": {
+  "calm-minimal": "https://thequantexplorer.github.io/orbit-demo/calm-minimal/",
+  "dense-power-user": "https://thequantexplorer.github.io/orbit-demo/dense-power-user/",
+  "bold-high-contrast": "https://thequantexplorer.github.io/orbit-demo/bold-high-contrast/",
+  "playful": "https://thequantexplorer.github.io/orbit-demo/playful/",
+  "dark-editorial": "https://thequantexplorer.github.io/orbit-demo/dark-editorial/"
+ },
+ "audit": "orbit-board-audit.md in the workflow session: all five tie at composite 97.85 (Lighthouse 100/99/100/100, one shared minor axe issue)",
+ "cleanup": "PRs closed unmerged and branches deleted after capture; gh-pages deleted, so the preview URLs no longer serve.",
+ "shots": {
+  "0000.png": {
+   "segment": "d-start/0000.png",
+   "what": "capture.mjs PHASE=start: home, prompt, send, plan"
+  },
+  "0001.png": {
+   "segment": "d-start/0001.png",
+   "what": "capture.mjs PHASE=start: home, prompt, send, plan"
+  },
+  "0002.png": {
+   "segment": "d-start/0002.png",
+   "what": "capture.mjs PHASE=start: home, prompt, send, plan"
+  },
+  "0003.png": {
+   "segment": "d-start/0003.png",
+   "what": "capture.mjs PHASE=start: home, prompt, send, plan"
+  },
+  "0004.png": {
+   "segment": "d-start/0004.png",
+   "what": "capture.mjs PHASE=start: home, prompt, send, plan"
+  },
+  "0005.png": {
+   "segment": "d-start/0005.png",
+   "what": "capture.mjs PHASE=start: home, prompt, send, plan"
+  },
+  "0006.png": {
+   "segment": "d-start/0006.png",
+   "what": "capture.mjs PHASE=start: home, prompt, send, plan"
+  },
+  "0007.png": {
+   "segment": "d-start/0007.png",
+   "what": "capture.mjs PHASE=start: home, prompt, send, plan"
+  },
+  "0008.png": {
+   "segment": "d-start/0009.png",
+   "what": "capture.mjs PHASE=start: home, prompt, send, plan"
+  },
+  "0009.png": {
+   "segment": "d-start/0011.png",
+   "what": "capture.mjs PHASE=start: home, prompt, send, plan"
+  },
+  "0010.png": {
+   "segment": "d-start/0079.png",
+   "what": "capture.mjs PHASE=start: home, prompt, send, plan"
+  },
+  "0011.png": {
+   "segment": "e-panel/0000.png",
+   "what": "capture.mjs PHASE=panel: live workflow panel while agents ran"
+  },
+  "0012.png": {
+   "segment": "e-panel/0008.png",
+   "what": "capture.mjs PHASE=panel: live workflow panel while agents ran"
+  },
+  "0013.png": {
+   "segment": "e-panel/0037.png",
+   "what": "capture.mjs PHASE=panel: live workflow panel while agents ran"
+  },
+  "0014.png": {
+   "segment": "e-panel/0078.png",
+   "what": "capture.mjs PHASE=panel: live workflow panel while agents ran"
+  },
+  "0015.png": {
+   "segment": "e-panel/0107.png",
+   "what": "capture.mjs PHASE=panel: live workflow panel while agents ran"
+  },
+  "0016.png": {
+   "segment": "g-final/0011.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0017.png": {
+   "segment": "g-final/0012.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0018.png": {
+   "segment": "f-final/0000.png",
+   "what": "capture.mjs PHASE=final: workflow complete"
+  },
+  "0019.png": {
+   "segment": "h-prev-calm-minimal/0000.png",
+   "what": "capture.mjs PHASE=shot: live GitHub Pages preview (calm-minimal)"
+  },
+  "0020.png": {
+   "segment": "h-prev-dense-power-user/0000.png",
+   "what": "capture.mjs PHASE=shot: live GitHub Pages preview (dense-power-user)"
+  },
+  "0021.png": {
+   "segment": "h-prev-bold-high-contrast/0000.png",
+   "what": "capture.mjs PHASE=shot: live GitHub Pages preview (bold-high-contrast)"
+  },
+  "0022.png": {
+   "segment": "h-prev-playful/0000.png",
+   "what": "capture.mjs PHASE=shot: live GitHub Pages preview (playful)"
+  },
+  "0023.png": {
+   "segment": "h-prev-dark-editorial/0000.png",
+   "what": "capture.mjs PHASE=shot: live GitHub Pages preview (dark-editorial)"
+  },
+  "0024.png": {
+   "segment": "g-final/0000.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0025.png": {
+   "segment": "g-final/0001.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0026.png": {
+   "segment": "g-final/0002.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0027.png": {
+   "segment": "g-final/0003.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0028.png": {
+   "segment": "g-final/0004.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0029.png": {
+   "segment": "g-final/0005.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0030.png": {
+   "segment": "g-final/0006.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0031.png": {
+   "segment": "g-final/0007.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0032.png": {
+   "segment": "g-final/0008.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0033.png": {
+   "segment": "g-final/0009.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0034.png": {
+   "segment": "g-final/0010.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0035.png": {
+   "segment": "i-pr/0000.png",
+   "what": "capture.mjs PHASE=open: PR #49 in Devin Review"
+  },
+  "0036.png": {
+   "segment": "g-final/0013.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  },
+  "0037.png": {
+   "segment": "g-final/0014.png",
+   "what": "capture.mjs PHASE=final2: reply, recording card and playback, audit report"
+  }
+ }
+}

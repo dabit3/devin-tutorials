@@ -1,0 +1,2294 @@
+{
+ "0000.png": {
+  "text": "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+  "dur": 11.94,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 3.1,
+    "text": "Let Devin explore design options for a screen in parallel."
+   },
+   {
+    "t0": 3.425,
+    "t1": 5.573,
+    "text": "Five Devins each build a different direction,"
+   },
+   {
+    "t0": 5.747,
+    "t1": 7.001,
+    "text": "publish a live preview,"
+   },
+   {
+    "t0": 7.024,
+    "t1": 8.197,
+    "text": "and record a walkthrough."
+   },
+   {
+    "t0": 8.58,
+    "t1": 10.089,
+    "text": "Your team then compares real,"
+   },
+   {
+    "t0": 10.136,
+    "t1": 11.94,
+    "text": "working designs instead of mockups."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+  "dur": 4.875,
+  "takeAt": 12.295,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.116,
+    "t1": 1.963,
+    "text": "Start a new session and mention the repo"
+   },
+   {
+    "t0": 2.021,
+    "t1": 3.054,
+    "text": "you want to redesign."
+   },
+   {
+    "t0": 3.379,
+    "t1": 4.875,
+    "text": "Here, that's our Orbit demo app."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+  "dur": 9.805,
+  "takeAt": 17.365,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.001,
+    "text": "Then ask for a workflow with one agent"
+   },
+   {
+    "t0": 2.059,
+    "t1": 3.057,
+    "text": "per design direction."
+   },
+   {
+    "t0": 3.568,
+    "t1": 5.704,
+    "text": "Each agent opens a pull request and deploys"
+   },
+   {
+    "t0": 5.751,
+    "t1": 7.295,
+    "text": "a preview to GitHub Pages."
+   },
+   {
+    "t0": 7.62,
+    "t1": 9.805,
+    "text": "Then it records a walkthrough of the live page."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+  "dur": 5.325,
+  "takeAt": 27.435,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.081,
+    "t1": 2.136,
+    "text": "A final step runs axe and Lighthouse on"
+   },
+   {
+    "t0": 2.206,
+    "t1": 3.274,
+    "text": "all five previews."
+   },
+   {
+    "t0": 3.599,
+    "t1": 5.317,
+    "text": "It ranks them so the team can vote."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+  "dur": 9.464,
+  "takeAt": 33.016,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.524,
+    "text": "Devin plans the run first."
+   },
+   {
+    "t0": 1.733,
+    "t1": 4.102,
+    "text": "Five design agents work on separate machines."
+   },
+   {
+    "t0": 4.485,
+    "t1": 6.807,
+    "text": "Then one audit agent scores each preview on"
+   },
+   {
+    "t0": 6.853,
+    "t1": 9.464,
+    "text": "accessibility, performance and best practices."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+  "dur": 5.375,
+  "takeAt": 42.735,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.025,
+    "t1": 3.369,
+    "text": "The workflow panel shows five design agents running in parallel."
+   },
+   {
+    "t0": 3.647,
+    "t1": 5.375,
+    "text": "The audit waits until they all finish."
+   }
+  ]
+ },
+ "0013.png": {
+  "text": "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+  "say": "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch.",
+  "dur": 8.761,
+  "takeAt": 48.399,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.593,
+    "text": "Each agent builds its direction on its own branch."
+   },
+   {
+    "t0": 2.836,
+    "t1": 5.065,
+    "text": "It opens a pull request and waits for CI."
+   },
+   {
+    "t0": 5.39,
+    "t1": 8.761,
+    "text": "Then it pushes its build to its own folder on the gh-pages branch."
+   }
+  ]
+ },
+ "0014.png": {
+  "text": "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+  "say": "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it.",
+  "dur": 7.875,
+  "takeAt": 57.375,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.025,
+    "t1": 1.697,
+    "text": "We're publishing to GitHub Pages here."
+   },
+   {
+    "t0": 1.906,
+    "t1": 7.875,
+    "text": "Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it."
+   }
+  ]
+ },
+ "0015.png": {
+  "text": "Once all five designs are done, the audit agent starts on the live previews.",
+  "dur": 4.0,
+  "takeAt": 65.64,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.71,
+    "text": "Once all five designs are done,"
+   },
+   {
+    "t0": 1.826,
+    "t1": 4.0,
+    "text": "the audit agent starts on the live previews."
+   }
+  ]
+ },
+ "0016.png": {
+  "text": "Soon all six agents are done, and every phase is complete.",
+  "dur": 3.229,
+  "takeAt": 70.121,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.745,
+    "text": "Soon all six agents are done,"
+   },
+   {
+    "t0": 1.861,
+    "t1": 3.229,
+    "text": "and every phase is complete."
+   }
+  ]
+ },
+ "0017.png": {
+  "text": "Each design agent has its own session and its own pull request.",
+  "dur": 3.466,
+  "takeAt": 73.674,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.314,
+    "text": "Each design agent has its own session and"
+   },
+   {
+    "t0": 2.372,
+    "t1": 3.466,
+    "text": "its own pull request."
+   }
+  ]
+ },
+ "0018.png": {
+  "text": "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+  "dur": 6.798,
+  "takeAt": 77.482,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 3.045,
+    "text": "Devin's reply links every pull request and live preview."
+   },
+   {
+    "t0": 3.289,
+    "t1": 5.216,
+    "text": "It also notes that the scores tied,"
+   },
+   {
+    "t0": 5.333,
+    "t1": 6.798,
+    "text": "so the team will vote on design."
+   }
+  ]
+ },
+ "0019.png": {
+  "text": "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+  "dur": 11.789,
+  "takeAt": 84.541,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.651,
+    "text": "Here are the five live previews on GitHub Pages."
+   },
+   {
+    "t0": 2.894,
+    "t1": 4.16,
+    "text": "There's calm minimal,"
+   },
+   {
+    "t0": 4.253,
+    "t1": 7.028,
+    "text": "dense power-user, bold high-contrast,"
+   },
+   {
+    "t0": 7.237,
+    "t1": 8.839,
+    "text": "playful, and dark editorial."
+   },
+   {
+    "t0": 9.164,
+    "t1": 10.569,
+    "text": "Each one is the same board,"
+   },
+   {
+    "t0": 10.72,
+    "t1": 11.789,
+    "text": "designed a different way."
+   }
+  ]
+ },
+ "0024.png": {
+  "text": "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+  "dur": 4.975,
+  "takeAt": 96.775,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.076,
+    "t1": 3.106,
+    "text": "Each agent also recorded a walkthrough of its live preview."
+   },
+   {
+    "t0": 3.431,
+    "t1": 4.975,
+    "text": "You can play it right in the session."
+   }
+  ]
+ },
+ "0026.png": {
+  "text": "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+  "dur": 7.985,
+  "takeAt": 102.085,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.014,
+    "t1": 2.359,
+    "text": "The recording steps through each check it ran."
+   },
+   {
+    "t0": 2.603,
+    "t1": 3.648,
+    "text": "It drags a card,"
+   },
+   {
+    "t0": 3.706,
+    "t1": 5.982,
+    "text": "filters issues and switches to the dark theme."
+   },
+   {
+    "t0": 6.225,
+    "t1": 7.985,
+    "text": "So you can see the board still works."
+   }
+  ]
+ },
+ "0035.png": {
+  "text": "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+  "dur": 5.115,
+  "takeAt": 110.345,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.102,
+    "t1": 3.062,
+    "text": "Every direction is a normal pull request with passing checks."
+   },
+   {
+    "t0": 3.306,
+    "t1": 5.115,
+    "text": "It's ready to review in Devin Review."
+   }
+  ]
+ },
+ "0036.png": {
+  "text": "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+  "dur": 6.195,
+  "takeAt": 115.865,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.085,
+    "t1": 3.196,
+    "text": "The audit report ranks all five on axe and Lighthouse."
+   },
+   {
+    "t0": 3.347,
+    "t1": 4.45,
+    "text": "In this run they tied,"
+   },
+   {
+    "t0": 4.473,
+    "t1": 6.195,
+    "text": "with identical scores across the board."
+   }
+  ]
+ },
+ "0037.png": {
+  "text": "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+  "dur": 7.713,
+  "takeAt": 122.157,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.918,
+    "text": "So, the report lists the small differences that do exist."
+   },
+   {
+    "t0": 3.127,
+    "t1": 5.53,
+    "text": "It also lists the fixes every direction needs."
+   },
+   {
+    "t0": 5.855,
+    "t1": 7.713,
+    "text": "Then it leaves the final pick to your team."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Five real designs in, a scored shortlist out.",
+  "dur": 2.473,
+  "takeAt": 130.087,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups.",
+    "Let Devin explore design options for a screen in parallel. Five Devins each build a different direction, publish a live preview, and record a walkthrough. Your team then compares real, working designs instead of mockups."
+   ],
+   [
+    "0003.png",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app.",
+    "Start a new session and mention the repo you want to redesign. Here, that's our Orbit demo app."
+   ],
+   [
+    "0007.png",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page.",
+    "Then ask for a workflow with one agent per design direction. Each agent opens a pull request and deploys a preview to GitHub Pages. Then it records a walkthrough of the live page."
+   ],
+   [
+    "0009.png",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote.",
+    "A final step runs axe and Lighthouse on all five previews. It ranks them so the team can vote."
+   ],
+   [
+    "0010.png",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices.",
+    "Devin plans the run first. Five design agents work on separate machines. Then one audit agent scores each preview on accessibility, performance and best practices."
+   ],
+   [
+    "0011.png",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish.",
+    "The workflow panel shows five design agents running in parallel. The audit waits until they all finish."
+   ],
+   [
+    "0013.png",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the gh-pages branch.",
+    "Each agent builds its direction on its own branch. It opens a pull request and waits for CI. Then it pushes its build to its own folder on the G H pages branch."
+   ],
+   [
+    "0014.png",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devinapps.com once you approve it.",
+    "We're publishing to GitHub Pages here. Where Devin's own deployments are turned on, an agent can deploy a static site to devin apps dot com once you approve it."
+   ],
+   [
+    "0015.png",
+    "Once all five designs are done, the audit agent starts on the live previews.",
+    "Once all five designs are done, the audit agent starts on the live previews."
+   ],
+   [
+    "0016.png",
+    "Soon all six agents are done, and every phase is complete.",
+    "Soon all six agents are done, and every phase is complete."
+   ],
+   [
+    "0017.png",
+    "Each design agent has its own session and its own pull request.",
+    "Each design agent has its own session and its own pull request."
+   ],
+   [
+    "0018.png",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design.",
+    "Devin's reply links every pull request and live preview. It also notes that the scores tied, so the team will vote on design."
+   ],
+   [
+    "0019.png",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way.",
+    "Here are the five live previews on GitHub Pages. There's calm minimal, dense power-user, bold high-contrast, playful, and dark editorial. Each one is the same board, designed a different way."
+   ],
+   [
+    "0024.png",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session.",
+    "Each agent also recorded a walkthrough of its live preview. You can play it right in the session."
+   ],
+   [
+    "0026.png",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works.",
+    "The recording steps through each check it ran. It drags a card, filters issues and switches to the dark theme. So you can see the board still works."
+   ],
+   [
+    "0035.png",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review.",
+    "Every direction is a normal pull request with passing checks. It's ready to review in Devin Review."
+   ],
+   [
+    "0036.png",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board.",
+    "The audit report ranks all five on axe and Lighthouse. In this run they tied, with identical scores across the board."
+   ],
+   [
+    "0037.png",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team.",
+    "So, the report lists the small differences that do exist. It also lists the fixes every direction needs. Then it leaves the final pick to your team."
+   ],
+   [
+    "outro",
+    "Five real designs in, a scored shortlist out.",
+    "Five real designs in, a scored shortlist out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.293,
+    "text": "Five real designs in,"
+   },
+   {
+    "t0": 1.327,
+    "t1": 2.473,
+    "text": "a scored shortlist out."
+   }
+  ]
+ }
+}
