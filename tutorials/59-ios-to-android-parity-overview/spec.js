@@ -60,10 +60,10 @@ window.SPEC = {
       "hl": null,
       "voGap": 1.0,
       "ring": {
-        "x": 667,
-        "y": 233,
-        "w": 112,
-        "h": 250
+        "x": 755,
+        "y": 400,
+        "w": 292,
+        "h": 636
       },
       "ringFor": 2.2,
       "cap": "The port, on the Android emulator",
@@ -74,10 +74,10 @@ window.SPEC = {
       "cursor": false,
       "hl": null,
       "ring": {
-        "x": 1003,
-        "y": 330,
-        "w": 828,
-        "h": 425
+        "x": 1004,
+        "y": 354,
+        "w": 832,
+        "h": 480
       },
       "ringFor": 4.0,
       "cap": "iOS and Android, side by side in the PR",
@@ -99,14 +99,14 @@ window.SPEC = {
       "hl": null,
       "voGap": 1.0,
       "ring": {
-        "x": 1003,
-        "y": 515,
-        "w": 840,
-        "h": 270
+        "x": 1018,
+        "y": 352,
+        "w": 812,
+        "h": 456
       },
       "ringFor": 4.6,
-      "cap": "Known differences are listed",
-      "vo": "Anything that can't match exactly, like system fonts and icons, is listed as a known difference."
+      "cap": "Each spec detail, mapped to Compose",
+      "vo": "Every part of the spec is mapped to Compose, from padding to font sizes, so a reviewer can check it line by line."
     },
     "0008.png": {
       "scene": "usecases",

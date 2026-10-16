@@ -14,12 +14,12 @@ for i, x in enumerate(ORDER):
         b = src58[x]
         shutil.copy(os.path.join(T58, 'shots', x), os.path.join(out, img))
         beats.append({'img': img, 'cur': b.get('cur', {'x': 720, 'y': 600}), 'src': '58/' + x})
-        sources[img] = {'source': 'tutorial 58-ios-to-android-parity', 'file': 'shots/' + x, 'capture': b['src'].replace('ios/', 'shots-ios/').replace('and/', 'shots-android/'),
+        sources[img] = {'source': 'tutorial 58-ios-to-android-parity', 'file': 'shots/' + x, 'capture': b['src'].replace('ios/', 'shots-ios/').replace('and/', 'shots-android2/'),
                         'org': 'thequantexplorer', 'zoom': 1.25}
     else:
         Image.new('RGB', (4320, 2430), '#FCFCFC').save(os.path.join(out, img))
         beats.append({'img': img, 'cur': {'x': 1300, 'y': 760}, 'scene': x})
         sources[img] = {'scene': x, 'source': 'diagram placeholder (blank #FCFCFC), drawn by scenes.js'}
 json.dump(beats, open(os.path.join(out, 'beats.json'), 'w'), indent=1)
-json.dump({'note': 'Every UI proof is a real capture from tutorial 58 (macOS session 6291d432, Ubuntu session a69b3fb4, thequantexplorer/product-demo-apps#45). No new captures.', 'shots': sources}, open(os.path.join(out, 'SOURCES.json'), 'w'), indent=1)
+json.dump({'note': 'Every UI proof is a real capture from tutorial 58 (macOS session 6291d432, Ubuntu session 03b8eb40, thequantexplorer/product-demo-apps#79). No new captures.', 'shots': sources}, open(os.path.join(out, 'SOURCES.json'), 'w'), indent=1)
 print(len(beats))

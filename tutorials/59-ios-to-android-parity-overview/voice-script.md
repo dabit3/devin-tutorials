@@ -13,7 +13,7 @@ Diagram scenes are drawn live by `scenes.js`; every UI shot is a real capture fr
 | 0004 | proof: tutorial 58 `shots/0033.png` | Here's the port, running on the Android emulator. |
 | 0005 | proof: tutorial 58 `shots/0045.png` | The pull request shows the iOS and Android screens side by side, at the same size. |
 | 0006 | diagram `why` | That's the point of the pattern: the spec gives the port a clear target, and the screenshots let a reviewer check the result instead of trusting it. |
-| 0007 | proof: tutorial 58 `shots/0046.png` | Anything that can't match exactly, like system fonts and icons, is listed as a known difference. |
+| 0007 | proof: tutorial 58 `shots/0046.png` | Every part of the spec is mapped to Compose, from padding to font sizes, so a reviewer can check it line by line. |
 | 0008 | diagram `usecases` | Use it to port an app one screen at a time, check a redesign on both platforms, or catch drift between two apps. |
 | 0009 | diagram `setup` | To set it up, pick macOS for the first session, then ask an Ubuntu session to set up an Android emulator. |
 | 0010 | proof: tutorial 58 `shots/0022.png` | Here, one prompt asked for the emulator, the port and the side by side screenshots. |
@@ -23,4 +23,4 @@ Diagram scenes are drawn live by `scenes.js`; every UI shot is a real capture fr
 
 - macOS support: https://docs.devin.ai/onboard-devin/environment/macos-support (macOS sessions with Xcode and the iOS Simulator, picked from the platform menu)
 - Android emulator support: https://docs.devin.ai/onboard-devin/environment/android-emulation (ask Devin to set up an Android emulator; Devin proposes a blueprint with the Android SDK, build tools and emulator configuration, which you review and approve)
-- The parity run itself: tutorial 58, thequantexplorer/product-demo-apps#45
+- The parity run itself: tutorial 58, thequantexplorer/product-demo-apps#79
