@@ -80,6 +80,14 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 <!-- -->
 
+48. **A Devin that improves itself every week** (narrated by Nader, 1:57): A step-by-step run in real Devin. Open Session insights on a finished orbit-demo session, see its on-demand usage and size, and generate the analysis: a high-impact knowledge gap and actionable feedback. Then create an automation manually with a Schedule trigger set to every week, give it instructions to review last week's three most expensive sessions and open one pull request that adds or updates a skill, and click Run now. The run's session opens a real PR adding `.agents/skills/orbit-board-ui/SKILL.md`, its description lists what slowed those sessions down and what each cost, notes that Session insights wasn't available to the scheduled run (it read each session's timeline instead), and lists workflow prompt and blueprint changes as recommendations for review. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/48-self-improving-devin/48-self-improving-devin-nader.mp4)
+
+<!-- -->
+
+49. **A Devin that improves itself every week: overview** (overview, narrated by Nader, 1:16): A short diagram-led overview of the pattern and why it matters. An animated weekly loop (schedule, find costly sessions, find what went wrong, pull request, better sessions), why the costliest sessions hold the lessons, where fixes land (skills changed in the PR, playbook and blueprint ideas suggested in its description) and how you stay in control, with real proof shots from tutorial 48. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/49-self-improving-devin-overview/49-self-improving-devin-overview-nader.mp4)
+
+<!-- -->
+
 76. **Devin CLI: what's new in v3000.11.92** (overview, narrated by Nader, 1:55): A dark-mode overview of the October 14, 2026 stable release, filmed in the real CLI with Ghostty's GitHub Dark High Contrast palette. `/goal` runs a real task in orbit-demo until tests, lint and build pass, with a steering message and Ctrl+C clearing a draft mid-run; then Alt+Enter in the model picker, `devin mcp list` with its new `Source:` line and `devin cloud`, plus build-up cards for config, plugins, hooks, MCP, terminal and the Changed and Fixed highlights. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/76-cli-whats-new-overview/76-cli-whats-new-overview-nader.mp4) · [Voice script](tutorials/76-cli-whats-new-overview/voice-script.md)
 
 ## Narrated tutorials
