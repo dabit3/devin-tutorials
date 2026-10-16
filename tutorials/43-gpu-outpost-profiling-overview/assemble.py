@@ -1,7 +1,7 @@
 # Builds shots/ for the overview: blank placeholders for scene beats, proof shots copied from tutorial 42.
 import json, os, shutil, subprocess
 T42 = '../42-gpu-outpost-profiling/shots'
-SEQ = ['pain', 'flow', 42 * 0 + 17, 61, 66, 'loop', 96, 103, 104, 'uses']
+SEQ = ['pain', 'flow', 42 * 0 + 17, 61, 66, 'loop', 96, 102, 104, 'uses']
 b42 = {b['img']: b for b in json.load(open(f'{T42}/beats.json'))}
 shutil.rmtree('shots', ignore_errors=True); os.makedirs('shots')
 blank = 'shots/_blank.png'

@@ -14,7 +14,7 @@ Nader voice (`T8iHhGIWPm2GVYpQD1Am`), one whole-script take. Beat → line (spok
 - `0008.png`: On the H200, training got about 14 times faster.  
   _(said: On the H two hundred, training got about fourteen times faster.)_
 - `0009.png` (uses diagram): Teams use the same pattern for slow training jobs, for errors that only happen on GPUs, for benchmarks on the target hardware, and for work that has to run on their own infrastructure.
-- outro: Real hardware, real profiling, a real fix.
+- outro: That's how an outpost lets Devin profile and fix a slow training loop on a real GPU, using a machine from Modal or NVIDIA Brev.
 
 ## Sources
 - Outposts overview and partner integrations (Modal, NVIDIA Brev; `!outpost` in Slack): https://docs.devin.ai/cloud/outposts/overview
