@@ -5,19 +5,14 @@ window.SPEC = {
   "voOutro": "Every week, Devin learns from its own sessions.",
   "speed": 3,
   "cps": 48,
-  "maxZoom": 1.4,
+  "maxZoom": 1.0,
   "noZoom": [
     [
-      "0129.png"
+      "0000.png"
     ]
   ],
   "edit": {
     "0000.png": {
-      "cam": {
-        "x": 908,
-        "y": 405,
-        "z": 1.36
-      },
       "camDur": 0.01,
       "hold": 2.2,
       "cap": "A finished accessibility scan on orbit-demo",
@@ -362,8 +357,6 @@ window.SPEC = {
       "skip": true
     },
     "0129.png": {
-      "cam": "reset",
-      "camForce": true,
       "camDur": 0.6,
       "hold": 3.4,
       "capPos": "bottom",

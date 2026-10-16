@@ -6,7 +6,7 @@ window.SPEC = {
   "outroVoDelay": 0.2,
   "speed": 3,
   "cps": 48,
-  "maxZoom": 1.6,
+  "maxZoom": 1.0,
   "edit": {
     "0000.png": {
       "scene": "intro",
@@ -88,5 +88,10 @@ window.SPEC = {
       "cap": "Nothing changes until you merge",
       "vo": "Devin Review checks the change, and nothing changes until you merge it. So every week, your Devin starts a little smarter."
     }
-  }
+  },
+  "noZoom": [
+    [
+      "0000.png"
+    ]
+  ]
 };
