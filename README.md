@@ -86,6 +86,10 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 45. **App Store reviews to fixes: how it works** (overview; 1:13 captioned · 1:28 narrated by Nader): A diagram-led overview of the loop: 1-star reviews, themes with likely causes, reproduction by two managed Devins (iOS Simulator on macOS, Android emulator on Linux), one PR checked by Devin Review, and re-verification on both platforms, with real proof shots from tutorial 44. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/45-app-store-reviews-overview/45-app-store-reviews-overview.mp4) · [Narrated MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/45-app-store-reviews-overview/45-app-store-reviews-overview-nader.mp4) · [Voice script](tutorials/45-app-store-reviews-overview/voice-script.md)
 
+<!-- -->
+
+76. **Devin CLI: what's new in v3000.11.92** (overview, narrated by Nader, 1:55): A dark-mode overview of the October 14, 2026 stable release, filmed in the real CLI with Ghostty's GitHub Dark High Contrast palette. `/goal` runs a real task in orbit-demo until tests, lint and build pass, with a steering message and Ctrl+C clearing a draft mid-run; then Alt+Enter in the model picker, `devin mcp list` with its new `Source:` line and `devin cloud`, plus build-up cards for config, plugins, hooks, MCP, terminal and the Changed and Fixed highlights. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/76-cli-whats-new-overview/76-cli-whats-new-overview-nader.mp4) · [Voice script](tutorials/76-cli-whats-new-overview/voice-script.md)
+
 ## Narrated tutorials
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
