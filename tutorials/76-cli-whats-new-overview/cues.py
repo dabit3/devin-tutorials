@@ -2,7 +2,7 @@
 usage: ELEVEN_LABS_API_KEY=... python3 cues.py"""
 import json, os, re, urllib.request, uuid
 D = os.path.dirname(os.path.abspath(__file__)); VO = f'{D}/vo/T8iHhGIWPm2GVYpQD1Am'
-IMGS = ['0000.png', '0219.png', '0223.png', '0224.png', '0253.png', '0268.png', '0269.png']
+IMGS = ['0000.png', '0268.png', '0219.png', '0223.png', '0224.png', '0253.png', '0242.png', '0269.png']
 def stt(wav):
     b = uuid.uuid4().hex
     body = (f'--{b}\r\nContent-Disposition: form-data; name="model_id"\r\n\r\nscribe_v1\r\n'

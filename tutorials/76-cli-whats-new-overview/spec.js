@@ -12,40 +12,43 @@ window.SPEC = {
   "voSentGap": 0.45,
   "reveal": {
     "themes": [
-      3.04,
-      3.98,
-      4.62,
-      5.82
+      2.8,
+      4.58,
+      5.56,
+      6.9
+    ],
+    "cloud": [
+      0.15,
+      3.48,
+      4.6
+    ],
+    "terminal": [
+      3.7,
+      7.36
     ],
     "goalcmds": [
       0.15,
       0.5,
-      2.12,
-      4.26,
-      6.88
+      1.76,
+      3.76,
+      6.32
     ],
     "billing": [
-      3.56,
-      6.24
+      3.34,
+      5.86
     ],
     "config": [
-      1.8,
-      5.36
+      1.6,
+      5.12
     ],
     "ext": [
-      2.84,
-      5.28,
-      6.34
-    ],
-    "terminal": [
-      1.68,
-      4.36,
-      8.92
+      2.68,
+      5.46
     ],
     "fixes": [
-      1.12,
-      3.78,
-      6.42
+      0.86,
+      3.26,
+      5.78
     ]
   },
   "edit": {
@@ -533,7 +536,7 @@ window.SPEC = {
       "scene": "themes",
       "hold": 1.0,
       "cursor": false,
-      "vo": "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and other terminal features."
+      "vo": "Let's look at what's new in the Devin CLI, starting with new cloud features, then long-running goals, then models, plugins, and other terminal features."
     },
     "0001.png": {
       "hold": 1.0,
@@ -542,9 +545,28 @@ window.SPEC = {
     "0009.png": {
       "hold": 0.8
     },
+    "0254.png": {
+      "vo": "Let's start with the cloud, where running devin cloud on its own now opens a Devin Cloud session."
+    },
+    "0267.png": {
+      "hold": 1.4,
+      "ring": {
+        "x": 131,
+        "y": 483,
+        "w": 214,
+        "h": 45
+      },
+      "ringFor": 1.6
+    },
+    "0268.png": {
+      "scene": "cloud",
+      "hold": 1.0,
+      "cursor": false,
+      "vo": "Cloud sessions can also view images and copy files on your machine through devin connect, and remote MCP servers configured in Devin Cloud are in private preview."
+    },
     "0010.png": {
-      "vo": "The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
-      "voSay": "The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
+      "vo": "Next up is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+      "voSay": "Next up is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked."
     },
     "0040.png": {
       "hold": 1.0,
@@ -725,9 +747,6 @@ window.SPEC = {
     "0239.png": {
       "skip": true
     },
-    "0242.png": {
-      "skip": true
-    },
     "0243.png": {
       "vo": "Next, let's look at plugins and MCP servers."
     },
@@ -746,26 +765,13 @@ window.SPEC = {
       "scene": "ext",
       "hold": 1.0,
       "cursor": false,
-      "vo": "Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview."
+      "vo": "Plugin installs also accept repos that only ship skills, and new hooks run before and after context compaction."
     },
-    "0254.png": {
-      "vo": "The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session."
-    },
-    "0267.png": {
-      "hold": 1.4,
-      "ring": {
-        "x": 131,
-        "y": 483,
-        "w": 214,
-        "h": 45
-      },
-      "ringFor": 1.6
-    },
-    "0268.png": {
+    "0242.png": {
       "scene": "terminal",
       "hold": 1.0,
       "cursor": false,
-      "vo": "Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox."
+      "vo": "To wrap up the new features, supported terminals can now show which Devin sessions need you, and you can let a trusted command always run outside the sandbox."
     },
     "0269.png": {
       "scene": "fixes",

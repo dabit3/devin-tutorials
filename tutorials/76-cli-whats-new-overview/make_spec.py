@@ -1,7 +1,12 @@
 """Writes spec.js (pure JSON, as vo.py needs) from the edit plan below. Usage: python3 make_spec.py"""
 import json, os
 D = os.path.dirname(os.path.abspath(__file__))
-beats = json.load(open(f'{D}/shots/beats.json'))
+# capture order is shots/beats-capture.json; the video plays the cloud beats first, then /goal, then the rest, so shots/beats.json (read by the engine and vo.py) is written in that order below
+beats = json.load(open(f'{D}/shots/beats-capture.json'))
+BY = {b['img']: b for b in beats}
+ORDER = [*range(0, 10), *range(254, 269), *range(10, 242), *range(243, 254), 242, 269]
+assert sorted(ORDER) == list(range(len(beats)))
+json.dump([BY[f'{n:04d}.png'] for n in ORDER], open(f'{D}/shots/beats.json', 'w'), indent=1, ensure_ascii=False)
 G = json.load(open(f'{D}/shots/term.json'))
 txt = {b['img']: b.get('txt', '') for b in beats}
 
@@ -25,11 +30,15 @@ for b in beats:
         ed(n, skip=True)
 
 ed(0, scene='themes', hold=1.0, cursor=False,
-   vo="Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and other terminal features.")
+   vo="Let's look at what's new in the Devin CLI, starting with new cloud features, then long-running goals, then models, plugins, and other terminal features.")
 ed(1, hold=1.0, vo="Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.")
 ed(9, hold=0.8)
-ed(10, vo="The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
-    voSay="The biggest addition is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.")
+ed(254, vo="Let's start with the cloud, where running devin cloud on its own now opens a Devin Cloud session.")
+ed(267, hold=1.4, ring=find('0267.png', 'Cloud · Normal'), ringFor=1.6)
+ed(268, scene='cloud', hold=1.0, cursor=False,
+   vo="Cloud sessions can also view images and copy files on your machine through devin connect, and remote MCP servers configured in Devin Cloud are in private preview.")
+ed(10, vo="Next up is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
+    voSay="Next up is slash goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.")
 ed(40, hold=1.0, vo="I'll ask for a collapse toggle on each column, and tell it to finish when tests, lint and build all pass.",
     ring=find('0040.png', '/goal'), ringFor=2.4)
 ed(43, hold=0.8, ring=find('0043.png', 'Goal Running'), ringFor=1.0)
@@ -60,26 +69,25 @@ ed(223, scene='billing', hold=1.0, cursor=False,
    voSay="If you pay for a provider plan like ChatGPT, the picker now marks the models it can cover with an asterisk, and slash billing turns that on or off.")
 ed(224, scene='config', hold=1.0, cursor=False,
    vo="Two new settings let you turn off the typewriter effect so text appears instantly, and pick the model your subagents use.")
-for n in range(225, 243): ed(n, skip=True)
+for n in range(225, 242): ed(n, skip=True)
 ed(243, vo="Next, let's look at plugins and MCP servers.")
 ed(252, hold=1.6, vo="Running devin mcp list now shows a Source line, naming the configuration file or plugin each server came from.",
    ring=find('0252.png', 'Source: plugin https://github.com/CognitionAI/devin-marketplace#plugins/metabase'), ringFor=2.0)
 ed(253, scene='ext', hold=1.0, cursor=False,
-   vo="Plugin installs also accept repos that only ship skills, new hooks run around context compaction, and remote MCP servers from Devin Cloud are in private preview.")
-ed(254, vo="The last group is the terminal and cloud, where running devin cloud on its own now opens a Devin Cloud session.")
-ed(267, hold=1.4, ring=find('0267.png', 'Cloud · Normal'), ringFor=1.6)
-ed(268, scene='terminal', hold=1.0, cursor=False,
-   vo="Your terminal can now show which sessions need you, cloud sessions can copy files to and from your machine, and you can let a trusted command always run outside the sandbox.")
+   vo="Plugin installs also accept repos that only ship skills, and new hooks run before and after context compaction.")
+ed(242, scene='terminal', hold=1.0, cursor=False,
+   vo="To wrap up the new features, supported terminals can now show which Devin sessions need you, and you can let a trusted command always run outside the sandbox.")
 ed(269, scene='fixes', hold=1.0, cursor=False,
    vo="On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.")
 
 # scene rows appear as the narration says each cue word: times come from STT word timestamps of each line's clip (cues.json, made by cues.py)
-KEYS = {'0000.png': ['goals', 'models', 'plugins', 'terminal'],
+KEYS = {'0000.png': ['cloud', 'goals', 'models', 'terminal'],
+        '0268.png': [None, 'devonconnect|devinconnect|connect', 'remote'],
+        '0242.png': ['sessions', 'sandbox'],
         '0219.png': [None, None, 'resume|rezoom', 'clear', 'fifty|50'],
         '0223.png': ['marks', 'billing'],
         '0224.png': ['typewriter', 'subagents'],
-        '0253.png': ['skills', 'compaction', 'remote'],
-        '0268.png': ['sessions', 'files', 'sandbox'],
+        '0253.png': ['skills', 'compaction'],
         '0269.png': ['smart', 'startup', 'network']}
 CP = f'{D}/cues.json'
 REVEAL = {}

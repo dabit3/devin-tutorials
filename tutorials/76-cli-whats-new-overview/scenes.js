@@ -49,10 +49,10 @@ const SCENES = {
   themes(ctx, s, k) {
     bg(ctx, k); head(ctx, k, s, 'DEVIN CLI · STABLE v3000.11.92 · OCT 14, 2026', "What's new");
     const groups = [
-      ['Long-running work', ['/goal', 'steering', 'Ctrl+C']],
-      ['Models & settings', ['Alt+Enter', '/billing', 'typewriter']],
-      ['Plugins & MCP', ['Source:', 'skills-only', 'remote MCPs']],
-      ['Terminal & cloud', ['devin cloud', 'session status', 'devin connect']],
+      ['Cloud', ['devin cloud', 'devin connect', 'remote MCPs']],
+      ['Long-running goals', ['/goal', 'steering', 'Ctrl+C']],
+      ['Models & plugins', ['Alt+Enter', '/billing', 'skills-only']],
+      ['Terminal', ['session status', 'sandbox allow', 'Source:']],
     ];
     const T = R('themes'), W = 270, G = 22, x0 = (k.VW - (4 * W + 3 * G)) / 2;
     groups.forEach(([t, tags], i) => {
@@ -73,6 +73,14 @@ const SCENES = {
       { label: '50 turns', detail: 'A run pauses itself', tag: 'Not on prompt-based plans', col: 250 },
     ], { y: 210 });
   },
+  cloud(ctx, s, k) {
+    bg(ctx, k); head(ctx, k, s, 'CLOUD', 'Work from anywhere');
+    rows(ctx, k, s, 'cloud', [
+      { label: 'devin cloud', detail: 'Opens a Devin Cloud session, the same as devin --cloud', mono: true, col: 260 },
+      { label: 'devin connect', detail: 'Cloud sessions view local images and copy files both ways', mono: true, col: 260 },
+      { label: 'Remote MCPs', detail: 'Servers configured in Devin Cloud', tag: 'Private Preview', col: 260 },
+    ], { y: 260, h: 80 });
+  },
   billing(ctx, s, k) {
     bg(ctx, k); head(ctx, k, s, 'MODELS & SETTINGS', 'Use the plans you have');
     rows(ctx, k, s, 'billing', [
@@ -91,17 +99,15 @@ const SCENES = {
     bg(ctx, k); head(ctx, k, s, 'PLUGINS & MCP', 'Extend it');
     rows(ctx, k, s, 'ext', [
       { label: 'Skills-only repos', detail: 'devin plugins install anthropics/skills', col: 300 },
-      { label: 'PreCompact · PostCompact', detail: 'Hooks that run around context compaction', mono: true, col: 300 },
-      { label: 'Remote MCPs', detail: 'Servers configured in Devin Cloud', tag: 'Private Preview', col: 300 },
-    ], { y: 260, h: 80 });
+      { label: 'PreCompact · PostCompact', detail: 'Hooks that run before and after context compaction', mono: true, col: 300 },
+    ], { y: 300, h: 80 });
   },
   terminal(ctx, s, k) {
-    bg(ctx, k); head(ctx, k, s, 'TERMINAL & CLOUD', 'Work from anywhere');
+    bg(ctx, k); head(ctx, k, s, 'TERMINAL', 'Know what needs you');
     rows(ctx, k, s, 'terminal', [
-      { label: 'Session status', detail: 'Your terminal shows which sessions need you (OSC 7501)', col: 260 },
-      { label: 'devin connect', detail: 'Cloud sessions copy files to and from your machine', mono: true, col: 260 },
+      { label: 'Session status', detail: 'Supported terminals show which sessions need you (OSC 7501)', col: 260 },
       { label: 'Sandbox allow', detail: 'Let a trusted command always run outside the sandbox', col: 260 },
-    ], { y: 260, h: 80 });
+    ], { y: 300, h: 80 });
   },
   fixes(ctx, s, k) {
     bg(ctx, k); head(ctx, k, s, 'FIXES & POLISH', 'And plenty of polish');
