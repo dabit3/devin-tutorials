@@ -21,9 +21,9 @@ window.SPEC = {
       "cursor": false,
       "scene": "pipeAll",
       "hold": 4,
-      "cap": "Where Modal fits: between the xAI API and the page",
-      "vo": "Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
-      "voSay": "Here's where Modal fits. Grok's X search, through the ex A I API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.",
+      "cap": "Modal makes it possible: a public page, parallel searches",
+      "vo": "Modal is what makes this possible. Anyone can open a public URL, paste a phrase, and get a trace, with no server to set up. Behind the page, Grok's X search, through the xAI API, finds the posts. Modal runs those searches in parallel.",
+      "voSay": "Modal is what makes this possible. Anyone can open a public URL, paste a phrase, and get a trace, with no server to set up. Behind the page, Grok's X search, through the ex A I API, finds the posts. Modal runs those searches in parallel.",
       "cursor": false,
       "capPos": "bottom",
       "hl": null
@@ -32,7 +32,7 @@ window.SPEC = {
       "scene": "modalWhy",
       "hold": 4,
       "cap": "Why Modal, not a laptop script or a server",
-      "vo": "That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.",
+      "vo": "A laptop script would run them one at a time, with no public URL. Your own server would sit idle, and you'd pay for it anyway. Modal scales to zero between traces, so you only pay by the second while one runs.",
       "cursor": false,
       "capPos": "bottom",
       "hl": null

@@ -4,9 +4,9 @@ Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, saved default voic
 
 1. In this tutorial, Devin builds a trend origin tracer. You paste a phrase like vibe coding, and it shows the earliest post it can find on X, who amplified it, and how it spread over time.
 
-2. Here's where Modal fits. Grok's X search, through the xAI API, finds the posts. Modal runs the searches in parallel, stores the results in a Modal Dict, and serves the page at a public modal dot run URL.
+2. Modal is what makes this possible. Anyone can open a public URL, paste a phrase, and get a trace, with no server to set up. Behind the page, Grok's X search, through the xAI API, finds the posts. Modal runs those searches in parallel.
 
-3. That beats a laptop script, which runs one search at a time, and a server you'd pay for while it sits idle. On Modal, the key stays in a Modal Secret, and the app scales to zero, so you pay by the second while it runs.
+3. A laptop script would run them one at a time, with no public URL. Your own server would sit idle, and you'd pay for it anyway. Modal scales to zero between traces, so you only pay by the second while one runs.
 
 4. Now for the prompt. It's short, and written in plain language.
 

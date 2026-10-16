@@ -17,7 +17,7 @@ window.SPEC = {
       "hl": null,
       "hold": 4,
       "cap": "Paste a phrase, see how it spread",
-      "vo": "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time."
+      "vo": "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time. Modal is what makes this possible. Anyone can paste a phrase into a public page, and Modal runs the searches in parallel, with no server to keep running."
     },
     "0001.png": {
       "cursor": false,
@@ -26,9 +26,9 @@ window.SPEC = {
       "capPos": "bottom",
       "hl": null,
       "hold": 5,
-      "cap": "X posts → xAI API, key in a Modal Secret",
-      "vo": "It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.",
-      "voSay": "It starts with real posts on X. The app asks Grok through the ex A I API with X search turned on, and the ex A I key is kept in a Modal Secret, not in the code."
+      "cap": "X posts → Grok, through the xAI API",
+      "vo": "It starts with real posts on X. The app asks Grok, through the xAI API, with X search turned on.",
+      "voSay": "It starts with real posts on X. The app asks Grok, through the ex A I API, with X search turned on."
     },
     "0002.png": {
       "scene": "pipeMap",
@@ -36,8 +36,8 @@ window.SPEC = {
       "capPos": "bottom",
       "hl": null,
       "hold": 3,
-      "cap": "Modal: .map() runs the searches in parallel",
-      "vo": "Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches."
+      "cap": "Modal runs the searches in parallel",
+      "vo": "Modal does the rest. It splits each trace into searches, one per time window, and runs them in parallel. For vibe coding, that was twenty-five searches."
     },
     "0003.png": {
       "scene": "pipeStore",
@@ -45,8 +45,8 @@ window.SPEC = {
       "capPos": "bottom",
       "hl": null,
       "hold": 3,
-      "cap": "A Modal Dict stores results; a web endpoint serves the page",
-      "vo": "The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL."
+      "cap": "Modal keeps the results and serves the page",
+      "vo": "It keeps the results, and serves the page at a public URL that anyone can use."
     },
     "0004.png": {
       "scene": "pipeCron",
@@ -54,8 +54,8 @@ window.SPEC = {
       "capPos": "bottom",
       "hl": null,
       "hold": 3,
-      "cap": "A Modal Cron can refresh saved phrases daily",
-      "vo": "A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
+      "cap": "Modal can refresh saved phrases daily",
+      "vo": "Modal can also refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself."
     },
     "m01.png": {
       "scene": "modalWhy",

@@ -90,7 +90,7 @@ Object.assign(window.SCENES, { intro, honest, extend });
 
 (() => {
 const T = window.TOT, { text: TX, ccard: CC, line: LN, appear: AP, loop: LP, box: BX, W: WW } = T;
-// X posts -> xAI (Grok + X search, key in a Modal Secret) -> Modal (schedule / .map() fan-out / web endpoint) -> Modal Dict -> public page.
+// X posts -> xAI (Grok + X search) -> Modal (daily refresh / parallel searches / web endpoint) -> saved traces -> public page.
 // build: animate everything in; focus: which part glows ('xai' | 'map' | 'store' | 'cron').
 function pipe(ctx, s, k, build, focus) {
   const A = t0 => build ? AP(k, s, t0, 0.6) : 1, L = (t0, d = 0.6) => build ? k.eInOut(k.prog(s, t0, t0 + d)) : 1;
@@ -109,12 +109,11 @@ function pipe(ctx, s, k, build, focus) {
   LN(ctx, k, 910, Y.web, 1010, 520, L(4.6), LP(s, 4.9, 1.8));
   CC(ctx, k, 140, 425, 170, 86, 'X posts', 'real, public posts', A(0.2), 0, 19);
   CC(ctx, k, 370, 425, 170, 100, 'xAI API', 'Grok + X search', A(0.8), on('xai'), 19);
-  CC(ctx, k, cxM, Y.cron, 300, 68, 'Daily refresh', 'modal.Cron("0 6 * * *")', A(3.6), on('cron'), 17);
-  CC(ctx, k, cxM, Y.map, 300, 68, 'Parallel searches', 'run_search.map(tasks)', A(1.4), on('map'), 17);
-  CC(ctx, k, cxM, Y.web, 300, 68, 'Web endpoint', '@modal.asgi_app()', A(4.4), on('store'), 17);
-  CC(ctx, k, 1110, 330, 200, 86, 'Modal Dict', 'stored traces', A(2.8), on('store'), 19);
+  CC(ctx, k, cxM, Y.cron, 300, 68, 'Daily refresh', 'saved phrases, once a day', A(3.6), on('cron'), 17);
+  CC(ctx, k, cxM, Y.map, 300, 68, 'Parallel searches', 'one per time window', A(1.4), on('map'), 17);
+  CC(ctx, k, cxM, Y.web, 300, 68, 'Web endpoint', 'serves the page', A(4.4), on('store'), 17);
+  CC(ctx, k, 1110, 330, 200, 86, 'Saved traces', 'kept on Modal', A(2.8), on('store'), 19);
   CC(ctx, k, 1110, 520, 200, 86, 'Public page', '*.modal.run', A(5.0), on('store'), 19);
-  T.pill(ctx, k, 'Modal Secret: xAI key', 370, 512, A(1.0), 13, on('xai'));
 }
 // Why Modal: a laptop script and a self-managed server vs what Modal does for this app.
 function modalWhy(ctx, s, k) {
@@ -124,7 +123,7 @@ function modalWhy(ctx, s, k) {
   const bx = 680, by = 200, bw = 590, bh = 330, a = AP(k, s, 1.0);
   BX(ctx, k, bx, by, bw, bh, a, k.clamp(k.prog(s, 1.4, 2.0), 0, 1), 18);
   TX(ctx, k, 'On Modal', bx + 32, by + 42, 22, 600, T.INK, a, 'left');
-  const R = [['Parallel searches', '.map() across up to 24 containers'], ['Built-in storage', 'traces kept in a modal.Dict'], ['Key kept safe', 'the xAI key in a modal.Secret'], ['Public URL', 'a web endpoint at *.modal.run'], ['Scales to zero', 'billed per second while it runs']];
+  const R = [['A public URL', 'anyone can paste a phrase'], ['Parallel searches', 'one per time window, all at once'], ['Scales to zero', 'nothing runs between traces'], ['Pay per second', 'only while a trace runs']];
   R.forEach(([t, sub], i) => {
     const ra = AP(k, s, 1.6 + i * 0.45), y = by + 98 + i * 50;
     if (ra <= 0) return;

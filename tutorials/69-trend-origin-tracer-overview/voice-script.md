@@ -2,15 +2,15 @@
 
 Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, saved default voice settings), generated as one whole-script request with `_kit/tools/vo.py` and cut locally at sentence boundaries. Spoken spelling (`voSay`): "xAI" is said "ex A I".
 
-1. How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time.
+1. How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time. Modal is what makes this possible. Anyone can paste a phrase into a public page, and Modal runs the searches in parallel, with no server to keep running.
 
-2. It starts with real posts on X. The app asks Grok through the xAI API with X search turned on, and the xAI key is kept in a Modal Secret, not in the code.
+2. It starts with real posts on X. The app asks Grok, through the xAI API, with X search turned on.
 
-3. Modal runs everything else. One function fans out the searches with dot map, one per time window, across up to twenty-four containers. For vibe coding, that was twenty-five searches.
+3. Modal does the rest. It splits each trace into searches, one per time window, and runs them in parallel. For vibe coding, that was twenty-five searches.
 
-4. The results go into a Modal Dict, and a Modal web endpoint serves the page and its API at a public modal dot run URL.
+4. It keeps the results, and serves the page at a public URL that anyone can use.
 
-5. A Modal cron can refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.
+5. Modal can also refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.
 
 6. So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.
 
