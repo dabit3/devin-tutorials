@@ -1,8 +1,8 @@
 window.SPEC = {
   "title": "App Store reviews to fixes",
   "subtitle": "Group 1-star reviews, reproduce on iOS and Android, fix in one PR",
-  "outro": "1-star reviews in, verified fixes out",
-  "voOutro": "Give Devin your one-star reviews, and get back fixes verified on iOS and Android.",
+  "outro": "1-star reviews to fixes, verified on iOS and Android",
+  "voOutro": "That's how you turn one-star reviews into fixes verified on iOS and Android, every night.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
@@ -17,8 +17,8 @@ window.SPEC = {
       "hold": 6,
       "cursor": false,
       "capPos": "bottom",
-      "cap": "Turn 1-star reviews into reproduced, fixed bugs",
-      "vo": "Devin can take an export of one-star app reviews, group the complaints into themes, reproduce each one on the iOS Simulator and the Android emulator, and fix them in a pull request."
+      "cap": "Run it every night, or whenever new reviews come in",
+      "vo": "You can have Devin turn your one-star app reviews into fixes automatically, every night or whenever new reviews come in. It groups the complaints, reproduces each one on the iOS Simulator and the Android emulator, and fixes them in a pull request."
     },
     "0006.png": {
       "cursor": false,
@@ -43,7 +43,7 @@ window.SPEC = {
       "hold": 2.2,
       "voGap": 1.2,
       "cap": "Start one session on the demo repo",
-      "vo": "I start one Devin session, mention the demo repo, and give it the goal, not the answer."
+      "vo": "For this demo, I start one Devin session by hand, mention the demo repo, and give it the goal, not the answer."
     },
     "0046.png": {
       "skip": true
@@ -116,7 +116,7 @@ window.SPEC = {
         "h": 250
       },
       "ringFor": 4,
-      "vo": "Devin reads all twenty-five reviews and groups them into four bug themes, each tied to the likely cause in the code, plus a set that aren't bugs: an ads complaint for an app with no ads, and two feature requests."
+      "vo": "Devin reads all twenty-five reviews and groups them into four bug themes, each tied to the likely cause in the code. Some reviews aren't bugs. One complains about ads, but the app has no ads, and two are feature requests."
     },
     "0070.png": {
       "skip": true
@@ -419,7 +419,7 @@ window.SPEC = {
       "cursor": true,
       "voGap": 1.2,
       "cap": "One PR with all four fixes",
-      "vo": "Once both have reproduced the bugs, the coordinator opens one pull request with all four fixes, and leaves the ads complaint and feature requests out of it."
+      "vo": "Once both have reproduced the bugs, the coordinator opens one pull request with all four fixes. The ads review and the feature requests stay out of it."
     },
     "0162.png": {
       "hold": 4,

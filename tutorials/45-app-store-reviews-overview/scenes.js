@@ -127,7 +127,7 @@ function flowScene(step) {
 // What you can do with it: four cards, each grounded in what the tutorial run showed.
 const USES = [
   { t: 'Triage a review export', sub: 'App Store Connect JSON or Google Play CSV' },
-  { t: 'Separate bugs from noise', sub: 'Complaints that are not bugs stay out' },
+  { t: 'Tell bugs from other complaints', sub: 'Feature requests stay out of the PR' },
   { t: 'Reproduce before fixing', sub: 'iOS Simulator and Android emulator' },
   { t: 'Re-verify before merge', sub: 'Both platforms re-check the final commit' },
 ];

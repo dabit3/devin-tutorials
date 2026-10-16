@@ -1,8 +1,8 @@
 window.SPEC = {
   "title": "App Store reviews to fixes",
   "subtitle": "From 1-star reviews to bugs reproduced and fixed on iOS and Android, an overview",
-  "outro": "1-star reviews in, verified fixes out",
-  "voOutro": "One-star reviews in, verified fixes out.",
+  "outro": "1-star reviews to fixes, verified on iOS and Android",
+  "voOutro": "That's how you turn one-star reviews into fixes verified on iOS and Android, every night.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
@@ -13,15 +13,15 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "hl": null,
-      "cap": "Give Devin your 1-star reviews",
-      "vo": "Give Devin an export of your one-star app reviews, and it turns them into bugs that are reproduced on iOS and Android and fixed in one pull request."
+      "cap": "Run it every night, or whenever new reviews come in",
+      "vo": "You can have Devin turn your one-star app reviews into fixes automatically, every night or whenever new reviews come in. It reproduces each bug on iOS and Android and fixes them in one pull request."
     },
     "0001.png": {
       "hold": 3.5,
       "cursor": false,
       "cap": "A real App Store Connect export, demo reviews",
       "voGap": 0.8,
-      "vo": "In this demo, the app has bugs we planted on purpose, and the reviews are demo data in the real App Store Connect and Google Play formats."
+      "vo": "In this demo, we start it by hand. The app has bugs we planted on purpose, and the reviews are demo data in the real App Store Connect and Google Play formats."
     },
     "0002.png": {
       "scene": "flow1",
@@ -44,7 +44,7 @@ window.SPEC = {
         "h": 250
       },
       "ringFor": 4,
-      "vo": "Here it found four bug themes, and set aside an ads complaint and two feature requests."
+      "vo": "Here it found four bug themes. One review complained about ads, but the app has no ads, and two were feature requests, so those stay out."
     },
     "0004.png": {
       "scene": "flow2",
@@ -126,7 +126,7 @@ window.SPEC = {
       "hl": null,
       "cap": "What you can do with it",
       "voGap": 0.8,
-      "vo": "Use it to triage a review export, separate real bugs from noise, reproduce before fixing, and re-verify before you merge."
+      "vo": "Use it to triage a review export, tell real bugs from other complaints, reproduce before fixing, and re-verify before you merge."
     },
     "0014.png": {
       "hold": 4,
