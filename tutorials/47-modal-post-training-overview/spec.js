@@ -8,9 +8,9 @@ window.SPEC = {
   "maxZoom": 1.6,
   "edit": {
     "0000.png": {
-      "scene": "value", "hold": 6.2, "voHold": 6.0, "cursor": false, "capPos": "bottom",
+      "scene": "value", "hold": 9.6, "voHold": 9.4, "cursor": false, "capPos": "bottom",
       "cap": "Your own model in place of a frontier API",
-      "vo": "Devin can post-train a small open model on Modal and swap it in for a frontier API on one narrow task: text-to-SQL.",
+      "vo": "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same loop works for any task where a script can score the answer.",
       "hl": null
     },
     "0001.png": {

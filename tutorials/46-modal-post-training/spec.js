@@ -19,11 +19,11 @@ window.SPEC = {
       "hold": 3.2
     },
     "0002.png": {
-      "cap": "We added a small demo app beforehand",
-      "vo": "The repo already has a small demo app we added beforehand, which turns questions into SQL with gpt-4.1.",
-      "hold": 2.6,
+      "cap": "Our example: a text-to-SQL demo app",
+      "vo": "Our example in this video is text-to-SQL, but the same loop works for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which turns questions into SQL with gpt-4.1.",
+      "hold": 5.2,
       "cursor": false,
-      "voSay": "The repo already has a small demo app we added beforehand, which turns questions into SQL with GPT four point one."
+      "voSay": "Our example in this video is text-to-SQL, but the same loop works for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which turns questions into SQL with GPT four point one."
     },
     "0009.png": {
       "cap": "Step 1: set the folder up for Modal",

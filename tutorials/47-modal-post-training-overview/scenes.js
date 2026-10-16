@@ -128,7 +128,7 @@ function value(ctx, s0, k) {
   const f2 = hc([410, 405], [960, 540]);
   path(ctx, k, f2, k.eInOut(k.prog(s, doneAt, doneAt + 0.6)), rgba(BLUE, 0.7));
   if (s > doneAt + 0.6) signal(ctx, k, f2, ((s - doneAt - 0.6) % 1.6) / 1.6);
-  txt(ctx, k, 'One narrow task: text-to-SQL', 720, 690, 20, 500, ink(0.65), ap(k, s, doneAt + 0.5));
+  txt(ctx, k, 'This video\u2019s example: text-to-SQL', 720, 690, 20, 500, ink(0.65), ap(k, s, doneAt + 0.5));
 }
 
 // 2. The ML-engineer loop Devin runs end to end.

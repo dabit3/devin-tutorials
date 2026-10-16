@@ -4,7 +4,7 @@ Narrated by Nader (ElevenLabs voice T8iHhGIWPm2GVYpQD1Am, default settings, no s
 
 First, I saved my Modal token and an OpenAI key as Devin secrets, so sessions can use them without the values ever showing.
 
-The repo already has a small demo app we added beforehand, which turns questions into SQL with gpt-4.1.
+Our example in this video is text-to-SQL, but the same loop works for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which turns questions into SQL with gpt-4.1.
 
 I start one session and ask Devin to set the folder up for Modal training, check that auth works, and save the setup as a skill.
 
