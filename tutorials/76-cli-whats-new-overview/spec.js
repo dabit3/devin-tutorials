@@ -1,8 +1,9 @@
 window.SPEC = {
   "title": "Devin CLI: What's new",
   "subtitle": "Stable v3000.11.92 · Oct 14, 2026",
-  "outro": "Update the CLI and give Devin a goal",
-  "voOutro": "Run devin update, and give Devin a goal.",
+  "outro": "Full changelog below",
+  "outroSub": "docs.devin.ai/cli/changelog/stable",
+  "voOutro": "That's it, and I'll link to the full changelog below.",
   "dark": true,
   "speed": 3,
   "cps": 60,
@@ -11,40 +12,40 @@ window.SPEC = {
   "voSentGap": 0.45,
   "reveal": {
     "themes": [
-      3.42,
-      4.4,
-      4.9,
-      5.56
+      3.04,
+      3.98,
+      4.62,
+      5.82
     ],
     "goalcmds": [
       0.15,
       0.5,
-      1.86,
-      3.84,
-      6.28
+      2.12,
+      4.26,
+      6.88
     ],
     "billing": [
-      3.4,
-      6.56
+      3.56,
+      6.24
     ],
     "config": [
-      1.7,
-      5.1
+      1.8,
+      5.36
     ],
     "ext": [
-      2.66,
-      5.0,
-      6.16
+      2.84,
+      5.28,
+      6.34
     ],
     "terminal": [
-      1.62,
+      1.68,
       4.36,
       8.92
     ],
     "fixes": [
-      0.94,
-      3.36,
-      5.94
+      1.12,
+      3.78,
+      6.42
     ]
   },
   "edit": {
@@ -532,7 +533,7 @@ window.SPEC = {
       "scene": "themes",
       "hold": 1.0,
       "cursor": false,
-      "vo": "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features."
+      "vo": "Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and other terminal features."
     },
     "0001.png": {
       "hold": 1.0,

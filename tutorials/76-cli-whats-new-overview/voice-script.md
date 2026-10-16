@@ -2,7 +2,7 @@
 
 Narrated by Nader (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`), one whole-script take cut into lines by `_kit/tools/vo.py`. Where the spoken text differs from the subtitle, the spoken version (`voSay`) is shown below it.
 
-**0000.png** (scene: themes): Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.
+**0000.png** (scene: themes): Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and other terminal features.
 
 **0001.png**: Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.
 
@@ -48,4 +48,4 @@ Narrated by Nader (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`), one whole-script ta
 
 **0269.png** (scene: fixes): On top of that, smart mode asks for approval less often, startup is faster, and session history works on network drives.
 
-**outro**: Run devin update, and give Devin a goal.
+**outro**: That's it, and I'll link to the full changelog below.

@@ -25,7 +25,7 @@ for b in beats:
         ed(n, skip=True)
 
 ed(0, scene='themes', hold=1.0, cursor=False,
-   vo="Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and terminal features.")
+   vo="Let's look at what's new in the Devin CLI, starting with long-running goals, then models, plugins, and other terminal features.")
 ed(1, hold=1.0, vo="Here in Ghostty, I've updated to the latest version of Devin, so let's dive in.")
 ed(9, hold=0.8)
 ed(10, vo="The biggest addition is /goal, which keeps Devin working on an objective turn after turn until it's complete or blocked.",
@@ -94,7 +94,7 @@ if os.path.exists(CP):
         REVEAL[E[img]['scene']] = [when(img, k, i) for i, k in enumerate(kws)]
 spec = {
     'title': 'Devin CLI: What\'s new', 'subtitle': 'Stable v3000.11.92 · Oct 14, 2026',
-    'outro': 'Update the CLI and give Devin a goal', 'voOutro': 'Run devin update, and give Devin a goal.',
+    'outro': 'Full changelog below', 'outroSub': 'docs.devin.ai/cli/changelog/stable', 'voOutro': "That's it, and I'll link to the full changelog below.",
     'dark': True, 'speed': 3, 'cps': 60, 'maxZoom': 1.3, 'pollRunMax': 2.2, 'voSentGap': 0.45,
     'reveal': REVEAL, 'edit': E,
 }
