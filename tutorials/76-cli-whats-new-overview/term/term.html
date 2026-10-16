@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../_kit/tools/node_modules/@xterm/xterm/css/xterm.css">
+<style>
+@font-face{font-family:Inter;src:url(../../_kit/fonts/Inter-VF.ttf);font-weight:100 900}
+@font-face{font-family:JBM;src:url(../../_kit/fonts/JetBrainsMono-VF.ttf);font-weight:100 800}
+html,body{margin:0;width:1440px;height:810px;background:#0a0c10;overflow:hidden}
+#bar{height:44px;display:flex;align-items:center;justify-content:center;position:relative;background:#161b22;border-bottom:1px solid #272b33;font:500 15px Inter,-apple-system,BlinkMacSystemFont,sans-serif;color:#9ea7b3}
+#dots{position:absolute;left:18px;display:flex;gap:9px}#dots i{width:13px;height:13px;border-radius:50%;display:block}
+#t{position:absolute;left:30px;top:66px;right:30px;bottom:20px}
+.xterm .xterm-viewport{background:transparent!important;overflow:hidden!important}
+</style></head><body>
+<div id="bar"><div id="dots"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div><span id="title">orbit — devin</span></div>
+<div id="t"></div>
+<script src="../../_kit/tools/node_modules/@xterm/xterm/lib/xterm.js"></script>
+<script>
+const FS = Number(new URLSearchParams(location.search).get('fs') || 21);
+const term = window.term = new Terminal({ fontFamily: 'JBM', fontSize: FS, lineHeight: 1.08, fontWeight: 400, fontWeightBold: 700, cursorBlink: false, cursorStyle: 'block', allowProposedApi: true, scrollback: 0, drawBoldTextInBrightColors: false,
+  theme: { background: '#0a0c10', foreground: '#f0f3f6', cursor: '#71b7ff', cursorAccent: '#0a0c10', selectionBackground: '#f0f3f6', selectionForeground: '#0a0c10',
+    black: '#7a828e', red: '#ff9492', green: '#26cd4d', yellow: '#f0b72f', blue: '#71b7ff', magenta: '#cb9eff', cyan: '#39c5cf', white: '#d9dee3',
+    brightBlack: '#9ea7b3', brightRed: '#ffb1af', brightGreen: '#4ae168', brightYellow: '#f7c843', brightBlue: '#91cbff', brightMagenta: '#dbb7ff', brightCyan: '#56d4dd', brightWhite: '#ffffff' } });
+window.ready = document.fonts.load(`${FS}px JBM`).then(() => {
+  term.open(document.getElementById('t'));
+  const el = document.getElementById('t'), core = term._core, cell = core._renderService.dimensions.css.cell;
+  const cols = Math.floor(el.clientWidth / cell.width), rows = Math.floor(el.clientHeight / cell.height);
+  term.resize(cols, rows); return { cols, rows };
+});
+// U+23FA (the CLI's tool-call dot) is in no installed font, so draw it as U+25CF, which JetBrains Mono has.
+window.render = (text, cx, cy, show, title) => new Promise(r => {
+  text = text.split('\u23fa').join('\u25cf');
+  if (title) document.getElementById('title').textContent = title;
+  const lines = text.replace(/\n$/, '').split('\n');
+  let s = '\x1b[0m\x1b[2J\x1b[H' + (show ? '\x1b[?25h' : '\x1b[?25l');
+  lines.slice(0, term.rows).forEach((l, i) => { s += `\x1b[${i + 1};1H` + l + '\x1b[0m'; });
+  s += `\x1b[${cy + 1};${cx + 1}H`;
+  term.write(s, () => requestAnimationFrame(() => requestAnimationFrame(r)));
+});
+</script></body></html>
