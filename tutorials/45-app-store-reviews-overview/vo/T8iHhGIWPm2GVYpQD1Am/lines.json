@@ -1,0 +1,372 @@
+{
+ "0000.png": {
+  "text": "You can have Devin turn your one-star app reviews into fixes automatically, every night or whenever new reviews come in. It reproduces each bug on iOS and Android and fixes them in one pull request.",
+  "dur": 10.55,
+  "at": 0.0,
+  "end": 10.55,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.776,
+    "text": "You can have Devin turn your one-star app"
+   },
+   {
+    "t0": 1.834,
+    "t1": 3.506,
+    "text": "reviews into fixes automatically,"
+   },
+   {
+    "t0": 3.785,
+    "t1": 5.712,
+    "text": "every night or whenever new reviews come in."
+   },
+   {
+    "t0": 5.991,
+    "t1": 8.452,
+    "text": "It reproduces each bug on iOS and Android"
+   },
+   {
+    "t0": 8.661,
+    "t1": 10.55,
+    "text": "and fixes them in one pull request."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "In this demo, we start it by hand. The app has bugs we planted on purpose, and the reviews are demo data in the real App Store Connect and Google Play formats.",
+  "dur": 8.59,
+  "at": 11.55,
+  "end": 20.14,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.072,
+    "t1": 0.768,
+    "text": "In this demo,"
+   },
+   {
+    "t0": 0.791,
+    "t1": 1.871,
+    "text": "we start it by hand."
+   },
+   {
+    "t0": 2.115,
+    "t1": 4.112,
+    "text": "The app has bugs we planted on purpose,"
+   },
+   {
+    "t0": 4.286,
+    "t1": 5.865,
+    "text": "and the reviews are demo data in the"
+   },
+   {
+    "t0": 5.923,
+    "t1": 8.547,
+    "text": "real App Store Connect and Google Play formats."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "First, Devin reads every review and groups the complaints into themes, each tied to the likely cause in the code.",
+  "dur": 5.89,
+  "at": 21.08,
+  "end": 26.97,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.073,
+    "t1": 2.372,
+    "text": "First, Devin reads every review and groups the"
+   },
+   {
+    "t0": 2.419,
+    "t1": 3.626,
+    "text": "complaints into themes,"
+   },
+   {
+    "t0": 3.87,
+    "t1": 5.855,
+    "text": "each tied to the likely cause in the code."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "Here it found four bug themes. One review complained about ads, but the app has no ads, and two were feature requests, so those stay out.",
+  "dur": 7.09,
+  "at": 27.94,
+  "end": 35.03,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 1.572,
+    "text": "Here it found four bug themes."
+   },
+   {
+    "t0": 1.781,
+    "t1": 3.244,
+    "text": "One review complained about ads,"
+   },
+   {
+    "t0": 3.291,
+    "t1": 4.614,
+    "text": "but the app has no ads,"
+   },
+   {
+    "t0": 4.765,
+    "t1": 6.089,
+    "text": "and two were feature requests,"
+   },
+   {
+    "t0": 6.181,
+    "t1": 7.075,
+    "text": "so those stay out."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "Next, it starts two managed Devins: a macOS session for the iOS Simulator, and a Linux session running the Android emulator.",
+  "dur": 7.0,
+  "at": 36.06,
+  "end": 43.06,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.128,
+    "t1": 2.09,
+    "text": "Next, it starts two managed Devins:"
+   },
+   {
+    "t0": 2.299,
+    "t1": 4.539,
+    "text": "a macOS session for the iOS Simulator,"
+   },
+   {
+    "t0": 4.748,
+    "t1": 6.954,
+    "text": "and a Linux session running the Android emulator."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "On the Simulator, each person's share leaves out the tip.",
+  "dur": 2.73,
+  "at": 44.05,
+  "end": 46.78,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.09,
+    "t1": 0.95,
+    "text": "On the Simulator,"
+   },
+   {
+    "t0": 0.996,
+    "t1": 2.73,
+    "text": "each person's share leaves out the tip."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "On the emulator, deleting the last bill crashes the app.",
+  "dur": 2.76,
+  "at": 47.8,
+  "end": 50.56,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.079,
+    "t1": 0.88,
+    "text": "On the emulator,"
+   },
+   {
+    "t0": 0.915,
+    "t1": 2.76,
+    "text": "deleting the last bill crashes the app."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Then the coordinator fixes everything that reproduced in one pull request, and Devin Review checks it.",
+  "dur": 5.06,
+  "at": 51.57,
+  "end": 56.63,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.117,
+    "t1": 2.485,
+    "text": "Then the coordinator fixes everything that reproduced in"
+   },
+   {
+    "t0": 2.566,
+    "t1": 3.576,
+    "text": "one pull request,"
+   },
+   {
+    "t0": 3.693,
+    "t1": 5.028,
+    "text": "and Devin Review checks it."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "Each share is now the total, tip included, divided by the number of people.",
+  "dur": 4.29,
+  "at": 57.55,
+  "end": 61.84,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.093,
+    "t1": 1.788,
+    "text": "Each share is now the total,"
+   },
+   {
+    "t0": 1.823,
+    "t1": 4.249,
+    "text": "tip included, divided by the number of people."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "Finally, both managed Devins re-check the fixed build on their platform.",
+  "dur": 4.2,
+  "at": 63.35,
+  "end": 67.55,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.074,
+    "t1": 2.698,
+    "text": "Finally, both managed Devins re-check the fixed build"
+   },
+   {
+    "t0": 2.745,
+    "t1": 3.534,
+    "text": "on their platform."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "On iOS, the share includes the tip.",
+  "dur": 2.15,
+  "at": 68.43,
+  "end": 70.58,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.08,
+    "t1": 2.15,
+    "text": "On iOS, the share includes the tip."
+   }
+  ]
+ },
+ "0012.png": {
+  "text": "And on Android, bill names are readable in dark mode.",
+  "dur": 2.66,
+  "at": 71.74,
+  "end": 74.4,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.09,
+    "t1": 0.937,
+    "text": "And on Android,"
+   },
+   {
+    "t0": 0.972,
+    "t1": 2.644,
+    "text": "bill names are readable in dark mode."
+   }
+  ]
+ },
+ "0013.png": {
+  "text": "Use it to triage a review export, tell real bugs from other complaints, reproduce before fixing, and re-verify before you merge.",
+  "dur": 7.6,
+  "at": 75.4,
+  "end": 83.0,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.099,
+    "t1": 2.037,
+    "text": "Use it to triage a review export,"
+   },
+   {
+    "t0": 2.246,
+    "t1": 4.092,
+    "text": "tell real bugs from other complaints,"
+   },
+   {
+    "t0": 4.301,
+    "t1": 5.671,
+    "text": "reproduce before fixing,"
+   },
+   {
+    "t0": 5.846,
+    "t1": 7.529,
+    "text": "and re-verify before you merge."
+   }
+  ]
+ },
+ "0014.png": {
+  "text": "Devin reports back when both platforms pass the final check, and leaves the pull request for you to merge.",
+  "dur": 5.48,
+  "at": 83.89,
+  "end": 89.37,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.142,
+    "t1": 2.627,
+    "text": "Devin reports back when both platforms pass the"
+   },
+   {
+    "t0": 2.661,
+    "t1": 4.798,
+    "text": "final check, and leaves the pull request for"
+   },
+   {
+    "t0": 4.844,
+    "t1": 5.448,
+    "text": "you to merge."
+   }
+  ]
+ },
+ "outro": {
+  "text": "That's how you turn one-star reviews into fixes verified on iOS and Android, every night.",
+  "dur": 4.595,
+  "at": 90.475,
+  "end": 95.07,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.035,
+    "t1": 2.346,
+    "text": "That's how you turn one-star reviews into fixes"
+   },
+   {
+    "t0": 2.404,
+    "t1": 4.595,
+    "text": "verified on iOS and Android, every night."
+   }
+  ]
+ }
+}
