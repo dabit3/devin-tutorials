@@ -35,7 +35,7 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 <!-- -->
 
-21. **Devin Voice** (3:25): Build a cross-platform mobile game by talking to Devin. Devin Voice uses ChatGPT voice under the hood. Pick macOS, start a voice call and pitch Jumpy Otter, a voxel arcade game that runs on iOS, Android and the web from one Expo codebase, interrupting to add creatine pickups and a combo meter. Rejoin the call mid-build, then watch Devin test the game with Computer Use in Chrome and on the iPhone Simulator, while a second Devin on Ubuntu tests it on an Android emulator, and open a PR. The call audio is the real conversation. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/21-devin-voice/21-devin-voice.mp4)
+21. **Devin Voice** (3:24): Build a cross-platform mobile game by talking to Devin. Devin Voice uses ChatGPT voice under the hood. Pick macOS, start a voice call and pitch Jumpy Otter, a voxel arcade game that runs on iOS, Android and the web from one Expo codebase, interrupting to add creatine pickups and a combo meter. Rejoin the call mid-build, then watch Devin test the game with Computer Use in Chrome and on the iPhone Simulator, while a second Devin on Ubuntu tests it on an Android emulator, and open a PR. The call audio is the real conversation. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/21-devin-voice/21-devin-voice.mp4)
 
 <!-- -->
 
