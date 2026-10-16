@@ -2,7 +2,7 @@
 
 Narrated cut: `58-ios-to-android-parity-nader.mp4` (voice `T8iHhGIWPm2GVYpQD1Am`, `VO_NAME=nader`). The whole script is generated as one ElevenLabs take (default voice settings) with `_kit/tools/vo_onetake.py` from the `vo` fields in `spec.js`, then cut locally into sentence-aligned lines and checked with Speech-to-Text. "Spoken as" is the `voSay` spelling sent to the voice where it differs.
 
-Two real sessions in the `thequantexplorer` org, both on `thequantexplorer/product-demo-apps` (the existing SwiftUI app `wisp/`), ending in one pull request (product-demo-apps#45).
+Two real sessions in the `thequantexplorer` org, both on `thequantexplorer/product-demo-apps` (the existing SwiftUI app `wisp/`), ending in one pull request (product-demo-apps#79; the macOS session first opened #45, which was closed after an earlier take, and its spec commit was reopened as #79 for the Android take).
 
 ## Typed prompts
 
@@ -12,7 +12,7 @@ Session 1, platform **macOS** (picked from the platform menu below the prompt bo
 
 Session 2, platform **Ubuntu** (switched back on camera; Android has no menu option, so the Ubuntu session sets up the emulator):
 
-> In thequantexplorer/product-demo-apps, check out the parity/wisp-onboarding branch and port the wisp onboarding screen to Android with Kotlin and Jetpack Compose under wisp-android/, matching PARITY.md and parity/ios.png. Set up an Android emulator, run the app, screenshot the same screen to wisp-android/parity/android.png, push to the same branch, and update the PR with the iOS and Android screenshots side by side. Send me the side-by-side image too.
+> In thequantexplorer/product-demo-apps, check out the parity/wisp-onboarding branch and port the wisp onboarding screen to Android with Kotlin and Jetpack Compose under wisp-android/, matching PARITY.md and parity/ios.png. Set up an Android emulator with its window at the full height of the screen and nothing covering it, run the app, screenshot the same screen to wisp-android/parity/android.png, push to the same branch, and update the PR with the iOS and Android screenshots side by side. Send me the side-by-side image too.
 
 ## Lines
 
@@ -27,13 +27,13 @@ Session 2, platform **Ubuntu** (switched back on camera; Android has no menu opt
 | 0016 | Devin pushes the spec and the iOS screenshot to a branch, and opens a pull request. |  |
 | 0018 | Now for the port. In a new session, switch the platform back to Ubuntu. |  |
 | 0022 | There's no Android option in the menu. Instead, ask an Ubuntu session to set up an Android emulator, port the screen with Jetpack Compose, and screenshot the same screen. |  |
-| 0025 | Devin builds the Android app with Gradle, boots the emulator and installs the app on it. |  |
+| 0025 | Devin builds the Android app with Gradle, boots the emulator and installs the app on it. | Devin builds the Android app with Graydle, boots the emulator and installs the app on it. |
 | 0033 | Here's the port, running on the Android emulator. |  |
 | 0037 | Then it sends you the iOS and Android screens side by side. |  |
 | 0040 | Open the pull request to review the port. |  |
 | 0044 | The description explains how the port follows the parity spec. |  |
 | 0045 | Below it, the iOS and Android screenshots sit side by side, at the same size. |  |
-| 0046 | It also lists the known differences, like fonts and icons, so reviewers know what to expect. |  |
+| 0046 | It also maps each part of the spec to Compose, from padding to font sizes, so reviewers can check it line by line. |  |
 | outro | Run the original on macOS, port it on Android, and prove they match in one pull request. |  |
 
 ## Sources

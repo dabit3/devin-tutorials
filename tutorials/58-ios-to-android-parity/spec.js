@@ -131,6 +131,7 @@ window.SPEC = {
       "cursor": false,
       "cap": "Devin builds the app and boots the emulator",
       "vo": "Devin builds the Android app with Gradle, boots the emulator and installs the app on it.",
+      "voSay": "Devin builds the Android app with Graydle, boots the emulator and installs the app on it.",
       "hold": 1.0
     },
     "0033.png": {
@@ -138,10 +139,10 @@ window.SPEC = {
       "badge": null,
       "cap": "The port, on the Android emulator",
       "ring": {
-        "x": 667,
-        "y": 233,
-        "w": 112,
-        "h": 250
+        "x": 755,
+        "y": 400,
+        "w": 292,
+        "h": 636
       },
       "vo": "Here's the port, running on the Android emulator."
     },
@@ -153,15 +154,15 @@ window.SPEC = {
       "badge": null,
       "cap": "iOS and Android, side by side",
       "ring": {
-        "x": 262,
-        "y": 290,
-        "w": 462,
-        "h": 478
+        "x": 264,
+        "y": 297,
+        "w": 468,
+        "h": 486
       },
       "vo": "Then it sends you the iOS and Android screens side by side."
     },
     "0038.png": {
-      "hold": 0.8,
+      "hold": 0.5,
       "cursor": true
     },
     "0039.png": {
@@ -174,7 +175,7 @@ window.SPEC = {
       "vo": "Open the pull request to review the port."
     },
     "0041.png": {
-      "hold": 0.6
+      "hold": 0.3
     },
     "0042.png": {
       "cap": "Open the description",
@@ -190,23 +191,23 @@ window.SPEC = {
       "hold": 3.4,
       "cap": "Same screen, same size, side by side",
       "ring": {
-        "x": 1003,
-        "y": 330,
-        "w": 828,
-        "h": 425
+        "x": 1004,
+        "y": 354,
+        "w": 832,
+        "h": 480
       },
       "vo": "Below it, the iOS and Android screenshots sit side by side, at the same size."
     },
     "0046.png": {
       "hold": 3.4,
-      "cap": "Known differences are listed",
+      "cap": "Each spec detail, mapped to Compose",
       "ring": {
-        "x": 1003,
-        "y": 515,
-        "w": 840,
-        "h": 270
+        "x": 1018,
+        "y": 352,
+        "w": 812,
+        "h": 456
       },
-      "vo": "It also lists the known differences, like fonts and icons, so reviewers know what to expect."
+      "vo": "It also maps each part of the spec to Compose, from padding to font sizes, so reviewers can check it line by line."
     },
     "0009.png": {
       "skip": true

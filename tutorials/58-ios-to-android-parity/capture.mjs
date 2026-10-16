@@ -16,7 +16,7 @@ const TASKS = {
   macOS: 'In thequantexplorer/product-demo-apps, run the wisp iOS app in the iPhone Simulator and screenshot its onboarding screen (OnboardingView, shown before an API key is saved). ' +
     'Write a parity spec of that screen (layout, copy, fonts, colors, spacing) to wisp-android/PARITY.md with the screenshot in wisp-android/parity/ios.png, push it to a branch named parity/wisp-onboarding and open a PR.',
   Ubuntu: 'In thequantexplorer/product-demo-apps, check out the parity/wisp-onboarding branch and port the wisp onboarding screen to Android with Kotlin and Jetpack Compose under wisp-android/, matching PARITY.md and parity/ios.png. ' +
-    'Set up an Android emulator, run the app, screenshot the same screen to wisp-android/parity/android.png, push to the same branch, and update the PR with the iOS and Android screenshots side by side. Send me the side-by-side image too.',
+    'Set up an Android emulator with its window at the full height of the screen and nothing covering it, run the app, screenshot the same screen to wisp-android/parity/android.png, push to the same branch, and update the PR with the iOS and Android screenshots side by side. Send me the side-by-side image too.',
 };
 const TASK = process.env.TASK || TASKS[PLAT];
 const r = await new Rec(SHOTS).init();

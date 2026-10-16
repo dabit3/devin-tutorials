@@ -1,9 +1,9 @@
 {
  "0000.png": {
   "text": "Here's how to port an iOS screen to Android with Devin, and prove that both versions match.",
-  "dur": 4.245,
+  "dur": 4.255,
   "at": 0.0,
-  "end": 4.245,
+  "end": 4.255,
   "mode": "one-take",
   "checked": true,
   "chunks": [
@@ -19,7 +19,7 @@
    },
    {
     "t0": 2.601,
-    "t1": 4.245,
+    "t1": 4.249,
     "text": "and prove that both versions match."
    }
   ]
@@ -191,9 +191,9 @@
  },
  "0022.png": {
   "text": "There's no Android option in the menu. Instead, ask an Ubuntu session to set up an Android emulator, port the screen with Jetpack Compose, and screenshot the same screen.",
-  "dur": 8.995,
+  "dur": 9.04,
   "at": 38.24,
-  "end": 47.235,
+  "end": 47.28,
   "mode": "one-take",
   "checked": true,
   "chunks": [
@@ -219,172 +219,168 @@
    },
    {
     "t0": 7.468,
-    "t1": 8.995,
+    "t1": 9.035,
     "text": "and screenshot the same screen."
    }
   ]
  },
  "0025.png": {
   "text": "Devin builds the Android app with Gradle, boots the emulator and installs the app on it.",
-  "dur": 4.4,
-  "at": 47.65,
-  "end": 52.05,
+  "say": "Devin builds the Android app with Graydle, boots the emulator and installs the app on it.",
+  "dur": 4.405,
+  "at": 47.64,
+  "end": 52.045,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.136,
-    "t1": 1.994,
-    "text": "Devin builds the Android app with Gradle,"
-   },
-   {
-    "t0": 2.238,
-    "t1": 4.386,
-    "text": "boots the emulator and installs the app on it."
+    "t0": 0.146,
+    "t1": 4.395,
+    "text": "Devin builds the Android app with Gradle, boots the emulator and installs the app on it."
    }
   ]
  },
  "0033.png": {
   "text": "Here's the port, running on the Android emulator.",
-  "dur": 2.135,
-  "at": 52.31,
-  "end": 54.445,
+  "dur": 2.125,
+  "at": 52.2,
+  "end": 54.325,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.051,
-    "t1": 0.713,
+    "t0": 0.044,
+    "t1": 0.706,
     "text": "Here's the port,"
    },
    {
-    "t0": 0.759,
-    "t1": 2.135,
+    "t0": 0.752,
+    "t1": 2.125,
     "text": "running on the Android emulator."
    }
   ]
  },
  "0037.png": {
   "text": "Then it sends you the iOS and Android screens side by side.",
-  "dur": 3.16,
-  "at": 54.64,
-  "end": 57.8,
+  "dur": 3.11,
+  "at": 54.53,
+  "end": 57.64,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.101,
-    "t1": 1.866,
+    "t0": 0.071,
+    "t1": 1.836,
     "text": "Then it sends you the iOS and Android"
    },
    {
-    "t0": 1.912,
-    "t1": 3.119,
+    "t0": 1.882,
+    "t1": 3.089,
     "text": "screens side by side."
    }
   ]
  },
  "0040.png": {
   "text": "Open the pull request to review the port.",
-  "dur": 1.96,
-  "at": 57.99,
-  "end": 59.95,
+  "dur": 1.975,
+  "at": 57.85,
+  "end": 59.825,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.095,
-    "t1": 1.96,
+    "t0": 0.094,
+    "t1": 1.975,
     "text": "Open the pull request to review the port."
    }
   ]
  },
  "0044.png": {
   "text": "The description explains how the port follows the parity spec.",
-  "dur": 2.855,
-  "at": 60.3,
-  "end": 63.155,
+  "dur": 2.84,
+  "at": 60.12,
+  "end": 62.96,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.06,
-    "t1": 2.855,
+    "t0": 0.054,
+    "t1": 2.84,
     "text": "The description explains how the port follows the parity spec."
    }
   ]
  },
  "0045.png": {
   "text": "Below it, the iOS and Android screenshots sit side by side, at the same size.",
-  "dur": 4.51,
-  "at": 63.55,
-  "end": 68.06,
+  "dur": 4.31,
+  "at": 63.3,
+  "end": 67.61,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.072,
-    "t1": 2.487,
+    "t0": 0.077,
+    "t1": 2.562,
     "text": "Below it, the iOS and Android screenshots sit"
    },
    {
-    "t0": 2.545,
-    "t1": 3.358,
+    "t0": 2.608,
+    "t1": 3.34,
     "text": "side by side,"
    },
    {
-    "t0": 3.532,
-    "t1": 4.51,
+    "t0": 3.375,
+    "t1": 4.31,
     "text": "at the same size."
    }
   ]
  },
  "0046.png": {
-  "text": "It also lists the known differences, like fonts and icons, so reviewers know what to expect.",
-  "dur": 5.245,
-  "at": 68.265,
-  "end": 73.51,
+  "text": "It also maps each part of the spec to Compose, from padding to font sizes, so reviewers can check it line by line.",
+  "dur": 6.4,
+  "at": 67.805,
+  "end": 74.205,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.06,
-    "t1": 1.882,
-    "text": "It also lists the known differences,"
+    "t0": 0.031,
+    "t1": 1.644,
+    "text": "It also maps each part of the spec"
    },
    {
-    "t0": 2.091,
-    "t1": 3.415,
-    "text": "like fonts and icons,"
+    "t0": 1.703,
+    "t1": 4.35,
+    "text": "to Compose, from padding to font sizes,"
    },
    {
-    "t0": 3.624,
-    "t1": 5.214,
-    "text": "so reviewers know what to expect."
+    "t0": 4.559,
+    "t1": 6.4,
+    "text": "so reviewers can check it line by line."
    }
   ]
  },
  "outro": {
   "text": "Run the original on macOS, port it on Android, and prove they match in one pull request.",
-  "dur": 4.9,
-  "at": 73.72,
-  "end": 78.62,
+  "dur": 5.05,
+  "at": 74.51,
+  "end": 79.56,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.142,
-    "t1": 1.629,
+    "t0": 0.106,
+    "t1": 1.685,
     "text": "Run the original on macOS,"
    },
    {
-    "t0": 1.721,
-    "t1": 2.79,
+    "t0": 1.836,
+    "t1": 2.892,
     "text": "port it on Android,"
    },
    {
-    "t0": 2.94,
-    "t1": 4.9,
+    "t0": 2.985,
+    "t1": 5.05,
     "text": "and prove they match in one pull request."
    }
   ]
