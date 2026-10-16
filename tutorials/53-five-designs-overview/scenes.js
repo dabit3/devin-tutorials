@@ -111,7 +111,7 @@ function board(ctx, k, x, y, w, h, a, i) {
 // One screen, five directions, each built, previewed and recorded.
 function value(ctx, s0, k) {
   bg(ctx, k); const s = s0 / st('value');
-  eyebrow(ctx, k, 'FIVE DESIGNS OF THE SAME SCREEN', 140, ap(k, s, 0.05));
+  eyebrow(ctx, k, 'DESIGN OPTIONS IN PARALLEL', 140, ap(k, s, 0.05));
   const sa = ap(k, s, 0.2), sx = 110, sy = 300 + 12 * (1 - sa);
   card(ctx, k, sx, sy, 230, 170, sa);
   txt(ctx, k, 'One screen', sx + 115, sy + 34, 18, 600, '#191919', sa);
