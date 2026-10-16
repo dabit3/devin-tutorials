@@ -140,7 +140,7 @@ function flow(ctx, s, k) {
 const WHY = [
   { t: 'A clear target', sub: 'The spec is written from the real iOS screen' },
   { t: 'Proof, not a claim', sub: 'Both screenshots, same size, in the PR' },
-  { t: 'Differences in the open', sub: 'What can\'t match is listed for review' },
+  { t: 'Checkable line by line', sub: 'Each spec detail is mapped to Compose' },
   { t: 'The right machine for each', sub: 'Xcode on macOS, an emulator on Ubuntu' },
 ];
 function grid(ctx, s, k, title, items, step = 0.8) {
