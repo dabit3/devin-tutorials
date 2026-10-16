@@ -3,19 +3,20 @@
 frames line up with the call audio. Run after editing spec.js by hand; it only touches call stills."""
 import json, os, re
 D = os.path.dirname(os.path.abspath(__file__))
+S = os.path.join(D, os.environ.get('SHOTS', 'shots'))
 P = os.path.join(D, 'spec.js')
 head, _, tail = open(P).read().partition('\n};\n')  # tail: narrated-only JS after the JSON
 spec = json.loads(re.sub(r'^\s*window\.SPEC\s*=\s*', '', head) + '\n}')
-beats = json.load(open(os.path.join(D, 'shots', 'beats.json')))
+beats = json.load(open(os.path.join(S, 'beats.json')))
 pace, E = spec.get('pace', 1.2), spec.setdefault('edit', {})
 TRIM = json.load(open(os.path.join(D, 'call', 'trim.json'))) if os.path.exists(os.path.join(D, 'call', 'trim.json')) else {}
 for name in sorted({b['call'] for b in beats if b.get('call')}):
-    m = json.load(open(os.path.join(D, 'shots', name + '.json')))
+    m = json.load(open(os.path.join(S, name + '.json')))
     trim = TRIM.get(name)
     if trim: m['t1'] = min(m['t1'], m['t0'] + trim * 1000)
     for b in beats:
-        if b.get('call') == name and b['wall'] >= m['t1']: E.setdefault(b['img'], {})['skip'] = True
-    cs = [b for b in beats if b.get('call') == name and b['wall'] < m['t1']]
+        if b.get('call') == name and not (m['t0'] <= b['wall'] < m['t1']): E.setdefault(b['img'], {})['skip'] = True
+    cs = [b for b in beats if b.get('call') == name and m['t0'] <= b['wall'] < m['t1']]
     for i, b in enumerate(cs):
         e = E.setdefault(b['img'], {})
         assert not e.get('skip') and not e.get('cam') and not e.get('vo'), f"{b['img']}: call stills can't skip, zoom or carry vo"

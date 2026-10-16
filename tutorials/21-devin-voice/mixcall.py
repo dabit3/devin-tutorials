@@ -30,7 +30,8 @@ for pl in m['plays']:
 PP = os.path.join(D, 'call', 'pauses.json')
 for cut, pause, until in (json.load(open(PP)).get(NAME, []) if os.path.exists(PP) else []):
     c, p, u = int(cut * SR), int(pause * SR), int(until * SR)
-    assert not np.abs(nader[u:u + p]).any(), f'pause at {cut}s would run into the next line'
+    peak = np.abs(nader[u:u + p]).max()
+    assert peak < 0.03, f'pause at {cut}s would run into speech after {until}s (peak {peak:.3f})'  # a gap between words or lines absorbs the pause
     nader[c:u + p] = np.concatenate([np.zeros(p), nader[c:u]])
 out += nader
 out /= max(1.0, np.abs(out).max() / 0.95)
