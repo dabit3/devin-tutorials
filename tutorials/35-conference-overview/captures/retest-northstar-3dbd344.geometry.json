@@ -1,0 +1,686 @@
+{
+  "revision": "3dbd344a03ae8c60decc841b192e011a07d3f7b1",
+  "archiveSHA256": "117e4b3445427dbe0c8ec430c3b24ebe43ffcf089438ec2db65b85ebf24170e7",
+  "sourceVideo": "/Users/devin/repos/devin-tutorials/tutorials/35-conference-overview/captures/retest-northstar-3dbd344.mp4",
+  "cssViewport": [
+    1440,
+    810
+  ],
+  "encodedSize": [
+    2880,
+    1620
+  ],
+  "coordinateScale": 2,
+  "cssZoom": 1,
+  "provenance": "One continuous real-keyboard take on unchanged app in isolated context of Chrome 9334. Prepared selection through actual Save click, keyboard-navigated opener; no state/content injection. Updated capture helper retains CDP compositor session. Original hero unchanged.",
+  "timing": "All seconds measured from first captured frame, normal-speed source. DOM rectangles already multiplied by TWO; do not multiply again.",
+  "inputs": [
+    {
+      "key": "Enter",
+      "epoch": 1791943127.576,
+      "mp4Seconds": 1.9885308742523193
+    },
+    {
+      "key": "Tab",
+      "epoch": 1791943129.577,
+      "mp4Seconds": 3.9895308017730713
+    },
+    {
+      "key": "Tab",
+      "epoch": 1791943131.082,
+      "mp4Seconds": 5.494530916213989
+    },
+    {
+      "key": "Tab",
+      "epoch": 1791943132.591,
+      "mp4Seconds": 7.003530979156494
+    },
+    {
+      "key": "Enter",
+      "epoch": 1791943134.103,
+      "mp4Seconds": 8.515530824661255
+    },
+    {
+      "key": "Tab",
+      "epoch": 1791943136.586,
+      "mp4Seconds": 10.998530864715576
+    },
+    {
+      "key": "Shift+Tab",
+      "epoch": 1791943138.583,
+      "mp4Seconds": 12.995530843734741
+    },
+    {
+      "key": "Shift+Tab",
+      "epoch": 1791943141.152,
+      "mp4Seconds": 15.564530849456787
+    },
+    {
+      "key": "Shift+Tab",
+      "epoch": 1791943142.107,
+      "mp4Seconds": 16.51953101158142
+    },
+    {
+      "key": "Escape",
+      "epoch": 1791943143.578,
+      "mp4Seconds": 17.990530967712402
+    }
+  ],
+  "events": [
+    {
+      "label": "opener",
+      "epoch": 1791943126.997,
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "My schedule\n1",
+        "visible": true,
+        "inDialog": false
+      },
+      "geometry": {
+        "opener": {
+          "x": 2324.4375,
+          "y": 31,
+          "width": 299.5625,
+          "height": 80
+        },
+        "dialog": null,
+        "heading": null,
+        "close": null,
+        "remove": null,
+        "export": null,
+        "focused": {
+          "x": 2324.4375,
+          "y": 31,
+          "width": 299.5625,
+          "height": 80
+        }
+      },
+      "saved": "1",
+      "dialog": false,
+      "mp4Seconds": 1.4095308780670166,
+      "safeUntilSeconds": 1.9885308742523193
+    },
+    {
+      "label": "heading",
+      "epoch": 1791943127.775,
+      "focus": {
+        "tag": "H2",
+        "id": "schedule-title",
+        "text": "My schedule",
+        "visible": true,
+        "inDialog": true
+      },
+      "geometry": {
+        "opener": {
+          "x": 2324.4375,
+          "y": 31,
+          "width": 299.5625,
+          "height": 80
+        },
+        "dialog": {
+          "x": 800,
+          "y": 472,
+          "width": 1280,
+          "height": 676
+        },
+        "heading": {
+          "x": 858,
+          "y": 567,
+          "width": 343.6875,
+          "height": 84
+        },
+        "close": {
+          "x": 1800.15625,
+          "y": 522,
+          "width": 221.84375,
+          "height": 80
+        },
+        "remove": {
+          "x": 1894.53125,
+          "y": 856,
+          "width": 127.46875,
+          "height": 64
+        },
+        "export": {
+          "x": 1813.125,
+          "y": 1034,
+          "width": 208.875,
+          "height": 80
+        },
+        "focused": {
+          "x": 858,
+          "y": 567,
+          "width": 343.6875,
+          "height": 84
+        }
+      },
+      "saved": "1",
+      "dialog": true,
+      "mp4Seconds": 2.187530994415283,
+      "safeUntilSeconds": 3.9895308017730713
+    },
+    {
+      "label": "close",
+      "epoch": 1791943129.764,
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Close\nEsc",
+        "visible": true,
+        "inDialog": true
+      },
+      "geometry": {
+        "opener": {
+          "x": 2324.4375,
+          "y": 31,
+          "width": 299.5625,
+          "height": 80
+        },
+        "dialog": {
+          "x": 800,
+          "y": 472,
+          "width": 1280,
+          "height": 676
+        },
+        "heading": {
+          "x": 858,
+          "y": 567,
+          "width": 343.6875,
+          "height": 84
+        },
+        "close": {
+          "x": 1800.15625,
+          "y": 522,
+          "width": 221.84375,
+          "height": 80
+        },
+        "remove": {
+          "x": 1894.53125,
+          "y": 856,
+          "width": 127.46875,
+          "height": 64
+        },
+        "export": {
+          "x": 1813.125,
+          "y": 1034,
+          "width": 208.875,
+          "height": 80
+        },
+        "focused": {
+          "x": 1800.15625,
+          "y": 522,
+          "width": 221.84375,
+          "height": 80
+        }
+      },
+      "saved": "1",
+      "dialog": true,
+      "mp4Seconds": 4.176530838012695,
+      "safeUntilSeconds": 5.494530916213989
+    },
+    {
+      "label": "remove",
+      "epoch": 1791943131.509,
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Remove\nLatency Budgets for Real Humans",
+        "visible": true,
+        "inDialog": true
+      },
+      "geometry": {
+        "opener": {
+          "x": 2324.4375,
+          "y": 31,
+          "width": 299.5625,
+          "height": 80
+        },
+        "dialog": {
+          "x": 800,
+          "y": 472,
+          "width": 1280,
+          "height": 676
+        },
+        "heading": {
+          "x": 858,
+          "y": 567,
+          "width": 343.6875,
+          "height": 84
+        },
+        "close": {
+          "x": 1800.15625,
+          "y": 522,
+          "width": 221.84375,
+          "height": 80
+        },
+        "remove": {
+          "x": 1894.53125,
+          "y": 856,
+          "width": 127.46875,
+          "height": 64
+        },
+        "export": {
+          "x": 1813.125,
+          "y": 1034,
+          "width": 208.875,
+          "height": 80
+        },
+        "focused": {
+          "x": 1894.53125,
+          "y": 856,
+          "width": 127.46875,
+          "height": 64
+        }
+      },
+      "saved": "1",
+      "dialog": true,
+      "mp4Seconds": 5.9215309619903564,
+      "safeUntilSeconds": 7.003530979156494
+    },
+    {
+      "label": "export",
+      "epoch": 1791943133.393,
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Export .ics",
+        "visible": true,
+        "inDialog": true
+      },
+      "geometry": {
+        "opener": {
+          "x": 2324.4375,
+          "y": 31,
+          "width": 299.5625,
+          "height": 80
+        },
+        "dialog": {
+          "x": 800,
+          "y": 472,
+          "width": 1280,
+          "height": 676
+        },
+        "heading": {
+          "x": 858,
+          "y": 567,
+          "width": 343.6875,
+          "height": 84
+        },
+        "close": {
+          "x": 1800.15625,
+          "y": 522,
+          "width": 221.84375,
+          "height": 80
+        },
+        "remove": {
+          "x": 1894.53125,
+          "y": 856,
+          "width": 127.46875,
+          "height": 64
+        },
+        "export": {
+          "x": 1813.125,
+          "y": 1034,
+          "width": 208.875,
+          "height": 80
+        },
+        "focused": {
+          "x": 1813.125,
+          "y": 1034,
+          "width": 208.875,
+          "height": 80
+        }
+      },
+      "saved": "1",
+      "dialog": true,
+      "mp4Seconds": 7.805530786514282,
+      "safeUntilSeconds": 8.515530824661255
+    },
+    {
+      "label": "after-export",
+      "epoch": 1791943135.422,
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Export .ics",
+        "visible": true,
+        "inDialog": true
+      },
+      "geometry": {
+        "opener": {
+          "x": 2324.4375,
+          "y": 31,
+          "width": 299.5625,
+          "height": 80
+        },
+        "dialog": {
+          "x": 800,
+          "y": 472,
+          "width": 1280,
+          "height": 676
+        },
+        "heading": {
+          "x": 858,
+          "y": 567,
+          "width": 343.6875,
+          "height": 84
+        },
+        "close": {
+          "x": 1800.15625,
+          "y": 522,
+          "width": 221.84375,
+          "height": 80
+        },
+        "remove": {
+          "x": 1894.53125,
+          "y": 856,
+          "width": 127.46875,
+          "height": 64
+        },
+        "export": {
+          "x": 1813.125,
+          "y": 1034,
+          "width": 208.875,
+          "height": 80
+        },
+        "focused": {
+          "x": 1813.125,
+          "y": 1034,
+          "width": 208.875,
+          "height": 80
+        }
+      },
+      "saved": "1",
+      "dialog": true,
+      "mp4Seconds": 9.8345308303833,
+      "safeUntilSeconds": 10.998530864715576
+    },
+    {
+      "label": "forward-wrap",
+      "epoch": 1791943137.007,
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Close\nEsc",
+        "visible": true,
+        "inDialog": true
+      },
+      "geometry": {
+        "opener": {
+          "x": 2324.4375,
+          "y": 31,
+          "width": 299.5625,
+          "height": 80
+        },
+        "dialog": {
+          "x": 800,
+          "y": 472,
+          "width": 1280,
+          "height": 676
+        },
+        "heading": {
+          "x": 858,
+          "y": 567,
+          "width": 343.6875,
+          "height": 84
+        },
+        "close": {
+          "x": 1800.15625,
+          "y": 522,
+          "width": 221.84375,
+          "height": 80
+        },
+        "remove": {
+          "x": 1894.53125,
+          "y": 856,
+          "width": 127.46875,
+          "height": 64
+        },
+        "export": {
+          "x": 1813.125,
+          "y": 1034,
+          "width": 208.875,
+          "height": 80
+        },
+        "focused": {
+          "x": 1800.15625,
+          "y": 522,
+          "width": 221.84375,
+          "height": 80
+        }
+      },
+      "saved": "1",
+      "dialog": true,
+      "mp4Seconds": 11.419530868530273,
+      "safeUntilSeconds": 12.995530843734741
+    },
+    {
+      "label": "reverse-wrap",
+      "epoch": 1791943139.454,
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Export .ics",
+        "visible": true,
+        "inDialog": true
+      },
+      "geometry": {
+        "opener": {
+          "x": 2324.4375,
+          "y": 31,
+          "width": 299.5625,
+          "height": 80
+        },
+        "dialog": {
+          "x": 800,
+          "y": 472,
+          "width": 1280,
+          "height": 676
+        },
+        "heading": {
+          "x": 858,
+          "y": 567,
+          "width": 343.6875,
+          "height": 84
+        },
+        "close": {
+          "x": 1800.15625,
+          "y": 522,
+          "width": 221.84375,
+          "height": 80
+        },
+        "remove": {
+          "x": 1894.53125,
+          "y": 856,
+          "width": 127.46875,
+          "height": 64
+        },
+        "export": {
+          "x": 1813.125,
+          "y": 1034,
+          "width": 208.875,
+          "height": 80
+        },
+        "focused": {
+          "x": 1813.125,
+          "y": 1034,
+          "width": 208.875,
+          "height": 80
+        }
+      },
+      "saved": "1",
+      "dialog": true,
+      "mp4Seconds": 13.866530895233154,
+      "safeUntilSeconds": 15.564530849456787
+    },
+    {
+      "label": "reverse-remove",
+      "epoch": 1791943141.4,
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Remove\nLatency Budgets for Real Humans",
+        "visible": true,
+        "inDialog": true
+      },
+      "geometry": {
+        "opener": {
+          "x": 2324.4375,
+          "y": 31,
+          "width": 299.5625,
+          "height": 80
+        },
+        "dialog": {
+          "x": 800,
+          "y": 472,
+          "width": 1280,
+          "height": 676
+        },
+        "heading": {
+          "x": 858,
+          "y": 567,
+          "width": 343.6875,
+          "height": 84
+        },
+        "close": {
+          "x": 1800.15625,
+          "y": 522,
+          "width": 221.84375,
+          "height": 80
+        },
+        "remove": {
+          "x": 1894.53125,
+          "y": 856,
+          "width": 127.46875,
+          "height": 64
+        },
+        "export": {
+          "x": 1813.125,
+          "y": 1034,
+          "width": 208.875,
+          "height": 80
+        },
+        "focused": {
+          "x": 1894.53125,
+          "y": 856,
+          "width": 127.46875,
+          "height": 64
+        }
+      },
+      "saved": "1",
+      "dialog": true,
+      "mp4Seconds": 15.812530994415283,
+      "safeUntilSeconds": 16.51953101158142
+    },
+    {
+      "label": "reverse-close",
+      "epoch": 1791943142.793,
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Close\nEsc",
+        "visible": true,
+        "inDialog": true
+      },
+      "geometry": {
+        "opener": {
+          "x": 2324.4375,
+          "y": 31,
+          "width": 299.5625,
+          "height": 80
+        },
+        "dialog": {
+          "x": 800,
+          "y": 472,
+          "width": 1280,
+          "height": 676
+        },
+        "heading": {
+          "x": 858,
+          "y": 567,
+          "width": 343.6875,
+          "height": 84
+        },
+        "close": {
+          "x": 1800.15625,
+          "y": 522,
+          "width": 221.84375,
+          "height": 80
+        },
+        "remove": {
+          "x": 1894.53125,
+          "y": 856,
+          "width": 127.46875,
+          "height": 64
+        },
+        "export": {
+          "x": 1813.125,
+          "y": 1034,
+          "width": 208.875,
+          "height": 80
+        },
+        "focused": {
+          "x": 1800.15625,
+          "y": 522,
+          "width": 221.84375,
+          "height": 80
+        }
+      },
+      "saved": "1",
+      "dialog": true,
+      "mp4Seconds": 17.205530881881714,
+      "safeUntilSeconds": 17.990530967712402
+    },
+    {
+      "label": "escape-restored",
+      "epoch": 1791943143.993,
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "My schedule\n1",
+        "visible": true,
+        "inDialog": false
+      },
+      "geometry": {
+        "opener": {
+          "x": 2324.4375,
+          "y": 31,
+          "width": 299.5625,
+          "height": 80
+        },
+        "dialog": null,
+        "heading": null,
+        "close": null,
+        "remove": null,
+        "export": null,
+        "focused": {
+          "x": 2324.4375,
+          "y": 31,
+          "width": 299.5625,
+          "height": 80
+        }
+      },
+      "saved": "1",
+      "dialog": false,
+      "mp4Seconds": 18.40553092956543,
+      "safeUntilSeconds": 19.987530946731567
+    }
+  ],
+  "downloads": [
+    {
+      "guid": "ad92e1f2-b4de-43cb-bd19-910a042c1eb9",
+      "totalBytes": 1034,
+      "receivedBytes": 1034,
+      "state": "completed",
+      "filePath": "/tmp/northstar-ui-evidence/retest/northstar-2026-my-schedule.ics"
+    }
+  ],
+  "downloadVerified": {
+    "ids": [
+      "ns-102"
+    ],
+    "start": "20261118T103000",
+    "file": "/tmp/northstar-ui-evidence/retest/clean-export-ns-102.ics"
+  }
+}
