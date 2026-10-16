@@ -2,12 +2,12 @@
 
 Nader voice (`T8iHhGIWPm2GVYpQD1Am`), one whole-script take. Beat → line (spoken form in brackets where it differs).
 
-- `0000.png`: Outposts let Devin run sessions on machines you control, so when a problem only shows up on a real GPU, Devin can debug it on that GPU.
-- `0001.png`: Use it to profile slow training, to chase errors that only happen on GPU hardware, or to benchmark a change where it will actually run.
-- `0002.png`: To set one up, open Settings → Environment → Outposts and create an outpost.  
-  _(said: To set one up, open Settings, Environment, Outposts, and create an outpost.)_
-- `0004.png`: I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.  
-  _(said: I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.)_
+- `0002.png`: In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H200 GPU running on Modal.  
+  _(said: In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H two hundred GPU running on Modal.)_
+- `0003.png`: Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU-only errors and benchmark changes on real hardware.  
+  _(said: Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU only errors and benchmark changes on real hardware.)_
+- `0004.png`: To set one up, create an outpost in Settings → Environment → Outposts. I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.  
+  _(said: To set one up, create an outpost in Settings, Environment, Outposts. I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.)_
 - `0013.png`: Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog.
 - `0018.png`: The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200.  
   _(said: The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H two hundred.)_
@@ -26,10 +26,10 @@ Nader voice (`T8iHhGIWPm2GVYpQD1Am`), one whole-script take. Beat → line (spok
 - `0093.png`: Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step.
 - `0096.png`: The torch profiler confirms it, with most of each step spent waiting on the data loader.
 - `0099.png`: The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical.
-- `0102.png`: Then it opens a pull request, and the diff is small, with the row by row loop replaced by a single NumPy expression.
+- `0102.png`: Then it opens a pull request and sums up what it found, the profile, the cause and the fix.
 - `0104.png`: On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script.  
   _(said: On the H two hundred, training is about fourteen times faster, and since the repo has no tests, Devin checked the speedup by running the training script.)_
-- outro: Your GPU, your outpost, and Devin doing the profiling.
+- outro: That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware.
 
 ## Typed on screen
 - Outpost name: `gpu-h200` (Linux platform)

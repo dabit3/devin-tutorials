@@ -1,32 +1,35 @@
 window.SPEC = {
   "title": "Debug a training loop on a real GPU",
   "subtitle": "Devin Outposts on a Modal H200, step by step",
-  "outro": "Your GPU, your outpost, Devin doing the profiling",
-  "voOutro": "Your GPU, your outpost, and Devin doing the profiling.",
+  "outro": "Connect a GPU, let Devin profile and fix",
+  "voOutro": "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
+  "noZoom": [
+    [
+      "0000.png"
+    ]
+  ],
   "pollRunMax": 1,
   "edit": {
-    "0000.png": {
-      "hold": 5.5,
-      "cursor": false,
-      "cap": "Outposts: Devin sessions on machines you control",
-      "vo": "Outposts let Devin run sessions on machines you control, so when a problem only shows up on a real GPU, Devin can debug it on that GPU."
-    },
-    "0001.png": {
-      "cursor": true,
-      "vo": "Use it to profile slow training, to chase errors that only happen on GPU hardware, or to benchmark a change where it will actually run."
-    },
     "0002.png": {
+      "hold": 1.6,
+      "cursor": false,
+      "cap": "A slow PyTorch training loop, debugged on a Modal H200",
+      "vo": "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H200 GPU running on Modal.",
+      "voSay": "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H two hundred GPU running on Modal."
+    },
+    "0003.png": {
+      "cursor": true,
       "cap": "Settings → Environment → Outposts",
-      "vo": "To set one up, open Settings → Environment → Outposts and create an outpost.",
-      "voSay": "To set one up, open Settings, Environment, Outposts, and create an outpost."
+      "vo": "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU-only errors and benchmark changes on real hardware.",
+      "voSay": "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU only errors and benchmark changes on real hardware."
     },
     "0004.png": {
       "cap": "Name it after the hardware: gpu-h200",
-      "vo": "I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
-      "voSay": "I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux."
+      "vo": "To set one up, create an outpost in Settings → Environment → Outposts. I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
+      "voSay": "To set one up, create an outpost in Settings, Environment, Outposts. I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux."
     },
     "0011.png": {
       "cap": "Platform: Linux"
@@ -46,10 +49,6 @@ window.SPEC = {
       "cap": "Modal: a small app that runs the worker on an H200",
       "vo": "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200.",
       "voSay": "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H two hundred."
-    },
-    "0024.png": {
-      "hold": 4.5,
-      "cap": "worker.py: devin worker start --outpost gpu-h200, on gpu=\"H200\""
     },
     "0031.png": {
       "cap": "The outpost token goes into a Modal secret",
@@ -109,7 +108,13 @@ window.SPEC = {
     "0084.png": {
       "badge": "",
       "cap": "Every step is in the session timeline",
-      "vo": "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected."
+      "vo": "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected.",
+      "cam": {
+        "x": 672,
+        "y": 362,
+        "z": 1.12
+      },
+      "camForce": true
     },
     "0087.png": {
       "hold": 1.2,
@@ -123,30 +128,70 @@ window.SPEC = {
     },
     "0093.png": {
       "cap": "Data loading: 2.40 ms per image → 417 img/s. GPU step alone: 13,869 img/s",
-      "vo": "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step."
+      "vo": "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step.",
+      "cam": {
+        "x": 990,
+        "y": 557,
+        "z": 1.6
+      },
+      "camForce": true
     },
     "0096.png": {
       "hold": 2.4,
       "cap": "torch.profiler: 81% of each step waits on the DataLoader",
-      "vo": "The torch profiler confirms it, with most of each step spent waiting on the data loader."
+      "vo": "The torch profiler confirms it, with most of each step spent waiting on the data loader.",
+      "cam": {
+        "x": 990,
+        "y": 557,
+        "z": 1.6
+      },
+      "camForce": true
     },
     "0099.png": {
       "cap": "Vectorized normalize: maxdiff 0.0, 93 µs per image",
-      "vo": "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical."
+      "vo": "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical.",
+      "cam": {
+        "x": 990,
+        "y": 557,
+        "z": 1.6
+      },
+      "camForce": true
     },
     "0102.png": {
+      "cam": {
+        "x": 672,
+        "y": 362,
+        "z": 1.12
+      },
+      "camForce": true,
       "cap": "Devin opens a PR on thequantexplorer/gpu-train-demo",
-      "vo": "Then it opens a pull request, and the diff is small, with the row by row loop replaced by a single NumPy expression."
-    },
-    "0103.png": {
-      "hold": 4,
-      "cap": "train.py, +2 −6: the row loop becomes one NumPy expression"
+      "vo": "Then it opens a pull request and sums up what it found, the profile, the cause and the fix."
     },
     "0104.png": {
       "hold": 4.5,
       "cap": "383 → 5,389 img/s on the H200, about 14x",
       "vo": "On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script.",
       "voSay": "On the H two hundred, training is about fourteen times faster, and since the repo has no tests, Devin checked the speedup by running the training script."
+    },
+    "0089.png": {
+      "cam": "reset"
+    },
+    "0094.png": {
+      "cam": "reset"
+    },
+    "0097.png": {
+      "cam": "reset"
+    },
+    "0100.png": {
+      "cam": "reset"
+    },
+    "0101.png": {
+      "cam": {
+        "x": 672,
+        "y": 362,
+        "z": 1.12
+      },
+      "camForce": true
     }
   }
 };
