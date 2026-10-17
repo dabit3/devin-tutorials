@@ -1,5 +1,5 @@
 """Puts the live gameplay intro (real GPT-Live-1 Coach audio, captured from the Chrome build) in front of a kit cut.
-usage: python3 splice.py cap|nader <intro.mp4>
+usage: python3 splice.py cap|nader <intro.mp4>   (or: splice.py fit <mp4> to just squeeze a file under 95 MB)
   cap:   intro 2.5-55 s with its real audio + caption pills, then 21-devin-voice.mp4
   nader: intro 50.5-78.4 s muted under Nader's three intro lines (intro/i*.png.wav), then the same 2.5-55 s, then 21-devin-voice-nader.mp4
 Caption pills come from caps.mjs (CAPPOS=top keeps them clear of the Coach panel). Output overwrites the kit cut."""
@@ -16,6 +16,17 @@ cap = lambda i: os.path.join(B, f'cap{i}.png')
 X264 = ['-c:v', 'libx264', '-profile:v', 'high', '-preset', 'slow', '-crf', '18', '-tune', 'animation', '-g', '120', '-bf', '2', '-pix_fmt', 'yuv420p',
         '-x264-params', 'colorprim=bt709:transfer=bt709:colormatrix=bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-r', '60']
 AAC = ['-c:a', 'aac', '-b:a', '256k', '-ar', '48000', '-ac', '2']
+def fit(path, mb=float(os.environ.get('MAXMB', 95))):
+    """GitHub rejects files over 100 MB: two-pass re-encode to fit when the crf-18 splice is too big."""
+    if os.path.getsize(path) <= mb * 1e6: return
+    dur = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', path], capture_output=True, text=True).stdout)
+    kbps = int(mb * 8e3 / dur * 0.97) - 192
+    tmp, log = path + '.fit.mp4', os.path.join(B, 'x264pass')
+    v = ['-c:v', 'libx264', '-profile:v', 'high', '-preset', 'medium', '-b:v', f'{kbps}k', '-tune', 'animation', '-g', '120', '-bf', '2', '-pix_fmt', 'yuv420p', '-passlogfile', log]
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', path, *v, '-pass', '1', '-an', '-f', 'null', '-'], check=True)
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', path, *v, '-pass', '2', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', tmp], check=True)
+    os.replace(tmp, path); print('fit', path, kbps, 'kbps', round(os.path.getsize(path) / 1e6, 1), 'MB')
+if mode == 'fit': fit(src); sys.exit(0)
 def seg(out, ss, to, caps, audio):
     """caps: [(png index, t0, t1)] in segment time; audio: 'intro' or [(wav, t0)] or None"""
     dur = to - ss
@@ -57,3 +68,4 @@ subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', kit, '-c:v', 'copy', *AAC, 
 lst = os.path.join(B, 'list.txt'); open(lst, 'w').write(''.join(f"file '{p}'\n" for p in parts + [norm]))
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', '-movflags', '+faststart', kit], check=True)
 print('spliced', kit)
+fit(kit)

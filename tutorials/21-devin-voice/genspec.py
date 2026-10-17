@@ -50,11 +50,11 @@ ed(end1, cap='End the call; Devin keeps working', hl=True)
 ed(end1 + 1, hold=1.6, cap='Devin builds the game and wires up GPT-Live-1',
    vo="Devin sets up the Expo project, builds the voxel city, and connects Coach Otter to GPT-Live-1 through a small server that keeps the API key.")
 ed(end1 + 4, badge='Sped up')
-skip(end1 + 5, 329)
-ed(330, hold=1.6, cap='The game running on the iPhone simulator',
-   vo="Soon the game is running on the iPhone simulator, live in the Computer tab.")
-ed(rejoin, hold=1.2, hl=True, cap='Rejoin the call from inside the session',
-   vo="Mid-build, you can rejoin the call from inside the session and ask how the game's coming along.")
+skip(end1 + 5, rejoin)
+# 330/331 show the idle Computer view's Take control overlay; 332 (hover on the call button) shows the game on the iPhone
+ed(332, hold=1.6, hl=True, cap='Mid-build: game on the iPhone simulator. Rejoin the call',
+   vo="Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along.")
+
 end2 = mark('call2-ended')
 ed(end2, hl=True, cap='End the call again')
 skip(end2 + 1, 513)

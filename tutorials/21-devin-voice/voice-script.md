@@ -23,8 +23,7 @@ Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one
 - `0008.png`: Then click the waveform button beside the message box to start a voice call. Devin Voice uses ChatGPT voice under the hood.
 - Call 1 (real audio): pitch Jumpy Otter, add Coach Otto on GPT-Live-1, interrupt to add the game tools and style switch, ask Devin to speak a little faster, then the server, testing and PR asks.
 - `0255.png`: Devin sets up the Expo project, builds the voxel city, and connects Coach Otter to GPT-Live-1 through a small server that keeps the API key.
-- `0330.png`: Soon the game is running on the iPhone simulator, live in the Computer tab.
-- `0331.png`: Mid-build, you can rejoin the call from inside the session and ask how the game's coming along.
+- `0332.png` (hover on the call button, the game on the iPhone simulator in the Computer tab): Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along.
 - Call 2 (real audio): "Hey Devin, how's the game coming along?", with a barge-in while Devin answers.
 - `0514.png`: Devin starts a second Devin on Ubuntu to test Android. Its update says Coach Otter already talks on the web, and runs tools while he talks.
 - `0636.png`: Then it plays the web build in Chrome with Computer Use.

@@ -355,15 +355,16 @@ window.SPEC = {
       "skip": true
     },
     "0330.png": {
-      "hold": 1.6,
-      "cap": "The game running on the iPhone simulator",
-      "vo": "Soon the game is running on the iPhone simulator, live in the Computer tab."
+      "skip": true
     },
     "0331.png": {
-      "hold": 1.2,
+      "skip": true
+    },
+    "0332.png": {
+      "hold": 1.6,
       "hl": true,
-      "cap": "Rejoin the call from inside the session",
-      "vo": "Mid-build, you can rejoin the call from inside the session and ask how the game's coming along."
+      "cap": "Mid-build: game on the iPhone simulator. Rejoin the call",
+      "vo": "Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along."
     },
     "0357.png": {
       "hl": true,
