@@ -1,0 +1,292 @@
+{
+ "c1": {
+  "text": "Hey Devin. Let's build a trivia game show app called Trivia Night Live, with Expo, so one codebase runs on iOS, Android, and the web.",
+  "dur": 6.96,
+  "at": 0.0,
+  "end": 6.96,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.916,
+    "text": "Hey Devin. Let's build a trivia game show"
+   },
+   {
+    "t0": 1.985,
+    "t1": 3.17,
+    "text": "app called Trivia Night Live,"
+   },
+   {
+    "t0": 3.193,
+    "t1": 5.909,
+    "text": "with Expo, so one codebase runs on iOS,"
+   },
+   {
+    "t0": 5.956,
+    "t1": 6.908,
+    "text": "Android, and the web."
+   }
+  ]
+ },
+ "c2": {
+  "text": "The host is a voice character that uses OpenAI's GPT-Live-1 API. It reads each question out loud and listens for my answer, and I can blurt out an answer while it's still talking.",
+  "dur": 9.245,
+  "at": 7.125,
+  "end": 16.37,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.062,
+    "t1": 1.757,
+    "text": "The host is a voice character that uses"
+   },
+   {
+    "t0": 1.838,
+    "t1": 3.974,
+    "text": "OpenAI's GPT-Live-1 API."
+   },
+   {
+    "t0": 4.253,
+    "t1": 5.971,
+    "text": "It reads each question out loud and listens"
+   },
+   {
+    "t0": 6.017,
+    "t1": 6.737,
+    "text": "for my answer,"
+   },
+   {
+    "t0": 6.888,
+    "t1": 8.316,
+    "text": "and I can blurt out an answer while"
+   },
+   {
+    "t0": 8.351,
+    "t1": 9.198,
+    "text": "it's still talking."
+   }
+  ]
+ },
+ "c3": {
+  "text": "Give the host background tools that flip the question card, run a countdown, update the scoreboard, and fire confetti on a streak. Make it look like a bright TV game show, with big type. How would you set that up?",
+  "dur": 10.725,
+  "at": 16.595,
+  "end": 27.32,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.111,
+    "t1": 1.981,
+    "text": "Give the host background tools that flip the"
+   },
+   {
+    "t0": 2.015,
+    "t1": 3.954,
+    "text": "question card, run a countdown,"
+   },
+   {
+    "t0": 4.105,
+    "t1": 5.069,
+    "text": "update the scoreboard,"
+   },
+   {
+    "t0": 5.092,
+    "t1": 6.497,
+    "text": "and fire confetti on a streak."
+   },
+   {
+    "t0": 6.775,
+    "t1": 8.331,
+    "text": "Make it look like a bright TV game"
+   },
+   {
+    "t0": 8.354,
+    "t1": 9.422,
+    "text": "show, with big type."
+   },
+   {
+    "t0": 9.631,
+    "t1": 10.711,
+    "text": "How would you set that up?"
+   }
+  ]
+ },
+ "c4": {
+  "text": "Oh, wait, one more thing. Add a host switch, so I can pick a classic game show host or a pirate.",
+  "dur": 4.41,
+  "at": 27.535,
+  "end": 31.945,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.049,
+    "t1": 1.059,
+    "text": "Oh, wait, one more thing."
+   },
+   {
+    "t0": 1.094,
+    "t1": 1.942,
+    "text": "Add a host switch,"
+   },
+   {
+    "t0": 1.965,
+    "t1": 3.486,
+    "text": "so I can pick a classic game show"
+   },
+   {
+    "t0": 3.544,
+    "t1": 4.41,
+    "text": "host or a pirate."
+   }
+  ]
+ },
+ "c5": {
+  "text": "Can you speak a little faster?",
+  "dur": 1.46,
+  "at": 32.13,
+  "end": 33.59,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.075,
+    "t1": 1.387,
+    "text": "Can you speak a little faster?"
+   }
+  ]
+ },
+ "c6": {
+  "text": "The OpenAI key is already saved as a secret, so keep it on a small server. Your VM has no microphone, so play a recorded answer into a fake mic when you test.",
+  "dur": 8.155,
+  "at": 33.645,
+  "end": 41.8,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.046,
+    "t1": 1.799,
+    "text": "The OpenAI key is already saved as a"
+   },
+   {
+    "t0": 1.846,
+    "t1": 3.785,
+    "text": "secret, so keep it on a small server."
+   },
+   {
+    "t0": 4.11,
+    "t1": 5.491,
+    "text": "Your VM has no microphone,"
+   },
+   {
+    "t0": 5.526,
+    "t1": 7.198,
+    "text": "so play a recorded answer into a fake"
+   },
+   {
+    "t0": 7.233,
+    "t1": 8.155,
+    "text": "mic when you test."
+   }
+  ]
+ },
+ "c7": {
+  "text": "Put it in the product demo apps repo. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR.",
+  "dur": 14.045,
+  "at": 42.05,
+  "end": 56.095,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.07,
+    "t1": 1.951,
+    "text": "Put it in the product demo apps repo."
+   },
+   {
+    "t0": 2.334,
+    "t1": 3.82,
+    "text": "Test it in your browser and on the"
+   },
+   {
+    "t0": 3.878,
+    "t1": 6.618,
+    "text": "iPhone simulator. Your Mac can't run Android,"
+   },
+   {
+    "t0": 6.653,
+    "t1": 8.394,
+    "text": "so start a second Devin on Ubuntu to"
+   },
+   {
+    "t0": 8.441,
+    "t1": 9.996,
+    "text": "test it on an Android emulator."
+   },
+   {
+    "t0": 10.321,
+    "t1": 11.982,
+    "text": "Send me a test recording with pass and"
+   },
+   {
+    "t0": 12.04,
+    "t1": 13.015,
+    "text": "fail checks for each,"
+   },
+   {
+    "t0": 13.166,
+    "t1": 14.037,
+    "text": "then open a PR."
+   }
+  ]
+ },
+ "c8": {
+  "text": "Perfect. Go ahead and start building.",
+  "dur": 1.965,
+  "at": 56.095,
+  "end": 58.06,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.026,
+    "t1": 1.884,
+    "text": "Perfect. Go ahead and start building."
+   }
+  ]
+ },
+ "c9": {
+  "text": "Hey Devin, how's the game show coming along?",
+  "dur": 1.74,
+  "at": 58.145,
+  "end": 59.885,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.043,
+    "t1": 1.74,
+    "text": "Hey Devin, how's the game show coming along?"
+   }
+  ]
+ },
+ "c10": {
+  "text": "Nice. Thanks, Devin!",
+  "dur": 1.445,
+  "at": 59.885,
+  "end": 61.33,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.068,
+    "t1": 1.445,
+    "text": "Nice. Thanks, Devin!"
+   }
+  ]
+ }
+}
