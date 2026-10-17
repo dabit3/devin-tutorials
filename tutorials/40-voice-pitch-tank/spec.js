@@ -130,6 +130,9 @@ window.SPEC = {
       "hl": true,
       "vo": "Then click the waveform button to start a voice call."
     },
+    "0223.png": {
+      "waitVo": true
+    },
     "0224.png": {
       "cap": "Devin picks up and says hi",
       "hold": 0.7867,

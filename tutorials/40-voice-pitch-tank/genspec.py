@@ -45,6 +45,7 @@ ed(T + 6, hold=0.8, hl=True)
 ed(T + 7, hold=0.4)
 ed(T + 8, cap='Start a voice call with the waveform button', capPos='auto', hl=True,
    vo="Then click the waveform button to start a voice call.")
+ed(T + 9, waitVo=True)  # narrated cut: click lands just after the line
 kept = {}
 for name in ('call1', 'call2'):
     m = json.load(open(os.path.join(S, name + '.json')))
