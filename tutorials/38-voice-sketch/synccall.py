@@ -14,6 +14,7 @@ for name in sorted({b['call'] for b in beats if b.get('call')}):
     m = json.load(open(os.path.join(S, name + '.json')))
     trim = TRIM.get(name)
     if trim: m['t1'] = min(m['t1'], m['t0'] + trim * 1000)
+    m['t0'] += TRIM.get('lead', {}).get(name, 0) * 1000
     for b in beats:
         if b.get('call') == name and not (m['t0'] <= b['wall'] < m['t1']): E.setdefault(b['img'], {})['skip'] = True
     cs = [b for b in beats if b.get('call') == name and m['t0'] <= b['wall'] < m['t1']]

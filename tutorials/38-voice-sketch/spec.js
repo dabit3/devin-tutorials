@@ -8,19 +8,19 @@ window.SPEC = {
   "pollRunMax": 2.5,
   "edit": {
     "intro-0.jpg": {
-      "hold": 2.4,
+      "hold": 1.4,
       "cursor": false,
       "cap": "Building and testing a cross-platform app, just by using my voice",
       "vo": "Today I'll be building and testing a cross-platform mobile app just by using my voice. It's called Sketch Buddy, and one codebase runs on iOS, Android, and the web."
     },
     "intro-1.jpg": {
-      "hold": 1.6,
+      "hold": 1.0,
       "cursor": false,
       "cap": "Devin + Devin Voice to build it, GPT-Live-1 inside the app",
       "vo": "I'll build it with Devin and Devin Voice, which uses ChatGPT voice under the hood. And the app's art buddy talks back through OpenAI's GPT-Live-1 API."
     },
     "intro-2.jpg": {
-      "hold": 1.0,
+      "hold": 0.6,
       "cursor": false,
       "cap": "Describe a scene out loud",
       "vo": "You describe a scene, and the buddy keeps talking while tools in the background draw it."
@@ -32,12 +32,12 @@ window.SPEC = {
     },
     "heroA2-000.jpg": {
       "cap": "Shapes stream onto the canvas",
-      "hold": 0.1192,
+      "hold": 0.2375,
       "clip": "heroA2"
     },
     "0003.png": {
       "hl": true,
-      "hold": 1.0,
+      "hold": 0.8,
       "cap": "Pick macOS so Devin can run the iPhone simulator",
       "capPos": "auto",
       "vo": "Now let's build it. First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
@@ -46,7 +46,7 @@ window.SPEC = {
       "hl": true
     },
     "0006.png": {
-      "hold": 1.4,
+      "hold": 1.0,
       "hl": true,
       "capPos": "auto",
       "cap": "Ubuntu \u2192 macOS"
@@ -62,8 +62,7 @@ window.SPEC = {
     },
     "0010.png": {
       "cap": "Devin picks up",
-      "hold": 1.6717,
-      "clip": "call1"
+      "skip": true
     },
     "0025.png": {
       "cap": "Pitch Sketch Buddy: one Expo codebase",
@@ -91,8 +90,7 @@ window.SPEC = {
     },
     "0302.png": {
       "cap": "Same session: Devin gives a quick status",
-      "hold": 0.8408,
-      "clip": "call2"
+      "skip": true
     },
     "0322.png": {
       "cap": "Ask how Sketch Buddy's coming along",
@@ -160,6 +158,75 @@ window.SPEC = {
       "cap": "Devin builds Sketch Buddy with Expo",
       "badge": "Sped up",
       "vo": "Devin sets up the Expo app, adds a small server that keeps the OpenAI key private, and wires GPT-Live-1 to the drawing tools."
+    },
+    "0230.png": {
+      "skip": true
+    },
+    "0231.png": {
+      "skip": true
+    },
+    "0232.png": {
+      "skip": true
+    },
+    "0233.png": {
+      "skip": true
+    },
+    "0234.png": {
+      "skip": true
+    },
+    "0235.png": {
+      "skip": true
+    },
+    "0236.png": {
+      "skip": true
+    },
+    "0237.png": {
+      "skip": true
+    },
+    "0238.png": {
+      "skip": true
+    },
+    "0239.png": {
+      "skip": true
+    },
+    "0240.png": {
+      "skip": true
+    },
+    "0241.png": {
+      "skip": true
+    },
+    "0242.png": {
+      "skip": true
+    },
+    "0243.png": {
+      "skip": true
+    },
+    "0244.png": {
+      "skip": true
+    },
+    "0245.png": {
+      "skip": true
+    },
+    "0246.png": {
+      "skip": true
+    },
+    "0247.png": {
+      "skip": true
+    },
+    "0248.png": {
+      "skip": true
+    },
+    "0249.png": {
+      "skip": true
+    },
+    "0250.png": {
+      "skip": true
+    },
+    "0251.png": {
+      "skip": true
+    },
+    "0252.png": {
+      "skip": true
     },
     "0253.png": {
       "skip": true
@@ -835,7 +902,7 @@ window.SPEC = {
       "skip": true
     },
     "0523.png": {
-      "hold": 2.0,
+      "hold": 1.4,
       "cap": "Computer Use tests in Chrome and the iPhone simulator",
       "badge": "Sped up",
       "vo": "It tests the app in Chrome and on the iPhone simulator with Computer Use, and writes up a report."
@@ -1330,6 +1397,30 @@ window.SPEC = {
       "cap": "Android, tested by the Ubuntu Devin",
       "vo": "For Android, a second Devin on Ubuntu ran the app on an emulator. The buddy talks out loud and draws the scene, though its replies are slow on the software emulator."
     },
+    "0690.png": {
+      "skip": true
+    },
+    "0691.png": {
+      "skip": true
+    },
+    "0692.png": {
+      "skip": true
+    },
+    "0693.png": {
+      "skip": true
+    },
+    "0694.png": {
+      "skip": true
+    },
+    "0695.png": {
+      "skip": true
+    },
+    "0696.png": {
+      "skip": true
+    },
+    "0697.png": {
+      "skip": true
+    },
     "0698.png": {
       "skip": true
     },
@@ -1372,6 +1463,120 @@ window.SPEC = {
     "0711.png": {
       "skip": true
     },
+    "0730.png": {
+      "skip": true
+    },
+    "0731.png": {
+      "skip": true
+    },
+    "0732.png": {
+      "skip": true
+    },
+    "0733.png": {
+      "skip": true
+    },
+    "0734.png": {
+      "skip": true
+    },
+    "0735.png": {
+      "skip": true
+    },
+    "0736.png": {
+      "skip": true
+    },
+    "0737.png": {
+      "skip": true
+    },
+    "0738.png": {
+      "skip": true
+    },
+    "0739.png": {
+      "skip": true
+    },
+    "0740.png": {
+      "skip": true
+    },
+    "0741.png": {
+      "skip": true
+    },
+    "0742.png": {
+      "skip": true
+    },
+    "0743.png": {
+      "skip": true
+    },
+    "0744.png": {
+      "skip": true
+    },
+    "0745.png": {
+      "skip": true
+    },
+    "0746.png": {
+      "skip": true
+    },
+    "0747.png": {
+      "skip": true
+    },
+    "0748.png": {
+      "skip": true
+    },
+    "0749.png": {
+      "skip": true
+    },
+    "0750.png": {
+      "skip": true
+    },
+    "0751.png": {
+      "skip": true
+    },
+    "0752.png": {
+      "skip": true
+    },
+    "0753.png": {
+      "skip": true
+    },
+    "0754.png": {
+      "skip": true
+    },
+    "0755.png": {
+      "skip": true
+    },
+    "0756.png": {
+      "skip": true
+    },
+    "0757.png": {
+      "skip": true
+    },
+    "0758.png": {
+      "skip": true
+    },
+    "0759.png": {
+      "skip": true
+    },
+    "0760.png": {
+      "skip": true
+    },
+    "0761.png": {
+      "skip": true
+    },
+    "0762.png": {
+      "skip": true
+    },
+    "0763.png": {
+      "skip": true
+    },
+    "0764.png": {
+      "skip": true
+    },
+    "0765.png": {
+      "skip": true
+    },
+    "0766.png": {
+      "skip": true
+    },
+    "0767.png": {
+      "skip": true
+    },
     "0712.png": {
       "skip": true
     },
@@ -1394,11 +1599,11 @@ window.SPEC = {
       "skip": true
     },
     "0716.png": {
-      "hold": 1.6,
+      "hold": 1.2,
       "cap": "The Ubuntu Devin's own session and report"
     },
     "0769.png": {
-      "hold": 2.2,
+      "hold": 1.6,
       "cap": "The pull request in product-demo-apps",
       "vo": "Then it opens a pull request in the product demo apps repo, ready to review."
     },
@@ -1409,7 +1614,7 @@ window.SPEC = {
       "skip": true
     },
     "tail-0.jpg": {
-      "hold": 1.0,
+      "hold": 0.6,
       "cursor": false,
       "cap": "The finished app",
       "vo": "Here's the finished app. You can change your mind while it's drawing, or switch the buddy to a deadpan critic."
@@ -1430,22 +1635,29 @@ window.SPEC = {
       "clip": "heroC"
     },
     "outro.jpg": {
-      "hold": 2.4,
+      "hold": 1.6,
       "cursor": false,
       "cap": "One call: iOS, Android and web",
       "vo": "And that's how you build and test a cross-platform app with your voice. One call with Devin, one codebase, and an app that talks back through GPT-Live-1."
     },
     "0011.png": {
-      "hold": 0.6758
+      "skip": true
     },
     "0012.png": {
-      "hold": 0.5325
+      "skip": true
     },
     "0013.png": {
-      "hold": 0.5192
+      "skip": true
+    },
+    "0219.png": {
+      "skip": true
+    },
+    "0220.png": {
+      "skip": true
     },
     "0014.png": {
-      "hold": 0.51
+      "hold": 0.51,
+      "clip": "call1"
     },
     "0015.png": {
       "hold": 0.5142
@@ -2012,25 +2224,26 @@ window.SPEC = {
       "hold": 0.5383
     },
     "0218.png": {
-      "hold": 0.5417
-    },
-    "0219.png": {
-      "hold": 0.5367
-    },
-    "0220.png": {
-      "hold": 0.8333
+      "hold": 0.33
     },
     "0303.png": {
-      "hold": 0.8275
+      "skip": true
     },
     "0304.png": {
-      "hold": 0.8117
+      "skip": true
     },
     "0305.png": {
-      "hold": 0.8458
+      "skip": true
+    },
+    "0344.png": {
+      "skip": true
+    },
+    "0345.png": {
+      "skip": true
     },
     "0306.png": {
-      "hold": 0.8475
+      "hold": 0.8475,
+      "clip": "call2"
     },
     "0307.png": {
       "hold": 0.8117
@@ -2135,13 +2348,7 @@ window.SPEC = {
       "hold": 0.815
     },
     "0343.png": {
-      "hold": 0.8067
-    },
-    "0344.png": {
-      "hold": 0.815
-    },
-    "0345.png": {
-      "hold": 1.0775
+      "hold": 0.7267
     },
     "heroA-001.jpg": {
       "hold": 0.1275
@@ -2324,52 +2531,22 @@ window.SPEC = {
       "hold": 0.21
     },
     "heroA-061.jpg": {
-      "hold": 0.1783
-    },
-    "heroA-062.jpg": {
-      "hold": 0.1183
-    },
-    "heroA-063.jpg": {
-      "hold": 0.1325
-    },
-    "heroA-064.jpg": {
-      "hold": 0.1258
-    },
-    "heroA-065.jpg": {
-      "hold": 0.155
-    },
-    "heroA-066.jpg": {
-      "hold": 0.1192
-    },
-    "heroA-067.jpg": {
-      "hold": 0.1967
-    },
-    "heroA-068.jpg": {
-      "hold": 0.2667
-    },
-    "heroA-069.jpg": {
-      "hold": 0.1767
-    },
-    "heroA-070.jpg": {
-      "hold": 0.1375
-    },
-    "heroA-071.jpg": {
-      "hold": 0.1525
+      "hold": 0.0925
     },
     "heroA2-001.jpg": {
-      "hold": 0.1075
+      "hold": 0.1658
     },
     "heroA2-002.jpg": {
-      "hold": 0.1742
+      "hold": 0.1117
     },
     "heroA2-003.jpg": {
-      "hold": 0.1867
+      "hold": 0.11
     },
     "heroA2-004.jpg": {
-      "hold": 0.2633
+      "hold": 0.1358
     },
     "heroA2-005.jpg": {
-      "hold": 0.2317
+      "hold": 0.21
     },
     "heroA2-006.jpg": {
       "hold": 0.1975
@@ -2378,124 +2555,46 @@ window.SPEC = {
       "hold": 0.1058
     },
     "heroA2-008.jpg": {
-      "hold": 0.1075
-    },
-    "heroA2-009.jpg": {
-      "hold": 0.2375
-    },
-    "heroA2-010.jpg": {
-      "hold": 0.1658
-    },
-    "heroA2-011.jpg": {
-      "hold": 0.1117
-    },
-    "heroA2-012.jpg": {
-      "hold": 0.11
-    },
-    "heroA2-013.jpg": {
-      "hold": 0.1358
-    },
-    "heroA2-014.jpg": {
-      "hold": 0.21
-    },
-    "heroA2-015.jpg": {
-      "hold": 0.1975
-    },
-    "heroA2-016.jpg": {
-      "hold": 0.1058
-    },
-    "heroA2-017.jpg": {
       "hold": 0.1542
     },
-    "heroA2-018.jpg": {
+    "heroA2-009.jpg": {
       "hold": 0.1075
     },
-    "heroA2-019.jpg": {
+    "heroA2-010.jpg": {
       "hold": 0.1125
     },
-    "heroA2-020.jpg": {
+    "heroA2-011.jpg": {
       "hold": 0.1725
     },
-    "heroA2-021.jpg": {
+    "heroA2-012.jpg": {
       "hold": 0.345
     },
-    "heroA2-022.jpg": {
+    "heroA2-013.jpg": {
       "hold": 0.3983
     },
-    "heroA2-023.jpg": {
+    "heroA2-014.jpg": {
       "hold": 0.3083
     },
-    "heroA2-024.jpg": {
+    "heroA2-015.jpg": {
       "hold": 0.4417
     },
-    "heroA2-025.jpg": {
+    "heroA2-016.jpg": {
       "hold": 0.1242
     },
-    "heroA2-026.jpg": {
+    "heroA2-017.jpg": {
       "hold": 0.105
     },
-    "heroA2-027.jpg": {
+    "heroA2-018.jpg": {
       "hold": 0.2767
     },
-    "heroA2-028.jpg": {
+    "heroA2-019.jpg": {
       "hold": 0.1633
     },
-    "heroA2-029.jpg": {
+    "heroA2-020.jpg": {
       "hold": 0.1925
     },
-    "heroA2-030.jpg": {
-      "hold": 0.3783
-    },
-    "heroA2-031.jpg": {
-      "hold": 0.2625
-    },
-    "heroA2-032.jpg": {
-      "hold": 0.2058
-    },
-    "heroA2-033.jpg": {
-      "hold": 0.1642
-    },
-    "heroA2-034.jpg": {
-      "hold": 0.1892
-    },
-    "heroA2-035.jpg": {
-      "hold": 0.2217
-    },
-    "heroA2-036.jpg": {
-      "hold": 0.1125
-    },
-    "heroA2-037.jpg": {
-      "hold": 0.2158
-    },
-    "heroA2-038.jpg": {
-      "hold": 0.2392
-    },
-    "heroA2-039.jpg": {
-      "hold": 0.1408
-    },
-    "heroA2-040.jpg": {
-      "hold": 0.11
-    },
-    "heroA2-041.jpg": {
-      "hold": 0.3092
-    },
-    "heroA2-042.jpg": {
-      "hold": 0.1775
-    },
-    "heroA2-043.jpg": {
-      "hold": 0.1867
-    },
-    "heroA2-044.jpg": {
-      "hold": 0.24
-    },
-    "heroA2-045.jpg": {
-      "hold": 0.3483
-    },
-    "heroA2-046.jpg": {
-      "hold": 0.5625
-    },
-    "heroA2-047.jpg": {
-      "hold": 0.1933
+    "heroA2-021.jpg": {
+      "hold": 0.1742
     },
     "heroB-001.jpg": {
       "hold": 0.2817

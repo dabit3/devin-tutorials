@@ -14,6 +14,8 @@ def load(path, lufs=None):
     return np.frombuffer(raw, '<i2').astype(float) / 32767
 trim = json.load(open(os.path.join(D, 'call', 'trim.json'))).get(NAME) if os.path.exists(os.path.join(D, 'call', 'trim.json')) else None
 if trim: m['t1'] = min(m['t1'], m['t0'] + trim * 1000)  # cut dead air after the last spoken turn
+lead = json.load(open(os.path.join(D, 'call', 'trim.json'))).get('lead', {}).get(NAME, 0) if trim else 0
+m['t0'] += lead * 1000  # cut the ringing/connect wait before Devin's greeting
 n = int((m['t1'] - m['t0']) / 1000 * SR); out = np.zeros(n)
 def place(x, t_ms):
     i = int((t_ms - m['t0']) / 1000 * SR); a, b = max(0, i), min(n, i + len(x))

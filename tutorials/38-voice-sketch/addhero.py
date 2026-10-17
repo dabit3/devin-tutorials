@@ -15,7 +15,7 @@ if prs: take = take[:prs[0] - 1]
 if len(cards) >= 3: take = take[:cards[1]] + take[cards[-1]:] + take[cards[1]:cards[-1]]
 take += pr_seg
 # (clip, run, start s, end s) relative to each run's t0
-SEGS = {'head': [('heroA', 'hero-teacher', 23.3, 37.0), ('heroA2', 'hero-teacher', 50.0, 62.2)],
+SEGS = {'head': [('heroA', 'hero-teacher', 23.3, 35.0), ('heroA2', 'hero-teacher', 52.0, 57.3)],
         'tail': [('heroB', 'hero-teacher', 64.5, 76.0), ('heroB2', 'hero-teacher', 87.8, 94.0), ('heroB3', 'hero-teacher', 104.6, 112.4),
                  ('heroC', 'hero-critic', 15.0, 25.6), ('heroC2', 'hero-critic', 41.6, 50.8)]}
 def still(name, run, at):

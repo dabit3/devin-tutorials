@@ -12,19 +12,19 @@ def skip(a, b):
     for n in range(a, b + 1): ed(n, skip=True)
 
 # demo-first intro: the finished app, real GPT-Live-1 audio recorded in Chrome
-ed('intro-0.jpg', hold=2.4, cursor=False, cap="Building and testing a cross-platform app, just by using my voice",
+ed('intro-0.jpg', hold=1.4, cursor=False, cap="Building and testing a cross-platform app, just by using my voice",
    vo="Today I'll be building and testing a cross-platform mobile app just by using my voice. It's called Sketch Buddy, and one codebase runs on iOS, Android, and the web.")
-ed('intro-1.jpg', hold=1.6, cursor=False, cap='Devin + Devin Voice to build it, GPT-Live-1 inside the app',
+ed('intro-1.jpg', hold=1.0, cursor=False, cap='Devin + Devin Voice to build it, GPT-Live-1 inside the app',
    vo="I'll build it with Devin and Devin Voice, which uses ChatGPT voice under the hood. And the app's art buddy talks back through OpenAI's GPT-Live-1 API.")
-ed('intro-2.jpg', hold=1.0, cursor=False, cap='Describe a scene out loud',
+ed('intro-2.jpg', hold=0.6, cursor=False, cap='Describe a scene out loud',
    vo="You describe a scene, and the buddy keeps talking while tools in the background draw it.")
 ed('heroA-000.jpg', cap='GPT-Live-1 talks while background tools draw')
 ed('heroA2-000.jpg', cap='Shapes stream onto the canvas')
 
-ed(3, hl=True, hold=1.0, cap='Pick macOS so Devin can run the iPhone simulator', capPos='auto',
+ed(3, hl=True, hold=0.8, cap='Pick macOS so Devin can run the iPhone simulator', capPos='auto',
    vo="Now let's build it. First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.")
 ed(5, hl=True)
-ed(6, hold=1.4, hl=True, capPos='auto', cap='Ubuntu → macOS')
+ed(6, hold=1.0, hl=True, capPos='auto', cap='Ubuntu → macOS')
 ed(7, hold=0.8)
 ed(8, cap='Start a voice call with the waveform button', capPos='auto', hl=True,
    vo="Then click the waveform button beside the message box to start a voice call.")
@@ -61,7 +61,7 @@ ed(end1, cap='End the call; Devin keeps working', hl=True)
 ed(end1 + 1, cap='Devin builds Sketch Buddy with Expo', badge='Sped up',
    vo="Devin sets up the Expo app, adds a small server that keeps the OpenAI key private, and wires GPT-Live-1 to the drawing tools.")
 # watch stills: only those without the Computer view's 'Take control' overlay
-skip(end1 + 31, rejoin - 1)
+skip(end1 + 8, rejoin - 1)
 ed(rejoin, hold=1.2, hl=True, cap='Rejoin the call from inside the session',
    vo="Mid-build, you can rejoin the call from inside the session and ask how it's coming along.")
 ed(end2, hl=True, cap='End the call again')
@@ -70,26 +70,27 @@ assert len(cards) >= 3, cards
 old, android, clean = cards[0], cards[1], cards[-1]
 REPORT = 523
 skip(end2 + 1, REPORT - 1)
-ed(REPORT, hold=2.0, cap='Computer Use tests in Chrome and the iPhone simulator', badge='Sped up',
+ed(REPORT, hold=1.4, cap='Computer Use tests in Chrome and the iPhone simulator', badge='Sped up',
    vo="It tests the app in Chrome and on the iPhone simulator with Computer Use, and writes up a report.")
 skip(REPORT + 1, android - 1)   # earlier report polls, the first (setup) recording, and the retest request
 ed(clean, hold=1.6, cap='Chrome + iPhone simulator: 19 passed', vo="Every test run comes with a recording. In Chrome and on the iPhone simulator, the buddy answers each scene, draws it step by step, switches styles both ways, and all nineteen checks pass.")
 ed(android, hold=1.2, cap='Android, tested by the Ubuntu Devin', vo="For Android, a second Devin on Ubuntu ran the app on an emulator. The buddy talks out loud and draws the scene, though its replies are slow on the software emulator.")
 summ = mark('summary')
-skip(android + 14, summ[0] - 1)   # the rest of the Android recording; the narration is done by then
+skip(android + 6, summ[0] - 1)
+skip(clean + 10, mark('pr')[0] - 2)   # the rest of the Chrome/iPhone recording   # the rest of the Android recording; the narration is done by then
 skip(summ[0], summ[1] - 1)
 skip(summ[1] + 1, clean - 1)   # scrolling the Ubuntu session (beats-take order: android, summary, clean card, PR)   # the macOS recap repeats the Android report; show the Ubuntu Devin's own session instead
-ed(summ[1], hold=1.6, cap="The Ubuntu Devin's own session and report")
+ed(summ[1], hold=1.2, cap="The Ubuntu Devin's own session and report")
 prm = mark('pr')[0]
-ed(prm, hold=2.2, cap='The pull request in product-demo-apps',
+ed(prm, hold=1.6, cap='The pull request in product-demo-apps',
    vo="Then it opens a pull request in the product demo apps repo, ready to review.")
 skip(prm + 2, prm + 3)   # scrolled diff frames: no code walkthrough
-ed('tail-0.jpg', hold=1.0, cursor=False, cap='The finished app',
+ed('tail-0.jpg', hold=0.6, cursor=False, cap='The finished app',
    vo="Here's the finished app. You can change your mind while it's drawing, or switch the buddy to a deadpan critic.")
 ed('heroB-000.jpg', cap='"Make the moon bigger... no, purple"')
 ed('heroB3-000.jpg', cap='Background tools resize and recolor the moon')
 ed('heroC-000.jpg', cap='Same app, deadpan critic style')
-ed('outro.jpg', hold=2.4, cursor=False, cap='One call: iOS, Android and web',
+ed('outro.jpg', hold=1.6, cursor=False, cap='One call: iOS, Android and web',
    vo="And that's how you build and test a cross-platform app with your voice. One call with Devin, one codebase, and an app that talks back through GPT-Live-1.")
 spec = {'title': 'Sketch Buddy', 'subtitle': 'Talk an app into existence with Devin Voice and GPT-Live-1',
         'outro': 'One call: iOS, Android and web', 'speed': 3, 'cps': 48, 'capPos': 'bottom',
