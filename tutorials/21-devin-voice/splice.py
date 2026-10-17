@@ -1,7 +1,7 @@
 """Puts the live gameplay intro (real GPT-Live-1 Coach audio, captured from the Chrome build) in front of a kit cut.
 usage: python3 splice.py cap|nader <intro.mp4>
-  cap:   intro 0-55 s with its real audio + caption pills, then 21-devin-voice.mp4
-  nader: intro 50.5-78.4 s muted under Nader's three intro lines (intro/i*.png.wav), then the same 0-55 s, then 21-devin-voice-nader.mp4
+  cap:   intro 2.5-55 s with its real audio + caption pills, then 21-devin-voice.mp4
+  nader: intro 50.5-78.4 s muted under Nader's three intro lines (intro/i*.png.wav), then the same 2.5-55 s, then 21-devin-voice-nader.mp4
 Caption pills come from caps.mjs (CAPPOS=top keeps them clear of the Coach panel). Output overwrites the kit cut."""
 import json, os, subprocess, sys
 D = os.path.dirname(os.path.abspath(__file__))
@@ -39,8 +39,9 @@ def seg(out, ss, to, caps, audio):
     subprocess.run(cmd + ['-filter_complex', f, '-map', '[vo]', '-map', '[ao]', *X264, *AAC, '-t', str(dur), out], check=True)
     return out
 # real Coach run (segment time = intro time): STT of the intro audio sets these windows
-live = seg(os.path.join(B, 'live.mp4'), 0, 55.0,
-           [(2, 0.3, 4.9), (3, 9.6, 12.6), (4, 12.7, 21.0), (5, 37.8, 40.6), (6, 40.8, 48.5), (7, 50.2, 55.0)], 'intro')
+S0 = 2.5  # skip the first seconds of 'connecting'
+live = seg(os.path.join(B, 'live.mp4'), S0, 55.0,
+           [(i, a - S0, b - S0) for i, a, b in [(2, 2.8, 6.9), (3, 9.6, 12.6), (4, 12.7, 21.0), (5, 37.8, 40.6), (6, 40.8, 48.5), (7, 50.2, 55.0)]], 'intro')
 parts = [live]
 name = '21-devin-voice'
 if mode == 'nader':

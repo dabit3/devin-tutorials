@@ -9,7 +9,7 @@ window.SPEC = {
   "pollRunMax": 2.5,
   "edit": {
     "0000.png": {
-      "hold": 2.4,
+      "hold": 1.4,
       "cursor": false,
       "cap": "Start in a new Devin session",
       "vo": "Here's how I built it, starting from a new Devin session."
@@ -2570,11 +2570,26 @@ window.SPEC = {
       "skip": true
     },
     "1204.png": {
-      "hold": 2.2,
+      "hold": 1.8,
       "cap": "Devin opens a PR with the reports"
+    },
+    "1205.png": {
+      "skip": true
+    },
+    "1206.png": {
+      "hold": 1.2
     },
     "1202.png": {
       "vo": "Then it opens a pull request with the code, the reports, and the recordings."
+    },
+    "0250.png": {
+      "skip": true
+    },
+    "0251.png": {
+      "skip": true
+    },
+    "0252.png": {
+      "skip": true
     },
     "0011.png": {
       "hold": 0.73
@@ -3249,16 +3264,13 @@ window.SPEC = {
       "hold": 0.5433
     },
     "0249.png": {
-      "hold": 0.5592
+      "hold": 0.4
     },
-    "0250.png": {
-      "hold": 0.5583
+    "0354.png": {
+      "skip": true
     },
-    "0251.png": {
-      "hold": 0.5483
-    },
-    "0252.png": {
-      "hold": 0.8333
+    "0355.png": {
+      "skip": true
     },
     "0335.png": {
       "hold": 0.945
@@ -3309,13 +3321,7 @@ window.SPEC = {
       "hold": 0.8883
     },
     "0353.png": {
-      "hold": 0.8917
-    },
-    "0354.png": {
-      "hold": 0.9008
-    },
-    "0355.png": {
-      "hold": 1.1492
+      "hold": 0.0967
     }
   }
 };

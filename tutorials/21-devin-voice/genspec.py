@@ -10,7 +10,7 @@ def skip(a, b):
     for n in range(a, b + 1): ed(n, skip=True)
 
 # The live gameplay intro (intro/) is spliced in front of this cut by splice.py; the kit cut starts at the session.
-ed(0, hold=2.4, cursor=False, cap='Start in a new Devin session',
+ed(0, hold=1.4, cursor=False, cap='Start in a new Devin session',
    vo="Here's how I built it, starting from a new Devin session.")
 ed(3, hl=True, hold=1.0, cap='Pick macOS so Devin can run the iPhone simulator', capPos='auto')
 ed(1, vo="First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.")
@@ -80,7 +80,9 @@ ed(android, hold=1.4, cap='Android, tested by the Ubuntu Devin: 12 passed',
    vo="The Ubuntu Devin ran the game on an Android emulator with software rendering. All twelve checks pass, Coach tools included.")
 skip(android + 28, mark('tab') - 1)
 tab = mark('tab')
-ed(tab + 2, hold=2.2, cap='Devin opens a PR with the reports')
+ed(tab + 2, hold=1.8, cap='Devin opens a PR with the reports')
+skip(tab + 3, tab + 3)
+ed(tab + 4, hold=1.2)
 ed(tab, vo="Then it opens a pull request with the code, the reports, and the recordings.")
 spec = {'title': 'Devin Voice + GPT-Live-1', 'subtitle': 'Build and test a cross-platform game by voice',
         'outro': 'One call: iOS, Android and web',
