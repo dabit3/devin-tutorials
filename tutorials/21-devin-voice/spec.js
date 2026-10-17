@@ -39,7 +39,7 @@ window.SPEC = {
       "cap": "Start a voice call with the waveform button",
       "capPos": "auto",
       "hl": true,
-      "vo": "Then click the waveform button beside the message box to start a voice call. Devin Voice uses ChatGPT voice under the hood."
+      "vo": "Then click the waveform button beside the message box to start a voice call, and Devin picks up right away."
     },
     "0010.png": {
       "cap": "Devin picks up and says hi",

@@ -12,7 +12,7 @@ Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one
 ## Intro (live gameplay, Chrome)
 
 - Teaser, intro audio muted: Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.
-- I'll build it with Devin, talking to it through Devin Voice. And the game itself talks to players through OpenAI's GPT-Live-1 API.
+- I'll build it with Devin and Devin Voice, which uses ChatGPT voice under the hood. And the game itself talks to players through OpenAI's GPT-Live-1 API.
 - This is Coach Otter. He talks and listens at the same time, and runs game actions as tools in the background.
 - Then the real run plays with its own audio: Coach greets the player, "give me a creatine boost" (bottles drop while he talks), "wait, wait, make it nighttime" (the city goes dark), "switch to chill surfer mode".
 
@@ -20,7 +20,7 @@ Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one
 
 - `0000.png`: Here's how I built it, starting from a new Devin session.
 - `0001.png`: First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.
-- `0008.png`: Then click the waveform button beside the message box to start a voice call. Devin Voice uses ChatGPT voice under the hood.
+- `0008.png`: Then click the waveform button beside the message box to start a voice call, and Devin picks up right away.
 - Call 1 (real audio): pitch Jumpy Otter, add Coach Otto on GPT-Live-1, interrupt to add the game tools and style switch, ask Devin to speak a little faster, then the server, testing and PR asks.
 - `0255.png`: Devin sets up the Expo project, builds the voxel city, and connects Coach Otter to GPT-Live-1 through a small server that keeps the API key.
 - `0332.png` (hover on the call button, the game on the iPhone simulator in the Computer tab): Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along.

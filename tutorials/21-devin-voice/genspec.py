@@ -18,7 +18,7 @@ ed(5, hl=True)
 ed(6, hold=1.4, hl=True, capPos='auto', cap='Ubuntu → macOS')
 ed(7, hold=0.8)
 ed(8, cap='Start a voice call with the waveform button', capPos='auto', hl=True,
-   vo="Then click the waveform button beside the message box to start a voice call. Devin Voice uses ChatGPT voice under the hood.")
+   vo="Then click the waveform button beside the message box to start a voice call, and Devin picks up right away.")
 
 calls = {}
 for n, b in enumerate(B):

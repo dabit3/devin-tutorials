@@ -1,13 +1,13 @@
 """Puts the live gameplay intro (real GPT-Live-1 Coach audio, captured from the Chrome build) in front of a kit cut.
 usage: python3 splice.py cap|nader <intro.mp4>   (or: splice.py fit <mp4> to just squeeze a file under 95 MB)
-  cap:   intro 2.5-55 s with its real audio + caption pills, then 21-devin-voice.mp4
+  cap:   an 8 s title (intro 50.5 s on, kit music bed, caption pills 0-1), then intro 2.5-55 s with its real audio + caption pills, then 21-devin-voice.mp4
   nader: intro 50.5-78.4 s muted under Nader's three intro lines (intro/i*.png.wav), then the same 2.5-55 s, then 21-devin-voice-nader.mp4
 Caption pills come from caps.mjs (CAPPOS=top keeps them clear of the Coach panel). Output overwrites the kit cut."""
 import glob, json, os, subprocess, sys
 D = os.path.dirname(os.path.abspath(__file__))
 mode, src = sys.argv[1], sys.argv[2]
 B = os.path.join(D, 'build', 'splice'); os.makedirs(B, exist_ok=True)
-CAPS = ["Today: a cross-platform game, built and tested by voice", "Devin + Devin Voice build it. GPT-Live-1 voices the coach.",
+CAPS = ["Today: a cross-platform game, built and tested by voice", "Built with Devin + Devin Voice, which uses ChatGPT voice under the hood",
         "Coach Otter: a live voice sidekick on GPT-Live-1", "Talk back: “give me a creatine boost”",
         "A background tool drops creatine while he keeps talking", "Interrupt him: “make it night time”",
         "Another tool runs, and the city goes dark", "Change his style: chill surfer"]
@@ -29,12 +29,13 @@ def fit(path, mb=float(os.environ.get('MAXMB', 95))):
     for f in glob.glob(log + '*'): os.remove(f)
 if mode == 'fit': fit(src); sys.exit(0)
 def seg(out, ss, to, caps, audio):
-    """caps: [(png index, t0, t1)] in segment time; audio: 'intro' or [(wav, t0)] or None"""
+    """caps: [(png index, t0, t1)] in segment time; audio: 'intro' or [(wav, t0)] or ('music', wav) or None"""
     dur = to - ss
     cmd = ['ffmpeg', '-v', 'error', '-y', '-ss', str(ss), '-to', str(to), '-i', src]
     for i, _, _ in caps: cmd += ['-loop', '1', '-t', str(dur), '-i', cap(i)]
     wavs = audio if isinstance(audio, list) else []
     for w, _ in wavs: cmd += ['-i', w]
+    if isinstance(audio, tuple): cmd += ['-i', audio[1]]
     f = f'[0:v]scale=3840:2160:flags=lanczos,setsar=1,fps=60[v0]'
     for k, (i, t0, t1) in enumerate(caps):
         f += f';[{k + 1}:v]format=rgba,fade=in:st={t0}:d=0.25:alpha=1,fade=out:st={t1 - 0.25}:d=0.25:alpha=1[c{k}];[v{k}][c{k}]overlay=0:0:shortest=1[v{k + 1}]'
@@ -46,6 +47,8 @@ def seg(out, ss, to, caps, audio):
         n0 = 1 + len(caps)
         f += ''.join(f';[{n0 + k}:a]adelay={int(t * 1000)}:all=1[w{k}]' for k, (_, t) in enumerate(wavs))
         f += ';' + ''.join(f'[w{k}]' for k in range(len(wavs))) + f'amix=inputs={len(wavs)}:normalize=0,apad,atrim=0:{dur},loudnorm=I=-16:TP=-2:LRA=11,aresample=48000[ao]'
+    elif isinstance(audio, tuple):
+        f += f';[{1 + len(caps)}:a]apad,atrim=0:{dur},aresample=48000[ao]'
     else:
         f += f';anullsrc=r=48000:cl=stereo,atrim=0:{dur}[ao]'
     subprocess.run(cmd + ['-filter_complex', f, '-map', '[vo]', '-map', '[ao]', *X264, *AAC, '-t', str(dur), out], check=True)
@@ -55,6 +58,13 @@ S0 = 2.5  # skip the first seconds of 'connecting'
 live = seg(os.path.join(B, 'live.mp4'), S0, 55.0,
            [(i, a - S0, b - S0) for i, a, b in [(2, 2.8, 6.9), (3, 9.6, 12.6), (4, 12.7, 21.0), (5, 37.8, 40.6), (6, 40.8, 48.5), (7, 50.2, 55.0)]], 'intro')
 parts = [live]
+if mode == 'cap':  # title card: the captioned cut has no narration, so pills 0-1 carry the intro line and the stack (Devin Voice = ChatGPT voice)
+    MB = os.path.join(B, 'music'); os.makedirs(os.path.join(MB, 'build'), exist_ok=True)
+    json.dump({'fps': 60, 'frames': 480, 'intro': 15, 'uiEnd': 440, 'clicks': [], 'typing': [], 'clips': [], 'caps': [], 'vo': [], 'voLate': []}, open(os.path.join(MB, 'build', 'cues.json'), 'w'))
+    subprocess.run(['python3', os.path.join(D, '..', '_kit', 'tools', 'audio.py'), MB], check=True)
+    music = os.path.join(B, 'music.wav')
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.path.join(MB, 'build', 'audio.wav'), '-t', '8', '-af', 'afade=t=out:st=7.3:d=0.7,loudnorm=I=-18:TP=-2:LRA=11', '-ar', '48000', '-ac', '2', music], check=True)
+    parts = [seg(os.path.join(B, 'title.mp4'), 50.5, 58.5, [(0, 0.3, 3.8), (1, 4.0, 7.6)], ('music', music)), live]
 name = '21-devin-voice'
 if mode == 'nader':
     I = json.load(open(os.path.join(D, 'intro', 'lines.json')))
