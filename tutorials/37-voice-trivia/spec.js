@@ -2407,6 +2407,111 @@ window.SPEC = {
       "cap": "One conversation, one codebase: iOS, Android and web",
       "vo": "And that's how you build and test a cross-platform voice game, just by talking to Devin."
     },
+    "0248.png": {
+      "skip": true
+    },
+    "0249.png": {
+      "skip": true
+    },
+    "0250.png": {
+      "skip": true
+    },
+    "0251.png": {
+      "skip": true
+    },
+    "0252.png": {
+      "skip": true
+    },
+    "0253.png": {
+      "skip": true
+    },
+    "0254.png": {
+      "skip": true
+    },
+    "0255.png": {
+      "skip": true
+    },
+    "0256.png": {
+      "skip": true
+    },
+    "0257.png": {
+      "skip": true
+    },
+    "0258.png": {
+      "skip": true
+    },
+    "0259.png": {
+      "skip": true
+    },
+    "0260.png": {
+      "skip": true
+    },
+    "0261.png": {
+      "skip": true
+    },
+    "0262.png": {
+      "skip": true
+    },
+    "0263.png": {
+      "skip": true
+    },
+    "0264.png": {
+      "skip": true
+    },
+    "0265.png": {
+      "skip": true
+    },
+    "0266.png": {
+      "skip": true
+    },
+    "0267.png": {
+      "skip": true
+    },
+    "0268.png": {
+      "skip": true
+    },
+    "0269.png": {
+      "skip": true
+    },
+    "0270.png": {
+      "skip": true
+    },
+    "0271.png": {
+      "skip": true
+    },
+    "0272.png": {
+      "skip": true
+    },
+    "0273.png": {
+      "skip": true
+    },
+    "0274.png": {
+      "skip": true
+    },
+    "0275.png": {
+      "skip": true
+    },
+    "0276.png": {
+      "skip": true
+    },
+    "0277.png": {
+      "skip": true
+    },
+    "0278.png": {
+      "skip": true
+    },
+    "0279.png": {
+      "skip": true
+    },
+    "0280.png": {
+      "skip": true
+    },
+    "0281.png": {
+      "skip": true
+    },
+    "0282.png": {
+      "skip": true
+    },
     "0011.png": {
       "hold": 0.5583
     },
@@ -3071,112 +3176,13 @@ window.SPEC = {
       "hold": 0.5717
     },
     "0247.png": {
-      "hold": 0.5583
+      "hold": 0.2525
     },
-    "0248.png": {
-      "hold": 0.5517
+    "0399.png": {
+      "skip": true
     },
-    "0249.png": {
-      "hold": 0.5592
-    },
-    "0250.png": {
-      "hold": 0.5567
-    },
-    "0251.png": {
-      "hold": 0.5508
-    },
-    "0252.png": {
-      "hold": 0.5667
-    },
-    "0253.png": {
-      "hold": 0.5542
-    },
-    "0254.png": {
-      "hold": 0.5433
-    },
-    "0255.png": {
-      "hold": 0.5725
-    },
-    "0256.png": {
-      "hold": 0.5567
-    },
-    "0257.png": {
-      "hold": 0.5667
-    },
-    "0258.png": {
-      "hold": 0.575
-    },
-    "0259.png": {
-      "hold": 0.565
-    },
-    "0260.png": {
-      "hold": 0.5525
-    },
-    "0261.png": {
-      "hold": 0.5483
-    },
-    "0262.png": {
-      "hold": 0.5517
-    },
-    "0263.png": {
-      "hold": 0.5617
-    },
-    "0264.png": {
-      "hold": 0.555
-    },
-    "0265.png": {
-      "hold": 0.5533
-    },
-    "0266.png": {
-      "hold": 0.55
-    },
-    "0267.png": {
-      "hold": 0.5533
-    },
-    "0268.png": {
-      "hold": 0.5467
-    },
-    "0269.png": {
-      "hold": 0.5575
-    },
-    "0270.png": {
-      "hold": 0.5633
-    },
-    "0271.png": {
-      "hold": 0.5442
-    },
-    "0272.png": {
-      "hold": 0.5792
-    },
-    "0273.png": {
-      "hold": 0.55
-    },
-    "0274.png": {
-      "hold": 0.555
-    },
-    "0275.png": {
-      "hold": 0.5542
-    },
-    "0276.png": {
-      "hold": 0.5883
-    },
-    "0277.png": {
-      "hold": 0.5542
-    },
-    "0278.png": {
-      "hold": 0.5558
-    },
-    "0279.png": {
-      "hold": 0.5492
-    },
-    "0280.png": {
-      "hold": 0.585
-    },
-    "0281.png": {
-      "hold": 0.5567
-    },
-    "0282.png": {
-      "hold": 0.8333
+    "0400.png": {
+      "skip": true
     },
     "0371.png": {
       "hold": 1.025
@@ -3254,13 +3260,7 @@ window.SPEC = {
       "hold": 0.9758
     },
     "0398.png": {
-      "hold": 1.0117
-    },
-    "0399.png": {
-      "hold": 1.06
-    },
-    "0400.png": {
-      "hold": 1.2875
+      "hold": 0.9467
     },
     "d0020.jpg": {
       "hold": 0.0725,

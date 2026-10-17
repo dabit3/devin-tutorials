@@ -27,7 +27,7 @@ Recorded off camera in Chrome from the finished app (`demo-capture.mjs`, branch 
 
 ## The calls (real)
 
-Nader's lines were generated with his ElevenLabs voice (one take, cut locally into `call/c*.wav`) and fed to Devin Voice as the microphone. Devin heard them live and answered by voice. Its replies in the video are its own WebRTC audio, recorded during the call, not re-synthesized.
+Nader's lines were generated with his ElevenLabs voice (one take, cut locally into `call/c*.wav`) and fed to Devin Voice as the microphone. Devin heard them live and answered by voice. Its replies in the video are its own WebRTC audio, recorded during the call, not re-synthesized. Each call is shown uncut up to its last spoken line. Only the silent stretch after that line, while the call stayed open and Devin worked, is trimmed (`call/trim.json`: call 1 at 159.6 s, call 2 at 34.6 s).
 
 ### Call 1 (started from the home page, macOS environment)
 
