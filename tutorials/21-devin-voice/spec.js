@@ -1,28 +1,26 @@
 window.SPEC = {
-  "title": "Devin Voice",
-  "subtitle": "Talk a game into existence, then watch Devin test it",
+  "title": "Devin Voice + GPT-Live-1",
+  "subtitle": "Build and test a cross-platform game by voice",
   "outro": "One call: iOS, Android and web",
+  "voOutro": "That's how you build and test a cross-platform game with your voice, using Devin Voice and GPT-Live-1.",
   "speed": 3,
   "cps": 48,
   "capPos": "bottom",
   "pollRunMax": 2.5,
   "edit": {
     "0000.png": {
-      "hold": 2.6,
+      "hold": 2.4,
       "cursor": false,
-      "cap": "Build a cross-platform mobile game, just by talking",
-      "vo": "Let's build a cross-platform mobile game, just by talking to Devin. One codebase that runs on iOS, Android, and the web."
-    },
-    "0001.png": {
-      "hold": 1.6,
-      "cap": "Devin Voice uses ChatGPT voice under the hood",
-      "vo": "And here's the big part: Devin Voice uses ChatGPT voice under the hood, so it feels like a real conversation."
+      "cap": "Start in a new Devin session",
+      "vo": "Here's how I built it, starting from a new Devin session."
     },
     "0003.png": {
       "hl": true,
       "hold": 1.0,
       "cap": "Pick macOS so Devin can run the iPhone simulator",
-      "capPos": "auto",
+      "capPos": "auto"
+    },
+    "0001.png": {
       "vo": "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
     },
     "0005.png": {
@@ -41,51 +39,51 @@ window.SPEC = {
       "cap": "Start a voice call with the waveform button",
       "capPos": "auto",
       "hl": true,
-      "vo": "Then click the waveform button beside the message box to start a voice call."
+      "vo": "Then click the waveform button beside the message box to start a voice call. Devin Voice uses ChatGPT voice under the hood."
     },
     "0010.png": {
       "cap": "Devin picks up and says hi",
-      "hold": 1.2975,
+      "hold": 0.6917,
       "clip": "call1"
     },
     "0025.png": {
       "cap": "Pitch the game: Jumpy Otter, one Expo codebase",
-      "hold": 0.6075
+      "hold": 0.525
     },
-    "0048.png": {
-      "cap": "An otter hopping through San Francisco",
-      "hold": 0.64
+    "0047.png": {
+      "cap": "Add Coach Otto, a voice sidekick built on GPT-Live-1",
+      "hold": 0.5417
     },
-    "0073.png": {
-      "cap": "Interrupt mid-answer: add creatine bottles and a combo meter",
-      "hold": 0.6392
+    "0114.png": {
+      "cap": "Interrupt mid-answer: Otto runs game tools and switches style",
+      "hold": 0.555
     },
-    "0088.png": {
+    "0144.png": {
       "cap": "Docs tip: ask Devin to speak faster",
-      "hold": 0.6575
+      "hold": 0.5458
     },
-    "0110.png": {
-      "cap": "Test on web and iPhone, and start an Ubuntu Devin for Android",
-      "hold": 0.605
+    "0181.png": {
+      "cap": "Keep the key on a server; test web, iPhone, and Android on Ubuntu",
+      "hold": 0.5817
     },
-    "0142.png": {
+    "0221.png": {
       "cap": "Then let Devin start building",
-      "hold": 0.585
+      "hold": 0.56
     },
-    "0417.png": {
+    "0334.png": {
       "cap": "Same session: the call picks up where it left off",
-      "hold": 0.9583,
+      "hold": 0.9258,
       "clip": "call2"
     },
-    "0423.png": {
+    "0340.png": {
       "cap": "Ask how the game's coming along",
-      "hold": 1.0175
+      "hold": 0.9508
     },
-    "0426.png": {
-      "cap": "Interrupt Devin mid-sentence; it keeps going",
-      "hold": 0.9917
+    "0345.png": {
+      "cap": "Interrupt Devin mid-sentence",
+      "hold": 0.9283
     },
-    "0081.png": {
+    "0135.png": {
       "hl": [
         {
           "x": 308.75,
@@ -101,254 +99,47 @@ window.SPEC = {
         }
       ],
       "cap": "Mute your mic, or silence Devin, any time",
-      "hold": 0.5817
+      "hold": 0.57
     },
-    "0082.png": {
+    "0136.png": {
       "hl": "keep",
-      "hold": 0.5958
+      "hold": 0.5558
     },
-    "0083.png": {
+    "0137.png": {
       "hl": "keep",
-      "hold": 0.595
+      "hold": 0.5458
     },
-    "0084.png": {
+    "0138.png": {
       "hl": "keep",
-      "hold": 0.6033
+      "hold": 0.5517
     },
-    "0085.png": {
+    "0139.png": {
       "hl": "keep",
-      "hold": 0.6042
+      "hold": 0.5525
     },
-    "0086.png": {
+    "0140.png": {
       "hl": "keep",
-      "hold": 0.6258
+      "hold": 0.5558
     },
-    "0087.png": {
+    "0141.png": {
       "hl": "keep",
-      "hold": 0.605
+      "hold": 0.5658
     },
-    "0133.png": {
+    "0215.png": {
       "cap": "Every turn lands in the session history",
-      "hold": 0.6075
+      "hold": 0.5742
     },
-    "0154.png": {
+    "0254.png": {
       "cap": "End the call; Devin keeps working",
       "hl": true
     },
-    "0156.png": {
-      "cap": "Devin builds Jumpy Otter with Expo and three.js",
-      "badge": "Sped up",
-      "vo": "Devin sets up the Expo project, builds the voxel city with three.js, and wires up the traffic, piers, creatine and combo meter."
-    },
-    "0189.png": {
-      "skip": true
-    },
-    "0190.png": {
-      "skip": true
-    },
-    "0191.png": {
-      "skip": true
-    },
-    "0192.png": {
-      "skip": true
-    },
-    "0193.png": {
-      "skip": true
-    },
-    "0194.png": {
-      "skip": true
-    },
-    "0195.png": {
-      "skip": true
-    },
-    "0196.png": {
-      "skip": true
-    },
-    "0197.png": {
-      "skip": true
-    },
-    "0198.png": {
-      "skip": true
-    },
-    "0199.png": {
-      "skip": true
-    },
-    "0200.png": {
-      "skip": true
-    },
-    "0201.png": {
-      "skip": true
-    },
-    "0202.png": {
-      "skip": true
-    },
-    "0203.png": {
-      "skip": true
-    },
-    "0204.png": {
-      "skip": true
-    },
-    "0205.png": {
-      "skip": true
-    },
-    "0206.png": {
-      "skip": true
-    },
-    "0207.png": {
-      "skip": true
-    },
-    "0208.png": {
-      "skip": true
-    },
-    "0209.png": {
-      "skip": true
-    },
-    "0210.png": {
-      "skip": true
-    },
-    "0211.png": {
-      "skip": true
-    },
-    "0212.png": {
-      "skip": true
-    },
-    "0213.png": {
-      "skip": true
-    },
-    "0214.png": {
-      "skip": true
-    },
-    "0215.png": {
-      "skip": true
-    },
-    "0216.png": {
-      "skip": true
-    },
-    "0217.png": {
-      "skip": true
-    },
-    "0218.png": {
-      "skip": true
-    },
-    "0219.png": {
-      "skip": true
-    },
-    "0220.png": {
-      "skip": true
-    },
-    "0221.png": {
-      "skip": true
-    },
-    "0222.png": {
-      "skip": true
-    },
-    "0223.png": {
-      "skip": true
-    },
-    "0224.png": {
-      "skip": true
-    },
-    "0225.png": {
-      "skip": true
-    },
-    "0226.png": {
-      "skip": true
-    },
-    "0227.png": {
-      "skip": true
-    },
-    "0228.png": {
-      "skip": true
-    },
-    "0229.png": {
-      "skip": true
-    },
-    "0230.png": {
-      "skip": true
-    },
-    "0231.png": {
-      "skip": true
-    },
-    "0232.png": {
-      "skip": true
-    },
-    "0233.png": {
-      "skip": true
-    },
-    "0234.png": {
-      "skip": true
-    },
-    "0235.png": {
-      "skip": true
-    },
-    "0236.png": {
-      "skip": true
-    },
-    "0237.png": {
-      "skip": true
-    },
-    "0238.png": {
-      "skip": true
-    },
-    "0239.png": {
-      "skip": true
-    },
-    "0240.png": {
-      "skip": true
-    },
-    "0241.png": {
-      "skip": true
-    },
-    "0242.png": {
-      "skip": true
-    },
-    "0243.png": {
-      "skip": true
-    },
-    "0244.png": {
-      "skip": true
-    },
-    "0245.png": {
-      "skip": true
-    },
-    "0246.png": {
-      "skip": true
-    },
-    "0247.png": {
-      "skip": true
-    },
-    "0248.png": {
-      "skip": true
-    },
-    "0249.png": {
-      "skip": true
-    },
-    "0250.png": {
-      "skip": true
-    },
-    "0251.png": {
-      "skip": true
-    },
-    "0252.png": {
-      "skip": true
-    },
-    "0253.png": {
-      "skip": true
-    },
-    "0254.png": {
-      "skip": true
-    },
     "0255.png": {
-      "skip": true
-    },
-    "0256.png": {
-      "skip": true
-    },
-    "0257.png": {
-      "skip": true
+      "hold": 1.6,
+      "cap": "Devin builds the game and wires up GPT-Live-1",
+      "vo": "Devin sets up the Expo project, builds the voxel city, and connects Coach Otter to GPT-Live-1 through a small server that keeps the API key."
     },
     "0258.png": {
-      "skip": true
+      "badge": "Sped up"
     },
     "0259.png": {
       "skip": true
@@ -498,9 +289,7 @@ window.SPEC = {
       "skip": true
     },
     "0308.png": {
-      "hold": 2.0,
-      "cap": "It plays the web build in Chrome",
-      "vo": "Then it plays the web build in Chrome with Computer Use, on its own Mac."
+      "skip": true
     },
     "0309.png": {
       "skip": true
@@ -566,88 +355,19 @@ window.SPEC = {
       "skip": true
     },
     "0330.png": {
-      "skip": true
+      "hold": 1.6,
+      "cap": "The game running on the iPhone simulator",
+      "vo": "Soon the game is running on the iPhone simulator, live in the Computer tab."
     },
     "0331.png": {
-      "skip": true
-    },
-    "0332.png": {
-      "skip": true
-    },
-    "0333.png": {
-      "skip": true
-    },
-    "0334.png": {
-      "skip": true
-    },
-    "0335.png": {
-      "skip": true
-    },
-    "0336.png": {
-      "skip": true
-    },
-    "0337.png": {
-      "skip": true
-    },
-    "0338.png": {
-      "skip": true
-    },
-    "0339.png": {
-      "skip": true
-    },
-    "0340.png": {
-      "skip": true
-    },
-    "0341.png": {
-      "skip": true
-    },
-    "0342.png": {
-      "skip": true
-    },
-    "0343.png": {
-      "skip": true
-    },
-    "0344.png": {
-      "skip": true
-    },
-    "0345.png": {
-      "skip": true
-    },
-    "0346.png": {
-      "skip": true
-    },
-    "0347.png": {
-      "skip": true
-    },
-    "0348.png": {
-      "skip": true
-    },
-    "0349.png": {
-      "skip": true
-    },
-    "0350.png": {
-      "skip": true
-    },
-    "0351.png": {
-      "skip": true
-    },
-    "0352.png": {
-      "skip": true
-    },
-    "0353.png": {
-      "skip": true
-    },
-    "0354.png": {
-      "skip": true
-    },
-    "0355.png": {
-      "skip": true
-    },
-    "0356.png": {
-      "skip": true
+      "hold": 1.2,
+      "hl": true,
+      "cap": "Rejoin the call from inside the session",
+      "vo": "Mid-build, you can rejoin the call from inside the session and ask how the game's coming along."
     },
     "0357.png": {
-      "skip": true
+      "hl": true,
+      "cap": "End the call again"
     },
     "0358.png": {
       "skip": true
@@ -821,14 +541,61 @@ window.SPEC = {
       "skip": true
     },
     "0415.png": {
-      "hold": 1.2,
-      "hl": true,
-      "cap": "Rejoin the call from inside the session",
-      "vo": "Mid-build, you can rejoin the call from inside the session and ask how the game's coming along."
+      "skip": true
+    },
+    "0416.png": {
+      "skip": true
+    },
+    "0417.png": {
+      "skip": true
+    },
+    "0418.png": {
+      "skip": true
+    },
+    "0419.png": {
+      "skip": true
+    },
+    "0420.png": {
+      "skip": true
+    },
+    "0421.png": {
+      "skip": true
+    },
+    "0422.png": {
+      "skip": true
+    },
+    "0423.png": {
+      "skip": true
+    },
+    "0424.png": {
+      "skip": true
+    },
+    "0425.png": {
+      "skip": true
+    },
+    "0426.png": {
+      "skip": true
+    },
+    "0427.png": {
+      "skip": true
+    },
+    "0428.png": {
+      "skip": true
+    },
+    "0429.png": {
+      "skip": true
+    },
+    "0430.png": {
+      "skip": true
+    },
+    "0431.png": {
+      "skip": true
     },
     "0432.png": {
-      "hl": true,
-      "cap": "End the call again"
+      "skip": true
+    },
+    "0433.png": {
+      "skip": true
     },
     "0434.png": {
       "skip": true
@@ -999,9 +766,7 @@ window.SPEC = {
       "skip": true
     },
     "0490.png": {
-      "hold": 2.0,
-      "cap": "Then the iPhone simulator, live in the Computer tab",
-      "vo": "Then it switches to the iPhone simulator, and you can watch it play live in the Computer tab."
+      "skip": true
     },
     "0491.png": {
       "skip": true
@@ -1073,7 +838,9 @@ window.SPEC = {
       "skip": true
     },
     "0514.png": {
-      "skip": true
+      "hold": 2.0,
+      "cap": "A second Devin on Ubuntu tests Android",
+      "vo": "Devin starts a second Devin on Ubuntu to test Android. Its update says Coach Otter already talks on the web, and runs tools while he talks."
     },
     "0515.png": {
       "skip": true
@@ -1439,109 +1206,9 @@ window.SPEC = {
       "skip": true
     },
     "0636.png": {
-      "skip": true
-    },
-    "0637.png": {
-      "skip": true
-    },
-    "0638.png": {
-      "skip": true
-    },
-    "0639.png": {
-      "skip": true
-    },
-    "0640.png": {
-      "skip": true
-    },
-    "0641.png": {
-      "skip": true
-    },
-    "0642.png": {
-      "skip": true
-    },
-    "0643.png": {
-      "skip": true
-    },
-    "0644.png": {
-      "skip": true
-    },
-    "0645.png": {
-      "skip": true
-    },
-    "0646.png": {
-      "skip": true
-    },
-    "0647.png": {
-      "skip": true
-    },
-    "0648.png": {
-      "skip": true
-    },
-    "0649.png": {
-      "skip": true
-    },
-    "0650.png": {
-      "skip": true
-    },
-    "0651.png": {
-      "skip": true
-    },
-    "0652.png": {
-      "skip": true
-    },
-    "0653.png": {
-      "skip": true
-    },
-    "0654.png": {
-      "skip": true
-    },
-    "0655.png": {
-      "skip": true
-    },
-    "0656.png": {
-      "skip": true
-    },
-    "0657.png": {
-      "skip": true
-    },
-    "0658.png": {
-      "skip": true
-    },
-    "0659.png": {
-      "skip": true
-    },
-    "0660.png": {
-      "skip": true
-    },
-    "0661.png": {
-      "skip": true
-    },
-    "0662.png": {
-      "skip": true
-    },
-    "0663.png": {
-      "skip": true
-    },
-    "0664.png": {
-      "skip": true
-    },
-    "0665.png": {
-      "skip": true
-    },
-    "0666.png": {
-      "skip": true
-    },
-    "0667.png": {
-      "skip": true
-    },
-    "0668.png": {
-      "skip": true
-    },
-    "0669.png": {
-      "skip": true
-    },
-    "0670.png": {
-      "skip": true
+      "hold": 1.4,
+      "cap": "Computer Use plays the web build in Chrome",
+      "vo": "Then it plays the web build in Chrome with Computer Use."
     },
     "0671.png": {
       "skip": true
@@ -1631,7 +1298,9 @@ window.SPEC = {
       "skip": true
     },
     "0700.png": {
-      "skip": true
+      "hold": 1.4,
+      "cap": "iPhone simulator: Coach tested with typed input",
+      "vo": "On the iPhone simulator, audio doesn't work on this Mac, so Devin types to Coach instead of talking."
     },
     "0701.png": {
       "skip": true
@@ -1729,9 +1398,6 @@ window.SPEC = {
     "0732.png": {
       "skip": true
     },
-    "0733.png": {
-      "skip": true
-    },
     "0734.png": {
       "skip": true
     },
@@ -1765,9 +1431,6 @@ window.SPEC = {
     "0744.png": {
       "skip": true
     },
-    "0745.png": {
-      "skip": true
-    },
     "0746.png": {
       "skip": true
     },
@@ -1781,9 +1444,6 @@ window.SPEC = {
       "skip": true
     },
     "0750.png": {
-      "skip": true
-    },
-    "0751.png": {
       "skip": true
     },
     "0752.png": {
@@ -2081,107 +1741,48 @@ window.SPEC = {
       "skip": true
     },
     "0850.png": {
-      "cap": "Devin Review flags a bug; Devin fixes it and plays again",
-      "badge": "Sped up",
-      "vo": "It opens a pull request. Devin Review flags a combo bug, and Devin fixes it and plays the game again."
-    },
-    "1421.png": {
       "skip": true
     },
-    "1422.png": {
+    "0851.png": {
       "skip": true
     },
-    "1423.png": {
+    "0852.png": {
       "skip": true
     },
-    "1424.png": {
+    "0853.png": {
       "skip": true
     },
-    "1425.png": {
+    "0854.png": {
       "skip": true
     },
-    "1426.png": {
+    "0855.png": {
       "skip": true
     },
-    "1427.png": {
+    "0856.png": {
       "skip": true
     },
-    "1428.png": {
+    "0857.png": {
       "skip": true
     },
-    "1429.png": {
+    "0858.png": {
       "skip": true
     },
-    "1430.png": {
+    "0859.png": {
       "skip": true
     },
-    "1431.png": {
+    "0860.png": {
       "skip": true
     },
-    "1432.png": {
+    "0861.png": {
       "skip": true
     },
-    "1433.png": {
+    "0862.png": {
       "skip": true
     },
-    "1434.png": {
+    "0863.png": {
       "skip": true
     },
-    "1435.png": {
-      "skip": true
-    },
-    "1436.png": {
-      "skip": true
-    },
-    "1437.png": {
-      "skip": true
-    },
-    "1438.png": {
-      "skip": true
-    },
-    "1439.png": {
-      "skip": true
-    },
-    "1440.png": {
-      "skip": true
-    },
-    "1441.png": {
-      "skip": true
-    },
-    "1442.png": {
-      "skip": true
-    },
-    "1443.png": {
-      "skip": true
-    },
-    "1444.png": {
-      "skip": true
-    },
-    "1445.png": {
-      "skip": true
-    },
-    "1446.png": {
-      "skip": true
-    },
-    "1447.png": {
-      "skip": true
-    },
-    "1448.png": {
-      "skip": true
-    },
-    "1449.png": {
-      "skip": true
-    },
-    "1450.png": {
-      "skip": true
-    },
-    "1451.png": {
-      "skip": true
-    },
-    "1452.png": {
-      "skip": true
-    },
-    "1453.png": {
+    "0864.png": {
       "skip": true
     },
     "0865.png": {
@@ -2872,85 +2473,13 @@ window.SPEC = {
       "skip": true
     },
     "1094.png": {
-      "skip": true
-    },
-    "1095.png": {
-      "skip": true
-    },
-    "1096.png": {
-      "skip": true
+      "hold": 1.6,
+      "cap": "Every test run comes with a recording and checks",
+      "vo": "Every test comes with a recording and pass fail checks."
     },
     "1097.png": {
-      "skip": true
-    },
-    "1098.png": {
-      "skip": true
-    },
-    "1099.png": {
-      "skip": true
-    },
-    "1100.png": {
-      "skip": true
-    },
-    "1101.png": {
-      "skip": true
-    },
-    "1102.png": {
-      "skip": true
-    },
-    "1103.png": {
-      "skip": true
-    },
-    "1104.png": {
-      "skip": true
-    },
-    "1105.png": {
-      "skip": true
-    },
-    "1106.png": {
-      "skip": true
-    },
-    "1107.png": {
-      "skip": true
-    },
-    "1108.png": {
-      "skip": true
-    },
-    "1109.png": {
-      "skip": true
-    },
-    "1110.png": {
-      "skip": true
-    },
-    "1111.png": {
-      "skip": true
-    },
-    "1112.png": {
-      "skip": true
-    },
-    "1113.png": {
-      "skip": true
-    },
-    "1114.png": {
-      "skip": true
-    },
-    "1115.png": {
-      "skip": true
-    },
-    "1116.png": {
-      "skip": true
-    },
-    "1117.png": {
-      "skip": true
-    },
-    "1118.png": {
-      "skip": true
-    },
-    "1119.png": {
-      "skip": true
-    },
-    "1120.png": {
-      "skip": true
+      "cap": "Chrome: 11 passed, 1 untested",
+      "vo": "In Chrome, Coach connects, runs the boost, night, and best score tools, and switches style. Eleven checks pass, and one is left untested."
     },
     "1121.png": {
       "skip": true
@@ -2971,85 +2500,9 @@ window.SPEC = {
       "skip": true
     },
     "1127.png": {
-      "skip": true
-    },
-    "1128.png": {
-      "skip": true
-    },
-    "1129.png": {
-      "skip": true
-    },
-    "1130.png": {
-      "skip": true
-    },
-    "1131.png": {
-      "skip": true
-    },
-    "1132.png": {
-      "skip": true
-    },
-    "1133.png": {
-      "skip": true
-    },
-    "1134.png": {
-      "skip": true
-    },
-    "1135.png": {
-      "skip": true
-    },
-    "1136.png": {
-      "skip": true
-    },
-    "1137.png": {
-      "skip": true
-    },
-    "1138.png": {
-      "skip": true
-    },
-    "1139.png": {
-      "skip": true
-    },
-    "1140.png": {
-      "skip": true
-    },
-    "1141.png": {
-      "skip": true
-    },
-    "1142.png": {
-      "skip": true
-    },
-    "1143.png": {
-      "skip": true
-    },
-    "1144.png": {
-      "skip": true
-    },
-    "1145.png": {
-      "skip": true
-    },
-    "1146.png": {
-      "skip": true
-    },
-    "1147.png": {
-      "skip": true
-    },
-    "1148.png": {
-      "skip": true
-    },
-    "1149.png": {
-      "skip": true
-    },
-    "1150.png": {
-      "skip": true
-    },
-    "1151.png": {
-      "skip": true
-    },
-    "1152.png": {
-      "skip": true
-    },
-    "1153.png": {
-      "skip": true
+      "hold": 1.2,
+      "cap": "iPhone: 8 passed, with typed input",
+      "vo": "On the iPhone, the tools, both styles, and reconnecting all work, and eight checks pass. The voice you heard at the start ran in Chrome."
     },
     "1154.png": {
       "skip": true
@@ -3070,88 +2523,9 @@ window.SPEC = {
       "skip": true
     },
     "1160.png": {
-      "skip": true
-    },
-    "1161.png": {
-      "skip": true
-    },
-    "1162.png": {
-      "skip": true
-    },
-    "1163.png": {
-      "skip": true
-    },
-    "1164.png": {
-      "skip": true
-    },
-    "1165.png": {
-      "skip": true
-    },
-    "1166.png": {
-      "skip": true
-    },
-    "1167.png": {
-      "skip": true
-    },
-    "1168.png": {
-      "skip": true
-    },
-    "1169.png": {
-      "skip": true
-    },
-    "1170.png": {
-      "skip": true
-    },
-    "1171.png": {
-      "skip": true
-    },
-    "1172.png": {
-      "skip": true
-    },
-    "1173.png": {
-      "skip": true
-    },
-    "1174.png": {
-      "skip": true
-    },
-    "1175.png": {
-      "skip": true
-    },
-    "1176.png": {
-      "skip": true
-    },
-    "1177.png": {
-      "skip": true
-    },
-    "1178.png": {
-      "skip": true
-    },
-    "1179.png": {
-      "skip": true
-    },
-    "1180.png": {
-      "skip": true
-    },
-    "1181.png": {
-      "skip": true
-    },
-    "1182.png": {
-      "skip": true
-    },
-    "1183.png": {
-      "skip": true
-    },
-    "1184.png": {
-      "skip": true
-    },
-    "1185.png": {
-      "skip": true
-    },
-    "1186.png": {
-      "skip": true
-    },
-    "1187.png": {
-      "skip": true
+      "hold": 1.4,
+      "cap": "Android, tested by the Ubuntu Devin: 12 passed",
+      "vo": "The Ubuntu Devin ran the game on an Android emulator with software rendering. All twelve checks pass, Coach tools included."
     },
     "1188.png": {
       "skip": true
@@ -3195,996 +2569,759 @@ window.SPEC = {
     "1201.png": {
       "skip": true
     },
-    "1202.png": {
-      "skip": true
-    },
-    "1203.png": {
-      "skip": true
-    },
     "1204.png": {
-      "skip": true
-    },
-    "1205.png": {
-      "skip": true
-    },
-    "1206.png": {
-      "skip": true
-    },
-    "1207.png": {
-      "skip": true
-    },
-    "1208.png": {
-      "skip": true
-    },
-    "1209.png": {
-      "skip": true
-    },
-    "1210.png": {
-      "skip": true
-    },
-    "1211.png": {
-      "skip": true
-    },
-    "1212.png": {
-      "skip": true
-    },
-    "1213.png": {
-      "skip": true
-    },
-    "1214.png": {
-      "skip": true
-    },
-    "1215.png": {
-      "skip": true
-    },
-    "1216.png": {
-      "skip": true
-    },
-    "1217.png": {
-      "skip": true
-    },
-    "1218.png": {
-      "skip": true
-    },
-    "1219.png": {
-      "skip": true
-    },
-    "1220.png": {
-      "skip": true
-    },
-    "1221.png": {
-      "skip": true
-    },
-    "1222.png": {
-      "skip": true
-    },
-    "1223.png": {
-      "skip": true
-    },
-    "1224.png": {
-      "skip": true
-    },
-    "1225.png": {
-      "skip": true
-    },
-    "1226.png": {
-      "skip": true
-    },
-    "1227.png": {
-      "skip": true
-    },
-    "1228.png": {
-      "skip": true
-    },
-    "1229.png": {
-      "skip": true
-    },
-    "1230.png": {
-      "skip": true
-    },
-    "1231.png": {
-      "skip": true
-    },
-    "1232.png": {
-      "skip": true
-    },
-    "1233.png": {
-      "skip": true
-    },
-    "1234.png": {
-      "skip": true
-    },
-    "1235.png": {
-      "skip": true
-    },
-    "1236.png": {
-      "skip": true
-    },
-    "1237.png": {
-      "skip": true
-    },
-    "1238.png": {
-      "skip": true
-    },
-    "1239.png": {
-      "skip": true
-    },
-    "1240.png": {
-      "skip": true
-    },
-    "1241.png": {
-      "skip": true
-    },
-    "1242.png": {
-      "skip": true
-    },
-    "1243.png": {
-      "skip": true
-    },
-    "1244.png": {
-      "skip": true
-    },
-    "1245.png": {
-      "skip": true
-    },
-    "1246.png": {
-      "skip": true
-    },
-    "1247.png": {
-      "skip": true
-    },
-    "1248.png": {
-      "skip": true
-    },
-    "1249.png": {
-      "skip": true
-    },
-    "1250.png": {
-      "skip": true
-    },
-    "1251.png": {
-      "skip": true
-    },
-    "1252.png": {
-      "skip": true
-    },
-    "1253.png": {
-      "skip": true
-    },
-    "1254.png": {
-      "skip": true
-    },
-    "1255.png": {
-      "skip": true
-    },
-    "1256.png": {
-      "skip": true
-    },
-    "1257.png": {
-      "skip": true
-    },
-    "1258.png": {
-      "skip": true
-    },
-    "1259.png": {
-      "skip": true
-    },
-    "1260.png": {
-      "skip": true
-    },
-    "1261.png": {
-      "skip": true
-    },
-    "1262.png": {
-      "skip": true
-    },
-    "1263.png": {
-      "skip": true
-    },
-    "1264.png": {
-      "skip": true
-    },
-    "1265.png": {
-      "skip": true
-    },
-    "1266.png": {
-      "skip": true
-    },
-    "1267.png": {
-      "skip": true
-    },
-    "1268.png": {
-      "skip": true
-    },
-    "1269.png": {
-      "skip": true
-    },
-    "1270.png": {
-      "skip": true
-    },
-    "1271.png": {
-      "skip": true
-    },
-    "1272.png": {
-      "skip": true
-    },
-    "1273.png": {
-      "skip": true
-    },
-    "1274.png": {
-      "skip": true
-    },
-    "1275.png": {
-      "skip": true
-    },
-    "1276.png": {
-      "skip": true
-    },
-    "1277.png": {
-      "skip": true
-    },
-    "1278.png": {
-      "skip": true
-    },
-    "1279.png": {
-      "skip": true
-    },
-    "1280.png": {
-      "skip": true
-    },
-    "1281.png": {
-      "skip": true
-    },
-    "1282.png": {
-      "skip": true
-    },
-    "1283.png": {
-      "skip": true
-    },
-    "1284.png": {
-      "skip": true
-    },
-    "1285.png": {
-      "skip": true
-    },
-    "1286.png": {
-      "skip": true
-    },
-    "1287.png": {
-      "skip": true
-    },
-    "1288.png": {
-      "skip": true
-    },
-    "1289.png": {
-      "skip": true
-    },
-    "1290.png": {
-      "skip": true
-    },
-    "1291.png": {
-      "skip": true
-    },
-    "1292.png": {
-      "skip": true
-    },
-    "1293.png": {
-      "skip": true
-    },
-    "1294.png": {
-      "skip": true
-    },
-    "1295.png": {
-      "skip": true
-    },
-    "1296.png": {
-      "skip": true
-    },
-    "1297.png": {
-      "skip": true
-    },
-    "1298.png": {
-      "skip": true
-    },
-    "1299.png": {
-      "skip": true
-    },
-    "1300.png": {
-      "skip": true
-    },
-    "1301.png": {
-      "skip": true
-    },
-    "1302.png": {
-      "skip": true
-    },
-    "1303.png": {
-      "skip": true
-    },
-    "1304.png": {
-      "skip": true
-    },
-    "1305.png": {
-      "skip": true
-    },
-    "1306.png": {
-      "skip": true
-    },
-    "1307.png": {
-      "skip": true
-    },
-    "1308.png": {
-      "skip": true
-    },
-    "1309.png": {
-      "skip": true
-    },
-    "1310.png": {
-      "skip": true
-    },
-    "1311.png": {
-      "skip": true
-    },
-    "1312.png": {
-      "skip": true
-    },
-    "1313.png": {
-      "skip": true
-    },
-    "1314.png": {
-      "skip": true
-    },
-    "1315.png": {
-      "skip": true
-    },
-    "1316.png": {
-      "skip": true
-    },
-    "1317.png": {
-      "skip": true
-    },
-    "1318.png": {
-      "skip": true
-    },
-    "1319.png": {
-      "skip": true
-    },
-    "1320.png": {
-      "skip": true
-    },
-    "1321.png": {
-      "skip": true
-    },
-    "1322.png": {
-      "skip": true
-    },
-    "1323.png": {
-      "skip": true
-    },
-    "1324.png": {
-      "skip": true
-    },
-    "1325.png": {
-      "skip": true
-    },
-    "1326.png": {
-      "skip": true
-    },
-    "1327.png": {
-      "skip": true
-    },
-    "1328.png": {
-      "skip": true
-    },
-    "1329.png": {
-      "skip": true
-    },
-    "1330.png": {
-      "skip": true
-    },
-    "1331.png": {
-      "skip": true
-    },
-    "1332.png": {
-      "skip": true
-    },
-    "1333.png": {
-      "skip": true
-    },
-    "1334.png": {
-      "skip": true
-    },
-    "1335.png": {
-      "skip": true
-    },
-    "1336.png": {
-      "skip": true
-    },
-    "1337.png": {
-      "skip": true
-    },
-    "1338.png": {
-      "skip": true
-    },
-    "1339.png": {
-      "skip": true
-    },
-    "1340.png": {
-      "skip": true
-    },
-    "1341.png": {
-      "skip": true
-    },
-    "1342.png": {
-      "skip": true
-    },
-    "1343.png": {
-      "skip": true
-    },
-    "1344.png": {
-      "skip": true
-    },
-    "1345.png": {
-      "skip": true
-    },
-    "1346.png": {
-      "skip": true
-    },
-    "1347.png": {
-      "skip": true
-    },
-    "1348.png": {
-      "skip": true
-    },
-    "1349.png": {
-      "skip": true
-    },
-    "1350.png": {
-      "skip": true
-    },
-    "1351.png": {
-      "skip": true
-    },
-    "1352.png": {
-      "skip": true
-    },
-    "1353.png": {
-      "skip": true
-    },
-    "1354.png": {
-      "skip": true
-    },
-    "1355.png": {
-      "skip": true
-    },
-    "1356.png": {
-      "skip": true
-    },
-    "1357.png": {
-      "skip": true
-    },
-    "1358.png": {
-      "skip": true
-    },
-    "1359.png": {
-      "skip": true
-    },
-    "1360.png": {
-      "skip": true
-    },
-    "1361.png": {
-      "skip": true
-    },
-    "1362.png": {
-      "skip": true
-    },
-    "1363.png": {
-      "skip": true
-    },
-    "1364.png": {
-      "skip": true
-    },
-    "1365.png": {
-      "skip": true
-    },
-    "1366.png": {
-      "skip": true
-    },
-    "1367.png": {
-      "skip": true
-    },
-    "1368.png": {
-      "hold": 1.6,
-      "cap": "Every test run comes with a recording",
-      "vo": "Every test run comes with a recording. In Chrome, the otter picks up creatine, rides the piers, and all nine checks pass."
-    },
-    "1371.png": {
-      "cap": "Chrome: 9 passed"
-    },
-    "1396.png": {
-      "hold": 1.2,
-      "cap": "iPhone: combo, creatine pickup, 8 passed",
-      "vo": "On the iPhone, the combo meter climbs, a creatine bottle gets picked up, and all eight checks pass."
-    },
-    "1454.png": {
-      "skip": true
-    },
-    "1455.png": {
-      "skip": true
-    },
-    "1456.png": {
-      "hold": 1.2,
-      "cap": "Android, tested by the Ubuntu Devin",
-      "vo": "For Android, a second Devin on Ubuntu ran the game on an Android emulator. Screen fill, the combo and swipes pass. Creatine wasn't verified there, and the software emulator runs at a low frame rate."
-    },
-    "1457.png": {
-      "cap": "Android emulator: 3 of 4 checks pass"
-    },
-    "1476.png": {
       "hold": 2.2,
-      "cap": "One conversation, one codebase: iOS, Android and web",
-      "vo": "One conversation, one codebase, tested on iOS, Android, and the web."
+      "cap": "Devin opens a PR with the reports"
     },
-    "1477.png": {
-      "skip": true
-    },
-    "1478.png": {
-      "skip": true
-    },
-    "1479.png": {
-      "skip": true
-    },
-    "1480.png": {
-      "skip": true
-    },
-    "1481.png": {
-      "skip": true
-    },
-    "1482.png": {
-      "skip": true
-    },
-    "1483.png": {
-      "skip": true
-    },
-    "1484.png": {
-      "skip": true
-    },
-    "1485.png": {
-      "skip": true
-    },
-    "1486.png": {
-      "skip": true
+    "1202.png": {
+      "vo": "Then it opens a pull request with the code, the reports, and the recordings."
     },
     "0011.png": {
-      "hold": 0.7808
-    },
-    "0012.png": {
-      "hold": 0.6667
-    },
-    "0013.png": {
-      "hold": 0.6008
-    },
-    "0014.png": {
-      "hold": 0.6333
-    },
-    "0015.png": {
-      "hold": 0.6067
-    },
-    "0016.png": {
-      "hold": 0.6233
-    },
-    "0017.png": {
-      "hold": 0.5725
-    },
-    "0018.png": {
-      "hold": 0.6133
-    },
-    "0019.png": {
-      "hold": 0.5933
-    },
-    "0020.png": {
-      "hold": 0.6058
-    },
-    "0021.png": {
-      "hold": 0.6217
-    },
-    "0022.png": {
-      "hold": 0.6142
-    },
-    "0023.png": {
-      "hold": 0.65
-    },
-    "0024.png": {
-      "hold": 0.6683
-    },
-    "0026.png": {
-      "hold": 0.6283
-    },
-    "0027.png": {
-      "hold": 0.6725
-    },
-    "0028.png": {
-      "hold": 0.6258
-    },
-    "0029.png": {
-      "hold": 0.6817
-    },
-    "0030.png": {
-      "hold": 0.6158
-    },
-    "0031.png": {
-      "hold": 0.615
-    },
-    "0032.png": {
-      "hold": 0.6267
-    },
-    "0033.png": {
-      "hold": 0.7417
-    },
-    "0034.png": {
-      "hold": 0.715
-    },
-    "0035.png": {
-      "hold": 0.6325
-    },
-    "0036.png": {
-      "hold": 0.6275
-    },
-    "0037.png": {
-      "hold": 0.6658
-    },
-    "0038.png": {
-      "hold": 0.6533
-    },
-    "0039.png": {
-      "hold": 0.5983
-    },
-    "0040.png": {
-      "hold": 0.6142
-    },
-    "0041.png": {
-      "hold": 0.6308
-    },
-    "0042.png": {
-      "hold": 0.6125
-    },
-    "0043.png": {
-      "hold": 0.6233
-    },
-    "0044.png": {
-      "hold": 0.595
-    },
-    "0045.png": {
-      "hold": 0.6108
-    },
-    "0046.png": {
-      "hold": 0.5833
-    },
-    "0047.png": {
-      "hold": 0.7483
-    },
-    "0049.png": {
-      "hold": 0.6075
-    },
-    "0050.png": {
-      "hold": 0.6517
-    },
-    "0051.png": {
-      "hold": 0.6367
-    },
-    "0052.png": {
-      "hold": 0.6342
-    },
-    "0053.png": {
-      "hold": 0.6142
-    },
-    "0054.png": {
-      "hold": 0.6208
-    },
-    "0055.png": {
-      "hold": 0.6525
-    },
-    "0056.png": {
-      "hold": 0.6467
-    },
-    "0057.png": {
-      "hold": 0.6092
-    },
-    "0058.png": {
-      "hold": 0.6517
-    },
-    "0059.png": {
-      "hold": 0.6392
-    },
-    "0060.png": {
-      "hold": 0.6208
-    },
-    "0061.png": {
-      "hold": 0.6783
-    },
-    "0062.png": {
-      "hold": 0.6608
-    },
-    "0063.png": {
-      "hold": 0.6908
-    },
-    "0064.png": {
-      "hold": 0.6233
-    },
-    "0065.png": {
-      "hold": 0.6283
-    },
-    "0066.png": {
-      "hold": 0.6242
-    },
-    "0067.png": {
-      "hold": 0.6258
-    },
-    "0068.png": {
-      "hold": 0.7958
-    },
-    "0069.png": {
-      "hold": 0.8258
-    },
-    "0070.png": {
-      "hold": 0.6517
-    },
-    "0071.png": {
-      "hold": 0.6825
-    },
-    "0072.png": {
-      "hold": 0.685
-    },
-    "0074.png": {
-      "hold": 0.6083
-    },
-    "0075.png": {
-      "hold": 0.6058
-    },
-    "0076.png": {
-      "hold": 0.575
-    },
-    "0077.png": {
-      "hold": 0.6167
-    },
-    "0078.png": {
-      "hold": 0.5808
-    },
-    "0079.png": {
-      "hold": 0.5825
-    },
-    "0080.png": {
-      "hold": 0.605
-    },
-    "0089.png": {
-      "hold": 0.6317
-    },
-    "0090.png": {
-      "hold": 0.6367
-    },
-    "0091.png": {
-      "hold": 0.6675
-    },
-    "0092.png": {
-      "hold": 0.6792
-    },
-    "0093.png": {
-      "hold": 0.6025
-    },
-    "0094.png": {
-      "hold": 0.6242
-    },
-    "0095.png": {
-      "hold": 0.5967
-    },
-    "0096.png": {
-      "hold": 0.61
-    },
-    "0097.png": {
-      "hold": 0.6333
-    },
-    "0098.png": {
-      "hold": 0.6092
-    },
-    "0099.png": {
-      "hold": 0.6275
-    },
-    "0100.png": {
-      "hold": 0.6133
-    },
-    "0101.png": {
-      "hold": 0.5858
-    },
-    "0102.png": {
-      "hold": 0.665
-    },
-    "0103.png": {
-      "hold": 0.6817
-    },
-    "0104.png": {
-      "hold": 0.6183
-    },
-    "0105.png": {
       "hold": 0.73
     },
-    "0106.png": {
-      "hold": 0.6167
+    "0012.png": {
+      "hold": 0.5342
     },
-    "0107.png": {
-      "hold": 0.6217
+    "0013.png": {
+      "hold": 0.5275
     },
-    "0108.png": {
-      "hold": 0.6825
+    "0014.png": {
+      "hold": 0.5392
     },
-    "0109.png": {
-      "hold": 0.665
+    "0015.png": {
+      "hold": 0.5275
     },
-    "0111.png": {
-      "hold": 0.6517
+    "0016.png": {
+      "hold": 0.525
     },
-    "0112.png": {
-      "hold": 0.6283
+    "0017.png": {
+      "hold": 0.5208
     },
-    "0113.png": {
-      "hold": 0.6375
+    "0018.png": {
+      "hold": 0.5467
     },
-    "0114.png": {
-      "hold": 0.6075
+    "0019.png": {
+      "hold": 0.5083
     },
-    "0115.png": {
-      "hold": 0.6392
+    "0020.png": {
+      "hold": 0.5433
     },
-    "0116.png": {
-      "hold": 0.6717
+    "0021.png": {
+      "hold": 0.5358
     },
-    "0117.png": {
-      "hold": 0.63
+    "0022.png": {
+      "hold": 0.5325
     },
-    "0118.png": {
-      "hold": 0.63
+    "0023.png": {
+      "hold": 0.5325
     },
-    "0119.png": {
-      "hold": 0.6267
+    "0024.png": {
+      "hold": 0.5275
     },
-    "0120.png": {
-      "hold": 0.6133
+    "0026.png": {
+      "hold": 0.545
     },
-    "0121.png": {
-      "hold": 0.62
+    "0027.png": {
+      "hold": 0.5392
     },
-    "0122.png": {
-      "hold": 0.6325
+    "0028.png": {
+      "hold": 0.53
     },
-    "0123.png": {
-      "hold": 0.6008
+    "0029.png": {
+      "hold": 0.5267
     },
-    "0124.png": {
-      "hold": 0.6267
+    "0030.png": {
+      "hold": 0.53
     },
-    "0125.png": {
-      "hold": 0.6333
+    "0031.png": {
+      "hold": 0.5233
     },
-    "0126.png": {
-      "hold": 0.6125
+    "0032.png": {
+      "hold": 0.5333
     },
-    "0127.png": {
-      "hold": 0.6075
+    "0033.png": {
+      "hold": 0.54
     },
-    "0128.png": {
-      "hold": 0.5942
+    "0034.png": {
+      "hold": 0.5325
     },
-    "0129.png": {
-      "hold": 0.6425
+    "0035.png": {
+      "hold": 0.5358
     },
-    "0130.png": {
-      "hold": 0.6225
+    "0036.png": {
+      "hold": 0.5275
     },
-    "0131.png": {
-      "hold": 0.6125
+    "0037.png": {
+      "hold": 0.5267
     },
-    "0132.png": {
-      "hold": 0.6092
+    "0038.png": {
+      "hold": 0.5308
     },
-    "0134.png": {
-      "hold": 0.6417
+    "0039.png": {
+      "hold": 0.5475
     },
-    "0135.png": {
-      "hold": 0.595
-    },
-    "0136.png": {
-      "hold": 0.6142
-    },
-    "0137.png": {
-      "hold": 0.6
-    },
-    "0138.png": {
-      "hold": 0.6033
-    },
-    "0139.png": {
-      "hold": 0.6367
-    },
-    "0140.png": {
-      "hold": 0.6033
-    },
-    "0141.png": {
-      "hold": 0.5942
-    },
-    "0143.png": {
+    "0040.png": {
       "hold": 0.6467
     },
-    "0144.png": {
-      "hold": 0.6192
+    "0041.png": {
+      "hold": 0.525
+    },
+    "0042.png": {
+      "hold": 0.5358
+    },
+    "0043.png": {
+      "hold": 0.5367
+    },
+    "0044.png": {
+      "hold": 0.5267
+    },
+    "0045.png": {
+      "hold": 0.5308
+    },
+    "0046.png": {
+      "hold": 0.5367
+    },
+    "0048.png": {
+      "hold": 0.5442
+    },
+    "0049.png": {
+      "hold": 0.5325
+    },
+    "0050.png": {
+      "hold": 0.5417
+    },
+    "0051.png": {
+      "hold": 0.5425
+    },
+    "0052.png": {
+      "hold": 0.54
+    },
+    "0053.png": {
+      "hold": 0.5433
+    },
+    "0054.png": {
+      "hold": 0.565
+    },
+    "0055.png": {
+      "hold": 0.5392
+    },
+    "0056.png": {
+      "hold": 0.535
+    },
+    "0057.png": {
+      "hold": 0.5467
+    },
+    "0058.png": {
+      "hold": 0.5525
+    },
+    "0059.png": {
+      "hold": 0.5425
+    },
+    "0060.png": {
+      "hold": 0.5475
+    },
+    "0061.png": {
+      "hold": 0.5408
+    },
+    "0062.png": {
+      "hold": 0.5442
+    },
+    "0063.png": {
+      "hold": 0.55
+    },
+    "0064.png": {
+      "hold": 0.5525
+    },
+    "0065.png": {
+      "hold": 0.5467
+    },
+    "0066.png": {
+      "hold": 0.6625
+    },
+    "0067.png": {
+      "hold": 0.5483
+    },
+    "0068.png": {
+      "hold": 0.5533
+    },
+    "0069.png": {
+      "hold": 0.545
+    },
+    "0070.png": {
+      "hold": 0.5533
+    },
+    "0071.png": {
+      "hold": 0.5425
+    },
+    "0072.png": {
+      "hold": 0.5658
+    },
+    "0073.png": {
+      "hold": 0.5458
+    },
+    "0074.png": {
+      "hold": 0.5558
+    },
+    "0075.png": {
+      "hold": 0.5667
+    },
+    "0076.png": {
+      "hold": 0.5483
+    },
+    "0077.png": {
+      "hold": 0.5575
+    },
+    "0078.png": {
+      "hold": 0.555
+    },
+    "0079.png": {
+      "hold": 0.555
+    },
+    "0080.png": {
+      "hold": 0.6425
+    },
+    "0081.png": {
+      "hold": 0.5608
+    },
+    "0082.png": {
+      "hold": 0.5567
+    },
+    "0083.png": {
+      "hold": 0.5575
+    },
+    "0084.png": {
+      "hold": 0.5525
+    },
+    "0085.png": {
+      "hold": 0.5617
+    },
+    "0086.png": {
+      "hold": 0.5475
+    },
+    "0087.png": {
+      "hold": 0.5433
+    },
+    "0088.png": {
+      "hold": 0.5742
+    },
+    "0089.png": {
+      "hold": 0.5533
+    },
+    "0090.png": {
+      "hold": 0.5675
+    },
+    "0091.png": {
+      "hold": 0.5608
+    },
+    "0092.png": {
+      "hold": 0.565
+    },
+    "0093.png": {
+      "hold": 0.5633
+    },
+    "0094.png": {
+      "hold": 0.5692
+    },
+    "0095.png": {
+      "hold": 0.56
+    },
+    "0096.png": {
+      "hold": 0.5658
+    },
+    "0097.png": {
+      "hold": 0.5625
+    },
+    "0098.png": {
+      "hold": 0.5617
+    },
+    "0099.png": {
+      "hold": 0.5842
+    },
+    "0100.png": {
+      "hold": 0.5567
+    },
+    "0101.png": {
+      "hold": 0.5575
+    },
+    "0102.png": {
+      "hold": 0.5558
+    },
+    "0103.png": {
+      "hold": 0.5783
+    },
+    "0104.png": {
+      "hold": 0.5708
+    },
+    "0105.png": {
+      "hold": 0.5542
+    },
+    "0106.png": {
+      "hold": 0.5708
+    },
+    "0107.png": {
+      "hold": 0.5658
+    },
+    "0108.png": {
+      "hold": 0.57
+    },
+    "0109.png": {
+      "hold": 0.5725
+    },
+    "0110.png": {
+      "hold": 0.5517
+    },
+    "0111.png": {
+      "hold": 0.5608
+    },
+    "0112.png": {
+      "hold": 0.5675
+    },
+    "0113.png": {
+      "hold": 0.5625
+    },
+    "0115.png": {
+      "hold": 0.5567
+    },
+    "0116.png": {
+      "hold": 0.555
+    },
+    "0117.png": {
+      "hold": 0.5592
+    },
+    "0118.png": {
+      "hold": 0.5642
+    },
+    "0119.png": {
+      "hold": 0.57
+    },
+    "0120.png": {
+      "hold": 0.5708
+    },
+    "0121.png": {
+      "hold": 0.5542
+    },
+    "0122.png": {
+      "hold": 0.5592
+    },
+    "0123.png": {
+      "hold": 0.5583
+    },
+    "0124.png": {
+      "hold": 0.55
+    },
+    "0125.png": {
+      "hold": 0.56
+    },
+    "0126.png": {
+      "hold": 0.58
+    },
+    "0127.png": {
+      "hold": 0.5525
+    },
+    "0128.png": {
+      "hold": 0.5408
+    },
+    "0129.png": {
+      "hold": 0.5508
+    },
+    "0130.png": {
+      "hold": 0.5567
+    },
+    "0131.png": {
+      "hold": 0.5517
+    },
+    "0132.png": {
+      "hold": 0.5533
+    },
+    "0133.png": {
+      "hold": 0.5617
+    },
+    "0134.png": {
+      "hold": 0.575
+    },
+    "0142.png": {
+      "hold": 0.5483
+    },
+    "0143.png": {
+      "hold": 0.5483
     },
     "0145.png": {
-      "hold": 0.6308
+      "hold": 0.5475
     },
     "0146.png": {
-      "hold": 0.6417
+      "hold": 0.5408
     },
     "0147.png": {
-      "hold": 0.6225
+      "hold": 0.5408
     },
     "0148.png": {
-      "hold": 0.62
+      "hold": 0.55
     },
     "0149.png": {
-      "hold": 0.6192
+      "hold": 0.5342
     },
     "0150.png": {
-      "hold": 0.6033
+      "hold": 0.5567
     },
     "0151.png": {
-      "hold": 0.6083
+      "hold": 0.5408
     },
     "0152.png": {
-      "hold": 0.6133
+      "hold": 0.5567
     },
     "0153.png": {
-      "hold": 0.8525
+      "hold": 0.5608
     },
-    "0418.png": {
-      "hold": 0.9983
+    "0154.png": {
+      "hold": 0.5558
     },
-    "0419.png": {
-      "hold": 0.9708
+    "0155.png": {
+      "hold": 0.55
     },
-    "0420.png": {
-      "hold": 1.0167
+    "0156.png": {
+      "hold": 0.5708
     },
-    "0421.png": {
-      "hold": 1.0017
+    "0157.png": {
+      "hold": 0.5517
     },
-    "0422.png": {
-      "hold": 0.965
+    "0158.png": {
+      "hold": 0.5533
     },
-    "0424.png": {
-      "hold": 1.0542
+    "0159.png": {
+      "hold": 0.5558
     },
-    "0425.png": {
-      "hold": 1.0167
+    "0160.png": {
+      "hold": 0.5525
     },
-    "0427.png": {
-      "hold": 1.0067
+    "0161.png": {
+      "hold": 0.5392
     },
-    "0428.png": {
-      "hold": 0.9483
+    "0162.png": {
+      "hold": 0.55
     },
-    "0429.png": {
-      "hold": 0.9675
+    "0163.png": {
+      "hold": 0.5658
     },
-    "0430.png": {
-      "hold": 1.0342
+    "0164.png": {
+      "hold": 0.5667
     },
-    "0431.png": {
-      "hold": 1.2733
+    "0165.png": {
+      "hold": 0.5808
+    },
+    "0166.png": {
+      "hold": 0.5492
+    },
+    "0167.png": {
+      "hold": 0.5567
+    },
+    "0168.png": {
+      "hold": 0.5525
+    },
+    "0169.png": {
+      "hold": 0.555
+    },
+    "0170.png": {
+      "hold": 0.5658
+    },
+    "0171.png": {
+      "hold": 0.5508
+    },
+    "0172.png": {
+      "hold": 0.5567
+    },
+    "0173.png": {
+      "hold": 0.5617
+    },
+    "0174.png": {
+      "hold": 0.5675
+    },
+    "0175.png": {
+      "hold": 0.5783
+    },
+    "0176.png": {
+      "hold": 0.5642
+    },
+    "0177.png": {
+      "hold": 0.5667
+    },
+    "0178.png": {
+      "hold": 0.5725
+    },
+    "0179.png": {
+      "hold": 0.56
+    },
+    "0180.png": {
+      "hold": 0.5717
+    },
+    "0182.png": {
+      "hold": 0.5775
+    },
+    "0183.png": {
+      "hold": 0.5625
+    },
+    "0184.png": {
+      "hold": 0.5525
+    },
+    "0185.png": {
+      "hold": 0.5567
+    },
+    "0186.png": {
+      "hold": 0.5608
+    },
+    "0187.png": {
+      "hold": 0.5483
+    },
+    "0188.png": {
+      "hold": 0.555
+    },
+    "0189.png": {
+      "hold": 0.5717
+    },
+    "0190.png": {
+      "hold": 0.5708
+    },
+    "0191.png": {
+      "hold": 0.5508
+    },
+    "0192.png": {
+      "hold": 0.5558
+    },
+    "0193.png": {
+      "hold": 0.5642
+    },
+    "0194.png": {
+      "hold": 0.5533
+    },
+    "0195.png": {
+      "hold": 0.5533
+    },
+    "0196.png": {
+      "hold": 0.5533
+    },
+    "0197.png": {
+      "hold": 0.555
+    },
+    "0198.png": {
+      "hold": 0.5592
+    },
+    "0199.png": {
+      "hold": 0.5592
+    },
+    "0200.png": {
+      "hold": 0.5725
+    },
+    "0201.png": {
+      "hold": 0.5583
+    },
+    "0202.png": {
+      "hold": 0.5867
+    },
+    "0203.png": {
+      "hold": 0.5575
+    },
+    "0204.png": {
+      "hold": 0.5558
+    },
+    "0205.png": {
+      "hold": 0.55
+    },
+    "0206.png": {
+      "hold": 0.58
+    },
+    "0207.png": {
+      "hold": 0.5767
+    },
+    "0208.png": {
+      "hold": 0.56
+    },
+    "0209.png": {
+      "hold": 0.5675
+    },
+    "0210.png": {
+      "hold": 0.5667
+    },
+    "0211.png": {
+      "hold": 0.5542
+    },
+    "0212.png": {
+      "hold": 0.5533
+    },
+    "0213.png": {
+      "hold": 0.56
+    },
+    "0214.png": {
+      "hold": 0.5533
+    },
+    "0216.png": {
+      "hold": 0.5817
+    },
+    "0217.png": {
+      "hold": 0.5717
+    },
+    "0218.png": {
+      "hold": 0.57
+    },
+    "0219.png": {
+      "hold": 0.5683
+    },
+    "0220.png": {
+      "hold": 0.5542
+    },
+    "0222.png": {
+      "hold": 0.5683
+    },
+    "0223.png": {
+      "hold": 0.5517
+    },
+    "0224.png": {
+      "hold": 0.5475
+    },
+    "0225.png": {
+      "hold": 0.5583
+    },
+    "0226.png": {
+      "hold": 0.5667
+    },
+    "0227.png": {
+      "hold": 0.5925
+    },
+    "0228.png": {
+      "hold": 0.5608
+    },
+    "0229.png": {
+      "hold": 0.5583
+    },
+    "0230.png": {
+      "hold": 0.5667
+    },
+    "0231.png": {
+      "hold": 0.5625
+    },
+    "0232.png": {
+      "hold": 0.5533
+    },
+    "0233.png": {
+      "hold": 0.5675
+    },
+    "0234.png": {
+      "hold": 0.555
+    },
+    "0235.png": {
+      "hold": 0.5667
+    },
+    "0236.png": {
+      "hold": 0.5817
+    },
+    "0237.png": {
+      "hold": 0.5583
+    },
+    "0238.png": {
+      "hold": 0.56
+    },
+    "0239.png": {
+      "hold": 0.5567
+    },
+    "0240.png": {
+      "hold": 0.565
+    },
+    "0241.png": {
+      "hold": 0.5625
+    },
+    "0242.png": {
+      "hold": 0.5625
+    },
+    "0243.png": {
+      "hold": 0.5533
+    },
+    "0244.png": {
+      "hold": 0.5642
+    },
+    "0245.png": {
+      "hold": 0.5533
+    },
+    "0246.png": {
+      "hold": 0.555
+    },
+    "0247.png": {
+      "hold": 0.5467
+    },
+    "0248.png": {
+      "hold": 0.5433
+    },
+    "0249.png": {
+      "hold": 0.5592
+    },
+    "0250.png": {
+      "hold": 0.5583
+    },
+    "0251.png": {
+      "hold": 0.5483
+    },
+    "0252.png": {
+      "hold": 0.8333
+    },
+    "0335.png": {
+      "hold": 0.945
+    },
+    "0336.png": {
+      "hold": 0.9433
+    },
+    "0337.png": {
+      "hold": 0.9433
+    },
+    "0338.png": {
+      "hold": 0.9417
+    },
+    "0339.png": {
+      "hold": 0.9442
+    },
+    "0341.png": {
+      "hold": 0.935
+    },
+    "0342.png": {
+      "hold": 0.9267
+    },
+    "0343.png": {
+      "hold": 0.9283
+    },
+    "0344.png": {
+      "hold": 0.9417
+    },
+    "0346.png": {
+      "hold": 0.915
+    },
+    "0347.png": {
+      "hold": 0.9
+    },
+    "0348.png": {
+      "hold": 0.9025
+    },
+    "0349.png": {
+      "hold": 0.8883
+    },
+    "0350.png": {
+      "hold": 0.9092
+    },
+    "0351.png": {
+      "hold": 0.9125
+    },
+    "0352.png": {
+      "hold": 0.8883
+    },
+    "0353.png": {
+      "hold": 0.8917
+    },
+    "0354.png": {
+      "hold": 0.9008
+    },
+    "0355.png": {
+      "hold": 1.1492
     }
   }
 };
 const NARRATED = !!new URLSearchParams(location.search).get('voice');
 if (NARRATED) {
   SPEC.pollRunMax = 1.0;
-  for (const [k, v] of Object.entries({ '0154.png': { travel: 0.45, dwell: 0.1 }, '0155.png': { hold: 0.35 },
-                                        '0432.png': { travel: 0.45, dwell: 0.1 }, '0433.png': { hold: 0.35 } }))
+  for (const [k, v] of Object.entries({"0254.png": {"travel": 0.45, "dwell": 0.1}, "0255.png": {"hold": 0.35}, "0357.png": {"travel": 0.45, "dwell": 0.1}}))
     Object.assign(SPEC.edit[k] ??= {}, v);
-  for (let n = 172; n <= 188; n++) (SPEC.edit[String(n).padStart(4, '0') + '.png'] ??= {}).skip = true;
 }

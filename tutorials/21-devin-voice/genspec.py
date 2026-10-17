@@ -9,17 +9,16 @@ def ed(n, **k): E.setdefault(I(n), {}).update(k)
 def skip(a, b):
     for n in range(a, b + 1): ed(n, skip=True)
 
-ed(0, hold=2.6, cursor=False, cap="Build a cross-platform mobile game, just by talking",
-   vo="Let's build a cross-platform mobile game, just by talking to Devin. One codebase that runs on iOS, Android, and the web.")
-ed(1, hold=1.6, cap='Devin Voice uses ChatGPT voice under the hood',
-   vo="And here's the big part: Devin Voice uses ChatGPT voice under the hood, so it feels like a real conversation.")
-ed(3, hl=True, hold=1.0, cap='Pick macOS so Devin can run the iPhone simulator', capPos='auto',
-   vo="First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.")
+# The live gameplay intro (intro/) is spliced in front of this cut by splice.py; the kit cut starts at the session.
+ed(0, hold=2.4, cursor=False, cap='Start in a new Devin session',
+   vo="Here's how I built it, starting from a new Devin session.")
+ed(3, hl=True, hold=1.0, cap='Pick macOS so Devin can run the iPhone simulator', capPos='auto')
+ed(1, vo="First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.")
 ed(5, hl=True)
 ed(6, hold=1.4, hl=True, capPos='auto', cap='Ubuntu → macOS')
 ed(7, hold=0.8)
 ed(8, cap='Start a voice call with the waveform button', capPos='auto', hl=True,
-   vo="Then click the waveform button beside the message box to start a voice call.")
+   vo="Then click the waveform button beside the message box to start a voice call. Devin Voice uses ChatGPT voice under the hood.")
 
 calls = {}
 for n, b in enumerate(B):
@@ -29,11 +28,11 @@ for name in calls:
     m = json.load(open(os.path.join(S, name + '.json')))
     kept[name] = [(n, b) for n, b in calls[name] if m['t0'] <= b['wall'] < m['t1']]
 CAPS1 = {'greeting': 'Devin picks up and says hi', 'say0': 'Pitch the game: Jumpy Otter, one Expo codebase',
-         'say1': 'An otter hopping through San Francisco', 'interrupt1': 'Interrupt mid-answer: add creatine bottles and a combo meter',
-         'say2': 'Docs tip: ask Devin to speak faster', 'say3': 'Test on web and iPhone, and start an Ubuntu Devin for Android',
+         'say1': 'Add Coach Otto, a voice sidekick built on GPT-Live-1', 'interrupt1': 'Interrupt mid-answer: Otto runs game tools and switches style',
+         'say2': 'Docs tip: ask Devin to speak faster', 'say3': 'Keep the key on a server; test web, iPhone, and Android on Ubuntu',
          'say4': 'Then let Devin start building'}
 CAPS2 = {'greeting': 'Same session: the call picks up where it left off', 'say0': "Ask how the game's coming along",
-         'interrupt0': 'Interrupt Devin mid-sentence; it keeps going'}
+         'interrupt0': 'Interrupt Devin mid-sentence'}
 for name, caps in (('call1', CAPS1), ('call2', CAPS2)):
     seen = set()
     for n, b in kept[name]:
@@ -45,54 +44,56 @@ for n in range(r1 + 1, r1 + 7): ed(n, hl='keep')
 r3 = [n for n, b in kept['call1'] if b['phase'] == 'reply3'][0] + 6
 ed(r3, cap='Every turn lands in the session history')
 
-ed(154, cap='End the call; Devin keeps working', hl=True)
-ed(156, cap='Devin builds Jumpy Otter with Expo and three.js', badge='Sped up',
-   vo="Devin sets up the Expo project, builds the voxel city with three.js, and wires up the traffic, piers, creatine and combo meter.")
-# watch stills: only those where Devin is working and the Computer view has no 'Take control' overlay
-skip(189, 307)
-ed(308, hold=2.0, cap='It plays the web build in Chrome',
-   vo="Then it plays the web build in Chrome with Computer Use, on its own Mac.")
-skip(309, 413)   # usage-limit pauses and earlier rejoin attempts
-skip(414, 414)
-ed(415, hold=1.2, hl=True, cap='Rejoin the call from inside the session',
+mark = lambda m, after=0: [n for n, b in enumerate(B) if b.get('mark') == m and n > after][0]
+end1, rejoin = mark('call1-ended'), mark('rejoin')
+ed(end1, cap='End the call; Devin keeps working', hl=True)
+ed(end1 + 1, hold=1.6, cap='Devin builds the game and wires up GPT-Live-1',
+   vo="Devin sets up the Expo project, builds the voxel city, and connects Coach Otter to GPT-Live-1 through a small server that keeps the API key.")
+ed(end1 + 4, badge='Sped up')
+skip(end1 + 5, 329)
+ed(330, hold=1.6, cap='The game running on the iPhone simulator',
+   vo="Soon the game is running on the iPhone simulator, live in the Computer tab.")
+ed(rejoin, hold=1.2, hl=True, cap='Rejoin the call from inside the session',
    vo="Mid-build, you can rejoin the call from inside the session and ask how the game's coming along.")
-ed(432, hl=True, cap='End the call again')
-skip(434, 489)
-ed(490, hold=2.0, cap='Then the iPhone simulator, live in the Computer tab',
-   vo="Then it switches to the iPhone simulator, and you can watch it play live in the Computer tab.")
-skip(491, 849)
-ed(850, cap='Devin Review flags a bug; Devin fixes it and plays again', badge='Sped up',
-   vo="It opens a pull request. Devin Review flags a combo bug, and Devin fixes it and plays the game again.")
-marks = [n for n, b in enumerate(B) if b.get('mark') == 'card' and n > 1367]
-cards = marks[:2] + marks[-1:]   # Chrome, iPhone, then the last Android take (seeked to gameplay)
-assert len(marks) >= 3, marks
-skip(cards[1] + 25, cards[2] - 1)
-skip(865, cards[0] - 1)
-chrome, iphone, android = cards
-ed(chrome, hold=1.6, cap='Every test run comes with a recording',
-   vo="Every test run comes with a recording. In Chrome, the otter picks up creatine, rides the piers, and all nine checks pass.")
-ed(chrome + 3, cap='Chrome: 9 passed')
-ed(iphone, hold=1.2, cap='iPhone: combo, creatine pickup, 8 passed',
-   vo="On the iPhone, the combo meter climbs, a creatine bottle gets picked up, and all eight checks pass.")
-skip(android, android + 1)
-ed(android + 2, hold=1.2, cap='Android, tested by the Ubuntu Devin',
-   vo="For Android, a second Devin on Ubuntu ran the game on an Android emulator. Screen fill, the combo and swipes pass. Creatine wasn't verified there, and the software emulator runs at a low frame rate.")
-ed(android + 3, cap='Android emulator: 3 of 4 checks pass')
-ed(android + 22, hold=2.2, cap='One conversation, one codebase: iOS, Android and web',
-   vo="One conversation, one codebase, tested on iOS, Android, and the web.")
-skip(android + 23, len(B) - 1)
-spec = {'title': 'Devin Voice', 'subtitle': 'Talk a game into existence, then watch Devin test it',
-        'outro': 'One call: iOS, Android and web', 'speed': 3, 'cps': 48, 'capPos': 'bottom',
+end2 = mark('call2-ended')
+ed(end2, hl=True, cap='End the call again')
+skip(end2 + 1, 513)
+ed(514, hold=2.0, cap='A second Devin on Ubuntu tests Android',
+   vo="Devin starts a second Devin on Ubuntu to test Android. Its update says Coach Otter already talks on the web, and runs tools while he talks.")
+skip(515, 635)
+ed(636, hold=1.4, cap='Computer Use plays the web build in Chrome',
+   vo="Then it plays the web build in Chrome with Computer Use.")
+skip(671, 699)
+ed(700, hold=1.4, cap='iPhone simulator: Coach tested with typed input',
+   vo="On the iPhone simulator, audio doesn't work on this Mac, so Devin types to Coach instead of talking.")
+skip(701, 732); skip(734, 744); skip(746, 750); skip(752, 1093)
+web, ios, android = [n for n, b in enumerate(B) if b.get('mark') == 'card']
+ed(web, hold=1.6, cap='Every test run comes with a recording and checks',
+   vo="Every test comes with a recording and pass fail checks.")
+ed(web + 3, cap='Chrome: 11 passed, 1 untested',
+   vo="In Chrome, Coach connects, runs the boost, night, and best score tools, and switches style. Eleven checks pass, and one is left untested.")
+skip(web + 27, ios - 1)
+ed(ios, hold=1.2, cap='iPhone: 8 passed, with typed input',
+   vo="On the iPhone, the tools, both styles, and reconnecting all work, and eight checks pass. The voice you heard at the start ran in Chrome.")
+skip(ios + 27, android - 1)
+ed(android, hold=1.4, cap='Android, tested by the Ubuntu Devin: 12 passed',
+   vo="The Ubuntu Devin ran the game on an Android emulator with software rendering. All twelve checks pass, Coach tools included.")
+skip(android + 28, mark('tab') - 1)
+tab = mark('tab')
+ed(tab + 2, hold=2.2, cap='Devin opens a PR with the reports')
+ed(tab, vo="Then it opens a pull request with the code, the reports, and the recordings.")
+spec = {'title': 'Devin Voice + GPT-Live-1', 'subtitle': 'Build and test a cross-platform game by voice',
+        'outro': 'One call: iOS, Android and web',
+        'voOutro': "That's how you build and test a cross-platform game with your voice, using Devin Voice and GPT-Live-1.", 'speed': 3, 'cps': 48, 'capPos': 'bottom',
         'pollRunMax': 2.5, 'edit': E}
 # narrated cut only: keep silences between lines near 1 s (calls untouched)
+I4 = lambda n: f'{n:04d}.png'
 NARRATED_JS = """const NARRATED = !!new URLSearchParams(location.search).get('voice');
 if (NARRATED) {
   SPEC.pollRunMax = 1.0;
-  for (const [k, v] of Object.entries({ '0154.png': { travel: 0.45, dwell: 0.1 }, '0155.png': { hold: 0.35 },
-                                        '0432.png': { travel: 0.45, dwell: 0.1 }, '0433.png': { hold: 0.35 } }))
+  for (const [k, v] of Object.entries(%s))
     Object.assign(SPEC.edit[k] ??= {}, v);
-  for (let n = 172; n <= 188; n++) (SPEC.edit[String(n).padStart(4, '0') + '.png'] ??= {}).skip = true;
 }
-"""
+""" % json.dumps({I4(end1): {'travel': 0.45, 'dwell': 0.1}, I4(end1 + 1): {'hold': 0.35}, I4(end2): {'travel': 0.45, 'dwell': 0.1}})
 open(os.path.join(D, 'spec.js'), 'w').write('window.SPEC = ' + json.dumps(spec, indent=2) + ';\n' + NARRATED_JS)
 subprocess.run(['python3', os.path.join(D, 'synccall.py')], check=True)

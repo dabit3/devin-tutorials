@@ -6,6 +6,7 @@
 //   RESUME=1 PHASE=end SESSION=<url> CARD=<recording title> node capture.mjs
 //   RESUME=1 PHASE=agents SESSION=<url> node capture.mjs                 (the Ubuntu Devin under the Agents tab)
 //   RESUME=1 PHASE=summary SESSION=<url> node capture.mjs
+//   RESUME=1 PHASE=tab SESSION=<url> TAB="PR #85" node capture.mjs                (open a right-panel tab)
 // The VM has no microphone: voice-hook.js plays call/c*.wav (Nader's ElevenLabs voice) into getUserMedia and records
 // Devin's real WebRTC audio. Each call writes <shots>/callN.json + callN.webm; mixcall.py turns them into audio/callN.wav.
 import fs from 'fs';
@@ -211,6 +212,17 @@ if (PHASE === 'summary') {
   await scrollChat(-Number(process.env.UP || 700)); await sleep(1500);
   await r.shot({ hold: 2.0, mark: 'summary' });
   for (let i = 0; i < Number(process.env.STEPS || 3); i++) { await scrollChat(230); await sleep(1300); await r.shot({ hold: 1.6 }); }
+}
+if (PHASE === 'tab') {   // TAB=<tab label prefix>: open a right-panel tab (e.g. the PR) and hold on it
+  if (process.env.SESSION) await r.goto(process.env.SESSION, 6000);
+  await tidy();
+  const t = await p.evaluate(label => {
+    const e = [...document.querySelectorAll('button, a, [role=tab]')].find(e => e.innerText.trim().startsWith(label) && e.getBoundingClientRect().width);
+    if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2, w: b.width, h: b.height };
+  }, process.env.TAB);
+  if (!t) throw new Error('tab not found: ' + process.env.TAB);
+  await r.click(t, { wait: 3500, mark: 'tab' });
+  for (let i = 0; i < Number(process.env.STEPS || 3); i++) { await sleep(1200); await r.shot({ hold: 1.6 }); }
 }
 if (PHASE === 'agents') {
   // the Ubuntu Devin started for Android shows up under the session's Agents tab
