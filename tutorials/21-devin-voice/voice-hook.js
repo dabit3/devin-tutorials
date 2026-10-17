@@ -65,7 +65,9 @@
       if (t.interrupt) {
         const since = Date.now(); V.phase = 'reply' + i;
         while (V.lastVoice < since && Date.now() - since < 25000) await sleep(40);
-        await sleep(t.interrupt.after); V.phase = 'interrupt' + i;
+        // barge in only once Devin has been audibly talking for `after` ms, so a short "let me check" doesn't eat the timer
+        for (let voiced = 0; voiced < t.interrupt.after && Date.now() - since < 45000; ) { await sleep(40); if (Date.now() - V.lastVoice < 120) voiced += 40; }
+        V.phase = 'interrupt' + i;
         for (const n of t.interrupt.say) await V.play(n);
       }
       V.phase = 'reply' + i; await V.reply(Date.now());
