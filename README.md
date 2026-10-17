@@ -82,6 +82,10 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 76. **Devin CLI: what's new in v3000.11.92** (overview, narrated by Nader, 1:55): A dark-mode overview of the October 14, 2026 stable release, filmed in the real CLI with Ghostty's GitHub Dark High Contrast palette. `/goal` runs a real task in orbit-demo until tests, lint and build pass, with a steering message and Ctrl+C clearing a draft mid-run; then Alt+Enter in the model picker, `devin mcp list` with its new `Source:` line and `devin cloud`, plus build-up cards for config, plugins, hooks, MCP, terminal and the Changed and Fixed highlights. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/76-cli-whats-new-overview/76-cli-whats-new-overview-nader.mp4) · [Voice script](tutorials/76-cli-whats-new-overview/voice-script.md)
 
+<!-- -->
+
+40. **Pitch Tank: Devin Voice + GPT-Live-1** (DUR_CAP): Build and test a cross-platform Expo game just by talking to Devin. In a real Devin Voice call, pitch Pitch Tank, a game where you pitch a startup out loud to cartoon investors voiced by OpenAI's GPT-Live-1 API, interrupt Devin to add mentors vs. sharks, then rejoin the call mid-build. Devin tests it with Computer Use in Chrome and on the iPhone Simulator, a second Devin on Ubuntu tests Android, and it opens a PR. The call audio and the investors' voices are real. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/40-voice-pitch-tank/40-voice-pitch-tank.mp4)
+
 ## Narrated tutorials
 
 Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, with spoken narration and subtitles. The originals without a voice are unchanged.
@@ -124,6 +128,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Dynamic Workflows: how it works (overview), narrated by Nader** (1:59): What a dynamic workflow is, why scripted coordination helps with multi-part jobs, parallel work and connected stages, live progress and resumability, `pipeline` vs `parallel`, a real 12-reviewer accessibility audit, and when to use a workflow. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/32-dynamic-workflows-overview/32-dynamic-workflows-overview-nader.mp4) · [Voice script](tutorials/32-dynamic-workflows-overview/voice-script.md)
 - **Dynamic Workflows, narrated by Nader** (2:05): A real five-component audit, fix and verify workflow: the script, the live workflow panel, one agent's structured output, the roll-up and a fix PR. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/33-dynamic-workflows/33-dynamic-workflows-nader.mp4) · [Voice script](tutorials/33-dynamic-workflows/voice-script.md)
 - **Devin Primitives: when to use what (overview), narrated by Nader** (1:42): When to use AGENTS.md, rules, Memory, Skills, Playbooks, MCP servers and Plugins, where each lives in the product, and how to build one. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview-nader.mp4) · [Voice script](tutorials/34-devin-primitives-overview/voice-script.md) · [Cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md)
+- **Pitch Tank: Devin Voice + GPT-Live-1, narrated by Nader** (DUR_NAR): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/40-voice-pitch-tank/40-voice-pitch-tank-nader.mp4) · [Voice script](tutorials/40-voice-pitch-tank/voice-script.md)
 
 ## Silent conference video
 
