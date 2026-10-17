@@ -9,11 +9,10 @@ head, _, tail = open(P).read().partition('\n};\n')  # tail: narrated-only JS aft
 spec = json.loads(re.sub(r'^\s*window\.SPEC\s*=\s*', '', head) + '\n}')
 beats = json.load(open(os.path.join(S, 'beats.json')))
 pace, E = spec.get('pace', 1.2), spec.setdefault('edit', {})
-TRIM = json.load(open(os.path.join(D, 'call', 'trim.json'))) if os.path.exists(os.path.join(D, 'call', 'trim.json')) else {}
+from calltrim import window
 for name in sorted({b['call'] for b in beats if b.get('call')}):
     m = json.load(open(os.path.join(S, name + '.json')))
-    trim = TRIM.get(name)
-    if trim: m['t1'] = min(m['t1'], m['t0'] + trim * 1000)
+    m = window(name, m, beats)
     for b in beats:
         if b.get('call') == name and not (m['t0'] <= b['wall'] < m['t1']): E.setdefault(b['img'], {})['skip'] = True
     cs = [b for b in beats if b.get('call') == name and m['t0'] <= b['wall'] < m['t1']]

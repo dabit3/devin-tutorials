@@ -16,15 +16,15 @@ window.SPEC = {
   ],
   "edit": {
     "demo/gate.jpg": {
-      "hold": 2.4,
+      "hold": 1.8,
       "cursor": false,
-      "cap": "Dungeon Voice: a fantasy adventure you play by talking",
+      "cap": "Dungeon Voice: a fantasy game you play by talking",
       "vo": "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
     },
     "demo/bridge.jpg": {
-      "hold": 2.0,
+      "hold": 1.6,
       "cursor": false,
-      "cap": "Built with Devin and Devin Voice; the dungeon master is GPT-Live-1",
+      "cap": "Built with Devin Voice; the DM is GPT-Live-1",
       "vo": "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
     },
     "demo/demoA-000.jpg": {
@@ -1393,9 +1393,9 @@ window.SPEC = {
       "fade": 0
     },
     "demo/troll.jpg": {
-      "hold": 1.6,
+      "hold": 1.2,
       "cursor": false,
-      "cap": "It listens while it talks, and runs tools in the background",
+      "cap": "It listens while it talks and runs tools",
       "vo": "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
     },
     "0000.png": {
@@ -1404,11 +1404,26 @@ window.SPEC = {
       "capPos": "auto",
       "vo": "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
     },
+    "0001.png": {
+      "hold": 0.5
+    },
+    "0002.png": {
+      "hold": 0.5
+    },
+    "0004.png": {
+      "hold": 0.5
+    },
+    "0007.png": {
+      "hold": 0.5
+    },
+    "0008.png": {
+      "hold": 0.5
+    },
     "0003.png": {
       "hl": true,
       "hold": 0.7,
       "capPos": "auto",
-      "cap": "Pick macOS so Devin can run the iPhone simulator"
+      "cap": "Pick macOS for the iPhone simulator"
     },
     "0005.png": {
       "hl": true
@@ -1420,14 +1435,14 @@ window.SPEC = {
       "cap": "Ubuntu \u2192 macOS"
     },
     "0009.png": {
-      "cap": "Start a voice call with the waveform button",
+      "cap": "Start a voice call",
       "capPos": "auto",
       "hl": true,
       "vo": "Then I click the waveform button beside the message box to start a voice call."
     },
-    "0010.png": {
+    "0013.png": {
       "cap": "Devin picks up and says hi",
-      "hold": 1.8925,
+      "hold": 0.5292,
       "clip": "call1"
     },
     "0022.png": {
@@ -1455,11 +1470,9 @@ window.SPEC = {
       "cap": "Then let Devin start building",
       "hold": 0.555
     },
-    "0365.png": {
+    "0369.png": {
       "cap": "Same session: the call picks up where it left off",
-      "cam": "reset",
-      "camDur": 0.6,
-      "hold": 0.9558,
+      "hold": 0.9483,
       "clip": "call2"
     },
     "0374.png": {
@@ -1510,7 +1523,7 @@ window.SPEC = {
     },
     "0291.png": {
       "hl": true,
-      "cap": "End the call; Devin keeps working"
+      "cap": "End the call"
     },
     "0292.png": {
       "hold": 0.8,
@@ -1519,91 +1532,111 @@ window.SPEC = {
       "vo": "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
     },
     "0293.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0294.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0295.png": {
       "hold": 0.2
     },
     "0296.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0297.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0298.png": {
       "hold": 0.2
     },
     "0299.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0300.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0301.png": {
       "hold": 0.2
     },
     "0302.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0303.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0304.png": {
       "hold": 0.2
     },
     "0305.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0306.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0307.png": {
       "hold": 0.2
     },
     "0308.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0309.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0310.png": {
       "hold": 0.2
     },
     "0311.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0312.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0313.png": {
       "hold": 0.2
     },
     "0314.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0315.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0316.png": {
       "hold": 0.2
     },
     "0317.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0318.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0319.png": {
       "hold": 0.2
     },
     "0320.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0321.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0322.png": {
       "hold": 0.6
@@ -1746,6 +1779,11 @@ window.SPEC = {
     "0364.png": {
       "hold": 0.6
     },
+    "0365.png": {
+      "cam": "reset",
+      "camDur": 0.6,
+      "skip": true
+    },
     "0387.png": {
       "hl": true,
       "cap": "End the call again"
@@ -1836,7 +1874,7 @@ window.SPEC = {
     },
     "0416.png": {
       "badge": "",
-      "hold": 2.4,
+      "hold": 2.0,
       "cap": "Devin opens a PR and starts an Ubuntu Devin for Android",
       "cam": {
         "x": 320,
@@ -2361,197 +2399,197 @@ window.SPEC = {
       "vo": "Devin tests the web version in Chrome first."
     },
     "0633.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0634.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0635.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0636.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0637.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up",
       "cap": "A typed action rolls the d20 and updates the room",
       "vo": "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
     },
     "0638.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0639.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0640.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0641.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0642.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0643.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0644.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0645.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0646.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0647.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0648.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0649.png": {
-      "hold": 0.35,
+      "hold": 0.25,
       "badge": "Sped up"
     },
     "0652.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0653.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0654.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0655.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up",
       "cap": "iPhone Simulator: Devin added a virtual mic, then the DM narrates",
       "vo": "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
     },
     "0656.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0657.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0658.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0659.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0660.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0661.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0662.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0663.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0664.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0665.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0666.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0667.png": {
-      "hold": 0.4,
+      "hold": 0.3,
       "badge": "Sped up"
     },
     "0668.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up",
-      "cap": "Comedic switch and saved progress pass on iPhone too",
+      "cap": "Comedic narrator and saved game pass on iPhone",
       "vo": "The comedic narrator and saved progress pass on iPhone too."
     },
     "0669.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up"
     },
     "0670.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up"
     },
     "0671.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up"
     },
     "0672.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up"
     },
     "0673.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up"
     },
     "0674.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up"
     },
     "0675.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up"
     },
     "0676.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up"
     },
     "0677.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up"
     },
     "0678.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up"
     },
     "0679.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up"
     },
     "0680.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up"
     },
     "0681.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "badge": "Sped up"
     },
     "0584.png": {
@@ -2564,145 +2602,144 @@ window.SPEC = {
       "hold": 0.5
     },
     "0586.png": {
-      "hold": 1.0,
-      "cap": "Android: 4 checks passed"
+      "hold": 0.6
     },
     "0587.png": {
-      "hold": 0.25
+      "hold": 0.2
     },
     "0588.png": {
-      "hold": 0.25
+      "hold": 0.2
     },
     "0589.png": {
-      "hold": 0.25
+      "hold": 0.2
     },
     "0590.png": {
-      "hold": 0.25
+      "hold": 0.2
     },
     "0591.png": {
-      "hold": 0.25
+      "hold": 0.2
     },
     "0592.png": {
-      "hold": 0.25
+      "hold": 0.2
     },
     "0593.png": {
-      "hold": 0.25
+      "hold": 0.2
     },
     "0594.png": {
-      "hold": 0.25
+      "hold": 0.2
     },
     "0595.png": {
-      "hold": 0.25
+      "hold": 0.2
     },
     "0596.png": {
-      "hold": 0.25
+      "hold": 0.2
     },
     "0597.png": {
-      "hold": 0.25
+      "hold": 0.2
     },
     "0598.png": {
-      "hold": 0.25
+      "hold": 0.2
     },
     "0599.png": {
-      "hold": 0.25
+      "hold": 0.2
     },
     "0600.png": {
-      "hold": 2.2,
-      "cap": "No sound on that machine: DM voice and dice animation not checked there",
+      "hold": 1.8,
+      "cap": "No sound there: DM voice and dice spin not checked",
       "vo": "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
     },
     "0601.png": {
-      "hold": 0.3
+      "hold": 0.22
     },
     "0602.png": {
-      "hold": 0.3
+      "hold": 0.22
     },
     "0603.png": {
-      "hold": 0.3
+      "hold": 0.22
     },
     "0604.png": {
-      "hold": 0.3
+      "hold": 0.22
     },
     "0605.png": {
-      "hold": 0.3
+      "hold": 0.22
     },
     "0606.png": {
-      "hold": 0.3
+      "hold": 0.22
     },
     "0607.png": {
-      "hold": 0.3
+      "hold": 0.22
     },
     "0608.png": {
-      "hold": 0.3
+      "hold": 0.22
     },
     "0609.png": {
-      "hold": 0.3
+      "hold": 0.22
     },
     "0610.png": {
-      "hold": 0.3
+      "hold": 0.22
     },
     "0611.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0612.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0613.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0614.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0615.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0616.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0617.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0618.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0619.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0620.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0621.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0622.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0623.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0624.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0625.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0626.png": {
-      "hold": 0.3,
+      "hold": 0.22,
       "skip": true
     },
     "0629.png": {
@@ -2711,24 +2748,138 @@ window.SPEC = {
       "cap": "Every check passes on web, iPhone and Android"
     },
     "0630.png": {
-      "hold": 3.0,
-      "cap": "No speakers on the test machines: the DM's voice was heard in my own Chrome run",
+      "hold": 2.4,
+      "cap": "No speakers on test machines; the DM voice above is from my Chrome run",
       "vo": "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
     },
     "demo/outro.jpg": {
-      "hold": 3.0,
+      "hold": 2.4,
       "cursor": false,
       "cap": "One call: iOS, Android and web",
       "vo": "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
     },
+    "0010.png": {
+      "skip": true
+    },
     "0011.png": {
-      "hold": 0.5625
+      "skip": true
     },
     "0012.png": {
-      "hold": 0.5575
+      "skip": true
     },
-    "0013.png": {
-      "hold": 0.5292
+    "0252.png": {
+      "skip": true
+    },
+    "0253.png": {
+      "skip": true
+    },
+    "0254.png": {
+      "skip": true
+    },
+    "0255.png": {
+      "skip": true
+    },
+    "0256.png": {
+      "skip": true
+    },
+    "0257.png": {
+      "skip": true
+    },
+    "0258.png": {
+      "skip": true
+    },
+    "0259.png": {
+      "skip": true
+    },
+    "0260.png": {
+      "skip": true
+    },
+    "0261.png": {
+      "skip": true
+    },
+    "0262.png": {
+      "skip": true
+    },
+    "0263.png": {
+      "skip": true
+    },
+    "0264.png": {
+      "skip": true
+    },
+    "0265.png": {
+      "skip": true
+    },
+    "0266.png": {
+      "skip": true
+    },
+    "0267.png": {
+      "skip": true
+    },
+    "0268.png": {
+      "skip": true
+    },
+    "0269.png": {
+      "skip": true
+    },
+    "0270.png": {
+      "skip": true
+    },
+    "0271.png": {
+      "skip": true
+    },
+    "0272.png": {
+      "skip": true
+    },
+    "0273.png": {
+      "skip": true
+    },
+    "0274.png": {
+      "skip": true
+    },
+    "0275.png": {
+      "skip": true
+    },
+    "0276.png": {
+      "skip": true
+    },
+    "0277.png": {
+      "skip": true
+    },
+    "0278.png": {
+      "skip": true
+    },
+    "0279.png": {
+      "skip": true
+    },
+    "0280.png": {
+      "skip": true
+    },
+    "0281.png": {
+      "skip": true
+    },
+    "0282.png": {
+      "skip": true
+    },
+    "0283.png": {
+      "skip": true
+    },
+    "0284.png": {
+      "skip": true
+    },
+    "0285.png": {
+      "skip": true
+    },
+    "0286.png": {
+      "skip": true
+    },
+    "0287.png": {
+      "skip": true
+    },
+    "0288.png": {
+      "skip": true
+    },
+    "0289.png": {
+      "skip": true
     },
     "0014.png": {
       "hold": 0.5308
@@ -3406,133 +3557,22 @@ window.SPEC = {
       "hold": 0.5467
     },
     "0251.png": {
-      "hold": 0.5542
-    },
-    "0252.png": {
-      "hold": 0.5442
-    },
-    "0253.png": {
-      "hold": 0.5475
-    },
-    "0254.png": {
-      "hold": 0.5492
-    },
-    "0255.png": {
-      "hold": 0.5325
-    },
-    "0256.png": {
-      "hold": 0.5525
-    },
-    "0257.png": {
-      "hold": 0.5292
-    },
-    "0258.png": {
-      "hold": 0.5325
-    },
-    "0259.png": {
-      "hold": 0.5408
-    },
-    "0260.png": {
-      "hold": 0.5542
-    },
-    "0261.png": {
-      "hold": 0.545
-    },
-    "0262.png": {
-      "hold": 0.5558
-    },
-    "0263.png": {
-      "hold": 0.5525
-    },
-    "0264.png": {
-      "hold": 0.5533
-    },
-    "0265.png": {
-      "hold": 0.5267
-    },
-    "0266.png": {
-      "hold": 0.5308
-    },
-    "0267.png": {
-      "hold": 0.5567
-    },
-    "0268.png": {
-      "hold": 0.5533
-    },
-    "0269.png": {
-      "hold": 0.5233
-    },
-    "0270.png": {
-      "hold": 0.5308
-    },
-    "0271.png": {
-      "hold": 0.535
-    },
-    "0272.png": {
-      "hold": 0.5375
-    },
-    "0273.png": {
-      "hold": 0.5775
-    },
-    "0274.png": {
-      "hold": 0.5467
-    },
-    "0275.png": {
-      "hold": 0.545
-    },
-    "0276.png": {
-      "hold": 0.545
-    },
-    "0277.png": {
-      "hold": 0.5583
-    },
-    "0278.png": {
-      "hold": 0.5517
-    },
-    "0279.png": {
-      "hold": 0.5517
-    },
-    "0280.png": {
-      "hold": 0.5442
-    },
-    "0281.png": {
-      "hold": 0.5575
-    },
-    "0282.png": {
-      "hold": 0.54
-    },
-    "0283.png": {
-      "hold": 0.5542
-    },
-    "0284.png": {
-      "hold": 0.5658
-    },
-    "0285.png": {
-      "hold": 0.5233
-    },
-    "0286.png": {
-      "hold": 0.5333
-    },
-    "0287.png": {
-      "hold": 0.58
-    },
-    "0288.png": {
-      "hold": 0.61
-    },
-    "0289.png": {
-      "hold": 0.8333
+      "hold": 0.36
     },
     "0366.png": {
-      "hold": 0.9733
+      "skip": true
     },
     "0367.png": {
-      "hold": 0.9992
+      "skip": true
     },
     "0368.png": {
-      "hold": 0.955
+      "skip": true
     },
-    "0369.png": {
-      "hold": 0.9483
+    "0384.png": {
+      "skip": true
+    },
+    "0385.png": {
+      "skip": true
     },
     "0370.png": {
       "hold": 0.9625
@@ -3568,13 +3608,7 @@ window.SPEC = {
       "hold": 0.9717
     },
     "0383.png": {
-      "hold": 0.9633
-    },
-    "0384.png": {
-      "hold": 0.9783
-    },
-    "0385.png": {
-      "hold": 1.1958
+      "hold": 0.0708
     }
   }
 };

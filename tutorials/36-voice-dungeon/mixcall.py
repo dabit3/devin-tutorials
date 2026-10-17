@@ -12,8 +12,8 @@ def load(path, lufs=None):
     af = ['-af', f'loudnorm=I={lufs}:TP=-2:LRA=11'] if lufs else []
     raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', path, *af, '-ac', '1', '-ar', str(SR), '-f', 's16le', '-'], capture_output=True, check=True).stdout
     return np.frombuffer(raw, '<i2').astype(float) / 32767
-trim = json.load(open(os.path.join(D, 'call', 'trim.json'))).get(NAME) if os.path.exists(os.path.join(D, 'call', 'trim.json')) else None
-if trim: m['t1'] = min(m['t1'], m['t0'] + trim * 1000)  # cut dead air after the last spoken turn
+from calltrim import window
+m = window(NAME, m, json.load(open(os.path.join(SH, 'beats.json'))))  # cut dead air before the greeting and after the last turn
 n = int((m['t1'] - m['t0']) / 1000 * SR); out = np.zeros(n)
 def place(x, t_ms):
     i = int((t_ms - m['t0']) / 1000 * SR); a, b = max(0, i), min(n, i + len(x))
