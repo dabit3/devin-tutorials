@@ -1,0 +1,60 @@
+{
+ "style": "rookie",
+ "marks": [
+  {
+   "n": "style",
+   "t": 1792200190594
+  },
+  {
+   "n": "launch",
+   "t": 1792200192499
+  },
+  {
+   "n": "live",
+   "t": 1792200193117
+  },
+  {
+   "n": "greeted",
+   "t": 1792200208617
+  },
+  {
+   "n": "say",
+   "t": 1792200208617,
+   "id": "p1"
+  },
+  {
+   "n": "say",
+   "t": 1792200227452,
+   "id": "p6"
+  },
+  {
+   "n": "abort",
+   "t": 1792200227469
+  },
+  {
+   "n": "result",
+   "t": 1792200232243,
+   "card": "MISSION LOST\nvertical speed 6.4 m/s exceeded 3 m/s\nFLY AGAIN\nMENU"
+  },
+  {
+   "n": "stop",
+   "t": 1792200249139
+  }
+ ],
+ "t0": 1792200188064,
+ "lastAlt": 0,
+ "says": [
+  {
+   "id": "p1",
+   "t": 1792200208640,
+   "dur": 1.9149791666666667
+  },
+  {
+   "id": "p6",
+   "t": 1792200227468,
+   "dur": 2.015
+  }
+ ],
+ "recStart": 1792200192774,
+ "log": "PILOT throttle\nCTRL  O- Okay,\n✕ fire_main_engine: rejected: the lander is touchdown; engine commands are disabled\n✔ trigger_outcome: outcome: crashed\nCTRL  Oh! Oh no, no, no. We hit too hard. That was 6.4 meters per second. Oh. That's a crash. I'm- I'm so sorry. We didn't make it."
+}

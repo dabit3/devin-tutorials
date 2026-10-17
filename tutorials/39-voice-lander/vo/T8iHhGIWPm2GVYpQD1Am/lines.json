@@ -1,0 +1,1382 @@
+{
+ "demo/calm3_s0.jpg": {
+  "text": "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+  "dur": 9.72,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.392,
+    "text": "Today I'll be building and testing a cross-platform"
+   },
+   {
+    "t0": 2.438,
+    "t1": 4.319,
+    "text": "mobile game just by using my voice."
+   },
+   {
+    "t0": 4.493,
+    "t1": 5.84,
+    "text": "It's called Mission Control,"
+   },
+   {
+    "t0": 5.933,
+    "t1": 7.163,
+    "text": "and it runs on iOS,"
+   },
+   {
+    "t0": 7.21,
+    "t1": 9.694,
+    "text": "Android, and the web from one codebase."
+   }
+  ]
+ },
+ "demo/calm3_s1.jpg": {
+  "text": "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+  "dur": 13.535,
+  "takeAt": 9.995,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.082,
+    "t1": 1.661,
+    "text": "I'll build it by talking to Devin with"
+   },
+   {
+    "t0": 1.696,
+    "t1": 5.005,
+    "text": "Devin Voice, which uses ChatGPT voice under the hood."
+   },
+   {
+    "t0": 5.702,
+    "t1": 6.642,
+    "text": "Inside the game,"
+   },
+   {
+    "t0": 6.735,
+    "t1": 9.382,
+    "text": "Mission Control talks to the pilot through OpenAI's"
+   },
+   {
+    "t0": 9.452,
+    "t1": 12.784,
+    "text": "GPT-Live-1 API, and runs tools in the background"
+   },
+   {
+    "t0": 12.818,
+    "t1": 13.535,
+    "text": "while it talks."
+   }
+  ]
+ },
+ "demo/rookie2_s0.jpg": {
+  "text": "You can also switch its conversational style. Here's the panicked rookie.",
+  "dur": 4.155,
+  "takeAt": 24.175,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.078,
+    "t1": 2.354,
+    "text": "You can also switch its conversational style."
+   },
+   {
+    "t0": 2.957,
+    "t1": 4.155,
+    "text": "Here's the panicked rookie."
+   }
+  ]
+ },
+ "0000.png": {
+  "text": "Let's build it.",
+  "dur": 0.825,
+  "takeAt": 28.835,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.825,
+    "text": "Let's build it."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+  "dur": 5.705,
+  "takeAt": 29.735,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.067,
+    "t1": 2.83,
+    "text": "First, switch the virtual environment from Ubuntu to"
+   },
+   {
+    "t0": 2.888,
+    "t1": 5.705,
+    "text": "macOS, so Devin can run the iPhone simulator."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Then click the waveform button beside the message box to start a voice call.",
+  "dur": 3.834,
+  "takeAt": 35.766,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.268,
+    "text": "Then click the waveform button beside the message"
+   },
+   {
+    "t0": 2.303,
+    "t1": 3.834,
+    "text": "box to start a voice call."
+   }
+  ]
+ },
+ "0250.png": {
+  "text": "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+  "dur": 7.387,
+  "takeAt": 40.073,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.792,
+    "text": "Devin builds the game with Expo,"
+   },
+   {
+    "t0": 1.966,
+    "t1": 4.381,
+    "text": "plus a small server that starts the GPT-Live"
+   },
+   {
+    "t0": 4.404,
+    "t1": 7.387,
+    "text": "session, and starts a second Devin on Ubuntu for Android."
+   }
+  ]
+ },
+ "0311.png": {
+  "text": "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+  "dur": 4.931,
+  "takeAt": 47.759,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.326,
+    "text": "Mid-build, you can rejoin the call from inside"
+   },
+   {
+    "t0": 2.349,
+    "t1": 4.931,
+    "text": "the session, and ask how the lander's coming along."
+   }
+  ]
+ },
+ "0358.png": {
+  "text": "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+  "dur": 3.755,
+  "takeAt": 53.005,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.041,
+    "t1": 1.678,
+    "text": "Then it tests the web build in Chrome"
+   },
+   {
+    "t0": 1.701,
+    "t1": 2.665,
+    "text": "with Computer Use,"
+   },
+   {
+    "t0": 2.839,
+    "t1": 3.755,
+    "text": "on its own Mac."
+   }
+  ]
+ },
+ "0430.png": {
+  "text": "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+  "dur": 4.575,
+  "takeAt": 57.085,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.094,
+    "t1": 2.056,
+    "text": "Then it switches to the iPhone simulator,"
+   },
+   {
+    "t0": 2.184,
+    "t1": 3.716,
+    "text": "and you can watch it fly live in"
+   },
+   {
+    "t0": 3.763,
+    "t1": 4.575,
+    "text": "the Computer tab."
+   }
+  ]
+ },
+ "0732.png": {
+  "text": "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+  "dur": 12.785,
+  "takeAt": 61.945,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.087,
+    "t1": 1.306,
+    "text": "It opens a pull request,"
+   },
+   {
+    "t0": 1.329,
+    "t1": 3.245,
+    "text": "and every test run comes with a recording."
+   },
+   {
+    "t0": 3.628,
+    "t1": 5.927,
+    "text": "In Chrome, Mission Control greets the pilot,"
+   },
+   {
+    "t0": 6.136,
+    "t1": 7.866,
+    "text": "its tools lower the gear and burn the"
+   },
+   {
+    "t0": 7.924,
+    "t1": 9.932,
+    "text": "engine, and seven checks pass."
+   },
+   {
+    "t0": 10.374,
+    "t1": 12.785,
+    "text": "A real microphone couldn't be tested on the VM."
+   }
+  ]
+ },
+ "0773.png": {
+  "text": "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+  "dur": 11.735,
+  "takeAt": 75.175,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.069,
+    "t1": 1.393,
+    "text": "On the iPhone simulator,"
+   },
+   {
+    "t0": 1.416,
+    "t1": 3.378,
+    "text": "a spoken 'deploy the landing gear',"
+   },
+   {
+    "t0": 3.553,
+    "t1": 4.934,
+    "text": "played through a virtual mic,"
+   },
+   {
+    "t0": 5.085,
+    "t1": 6.118,
+    "text": "puts the gear down."
+   },
+   {
+    "t0": 6.443,
+    "t1": 7.697,
+    "text": "Six checks pass."
+   },
+   {
+    "t0": 7.872,
+    "t1": 9.636,
+    "text": "The first launch dropped back to the home"
+   },
+   {
+    "t0": 9.659,
+    "t1": 11.735,
+    "text": "screen once, and a retry recovered."
+   }
+  ]
+ },
+ "0922.png": {
+  "text": "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+  "dur": 12.705,
+  "takeAt": 87.195,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.066,
+    "t1": 2.202,
+    "text": "For Android, the second Devin ran the game"
+   },
+   {
+    "t0": 2.249,
+    "t1": 3.143,
+    "text": "on an emulator."
+   },
+   {
+    "t0": 3.386,
+    "t1": 5.22,
+    "text": "The styles, typed radio calls,"
+   },
+   {
+    "t0": 5.255,
+    "t1": 8.088,
+    "text": "touch controls, landing and crash all pass."
+   },
+   {
+    "t0": 8.471,
+    "t1": 10.596,
+    "text": "Speech through the emulator's virtual mic didn't get"
+   },
+   {
+    "t0": 10.619,
+    "t1": 12.686,
+    "text": "through, so the game's voice was heard in Chrome."
+   }
+  ]
+ },
+ "1026.png": {
+  "text": "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+  "dur": 5.685,
+  "takeAt": 100.125,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/calm3_s0.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It's called Mission Control, and it runs on iOS, Android, and the web from one codebase."
+   ],
+   [
+    "demo/calm3_s1.jpg",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks.",
+    "I'll build it by talking to Devin with Devin Voice, which uses ChatGPT voice under the hood. Inside the game, Mission Control talks to the pilot through OpenAI's GPT-Live-1 API, and runs tools in the background while it talks."
+   ],
+   [
+    "demo/rookie2_s0.jpg",
+    "You can also switch its conversational style. Here's the panicked rookie.",
+    "You can also switch its conversational style. Here's the panicked rookie."
+   ],
+   [
+    "0000.png",
+    "Let's build it.",
+    "Let's build it."
+   ],
+   [
+    "0003.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0250.png",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android.",
+    "Devin builds the game with Expo, plus a small server that starts the GPT-Live session, and starts a second Devin on Ubuntu for Android."
+   ],
+   [
+    "0311.png",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along.",
+    "Mid-build, you can rejoin the call from inside the session, and ask how the lander's coming along."
+   ],
+   [
+    "0358.png",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac.",
+    "Then it tests the web build in Chrome with Computer Use, on its own Mac."
+   ],
+   [
+    "0430.png",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab.",
+    "Then it switches to the iPhone simulator, and you can watch it fly live in the Computer tab."
+   ],
+   [
+    "0732.png",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM.",
+    "It opens a pull request, and every test run comes with a recording. In Chrome, Mission Control greets the pilot, its tools lower the gear and burn the engine, and seven checks pass. A real microphone couldn't be tested on the VM."
+   ],
+   [
+    "0773.png",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered.",
+    "On the iPhone simulator, a spoken 'deploy the landing gear', played through a virtual mic, puts the gear down. Six checks pass. The first launch dropped back to the home screen once, and a retry recovered."
+   ],
+   [
+    "0922.png",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome.",
+    "For Android, the second Devin ran the game on an emulator. The styles, typed radio calls, touch controls, landing and crash all pass. Speech through the emulator's virtual mic didn't get through, so the game's voice was heard in Chrome."
+   ],
+   [
+    "1026.png",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin.",
+    "And that's how you build and test a voice-controlled game on iOS, Android, and the web, just by talking to Devin."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.034,
+    "t1": 1.485,
+    "text": "And that's how you build and test a"
+   },
+   {
+    "t0": 1.567,
+    "t1": 3.157,
+    "text": "voice-controlled game on iOS,"
+   },
+   {
+    "t0": 3.192,
+    "t1": 4.26,
+    "text": "Android, and the web,"
+   },
+   {
+    "t0": 4.469,
+    "t1": 5.685,
+    "text": "just by talking to Devin."
+   }
+  ]
+ }
+}
