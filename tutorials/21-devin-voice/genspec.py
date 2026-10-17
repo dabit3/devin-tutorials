@@ -52,7 +52,7 @@ ed(end1 + 1, hold=1.6, cap='Devin builds the game and wires up GPT-Live-1',
 ed(end1 + 4, badge='Sped up')
 skip(end1 + 5, rejoin)
 # 330/331 show the idle Computer view's Take control overlay; 332 (hover on the call button) shows the game on the iPhone
-ed(332, hold=1.6, hl=True, cap='Mid-build: game on the iPhone simulator. Rejoin the call',
+ed(332, hold=1.6, hl=True, cap='Mid-build: rejoin the call from inside the session',
    vo="Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along.")
 
 end2 = mark('call2-ended')
@@ -96,6 +96,8 @@ if (NARRATED) {
   for (const [k, v] of Object.entries(%s))
     Object.assign(SPEC.edit[k] ??= {}, v);
 }
-""" % json.dumps({I4(end1): {'travel': 0.45, 'dwell': 0.1}, I4(end1 + 1): {'hold': 0.35}, I4(end2): {'travel': 0.45, 'dwell': 0.1}})
+""" % json.dumps({  # the rejoin click waits for the 0332 line, so it plays over the hover frame (game on the iPhone)
+    I4(end1): {'travel': 0.45, 'dwell': 0.1}, I4(end1 + 1): {'hold': 0.35}, I4(end2): {'travel': 0.45, 'dwell': 0.1},
+    I4(mark('call2-start')): {'waitVo': True}})
 open(os.path.join(D, 'spec.js'), 'w').write('window.SPEC = ' + json.dumps(spec, indent=2) + ';\n' + NARRATED_JS)
 subprocess.run(['python3', os.path.join(D, 'synccall.py')], check=True)

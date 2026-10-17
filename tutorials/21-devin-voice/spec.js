@@ -363,7 +363,7 @@ window.SPEC = {
     "0332.png": {
       "hold": 1.6,
       "hl": true,
-      "cap": "Mid-build: game on the iPhone simulator. Rejoin the call",
+      "cap": "Mid-build: rejoin the call from inside the session",
       "vo": "Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along."
     },
     "0357.png": {
@@ -3329,6 +3329,6 @@ window.SPEC = {
 const NARRATED = !!new URLSearchParams(location.search).get('voice');
 if (NARRATED) {
   SPEC.pollRunMax = 1.0;
-  for (const [k, v] of Object.entries({"0254.png": {"travel": 0.45, "dwell": 0.1}, "0255.png": {"hold": 0.35}, "0357.png": {"travel": 0.45, "dwell": 0.1}}))
+  for (const [k, v] of Object.entries({"0254.png": {"travel": 0.45, "dwell": 0.1}, "0255.png": {"hold": 0.35}, "0357.png": {"travel": 0.45, "dwell": 0.1}, "0333.png": {"waitVo": true}}))
     Object.assign(SPEC.edit[k] ??= {}, v);
 }

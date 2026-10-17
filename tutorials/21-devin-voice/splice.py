@@ -3,7 +3,7 @@ usage: python3 splice.py cap|nader <intro.mp4>   (or: splice.py fit <mp4> to jus
   cap:   intro 2.5-55 s with its real audio + caption pills, then 21-devin-voice.mp4
   nader: intro 50.5-78.4 s muted under Nader's three intro lines (intro/i*.png.wav), then the same 2.5-55 s, then 21-devin-voice-nader.mp4
 Caption pills come from caps.mjs (CAPPOS=top keeps them clear of the Coach panel). Output overwrites the kit cut."""
-import json, os, subprocess, sys
+import glob, json, os, subprocess, sys
 D = os.path.dirname(os.path.abspath(__file__))
 mode, src = sys.argv[1], sys.argv[2]
 B = os.path.join(D, 'build', 'splice'); os.makedirs(B, exist_ok=True)
@@ -26,6 +26,7 @@ def fit(path, mb=float(os.environ.get('MAXMB', 95))):
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', path, *v, '-pass', '1', '-an', '-f', 'null', '-'], check=True)
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', path, *v, '-pass', '2', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', tmp], check=True)
     os.replace(tmp, path); print('fit', path, kbps, 'kbps', round(os.path.getsize(path) / 1e6, 1), 'MB')
+    for f in glob.glob(log + '*'): os.remove(f)
 if mode == 'fit': fit(src); sys.exit(0)
 def seg(out, ss, to, caps, audio):
     """caps: [(png index, t0, t1)] in segment time; audio: 'intro' or [(wav, t0)] or None"""
