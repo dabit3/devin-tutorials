@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "When Slack or GitHub stops working, everyone asks the same thing. Is it just me, or is it down for everyone?",
-  "dur": 5.54,
+  "dur": 6.73,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -104,22 +104,22 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.753,
+    "t1": 2.24,
     "text": "When Slack or GitHub stops working,"
    },
    {
-    "t0": 1.8,
-    "t1": 3.111,
+    "t0": 2.32,
+    "t1": 4.08,
     "text": "everyone asks the same thing."
    },
    {
-    "t0": 3.39,
-    "t1": 4.191,
+    "t0": 4.32,
+    "t1": 5.28,
     "text": "Is it just me,"
    },
    {
-    "t0": 4.365,
-    "t1": 5.54,
+    "t0": 5.4,
+    "t1": 6.73,
     "text": "or is it down for everyone?"
    }
   ]
@@ -127,8 +127,8 @@
  "0001.png": {
   "text": "In this tutorial, Devin builds an app that answers that from real posts on X. It searches X with the xAI API, and it runs on Modal.",
   "say": "In this tutorial, Devin builds an app that answers that from real posts on X. It searches X with the ex A I API, and it runs on Modal.",
-  "dur": 7.585,
-  "takeAt": 6.125,
+  "dur": 8.88,
+  "takeAt": 7.08,
   "mode": "single-take-1",
   "take": [
    [
@@ -229,28 +229,28 @@
   ],
   "chunks": [
    {
-    "t0": 0.028,
-    "t1": 0.876,
+    "t0": 0.12,
+    "t1": 1.16,
     "text": "In this tutorial,"
    },
    {
-    "t0": 0.911,
-    "t1": 2.687,
+    "t0": 1.24,
+    "t1": 3.16,
     "text": "Devin builds an app that answers that from"
    },
    {
-    "t0": 2.757,
-    "t1": 3.894,
+    "t0": 3.24,
+    "t1": 4.76,
     "text": "real posts on X."
    },
    {
-    "t0": 4.138,
-    "t1": 6.154,
+    "t0": 5.0,
+    "t1": 7.246,
     "text": "It searches X with the xAI API,"
    },
    {
-    "t0": 6.174,
-    "t1": 7.585,
+    "t0": 7.266,
+    "t1": 8.84,
     "text": "and it runs on Modal."
    }
   ]
@@ -258,8 +258,8 @@
  "scene-pipeline.png": {
   "text": "Here's where Modal fits. Grok finds the posts through the xAI API, and Modal runs the rest. Every minute, a scheduled job scans each service in parallel. It stores the counts in a Modal Dict, and serves the page at a public URL.",
   "say": "Here's where Modal fits. Grok finds the posts through the ex A I API, and Modal runs the rest. Every minute, a scheduled job scans each service in parallel. It stores the counts in a Modal Dict, and serves the page at a public URL.",
-  "dur": 12.944,
-  "takeAt": 13.986,
+  "dur": 14.33,
+  "takeAt": 16.36,
   "mode": "single-take-1",
   "take": [
    [
@@ -361,32 +361,32 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.374,
+    "t1": 1.56,
     "text": "Here's where Modal fits."
    },
    {
-    "t0": 1.653,
-    "t1": 3.997,
+    "t0": 1.8,
+    "t1": 4.533,
     "text": "Grok finds the posts through the xAI API,"
    },
    {
-    "t0": 4.017,
-    "t1": 5.426,
+    "t0": 4.553,
+    "t1": 6.2,
     "text": "and Modal runs the rest."
    },
    {
-    "t0": 5.751,
-    "t1": 8.851,
+    "t0": 6.44,
+    "t1": 9.88,
     "text": "Every minute, a scheduled job scans each service in parallel."
    },
    {
-    "t0": 9.234,
-    "t1": 10.987,
+    "t0": 10.28,
+    "t1": 12.28,
     "text": "It stores the counts in a Modal Dict,"
    },
    {
-    "t0": 11.161,
-    "t1": 12.944,
+    "t0": 12.36,
+    "t1": 14.28,
     "text": "and serves the page at a public URL."
    }
   ]
@@ -394,8 +394,8 @@
  "scene-why.png": {
   "text": "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, the job wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
   "say": "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, the job wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret.",
-  "dur": 15.725,
-  "takeAt": 27.335,
+  "dur": 17.61,
+  "takeAt": 31.16,
   "mode": "single-take-1",
   "take": [
    [
@@ -496,51 +496,51 @@
   ],
   "chunks": [
    {
-    "t0": 0.064,
-    "t1": 0.749,
+    "t0": 0.12,
+    "t1": 0.76,
     "text": "Why Modal?"
    },
    {
-    "t0": 0.958,
-    "t1": 3.675,
+    "t0": 1.16,
+    "t1": 4.28,
     "text": "A script on your laptop stops when your laptop sleeps."
    },
    {
-    "t0": 4.058,
-    "t1": 5.707,
+    "t0": 4.52,
+    "t1": 6.44,
     "text": "Your own server runs all day for a"
    },
    {
-    "t0": 5.765,
-    "t1": 7.007,
+    "t0": 6.52,
+    "t1": 8.12,
     "text": "job that takes seconds."
    },
    {
-    "t0": 7.448,
-    "t1": 9.48,
+    "t0": 8.2,
+    "t1": 10.68,
     "text": "On Modal, the job wakes up on schedule,"
    },
    {
-    "t0": 9.689,
-    "t1": 11.152,
+    "t0": 10.76,
+    "t1": 12.6,
     "text": "scales to zero in between,"
    },
    {
-    "t0": 11.303,
-    "t1": 13.183,
+    "t0": 12.64,
+    "t1": 15.08,
     "text": "and you only pay for the seconds it runs."
    },
    {
-    "t0": 13.508,
-    "t1": 15.725,
+    "t0": 15.16,
+    "t1": 17.61,
     "text": "The xAI key stays in a Modal Secret."
    }
   ]
  },
  "0005.png": {
   "text": "The prompt asks for exactly that. A Modal job every minute that searches X for outage posts, and stores the counts.",
-  "dur": 6.37,
-  "takeAt": 43.22,
+  "dur": 6.82,
+  "takeAt": 49.08,
   "mode": "single-take-1",
   "take": [
    [
@@ -642,30 +642,30 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.757,
+    "t1": 2.28,
     "text": "The prompt asks for exactly that."
    },
    {
-    "t0": 2.14,
-    "t1": 4.23,
+    "t0": 2.36,
+    "t1": 4.68,
     "text": "A Modal job every minute that searches X"
    },
    {
-    "t0": 4.299,
-    "t1": 5.216,
+    "t0": 4.76,
+    "t1": 5.68,
     "text": "for outage posts,"
    },
    {
-    "t0": 5.333,
-    "t1": 6.37,
+    "t0": 5.72,
+    "t1": 6.82,
     "text": "and stores the counts."
    }
   ]
  },
  "0006.png": {
   "text": "It also asks for a dark page with a spike chart, showing only the regions and errors that posts actually mention.",
-  "dur": 6.041,
-  "takeAt": 49.919,
+  "dur": 6.11,
+  "takeAt": 56.16,
   "mode": "single-take-1",
   "take": [
    [
@@ -767,25 +767,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.966,
+    "t1": 1.84,
     "text": "It also asks for a dark page with"
    },
    {
-    "t0": 2.0,
-    "t1": 2.813,
+    "t0": 1.92,
+    "t1": 2.88,
     "text": "a spike chart,"
    },
    {
-    "t0": 3.057,
-    "t1": 6.041,
+    "t0": 2.96,
+    "t1": 6.11,
     "text": "showing only the regions and errors that posts actually mention."
    }
   ]
  },
  "0019.png": {
   "text": "Devin checks the setup, makes one real search call, and replies with its plan. That call cost about five cents, so it caps the scans with a daily post budget.",
-  "dur": 9.145,
-  "takeAt": 56.275,
+  "dur": 9.29,
+  "takeAt": 62.6,
   "mode": "single-take-1",
   "take": [
    [
@@ -886,36 +886,36 @@
   ],
   "chunks": [
    {
-    "t0": 0.102,
-    "t1": 1.345,
+    "t0": 0.12,
+    "t1": 1.48,
     "text": "Devin checks the setup,"
    },
    {
-    "t0": 1.461,
-    "t1": 2.958,
+    "t0": 1.6,
+    "t1": 3.16,
     "text": "makes one real search call,"
    },
    {
-    "t0": 3.086,
-    "t1": 4.433,
+    "t0": 3.2,
+    "t1": 4.84,
     "text": "and replies with its plan."
    },
    {
-    "t0": 4.816,
-    "t1": 6.685,
+    "t0": 4.96,
+    "t1": 6.84,
     "text": "That call cost about five cents,"
    },
    {
-    "t0": 6.813,
-    "t1": 9.145,
+    "t0": 6.92,
+    "t1": 9.29,
     "text": "so it caps the scans with a daily post budget."
    }
   ]
  },
  "0074.png": {
   "text": "Then Devin writes the app, and deploys it with modal deploy. Modal confirms the deployment in under two seconds.",
-  "dur": 5.761,
-  "takeAt": 65.789,
+  "dur": 6.46,
+  "takeAt": 72.2,
   "mode": "single-take-1",
   "take": [
    [
@@ -1017,25 +1017,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.316,
+    "t1": 1.64,
     "text": "Then Devin writes the app,"
    },
    {
-    "t0": 1.339,
-    "t1": 2.953,
+    "t0": 1.68,
+    "t1": 3.52,
     "text": "and deploys it with modal deploy."
    },
    {
-    "t0": 3.278,
-    "t1": 5.761,
+    "t0": 3.8,
+    "t1": 6.46,
     "text": "Modal confirms the deployment in under two seconds."
    }
   ]
  },
  "0202.png": {
   "text": "It tests the deployed page, fixes four bugs that Devin Review found, and all twelve unit tests pass.",
-  "dur": 6.17,
-  "takeAt": 71.78,
+  "dur": 6.05,
+  "takeAt": 78.92,
   "mode": "single-take-1",
   "take": [
    [
@@ -1137,25 +1137,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.722,
+    "t1": 1.64,
     "text": "It tests the deployed page,"
    },
    {
-    "t0": 1.896,
-    "t1": 4.16,
+    "t0": 1.76,
+    "t1": 4.04,
     "text": "fixes four bugs that Devin Review found,"
    },
    {
-    "t0": 4.369,
-    "t1": 6.17,
+    "t0": 4.16,
+    "t1": 6.05,
     "text": "and all twelve unit tests pass."
    }
   ]
  },
  "0369.png": {
   "text": "The pull request is open in the session, and it's ready to merge.",
-  "dur": 3.375,
-  "takeAt": 78.235,
+  "dur": 3.28,
+  "takeAt": 85.16,
   "mode": "single-take-1",
   "take": [
    [
@@ -1257,20 +1257,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.989,
+    "t1": 2.12,
     "text": "The pull request is open in the session,"
    },
    {
-    "t0": 2.198,
-    "t1": 3.371,
+    "t0": 2.16,
+    "t1": 3.24,
     "text": "and it's ready to merge."
    }
   ]
  },
  "0370.png": {
   "text": "And here's the app, running on Modal at its public URL. GitHub is quiet right now, and the page says no posts were found.",
-  "dur": 6.97,
-  "takeAt": 82.09,
+  "dur": 7.23,
+  "takeAt": 88.68,
   "mode": "single-take-1",
   "take": [
    [
@@ -1372,30 +1372,30 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.06,
+    "t1": 1.24,
     "text": "And here's the app,"
    },
    {
-    "t0": 1.304,
-    "t1": 3.51,
+    "t0": 1.36,
+    "t1": 3.24,
     "text": "running on Modal at its public URL."
    },
    {
-    "t0": 3.951,
-    "t1": 5.124,
+    "t0": 3.72,
+    "t1": 5.16,
     "text": "GitHub is quiet right now,"
    },
    {
-    "t0": 5.147,
-    "t1": 6.97,
+    "t0": 5.24,
+    "t1": 7.23,
     "text": "and the page says no posts were found."
    }
   ]
  },
  "0380.png": {
   "text": "For ChatGPT, it found one post in the last fifteen minutes and six in the last six hours, so it's probably just you.",
-  "dur": 6.419,
-  "takeAt": 89.311,
+  "dur": 7.39,
+  "takeAt": 96.12,
   "mode": "single-take-1",
   "take": [
    [
@@ -1497,25 +1497,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.419,
+    "t1": 2.68,
     "text": "For ChatGPT, it found one post in the"
    },
    {
-    "t0": 2.465,
-    "t1": 4.381,
+    "t0": 2.8,
+    "t1": 5.0,
     "text": "last fifteen minutes and six in the last"
    },
    {
-    "t0": 4.428,
-    "t1": 6.419,
+    "t0": 5.12,
+    "t1": 7.39,
     "text": "six hours, so it's probably just you."
    }
   ]
  },
  "0381.png": {
   "text": "The chart counts the posts it found about problems. It doesn't count people.",
-  "dur": 3.81,
-  "takeAt": 96.085,
+  "dur": 3.99,
+  "takeAt": 103.84,
   "mode": "single-take-1",
   "take": [
    [
@@ -1616,21 +1616,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.034,
-    "t1": 2.553,
+    "t0": 0.12,
+    "t1": 2.8,
     "text": "The chart counts the posts it found about problems."
    },
    {
-    "t0": 2.727,
-    "t1": 3.795,
+    "t0": 2.88,
+    "t1": 3.99,
     "text": "It doesn't count people."
    }
   ]
  },
  "0382.png": {
   "text": "None of these posts names a region, so that panel stays empty.",
-  "dur": 3.356,
-  "takeAt": 100.144,
+  "dur": 3.545,
+  "takeAt": 108.2,
   "mode": "single-take-1",
   "take": [
    [
@@ -1732,20 +1732,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.838,
+    "t1": 1.933,
     "text": "None of these posts names a region,"
    },
    {
-    "t0": 1.954,
-    "t1": 3.356,
+    "t0": 1.987,
+    "t1": 3.545,
     "text": "so that panel stays empty."
    }
   ]
  },
  "0383.png": {
   "text": "The most common error quoted is model not found, in three posts.",
-  "dur": 3.305,
-  "takeAt": 103.825,
+  "dur": 3.903,
+  "takeAt": 111.747,
   "mode": "single-take-1",
   "take": [
    [
@@ -1846,21 +1846,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.072,
-    "t1": 2.139,
+    "t0": 0.12,
+    "t1": 2.333,
     "text": "The most common error quoted is model not"
    },
    {
-    "t0": 2.185,
-    "t1": 3.305,
+    "t0": 2.493,
+    "t1": 3.903,
     "text": "found, in three posts."
    }
   ]
  },
  "0384.png": {
   "text": "Every number on the page comes from real posts like these, each linked back to X.",
-  "dur": 4.371,
-  "takeAt": 107.399,
+  "dur": 4.53,
+  "takeAt": 115.96,
   "mode": "single-take-1",
   "take": [
    [
@@ -1962,25 +1962,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.839,
+    "t1": 1.96,
     "text": "Every number on the page comes from real"
    },
    {
-    "t0": 1.908,
-    "t1": 2.872,
+    "t0": 2.12,
+    "t1": 3.16,
     "text": "posts like these,"
    },
    {
-    "t0": 3.116,
-    "t1": 4.371,
+    "t0": 3.24,
+    "t1": 4.53,
     "text": "each linked back to X."
    }
   ]
  },
  "0390.png": {
   "text": "For AWS, one post in the last day names the Middle East.",
-  "dur": 3.377,
-  "takeAt": 112.113,
+  "dur": 3.77,
+  "takeAt": 120.76,
   "mode": "single-take-1",
   "take": [
    [
@@ -2082,140 +2082,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.326,
+    "t1": 2.68,
     "text": "For AWS, one post in the last day"
    },
    {
-    "t0": 2.419,
-    "t1": 3.377,
+    "t0": 2.76,
+    "t1": 3.77,
     "text": "names the Middle East."
    }
   ]
  },
  "0392.png": {
   "text": "That region comes straight from the post's own words, so the page can say exactly where it came from.",
-  "dur": 4.735,
-  "takeAt": 115.885,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "When Slack or GitHub stops working, everyone asks the same thing. Is it just me, or is it down for everyone?",
-    "When Slack or GitHub stops working, everyone asks the same thing. Is it just me, or is it down for everyone?"
-   ],
-   [
-    "0001.png",
-    "In this tutorial, Devin builds an app that answers that from real posts on X. It searches X with the xAI API, and it runs on Modal.",
-    "In this tutorial, Devin builds an app that answers that from real posts on X. It searches X with the ex A I API, and it runs on Modal."
-   ],
-   [
-    "scene-pipeline.png",
-    "Here's where Modal fits. Grok finds the posts through the xAI API, and Modal runs the rest. Every minute, a scheduled job scans each service in parallel. It stores the counts in a Modal Dict, and serves the page at a public URL.",
-    "Here's where Modal fits. Grok finds the posts through the ex A I API, and Modal runs the rest. Every minute, a scheduled job scans each service in parallel. It stores the counts in a Modal Dict, and serves the page at a public URL."
-   ],
-   [
-    "scene-why.png",
-    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, the job wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
-    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, the job wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
-   ],
-   [
-    "0005.png",
-    "The prompt asks for exactly that. A Modal job every minute that searches X for outage posts, and stores the counts.",
-    "The prompt asks for exactly that. A Modal job every minute that searches X for outage posts, and stores the counts."
-   ],
-   [
-    "0006.png",
-    "It also asks for a dark page with a spike chart, showing only the regions and errors that posts actually mention.",
-    "It also asks for a dark page with a spike chart, showing only the regions and errors that posts actually mention."
-   ],
-   [
-    "0019.png",
-    "Devin checks the setup, makes one real search call, and replies with its plan. That call cost about five cents, so it caps the scans with a daily post budget.",
-    "Devin checks the setup, makes one real search call, and replies with its plan. That call cost about five cents, so it caps the scans with a daily post budget."
-   ],
-   [
-    "0074.png",
-    "Then Devin writes the app, and deploys it with modal deploy. Modal confirms the deployment in under two seconds.",
-    "Then Devin writes the app, and deploys it with modal deploy. Modal confirms the deployment in under two seconds."
-   ],
-   [
-    "0202.png",
-    "It tests the deployed page, fixes four bugs that Devin Review found, and all twelve unit tests pass.",
-    "It tests the deployed page, fixes four bugs that Devin Review found, and all twelve unit tests pass."
-   ],
-   [
-    "0369.png",
-    "The pull request is open in the session, and it's ready to merge.",
-    "The pull request is open in the session, and it's ready to merge."
-   ],
-   [
-    "0370.png",
-    "And here's the app, running on Modal at its public URL. GitHub is quiet right now, and the page says no posts were found.",
-    "And here's the app, running on Modal at its public URL. GitHub is quiet right now, and the page says no posts were found."
-   ],
-   [
-    "0380.png",
-    "For ChatGPT, it found one post in the last fifteen minutes and six in the last six hours, so it's probably just you.",
-    "For ChatGPT, it found one post in the last fifteen minutes and six in the last six hours, so it's probably just you."
-   ],
-   [
-    "0381.png",
-    "The chart counts the posts it found about problems. It doesn't count people.",
-    "The chart counts the posts it found about problems. It doesn't count people."
-   ],
-   [
-    "0382.png",
-    "None of these posts names a region, so that panel stays empty.",
-    "None of these posts names a region, so that panel stays empty."
-   ],
-   [
-    "0383.png",
-    "The most common error quoted is model not found, in three posts.",
-    "The most common error quoted is model not found, in three posts."
-   ],
-   [
-    "0384.png",
-    "Every number on the page comes from real posts like these, each linked back to X.",
-    "Every number on the page comes from real posts like these, each linked back to X."
-   ],
-   [
-    "0390.png",
-    "For AWS, one post in the last day names the Middle East.",
-    "For AWS, one post in the last day names the Middle East."
-   ],
-   [
-    "0392.png",
-    "That region comes straight from the post's own words, so the page can say exactly where it came from.",
-    "That region comes straight from the post's own words, so the page can say exactly where it came from."
-   ],
-   [
-    "outro",
-    "Real posts go in, and an honest answer comes out.",
-    "Real posts go in, and an honest answer comes out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.063,
-    "t1": 1.955,
-    "text": "That region comes straight from the post's own"
-   },
-   {
-    "t0": 2.002,
-    "t1": 4.126,
-    "text": "words, so the page can say exactly where"
-   },
-   {
-    "t0": 4.161,
-    "t1": 4.735,
-    "text": "it came from."
-   }
-  ]
- },
- "outro": {
-  "text": "Real posts go in, and an honest answer comes out.",
-  "dur": 2.977,
-  "takeAt": 120.913,
+  "dur": 5.21,
+  "takeAt": 124.84,
   "mode": "single-take-1",
   "take": [
    [
@@ -2317,12 +2197,132 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.165,
+    "t1": 2.2,
+    "text": "That region comes straight from the post's own"
+   },
+   {
+    "t0": 2.28,
+    "t1": 4.52,
+    "text": "words, so the page can say exactly where"
+   },
+   {
+    "t0": 4.56,
+    "t1": 5.21,
+    "text": "it came from."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Real posts go in, and an honest answer comes out.",
+  "dur": 2.88,
+  "takeAt": 130.36,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "When Slack or GitHub stops working, everyone asks the same thing. Is it just me, or is it down for everyone?",
+    "When Slack or GitHub stops working, everyone asks the same thing. Is it just me, or is it down for everyone?"
+   ],
+   [
+    "0001.png",
+    "In this tutorial, Devin builds an app that answers that from real posts on X. It searches X with the xAI API, and it runs on Modal.",
+    "In this tutorial, Devin builds an app that answers that from real posts on X. It searches X with the ex A I API, and it runs on Modal."
+   ],
+   [
+    "scene-pipeline.png",
+    "Here's where Modal fits. Grok finds the posts through the xAI API, and Modal runs the rest. Every minute, a scheduled job scans each service in parallel. It stores the counts in a Modal Dict, and serves the page at a public URL.",
+    "Here's where Modal fits. Grok finds the posts through the ex A I API, and Modal runs the rest. Every minute, a scheduled job scans each service in parallel. It stores the counts in a Modal Dict, and serves the page at a public URL."
+   ],
+   [
+    "scene-why.png",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, the job wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
+    "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, the job wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret."
+   ],
+   [
+    "0005.png",
+    "The prompt asks for exactly that. A Modal job every minute that searches X for outage posts, and stores the counts.",
+    "The prompt asks for exactly that. A Modal job every minute that searches X for outage posts, and stores the counts."
+   ],
+   [
+    "0006.png",
+    "It also asks for a dark page with a spike chart, showing only the regions and errors that posts actually mention.",
+    "It also asks for a dark page with a spike chart, showing only the regions and errors that posts actually mention."
+   ],
+   [
+    "0019.png",
+    "Devin checks the setup, makes one real search call, and replies with its plan. That call cost about five cents, so it caps the scans with a daily post budget.",
+    "Devin checks the setup, makes one real search call, and replies with its plan. That call cost about five cents, so it caps the scans with a daily post budget."
+   ],
+   [
+    "0074.png",
+    "Then Devin writes the app, and deploys it with modal deploy. Modal confirms the deployment in under two seconds.",
+    "Then Devin writes the app, and deploys it with modal deploy. Modal confirms the deployment in under two seconds."
+   ],
+   [
+    "0202.png",
+    "It tests the deployed page, fixes four bugs that Devin Review found, and all twelve unit tests pass.",
+    "It tests the deployed page, fixes four bugs that Devin Review found, and all twelve unit tests pass."
+   ],
+   [
+    "0369.png",
+    "The pull request is open in the session, and it's ready to merge.",
+    "The pull request is open in the session, and it's ready to merge."
+   ],
+   [
+    "0370.png",
+    "And here's the app, running on Modal at its public URL. GitHub is quiet right now, and the page says no posts were found.",
+    "And here's the app, running on Modal at its public URL. GitHub is quiet right now, and the page says no posts were found."
+   ],
+   [
+    "0380.png",
+    "For ChatGPT, it found one post in the last fifteen minutes and six in the last six hours, so it's probably just you.",
+    "For ChatGPT, it found one post in the last fifteen minutes and six in the last six hours, so it's probably just you."
+   ],
+   [
+    "0381.png",
+    "The chart counts the posts it found about problems. It doesn't count people.",
+    "The chart counts the posts it found about problems. It doesn't count people."
+   ],
+   [
+    "0382.png",
+    "None of these posts names a region, so that panel stays empty.",
+    "None of these posts names a region, so that panel stays empty."
+   ],
+   [
+    "0383.png",
+    "The most common error quoted is model not found, in three posts.",
+    "The most common error quoted is model not found, in three posts."
+   ],
+   [
+    "0384.png",
+    "Every number on the page comes from real posts like these, each linked back to X.",
+    "Every number on the page comes from real posts like these, each linked back to X."
+   ],
+   [
+    "0390.png",
+    "For AWS, one post in the last day names the Middle East.",
+    "For AWS, one post in the last day names the Middle East."
+   ],
+   [
+    "0392.png",
+    "That region comes straight from the post's own words, so the page can say exactly where it came from.",
+    "That region comes straight from the post's own words, so the page can say exactly where it came from."
+   ],
+   [
+    "outro",
+    "Real posts go in, and an honest answer comes out.",
+    "Real posts go in, and an honest answer comes out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.32,
     "text": "Real posts go in,"
    },
    {
-    "t0": 1.409,
-    "t1": 2.977,
+    "t0": 1.36,
+    "t1": 2.88,
     "text": "and an honest answer comes out."
    }
   ]
