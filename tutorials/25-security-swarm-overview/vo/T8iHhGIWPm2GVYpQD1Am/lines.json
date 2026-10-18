@@ -1,0 +1,317 @@
+{
+ "0000.png": {
+  "text": "Security Swarm finds, validates, and helps fix security vulnerabilities by dividing your repo among many Devins that work in parallel, for broad coverage and deep investigation.",
+  "dur": 9.46,
+  "at": 0.0,
+  "end": 9.46,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.3,
+    "text": "Security Swarm finds,"
+   },
+   {
+    "t0": 1.335,
+    "t1": 4.563,
+    "text": "validates, and helps fix security vulnerabilities by dividing"
+   },
+   {
+    "t0": 4.598,
+    "t1": 6.49,
+    "text": "your repo among many Devins that work in"
+   },
+   {
+    "t0": 6.536,
+    "t1": 9.416,
+    "text": "parallel, for broad coverage and deep investigation."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "First, Devin reads your repo and writes a threat model for it, a set of rules for what to look for in this code.",
+  "dur": 5.37,
+  "at": 9.67,
+  "end": 15.04,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.071,
+    "t1": 1.94,
+    "text": "First, Devin reads your repo and writes a"
+   },
+   {
+    "t0": 1.986,
+    "t1": 2.938,
+    "text": "threat model for it,"
+   },
+   {
+    "t0": 3.147,
+    "t1": 4.552,
+    "text": "a set of rules for what to look"
+   },
+   {
+    "t0": 4.598,
+    "t1": 5.353,
+    "text": "for in this code."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "In interactive mode, you review those rules and approve them before the scan begins.",
+  "dur": 3.94,
+  "at": 15.46,
+  "end": 19.4,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.074,
+    "t1": 1.119,
+    "text": "In interactive mode,"
+   },
+   {
+    "t0": 1.165,
+    "t1": 2.988,
+    "text": "you review those rules and approve them before"
+   },
+   {
+    "t0": 3.023,
+    "t1": 3.94,
+    "text": "the scan begins."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "The rules pick out the files worth a closer look, and each small batch of them goes to its own Devin, with every batch investigated in parallel.",
+  "dur": 7.065,
+  "at": 19.63,
+  "end": 26.695,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.095,
+    "t1": 1.616,
+    "text": "The rules pick out the files worth a"
+   },
+   {
+    "t0": 1.663,
+    "t1": 3.717,
+    "text": "closer look, and each small batch of them"
+   },
+   {
+    "t0": 3.787,
+    "t1": 4.89,
+    "text": "goes to its own Devin,"
+   },
+   {
+    "t0": 5.064,
+    "t1": 7.065,
+    "text": "with every batch investigated in parallel."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "Their results are combined into one view of the whole repo, ranked by severity, with duplicates merged.",
+  "dur": 5.28,
+  "at": 27.28,
+  "end": 32.56,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.05,
+    "t1": 1.861,
+    "text": "Their results are combined into one view of"
+   },
+   {
+    "t0": 1.896,
+    "t1": 2.662,
+    "text": "the whole repo,"
+   },
+   {
+    "t0": 2.836,
+    "t1": 3.939,
+    "text": "ranked by severity,"
+   },
+   {
+    "t0": 4.09,
+    "t1": 5.228,
+    "text": "with duplicates merged."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "If sandbox validation is on, a separate Devin then tries to reproduce each finding in an isolated sandbox, which gives you stronger evidence that it's real.",
+  "dur": 8.1,
+  "at": 32.77,
+  "end": 40.87,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 1.874,
+    "text": "If sandbox validation is on,"
+   },
+   {
+    "t0": 2.048,
+    "t1": 4.104,
+    "text": "a separate Devin then tries to reproduce each"
+   },
+   {
+    "t0": 4.15,
+    "t1": 5.961,
+    "text": "finding in an isolated sandbox,"
+   },
+   {
+    "t0": 6.077,
+    "t1": 8.097,
+    "text": "which gives you stronger evidence that it's real."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "When you're ready, assign a finding to Devin, and it opens a pull request with the fix, tracked right on the finding.",
+  "dur": 5.685,
+  "at": 41.11,
+  "end": 46.795,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.036,
+    "t1": 0.651,
+    "text": "When you're ready,"
+   },
+   {
+    "t0": 0.675,
+    "t1": 2.045,
+    "text": "assign a finding to Devin,"
+   },
+   {
+    "t0": 2.219,
+    "t1": 3.705,
+    "text": "and it opens a pull request with the"
+   },
+   {
+    "t0": 3.751,
+    "t1": 5.685,
+    "text": "fix, tracked right on the finding."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "And because the results are combined, it can connect issues across files: here, one file trusted a header to say who you are, and another only checked for the admin role, so one header made anyone the admin.",
+  "dur": 10.83,
+  "at": 47.11,
+  "end": 57.94,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.05,
+    "t1": 1.64,
+    "text": "And because the results are combined,"
+   },
+   {
+    "t0": 1.663,
+    "t1": 3.509,
+    "text": "it can connect issues across files:"
+   },
+   {
+    "t0": 3.892,
+    "t1": 5.901,
+    "text": "here, one file trusted a header to say"
+   },
+   {
+    "t0": 5.947,
+    "t1": 6.598,
+    "text": "who you are,"
+   },
+   {
+    "t0": 6.748,
+    "t1": 8.815,
+    "text": "and another only checked for the admin role,"
+   },
+   {
+    "t0": 8.943,
+    "t1": 10.766,
+    "text": "so one header made anyone the admin."
+   }
+  ]
+ },
+ "0012.png": {
+  "text": "Use it for a deep first review of a high-risk codebase, for Auto Scans that check only the new commits on a schedule, for multi-repo scans of services that call each other, and to triage findings from the scanners you already use.",
+  "dur": 11.96,
+  "at": 58.13,
+  "end": 70.09,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.129,
+    "t1": 1.719,
+    "text": "Use it for a deep first review of"
+   },
+   {
+    "t0": 1.777,
+    "t1": 2.962,
+    "text": "a high-risk codebase,"
+   },
+   {
+    "t0": 3.136,
+    "t1": 4.912,
+    "text": "for Auto Scans that check only the new"
+   },
+   {
+    "t0": 4.959,
+    "t1": 6.05,
+    "text": "commits on a schedule,"
+   },
+   {
+    "t0": 6.329,
+    "t1": 8.743,
+    "text": "for multi-repo scans of services that call each"
+   },
+   {
+    "t0": 8.79,
+    "t1": 11.158,
+    "text": "other, and to triage findings from the scanners"
+   },
+   {
+    "t0": 11.193,
+    "t1": 11.959,
+    "text": "you already use."
+   }
+  ]
+ },
+ "outro": {
+  "text": "That's Security Swarm: many Devins working through your repo in parallel, with evidence for what they find.",
+  "dur": 5.36,
+  "at": 70.34,
+  "end": 75.7,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.075,
+    "t1": 1.294,
+    "text": "That's Security Swarm:"
+   },
+   {
+    "t0": 1.677,
+    "t1": 3.895,
+    "text": "many Devins working through your repo in parallel,"
+   },
+   {
+    "t0": 3.93,
+    "t1": 5.36,
+    "text": "with evidence for what they find."
+   }
+  ]
+ }
+}
