@@ -88,6 +88,11 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 <!-- -->
 
+58. **Port an iOS screen to Android and prove parity** (narrated by Nader, 1:37): Two real sessions on one existing SwiftUI app. Pick macOS from the platform menu and ask Devin to run the app in the iPhone Simulator, screenshot its onboarding screen and write a parity spec; then switch back to Ubuntu and ask a second session to set up an Android emulator, port the screen with Jetpack Compose and screenshot the same screen. The PR shows the iOS and Android screens side by side at the same size, with each part of the spec mapped to Compose. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/58-ios-to-android-parity/58-ios-to-android-parity-nader.mp4) · [Voice script](tutorials/58-ios-to-android-parity/voice-script.md)
+59. **Port an iOS screen to Android: how it works** (overview, narrated by Nader, 1:19): A short diagram-led overview of the parity pattern: a macOS session runs the original in the iPhone Simulator and writes a parity spec, an Ubuntu session builds the port on an Android emulator, and one pull request shows both screens side by side. Why it matters, three use cases and how to set it up, with real proof shots from tutorial 58. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/59-ios-to-android-parity-overview/59-ios-to-android-parity-overview-nader.mp4) · [Voice script](tutorials/59-ios-to-android-parity-overview/voice-script.md)
+
+<!-- -->
+
 76. **Devin CLI: what's new in v3000.11.92** (overview, narrated by Nader, 1:55): A dark-mode overview of the October 14, 2026 stable release, filmed in the real CLI with Ghostty's GitHub Dark High Contrast palette. `/goal` runs a real task in orbit-demo until tests, lint and build pass, with a steering message and Ctrl+C clearing a draft mid-run; then Alt+Enter in the model picker, `devin mcp list` with its new `Source:` line and `devin cloud`, plus build-up cards for config, plugins, hooks, MCP, terminal and the Changed and Fixed highlights. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/76-cli-whats-new-overview/76-cli-whats-new-overview-nader.mp4) · [Voice script](tutorials/76-cli-whats-new-overview/voice-script.md)
 
 ## Narrated tutorials
