@@ -1,0 +1,307 @@
+{
+ "0000.png": {
+  "text": "To port an iOS screen to Android, run the original on a Mac, build the port on an Android emulator, and show both screens in one pull request.",
+  "dur": 7.56,
+  "at": 0.0,
+  "end": 7.56,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.904,
+    "text": "To port an iOS screen to Android,"
+   },
+   {
+    "t0": 2.078,
+    "t1": 3.39,
+    "text": "run the original on a Mac,"
+   },
+   {
+    "t0": 3.471,
+    "t1": 5.341,
+    "text": "build the port on an Android emulator,"
+   },
+   {
+    "t0": 5.457,
+    "t1": 7.535,
+    "text": "and show both screens in one pull request."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "The first session runs on macOS, which you pick from the platform menu.",
+  "dur": 3.625,
+  "at": 7.855,
+  "end": 11.48,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 1.921,
+    "text": "The first session runs on macOS,"
+   },
+   {
+    "t0": 1.99,
+    "t1": 3.581,
+    "text": "which you pick from the platform menu."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "It runs the original app in the iPhone Simulator and screenshots the screen.",
+  "dur": 3.495,
+  "at": 11.745,
+  "end": 15.24,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.016,
+    "t1": 1.63,
+    "text": "It runs the original app in the iPhone"
+   },
+   {
+    "t0": 1.653,
+    "t1": 3.453,
+    "text": "Simulator and screenshots the screen."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "From that screenshot it writes a parity spec, and a second session on Ubuntu builds the port to match it, then screenshots the same screen.",
+  "dur": 6.99,
+  "at": 15.46,
+  "end": 22.45,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 2.222,
+    "text": "From that screenshot it writes a parity spec,"
+   },
+   {
+    "t0": 2.396,
+    "t1": 4.324,
+    "text": "and a second session on Ubuntu builds the"
+   },
+   {
+    "t0": 4.37,
+    "t1": 5.136,
+    "text": "port to match it,"
+   },
+   {
+    "t0": 5.345,
+    "t1": 6.948,
+    "text": "then screenshots the same screen."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "Here's the port, running on the Android emulator.",
+  "dur": 2.18,
+  "at": 22.76,
+  "end": 24.94,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.031,
+    "t1": 0.657,
+    "text": "Here's the port,"
+   },
+   {
+    "t0": 0.704,
+    "t1": 2.12,
+    "text": "running on the Android emulator."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "The pull request shows the iOS and Android screens side by side, at the same size.",
+  "dur": 4.62,
+  "at": 25.12,
+  "end": 29.74,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.085,
+    "t1": 2.337,
+    "text": "The pull request shows the iOS and Android"
+   },
+   {
+    "t0": 2.384,
+    "t1": 3.638,
+    "text": "screens side by side,"
+   },
+   {
+    "t0": 3.661,
+    "t1": 4.613,
+    "text": "at the same size."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "That's the point of the pattern: the spec gives the port a clear target, and the screenshots let a reviewer check the result instead of trusting it.",
+  "dur": 7.02,
+  "at": 30.085,
+  "end": 37.105,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.031,
+    "t1": 1.262,
+    "text": "That's the point of the pattern:"
+   },
+   {
+    "t0": 1.506,
+    "t1": 3.468,
+    "text": "the spec gives the port a clear target,"
+   },
+   {
+    "t0": 3.619,
+    "t1": 5.604,
+    "text": "and the screenshots let a reviewer check the"
+   },
+   {
+    "t0": 5.651,
+    "t1": 7.02,
+    "text": "result instead of trusting it."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "Every part of the spec is mapped to Compose, from padding to font sizes, so a reviewer can check it line by line.",
+  "dur": 6.31,
+  "at": 37.36,
+  "end": 43.67,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.082,
+    "t1": 1.65,
+    "text": "Every part of the spec is mapped to"
+   },
+   {
+    "t0": 1.719,
+    "t1": 4.111,
+    "text": "Compose, from padding to font sizes,"
+   },
+   {
+    "t0": 4.285,
+    "t1": 6.27,
+    "text": "so a reviewer can check it line by line."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Use it to port an app one screen at a time, check a redesign on both platforms, or catch drift between two apps.",
+  "dur": 6.31,
+  "at": 43.85,
+  "end": 50.16,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.105,
+    "t1": 1.568,
+    "text": "Use it to port an app one screen"
+   },
+   {
+    "t0": 1.615,
+    "t1": 2.242,
+    "text": "at a time,"
+   },
+   {
+    "t0": 2.451,
+    "t1": 4.366,
+    "text": "check a redesign on both platforms,"
+   },
+   {
+    "t0": 4.54,
+    "t1": 6.293,
+    "text": "or catch drift between two apps."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "To set it up, pick macOS for the first session, then ask an Ubuntu session to set up an Android emulator.",
+  "dur": 5.41,
+  "at": 50.465,
+  "end": 55.875,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.061,
+    "t1": 0.665,
+    "text": "To set it up,"
+   },
+   {
+    "t0": 0.688,
+    "t1": 2.349,
+    "text": "pick macOS for the first session,"
+   },
+   {
+    "t0": 2.558,
+    "t1": 4.346,
+    "text": "then ask an Ubuntu session to set up"
+   },
+   {
+    "t0": 4.392,
+    "t1": 5.41,
+    "text": "an Android emulator."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "Here, one prompt asked for the emulator, the port and the side by side screenshots.",
+  "dur": 4.27,
+  "at": 56.23,
+  "end": 60.5,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.043,
+    "t1": 2.017,
+    "text": "Here, one prompt asked for the emulator,"
+   },
+   {
+    "t0": 2.226,
+    "t1": 4.269,
+    "text": "the port and the side by side screenshots."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Run the original, build the port, and let the screenshots prove they match.",
+  "dur": 3.3,
+  "at": 60.73,
+  "end": 64.03,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.094,
+    "t1": 0.872,
+    "text": "Run the original,"
+   },
+   {
+    "t0": 0.918,
+    "t1": 1.545,
+    "text": "build the port,"
+   },
+   {
+    "t0": 1.569,
+    "t1": 3.3,
+    "text": "and let the screenshots prove they match."
+   }
+  ]
+ }
+}
