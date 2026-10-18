@@ -1,6 +1,6 @@
 # Tutorial 39: A customer's bug video becomes a fix, overview (voice script)
 
-Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, default settings: stability 0.5, similarity 0.75, style 0, speed 1), generated as one take with `_kit/tools/vo_onetake.py` and cut locally at sentence boundaries.
+Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, model `eleven_v4`, the voice's default settings: the request sends only the text and `model_id`), generated as one take with `_kit/tools/vo.py` and cut locally at sentence boundaries.
 
 Disclosure: the Fernhouse checkout bug was planted on purpose, and the customer screen recording was recorded by us playing the customer. Every UI shot is reused from tutorial 38's real session (see `shots/SOURCES.json`).
 
