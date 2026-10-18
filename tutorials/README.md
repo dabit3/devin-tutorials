@@ -37,6 +37,8 @@
 | 34 | Devin Primitives: when to use what (overview) | `34-devin-primitives-overview/` |
 | 52 | Explore design options in parallel | `52-five-designs/` |
 | 53 | Explore design options in parallel: why it matters (overview) | `53-five-designs-overview/` |
+| 58 | Port an iOS screen to Android and prove parity | `58-ios-to-android-parity/` |
+| 59 | Port an iOS screen to Android: how it works (overview) | `59-ios-to-android-parity-overview/` |
 | 76 | Devin CLI: what's new in v3000.11.92 (overview) | `76-cli-whats-new-overview/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
