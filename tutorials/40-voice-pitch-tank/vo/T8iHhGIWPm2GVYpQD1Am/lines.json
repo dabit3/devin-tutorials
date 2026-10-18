@@ -1,345 +1,1965 @@
 {
  "0000.png": {
   "text": "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
-  "dur": 7.52,
-  "at": 0.0,
-  "end": 7.52,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 8.54,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.31,
+    "t1": 2.64,
     "text": "Today I'll be building and testing a cross-platform"
    },
    {
-    "t0": 2.357,
-    "t1": 4.191,
+    "t0": 2.72,
+    "t1": 5.28,
     "text": "mobile game just by using my voice."
    },
    {
-    "t0": 4.632,
-    "t1": 6.49,
+    "t0": 5.36,
+    "t1": 7.2,
     "text": "One codebase runs on iOS,"
    },
    {
-    "t0": 6.536,
-    "t1": 7.512,
+    "t0": 7.28,
+    "t1": 8.54,
     "text": "Android, and the web."
    }
   ]
  },
  "0002.png": {
   "text": "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
-  "dur": 8.25,
-  "at": 7.83,
-  "end": 16.08,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 8.575,
+  "takeAt": 8.735,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.065,
-    "t1": 1.725,
+    "t0": 0.105,
+    "t1": 1.985,
     "text": "I'll use Devin and Devin Voice,"
    },
    {
-    "t0": 1.841,
-    "t1": 4.07,
+    "t0": 2.065,
+    "t1": 4.625,
     "text": "which uses ChatGPT voice under the hood."
    },
    {
-    "t0": 4.395,
-    "t1": 8.204,
+    "t0": 4.665,
+    "t1": 8.575,
     "text": "The game's investors talk through OpenAI's GPT-Live-1 API."
    }
   ]
  },
  "0101.png": {
   "text": "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
-  "dur": 5.045,
-  "at": 16.245,
-  "end": 21.29,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 5.425,
+  "takeAt": 17.515,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.033,
-    "t1": 1.786,
+    "t0": 0.125,
+    "t1": 2.165,
     "text": "The investors talk and listen at the same"
    },
    {
-    "t0": 1.82,
-    "t1": 5.045,
+    "t0": 2.245,
+    "t1": 5.425,
     "text": "time, and background tools pop offer cards while they talk."
    }
   ]
  },
  "0132.png": {
   "text": "You can cut them off mid-question.",
-  "dur": 1.63,
-  "at": 21.62,
-  "end": 23.25,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 2.085,
+  "takeAt": 23.03,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.056,
-    "t1": 1.565,
+    "t0": 0.25,
+    "t1": 2.085,
     "text": "You can cut them off mid-question."
    }
   ]
  },
  "0133.png": {
   "text": "End the pitch for a score.",
-  "dur": 1.285,
-  "at": 23.335,
-  "end": 24.62,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 1.445,
+  "takeAt": 25.115,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.059,
-    "t1": 1.244,
+    "t0": 0.192,
+    "t1": 1.445,
     "text": "End the pitch for a score."
    }
   ]
  },
  "0134.png": {
   "text": "Or switch to ruthless sharks.",
-  "dur": 1.635,
-  "at": 24.775,
-  "end": 26.41,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 2.135,
+  "takeAt": 26.745,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.047,
-    "t1": 1.615,
+    "t0": 0.175,
+    "t1": 2.135,
     "text": "Or switch to ruthless sharks."
    }
   ]
  },
  "0214.png": {
   "text": "Here's how I built it.",
-  "dur": 1.025,
-  "at": 26.56,
-  "end": 27.585,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 1.145,
+  "takeAt": 29.085,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.039,
-    "t1": 1.003,
+    "t0": 0.195,
+    "t1": 1.145,
     "text": "Here's how I built it."
    }
   ]
  },
  "0217.png": {
   "text": "First, switch the environment to macOS for the iPhone simulator.",
-  "dur": 3.57,
-  "at": 27.78,
-  "end": 31.35,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 3.61,
+  "takeAt": 30.47,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.061,
-    "t1": 3.509,
+    "t0": 0.25,
+    "t1": 3.61,
     "text": "First, switch the environment to macOS for the iPhone simulator."
    }
   ]
  },
  "0222.png": {
   "text": "Then click the waveform button to start a voice call.",
-  "dur": 2.56,
-  "at": 31.47,
-  "end": 34.03,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 2.735,
+  "takeAt": 34.275,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.098,
-    "t1": 2.536,
+    "t0": 0.245,
+    "t1": 2.735,
     "text": "Then click the waveform button to start a voice call."
    }
   ]
  },
  "0443.png": {
   "text": "Devin builds the game, plus a small server that keeps the OpenAI key private.",
-  "dur": 4.155,
-  "at": 34.18,
-  "end": 38.335,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 4.385,
+  "takeAt": 37.215,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.151,
-    "t1": 1.243,
+    "t0": 0.225,
+    "t1": 1.425,
     "text": "Devin builds the game,"
    },
    {
-    "t0": 1.359,
-    "t1": 4.155,
+    "t0": 1.545,
+    "t1": 4.385,
     "text": "plus a small server that keeps the OpenAI key private."
    }
   ]
  },
  "0531.png": {
   "text": "Mid-build, I rejoin the call from inside the session.",
-  "dur": 2.735,
-  "at": 38.64,
-  "end": 41.375,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 2.985,
+  "takeAt": 41.785,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.161,
-    "t1": 2.715,
+    "t0": 0.215,
+    "t1": 2.985,
     "text": "Mid-build, I rejoin the call from inside the session."
    }
   ]
  },
  "0561.png": {
   "text": "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
-  "dur": 5.985,
-  "at": 41.68,
-  "end": 47.665,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 6.08,
+  "takeAt": 44.99,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.116,
-    "t1": 2.241,
+    "t0": 0.25,
+    "t1": 2.69,
     "text": "Then Devin tests the web build in Chrome."
    },
    {
-    "t0": 2.52,
-    "t1": 4.145,
+    "t0": 2.77,
+    "t1": 4.29,
     "text": "Its Mac has no microphone,"
    },
    {
-    "t0": 4.354,
-    "t1": 5.985,
+    "t0": 4.37,
+    "t1": 6.08,
     "text": "so it feeds in a recorded pitch."
    }
   ]
  },
  "0569.png": {
   "text": "Then it runs the same test on the iPhone simulator.",
-  "dur": 2.555,
-  "at": 47.95,
-  "end": 50.505,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 2.865,
+  "takeAt": 51.275,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.046,
-    "t1": 2.555,
+    "t0": 0.165,
+    "t1": 2.865,
     "text": "Then it runs the same test on the iPhone simulator."
    }
   ]
  },
  "1427.png": {
   "text": "When it's done, Devin opens a pull request.",
-  "dur": 2.33,
-  "at": 50.84,
-  "end": 53.17,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 2.455,
+  "takeAt": 54.335,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.059,
-    "t1": 0.767,
+    "t0": 0.145,
+    "t1": 0.945,
     "text": "When it's done,"
    },
    {
-    "t0": 0.825,
-    "t1": 2.323,
+    "t0": 1.025,
+    "t1": 2.455,
     "text": "Devin opens a pull request."
    }
   ]
  },
  "1428.png": {
   "text": "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
-  "dur": 4.585,
-  "at": 53.335,
-  "end": 57.92,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 5.22,
+  "takeAt": 56.975,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.072,
-    "t1": 1.802,
-    "text": "Each test run comes with a recording and"
+    "t0": 0.145,
+    "t1": 3.505,
+    "text": "Each test run comes with a recording and pass-fail checks."
    },
    {
-    "t0": 1.848,
-    "t1": 4.542,
-    "text": "pass-fail checks. Chrome passes all seven."
+    "t0": 3.665,
+    "t1": 5.22,
+    "text": "Chrome passes all seven."
    }
   ]
  },
  "1455.png": {
   "text": "The iPhone passes all six.",
-  "dur": 1.6,
-  "at": 57.97,
-  "end": 59.57,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 1.715,
+  "takeAt": 62.195,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.057,
-    "t1": 1.6,
+    "t0": 0.125,
+    "t1": 1.715,
     "text": "The iPhone passes all six."
    }
   ]
  },
  "1482.png": {
   "text": "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
-  "dur": 8.85,
-  "at": 59.91,
-  "end": 68.76,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 9.68,
+  "takeAt": 64.105,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.091,
-    "t1": 2.343,
-    "text": "A second Devin on Ubuntu tested Android in"
+    "t0": 0.135,
+    "t1": 3.575,
+    "text": "A second Devin on Ubuntu tested Android in an emulator."
    },
    {
-    "t0": 2.402,
-    "t1": 5.025,
-    "text": "an emulator. It reports eight checks passing and"
+    "t0": 3.615,
+    "t1": 6.415,
+    "text": "It reports eight checks passing and two dropped."
    },
    {
-    "t0": 5.048,
-    "t1": 7.521,
-    "text": "two dropped. The emulator's mic was distorted,"
+    "t0": 6.455,
+    "t1": 8.135,
+    "text": "The emulator's mic was distorted,"
    },
    {
-    "t0": 7.544,
-    "t1": 8.787,
+    "t0": 8.255,
+    "t1": 9.68,
     "text": "so some captions were wrong."
    }
   ]
  },
  "1486.png": {
   "text": "That's how you build and test a cross-platform game just by using your voice.",
-  "dur": 3.515,
-  "at": 68.875,
-  "end": 72.39,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 4.235,
+  "takeAt": 73.785,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. One codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "0002.png",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API.",
+    "I'll use Devin and Devin Voice, which uses ChatGPT voice under the hood. The game's investors talk through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "0101.png",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk.",
+    "The investors talk and listen at the same time, and background tools pop offer cards while they talk."
+   ],
+   [
+    "0132.png",
+    "You can cut them off mid-question.",
+    "You can cut them off mid-question."
+   ],
+   [
+    "0133.png",
+    "End the pitch for a score.",
+    "End the pitch for a score."
+   ],
+   [
+    "0134.png",
+    "Or switch to ruthless sharks.",
+    "Or switch to ruthless sharks."
+   ],
+   [
+    "0214.png",
+    "Here's how I built it.",
+    "Here's how I built it."
+   ],
+   [
+    "0217.png",
+    "First, switch the environment to macOS for the iPhone simulator.",
+    "First, switch the environment to macOS for the iPhone simulator."
+   ],
+   [
+    "0222.png",
+    "Then click the waveform button to start a voice call.",
+    "Then click the waveform button to start a voice call."
+   ],
+   [
+    "0443.png",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private.",
+    "Devin builds the game, plus a small server that keeps the OpenAI key private."
+   ],
+   [
+    "0531.png",
+    "Mid-build, I rejoin the call from inside the session.",
+    "Mid-build, I rejoin the call from inside the session."
+   ],
+   [
+    "0561.png",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch.",
+    "Then Devin tests the web build in Chrome. Its Mac has no microphone, so it feeds in a recorded pitch."
+   ],
+   [
+    "0569.png",
+    "Then it runs the same test on the iPhone simulator.",
+    "Then it runs the same test on the iPhone simulator."
+   ],
+   [
+    "1427.png",
+    "When it's done, Devin opens a pull request.",
+    "When it's done, Devin opens a pull request."
+   ],
+   [
+    "1428.png",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven.",
+    "Each test run comes with a recording and pass-fail checks. Chrome passes all seven."
+   ],
+   [
+    "1455.png",
+    "The iPhone passes all six.",
+    "The iPhone passes all six."
+   ],
+   [
+    "1482.png",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong.",
+    "A second Devin on Ubuntu tested Android in an emulator. It reports eight checks passing and two dropped. The emulator's mic was distorted, so some captions were wrong."
+   ],
+   [
+    "1486.png",
+    "That's how you build and test a cross-platform game just by using your voice.",
+    "That's how you build and test a cross-platform game just by using your voice."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.065,
-    "t1": 2.016,
+    "t0": 0.215,
+    "t1": 2.375,
     "text": "That's how you build and test a cross-platform"
    },
    {
-    "t0": 2.062,
-    "t1": 3.515,
+    "t0": 2.615,
+    "t1": 4.235,
     "text": "game just by using your voice."
    }
   ]

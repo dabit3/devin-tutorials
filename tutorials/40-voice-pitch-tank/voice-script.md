@@ -1,6 +1,6 @@
 # Tutorial 40: Pitch Tank (Devin Voice + GPT-Live-1), voice script
 
-Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one take cut locally with `_kit/tools/vo_onetake.py`). It plays only outside the two calls and the game clips. During those, the real call audio and the real GPT-Live-1 investor audio play instead. `genspec.py` is the source of truth for the lines and where they land.
+Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, model `eleven_v4`, the voice's default settings with no seed or `voice_settings`, one take cut locally with `VO_MODEL=eleven_v4 _kit/tools/vo.py`). It plays only outside the two calls and the game clips. During those, the real call audio and the real GPT-Live-1 investor audio play instead. `genspec.py` is the source of truth for the lines and where they land.
 
 ## Narration
 
@@ -25,7 +25,7 @@ Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one
 
 ## The calls (real)
 
-Nader's lines below were generated with his ElevenLabs voice (one take, cut locally into `call/c*.wav`) and fed to Devin Voice as the microphone. Devin heard them live and answered by voice. Its replies in the video are its own WebRTC audio, recorded from the call and mixed with Nader's lines by wall-clock time (`mixcall.py`).
+Nader's lines below were generated with his ElevenLabs voice and `eleven_v4` (default settings, one take, cut locally into `call/c*.wav`) and fed to Devin Voice as the microphone. Devin heard them live and answered by voice. Its replies in the video are its own WebRTC audio, recorded from the call and mixed with Nader's lines by wall-clock time (`mixcall.py`). Nader's lines were regenerated with `eleven_v4` after the take, word for word. The three that came out longer start slightly earlier, in the quiet before them (`call/shift.json`: c1 by 0.6 s, c2 by 1.68 s, c3 by 0.67 s). That way each still ends before Devin answers. The interruption and the "Nice" cut-in keep their original start times.
 
 ### Call 1 (started from the home page, macOS environment)
 
@@ -44,7 +44,7 @@ Nader's lines below were generated with his ElevenLabs voice (one take, cut loca
 
 ## The game's voices (real GPT-Live-1)
 
-The investors in Pitch Tank are three GPT-Live-1 sessions (`POST /v1/live/sessions` over WebRTC, with a small server doing the SDP exchange so the OpenAI key stays server-side). The opening clips were recorded in Chrome on the Mac with a pre-recorded founder pitch as the microphone. Every investor line you hear is the model's own audio. Background tool calls move the interest meters, pop the offer cards and score the pitch.
+The investors in Pitch Tank are three GPT-Live-1 sessions (`POST /v1/live/sessions` over WebRTC, with a small server doing the SDP exchange so the OpenAI key stays server-side). The opening clips were recorded in Chrome on the Mac with a pre-recorded founder pitch as the microphone. Every investor line you hear is the model's own audio. The founder lines in those clips are Nader's ElevenLabs voice, regenerated with `eleven_v4`. They replace the original pitch audio at the same start times, and the investor audio is untouched. Background tool calls move the interest meters, pop the offer cards and score the pitch.
 
 GPT-Live-1 docs: [model](https://developers.openai.com/api/docs/models/gpt-live-1), [Live API guide](https://developers.openai.com/api/docs/guides/live), [delegation](https://developers.openai.com/api/docs/guides/live-delegation), [prompting](https://developers.openai.com/api/docs/guides/live-prompting), [conversations](https://developers.openai.com/api/docs/guides/live-conversations), [WebRTC](https://developers.openai.com/api/docs/guides/voice-webrtc?api=live).
 
