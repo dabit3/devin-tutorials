@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-  "dur": 6.5,
+  "dur": 7.69,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -84,17 +84,17 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.322,
+    "t1": 2.88,
     "text": "Viral AI posts often make technical claims,"
    },
    {
-    "t0": 2.357,
-    "t1": 4.377,
+    "t0": 2.96,
+    "t1": 5.52,
     "text": "like a benchmark record or a funding round,"
    },
    {
-    "t0": 4.586,
-    "t1": 6.5,
+    "t0": 5.64,
+    "t1": 7.69,
     "text": "and few people check the sources behind them."
    }
   ]
@@ -102,8 +102,8 @@
  "0001.png": {
   "text": "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
   "say": "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-  "dur": 8.215,
-  "takeAt": 6.765,
+  "dur": 8.84,
+  "takeAt": 8.12,
   "mode": "single-take-1",
   "take": [
    [
@@ -185,22 +185,22 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.845,
+    "t1": 3.06,
     "text": "Here, Devin builds a claim checker that uses the"
    },
    {
-    "t0": 2.895,
-    "t1": 4.754,
+    "t0": 3.11,
+    "t1": 5.115,
     "text": "xAI API to find those posts on X,"
    },
    {
-    "t0": 4.804,
-    "t1": 6.083,
+    "t0": 5.165,
+    "t1": 6.548,
     "text": "and shows a verdict for"
    },
    {
-    "t0": 6.133,
-    "t1": 8.165,
+    "t0": 6.598,
+    "t1": 8.79,
     "text": "each claim with its primary sources."
    }
   ]
@@ -208,8 +208,8 @@
  "modal.png": {
   "text": "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
   "say": "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
-  "dur": 25.076,
-  "takeAt": 15.124,
+  "dur": 25.275,
+  "takeAt": 17.345,
   "mode": "single-take-1",
   "take": [
    [
@@ -290,71 +290,71 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.142,
+    "t0": 0.095,
+    "t1": 1.455,
     "text": "It runs on Modal."
    },
    {
-    "t0": 1.421,
-    "t1": 3.986,
+    "t0": 1.535,
+    "t1": 4.095,
     "text": "A scheduled function pulls new posts every hour,"
    },
    {
-    "t0": 4.137,
-    "t1": 5.728,
+    "t0": 4.175,
+    "t1": 6.175,
     "text": "so there's no server to keep running."
    },
    {
-    "t0": 6.239,
-    "t1": 9.64,
+    "t0": 6.335,
+    "t1": 10.175,
     "text": "Calling .map() checks the claims in parallel across containers."
    },
    {
-    "t0": 9.965,
-    "t1": 12.055,
+    "t0": 10.255,
+    "t1": 12.396,
     "text": "A Modal Dict stores the results,"
    },
    {
-    "t0": 12.105,
-    "t1": 13.727,
+    "t0": 12.446,
+    "t1": 14.108,
     "text": "a web endpoint serves the"
    },
    {
-    "t0": 13.777,
-    "t1": 15.8,
+    "t0": 14.158,
+    "t1": 16.231,
     "text": "page at a public modal.run URL,"
    },
    {
-    "t0": 15.85,
-    "t1": 18.274,
+    "t0": 16.281,
+    "t1": 18.765,
     "text": "and a Modal Secret holds the xAI key."
    },
    {
-    "t0": 18.649,
-    "t1": 20.507,
+    "t0": 18.895,
+    "t1": 20.895,
     "text": "Between runs it scales to zero,"
    },
    {
-    "t0": 20.658,
-    "t1": 21.923,
+    "t0": 20.935,
+    "t1": 22.255,
     "text": "and you pay by the second,"
    },
    {
-    "t0": 22.202,
-    "t1": 24.083,
+    "t0": 22.415,
+    "t1": 24.122,
     "text": "instead of leaving a laptop script or a"
    },
    {
-    "t0": 24.129,
-    "t1": 25.076,
+    "t0": 24.175,
+    "t1": 25.275,
     "text": "server on all day."
    }
   ]
  },
  "0003.png": {
   "text": "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-  "dur": 12.49,
-  "takeAt": 40.48,
+  "dur": 13.255,
+  "takeAt": 43.065,
   "mode": "single-take-1",
   "take": [
    [
@@ -435,46 +435,46 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 0.805,
+    "t0": 0.095,
+    "t1": 0.855,
     "text": "In the prompt,"
    },
    {
-    "t0": 0.84,
-    "t1": 2.57,
+    "t0": 1.015,
+    "t1": 2.695,
     "text": "I ask for an hourly scan with X"
    },
    {
-    "t0": 2.628,
-    "t1": 4.381,
+    "t0": 2.775,
+    "t1": 4.615,
     "text": "Search and parallel claim checks,"
    },
    {
-    "t0": 4.59,
-    "t1": 6.378,
+    "t0": 4.695,
+    "t1": 6.535,
     "text": "with results saved in a Modal Dict and"
    },
    {
-    "t0": 6.424,
-    "t1": 7.817,
+    "t0": 6.615,
+    "t1": 8.375,
     "text": "shown on a dark web page."
    },
    {
-    "t0": 8.201,
-    "t1": 9.745,
+    "t0": 8.455,
+    "t1": 10.135,
     "text": "It must never post to X,"
    },
    {
-    "t0": 9.919,
-    "t1": 12.49,
+    "t0": 10.215,
+    "t1": 13.255,
     "text": "and it labels counts as posts found, not totals."
    }
   ]
  },
  "0005.png": {
   "text": "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
-  "dur": 4.883,
-  "takeAt": 53.332,
+  "dur": 5.4,
+  "takeAt": 56.785,
   "mode": "single-take-1",
   "take": [
    [
@@ -555,26 +555,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.234,
+    "t0": 0.095,
+    "t1": 2.095,
     "text": "Devin replies with a short plan that matches"
    },
    {
-    "t0": 2.268,
-    "t1": 4.045,
+    "t0": 2.175,
+    "t1": 4.175,
     "text": "the prompt, and then it writes the app"
    },
    {
-    "t0": 4.114,
-    "t1": 4.883,
+    "t0": 4.255,
+    "t1": 5.4,
     "text": "and its tests."
    }
   ]
  },
  "0011.png": {
   "text": "Then it runs modal deploy, and calls the public URL to check that the page responds.",
-  "dur": 4.676,
-  "takeAt": 58.464,
+  "dur": 4.85,
+  "takeAt": 62.2,
   "mode": "single-take-1",
   "take": [
    [
@@ -656,25 +656,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.571,
+    "t1": 1.693,
     "text": "Then it runs modal deploy,"
    },
    {
-    "t0": 1.722,
-    "t1": 3.719,
+    "t0": 1.747,
+    "t1": 3.56,
     "text": "and calls the public URL to check that"
    },
    {
-    "t0": 3.754,
-    "t1": 4.676,
+    "t0": 3.6,
+    "t1": 4.85,
     "text": "the page responds."
    }
   ]
  },
  "0016.png": {
   "text": "Next, Devin pushes a branch and opens a pull request.",
-  "dur": 2.815,
-  "takeAt": 63.555,
+  "dur": 3.425,
+  "takeAt": 67.24,
   "mode": "single-take-1",
   "take": [
    [
@@ -755,16 +755,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.103,
-    "t1": 2.815,
+    "t0": 0.12,
+    "t1": 3.425,
     "text": "Next, Devin pushes a branch and opens a pull request."
    }
   ]
  },
  "0018.png": {
   "text": "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
-  "dur": 4.565,
-  "takeAt": 66.685,
+  "dur": 5.505,
+  "takeAt": 70.76,
   "mode": "single-take-1",
   "take": [
    [
@@ -845,26 +845,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.049,
-    "t1": 1.849,
+    "t0": 0.12,
+    "t1": 2.4,
     "text": "Devin Review checks the pull request."
    },
    {
-    "t0": 2.174,
-    "t1": 3.462,
+    "t0": 2.44,
+    "t1": 3.8,
     "text": "Three findings are resolved,"
    },
    {
-    "t0": 3.486,
-    "t1": 4.565,
+    "t0": 3.88,
+    "t1": 5.505,
     "text": "and four are still open."
    }
   ]
  },
  "0028.png": {
   "text": "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-  "dur": 6.36,
-  "takeAt": 71.565,
+  "dur": 7.2,
+  "takeAt": 76.265,
   "mode": "single-take-1",
   "take": [
    [
@@ -945,31 +945,31 @@
   ],
   "chunks": [
    {
-    "t0": 0.057,
-    "t1": 0.649,
+    "t0": 0.055,
+    "t1": 0.975,
     "text": "When it's done,"
    },
    {
-    "t0": 0.684,
-    "t1": 2.982,
+    "t0": 1.015,
+    "t1": 3.255,
     "text": "Devin reports the deployed URL and how it"
    },
    {
-    "t0": 3.017,
-    "t1": 3.853,
+    "t0": 3.415,
+    "t1": 4.268,
     "text": "tested the app,"
    },
    {
-    "t0": 4.027,
-    "t1": 6.36,
+    "t0": 4.322,
+    "t1": 7.2,
     "text": "and notes that every verdict so far was supported."
    }
   ]
  },
  "0029.png": {
   "text": "Here's the page running on Modal.",
-  "dur": 1.514,
-  "takeAt": 78.166,
+  "dur": 1.96,
+  "takeAt": 83.465,
   "mode": "single-take-1",
   "take": [
    [
@@ -1050,16 +1050,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.514,
+    "t0": 0.055,
+    "t1": 1.96,
     "text": "Here's the page running on Modal."
    }
   ]
  },
  "0030.png": {
   "text": "This run found five posts, and all five claims were supported by their sources.",
-  "dur": 4.118,
-  "takeAt": 80.012,
+  "dur": 4.665,
+  "takeAt": 85.48,
   "mode": "single-take-1",
   "take": [
    [
@@ -1141,20 +1141,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.641,
+    "t1": 1.76,
     "text": "This run found five posts,"
    },
    {
-    "t0": 1.676,
-    "t1": 4.118,
+    "t0": 1.8,
+    "t1": 4.665,
     "text": "and all five claims were supported by their sources."
    }
   ]
  },
  "0031.png": {
   "text": "Each card shows the post, the claim Grok pulled out, and the verdict.",
-  "dur": 3.841,
-  "takeAt": 84.459,
+  "dur": 4.2,
+  "takeAt": 90.145,
   "mode": "single-take-1",
   "take": [
    [
@@ -1235,18 +1235,18 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.524,
+    "t0": 0.095,
+    "t1": 1.722,
     "text": "Each card shows the post,"
    },
    {
-    "t0": 1.849,
-    "t1": 3.092,
+    "t0": 1.748,
+    "t1": 3.015,
     "text": "the claim Grok pulled out,"
    },
    {
-    "t0": 3.126,
-    "t1": 3.841,
+    "t0": 3.055,
+    "t1": 4.2,
     "text": "and the verdict."
    }
   ]
@@ -1254,8 +1254,8 @@
  "0032.png": {
   "text": "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
   "say": "Below that are the primary source links, like the archive paper behind this benchmark claim.",
-  "dur": 4.647,
-  "takeAt": 88.603,
+  "dur": 4.905,
+  "takeAt": 94.4,
   "mode": "single-take-1",
   "take": [
    [
@@ -1337,20 +1337,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.105,
+    "t1": 2.221,
     "text": "Below that are the primary source links,"
    },
    {
-    "t0": 2.155,
-    "t1": 4.597,
+    "t0": 2.271,
+    "t1": 4.855,
     "text": "like the arXiv paper behind this benchmark claim."
    }
   ]
  },
  "0034.png": {
   "text": "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-  "dur": 5.841,
-  "takeAt": 93.769,
+  "dur": 6.785,
+  "takeAt": 99.32,
   "mode": "single-take-1",
   "take": [
    [
@@ -1432,25 +1432,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.175,
+    "t1": 2.16,
     "text": "X Search returns a sample of posts,"
    },
    {
-    "t0": 2.291,
-    "t1": 4.219,
+    "t0": 2.2,
+    "t1": 4.28,
     "text": "so the page labels its counts as posts"
    },
    {
-    "t0": 4.277,
-    "t1": 5.841,
+    "t0": 4.36,
+    "t1": 6.785,
     "text": "found by each search, not totals."
    }
   ]
  },
  "outro": {
   "text": "Viral claims in, verdicts with primary sources out.",
-  "dur": 2.742,
-  "takeAt": 99.888,
+  "dur": 3.33,
+  "takeAt": 106.16,
   "mode": "single-take-1",
   "take": [
    [
@@ -1532,12 +1532,12 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.095,
+    "t1": 1.4,
     "text": "Viral claims in,"
    },
    {
-    "t0": 1.165,
-    "t1": 2.742,
+    "t0": 1.44,
+    "t1": 3.33,
     "text": "verdicts with primary sources out."
    }
   ]

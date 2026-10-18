@@ -52,7 +52,7 @@ window.SPEC = {
       "fade": 0,
       "cursor": false,
       "capPos": "bottom",
-      "hold": 6.40282,
+      "hold": 5.45,
       "cap": "A public modal.run page that scales to zero"
     },
     "0002.png": {
@@ -97,7 +97,7 @@ window.SPEC = {
     },
     "0029.png": {
       "cursor": false,
-      "hold": 2.5,
+      "hold": 2.2,
       "vo": "Here's the page running on Modal.",
       "cap": "The deployed page on modal.run"
     },
