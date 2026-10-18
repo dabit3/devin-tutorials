@@ -1,558 +1,385 @@
 {
  "0000.png": {
-  "text": "This is testing with Devin. After Devin makes a change, it tests your app end to end on its own computer, and sends you a recording of every check.",
-  "say": "This, is testing with Devin. After Devin makes a change, it tests your app end to end on its own computer, and sends you a recording of every check.",
-  "dur": 6.98,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0000.png",
-    "This is testing with Devin. After Devin makes a change, it tests your app end to end on its own computer, and sends you a recording of every check.",
-    "This, is testing with Devin. After Devin makes a change, it tests your app end to end on its own computer, and sends you a recording of every check."
-   ]
-  ],
+  "text": "Devin can test your app the way a person would, on its own computer, and record the whole run.",
+  "dur": 4.35,
+  "at": 0.0,
+  "end": 4.35,
+  "mode": "one-take",
   "checked": true,
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.22,
-    "text": "This is testing with Devin."
+    "t1": 1.428,
+    "text": "Devin can test your app the way a"
    },
    {
-    "t0": 1.82,
-    "t1": 2.969,
-    "text": "After Devin makes a change,"
+    "t0": 1.474,
+    "t1": 3.146,
+    "text": "person would, on its own computer,"
    },
    {
-    "t0": 2.993,
-    "t1": 4.293,
-    "text": "it tests your app end to end on"
-   },
-   {
-    "t0": 4.339,
-    "t1": 5.164,
-    "text": "its own computer,"
-   },
-   {
-    "t0": 5.315,
-    "t1": 6.98,
-    "text": "and sends you a recording of every check."
+    "t0": 3.181,
+    "t1": 4.319,
+    "text": "and record the whole run."
    }
   ]
  },
  "0001.png": {
-  "text": "This app is an iPhone game, so open the configuration menu.",
-  "dur": 2.7,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0001.png",
-    "This app is an iPhone game, so open the configuration menu.",
-    "This app is an iPhone game, so open the configuration menu."
-   ]
-  ],
+  "text": "This is an iPhone game, so first pick the machine Devin works on.",
+  "dur": 3.105,
+  "at": 4.775,
+  "end": 7.88,
+  "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0,
-    "t1": 1.219,
-    "text": "This app is an iPhone game,"
+    "t0": 0.055,
+    "t1": 1.134,
+    "text": "This is an iPhone game,"
    },
    {
-    "t0": 1.254,
-    "t1": 2.7,
-    "text": "so open the configuration menu."
+    "t0": 1.158,
+    "t1": 3.073,
+    "text": "so first pick the machine Devin works on."
    }
   ]
  },
  "0004.png": {
-  "text": "Pick a macOS machine. It comes with Xcode and the iOS Simulator.",
-  "dur": 3.7,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0004.png",
-    "Pick a macOS machine. It comes with Xcode and the iOS Simulator.",
-    "Pick a macOS machine. It comes with Xcode and the iOS Simulator."
-   ]
-  ],
+  "text": "Under Virtual environment, choose macOS, so Devin can run the iPhone Simulator.",
+  "dur": 4.31,
+  "at": 8.18,
+  "end": 12.49,
+  "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0,
-    "t1": 1.15,
-    "text": "Pick a macOS machine."
+    "t0": 0.11,
+    "t1": 1.212,
+    "text": "Under Virtual environment,"
    },
    {
-    "t0": 1.75,
-    "t1": 3.7,
-    "text": "It comes with Xcode and the iOS Simulator."
+    "t0": 1.247,
+    "t1": 4.266,
+    "text": "choose macOS, so Devin can run the iPhone Simulator."
    }
   ]
  },
- "0006.png": {
-  "text": "Mention the repo,",
-  "dur": 0.805,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0006.png",
-    "Mention the repo,",
-    "Mention the repo,"
-   ],
-   [
-    "0012.png",
-    "and describe a small feature: a hops count on the game-over card.",
-    "and describe a small feature: a hops count on the game-over card."
-   ]
-  ],
+ "0010.png": {
+  "text": "Then mention the repo.",
+  "dur": 1.25,
+  "at": 12.69,
+  "end": 13.94,
+  "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0,
-    "t1": 0.778,
-    "text": "Mention the repo,"
+    "t0": 0.081,
+    "t1": 1.219,
+    "text": "Then mention the repo."
    }
   ]
  },
- "0012.png": {
-  "text": "and describe a small feature: a hops count on the game-over card.",
-  "dur": 3.105,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0006.png",
-    "Mention the repo,",
-    "Mention the repo,"
-   ],
-   [
-    "0012.png",
-    "and describe a small feature: a hops count on the game-over card.",
-    "and describe a small feature: a hops count on the game-over card."
-   ]
-  ],
+ "0015.png": {
+  "text": "And ask for a small feature: a line on the game-over card that shows how many hops you made.",
+  "dur": 4.66,
+  "at": 14.075,
+  "end": 18.735,
+  "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0,
-    "t1": 1.227,
-    "text": "and describe a small feature:"
+    "t0": 0.043,
+    "t1": 1.413,
+    "text": "And ask for a small feature:"
    },
    {
-    "t0": 1.505,
-    "t1": 3.105,
-    "text": "a hops count on the game-over card."
+    "t0": 1.738,
+    "t1": 3.549,
+    "text": "a line on the game-over card that shows"
+   },
+   {
+    "t0": 3.607,
+    "t1": 4.66,
+    "text": "how many hops you made."
    }
   ]
  },
- "0016.png": {
-  "text": "Devin finds the code, makes the change, and builds the app for the Simulator.",
-  "dur": 3.39,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0016.png",
-    "Devin finds the code, makes the change, and builds the app for the Simulator.",
-    "Devin finds the code, makes the change, and builds the app for the Simulator."
-   ]
-  ],
+ "0017.png": {
+  "text": "Devin finds the game-over code, makes the change, and builds the app.",
+  "dur": 3.62,
+  "at": 18.99,
+  "end": 22.61,
+  "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0,
-    "t1": 1.091,
-    "text": "Devin finds the code,"
+    "t0": 0.155,
+    "t1": 1.803,
+    "text": "Devin finds the game-over code,"
    },
    {
-    "t0": 1.149,
-    "t1": 1.881,
+    "t0": 2.047,
+    "t1": 2.825,
     "text": "makes the change,"
    },
    {
-    "t0": 1.904,
-    "t1": 3.39,
-    "text": "and builds the app for the Simulator."
+    "t0": 2.848,
+    "t1": 3.62,
+    "text": "and builds the app."
+   }
+  ]
+ },
+ "0045.png": {
+  "text": "It opens a pull request on its own.",
+  "dur": 1.835,
+  "at": 22.895,
+  "end": 24.73,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.046,
+    "t1": 1.834,
+    "text": "It opens a pull request on its own."
+   }
+  ]
+ },
+ "0046.png": {
+  "text": "It also ran the app in the Simulator. The new HOPS line sits right under BEST.",
+  "dur": 4.54,
+  "at": 24.955,
+  "end": 29.495,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.053,
+    "t1": 2.015,
+    "text": "It also ran the app in the Simulator."
+   },
+   {
+    "t0": 2.259,
+    "t1": 4.54,
+    "text": "The new HOPS line sits right under BEST."
    }
   ]
  },
  "0048.png": {
-  "text": "Then it opens a pull request on its own.",
-  "dur": 1.67,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0048.png",
-    "Then it opens a pull request on its own.",
-    "Then it opens a pull request on its own."
-   ]
-  ],
+  "text": "Then it offers to play the game by hand and record it. Click to approve.",
+  "dur": 3.87,
+  "at": 29.64,
+  "end": 33.51,
+  "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0,
-    "t1": 1.67,
-    "text": "Then it opens a pull request on its own."
-   }
-  ]
- },
- "0074.png": {
-  "text": "With the PR up, Devin offers to test the change for you.",
-  "dur": 2.39,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0074.png",
-    "With the PR up, Devin offers to test the change for you.",
-    "With the PR up, Devin offers to test the change for you."
-   ]
-  ],
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0,
-    "t1": 0.731,
-    "text": "With the PR up,"
+    "t0": 0.07,
+    "t1": 1.556,
+    "text": "Then it offers to play the game by"
    },
    {
-    "t0": 0.755,
-    "t1": 2.39,
-    "text": "Devin offers to test the change for you."
-   }
-  ]
- },
- "0079.png": {
-  "text": "Click the test button to approve it.",
-  "dur": 1.41,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0079.png",
-    "Click the test button to approve it.",
-    "Click the test button to approve it."
-   ]
-  ],
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0,
-    "t1": 1.41,
-    "text": "Click the test button to approve it."
-   }
-  ]
- },
- "0080.png": {
-  "text": "Or turn on Pre-approve testing in Settings \u2192 Preferences, and Devin tests without asking.",
-  "say": "Or turn on Pre-approve testing in Settings, Preferences, and Devin tests without asking.",
-  "dur": 3.86,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0080.png",
-    "Or turn on Pre-approve testing in Settings \u2192 Preferences, and Devin tests without asking.",
-    "Or turn on Pre-approve testing in Settings, Preferences, and Devin tests without asking."
-   ]
-  ],
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0,
-    "t1": 3.86,
-    "text": "Or turn on Pre-approve testing in Settings \u2192 Preferences, and Devin tests without asking."
-   }
-  ]
- },
- "0086.png": {
-  "text": "In testing mode, Devin reads the diff, checks the Simulator, and plans one focused test of the flow that matters.",
-  "dur": 5.16,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0086.png",
-    "In testing mode, Devin reads the diff, checks the Simulator, and plans one focused test of the flow that matters.",
-    "In testing mode, Devin reads the diff, checks the Simulator, and plans one focused test of the flow that matters."
-   ]
-  ],
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0,
-    "t1": 0.766,
-    "text": "In testing mode,"
+    "t0": 1.626,
+    "t1": 2.682,
+    "text": "hand and record it."
    },
    {
-    "t0": 0.801,
-    "t1": 1.753,
-    "text": "Devin reads the diff,"
-   },
-   {
-    "t0": 1.8,
-    "t1": 2.705,
-    "text": "checks the Simulator,"
-   },
-   {
-    "t0": 2.728,
-    "t1": 5.16,
-    "text": "and plans one focused test of the flow that matters."
+    "t0": 3.007,
+    "t1": 3.87,
+    "text": "Click to approve."
    }
   ]
  },
- "0089.png": {
-  "text": "Watch it live in the Computer tab.",
-  "dur": 1.48,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0089.png",
-    "Watch it live in the Computer tab.",
-    "Watch it live in the Computer tab."
-   ]
-  ],
+ "0050.png": {
+  "text": "Devin hands the job to its testing agent.",
+  "dur": 2.17,
+  "at": 33.88,
+  "end": 36.05,
+  "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0,
-    "t1": 1.48,
-    "text": "Watch it live in the Computer tab."
+    "t0": 0.126,
+    "t1": 2.17,
+    "text": "Devin hands the job to its testing agent."
    }
   ]
  },
- "0091.png": {
-  "text": "Devin starts a recording, and plays a real run in the iPhone Simulator.",
-  "dur": 3.15,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0091.png",
-    "Devin starts a recording, and plays a real run in the iPhone Simulator.",
-    "Devin starts a recording, and plays a real run in the iPhone Simulator."
-   ]
-  ],
+ "0108.png": {
+  "text": "Watch it live in the Computer tab, on a real iPhone Simulator.",
+  "dur": 3.385,
+  "at": 36.295,
+  "end": 39.68,
+  "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0,
-    "t1": 1.08,
-    "text": "Devin starts a recording,"
+    "t0": 0.091,
+    "t1": 1.693,
+    "text": "Watch it live in the Computer tab,"
    },
    {
-    "t0": 1.103,
-    "t1": 3.15,
-    "text": "and plays a real run in the iPhone Simulator."
-   }
-  ]
- },
- "0095.png": {
-  "text": "Then it taps retry, to check that the count resets.",
-  "dur": 2.58,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0095.png",
-    "Then it taps retry, to check that the count resets.",
-    "Then it taps retry, to check that the count resets."
-   ]
-  ],
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0,
-    "t1": 1.126,
-    "text": "Then it taps retry,"
-   },
-   {
-    "t0": 1.161,
-    "t1": 2.58,
-    "text": "to check that the count resets."
-   }
-  ]
- },
- "0096.png": {
-  "text": "Game over. The new hops line sits right under the best score.",
-  "dur": 3.32,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0096.png",
-    "Game over. The new hops line sits right under the best score.",
-    "Game over. The new hops line sits right under the best score."
-   ]
-  ],
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0,
-    "t1": 0.51,
-    "text": "Game over."
-   },
-   {
-    "t0": 1.11,
-    "t1": 3.32,
-    "text": "The new hops line sits right under the best score."
-   }
-  ]
- },
- "0106.png": {
-  "text": "When it's done, the recording lands in the chat, with a pass and fail summary.",
-  "dur": 3.21,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0106.png",
-    "When it's done, the recording lands in the chat, with a pass and fail summary.",
-    "When it's done, the recording lands in the chat, with a pass and fail summary."
-   ]
-  ],
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0,
-    "t1": 0.557,
-    "text": "When it's done,"
-   },
-   {
-    "t0": 0.58,
-    "t1": 1.869,
-    "text": "the recording lands in the chat,"
-   },
-   {
-    "t0": 1.892,
-    "t1": 3.21,
-    "text": "with a pass and fail summary."
-   }
-  ]
- },
- "0110.png": {
-  "text": "Play it back to see exactly what Devin did.",
-  "dur": 1.85,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0110.png",
-    "Play it back to see exactly what Devin did.",
-    "Play it back to see exactly what Devin did."
-   ]
-  ],
-  "checked": true,
-  "chunks": [
-   {
-    "t0": 0,
-    "t1": 1.85,
-    "text": "Play it back to see exactly what Devin did."
+    "t0": 1.751,
+    "t1": 3.33,
+    "text": "on a real iPhone Simulator."
    }
   ]
  },
  "0120.png": {
-  "text": "Annotations mark each check as it happens.",
-  "dur": 2.01,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0120.png",
-    "Annotations mark each check as it happens.",
-    "Annotations mark each check as it happens."
-   ]
-  ],
+  "text": "Devin plays real runs, hopping in every direction, and bumping the edge on purpose.",
+  "dur": 4.195,
+  "at": 39.88,
+  "end": 44.075,
+  "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0,
-    "t1": 2.01,
-    "text": "Annotations mark each check as it happens."
+    "t0": 0.128,
+    "t1": 1.474,
+    "text": "Devin plays real runs,"
+   },
+   {
+    "t0": 1.591,
+    "t1": 2.693,
+    "text": "hopping in every direction,"
+   },
+   {
+    "t0": 2.717,
+    "t1": 4.195,
+    "text": "and bumping the edge on purpose."
    }
   ]
  },
- "0148.png": {
-  "text": "Four passed, zero failed. Now you can merge with confidence.",
-  "dur": 3.2,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0148.png",
-    "Four passed, zero failed. Now you can merge with confidence.",
-    "Four passed, zero failed. Now you can merge with confidence."
-   ]
-  ],
+ "0130.png": {
+  "text": "After a retry, the count starts over.",
+  "dur": 2.21,
+  "at": 44.35,
+  "end": 46.56,
+  "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0,
-    "t1": 1.24,
-    "text": "Four passed, zero failed."
+    "t0": 0.093,
+    "t1": 1.068,
+    "text": "After a retry,"
    },
    {
-    "t0": 1.84,
-    "t1": 3.2,
-    "text": "Now you can merge with confidence."
+    "t0": 1.091,
+    "t1": 2.21,
+    "text": "the count starts over."
    }
   ]
  },
- "0149.png": {
-  "text": "Devin can also save how it tested your app as a skill, so the next test starts faster.",
-  "dur": 4.32,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "0149.png",
-    "Devin can also save how it tested your app as a skill, so the next test starts faster.",
-    "Devin can also save how it tested your app as a skill, so the next test starts faster."
-   ]
-  ],
+ "0160.png": {
+  "text": "And a hop blocked by a tree doesn't count at all.",
+  "dur": 2.24,
+  "at": 46.825,
+  "end": 49.065,
+  "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0,
-    "t1": 1.776,
-    "text": "Devin can also save how it tested your"
+    "t0": 0.021,
+    "t1": 1.588,
+    "text": "And a hop blocked by a tree doesn't"
    },
    {
-    "t0": 1.823,
-    "t1": 2.589,
-    "text": "app as a skill,"
+    "t0": 1.623,
+    "t1": 2.24,
+    "text": "count at all."
+   }
+  ]
+ },
+ "0183.png": {
+  "text": "When it's done, the recording lands in the chat, and every check passed.",
+  "dur": 3.25,
+  "at": 49.36,
+  "end": 52.61,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.052,
+    "t1": 0.713,
+    "text": "When it's done,"
    },
    {
-    "t0": 2.74,
-    "t1": 4.32,
-    "text": "so the next test starts faster."
+    "t0": 0.748,
+    "t1": 2.188,
+    "text": "the recording lands in the chat,"
+   },
+   {
+    "t0": 2.211,
+    "t1": 3.25,
+    "text": "and every check passed."
+   }
+  ]
+ },
+ "0185.png": {
+  "text": "Open it to play it back.",
+  "dur": 1.21,
+  "at": 52.93,
+  "end": 54.14,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.092,
+    "t1": 1.21,
+    "text": "Open it to play it back."
+   }
+  ]
+ },
+ "0200.png": {
+  "text": "Each check comes with a note, and the timeline jumps to that moment in the video.",
+  "dur": 3.67,
+  "at": 54.37,
+  "end": 58.04,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.115,
+    "t1": 1.427,
+    "text": "Each check comes with a note,"
+   },
+   {
+    "t0": 1.45,
+    "t1": 3.621,
+    "text": "and the timeline jumps to that moment in the video."
+   }
+  ]
+ },
+ "0246.png": {
+  "text": "Every check passed, so the pull request is ready for review.",
+  "dur": 2.95,
+  "at": 58.305,
+  "end": 61.255,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.069,
+    "t1": 1.068,
+    "text": "Every check passed,"
+   },
+   {
+    "t0": 1.149,
+    "t1": 2.95,
+    "text": "so the pull request is ready for review."
    }
   ]
  },
  "outro": {
   "text": "Ship changes you've seen work.",
-  "dur": 1.22,
-  "sentGap": 0.6,
-  "mode": "sentence-cut-3",
-  "utt": [
-   [
-    "outro",
-    "Ship changes you've seen work.",
-    "Ship changes you've seen work."
-   ]
-  ],
+  "dur": 1.47,
+  "at": 61.53,
+  "end": 63.0,
+  "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0,
-    "t1": 1.22,
+    "t0": 0.13,
+    "t1": 1.47,
     "text": "Ship changes you've seen work."
    }
   ]
