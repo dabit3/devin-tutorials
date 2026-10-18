@@ -1621,7 +1621,7 @@ window.SPEC = {
     },
     "heroB-000.jpg": {
       "cap": "\"Make the moon bigger... no, purple\"",
-      "hold": 0.3192,
+      "hold": 0.1058,
       "clip": "heroB"
     },
     "heroB3-000.jpg": {
@@ -2597,117 +2597,126 @@ window.SPEC = {
       "hold": 0.1742
     },
     "heroB-001.jpg": {
-      "hold": 0.2817
+      "hold": 0.1983
     },
     "heroB-002.jpg": {
-      "hold": 0.5142
+      "hold": 0.2092
     },
     "heroB-003.jpg": {
-      "hold": 0.7342
+      "hold": 0.3192
     },
     "heroB-004.jpg": {
-      "hold": 0.4692
+      "hold": 0.2817
     },
     "heroB-005.jpg": {
-      "hold": 0.1425
+      "hold": 0.5142
     },
     "heroB-006.jpg": {
-      "hold": 0.1342
+      "hold": 0.7342
     },
     "heroB-007.jpg": {
-      "hold": 0.1558
+      "hold": 0.4692
     },
     "heroB-008.jpg": {
-      "hold": 0.3567
+      "hold": 0.1425
     },
     "heroB-009.jpg": {
-      "hold": 0.2133
+      "hold": 0.1342
     },
     "heroB-010.jpg": {
-      "hold": 0.4908
+      "hold": 0.1558
     },
     "heroB-011.jpg": {
-      "hold": 0.4967
+      "hold": 0.3567
     },
     "heroB-012.jpg": {
-      "hold": 0.2967
-    },
-    "heroB-013.jpg": {
-      "hold": 0.1067
-    },
-    "heroB-014.jpg": {
-      "hold": 0.385
-    },
-    "heroB-015.jpg": {
-      "hold": 0.2208
-    },
-    "heroB-016.jpg": {
-      "hold": 0.1092
-    },
-    "heroB-017.jpg": {
-      "hold": 0.1067
-    },
-    "heroB-018.jpg": {
-      "hold": 0.1992
-    },
-    "heroB-019.jpg": {
-      "hold": 0.1317
-    },
-    "heroB-020.jpg": {
-      "hold": 0.1058
-    },
-    "heroB-021.jpg": {
-      "hold": 0.2142
-    },
-    "heroB-022.jpg": {
       "hold": 0.2133
     },
-    "heroB-023.jpg": {
+    "heroB-013.jpg": {
+      "hold": 0.4908
+    },
+    "heroB-014.jpg": {
+      "hold": 0.4967
+    },
+    "heroB-015.jpg": {
+      "hold": 0.2967
+    },
+    "heroB-016.jpg": {
       "hold": 0.1067
     },
-    "heroB-024.jpg": {
+    "heroB-017.jpg": {
+      "hold": 0.385
+    },
+    "heroB-018.jpg": {
+      "hold": 0.2208
+    },
+    "heroB-019.jpg": {
+      "hold": 0.1092
+    },
+    "heroB-020.jpg": {
+      "hold": 0.1067
+    },
+    "heroB-021.jpg": {
+      "hold": 0.1992
+    },
+    "heroB-022.jpg": {
+      "hold": 0.1317
+    },
+    "heroB-023.jpg": {
       "hold": 0.1058
     },
+    "heroB-024.jpg": {
+      "hold": 0.2142
+    },
     "heroB-025.jpg": {
-      "hold": 0.1167
+      "hold": 0.2133
     },
     "heroB-026.jpg": {
       "hold": 0.1067
     },
     "heroB-027.jpg": {
-      "hold": 0.1067
+      "hold": 0.1058
     },
     "heroB-028.jpg": {
-      "hold": 0.1825
+      "hold": 0.1167
     },
     "heroB-029.jpg": {
-      "hold": 0.275
+      "hold": 0.1067
     },
     "heroB-030.jpg": {
-      "hold": 0.11
+      "hold": 0.1067
     },
     "heroB-031.jpg": {
-      "hold": 0.1058
+      "hold": 0.1825
     },
     "heroB-032.jpg": {
-      "hold": 0.1058
+      "hold": 0.275
     },
     "heroB-033.jpg": {
-      "hold": 0.105
+      "hold": 0.11
     },
     "heroB-034.jpg": {
-      "hold": 0.4933
+      "hold": 0.1058
     },
     "heroB-035.jpg": {
-      "hold": 0.1042
+      "hold": 0.1058
     },
     "heroB-036.jpg": {
-      "hold": 0.235
+      "hold": 0.105
     },
     "heroB-037.jpg": {
-      "hold": 0.6083
+      "hold": 0.4933
     },
     "heroB-038.jpg": {
+      "hold": 0.1042
+    },
+    "heroB-039.jpg": {
+      "hold": 0.235
+    },
+    "heroB-040.jpg": {
+      "hold": 0.6083
+    },
+    "heroB-041.jpg": {
       "hold": 0.215
     },
     "heroB2-000.jpg": {

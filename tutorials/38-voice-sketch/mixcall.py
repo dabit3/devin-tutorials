@@ -23,9 +23,12 @@ def place(x, t_ms):
 devin = load(os.path.join(SH, NAME + '.webm'), lufs=float(os.environ.get('DEVIN_LUFS', '-20')))
 place(devin, m['recStart'] + float(os.environ.get('DEVIN_OFFSET_MS', '0')))
 nader = np.zeros(n)
+# call/shift.json {"<call>": {"<line>": s}}: move one of Nader's lines by s seconds (Devin's track never moves), e.g. so a
+# re-voiced line that runs longer still ends before Devin's real "mm-hmm" or reply
+SF = os.path.join(D, 'call', 'shift.json'); SHIFT = json.load(open(SF)).get(NAME, {}) if os.path.exists(SF) else {}
 for pl in m['plays']:
     x = load(os.path.join(D, 'call', pl['name'] + '.wav')) * float(os.environ.get('NADER_GAIN', '1.0'))
-    i = int((pl['t'] - m['t0']) / 1000 * SR); a, b = max(0, i), min(n, i + len(x))
+    i = int((pl['t'] - m['t0']) / 1000 * SR + SHIFT.get(pl['name'], 0) * SR); a, b = max(0, i), min(n, i + len(x))
     if b > a: nader[a:b] += x[a - i:b - i]
 # call/pauses.json {"<call>": [[cut_s, pause_s, until_s], ...]}: where Devin's real "okay"/"mm-hmm" landed on top of a
 # pre-fed line, open a short pause in Nader's line at cut_s so it resumes after Devin; Nader's audio up to until_s shifts later

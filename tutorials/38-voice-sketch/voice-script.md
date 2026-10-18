@@ -1,6 +1,6 @@
 # Tutorial 38: Sketch Buddy, voice script
 
-Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one take cut locally with `_kit/tools/vo_onetake.py`). It plays only outside the two calls and the app clips. During those, the real audio plays instead. `genspec.py` is the source of these lines.
+Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, model `eleven_v4`, default settings with no seed and no `voice_settings`, one take cut locally with the `_kit/tools/vo_onetake.py` flow). It plays only outside the two calls and the app clips. During those, the real audio plays instead. `genspec.py` is the source of these lines.
 
 ## Narration
 
@@ -20,11 +20,11 @@ Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one
 
 ## The app clips (real)
 
-The finished-app clips are screen captures of Sketch Buddy in Chrome. The buddy's voice is the app's own GPT-Live-1 WebRTC audio, recorded during the capture (teacher voice `gleam`, critic voice `vesper`). The prompts spoken to it ("a cat in a top hat on the moon", "make the moon bigger", "no, purple", "a robot eating spaghetti") are Nader's ElevenLabs voice fed in as the microphone. Shapes appear as the background drawing tool returns them.
+The finished-app clips are screen captures of Sketch Buddy in Chrome. The buddy's voice is the app's own GPT-Live-1 WebRTC audio, recorded during the capture (teacher voice `gleam`, critic voice `vesper`). The prompts spoken to it ("a cat in a top hat on the moon", "make the moon bigger", "no, purple", "a robot eating spaghetti") are Nader's ElevenLabs voice fed in as the microphone. In the final mix they are an `eleven_v4` take of the same words (one take, cut locally), placed in their original slots. "Make the moon bigger" runs longer in v4, so it starts 0.65 s earlier and still ends before the buddy answers. Shapes appear as the background drawing tool returns them.
 
 ## The calls (real)
 
-Nader's lines were generated with his ElevenLabs voice (one take, cut locally into `call/c*.wav`) and fed to Devin Voice as the microphone. Devin heard them live and answered by voice. Its replies in the video are its own WebRTC audio, recorded during the call, not re-synthesized.
+Nader's lines were generated with his ElevenLabs voice and fed to Devin Voice as the microphone. The final mix uses an `eleven_v4` take of the same words (one take, cut locally into `call/c*.wav`) in each line's original slot. Three v4 lines run long, so `call/shift.json` moves only Nader's audio: the first two lines of call 1 start 0.91 s and 1.6 s earlier so they end before Devin's "mm-hmm" and next turn, and "Nice. Thanks, Devin!" starts 0.2 s earlier and still barges in while Devin is talking. Devin heard them live and answered by voice. Its replies in the video are its own WebRTC audio, recorded during the call, not re-synthesized.
 
 ### Call 1 (started from the home page, macOS environment)
 
