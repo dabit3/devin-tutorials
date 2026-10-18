@@ -1,6 +1,6 @@
 # Tutorial 37: Trivia Night Live, voice script
 
-Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one take cut locally with `_kit/tools/vo_onetake.py`). It plays only outside the two calls and the three app clips. During those, the real audio plays instead. `genspec.py` is the source of these lines.
+Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, model `eleven_v4`, the voice's default settings with no seed or voice_settings, one take cut locally with `VO_MODEL=eleven_v4 _kit/tools/vo.py`). It plays only outside the two calls and the three app clips. During those, the real audio plays instead. `genspec.py` is the source of these lines.
 
 ## Narration
 
@@ -23,11 +23,11 @@ Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one
 
 ## App clips (real GPT-Live-1 audio)
 
-Recorded off camera in Chrome from the finished app (`demo-capture.mjs`, branch `devin/1792198448-trivia-night-live` of thequantexplorer/product-demo-apps). The host's voice is the app's real GPT-Live-1 WebRTC audio. The player's answers ("Mars", "The Pacific", "Three hearts", and "Mars" for the pirate) are Nader's ElevenLabs voice played into the app's microphone. Score, streak, card, countdown and confetti changes come from the host's tool calls.
+Recorded off camera in Chrome from the finished app (`demo-capture.mjs`, branch `devin/1792198448-trivia-night-live` of thequantexplorer/product-demo-apps). The host's voice is the app's real GPT-Live-1 WebRTC audio. The player's answers ("Mars", "The Pacific", "Three hearts", and "Mars" for the pirate) are Nader's ElevenLabs voice played into the app's microphone. In the cut, those answers are the same words regenerated with `eleven_v4` (one take, cut locally into `call/d*.wav`) and placed where the originals played. The host's audio is untouched, and each answer still lands while the host is reading. Score, streak, card, countdown and confetti changes come from the host's tool calls.
 
 ## The calls (real)
 
-Nader's lines were generated with his ElevenLabs voice (one take, cut locally into `call/c*.wav`) and fed to Devin Voice as the microphone. Devin heard them live and answered by voice. Its replies in the video are its own WebRTC audio, recorded during the call, not re-synthesized. Each call is shown uncut up to its last spoken line. Only the silent stretch after that line, while the call stayed open and Devin worked, is trimmed (`call/trim.json`: call 1 at 159.6 s, call 2 at 34.6 s).
+During the call, Nader's lines were fed to Devin Voice as the microphone, from one ElevenLabs take in his voice. Devin heard them live and answered by voice. For this cut, the same lines were regenerated word for word with `eleven_v4` (default settings, one take, cut locally into `call/c*.wav`, `call/lines.json`). Each one is placed where the original played. The v4 lines run a little longer, so a few start slightly earlier (`call/shifts.json`: call 1 c1 -1.1 s, c2 -1.2 s, c3 -0.4 s, c4 -0.5 s, c6 -0.5 s, c7 -0.4 s), which keeps them clear of Devin's replies and its "mm-hmm". The c4 interruption still starts while Devin is talking. Devin's audio is never moved. The first 60 ms of c8 (a sliver of the previous line from the take) was trimmed. Its replies in the video are its own WebRTC audio, recorded during the call, not re-synthesized. Each call is shown uncut up to its last spoken line. Only the silent stretch after that line, while the call stayed open and Devin worked, is trimmed (`call/trim.json`: call 1 at 159.6 s, call 2 at 34.6 s).
 
 ### Call 1 (started from the home page, macOS environment)
 

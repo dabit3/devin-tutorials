@@ -1,0 +1,92 @@
+{
+ "d1": {
+  "text": "Mars!",
+  "dur": 0.77,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "d1",
+    "Mars!",
+    "Mars!"
+   ],
+   [
+    "d2",
+    "The Pacific!",
+    "The Pacific!"
+   ],
+   [
+    "d3",
+    "Three hearts!",
+    "Three hearts!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 0.77,
+    "text": "Mars!"
+   }
+  ]
+ },
+ "d2": {
+  "text": "The Pacific!",
+  "dur": 0.945,
+  "takeAt": 0.815,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "d1",
+    "Mars!",
+    "Mars!"
+   ],
+   [
+    "d2",
+    "The Pacific!",
+    "The Pacific!"
+   ],
+   [
+    "d3",
+    "Three hearts!",
+    "Three hearts!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.065,
+    "t1": 0.865,
+    "text": "The Pacific!"
+   }
+  ]
+ },
+ "d3": {
+  "text": "Three hearts!",
+  "dur": 1.04,
+  "takeAt": 1.96,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "d1",
+    "Mars!",
+    "Mars!"
+   ],
+   [
+    "d2",
+    "The Pacific!",
+    "The Pacific!"
+   ],
+   [
+    "d3",
+    "Three hearts!",
+    "Three hearts!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.04,
+    "text": "Three hearts!"
+   }
+  ]
+ }
+}

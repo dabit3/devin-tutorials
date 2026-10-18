@@ -20,10 +20,14 @@ def place(x, t_ms):
     if b > a: out[a:b] += x[a - i:b - i]
 devin = load(os.path.join(SH, NAME + '.webm'), lufs=float(os.environ.get('DEVIN_LUFS', '-20')))
 place(devin, m['recStart'] + float(os.environ.get('DEVIN_OFFSET_MS', '0')))
+# call/shifts.json {"<call>": {"<line>": seconds}}: moves a regenerated Nader line that runs longer than the one fed in,
+# so it ends before Devin's next real reply or backchannel; Devin's audio is never moved
+SF = os.path.join(D, 'call', 'shifts.json')
+shift = (json.load(open(SF)).get(NAME, {}) if os.path.exists(SF) else {})
 nader = np.zeros(n)
 for pl in m['plays']:
     x = load(os.path.join(D, 'call', pl['name'] + '.wav')) * float(os.environ.get('NADER_GAIN', '1.0'))
-    i = int((pl['t'] - m['t0']) / 1000 * SR); a, b = max(0, i), min(n, i + len(x))
+    i = int((pl['t'] + shift.get(pl['name'], 0) * 1000 - m['t0']) / 1000 * SR); a, b = max(0, i), min(n, i + len(x))
     if b > a: nader[a:b] += x[a - i:b - i]
 # call/pauses.json {"<call>": [[cut_s, pause_s, until_s], ...]}: where Devin's real "okay"/"mm-hmm" landed on top of a
 # pre-fed line, open a short pause in Nader's line at cut_s so it resumes after Devin; Nader's audio up to until_s shifts later
