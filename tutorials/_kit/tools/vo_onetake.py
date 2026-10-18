@@ -8,7 +8,7 @@ import array, base64, difflib, json, math, os, re, subprocess, sys, urllib.reque
 
 VD, VOICE = os.path.abspath(sys.argv[1]), sys.argv[2]
 KEY = os.environ['ELEVEN_LABS_API_KEY']
-MODEL = os.environ.get('VO_MODEL', 'eleven_multilingual_v2')
+MODEL = os.environ.get('VO_MODEL', 'eleven_v4')
 STABILITY = float(os.environ.get('VO_STABILITY', '0.5'))
 STYLE = float(os.environ.get('VO_STYLE', '0'))
 SIMILARITY = float(os.environ.get('VO_SIMILARITY', '0.75'))  # ElevenLabs defaults: 0.5 / 0.75 / style 0
