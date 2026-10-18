@@ -22,6 +22,7 @@
 | 17 | Devin Security Swarm | `17-security-swarm/` |
 | 18 | iPhone and iPad apps on Mac VMs | `18-ios-ipad-mac-vms/` |
 | 20 | How Devin fits into your SDLC | `20-sdlc-integration/` |
+| 21 | Devin Voice | `21-devin-voice/` |
 | 22 | The review loop closes itself | `22-review-loop/` |
 | 23 | Managed Devins: how it works (overview) | `23-managed-devins-overview/` |
 | 24 | Devin Automations: how they work (overview) | `24-automations-overview/` |
@@ -29,14 +30,22 @@
 | 26 | Devin across the SDLC — expanded introduction (overview; 5:05 captioned / 5:25 Nader) | [Sources](26-sdlc-overview/) · [Captioned 4K](26-sdlc-overview/26-sdlc-overview.mp4) · [Nader 4K](26-sdlc-overview/26-sdlc-overview-nader.mp4) · [Captioned 1080p](26-sdlc-overview/26-sdlc-overview-1080p.mp4) · [Nader 1080p](26-sdlc-overview/26-sdlc-overview-nader-1080p.mp4) · [Script](26-sdlc-overview/voice-script.md) |
 | 27 | Code Scans, how it works (overview) | `27-code-scans-overview/` |
 | 28 | Devin on every platform (overview) | `28-multiplatform-overview/` |
+| 29 | Managed Devins for experiments | `29-managed-devins-experiments/` |
 | 31 | Hardware and simulation test triage (overview) | `31-hardware-test-triage-overview/` |
 | 32 | Dynamic Workflows: how it works (overview) | `32-dynamic-workflows-overview/` |
 | 33 | Dynamic Workflows | `33-dynamic-workflows/` |
 | 34 | Devin Primitives: when to use what (overview) | `34-devin-primitives-overview/` |
 | 38 | A customer’s bug video becomes a fix | `38-bug-video-to-fix/` |
 | 39 | A customer’s bug video becomes a fix (overview) | `39-bug-video-to-fix-overview/` |
+| 58 | Port an iOS screen to Android and prove parity | `58-ios-to-android-parity/` |
+| 59 | Port an iOS screen to Android: how it works (overview) | `59-ios-to-android-parity-overview/` |
+| 76 | Devin CLI: what's new in v3000.11.92 (overview) | `76-cli-whats-new-overview/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
+
+## Silent conference overview
+
+**35 · Meet Devin** (`35-conference-overview/`): 177.30-second silent overview of ten distinct capabilities. Individual large-type introductions, smooth title docking and complete interface framing without editorial crops. The genuine request → testing → finding → fix → retest story includes 53 seconds in Devin's actual live testing interface and six seconds of native recorded evidence. Pure white/grayscale/black with blue only. 4K60 and 1080p60. See [coverage, provenance and rebuild instructions](35-conference-overview/README.md).
 
 ## How it works
 
@@ -62,7 +71,7 @@ MASK_TEXT=<email name> node capture.mjs
 
 Native apps (macOS):
 
-- **Devin CLI** (`10-devin-cli/`): `_kit/capture/term/termrec.mjs` runs the real `devin` command in a tmux session and renders the pane with xterm.js at 3× in Chrome, so terminal text stays sharp at 4K. `app.mjs` then captures the result in the Orbit app at `http://localhost:5173`. Needs `brew install tmux`, a signed-in `devin` CLI and Chrome CDP on `127.0.0.1:9333`.
+- **Devin CLI** (`10-devin-cli/`): `_kit/capture/term/termrec.mjs` runs the real `devin` command in a tmux session and renders the pane with xterm.js at 3× in Chrome, so terminal text stays sharp at 4K (light theme, JetBrains Mono at 24 px). `capture.mjs` records the local task and permission modes, then `cloud.mjs` appends `/model`, `/handoff`, `/cloud` and `devin ssh`, run from a checkout whose origin is `thequantexplorer/orbit-demo`. Needs `brew install tmux`, a signed-in `devin` CLI and Chrome CDP on `127.0.0.1:9333`.
 - **Devin Desktop** (`11-devin-desktop/`): `_kit/capture/desktop.mjs` attaches to the Electron app over CDP. Launch it with `open -a /Applications/Devin.app --args --remote-debugging-port=9335`, sign in, and keep it frontmost while capturing (screenshots stall when the window is in the background).
 - **Slack** (`12-devin-slack/`): the same recorder attaches to the Slack desktop app. Launch it with `open -a /Applications/Slack.app --args --remote-debugging-port=9336`, open a channel with Devin invited, and run `PHASE=1 node capture.mjs` (the `!ask` and session parts), then `PHASE=3 SESSION=<session url>` (web app, Chrome CDP) and `PHASE=4` (archive).
 
