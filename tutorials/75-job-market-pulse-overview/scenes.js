@@ -91,7 +91,7 @@ function intro(ctx, s, k) {
 
 // 2. Why Modal: the job (wake hourly, many Grok calls, store, serve) vs a laptop script or own server, then the Modal pieces this app uses.
 // MT = seconds into the narration when each piece is named (refit after each take).
-const MT = { job: 1.0, alt: 7.0, modal: 12.0, cron: 12.2, map: 16.2, vol: 20.1, sec: 22.3, web: 24.7, zero: 27.5 };
+const MT = { job: 1.2, alt: 8.0, modal: 13.0, cron: 13.2, map: 17.7, vol: 21.5, sec: 23.55, web: 26.05, zero: 29.1 };
 function modal(ctx, s, k) {
   eyebrow(ctx, k, 'WHY MODAL', 86, appear(k, s, 0.05));
   ['Wake up every hour', 'Many Grok calls', 'Store each run', 'Serve a page'].forEach((t, i) => pill(ctx, k, t, 300 + i * 280, 150, appear(k, s, MT.job + i * 0.5)));
@@ -119,26 +119,26 @@ function modal(ctx, s, k) {
 }
 
 // 3. The pipeline: X posts -> xAI API (Grok + X search) -> Modal (cron, .map() fan-out, web endpoint) -> Volume -> live page.
-const PIPE_PACE = 1.6;
+const PIPE_PACE = 1;
 function pipeline(ctx, s, k) {
   s = s / PIPE_PACE;
   eyebrow(ctx, k, 'HOW IT WORKS', 86, appear(k, s, 0.05));
   const x = node(ctx, k, { x: 150, y: 405, t: 'X posts', w: 170 }, appear(k, s, 0.2));
-  const ai = node(ctx, k, { x: 405, y: 405, t: 'xAI API', sub: 'Grok + X search', w: 210 }, appear(k, s, 0.9), appear(k, s, 1.4, 0.5) * (1 - appear(k, s, 3.0, 0.5)));
+  const ai = node(ctx, k, { x: 405, y: 405, t: 'xAI API', sub: 'Grok + X search', w: 210 }, appear(k, s, 0.9), appear(k, s, 5.0, 0.5) * (1 - appear(k, s, 6.8, 0.5)));
   curve(ctx, k, x.r, 405, ai.l, 405, k.eInOut(k.prog(s, 0.6, 1.1)), [k.prog(s, 1.0, 2.0), k.prog(s, 1.5, 2.5)]);
-  const ma = appear(k, s, 2.0);
+  const ma = appear(k, s, 1.9);
   box(ctx, k, 580, 205 + 12 * (1 - ma), 300, 400, ma, 0, 18, BLUE, '#121214');
   text(ctx, k, 'Modal', 730, 240 + 12 * (1 - ma), 18, 600, k.INK, ma);
-  const subs = [{ t: 'Scheduled function', sub: 'modal.Cron, every hour', t0: 2.6 }, { t: '.map()', sub: 'search + classify', t0: 3.6 }, { t: 'Web endpoint', sub: '@modal.asgi_app', t0: 4.6 }];
+  const subs = [{ t: 'Scheduled function', sub: 'modal.Cron, every hour', t0: 2.7 }, { t: '.map()', sub: 'search + classify', t0: 7.0 }, { t: 'Web endpoint', sub: '@modal.asgi_app', t0: 11.2 }];
   const ns = subs.map((n, i) => node(ctx, k, { x: 730, y: 318 + i * 100, t: n.t, sub: n.sub, w: 250, size: 17 }, appear(k, s, n.t0), appear(k, s, n.t0 + 0.3, 0.4) * (1 - appear(k, s, n.t0 + 1.2, 0.5))));
-  curve(ctx, k, ai.r, 405, 580, 405, k.eInOut(k.prog(s, 2.3, 2.8)), [k.prog(s, 3.9, 4.8), k.prog(s, 4.2, 5.1)]);
-  const v = node(ctx, k, { x: 1040, y: 300, t: 'Modal Volume', sub: 'one JSON file per run', w: 230 }, appear(k, s, 5.4), appear(k, s, 5.7, 0.4) * (1 - appear(k, s, 6.6, 0.5)));
-  curve(ctx, k, 880, 405, v.l, 300, k.eInOut(k.prog(s, 5.2, 5.7)), k.prog(s, 5.6, 6.5));
-  const lp = node(ctx, k, { x: 1040, y: 520, t: 'Public page', sub: '*.modal.run', w: 230 }, appear(k, s, 6.6), appear(k, s, 6.9, 0.4));
-  curve(ctx, k, v.r - 30, v.bot, lp.r - 30, lp.top, k.eInOut(k.prog(s, 6.4, 6.9)), k.prog(s, 6.8, 7.6));
-  curve(ctx, k, 855, 518, lp.l, 520, k.eInOut(k.prog(s, 6.4, 6.9)));
-  pill(ctx, k, 'xAI key in a Modal Secret', 405, 500, appear(k, s, 1.6));
-  pill(ctx, k, 'Counts of sampled posts', 1040, 640, appear(k, s, 7.4));
+  curve(ctx, k, ai.r, 405, 580, 405, k.eInOut(k.prog(s, 2.3, 2.8)), [k.prog(s, 5.4, 6.3), k.prog(s, 5.7, 6.6)]);
+  const v = node(ctx, k, { x: 1040, y: 300, t: 'Modal Volume', sub: 'one JSON file per run', w: 230 }, appear(k, s, 9.5), appear(k, s, 9.8, 0.4) * (1 - appear(k, s, 10.9, 0.5)));
+  curve(ctx, k, 880, 405, v.l, 300, k.eInOut(k.prog(s, 9.3, 9.8)), k.prog(s, 9.7, 10.6));
+  const lp = node(ctx, k, { x: 1040, y: 520, t: 'Public page', sub: '*.modal.run', w: 230 }, appear(k, s, 12.0), appear(k, s, 12.3, 0.4));
+  curve(ctx, k, v.r - 30, v.bot, lp.r - 30, lp.top, k.eInOut(k.prog(s, 11.8, 12.3)), k.prog(s, 12.2, 13.0));
+  curve(ctx, k, 855, 518, lp.l, 520, k.eInOut(k.prog(s, 11.8, 12.3)));
+  pill(ctx, k, 'xAI key in a Modal Secret', 405, 500, appear(k, s, 5.6));
+  pill(ctx, k, 'Counts of sampled posts', 1040, 640, appear(k, s, 12.8));
 }
 
 // 4. Honest numbers: X search returns a sample, and people are only ever counted, never named.

@@ -91,7 +91,7 @@ function intro(ctx, s, k) {
 
 // 2. Why Modal: the job (wake hourly, many Grok calls, store, serve) vs a laptop script or own server, then the Modal pieces this app uses.
 // MT = seconds into the narration when each piece is named (refit after each take).
-const MT = { job: 1.0, alt: 7.0, modal: 12.0, cron: 12.2, map: 16.2, vol: 20.1, sec: 22.3, web: 24.7, zero: 27.5 };
+const MT = { job: 1.2, alt: 7.9, modal: 12.9, cron: 13.1, map: 17.5, vol: 21.45, sec: 23.5, web: 26.0, zero: 28.9 };
 function modal(ctx, s, k) {
   eyebrow(ctx, k, 'WHY MODAL', 86, appear(k, s, 0.05));
   ['Wake up every hour', 'Many Grok calls', 'Store each run', 'Serve a page'].forEach((t, i) => pill(ctx, k, t, 300 + i * 280, 150, appear(k, s, MT.job + i * 0.5)));

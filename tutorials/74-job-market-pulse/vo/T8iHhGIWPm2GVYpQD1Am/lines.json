@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most.",
-  "dur": 11.52,
+  "dur": 12.22,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -59,32 +59,32 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.625,
+    "t1": 2.16,
     "text": "This is a job-market pulse."
    },
    {
-    "t0": 1.95,
-    "t1": 4.098,
+    "t0": 2.32,
+    "t1": 4.64,
     "text": "Every hour, it samples tech posts on X"
    },
    {
-    "t0": 4.168,
-    "t1": 6.885,
+    "t0": 4.8,
+    "t1": 7.76,
     "text": "about hiring, layoffs and people looking for work,"
    },
    {
-    "t0": 7.094,
-    "t1": 8.231,
+    "t0": 7.84,
+    "t1": 8.96,
     "text": "sorts them with Grok,"
    },
    {
-    "t0": 8.382,
-    "t1": 9.613,
+    "t0": 9.04,
+    "t1": 10.24,
     "text": "and shows which roles,"
    },
    {
-    "t0": 9.857,
-    "t1": 11.52,
+    "t0": 10.48,
+    "t1": 12.22,
     "text": "companies and skills come up most."
    }
   ]
@@ -92,8 +92,8 @@
  "0000a.png": {
   "text": "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
   "say": "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
-  "dur": 31.285,
-  "takeAt": 11.815,
+  "dur": 33.555,
+  "takeAt": 12.68,
   "mode": "single-take-1",
   "take": [
    [
@@ -149,78 +149,78 @@
   ],
   "chunks": [
    {
-    "t0": 0.074,
-    "t1": 0.701,
+    "t0": 0.12,
+    "t1": 1.08,
     "text": "Why Modal?"
    },
    {
-    "t0": 0.979,
-    "t1": 2.488,
+    "t0": 1.16,
+    "t1": 2.92,
     "text": "The app has to wake up every hour"
    },
    {
-    "t0": 2.558,
-    "t1": 3.905,
+    "t0": 3.0,
+    "t1": 4.76,
     "text": "and make many Grok calls."
    },
    {
-    "t0": 4.148,
-    "t1": 5.658,
+    "t0": 4.88,
+    "t1": 6.52,
     "text": "Then it has to store the results and"
    },
    {
-    "t0": 5.716,
-    "t1": 6.726,
+    "t0": 6.64,
+    "t1": 7.907,
     "text": "serve them on a page."
    },
    {
-    "t0": 7.109,
-    "t1": 9.477,
+    "t0": 7.933,
+    "t1": 10.387,
     "text": "A laptop script stops when the lid closes,"
    },
    {
-    "t0": 9.605,
-    "t1": 11.811,
+    "t0": 10.413,
+    "t1": 13.053,
     "text": "and your own server sits idle most of the day."
    },
    {
-    "t0": 12.136,
-    "t1": 14.435,
+    "t0": 13.107,
+    "t1": 15.693,
     "text": "On Modal, the collection is a scheduled function,"
    },
    {
-    "t0": 14.609,
-    "t1": 15.956,
+    "t0": 15.747,
+    "t1": 17.44,
     "text": "so there's nothing to keep running."
    },
    {
-    "t0": 16.234,
-    "t1": 19.822,
+    "t0": 17.48,
+    "t1": 21.427,
     "text": "Dot map runs the xAI calls in parallel across containers."
    },
    {
-    "t0": 20.147,
-    "t1": 22.061,
+    "t0": 21.453,
+    "t1": 23.46,
     "text": "A Modal Volume stores each run,"
    },
    {
-    "t0": 22.111,
-    "t1": 24.408,
+    "t0": 23.51,
+    "t1": 25.92,
     "text": "and a Modal Secret holds the xAI key."
    },
    {
-    "t0": 24.687,
-    "t1": 27.334,
+    "t0": 25.96,
+    "t1": 28.88,
     "text": "A web endpoint serves the page at a public URL."
    },
    {
-    "t0": 27.508,
-    "t1": 29.412,
+    "t0": 28.92,
+    "t1": 31.053,
     "text": "And between runs it scales to zero,"
    },
    {
-    "t0": 29.482,
-    "t1": 31.285,
+    "t0": 31.107,
+    "t1": 33.555,
     "text": "so you only pay for the seconds it works."
    }
   ]
@@ -228,8 +228,8 @@
  "0007.png": {
   "text": "Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
   "say": "Here's the prompt. I'm asking Devin to build it on Modal with the ex A I API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting.",
-  "dur": 10.845,
-  "takeAt": 43.405,
+  "dur": 11.95,
+  "takeAt": 46.235,
   "mode": "single-take-1",
   "take": [
    [
@@ -285,41 +285,41 @@
   ],
   "chunks": [
    {
-    "t0": 0.028,
-    "t1": 0.818,
+    "t0": 0.085,
+    "t1": 1.165,
     "text": "Here's the prompt."
    },
    {
-    "t0": 1.027,
-    "t1": 2.672,
+    "t0": 1.205,
+    "t1": 3.006,
     "text": "I'm asking Devin to build it on"
    },
    {
-    "t0": 2.722,
-    "t1": 4.636,
+    "t0": 3.056,
+    "t1": 5.155,
     "text": "Modal with the xAI API and X search,"
    },
    {
-    "t0": 4.686,
-    "t1": 7.341,
+    "t0": 5.205,
+    "t1": 8.112,
     "text": "to label every number as a count of sampled posts,"
    },
    {
-    "t0": 7.391,
-    "t1": 8.879,
+    "t0": 8.162,
+    "t1": 9.794,
     "text": "and to never name people who"
    },
    {
-    "t0": 8.929,
-    "t1": 10.845,
+    "t0": 9.844,
+    "t1": 11.95,
     "text": "posted about layoffs or job hunting."
    }
   ]
  },
  "0012.png": {
   "text": "Devin also deploys it, tests the public URL, and opens a pull request.",
-  "dur": 4.069,
-  "takeAt": 54.551,
+  "dur": 4.555,
+  "takeAt": 58.2,
   "mode": "single-take-1",
   "take": [
    [
@@ -376,17 +376,17 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.432,
+    "t1": 1.6,
     "text": "Devin also deploys it,"
    },
    {
-    "t0": 1.548,
-    "t1": 2.837,
+    "t0": 1.64,
+    "t1": 3.053,
     "text": "tests the public URL,"
    },
    {
-    "t0": 2.86,
-    "t1": 4.069,
+    "t0": 3.107,
+    "t1": 4.555,
     "text": "and opens a pull request."
    }
   ]
@@ -394,8 +394,8 @@
  "0020.png": {
   "text": "First, Devin checks the current xAI docs for X search, and plans to keep the API key in a Modal Secret.",
   "say": "First, Devin checks the current ex A I docs for X search, and plans to keep the API key in a Modal Secret.",
-  "dur": 6.111,
-  "takeAt": 59.009,
+  "dur": 6.255,
+  "takeAt": 62.84,
   "mode": "single-take-1",
   "take": [
    [
@@ -452,25 +452,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 3.261,
+    "t1": 3.336,
     "text": "First, Devin checks the current xAI docs for X search,"
    },
    {
-    "t0": 3.311,
-    "t1": 4.536,
+    "t0": 3.386,
+    "t1": 4.641,
     "text": "and plans to keep the"
    },
    {
-    "t0": 4.586,
-    "t1": 6.111,
+    "t0": 4.691,
+    "t1": 6.255,
     "text": "API key in a Modal Secret."
    }
   ]
  },
  "0135.png": {
   "text": "Then it writes the app, deploys it with modal deploy, and tests the public URL.",
-  "dur": 4.243,
-  "takeAt": 65.487,
+  "dur": 4.735,
+  "takeAt": 69.16,
   "mode": "single-take-1",
   "take": [
    [
@@ -527,25 +527,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.235,
+    "t1": 1.453,
     "text": "Then it writes the app,"
    },
    {
-    "t0": 1.386,
-    "t1": 2.825,
+    "t0": 1.507,
+    "t1": 3.04,
     "text": "deploys it with modal deploy,"
    },
    {
-    "t0": 2.86,
-    "t1": 4.243,
+    "t0": 3.08,
+    "t1": 4.735,
     "text": "and tests the public URL."
    }
   ]
  },
  "0154.png": {
   "text": "It's deployed, and the pull request is open in the demo apps repo.",
-  "dur": 3.538,
-  "takeAt": 70.062,
+  "dur": 3.825,
+  "takeAt": 73.92,
   "mode": "single-take-1",
   "take": [
    [
@@ -602,20 +602,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.209,
+    "t1": 2.16,
     "text": "It's deployed, and the pull request is open"
    },
    {
-    "t0": 2.291,
-    "t1": 3.538,
+    "t0": 2.24,
+    "t1": 3.825,
     "text": "in the demo apps repo."
    }
   ]
  },
  "0346.png": {
   "text": "And here's the page running on Modal. In the last day it has seventy-eight sampled posts, fifty-eight about hiring and twenty about layoffs.",
-  "dur": 7.175,
-  "takeAt": 73.815,
+  "dur": 7.84,
+  "takeAt": 77.745,
   "mode": "single-take-1",
   "take": [
    [
@@ -671,26 +671,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.047,
-    "t1": 1.742,
+    "t0": 0.095,
+    "t1": 2.055,
     "text": "And here's the page running on Modal."
    },
    {
-    "t0": 1.951,
-    "t1": 4.052,
+    "t0": 2.095,
+    "t1": 4.255,
     "text": "In the last day it has seventy-eight sampled"
    },
    {
-    "t0": 4.087,
-    "t1": 7.175,
+    "t0": 4.575,
+    "t1": 7.84,
     "text": "posts, fifty-eight about hiring and twenty about layoffs."
    }
   ]
  },
  "0350.png": {
   "text": "The top role is Software Engineer, and the top skill is Python. No looking-for-work posts turned up in this sample yet, and every number here is a count of sampled posts, not a labor statistic.",
-  "dur": 10.585,
-  "takeAt": 81.245,
+  "dur": 10.912,
+  "takeAt": 85.613,
   "mode": "single-take-1",
   "take": [
    [
@@ -746,41 +746,41 @@
   ],
   "chunks": [
    {
-    "t0": 0.036,
-    "t1": 1.858,
+    "t0": 0.12,
+    "t1": 1.934,
     "text": "The top role is Software Engineer,"
    },
    {
-    "t0": 2.033,
-    "t1": 3.612,
+    "t0": 1.96,
+    "t1": 3.907,
     "text": "and the top skill is Python."
    },
    {
-    "t0": 3.937,
-    "t1": 6.177,
+    "t0": 3.987,
+    "t1": 6.147,
     "text": "No looking-for-work posts turned up in this sample"
    },
    {
-    "t0": 6.201,
-    "t1": 8.151,
+    "t0": 6.227,
+    "t1": 8.147,
     "text": "yet, and every number here is a count"
    },
    {
-    "t0": 8.186,
-    "t1": 9.173,
+    "t0": 8.227,
+    "t1": 9.387,
     "text": "of sampled posts,"
    },
    {
-    "t0": 9.382,
-    "t1": 10.585,
+    "t0": 9.427,
+    "t1": 10.912,
     "text": "not a labor statistic."
    }
   ]
  },
  "outro": {
   "text": "Your own job-market numbers, every hour.",
-  "dur": 1.905,
-  "takeAt": 91.915,
+  "dur": 2.5,
+  "takeAt": 96.6,
   "mode": "single-take-1",
   "take": [
    [
@@ -836,8 +836,8 @@
   ],
   "chunks": [
    {
-    "t0": 0.093,
-    "t1": 1.905,
+    "t0": 0.12,
+    "t1": 2.5,
     "text": "Your own job-market numbers, every hour."
    }
   ]
