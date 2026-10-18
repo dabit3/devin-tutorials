@@ -1,6 +1,6 @@
 # Tutorial 39: Mission Control, voice script
 
-Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one take cut locally with `_kit/tools/vo.py`). It plays only in the narrated cut and never over the call or game audio: during the calls the real call audio plays, and during the two game runs the game's real GPT-Live-1 audio plays. `genspec.py` is the source of these lines.
+Narration (Nader, ElevenLabs `eleven_v4`, voice `T8iHhGIWPm2GVYpQD1Am`, the voice's default settings with no seed or voice_settings, one take cut locally with `VO_MODEL=eleven_v4 _kit/tools/vo.py`). It plays only in the narrated cut and never over the call or game audio: during the calls the real call audio plays, and during the two game runs the game's real GPT-Live-1 audio plays. `genspec.py` is the source of these lines.
 
 ## Narration
 
@@ -21,7 +21,7 @@ Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one
 
 ## The game's voice (real GPT-Live-1 audio)
 
-Both demo runs were played in Chrome against the real `gpt-live-1` model over WebRTC (`POST /v1/live/sessions` from the game's small server, key kept server-side). Mission Control's lines are its own audio, recorded from the remote WebRTC track. The pilot's lines are Nader's ElevenLabs voice, fed in as the microphone.
+Both demo runs were played in Chrome against the real `gpt-live-1` model over WebRTC (`POST /v1/live/sessions` from the game's small server, key kept server-side). Mission Control's lines are its own audio, recorded from the remote WebRTC track. The pilot's lines are Nader's ElevenLabs voice, fed in as the microphone. In the cut they are the same words regenerated with `eleven_v4` (one take, cut locally into `demo/pilot/`) and placed at the times the original lines were fed in; "Burn the main engine" in the calm run is moved 1.2 s later (`demo/pilot/place.json`) so it no longer runs into Mission Control's "90%" reply.
 
 ### Calm NASA controller (lands, score 924)
 
@@ -39,7 +39,7 @@ Both demo runs were played in Chrome against the real `gpt-live-1` model over We
 
 ## The calls (real)
 
-Nader's lines were generated with his ElevenLabs voice (one take, cut locally into `call/c*.wav`) and fed to Devin Voice as the microphone. Devin heard them live and answered by voice. Its replies are its own WebRTC audio, recorded during the call, not re-synthesized.
+Nader's lines were generated with his ElevenLabs voice (one take, cut locally into `call/c*.wav`) and fed to Devin Voice as the microphone. In the cut they are the same words regenerated with `eleven_v4`, dropped into their original slots; only Nader's audio moves where a line runs longer (`call/place.json`): the pitch is split into three pieces so it pauses for Devin's real "Okay" and "Mm-hmm", the second line starts 0.4 s earlier, "Can you speak a little faster?" starts 1.4 s earlier so it ends before Devin's "Sure thing", and the build request starts 0.5 s earlier. Both barge-ins still land while Devin is talking. Devin heard them live and answered by voice. Its replies are its own WebRTC audio, recorded during the call, not re-synthesized.
 
 ### Call 1 (started from the home page, macOS environment)
 

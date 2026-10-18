@@ -1,251 +1,666 @@
 {
  "c1": {
   "text": "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web.",
-  "dur": 6.72,
-  "at": 0.0,
-  "end": 6.72,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 7.59,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too.",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too."
+   ],
+   [
+    "c3",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie.",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR.",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the lander coming along?",
+    "Hey Devin, how's the lander coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.939,
-    "text": "Hey Devin. Let's build a game called Mission"
+    "t1": 0.76,
+    "text": "Hey Devin."
    },
    {
-    "t0": 1.997,
-    "t1": 3.239,
-    "text": "Control, with Expo,"
+    "t0": 0.96,
+    "t1": 3.04,
+    "text": "Let's build a game called Mission Control,"
    },
    {
-    "t0": 3.448,
-    "t1": 5.584,
-    "text": "so one codebase runs on iOS,"
+    "t0": 3.12,
+    "t1": 6.24,
+    "text": "with Expo, so one codebase runs on iOS,"
    },
    {
-    "t0": 5.677,
-    "t1": 6.664,
+    "t0": 6.32,
+    "t1": 7.59,
     "text": "Android, and the web."
    }
   ]
  },
  "c2": {
   "text": "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too.",
-  "dur": 12.215,
-  "at": 6.965,
-  "end": 19.18,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 12.73,
+  "takeAt": 7.84,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too.",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too."
+   ],
+   [
+    "c3",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie.",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR.",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the lander coming along?",
+    "Hey Devin, how's the lander coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.024,
-    "t1": 1.917,
+    "t0": 0.12,
+    "t1": 2.48,
     "text": "It's a lunar lander you fly by voice."
    },
    {
-    "t0": 2.242,
-    "t1": 4.424,
+    "t0": 2.6,
+    "t1": 4.96,
     "text": "Mission Control talks you down in real time,"
    },
    {
-    "t0": 4.633,
-    "t1": 7.454,
+    "t0": 5.04,
+    "t1": 8.4,
     "text": "using OpenAI's new GPT-Live-1 API."
    },
    {
-    "t0": 7.779,
-    "t1": 10.763,
+    "t0": 8.56,
+    "t1": 11.52,
     "text": "Starfield, particles, a satisfying landing,"
    },
    {
-    "t0": 10.879,
-    "t1": 12.203,
+    "t0": 11.6,
+    "t1": 12.73,
     "text": "and touch controls too."
    }
   ]
  },
  "c3": {
   "text": "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?",
-  "dur": 9.025,
-  "at": 19.525,
-  "end": 28.55,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 8.855,
+  "takeAt": 21.025,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too.",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too."
+   ],
+   [
+    "c3",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie.",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR.",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the lander coming along?",
+    "Hey Devin, how's the lander coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.084,
-    "t1": 2.383,
+    "t0": 0.095,
+    "t1": 2.415,
     "text": "Mission Control should use background tools to fire"
    },
    {
-    "t0": 2.418,
-    "t1": 4.612,
+    "t0": 2.495,
+    "t1": 4.735,
     "text": "the thrusters, deploy the landing gear,"
    },
    {
-    "t0": 4.786,
-    "t1": 7.596,
+    "t0": 4.855,
+    "t1": 7.775,
     "text": "show telemetry, and trigger the landing or crash."
    },
    {
-    "t0": 7.979,
-    "t1": 8.966,
+    "t0": 7.855,
+    "t1": 8.855,
     "text": "How would you set that up?"
    }
   ]
  },
  "c4": {
   "text": "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie.",
-  "dur": 6.15,
-  "at": 28.555,
-  "end": 34.705,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 6.94,
+  "takeAt": 30.2,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too.",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too."
+   ],
+   [
+    "c3",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie.",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR.",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the lander coming along?",
+    "Hey Devin, how's the lander coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.052,
-    "t1": 1.143,
+    "t0": 0.12,
+    "t1": 1.8,
     "text": "Oh, wait, one more thing."
    },
    {
-    "t0": 1.259,
-    "t1": 2.234,
+    "t0": 1.88,
+    "t1": 3.0,
     "text": "Add a style switch,"
    },
    {
-    "t0": 2.304,
-    "t1": 4.313,
+    "t0": 3.08,
+    "t1": 5.08,
     "text": "so Mission Control is either a calm NASA"
    },
    {
-    "t0": 4.336,
-    "t1": 6.124,
+    "t0": 5.16,
+    "t1": 6.94,
     "text": "controller or a panicked rookie."
    }
   ]
  },
  "c5": {
   "text": "Can you speak a little faster?",
-  "dur": 1.44,
-  "at": 34.76,
-  "end": 36.2,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 1.435,
+  "takeAt": 37.545,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too.",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too."
+   ],
+   [
+    "c3",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie.",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR.",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the lander coming along?",
+    "Hey Devin, how's the lander coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.07,
-    "t1": 1.382,
+    "t0": 0.055,
+    "t1": 1.435,
     "text": "Can you speak a little faster?"
    }
   ]
  },
  "c6": {
   "text": "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR.",
-  "dur": 20.045,
-  "at": 36.245,
-  "end": 56.29,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 21.045,
+  "takeAt": 39.355,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too.",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too."
+   ],
+   [
+    "c3",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie.",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR.",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the lander coming along?",
+    "Hey Devin, how's the lander coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.071,
-    "t1": 2.01,
+    "t0": 0.085,
+    "t1": 2.245,
     "text": "Put it in the product demo apps repo."
    },
    {
-    "t0": 2.335,
-    "t1": 4.192,
+    "t0": 2.325,
+    "t1": 4.325,
     "text": "The OpenAI key is in your secrets,"
    },
    {
-    "t0": 4.343,
-    "t1": 5.841,
+    "t0": 4.365,
+    "t1": 5.925,
     "text": "and it's the new Live API,"
    },
    {
-    "t0": 5.899,
-    "t1": 7.954,
+    "t0": 6.045,
+    "t1": 8.405,
     "text": "not Realtime, so check the docs first."
    },
    {
-    "t0": 8.198,
-    "t1": 9.637,
-    "text": "Test it in your browser and on the"
+    "t0": 8.525,
+    "t1": 11.365,
+    "text": "Test it in your browser and on the iPhone simulator."
    },
    {
-    "t0": 9.684,
-    "t1": 12.296,
-    "text": "iPhone simulator. Your Mac can't run Android,"
+    "t0": 11.445,
+    "t1": 12.965,
+    "text": "Your Mac can't run Android,"
    },
    {
-    "t0": 12.331,
-    "t1": 14.154,
+    "t0": 13.045,
+    "t1": 14.965,
     "text": "so start a second Devin on Ubuntu to"
    },
    {
-    "t0": 14.212,
-    "t1": 15.79,
+    "t0": 15.045,
+    "t1": 16.965,
     "text": "test it on an Android emulator."
    },
    {
-    "t0": 16.173,
-    "t1": 17.88,
+    "t0": 17.045,
+    "t1": 18.725,
     "text": "Send me a test recording with pass and"
    },
    {
-    "t0": 17.927,
-    "t1": 18.96,
+    "t0": 18.805,
+    "t1": 19.925,
     "text": "fail checks for each,"
    },
    {
-    "t0": 19.029,
-    "t1": 20.005,
+    "t0": 20.005,
+    "t1": 21.045,
     "text": "then open a PR."
    }
   ]
  },
  "c7": {
   "text": "Perfect. Go ahead and start building.",
-  "dur": 1.9,
-  "at": 56.35,
-  "end": 58.25,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 1.78,
+  "takeAt": 60.92,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too.",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too."
+   ],
+   [
+    "c3",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie.",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR.",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the lander coming along?",
+    "Hey Devin, how's the lander coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.074,
-    "t1": 1.839,
-    "text": "Perfect. Go ahead and start building."
+    "t0": 0.12,
+    "t1": 0.68,
+    "text": "Perfect."
+   },
+   {
+    "t0": 0.72,
+    "t1": 1.78,
+    "text": "Go ahead and start building."
    }
   ]
  },
  "c8": {
   "text": "Hey Devin, how's the lander coming along?",
   "dur": 1.935,
-  "at": 58.31,
-  "end": 60.245,
-  "mode": "one-take",
-  "checked": true,
+  "takeAt": 63.175,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too.",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too."
+   ],
+   [
+    "c3",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie.",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR.",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the lander coming along?",
+    "Hey Devin, how's the lander coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.053,
-    "t1": 1.841,
+    "t0": 0.105,
+    "t1": 1.935,
     "text": "Hey Devin, how's the lander coming along?"
    }
   ]
  },
  "c9": {
   "text": "Nice. Thanks, Devin!",
-  "dur": 1.655,
-  "at": 60.245,
-  "end": 61.9,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 1.76,
+  "takeAt": 65.56,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game called Mission Control, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too.",
+    "It's a lunar lander you fly by voice. Mission Control talks you down in real time, using OpenAI's new GPT-Live-1 API. Starfield, particles, a satisfying landing, and touch controls too."
+   ],
+   [
+    "c3",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?",
+    "Mission Control should use background tools to fire the thrusters, deploy the landing gear, show telemetry, and trigger the landing or crash. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie.",
+    "Oh, wait, one more thing. Add a style switch, so Mission Control is either a calm NASA controller or a panicked rookie."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR.",
+    "Put it in the product demo apps repo. The OpenAI key is in your secrets, and it's the new Live API, not Realtime, so check the docs first. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass and fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the lander coming along?",
+    "Hey Devin, how's the lander coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.057,
-    "t1": 1.655,
-    "text": "Nice. Thanks, Devin!"
+    "t0": 0.12,
+    "t1": 1.08,
+    "text": "Nice."
+   },
+   {
+    "t0": 1.16,
+    "t1": 1.76,
+    "text": "Thanks, Devin!"
    }
   ]
  }

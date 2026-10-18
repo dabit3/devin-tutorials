@@ -21,10 +21,15 @@ def place(x, t_ms):
 devin = load(os.path.join(SH, NAME + '.webm'), lufs=float(os.environ.get('DEVIN_LUFS', '-20')))
 place(devin, m['recStart'] + float(os.environ.get('DEVIN_OFFSET_MS', '0')))
 nader = np.zeros(n)
+# call/place.json {"<line>": [[from_s, to_s, shift_s], ...]}: play pieces of a line at their own shift from its fed-in time,
+# so a regenerated line that runs longer still fits between Devin's real replies and backchannels
+PL = os.path.join(D, 'call', 'place.json'); PLACE = json.load(open(PL)) if os.path.exists(PL) else {}
 for pl in m['plays']:
     x = load(os.path.join(D, 'call', pl['name'] + '.wav')) * float(os.environ.get('NADER_GAIN', '1.0'))
-    i = int((pl['t'] - m['t0']) / 1000 * SR); a, b = max(0, i), min(n, i + len(x))
-    if b > a: nader[a:b] += x[a - i:b - i]
+    for p0, p1, shift in PLACE.get(pl['name'], [[0, None, 0]]):
+        y = x[int(p0 * SR):None if p1 is None else int(p1 * SR)]
+        i = int(((pl['t'] - m['t0']) / 1000 + p0 + shift) * SR); a, b = max(0, i), min(n, i + len(y))
+        if b > a: nader[a:b] += y[a - i:b - i]
 # call/pauses.json {"<call>": [[cut_s, pause_s, until_s], ...]}: where Devin's real "okay"/"mm-hmm" landed on top of a
 # pre-fed line, open a short pause in Nader's line at cut_s so it resumes after Devin; Nader's audio up to until_s shifts later
 PP = os.path.join(D, 'call', 'pauses.json')
@@ -34,6 +39,7 @@ for cut, pause, until in (json.load(open(PP)).get(NAME, []) if os.path.exists(PP
     assert peak < 0.03, f'pause at {cut}s would run into speech after {until}s (peak {peak:.3f})'  # a gap between words or lines absorbs the pause
     nader[c:u + p] = np.concatenate([np.zeros(p), nader[c:u]])
 out += nader
+if os.environ.get('NADER_OUT'): np.save(os.environ['NADER_OUT'], nader)
 out /= max(1.0, np.abs(out).max() / 0.95)
 os.makedirs(OUT, exist_ok=True)
 with wave.open(os.path.join(OUT, NAME + '.wav'), 'wb') as w:

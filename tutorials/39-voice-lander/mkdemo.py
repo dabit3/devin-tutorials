@@ -30,7 +30,9 @@ for run, a, b, stills in RUNS:
         i = int((t - a) * SR); lo, hi = max(0, i), min(len(out), i + len(x))
         if hi > lo: out[lo:hi] += x[lo - i:hi - i]
     place(load(os.path.join(D, 'demo', run + '-app.webm'), -18), (m['recStart'] - t0) / 1000)
-    for s in m['says']: place(load(os.path.join(D, 'demo', 'pilot', s['id'] + '.wav'), -18), (s['t'] - t0) / 1000)
+    # demo/pilot/place.json {"<run>": {"<line>": shift_s}}: a regenerated pilot line moved so it doesn't talk over the app's reply
+    shift = json.load(open(os.path.join(D, 'demo', 'pilot', 'place.json'))).get(run, {}) if os.path.exists(os.path.join(D, 'demo', 'pilot', 'place.json')) else {}
+    for s in m['says']: place(load(os.path.join(D, 'demo', 'pilot', s['id'] + '.wav'), -18), (s['t'] - t0) / 1000 + shift.get(s['id'], 0))
     out /= max(1.0, np.abs(out).max() / 0.95)
     with wave.open(os.path.join(D, 'audio', f'demo_{run}.wav'), 'wb') as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((out * 32767).astype('<i2').tobytes())
