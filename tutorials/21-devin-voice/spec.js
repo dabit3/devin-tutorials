@@ -3329,6 +3329,6 @@ window.SPEC = {
 const NARRATED = !!new URLSearchParams(location.search).get('voice');
 if (NARRATED) {
   SPEC.pollRunMax = 1.0;
-  for (const [k, v] of Object.entries({"0254.png": {"travel": 0.45, "dwell": 0.1}, "0255.png": {"hold": 0.35}, "0357.png": {"travel": 0.45, "dwell": 0.1}, "0333.png": {"waitVo": true}}))
+  for (const [k, v] of Object.entries({"0007.png": {"hold": 0.6}, "0254.png": {"travel": 0.45, "dwell": 0.1}, "0255.png": {"hold": 0.35}, "0357.png": {"travel": 0.45, "dwell": 0.1}, "0333.png": {"waitVo": true}}))
     Object.assign(SPEC.edit[k] ??= {}, v);
 }

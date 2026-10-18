@@ -8,8 +8,8 @@ import numpy as np
 D = os.path.dirname(os.path.abspath(__file__)); NAME = sys.argv[1]; SR = 48000
 SH = os.environ.get('SHOTS', os.path.join(D, 'shots')); OUT = os.environ.get('OUT', os.path.join(D, 'audio'))
 m = json.load(open(os.path.join(SH, NAME + '.json')))
-def load(path, lufs=None):
-    af = ['-af', f'loudnorm=I={lufs}:TP=-2:LRA=11'] if lufs else []
+def load(path, lufs=None, tempo=None):
+    af = ['-af', ','.join(([f'atempo={tempo}'] if tempo else []) + ([f'loudnorm=I={lufs}:TP=-2:LRA=11'] if lufs else []))] if (lufs or tempo) else []
     raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', path, *af, '-ac', '1', '-ar', str(SR), '-f', 's16le', '-'], capture_output=True, check=True).stdout
     return np.frombuffer(raw, '<i2').astype(float) / 32767
 trim = json.load(open(os.path.join(D, 'call', 'trim.json'))).get(NAME) if os.path.exists(os.path.join(D, 'call', 'trim.json')) else None
@@ -21,9 +21,14 @@ def place(x, t_ms):
 devin = load(os.path.join(SH, NAME + '.webm'), lufs=float(os.environ.get('DEVIN_LUFS', '-20')))
 place(devin, m['recStart'] + float(os.environ.get('DEVIN_OFFSET_MS', '0')))
 nader = np.zeros(n)
+# call/shift.json {"<call>": {"<line>": dt_s | [dt_s, tempo]}}: a regenerated line that runs longer than the one fed in during the take
+# moves earlier (dt < 0) so it still ends before Devin's real reply; tempo (atempo, pitch kept) only when no gap is left to absorb it
+SF = os.path.join(D, 'call', 'shift.json')
+SHIFT = json.load(open(SF)).get(NAME, {}) if os.path.exists(SF) else {}
 for pl in m['plays']:
-    x = load(os.path.join(D, 'call', pl['name'] + '.wav')) * float(os.environ.get('NADER_GAIN', '1.0'))
-    i = int((pl['t'] - m['t0']) / 1000 * SR); a, b = max(0, i), min(n, i + len(x))
+    dt, tempo = (SHIFT.get(pl['name'], 0.0), None) if not isinstance(SHIFT.get(pl['name']), list) else SHIFT[pl['name']]
+    x = load(os.path.join(D, 'call', pl['name'] + '.wav'), tempo=tempo) * float(os.environ.get('NADER_GAIN', '1.0'))
+    i = int((pl['t'] + dt * 1000 - m['t0']) / 1000 * SR); a, b = max(0, i), min(n, i + len(x))
     if b > a: nader[a:b] += x[a - i:b - i]
 # call/pauses.json {"<call>": [[cut_s, pause_s, until_s], ...]}: where Devin's real "okay"/"mm-hmm" landed on top of a
 # pre-fed line, open a short pause in Nader's line at cut_s so it resumes after Devin; Nader's audio up to until_s shifts later

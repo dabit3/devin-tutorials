@@ -97,7 +97,7 @@ if (NARRATED) {
     Object.assign(SPEC.edit[k] ??= {}, v);
 }
 """ % json.dumps({  # the rejoin click waits for the 0332 line, so it plays over the hover frame (game on the iPhone)
-    I4(end1): {'travel': 0.45, 'dwell': 0.1}, I4(end1 + 1): {'hold': 0.35}, I4(end2): {'travel': 0.45, 'dwell': 0.1},
+    I4(7): {'hold': 0.6}, I4(end1): {'travel': 0.45, 'dwell': 0.1}, I4(end1 + 1): {'hold': 0.35}, I4(end2): {'travel': 0.45, 'dwell': 0.1},
     I4(mark('call2-start')): {'waitVo': True}})
 open(os.path.join(D, 'spec.js'), 'w').write('window.SPEC = ' + json.dumps(spec, indent=2) + ';\n' + NARRATED_JS)
 subprocess.run(['python3', os.path.join(D, 'synccall.py')], check=True)

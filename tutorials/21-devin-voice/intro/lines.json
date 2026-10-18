@@ -1,92 +1,356 @@
 {
  "i0.png": {
   "text": "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-  "dur": 8.16,
-  "at": 0.0,
-  "end": 8.16,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 9.69,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "i0.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "i1.png",
+    "I'll build it with Devin and Devin Voice, which uses ChatGPT voice under the hood. And the game itself talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll build it with Devin and Devin Voice, which uses ChatGPT voice under the hood. And the game itself talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "i2.png",
+    "This is Coach Otter. He talks and listens at the same time, and runs game actions as tools in the background.",
+    "This is Coach Otter. He talks and listens at the same time, and runs game actions as tools in the background."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it, starting from a new Devin session.",
+    "Here's how I built it, starting from a new Devin session."
+   ],
+   [
+    "0001.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0255.png",
+    "Devin sets up the Expo project, builds the voxel city, and connects Coach Otter to GPT-Live-1 through a small server that keeps the API key.",
+    "Devin sets up the Expo project, builds the voxel city, and connects Coach Otter to GPT-Live-1 through a small server that keeps the API key."
+   ],
+   [
+    "0332.png",
+    "Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along.",
+    "Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along."
+   ],
+   [
+    "0514.png",
+    "Devin starts a second Devin on Ubuntu to test Android. Its update says Coach Otter already talks on the web, and runs tools while he talks.",
+    "Devin starts a second Devin on Ubuntu to test Android. Its update says Coach Otter already talks on the web, and runs tools while he talks."
+   ],
+   [
+    "0636.png",
+    "Then it plays the web build in Chrome with Computer Use.",
+    "Then it plays the web build in Chrome with Computer Use."
+   ],
+   [
+    "0700.png",
+    "On the iPhone simulator, audio doesn't work on this Mac, so Devin types to Coach instead of talking.",
+    "On the iPhone simulator, audio doesn't work on this Mac, so Devin types to Coach instead of talking."
+   ],
+   [
+    "1094.png",
+    "Every test comes with a recording and pass fail checks.",
+    "Every test comes with a recording and pass fail checks."
+   ],
+   [
+    "1097.png",
+    "In Chrome, Coach connects, runs the boost, night, and best score tools, and switches style. Eleven checks pass, and one is left untested.",
+    "In Chrome, Coach connects, runs the boost, night, and best score tools, and switches style. Eleven checks pass, and one is left untested."
+   ],
+   [
+    "1127.png",
+    "On the iPhone, the tools, both styles, and reconnecting all work, and eight checks pass. The voice you heard at the start ran in Chrome.",
+    "On the iPhone, the tools, both styles, and reconnecting all work, and eight checks pass. The voice you heard at the start ran in Chrome."
+   ],
+   [
+    "1160.png",
+    "The Ubuntu Devin ran the game on an Android emulator with software rendering. All twelve checks pass, Coach tools included.",
+    "The Ubuntu Devin ran the game on an Android emulator with software rendering. All twelve checks pass, Coach tools included."
+   ],
+   [
+    "1202.png",
+    "Then it opens a pull request with the code, the reports, and the recordings.",
+    "Then it opens a pull request with the code, the reports, and the recordings."
+   ],
+   [
+    "outro",
+    "That's how you build and test a cross-platform game with your voice, using Devin Voice and GPT-Live-1.",
+    "That's how you build and test a cross-platform game with your voice, using Devin Voice and GPT-Live-1."
+   ]
+  ],
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.31,
+    "t1": 2.88,
     "text": "Today I'll be building and testing a cross-platform"
    },
    {
-    "t0": 2.345,
-    "t1": 4.389,
+    "t0": 2.96,
+    "t1": 5.6,
     "text": "mobile game just by using my voice."
    },
    {
-    "t0": 4.667,
-    "t1": 5.782,
+    "t0": 5.68,
+    "t1": 6.96,
     "text": "It runs on iOS,"
    },
    {
-    "t0": 5.817,
-    "t1": 6.92,
+    "t0": 7.04,
+    "t1": 8.4,
     "text": "Android, and the web,"
    },
    {
-    "t0": 7.047,
-    "t1": 8.16,
+    "t0": 8.56,
+    "t1": 9.69,
     "text": "from one codebase."
    }
-  ]
+  ],
+  "at": 0.0,
+  "end": 9.69,
+  "checked": true
  },
  "i1.png": {
   "text": "I'll build it with Devin and Devin Voice, which uses ChatGPT voice under the hood. And the game itself talks to players through OpenAI's GPT-Live-1 API.",
-  "dur": 8.17,
-  "at": 8.47,
-  "end": 15.93,
-  "mode": "retake",
-  "checked": true,
+  "dur": 9.55,
+  "takeAt": 9.92,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "i0.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "i1.png",
+    "I'll build it with Devin and Devin Voice, which uses ChatGPT voice under the hood. And the game itself talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll build it with Devin and Devin Voice, which uses ChatGPT voice under the hood. And the game itself talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "i2.png",
+    "This is Coach Otter. He talks and listens at the same time, and runs game actions as tools in the background.",
+    "This is Coach Otter. He talks and listens at the same time, and runs game actions as tools in the background."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it, starting from a new Devin session.",
+    "Here's how I built it, starting from a new Devin session."
+   ],
+   [
+    "0001.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0255.png",
+    "Devin sets up the Expo project, builds the voxel city, and connects Coach Otter to GPT-Live-1 through a small server that keeps the API key.",
+    "Devin sets up the Expo project, builds the voxel city, and connects Coach Otter to GPT-Live-1 through a small server that keeps the API key."
+   ],
+   [
+    "0332.png",
+    "Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along.",
+    "Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along."
+   ],
+   [
+    "0514.png",
+    "Devin starts a second Devin on Ubuntu to test Android. Its update says Coach Otter already talks on the web, and runs tools while he talks.",
+    "Devin starts a second Devin on Ubuntu to test Android. Its update says Coach Otter already talks on the web, and runs tools while he talks."
+   ],
+   [
+    "0636.png",
+    "Then it plays the web build in Chrome with Computer Use.",
+    "Then it plays the web build in Chrome with Computer Use."
+   ],
+   [
+    "0700.png",
+    "On the iPhone simulator, audio doesn't work on this Mac, so Devin types to Coach instead of talking.",
+    "On the iPhone simulator, audio doesn't work on this Mac, so Devin types to Coach instead of talking."
+   ],
+   [
+    "1094.png",
+    "Every test comes with a recording and pass fail checks.",
+    "Every test comes with a recording and pass fail checks."
+   ],
+   [
+    "1097.png",
+    "In Chrome, Coach connects, runs the boost, night, and best score tools, and switches style. Eleven checks pass, and one is left untested.",
+    "In Chrome, Coach connects, runs the boost, night, and best score tools, and switches style. Eleven checks pass, and one is left untested."
+   ],
+   [
+    "1127.png",
+    "On the iPhone, the tools, both styles, and reconnecting all work, and eight checks pass. The voice you heard at the start ran in Chrome.",
+    "On the iPhone, the tools, both styles, and reconnecting all work, and eight checks pass. The voice you heard at the start ran in Chrome."
+   ],
+   [
+    "1160.png",
+    "The Ubuntu Devin ran the game on an Android emulator with software rendering. All twelve checks pass, Coach tools included.",
+    "The Ubuntu Devin ran the game on an Android emulator with software rendering. All twelve checks pass, Coach tools included."
+   ],
+   [
+    "1202.png",
+    "Then it opens a pull request with the code, the reports, and the recordings.",
+    "Then it opens a pull request with the code, the reports, and the recordings."
+   ],
+   [
+    "outro",
+    "That's how you build and test a cross-platform game with your voice, using Devin Voice and GPT-Live-1.",
+    "That's how you build and test a cross-platform game with your voice, using Devin Voice and GPT-Live-1."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.1,
-    "t1": 0.94,
-    "text": "I'll build it with Devin"
+    "t0": 0.12,
+    "t1": 2.16,
+    "text": "I'll build it with Devin and Devin Voice,"
    },
    {
-    "t0": 0.96,
-    "t1": 3.84,
-    "text": "and Devin Voice, which uses ChatGPT voice under the hood."
+    "t0": 2.24,
+    "t1": 4.8,
+    "text": "which uses ChatGPT voice under the hood."
    },
    {
-    "t0": 4.22,
-    "t1": 5.4,
-    "text": "And the game itself talks to"
+    "t0": 4.84,
+    "t1": 6.96,
+    "text": "And the game itself talks to players through"
    },
    {
-    "t0": 5.44,
-    "t1": 8.02,
-    "text": "players through OpenAI's GPT-Live-1 API."
+    "t0": 7.12,
+    "t1": 9.55,
+    "text": "OpenAI's GPT-Live-1 API."
    }
-  ]
+  ],
+  "at": 9.92,
+  "end": 19.47,
+  "checked": true
  },
  "i2.png": {
   "text": "This is Coach Otter. He talks and listens at the same time, and runs game actions as tools in the background.",
-  "dur": 5.645,
-  "at": 16.095,
-  "end": 21.74,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 6.49,
+  "takeAt": 19.88,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "i0.png",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "i1.png",
+    "I'll build it with Devin and Devin Voice, which uses ChatGPT voice under the hood. And the game itself talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll build it with Devin and Devin Voice, which uses ChatGPT voice under the hood. And the game itself talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "i2.png",
+    "This is Coach Otter. He talks and listens at the same time, and runs game actions as tools in the background.",
+    "This is Coach Otter. He talks and listens at the same time, and runs game actions as tools in the background."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it, starting from a new Devin session.",
+    "Here's how I built it, starting from a new Devin session."
+   ],
+   [
+    "0001.png",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0008.png",
+    "Then click the waveform button beside the message box to start a voice call.",
+    "Then click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0255.png",
+    "Devin sets up the Expo project, builds the voxel city, and connects Coach Otter to GPT-Live-1 through a small server that keeps the API key.",
+    "Devin sets up the Expo project, builds the voxel city, and connects Coach Otter to GPT-Live-1 through a small server that keeps the API key."
+   ],
+   [
+    "0332.png",
+    "Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along.",
+    "Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along."
+   ],
+   [
+    "0514.png",
+    "Devin starts a second Devin on Ubuntu to test Android. Its update says Coach Otter already talks on the web, and runs tools while he talks.",
+    "Devin starts a second Devin on Ubuntu to test Android. Its update says Coach Otter already talks on the web, and runs tools while he talks."
+   ],
+   [
+    "0636.png",
+    "Then it plays the web build in Chrome with Computer Use.",
+    "Then it plays the web build in Chrome with Computer Use."
+   ],
+   [
+    "0700.png",
+    "On the iPhone simulator, audio doesn't work on this Mac, so Devin types to Coach instead of talking.",
+    "On the iPhone simulator, audio doesn't work on this Mac, so Devin types to Coach instead of talking."
+   ],
+   [
+    "1094.png",
+    "Every test comes with a recording and pass fail checks.",
+    "Every test comes with a recording and pass fail checks."
+   ],
+   [
+    "1097.png",
+    "In Chrome, Coach connects, runs the boost, night, and best score tools, and switches style. Eleven checks pass, and one is left untested.",
+    "In Chrome, Coach connects, runs the boost, night, and best score tools, and switches style. Eleven checks pass, and one is left untested."
+   ],
+   [
+    "1127.png",
+    "On the iPhone, the tools, both styles, and reconnecting all work, and eight checks pass. The voice you heard at the start ran in Chrome.",
+    "On the iPhone, the tools, both styles, and reconnecting all work, and eight checks pass. The voice you heard at the start ran in Chrome."
+   ],
+   [
+    "1160.png",
+    "The Ubuntu Devin ran the game on an Android emulator with software rendering. All twelve checks pass, Coach tools included.",
+    "The Ubuntu Devin ran the game on an Android emulator with software rendering. All twelve checks pass, Coach tools included."
+   ],
+   [
+    "1202.png",
+    "Then it opens a pull request with the code, the reports, and the recordings.",
+    "Then it opens a pull request with the code, the reports, and the recordings."
+   ],
+   [
+    "outro",
+    "That's how you build and test a cross-platform game with your voice, using Devin Voice and GPT-Live-1.",
+    "That's how you build and test a cross-platform game with your voice, using Devin Voice and GPT-Live-1."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0,
-    "t1": 0.937,
+    "t0": 0.12,
+    "t1": 1.64,
     "text": "This is Coach Otter."
    },
    {
-    "t0": 1.181,
-    "t1": 3.178,
+    "t0": 1.72,
+    "t1": 4.093,
     "text": "He talks and listens at the same time,"
    },
    {
-    "t0": 3.305,
-    "t1": 5.593,
+    "t0": 4.147,
+    "t1": 6.49,
     "text": "and runs game actions as tools in the background."
    }
-  ]
+  ],
+  "at": 19.88,
+  "end": 26.37,
+  "checked": true
  }
 }

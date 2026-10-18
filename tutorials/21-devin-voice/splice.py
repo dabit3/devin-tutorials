@@ -56,7 +56,7 @@ def seg(out, ss, to, caps, audio):
 # real Coach run (segment time = intro time): STT of the intro audio sets these windows
 S0 = 2.5  # skip the first seconds of 'connecting'
 live = seg(os.path.join(B, 'live.mp4'), S0, 55.0,
-           [(i, a - S0, b - S0) for i, a, b in [(2, 2.8, 6.9), (3, 9.6, 12.6), (4, 12.7, 21.0), (5, 37.8, 40.6), (6, 40.8, 48.5), (7, 50.2, 55.0)]], 'intro')
+           [(i, a - S0, b - S0) for i, a, b in [(2, 2.8, 6.9), (3, 9.2, 12.6), (4, 12.7, 21.0), (5, 37.8, 40.6), (6, 40.8, 48.5), (7, 50.2, 55.0)]], 'intro')
 parts = [live]
 if mode == 'cap':  # title card: the captioned cut has no narration, so pills 0-1 carry the intro line and the stack (Devin Voice = ChatGPT voice)
     MB = os.path.join(B, 'music'); os.makedirs(os.path.join(MB, 'build'), exist_ok=True)
@@ -70,7 +70,7 @@ if mode == 'nader':
     I = json.load(open(os.path.join(D, 'intro', 'lines.json')))
     t, wavs, caps = 0.5, [], []
     for k, ci in zip(['i0.png', 'i1.png', 'i2.png'], [0, 1, 2]):
-        wavs.append((os.path.join(D, 'intro', k + '.wav'), t)); caps.append((ci, t, t + I[k]['dur'] + 0.3)); t += I[k]['dur'] + 0.45
+        wavs.append((os.path.join(D, 'intro', k + '.wav'), t)); caps.append((ci, t, t + I[k]['dur'] + 0.3)); t += I[k]["dur"] + 0.35
     parts = [seg(os.path.join(B, 'teaser.mp4'), 50.5, 50.5 + t + 0.6, caps, wavs), live]
     name += '-nader'
 kit = os.path.join(D, name + '.mp4')

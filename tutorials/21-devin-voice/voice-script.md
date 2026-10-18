@@ -1,13 +1,13 @@
 # Tutorial 21: Devin Voice + GPT-Live-1, voice script
 
-Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one take for all lines with `_kit/tools/vo_onetake.py`, cut locally). It plays only outside the two Devin Voice calls and outside Coach Otter's lines. When someone is talking in a call or in the game, you hear that real audio instead. `genspec.py` holds the kit lines, and `splice.py` places the three intro lines (`intro/`) over the live gameplay intro.
+Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, model `eleven_v4`, default settings (no seed, no voice_settings), one take for all lines with `_kit/tools/vo.py` (`VO_MODEL=eleven_v4`), cut locally). It plays only outside the two Devin Voice calls and outside Coach Otter's lines. When someone is talking in a call or in the game, you hear that real audio instead. `genspec.py` holds the kit lines, and `splice.py` places the three intro lines (`intro/`) over the live gameplay intro.
 
 ## What's real and what's synthesized
 
 - Devin's side of both calls: real Devin Voice audio, recorded from its WebRTC track.
 - Coach Otter in the intro: real GPT-Live-1 audio from the web build in Chrome, recorded from the app's WebRTC track. The creatine boost, night mode and chill style are real tool calls from that same session.
-- Nader's lines in the calls and to Coach: ElevenLabs Nader voice, played into the mic.
-- Narration: ElevenLabs Nader voice.
+- Nader's lines in the calls and to Coach: ElevenLabs Nader voice (`eleven_v4`, one take per set, cut locally), placed in the slots where the original lines were played into the mic. The v4 lines run a little longer, so a few start slightly earlier to end before Devin's or Coach's real reply (`call/shift.json`); the c4 barge-in also plays 4% faster (pitch kept) so it ends before Devin answers.
+- Narration: ElevenLabs Nader voice (`eleven_v4`).
 
 ## Intro (live gameplay, Chrome)
 
