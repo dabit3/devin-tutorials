@@ -1,6 +1,6 @@
 # Voice script: Port an iOS screen to Android and prove parity (overview)
 
-Narrated cut: `59-ios-to-android-parity-overview-nader.mp4` (voice `T8iHhGIWPm2GVYpQD1Am`, `VO_NAME=nader`). One whole-script ElevenLabs take with default voice settings (`_kit/tools/vo_onetake.py`), cut locally at sentence boundaries, STT check passed.
+Narrated cut: `59-ios-to-android-parity-overview-nader.mp4` (voice `T8iHhGIWPm2GVYpQD1Am`, `VO_NAME=nader`). One whole-script ElevenLabs take with model `eleven_v4` and default voice settings (`_kit/tools/vo_onetake.py`), cut locally at sentence boundaries, STT check passed.
 
 Diagram scenes are drawn live by `scenes.js`; every UI shot is a real capture from tutorial 58 (mapping in `shots/SOURCES.json`).
 

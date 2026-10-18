@@ -1,6 +1,6 @@
 # Voice script: Port an iOS screen to Android and prove parity
 
-Narrated cut: `58-ios-to-android-parity-nader.mp4` (voice `T8iHhGIWPm2GVYpQD1Am`, `VO_NAME=nader`). The whole script is generated as one ElevenLabs take (default voice settings) with `_kit/tools/vo_onetake.py` from the `vo` fields in `spec.js`, then cut locally into sentence-aligned lines and checked with Speech-to-Text. "Spoken as" is the `voSay` spelling sent to the voice where it differs.
+Narrated cut: `58-ios-to-android-parity-nader.mp4` (voice `T8iHhGIWPm2GVYpQD1Am`, `VO_NAME=nader`). The whole script is generated as one ElevenLabs take with model `eleven_v4` (default voice settings) with `_kit/tools/vo_onetake.py` from the `vo` fields in `spec.js`, then cut locally into sentence-aligned lines and checked with Speech-to-Text. "Spoken as" is the `voSay` spelling sent to the voice where it differs.
 
 Two real sessions in the `thequantexplorer` org, both on `thequantexplorer/product-demo-apps` (the existing SwiftUI app `wisp/`), ending in one pull request (product-demo-apps#79; the macOS session first opened #45, which was closed after an earlier take, and its spec commit was reopened as #79 for the Android take).
 
