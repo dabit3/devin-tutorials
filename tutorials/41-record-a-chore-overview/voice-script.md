@@ -1,6 +1,6 @@
 # Overview 41: Record a chore once (voice script)
 
-Narrator: Nader (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings: stability 0.5, similarity 0.75, style 0, speed 1). Generated as one take with no seed (`VO_NAME=nader VO_SEED=none python3 _kit/tools/vo_onetake.py 41-record-a-chore-overview T8iHhGIWPm2GVYpQD1Am`) and cut locally at sentence boundaries; the STT check passed on every line.
+Narrator: Nader (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, model `eleven_v4`, the voice's saved default settings). Generated as one take whose request sends only `text` and `model_id` (no seed, no voice_settings): `VO_MODEL=eleven_v4 VO_NAME=nader VO_SEED=none python3 40-record-a-chore/vo_v4.py 41-record-a-chore-overview T8iHhGIWPm2GVYpQD1Am` (a folder-local wrapper around `_kit/tools/vo_onetake.py`), cut locally at sentence boundaries; the STT check passed on every line.
 
 Diagram scenes are drawn by `scenes.js`; every UI proof is a real frame from tutorial 40 (mapped in `shots/SOURCES.json`). The Refund Desk demo app and its seeded data were built for the demo, and the tutorial author recorded the chore video.
 
