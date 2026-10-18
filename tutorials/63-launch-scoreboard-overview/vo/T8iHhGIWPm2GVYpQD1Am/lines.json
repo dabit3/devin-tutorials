@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "Every big launch starts an argument about who won it. This app answers it with posts from the first seventy-two hours on X, side by side.",
-  "dur": 6.505,
+  "dur": 8.18,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -69,22 +69,22 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.322,
+    "t1": 3.12,
     "text": "Every big launch starts an argument about who won it."
    },
    {
-    "t0": 2.647,
-    "t1": 4.18,
+    "t0": 3.36,
+    "t1": 5.28,
     "text": "This app answers it with posts from the"
    },
    {
-    "t0": 4.214,
-    "t1": 5.712,
+    "t0": 5.36,
+    "t1": 7.28,
     "text": "first seventy-two hours on X,"
    },
    {
-    "t0": 5.735,
-    "t1": 6.505,
+    "t0": 7.4,
+    "t1": 8.18,
     "text": "side by side."
    }
   ]
@@ -92,8 +92,8 @@
  "0001.png": {
   "text": "Here's how it works. Grok samples posts from X through the xAI API, with X Search. Everything after that runs on Modal.",
   "say": "Here's how it works. Grok samples posts from X through the ex A I API, with X Search. Everything after that runs on Modal.",
-  "dur": 7.217,
-  "takeAt": 6.753,
+  "dur": 7.825,
+  "takeAt": 8.505,
   "mode": "single-take-1",
   "take": [
    [
@@ -159,18 +159,18 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.084,
+    "t0": 0.055,
+    "t1": 1.175,
     "text": "Here's how it works."
    },
    {
-    "t0": 1.409,
-    "t1": 5.31,
+    "t0": 1.415,
+    "t1": 5.775,
     "text": "Grok samples posts from X through the xAI API, with X Search."
    },
    {
-    "t0": 5.635,
-    "t1": 7.217,
+    "t0": 5.975,
+    "t1": 7.825,
     "text": "Everything after that runs on Modal."
    }
   ]
@@ -178,8 +178,8 @@
  "0002.png": {
   "text": "Inside Modal, a cron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
   "say": "Inside Modal, a kron schedule calls refresh every six hours. Refresh uses map to analyze each launch in its own container, in parallel. Results land in a Modal Dict, and a web endpoint serves the public page.",
-  "dur": 11.435,
-  "takeAt": 14.295,
+  "dur": 13.035,
+  "takeAt": 16.625,
   "mode": "single-take-1",
   "take": [
    [
@@ -245,28 +245,28 @@
   ],
   "chunks": [
    {
-    "t0": 0.067,
-    "t1": 3.225,
+    "t0": 0.095,
+    "t1": 4.055,
     "text": "Inside Modal, a cron schedule calls refresh every six hours."
    },
    {
-    "t0": 3.608,
-    "t1": 5.721,
+    "t0": 4.255,
+    "t1": 6.815,
     "text": "Refresh uses map to analyze each launch in"
    },
    {
-    "t0": 5.779,
-    "t1": 7.288,
+    "t0": 6.935,
+    "t1": 8.855,
     "text": "its own container, in parallel."
    },
    {
-    "t0": 7.671,
-    "t1": 9.274,
+    "t0": 9.055,
+    "t1": 10.895,
     "text": "Results land in a Modal Dict,"
    },
    {
-    "t0": 9.425,
-    "t1": 11.435,
+    "t0": 10.935,
+    "t1": 13.035,
     "text": "and a web endpoint serves the public page."
    }
   ]
@@ -274,8 +274,8 @@
  "0010.png": {
   "text": "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The xAI key stays in a Modal Secret.",
   "say": "Why Modal? A laptop script stops when the laptop sleeps, and a server sits idle between refreshes. Modal scales to zero between runs and bills by the second. The ex A I key stays in a Modal Secret.",
-  "dur": 11.205,
-  "takeAt": 25.945,
+  "dur": 12.805,
+  "takeAt": 30.065,
   "mode": "single-take-1",
   "take": [
    [
@@ -341,41 +341,41 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 0.677,
+    "t0": 0.095,
+    "t1": 0.855,
     "text": "Why Modal?"
    },
    {
-    "t0": 0.956,
-    "t1": 3.243,
+    "t0": 1.055,
+    "t1": 3.855,
     "text": "A laptop script stops when the laptop sleeps,"
    },
    {
-    "t0": 3.359,
-    "t1": 5.507,
+    "t0": 3.895,
+    "t1": 6.095,
     "text": "and a server sits idle between refreshes."
    },
    {
-    "t0": 5.832,
-    "t1": 7.98,
+    "t0": 6.495,
+    "t1": 9.135,
     "text": "Modal scales to zero between runs and bills"
    },
    {
-    "t0": 8.026,
-    "t1": 8.665,
+    "t0": 9.215,
+    "t1": 10.135,
     "text": "by the second."
    },
    {
-    "t0": 9.106,
-    "t1": 11.205,
+    "t0": 10.335,
+    "t1": 12.805,
     "text": "The xAI key stays in a Modal Secret."
    }
   ]
  },
  "0003.png": {
   "text": "The numbers are honest about what they are. Counts are sampled posts, Grok classifies each one, and every quote links back to X.",
-  "dur": 5.983,
-  "takeAt": 37.427,
+  "dur": 7.715,
+  "takeAt": 43.145,
   "mode": "single-take-1",
   "take": [
    [
@@ -441,31 +441,31 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.71,
+    "t0": 0.055,
+    "t1": 2.095,
     "text": "The numbers are honest about what they are."
    },
    {
-    "t0": 1.826,
-    "t1": 3.069,
+    "t0": 2.295,
+    "t1": 3.975,
     "text": "Counts are sampled posts,"
    },
    {
-    "t0": 3.15,
-    "t1": 4.462,
+    "t0": 4.055,
+    "t1": 5.655,
     "text": "Grok classifies each one,"
    },
    {
-    "t0": 4.485,
-    "t1": 5.983,
+    "t0": 5.735,
+    "t1": 7.715,
     "text": "and every quote links back to X."
    }
   ]
  },
  "0004.png": {
   "text": "Devin built all of this from one short prompt in the product demo apps repo.",
-  "dur": 3.698,
-  "takeAt": 43.592,
+  "dur": 4.135,
+  "takeAt": 51.265,
   "mode": "single-take-1",
   "take": [
    [
@@ -531,21 +531,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.803,
+    "t0": 0.095,
+    "t1": 2.015,
     "text": "Devin built all of this from one short"
    },
    {
-    "t0": 1.85,
-    "t1": 3.698,
+    "t0": 2.095,
+    "t1": 4.095,
     "text": "prompt in the product demo apps repo."
    }
   ]
  },
  "0005.png": {
   "text": "It deployed the app with modal deploy, and the page answered on its public URL.",
-  "dur": 3.795,
-  "takeAt": 47.515,
+  "dur": 4.305,
+  "takeAt": 55.665,
   "mode": "single-take-1",
   "take": [
    [
@@ -611,21 +611,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.063,
-    "t1": 1.898,
+    "t0": 0.015,
+    "t1": 2.095,
     "text": "It deployed the app with modal deploy,"
    },
    {
-    "t0": 1.921,
-    "t1": 3.795,
+    "t0": 2.135,
+    "t1": 4.255,
     "text": "and the page answered on its public URL."
    }
   ]
  },
  "0006.png": {
   "text": "Then it opened a pull request in the demo apps repo.",
-  "dur": 2.385,
-  "takeAt": 51.505,
+  "dur": 2.815,
+  "takeAt": 60.225,
   "mode": "single-take-1",
   "take": [
    [
@@ -691,13 +691,13 @@
   ],
   "chunks": [
    {
-    "t0": 0.102,
-    "t1": 1.449,
+    "t0": 0.095,
+    "t1": 1.735,
     "text": "Then it opened a pull request in the"
    },
    {
-    "t0": 1.484,
-    "t1": 2.385,
+    "t0": 1.775,
+    "t1": 2.815,
     "text": "demo apps repo."
    }
   ]
@@ -705,8 +705,8 @@
  "0007.png": {
   "text": "Here's the real run, on Modal. Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four.",
   "say": "Here's the real run, on Modal. Claude Opus five point five netted plus fifty-eight from fifty sampled posts, and G P T six, Sole, came in at plus four.",
-  "dur": 9.255,
-  "takeAt": 54.015,
+  "dur": 9.945,
+  "takeAt": 63.465,
   "mode": "single-take-1",
   "take": [
    [
@@ -772,21 +772,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.076,
-    "t1": 1.493,
+    "t0": 0.055,
+    "t1": 2.055,
     "text": "Here's the real run, on Modal."
    },
    {
-    "t0": 1.737,
-    "t1": 9.255,
+    "t0": 2.295,
+    "t1": 9.945,
     "text": "Claude Opus 5.5 netted plus fifty-eight from fifty sampled posts, and GPT-6 Sol came in at plus four."
    }
   ]
  },
  "0008.png": {
   "text": "Each column links the posts that shaped the conversation.",
-  "dur": 2.515,
-  "takeAt": 63.585,
+  "dur": 2.83,
+  "takeAt": 73.72,
   "mode": "single-take-1",
   "take": [
    [
@@ -853,7 +853,7 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.515,
+    "t1": 2.83,
     "text": "Each column links the posts that shaped the conversation."
    }
   ]
@@ -861,8 +861,8 @@
  "0009.png": {
   "text": "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap.",
   "say": "To extend it, add a launch with one new row, track a longer window, or chart sentiment over time. You could even post a daily recap. <break time=\"1.0s\" />",
-  "dur": 8.115,
-  "takeAt": 66.36,
+  "dur": 7.78,
+  "takeAt": 76.865,
   "mode": "single-take-1",
   "take": [
    [
@@ -928,36 +928,36 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 0.805,
+    "t0": 0.095,
+    "t1": 0.975,
     "text": "To extend it,"
    },
    {
-    "t0": 0.839,
-    "t1": 2.291,
+    "t0": 1.055,
+    "t1": 2.735,
     "text": "add a launch with one new row,"
    },
    {
-    "t0": 2.534,
-    "t1": 3.603,
+    "t0": 2.855,
+    "t1": 4.015,
     "text": "track a longer window,"
    },
    {
-    "t0": 3.637,
-    "t1": 5.054,
+    "t0": 4.095,
+    "t1": 5.935,
     "text": "or chart sentiment over time."
    },
    {
-    "t0": 5.437,
-    "t1": 8.107,
+    "t0": 5.975,
+    "t1": 8.015,
     "text": "You could even post a daily recap."
    }
   ]
  },
  "outro": {
   "text": "Who won the launch? Now you can check.",
-  "dur": 1.735,
-  "takeAt": 74.475,
+  "dur": 2.365,
+  "takeAt": 84.645,
   "mode": "single-take-1",
   "take": [
    [
@@ -1023,13 +1023,13 @@
   ],
   "chunks": [
    {
-    "t0": 0,
-    "t1": 0.898,
+    "t0": 0.25,
+    "t1": 1.435,
     "text": "Who won the launch?"
    },
    {
-    "t0": 0.979,
-    "t1": 1.735,
+    "t0": 1.555,
+    "t1": 2.365,
     "text": "Now you can check."
    }
   ]

@@ -3,7 +3,7 @@
 const BLUE = [64, 140, 255];
 const rgba = (c, a) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
 const W2 = a => `rgba(242,242,243,${a})`;
-const T = { jobs: [3.6, 6.6, 10.6, 12.6, 14.3], why: [2.5, 4.8, 7.4] };
+const T = { jobs: [3.85, 7.05, 11.2, 12.45, 14.75], why: [2.9, 5.2, 7.9] };
 
 function eyebrow(ctx, k, t, y, a) {
   if (a <= 0) return; ctx.save(); ctx.globalAlpha = k.alpha * a;
