@@ -4,66 +4,621 @@ window.SPEC = {
   "outro": "Found, proven, and fixed",
   "speed": 3,
   "cps": 48,
+  "capPos": "bottom",
+  "capArrows": false,
+  "pollRunMax": 2.5,
   "voOutro": "Security Swarm. Real exploits, found, proven, and fixed.",
   "edit": {
-    "0000.png": { "skip": true },
-    "0001.png": { "hold": 2.6, "cursor": false, "vo": "This is Devin Security Swarm. It reads your code like an attacker, proves each bug is real, and fixes it." },
-    "0002.png": { "vo": "First, let Devin write a scan profile for your repo." },
-    "0005.png": { "hold": 0.8 },
-    "0006.png": { "hold": 3.4, "capPos": "bottom", "vo": "Devin opens a session, looks at your repos, and asks which one the profile is for." },
-    "0009.png": { "hold": 3.6, "capPos": "bottom", "cap": "Devin drafts the profile and lists the optional settings", "vo": "It drafts what to look for and how to validate it, then lists a few optional settings." },
-    "0010.png": { "vo": "Accept the defaults and add one triage rule: any auth bypass or cross-user leak is always critical." },
-    "0044.png": { "hold": 2.4, "capPos": "bottom" },
-    "0045.png": { "vo": "Devin shows the change as a diff, and you approve it." },
-    "0047.png": { "hold": 1.6, "capPos": "bottom", "cap": "The profile is ready" },
-    "0048.png": { "skip": true },
-    "0049.png": { "vo": "Now open the profile it created." },
-    "0051.png": { "skip": true },
-    "0053.png": { "hold": 4.2, "vo": "The scan model tells the scanner what to hunt for: auth bypass, access between users, and file paths, with the exact files to check." },
-    "0054.png": { "hold": 3.4, "vo": "Triage guidance decides how findings are ranked, so our rule makes these always critical." },
-    "0055.png": { "hold": 4.0, "vo": "Sandbox validation tells Devin how to start the API, which test users to log in as, and to prove every finding with curl." },
-    "0056.png": { "hold": 2.4, "cap": "Report: an optional summary when the scan finishes", "vo": "A summary report is optional, and this profile leaves it off." },
-    "0057.png": { "skip": true },
-    "0060.png": { "hold": 3.6, "vo": "Under Advanced, it skips tests and seed scripts, and validates every finding from medium up." },
-    "0061.png": { "skip": true },
-    "0062.png": { "hold": 0.8 },
-    "0063.png": { "vo": "Now start a scan, set it up manually on a single repo, and choose the new profile." },
-    "0081.png": { "vo": "Turn on Interactive mode, so you review the threat model before it scans." },
-    "0084.png": { "vo": "Then run the scan." },
-    "0086.png": { "hold": 1.2, "cap": "The scan starts with a threat model" },
-    "0087.png": { "skip": true }, "0088.png": { "skip": true }, "0089.png": { "skip": true }, "0090.png": { "skip": true },
-    "0091.png": { "cam": { "x": 885, "y": 405, "z": 1.3 }, "camDur": 0.01, "hold": 3.0, "vo": "Before it scans, Devin proposes a scan model of rules written for this exact code." },
-    "0092.png": { "vo": "It already suspects the forwarded user header, boards loaded by ID with no owner check, and file paths built from user input." },
-    "0095.png": { "hold": 1.4 },
-    "0096.png": { "vo": "This looks right, so start scanning." },
-    "0098.png": { "skip": true },
-    "0099.png": { "cam": "reset", "camDur": 0.01, "hold": 1.4 },
-    "0100.png": { "hold": 0.8, "speed": 40, "badge": "Sped up", "cap": "Findings arrive, grouped by severity" },
-    "0115.png": { "hold": 1.6, "vo": "Findings stream in, grouped by severity." },
-    "0124.png": { "hold": 2.0, "cap": "Then Devin tries every exploit in a sandbox", "vo": "Then Devin tries to exploit each one in a sandbox." },
-    "0125.png": { "speed": 100 },
-    "0145.png": { "hold": 3.0, "speed": 3, "badge": null, "cap": "11 open, 8 dismissed as duplicates or false positives", "vo": "Duplicates and false positives are dismissed, which leaves eleven open findings, and three of them are chained across files." },
-    "0146.png": { "skip": true }, "0147.png": { "skip": true }, "0148.png": { "skip": true }, "0149.png": { "skip": true },
-    "0150.png": { "hold": 1.6 },
-    "0151.png": { "vo": "Open the worst one." },
-    "0153.png": { "hold": 3.0, "cursor": false, "vo": "It's critical, with high confidence, because anyone who sends one header becomes the admin, with no password." },
-    "0154.png": { "vo": "Here's the attack path, step by step." },
-    "0155.png": { "cap": "The exact lines in auth.js", "vo": "And here are the exact lines in auth.js that make it possible." },
-    "0156.png": { "vo": "Devin ran the exploit in a sandbox, and it worked, so the finding is confirmed." },
-    "0157.png": { "cap": "The real requests that proved it", "vo": "These are the real requests that proved it." },
-    "0158.png": { "vo": "Now assign it to Devin." },
-    "0160.png": { "hold": 1.2 },
-    "0161.png": { "vo": "A fix session starts right away, so open it." },
-    "0163.png": { "skip": true },
-    "0164.png": { "hold": 3.2, "cursor": false, "capPos": "bottom", "vo": "Devin gets the finding and its evidence, and checks that the bug is still real on main." },
-    "0165.png": { "hold": 4.6, "capPos": "bottom", "cap": "It reuses an open fix PR and reruns the tests", "vo": "An open pull request from an earlier run already fixes it, so Devin takes it over, reruns the tests, and checks that the header alone is now rejected." },
-    "0166.png": { "hold": 0.8, "capPos": "bottom" },
-    "0167.png": { "hold": 2.4, "capPos": "bottom", "cap": "Only the real proxy, with a shared secret, can set the user" },
-    "0168.png": { "skip": true },
-    "0169.png": { "hold": 1.2, "vo": "Back on the finding, the fix PR is attached." },
-    "0170.png": { "hold": 2.0 },
-    "0171.png": { "hold": 3.6, "cursor": false, "cap": "Only the real proxy, with a shared secret, can set the user", "vo": "A real exploit chain, found, proven, and fixed." },
-    "0172.png": { "skip": true },
-    "0173.png": { "skip": true }
+    "0000.png": {
+      "skip": true
+    },
+    "0001.png": {
+      "hold": 2.6,
+      "cursor": false,
+      "vo": "Devin Security Swarm reads your code like an attacker, proves each bug is real in a sandbox, and then fixes it."
+    },
+    "0002.png": {
+      "cap": "Create a scan profile",
+      "vo": "Start with a scan profile, and let Devin write it."
+    },
+    "0004.png": {
+      "hl": {
+        "x": 898,
+        "y": 472,
+        "w": 298,
+        "h": 78
+      },
+      "hold": 1.6,
+      "cap": "Let Devin generate it"
+    },
+    "0006.png": {
+      "skip": true
+    },
+    "0007.png": {
+      "hold": 3.2,
+      "vo": "Devin opens a session and asks what the profile should scan, and what matters most."
+    },
+    "0008.png": {
+      "cap": "Answer in a few sentences"
+    },
+    "0010.png": {
+      "hold": 2.6,
+      "vo": "Answer in a few sentences: the repo, what to focus on, what to skip, and that any auth bypass or cross-user leak is always critical."
+    },
+    "0011.png": {
+      "hold": 0.6
+    },
+    "0012.png": {
+      "badge": "Sped up",
+      "vo": "Devin reads the repo, so the profile matches the real routes and scripts."
+    },
+    "0029.png": {
+      "skip": true
+    },
+    "0030.png": {
+      "hold": 5.0,
+      "badge": null,
+      "hl": {
+        "x": 720,
+        "y": 458,
+        "w": 865,
+        "h": 655
+      },
+      "cap": "Devin writes the profile, and spots that main reverted an auth fix",
+      "vo": "It creates the profile, and even notices that the latest commit on main reverted an earlier auth fix."
+    },
+    "0031.png": {
+      "cap": "Keep the optional settings on their defaults",
+      "vo": "Keep the optional settings on their defaults."
+    },
+    "0033.png": {
+      "hold": 0.8
+    },
+    "0034.png": {
+      "hold": 0.6,
+      "skip": true
+    },
+    "0035.png": {
+      "skip": true
+    },
+    "0036.png": {
+      "hold": 1.4,
+      "cap": "The profile is ready",
+      "vo": "The profile is ready."
+    },
+    "0037.png": {
+      "skip": true
+    },
+    "0038.png": {
+      "cap": "Open the new profile",
+      "vo": "Now open it."
+    },
+    "0040.png": {
+      "skip": true
+    },
+    "0041.png": {
+      "hold": 1.0
+    },
+    "0042.png": {
+      "hold": 4.4,
+      "hl": {
+        "x": 720,
+        "y": 386,
+        "w": 990,
+        "h": 312
+      },
+      "cap": "Scan model: what to look for, and where",
+      "vo": "The scan model tells the scanner what to hunt for, with the exact files and functions to check."
+    },
+    "0043.png": {
+      "hold": 3.8,
+      "hl": {
+        "x": 721,
+        "y": 211,
+        "w": 970,
+        "h": 251
+      },
+      "cap": "Triage guidance: auth bypass and cross-user leaks are always critical",
+      "vo": "Triage guidance ranks the findings, so our rule makes these always critical."
+    },
+    "0044.png": {
+      "hold": 4.6,
+      "hl": {
+        "x": 720,
+        "y": 330,
+        "w": 990,
+        "h": 500
+      },
+      "cap": "Sandbox validation: start it, seed it, prove it with curl",
+      "vo": "Sandbox validation tells Devin how to start the API, which test users to log in as, and to prove every finding with curl."
+    },
+    "0045.png": {
+      "hold": 2.4,
+      "hl": {
+        "x": 721,
+        "y": 548,
+        "w": 970,
+        "h": 52
+      },
+      "cap": "Report: an optional summary after the scan",
+      "vo": "A summary report is optional, and this profile leaves it off."
+    },
+    "0046.png": {
+      "hold": 0.6
+    },
+    "0048.png": {
+      "hold": 3.8,
+      "hl": {
+        "x": 720,
+        "y": 600,
+        "w": 1000,
+        "h": 250
+      },
+      "cap": "Skip tests and seed scripts, and validate every severity",
+      "vo": "Under Advanced, it skips tests and seed scripts, and validates every severity."
+    },
+    "0049.png": {
+      "skip": true
+    },
+    "0050.png": {
+      "hold": 1.0
+    },
+    "0051.png": {
+      "cap": "Start a scan",
+      "vo": "Now start a scan."
+    },
+    "0053.png": {
+      "cap": "Set it up manually",
+      "vo": "Set it up manually."
+    },
+    "0057.png": {
+      "cap": "Pick the repository",
+      "vo": "Pick the repo."
+    },
+    "0059.png": {
+      "skip": true
+    },
+    "0060.png": {
+      "skip": true
+    },
+    "0062.png": {
+      "skip": true
+    },
+    "0064.png": {
+      "cap": "Choose the new profile",
+      "vo": "Then choose the new profile."
+    },
+    "0068.png": {
+      "hl": {
+        "x": 1200,
+        "y": 721,
+        "w": 475,
+        "h": 70
+      },
+      "cap": "Turn on Interactive mode",
+      "vo": "Turn on Interactive mode, so you can review the threat model before it scans."
+    },
+    "0070.png": {
+      "hl": {
+        "x": 1200,
+        "y": 721,
+        "w": 475,
+        "h": 70
+      },
+      "hold": 1.4
+    },
+    "0071.png": {
+      "cap": "Run the scan",
+      "vo": "Then run the scan."
+    },
+    "0073.png": {
+      "hold": 1.2,
+      "cap": "The scan starts by building a scan model"
+    },
+    "0074.png": {
+      "badge": "Sped up",
+      "vo": "Devin reads the code and drafts a threat model first."
+    },
+    "0098.png": {
+      "hold": 2.8,
+      "badge": null,
+      "cap": "A scan model with rules written for this code",
+      "vo": "Before it scans, Devin proposes a scan model, with rules written for this exact code."
+    },
+    "0099.png": {
+      "hl": {
+        "x": 360,
+        "y": 291,
+        "w": 658,
+        "h": 210
+      },
+      "hold": 2.6,
+      "vo": "It flags the forwarded user header, which is trusted before any token."
+    },
+    "0100.png": {
+      "hl": {
+        "x": 360,
+        "y": 705,
+        "w": 658,
+        "h": 210
+      },
+      "hold": 2.4,
+      "vo": "It flags boards loaded by ID, with no owner check."
+    },
+    "0101.png": {
+      "hl": {
+        "x": 360,
+        "y": 694,
+        "w": 658,
+        "h": 232
+      },
+      "hold": 2.4,
+      "vo": "And it flags file paths built from the request."
+    },
+    "0102.png": {
+      "vo": "This looks right, so start scanning."
+    },
+    "0103.png": {
+      "hold": 0.8
+    },
+    "0104.png": {
+      "skip": true
+    },
+    "0105.png": {
+      "skip": true
+    },
+    "0106.png": {
+      "skip": true
+    },
+    "0107.png": {
+      "skip": true
+    },
+    "0108.png": {
+      "skip": true
+    },
+    "0109.png": {
+      "skip": true
+    },
+    "0110.png": {
+      "skip": true
+    },
+    "0111.png": {
+      "skip": true
+    },
+    "0112.png": {
+      "skip": true
+    },
+    "0113.png": {
+      "skip": true
+    },
+    "0114.png": {
+      "skip": true
+    },
+    "0115.png": {
+      "skip": true
+    },
+    "0116.png": {
+      "skip": true
+    },
+    "0117.png": {
+      "skip": true
+    },
+    "0118.png": {
+      "skip": true
+    },
+    "0119.png": {
+      "skip": true
+    },
+    "0120.png": {
+      "skip": true
+    },
+    "0121.png": {
+      "skip": true
+    },
+    "0122.png": {
+      "skip": true
+    },
+    "0123.png": {
+      "skip": true
+    },
+    "0124.png": {
+      "skip": true
+    },
+    "0125.png": {
+      "skip": true
+    },
+    "0126.png": {
+      "skip": true
+    },
+    "0127.png": {
+      "skip": true
+    },
+    "0128.png": {
+      "skip": true
+    },
+    "0129.png": {
+      "skip": true
+    },
+    "0130.png": {
+      "skip": true
+    },
+    "0131.png": {
+      "skip": true
+    },
+    "0132.png": {
+      "skip": true
+    },
+    "0133.png": {
+      "skip": true
+    },
+    "0134.png": {
+      "skip": true
+    },
+    "0135.png": {
+      "skip": true
+    },
+    "0136.png": {
+      "skip": true
+    },
+    "0137.png": {
+      "skip": true
+    },
+    "0138.png": {
+      "skip": true
+    },
+    "0139.png": {
+      "skip": true
+    },
+    "0140.png": {
+      "skip": true
+    },
+    "0141.png": {
+      "skip": true
+    },
+    "0142.png": {
+      "skip": true
+    },
+    "0143.png": {
+      "skip": true
+    },
+    "0144.png": {
+      "skip": true
+    },
+    "0145.png": {
+      "skip": true
+    },
+    "0146.png": {
+      "skip": true
+    },
+    "0147.png": {
+      "skip": true
+    },
+    "0148.png": {
+      "skip": true
+    },
+    "0149.png": {
+      "skip": true
+    },
+    "0150.png": {
+      "skip": true
+    },
+    "0151.png": {
+      "skip": true
+    },
+    "0152.png": {
+      "skip": true
+    },
+    "0153.png": {
+      "skip": true
+    },
+    "0154.png": {
+      "skip": true
+    },
+    "0155.png": {
+      "skip": true
+    },
+    "0156.png": {
+      "skip": true
+    },
+    "0157.png": {
+      "skip": true
+    },
+    "0158.png": {
+      "skip": true
+    },
+    "0159.png": {
+      "skip": true
+    },
+    "0160.png": {
+      "skip": true
+    },
+    "0161.png": {
+      "skip": true
+    },
+    "0162.png": {
+      "skip": true
+    },
+    "0163.png": {
+      "skip": true
+    },
+    "0164.png": {
+      "skip": true
+    },
+    "0165.png": {
+      "skip": true
+    },
+    "0166.png": {
+      "skip": true
+    },
+    "0167.png": {
+      "skip": true
+    },
+    "0168.png": {
+      "skip": true
+    },
+    "0169.png": {
+      "hold": 2.6,
+      "cap": "Seven open findings, each one confirmed in a sandbox",
+      "vo": "A few minutes later, there are seven open findings, and each one was confirmed in a sandbox."
+    },
+    "0170.png": {
+      "cap": "Open the worst one",
+      "vo": "Open the worst one."
+    },
+    "0171.png": {
+      "skip": true
+    },
+    "0172.png": {
+      "hold": 3.4,
+      "hl": {
+        "x": 915,
+        "y": 382,
+        "w": 330,
+        "h": 175
+      },
+      "cap": "Critical, high confidence: a full auth bypass",
+      "vo": "A spoofed header gives anyone a full auth bypass, and lets them act as the admin."
+    },
+    "0173.png": {
+      "hold": 4.0,
+      "hl": {
+        "x": 1080,
+        "y": 215,
+        "w": 640,
+        "h": 200
+      },
+      "cap": "The attack path, step by step",
+      "vo": "The attack path shows each step, from the forged header to the admin export."
+    },
+    "0174.png": {
+      "hold": 3.6,
+      "hl": {
+        "x": 1080,
+        "y": 271,
+        "w": 640,
+        "h": 320
+      },
+      "cap": "References point to the exact lines",
+      "vo": "References point to the exact lines in auth dot js."
+    },
+    "0175.png": {
+      "hold": 4.0,
+      "hl": {
+        "x": 1080,
+        "y": 245,
+        "w": 640,
+        "h": 260
+      },
+      "cap": "Confirmed in a sandbox",
+      "vo": "Sandbox validation ran the real API and confirmed it."
+    },
+    "0176.png": {
+      "hold": 4.4,
+      "hl": {
+        "x": 1080,
+        "y": 280,
+        "w": 640,
+        "h": 360
+      },
+      "cap": "The exact requests, and what came back",
+      "vo": "Here are the exact curl requests, and the admin data that came back, with no token at all."
+    },
+    "0177.png": {
+      "cap": "Assign it to Devin",
+      "vo": "Now assign it to Devin."
+    },
+    "0179.png": {
+      "hold": 1.4,
+      "cap": "A fix session starts right away"
+    },
+    "0180.png": {
+      "hold": 3.2,
+      "hl": {
+        "x": 1270,
+        "y": 117,
+        "w": 300,
+        "h": 50
+      },
+      "cap": "Devin already opened a fix PR",
+      "vo": "Within a minute, a fix session has already opened a pull request."
+    },
+    "0181.png": {
+      "cap": "Open the fix session",
+      "vo": "Open the fix session."
+    },
+    "0182.png": {
+      "hold": 0.8
+    },
+    "0183.png": {
+      "skip": true
+    },
+    "0184.png": {
+      "hold": 3.6,
+      "hl": {
+        "x": 720,
+        "y": 401,
+        "w": 862,
+        "h": 145
+      },
+      "cap": "It checks the code on main, then opens a fix PR",
+      "vo": "Devin gets the finding and its evidence, checks the code on main, and opens a pull request with the fix."
+    },
+    "0185.png": {
+      "hold": 4.4,
+      "hl": {
+        "x": 720,
+        "y": 210,
+        "w": 865,
+        "h": 82
+      },
+      "cap": "It flags the earlier revert before you merge",
+      "vo": "It even flags that an earlier fix was reverted on main, and asks you to check before merging."
+    },
+    "0186.png": {
+      "hold": 3.4,
+      "hl": {
+        "x": 720,
+        "y": 485,
+        "w": 865,
+        "h": 70
+      },
+      "cap": "Tests pass, and the PR is ready for review",
+      "vo": "The tests pass, and the pull request is ready for review."
+    },
+    "0187.png": {
+      "cap": "Open the pull request",
+      "vo": "Open the pull request right in the session."
+    },
+    "0188.png": {
+      "skip": true
+    },
+    "0189.png": {
+      "cap": "Give it the full width"
+    },
+    "0190.png": {
+      "skip": true
+    },
+    "0191.png": {
+      "hold": 3.2,
+      "hl": {
+        "x": 721,
+        "y": 145,
+        "w": 1438,
+        "h": 180
+      },
+      "cap": "Ready to merge, with 3 files changed",
+      "vo": "It's ready to merge, with three files changed."
+    },
+    "0192.png": {
+      "hold": 5.0,
+      "hl": {
+        "x": 575,
+        "y": 595,
+        "w": 1125,
+        "h": 330
+      },
+      "cap": "The header now needs a fresh HMAC from the proxy",
+      "vo": "The header is now trusted only when the proxy signs it with a fresh HMAC, and the check fails closed when no secret is set."
+    }
   }
 };
