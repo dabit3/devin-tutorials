@@ -1,6 +1,6 @@
 # Tutorial 36: Dungeon Voice, voice script
 
-Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one take cut locally with `_kit/tools/vo.py`). It plays only outside the two calls and the app demo. During those, the real audio plays instead. `genspec.py` is the source of these lines.
+Narration (Nader, ElevenLabs `eleven_v4`, voice `T8iHhGIWPm2GVYpQD1Am`, default settings with no seed or voice_settings, one take cut locally with `_kit/tools/vo.py` and `VO_MODEL=eleven_v4`). It plays only outside the two calls and the app demo. During those, the real audio plays instead. `genspec.py` is the source of these lines. Every Nader line in this tutorial (narration, call lines and the in-app player lines) uses `eleven_v4`. The calls and the app demo were recorded live with an earlier take of the same words; for this cut those lines were re-voiced word for word with `eleven_v4` and placed in their original slots. Devin's replies and the dungeon master's audio are the original live recordings, unchanged.
 
 ## Narration
 
@@ -26,7 +26,7 @@ Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one
 
 ## The app demo (real)
 
-The opening demo is Dungeon Voice running in Chrome against `gpt-live-1`. The player's lines are Nader's ElevenLabs voice fed in as the microphone. The dungeon master's lines are GPT-Live-1's own audio from the WebRTC session, not TTS. The room card, map, hearts, inventory and d20 change through the app's background tools (`roll_d20`, `move_on_map`, `update_room`, `update_inventory`, `change_hearts`) while it keeps talking.
+The opening demo is Dungeon Voice running in Chrome against `gpt-live-1`. The player's lines are Nader's ElevenLabs voice fed in as the microphone (re-voiced with `eleven_v4` for this cut, see above). The dungeon master's lines are GPT-Live-1's own audio from the WebRTC session, not TTS. The room card, map, hearts, inventory and d20 change through the app's background tools (`roll_d20`, `move_on_map`, `update_room`, `update_inventory`, `change_hearts`) while it keeps talking.
 
 - Player: I sneak past the troll.
 - Dungeon master: Your foot snaps a plank. The troll's eyes snap open. A low growl rattles up through the bridge-
@@ -38,7 +38,7 @@ The opening demo is Dungeon Voice running in Chrome against `gpt-live-1`. The pl
 
 ## The calls (real)
 
-Nader's lines below were generated with his ElevenLabs voice (one take, cut locally into `call/c*.wav`) and fed to Devin Voice as the microphone. Devin heard them live and answered by voice. Its replies in the video are its own WebRTC audio, recorded during the call, not re-synthesized.
+Nader's lines below were generated with his ElevenLabs voice (`eleven_v4`, one take, cut locally into `call/c*.wav`) and fed to Devin Voice as the microphone. Devin heard them live and answered by voice. Its replies in the video are its own WebRTC audio, recorded during the call, not re-synthesized.
 
 ### Call 1 (started from the home page, macOS environment)
 

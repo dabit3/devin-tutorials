@@ -1,7 +1,7 @@
 {
  "demo/gate.jpg": {
   "text": "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-  "dur": 7.75,
+  "dur": 9.45,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -89,35 +89,35 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.31,
+    "t1": 2.8,
     "text": "Today I'll be building and testing a cross-platform"
    },
    {
-    "t0": 2.368,
-    "t1": 4.191,
+    "t0": 2.88,
+    "t1": 5.24,
     "text": "mobile game just by using my voice."
    },
    {
-    "t0": 4.4,
-    "t1": 5.492,
+    "t0": 5.44,
+    "t1": 6.72,
     "text": "It runs on iOS,"
    },
    {
-    "t0": 5.526,
-    "t1": 6.571,
+    "t0": 6.8,
+    "t1": 8.24,
     "text": "Android, and the web,"
    },
    {
-    "t0": 6.687,
-    "t1": 7.744,
+    "t0": 8.36,
+    "t1": 9.45,
     "text": "from one codebase."
    }
   ]
  },
  "demo/bridge.jpg": {
   "text": "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-  "dur": 9.095,
-  "takeAt": 8.085,
+  "dur": 9.44,
+  "takeAt": 9.72,
   "mode": "single-take-1",
   "take": [
    [
@@ -203,1386 +203,31 @@
   ],
   "chunks": [
    {
-    "t0": 0.042,
-    "t1": 1.83,
+    "t0": 0.12,
+    "t1": 1.96,
     "text": "I'll talk to Devin with Devin Voice,"
    },
    {
-    "t0": 1.946,
-    "t1": 4.117,
+    "t0": 2.04,
+    "t1": 4.4,
     "text": "which uses ChatGPT voice under the hood."
    },
    {
-    "t0": 4.5,
-    "t1": 6.729,
+    "t0": 4.6,
+    "t1": 6.76,
     "text": "And the game's dungeon master talks to players"
    },
    {
-    "t0": 6.764,
-    "t1": 9.095,
+    "t0": 6.88,
+    "t1": 9.4,
     "text": "through OpenAI's GPT-Live-1 API."
    }
   ]
  },
  "demo/troll.jpg": {
   "text": "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-  "dur": 7.225,
-  "takeAt": 17.485,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "demo/gate.jpg",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
-   ],
-   [
-    "demo/bridge.jpg",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
-   ],
-   [
-    "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
-   ],
-   [
-    "0000.png",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
-   ],
-   [
-    "0009.png",
-    "Then I click the waveform button beside the message box to start a voice call.",
-    "Then I click the waveform button beside the message box to start a voice call."
-   ],
-   [
-    "0292.png",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
-   ],
-   [
-    "0362.png",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going."
-   ],
-   [
-    "0416.png",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
-   ],
-   [
-    "0632.png",
-    "Devin tests the web version in Chrome first.",
-    "Devin tests the web version in Chrome first."
-   ],
-   [
-    "0637.png",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
-   ],
-   [
-    "0655.png",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
-   ],
-   [
-    "0668.png",
-    "The comedic narrator and saved progress pass on iPhone too.",
-    "The comedic narrator and saved progress pass on iPhone too."
-   ],
-   [
-    "0584.png",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
-   ],
-   [
-    "0600.png",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
-   ],
-   [
-    "0630.png",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
-   ],
-   [
-    "demo/outro.jpg",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.069,
-    "t1": 1.381,
-    "text": "It listens while it talks,"
-   },
-   {
-    "t0": 1.451,
-    "t1": 4.098,
-    "text": "handles interruptions, and runs tools in the background"
-   },
-   {
-    "t0": 4.133,
-    "t1": 5.886,
-    "text": "that roll the die and update the room,"
-   },
-   {
-    "t0": 6.037,
-    "t1": 7.225,
-    "text": "the map, and your hearts."
-   }
-  ]
- },
- "0000.png": {
-  "text": "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-  "dur": 6.649,
-  "takeAt": 24.911,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "demo/gate.jpg",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
-   ],
-   [
-    "demo/bridge.jpg",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
-   ],
-   [
-    "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
-   ],
-   [
-    "0000.png",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
-   ],
-   [
-    "0009.png",
-    "Then I click the waveform button beside the message box to start a voice call.",
-    "Then I click the waveform button beside the message box to start a voice call."
-   ],
-   [
-    "0292.png",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
-   ],
-   [
-    "0362.png",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going."
-   ],
-   [
-    "0416.png",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
-   ],
-   [
-    "0632.png",
-    "Devin tests the web version in Chrome first.",
-    "Devin tests the web version in Chrome first."
-   ],
-   [
-    "0637.png",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
-   ],
-   [
-    "0655.png",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
-   ],
-   [
-    "0668.png",
-    "The comedic narrator and saved progress pass on iPhone too.",
-    "The comedic narrator and saved progress pass on iPhone too."
-   ],
-   [
-    "0584.png",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
-   ],
-   [
-    "0600.png",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
-   ],
-   [
-    "0630.png",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
-   ],
-   [
-    "demo/outro.jpg",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 1.083,
-    "text": "Here's how I built it."
-   },
-   {
-    "t0": 1.408,
-    "t1": 3.742,
-    "text": "First, I switch the virtual environment from Ubuntu"
-   },
-   {
-    "t0": 3.8,
-    "t1": 6.649,
-    "text": "to macOS, so Devin can run the iPhone simulator."
-   }
-  ]
- },
- "0009.png": {
-  "text": "Then I click the waveform button beside the message box to start a voice call.",
-  "dur": 3.645,
-  "takeAt": 31.965,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "demo/gate.jpg",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
-   ],
-   [
-    "demo/bridge.jpg",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
-   ],
-   [
-    "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
-   ],
-   [
-    "0000.png",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
-   ],
-   [
-    "0009.png",
-    "Then I click the waveform button beside the message box to start a voice call.",
-    "Then I click the waveform button beside the message box to start a voice call."
-   ],
-   [
-    "0292.png",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
-   ],
-   [
-    "0362.png",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going."
-   ],
-   [
-    "0416.png",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
-   ],
-   [
-    "0632.png",
-    "Devin tests the web version in Chrome first.",
-    "Devin tests the web version in Chrome first."
-   ],
-   [
-    "0637.png",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
-   ],
-   [
-    "0655.png",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
-   ],
-   [
-    "0668.png",
-    "The comedic narrator and saved progress pass on iPhone too.",
-    "The comedic narrator and saved progress pass on iPhone too."
-   ],
-   [
-    "0584.png",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
-   ],
-   [
-    "0600.png",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
-   ],
-   [
-    "0630.png",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
-   ],
-   [
-    "demo/outro.jpg",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.032,
-    "t1": 1.808,
-    "text": "Then I click the waveform button beside the"
-   },
-   {
-    "t0": 1.831,
-    "t1": 3.645,
-    "text": "message box to start a voice call."
-   }
-  ]
- },
- "0292.png": {
-  "text": "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-  "dur": 6.69,
-  "takeAt": 35.94,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "demo/gate.jpg",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
-   ],
-   [
-    "demo/bridge.jpg",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
-   ],
-   [
-    "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
-   ],
-   [
-    "0000.png",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
-   ],
-   [
-    "0009.png",
-    "Then I click the waveform button beside the message box to start a voice call.",
-    "Then I click the waveform button beside the message box to start a voice call."
-   ],
-   [
-    "0292.png",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
-   ],
-   [
-    "0362.png",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going."
-   ],
-   [
-    "0416.png",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
-   ],
-   [
-    "0632.png",
-    "Devin tests the web version in Chrome first.",
-    "Devin tests the web version in Chrome first."
-   ],
-   [
-    "0637.png",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
-   ],
-   [
-    "0655.png",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
-   ],
-   [
-    "0668.png",
-    "The comedic narrator and saved progress pass on iPhone too.",
-    "The comedic narrator and saved progress pass on iPhone too."
-   ],
-   [
-    "0584.png",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
-   ],
-   [
-    "0600.png",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
-   ],
-   [
-    "0630.png",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
-   ],
-   [
-    "demo/outro.jpg",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 1.606,
-    "text": "Devin sets up the Expo app,"
-   },
-   {
-    "t0": 1.885,
-    "t1": 4.033,
-    "text": "a small server that keeps the OpenAI key"
-   },
-   {
-    "t0": 4.091,
-    "t1": 5.798,
-    "text": "private, the pixel-art screens,"
-   },
-   {
-    "t0": 5.821,
-    "t1": 6.69,
-    "text": "and the game tools."
-   }
-  ]
- },
- "0362.png": {
-  "text": "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-  "dur": 3.489,
-  "takeAt": 42.871,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "demo/gate.jpg",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
-   ],
-   [
-    "demo/bridge.jpg",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
-   ],
-   [
-    "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
-   ],
-   [
-    "0000.png",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
-   ],
-   [
-    "0009.png",
-    "Then I click the waveform button beside the message box to start a voice call.",
-    "Then I click the waveform button beside the message box to start a voice call."
-   ],
-   [
-    "0292.png",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
-   ],
-   [
-    "0362.png",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going."
-   ],
-   [
-    "0416.png",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
-   ],
-   [
-    "0632.png",
-    "Devin tests the web version in Chrome first.",
-    "Devin tests the web version in Chrome first."
-   ],
-   [
-    "0637.png",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
-   ],
-   [
-    "0655.png",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
-   ],
-   [
-    "0668.png",
-    "The comedic narrator and saved progress pass on iPhone too.",
-    "The comedic narrator and saved progress pass on iPhone too."
-   ],
-   [
-    "0584.png",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
-   ],
-   [
-    "0600.png",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
-   ],
-   [
-    "0630.png",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
-   ],
-   [
-    "demo/outro.jpg",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 2.071,
-    "text": "Mid-build, I rejoin the call from inside the"
-   },
-   {
-    "t0": 2.117,
-    "t1": 3.489,
-    "text": "session and ask how it's going."
-   }
-  ]
- },
- "0416.png": {
-  "text": "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-  "dur": 5.295,
-  "takeAt": 46.635,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "demo/gate.jpg",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
-   ],
-   [
-    "demo/bridge.jpg",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
-   ],
-   [
-    "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
-   ],
-   [
-    "0000.png",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
-   ],
-   [
-    "0009.png",
-    "Then I click the waveform button beside the message box to start a voice call.",
-    "Then I click the waveform button beside the message box to start a voice call."
-   ],
-   [
-    "0292.png",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
-   ],
-   [
-    "0362.png",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going."
-   ],
-   [
-    "0416.png",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
-   ],
-   [
-    "0632.png",
-    "Devin tests the web version in Chrome first.",
-    "Devin tests the web version in Chrome first."
-   ],
-   [
-    "0637.png",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
-   ],
-   [
-    "0655.png",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
-   ],
-   [
-    "0668.png",
-    "The comedic narrator and saved progress pass on iPhone too.",
-    "The comedic narrator and saved progress pass on iPhone too."
-   ],
-   [
-    "0584.png",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
-   ],
-   [
-    "0600.png",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
-   ],
-   [
-    "0630.png",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
-   ],
-   [
-    "demo/outro.jpg",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.083,
-    "t1": 1.0,
-    "text": "When the build is ready,"
-   },
-   {
-    "t0": 1.035,
-    "t1": 2.335,
-    "text": "Devin opens a pull request,"
-   },
-   {
-    "t0": 2.358,
-    "t1": 5.295,
-    "text": "and starts a second Devin on Ubuntu to test Android."
-   }
-  ]
- },
- "0632.png": {
-  "text": "Devin tests the web version in Chrome first.",
-  "dur": 2.326,
-  "takeAt": 52.264,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "demo/gate.jpg",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
-   ],
-   [
-    "demo/bridge.jpg",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
-   ],
-   [
-    "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
-   ],
-   [
-    "0000.png",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
-   ],
-   [
-    "0009.png",
-    "Then I click the waveform button beside the message box to start a voice call.",
-    "Then I click the waveform button beside the message box to start a voice call."
-   ],
-   [
-    "0292.png",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
-   ],
-   [
-    "0362.png",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going."
-   ],
-   [
-    "0416.png",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
-   ],
-   [
-    "0632.png",
-    "Devin tests the web version in Chrome first.",
-    "Devin tests the web version in Chrome first."
-   ],
-   [
-    "0637.png",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
-   ],
-   [
-    "0655.png",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
-   ],
-   [
-    "0668.png",
-    "The comedic narrator and saved progress pass on iPhone too.",
-    "The comedic narrator and saved progress pass on iPhone too."
-   ],
-   [
-    "0584.png",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
-   ],
-   [
-    "0600.png",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
-   ],
-   [
-    "0630.png",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
-   ],
-   [
-    "demo/outro.jpg",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 2.326,
-    "text": "Devin tests the web version in Chrome first."
-   }
-  ]
- },
- "0637.png": {
-  "text": "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-  "dur": 4.835,
-  "takeAt": 54.795,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "demo/gate.jpg",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
-   ],
-   [
-    "demo/bridge.jpg",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
-   ],
-   [
-    "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
-   ],
-   [
-    "0000.png",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
-   ],
-   [
-    "0009.png",
-    "Then I click the waveform button beside the message box to start a voice call.",
-    "Then I click the waveform button beside the message box to start a voice call."
-   ],
-   [
-    "0292.png",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
-   ],
-   [
-    "0362.png",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going."
-   ],
-   [
-    "0416.png",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
-   ],
-   [
-    "0632.png",
-    "Devin tests the web version in Chrome first.",
-    "Devin tests the web version in Chrome first."
-   ],
-   [
-    "0637.png",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
-   ],
-   [
-    "0655.png",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
-   ],
-   [
-    "0668.png",
-    "The comedic narrator and saved progress pass on iPhone too.",
-    "The comedic narrator and saved progress pass on iPhone too."
-   ],
-   [
-    "0584.png",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
-   ],
-   [
-    "0600.png",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
-   ],
-   [
-    "0630.png",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
-   ],
-   [
-    "demo/outro.jpg",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.05,
-    "t1": 1.664,
-    "text": "A typed action rolls the die,"
-   },
-   {
-    "t0": 1.838,
-    "t1": 3.022,
-    "text": "the room card updates,"
-   },
-   {
-    "t0": 3.138,
-    "t1": 4.835,
-    "text": "and the dungeon master narrates it."
-   }
-  ]
- },
- "0655.png": {
-  "text": "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-  "dur": 6.705,
-  "takeAt": 59.905,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "demo/gate.jpg",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
-   ],
-   [
-    "demo/bridge.jpg",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
-   ],
-   [
-    "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
-   ],
-   [
-    "0000.png",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
-   ],
-   [
-    "0009.png",
-    "Then I click the waveform button beside the message box to start a voice call.",
-    "Then I click the waveform button beside the message box to start a voice call."
-   ],
-   [
-    "0292.png",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
-   ],
-   [
-    "0362.png",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going."
-   ],
-   [
-    "0416.png",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
-   ],
-   [
-    "0632.png",
-    "Devin tests the web version in Chrome first.",
-    "Devin tests the web version in Chrome first."
-   ],
-   [
-    "0637.png",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
-   ],
-   [
-    "0655.png",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
-   ],
-   [
-    "0668.png",
-    "The comedic narrator and saved progress pass on iPhone too.",
-    "The comedic narrator and saved progress pass on iPhone too."
-   ],
-   [
-    "0584.png",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
-   ],
-   [
-    "0600.png",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
-   ],
-   [
-    "0630.png",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
-   ],
-   [
-    "demo/outro.jpg",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.06,
-    "t1": 1.256,
-    "text": "On the iPhone Simulator,"
-   },
-   {
-    "t0": 1.279,
-    "t1": 2.742,
-    "text": "the Mac has no microphone,"
-   },
-   {
-    "t0": 2.986,
-    "t1": 4.634,
-    "text": "so Devin adds a virtual one,"
-   },
-   {
-    "t0": 4.808,
-    "t1": 6.705,
-    "text": "and the dungeon master starts narrating."
-   }
-  ]
- },
- "0668.png": {
-  "text": "The comedic narrator and saved progress pass on iPhone too.",
-  "dur": 3.125,
-  "takeAt": 66.915,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "demo/gate.jpg",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
-   ],
-   [
-    "demo/bridge.jpg",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
-   ],
-   [
-    "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
-   ],
-   [
-    "0000.png",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
-   ],
-   [
-    "0009.png",
-    "Then I click the waveform button beside the message box to start a voice call.",
-    "Then I click the waveform button beside the message box to start a voice call."
-   ],
-   [
-    "0292.png",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
-   ],
-   [
-    "0362.png",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going."
-   ],
-   [
-    "0416.png",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
-   ],
-   [
-    "0632.png",
-    "Devin tests the web version in Chrome first.",
-    "Devin tests the web version in Chrome first."
-   ],
-   [
-    "0637.png",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
-   ],
-   [
-    "0655.png",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
-   ],
-   [
-    "0668.png",
-    "The comedic narrator and saved progress pass on iPhone too.",
-    "The comedic narrator and saved progress pass on iPhone too."
-   ],
-   [
-    "0584.png",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
-   ],
-   [
-    "0600.png",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
-   ],
-   [
-    "0630.png",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
-   ],
-   [
-    "demo/outro.jpg",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 3.125,
-    "text": "The comedic narrator and saved progress pass on iPhone too."
-   }
-  ]
- },
- "0584.png": {
-  "text": "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-  "dur": 5.119,
-  "takeAt": 70.131,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "demo/gate.jpg",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
-   ],
-   [
-    "demo/bridge.jpg",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
-   ],
-   [
-    "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
-   ],
-   [
-    "0000.png",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
-   ],
-   [
-    "0009.png",
-    "Then I click the waveform button beside the message box to start a voice call.",
-    "Then I click the waveform button beside the message box to start a voice call."
-   ],
-   [
-    "0292.png",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
-   ],
-   [
-    "0362.png",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going."
-   ],
-   [
-    "0416.png",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
-   ],
-   [
-    "0632.png",
-    "Devin tests the web version in Chrome first.",
-    "Devin tests the web version in Chrome first."
-   ],
-   [
-    "0637.png",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
-   ],
-   [
-    "0655.png",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
-   ],
-   [
-    "0668.png",
-    "The comedic narrator and saved progress pass on iPhone too.",
-    "The comedic narrator and saved progress pass on iPhone too."
-   ],
-   [
-    "0584.png",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
-   ],
-   [
-    "0600.png",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
-   ],
-   [
-    "0630.png",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
-   ],
-   [
-    "demo/outro.jpg",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 2.152,
-    "text": "On Android, the second Devin runs the same"
-   },
-   {
-    "t0": 2.199,
-    "t1": 3.209,
-    "text": "app on an emulator,"
-   },
-   {
-    "t0": 3.418,
-    "t1": 5.119,
-    "text": "typing actions instead of talking."
-   }
-  ]
- },
- "0600.png": {
-  "text": "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-  "dur": 4.317,
-  "takeAt": 75.553,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "demo/gate.jpg",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
-   ],
-   [
-    "demo/bridge.jpg",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
-   ],
-   [
-    "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
-   ],
-   [
-    "0000.png",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
-   ],
-   [
-    "0009.png",
-    "Then I click the waveform button beside the message box to start a voice call.",
-    "Then I click the waveform button beside the message box to start a voice call."
-   ],
-   [
-    "0292.png",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
-   ],
-   [
-    "0362.png",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going."
-   ],
-   [
-    "0416.png",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
-   ],
-   [
-    "0632.png",
-    "Devin tests the web version in Chrome first.",
-    "Devin tests the web version in Chrome first."
-   ],
-   [
-    "0637.png",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
-   ],
-   [
-    "0655.png",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
-   ],
-   [
-    "0668.png",
-    "The comedic narrator and saved progress pass on iPhone too.",
-    "The comedic narrator and saved progress pass on iPhone too."
-   ],
-   [
-    "0584.png",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
-   ],
-   [
-    "0600.png",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
-   ],
-   [
-    "0630.png",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
-   ],
-   [
-    "demo/outro.jpg",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.12,
-    "t1": 0.875,
-    "text": "The troll roll,"
-   },
-   {
-    "t0": 0.898,
-    "t1": 2.315,
-    "text": "the map, the comedic narrator,"
-   },
-   {
-    "t0": 2.338,
-    "t1": 4.317,
-    "text": "and resuming a saved game all pass."
-   }
-  ]
- },
- "0630.png": {
-  "text": "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-  "dur": 6.875,
-  "takeAt": 80.395,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "demo/gate.jpg",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
-   ],
-   [
-    "demo/bridge.jpg",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
-   ],
-   [
-    "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
-   ],
-   [
-    "0000.png",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
-   ],
-   [
-    "0009.png",
-    "Then I click the waveform button beside the message box to start a voice call.",
-    "Then I click the waveform button beside the message box to start a voice call."
-   ],
-   [
-    "0292.png",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
-   ],
-   [
-    "0362.png",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-    "Mid-build, I rejoin the call from inside the session and ask how it's going."
-   ],
-   [
-    "0416.png",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
-   ],
-   [
-    "0632.png",
-    "Devin tests the web version in Chrome first.",
-    "Devin tests the web version in Chrome first."
-   ],
-   [
-    "0637.png",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
-   ],
-   [
-    "0655.png",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
-   ],
-   [
-    "0668.png",
-    "The comedic narrator and saved progress pass on iPhone too.",
-    "The comedic narrator and saved progress pass on iPhone too."
-   ],
-   [
-    "0584.png",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
-   ],
-   [
-    "0600.png",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
-   ],
-   [
-    "0630.png",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
-   ],
-   [
-    "demo/outro.jpg",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.097,
-    "t1": 1.78,
-    "text": "Every check passes on all three."
-   },
-   {
-    "t0": 2.105,
-    "t1": 3.974,
-    "text": "The test machines have no speakers,"
-   },
-   {
-    "t0": 4.183,
-    "t1": 5.518,
-    "text": "so the voice you heard at the start"
-   },
-   {
-    "t0": 5.553,
-    "t1": 6.875,
-    "text": "is from my own run in Chrome."
-   }
-  ]
- },
- "demo/outro.jpg": {
-  "text": "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-  "dur": 5.766,
-  "takeAt": 87.384,
+  "dur": 7.92,
+  "takeAt": 19.4,
   "mode": "single-take-1",
   "take": [
    [
@@ -1670,16 +315,1371 @@
    {
     "t0": 0.12,
     "t1": 1.56,
+    "text": "It listens while it talks,"
+   },
+   {
+    "t0": 1.72,
+    "t1": 4.28,
+    "text": "handles interruptions, and runs tools in the background"
+   },
+   {
+    "t0": 4.36,
+    "t1": 6.36,
+    "text": "that roll the die and update the room,"
+   },
+   {
+    "t0": 6.4,
+    "t1": 7.88,
+    "text": "the map, and your hearts."
+   }
+  ]
+ },
+ "0000.png": {
+  "text": "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+  "dur": 7.28,
+  "takeAt": 27.56,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/gate.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "demo/bridge.jpg",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "demo/troll.jpg",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0292.png",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
+   ],
+   [
+    "0362.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0416.png",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
+   ],
+   [
+    "0632.png",
+    "Devin tests the web version in Chrome first.",
+    "Devin tests the web version in Chrome first."
+   ],
+   [
+    "0637.png",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
+   ],
+   [
+    "0655.png",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
+   ],
+   [
+    "0668.png",
+    "The comedic narrator and saved progress pass on iPhone too.",
+    "The comedic narrator and saved progress pass on iPhone too."
+   ],
+   [
+    "0584.png",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
+   ],
+   [
+    "0600.png",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
+   ],
+   [
+    "0630.png",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
+   ],
+   [
+    "demo/outro.jpg",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.08,
+    "text": "Here's how I built it."
+   },
+   {
+    "t0": 1.56,
+    "t1": 4.28,
+    "text": "First, I switch the virtual environment from Ubuntu"
+   },
+   {
+    "t0": 4.36,
+    "t1": 7.24,
+    "text": "to macOS, so Devin can run the iPhone simulator."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "Then I click the waveform button beside the message box to start a voice call.",
+  "dur": 3.88,
+  "takeAt": 35.16,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/gate.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "demo/bridge.jpg",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "demo/troll.jpg",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0292.png",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
+   ],
+   [
+    "0362.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0416.png",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
+   ],
+   [
+    "0632.png",
+    "Devin tests the web version in Chrome first.",
+    "Devin tests the web version in Chrome first."
+   ],
+   [
+    "0637.png",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
+   ],
+   [
+    "0655.png",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
+   ],
+   [
+    "0668.png",
+    "The comedic narrator and saved progress pass on iPhone too.",
+    "The comedic narrator and saved progress pass on iPhone too."
+   ],
+   [
+    "0584.png",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
+   ],
+   [
+    "0600.png",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
+   ],
+   [
+    "0630.png",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
+   ],
+   [
+    "demo/outro.jpg",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.12,
+    "text": "Then I click the waveform button beside the"
+   },
+   {
+    "t0": 2.2,
+    "t1": 3.88,
+    "text": "message box to start a voice call."
+   }
+  ]
+ },
+ "0292.png": {
+  "text": "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+  "dur": 7.15,
+  "takeAt": 39.32,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/gate.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "demo/bridge.jpg",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "demo/troll.jpg",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0292.png",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
+   ],
+   [
+    "0362.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0416.png",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
+   ],
+   [
+    "0632.png",
+    "Devin tests the web version in Chrome first.",
+    "Devin tests the web version in Chrome first."
+   ],
+   [
+    "0637.png",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
+   ],
+   [
+    "0655.png",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
+   ],
+   [
+    "0668.png",
+    "The comedic narrator and saved progress pass on iPhone too.",
+    "The comedic narrator and saved progress pass on iPhone too."
+   ],
+   [
+    "0584.png",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
+   ],
+   [
+    "0600.png",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
+   ],
+   [
+    "0630.png",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
+   ],
+   [
+    "demo/outro.jpg",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.88,
+    "text": "Devin sets up the Expo app,"
+   },
+   {
+    "t0": 1.96,
+    "t1": 4.04,
+    "text": "a small server that keeps the OpenAI key"
+   },
+   {
+    "t0": 4.12,
+    "t1": 6.12,
+    "text": "private, the pixel-art screens,"
+   },
+   {
+    "t0": 6.2,
+    "t1": 7.15,
+    "text": "and the game tools."
+   }
+  ]
+ },
+ "0362.png": {
+  "text": "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+  "dur": 3.89,
+  "takeAt": 46.76,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/gate.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "demo/bridge.jpg",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "demo/troll.jpg",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0292.png",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
+   ],
+   [
+    "0362.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0416.png",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
+   ],
+   [
+    "0632.png",
+    "Devin tests the web version in Chrome first.",
+    "Devin tests the web version in Chrome first."
+   ],
+   [
+    "0637.png",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
+   ],
+   [
+    "0655.png",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
+   ],
+   [
+    "0668.png",
+    "The comedic narrator and saved progress pass on iPhone too.",
+    "The comedic narrator and saved progress pass on iPhone too."
+   ],
+   [
+    "0584.png",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
+   ],
+   [
+    "0600.png",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
+   ],
+   [
+    "0630.png",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
+   ],
+   [
+    "demo/outro.jpg",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.36,
+    "text": "Mid-build, I rejoin the call from inside the"
+   },
+   {
+    "t0": 2.44,
+    "t1": 3.88,
+    "text": "session and ask how it's going."
+   }
+  ]
+ },
+ "0416.png": {
+  "text": "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+  "dur": 5.69,
+  "takeAt": 50.92,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/gate.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "demo/bridge.jpg",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "demo/troll.jpg",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0292.png",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
+   ],
+   [
+    "0362.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0416.png",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
+   ],
+   [
+    "0632.png",
+    "Devin tests the web version in Chrome first.",
+    "Devin tests the web version in Chrome first."
+   ],
+   [
+    "0637.png",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
+   ],
+   [
+    "0655.png",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
+   ],
+   [
+    "0668.png",
+    "The comedic narrator and saved progress pass on iPhone too.",
+    "The comedic narrator and saved progress pass on iPhone too."
+   ],
+   [
+    "0584.png",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
+   ],
+   [
+    "0600.png",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
+   ],
+   [
+    "0630.png",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
+   ],
+   [
+    "demo/outro.jpg",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.24,
+    "text": "When the build is ready,"
+   },
+   {
+    "t0": 1.32,
+    "t1": 2.84,
+    "text": "Devin opens a pull request,"
+   },
+   {
+    "t0": 2.88,
+    "t1": 5.69,
+    "text": "and starts a second Devin on Ubuntu to test Android."
+   }
+  ]
+ },
+ "0632.png": {
+  "text": "Devin tests the web version in Chrome first.",
+  "dur": 2.42,
+  "takeAt": 56.92,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/gate.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "demo/bridge.jpg",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "demo/troll.jpg",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0292.png",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
+   ],
+   [
+    "0362.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0416.png",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
+   ],
+   [
+    "0632.png",
+    "Devin tests the web version in Chrome first.",
+    "Devin tests the web version in Chrome first."
+   ],
+   [
+    "0637.png",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
+   ],
+   [
+    "0655.png",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
+   ],
+   [
+    "0668.png",
+    "The comedic narrator and saved progress pass on iPhone too.",
+    "The comedic narrator and saved progress pass on iPhone too."
+   ],
+   [
+    "0584.png",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
+   ],
+   [
+    "0600.png",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
+   ],
+   [
+    "0630.png",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
+   ],
+   [
+    "demo/outro.jpg",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.42,
+    "text": "Devin tests the web version in Chrome first."
+   }
+  ]
+ },
+ "0637.png": {
+  "text": "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+  "dur": 4.79,
+  "takeAt": 59.56,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/gate.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "demo/bridge.jpg",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "demo/troll.jpg",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0292.png",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
+   ],
+   [
+    "0362.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0416.png",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
+   ],
+   [
+    "0632.png",
+    "Devin tests the web version in Chrome first.",
+    "Devin tests the web version in Chrome first."
+   ],
+   [
+    "0637.png",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
+   ],
+   [
+    "0655.png",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
+   ],
+   [
+    "0668.png",
+    "The comedic narrator and saved progress pass on iPhone too.",
+    "The comedic narrator and saved progress pass on iPhone too."
+   ],
+   [
+    "0584.png",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
+   ],
+   [
+    "0600.png",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
+   ],
+   [
+    "0630.png",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
+   ],
+   [
+    "demo/outro.jpg",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.88,
+    "text": "A typed action rolls the die,"
+   },
+   {
+    "t0": 1.96,
+    "t1": 3.16,
+    "text": "the room card updates,"
+   },
+   {
+    "t0": 3.2,
+    "t1": 4.76,
+    "text": "and the dungeon master narrates it."
+   }
+  ]
+ },
+ "0655.png": {
+  "text": "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+  "dur": 6.65,
+  "takeAt": 64.6,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/gate.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "demo/bridge.jpg",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "demo/troll.jpg",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0292.png",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
+   ],
+   [
+    "0362.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0416.png",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
+   ],
+   [
+    "0632.png",
+    "Devin tests the web version in Chrome first.",
+    "Devin tests the web version in Chrome first."
+   ],
+   [
+    "0637.png",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
+   ],
+   [
+    "0655.png",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
+   ],
+   [
+    "0668.png",
+    "The comedic narrator and saved progress pass on iPhone too.",
+    "The comedic narrator and saved progress pass on iPhone too."
+   ],
+   [
+    "0584.png",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
+   ],
+   [
+    "0600.png",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
+   ],
+   [
+    "0630.png",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
+   ],
+   [
+    "demo/outro.jpg",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.4,
+    "text": "On the iPhone Simulator,"
+   },
+   {
+    "t0": 1.44,
+    "t1": 3.08,
+    "text": "the Mac has no microphone,"
+   },
+   {
+    "t0": 3.16,
+    "t1": 4.76,
+    "text": "so Devin adds a virtual one,"
+   },
+   {
+    "t0": 4.8,
+    "t1": 6.65,
+    "text": "and the dungeon master starts narrating."
+   }
+  ]
+ },
+ "0668.png": {
+  "text": "The comedic narrator and saved progress pass on iPhone too.",
+  "dur": 3.3,
+  "takeAt": 71.48,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/gate.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "demo/bridge.jpg",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "demo/troll.jpg",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0292.png",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
+   ],
+   [
+    "0362.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0416.png",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
+   ],
+   [
+    "0632.png",
+    "Devin tests the web version in Chrome first.",
+    "Devin tests the web version in Chrome first."
+   ],
+   [
+    "0637.png",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
+   ],
+   [
+    "0655.png",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
+   ],
+   [
+    "0668.png",
+    "The comedic narrator and saved progress pass on iPhone too.",
+    "The comedic narrator and saved progress pass on iPhone too."
+   ],
+   [
+    "0584.png",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
+   ],
+   [
+    "0600.png",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
+   ],
+   [
+    "0630.png",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
+   ],
+   [
+    "demo/outro.jpg",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 3.3,
+    "text": "The comedic narrator and saved progress pass on iPhone too."
+   }
+  ]
+ },
+ "0584.png": {
+  "text": "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+  "dur": 5.45,
+  "takeAt": 75.08,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/gate.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "demo/bridge.jpg",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "demo/troll.jpg",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0292.png",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
+   ],
+   [
+    "0362.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0416.png",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
+   ],
+   [
+    "0632.png",
+    "Devin tests the web version in Chrome first.",
+    "Devin tests the web version in Chrome first."
+   ],
+   [
+    "0637.png",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
+   ],
+   [
+    "0655.png",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
+   ],
+   [
+    "0668.png",
+    "The comedic narrator and saved progress pass on iPhone too.",
+    "The comedic narrator and saved progress pass on iPhone too."
+   ],
+   [
+    "0584.png",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
+   ],
+   [
+    "0600.png",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
+   ],
+   [
+    "0630.png",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
+   ],
+   [
+    "demo/outro.jpg",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.44,
+    "text": "On Android, the second Devin runs the same"
+   },
+   {
+    "t0": 2.52,
+    "t1": 3.72,
+    "text": "app on an emulator,"
+   },
+   {
+    "t0": 3.92,
+    "t1": 5.45,
+    "text": "typing actions instead of talking."
+   }
+  ]
+ },
+ "0600.png": {
+  "text": "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+  "dur": 5.23,
+  "takeAt": 80.76,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/gate.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "demo/bridge.jpg",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "demo/troll.jpg",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0292.png",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
+   ],
+   [
+    "0362.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0416.png",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
+   ],
+   [
+    "0632.png",
+    "Devin tests the web version in Chrome first.",
+    "Devin tests the web version in Chrome first."
+   ],
+   [
+    "0637.png",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
+   ],
+   [
+    "0655.png",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
+   ],
+   [
+    "0668.png",
+    "The comedic narrator and saved progress pass on iPhone too.",
+    "The comedic narrator and saved progress pass on iPhone too."
+   ],
+   [
+    "0584.png",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
+   ],
+   [
+    "0600.png",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
+   ],
+   [
+    "0630.png",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
+   ],
+   [
+    "demo/outro.jpg",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.08,
+    "text": "The troll roll,"
+   },
+   {
+    "t0": 1.12,
+    "t1": 3.0,
+    "text": "the map, the comedic narrator,"
+   },
+   {
+    "t0": 3.08,
+    "t1": 5.23,
+    "text": "and resuming a saved game all pass."
+   }
+  ]
+ },
+ "0630.png": {
+  "text": "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+  "dur": 7.0,
+  "takeAt": 86.28,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/gate.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "demo/bridge.jpg",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "demo/troll.jpg",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0292.png",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
+   ],
+   [
+    "0362.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0416.png",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
+   ],
+   [
+    "0632.png",
+    "Devin tests the web version in Chrome first.",
+    "Devin tests the web version in Chrome first."
+   ],
+   [
+    "0637.png",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
+   ],
+   [
+    "0655.png",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
+   ],
+   [
+    "0668.png",
+    "The comedic narrator and saved progress pass on iPhone too.",
+    "The comedic narrator and saved progress pass on iPhone too."
+   ],
+   [
+    "0584.png",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
+   ],
+   [
+    "0600.png",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
+   ],
+   [
+    "0630.png",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
+   ],
+   [
+    "demo/outro.jpg",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.0,
+    "text": "Every check passes on all three."
+   },
+   {
+    "t0": 2.2,
+    "t1": 4.12,
+    "text": "The test machines have no speakers,"
+   },
+   {
+    "t0": 4.2,
+    "t1": 5.48,
+    "text": "so the voice you heard at the start"
+   },
+   {
+    "t0": 5.56,
+    "t1": 7.0,
+    "text": "is from my own run in Chrome."
+   }
+  ]
+ },
+ "demo/outro.jpg": {
+  "text": "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+  "dur": 6.54,
+  "takeAt": 93.64,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "demo/gate.jpg",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
+    "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase."
+   ],
+   [
+    "demo/bridge.jpg",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
+    "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "demo/troll.jpg",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
+    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+   ],
+   [
+    "0000.png",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0292.png",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
+    "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools."
+   ],
+   [
+    "0362.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0416.png",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
+    "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android."
+   ],
+   [
+    "0632.png",
+    "Devin tests the web version in Chrome first.",
+    "Devin tests the web version in Chrome first."
+   ],
+   [
+    "0637.png",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
+    "A typed action rolls the die, the room card updates, and the dungeon master narrates it."
+   ],
+   [
+    "0655.png",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
+    "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating."
+   ],
+   [
+    "0668.png",
+    "The comedic narrator and saved progress pass on iPhone too.",
+    "The comedic narrator and saved progress pass on iPhone too."
+   ],
+   [
+    "0584.png",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
+    "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking."
+   ],
+   [
+    "0600.png",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
+    "The troll roll, the map, the comedic narrator, and resuming a saved game all pass."
+   ],
+   [
+    "0630.png",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
+    "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome."
+   ],
+   [
+    "demo/outro.jpg",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
+    "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.64,
     "text": "And that's how you build and test a"
    },
    {
-    "t0": 1.606,
-    "t1": 4.091,
+    "t0": 1.72,
+    "t1": 4.6,
     "text": "cross-platform game, just by talking to Devin,"
    },
    {
-    "t0": 4.114,
-    "t1": 5.766,
+    "t0": 4.68,
+    "t1": 6.54,
     "text": "with a dungeon master that talks back."
    }
   ]
