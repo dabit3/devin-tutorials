@@ -1,510 +1,2930 @@
 {
  "0000.png": {
   "text": "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
-  "dur": 6.23,
-  "at": 0.0,
-  "end": 6.23,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 6.61,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.194,
+    "t1": 2.4,
     "text": "Devin can watch a customer's screen recording,"
    },
    {
-    "t0": 2.403,
-    "t1": 4.319,
+    "t0": 2.48,
+    "t1": 4.72,
     "text": "replay the clicks in its own browser until"
    },
    {
-    "t0": 4.365,
-    "t1": 5.213,
+    "t0": 4.8,
+    "t1": 5.76,
     "text": "it sees the bug,"
    },
    {
-    "t0": 5.387,
-    "t1": 6.23,
+    "t0": 5.84,
+    "t1": 6.61,
     "text": "and then fix it."
    }
   ]
  },
  "0008.png": {
   "text": "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
-  "dur": 7.19,
-  "at": 6.62,
-  "end": 13.81,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 7.235,
+  "takeAt": 7.035,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.056,
-    "t1": 1.867,
+    "t0": 0.085,
+    "t1": 2.005,
     "text": "Fernhouse is a small demo shop,"
    },
    {
-    "t0": 2.041,
-    "t1": 3.643,
-    "text": "and we planted a checkout bug in it"
+    "t0": 2.045,
+    "t1": 4.645,
+    "text": "and we planted a checkout bug in it on purpose."
    },
    {
-    "t0": 3.69,
-    "t1": 6.198,
-    "text": "on purpose. I recorded this clip myself,"
+    "t0": 4.725,
+    "t1": 6.325,
+    "text": "I recorded this clip myself,"
    },
    {
-    "t0": 6.232,
-    "t1": 7.161,
+    "t0": 6.445,
+    "t1": 7.235,
     "text": "playing the customer."
    }
   ]
  },
  "0016.png": {
   "text": "A couple of Monsteras and a Pothos go in the cart.",
-  "dur": 2.595,
-  "at": 14.055,
-  "end": 16.65,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 2.625,
+  "takeAt": 14.545,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.051,
-    "t1": 1.99,
+    "t0": 0.095,
+    "t1": 2.095,
     "text": "A couple of Monsteras and a Pothos go"
    },
    {
-    "t0": 2.037,
-    "t1": 2.595,
+    "t0": 2.135,
+    "t1": 2.625,
     "text": "in the cart."
    }
   ]
  },
  "0028.png": {
   "text": "Then the customer applies a promo code.",
-  "dur": 1.9,
-  "at": 16.78,
-  "end": 18.68,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 1.96,
+  "takeAt": 17.56,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.055,
-    "t1": 1.877,
+    "t0": 0.12,
+    "t1": 1.96,
     "text": "Then the customer applies a promo code."
    }
   ]
  },
  "0044.png": {
   "text": "But once both Monsteras come out, the total goes negative.",
-  "dur": 2.72,
-  "at": 18.94,
-  "end": 21.66,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 3.45,
+  "takeAt": 19.8,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.043,
-    "t1": 1.575,
+    "t0": 0.12,
+    "t1": 2.04,
     "text": "But once both Monsteras come out,"
    },
    {
-    "t0": 1.598,
-    "t1": 2.713,
+    "t0": 2.12,
+    "t1": 3.45,
     "text": "the total goes negative."
    }
   ]
  },
  "0061.png": {
   "text": "To hand it to Devin, start a new session.",
-  "dur": 1.965,
-  "at": 21.805,
-  "end": 23.77,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 2.17,
+  "takeAt": 23.56,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.022,
-    "t1": 0.916,
+    "t0": 0.12,
+    "t1": 1.16,
     "text": "To hand it to Devin,"
    },
    {
-    "t0": 0.939,
-    "t1": 1.926,
+    "t0": 1.28,
+    "t1": 2.17,
     "text": "start a new session."
    }
   ]
  },
  "0064.png": {
   "text": "Click the plus button, choose upload files, and pick the recording.",
-  "dur": 3.42,
-  "at": 23.925,
-  "end": 27.345,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 3.595,
+  "takeAt": 25.985,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.05,
-    "t1": 1.152,
+    "t0": 0.095,
+    "t1": 1.295,
     "text": "Click the plus button,"
    },
    {
-    "t0": 1.28,
-    "t1": 2.383,
+    "t0": 1.415,
+    "t1": 2.655,
     "text": "choose upload files,"
    },
    {
-    "t0": 2.418,
-    "t1": 3.405,
+    "t0": 2.735,
+    "t1": 3.595,
     "text": "and pick the recording."
    }
   ]
  },
  "0065.png": {
   "text": "The video is now attached to your message.",
-  "dur": 1.92,
-  "at": 27.48,
-  "end": 29.4,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 2.17,
+  "takeAt": 29.88,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.059,
-    "t1": 1.881,
+    "t0": 0.12,
+    "t1": 2.17,
     "text": "The video is now attached to your message."
    }
   ]
  },
  "0068.png": {
   "text": "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
-  "dur": 8.305,
-  "at": 29.755,
-  "end": 38.06,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 8.81,
+  "takeAt": 32.32,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0,
-    "t1": 1.661,
+    "t0": 0.12,
+    "t1": 2.08,
     "text": "Then paste in what the customer said,"
    },
    {
-    "t0": 1.836,
-    "t1": 2.811,
+    "t0": 2.16,
+    "t1": 3.2,
     "text": "mention the repo,"
    },
    {
-    "t0": 2.962,
-    "t1": 4.692,
+    "t0": 3.28,
+    "t1": 4.96,
     "text": "and ask Devin to replay the clicks in"
    },
    {
-    "t0": 4.738,
-    "t1": 6.421,
+    "t0": 5.04,
+    "t1": 6.88,
     "text": "its browser, fix the bug,"
    },
    {
-    "t0": 6.479,
-    "t1": 7.234,
+    "t0": 7.0,
+    "t1": 7.84,
     "text": "check it again,"
    },
    {
-    "t0": 7.35,
-    "t1": 8.305,
+    "t0": 7.88,
+    "t1": 8.81,
     "text": "and open a PR."
    }
   ]
  },
  "0137.png": {
   "text": "Open the Computer tab to watch Devin's own machine.",
-  "dur": 2.605,
-  "at": 38.38,
-  "end": 40.985,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 2.745,
+  "takeAt": 41.465,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.083,
-    "t1": 2.605,
+    "t0": 0.055,
+    "t1": 2.745,
     "text": "Open the Computer tab to watch Devin's own machine."
    }
   ]
  },
  "0141.png": {
   "text": "Devin reads the video first, then finds the fernhouse app and starts it.",
-  "dur": 3.75,
-  "at": 41.28,
-  "end": 45.03,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 3.865,
+  "takeAt": 44.505,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.665,
+    "t0": 0.055,
+    "t1": 1.735,
     "text": "Devin reads the video first,"
    },
    {
-    "t0": 1.757,
-    "t1": 3.75,
+    "t0": 1.855,
+    "t1": 3.865,
     "text": "then finds the fernhouse app and starts it."
    }
   ]
  },
  "0152.png": {
   "text": "From the recording, it works out the exact clicks the customer made, in the same order.",
-  "dur": 3.905,
-  "at": 45.36,
-  "end": 49.265,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 4.705,
+  "takeAt": 48.625,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.058,
-    "t1": 0.835,
+    "t0": 0.095,
+    "t1": 1.055,
     "text": "From the recording,"
    },
    {
-    "t0": 0.859,
-    "t1": 2.705,
+    "t0": 1.135,
+    "t1": 3.135,
     "text": "it works out the exact clicks the customer"
    },
    {
-    "t0": 2.763,
-    "t1": 3.9,
+    "t0": 3.215,
+    "t1": 4.655,
     "text": "made, in the same order."
    }
   ]
  },
  "0153.png": {
   "text": "Then it replays them, one by one, in its own browser.",
-  "dur": 2.855,
-  "at": 49.52,
-  "end": 52.375,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 3.45,
+  "takeAt": 53.56,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.065,
-    "t1": 1.052,
+    "t0": 0.12,
+    "t1": 1.56,
     "text": "Then it replays them,"
    },
    {
-    "t0": 1.11,
-    "t1": 1.784,
+    "t0": 1.64,
+    "t1": 2.36,
     "text": "one by one,"
    },
    {
-    "t0": 1.83,
-    "t1": 2.855,
+    "t0": 2.4,
+    "t1": 3.4,
     "text": "in its own browser."
    }
   ]
  },
  "0155.png": {
   "text": "And there it is: the total goes negative, the same bug the customer saw.",
-  "dur": 4.14,
-  "at": 52.72,
-  "end": 56.86,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 4.305,
+  "takeAt": 57.305,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.047,
-    "t1": 0.871,
+    "t0": 0.055,
+    "t1": 1.095,
     "text": "And there it is:"
    },
    {
-    "t0": 1.254,
-    "t1": 2.403,
+    "t0": 1.135,
+    "t1": 2.615,
     "text": "the total goes negative,"
    },
    {
-    "t0": 2.577,
-    "t1": 4.122,
+    "t0": 2.695,
+    "t1": 4.305,
     "text": "the same bug the customer saw."
    }
   ]
  },
  "0157.png": {
   "text": "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
-  "dur": 7.05,
-  "at": 57.03,
-  "end": 64.08,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 6.785,
+  "takeAt": 61.905,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.195,
-    "t1": 1.472,
+    "t0": 0.095,
+    "t1": 1.455,
     "text": "Devin finds the cause."
    },
    {
-    "t0": 1.913,
-    "t1": 3.817,
+    "t0": 1.615,
+    "t1": 3.535,
     "text": "The discount was saved as a fixed amount"
    },
    {
-    "t0": 3.852,
-    "t1": 4.99,
+    "t0": 3.575,
+    "t1": 4.815,
     "text": "when the code was applied,"
    },
    {
-    "t0": 5.315,
-    "t1": 7.045,
+    "t0": 4.895,
+    "t1": 6.785,
     "text": "so removing items never changed it."
    }
   ]
  },
  "0159.png": {
   "text": "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
-  "dur": 5.77,
-  "at": 64.25,
-  "end": 70.02,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 5.33,
+  "takeAt": 69.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.104,
-    "t1": 1.776,
+    "t0": 0.12,
+    "t1": 1.8,
     "text": "So it changes the cart to work out"
    },
    {
-    "t0": 1.81,
-    "t1": 3.668,
+    "t0": 1.88,
+    "t1": 3.72,
     "text": "the discount from the current subtotal,"
    },
    {
-    "t0": 3.993,
-    "t1": 5.769,
+    "t0": 3.8,
+    "t1": 5.33,
     "text": "and adds a test for this case."
    }
   ]
  },
  "0162.png": {
   "text": "Then it replays the customer's clicks again to check the fix.",
-  "dur": 3.085,
-  "at": 70.405,
-  "end": 73.49,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 3.18,
+  "takeAt": 74.6,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.056,
-    "t1": 2.203,
+    "t0": 0.12,
+    "t1": 2.36,
     "text": "Then it replays the customer's clicks again to"
    },
    {
-    "t0": 2.25,
-    "t1": 3.085,
+    "t0": 2.48,
+    "t1": 3.18,
     "text": "check the fix."
    }
   ]
  },
  "0170.png": {
   "text": "This time the discount shrinks with the cart, and the total stays positive.",
-  "dur": 3.85,
-  "at": 73.76,
-  "end": 77.61,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 3.6,
+  "takeAt": 78.04,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.056,
-    "t1": 2.041,
+    "t0": 0.12,
+    "t1": 2.147,
     "text": "This time the discount shrinks with the cart,"
    },
    {
-    "t0": 2.424,
-    "t1": 3.85,
+    "t0": 2.173,
+    "t1": 3.6,
     "text": "and the total stays positive."
    }
   ]
  },
  "0195.png": {
   "text": "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
-  "dur": 4.525,
-  "at": 77.73,
-  "end": 82.255,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 4.81,
+  "takeAt": 82.04,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.056,
-    "t1": 0.741,
+    "t0": 0.12,
+    "t1": 0.92,
     "text": "When it's done,"
    },
    {
-    "t0": 0.915,
-    "t1": 2.541,
+    "t0": 1.0,
+    "t1": 2.84,
     "text": "Devin explains what was wrong and what it"
    },
    {
-    "t0": 2.587,
-    "t1": 4.525,
+    "t0": 3.08,
+    "t1": 4.81,
     "text": "changed, and links the pull request."
    }
   ]
  },
  "0197.png": {
   "text": "In the PR tab, you can review the change without leaving Devin.",
-  "dur": 2.97,
-  "at": 82.55,
-  "end": 85.52,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 3.285,
+  "takeAt": 87.105,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.078,
-    "t1": 1.006,
+    "t0": 0.095,
+    "t1": 1.135,
     "text": "In the PR tab,"
    },
    {
-    "t0": 1.041,
-    "t1": 2.934,
+    "t0": 1.175,
+    "t1": 3.285,
     "text": "you can review the change without leaving Devin."
    }
   ]
  },
  "0209.png": {
   "text": "And here is the new test, which removes items after applying a promo.",
-  "dur": 3.32,
-  "at": 85.775,
-  "end": 89.095,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 3.91,
+  "takeAt": 90.68,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.034,
-    "t1": 1.218,
+    "t0": 0.12,
+    "t1": 1.56,
     "text": "And here is the new test,"
    },
    {
-    "t0": 1.265,
-    "t1": 3.32,
+    "t0": 1.64,
+    "t1": 3.91,
     "text": "which removes items after applying a promo."
    }
   ]
  },
  "outro": {
   "text": "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
-  "dur": 4.98,
-  "at": 89.32,
-  "end": 94.3,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 6.07,
+  "takeAt": 94.92,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.",
+    "Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it."
+   ],
+   [
+    "0008.png",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.",
+    "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+   ],
+   [
+    "0016.png",
+    "A couple of Monsteras and a Pothos go in the cart.",
+    "A couple of Monsteras and a Pothos go in the cart."
+   ],
+   [
+    "0028.png",
+    "Then the customer applies a promo code.",
+    "Then the customer applies a promo code."
+   ],
+   [
+    "0044.png",
+    "But once both Monsteras come out, the total goes negative.",
+    "But once both Monsteras come out, the total goes negative."
+   ],
+   [
+    "0061.png",
+    "To hand it to Devin, start a new session.",
+    "To hand it to Devin, start a new session."
+   ],
+   [
+    "0064.png",
+    "Click the plus button, choose upload files, and pick the recording.",
+    "Click the plus button, choose upload files, and pick the recording."
+   ],
+   [
+    "0065.png",
+    "The video is now attached to your message.",
+    "The video is now attached to your message."
+   ],
+   [
+    "0068.png",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR.",
+    "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+   ],
+   [
+    "0137.png",
+    "Open the Computer tab to watch Devin's own machine.",
+    "Open the Computer tab to watch Devin's own machine."
+   ],
+   [
+    "0141.png",
+    "Devin reads the video first, then finds the fernhouse app and starts it.",
+    "Devin reads the video first, then finds the fernhouse app and starts it."
+   ],
+   [
+    "0152.png",
+    "From the recording, it works out the exact clicks the customer made, in the same order.",
+    "From the recording, it works out the exact clicks the customer made, in the same order."
+   ],
+   [
+    "0153.png",
+    "Then it replays them, one by one, in its own browser.",
+    "Then it replays them, one by one, in its own browser."
+   ],
+   [
+    "0155.png",
+    "And there it is: the total goes negative, the same bug the customer saw.",
+    "And there it is: the total goes negative, the same bug the customer saw."
+   ],
+   [
+    "0157.png",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+    "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it."
+   ],
+   [
+    "0159.png",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+    "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case."
+   ],
+   [
+    "0162.png",
+    "Then it replays the customer's clicks again to check the fix.",
+    "Then it replays the customer's clicks again to check the fix."
+   ],
+   [
+    "0170.png",
+    "This time the discount shrinks with the cart, and the total stays positive.",
+    "This time the discount shrinks with the cart, and the total stays positive."
+   ],
+   [
+    "0195.png",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+    "When it's done, Devin explains what was wrong and what it changed, and links the pull request."
+   ],
+   [
+    "0197.png",
+    "In the PR tab, you can review the change without leaving Devin.",
+    "In the PR tab, you can review the change without leaving Devin."
+   ],
+   [
+    "0209.png",
+    "And here is the new test, which removes items after applying a promo.",
+    "And here is the new test, which removes items after applying a promo."
+   ],
+   [
+    "outro",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.",
+    "So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.065,
-    "t1": 1.447,
+    "t0": 0.12,
+    "t1": 1.92,
     "text": "So the next time a customer sends a"
    },
    {
-    "t0": 1.493,
-    "t1": 3.06,
+    "t0": 1.96,
+    "t1": 3.72,
     "text": "bug video, hand it to Devin,"
    },
    {
-    "t0": 3.084,
-    "t1": 4.98,
+    "t0": 3.8,
+    "t1": 6.07,
     "text": "and get back a tested fix as a PR."
    }
   ]
