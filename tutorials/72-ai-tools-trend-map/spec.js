@@ -7,6 +7,8 @@ window.SPEC = {
   "cps": 48,
   "maxZoom": 1.3,
   "pollRunMax": 2.2,
+  "tailHold": 0.5,
+  "outroVoDelay": 0.3,
   "dark": true,
   "noZoom": [
     [
