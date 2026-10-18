@@ -7,7 +7,8 @@ window.SPEC = {
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.3,
-  "pollRunMax": 2.2,
+  "pollRunMax": 1.3,
+  "tailHold": 0,
   "noZoom": [
     [
       "0009.png"
@@ -468,6 +469,12 @@ window.SPEC = {
       "cap": "September: layoffs 72, AI coding agents 41",
       "vo": "In September, layoffs scored highest at 72, with AI coding agents second at 41 points.",
       "voSay": "In September, layoffs scored highest at seventy two, with AI coding agents second at forty one points."
+    },
+    "0332.png": {
+      "hold": 0.8
+    },
+    "0333.png": {
+      "hold": 0.8
     },
     "0336.png": {
       "hold": 3,
