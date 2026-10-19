@@ -1,20 +1,20 @@
 # Tutorial 21: Devin Voice + GPT-Live-1, voice script
 
-Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, model `eleven_v4`, default settings (no seed, no voice_settings), one take for all lines with `_kit/tools/vo.py` (`VO_MODEL=eleven_v4`), cut locally). It plays only outside the two Devin Voice calls and outside Coach Otter's lines. When someone is talking in a call or in the game, you hear that real audio instead. `genspec.py` holds the kit lines, and `splice.py` places the three intro lines (`intro/`) over the live gameplay intro.
+Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, model `eleven_multilingual_v2`, default settings (no seed, no voice_settings), one take for all lines with `_kit/tools/vo.py` (`VO_MODEL=eleven_multilingual_v2`), cut locally). A third cut, `21-devin-voice-nader-nomusic.mp4`, has the same picture and voices with no music bed or UI sounds (`voiceonly.py`). It plays only outside the two Devin Voice calls and outside Coach Otter's lines. When someone is talking in a call or in the game, you hear that real audio instead. `genspec.py` holds the kit lines, and `splice.py` places the three intro lines (`intro/`) over the live gameplay intro.
 
 ## What's real and what's synthesized
 
 - Devin's side of both calls: real Devin Voice audio, recorded from its WebRTC track.
-- Coach Otter in the intro: real GPT-Live-1 audio from the web build in Chrome, recorded from the app's WebRTC track. The creatine boost, night mode and chill style are real tool calls from that same session.
-- Nader's lines in the calls and to Coach: ElevenLabs Nader voice (`eleven_v4`, one take per set, cut locally), placed in the slots where the original lines were played into the mic. The v4 lines run a little longer, so a few start slightly earlier to end before Devin's or Coach's real reply (`call/shift.json`); the c4 barge-in also plays 4% faster (pitch kept) so it ends before Devin answers.
-- Narration: ElevenLabs Nader voice (`eleven_v4`).
+- Coach Otter in the intro: real GPT-Live-1 audio from the web build in Chrome, recorded from the app's WebRTC track. The creatine boost, night mode and chill style are real tool calls from that same session. The gameplay under it is played off camera by a hazard-aware autoplayer that reads the live game state and presses the normal arrow keys; the game rules are unchanged.
+- Nader's lines in the calls and to Coach: ElevenLabs Nader voice (`eleven_multilingual_v2`, one take per set, cut locally), placed in the slots where the original lines were played into the mic. A few start slightly earlier so each ends before Devin's real reply (`call/shift.json`). His lines to Coach were played into the app's mic during the recording, so Coach is replying to these exact takes.
+- Narration: ElevenLabs Nader voice (`eleven_multilingual_v2`).
 
 ## Intro (live gameplay, Chrome)
 
 - Teaser, intro audio muted: Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.
 - I'll build it with Devin and Devin Voice, which uses ChatGPT voice under the hood. And the game itself talks to players through OpenAI's GPT-Live-1 API.
 - This is Coach Otter. He talks and listens at the same time, and runs game actions as tools in the background.
-- Then the real run plays with its own audio: Coach greets the player, "give me a creatine boost" (bottles drop while he talks), "wait, wait, make it nighttime" (the city goes dark), "switch to chill surfer mode".
+- Then the real run plays with its own audio: Coach greets the player, "give me a creatine boost" (bottles drop while he talks), "wait, wait, make it night time" said over him while he talks (the city goes dark), "switch to chill surfer mode", and "what's my best score?".
 
 ## Session
 

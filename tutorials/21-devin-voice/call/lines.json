@@ -1,65 +1,727 @@
 {
  "c1": {
   "text": "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web.",
-  "dur": 8.75,
-  "at": 0.0,
-  "end": 8.75,
-  "model": "eleven_v4"
+  "dur": 8.24,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference.",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference."
+   ],
+   [
+    "c3",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer.",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR.",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the game coming along?",
+    "Hey Devin, how's the game coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 0.65,
+    "text": "Hey Devin."
+   },
+   {
+    "t0": 0.673,
+    "t1": 1.672,
+    "text": "Let's build a game."
+   },
+   {
+    "t0": 2.183,
+    "t1": 4.18,
+    "text": "An arcade game called Jumpy Otter,"
+   },
+   {
+    "t0": 4.458,
+    "t1": 7.268,
+    "text": "with Expo, so one codebase runs on iOS,"
+   },
+   {
+    "t0": 7.314,
+    "t1": 8.24,
+    "text": "Android, and the web."
+   }
+  ]
  },
  "c2": {
   "text": "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference.",
-  "dur": 16.01,
-  "at": 9.0,
-  "end": 25.01,
-  "model": "eleven_v4"
+  "dur": 15.465,
+  "takeAt": 8.655,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference.",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference."
+   ],
+   [
+    "c3",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer.",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR.",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the game coming along?",
+    "Hey Devin, how's the game coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.029,
+    "t1": 2.177,
+    "text": "You play an otter hopping through San Francisco."
+   },
+   {
+    "t0": 2.688,
+    "t1": 3.826,
+    "text": "Roads full of traffic,"
+   },
+   {
+    "t0": 3.907,
+    "t1": 5.068,
+    "text": "cable car tracks,"
+   },
+   {
+    "t0": 5.242,
+    "t1": 5.823,
+    "text": "and the bay,"
+   },
+   {
+    "t0": 5.857,
+    "t1": 7.657,
+    "text": "where you hop across floating piers."
+   },
+   {
+    "t0": 7.866,
+    "t1": 8.934,
+    "text": "Blocky voxel art,"
+   },
+   {
+    "t0": 8.969,
+    "t1": 11.488,
+    "text": "with creatine bottles to collect and a combo meter."
+   },
+   {
+    "t0": 11.697,
+    "t1": 14.298,
+    "text": "Use my open-source Jumpy Otter repo on GitHub"
+   },
+   {
+    "t0": 14.356,
+    "t1": 15.459,
+    "text": "as the design reference."
+   }
+  ]
  },
  "c3": {
   "text": "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?",
-  "dur": 12.33,
-  "at": 25.24,
-  "end": 37.57,
-  "model": "eleven_v4"
+  "dur": 11.205,
+  "takeAt": 24.355,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference.",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference."
+   ],
+   [
+    "c3",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer.",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR.",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the game coming along?",
+    "Hey Devin, how's the game coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.037,
+    "t1": 1.094,
+    "text": "And here's the fun part."
+   },
+   {
+    "t0": 1.303,
+    "t1": 3.462,
+    "text": "The game gets a voice sidekick called Coach"
+   },
+   {
+    "t0": 3.52,
+    "t1": 6.69,
+    "text": "Otto, built with OpenAI's GPT-Live-1 API."
+   },
+   {
+    "t0": 6.933,
+    "t1": 8.292,
+    "text": "He commentates while you play,"
+   },
+   {
+    "t0": 8.315,
+    "t1": 9.395,
+    "text": "and you can talk back to him at"
+   },
+   {
+    "t0": 9.43,
+    "t1": 10.126,
+    "text": "the same time."
+   },
+   {
+    "t0": 10.277,
+    "t1": 11.205,
+    "text": "How would you set that up?"
+   }
+  ]
  },
  "c4": {
   "text": "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer.",
-  "dur": 15.86,
-  "at": 37.8,
-  "end": 53.66,
-  "model": "eleven_v4"
+  "dur": 13.445,
+  "takeAt": 35.765,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference.",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference."
+   ],
+   [
+    "c3",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer.",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR.",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the game coming along?",
+    "Hey Devin, how's the game coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.109,
+    "t1": 1.212,
+    "text": "Oh, wait, one more thing."
+   },
+   {
+    "t0": 1.386,
+    "t1": 3.116,
+    "text": "Players can ask Otto to do things,"
+   },
+   {
+    "t0": 3.151,
+    "t1": 4.811,
+    "text": "like give me a creatine boost,"
+   },
+   {
+    "t0": 4.857,
+    "t1": 5.728,
+    "text": "make it night time,"
+   },
+   {
+    "t0": 5.751,
+    "t1": 6.959,
+    "text": "or what's my best score."
+   },
+   {
+    "t0": 7.284,
+    "t1": 9.06,
+    "text": "Run those as tools that change the game"
+   },
+   {
+    "t0": 9.083,
+    "t1": 10.105,
+    "text": "while he keeps talking."
+   },
+   {
+    "t0": 10.279,
+    "t1": 11.765,
+    "text": "And let players switch his style,"
+   },
+   {
+    "t0": 11.789,
+    "t1": 13.445,
+    "text": "from hype announcer to chill surfer."
+   }
+  ]
  },
  "c5": {
   "text": "Can you speak a little faster?",
-  "dur": 1.51,
-  "at": 53.88,
-  "end": 55.39,
-  "model": "eleven_v4"
+  "dur": 1.38,
+  "takeAt": 49.28,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference.",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference."
+   ],
+   [
+    "c3",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer.",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR.",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the game coming along?",
+    "Hey Devin, how's the game coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.38,
+    "text": "Can you speak a little faster?"
+   }
+  ]
  },
  "c6": {
   "text": "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR.",
-  "dur": 19.19,
-  "at": 55.64,
-  "end": 74.83,
-  "model": "eleven_v4"
+  "dur": 18.455,
+  "takeAt": 50.875,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference.",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference."
+   ],
+   [
+    "c3",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer.",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR.",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the game coming along?",
+    "Hey Devin, how's the game coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.057,
+    "t1": 1.879,
+    "text": "Put it in the product demo apps repo,"
+   },
+   {
+    "t0": 1.961,
+    "t1": 4.225,
+    "text": "and keep the OpenAI key on a small server."
+   },
+   {
+    "t0": 4.376,
+    "t1": 5.722,
+    "text": "It's already in your secrets."
+   },
+   {
+    "t0": 5.897,
+    "t1": 8.323,
+    "text": "Test it in your browser and on the iPhone simulator."
+   },
+   {
+    "t0": 8.648,
+    "t1": 10.192,
+    "text": "Your Mac can't run Android,"
+   },
+   {
+    "t0": 10.366,
+    "t1": 12.491,
+    "text": "so start a second Devin on Ubuntu to"
+   },
+   {
+    "t0": 12.549,
+    "t1": 14.093,
+    "text": "test it on an Android emulator."
+   },
+   {
+    "t0": 14.302,
+    "t1": 15.184,
+    "text": "For each platform,"
+   },
+   {
+    "t0": 15.23,
+    "t1": 16.937,
+    "text": "send me a test recording with pass fail"
+   },
+   {
+    "t0": 16.995,
+    "t1": 18.455,
+    "text": "checks, then open a PR."
+   }
+  ]
  },
  "c7": {
   "text": "Perfect. Go ahead and start building.",
-  "dur": 2.05,
-  "at": 75.16,
-  "end": 77.21,
-  "model": "eleven_v4"
+  "dur": 1.795,
+  "takeAt": 69.375,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference.",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference."
+   ],
+   [
+    "c3",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer.",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR.",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the game coming along?",
+    "Hey Devin, how's the game coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.004,
+    "t1": 0.504,
+    "text": "Perfect."
+   },
+   {
+    "t0": 0.713,
+    "t1": 1.795,
+    "text": "Go ahead and start building."
+   }
+  ]
  },
  "c8": {
   "text": "Hey Devin, how's the game coming along?",
-  "dur": 2.01,
-  "at": 77.56,
-  "end": 79.57,
-  "model": "eleven_v4"
+  "dur": 1.749,
+  "takeAt": 71.361,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference.",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference."
+   ],
+   [
+    "c3",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer.",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR.",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the game coming along?",
+    "Hey Devin, how's the game coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.749,
+    "text": "Hey Devin, how's the game coming along?"
+   }
+  ]
  },
  "c9": {
   "text": "Nice. Thanks, Devin!",
-  "dur": 1.65,
-  "at": 79.96,
-  "end": 81.61,
-  "model": "eleven_v4"
+  "dur": 1.415,
+  "takeAt": 73.135,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web.",
+    "Hey Devin. Let's build a game. An arcade game called Jumpy Otter, with Expo, so one codebase runs on iOS, Android, and the web."
+   ],
+   [
+    "c2",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference.",
+    "You play an otter hopping through San Francisco. Roads full of traffic, cable car tracks, and the bay, where you hop across floating piers. Blocky voxel art, with creatine bottles to collect and a combo meter. Use my open-source Jumpy Otter repo on GitHub as the design reference."
+   ],
+   [
+    "c3",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?",
+    "And here's the fun part. The game gets a voice sidekick called Coach Otto, built with OpenAI's GPT-Live-1 API. He commentates while you play, and you can talk back to him at the same time. How would you set that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer.",
+    "Oh, wait, one more thing. Players can ask Otto to do things, like give me a creatine boost, make it night time, or what's my best score. Run those as tools that change the game while he keeps talking. And let players switch his style, from hype announcer to chill surfer."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR.",
+    "Put it in the product demo apps repo, and keep the OpenAI key on a small server. It's already in your secrets. Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the game coming along?",
+    "Hey Devin, how's the game coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.064,
+    "t1": 0.54,
+    "text": "Nice."
+   },
+   {
+    "t0": 0.749,
+    "t1": 1.415,
+    "text": "Thanks, Devin!"
+   }
+  ]
  }
 }
