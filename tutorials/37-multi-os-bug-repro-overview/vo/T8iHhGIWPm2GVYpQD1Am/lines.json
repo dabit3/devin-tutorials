@@ -1,295 +1,1015 @@
 {
  "0000.png": {
   "text": "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.",
-  "dur": 9.74,
-  "at": 0.0,
-  "end": 9.74,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 8.5,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three."
+   ],
+   [
+    "0001.png",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it.",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it."
+   ],
+   [
+    "0002.png",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM."
+   ],
+   [
+    "0003.png",
+    "Here are the three children, one per system, and each one is done.",
+    "Here are the three children, one per system, and each one is done."
+   ],
+   [
+    "0004.png",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw.",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw."
+   ],
+   [
+    "0005.png",
+    "The recording plays the run step by step, with the failing check that proves the bug.",
+    "The recording plays the run step by step, with the failing check that proves the bug."
+   ],
+   [
+    "0006.png",
+    "Windows reproduces the same bug in its own recording.",
+    "Windows reproduces the same bug in its own recording."
+   ],
+   [
+    "0007.png",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result.",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result."
+   ],
+   [
+    "0008.png",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it.",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it."
+   ],
+   [
+    "0009.png",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems.",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems."
+   ],
+   [
+    "0010.png",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
+   ],
+   [
+    "outro",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows."
+   ]
+  ],
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.04,
+    "t1": 0.778,
     "text": "In this video,"
    },
    {
-    "t0": 1.12,
-    "t1": 3.68,
+    "t0": 0.813,
+    "t1": 3.425,
     "text": "one Devin reproduces a desktop app bug on"
    },
    {
-    "t0": 3.76,
-    "t1": 7.12,
+    "t0": 3.495,
+    "t1": 6.002,
     "text": "Linux, macOS and Windows at the same time,"
    },
    {
-    "t0": 7.2,
-    "t1": 9.74,
+    "t0": 6.246,
+    "t1": 8.5,
     "text": "then verifies a single fix on all three."
    }
   ]
  },
  "0001.png": {
   "text": "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it.",
-  "dur": 7.995,
-  "at": 10.065,
-  "end": 18.06,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 7.507,
+  "takeAt": 8.773,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three."
+   ],
+   [
+    "0001.png",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it.",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it."
+   ],
+   [
+    "0002.png",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM."
+   ],
+   [
+    "0003.png",
+    "Here are the three children, one per system, and each one is done.",
+    "Here are the three children, one per system, and each one is done."
+   ],
+   [
+    "0004.png",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw.",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw."
+   ],
+   [
+    "0005.png",
+    "The recording plays the run step by step, with the failing check that proves the bug.",
+    "The recording plays the run step by step, with the failing check that proves the bug."
+   ],
+   [
+    "0006.png",
+    "Windows reproduces the same bug in its own recording.",
+    "Windows reproduces the same bug in its own recording."
+   ],
+   [
+    "0007.png",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result.",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result."
+   ],
+   [
+    "0008.png",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it.",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it."
+   ],
+   [
+    "0009.png",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems.",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems."
+   ],
+   [
+    "0010.png",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
+   ],
+   [
+    "outro",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.095,
-    "t1": 2.495,
+    "t0": 0.12,
+    "t1": 2.326,
     "text": "To get a snapshot for each operating system,"
    },
    {
-    "t0": 2.575,
-    "t1": 4.895,
+    "t0": 2.5,
+    "t1": 4.277,
     "text": "you just ask Devin in plain English."
    },
    {
-    "t0": 4.975,
-    "t1": 7.135,
+    "t0": 4.486,
+    "t1": 6.61,
     "text": "It proposes a multi-platform blueprint,"
    },
    {
-    "t0": 7.215,
-    "t1": 7.995,
+    "t0": 6.634,
+    "t1": 7.507,
     "text": "and you approve it."
    }
   ]
  },
  "0002.png": {
   "text": "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.",
-  "dur": 7.305,
-  "at": 18.385,
-  "end": 25.69,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 6.435,
+  "takeAt": 16.675,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three."
+   ],
+   [
+    "0001.png",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it.",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it."
+   ],
+   [
+    "0002.png",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM."
+   ],
+   [
+    "0003.png",
+    "Here are the three children, one per system, and each one is done.",
+    "Here are the three children, one per system, and each one is done."
+   ],
+   [
+    "0004.png",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw.",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw."
+   ],
+   [
+    "0005.png",
+    "The recording plays the run step by step, with the failing check that proves the bug.",
+    "The recording plays the run step by step, with the failing check that proves the bug."
+   ],
+   [
+    "0006.png",
+    "Windows reproduces the same bug in its own recording.",
+    "Windows reproduces the same bug in its own recording."
+   ],
+   [
+    "0007.png",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result.",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result."
+   ],
+   [
+    "0008.png",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it.",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it."
+   ],
+   [
+    "0009.png",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems.",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems."
+   ],
+   [
+    "0010.png",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
+   ],
+   [
+    "outro",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.095,
-    "t1": 2.495,
+    "t0": 0,
+    "t1": 2.18,
     "text": "The coordinator scopes the work and starts three"
    },
    {
-    "t0": 2.575,
-    "t1": 5.215,
+    "t0": 2.238,
+    "t1": 4.792,
     "text": "managed Devins, one per operating system,"
    },
    {
-    "t0": 5.295,
-    "t1": 7.305,
+    "t0": 4.85,
+    "t1": 6.435,
     "text": "each in its own isolated VM."
    }
   ]
  },
  "0003.png": {
   "text": "Here are the three children, one per system, and each one is done.",
-  "dur": 3.9,
-  "at": 26.01,
-  "end": 29.91,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 3.345,
+  "takeAt": 23.415,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three."
+   ],
+   [
+    "0001.png",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it.",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it."
+   ],
+   [
+    "0002.png",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM."
+   ],
+   [
+    "0003.png",
+    "Here are the three children, one per system, and each one is done.",
+    "Here are the three children, one per system, and each one is done."
+   ],
+   [
+    "0004.png",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw.",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw."
+   ],
+   [
+    "0005.png",
+    "The recording plays the run step by step, with the failing check that proves the bug.",
+    "The recording plays the run step by step, with the failing check that proves the bug."
+   ],
+   [
+    "0006.png",
+    "Windows reproduces the same bug in its own recording.",
+    "Windows reproduces the same bug in its own recording."
+   ],
+   [
+    "0007.png",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result.",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result."
+   ],
+   [
+    "0008.png",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it.",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it."
+   ],
+   [
+    "0009.png",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems.",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems."
+   ],
+   [
+    "0010.png",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
+   ],
+   [
+    "outro",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.15,
-    "t1": 1.51,
+    "t0": 0.002,
+    "t1": 1.198,
     "text": "Here are the three children,"
    },
    {
-    "t0": 1.59,
-    "t1": 2.603,
+    "t0": 1.256,
+    "t1": 2.185,
     "text": "one per system,"
    },
    {
-    "t0": 2.657,
-    "t1": 3.9,
+    "t0": 2.336,
+    "t1": 3.345,
     "text": "and each one is done."
    }
   ]
  },
  "0004.png": {
   "text": "Each child runs the app, reproduces the bug, and sends back a recording of what it saw.",
-  "dur": 5.005,
-  "at": 30.145,
-  "end": 35.15,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 4.915,
+  "takeAt": 27.095,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three."
+   ],
+   [
+    "0001.png",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it.",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it."
+   ],
+   [
+    "0002.png",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM."
+   ],
+   [
+    "0003.png",
+    "Here are the three children, one per system, and each one is done.",
+    "Here are the three children, one per system, and each one is done."
+   ],
+   [
+    "0004.png",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw.",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw."
+   ],
+   [
+    "0005.png",
+    "The recording plays the run step by step, with the failing check that proves the bug.",
+    "The recording plays the run step by step, with the failing check that proves the bug."
+   ],
+   [
+    "0006.png",
+    "Windows reproduces the same bug in its own recording.",
+    "Windows reproduces the same bug in its own recording."
+   ],
+   [
+    "0007.png",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result.",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result."
+   ],
+   [
+    "0008.png",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it.",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it."
+   ],
+   [
+    "0009.png",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems.",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems."
+   ],
+   [
+    "0010.png",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
+   ],
+   [
+    "outro",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.095,
-    "t1": 1.615,
+    "t0": 0.05,
+    "t1": 1.501,
     "text": "Each child runs the app,"
    },
    {
-    "t0": 1.695,
-    "t1": 2.895,
+    "t0": 1.71,
+    "t1": 2.824,
     "text": "reproduces the bug,"
    },
    {
-    "t0": 2.975,
-    "t1": 5.005,
+    "t0": 2.941,
+    "t1": 4.915,
     "text": "and sends back a recording of what it saw."
    }
   ]
  },
  "0005.png": {
   "text": "The recording plays the run step by step, with the failing check that proves the bug.",
-  "dur": 4.545,
-  "at": 35.425,
-  "end": 39.97,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 4.065,
+  "takeAt": 32.645,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three."
+   ],
+   [
+    "0001.png",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it.",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it."
+   ],
+   [
+    "0002.png",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM."
+   ],
+   [
+    "0003.png",
+    "Here are the three children, one per system, and each one is done.",
+    "Here are the three children, one per system, and each one is done."
+   ],
+   [
+    "0004.png",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw.",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw."
+   ],
+   [
+    "0005.png",
+    "The recording plays the run step by step, with the failing check that proves the bug.",
+    "The recording plays the run step by step, with the failing check that proves the bug."
+   ],
+   [
+    "0006.png",
+    "Windows reproduces the same bug in its own recording.",
+    "Windows reproduces the same bug in its own recording."
+   ],
+   [
+    "0007.png",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result.",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result."
+   ],
+   [
+    "0008.png",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it.",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it."
+   ],
+   [
+    "0009.png",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems.",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems."
+   ],
+   [
+    "0010.png",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
+   ],
+   [
+    "outro",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.055,
-    "t1": 2.495,
+    "t0": 0,
+    "t1": 2.127,
     "text": "The recording plays the run step by step,"
    },
    {
-    "t0": 2.575,
-    "t1": 4.545,
+    "t0": 2.336,
+    "t1": 4.065,
     "text": "with the failing check that proves the bug."
    }
   ]
  },
  "0006.png": {
   "text": "Windows reproduces the same bug in its own recording.",
-  "dur": 2.905,
-  "at": 40.305,
-  "end": 43.21,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 2.721,
+  "takeAt": 37.009,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three."
+   ],
+   [
+    "0001.png",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it.",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it."
+   ],
+   [
+    "0002.png",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM."
+   ],
+   [
+    "0003.png",
+    "Here are the three children, one per system, and each one is done.",
+    "Here are the three children, one per system, and each one is done."
+   ],
+   [
+    "0004.png",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw.",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw."
+   ],
+   [
+    "0005.png",
+    "The recording plays the run step by step, with the failing check that proves the bug.",
+    "The recording plays the run step by step, with the failing check that proves the bug."
+   ],
+   [
+    "0006.png",
+    "Windows reproduces the same bug in its own recording.",
+    "Windows reproduces the same bug in its own recording."
+   ],
+   [
+    "0007.png",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result.",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result."
+   ],
+   [
+    "0008.png",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it.",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it."
+   ],
+   [
+    "0009.png",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems.",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems."
+   ],
+   [
+    "0010.png",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
+   ],
+   [
+    "outro",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.095,
-    "t1": 2.905,
+    "t0": 0.12,
+    "t1": 2.721,
     "text": "Windows reproduces the same bug in its own recording."
    }
   ]
  },
  "0007.png": {
   "text": "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result.",
-  "dur": 7.235,
-  "at": 43.545,
-  "end": 50.78,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 7.185,
+  "takeAt": 40.195,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three."
+   ],
+   [
+    "0001.png",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it.",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it."
+   ],
+   [
+    "0002.png",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM."
+   ],
+   [
+    "0003.png",
+    "Here are the three children, one per system, and each one is done.",
+    "Here are the three children, one per system, and each one is done."
+   ],
+   [
+    "0004.png",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw.",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw."
+   ],
+   [
+    "0005.png",
+    "The recording plays the run step by step, with the failing check that proves the bug.",
+    "The recording plays the run step by step, with the failing check that proves the bug."
+   ],
+   [
+    "0006.png",
+    "Windows reproduces the same bug in its own recording.",
+    "Windows reproduces the same bug in its own recording."
+   ],
+   [
+    "0007.png",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result.",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result."
+   ],
+   [
+    "0008.png",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it.",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it."
+   ],
+   [
+    "0009.png",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems.",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems."
+   ],
+   [
+    "0010.png",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
+   ],
+   [
+    "outro",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.055,
-    "t1": 2.295,
+    "t0": 0.011,
+    "t1": 2.217,
     "text": "The coordinator writes one fix in one pull"
    },
    {
-    "t0": 2.535,
-    "t1": 4.935,
+    "t0": 2.275,
+    "t1": 4.713,
     "text": "request, then sends the branch back so every"
    },
    {
-    "t0": 5.095,
-    "t1": 7.235,
+    "t0": 4.759,
+    "t1": 7.185,
     "text": "child tests it again and records the result."
    }
   ]
  },
  "0008.png": {
   "text": "The pull request is small. Reset now clears the history, and a new unit test covers it.",
-  "dur": 5.265,
-  "at": 51.185,
-  "end": 56.45,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 5.045,
+  "takeAt": 47.825,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three."
+   ],
+   [
+    "0001.png",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it.",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it."
+   ],
+   [
+    "0002.png",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM."
+   ],
+   [
+    "0003.png",
+    "Here are the three children, one per system, and each one is done.",
+    "Here are the three children, one per system, and each one is done."
+   ],
+   [
+    "0004.png",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw.",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw."
+   ],
+   [
+    "0005.png",
+    "The recording plays the run step by step, with the failing check that proves the bug.",
+    "The recording plays the run step by step, with the failing check that proves the bug."
+   ],
+   [
+    "0006.png",
+    "Windows reproduces the same bug in its own recording.",
+    "Windows reproduces the same bug in its own recording."
+   ],
+   [
+    "0007.png",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result.",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result."
+   ],
+   [
+    "0008.png",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it.",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it."
+   ],
+   [
+    "0009.png",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems.",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems."
+   ],
+   [
+    "0010.png",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
+   ],
+   [
+    "outro",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.055,
-    "t1": 1.735,
+    "t0": 0,
+    "t1": 1.297,
     "text": "The pull request is small."
    },
    {
-    "t0": 1.775,
-    "t1": 3.642,
+    "t0": 1.68,
+    "t1": 3.306,
     "text": "Reset now clears the history,"
    },
    {
-    "t0": 3.668,
-    "t1": 5.265,
+    "t0": 3.422,
+    "t1": 5.045,
     "text": "and a new unit test covers it."
    }
   ]
  },
  "0009.png": {
   "text": "The coordinator's summary closes the loop, with the fix verified on all three systems.",
-  "dur": 4.865,
-  "at": 56.825,
-  "end": 61.69,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 4.275,
+  "takeAt": 53.075,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three."
+   ],
+   [
+    "0001.png",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it.",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it."
+   ],
+   [
+    "0002.png",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM."
+   ],
+   [
+    "0003.png",
+    "Here are the three children, one per system, and each one is done.",
+    "Here are the three children, one per system, and each one is done."
+   ],
+   [
+    "0004.png",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw.",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw."
+   ],
+   [
+    "0005.png",
+    "The recording plays the run step by step, with the failing check that proves the bug.",
+    "The recording plays the run step by step, with the failing check that proves the bug."
+   ],
+   [
+    "0006.png",
+    "Windows reproduces the same bug in its own recording.",
+    "Windows reproduces the same bug in its own recording."
+   ],
+   [
+    "0007.png",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result.",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result."
+   ],
+   [
+    "0008.png",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it.",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it."
+   ],
+   [
+    "0009.png",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems.",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems."
+   ],
+   [
+    "0010.png",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
+   ],
+   [
+    "outro",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.055,
-    "t1": 2.255,
+    "t0": 0.076,
+    "t1": 2.061,
     "text": "The coordinator's summary closes the loop,"
    },
    {
-    "t0": 2.295,
-    "t1": 4.865,
+    "t0": 2.108,
+    "t1": 4.275,
     "text": "with the fix verified on all three systems."
    }
   ]
  },
  "0010.png": {
   "text": "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.",
-  "dur": 7.305,
-  "at": 61.945,
-  "end": 69.25,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 6.838,
+  "takeAt": 57.722,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three."
+   ],
+   [
+    "0001.png",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it.",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it."
+   ],
+   [
+    "0002.png",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM."
+   ],
+   [
+    "0003.png",
+    "Here are the three children, one per system, and each one is done.",
+    "Here are the three children, one per system, and each one is done."
+   ],
+   [
+    "0004.png",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw.",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw."
+   ],
+   [
+    "0005.png",
+    "The recording plays the run step by step, with the failing check that proves the bug.",
+    "The recording plays the run step by step, with the failing check that proves the bug."
+   ],
+   [
+    "0006.png",
+    "Windows reproduces the same bug in its own recording.",
+    "Windows reproduces the same bug in its own recording."
+   ],
+   [
+    "0007.png",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result.",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result."
+   ],
+   [
+    "0008.png",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it.",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it."
+   ],
+   [
+    "0009.png",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems.",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems."
+   ],
+   [
+    "0010.png",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
+   ],
+   [
+    "outro",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.135,
-    "t1": 2.495,
+    "t0": 0.12,
+    "t1": 2.267,
     "text": "Use it for bugs reported on one platform,"
    },
    {
-    "t0": 2.535,
-    "t1": 4.188,
+    "t0": 2.476,
+    "t1": 3.986,
     "text": "for desktop app releases,"
    },
    {
-    "t0": 4.242,
-    "t1": 5.975,
+    "t0": 4.16,
+    "t1": 5.82,
     "text": "and for any fix your reviewers need to"
    },
    {
-    "t0": 6.055,
-    "t1": 7.305,
+    "t0": 5.878,
+    "t1": 6.838,
     "text": "see working everywhere."
    }
   ]
  },
  "outro": {
   "text": "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
-  "dur": 6.485,
-  "at": 69.505,
-  "end": 75.99,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 5.215,
+  "takeAt": 64.985,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three.",
+    "In this video, one Devin reproduces a desktop app bug on Linux, macOS and Windows at the same time, then verifies a single fix on all three."
+   ],
+   [
+    "0001.png",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it.",
+    "To get a snapshot for each operating system, you just ask Devin in plain English. It proposes a multi-platform blueprint, and you approve it."
+   ],
+   [
+    "0002.png",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM.",
+    "The coordinator scopes the work and starts three managed Devins, one per operating system, each in its own isolated VM."
+   ],
+   [
+    "0003.png",
+    "Here are the three children, one per system, and each one is done.",
+    "Here are the three children, one per system, and each one is done."
+   ],
+   [
+    "0004.png",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw.",
+    "Each child runs the app, reproduces the bug, and sends back a recording of what it saw."
+   ],
+   [
+    "0005.png",
+    "The recording plays the run step by step, with the failing check that proves the bug.",
+    "The recording plays the run step by step, with the failing check that proves the bug."
+   ],
+   [
+    "0006.png",
+    "Windows reproduces the same bug in its own recording.",
+    "Windows reproduces the same bug in its own recording."
+   ],
+   [
+    "0007.png",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result.",
+    "The coordinator writes one fix in one pull request, then sends the branch back so every child tests it again and records the result."
+   ],
+   [
+    "0008.png",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it.",
+    "The pull request is small. Reset now clears the history, and a new unit test covers it."
+   ],
+   [
+    "0009.png",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems.",
+    "The coordinator's summary closes the loop, with the fix verified on all three systems."
+   ],
+   [
+    "0010.png",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere.",
+    "Use it for bugs reported on one platform, for desktop app releases, and for any fix your reviewers need to see working everywhere."
+   ],
+   [
+    "outro",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows.",
+    "That's how one Devin turns a single bug report into a fix that's verified on Linux, macOS and Windows."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.175,
-    "t1": 2.095,
+    "t0": 0,
+    "t1": 1.831,
     "text": "That's how one Devin turns a single bug"
    },
    {
-    "t0": 2.295,
-    "t1": 4.775,
+    "t0": 1.877,
+    "t1": 4.025,
     "text": "report into a fix that's verified on Linux,"
    },
    {
-    "t0": 4.815,
-    "t1": 6.485,
+    "t0": 4.06,
+    "t1": 5.215,
     "text": "macOS and Windows."
    }
   ]
