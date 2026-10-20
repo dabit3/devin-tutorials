@@ -35,7 +35,6 @@ window.SPEC = {
       "hold": 3.4, "ring": { "x": 506, "y": 458, "w": 440, "h": 120 }, "ringFor": 3.0,
       "cap": "Base 7B 77.0%, gpt-4.1 73.5%: within noise",
       "vo": "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
-      "voSay": "On two hundred held-out questions, the base seven B already matched GPT four point one.",
       "hl": null
     },
     "0005.png": {
@@ -60,7 +59,6 @@ window.SPEC = {
       "hold": 3.2, "ring": { "x": 1009, "y": 391, "w": 676, "h": 160 }, "ringFor": 2.8,
       "cap": "Before: the app on gpt-4.1",
       "vo": "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
-      "voSay": "Then it deploys the winner with modal deploy, behind a feature flag, shown here on GPT four point one.",
       "hl": null
     },
     "0010.png": {
@@ -73,7 +71,6 @@ window.SPEC = {
       "scene": "score", "hold": 7.4, "voHold": 15.0, "capPos": "bottom",
       "cap": "82.0% vs 73.5%; $49 vs $993 per 1M",
       "vo": "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
-      "voSay": "The tuned seven B beat GPT four point one by eight and a half points, though each training step's gain alone was within noise. On a warm H one hundred it cost forty-nine dollars per million queries to GPT four point one's nine hundred and ninety-three, before cold starts and idle time.",
       "hl": null
     }
   }

@@ -1,25 +1,25 @@
 {
  "0001.png": {
   "text": "First, I saved my Modal token and an OpenAI key as Devin secrets, so sessions can use them without the values ever showing.",
-  "dur": 7.56,
+  "dur": 6.775,
   "at": 0.0,
-  "end": 7.56,
+  "end": 6.775,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.16,
+    "t1": 2.043,
     "text": "First, I saved my Modal token and an"
    },
    {
-    "t0": 2.24,
-    "t1": 4.56,
+    "t0": 2.101,
+    "t1": 3.924,
     "text": "OpenAI key as Devin secrets,"
    },
    {
-    "t0": 4.64,
-    "t1": 7.56,
+    "t0": 4.075,
+    "t1": 6.775,
     "text": "so sessions can use them without the values ever showing."
    }
   ]
@@ -27,90 +27,90 @@
  "0002.png": {
   "text": "Our example in this video is text-to-SQL, but the same loop works for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which turns questions into SQL with gpt-4.1.",
   "say": "Our example in this video is text-to-SQL, but the same loop works for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which turns questions into SQL with GPT four point one.",
-  "dur": 13.585,
-  "at": 7.76,
-  "end": 21.345,
+  "dur": 13.51,
+  "at": 7.36,
+  "end": 20.87,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 13.585,
+    "t0": 0.094,
+    "t1": 13.457,
     "text": "Our example in this video is text-to-SQL, but the same loop works for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which turns questions into SQL with gpt-4.1."
    }
   ]
  },
  "0009.png": {
   "text": "I start one session and ask Devin to set the folder up for Modal training, check that auth works, and save the setup as a skill.",
-  "dur": 7.085,
-  "at": 21.6,
-  "end": 28.685,
+  "dur": 6.61,
+  "at": 21.17,
+  "end": 27.78,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.16,
-    "t1": 2.16,
+    "t0": 0.088,
+    "t1": 1.934,
     "text": "I start one session and ask Devin to"
    },
    {
-    "t0": 2.24,
-    "t1": 4.16,
+    "t0": 2.015,
+    "t1": 3.664,
     "text": "set the folder up for Modal training,"
    },
    {
-    "t0": 4.28,
-    "t1": 5.44,
+    "t0": 3.989,
+    "t1": 5.022,
     "text": "check that auth works,"
    },
    {
-    "t0": 5.52,
-    "t1": 7.085,
+    "t0": 5.045,
+    "t1": 6.601,
     "text": "and save the setup as a skill."
    }
   ]
  },
  "0044.png": {
   "text": "Devin verifies the token, runs a small CPU and GPU job on Modal, and opens a pull request.",
-  "dur": 6.23,
-  "at": 28.87,
-  "end": 35.1,
+  "dur": 5.815,
+  "at": 28.08,
+  "end": 33.895,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.17,
-    "t1": 1.77,
+    "t0": 0.074,
+    "t1": 1.548,
     "text": "Devin verifies the token,"
    },
    {
-    "t0": 1.89,
-    "t1": 4.17,
+    "t0": 1.722,
+    "t1": 3.847,
     "text": "runs a small CPU and GPU job on"
    },
    {
-    "t0": 4.25,
-    "t1": 6.23,
+    "t0": 3.893,
+    "t1": 5.815,
     "text": "Modal, and opens a pull request."
    }
   ]
  },
  "0048.png": {
   "text": "It proposes a skill with the setup, and I approve it so future sessions start ready.",
-  "dur": 4.47,
-  "at": 35.28,
-  "end": 39.75,
+  "dur": 4.29,
+  "at": 34.15,
+  "end": 38.44,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.92,
+    "t0": 0.076,
+    "t1": 1.806,
     "text": "It proposes a skill with the setup,"
    },
    {
-    "t0": 1.96,
-    "t1": 4.47,
+    "t0": 1.922,
+    "t1": 4.279,
     "text": "and I approve it so future sessions start ready."
    }
   ]
@@ -118,50 +118,50 @@
  "0051.png": {
   "text": "Next, the dataset and the reward: Spider splits with their SQLite databases, and a reward script that runs the SQL.",
   "say": "Next, the data set and the reward: Spider splits with their SQLite databases, and a reward script that runs the SQL.",
-  "dur": 7.465,
-  "at": 40.0,
-  "end": 47.465,
+  "dur": 7.07,
+  "at": 38.735,
+  "end": 45.805,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.36,
-    "t1": 7.465,
+    "t0": 0.135,
+    "t1": 7.07,
     "text": "Next, the dataset and the reward: Spider splits with their SQLite databases, and a reward script that runs the SQL."
    }
   ]
  },
  "0116.png": {
   "text": "It builds two thousand training and two hundred eval questions on separate databases, and writes the reward with unit tests. The reward is checked by the computer, not an AI judge.",
-  "dur": 10.07,
-  "at": 47.68,
-  "end": 57.75,
+  "dur": 9.74,
+  "at": 46.12,
+  "end": 55.86,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.16,
-    "t1": 2.32,
+    "t0": 0.087,
+    "t1": 2.316,
     "text": "It builds two thousand training and two hundred"
    },
    {
-    "t0": 2.4,
-    "t1": 4.64,
+    "t0": 2.362,
+    "t1": 4.557,
     "text": "eval questions on separate databases,"
    },
    {
-    "t0": 4.72,
-    "t1": 6.76,
+    "t0": 4.766,
+    "t1": 6.647,
     "text": "and writes the reward with unit tests."
    },
    {
-    "t0": 6.96,
-    "t1": 8.8,
+    "t0": 6.89,
+    "t1": 8.597,
     "text": "The reward is checked by the computer,"
    },
    {
-    "t0": 8.88,
-    "t1": 10.07,
+    "t0": 8.655,
+    "t1": 9.688,
     "text": "not an AI judge."
    }
   ]
@@ -169,40 +169,40 @@
  "0118.png": {
   "text": "Then the baseline: accuracy, latency and cost on the eval split, for gpt-4.1 and the base Qwen 7B on a Modal H100.",
   "say": "Then the baseline: accuracy, latency and cost on the eval split, for GPT four point one and the base Qwen seven B on a Modal H one hundred.",
-  "dur": 9.53,
-  "at": 58.0,
-  "end": 67.53,
+  "dur": 8.37,
+  "at": 56.01,
+  "end": 64.38,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.24,
-    "t1": 9.53,
+    "t0": 0.077,
+    "t1": 8.308,
     "text": "Then the baseline: accuracy, latency and cost on the eval split, for gpt-4.1 and the base Qwen 7B on a Modal H100."
    }
   ]
  },
  "0250.png": {
   "text": "When the vLLM server fails because the image has no CUDA compiler, Devin switches to a CUDA image and redeploys.",
-  "dur": 6.675,
-  "at": 67.7,
-  "end": 74.375,
+  "dur": 6.275,
+  "at": 64.615,
+  "end": 70.89,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.14,
-    "t1": 2.38,
+    "t0": 0.028,
+    "t1": 2.141,
     "text": "When the vLLM server fails because the image"
    },
    {
-    "t0": 2.46,
-    "t1": 3.98,
+    "t0": 2.164,
+    "t1": 3.58,
     "text": "has no CUDA compiler,"
    },
    {
-    "t0": 4.06,
-    "t1": 6.675,
+    "t0": 3.859,
+    "t1": 6.251,
     "text": "Devin switches to a CUDA image and redeploys."
    }
   ]
@@ -210,15 +210,15 @@
  "0337.png": {
   "text": "The base 7B already scores seventy-seven percent to gpt-4.1's seventy-three and a half, and Devin notes the gap is within noise.",
   "say": "The base seven B already scores seventy-seven percent to GPT four point one's seventy-three and a half, and Devin notes the gap is within noise.",
-  "dur": 8.245,
-  "at": 74.58,
-  "end": 82.825,
+  "dur": 8.695,
+  "at": 71.225,
+  "end": 79.92,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.14,
-    "t1": 8.245,
+    "t0": 0.024,
+    "t1": 8.695,
     "text": "The base 7B already scores seventy-seven percent to gpt-4.1's seventy-three and a half, and Devin notes the gap is within noise."
    }
   ]
@@ -226,160 +226,160 @@
  "0352.png": {
   "text": "Now supervised fine-tuning: a LoRA run on a Modal H100, with checkpoints on a Modal volume.",
   "say": "Now supervised fine-tuning: a LoRA run on a Modal H one hundred, with checkpoints on a Modal volume.",
-  "dur": 6.325,
-  "at": 83.06,
-  "end": 89.385,
+  "dur": 6.425,
+  "at": 80.14,
+  "end": 86.565,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.26,
-    "t1": 6.325,
+    "t0": 0.13,
+    "t1": 6.423,
     "text": "Now supervised fine-tuning: a LoRA run on a Modal H100, with checkpoints on a Modal volume."
    }
   ]
  },
  "0400.png": {
   "text": "The first launch fails on a config option the trainer no longer accepts, so Devin fixes it and relaunches.",
-  "dur": 5.95,
-  "at": 89.62,
-  "end": 95.57,
+  "dur": 5.945,
+  "at": 86.88,
+  "end": 92.825,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.14,
-    "t1": 2.06,
+    "t0": 0.066,
+    "t1": 2.132,
     "text": "The first launch fails on a config option"
    },
    {
-    "t0": 2.14,
-    "t1": 3.9,
+    "t0": 2.179,
+    "t1": 3.827,
     "text": "the trainer no longer accepts,"
    },
    {
-    "t0": 3.98,
-    "t1": 5.95,
+    "t0": 3.978,
+    "t1": 5.945,
     "text": "so Devin fixes it and relaunches."
    }
   ]
  },
  "0589.png": {
   "text": "The fine-tuned model scores seventy-nine percent, still within noise of the base model.",
-  "dur": 4.6,
-  "at": 95.76,
-  "end": 100.36,
+  "dur": 4.81,
+  "at": 93.1,
+  "end": 97.91,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.16,
-    "t1": 2.8,
+    "t0": 0.069,
+    "t1": 2.89,
     "text": "The fine-tuned model scores seventy-nine percent,"
    },
    {
-    "t0": 2.92,
-    "t1": 4.6,
+    "t0": 3.064,
+    "t1": 4.748,
     "text": "still within noise of the base model."
    }
   ]
  },
  "0603.png": {
   "text": "Then reinforcement learning with GRPO, using the same reward script, with early stopping.",
-  "dur": 5.345,
-  "at": 100.53,
-  "end": 105.875,
+  "dur": 4.96,
+  "at": 97.92,
+  "end": 102.88,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.23,
-    "t1": 2.67,
+    "t0": 0.102,
+    "t1": 2.203,
     "text": "Then reinforcement learning with GRPO,"
    },
    {
-    "t0": 2.75,
-    "t1": 4.27,
+    "t0": 2.354,
+    "t1": 3.77,
     "text": "using the same reward script,"
    },
    {
-    "t0": 4.35,
-    "t1": 5.345,
+    "t0": 3.921,
+    "t1": 4.908,
     "text": "with early stopping."
    }
   ]
  },
  "0977.png": {
   "text": "The first run plateaus, because the fine-tuned model is so confident that most samples get the same reward, so Devin raises the learning rate.",
-  "dur": 7.58,
-  "at": 106.11,
-  "end": 113.69,
+  "dur": 7.14,
+  "at": 102.98,
+  "end": 110.12,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.13,
-    "t1": 1.57,
+    "t0": 0.057,
+    "t1": 1.45,
     "text": "The first run plateaus,"
    },
    {
-    "t0": 1.69,
-    "t1": 3.97,
+    "t0": 1.625,
+    "t1": 3.808,
     "text": "because the fine-tuned model is so confident that"
    },
    {
-    "t0": 4.09,
-    "t1": 5.89,
+    "t0": 3.866,
+    "t1": 5.479,
     "text": "most samples get the same reward,"
    },
    {
-    "t0": 5.97,
-    "t1": 7.58,
+    "t0": 5.503,
+    "t1": 7.105,
     "text": "so Devin raises the learning rate."
    }
   ]
  },
  "1163.png": {
   "text": "The next run runs out of GPU memory, and Devin splits each step into smaller batches.",
-  "dur": 5.07,
-  "at": 113.94,
-  "end": 119.01,
+  "dur": 5.015,
+  "at": 110.295,
+  "end": 115.31,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.14,
-    "t1": 2.38,
+    "t0": 0.068,
+    "t1": 2.286,
     "text": "The next run runs out of GPU memory,"
    },
    {
-    "t0": 2.46,
-    "t1": 5.07,
+    "t0": 2.437,
+    "t1": 5.015,
     "text": "and Devin splits each step into smaller batches."
    }
   ]
  },
  "1763.png": {
   "text": "Over a few more runs it fixes a data bug, gives the reward more CPU, and rewrites early stopping.",
-  "dur": 6.18,
-  "at": 119.2,
-  "end": 125.38,
+  "dur": 6.195,
+  "at": 115.62,
+  "end": 121.815,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.2,
-    "t1": 1.92,
+    "t0": 0.096,
+    "t1": 1.814,
     "text": "Over a few more runs it fixes a"
    },
    {
-    "t0": 2.04,
-    "t1": 4.64,
+    "t0": 1.872,
+    "t1": 4.496,
     "text": "data bug, gives the reward more CPU,"
    },
    {
-    "t0": 4.72,
-    "t1": 6.18,
+    "t0": 4.705,
+    "t1": 6.191,
     "text": "and rewrites early stopping."
    }
   ]
@@ -387,220 +387,220 @@
  "2358.png": {
   "text": "The final run scores eighty-one and a half percent, ahead of gpt-4.1, though the gain over fine-tuning alone is within noise.",
   "say": "The final run scores eighty-one and a half percent, ahead of GPT four point one, though the gain over fine-tuning alone is within noise.",
-  "dur": 7.835,
-  "at": 125.575,
-  "end": 133.41,
+  "dur": 7.79,
+  "at": 122.19,
+  "end": 129.98,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.105,
-    "t1": 7.835,
+    "t0": 0.062,
+    "t1": 7.79,
     "text": "The final run scores eighty-one and a half percent, ahead of gpt-4.1, though the gain over fine-tuning alone is within noise."
    }
   ]
  },
  "2378.png": {
   "text": "Now the sweep: I ask for four managed Devins, each running one GRPO variant, then a table and the best checkpoint.",
-  "dur": 7.635,
-  "at": 133.675,
-  "end": 141.31,
+  "dur": 7.74,
+  "at": 130.16,
+  "end": 137.9,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.165,
-    "t1": 1.445,
+    "t0": 0.115,
+    "t1": 0.962,
     "text": "Now the sweep:"
    },
    {
-    "t0": 1.605,
-    "t1": 3.565,
+    "t0": 1.404,
+    "t1": 3.215,
     "text": "I ask for four managed Devins,"
    },
    {
-    "t0": 3.605,
-    "t1": 5.805,
+    "t0": 3.459,
+    "t1": 5.549,
     "text": "each running one GRPO variant,"
    },
    {
-    "t0": 5.845,
-    "t1": 7.635,
+    "t0": 5.874,
+    "t1": 7.74,
     "text": "then a table and the best checkpoint."
    }
   ]
  },
  "2393.png": {
   "text": "Devin pushes the training code and plans four child sessions, each with its own VM and Modal job.",
-  "dur": 5.615,
-  "at": 141.645,
-  "end": 147.26,
+  "dur": 5.625,
+  "at": 138.315,
+  "end": 143.94,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.115,
-    "t1": 2.275,
+    "t0": 0.11,
+    "t1": 2.386,
     "text": "Devin pushes the training code and plans four"
    },
    {
-    "t0": 2.355,
-    "t1": 5.615,
+    "t0": 2.444,
+    "t1": 5.555,
     "text": "child sessions, each with its own VM and Modal job."
    }
   ]
  },
  "2496.png": {
   "text": "Each child gets one variant: a lower learning rate, a bigger LoRA rank, sixteen generations per prompt, or a partial-credit reward.",
-  "dur": 8.425,
-  "at": 147.305,
-  "end": 155.73,
+  "dur": 7.965,
+  "at": 144.245,
+  "end": 152.21,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.055,
-    "t1": 2.135,
+    "t0": 0.067,
+    "t1": 1.634,
     "text": "Each child gets one variant:"
    },
    {
-    "t0": 2.175,
-    "t1": 3.335,
+    "t0": 2.017,
+    "t1": 3.062,
     "text": "a lower learning rate,"
    },
    {
-    "t0": 3.415,
-    "t1": 4.775,
+    "t0": 3.271,
+    "t1": 4.385,
     "text": "a bigger LoRA rank,"
    },
    {
-    "t0": 4.855,
-    "t1": 6.775,
+    "t0": 4.594,
+    "t1": 6.394,
     "text": "sixteen generations per prompt,"
    },
    {
-    "t0": 6.895,
-    "t1": 8.425,
+    "t0": 6.545,
+    "t1": 7.95,
     "text": "or a partial-credit reward."
    }
   ]
  },
  "2642.png": {
   "text": "Inside one child, Devin launches its GRPO run on Modal and watches it train.",
-  "dur": 5.105,
-  "at": 155.985,
-  "end": 161.09,
+  "dur": 4.8,
+  "at": 152.51,
+  "end": 157.31,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.175,
-    "t1": 1.455,
+    "t0": 0.068,
+    "t1": 1.159,
     "text": "Inside one child,"
    },
    {
-    "t0": 1.535,
-    "t1": 4.175,
+    "t0": 1.194,
+    "t1": 3.864,
     "text": "Devin launches its GRPO run on Modal and"
    },
    {
-    "t0": 4.215,
-    "t1": 5.105,
+    "t0": 3.911,
+    "t1": 4.793,
     "text": "watches it train."
    }
   ]
  },
  "2835.png": {
   "text": "When they finish, the coordinator serves each best checkpoint and scores it on the same eval set.",
-  "dur": 5.26,
-  "at": 161.27,
-  "end": 166.53,
+  "dur": 4.62,
+  "at": 157.63,
+  "end": 162.25,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.21,
-    "t1": 1.05,
+    "t0": 0.056,
+    "t1": 0.776,
     "text": "When they finish,"
    },
    {
-    "t0": 1.13,
-    "t1": 3.85,
+    "t0": 0.811,
+    "t1": 3.376,
     "text": "the coordinator serves each best checkpoint and scores"
    },
    {
-    "t0": 3.93,
-    "t1": 5.26,
+    "t0": 3.423,
+    "t1": 4.62,
     "text": "it on the same eval set."
    }
   ]
  },
  "2915.png": {
   "text": "Sixteen generations wins on validation and gets promoted. It scores eighty-two percent on eval, and Devin notes no variant is significantly better.",
-  "dur": 8.51,
-  "at": 166.71,
-  "end": 175.22,
+  "dur": 8.05,
+  "at": 162.52,
+  "end": 170.57,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.25,
-    "t1": 3.61,
+    "t0": 0.124,
+    "t1": 3.096,
     "text": "Sixteen generations wins on validation and gets promoted."
    },
    {
-    "t0": 3.69,
-    "t1": 5.85,
+    "t0": 3.34,
+    "t1": 5.279,
     "text": "It scores eighty-two percent on eval,"
    },
    {
-    "t0": 5.93,
-    "t1": 8.51,
+    "t0": 5.395,
+    "t1": 7.995,
     "text": "and Devin notes no variant is significantly better."
    }
   ]
  },
  "2918.png": {
   "text": "Next, I ask Devin to deploy the winner with modal deploy, add a feature flag to the app, and show it working in the browser.",
-  "dur": 6.71,
-  "at": 175.425,
-  "end": 182.135,
+  "dur": 6.84,
+  "at": 171.015,
+  "end": 177.855,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.255,
-    "t1": 2.335,
+    "t0": 0.104,
+    "t1": 2.229,
     "text": "Next, I ask Devin to deploy the winner"
    },
    {
-    "t0": 2.415,
-    "t1": 3.615,
+    "t0": 2.275,
+    "t1": 3.285,
     "text": "with modal deploy,"
    },
    {
-    "t0": 3.695,
-    "t1": 5.215,
+    "t0": 3.529,
+    "t1": 5.108,
     "text": "add a feature flag to the app,"
    },
    {
-    "t0": 5.295,
-    "t1": 6.71,
+    "t0": 5.258,
+    "t1": 6.803,
     "text": "and show it working in the browser."
    }
   ]
  },
  "2955.png": {
   "text": "Devin's testing agent opens the app in the session's browser.",
-  "dur": 3.21,
-  "at": 182.31,
-  "end": 185.52,
+  "dur": 3.18,
+  "at": 178.2,
+  "end": 181.38,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.25,
-    "t1": 3.21,
+    "t0": 0.128,
+    "t1": 3.135,
     "text": "Devin's testing agent opens the app in the session's browser."
    }
   ]
@@ -608,15 +608,15 @@
  "2960.png": {
   "text": "With the flag set to frontier, the app answers with gpt-4.1.",
   "say": "With the flag set to frontier, the app answers with GPT four point one.",
-  "dur": 4.295,
-  "at": 185.665,
-  "end": 189.96,
+  "dur": 4.165,
+  "at": 181.745,
+  "end": 185.91,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.175,
-    "t1": 4.295,
+    "t0": 0.032,
+    "t1": 4.142,
     "text": "With the flag set to frontier, the app answers with gpt-4.1."
    }
   ]
@@ -624,55 +624,55 @@
  "2964.png": {
   "text": "Flipped to finetuned, the same question goes to our endpoint on Modal and returns the same rows.",
   "say": "Flipped to fine tuned, the same question goes to our endpoint on Modal and returns the same rows.",
-  "dur": 5.22,
-  "at": 190.15,
-  "end": 195.37,
+  "dur": 5.37,
+  "at": 186.22,
+  "end": 191.59,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.21,
-    "t1": 5.22,
+    "t0": 0.05,
+    "t1": 5.367,
     "text": "Flipped to finetuned, the same question goes to our endpoint on Modal and returns the same rows."
    }
   ]
  },
  "2979.png": {
   "text": "Devin confirms the production endpoint is deployed on Modal, and nothing else is left running.",
-  "dur": 4.595,
-  "at": 195.545,
-  "end": 200.14,
+  "dur": 4.395,
+  "at": 191.745,
+  "end": 196.14,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.215,
-    "t1": 2.535,
+    "t0": 0.086,
+    "t1": 2.42,
     "text": "Devin confirms the production endpoint is deployed on"
    },
    {
-    "t0": 2.615,
-    "t1": 4.595,
+    "t0": 2.478,
+    "t1": 4.359,
     "text": "Modal, and nothing else is left running."
    }
   ]
  },
  "2983.png": {
   "text": "Step eight: the scorecard, filled in with the real numbers.",
-  "dur": 3.94,
-  "at": 200.39,
-  "end": 204.33,
+  "dur": 3.39,
+  "at": 196.435,
+  "end": 199.825,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.25,
-    "t1": 2.25,
+    "t0": 0.11,
+    "t1": 1.875,
     "text": "Step eight: the scorecard,"
    },
    {
-    "t0": 2.37,
-    "t1": 3.94,
+    "t0": 1.968,
+    "t1": 3.39,
     "text": "filled in with the real numbers."
    }
   ]
@@ -680,15 +680,15 @@
  "3038.png": {
   "text": "On the same two hundred questions, gpt-4.1 scores seventy-three and a half percent, the base 7B seventy-seven, fine-tuning seventy-nine, and the promoted GRPO model eighty-two. Only its lead over gpt-4.1 is statistically significant.",
   "say": "On the same two hundred questions, GPT four point one scores seventy-three and a half percent, the base seven B seventy-seven, fine-tuning seventy-nine, and the promoted GRPO model eighty-two. Only its lead over GPT four point one is statistically significant.",
-  "dur": 15.535,
-  "at": 204.5,
-  "end": 220.035,
+  "dur": 16.595,
+  "at": 199.95,
+  "end": 216.545,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.14,
-    "t1": 15.535,
+    "t0": 0.066,
+    "t1": 16.595,
     "text": "On the same two hundred questions, gpt-4.1 scores seventy-three and a half percent, the base 7B seventy-seven, fine-tuning seventy-nine, and the promoted GRPO model eighty-two. Only its lead over gpt-4.1 is statistically significant."
    }
   ]
@@ -696,100 +696,100 @@
  "3008.png": {
   "text": "On a warm, busy H100 our model costs about forty-nine dollars per million queries, against nine hundred ninety-three for gpt-4.1, not counting cold starts or idle time. The latency differences between the Qwen models are noise.",
   "say": "On a warm, busy H one hundred our model costs about forty-nine dollars per million queries, against nine hundred ninety-three for GPT four point one, not counting cold starts or idle time. The latency differences between the Qwen models are noise.",
-  "dur": 14.13,
-  "at": 220.23,
-  "end": 234.36,
+  "dur": 13.23,
+  "at": 216.8,
+  "end": 230.03,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.21,
-    "t1": 14.13,
+    "t0": 0.098,
+    "t1": 13.23,
     "text": "On a warm, busy H100 our model costs about forty-nine dollars per million queries, against nine hundred ninety-three for gpt-4.1, not counting cold starts or idle time. The latency differences between the Qwen models are noise."
    }
   ]
  },
  "3014.png": {
   "text": "Finally, I ask Devin to save the whole recipe as a playbook.",
-  "dur": 3.585,
-  "at": 234.645,
-  "end": 238.23,
+  "dur": 2.905,
+  "at": 230.24,
+  "end": 233.145,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.475,
-    "t1": 2.395,
+    "t0": 0.055,
+    "t1": 1.762,
     "text": "Finally, I ask Devin to save the whole"
    },
    {
-    "t0": 2.595,
-    "t1": 3.585,
+    "t0": 1.808,
+    "t1": 2.905,
     "text": "recipe as a playbook."
    }
   ]
  },
  "3032.png": {
   "text": "Devin drafts it as general steps, with this project as the worked example, and I create it.",
-  "dur": 4.965,
-  "at": 238.475,
-  "end": 243.44,
+  "dur": 5.035,
+  "at": 233.49,
+  "end": 238.525,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.165,
-    "t1": 2.218,
+    "t0": 0.079,
+    "t1": 2.018,
     "text": "Devin drafts it as general steps,"
    },
    {
-    "t0": 2.272,
-    "t1": 4.205,
+    "t0": 2.134,
+    "t1": 4.131,
     "text": "with this project as the worked example,"
    },
    {
-    "t0": 4.245,
-    "t1": 4.965,
+    "t0": 4.247,
+    "t1": 5.035,
     "text": "and I create it."
    }
   ]
  },
  "3036.png": {
   "text": "Now it's an organization playbook, so the next task model starts from this recipe.",
-  "dur": 4.565,
-  "at": 243.675,
-  "end": 248.24,
+  "dur": 4.535,
+  "at": 238.72,
+  "end": 243.255,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.285,
-    "t1": 2.112,
+    "t0": 0.12,
+    "t1": 1.746,
     "text": "Now it's an organization playbook,"
    },
    {
-    "t0": 2.138,
-    "t1": 4.565,
+    "t0": 1.92,
+    "t1": 4.535,
     "text": "so the next task model starts from this recipe."
    }
   ]
  },
  "outro": {
   "text": "Devin ran the whole loop on its own, and I reviewed results instead of code.",
-  "dur": 4.025,
-  "at": 248.475,
-  "end": 252.5,
+  "dur": 4.03,
+  "at": 243.6,
+  "end": 247.63,
   "mode": "one-take",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.205,
-    "t1": 2.112,
+    "t0": 0.14,
+    "t1": 1.893,
     "text": "Devin ran the whole loop on its own,"
    },
    {
-    "t0": 2.138,
-    "t1": 4.025,
+    "t0": 2.067,
+    "t1": 4.03,
     "text": "and I reviewed results instead of code."
    }
   ]
