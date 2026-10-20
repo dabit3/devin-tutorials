@@ -206,7 +206,7 @@ const BLUE = '#2078ff', INK = '#191919', SUB = 'rgba(25,25,25,.55)', LINE = 'rgb
 // Music grid of 2-upbeat.mp3: the beat drops at 2.05 s, one beat every 0.5103 s (117.6 BPM).
 // introDrop: when the drop lands in the cut (the music starts introDrop - 2.05 s into the intro), so the spoken question fits before it.
 const BEAT = 0.5103;
-let DROP, T_ANS, T_DEVIN, T_MORPH, T_WORD;
+let DROP, T_ANS, T_DEVIN, T_MORPH, T_Q;
 const ANSWERS = [
   { word: 'Tested', label: 'HOW IT WAS TESTED', img: 'tested.png' },
   { word: 'Verified', label: 'COMPUTER USE', img: 'verified.png' },
@@ -214,21 +214,15 @@ const ANSWERS = [
   { word: 'Secured', label: 'SECURITY SCAN', img: 'secured.png' },
   { word: 'Shipped', label: 'PULL REQUEST', img: 'shipped.png' },
 ];
-const QUESTION = 'What happens, after the code is written.'.split(' ');
+const QUESTION = 'What happens after the code is written?';
 const LEAD = () => window.SPEC.sceneLead || 0;
-// each word of the question appears as the narrator says it (by character share of the spoken line)
+// introQuestionAt: when the whole question starts to settle in (the cut starts here, so it animates from the first frame)
 function init() {
   if (DROP != null) return;
-  const S = window.SPEC, e = (S.edit || {})['0005.png'] || {}, line = S.voLines?.['0005.png'];
-  DROP = S.introDrop ?? 2.05;
+  const S = window.SPEC;
+  DROP = S.introDrop ?? 2.05; T_Q = S.introQuestionAt ?? .6;
   const beat = n => DROP + n * BEAT;
   T_ANS = ANSWERS.map((_, i) => beat(2 * i)); T_DEVIN = beat(10); T_MORPH = beat(12);
-  const total = QUESTION.join(' ').length;
-  let off = 0;
-  T_WORD = QUESTION.map((w, i) => {
-    const t = line ? (e.voDelay || 0) - LEAD() + 0.12 + (line.dur - 0.12) * off / total - 0.08 : .2 + i * .1;
-    off += w.length + 1; return t;
-  });
 }
 const STAGES = [['Understand','Code and context'],['Build','Make the change'],['Test','Run the checks'],['Verify','See it working'],['Review','Find and fix issues'],['Secure','Address findings'],['Operate','Act on signals']];
 const CARD = { x: 950, y: 470, w: 640, h: 350 }, COL = { x: 566, y: 470, step: 92 };
@@ -272,21 +266,26 @@ function link(ctx, k, x0, y0, x1, y1, s, t = 0) {
   ctx.restore();
 }
 
-// The question: word-by-word in the hush before the drop, then it rises to become the header.
+// The question settles in all at once (blur, scale and tracking resolve together, then a blue glint), then rises to become the header.
 function question(ctx, k, c) {
+  const e = k.eOutQuint(k.prog(c, T_Q, T_Q + .9));
   const q = k.eInOut(k.prog(c, DROP - .62, DROP + .12));
   const out = k.eOut(k.prog(c, T_MORPH, T_MORPH + .45));
-  if (out >= 1) return;
-  const size = k.lerp(54, 30, q), weight = Math.round(k.lerp(600, 500, q)), ls = k.lerp(-1.6, -.4, q);
-  const y = k.lerp(392, 165, q) - 10 * out, tone = k.lerp(1, .55, q) * (1 - out);
-  ctx.save(); k.font(size, weight); ctx.letterSpacing = `${ls}px`;
-  const ws = QUESTION.map(w => ctx.measureText(w).width), sp = ctx.measureText(' ').width;
-  let x = 720 - (ws.reduce((a, b) => a + b, 0) + sp * (QUESTION.length - 1)) / 2;
-  ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillStyle = INK;
-  QUESTION.forEach((w, i) => {
-    const p = enter(k, c, T_WORD[i], .6);
-    ctx.globalAlpha = k.alpha * tone * p; ctx.fillText(w, x, y + 16 * (1 - p)); x += ws[i] + sp;
-  });
+  if (out >= 1 || e <= 0) return;
+  const size = k.lerp(54, 30, q), weight = Math.round(k.lerp(600, 500, q)), ls = k.lerp(-1.6, -.4, q) + 7 * (1 - e);
+  const y = k.lerp(392, 165, q) - 10 * out, tone = k.lerp(1, .55, q) * (1 - out), sc = 1 + .06 * (1 - e);
+  ctx.save(); ctx.translate(720, y); ctx.scale(sc, sc);
+  k.font(size, weight); ctx.letterSpacing = `${ls}px`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  if (e < 1) ctx.filter = `blur(${(14 * (1 - e)).toFixed(2)}px)`;
+  ctx.globalAlpha = k.alpha * tone * k.clamp(e * 1.4); ctx.fillStyle = INK; ctx.fillText(QUESTION, 0, 0);
+  ctx.filter = 'none';
+  const g = k.prog(c, T_Q + .35, T_Q + 1.35);
+  if (g > 0 && g < 1) {
+    const w = ctx.measureText(QUESTION).width, gx = -w / 2 - 160 + k.eInOut(g) * (w + 320);
+    const grad = ctx.createLinearGradient(gx - 120, 0, gx + 120, 0);
+    grad.addColorStop(0, 'rgba(32,120,255,0)'); grad.addColorStop(.5, 'rgba(32,120,255,.85)'); grad.addColorStop(1, 'rgba(32,120,255,0)');
+    ctx.globalAlpha = k.alpha * tone * Math.sin(Math.PI * g); ctx.fillStyle = grad; ctx.fillText(QUESTION, 0, 0);
+  }
   ctx.restore();
 }
 

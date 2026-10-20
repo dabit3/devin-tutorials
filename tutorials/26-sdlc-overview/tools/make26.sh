@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Tutorial 26 with the intro: render from frame 72 (skips the kit's window entrance), no title chime, upbeat track on the intro grid.
+# Tutorial 26 with the intro: render from frame 108 (skips the kit's window entrance and opens as the question settles in), no title chime, upbeat track on the intro grid.
 # usage: MUSIC=<upbeat.mp3> HANDOFF=<film s of beat 0010> SHIFT=<film s where the music starts> bash tutorials/26-sdlc-overview/tools/make26.sh
 # current values: HANDOFF=11.27 SHIFT=1.9
 set -euo pipefail
 VD=$(cd "$(dirname "$0")/.." && pwd); T=$(dirname "$VD"); V=26-sdlc-overview; TOOLS=$VD/tools; W=$VD/build/mix; mkdir -p $W
 : "${MUSIC:?set MUSIC to the upbeat track}"
 export VOICE=T8iHhGIWPm2GVYpQD1Am
-LEAD=72; SEG=1500
+LEAD=${LEAD:-108}; SEG=1500
 TOTAL=$(cd $T/_kit/tools && node render.mjs $V --count)
 echo "frames $TOTAL"
 encode() {

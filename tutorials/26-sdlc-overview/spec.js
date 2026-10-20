@@ -7,6 +7,7 @@ window.SPEC = {
   "introHold": 0,
   "sceneLead": 1.2,
   "introDrop": 2.75,
+  "introQuestionAt": 0.6,
   "pace": 1,
   "speed": 3,
   "capMin": 3,
@@ -14,8 +15,8 @@ window.SPEC = {
   "maxZoom": 1.3,
   "noZoom": [["0005.png", "0210.png"]],
   "edit": {
-    "0005.png": {"scene": "question", "hold": 11.27, "voDelay": 1.3, "vo": "What happens, after the code is written."},
-    "0010.png": {"scene": "overview", "hold": 7.39, "cap": "Devin powers every stage of the software lifecycle", "vo": "Devin powers every stage of the software lifecycle, from understanding the code to production feedback. Your team directs the whole process."},
+    "0005.png": {"scene": "question", "hold": 11.27},
+    "0010.png": {"scene": "overview", "voDelay": 0.35, "hold": 7.39, "cap": "Devin powers every stage of the software lifecycle", "vo": "Devin powers every stage of the software lifecycle, from understanding the code to production feedback. Your team directs the whole process."},
     "0020.png": {"scene": "deepwiki", "hold": 10.91, "cap": "DeepWiki: a readable map of your codebase", "vo": "DeepWiki turns your repositories into documentation, architecture diagrams, and source-linked explanations. That gives you and Devin a clear picture of the system before anyone makes a change."},
     "0021.png": {"hold": 5.02, "cap": "Real architecture documentation, grounded in the source", "capPos": "top", "subPos": "top", "ring": {"x": 720.0, "y": 372.5, "w": 840, "h": 149}, "ringFor": 2.8, "vo": "This repository wiki shows generated architecture diagrams with links back to the source."},
     "0030.png": {"scene": "plan", "hold": 13.09, "cap": "Tickets and Ask Devin turn a request into a plan", "vo": "Work often starts as a ticket. With Jira or Linear connected, Devin can analyze and scope that ticket before any code is written. Then Ask Devin answers questions grounded in the codebase. Together, they turn the request into a plan."},
