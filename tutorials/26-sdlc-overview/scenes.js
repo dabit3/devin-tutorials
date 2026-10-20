@@ -1,6 +1,6 @@
 (() => {
 const BLUE = '#2078ff', INK = '#191919', SUB = 'rgba(25,25,25,.55)', LINE = 'rgba(25,25,25,.15)';
-const STAGES = ['Understand', 'Build', 'Test', 'Review', 'Secure', 'Operate'];
+const STAGES = ['Understand', 'Build', 'Test', 'Verify', 'Review', 'Secure', 'Operate'];
 const enter = (k, s, t = 0, d = .75) => k.eOutQuint(k.prog(s, t, t + d));
 
 function text(ctx, k, value, x, y, size = 24, a = 1, weight = 500, color = INK, family = 'Inter') {
@@ -23,9 +23,10 @@ function pill(ctx, k, value, x, y, a = 1) {
 }
 function node(ctx, k, x, y, title, lines = [], a = 1, active = 0, w = 320, h = 144, avatar = false) {
   const yy = y + 14 * (1 - a); card(ctx, k, x, yy, w, h, a, active);
-  if (avatar) mark(ctx, k, x, yy - 43, 34, a);
-  text(ctx, k, title, x, yy + (avatar ? -3 : -25), 27, a, 600);
-  lines.forEach((l, i) => text(ctx, k, l, x, yy + (avatar ? 34 : 17) + i * 26, 18, a, 400, SUB));
+  const top = avatar ? -57 : -14, bottom = lines.length ? 40 + (lines.length - 1) * 26 + 9 : 14, c = yy - (top + bottom) / 2;
+  if (avatar) mark(ctx, k, x, c - 40, 34, a);
+  text(ctx, k, title, x, c, 27, a, 600);
+  lines.forEach((l, i) => text(ctx, k, l, x, c + 40 + i * 26, 18, a, 400, SUB));
 }
 function link(ctx, k, x0, y0, x1, y1, s, t = 0, horizontal = false) {
   const p = k.eInOut(k.prog(s, t, t + .9)), mx = (x0 + x1) / 2, my = (y0 + y1) / 2;
@@ -47,8 +48,8 @@ function link(ctx, k, x0, y0, x1, y1, s, t = 0, horizontal = false) {
   ctx.restore();
 }
 function rail(ctx, k, active) {
-  const w = 166, gap = 24, x0 = 720 - (6*w + 5*gap)/2;
-  ctx.save(); ctx.globalAlpha = k.alpha; ctx.strokeStyle = LINE; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x0+83, 65); ctx.lineTo(1440-x0-83, 65); ctx.stroke(); ctx.restore();
+  const w = 160, gap = 18, x0 = 720 - (STAGES.length*w + (STAGES.length-1)*gap)/2;
+  ctx.save(); ctx.globalAlpha = k.alpha; ctx.strokeStyle = LINE; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x0+w/2, 65); ctx.lineTo(1440-x0-w/2, 65); ctx.stroke(); ctx.restore();
   STAGES.forEach((l, i) => { const x = x0 + i*(w+gap) + w/2; card(ctx, k, x, 65, w, 44, 1, active === i ? .8 : 0, 22); text(ctx, k, l, x, 65, 16, 1, active === i ? 600 : 400, active === i ? BLUE : SUB); });
 }
 function header(ctx, s, k, section, title, active = -1) {
@@ -68,24 +69,31 @@ function flow(scene, section, title, active, nodes, footer) {
     let last = 0;
     nodes.forEach((n, i) => {
       const t = at(scene, n.cue || n.title, .6+i*1.05), x = [300,720,1140][i]; last = Math.max(last, t);
-      if (i) link(ctx, k, x-260, 401, x-160, 401, s, t, true);
-      node(ctx, k, x, 401, n.title, n.lines, enter(k,s,t), i===1 ? .6 : 0, 320, 154, n.avatar);
+      if (i) link(ctx, k, x-260, 455, x-160, 455, s, t, true);
+      node(ctx, k, x, 455, n.title, n.lines, enter(k,s,t), i===1 ? .6 : 0, 320, 154, n.avatar);
     });
     if (footer) {
       const f = typeof footer === 'string' ? { text: footer } : footer;
-      pill(ctx, k, f.text, 720, 594, enter(k, s, f.cue ? at(scene, f.cue, 3.5) : Math.max(3.5, last + .8)));
+      pill(ctx, k, f.text, 720, 640, enter(k, s, f.cue ? at(scene, f.cue, 3.5) : Math.max(3.5, last + .8)));
     }
   };
 }
 function overview(ctx, s, k) {
-  text(ctx,k,'DEVIN ACROSS THE SOFTWARE LIFECYCLE',720,112,15,enter(k,s),500,SUB,'JetBrains Mono');
-  const labels = [['Understand','Code and context'],['Build','Implement the change'],['Test','Verify the behavior'],['Review','Find and fix issues'],['Secure','Address findings'],['Operate','Turn signals into work']];
-  const pos = [[300,262],[720,262],[1140,262],[1140,552],[720,552],[300,552]];
-  pos.forEach(([x,y],i) => {
-    const from = i < 3 ? [720,354] : [720,464]; link(ctx,k,...from,x,y+(i<3?52:-52),s,1+i*.45);
-    node(ctx,k,x,y,labels[i][0],[labels[i][1]],enter(k,s,.5+i*.2),0,280,104);
+  text(ctx,k,'THE SOFTWARE LIFECYCLE',720,112,15,enter(k,s),500,SUB,'JetBrains Mono');
+  text(ctx,k,'Devin connects every stage',720,165,38,enter(k,s,.1),600);
+  const labels = [['Understand','Code and context'],['Build','Make the change'],['Test','Run the checks'],['Verify','See it working'],['Review','Find and fix issues'],['Secure','Address findings'],['Operate','Act on signals']];
+  const w = 172, gap = 14, y = 528, x0 = 720 - (7*w + 6*gap)/2 + w/2;
+  const la = enter(k,s,.5,1.2);
+  ctx.save(); ctx.globalAlpha = k.alpha*la; ctx.strokeStyle = LINE; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x0, y); ctx.lineTo(x0 + 6*(w+gap), y); ctx.stroke(); ctx.restore();
+  labels.forEach(([t,sub],i) => {
+    const x = x0 + i*(w+gap), a = enter(k,s,.5+i*.16), yy = y + 14*(1-a);
+    link(ctx,k,720,356,x,y-58,s,1+i*.3);
+    card(ctx,k,x,yy,w,116,a,0,18);
+    text(ctx,k,t,x,yy-13,24,a,600); text(ctx,k,sub,x,yy+18,15,a,400,SUB);
   });
-  card(ctx,k,720,409,168,112,enter(k,s,.2),.7); mark(ctx,k,720,390,38,enter(k,s,.2)); text(ctx,k,'Devin',720,434,23,enter(k,s,.2),600);
+  const da = enter(k,s,.2);
+  card(ctx,k,720,300,168,112,da,.7); mark(ctx,k,720,281,38,da); text(ctx,k,'Devin',720,325,23,da,600);
+  pill(ctx,k,'Your team directs the whole process',720,668,enter(k,s,at('overview','directs',6.5)));
 }
 function fusion(ctx,s,k) {
   header(ctx,s,k,'HOW THE WORK GETS DONE','Fusion: a frontier lead with an efficient sidekick',1);
@@ -109,7 +117,7 @@ function managed(ctx,s,k) {
   pill(ctx,k,'Migrations • Test coverage • Work across repositories',720,620,enter(k,s,4));
 }
 function services(ctx,s,k) {
-  header(ctx,s,k,'MCP IN PRACTICE','Bring runtime evidence into the investigation',5);
+  header(ctx,s,k,'MCP IN PRACTICE','Bring runtime evidence into the investigation',6);
   node(ctx,k,720,334,'Devin',['Investigates with connected tools'],enter(k,s,.5),.7,410,144,true);
   const data = [['Datadog',['Logs and observability']],['Sentry',['Errors and event context']],['Metabase',['Data and analytics context']]];
   data.forEach(([title,lines],i) => {
@@ -119,7 +127,7 @@ function services(ctx,s,k) {
   text(ctx,k,'Available tools depend on the server and permissions you connect',720,640,18,enter(k,s,6),400,SUB);
 }
 function automation(ctx,s,k) {
-  header(ctx,s,k,'WHEN WORK STARTS','Automations connect a signal to an action',5);
+  header(ctx,s,k,'WHEN WORK STARTS','Automations connect a signal to an action',6);
   const data=[['Trigger',['Event or schedule']],['Conditions',['Match only what matters']],['Action',['Start or message a session','With the event as context']]];
   data.forEach(([title,lines],i)=>{
     const x=[300,720,1140][i],t=at('automation',['trigger','conditions','action'][i],3+i*1.2); if(i) link(ctx,k,x-260,393,x-160,393,s,t,true);
@@ -128,7 +136,7 @@ function automation(ctx,s,k) {
   pill(ctx,k,'Create an automation by describing it in natural language',720,578,enter(k,s,at('automation','natural',1.5)));
 }
 function triggers(ctx,s,k) {
-  header(ctx,s,k,'RECURRING AND EVENT-DRIVEN WORK','Start the right task at the right time',5);
+  header(ctx,s,k,'RECURRING AND EVENT-DRIVEN WORK','Start the right task at the right time',6);
   [['CI failure','Fix the failing branch'],['Schedule','Sweep errors or update dependencies'],['Webhook','Investigate an external alert']].forEach(([title,sub],i)=>{
     const x=[300,720,1140][i],t=.5+i*1.25; node(ctx,k,x,377,title,[sub],enter(k,s,t),0,338,132);
     link(ctx,k,x,444,720,528,s,t+.7);
@@ -136,7 +144,7 @@ function triggers(ctx,s,k) {
   card(ctx,k,720,572,560,88,enter(k,s,4),.6); mark(ctx,k,500,572,36,enter(k,s,4)); text(ctx,k,'Devin picks up the work automatically',750,572,23,enter(k,s,4),600);
 }
 function incident(ctx,s,k) {
-  header(ctx,s,k,'AN EXAMPLE OF THE FULL LOOP','Production feedback becomes the next improvement',5);
+  header(ctx,s,k,'AN EXAMPLE OF THE FULL LOOP','Production feedback becomes the next improvement',6);
   const labels=[['Alert','Webhook or schedule'],['Investigate','MCP tools + code'],['Fix and verify','Tests + a pull request'],['Human review','Merge and release']];
   const pos=[[370,329],[1070,329],[1070,556],[370,556]], starts=[.5,at('incident','investigate',2.5),at('incident','test',5.5),at('incident','team',8.5)];
   pos.forEach(([x,y],i)=>{
@@ -150,10 +158,10 @@ function practices(ctx,s,k) {
   header(ctx,s,k,'HOW YOUR TEAM WORKS','Reusable procedures, not a new prompt every time');
   const ts=[at('practices','Skills',.6),at('practices','playbooks',1.2),at('practices','memory',4.5),at('practices','Automation-started',8)];
   const focus=i=>.6*k.prog(s,ts[i],ts[i]+.4)*(1-k.prog(s,ts[i+1]+(i===0?1.2:0),ts[i+1]+(i===0?1.6:.4)));
-  node(ctx,k,310,403,'Skills',['Discoverable procedures','Versioned with your code'],enter(k,s,ts[0]),focus(0),335,166);
-  node(ctx,k,720,403,'Playbooks',['Reusable task instructions','Attached to sessions'],enter(k,s,ts[1]),focus(1),335,166);
-  node(ctx,k,1130,403,'Personal memory',['Preferences and lessons','For your future sessions'],enter(k,s,ts[2]),focus(2),335,166);
-  text(ctx,k,'Automation-started sessions do not use personal memory',720,593,18,enter(k,s,ts[3]),400,SUB);
+  node(ctx,k,310,470,'Skills',['Discoverable procedures','Versioned with your code'],enter(k,s,ts[0]),focus(0),335,166);
+  node(ctx,k,720,470,'Playbooks',['Reusable task instructions','Attached to sessions'],enter(k,s,ts[1]),focus(1),335,166);
+  node(ctx,k,1130,470,'Personal memory',['Preferences and lessons','For your future sessions'],enter(k,s,ts[2]),focus(2),335,166);
+  text(ctx,k,'Automation-started sessions do not use personal memory',720,640,18,enter(k,s,ts[3]),400,SUB);
 }
 function uses(ctx,s,k) {
   header(ctx,s,k,'WHERE THE LIFECYCLE PAYS OFF','Delegate an outcome, not just a coding step');
@@ -180,14 +188,14 @@ window.SCENES = {
   plan: flow('plan','SCOPE THE CHANGE','Turn codebase questions and tickets into a plan',0,[{title:'Ask Devin',lines:['Answers grounded in code'],cue:'Ask Devin'},{title:'Plan the work',lines:['Relevant files and approach'],cue:'plan'},{title:'Jira or Linear',lines:['Analyze and scope tickets'],cue:'tickets'}],'Explore first. Delegate with the right context.'),
   build: flow('build','IMPLEMENT THE CHANGE','Devin works in its own development environment',1,[{title:'Your task',lines:['A goal and acceptance criteria'],cue:'task'},{title:'Devin session',lines:['Its own virtual machine'],avatar:true,cue:'virtual'},{title:'Pull request',lines:['Your repository conventions'],cue:'pull request'}],{text:'Linux, macOS or Windows virtual machines',cue:'Linux'}),
   fusion, managed,
-  test: flow('test','VERIFY THE CHANGE','Run the checks your repository already uses',2,[{title:'Implementation',lines:['Code under test'],cue:'tests'},{title:'Test and fix',lines:['Test suites, lint and types'],avatar:true,cue:'lint'},{title:'Evidence',lines:['Report what was checked'],cue:'checked'}],'Write new tests using your team’s patterns'),
-  computer: flow('computer','TEST BEHAVIOR, NOT ONLY CODE','Computer Use adds the user’s point of view',2,[{title:'Running application',lines:['Browser or desktop'],cue:'Computer Use'},{title:'Devin tests the UI',lines:['Clicks, types and observes'],avatar:true,cue:'interface'},{title:'Visual evidence',lines:['Recordings and screenshots'],cue:'recordings'}],'Exercise the flow a real user would follow'),
-  review: flow('review','REVIEW AND ITERATE','A first pass, followed by a feedback loop',3,[{title:'Devin Review',lines:['Correctness and team standards'],cue:'Review'},{title:'Feedback',lines:['Bugs, comments and CI failures'],cue:'comments'},{title:'Auto-Fix',lines:['Responds when enabled'],avatar:true,cue:'Auto-Fix'}],'Push fixes back to the same pull request'),
-  secure: flow('secure','SECURITY AND COMPLIANCE','Address findings from your existing scanners',4,[{title:'Your scanners',lines:['SonarQube, Fortify, Veracode'],cue:'security'},{title:'Devin investigates',lines:['Works through the finding'],avatar:true,cue:'scanners'},{title:'Fix pull requests',lines:['Reviewed changes across repos'],cue:'changes'}],'Not a replacement for your security policies'),
-  ship: flow('ship','SHIP THROUGH YOUR PROCESS','Human review stays in the delivery path',3,[{title:'Devin’s pull request',lines:['Normal branch protections'],cue:'pull requests'},{title:'Your team',lines:['Reviews and decides to merge'],cue:'team'},{title:'Your delivery pipeline',lines:['Existing CI/CD and releases'],cue:'pipeline'}],'Your controls. Your infrastructure. Your decision.'),
-  mcp: flow('mcp','EXTEND DEVIN’S REACH','MCP connects Devin to external tools and data',5,[{title:'Connected systems',lines:['Tools and data sources'],cue:'MCP'},{title:'MCP servers',lines:['Expose authorized tools'],cue:'servers'},{title:'Devin session',lines:['Uses tools in the task'],avatar:true,cue:'tools'}],'Install a plugin, then authorize its connection'),
+  test: flow('test','RUN THE CHECKS','Run the checks your repository already uses',2,[{title:'Implementation',lines:['Code under test'],cue:'tests'},{title:'Test and fix',lines:['Test suites, lint and types'],avatar:true,cue:'lint'},{title:'Evidence',lines:['Report what was checked'],cue:'checked'}],'Write new tests using your team’s patterns'),
+  computer: flow('computer','VERIFY THE BEHAVIOR','Computer Use adds the user’s point of view',3,[{title:'Running application',lines:['Browser or desktop'],cue:'Computer Use'},{title:'Devin tests the UI',lines:['Clicks, types and observes'],avatar:true,cue:'interface'},{title:'Visual evidence',lines:['Recordings and screenshots'],cue:'recordings'}],'Exercise the flow a real user would follow'),
+  review: flow('review','REVIEW AND ITERATE','A first pass, followed by a feedback loop',4,[{title:'Devin Review',lines:['Correctness and team standards'],cue:'Review'},{title:'Feedback',lines:['Bugs, comments and CI failures'],cue:'comments'},{title:'Auto-Fix',lines:['Responds when enabled'],avatar:true,cue:'Auto-Fix'}],'Push fixes back to the same pull request'),
+  secure: flow('secure','SECURITY AND COMPLIANCE','Address findings from your existing scanners',5,[{title:'Your scanners',lines:['SonarQube, Fortify, Veracode'],cue:'security'},{title:'Devin investigates',lines:['Works through the finding'],avatar:true,cue:'scanners'},{title:'Fix pull requests',lines:['Reviewed changes across repos'],cue:'changes'}],'Not a replacement for your security policies'),
+  ship: flow('ship','SHIP THROUGH YOUR PROCESS','Human review stays in the delivery path',4,[{title:'Devin’s pull request',lines:['Normal branch protections'],cue:'pull requests'},{title:'Your team',lines:['Reviews and decides to merge'],cue:'team'},{title:'Your delivery pipeline',lines:['Existing CI/CD and releases'],cue:'pipeline'}],'Your controls. Your infrastructure. Your decision.'),
+  mcp: flow('mcp','EXTEND DEVIN’S REACH','MCP connects Devin to external tools and data',6,[{title:'Connected systems',lines:['Tools and data sources'],cue:'MCP'},{title:'MCP servers',lines:['Expose authorized tools'],cue:'servers'},{title:'Devin session',lines:['Uses tools in the task'],avatar:true,cue:'tools'}],'Install a plugin, then authorize its connection'),
   services,
-  data: flow('data','UNDERSTAND THE IMPACT','Connected data can inform the next decision',5,[{title:'Connected data',lines:['Database and analytics MCPs'],cue:'data'},{title:'Data Analyst',lines:['Queries and visualizations'],avatar:true,cue:'Data Analyst'},{title:'Engineering context',lines:['Metrics, trends and anomalies'],cue:'metrics'}],{text:'Slack • Web app • Mobile app • Anywhere Devin is accessible',cue:'Slack'}),
+  data: flow('data','UNDERSTAND THE IMPACT','Connected data can inform the next decision',6,[{title:'Connected data',lines:['Database and analytics MCPs'],cue:'data'},{title:'Data Analyst',lines:['Queries and visualizations'],avatar:true,cue:'Data Analyst'},{title:'Engineering context',lines:['Metrics, trends and anomalies'],cue:'metrics'}],{text:'Slack • Web app • Mobile app • Anywhere Devin is accessible',cue:'Slack'}),
   automation, triggers, incident, practices, uses, system
 };
 })();

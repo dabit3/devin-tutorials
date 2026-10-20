@@ -48,7 +48,7 @@ The pull request lists the test commands and browser checks that verified this c
 
 ## computer
 
-Computer Use adds behavioral testing. Devin can operate a browser or desktop application, interact with the running interface, and visually verify the result. It also captures screenshots and recordings you can inspect.
+Then Devin verifies the change the way a user would. With Computer Use, it can operate a browser or desktop application, interact with the running interface, and visually verify the result. It also captures screenshots and recordings you can inspect.
 
 ## Proof — UI testing produces visible evidence
 
@@ -116,7 +116,7 @@ Skills and playbooks make your team's procedures reusable. Personal memory carri
 
 ## uses
 
-The highest-value work often spans several stages. Examples include shipping a feature, coordinating a migration, raising test coverage, or reducing a security backlog. Context, verification, and review are built into each one.
+The highest-value work often spans several stages. Think of shipping a feature, coordinating a migration, raising test coverage, or reducing a security backlog. Context, verification, and review are built into each one.
 
 ## system
 
