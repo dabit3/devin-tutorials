@@ -581,8 +581,8 @@ window.SPEC = {
         "w": 70,
         "h": 28
       },
-      "ringFor": 2.5,
-      "hold": 2.5,
+      "ringFor": 1.8,
+      "hold": 2.0,
       "cap": "Pull request #76",
       "badge": null
     },
