@@ -26,7 +26,7 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "cap": "Funnel, drop-off step, replays, hypothesis, flagged PR",
-      "vo": "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
+      "vo": "Devin can find the why. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
     },
     "0002.png": {
       "hold": 4.5,

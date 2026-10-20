@@ -84,7 +84,7 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 <!-- -->
 
-43. **Session replays to UX fixes: how it works** (overview, 1:09): A diagram-led overview of the loop: funnel, drop-off step, replays, hypothesis, flagged PR, with proof shots from tutorial 42 and use cases. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/43-session-replays-ux-overview/43-session-replays-ux-overview.mp4)
+43. **Session replays to UX fixes: how it works** (overview, 1:09): A diagram-led overview of the workflow: funnel, drop-off step, replays, hypothesis, flagged PR, with proof shots from tutorial 42 and use cases. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/43-session-replays-ux-overview/43-session-replays-ux-overview.mp4)
 
 <!-- -->
 

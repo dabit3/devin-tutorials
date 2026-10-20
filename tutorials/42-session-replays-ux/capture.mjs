@@ -1,7 +1,7 @@
 // Tutorial 42 capture: a real Devin session in thequantexplorer reads a Metabase funnel, watches rrweb replays
 // in its own browser, states a hypothesis and ships a flagged fix. Recorded over CDP at 125% zoom.
 //   ZOOM=1.25 PHASE=mcp|analytics|start|watch|test|shot|flag SESSION=<url> node capture.mjs
-// Touch /tmp/stop42 to end a watch loop. MB_URL / REPLAY_URL / APP_URL point at the local analytics stack.
+// Touch /tmp/stop42 to stop watching. MB_URL / REPLAY_URL / APP_URL point at the local analytics stack.
 import fs from 'fs';
 import { Rec, sleep } from '../_kit/capture/rec.mjs';
 import { ensureAgent, clearComposer, closeMenus, mentionRepo, editorBox } from '../_kit/capture/composer.mjs';

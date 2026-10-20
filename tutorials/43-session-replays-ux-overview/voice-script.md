@@ -5,7 +5,7 @@ Narrated in Nader's voice (`T8iHhGIWPm2GVYpQD1Am`, `VO_NAME=nader`), one take vi
 | Beat | Caption | Narration |
 |---|---|---|
 | 0000.png | Conversion drops, and the chart can’t say why | A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment. |
-| 0001.png | Funnel, drop-off step, replays, hypothesis, flagged PR | Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag. |
+| 0001.png | Funnel, drop-off step, replays, hypothesis, flagged PR | Devin can find the why. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag. |
 | 0002.png | Demo: a planted bug and 320 simulated sessions | In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb. |
 | 0003.png | Metabase plugin, keys as secrets | Devin reaches Metabase through the marketplace plugin. |
 | 0004.png | Devin watches a replay in its own browser | In its own browser, it watches a session stall on shipping, with five clicks on Continue. |
