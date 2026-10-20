@@ -24,3 +24,5 @@ Diagram scenes are drawn live by `scenes.js`; every UI shot is a real capture fr
 - macOS support: https://docs.devin.ai/onboard-devin/environment/macos-support (macOS sessions with Xcode and the iOS Simulator, picked from the platform menu)
 - Android emulator support: https://docs.devin.ai/onboard-devin/environment/android-emulation (ask Devin to set up an Android emulator; Devin proposes a blueprint with the Android SDK, build tools and emulator configuration, which you review and approve)
 - The parity run itself: tutorial 58, thequantexplorer/product-demo-apps#79
+
+Two cuts share the same picture and narration: `59-ios-to-android-parity-overview-nader.mp4` uses the kit's music bed, and `59-ios-to-android-parity-overview-nader-upbeat.mp4` uses Nader's supplied upbeat track instead, ducked under the voice and matched to the kit bed's level.

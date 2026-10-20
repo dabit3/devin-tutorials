@@ -40,3 +40,5 @@ Session 2, platform **Ubuntu** (switched back on camera; Android has no menu opt
 
 - macOS support: https://docs.devin.ai/onboard-devin/environment/macos-support
 - Android emulator support: https://docs.devin.ai/onboard-devin/environment/android-emulation
+
+Two cuts share the same picture and narration: `58-ios-to-android-parity-nader.mp4` uses the kit's music bed, and `58-ios-to-android-parity-nader-upbeat.mp4` uses Nader's supplied upbeat track instead, ducked under the voice and matched to the kit bed's level.
