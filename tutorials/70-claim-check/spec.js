@@ -4,6 +4,8 @@ window.SPEC = {
   "outro": "Viral claims in, verdicts with primary sources out",
   "voOutro": "Viral claims in, verdicts with primary sources out.",
   "dark": true,
+  "tailHold": 0.3,
+  "outroVoDelay": 0.6,
   "speed": 3,
   "cps": 90,
   "maxZoom": 1.3,
@@ -52,7 +54,7 @@ window.SPEC = {
       "fade": 0,
       "cursor": false,
       "capPos": "bottom",
-      "hold": 5.45,
+      "hold": 4.2,
       "cap": "A public modal.run page that scales to zero"
     },
     "0002.png": {
@@ -97,7 +99,7 @@ window.SPEC = {
     },
     "0029.png": {
       "cursor": false,
-      "hold": 2.2,
+      "hold": 1.95,
       "vo": "Here's the page running on Modal.",
       "cap": "The deployed page on modal.run"
     },

@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-  "dur": 7.69,
+  "dur": 6.95,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -84,17 +84,17 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.88,
+    "t1": 2.577,
     "text": "Viral AI posts often make technical claims,"
    },
    {
-    "t0": 2.96,
-    "t1": 5.52,
+    "t0": 2.752,
+    "t1": 4.818,
     "text": "like a benchmark record or a funding round,"
    },
    {
-    "t0": 5.64,
-    "t1": 7.69,
+    "t0": 5.027,
+    "t1": 6.95,
     "text": "and few people check the sources behind them."
    }
   ]
@@ -102,8 +102,8 @@
  "0001.png": {
   "text": "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
   "say": "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-  "dur": 8.84,
-  "takeAt": 8.12,
+  "dur": 7.517,
+  "takeAt": 7.183,
   "mode": "single-take-1",
   "take": [
    [
@@ -185,22 +185,22 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 3.06,
+    "t1": 2.606,
     "text": "Here, Devin builds a claim checker that uses the"
    },
    {
-    "t0": 3.11,
-    "t1": 5.115,
+    "t0": 2.656,
+    "t1": 4.35,
     "text": "xAI API to find those posts on X,"
    },
    {
-    "t0": 5.165,
-    "t1": 6.548,
+    "t0": 4.4,
+    "t1": 5.565,
     "text": "and shows a verdict for"
    },
    {
-    "t0": 6.598,
-    "t1": 8.79,
+    "t0": 5.615,
+    "t1": 7.467,
     "text": "each claim with its primary sources."
    }
   ]
@@ -208,8 +208,8 @@
  "modal.png": {
   "text": "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
   "say": "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
-  "dur": 25.275,
-  "takeAt": 17.345,
+  "dur": 23.82,
+  "takeAt": 14.855,
   "mode": "single-take-1",
   "take": [
    [
@@ -290,71 +290,71 @@
   ],
   "chunks": [
    {
-    "t0": 0.095,
-    "t1": 1.455,
+    "t0": 0.098,
+    "t1": 1.132,
     "text": "It runs on Modal."
    },
    {
-    "t0": 1.535,
-    "t1": 4.095,
+    "t0": 1.735,
+    "t1": 4.185,
     "text": "A scheduled function pulls new posts every hour,"
    },
    {
-    "t0": 4.175,
-    "t1": 6.175,
+    "t0": 4.359,
+    "t1": 5.95,
     "text": "so there's no server to keep running."
    },
    {
-    "t0": 6.335,
-    "t1": 10.175,
+    "t0": 6.333,
+    "t1": 9.491,
     "text": "Calling .map() checks the claims in parallel across containers."
    },
    {
-    "t0": 10.255,
-    "t1": 12.396,
+    "t0": 9.874,
+    "t1": 11.833,
     "text": "A Modal Dict stores the results,"
    },
    {
-    "t0": 12.446,
-    "t1": 14.108,
+    "t0": 11.883,
+    "t1": 13.403,
     "text": "a web endpoint serves the"
    },
    {
-    "t0": 14.158,
-    "t1": 16.231,
+    "t0": 13.453,
+    "t1": 15.349,
     "text": "page at a public modal.run URL,"
    },
    {
-    "t0": 16.281,
-    "t1": 18.765,
+    "t0": 15.399,
+    "t1": 17.672,
     "text": "and a Modal Secret holds the xAI key."
    },
    {
-    "t0": 18.895,
-    "t1": 20.895,
+    "t0": 18.047,
+    "t1": 19.777,
     "text": "Between runs it scales to zero,"
    },
    {
-    "t0": 20.935,
-    "t1": 22.255,
+    "t0": 19.847,
+    "t1": 21.054,
     "text": "and you pay by the second,"
    },
    {
-    "t0": 22.415,
-    "t1": 24.122,
+    "t0": 21.17,
+    "t1": 22.888,
     "text": "instead of leaving a laptop script or a"
    },
    {
-    "t0": 24.175,
-    "t1": 25.275,
+    "t0": 22.935,
+    "t1": 23.82,
     "text": "server on all day."
    }
   ]
  },
  "0003.png": {
   "text": "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-  "dur": 13.255,
-  "takeAt": 43.065,
+  "dur": 11.685,
+  "takeAt": 38.935,
   "mode": "single-take-1",
   "take": [
    [
@@ -435,46 +435,46 @@
   ],
   "chunks": [
    {
-    "t0": 0.095,
-    "t1": 0.855,
+    "t0": 0.12,
+    "t1": 0.724,
     "text": "In the prompt,"
    },
    {
-    "t0": 1.015,
-    "t1": 2.695,
+    "t0": 0.747,
+    "t1": 2.419,
     "text": "I ask for an hourly scan with X"
    },
    {
-    "t0": 2.775,
-    "t1": 4.615,
+    "t0": 2.489,
+    "t1": 4.219,
     "text": "Search and parallel claim checks,"
    },
    {
-    "t0": 4.695,
-    "t1": 6.535,
+    "t0": 4.393,
+    "t1": 6.158,
     "text": "with results saved in a Modal Dict and"
    },
    {
-    "t0": 6.615,
-    "t1": 8.375,
+    "t0": 6.204,
+    "t1": 7.562,
     "text": "shown on a dark web page."
    },
    {
-    "t0": 8.455,
-    "t1": 10.135,
+    "t0": 7.887,
+    "t1": 9.118,
     "text": "It must never post to X,"
    },
    {
-    "t0": 10.215,
-    "t1": 13.255,
+    "t0": 9.141,
+    "t1": 11.685,
     "text": "and it labels counts as posts found, not totals."
    }
   ]
  },
  "0005.png": {
   "text": "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
-  "dur": 5.4,
-  "takeAt": 56.785,
+  "dur": 5.063,
+  "takeAt": 50.987,
   "mode": "single-take-1",
   "take": [
    [
@@ -555,26 +555,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.095,
-    "t1": 2.095,
+    "t0": 0.12,
+    "t1": 2.151,
     "text": "Devin replies with a short plan that matches"
    },
    {
-    "t0": 2.175,
-    "t1": 4.175,
+    "t0": 2.198,
+    "t1": 4.264,
     "text": "the prompt, and then it writes the app"
    },
    {
-    "t0": 4.255,
-    "t1": 5.4,
+    "t0": 4.311,
+    "t1": 5.063,
     "text": "and its tests."
    }
   ]
  },
  "0011.png": {
   "text": "Then it runs modal deploy, and calls the public URL to check that the page responds.",
-  "dur": 4.85,
-  "takeAt": 62.2,
+  "dur": 4.5,
+  "takeAt": 56.345,
   "mode": "single-take-1",
   "take": [
    [
@@ -655,26 +655,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.693,
+    "t0": 0.032,
+    "t1": 1.495,
     "text": "Then it runs modal deploy,"
    },
    {
-    "t0": 1.747,
-    "t1": 3.56,
+    "t0": 1.739,
+    "t1": 3.574,
     "text": "and calls the public URL to check that"
    },
    {
-    "t0": 3.6,
-    "t1": 4.85,
+    "t0": 3.608,
+    "t1": 4.5,
     "text": "the page responds."
    }
   ]
  },
  "0016.png": {
   "text": "Next, Devin pushes a branch and opens a pull request.",
-  "dur": 3.425,
-  "takeAt": 67.24,
+  "dur": 2.99,
+  "takeAt": 61.11,
   "mode": "single-take-1",
   "take": [
    [
@@ -756,15 +756,15 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 3.425,
+    "t1": 2.99,
     "text": "Next, Devin pushes a branch and opens a pull request."
    }
   ]
  },
  "0018.png": {
   "text": "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
-  "dur": 5.505,
-  "takeAt": 70.76,
+  "dur": 4.635,
+  "takeAt": 64.315,
   "mode": "single-take-1",
   "take": [
    [
@@ -845,221 +845,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.4,
+    "t0": 0.085,
+    "t1": 1.931,
     "text": "Devin Review checks the pull request."
    },
    {
-    "t0": 2.44,
-    "t1": 3.8,
+    "t0": 2.256,
+    "t1": 3.475,
     "text": "Three findings are resolved,"
    },
    {
-    "t0": 3.88,
-    "t1": 5.505,
+    "t0": 3.498,
+    "t1": 4.635,
     "text": "and four are still open."
    }
   ]
  },
  "0028.png": {
   "text": "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-  "dur": 7.2,
-  "takeAt": 76.265,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "modal.png",
-    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
-    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0005.png",
-    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
-    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
-   ],
-   [
-    "0011.png",
-    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
-    "Then it runs modal deploy, and calls the public URL to check that the page responds."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0018.png",
-    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
-    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the page running on Modal.",
-    "Here's the page running on Modal."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.055,
-    "t1": 0.975,
-    "text": "When it's done,"
-   },
-   {
-    "t0": 1.015,
-    "t1": 3.255,
-    "text": "Devin reports the deployed URL and how it"
-   },
-   {
-    "t0": 3.415,
-    "t1": 4.268,
-    "text": "tested the app,"
-   },
-   {
-    "t0": 4.322,
-    "t1": 7.2,
-    "text": "and notes that every verdict so far was supported."
-   }
-  ]
- },
- "0029.png": {
-  "text": "Here's the page running on Modal.",
-  "dur": 1.96,
-  "takeAt": 83.465,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
-    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
-   ],
-   [
-    "0001.png",
-    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
-    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
-   ],
-   [
-    "modal.png",
-    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
-    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
-   ],
-   [
-    "0003.png",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
-    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
-   ],
-   [
-    "0005.png",
-    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
-    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
-   ],
-   [
-    "0011.png",
-    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
-    "Then it runs modal deploy, and calls the public URL to check that the page responds."
-   ],
-   [
-    "0016.png",
-    "Next, Devin pushes a branch and opens a pull request.",
-    "Next, Devin pushes a branch and opens a pull request."
-   ],
-   [
-    "0018.png",
-    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
-    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
-   ],
-   [
-    "0028.png",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
-    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
-   ],
-   [
-    "0029.png",
-    "Here's the page running on Modal.",
-    "Here's the page running on Modal."
-   ],
-   [
-    "0030.png",
-    "This run found five posts, and all five claims were supported by their sources.",
-    "This run found five posts, and all five claims were supported by their sources."
-   ],
-   [
-    "0031.png",
-    "Each card shows the post, the claim Grok pulled out, and the verdict.",
-    "Each card shows the post, the claim Grok pulled out, and the verdict."
-   ],
-   [
-    "0032.png",
-    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
-    "Below that are the primary source links, like the archive paper behind this benchmark claim."
-   ],
-   [
-    "0034.png",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
-   ],
-   [
-    "outro",
-    "Viral claims in, verdicts with primary sources out.",
-    "Viral claims in, verdicts with primary sources out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.055,
-    "t1": 1.96,
-    "text": "Here's the page running on Modal."
-   }
-  ]
- },
- "0030.png": {
-  "text": "This run found five posts, and all five claims were supported by their sources.",
-  "dur": 4.665,
-  "takeAt": 85.48,
+  "dur": 6.15,
+  "takeAt": 69.075,
   "mode": "single-take-1",
   "take": [
    [
@@ -1141,20 +946,30 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.76,
-    "text": "This run found five posts,"
+    "t1": 0.747,
+    "text": "When it's done,"
    },
    {
-    "t0": 1.8,
-    "t1": 4.665,
-    "text": "and all five claims were supported by their sources."
+    "t0": 0.781,
+    "t1": 2.848,
+    "text": "Devin reports the deployed URL and how it"
+   },
+   {
+    "t0": 2.871,
+    "t1": 3.661,
+    "text": "tested the app,"
+   },
+   {
+    "t0": 3.835,
+    "t1": 6.15,
+    "text": "and notes that every verdict so far was supported."
    }
   ]
  },
- "0031.png": {
-  "text": "Each card shows the post, the claim Grok pulled out, and the verdict.",
-  "dur": 4.2,
-  "takeAt": 90.145,
+ "0029.png": {
+  "text": "Here's the page running on Modal.",
+  "dur": 1.535,
+  "takeAt": 75.495,
   "mode": "single-take-1",
   "take": [
    [
@@ -1235,18 +1050,203 @@
   ],
   "chunks": [
    {
-    "t0": 0.095,
-    "t1": 1.722,
+    "t0": 0.12,
+    "t1": 1.535,
+    "text": "Here's the page running on Modal."
+   }
+  ]
+ },
+ "0030.png": {
+  "text": "This run found five posts, and all five claims were supported by their sources.",
+  "dur": 4.016,
+  "takeAt": 77.294,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
+    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
+   ],
+   [
+    "0001.png",
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
+   ],
+   [
+    "0003.png",
+    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
+    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
+   ],
+   [
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
+   ],
+   [
+    "0011.png",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
+   ],
+   [
+    "0016.png",
+    "Next, Devin pushes a branch and opens a pull request.",
+    "Next, Devin pushes a branch and opens a pull request."
+   ],
+   [
+    "0018.png",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
+   ],
+   [
+    "0028.png",
+    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
+    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
+   ],
+   [
+    "0029.png",
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
+   ],
+   [
+    "0030.png",
+    "This run found five posts, and all five claims were supported by their sources.",
+    "This run found five posts, and all five claims were supported by their sources."
+   ],
+   [
+    "0031.png",
+    "Each card shows the post, the claim Grok pulled out, and the verdict.",
+    "Each card shows the post, the claim Grok pulled out, and the verdict."
+   ],
+   [
+    "0032.png",
+    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
+    "Below that are the primary source links, like the archive paper behind this benchmark claim."
+   ],
+   [
+    "0034.png",
+    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
+    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
+   ],
+   [
+    "outro",
+    "Viral claims in, verdicts with primary sources out.",
+    "Viral claims in, verdicts with primary sources out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.641,
+    "text": "This run found five posts,"
+   },
+   {
+    "t0": 1.664,
+    "t1": 4.016,
+    "text": "and all five claims were supported by their sources."
+   }
+  ]
+ },
+ "0031.png": {
+  "text": "Each card shows the post, the claim Grok pulled out, and the verdict.",
+  "dur": 3.358,
+  "takeAt": 81.532,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them.",
+    "Viral AI posts often make technical claims, like a benchmark record or a funding round, and few people check the sources behind them."
+   ],
+   [
+    "0001.png",
+    "Here, Devin builds a claim checker that uses the xAI API to find those posts on X, and shows a verdict for each claim with its primary sources.",
+    "Here, Devin builds a claim checker that uses the ex A I API to find those posts on X, and shows a verdict for each claim with its primary sources."
+   ],
+   [
+    "modal.png",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling .map() checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal.run URL, and a Modal Secret holds the xAI key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day.",
+    "It runs on Modal. A scheduled function pulls new posts every hour, so there's no server to keep running. Calling dot map checks the claims in parallel across containers. A Modal Dict stores the results, a web endpoint serves the page at a public modal dot run URL, and a Modal Secret holds the ex A I key. Between runs it scales to zero, and you pay by the second, instead of leaving a laptop script or a server on all day."
+   ],
+   [
+    "0003.png",
+    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals.",
+    "In the prompt, I ask for an hourly scan with X Search and parallel claim checks, with results saved in a Modal Dict and shown on a dark web page. It must never post to X, and it labels counts as posts found, not totals."
+   ],
+   [
+    "0005.png",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests.",
+    "Devin replies with a short plan that matches the prompt, and then it writes the app and its tests."
+   ],
+   [
+    "0011.png",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds.",
+    "Then it runs modal deploy, and calls the public URL to check that the page responds."
+   ],
+   [
+    "0016.png",
+    "Next, Devin pushes a branch and opens a pull request.",
+    "Next, Devin pushes a branch and opens a pull request."
+   ],
+   [
+    "0018.png",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open.",
+    "Devin Review checks the pull request. Three findings are resolved, and four are still open."
+   ],
+   [
+    "0028.png",
+    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported.",
+    "When it's done, Devin reports the deployed URL and how it tested the app, and notes that every verdict so far was supported."
+   ],
+   [
+    "0029.png",
+    "Here's the page running on Modal.",
+    "Here's the page running on Modal."
+   ],
+   [
+    "0030.png",
+    "This run found five posts, and all five claims were supported by their sources.",
+    "This run found five posts, and all five claims were supported by their sources."
+   ],
+   [
+    "0031.png",
+    "Each card shows the post, the claim Grok pulled out, and the verdict.",
+    "Each card shows the post, the claim Grok pulled out, and the verdict."
+   ],
+   [
+    "0032.png",
+    "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
+    "Below that are the primary source links, like the archive paper behind this benchmark claim."
+   ],
+   [
+    "0034.png",
+    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
+    "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals."
+   ],
+   [
+    "outro",
+    "Viral claims in, verdicts with primary sources out.",
+    "Viral claims in, verdicts with primary sources out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.49,
     "text": "Each card shows the post,"
    },
    {
-    "t0": 1.748,
-    "t1": 3.015,
+    "t0": 1.583,
+    "t1": 2.709,
     "text": "the claim Grok pulled out,"
    },
    {
-    "t0": 3.055,
-    "t1": 4.2,
+    "t0": 2.732,
+    "t1": 3.358,
     "text": "and the verdict."
    }
   ]
@@ -1254,8 +1254,8 @@
  "0032.png": {
   "text": "Below that are the primary source links, like the arXiv paper behind this benchmark claim.",
   "say": "Below that are the primary source links, like the archive paper behind this benchmark claim.",
-  "dur": 4.905,
-  "takeAt": 94.4,
+  "dur": 4.909,
+  "takeAt": 85.201,
   "mode": "single-take-1",
   "take": [
    [
@@ -1337,20 +1337,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.221,
+    "t1": 2.222,
     "text": "Below that are the primary source links,"
    },
    {
-    "t0": 2.271,
-    "t1": 4.855,
+    "t0": 2.272,
+    "t1": 4.859,
     "text": "like the arXiv paper behind this benchmark claim."
    }
   ]
  },
  "0034.png": {
   "text": "X Search returns a sample of posts, so the page labels its counts as posts found by each search, not totals.",
-  "dur": 6.785,
-  "takeAt": 99.32,
+  "dur": 5.849,
+  "takeAt": 90.901,
   "mode": "single-take-1",
   "take": [
    [
@@ -1432,25 +1432,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.16,
+    "t1": 2.14,
     "text": "X Search returns a sample of posts,"
    },
    {
-    "t0": 2.2,
-    "t1": 4.28,
+    "t0": 2.384,
+    "t1": 4.23,
     "text": "so the page labels its counts as posts"
    },
    {
-    "t0": 4.36,
-    "t1": 6.785,
+    "t0": 4.288,
+    "t1": 5.849,
     "text": "found by each search, not totals."
    }
   ]
  },
  "outro": {
   "text": "Viral claims in, verdicts with primary sources out.",
-  "dur": 3.33,
-  "takeAt": 106.16,
+  "dur": 2.74,
+  "takeAt": 97.02,
   "mode": "single-take-1",
   "take": [
    [
@@ -1532,12 +1532,12 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.4,
+    "t1": 1.048,
     "text": "Viral claims in,"
    },
    {
-    "t0": 1.44,
-    "t1": 3.33,
+    "t0": 1.165,
+    "t1": 2.74,
     "text": "verdicts with primary sources out."
    }
   ]

@@ -4,6 +4,8 @@ window.SPEC = {
   "outro": "Every viral claim, checked against its sources",
   "voOutro": "Every viral claim, checked against its sources.",
   "dark": true,
+  "tailHold": 0.3,
+  "outroVoDelay": 0.6,
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.3,
@@ -54,7 +56,7 @@ window.SPEC = {
       "fade": 0,
       "cursor": false,
       "capPos": "bottom",
-      "hold": 7.40282,
+      "hold": 7.16,
       "cap": "A public modal.run page that scales to zero"
     },
     "0002.png": {
@@ -78,7 +80,7 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "scene": "pipe3",
-      "hold": 4,
+      "hold": 3.6,
       "cap": "Results in a modal.Dict, served by a web endpoint",
       "vo": "The verdicts land in the Modal Dict, and the page running on Modal shows them."
     },
