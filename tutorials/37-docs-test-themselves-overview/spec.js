@@ -12,8 +12,8 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "hold": 7,
-      "cap": "Every snippet, run as written, on a fresh VM",
-      "vo": "Docs that test themselves means every code snippet on every docs page is run exactly as written, on a fresh machine, so you find out which examples are broken before your users do."
+      "cap": "In this video: how docs that test themselves work",
+      "vo": "In this video, we'll show how docs that test themselves work, where every code snippet on every docs page is run exactly as written on a fresh machine, so you find out which examples are broken before your users do."
     },
     "0001.png": {
       "scene": "fanout",

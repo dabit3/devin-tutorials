@@ -1,10 +1,10 @@
 # Docs that test themselves: voice script
 
-Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`), generated as one take with `_kit/tools/vo_onetake.py`, ElevenLabs default settings.
+Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`), generated as one whole-script take with `_kit/tools/vo.py`, ElevenLabs `eleven_multilingual_v2`, default settings.
 
 ## Intro
 
-- Docs that test themselves means every code snippet on every docs page gets run exactly as written, on a fresh machine, and each broken one comes back as a pull request that fixes either the docs or the SDK.
+- In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.
 - It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.
 ## The run
 

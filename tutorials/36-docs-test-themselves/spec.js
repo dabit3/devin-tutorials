@@ -16,8 +16,8 @@ window.SPEC = {
       "scene": "intro",
       "hold": 7,
       "cursor": false,
-      "cap": "Every snippet, run exactly as written, on a fresh VM",
-      "vo": "Docs that test themselves means every code snippet on every docs page gets run exactly as written, on a fresh machine, and each broken one comes back as a pull request that fixes either the docs or the SDK."
+      "cap": "In this video: docs that test themselves, run on fresh VMs",
+      "vo": "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
     },
     "s001.png": {
       "scene": "uses",

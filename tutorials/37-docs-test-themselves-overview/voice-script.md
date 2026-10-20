@@ -1,10 +1,10 @@
 # Docs that test themselves (overview): voice script
 
-Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`), generated as one take with `_kit/tools/vo_onetake.py`, ElevenLabs default settings.
+Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`), generated as one whole-script take with `_kit/tools/vo.py`, ElevenLabs `eleven_multilingual_v2`, default settings.
 
 ## How it works
 
-- Docs that test themselves means every code snippet on every docs page is run exactly as written, on a fresh machine, so you find out which examples are broken before your users do.
+- In this video, we'll show how docs that test themselves work, where every code snippet on every docs page is run exactly as written on a fresh machine, so you find out which examples are broken before your users do.
 - One Devin coordinates the run, and it starts a managed Devin for each docs page, each on its own fresh VM, all in parallel.
 
 ## A real run
