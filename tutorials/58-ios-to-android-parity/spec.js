@@ -1,7 +1,7 @@
 window.SPEC = {
   "title": "Port an iOS screen to Android",
   "subtitle": "Run it in the Simulator, port it on the emulator, prove parity in one PR",
-  "outro": "Run the original, port it, prove parity in one PR",
+  "outro": "Run both versions, and let the PR show they match",
   "speed": 3,
   "cps": 48,
   "pollRunMax": 2.5,
@@ -15,7 +15,7 @@ window.SPEC = {
     "0000.png": {
       "hold": 2.6,
       "cursor": false,
-      "vo": "Here's how to port an iOS screen to Android with Devin, and prove that both versions match."
+      "vo": "In this video, you'll see how to port an iOS screen to Android with Devin, and prove that both versions match."
     },
     "0001.png": {
       "cursor": true,
@@ -252,5 +252,5 @@ window.SPEC = {
       "hold": 0.8
     }
   },
-  "voOutro": "Run the original on macOS, port it on Android, and prove they match in one pull request."
+  "voOutro": "The takeaway: when Devin can run both the original and the port, the pull request doesn't just say they match, it shows you."
 };
