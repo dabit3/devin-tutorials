@@ -35,7 +35,7 @@ function link(ctx, k, x0, y0, x1, y1, s, t = 0, horizontal = false) {
   };
   ctx.save(); ctx.globalAlpha = k.alpha;
   ctx.beginPath(); ctx.moveTo(x0, y0); ctx.bezierCurveTo(horizontal ? mx : x0, horizontal ? y0 : my, horizontal ? mx : x1, horizontal ? y1 : my, x1, y1);
-  ctx.strokeStyle = LINE; ctx.lineWidth = 1.4; ctx.stroke();
+  ctx.save(); ctx.globalAlpha *= k.prog(s, t - .25, t + .15); ctx.strokeStyle = LINE; ctx.lineWidth = 1.4; ctx.stroke(); ctx.restore();
   if (p > 0) {
     ctx.beginPath(); ctx.moveTo(x0, y0); for (let i = 1; i <= Math.ceil(48*p); i++) ctx.lineTo(...P(Math.min(p, i/48)));
     ctx.strokeStyle = 'rgba(32,120,255,.6)'; ctx.stroke();
@@ -65,12 +65,16 @@ function at(scene, phrase, fallback) {
 function flow(scene, section, title, active, nodes, footer) {
   return (ctx, s, k) => {
     header(ctx, s, k, section, title, active);
+    let last = 0;
     nodes.forEach((n, i) => {
-      const t = at(scene, n.cue || n.title, .6+i*1.05), x = [300,720,1140][i];
+      const t = at(scene, n.cue || n.title, .6+i*1.05), x = [300,720,1140][i]; last = Math.max(last, t);
       if (i) link(ctx, k, x-260, 401, x-160, 401, s, t, true);
       node(ctx, k, x, 401, n.title, n.lines, enter(k,s,t), i===1 ? .6 : 0, 320, 154, n.avatar);
     });
-    if (footer) pill(ctx, k, footer, 720, 594, enter(k,s,3.5));
+    if (footer) {
+      const f = typeof footer === 'string' ? { text: footer } : footer;
+      pill(ctx, k, f.text, 720, 594, enter(k, s, f.cue ? at(scene, f.cue, 3.5) : Math.max(3.5, last + .8)));
+    }
   };
 }
 function overview(ctx, s, k) {
@@ -84,19 +88,16 @@ function overview(ctx, s, k) {
   card(ctx,k,720,409,168,112,enter(k,s,.2),.7); mark(ctx,k,720,390,38,enter(k,s,.2)); text(ctx,k,'Devin',720,434,23,enter(k,s,.2),600);
 }
 function fusion(ctx,s,k) {
-  header(ctx,s,k,'HOW THE WORK GETS DONE','Fusion: one Devin, two complementary models',1);
-  const t0 = at('fusion','lead',1), t1 = at('fusion','sidekick',4);
-  card(ctx,k,720,311,230,92,enter(k,s,.6),.6); mark(ctx,k,655,311,38,enter(k,s,.6)); text(ctx,k,'Your task',752,311,24,enter(k,s,.6),600);
-  link(ctx,k,650,357,460,417,s,t0); link(ctx,k,790,357,980,417,s,t1);
-  node(ctx,k,460,489,'Frontier lead',['Plans and investigates','Checks correctness'],enter(k,s,t0),.6,370,144);
-  node(ctx,k,980,489,'Efficient sidekick',['Implements the plan','Runs builds and tests'],enter(k,s,t1),0,370,144);
-  pill(ctx,k,'Available in Devin Cloud',720,620,enter(k,s,6));
-}
-function adaptive(ctx,s,k) {
-  header(ctx,s,k,'MODEL CHOICE','Model routing and model collaboration are different',1);
-  const a = enter(k,s,.6); node(ctx,k,435,402,'Fusion',['Lead + sidekick','Collaborate on the same task'],a,.6,450,185);
-  node(ctx,k,1005,402,'Adaptive',['Routes each request','Selects an underlying model'],enter(k,s,at('adaptive','Adaptive',3)),0,450,185);
-  pill(ctx,k,'The right level of intelligence for the work',720,594,enter(k,s,5));
+  header(ctx,s,k,'HOW THE WORK GETS DONE','Fusion: a frontier lead with an efficient sidekick',1);
+  text(ctx,k,'One of many model options in Devin Cloud',720,240,18,enter(k,s,.3),400,SUB);
+  const t0 = at('fusion','frontier',3), t1 = at('fusion','sidekick',4.5), t2 = at('fusion','delegates',7);
+  card(ctx,k,720,321,230,84,enter(k,s,.6),.6); mark(ctx,k,655,321,38,enter(k,s,.6)); text(ctx,k,'Your task',752,321,24,enter(k,s,.6),600);
+  link(ctx,k,650,363,460,417,s,t0); link(ctx,k,790,363,980,417,s,t1);
+  node(ctx,k,460,489,'Frontier lead',['Makes the key decisions','Plans and reviews'],enter(k,s,t0),.6,370,144);
+  node(ctx,k,980,489,'Efficient sidekick',['Takes delegated work','Edits, builds and tests'],enter(k,s,t1),0,370,144);
+  link(ctx,k,645,489,795,489,s,t2,true);
+  text(ctx,k,'DELEGATES',720,470,12,enter(k,s,t2),500,SUB,'JetBrains Mono');
+  pill(ctx,k,'Frontier-level results at up to 60% lower cost in Cognition’s benchmark',720,612,enter(k,s,at('fusion','sixty',12)));
 }
 function managed(ctx,s,k) {
   header(ctx,s,k,'PARALLEL EXECUTION','A coordinator for work that spans many modules',1);
@@ -119,12 +120,12 @@ function services(ctx,s,k) {
 }
 function automation(ctx,s,k) {
   header(ctx,s,k,'WHEN WORK STARTS','Automations connect a signal to an action',5);
-  const data=[['Trigger',['Event or schedule']],['Conditions',['Match only what matters']],['Action',['Start or message a session']]];
+  const data=[['Trigger',['Event or schedule']],['Conditions',['Match only what matters']],['Action',['Start or message a session','With the event as context']]];
   data.forEach(([title,lines],i)=>{
-    const x=[300,720,1140][i],t=.8+i*1.2; if(i) link(ctx,k,x-260,393,x-160,393,s,t,true);
-    node(ctx,k,x,393,title,lines,enter(k,s,t),i===2?.7:0,320,145,i===2);
+    const x=[300,720,1140][i],t=at('automation',['trigger','conditions','action'][i],3+i*1.2); if(i) link(ctx,k,x-260,393,x-160,393,s,t,true);
+    node(ctx,k,x,393,title,lines,enter(k,s,t),i===2?.7:0,320,170,i===2);
   });
-  pill(ctx,k,'The event payload becomes session context',720,572,enter(k,s,4.5));
+  pill(ctx,k,'Create an automation by describing it in natural language',720,578,enter(k,s,at('automation','natural',1.5)));
 }
 function triggers(ctx,s,k) {
   header(ctx,s,k,'RECURRING AND EVENT-DRIVEN WORK','Start the right task at the right time',5);
@@ -147,10 +148,12 @@ function incident(ctx,s,k) {
 }
 function practices(ctx,s,k) {
   header(ctx,s,k,'HOW YOUR TEAM WORKS','Reusable procedures, not a new prompt every time');
-  node(ctx,k,310,403,'Skills',['Discoverable procedures','Versioned with your code'],enter(k,s,at('practices','Skills',.6)),.6,335,166);
-  node(ctx,k,720,403,'Playbooks',['Reusable task instructions','Attached to sessions'],enter(k,s,at('practices','playbooks',2.5)),0,335,166);
-  node(ctx,k,1130,403,'Personal memory',['Preferences and lessons','For your future sessions'],enter(k,s,at('practices','memory',4.5)),0,335,166);
-  text(ctx,k,'Automation-started sessions do not use personal memory',720,593,18,enter(k,s,6.5),400,SUB);
+  const ts=[at('practices','Skills',.6),at('practices','playbooks',1.2),at('practices','memory',4.5),at('practices','Automation-started',8)];
+  const focus=i=>.6*k.prog(s,ts[i],ts[i]+.4)*(1-k.prog(s,ts[i+1]+(i===0?1.2:0),ts[i+1]+(i===0?1.6:.4)));
+  node(ctx,k,310,403,'Skills',['Discoverable procedures','Versioned with your code'],enter(k,s,ts[0]),focus(0),335,166);
+  node(ctx,k,720,403,'Playbooks',['Reusable task instructions','Attached to sessions'],enter(k,s,ts[1]),focus(1),335,166);
+  node(ctx,k,1130,403,'Personal memory',['Preferences and lessons','For your future sessions'],enter(k,s,ts[2]),focus(2),335,166);
+  text(ctx,k,'Automation-started sessions do not use personal memory',720,593,18,enter(k,s,ts[3]),400,SUB);
 }
 function uses(ctx,s,k) {
   header(ctx,s,k,'WHERE THE LIFECYCLE PAYS OFF','Delegate an outcome, not just a coding step');
@@ -175,8 +178,8 @@ window.SCENES = {
   overview,
   deepwiki: flow('deepwiki','UNDERSTAND THE SYSTEM','DeepWiki gives the codebase a readable map',0,[{title:'Your repository',lines:['Source code and structure'],cue:'repositories'},{title:'DeepWiki',lines:['Documentation and diagrams'],avatar:true},{title:'Shared understanding',lines:['Architecture and source links'],cue:'architecture'}],'Start with context, before making a change'),
   plan: flow('plan','SCOPE THE CHANGE','Turn codebase questions and tickets into a plan',0,[{title:'Ask Devin',lines:['Answers grounded in code'],cue:'Ask Devin'},{title:'Plan the work',lines:['Relevant files and approach'],cue:'plan'},{title:'Jira or Linear',lines:['Analyze and scope tickets'],cue:'tickets'}],'Explore first. Delegate with the right context.'),
-  build: flow('build','IMPLEMENT THE CHANGE','Devin works in its own development environment',1,[{title:'Your task',lines:['A goal and acceptance criteria'],cue:'task'},{title:'Devin session',lines:['Code, shell and browser'],avatar:true,cue:'environment'},{title:'Pull request',lines:['Your repository conventions'],cue:'pull request'}],'Repo blueprints prepare tools and dependencies'),
-  fusion, adaptive, managed,
+  build: flow('build','IMPLEMENT THE CHANGE','Devin works in its own development environment',1,[{title:'Your task',lines:['A goal and acceptance criteria'],cue:'task'},{title:'Devin session',lines:['Its own virtual machine'],avatar:true,cue:'virtual'},{title:'Pull request',lines:['Your repository conventions'],cue:'pull request'}],{text:'Linux, macOS or Windows virtual machines',cue:'Linux'}),
+  fusion, managed,
   test: flow('test','VERIFY THE CHANGE','Run the checks your repository already uses',2,[{title:'Implementation',lines:['Code under test'],cue:'tests'},{title:'Test and fix',lines:['Test suites, lint and types'],avatar:true,cue:'lint'},{title:'Evidence',lines:['Report what was checked'],cue:'checked'}],'Write new tests using your team’s patterns'),
   computer: flow('computer','TEST BEHAVIOR, NOT ONLY CODE','Computer Use adds the user’s point of view',2,[{title:'Running application',lines:['Browser or desktop'],cue:'Computer Use'},{title:'Devin tests the UI',lines:['Clicks, types and observes'],avatar:true,cue:'interface'},{title:'Visual evidence',lines:['Recordings and screenshots'],cue:'recordings'}],'Exercise the flow a real user would follow'),
   review: flow('review','REVIEW AND ITERATE','A first pass, followed by a feedback loop',3,[{title:'Devin Review',lines:['Correctness and team standards'],cue:'Review'},{title:'Feedback',lines:['Bugs, comments and CI failures'],cue:'comments'},{title:'Auto-Fix',lines:['Responds when enabled'],avatar:true,cue:'Auto-Fix'}],'Push fixes back to the same pull request'),
@@ -184,7 +187,7 @@ window.SCENES = {
   ship: flow('ship','SHIP THROUGH YOUR PROCESS','Human review stays in the delivery path',3,[{title:'Devin’s pull request',lines:['Normal branch protections'],cue:'pull requests'},{title:'Your team',lines:['Reviews and decides to merge'],cue:'team'},{title:'Your delivery pipeline',lines:['Existing CI/CD and releases'],cue:'pipeline'}],'Your controls. Your infrastructure. Your decision.'),
   mcp: flow('mcp','EXTEND DEVIN’S REACH','MCP connects Devin to external tools and data',5,[{title:'Connected systems',lines:['Tools and data sources'],cue:'MCP'},{title:'MCP servers',lines:['Expose authorized tools'],cue:'servers'},{title:'Devin session',lines:['Uses tools in the task'],avatar:true,cue:'tools'}],'Install a plugin, then authorize its connection'),
   services,
-  data: flow('data','UNDERSTAND THE IMPACT','Connected data can inform the next decision',5,[{title:'Connected data',lines:['Database and analytics MCPs'],cue:'data'},{title:'Data Analyst',lines:['Queries and visualizations'],avatar:true,cue:'Data Analyst'},{title:'Engineering context',lines:['Metrics, trends and anomalies'],cue:'metrics'}],'Available from Slack or the web app'),
+  data: flow('data','UNDERSTAND THE IMPACT','Connected data can inform the next decision',5,[{title:'Connected data',lines:['Database and analytics MCPs'],cue:'data'},{title:'Data Analyst',lines:['Queries and visualizations'],avatar:true,cue:'Data Analyst'},{title:'Engineering context',lines:['Metrics, trends and anomalies'],cue:'metrics'}],{text:'Slack • Web app • Mobile app • Anywhere Devin is accessible',cue:'Slack'}),
   automation, triggers, incident, practices, uses, system
 };
 })();

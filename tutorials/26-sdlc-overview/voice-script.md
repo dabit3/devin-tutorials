@@ -1,6 +1,6 @@
 # Devin across the SDLC — expanded introduction
 
-Nader voice. The whole script is one continuous ElevenLabs take (one request, default settings, no seed), cut locally at sentence boundaries.
+Nader voice (eleven_multilingual_v2, default settings). The whole script is one continuous ElevenLabs take (one request, no seed), cut locally at sentence boundaries. Two narrated cuts share this script: one with the kit's light music bed and one with the upbeat music track.
 
 ## overview
 
@@ -24,7 +24,7 @@ Here, the plan points to the exact files that need to change.
 
 ## build
 
-When you delegate a task, Devin works asynchronously in its own environment, with code, a shell, and a browser. Repository blueprints prepare the tools and dependencies. The result is a pull request that follows your conventions.
+When you delegate a task, Devin works asynchronously in its own virtual machine, with code, a shell, and a browser. Those machines can run Linux, macOS, or Windows. Repository blueprints prepare the tools and dependencies. The result is a pull request that follows your conventions.
 
 ## Proof — The work lands in a normal pull request
 
@@ -32,13 +32,7 @@ This session opened a pull request in the demo repository, ready for review.
 
 ## fusion
 
-Devin Cloud supports Fusion. Fusion pairs a frontier lead model with an efficient sidekick. The lead plans, investigates, and checks correctness, while the sidekick implements the plan and runs builds and tests. You still work with a single Devin.
-
-## adaptive
-
-Fusion is model collaboration, not a single model router. Adaptive is a separate option. It evaluates each request and picks a model that fits the complexity of the task.
-
-_Voice spelling: Fusion is model collaboration, not a single model rauter. Adaptive is a separate option. It evaluates each request and picks a model that fits the complexity of the task._
+Devin Cloud offers many model options, and Fusion is one of the most important. Fusion runs two agents in parallel: a frontier lead and a cost-effective sidekick. The lead makes the key decisions, like the plan and the final review, and delegates the rest. Each agent keeps its own context, and Devin can switch models mid-session as the task changes. On Cognition's coding benchmark, that kept frontier-level performance at up to sixty percent lower cost.
 
 ## managed
 
@@ -94,11 +88,11 @@ With Datadog and Sentry connected, Devin can investigate logs and errors. Metaba
 
 ## data
 
-For data questions, Devin's Data Analyst can query connected sources, analyze metrics and trends, and create visualizations. It works from Slack or the web app, so engineering decisions can draw on more than code.
+For data questions, Devin's Data Analyst can query connected sources, analyze metrics and trends, and create visualizations. You can ask from Slack, the web app, or the mobile app. It works anywhere Devin is accessible, so engineering decisions can draw on more than code.
 
 ## automation
 
-Automations decide when work starts. A trigger detects an event or a schedule, and conditions narrow what should run. The action starts or messages a Devin session, with the event payload included as context.
+Automations decide when work starts. You can create one just by describing it in natural language. A trigger detects an event or a schedule, and conditions narrow what should run. The action starts or messages a Devin session, with the event payload included as context.
 
 ## Proof — A failing GitHub check starts a session with defined instructions
 
