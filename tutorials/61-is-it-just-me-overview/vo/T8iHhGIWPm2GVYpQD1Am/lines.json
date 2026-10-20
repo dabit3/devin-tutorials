@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "Is it just me, or is Slack not working for everyone? This app answers that from real posts on X.",
-  "dur": 6.35,
+  "dur": 5.33,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -79,17 +79,17 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.12,
+    "t1": 0.789,
     "text": "Is it just me,"
    },
    {
-    "t0": 1.2,
-    "t1": 3.28,
+    "t0": 0.836,
+    "t1": 2.647,
     "text": "or is Slack not working for everyone?"
    },
    {
-    "t0": 3.52,
-    "t1": 6.35,
+    "t0": 3.03,
+    "t1": 5.33,
     "text": "This app answers that from real posts on X."
    }
   ]
@@ -97,8 +97,8 @@
  "0001.png": {
   "text": "Here's how it works. Grok searches X through the xAI API. Modal runs everything else, from a scheduled job to the page at its public URL.",
   "say": "Here's how it works. Grok searches X through the ex A I API. Modal runs everything else, from a scheduled job to the page at its public URL.",
-  "dur": 9.4,
-  "takeAt": 6.6,
+  "dur": 8.755,
+  "takeAt": 5.395,
   "mode": "single-take-1",
   "take": [
    [
@@ -175,27 +175,27 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.24,
+    "t1": 1.107,
     "text": "Here's how it works."
    },
    {
-    "t0": 1.48,
-    "t1": 4.48,
+    "t0": 1.432,
+    "t1": 4.137,
     "text": "Grok searches X through the xAI API."
    },
    {
-    "t0": 4.76,
-    "t1": 6.44,
+    "t0": 4.462,
+    "t1": 5.832,
     "text": "Modal runs everything else,"
    },
    {
-    "t0": 6.52,
-    "t1": 8.28,
+    "t0": 6.006,
+    "t1": 7.771,
     "text": "from a scheduled job to the page at"
    },
    {
-    "t0": 8.36,
-    "t1": 9.4,
+    "t0": 7.817,
+    "t1": 8.755,
     "text": "its public URL."
    }
   ]
@@ -203,8 +203,8 @@
  "0002.png": {
   "text": "Every minute, a Modal Cron job wakes up and fans out with starmap, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
   "say": "Every minute, a Modal Cron job wakes up and fans out with star map, one scan per service, in parallel. The counts land in a Modal Dict, so they persist between runs.",
-  "dur": 10.21,
-  "takeAt": 16.36,
+  "dur": 9.201,
+  "takeAt": 14.439,
   "mode": "single-take-1",
   "take": [
    [
@@ -281,32 +281,32 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 0.975,
+    "t1": 0.867,
     "text": "Every minute,"
    },
    {
-    "t0": 0.995,
-    "t1": 2.461,
+    "t0": 0.887,
+    "t1": 2.167,
     "text": "a Modal Cron job wakes"
    },
    {
-    "t0": 2.481,
-    "t1": 4.459,
+    "t0": 2.187,
+    "t1": 3.913,
     "text": "up and fans out with starmap,"
    },
    {
-    "t0": 4.479,
-    "t1": 6.76,
+    "t0": 3.933,
+    "t1": 5.925,
     "text": "one scan per service, in parallel."
    },
    {
-    "t0": 6.8,
-    "t1": 8.6,
+    "t0": 6.169,
+    "t1": 7.667,
     "text": "The counts land in a Modal Dict,"
    },
    {
-    "t0": 8.68,
-    "t1": 10.21,
+    "t0": 7.701,
+    "t1": 9.201,
     "text": "so they persist between runs."
    }
   ]
@@ -314,8 +314,8 @@
  "0003.png": {
   "text": "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
   "say": "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, it wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret.",
-  "dur": 17.13,
-  "takeAt": 27.0,
+  "dur": 15.672,
+  "takeAt": 23.878,
   "mode": "single-take-1",
   "take": [
    [
@@ -392,50 +392,50 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 0.92,
+    "t1": 0.793,
     "text": "Why Modal?"
    },
    {
-    "t0": 1.16,
-    "t1": 4.24,
+    "t0": 1.037,
+    "t1": 3.789,
     "text": "A script on your laptop stops when your laptop sleeps."
    },
    {
-    "t0": 4.44,
-    "t1": 6.32,
+    "t0": 4.114,
+    "t1": 5.728,
     "text": "Your own server runs all day for a"
    },
    {
-    "t0": 6.36,
-    "t1": 7.88,
+    "t0": 5.786,
+    "t1": 7.028,
     "text": "job that takes seconds."
    },
    {
-    "t0": 8.12,
-    "t1": 10.28,
+    "t0": 7.47,
+    "t1": 9.223,
     "text": "On Modal, it wakes up on schedule,"
    },
    {
-    "t0": 10.32,
-    "t1": 12.12,
+    "t0": 9.397,
+    "t1": 10.906,
     "text": "scales to zero in between,"
    },
    {
-    "t0": 12.16,
-    "t1": 14.44,
+    "t0": 11.08,
+    "t1": 12.95,
     "text": "and you only pay for the seconds it runs."
    },
    {
-    "t0": 14.68,
-    "t1": 17.13,
+    "t0": 13.333,
+    "t1": 15.672,
     "text": "The xAI key stays in a Modal Secret."
    }
   ]
  },
  "0004.png": {
   "text": "In the real run, Devin built it from one plain-language prompt.",
-  "dur": 3.62,
-  "takeAt": 44.44,
+  "dur": 3.226,
+  "takeAt": 39.854,
   "mode": "single-take-1",
   "take": [
    [
@@ -512,20 +512,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.16,
+    "t1": 0.945,
     "text": "In the real run,"
    },
    {
-    "t0": 1.24,
-    "t1": 3.62,
+    "t0": 1.026,
+    "t1": 3.226,
     "text": "Devin built it from one plain-language prompt."
    }
   ]
  },
  "0005.png": {
   "text": "It checked the setup, made one real search call, and shared its plan.",
-  "dur": 3.85,
-  "takeAt": 48.28,
+  "dur": 3.474,
+  "takeAt": 43.326,
   "mode": "single-take-1",
   "take": [
    [
@@ -602,25 +602,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.32,
+    "t1": 1.118,
     "text": "It checked the setup,"
    },
    {
-    "t0": 1.44,
-    "t1": 2.84,
+    "t0": 1.176,
+    "t1": 2.5,
     "text": "made one real search call,"
    },
    {
-    "t0": 2.88,
-    "t1": 3.85,
+    "t0": 2.523,
+    "t1": 3.474,
     "text": "and shared its plan."
    }
   ]
  },
  "0006.png": {
   "text": "Then it wrote the app, and deployed it with modal deploy.",
-  "dur": 3.0,
-  "takeAt": 52.44,
+  "dur": 2.41,
+  "takeAt": 47.25,
   "mode": "single-take-1",
   "take": [
    [
@@ -697,20 +697,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.32,
+    "t1": 0.991,
     "text": "Then it wrote the app,"
    },
    {
-    "t0": 1.36,
-    "t1": 3.0,
+    "t0": 1.014,
+    "t1": 2.41,
     "text": "and deployed it with modal deploy."
    }
   ]
  },
  "0007.png": {
   "text": "It tested the deployed page, and all twelve unit tests passed.",
-  "dur": 3.56,
-  "takeAt": 55.72,
+  "dur": 3.123,
+  "takeAt": 49.967,
   "mode": "single-take-1",
   "take": [
    [
@@ -787,20 +787,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.56,
+    "t1": 1.524,
     "text": "It tested the deployed page,"
    },
    {
-    "t0": 1.68,
-    "t1": 3.56,
+    "t0": 1.548,
+    "t1": 3.123,
     "text": "and all twelve unit tests passed."
    }
   ]
  },
  "0008.png": {
   "text": "And it opened a pull request that's ready to merge.",
-  "dur": 2.64,
-  "takeAt": 59.56,
+  "dur": 2.566,
+  "takeAt": 53.554,
   "mode": "single-take-1",
   "take": [
    [
@@ -877,15 +877,15 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.6,
+    "t1": 2.566,
     "text": "And it opened a pull request that's ready to merge."
    }
   ]
  },
  "0009.png": {
   "text": "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
-  "dur": 9.76,
-  "takeAt": 62.52,
+  "dur": 8.803,
+  "takeAt": 56.387,
   "mode": "single-take-1",
   "take": [
    [
@@ -962,40 +962,40 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.8,
+    "t1": 1.629,
     "text": "The app is honest by design."
    },
    {
-    "t0": 2.12,
-    "t1": 4.04,
+    "t0": 2.012,
+    "t1": 3.858,
     "text": "A region or error only shows up if"
    },
    {
-    "t0": 4.08,
-    "t1": 5.48,
+    "t0": 3.916,
+    "t1": 5.135,
     "text": "a post actually says it."
    },
    {
-    "t0": 5.88,
-    "t1": 7.56,
+    "t0": 5.46,
+    "t1": 6.83,
     "text": "The counts are posts found,"
    },
    {
-    "t0": 7.6,
-    "t1": 8.68,
+    "t0": 7.004,
+    "t1": 7.91,
     "text": "a sample of X,"
    },
    {
-    "t0": 8.76,
-    "t1": 9.76,
+    "t0": 7.945,
+    "t1": 8.803,
     "text": "not every report."
    }
   ]
  },
  "0010.png": {
   "text": "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
-  "dur": 4.93,
-  "takeAt": 72.6,
+  "dur": 4.89,
+  "takeAt": 65.5,
   "mode": "single-take-1",
   "take": [
    [
@@ -1072,20 +1072,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.64,
+    "t1": 1.653,
     "text": "On the page running on Modal,"
    },
    {
-    "t0": 1.8,
-    "t1": 4.93,
+    "t0": 1.827,
+    "t1": 4.89,
     "text": "ChatGPT had six posts found in the last six hours."
    }
   ]
  },
  "0011.png": {
   "text": "For AWS, one post named the Middle East, quoted straight from X.",
-  "dur": 4.72,
-  "takeAt": 77.8,
+  "dur": 3.718,
+  "takeAt": 70.992,
   "mode": "single-take-1",
   "take": [
    [
@@ -1162,20 +1162,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 3.32,
+    "t1": 2.488,
     "text": "For AWS, one post named the Middle East,"
    },
    {
-    "t0": 3.52,
-    "t1": 4.68,
+    "t0": 2.558,
+    "t1": 3.718,
     "text": "quoted straight from X."
    }
   ]
  },
  "0012.png": {
   "text": "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
-  "dur": 10.45,
-  "takeAt": 82.84,
+  "dur": 9.676,
+  "takeAt": 74.974,
   "mode": "single-take-1",
   "take": [
    [
@@ -1252,35 +1252,35 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.64,
+    "t1": 1.362,
     "text": "From here, you can extend it."
    },
    {
-    "t0": 2.04,
-    "t1": 4.16,
+    "t0": 1.537,
+    "t1": 3.51,
     "text": "Watch the services your team depends on."
    },
    {
-    "t0": 4.36,
-    "t1": 6.4,
+    "t0": 3.719,
+    "t1": 5.693,
     "text": "Alert a Slack channel when posts spike."
    },
    {
-    "t0": 6.6,
-    "t1": 9.08,
+    "t0": 5.937,
+    "t1": 8.247,
     "text": "Or compare it against the official status page,"
    },
    {
-    "t0": 9.12,
-    "t1": 10.45,
+    "t0": 8.526,
+    "t1": 9.676,
     "text": "and keep weeks of history."
    }
   ]
  },
  "outro": {
   "text": "Is it just me? Now you know.",
-  "dur": 2.08,
-  "takeAt": 93.64,
+  "dur": 1.525,
+  "takeAt": 85.045,
   "mode": "single-take-1",
   "take": [
    [
@@ -1356,13 +1356,13 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.2,
+    "t0": 0.01,
+    "t1": 0.811,
     "text": "Is it just me?"
    },
    {
-    "t0": 1.48,
-    "t1": 2.08,
+    "t0": 0.881,
+    "t1": 1.525,
     "text": "Now you know."
    }
   ]

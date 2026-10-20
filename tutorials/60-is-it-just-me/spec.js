@@ -3,6 +3,7 @@ window.SPEC = {
   "subtitle": "Build an outage detector with Devin, Modal and the xAI API",
   "outro": "Real posts in, an honest answer out",
   "voOutro": "Real posts go in, and an honest answer comes out.",
+  "outroVoDelay": -0.3,
   "dark": true,
   "speed": 3,
   "cps": 48,
@@ -48,12 +49,14 @@ window.SPEC = {
       "waitVo": true
     },
     "0005.png": {
+      "voDelay": -2.6,
       "hold": 4,
       "cap": "A Modal job every minute, real posts, stored counts",
       "vo": "The prompt asks for exactly that. A Modal job every minute that searches X for outage posts, and stores the counts.",
       "subPos": "bottom"
     },
     "0006.png": {
+      "voDelay": -0.2,
       "cap": "Only regions and errors the posts mention",
       "vo": "It also asks for a dark page with a spike chart, showing only the regions and errors that posts actually mention.",
       "subPos": "bottom"
@@ -1206,6 +1209,7 @@ window.SPEC = {
       }
     },
     "0380.png": {
+      "voDelay": -0.2,
       "hold": 2,
       "cap": "1 post found in 15 minutes, 6 in 6 hours",
       "vo": "For ChatGPT, it found one post in the last fifteen minutes and six in the last six hours, so it's probably just you.",
@@ -1251,6 +1255,7 @@ window.SPEC = {
       }
     },
     "0390.png": {
+      "voDelay": -0.9,
       "hold": 1.5,
       "cap": "AWS: one post in 24 hours names a region",
       "vo": "For AWS, one post in the last day names the Middle East.",

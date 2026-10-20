@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "When Slack or GitHub stops working, everyone asks the same thing. Is it just me, or is it down for everyone?",
-  "dur": 6.73,
+  "dur": 5.135,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -104,22 +104,22 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.24,
+    "t1": 1.73,
     "text": "When Slack or GitHub stops working,"
    },
    {
-    "t0": 2.32,
-    "t1": 4.08,
+    "t0": 1.753,
+    "t1": 2.961,
     "text": "everyone asks the same thing."
    },
    {
-    "t0": 4.32,
-    "t1": 5.28,
+    "t0": 2.995,
+    "t1": 3.855,
     "text": "Is it just me,"
    },
    {
-    "t0": 5.4,
-    "t1": 6.73,
+    "t0": 3.936,
+    "t1": 5.135,
     "text": "or is it down for everyone?"
    }
   ]
@@ -127,8 +127,8 @@
  "0001.png": {
   "text": "In this tutorial, Devin builds an app that answers that from real posts on X. It searches X with the xAI API, and it runs on Modal.",
   "say": "In this tutorial, Devin builds an app that answers that from real posts on X. It searches X with the ex A I API, and it runs on Modal.",
-  "dur": 8.88,
-  "takeAt": 7.08,
+  "dur": 7.784,
+  "takeAt": 5.546,
   "mode": "single-take-1",
   "take": [
    [
@@ -230,27 +230,27 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.16,
+    "t1": 0.99,
     "text": "In this tutorial,"
    },
    {
-    "t0": 1.24,
-    "t1": 3.16,
+    "t0": 1.025,
+    "t1": 2.894,
     "text": "Devin builds an app that answers that from"
    },
    {
-    "t0": 3.24,
-    "t1": 4.76,
+    "t0": 2.964,
+    "t1": 4.114,
     "text": "real posts on X."
    },
    {
-    "t0": 5.0,
-    "t1": 7.246,
+    "t0": 4.497,
+    "t1": 6.42,
     "text": "It searches X with the xAI API,"
    },
    {
-    "t0": 7.266,
-    "t1": 8.84,
+    "t0": 6.44,
+    "t1": 7.784,
     "text": "and it runs on Modal."
    }
   ]
@@ -258,8 +258,8 @@
  "scene-pipeline.png": {
   "text": "Here's where Modal fits. Grok finds the posts through the xAI API, and Modal runs the rest. Every minute, a scheduled job scans each service in parallel. It stores the counts in a Modal Dict, and serves the page at a public URL.",
   "say": "Here's where Modal fits. Grok finds the posts through the ex A I API, and Modal runs the rest. Every minute, a scheduled job scans each service in parallel. It stores the counts in a Modal Dict, and serves the page at a public URL.",
-  "dur": 14.33,
-  "takeAt": 16.36,
+  "dur": 13.1,
+  "takeAt": 13.715,
   "mode": "single-take-1",
   "take": [
    [
@@ -360,33 +360,33 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.56,
+    "t0": 0.019,
+    "t1": 1.32,
     "text": "Here's where Modal fits."
    },
    {
-    "t0": 1.8,
-    "t1": 4.533,
+    "t0": 1.645,
+    "t1": 4.133,
     "text": "Grok finds the posts through the xAI API,"
    },
    {
-    "t0": 4.553,
-    "t1": 6.2,
+    "t0": 4.153,
+    "t1": 5.65,
     "text": "and Modal runs the rest."
    },
    {
-    "t0": 6.44,
-    "t1": 9.88,
+    "t0": 6.033,
+    "t1": 9.18,
     "text": "Every minute, a scheduled job scans each service in parallel."
    },
    {
-    "t0": 10.28,
-    "t1": 12.28,
+    "t0": 9.505,
+    "t1": 11.281,
     "text": "It stores the counts in a Modal Dict,"
    },
    {
-    "t0": 12.36,
-    "t1": 14.28,
+    "t0": 11.304,
+    "t1": 13.1,
     "text": "and serves the page at a public URL."
    }
   ]
@@ -394,8 +394,8 @@
  "scene-why.png": {
   "text": "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, the job wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The xAI key stays in a Modal Secret.",
   "say": "Why Modal? A script on your laptop stops when your laptop sleeps. Your own server runs all day for a job that takes seconds. On Modal, the job wakes up on schedule, scales to zero in between, and you only pay for the seconds it runs. The ex A I key stays in a Modal Secret.",
-  "dur": 17.61,
-  "takeAt": 31.16,
+  "dur": 15.893,
+  "takeAt": 27.187,
   "mode": "single-take-1",
   "take": [
    [
@@ -497,50 +497,50 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 0.76,
+    "t1": 0.712,
     "text": "Why Modal?"
    },
    {
-    "t0": 1.16,
-    "t1": 4.28,
+    "t0": 0.863,
+    "t1": 3.591,
     "text": "A script on your laptop stops when your laptop sleeps."
    },
    {
-    "t0": 4.52,
-    "t1": 6.44,
+    "t0": 3.916,
+    "t1": 5.542,
     "text": "Your own server runs all day for a"
    },
    {
-    "t0": 6.52,
-    "t1": 8.12,
+    "t0": 5.611,
+    "t1": 6.854,
     "text": "job that takes seconds."
    },
    {
-    "t0": 8.2,
-    "t1": 10.68,
+    "t0": 7.237,
+    "t1": 9.385,
     "text": "On Modal, the job wakes up on schedule,"
    },
    {
-    "t0": 10.76,
-    "t1": 12.6,
+    "t0": 9.71,
+    "t1": 11.161,
     "text": "scales to zero in between,"
    },
    {
-    "t0": 12.64,
-    "t1": 15.08,
+    "t0": 11.184,
+    "t1": 13.111,
     "text": "and you only pay for the seconds it runs."
    },
    {
-    "t0": 15.16,
-    "t1": 17.61,
+    "t0": 13.436,
+    "t1": 15.893,
     "text": "The xAI key stays in a Modal Secret."
    }
   ]
  },
  "0005.png": {
   "text": "The prompt asks for exactly that. A Modal job every minute that searches X for outage posts, and stores the counts.",
-  "dur": 6.82,
-  "takeAt": 49.08,
+  "dur": 6.145,
+  "takeAt": 43.575,
   "mode": "single-take-1",
   "take": [
    [
@@ -641,31 +641,31 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.28,
+    "t0": 0,
+    "t1": 1.831,
     "text": "The prompt asks for exactly that."
    },
    {
-    "t0": 2.36,
-    "t1": 4.68,
+    "t0": 2.156,
+    "t1": 4.118,
     "text": "A Modal job every minute that searches X"
    },
    {
-    "t0": 4.76,
-    "t1": 5.68,
+    "t0": 4.177,
+    "t1": 5.105,
     "text": "for outage posts,"
    },
    {
-    "t0": 5.72,
-    "t1": 6.82,
+    "t0": 5.129,
+    "t1": 6.145,
     "text": "and stores the counts."
    }
   ]
  },
  "0006.png": {
   "text": "It also asks for a dark page with a spike chart, showing only the regions and errors that posts actually mention.",
-  "dur": 6.11,
-  "takeAt": 56.16,
+  "dur": 6.095,
+  "takeAt": 50.105,
   "mode": "single-take-1",
   "take": [
    [
@@ -766,26 +766,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.84,
+    "t0": 0.108,
+    "t1": 1.907,
     "text": "It also asks for a dark page with"
    },
    {
-    "t0": 1.92,
-    "t1": 2.88,
+    "t0": 1.942,
+    "t1": 2.732,
     "text": "a spike chart,"
    },
    {
-    "t0": 2.96,
-    "t1": 6.11,
+    "t0": 2.976,
+    "t1": 6.095,
     "text": "showing only the regions and errors that posts actually mention."
    }
   ]
  },
  "0019.png": {
   "text": "Devin checks the setup, makes one real search call, and replies with its plan. That call cost about five cents, so it caps the scans with a daily post budget.",
-  "dur": 9.29,
-  "takeAt": 62.6,
+  "dur": 9.21,
+  "takeAt": 56.56,
   "mode": "single-take-1",
   "take": [
    [
@@ -887,35 +887,35 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.48,
+    "t1": 1.304,
     "text": "Devin checks the setup,"
    },
    {
-    "t0": 1.6,
-    "t1": 3.16,
+    "t0": 1.397,
+    "t1": 2.825,
     "text": "makes one real search call,"
    },
    {
-    "t0": 3.2,
-    "t1": 4.84,
+    "t0": 2.941,
+    "t1": 4.276,
     "text": "and replies with its plan."
    },
    {
-    "t0": 4.96,
-    "t1": 6.84,
+    "t0": 4.717,
+    "t1": 6.656,
     "text": "That call cost about five cents,"
    },
    {
-    "t0": 6.92,
-    "t1": 9.29,
+    "t0": 6.807,
+    "t1": 9.21,
     "text": "so it caps the scans with a daily post budget."
    }
   ]
  },
  "0074.png": {
   "text": "Then Devin writes the app, and deploys it with modal deploy. Modal confirms the deployment in under two seconds.",
-  "dur": 6.46,
-  "takeAt": 72.2,
+  "dur": 5.905,
+  "takeAt": 66.095,
   "mode": "single-take-1",
   "take": [
    [
@@ -1016,26 +1016,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.64,
+    "t0": 0.048,
+    "t1": 1.313,
     "text": "Then Devin writes the app,"
    },
    {
-    "t0": 1.68,
-    "t1": 3.52,
+    "t0": 1.336,
+    "t1": 2.95,
     "text": "and deploys it with modal deploy."
    },
    {
-    "t0": 3.8,
-    "t1": 6.46,
+    "t0": 3.461,
+    "t1": 5.905,
     "text": "Modal confirms the deployment in under two seconds."
    }
   ]
  },
  "0202.png": {
   "text": "It tests the deployed page, fixes four bugs that Devin Review found, and all twelve unit tests pass.",
-  "dur": 6.05,
-  "takeAt": 78.92,
+  "dur": 6.143,
+  "takeAt": 72.327,
   "mode": "single-take-1",
   "take": [
    [
@@ -1137,25 +1137,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.64,
+    "t1": 1.641,
     "text": "It tests the deployed page,"
    },
    {
-    "t0": 1.76,
-    "t1": 4.04,
+    "t0": 1.815,
+    "t1": 4.137,
     "text": "fixes four bugs that Devin Review found,"
    },
    {
-    "t0": 4.16,
-    "t1": 6.05,
+    "t0": 4.346,
+    "t1": 6.143,
     "text": "and all twelve unit tests pass."
    }
   ]
  },
  "0369.png": {
   "text": "The pull request is open in the session, and it's ready to merge.",
-  "dur": 3.28,
-  "takeAt": 85.16,
+  "dur": 2.955,
+  "takeAt": 78.84,
   "mode": "single-take-1",
   "take": [
    [
@@ -1257,20 +1257,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.12,
+    "t1": 1.873,
     "text": "The pull request is open in the session,"
    },
    {
-    "t0": 2.16,
-    "t1": 3.24,
+    "t0": 1.897,
+    "t1": 2.955,
     "text": "and it's ready to merge."
    }
   ]
  },
  "0370.png": {
   "text": "And here's the app, running on Modal at its public URL. GitHub is quiet right now, and the page says no posts were found.",
-  "dur": 7.23,
-  "takeAt": 88.68,
+  "dur": 6.466,
+  "takeAt": 81.894,
   "mode": "single-take-1",
   "take": [
    [
@@ -1372,30 +1372,30 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.24,
+    "t1": 0.932,
     "text": "And here's the app,"
    },
    {
-    "t0": 1.36,
-    "t1": 3.24,
+    "t0": 0.99,
+    "t1": 3.162,
     "text": "running on Modal at its public URL."
    },
    {
-    "t0": 3.72,
-    "t1": 5.16,
+    "t0": 3.44,
+    "t1": 4.566,
     "text": "GitHub is quiet right now,"
    },
    {
-    "t0": 5.24,
-    "t1": 7.23,
+    "t0": 4.59,
+    "t1": 6.466,
     "text": "and the page says no posts were found."
    }
   ]
  },
  "0380.png": {
   "text": "For ChatGPT, it found one post in the last fifteen minutes and six in the last six hours, so it's probably just you.",
-  "dur": 7.39,
-  "takeAt": 96.12,
+  "dur": 6.345,
+  "takeAt": 88.695,
   "mode": "single-take-1",
   "take": [
    [
@@ -1496,26 +1496,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.68,
+    "t0": 0.041,
+    "t1": 2.142,
     "text": "For ChatGPT, it found one post in the"
    },
    {
-    "t0": 2.8,
-    "t1": 5.0,
+    "t0": 2.189,
+    "t1": 4.081,
     "text": "last fifteen minutes and six in the last"
    },
    {
-    "t0": 5.12,
-    "t1": 7.39,
+    "t0": 4.128,
+    "t1": 6.345,
     "text": "six hours, so it's probably just you."
    }
   ]
  },
  "0381.png": {
   "text": "The chart counts the posts it found about problems. It doesn't count people.",
-  "dur": 3.99,
-  "takeAt": 103.84,
+  "dur": 3.973,
+  "takeAt": 95.512,
   "mode": "single-take-1",
   "take": [
    [
@@ -1617,20 +1617,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.8,
+    "t1": 2.733,
     "text": "The chart counts the posts it found about problems."
    },
    {
-    "t0": 2.88,
-    "t1": 3.99,
+    "t0": 2.825,
+    "t1": 3.973,
     "text": "It doesn't count people."
    }
   ]
  },
  "0382.png": {
   "text": "None of these posts names a region, so that panel stays empty.",
-  "dur": 3.545,
-  "takeAt": 108.2,
+  "dur": 3.808,
+  "takeAt": 99.982,
   "mode": "single-take-1",
   "take": [
    [
@@ -1732,20 +1732,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.933,
+    "t1": 2.094,
     "text": "None of these posts names a region,"
    },
    {
-    "t0": 1.987,
-    "t1": 3.545,
+    "t0": 2.338,
+    "t1": 3.808,
     "text": "so that panel stays empty."
    }
   ]
  },
  "0383.png": {
   "text": "The most common error quoted is model not found, in three posts.",
-  "dur": 3.903,
-  "takeAt": 111.747,
+  "dur": 3.585,
+  "takeAt": 104.345,
   "mode": "single-take-1",
   "take": [
    [
@@ -1846,21 +1846,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.333,
+    "t0": 0.041,
+    "t1": 2.2,
     "text": "The most common error quoted is model not"
    },
    {
-    "t0": 2.493,
-    "t1": 3.903,
+    "t0": 2.258,
+    "t1": 3.585,
     "text": "found, in three posts."
    }
   ]
  },
  "0384.png": {
   "text": "Every number on the page comes from real posts like these, each linked back to X.",
-  "dur": 4.53,
-  "takeAt": 115.96,
+  "dur": 4.485,
+  "takeAt": 108.215,
   "mode": "single-take-1",
   "take": [
    [
@@ -1961,26 +1961,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.96,
+    "t0": 0.107,
+    "t1": 1.871,
     "text": "Every number on the page comes from real"
    },
    {
-    "t0": 2.12,
-    "t1": 3.16,
+    "t0": 1.941,
+    "t1": 2.916,
     "text": "posts like these,"
    },
    {
-    "t0": 3.24,
-    "t1": 4.53,
+    "t0": 3.16,
+    "t1": 4.485,
     "text": "each linked back to X."
    }
   ]
  },
  "0390.png": {
   "text": "For AWS, one post in the last day names the Middle East.",
-  "dur": 3.77,
-  "takeAt": 120.76,
+  "dur": 3.555,
+  "takeAt": 113.125,
   "mode": "single-take-1",
   "take": [
    [
@@ -2081,21 +2081,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.68,
+    "t0": 0.085,
+    "t1": 2.441,
     "text": "For AWS, one post in the last day"
    },
    {
-    "t0": 2.76,
-    "t1": 3.77,
+    "t0": 2.534,
+    "t1": 3.555,
     "text": "names the Middle East."
    }
   ]
  },
  "0392.png": {
   "text": "That region comes straight from the post's own words, so the page can say exactly where it came from.",
-  "dur": 5.21,
-  "takeAt": 124.84,
+  "dur": 4.855,
+  "takeAt": 117.035,
   "mode": "single-take-1",
   "take": [
    [
@@ -2196,26 +2196,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.2,
+    "t0": 0.087,
+    "t1": 2.118,
     "text": "That region comes straight from the post's own"
    },
    {
-    "t0": 2.28,
-    "t1": 4.52,
+    "t0": 2.165,
+    "t1": 4.243,
     "text": "words, so the page can say exactly where"
    },
    {
-    "t0": 4.56,
-    "t1": 5.21,
+    "t0": 4.266,
+    "t1": 4.855,
     "text": "it came from."
    }
   ]
  },
  "outro": {
   "text": "Real posts go in, and an honest answer comes out.",
-  "dur": 2.88,
-  "takeAt": 130.36,
+  "dur": 2.566,
+  "takeAt": 122.284,
   "mode": "single-take-1",
   "take": [
    [
@@ -2317,12 +2317,12 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.32,
+    "t1": 1.13,
     "text": "Real posts go in,"
    },
    {
-    "t0": 1.36,
-    "t1": 2.88,
+    "t0": 1.165,
+    "t1": 2.566,
     "text": "and an honest answer comes out."
    }
   ]

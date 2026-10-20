@@ -3,6 +3,7 @@ window.SPEC = {
   "subtitle": "An outage detector on Modal and the xAI API",
   "outro": "Is it just me? Now you know.",
   "voOutro": "Is it just me? Now you know.",
+  "outroVoDelay": -0.3,
   "dark": true,
   "speed": 3,
   "cps": 48,
@@ -85,6 +86,7 @@ window.SPEC = {
       "ringFor": 3
     },
     "0007.png": {
+      "voDelay": -0.3,
       "hold": 3,
       "cap": "All 12 unit tests pass",
       "vo": "It tested the deployed page, and all twelve unit tests passed.",
@@ -119,7 +121,8 @@ window.SPEC = {
       "ringFor": 3
     },
     "0009.png": {
-      "hold": 9,
+      "voDelay": -0.2,
+      "hold": 8.5,
       "cap": "Only what the posts actually say",
       "vo": "The app is honest by design. A region or error only shows up if a post actually says it. The counts are posts found, a sample of X, not every report.",
       "cursor": false,
@@ -127,6 +130,7 @@ window.SPEC = {
       "subPos": "bottom"
     },
     "0010.png": {
+      "voDelay": -0.6,
       "hold": 3,
       "cap": "ChatGPT: six posts found in six hours",
       "vo": "On the page running on Modal, ChatGPT had six posts found in the last six hours.",
@@ -147,7 +151,7 @@ window.SPEC = {
       "cursor": false
     },
     "0012.png": {
-      "hold": 10,
+      "hold": 8.5,
       "cap": "Ways to extend it",
       "vo": "From here, you can extend it. Watch the services your team depends on. Alert a Slack channel when posts spike. Or compare it against the official status page, and keep weeks of history.",
       "cursor": false,
