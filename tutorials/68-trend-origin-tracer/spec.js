@@ -8,7 +8,8 @@ window.SPEC = {
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.4,
-  "pollRunMax": 3,
+  "pollRunMax": 1.2,
+  "tailHold": 0.5,
   "capPos": "bottom",
   "edit": {
     "0000.png": {
@@ -42,6 +43,7 @@ window.SPEC = {
       "waitVo": true
     },
     "0003.png": {
+      "voDelay": -1.5,
       "cap": "A short, plain-language prompt",
       "vo": "Now for the prompt. It's short, and written in plain language."
     },
