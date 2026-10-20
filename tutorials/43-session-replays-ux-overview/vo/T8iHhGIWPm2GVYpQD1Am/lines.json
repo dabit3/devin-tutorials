@@ -1,1010 +1,290 @@
 {
  "0000.png": {
   "text": "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment.",
-  "dur": 8.03,
-  "takeAt": 0.0,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment.",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment."
-   ],
-   [
-    "0001.png",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag.",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
-   ],
-   [
-    "0002.png",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb.",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb."
-   ],
-   [
-    "0003.png",
-    "Devin reaches Metabase through the marketplace plugin.",
-    "Devin reaches Metabase through the marketplace plugin."
-   ],
-   [
-    "0004.png",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue.",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue."
-   ],
-   [
-    "0005.png",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping.",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping."
-   ],
-   [
-    "0006.png",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually.",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually."
-   ],
-   [
-    "0007.png",
-    "It opens a pull request and tests checkout in its browser.",
-    "It opens a pull request and tests checkout in its browser."
-   ],
-   [
-    "0008.png",
-    "With the flag off, the formatted number still gets stuck.",
-    "With the flag off, the formatted number still gets stuck."
-   ],
-   [
-    "0009.png",
-    "With it on, the same number goes straight to payment.",
-    "With it on, the same number goes straight to payment."
-   ],
-   [
-    "0010.png",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs.",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs."
-   ],
-   [
-    "outro",
-    "Analytics in, a flagged fix out.",
-    "Analytics in, a flagged fix out."
-   ]
-  ],
+  "dur": 6.66,
+  "at": 0.0,
+  "end": 6.66,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.92,
+    "t1": 1.683,
     "text": "A funnel chart can tell you where users"
    },
    {
-    "t0": 2.0,
-    "t1": 3.8,
+    "t0": 1.718,
+    "t1": 3.007,
     "text": "drop off, but not why."
    },
    {
-    "t0": 4.08,
-    "t1": 6.0,
+    "t0": 3.448,
+    "t1": 5.12,
     "text": "Here, more than half of the checkouts that"
    },
    {
-    "t0": 6.08,
-    "t1": 8.0,
+    "t0": 5.166,
+    "t1": 6.618,
     "text": "reach shipping never get to payment."
    }
   ]
  },
  "0001.png": {
   "text": "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag.",
-  "dur": 10.17,
-  "takeAt": 8.36,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment.",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment."
-   ],
-   [
-    "0001.png",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag.",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
-   ],
-   [
-    "0002.png",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb.",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb."
-   ],
-   [
-    "0003.png",
-    "Devin reaches Metabase through the marketplace plugin.",
-    "Devin reaches Metabase through the marketplace plugin."
-   ],
-   [
-    "0004.png",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue.",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue."
-   ],
-   [
-    "0005.png",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping.",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping."
-   ],
-   [
-    "0006.png",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually.",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually."
-   ],
-   [
-    "0007.png",
-    "It opens a pull request and tests checkout in its browser.",
-    "It opens a pull request and tests checkout in its browser."
-   ],
-   [
-    "0008.png",
-    "With the flag off, the formatted number still gets stuck.",
-    "With the flag off, the formatted number still gets stuck."
-   ],
-   [
-    "0009.png",
-    "With it on, the same number goes straight to payment.",
-    "With it on, the same number goes straight to payment."
-   ],
-   [
-    "0010.png",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs.",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs."
-   ],
-   [
-    "outro",
-    "Analytics in, a flagged fix out.",
-    "Analytics in, a flagged fix out."
-   ]
-  ],
+  "dur": 9.37,
+  "at": 6.89,
+  "end": 16.26,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.72,
+    "t0": 0.111,
+    "t1": 1.318,
     "text": "Devin can close that loop."
    },
    {
-    "t0": 1.96,
-    "t1": 3.16,
+    "t0": 1.341,
+    "t1": 2.386,
     "text": "It reads the funnel,"
    },
    {
-    "t0": 3.24,
-    "t1": 5.16,
+    "t0": 2.595,
+    "t1": 4.348,
     "text": "finds the step that loses people,"
    },
    {
-    "t0": 5.2,
-    "t1": 7.08,
+    "t0": 4.673,
+    "t1": 6.333,
     "text": "watches the replays from that step,"
    },
    {
-    "t0": 7.16,
-    "t1": 8.44,
+    "t0": 6.391,
+    "t1": 7.692,
     "text": "forms a hypothesis,"
    },
    {
-    "t0": 8.52,
-    "t1": 10.17,
+    "t0": 7.773,
+    "t1": 9.364,
     "text": "and ships a fix behind a flag."
    }
   ]
  },
  "0002.png": {
   "text": "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb.",
-  "dur": 8.02,
-  "takeAt": 18.92,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment.",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment."
-   ],
-   [
-    "0001.png",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag.",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
-   ],
-   [
-    "0002.png",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb.",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb."
-   ],
-   [
-    "0003.png",
-    "Devin reaches Metabase through the marketplace plugin.",
-    "Devin reaches Metabase through the marketplace plugin."
-   ],
-   [
-    "0004.png",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue.",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue."
-   ],
-   [
-    "0005.png",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping.",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping."
-   ],
-   [
-    "0006.png",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually.",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually."
-   ],
-   [
-    "0007.png",
-    "It opens a pull request and tests checkout in its browser.",
-    "It opens a pull request and tests checkout in its browser."
-   ],
-   [
-    "0008.png",
-    "With the flag off, the formatted number still gets stuck.",
-    "With the flag off, the formatted number still gets stuck."
-   ],
-   [
-    "0009.png",
-    "With it on, the same number goes straight to payment.",
-    "With it on, the same number goes straight to payment."
-   ],
-   [
-    "0010.png",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs.",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs."
-   ],
-   [
-    "outro",
-    "Analytics in, a flagged fix out.",
-    "Analytics in, a flagged fix out."
-   ]
-  ],
+  "dur": 8.03,
+  "at": 16.5,
+  "end": 24.53,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.0,
+    "t0": 0.079,
+    "t1": 0.822,
     "text": "In this demo,"
    },
    {
-    "t0": 1.08,
-    "t1": 3.24,
+    "t0": 0.845,
+    "t1": 2.935,
     "text": "we planted a phone-field bug on purpose in"
    },
    {
-    "t0": 3.32,
-    "t1": 4.44,
+    "t0": 2.981,
+    "t1": 3.968,
     "text": "a sample checkout,"
    },
    {
-    "t0": 4.48,
-    "t1": 6.68,
+    "t0": 4.247,
+    "t1": 6.511,
     "text": "and simulated three hundred and twenty sessions,"
    },
    {
-    "t0": 6.84,
-    "t1": 8.02,
+    "t0": 6.685,
+    "t1": 8.03,
     "text": "recorded with rrweb."
    }
   ]
  },
  "0003.png": {
   "text": "Devin reaches Metabase through the marketplace plugin.",
-  "dur": 2.65,
-  "takeAt": 27.4,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment.",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment."
-   ],
-   [
-    "0001.png",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag.",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
-   ],
-   [
-    "0002.png",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb.",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb."
-   ],
-   [
-    "0003.png",
-    "Devin reaches Metabase through the marketplace plugin.",
-    "Devin reaches Metabase through the marketplace plugin."
-   ],
-   [
-    "0004.png",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue.",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue."
-   ],
-   [
-    "0005.png",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping.",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping."
-   ],
-   [
-    "0006.png",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually.",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually."
-   ],
-   [
-    "0007.png",
-    "It opens a pull request and tests checkout in its browser.",
-    "It opens a pull request and tests checkout in its browser."
-   ],
-   [
-    "0008.png",
-    "With the flag off, the formatted number still gets stuck.",
-    "With the flag off, the formatted number still gets stuck."
-   ],
-   [
-    "0009.png",
-    "With it on, the same number goes straight to payment.",
-    "With it on, the same number goes straight to payment."
-   ],
-   [
-    "0010.png",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs.",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs."
-   ],
-   [
-    "outro",
-    "Analytics in, a flagged fix out.",
-    "Analytics in, a flagged fix out."
-   ]
-  ],
+  "dur": 2.67,
+  "at": 24.77,
+  "end": 27.44,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.65,
+    "t0": 0.144,
+    "t1": 2.594,
     "text": "Devin reaches Metabase through the marketplace plugin."
    }
   ]
  },
  "0004.png": {
   "text": "In its own browser, it watches a session stall on shipping, with five clicks on Continue.",
-  "dur": 4.99,
-  "takeAt": 30.36,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment.",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment."
-   ],
-   [
-    "0001.png",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag.",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
-   ],
-   [
-    "0002.png",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb.",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb."
-   ],
-   [
-    "0003.png",
-    "Devin reaches Metabase through the marketplace plugin.",
-    "Devin reaches Metabase through the marketplace plugin."
-   ],
-   [
-    "0004.png",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue.",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue."
-   ],
-   [
-    "0005.png",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping.",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping."
-   ],
-   [
-    "0006.png",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually.",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually."
-   ],
-   [
-    "0007.png",
-    "It opens a pull request and tests checkout in its browser.",
-    "It opens a pull request and tests checkout in its browser."
-   ],
-   [
-    "0008.png",
-    "With the flag off, the formatted number still gets stuck.",
-    "With the flag off, the formatted number still gets stuck."
-   ],
-   [
-    "0009.png",
-    "With it on, the same number goes straight to payment.",
-    "With it on, the same number goes straight to payment."
-   ],
-   [
-    "0010.png",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs.",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs."
-   ],
-   [
-    "outro",
-    "Analytics in, a flagged fix out.",
-    "Analytics in, a flagged fix out."
-   ]
-  ],
+  "dur": 4.74,
+  "at": 27.57,
+  "end": 32.31,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.16,
+    "t0": 0.072,
+    "t1": 1.071,
     "text": "In its own browser,"
    },
    {
-    "t0": 1.24,
-    "t1": 3.4,
+    "t0": 1.094,
+    "t1": 3.033,
     "text": "it watches a session stall on shipping,"
    },
    {
-    "t0": 3.48,
-    "t1": 4.99,
+    "t0": 3.149,
+    "t1": 4.693,
     "text": "with five clicks on Continue."
    }
   ]
  },
  "0005.png": {
   "text": "Then it states its hypothesis: every session with a formatted phone number dropped at shipping.",
-  "dur": 5.275,
-  "takeAt": 35.655,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment.",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment."
-   ],
-   [
-    "0001.png",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag.",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
-   ],
-   [
-    "0002.png",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb.",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb."
-   ],
-   [
-    "0003.png",
-    "Devin reaches Metabase through the marketplace plugin.",
-    "Devin reaches Metabase through the marketplace plugin."
-   ],
-   [
-    "0004.png",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue.",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue."
-   ],
-   [
-    "0005.png",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping.",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping."
-   ],
-   [
-    "0006.png",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually.",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually."
-   ],
-   [
-    "0007.png",
-    "It opens a pull request and tests checkout in its browser.",
-    "It opens a pull request and tests checkout in its browser."
-   ],
-   [
-    "0008.png",
-    "With the flag off, the formatted number still gets stuck.",
-    "With the flag off, the formatted number still gets stuck."
-   ],
-   [
-    "0009.png",
-    "With it on, the same number goes straight to payment.",
-    "With it on, the same number goes straight to payment."
-   ],
-   [
-    "0010.png",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs.",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs."
-   ],
-   [
-    "outro",
-    "Analytics in, a flagged fix out.",
-    "Analytics in, a flagged fix out."
-   ]
-  ],
+  "dur": 4.805,
+  "at": 32.565,
+  "end": 37.37,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.105,
-    "t1": 2.025,
+    "t0": 0.081,
+    "t1": 1.742,
     "text": "Then it states its hypothesis:"
    },
    {
-    "t0": 2.265,
-    "t1": 5.275,
+    "t0": 2.02,
+    "t1": 4.771,
     "text": "every session with a formatted phone number dropped at shipping."
    }
   ]
  },
  "0006.png": {
   "text": "It ships the fix behind a flag that's off by default, so you can roll it out gradually.",
-  "dur": 4.29,
-  "takeAt": 41.24,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment.",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment."
-   ],
-   [
-    "0001.png",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag.",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
-   ],
-   [
-    "0002.png",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb.",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb."
-   ],
-   [
-    "0003.png",
-    "Devin reaches Metabase through the marketplace plugin.",
-    "Devin reaches Metabase through the marketplace plugin."
-   ],
-   [
-    "0004.png",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue.",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue."
-   ],
-   [
-    "0005.png",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping.",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping."
-   ],
-   [
-    "0006.png",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually.",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually."
-   ],
-   [
-    "0007.png",
-    "It opens a pull request and tests checkout in its browser.",
-    "It opens a pull request and tests checkout in its browser."
-   ],
-   [
-    "0008.png",
-    "With the flag off, the formatted number still gets stuck.",
-    "With the flag off, the formatted number still gets stuck."
-   ],
-   [
-    "0009.png",
-    "With it on, the same number goes straight to payment.",
-    "With it on, the same number goes straight to payment."
-   ],
-   [
-    "0010.png",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs.",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs."
-   ],
-   [
-    "outro",
-    "Analytics in, a flagged fix out.",
-    "Analytics in, a flagged fix out."
-   ]
-  ],
+  "dur": 4.305,
+  "at": 37.59,
+  "end": 41.895,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.88,
+    "t0": 0.072,
+    "t1": 1.813,
     "text": "It ships the fix behind a flag that's"
    },
    {
-    "t0": 2.0,
-    "t1": 2.84,
+    "t0": 1.848,
+    "t1": 2.707,
     "text": "off by default,"
    },
    {
-    "t0": 2.88,
-    "t1": 4.28,
+    "t0": 2.858,
+    "t1": 4.305,
     "text": "so you can roll it out gradually."
    }
   ]
  },
  "0007.png": {
   "text": "It opens a pull request and tests checkout in its browser.",
-  "dur": 3.12,
-  "takeAt": 45.8,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment.",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment."
-   ],
-   [
-    "0001.png",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag.",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
-   ],
-   [
-    "0002.png",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb.",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb."
-   ],
-   [
-    "0003.png",
-    "Devin reaches Metabase through the marketplace plugin.",
-    "Devin reaches Metabase through the marketplace plugin."
-   ],
-   [
-    "0004.png",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue.",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue."
-   ],
-   [
-    "0005.png",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping.",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping."
-   ],
-   [
-    "0006.png",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually.",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually."
-   ],
-   [
-    "0007.png",
-    "It opens a pull request and tests checkout in its browser.",
-    "It opens a pull request and tests checkout in its browser."
-   ],
-   [
-    "0008.png",
-    "With the flag off, the formatted number still gets stuck.",
-    "With the flag off, the formatted number still gets stuck."
-   ],
-   [
-    "0009.png",
-    "With it on, the same number goes straight to payment.",
-    "With it on, the same number goes straight to payment."
-   ],
-   [
-    "0010.png",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs.",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs."
-   ],
-   [
-    "outro",
-    "Analytics in, a flagged fix out.",
-    "Analytics in, a flagged fix out."
-   ]
-  ],
+  "dur": 2.98,
+  "at": 42.22,
+  "end": 45.2,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.36,
+    "t0": 0.074,
+    "t1": 2.106,
     "text": "It opens a pull request and tests checkout"
    },
    {
-    "t0": 2.4,
-    "t1": 3.08,
+    "t0": 2.152,
+    "t1": 2.918,
     "text": "in its browser."
    }
   ]
  },
  "0008.png": {
   "text": "With the flag off, the formatted number still gets stuck.",
-  "dur": 3.14,
-  "takeAt": 49.24,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment.",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment."
-   ],
-   [
-    "0001.png",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag.",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
-   ],
-   [
-    "0002.png",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb.",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb."
-   ],
-   [
-    "0003.png",
-    "Devin reaches Metabase through the marketplace plugin.",
-    "Devin reaches Metabase through the marketplace plugin."
-   ],
-   [
-    "0004.png",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue.",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue."
-   ],
-   [
-    "0005.png",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping.",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping."
-   ],
-   [
-    "0006.png",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually.",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually."
-   ],
-   [
-    "0007.png",
-    "It opens a pull request and tests checkout in its browser.",
-    "It opens a pull request and tests checkout in its browser."
-   ],
-   [
-    "0008.png",
-    "With the flag off, the formatted number still gets stuck.",
-    "With the flag off, the formatted number still gets stuck."
-   ],
-   [
-    "0009.png",
-    "With it on, the same number goes straight to payment.",
-    "With it on, the same number goes straight to payment."
-   ],
-   [
-    "0010.png",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs.",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs."
-   ],
-   [
-    "outro",
-    "Analytics in, a flagged fix out.",
-    "Analytics in, a flagged fix out."
-   ]
-  ],
+  "dur": 2.62,
+  "at": 45.26,
+  "end": 47.88,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.24,
+    "t0": 0.053,
+    "t1": 0.9,
     "text": "With the flag off,"
    },
    {
-    "t0": 1.28,
-    "t1": 3.14,
+    "t0": 0.923,
+    "t1": 2.62,
     "text": "the formatted number still gets stuck."
    }
   ]
  },
  "0009.png": {
   "text": "With it on, the same number goes straight to payment.",
-  "dur": 2.97,
-  "takeAt": 52.68,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment.",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment."
-   ],
-   [
-    "0001.png",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag.",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
-   ],
-   [
-    "0002.png",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb.",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb."
-   ],
-   [
-    "0003.png",
-    "Devin reaches Metabase through the marketplace plugin.",
-    "Devin reaches Metabase through the marketplace plugin."
-   ],
-   [
-    "0004.png",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue.",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue."
-   ],
-   [
-    "0005.png",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping.",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping."
-   ],
-   [
-    "0006.png",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually.",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually."
-   ],
-   [
-    "0007.png",
-    "It opens a pull request and tests checkout in its browser.",
-    "It opens a pull request and tests checkout in its browser."
-   ],
-   [
-    "0008.png",
-    "With the flag off, the formatted number still gets stuck.",
-    "With the flag off, the formatted number still gets stuck."
-   ],
-   [
-    "0009.png",
-    "With it on, the same number goes straight to payment.",
-    "With it on, the same number goes straight to payment."
-   ],
-   [
-    "0010.png",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs.",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs."
-   ],
-   [
-    "outro",
-    "Analytics in, a flagged fix out.",
-    "Analytics in, a flagged fix out."
-   ]
-  ],
+  "dur": 2.33,
+  "at": 48.21,
+  "end": 50.54,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.0,
+    "t0": 0.063,
+    "t1": 0.609,
     "text": "With it on,"
    },
    {
-    "t0": 1.08,
-    "t1": 2.97,
+    "t0": 0.632,
+    "t1": 2.292,
     "text": "the same number goes straight to payment."
    }
   ]
  },
  "0010.png": {
   "text": "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs.",
-  "dur": 6.05,
-  "takeAt": 56.04,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment.",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment."
-   ],
-   [
-    "0001.png",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag.",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
-   ],
-   [
-    "0002.png",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb.",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb."
-   ],
-   [
-    "0003.png",
-    "Devin reaches Metabase through the marketplace plugin.",
-    "Devin reaches Metabase through the marketplace plugin."
-   ],
-   [
-    "0004.png",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue.",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue."
-   ],
-   [
-    "0005.png",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping.",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping."
-   ],
-   [
-    "0006.png",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually.",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually."
-   ],
-   [
-    "0007.png",
-    "It opens a pull request and tests checkout in its browser.",
-    "It opens a pull request and tests checkout in its browser."
-   ],
-   [
-    "0008.png",
-    "With the flag off, the formatted number still gets stuck.",
-    "With the flag off, the formatted number still gets stuck."
-   ],
-   [
-    "0009.png",
-    "With it on, the same number goes straight to payment.",
-    "With it on, the same number goes straight to payment."
-   ],
-   [
-    "0010.png",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs.",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs."
-   ],
-   [
-    "outro",
-    "Analytics in, a flagged fix out.",
-    "Analytics in, a flagged fix out."
-   ]
-  ],
+  "dur": 5.96,
+  "at": 50.68,
+  "end": 56.64,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.8,
+    "t0": 0.066,
+    "t1": 1.424,
     "text": "Point Devin at your own funnel:"
    },
    {
-    "t0": 1.96,
-    "t1": 3.96,
+    "t0": 1.703,
+    "t1": 3.7,
     "text": "signup drop-off, checkout errors,"
    },
    {
-    "t0": 4.04,
-    "t1": 6.05,
+    "t0": 3.851,
+    "t1": 5.929,
     "text": "onboarding steps, or mobile-only bugs."
    }
   ]
  },
  "outro": {
   "text": "Analytics in, a flagged fix out.",
-  "dur": 2.52,
-  "takeAt": 62.36,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment.",
-    "A funnel chart can tell you where users drop off, but not why. Here, more than half of the checkouts that reach shipping never get to payment."
-   ],
-   [
-    "0001.png",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag.",
-    "Devin can close that loop. It reads the funnel, finds the step that loses people, watches the replays from that step, forms a hypothesis, and ships a fix behind a flag."
-   ],
-   [
-    "0002.png",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb.",
-    "In this demo, we planted a phone-field bug on purpose in a sample checkout, and simulated three hundred and twenty sessions, recorded with rrweb."
-   ],
-   [
-    "0003.png",
-    "Devin reaches Metabase through the marketplace plugin.",
-    "Devin reaches Metabase through the marketplace plugin."
-   ],
-   [
-    "0004.png",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue.",
-    "In its own browser, it watches a session stall on shipping, with five clicks on Continue."
-   ],
-   [
-    "0005.png",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping.",
-    "Then it states its hypothesis: every session with a formatted phone number dropped at shipping."
-   ],
-   [
-    "0006.png",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually.",
-    "It ships the fix behind a flag that's off by default, so you can roll it out gradually."
-   ],
-   [
-    "0007.png",
-    "It opens a pull request and tests checkout in its browser.",
-    "It opens a pull request and tests checkout in its browser."
-   ],
-   [
-    "0008.png",
-    "With the flag off, the formatted number still gets stuck.",
-    "With the flag off, the formatted number still gets stuck."
-   ],
-   [
-    "0009.png",
-    "With it on, the same number goes straight to payment.",
-    "With it on, the same number goes straight to payment."
-   ],
-   [
-    "0010.png",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs.",
-    "Point Devin at your own funnel: signup drop-off, checkout errors, onboarding steps, or mobile-only bugs."
-   ],
-   [
-    "outro",
-    "Analytics in, a flagged fix out.",
-    "Analytics in, a flagged fix out."
-   ]
-  ],
+  "dur": 2.16,
+  "at": 56.74,
+  "end": 58.9,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.52,
+    "t0": 0.078,
+    "t1": 2.16,
     "text": "Analytics in, a flagged fix out."
    }
   ]
