@@ -102,7 +102,7 @@ function chip(ctx, k, t, x, y, a, on = 0) {
   txt(ctx, k, t, x, y, 13, 500, on ? rgba(BLUE, 1) : ink(0.7), a, 'center', 'JetBrains Mono', 0);
 }
 
-// 1. What you build: the app's SQL generator moves from a frontier API to your own small model on Modal.
+// 1. What you build: the app's SQL generator moves from a frontier API to your own 7B model on Modal.
 function value(ctx, s0, k) {
   bg(ctx, k); const s = s0 / st('value');
   eyebrow(ctx, k, 'POST-TRAINING ON MODAL', 140, ap(k, s, 0.05));
@@ -111,7 +111,7 @@ function value(ctx, s0, k) {
   txt(ctx, k, 'Ask your data', 260, ay + 44, 19, 600, '#191919', aa);
   txt(ctx, k, 'Question in, SQL out', 260, ay + 74, 14, 500, ink(0.55), aa);
   chip(ctx, k, 'generate_sql()', 260, ay + 112, aa);
-  const swapAt = T('0000.png', 'small', 1.6), doneAt = T('0000.png', 'swap', 3.2);
+  const swapAt = T('0000.png', 'open', 1.6), doneAt = T('0000.png', 'swap', 3.2);
   const fa = ap(k, s, 0.7), fy = 220 + 12 * (1 - fa), fade = 1 - 0.55 * ap(k, s, doneAt, 0.6);
   card(ctx, k, 960, fy, 370, 120, fa * fade);
   txt(ctx, k, 'Frontier API', 1145, fy + 44, 18, 600, '#191919', fa * fade);
