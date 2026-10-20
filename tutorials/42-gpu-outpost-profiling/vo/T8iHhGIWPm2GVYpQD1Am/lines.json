@@ -2,7 +2,7 @@
  "0002.png": {
   "text": "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H200 GPU running on Modal.",
   "say": "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H two hundred GPU running on Modal.",
-  "dur": 7.66,
+  "dur": 7.0,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -105,7 +105,7 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 7.66,
+    "t1": 7.0,
     "text": "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H200 GPU running on Modal."
    }
   ]
@@ -113,8 +113,8 @@
  "0003.png": {
   "text": "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU-only errors and benchmark changes on real hardware.",
   "say": "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU only errors and benchmark changes on real hardware.",
-  "dur": 9.225,
-  "takeAt": 7.96,
+  "dur": 8.62,
+  "takeAt": 7.45,
   "mode": "single-take-1",
   "take": [
    [
@@ -216,7 +216,7 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 9.225,
+    "t1": 8.62,
     "text": "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU-only errors and benchmark changes on real hardware."
    }
   ]
@@ -224,8 +224,8 @@
  "0004.png": {
   "text": "To set one up, create an outpost in Settings \u2192 Environment \u2192 Outposts. I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
   "say": "To set one up, create an outpost in Settings, Environment, Outposts. I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
-  "dur": 12.278,
-  "takeAt": 17.187,
+  "dur": 10.575,
+  "takeAt": 16.215,
   "mode": "single-take-1",
   "take": [
    [
@@ -327,20 +327,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 4.813,
+    "t1": 3.487,
     "text": "To set one up, create an outpost in Settings \u2192 Environment \u2192 Outposts."
    },
    {
-    "t0": 4.853,
-    "t1": 12.278,
+    "t0": 3.696,
+    "t1": 10.575,
     "text": "I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux."
    }
   ]
  },
  "0013.png": {
   "text": "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog.",
-  "dur": 8.465,
-  "takeAt": 29.48,
+  "dur": 8.268,
+  "takeAt": 27.152,
   "mode": "single-take-1",
   "take": [
    [
@@ -442,22 +442,22 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.2,
+    "t1": 2.163,
     "text": "Devin generates a token for the outpost and"
    },
    {
-    "t0": 2.28,
-    "t1": 4.12,
+    "t0": 2.198,
+    "t1": 3.986,
     "text": "the worker command that connects a machine to"
    },
    {
-    "t0": 4.32,
-    "t1": 6.2,
+    "t0": 4.079,
+    "t1": 6.238,
     "text": "it, and the token is only shown once,"
    },
    {
-    "t0": 6.28,
-    "t1": 8.465,
+    "t0": 6.482,
+    "t1": 8.268,
     "text": "so copy it before you close the dialog."
    }
   ]
@@ -465,8 +465,8 @@
  "0018.png": {
   "text": "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200.",
   "say": "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H two hundred.",
-  "dur": 8.68,
-  "takeAt": 37.945,
+  "dur": 8.245,
+  "takeAt": 35.805,
   "mode": "single-take-1",
   "take": [
    [
@@ -567,8 +567,8 @@
   ],
   "chunks": [
    {
-    "t0": 0.055,
-    "t1": 8.68,
+    "t0": 0.023,
+    "t1": 8.245,
     "text": "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200."
    }
   ]
@@ -576,233 +576,8 @@
  "0031.png": {
   "text": "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H200 in the background.",
   "say": "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H two hundred in the background.",
-  "dur": 7.56,
-  "takeAt": 46.625,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0002.png",
-    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H200 GPU running on Modal.",
-    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H two hundred GPU running on Modal."
-   ],
-   [
-    "0003.png",
-    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU-only errors and benchmark changes on real hardware.",
-    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU only errors and benchmark changes on real hardware."
-   ],
-   [
-    "0004.png",
-    "To set one up, create an outpost in Settings \u2192 Environment \u2192 Outposts. I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
-    "To set one up, create an outpost in Settings, Environment, Outposts. I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux."
-   ],
-   [
-    "0013.png",
-    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog.",
-    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog."
-   ],
-   [
-    "0018.png",
-    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200.",
-    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H two hundred."
-   ],
-   [
-    "0031.png",
-    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H200 in the background.",
-    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H two hundred in the background."
-   ],
-   [
-    "0061.png",
-    "When it prints worker started, the outpost is online.",
-    "When it prints worker started, the outpost is online."
-   ],
-   [
-    "0062.png",
-    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu.",
-    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu."
-   ],
-   [
-    "0068.png",
-    "The demo repo, gpu-train-demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck.",
-    "The demo repo, gpu train demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck."
-   ],
-   [
-    "0076.png",
-    "The session waits for the outpost, and the Modal worker picks it up within seconds.",
-    "The session waits for the outpost, and the Modal worker picks it up within seconds."
-   ],
-   [
-    "0077.png",
-    "From there Devin works on the H200 on its own, running the training script, profiling it and changing the code.",
-    "From there Devin works on the H two hundred on its own, running the training script, profiling it and changing the code."
-   ],
-   [
-    "0084.png",
-    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected.",
-    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected."
-   ],
-   [
-    "0090.png",
-    "First it checks the hardware, and nvidia-smi shows an NVIDIA H200.",
-    "First it checks the hardware, and nvidia S M I shows an NVIDIA H two hundred."
-   ],
-   [
-    "0093.png",
-    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step.",
-    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step."
-   ],
-   [
-    "0096.png",
-    "The torch profiler confirms it, with most of each step spent waiting on the data loader.",
-    "The torch profiler confirms it, with most of each step spent waiting on the data loader."
-   ],
-   [
-    "0099.png",
-    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical.",
-    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical."
-   ],
-   [
-    "0102.png",
-    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix.",
-    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix."
-   ],
-   [
-    "0104.png",
-    "On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script.",
-    "On the H two hundred, training is about fourteen times faster, and since the repo has no tests, Devin checked the speedup by running the training script."
-   ],
-   [
-    "outro",
-    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware.",
-    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.095,
-    "t1": 7.56,
-    "text": "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H200 in the background."
-   }
-  ]
- },
- "0061.png": {
-  "text": "When it prints worker started, the outpost is online.",
-  "dur": 3.16,
-  "takeAt": 54.185,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0002.png",
-    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H200 GPU running on Modal.",
-    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H two hundred GPU running on Modal."
-   ],
-   [
-    "0003.png",
-    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU-only errors and benchmark changes on real hardware.",
-    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU only errors and benchmark changes on real hardware."
-   ],
-   [
-    "0004.png",
-    "To set one up, create an outpost in Settings \u2192 Environment \u2192 Outposts. I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
-    "To set one up, create an outpost in Settings, Environment, Outposts. I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux."
-   ],
-   [
-    "0013.png",
-    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog.",
-    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog."
-   ],
-   [
-    "0018.png",
-    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200.",
-    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H two hundred."
-   ],
-   [
-    "0031.png",
-    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H200 in the background.",
-    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H two hundred in the background."
-   ],
-   [
-    "0061.png",
-    "When it prints worker started, the outpost is online.",
-    "When it prints worker started, the outpost is online."
-   ],
-   [
-    "0062.png",
-    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu.",
-    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu."
-   ],
-   [
-    "0068.png",
-    "The demo repo, gpu-train-demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck.",
-    "The demo repo, gpu train demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck."
-   ],
-   [
-    "0076.png",
-    "The session waits for the outpost, and the Modal worker picks it up within seconds.",
-    "The session waits for the outpost, and the Modal worker picks it up within seconds."
-   ],
-   [
-    "0077.png",
-    "From there Devin works on the H200 on its own, running the training script, profiling it and changing the code.",
-    "From there Devin works on the H two hundred on its own, running the training script, profiling it and changing the code."
-   ],
-   [
-    "0084.png",
-    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected.",
-    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected."
-   ],
-   [
-    "0090.png",
-    "First it checks the hardware, and nvidia-smi shows an NVIDIA H200.",
-    "First it checks the hardware, and nvidia S M I shows an NVIDIA H two hundred."
-   ],
-   [
-    "0093.png",
-    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step.",
-    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step."
-   ],
-   [
-    "0096.png",
-    "The torch profiler confirms it, with most of each step spent waiting on the data loader.",
-    "The torch profiler confirms it, with most of each step spent waiting on the data loader."
-   ],
-   [
-    "0099.png",
-    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical.",
-    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical."
-   ],
-   [
-    "0102.png",
-    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix.",
-    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix."
-   ],
-   [
-    "0104.png",
-    "On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script.",
-    "On the H two hundred, training is about fourteen times faster, and since the repo has no tests, Devin checked the speedup by running the training script."
-   ],
-   [
-    "outro",
-    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware.",
-    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.108,
-    "t1": 1.628,
-    "text": "When it prints worker started,"
-   },
-   {
-    "t0": 1.682,
-    "t1": 3.16,
-    "text": "the outpost is online."
-   }
-  ]
- },
- "0062.png": {
-  "text": "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu.",
-  "dur": 7.095,
-  "takeAt": 57.4,
+  "dur": 7.382,
+  "takeAt": 44.578,
   "mode": "single-take-1",
   "take": [
    [
@@ -904,17 +679,242 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.107,
+    "t1": 7.382,
+    "text": "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H200 in the background."
+   }
+  ]
+ },
+ "0061.png": {
+  "text": "When it prints worker started, the outpost is online.",
+  "dur": 2.455,
+  "takeAt": 52.275,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0002.png",
+    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H200 GPU running on Modal.",
+    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H two hundred GPU running on Modal."
+   ],
+   [
+    "0003.png",
+    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU-only errors and benchmark changes on real hardware.",
+    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU only errors and benchmark changes on real hardware."
+   ],
+   [
+    "0004.png",
+    "To set one up, create an outpost in Settings \u2192 Environment \u2192 Outposts. I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
+    "To set one up, create an outpost in Settings, Environment, Outposts. I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux."
+   ],
+   [
+    "0013.png",
+    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog.",
+    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog."
+   ],
+   [
+    "0018.png",
+    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200.",
+    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H two hundred."
+   ],
+   [
+    "0031.png",
+    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H200 in the background.",
+    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H two hundred in the background."
+   ],
+   [
+    "0061.png",
+    "When it prints worker started, the outpost is online.",
+    "When it prints worker started, the outpost is online."
+   ],
+   [
+    "0062.png",
+    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu.",
+    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu."
+   ],
+   [
+    "0068.png",
+    "The demo repo, gpu-train-demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck.",
+    "The demo repo, gpu train demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck."
+   ],
+   [
+    "0076.png",
+    "The session waits for the outpost, and the Modal worker picks it up within seconds.",
+    "The session waits for the outpost, and the Modal worker picks it up within seconds."
+   ],
+   [
+    "0077.png",
+    "From there Devin works on the H200 on its own, running the training script, profiling it and changing the code.",
+    "From there Devin works on the H two hundred on its own, running the training script, profiling it and changing the code."
+   ],
+   [
+    "0084.png",
+    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected.",
+    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected."
+   ],
+   [
+    "0090.png",
+    "First it checks the hardware, and nvidia-smi shows an NVIDIA H200.",
+    "First it checks the hardware, and nvidia S M I shows an NVIDIA H two hundred."
+   ],
+   [
+    "0093.png",
+    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step.",
+    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step."
+   ],
+   [
+    "0096.png",
+    "The torch profiler confirms it, with most of each step spent waiting on the data loader.",
+    "The torch profiler confirms it, with most of each step spent waiting on the data loader."
+   ],
+   [
+    "0099.png",
+    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical.",
+    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical."
+   ],
+   [
+    "0102.png",
+    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix.",
+    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix."
+   ],
+   [
+    "0104.png",
+    "On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script.",
+    "On the H two hundred, training is about fourteen times faster, and since the repo has no tests, Devin checked the speedup by running the training script."
+   ],
+   [
+    "outro",
+    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware.",
+    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.004,
+    "t1": 1.246,
+    "text": "When it prints worker started,"
+   },
+   {
+    "t0": 1.27,
+    "t1": 2.454,
+    "text": "the outpost is online."
+   }
+  ]
+ },
+ "0062.png": {
+  "text": "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu.",
+  "dur": 6.075,
+  "takeAt": 54.835,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0002.png",
+    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H200 GPU running on Modal.",
+    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H two hundred GPU running on Modal."
+   ],
+   [
+    "0003.png",
+    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU-only errors and benchmark changes on real hardware.",
+    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU only errors and benchmark changes on real hardware."
+   ],
+   [
+    "0004.png",
+    "To set one up, create an outpost in Settings \u2192 Environment \u2192 Outposts. I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
+    "To set one up, create an outpost in Settings, Environment, Outposts. I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux."
+   ],
+   [
+    "0013.png",
+    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog.",
+    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog."
+   ],
+   [
+    "0018.png",
+    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200.",
+    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H two hundred."
+   ],
+   [
+    "0031.png",
+    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H200 in the background.",
+    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H two hundred in the background."
+   ],
+   [
+    "0061.png",
+    "When it prints worker started, the outpost is online.",
+    "When it prints worker started, the outpost is online."
+   ],
+   [
+    "0062.png",
+    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu.",
+    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu."
+   ],
+   [
+    "0068.png",
+    "The demo repo, gpu-train-demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck.",
+    "The demo repo, gpu train demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck."
+   ],
+   [
+    "0076.png",
+    "The session waits for the outpost, and the Modal worker picks it up within seconds.",
+    "The session waits for the outpost, and the Modal worker picks it up within seconds."
+   ],
+   [
+    "0077.png",
+    "From there Devin works on the H200 on its own, running the training script, profiling it and changing the code.",
+    "From there Devin works on the H two hundred on its own, running the training script, profiling it and changing the code."
+   ],
+   [
+    "0084.png",
+    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected.",
+    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected."
+   ],
+   [
+    "0090.png",
+    "First it checks the hardware, and nvidia-smi shows an NVIDIA H200.",
+    "First it checks the hardware, and nvidia S M I shows an NVIDIA H two hundred."
+   ],
+   [
+    "0093.png",
+    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step.",
+    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step."
+   ],
+   [
+    "0096.png",
+    "The torch profiler confirms it, with most of each step spent waiting on the data loader.",
+    "The torch profiler confirms it, with most of each step spent waiting on the data loader."
+   ],
+   [
+    "0099.png",
+    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical.",
+    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical."
+   ],
+   [
+    "0102.png",
+    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix.",
+    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix."
+   ],
+   [
+    "0104.png",
+    "On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script.",
+    "On the H two hundred, training is about fourteen times faster, and since the repo has no tests, Devin checked the speedup by running the training script."
+   ],
+   [
+    "outro",
+    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware.",
+    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.068,
+    "t1": 0.799,
     "text": "Back in Devin,"
    },
    {
-    "t0": 1.213,
-    "t1": 3.533,
+    "t0": 0.846,
+    "t1": 3.029,
     "text": "open Configuration below the prompt box,"
    },
    {
-    "t0": 3.587,
-    "t1": 7.095,
+    "t0": 3.203,
+    "t1": 6.075,
     "text": "and under Virtual environment pick the outpost instead of Ubuntu."
    }
   ]
@@ -922,118 +922,8 @@
  "0068.png": {
   "text": "The demo repo, gpu-train-demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck.",
   "say": "The demo repo, gpu train demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck.",
-  "dur": 8.73,
-  "takeAt": 64.495,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0002.png",
-    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H200 GPU running on Modal.",
-    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H two hundred GPU running on Modal."
-   ],
-   [
-    "0003.png",
-    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU-only errors and benchmark changes on real hardware.",
-    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU only errors and benchmark changes on real hardware."
-   ],
-   [
-    "0004.png",
-    "To set one up, create an outpost in Settings \u2192 Environment \u2192 Outposts. I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
-    "To set one up, create an outpost in Settings, Environment, Outposts. I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux."
-   ],
-   [
-    "0013.png",
-    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog.",
-    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog."
-   ],
-   [
-    "0018.png",
-    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200.",
-    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H two hundred."
-   ],
-   [
-    "0031.png",
-    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H200 in the background.",
-    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H two hundred in the background."
-   ],
-   [
-    "0061.png",
-    "When it prints worker started, the outpost is online.",
-    "When it prints worker started, the outpost is online."
-   ],
-   [
-    "0062.png",
-    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu.",
-    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu."
-   ],
-   [
-    "0068.png",
-    "The demo repo, gpu-train-demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck.",
-    "The demo repo, gpu train demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck."
-   ],
-   [
-    "0076.png",
-    "The session waits for the outpost, and the Modal worker picks it up within seconds.",
-    "The session waits for the outpost, and the Modal worker picks it up within seconds."
-   ],
-   [
-    "0077.png",
-    "From there Devin works on the H200 on its own, running the training script, profiling it and changing the code.",
-    "From there Devin works on the H two hundred on its own, running the training script, profiling it and changing the code."
-   ],
-   [
-    "0084.png",
-    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected.",
-    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected."
-   ],
-   [
-    "0090.png",
-    "First it checks the hardware, and nvidia-smi shows an NVIDIA H200.",
-    "First it checks the hardware, and nvidia S M I shows an NVIDIA H two hundred."
-   ],
-   [
-    "0093.png",
-    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step.",
-    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step."
-   ],
-   [
-    "0096.png",
-    "The torch profiler confirms it, with most of each step spent waiting on the data loader.",
-    "The torch profiler confirms it, with most of each step spent waiting on the data loader."
-   ],
-   [
-    "0099.png",
-    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical.",
-    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical."
-   ],
-   [
-    "0102.png",
-    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix.",
-    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix."
-   ],
-   [
-    "0104.png",
-    "On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script.",
-    "On the H two hundred, training is about fourteen times faster, and since the repo has no tests, Devin checked the speedup by running the training script."
-   ],
-   [
-    "outro",
-    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware.",
-    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.118,
-    "t1": 8.73,
-    "text": "The demo repo, gpu-train-demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck."
-   }
-  ]
- },
- "0076.png": {
-  "text": "The session waits for the outpost, and the Modal worker picks it up within seconds.",
-  "dur": 4.185,
-  "takeAt": 73.24,
+  "dur": 8.243,
+  "takeAt": 61.087,
   "mode": "single-take-1",
   "take": [
    [
@@ -1135,12 +1025,122 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.72,
+    "t1": 8.243,
+    "text": "The demo repo, gpu-train-demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck."
+   }
+  ]
+ },
+ "0076.png": {
+  "text": "The session waits for the outpost, and the Modal worker picks it up within seconds.",
+  "dur": 3.896,
+  "takeAt": 69.714,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0002.png",
+    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H200 GPU running on Modal.",
+    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H two hundred GPU running on Modal."
+   ],
+   [
+    "0003.png",
+    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU-only errors and benchmark changes on real hardware.",
+    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU only errors and benchmark changes on real hardware."
+   ],
+   [
+    "0004.png",
+    "To set one up, create an outpost in Settings \u2192 Environment \u2192 Outposts. I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
+    "To set one up, create an outpost in Settings, Environment, Outposts. I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux."
+   ],
+   [
+    "0013.png",
+    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog.",
+    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog."
+   ],
+   [
+    "0018.png",
+    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200.",
+    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H two hundred."
+   ],
+   [
+    "0031.png",
+    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H200 in the background.",
+    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H two hundred in the background."
+   ],
+   [
+    "0061.png",
+    "When it prints worker started, the outpost is online.",
+    "When it prints worker started, the outpost is online."
+   ],
+   [
+    "0062.png",
+    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu.",
+    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu."
+   ],
+   [
+    "0068.png",
+    "The demo repo, gpu-train-demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck.",
+    "The demo repo, gpu train demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck."
+   ],
+   [
+    "0076.png",
+    "The session waits for the outpost, and the Modal worker picks it up within seconds.",
+    "The session waits for the outpost, and the Modal worker picks it up within seconds."
+   ],
+   [
+    "0077.png",
+    "From there Devin works on the H200 on its own, running the training script, profiling it and changing the code.",
+    "From there Devin works on the H two hundred on its own, running the training script, profiling it and changing the code."
+   ],
+   [
+    "0084.png",
+    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected.",
+    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected."
+   ],
+   [
+    "0090.png",
+    "First it checks the hardware, and nvidia-smi shows an NVIDIA H200.",
+    "First it checks the hardware, and nvidia S M I shows an NVIDIA H two hundred."
+   ],
+   [
+    "0093.png",
+    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step.",
+    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step."
+   ],
+   [
+    "0096.png",
+    "The torch profiler confirms it, with most of each step spent waiting on the data loader.",
+    "The torch profiler confirms it, with most of each step spent waiting on the data loader."
+   ],
+   [
+    "0099.png",
+    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical.",
+    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical."
+   ],
+   [
+    "0102.png",
+    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix.",
+    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix."
+   ],
+   [
+    "0104.png",
+    "On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script.",
+    "On the H two hundred, training is about fourteen times faster, and since the repo has no tests, Devin checked the speedup by running the training script."
+   ],
+   [
+    "outro",
+    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware.",
+    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.791,
     "text": "The session waits for the outpost,"
    },
    {
-    "t0": 1.76,
-    "t1": 4.185,
+    "t0": 1.826,
+    "t1": 3.896,
     "text": "and the Modal worker picks it up within seconds."
    }
   ]
@@ -1148,8 +1148,118 @@
  "0077.png": {
   "text": "From there Devin works on the H200 on its own, running the training script, profiling it and changing the code.",
   "say": "From there Devin works on the H two hundred on its own, running the training script, profiling it and changing the code.",
-  "dur": 6.305,
-  "takeAt": 77.48,
+  "dur": 6.45,
+  "takeAt": 73.965,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0002.png",
+    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H200 GPU running on Modal.",
+    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H two hundred GPU running on Modal."
+   ],
+   [
+    "0003.png",
+    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU-only errors and benchmark changes on real hardware.",
+    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU only errors and benchmark changes on real hardware."
+   ],
+   [
+    "0004.png",
+    "To set one up, create an outpost in Settings \u2192 Environment \u2192 Outposts. I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
+    "To set one up, create an outpost in Settings, Environment, Outposts. I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux."
+   ],
+   [
+    "0013.png",
+    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog.",
+    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog."
+   ],
+   [
+    "0018.png",
+    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200.",
+    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H two hundred."
+   ],
+   [
+    "0031.png",
+    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H200 in the background.",
+    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H two hundred in the background."
+   ],
+   [
+    "0061.png",
+    "When it prints worker started, the outpost is online.",
+    "When it prints worker started, the outpost is online."
+   ],
+   [
+    "0062.png",
+    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu.",
+    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu."
+   ],
+   [
+    "0068.png",
+    "The demo repo, gpu-train-demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck.",
+    "The demo repo, gpu train demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck."
+   ],
+   [
+    "0076.png",
+    "The session waits for the outpost, and the Modal worker picks it up within seconds.",
+    "The session waits for the outpost, and the Modal worker picks it up within seconds."
+   ],
+   [
+    "0077.png",
+    "From there Devin works on the H200 on its own, running the training script, profiling it and changing the code.",
+    "From there Devin works on the H two hundred on its own, running the training script, profiling it and changing the code."
+   ],
+   [
+    "0084.png",
+    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected.",
+    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected."
+   ],
+   [
+    "0090.png",
+    "First it checks the hardware, and nvidia-smi shows an NVIDIA H200.",
+    "First it checks the hardware, and nvidia S M I shows an NVIDIA H two hundred."
+   ],
+   [
+    "0093.png",
+    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step.",
+    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step."
+   ],
+   [
+    "0096.png",
+    "The torch profiler confirms it, with most of each step spent waiting on the data loader.",
+    "The torch profiler confirms it, with most of each step spent waiting on the data loader."
+   ],
+   [
+    "0099.png",
+    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical.",
+    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical."
+   ],
+   [
+    "0102.png",
+    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix.",
+    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix."
+   ],
+   [
+    "0104.png",
+    "On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script.",
+    "On the H two hundred, training is about fourteen times faster, and since the repo has no tests, Devin checked the speedup by running the training script."
+   ],
+   [
+    "outro",
+    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware.",
+    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.071,
+    "t1": 6.45,
+    "text": "From there Devin works on the H200 on its own, running the training script, profiling it and changing the code."
+   }
+  ]
+ },
+ "0084.png": {
+  "text": "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected.",
+  "dur": 7.313,
+  "takeAt": 80.627,
   "mode": "single-take-1",
   "take": [
    [
@@ -1251,132 +1361,22 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 6.305,
-    "text": "From there Devin works on the H200 on its own, running the training script, profiling it and changing the code."
-   }
-  ]
- },
- "0084.png": {
-  "text": "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected.",
-  "dur": 7.62,
-  "takeAt": 83.785,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0002.png",
-    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H200 GPU running on Modal.",
-    "In this video, Devin finds and fixes a slow PyTorch training loop on a real NVIDIA H two hundred GPU running on Modal."
-   ],
-   [
-    "0003.png",
-    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU-only errors and benchmark changes on real hardware.",
-    "Modal provides the GPU machine and a Devin outpost connects it, so you can debug training, chase GPU only errors and benchmark changes on real hardware."
-   ],
-   [
-    "0004.png",
-    "To set one up, create an outpost in Settings \u2192 Environment \u2192 Outposts. I'm naming it gpu-h200 after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux.",
-    "To set one up, create an outpost in Settings, Environment, Outposts. I'm naming it gpu H two hundred after the hardware it will run on, and picking the Linux platform, because the GPU machine runs Linux."
-   ],
-   [
-    "0013.png",
-    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog.",
-    "Devin generates a token for the outpost and the worker command that connects a machine to it, and the token is only shown once, so copy it before you close the dialog."
-   ],
-   [
-    "0018.png",
-    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H200.",
-    "The docs list Modal and NVIDIA Brev as partner integrations for GPU machines, and here a small Modal app runs that worker command on an H two hundred."
-   ],
-   [
-    "0031.png",
-    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H200 in the background.",
-    "The outpost token goes into a Modal secret, so it never appears in the code, and modal run starts the worker on the H two hundred in the background."
-   ],
-   [
-    "0061.png",
-    "When it prints worker started, the outpost is online.",
-    "When it prints worker started, the outpost is online."
-   ],
-   [
-    "0062.png",
-    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu.",
-    "Back in Devin, open Configuration below the prompt box, and under Virtual environment pick the outpost instead of Ubuntu."
-   ],
-   [
-    "0068.png",
-    "The demo repo, gpu-train-demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck.",
-    "The demo repo, gpu train demo, has a slow data loader that I planted on purpose, so I ask Devin to profile the training loop and fix the bottleneck."
-   ],
-   [
-    "0076.png",
-    "The session waits for the outpost, and the Modal worker picks it up within seconds.",
-    "The session waits for the outpost, and the Modal worker picks it up within seconds."
-   ],
-   [
-    "0077.png",
-    "From there Devin works on the H200 on its own, running the training script, profiling it and changing the code.",
-    "From there Devin works on the H two hundred on its own, running the training script, profiling it and changing the code."
-   ],
-   [
-    "0084.png",
-    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected.",
-    "When it's done, every step is in the timeline, and clicking a step shows its command and output, starting with the moment the outpost machine connected."
-   ],
-   [
-    "0090.png",
-    "First it checks the hardware, and nvidia-smi shows an NVIDIA H200.",
-    "First it checks the hardware, and nvidia S M I shows an NVIDIA H two hundred."
-   ],
-   [
-    "0093.png",
-    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step.",
-    "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step."
-   ],
-   [
-    "0096.png",
-    "The torch profiler confirms it, with most of each step spent waiting on the data loader.",
-    "The torch profiler confirms it, with most of each step spent waiting on the data loader."
-   ],
-   [
-    "0099.png",
-    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical.",
-    "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical."
-   ],
-   [
-    "0102.png",
-    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix.",
-    "Then it opens a pull request and sums up what it found, the profile, the cause and the fix."
-   ],
-   [
-    "0104.png",
-    "On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script.",
-    "On the H two hundred, training is about fourteen times faster, and since the repo has no tests, Devin checked the speedup by running the training script."
-   ],
-   [
-    "outro",
-    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware.",
-    "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.108,
-    "t1": 0.895,
+    "t1": 0.758,
     "text": "When it's done,"
    },
    {
-    "t0": 0.935,
-    "t1": 2.495,
+    "t0": 0.816,
+    "t1": 2.291,
     "text": "every step is in the timeline,"
    },
    {
-    "t0": 2.535,
-    "t1": 4.295,
+    "t0": 2.465,
+    "t1": 4.195,
     "text": "and clicking a step shows its command and"
    },
    {
-    "t0": 4.375,
-    "t1": 7.62,
+    "t0": 4.23,
+    "t1": 7.313,
     "text": "output, starting with the moment the outpost machine connected."
    }
   ]
@@ -1384,8 +1384,8 @@
  "0090.png": {
   "text": "First it checks the hardware, and nvidia-smi shows an NVIDIA H200.",
   "say": "First it checks the hardware, and nvidia S M I shows an NVIDIA H two hundred.",
-  "dur": 4.79,
-  "takeAt": 91.405,
+  "dur": 4.764,
+  "takeAt": 88.266,
   "mode": "single-take-1",
   "take": [
    [
@@ -1486,16 +1486,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.115,
-    "t1": 4.79,
+    "t0": 0.12,
+    "t1": 4.764,
     "text": "First it checks the hardware, and nvidia-smi shows an NVIDIA H200."
    }
   ]
  },
  "0093.png": {
   "text": "Then it times each half on its own, and preparing the images turns out to be far slower than the GPU step.",
-  "dur": 5.945,
-  "takeAt": 96.32,
+  "dur": 5.465,
+  "takeAt": 93.385,
   "mode": "single-take-1",
   "take": [
    [
@@ -1596,26 +1596,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.107,
+    "t0": 0.086,
+    "t1": 1.967,
     "text": "Then it times each half on its own,"
    },
    {
-    "t0": 2.133,
-    "t1": 3.92,
+    "t0": 2.176,
+    "t1": 3.836,
     "text": "and preparing the images turns out to be"
    },
    {
-    "t0": 4.0,
-    "t1": 5.945,
+    "t0": 3.883,
+    "t1": 5.465,
     "text": "far slower than the GPU step."
    }
   ]
  },
  "0096.png": {
   "text": "The torch profiler confirms it, with most of each step spent waiting on the data loader.",
-  "dur": 4.608,
-  "takeAt": 102.307,
+  "dur": 4.475,
+  "takeAt": 99.265,
   "mode": "single-take-1",
   "take": [
    [
@@ -1716,26 +1716,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.813,
+    "t0": 0.069,
+    "t1": 1.683,
     "text": "The torch profiler confirms it,"
    },
    {
-    "t0": 1.853,
-    "t1": 3.693,
+    "t0": 1.799,
+    "t1": 3.715,
     "text": "with most of each step spent waiting on"
    },
    {
-    "t0": 3.733,
-    "t1": 4.608,
+    "t0": 3.749,
+    "t1": 4.475,
     "text": "the data loader."
    }
   ]
  },
  "0099.png": {
   "text": "The cause is a Python loop that normalizes each image one row at a time, so Devin replaces it with one vectorized NumPy call and checks that the output is identical.",
-  "dur": 9.505,
-  "takeAt": 106.92,
+  "dur": 9.136,
+  "takeAt": 104.114,
   "mode": "single-take-1",
   "take": [
    [
@@ -1837,30 +1837,30 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.36,
+    "t1": 2.302,
     "text": "The cause is a Python loop that normalizes"
    },
    {
-    "t0": 2.44,
-    "t1": 4.24,
+    "t0": 2.36,
+    "t1": 3.997,
     "text": "each image one row at a time,"
    },
    {
-    "t0": 4.28,
-    "t1": 7.0,
+    "t0": 4.206,
+    "t1": 6.644,
     "text": "so Devin replaces it with one vectorized NumPy"
    },
    {
-    "t0": 7.24,
-    "t1": 9.505,
+    "t0": 6.714,
+    "t1": 9.136,
     "text": "call and checks that the output is identical."
    }
   ]
  },
  "0102.png": {
   "text": "Then it opens a pull request and sums up what it found, the profile, the cause and the fix.",
-  "dur": 5.425,
-  "takeAt": 116.52,
+  "dur": 5.296,
+  "takeAt": 113.564,
   "mode": "single-take-1",
   "take": [
    [
@@ -1962,17 +1962,17 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.92,
+    "t1": 1.99,
     "text": "Then it opens a pull request and sums"
    },
    {
-    "t0": 1.96,
-    "t1": 2.96,
+    "t0": 2.036,
+    "t1": 2.872,
     "text": "up what it found,"
    },
    {
-    "t0": 3.0,
-    "t1": 5.425,
+    "t0": 3.116,
+    "t1": 5.296,
     "text": "the profile, the cause and the fix."
    }
   ]
@@ -1980,8 +1980,8 @@
  "0104.png": {
   "text": "On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script.",
   "say": "On the H two hundred, training is about fourteen times faster, and since the repo has no tests, Devin checked the speedup by running the training script.",
-  "dur": 8.155,
-  "takeAt": 121.96,
+  "dur": 8.295,
+  "takeAt": 119.275,
   "mode": "single-take-1",
   "take": [
    [
@@ -2082,16 +2082,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 8.155,
+    "t0": 0.11,
+    "t1": 8.295,
     "text": "On the H200, training is about 14 times faster, and since the repo has no tests, Devin checked the speedup by running the training script."
    }
   ]
  },
  "outro": {
   "text": "That's how you connect a GPU on Modal to Devin, and have Devin profile and fix a slow training loop right on that hardware.",
-  "dur": 6.81,
-  "takeAt": 130.12,
+  "dur": 6.525,
+  "takeAt": 127.915,
   "mode": "single-take-1",
   "take": [
    [
@@ -2192,18 +2192,18 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.12,
+    "t0": 0.015,
+    "t1": 1.838,
     "text": "That's how you connect a GPU on Modal"
    },
    {
-    "t0": 2.2,
-    "t1": 4.52,
+    "t0": 1.908,
+    "t1": 4.369,
     "text": "to Devin, and have Devin profile and fix"
    },
    {
-    "t0": 4.6,
-    "t1": 6.81,
+    "t0": 4.439,
+    "t1": 6.525,
     "text": "a slow training loop right on that hardware."
    }
   ]

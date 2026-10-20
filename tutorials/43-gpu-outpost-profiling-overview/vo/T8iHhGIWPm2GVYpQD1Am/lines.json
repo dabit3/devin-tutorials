@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "Some performance problems only show up on the real hardware, like a training loop that leaves an expensive GPU waiting, and a cloud machine without that GPU can't reproduce them.",
-  "dur": 9.37,
+  "dur": 8.89,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -64,30 +64,30 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.24,
+    "t1": 2.113,
     "text": "Some performance problems only show up on the"
    },
    {
-    "t0": 2.32,
-    "t1": 4.48,
+    "t0": 2.183,
+    "t1": 4.342,
     "text": "real hardware, like a training loop that leaves"
    },
    {
-    "t0": 4.56,
-    "t1": 6.4,
+    "t0": 4.389,
+    "t1": 5.944,
     "text": "an expensive GPU waiting,"
    },
    {
-    "t0": 6.44,
-    "t1": 9.37,
+    "t0": 6.118,
+    "t1": 8.89,
     "text": "and a cloud machine without that GPU can't reproduce them."
    }
   ]
  },
  "0001.png": {
   "text": "With Outposts, Devin runs the session on a machine you control, so a worker on your GPU machine picks it up and Devin does the work right there.",
-  "dur": 8.14,
-  "takeAt": 9.72,
+  "dur": 6.935,
+  "takeAt": 9.135,
   "mode": "single-take-1",
   "take": [
    [
@@ -148,31 +148,31 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.333,
+    "t0": 0.025,
+    "t1": 2.022,
     "text": "With Outposts, Devin runs the session on a"
    },
    {
-    "t0": 2.36,
-    "t1": 3.8,
+    "t0": 2.057,
+    "t1": 3.09,
     "text": "machine you control,"
    },
    {
-    "t0": 3.88,
-    "t1": 5.96,
+    "t0": 3.264,
+    "t1": 5.134,
     "text": "so a worker on your GPU machine picks"
    },
    {
-    "t0": 6.04,
-    "t1": 8.14,
+    "t0": 5.169,
+    "t1": 6.935,
     "text": "it up and Devin does the work right there."
    }
   ]
  },
  "0002.png": {
   "text": "You create the outpost in Settings, and it comes with a token and the worker command.",
-  "dur": 4.17,
-  "takeAt": 18.2,
+  "dur": 4.275,
+  "takeAt": 16.235,
   "mode": "single-take-1",
   "take": [
    [
@@ -233,13 +233,13 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.84,
+    "t0": 0.054,
+    "t1": 1.923,
     "text": "You create the outpost in Settings,"
    },
    {
-    "t0": 1.88,
-    "t1": 4.17,
+    "t0": 2.074,
+    "t1": 4.275,
     "text": "and it comes with a token and the worker command."
    }
   ]
@@ -247,8 +247,8 @@
  "0003.png": {
   "text": "Modal and NVIDIA Brev are the partner integrations for GPUs, and in this demo a small Modal app runs the worker on an H200.",
   "say": "Modal and NVIDIA Brev are the partner integrations for GPUs, and in this demo a small Modal app runs the worker on an H two hundred.",
-  "dur": 7.54,
-  "takeAt": 22.68,
+  "dur": 7.152,
+  "takeAt": 20.708,
   "mode": "single-take-1",
   "take": [
    [
@@ -310,15 +310,15 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 7.54,
+    "t1": 7.152,
     "text": "Modal and NVIDIA Brev are the partner integrations for GPUs, and in this demo a small Modal app runs the worker on an H200."
    }
   ]
  },
  "0004.png": {
   "text": "Then you pick the outpost under Virtual environment and give Devin the task.",
-  "dur": 4.02,
-  "takeAt": 30.6,
+  "dur": 3.395,
+  "takeAt": 28.185,
   "mode": "single-take-1",
   "take": [
    [
@@ -380,185 +380,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.68,
+    "t1": 2.268,
     "text": "Then you pick the outpost under Virtual environment"
    },
    {
-    "t0": 2.8,
-    "t1": 4.02,
+    "t0": 2.302,
+    "t1": 3.395,
     "text": "and give Devin the task."
    }
   ]
  },
  "0005.png": {
   "text": "On the GPU, Devin profiles the real training loop, finds where the time goes, fixes it and measures again on the same hardware.",
-  "dur": 7.535,
-  "takeAt": 34.985,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Some performance problems only show up on the real hardware, like a training loop that leaves an expensive GPU waiting, and a cloud machine without that GPU can't reproduce them.",
-    "Some performance problems only show up on the real hardware, like a training loop that leaves an expensive GPU waiting, and a cloud machine without that GPU can't reproduce them."
-   ],
-   [
-    "0001.png",
-    "With Outposts, Devin runs the session on a machine you control, so a worker on your GPU machine picks it up and Devin does the work right there.",
-    "With Outposts, Devin runs the session on a machine you control, so a worker on your GPU machine picks it up and Devin does the work right there."
-   ],
-   [
-    "0002.png",
-    "You create the outpost in Settings, and it comes with a token and the worker command.",
-    "You create the outpost in Settings, and it comes with a token and the worker command."
-   ],
-   [
-    "0003.png",
-    "Modal and NVIDIA Brev are the partner integrations for GPUs, and in this demo a small Modal app runs the worker on an H200.",
-    "Modal and NVIDIA Brev are the partner integrations for GPUs, and in this demo a small Modal app runs the worker on an H two hundred."
-   ],
-   [
-    "0004.png",
-    "Then you pick the outpost under Virtual environment and give Devin the task.",
-    "Then you pick the outpost under Virtual environment and give Devin the task."
-   ],
-   [
-    "0005.png",
-    "On the GPU, Devin profiles the real training loop, finds where the time goes, fixes it and measures again on the same hardware.",
-    "On the GPU, Devin profiles the real training loop, finds where the time goes, fixes it and measures again on the same hardware."
-   ],
-   [
-    "0006.png",
-    "In the demo, the profiler showed most of each step waiting on the data loader instead of the GPU.",
-    "In the demo, the profiler showed most of each step waiting on the data loader instead of the GPU."
-   ],
-   [
-    "0007.png",
-    "The fix was a small vectorized change, delivered as a pull request.",
-    "The fix was a small vectorized change, delivered as a pull request."
-   ],
-   [
-    "0008.png",
-    "On the H200, training got about 14 times faster.",
-    "On the H two hundred, training got about fourteen times faster."
-   ],
-   [
-    "0009.png",
-    "Teams use the same pattern for slow training jobs, for errors that only happen on GPUs, for benchmarks on the target hardware, and for work that has to run on their own infrastructure.",
-    "Teams use the same pattern for slow training jobs, for errors that only happen on GPUs, for benchmarks on the target hardware, and for work that has to run on their own infrastructure."
-   ],
-   [
-    "outro",
-    "That's how an outpost lets Devin profile and fix a slow training loop on a real GPU, using a machine from Modal or NVIDIA Brev.",
-    "That's how an outpost lets Devin profile and fix a slow training loop on a real GPU, using a machine from Modal or NVIDIA Brev."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.095,
-    "t1": 1.095,
-    "text": "On the GPU,"
-   },
-   {
-    "t0": 1.175,
-    "t1": 3.335,
-    "text": "Devin profiles the real training loop,"
-   },
-   {
-    "t0": 3.455,
-    "t1": 4.695,
-    "text": "finds where the time goes,"
-   },
-   {
-    "t0": 4.775,
-    "t1": 7.535,
-    "text": "fixes it and measures again on the same hardware."
-   }
-  ]
- },
- "0006.png": {
-  "text": "In the demo, the profiler showed most of each step waiting on the data loader instead of the GPU.",
-  "dur": 5.155,
-  "takeAt": 42.875,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Some performance problems only show up on the real hardware, like a training loop that leaves an expensive GPU waiting, and a cloud machine without that GPU can't reproduce them.",
-    "Some performance problems only show up on the real hardware, like a training loop that leaves an expensive GPU waiting, and a cloud machine without that GPU can't reproduce them."
-   ],
-   [
-    "0001.png",
-    "With Outposts, Devin runs the session on a machine you control, so a worker on your GPU machine picks it up and Devin does the work right there.",
-    "With Outposts, Devin runs the session on a machine you control, so a worker on your GPU machine picks it up and Devin does the work right there."
-   ],
-   [
-    "0002.png",
-    "You create the outpost in Settings, and it comes with a token and the worker command.",
-    "You create the outpost in Settings, and it comes with a token and the worker command."
-   ],
-   [
-    "0003.png",
-    "Modal and NVIDIA Brev are the partner integrations for GPUs, and in this demo a small Modal app runs the worker on an H200.",
-    "Modal and NVIDIA Brev are the partner integrations for GPUs, and in this demo a small Modal app runs the worker on an H two hundred."
-   ],
-   [
-    "0004.png",
-    "Then you pick the outpost under Virtual environment and give Devin the task.",
-    "Then you pick the outpost under Virtual environment and give Devin the task."
-   ],
-   [
-    "0005.png",
-    "On the GPU, Devin profiles the real training loop, finds where the time goes, fixes it and measures again on the same hardware.",
-    "On the GPU, Devin profiles the real training loop, finds where the time goes, fixes it and measures again on the same hardware."
-   ],
-   [
-    "0006.png",
-    "In the demo, the profiler showed most of each step waiting on the data loader instead of the GPU.",
-    "In the demo, the profiler showed most of each step waiting on the data loader instead of the GPU."
-   ],
-   [
-    "0007.png",
-    "The fix was a small vectorized change, delivered as a pull request.",
-    "The fix was a small vectorized change, delivered as a pull request."
-   ],
-   [
-    "0008.png",
-    "On the H200, training got about 14 times faster.",
-    "On the H two hundred, training got about fourteen times faster."
-   ],
-   [
-    "0009.png",
-    "Teams use the same pattern for slow training jobs, for errors that only happen on GPUs, for benchmarks on the target hardware, and for work that has to run on their own infrastructure.",
-    "Teams use the same pattern for slow training jobs, for errors that only happen on GPUs, for benchmarks on the target hardware, and for work that has to run on their own infrastructure."
-   ],
-   [
-    "outro",
-    "That's how an outpost lets Devin profile and fix a slow training loop on a real GPU, using a machine from Modal or NVIDIA Brev.",
-    "That's how an outpost lets Devin profile and fix a slow training loop on a real GPU, using a machine from Modal or NVIDIA Brev."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.045,
-    "t1": 0.805,
-    "text": "In the demo,"
-   },
-   {
-    "t0": 0.845,
-    "t1": 3.045,
-    "text": "the profiler showed most of each step waiting"
-   },
-   {
-    "t0": 3.085,
-    "t1": 5.155,
-    "text": "on the data loader instead of the GPU."
-   }
-  ]
- },
- "0007.png": {
-  "text": "The fix was a small vectorized change, delivered as a pull request.",
-  "dur": 3.56,
-  "takeAt": 48.36,
+  "dur": 6.778,
+  "takeAt": 31.772,
   "mode": "single-take-1",
   "take": [
    [
@@ -620,12 +455,177 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.28,
+    "t1": 0.945,
+    "text": "On the GPU,"
+   },
+   {
+    "t0": 0.979,
+    "t1": 2.709,
+    "text": "Devin profiles the real training loop,"
+   },
+   {
+    "t0": 2.918,
+    "t1": 4.241,
+    "text": "finds where the time goes,"
+   },
+   {
+    "t0": 4.45,
+    "t1": 6.778,
+    "text": "fixes it and measures again on the same hardware."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "In the demo, the profiler showed most of each step waiting on the data loader instead of the GPU.",
+  "dur": 5.095,
+  "takeAt": 38.715,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Some performance problems only show up on the real hardware, like a training loop that leaves an expensive GPU waiting, and a cloud machine without that GPU can't reproduce them.",
+    "Some performance problems only show up on the real hardware, like a training loop that leaves an expensive GPU waiting, and a cloud machine without that GPU can't reproduce them."
+   ],
+   [
+    "0001.png",
+    "With Outposts, Devin runs the session on a machine you control, so a worker on your GPU machine picks it up and Devin does the work right there.",
+    "With Outposts, Devin runs the session on a machine you control, so a worker on your GPU machine picks it up and Devin does the work right there."
+   ],
+   [
+    "0002.png",
+    "You create the outpost in Settings, and it comes with a token and the worker command.",
+    "You create the outpost in Settings, and it comes with a token and the worker command."
+   ],
+   [
+    "0003.png",
+    "Modal and NVIDIA Brev are the partner integrations for GPUs, and in this demo a small Modal app runs the worker on an H200.",
+    "Modal and NVIDIA Brev are the partner integrations for GPUs, and in this demo a small Modal app runs the worker on an H two hundred."
+   ],
+   [
+    "0004.png",
+    "Then you pick the outpost under Virtual environment and give Devin the task.",
+    "Then you pick the outpost under Virtual environment and give Devin the task."
+   ],
+   [
+    "0005.png",
+    "On the GPU, Devin profiles the real training loop, finds where the time goes, fixes it and measures again on the same hardware.",
+    "On the GPU, Devin profiles the real training loop, finds where the time goes, fixes it and measures again on the same hardware."
+   ],
+   [
+    "0006.png",
+    "In the demo, the profiler showed most of each step waiting on the data loader instead of the GPU.",
+    "In the demo, the profiler showed most of each step waiting on the data loader instead of the GPU."
+   ],
+   [
+    "0007.png",
+    "The fix was a small vectorized change, delivered as a pull request.",
+    "The fix was a small vectorized change, delivered as a pull request."
+   ],
+   [
+    "0008.png",
+    "On the H200, training got about 14 times faster.",
+    "On the H two hundred, training got about fourteen times faster."
+   ],
+   [
+    "0009.png",
+    "Teams use the same pattern for slow training jobs, for errors that only happen on GPUs, for benchmarks on the target hardware, and for work that has to run on their own infrastructure.",
+    "Teams use the same pattern for slow training jobs, for errors that only happen on GPUs, for benchmarks on the target hardware, and for work that has to run on their own infrastructure."
+   ],
+   [
+    "outro",
+    "That's how an outpost lets Devin profile and fix a slow training loop on a real GPU, using a machine from Modal or NVIDIA Brev.",
+    "That's how an outpost lets Devin profile and fix a slow training loop on a real GPU, using a machine from Modal or NVIDIA Brev."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.05,
+    "t1": 0.735,
+    "text": "In the demo,"
+   },
+   {
+    "t0": 0.77,
+    "t1": 3.115,
+    "text": "the profiler showed most of each step waiting"
+   },
+   {
+    "t0": 3.161,
+    "t1": 5.095,
+    "text": "on the data loader instead of the GPU."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "The fix was a small vectorized change, delivered as a pull request.",
+  "dur": 3.695,
+  "takeAt": 44.165,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Some performance problems only show up on the real hardware, like a training loop that leaves an expensive GPU waiting, and a cloud machine without that GPU can't reproduce them.",
+    "Some performance problems only show up on the real hardware, like a training loop that leaves an expensive GPU waiting, and a cloud machine without that GPU can't reproduce them."
+   ],
+   [
+    "0001.png",
+    "With Outposts, Devin runs the session on a machine you control, so a worker on your GPU machine picks it up and Devin does the work right there.",
+    "With Outposts, Devin runs the session on a machine you control, so a worker on your GPU machine picks it up and Devin does the work right there."
+   ],
+   [
+    "0002.png",
+    "You create the outpost in Settings, and it comes with a token and the worker command.",
+    "You create the outpost in Settings, and it comes with a token and the worker command."
+   ],
+   [
+    "0003.png",
+    "Modal and NVIDIA Brev are the partner integrations for GPUs, and in this demo a small Modal app runs the worker on an H200.",
+    "Modal and NVIDIA Brev are the partner integrations for GPUs, and in this demo a small Modal app runs the worker on an H two hundred."
+   ],
+   [
+    "0004.png",
+    "Then you pick the outpost under Virtual environment and give Devin the task.",
+    "Then you pick the outpost under Virtual environment and give Devin the task."
+   ],
+   [
+    "0005.png",
+    "On the GPU, Devin profiles the real training loop, finds where the time goes, fixes it and measures again on the same hardware.",
+    "On the GPU, Devin profiles the real training loop, finds where the time goes, fixes it and measures again on the same hardware."
+   ],
+   [
+    "0006.png",
+    "In the demo, the profiler showed most of each step waiting on the data loader instead of the GPU.",
+    "In the demo, the profiler showed most of each step waiting on the data loader instead of the GPU."
+   ],
+   [
+    "0007.png",
+    "The fix was a small vectorized change, delivered as a pull request.",
+    "The fix was a small vectorized change, delivered as a pull request."
+   ],
+   [
+    "0008.png",
+    "On the H200, training got about 14 times faster.",
+    "On the H two hundred, training got about fourteen times faster."
+   ],
+   [
+    "0009.png",
+    "Teams use the same pattern for slow training jobs, for errors that only happen on GPUs, for benchmarks on the target hardware, and for work that has to run on their own infrastructure.",
+    "Teams use the same pattern for slow training jobs, for errors that only happen on GPUs, for benchmarks on the target hardware, and for work that has to run on their own infrastructure."
+   ],
+   [
+    "outro",
+    "That's how an outpost lets Devin profile and fix a slow training loop on a real GPU, using a machine from Modal or NVIDIA Brev.",
+    "That's how an outpost lets Devin profile and fix a slow training loop on a real GPU, using a machine from Modal or NVIDIA Brev."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.022,
+    "t1": 2.158,
     "text": "The fix was a small vectorized change,"
    },
    {
-    "t0": 2.36,
-    "t1": 3.56,
+    "t0": 2.367,
+    "t1": 3.695,
     "text": "delivered as a pull request."
    }
   ]
@@ -633,8 +633,8 @@
  "0008.png": {
   "text": "On the H200, training got about 14 times faster.",
   "say": "On the H two hundred, training got about fourteen times faster.",
-  "dur": 3.66,
-  "takeAt": 52.16,
+  "dur": 3.288,
+  "takeAt": 48.142,
   "mode": "single-take-1",
   "take": [
    [
@@ -696,15 +696,15 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 3.66,
+    "t1": 3.288,
     "text": "On the H200, training got about 14 times faster."
    }
   ]
  },
  "0009.png": {
   "text": "Teams use the same pattern for slow training jobs, for errors that only happen on GPUs, for benchmarks on the target hardware, and for work that has to run on their own infrastructure.",
-  "dur": 9.995,
-  "takeAt": 56.28,
+  "dur": 9.735,
+  "takeAt": 51.625,
   "mode": "single-take-1",
   "take": [
    [
@@ -766,35 +766,35 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.04,
+    "t1": 2.21,
     "text": "Teams use the same pattern for slow training"
    },
    {
-    "t0": 2.12,
-    "t1": 5.08,
+    "t0": 2.256,
+    "t1": 5.112,
     "text": "jobs, for errors that only happen on GPUs,"
    },
    {
-    "t0": 5.16,
-    "t1": 7.04,
+    "t0": 5.321,
+    "t1": 7.155,
     "text": "for benchmarks on the target hardware,"
    },
    {
-    "t0": 7.08,
-    "t1": 8.52,
+    "t0": 7.306,
+    "t1": 8.654,
     "text": "and for work that has to run on"
    },
    {
-    "t0": 8.6,
-    "t1": 9.995,
+    "t0": 8.688,
+    "t1": 9.733,
     "text": "their own infrastructure."
    }
   ]
  },
  "outro": {
   "text": "That's how an outpost lets Devin profile and fix a slow training loop on a real GPU, using a machine from Modal or NVIDIA Brev.",
-  "dur": 7.63,
-  "takeAt": 66.28,
+  "dur": 7.168,
+  "takeAt": 61.482,
   "mode": "single-take-1",
   "take": [
    [
@@ -856,17 +856,17 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.52,
+    "t1": 2.256,
     "text": "That's how an outpost lets Devin profile and"
    },
    {
-    "t0": 2.64,
-    "t1": 4.44,
+    "t0": 2.314,
+    "t1": 3.975,
     "text": "fix a slow training loop on a real"
    },
    {
-    "t0": 4.52,
-    "t1": 7.63,
+    "t0": 4.033,
+    "t1": 7.168,
     "text": "GPU, using a machine from Modal or NVIDIA Brev."
    }
   ]
