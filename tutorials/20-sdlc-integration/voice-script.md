@@ -20,7 +20,7 @@ Sources: [SDLC](https://docs.devin.ai/essential-guidelines/sdlc-integration), [M
 12. Back in Ask mode, hand the plan to a Devin session with one click.  <!-- 0046.png -->
 13. Devin builds the feature on its own. Before it opens the PR, it runs lint and the build, which includes the type check.  <!-- 0050.png -->
 14. Orbit has no test suite, so it also runs the flow in a browser and checks that it survives a reload.  <!-- 0051.png -->
-15. Then it opens a pull request.  <!-- 0052.png -->
+15. When every check passes, it opens a pull request.  <!-- 0052.png -->
 16. The pull request opens in Devin Review.  <!-- 0053.png -->
 17. The description follows the repo's PR template, including exactly how it was tested.  <!-- 0106.png -->
 18. Devin Review makes a first pass on its own. It found no vulnerabilities and two bugs.  <!-- 0058.png -->
@@ -41,7 +41,7 @@ Sources: [SDLC](https://docs.devin.ai/essential-guidelines/sdlc-integration), [M
 33. Open Customize, then MCPs, to choose your connections.  <!-- 0255.png -->
 34. Browse the plugin marketplace to find the tools your team already uses.  <!-- 0257.png -->
 35. With Sentry connected, Devin can inspect errors and stack traces before tracing a failure back to code.  <!-- 0263.png -->
-36. Datadog adds logs, metrics, and traces, so an investigation can use production evidence instead of guesswork.  <!-- 0267.png -->
+36. Datadog adds logs, metrics, and traces, so an investigation can start from production evidence, not guesswork.  <!-- 0267.png -->
 37. Metabase connects analytics data and dashboards, useful for investigating changes in product or business metrics.  <!-- 0271.png -->
 38. These are available integrations, not connections in this account. Install the plugin, then authorize its MCP with only the access it needs.  <!-- 0289.png -->
 39. Automations handle the other half: when to start. A schedule or event can trigger a session, with optional conditions and checks before it runs.  <!-- 0287.png -->

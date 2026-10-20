@@ -211,7 +211,7 @@ window.SPEC = {
       "hold": 2.6,
       "capPos": "bottom",
       "cap": "Then it opens a pull request",
-      "vo": "Then it opens a pull request.",
+      "vo": "When every check passes, it opens a pull request.",
       "hl": [
         {
           "x": 713.75,
@@ -1087,7 +1087,7 @@ window.SPEC = {
     "0266.png": { "skip": true },
     "0267.png": {
       "hold": 2.4, "capPos": "bottom", "cap": "Datadog: logs, metrics and traces",
-      "vo": "Datadog adds logs, metrics, and traces, so an investigation can use production evidence instead of guesswork.",
+      "vo": "Datadog adds logs, metrics, and traces, so an investigation can start from production evidence, not guesswork.",
       "cam": { "x": 900, "y": 315, "z": 1.35 },
       "hl": { "x": 930, "y": 143, "w": 880, "h": 119, "pad": 4 }
     },
