@@ -1,12 +1,12 @@
-# Tutorial 38: A customer's bug video becomes a fix (voice script)
+# Tutorial 38: How to fix bugs from customer videos (voice script)
 
-Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, default settings: stability 0.5, similarity 0.75, style 0, speed 1), generated as one take with `_kit/tools/vo_onetake.py` and cut locally at sentence boundaries.
+Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, model `eleven_multilingual_v2`, the voice's saved defaults: the request sends only the text and `model_id`), generated as one take with `_kit/tools/vo.py` and cut locally at sentence boundaries.
 
 Disclosure: the Fernhouse checkout bug was planted on purpose, and the customer screen recording (`fernhouse-checkout.mp4`) was recorded by us playing the customer. Everything Devin does on screen is a real session in the thequantexplorer org.
 
 ## Lines
 
-1. Devin can watch a customer's screen recording, replay the clicks in its own browser until it sees the bug, and then fix it.
+1. In this video, we'll hand Devin a customer's screen recording of a bug. Devin replays the clicks in its own browser until it sees the bug, and then it fixes it.
 
 2. Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer.
 
@@ -48,7 +48,7 @@ Disclosure: the Fernhouse checkout bug was planted on purpose, and the customer 
 
 21. And here is the new test, which removes items after applying a promo.
 
-22. So the next time a customer sends a bug video, hand it to Devin, and get back a tested fix as a PR.
+22. That's how you turn a customer's bug video into a tested fix. Try it with the next one a customer sends you.
 
 ## Prompt typed on screen
 
