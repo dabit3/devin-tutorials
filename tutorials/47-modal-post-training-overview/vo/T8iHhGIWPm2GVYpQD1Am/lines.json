@@ -1,315 +1,1035 @@
 {
  "0000.png": {
-  "text": "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same loop works for any task where a script can score the answer.",
-  "dur": 11.095,
-  "at": 0.0,
-  "end": 11.095,
-  "mode": "one-take",
-  "checked": true,
+  "text": "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+  "dur": 11.01,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "It does every step an ML engineer would, from dataset to deploy.",
+    "It does every step an ML engineer would, from dataset to deploy."
+   ],
+   [
+    "0002.png",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL.",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL."
+   ],
+   [
+    "0003.png",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half."
+   ],
+   [
+    "0004.png",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1."
+   ],
+   [
+    "0005.png",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping."
+   ],
+   [
+    "0007.png",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others."
+   ],
+   [
+    "0008.png",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1."
+   ],
+   [
+    "0010.png",
+    "With the flag flipped, the same question goes to our own model on Modal.",
+    "With the flag flipped, the same question goes to our own model on Modal."
+   ],
+   [
+    "0009.png",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time."
+   ],
+   [
+    "outro",
+    "Save the recipe as a playbook, and Devin can run it again on your own data.",
+    "Save the recipe as a playbook, and Devin can run it again on your own data."
+   ]
+  ],
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.183,
+    "t1": 2.194,
     "text": "Devin can post-train a small open model on"
    },
    {
-    "t0": 2.229,
-    "t1": 3.971,
-    "text": "Modal and swap it in for a frontier"
+    "t0": 2.252,
+    "t1": 4.644,
+    "text": "Modal and swap it in for a frontier API."
    },
    {
-    "t0": 4.029,
-    "t1": 5.515,
-    "text": "API. In this video,"
+    "t0": 4.923,
+    "t1": 5.642,
+    "text": "In this video,"
    },
    {
-    "t0": 5.55,
-    "t1": 7.442,
+    "t0": 5.666,
+    "t1": 7.396,
     "text": "our example is text-to-SQL,"
    },
    {
-    "t0": 7.686,
-    "t1": 9.497,
-    "text": "but the same loop works for any task"
+    "t0": 7.57,
+    "t1": 9.416,
+    "text": "but the same steps work for any task"
    },
    {
-    "t0": 9.543,
-    "t1": 11.095,
+    "t0": 9.451,
+    "t1": 11.01,
     "text": "where a script can score the answer."
    }
   ]
  },
  "0001.png": {
-  "text": "It runs the whole loop an ML engineer would, from dataset to deploy.",
-  "dur": 3.87,
-  "at": 11.38,
-  "end": 15.25,
-  "mode": "one-take",
-  "checked": true,
+  "text": "It does every step an ML engineer would, from dataset to deploy.",
+  "dur": 3.785,
+  "takeAt": 11.335,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "It does every step an ML engineer would, from dataset to deploy.",
+    "It does every step an ML engineer would, from dataset to deploy."
+   ],
+   [
+    "0002.png",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL.",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL."
+   ],
+   [
+    "0003.png",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half."
+   ],
+   [
+    "0004.png",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1."
+   ],
+   [
+    "0005.png",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping."
+   ],
+   [
+    "0007.png",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others."
+   ],
+   [
+    "0008.png",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1."
+   ],
+   [
+    "0010.png",
+    "With the flag flipped, the same question goes to our own model on Modal.",
+    "With the flag flipped, the same question goes to our own model on Modal."
+   ],
+   [
+    "0009.png",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time."
+   ],
+   [
+    "outro",
+    "Save the recipe as a playbook, and Devin can run it again on your own data.",
+    "Save the recipe as a playbook, and Devin can run it again on your own data."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.079,
-    "t1": 1.809,
-    "text": "It runs the whole loop an ML engineer"
+    "t0": 0.066,
+    "t1": 2.33,
+    "text": "It does every step an ML engineer would,"
    },
    {
-    "t0": 1.867,
-    "t1": 3.852,
-    "text": "would, from dataset to deploy."
+    "t0": 2.481,
+    "t1": 3.785,
+    "text": "from dataset to deploy."
    }
   ]
  },
  "0002.png": {
   "text": "I ask for Spider splits with their databases, and a reward that runs the SQL.",
-  "dur": 4.465,
-  "at": 15.605,
-  "end": 20.07,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 4.135,
+  "takeAt": 15.525,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "It does every step an ML engineer would, from dataset to deploy.",
+    "It does every step an ML engineer would, from dataset to deploy."
+   ],
+   [
+    "0002.png",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL.",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL."
+   ],
+   [
+    "0003.png",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half."
+   ],
+   [
+    "0004.png",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1."
+   ],
+   [
+    "0005.png",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping."
+   ],
+   [
+    "0007.png",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others."
+   ],
+   [
+    "0008.png",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1."
+   ],
+   [
+    "0010.png",
+    "With the flag flipped, the same question goes to our own model on Modal.",
+    "With the flag flipped, the same question goes to our own model on Modal."
+   ],
+   [
+    "0009.png",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time."
+   ],
+   [
+    "outro",
+    "Save the recipe as a playbook, and Devin can run it again on your own data.",
+    "Save the recipe as a playbook, and Devin can run it again on your own data."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.069,
-    "t1": 2.507,
+    "t0": 0.102,
+    "t1": 2.366,
     "text": "I ask for Spider splits with their databases,"
    },
    {
-    "t0": 2.634,
-    "t1": 4.465,
+    "t0": 2.482,
+    "t1": 4.135,
     "text": "and a reward that runs the SQL."
    }
   ]
  },
  "0003.png": {
   "text": "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
-  "dur": 7.795,
-  "at": 20.415,
-  "end": 28.21,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 8.051,
+  "takeAt": 19.919,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "It does every step an ML engineer would, from dataset to deploy.",
+    "It does every step an ML engineer would, from dataset to deploy."
+   ],
+   [
+    "0002.png",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL.",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL."
+   ],
+   [
+    "0003.png",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half."
+   ],
+   [
+    "0004.png",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1."
+   ],
+   [
+    "0005.png",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping."
+   ],
+   [
+    "0007.png",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others."
+   ],
+   [
+    "0008.png",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1."
+   ],
+   [
+    "0010.png",
+    "With the flag flipped, the same question goes to our own model on Modal.",
+    "With the flag flipped, the same question goes to our own model on Modal."
+   ],
+   [
+    "0009.png",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time."
+   ],
+   [
+    "outro",
+    "Save the recipe as a playbook, and Devin can run it again on your own data.",
+    "Save the recipe as a playbook, and Devin can run it again on your own data."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.042,
-    "t1": 1.865,
+    "t0": 0.12,
+    "t1": 1.757,
     "text": "The reward is checked by the computer,"
    },
    {
-    "t0": 2.074,
-    "t1": 3.13,
+    "t0": 1.931,
+    "t1": 3.057,
     "text": "not an AI judge:"
    },
    {
-    "t0": 3.455,
-    "t1": 4.651,
+    "t0": 3.382,
+    "t1": 4.648,
     "text": "right rows score one,"
    },
    {
-    "t0": 4.802,
-    "t1": 5.882,
+    "t0": 4.822,
+    "t1": 5.994,
     "text": "wrong rows zero,"
    },
    {
-    "t0": 5.951,
-    "t1": 7.795,
+    "t0": 6.203,
+    "t1": 8.051,
     "text": "and failed SQL minus a half."
    }
   ]
  },
  "0004.png": {
   "text": "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
-  "dur": 5.0,
-  "at": 28.54,
-  "end": 33.54,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 4.719,
+  "takeAt": 28.301,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "It does every step an ML engineer would, from dataset to deploy.",
+    "It does every step an ML engineer would, from dataset to deploy."
+   ],
+   [
+    "0002.png",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL.",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL."
+   ],
+   [
+    "0003.png",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half."
+   ],
+   [
+    "0004.png",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1."
+   ],
+   [
+    "0005.png",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping."
+   ],
+   [
+    "0007.png",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others."
+   ],
+   [
+    "0008.png",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1."
+   ],
+   [
+    "0010.png",
+    "With the flag flipped, the same question goes to our own model on Modal.",
+    "With the flag flipped, the same question goes to our own model on Modal."
+   ],
+   [
+    "0009.png",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time."
+   ],
+   [
+    "outro",
+    "Save the recipe as a playbook, and Devin can run it again on your own data.",
+    "Save the recipe as a playbook, and Devin can run it again on your own data."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.067,
-    "t1": 1.913,
+    "t0": 0.12,
+    "t1": 1.826,
     "text": "On two hundred held-out questions,"
    },
    {
-    "t0": 2.029,
-    "t1": 4.943,
+    "t0": 1.954,
+    "t1": 4.719,
     "text": "the base 7B already matched gpt-4.1."
    }
   ]
  },
  "0005.png": {
   "text": "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
-  "dur": 6.545,
-  "at": 33.7,
-  "end": 40.245,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 6.405,
+  "takeAt": 33.355,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "It does every step an ML engineer would, from dataset to deploy.",
+    "It does every step an ML engineer would, from dataset to deploy."
+   ],
+   [
+    "0002.png",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL.",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL."
+   ],
+   [
+    "0003.png",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half."
+   ],
+   [
+    "0004.png",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1."
+   ],
+   [
+    "0005.png",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping."
+   ],
+   [
+    "0007.png",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others."
+   ],
+   [
+    "0008.png",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1."
+   ],
+   [
+    "0010.png",
+    "With the flag flipped, the same question goes to our own model on Modal.",
+    "With the flag flipped, the same question goes to our own model on Modal."
+   ],
+   [
+    "0009.png",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time."
+   ],
+   [
+    "outro",
+    "Save the recipe as a playbook, and Devin can run it again on your own data.",
+    "Save the recipe as a playbook, and Devin can run it again on your own data."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.109,
-    "t1": 2.117,
+    "t0": 0.093,
+    "t1": 1.811,
     "text": "After fine-tuning and GRPO,"
    },
    {
-    "t0": 2.326,
-    "t1": 4.671,
+    "t0": 1.985,
+    "t1": 4.284,
     "text": "one coordinator starts four managed Devins,"
    },
    {
-    "t0": 4.845,
-    "t1": 6.545,
+    "t0": 4.528,
+    "t1": 6.405,
     "text": "each with its own VM and Modal job."
    }
   ]
  },
  "0006.png": {
   "text": "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
-  "dur": 5.12,
-  "at": 40.51,
-  "end": 45.63,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 5.385,
+  "takeAt": 40.085,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "It does every step an ML engineer would, from dataset to deploy.",
+    "It does every step an ML engineer would, from dataset to deploy."
+   ],
+   [
+    "0002.png",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL.",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL."
+   ],
+   [
+    "0003.png",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half."
+   ],
+   [
+    "0004.png",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1."
+   ],
+   [
+    "0005.png",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping."
+   ],
+   [
+    "0007.png",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others."
+   ],
+   [
+    "0008.png",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1."
+   ],
+   [
+    "0010.png",
+    "With the flag flipped, the same question goes to our own model on Modal.",
+    "With the flag flipped, the same question goes to our own model on Modal."
+   ],
+   [
+    "0009.png",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time."
+   ],
+   [
+    "outro",
+    "Save the recipe as a playbook, and Devin can run it again on your own data.",
+    "Save the recipe as a playbook, and Devin can run it again on your own data."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.102,
-    "t1": 1.82,
+    "t0": 0.12,
+    "t1": 1.965,
     "text": "Each one tries a different learning rate,"
    },
    {
-    "t0": 2.029,
-    "t1": 3.887,
+    "t0": 2.291,
+    "t1": 4.148,
     "text": "LoRA rank, generation count,"
    },
    {
-    "t0": 3.945,
-    "t1": 5.059,
+    "t0": 4.392,
+    "t1": 5.385,
     "text": "or reward shaping."
    }
   ]
  },
  "0007.png": {
   "text": "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
-  "dur": 5.715,
-  "at": 45.885,
-  "end": 51.6,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 5.315,
+  "takeAt": 45.715,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "It does every step an ML engineer would, from dataset to deploy.",
+    "It does every step an ML engineer would, from dataset to deploy."
+   ],
+   [
+    "0002.png",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL.",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL."
+   ],
+   [
+    "0003.png",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half."
+   ],
+   [
+    "0004.png",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1."
+   ],
+   [
+    "0005.png",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping."
+   ],
+   [
+    "0007.png",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others."
+   ],
+   [
+    "0008.png",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1."
+   ],
+   [
+    "0010.png",
+    "With the flag flipped, the same question goes to our own model on Modal.",
+    "With the flag flipped, the same question goes to our own model on Modal."
+   ],
+   [
+    "0009.png",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time."
+   ],
+   [
+    "outro",
+    "Save the recipe as a playbook, and Devin can run it again on your own data.",
+    "Save the recipe as a playbook, and Devin can run it again on your own data."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.125,
-    "t1": 2.447,
+    "t0": 0.097,
+    "t1": 2.396,
     "text": "Devin promotes the winner by validation score:"
    },
    {
-    "t0": 2.83,
-    "t1": 4.328,
+    "t0": 2.721,
+    "t1": 4.033,
     "text": "eighty-two percent on eval,"
    },
    {
-    "t0": 4.398,
-    "t1": 5.715,
+    "t0": 4.079,
+    "t1": 5.315,
     "text": "within noise of the others."
    }
   ]
  },
  "0008.png": {
   "text": "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
-  "dur": 5.545,
-  "at": 51.865,
-  "end": 57.41,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 6.197,
+  "takeAt": 51.288,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "It does every step an ML engineer would, from dataset to deploy.",
+    "It does every step an ML engineer would, from dataset to deploy."
+   ],
+   [
+    "0002.png",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL.",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL."
+   ],
+   [
+    "0003.png",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half."
+   ],
+   [
+    "0004.png",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1."
+   ],
+   [
+    "0005.png",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping."
+   ],
+   [
+    "0007.png",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others."
+   ],
+   [
+    "0008.png",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1."
+   ],
+   [
+    "0010.png",
+    "With the flag flipped, the same question goes to our own model on Modal.",
+    "With the flag flipped, the same question goes to our own model on Modal."
+   ],
+   [
+    "0009.png",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time."
+   ],
+   [
+    "outro",
+    "Save the recipe as a playbook, and Devin can run it again on your own data.",
+    "Save the recipe as a playbook, and Devin can run it again on your own data."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.078,
-    "t1": 2.075,
+    "t0": 0.12,
+    "t1": 2.43,
     "text": "Then it deploys the winner with modal deploy,"
    },
    {
-    "t0": 2.191,
-    "t1": 3.363,
+    "t0": 2.674,
+    "t1": 3.998,
     "text": "behind a feature flag,"
    },
    {
-    "t0": 3.538,
-    "t1": 5.5,
+    "t0": 4.207,
+    "t1": 6.197,
     "text": "shown here on gpt-4.1."
    }
   ]
  },
  "0010.png": {
   "text": "With the flag flipped, the same question goes to our own model on Modal.",
-  "dur": 3.48,
-  "at": 57.74,
-  "end": 61.22,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 3.485,
+  "takeAt": 57.685,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "It does every step an ML engineer would, from dataset to deploy.",
+    "It does every step an ML engineer would, from dataset to deploy."
+   ],
+   [
+    "0002.png",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL.",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL."
+   ],
+   [
+    "0003.png",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half."
+   ],
+   [
+    "0004.png",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1."
+   ],
+   [
+    "0005.png",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping."
+   ],
+   [
+    "0007.png",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others."
+   ],
+   [
+    "0008.png",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1."
+   ],
+   [
+    "0010.png",
+    "With the flag flipped, the same question goes to our own model on Modal.",
+    "With the flag flipped, the same question goes to our own model on Modal."
+   ],
+   [
+    "0009.png",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time."
+   ],
+   [
+    "outro",
+    "Save the recipe as a playbook, and Devin can run it again on your own data.",
+    "Save the recipe as a playbook, and Devin can run it again on your own data."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.066,
-    "t1": 1.064,
+    "t0": 0.12,
+    "t1": 1.189,
     "text": "With the flag flipped,"
    },
    {
-    "t0": 1.134,
-    "t1": 3.468,
+    "t0": 1.223,
+    "t1": 3.485,
     "text": "the same question goes to our own model on Modal."
    }
   ]
  },
  "0009.png": {
   "text": "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
-  "dur": 15.53,
-  "at": 61.48,
-  "end": 77.01,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 15.465,
+  "takeAt": 61.435,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "It does every step an ML engineer would, from dataset to deploy.",
+    "It does every step an ML engineer would, from dataset to deploy."
+   ],
+   [
+    "0002.png",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL.",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL."
+   ],
+   [
+    "0003.png",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half."
+   ],
+   [
+    "0004.png",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1."
+   ],
+   [
+    "0005.png",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping."
+   ],
+   [
+    "0007.png",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others."
+   ],
+   [
+    "0008.png",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1."
+   ],
+   [
+    "0010.png",
+    "With the flag flipped, the same question goes to our own model on Modal.",
+    "With the flag flipped, the same question goes to our own model on Modal."
+   ],
+   [
+    "0009.png",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time."
+   ],
+   [
+    "outro",
+    "Save the recipe as a playbook, and Devin can run it again on your own data.",
+    "Save the recipe as a playbook, and Devin can run it again on your own data."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.053,
-    "t1": 3.478,
+    "t0": 0.12,
+    "t1": 3.058,
     "text": "The tuned 7B beat gpt-4.1 by eight and"
    },
    {
-    "t0": 3.501,
-    "t1": 4.279,
+    "t0": 3.093,
+    "t1": 3.87,
     "text": "a half points,"
    },
    {
-    "t0": 4.523,
-    "t1": 6.647,
-    "text": "though each training step's gain alone was within"
+    "t0": 4.079,
+    "t1": 6.994,
+    "text": "though each training step's gain alone was within noise."
    },
    {
-    "t0": 6.705,
-    "t1": 9.77,
-    "text": "noise. On a warm H100 it cost forty-nine"
+    "t0": 7.435,
+    "t1": 10.151,
+    "text": "On a warm H100 it cost forty-nine dollars"
    },
    {
-    "t0": 9.805,
-    "t1": 12.894,
-    "text": "dollars per million queries to gpt-4.1's nine hundred"
+    "t0": 10.209,
+    "t1": 13.588,
+    "text": "per million queries to gpt-4.1's nine hundred ninety-three,"
    },
    {
-    "t0": 12.952,
-    "t1": 15.471,
-    "text": "ninety-three, before cold starts and idle time."
+    "t0": 13.762,
+    "t1": 15.465,
+    "text": "before cold starts and idle time."
    }
   ]
  },
  "outro": {
   "text": "Save the recipe as a playbook, and Devin can run it again on your own data.",
-  "dur": 3.8,
-  "at": 77.27,
-  "end": 81.07,
-  "mode": "one-take",
-  "checked": true,
+  "dur": 3.674,
+  "takeAt": 77.166,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+    "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "It does every step an ML engineer would, from dataset to deploy.",
+    "It does every step an ML engineer would, from dataset to deploy."
+   ],
+   [
+    "0002.png",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL.",
+    "I ask for Spider splits with their databases, and a reward that runs the SQL."
+   ],
+   [
+    "0003.png",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half.",
+    "The reward is checked by the computer, not an AI judge: right rows score one, wrong rows zero, and failed SQL minus a half."
+   ],
+   [
+    "0004.png",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1.",
+    "On two hundred held-out questions, the base 7B already matched gpt-4.1."
+   ],
+   [
+    "0005.png",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job.",
+    "After fine-tuning and GRPO, one coordinator starts four managed Devins, each with its own VM and Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+    "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping."
+   ],
+   [
+    "0007.png",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others.",
+    "Devin promotes the winner by validation score: eighty-two percent on eval, within noise of the others."
+   ],
+   [
+    "0008.png",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1.",
+    "Then it deploys the winner with modal deploy, behind a feature flag, shown here on gpt-4.1."
+   ],
+   [
+    "0010.png",
+    "With the flag flipped, the same question goes to our own model on Modal.",
+    "With the flag flipped, the same question goes to our own model on Modal."
+   ],
+   [
+    "0009.png",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time.",
+    "The tuned 7B beat gpt-4.1 by eight and a half points, though each training step's gain alone was within noise. On a warm H100 it cost forty-nine dollars per million queries to gpt-4.1's nine hundred ninety-three, before cold starts and idle time."
+   ],
+   [
+    "outro",
+    "Save the recipe as a playbook, and Devin can run it again on your own data.",
+    "Save the recipe as a playbook, and Devin can run it again on your own data."
+   ]
+  ],
   "chunks": [
    {
-    "t0": 0.122,
-    "t1": 1.631,
+    "t0": 0.12,
+    "t1": 1.549,
     "text": "Save the recipe as a playbook,"
    },
    {
-    "t0": 1.748,
-    "t1": 3.8,
+    "t0": 1.641,
+    "t1": 3.674,
     "text": "and Devin can run it again on your own data."
    }
   ]

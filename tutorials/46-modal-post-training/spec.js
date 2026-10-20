@@ -1,8 +1,8 @@
 window.SPEC = {
   "title": "Post-train a model on Modal",
-  "subtitle": "Devin runs the ML-engineer loop and swaps out a frontier API call",
-  "outro": "Devin runs the loop. You review the results",
-  "voOutro": "Devin ran the whole loop on its own, and I reviewed results instead of code.",
+  "subtitle": "Devin trains and deploys a model to replace a frontier API call",
+  "outro": "Devin does the work. You review the results",
+  "voOutro": "Devin did every step on its own, and I reviewed results instead of code.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
@@ -20,10 +20,10 @@ window.SPEC = {
     },
     "0002.png": {
       "cap": "Our example: a text-to-SQL demo app",
-      "vo": "Our example in this video is text-to-SQL, but the same loop works for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which turns questions into SQL with gpt-4.1.",
+      "vo": "Our example in this video is text-to-SQL, but the same steps work for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which uses gpt-4.1 to turn questions into SQL.",
       "hold": 5.2,
       "cursor": false,
-      "voSay": "Our example in this video is text-to-SQL, but the same loop works for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which turns questions into SQL with GPT four point one."
+      "voSay": "Our example in this video is text-to-SQL, but the same steps work for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which uses GPT four point one to turn questions into SQL."
     },
     "0009.png": {
       "cap": "Step 1: set the folder up for Modal",
@@ -53,9 +53,9 @@ window.SPEC = {
     },
     "0118.png": {
       "cap": "Step 3: baseline gpt-4.1 and the base 7B",
-      "vo": "Then the baseline: accuracy, latency and cost on the eval split, for gpt-4.1 and the base Qwen 7B on a Modal H100.",
+      "vo": "Then the baseline: gpt-4.1 and the base Qwen 7B on a Modal H100, measured for accuracy, latency and cost on the eval split.",
       "hold": 3.2,
-      "voSay": "Then the baseline: accuracy, latency and cost on the eval split, for GPT four point one and the base Qwen seven B on a Modal H one hundred."
+      "voSay": "Then the baseline: GPT four point one and the base Qwen seven B on a Modal H one hundred, measured for accuracy, latency and cost on the eval split."
     },
     "0250.png": {
       "cap": "No CUDA compiler: Devin switches images",
@@ -162,9 +162,9 @@ window.SPEC = {
     },
     "2960.png": {
       "cap": "Before: the frontier backend, gpt-4.1",
-      "vo": "With the flag set to frontier, the app answers with gpt-4.1.",
+      "vo": "With the flag set to frontier, gpt-4.1 writes the SQL.",
       "hold": 2.8,
-      "voSay": "With the flag set to frontier, the app answers with GPT four point one."
+      "voSay": "With the flag set to frontier, GPT four point one writes the SQL."
     },
     "2964.png": {
       "cap": "After: our model on the Modal endpoint",

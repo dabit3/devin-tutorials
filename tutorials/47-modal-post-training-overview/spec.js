@@ -1,7 +1,7 @@
 window.SPEC = {
   "title": "Post-training on Modal",
   "subtitle": "How Devin swaps a frontier API for your own model",
-  "outro": "Devin runs the loop. You review the results",
+  "outro": "Devin does the work. You review the results",
   "voOutro": "Save the recipe as a playbook, and Devin can run it again on your own data.",
   "speed": 3,
   "cps": 48,
@@ -10,13 +10,13 @@ window.SPEC = {
     "0000.png": {
       "scene": "value", "hold": 9.6, "voHold": 9.4, "cursor": false, "capPos": "bottom",
       "cap": "Your own model in place of a frontier API",
-      "vo": "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same loop works for any task where a script can score the answer.",
+      "vo": "Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
       "hl": null
     },
     "0001.png": {
-      "scene": "loop", "hold": 6.6, "voHold": 3.6, "capPos": "bottom",
+      "scene": "steps", "hold": 6.6, "voHold": 3.6, "capPos": "bottom",
       "cap": "Dataset, baseline, SFT, RL, sweep, eval, deploy",
-      "vo": "It runs the whole loop an ML engineer would, from dataset to deploy.",
+      "vo": "It does every step an ML engineer would, from dataset to deploy.",
       "hl": null
     },
     "0002.png": {

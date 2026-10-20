@@ -131,14 +131,14 @@ function value(ctx, s0, k) {
   txt(ctx, k, 'This video\u2019s example: text-to-SQL', 720, 690, 20, 500, ink(0.65), ap(k, s, doneAt + 0.5));
 }
 
-// 2. The ML-engineer loop Devin runs end to end.
+// 2. Every ML-engineering step Devin runs end to end.
 const STAGES = [
   ['Dataset', 'Spider splits', 'dataset'], ['Baseline', 'gpt-4.1 vs 7B', 'baseline'], ['SFT', 'LoRA, H100', 'finetuning'],
   ['RL', 'GRPO + reward', 'reinforcement'], ['Sweep', '4 managed Devins', 'parallel'], ['Eval', '200 held-out', 'eval'], ['Deploy', 'modal deploy', 'deploy'],
 ];
-function loop(ctx, s0, k) {
-  bg(ctx, k); const s = s0 / st('loop');
-  eyebrow(ctx, k, 'THE ML-ENGINEER LOOP', 150, ap(k, s, 0.05));
+function steps(ctx, s0, k) {
+  bg(ctx, k); const s = s0 / st('steps');
+  eyebrow(ctx, k, 'EVERY STEP, DATASET TO DEPLOY', 150, ap(k, s, 0.05));
   const cw = 170, gap = 22, x0 = (k.VW - (7 * cw + 6 * gap)) / 2, ch = 104;
   const at = STAGES.map(([, , w], i) => T('0001.png', w, 0.8 + i * 0.55));
   const ys = i => (i % 2 ? 452 : 322);
@@ -232,5 +232,5 @@ function score(ctx, s0, k) {
   txt(ctx, k, 'Base vs gpt-4.1, SFT vs base and GRPO vs SFT are each within noise (McNemar).', 720, y + h + 70, 14, 500, ink(0.5), na);
 }
 
-window.SCENES = { value, loop, reward, sweep, score };
+window.SCENES = { value, steps, reward, sweep, score };
 })();

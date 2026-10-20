@@ -2,9 +2,9 @@
 
 Narrated by Nader (ElevenLabs voice T8iHhGIWPm2GVYpQD1Am, default settings, no seed), recorded as one full-script take and cut at sentence boundaries.
 
-Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same loop works for any task where a script can score the answer.
+Devin can post-train a small open model on Modal and swap it in for a frontier API. In this video, our example is text-to-SQL, but the same steps work for any task where a script can score the answer.
 
-It runs the whole loop an ML engineer would, from dataset to deploy.
+It does every step an ML engineer would, from dataset to deploy.
 
 I ask for Spider splits with their databases, and a reward that runs the SQL.
 

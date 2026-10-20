@@ -4,7 +4,7 @@ Narrated by Nader (ElevenLabs voice T8iHhGIWPm2GVYpQD1Am, default settings, no s
 
 First, I saved my Modal token and an OpenAI key as Devin secrets, so sessions can use them without the values ever showing.
 
-Our example in this video is text-to-SQL, but the same loop works for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which turns questions into SQL with gpt-4.1.
+Our example in this video is text-to-SQL, but the same steps work for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which uses gpt-4.1 to turn questions into SQL.
 
 I start one session and ask Devin to set the folder up for Modal training, check that auth works, and save the setup as a skill.
 
@@ -16,7 +16,7 @@ Next, the dataset and the reward: Spider splits with their SQLite databases, and
 
 It builds two thousand training and two hundred eval questions on separate databases, and writes the reward with unit tests. The reward is checked by the computer, not an AI judge.
 
-Then the baseline: accuracy, latency and cost on the eval split, for gpt-4.1 and the base Qwen 7B on a Modal H100.
+Then the baseline: gpt-4.1 and the base Qwen 7B on a Modal H100, measured for accuracy, latency and cost on the eval split.
 
 When the vLLM server fails because the image has no CUDA compiler, Devin switches to a CUDA image and redeploys.
 
@@ -54,7 +54,7 @@ Next, I ask Devin to deploy the winner with modal deploy, add a feature flag to 
 
 Devin's testing agent opens the app in the session's browser.
 
-With the flag set to frontier, the app answers with gpt-4.1.
+With the flag set to frontier, gpt-4.1 writes the SQL.
 
 Flipped to finetuned, the same question goes to our endpoint on Modal and returns the same rows.
 
@@ -72,4 +72,4 @@ Devin drafts it as general steps, with this project as the worked example, and I
 
 Now it's an organization playbook, so the next task model starts from this recipe.
 
-Devin ran the whole loop on its own, and I reviewed results instead of code.
+Devin did every step on its own, and I reviewed results instead of code.
