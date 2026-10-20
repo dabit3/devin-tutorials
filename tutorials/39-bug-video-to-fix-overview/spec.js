@@ -1,8 +1,8 @@
 window.SPEC = {
-  "title": "A Customer’s Bug Video Becomes a Fix",
+  "title": "How to Fix Bugs from Customer Videos",
   "subtitle": "How Devin turns a screen recording into a verified PR",
-  "outro": "Send the bug video, get back a verified fix",
-  "voOutro": "Send Devin the bug video, and get back a verified fix.",
+  "outro": "Try it with your next bug video",
+  "voOutro": "That's how you turn a customer's bug video into a verified fix. Try it with the next one a customer sends you.",
   "outroVoDelay": 0.2,
   "speed": 3,
   "cps": 48,
@@ -14,7 +14,7 @@ window.SPEC = {
       "hold": 5.4,
       "cursor": false,
       "cap": "Hand Devin a customer’s bug video, get back a verified fix",
-      "vo": "Hand Devin a customer's screen recording, and it reproduces the bug, fixes it, and opens a pull request."
+      "vo": "In this video, we'll look at how Devin turns a customer's screen recording into a fixed and verified pull request."
     },
     "0001.png": {
       "scene": "flow",
