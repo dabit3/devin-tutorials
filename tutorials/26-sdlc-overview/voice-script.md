@@ -24,7 +24,7 @@ Here, the plan points to the exact files that need to change.
 
 ## build
 
-When you delegate a task, Devin works asynchronously in its own virtual machine, with code, a shell, and a browser. Those machines can run Linux, macOS, or Windows. Repository blueprints prepare the tools and dependencies. The result is a pull request that follows your conventions.
+When you delegate a task, Devin works asynchronously on its own Linux, macOS, or Windows machine, with code, a shell, and a browser. Repository blueprints prepare the tools and dependencies. The result is a pull request that follows your conventions.
 
 ## Proof — The work lands in a normal pull request
 
