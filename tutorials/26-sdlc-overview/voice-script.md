@@ -4,7 +4,7 @@ Nader voice (eleven_multilingual_v2, default settings). The whole script is one 
 
 ## intro
 
-What happens after the code is written?
+What happens after the code is written.
 
 ## overview
 

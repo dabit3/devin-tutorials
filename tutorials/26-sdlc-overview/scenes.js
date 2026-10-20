@@ -214,7 +214,7 @@ const ANSWERS = [
   { word: 'Secured', label: 'SECURITY SCAN', img: 'secured.png' },
   { word: 'Shipped', label: 'PULL REQUEST', img: 'shipped.png' },
 ];
-const QUESTION = 'What happens after the code is written?'.split(' ');
+const QUESTION = 'What happens after the code is written.'.split(' ');
 const LEAD = () => window.SPEC.sceneLead || 0;
 // each word of the question appears as the narrator says it (by character share of the spoken line)
 function init() {
