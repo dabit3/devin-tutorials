@@ -476,7 +476,7 @@ window.SPEC = {
       "voGap": 1.2,
       "hold": 2.6,
       "capPos": "bottom",
-      "cap": "It runs the app and uses it like a user",
+      "cap": "Devin uses the app like a user",
       "hl": [{"x": 700.0, "y": 148.0, "w": 836, "h": 76}],
       "vo": "Devin runs the app and uses it the way a person would. It checks the fixed case first, then the whole flow again."
     },
