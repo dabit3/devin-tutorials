@@ -1,0 +1,41 @@
+{
+  "0010.png": {
+    "kind": "animated-diagram",
+    "source": "26-intro-09-rewind/scenes.js",
+    "scene": "rewind",
+    "note": "Whole intro is drawn live; it composites the real shots below as cards."
+  },
+  "0041.png": {
+    "source": "20-sdlc-integration/shots/0052.png",
+    "via": "26-sdlc-overview/shots/0041.png",
+    "kind": "real-ui",
+    "use": "The finished result: the session reports the pull request it opened (orbit-demo#11)."
+  },
+  "0091.png": {
+    "source": "08-computer-use-testing/shots/0149.png",
+    "via": "26-sdlc-overview/shots/0091.png",
+    "kind": "real-ui",
+    "account_mask_pixels": [75, 2328, 700, 2392],
+    "crop_pixels_at_draw": [2290, 400, 4306, 2405],
+    "use": "The finished result: the Computer tab with the recording of the app being tested."
+  },
+  "0101.png": {
+    "source": "20-sdlc-integration/shots/0058.png",
+    "via": "26-sdlc-overview/shots/0101.png",
+    "kind": "real-ui",
+    "use": "Rewind step: Devin Review findings next to the diff."
+  },
+  "0081.png": {
+    "source": "20-sdlc-integration/shots/0106.png",
+    "via": "26-sdlc-overview/shots/0081.png",
+    "kind": "real-ui",
+    "use": "Rewind step: the PR's How it was tested section."
+  },
+  "0031.png": {
+    "source": "20-sdlc-integration/shots/0024.png",
+    "via": "26-sdlc-overview/shots/0031.png",
+    "kind": "real-ui",
+    "crop_pixels_at_draw_for_request": [92, 206, 1652, 496],
+    "use": "Rewind step: the Ask Devin plan; its prompt bubble (cropped at draw time) is the original request the rewind lands on."
+  }
+}
