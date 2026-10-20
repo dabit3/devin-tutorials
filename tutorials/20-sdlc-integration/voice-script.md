@@ -2,9 +2,9 @@
 
 Narrated by Nader (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one take cut locally with `_kit/tools/vo_onetake.py`).
 
-Real workflow: Ask Devin plan → Devin session builds [Orbit PR #11](https://github.com/thequantexplorer/orbit-demo/pull/11) → Devin Review first pass → `/devin` comment in Devin Review → fix → browser verification → human merge. The new sections show the real MCP marketplace and Automation template editor. Sentry, Datadog and Metabase are examples of available integrations, not connected services in this demo. The automation draft was discarded; nothing was enabled or run.
+Real workflow: Ask Devin plan → Devin session builds [Orbit PR #11](https://github.com/thequantexplorer/orbit-demo/pull/11) → Devin Review first pass → `/devin` comment in Devin Review → fix → verification (Devin runs the app, records the flow and reports each check) → human merge. The new sections show the real MCP marketplace and Automation template editor. Sentry, Datadog and Metabase are examples of available integrations, not connected services in this demo. The automation draft was discarded; nothing was enabled or run.
 
-Sources: [SDLC](https://docs.devin.ai/essential-guidelines/sdlc-integration), [MCPs](https://docs.devin.ai/work-with-devin/mcp), [Automations](https://docs.devin.ai/product-guides/automations).
+Sources: [SDLC](https://docs.devin.ai/essential-guidelines/sdlc-integration), [MCPs](https://docs.devin.ai/work-with-devin/mcp), [Automations](https://docs.devin.ai/product-guides/automations), [Testing & Video Recordings](https://docs.devin.ai/work-with-devin/testing-and-recordings).
 
 1. This is how Devin fits into the way your team already builds software.  <!-- 0000.png -->
 2. Writing code is less than a fifth of an engineer's time. The rest goes to understanding code, planning, review, and testing.  <!-- 0001.png -->
@@ -28,29 +28,32 @@ Sources: [SDLC](https://docs.devin.ai/essential-guidelines/sdlc-integration), [M
 20. To fix it, comment right here in Devin Review. Start with /devin and say what to change.  <!-- 0060.png -->
 21. Devin pushes a fix commit and replies with what it changed and how it checked it.  <!-- 0110.png -->
 22. Devin Review runs again on the new commit and marks the focus bug resolved.  <!-- 0102.png -->
-23. Then ask the same session to fix the other bug and test the flow in its browser.  <!-- 0141.png -->
-24. Devin fixes it, then tests the fixed case and the full flow again.  <!-- 0171.png -->
-25. It sends back a recording of the test, with eight checks passed.  <!-- 0172.png -->
-26. Each check is listed next to the video.  <!-- 0176.png -->
-27. Back in Devin Review, both findings are now resolved.  <!-- 0201.png -->
-28. Merging is still your call.  <!-- 0202.png -->
-29. So you merge it.  <!-- 0252.png -->
-30. For security, Devin can scan your repos and fix what it finds, again as pull requests you review.  <!-- 0253.png -->
-31. To get started, connect your repos and team tools. Then connect runtime data through MCPs.  <!-- 0254.png -->
-32. MCP stands for Model Context Protocol. It lets a Devin session use tools and data from services you authorize.  <!-- 0286.png -->
-33. Open Customize, then MCPs, to choose your connections.  <!-- 0255.png -->
-34. Browse the plugin marketplace to find the tools your team already uses.  <!-- 0257.png -->
-35. With Sentry connected, Devin can inspect errors and stack traces before tracing a failure back to code.  <!-- 0263.png -->
-36. Datadog adds logs, metrics, and traces, so an investigation can start from production evidence, not guesswork.  <!-- 0267.png -->
-37. Metabase connects analytics data and dashboards, useful for investigating changes in product or business metrics.  <!-- 0271.png -->
-38. These are available integrations, not connections in this account. Install the plugin, then authorize its MCP with only the access it needs.  <!-- 0289.png -->
-39. Automations handle the other half: when to start. A schedule or event can trigger a session, with optional conditions and checks before it runs.  <!-- 0287.png -->
-40. Open Automations to see ready-made workflows for recurring work and incoming events.  <!-- 0272.png -->
-41. For example, Fix Sentry Errors Daily is a scheduled error sweep that can investigate issues and open fix pull requests.  <!-- 0273.png -->
-42. Investigate Alerts Triggered uses an alert in Slack and Datadog context to produce a root-cause analysis.  <!-- 0274.png -->
-43. The Fix CI Failures template shows how this is wired. Choose a repository; the trigger matches a completed check run whose conclusion is failure.  <!-- 0279.png -->
-44. The action starts a session. Its instructions tell Devin to read the logs, fix the cause, and run the tests again.  <!-- 0280.png -->
-45. Choose which MCP connections that automation can use. The monitoring templates need the relevant services connected first.  <!-- 0281.png -->
-46. Set spend and rate limits before enabling it. This is a preview only; nothing is being created or turned on.  <!-- 0282.png -->
-47. Now the loop is connected: a signal starts work, MCPs provide context, and Devin investigates and tests. Any proposed fix still goes through your pull requests and human review.  <!-- 0288.png -->
-48. From planning to production feedback, Devin works across the lifecycle. You stay in control of what ships.  <!-- outro -->
+23. Testing and verification are not the same thing. Tests check the code. Verification proves the change works the way a user would see it.  <!-- 0290.png -->
+24. So ask the same session to fix the other bug, then test the flow in its browser and send a recording.  <!-- 0141.png -->
+25. Devin runs the app and uses it the way a person would. It checks the fixed case first, then the whole flow again.  <!-- 0171.png -->
+26. Then it sends back a recording as proof, with eight checks passed.  <!-- 0172.png -->
+27. Each check is listed next to the video, with what Devin expected and what it actually saw.  <!-- 0176.png -->
+28. So a reviewer can watch the change work without pulling the branch or running it themselves.  <!-- 0184.png -->
+29. That's verification: evidence that it works, not just a passing check.  <!-- 0192.png -->
+30. Back in Devin Review, both findings are now resolved.  <!-- 0201.png -->
+31. Merging is still your call.  <!-- 0202.png -->
+32. So you merge it.  <!-- 0252.png -->
+33. For security, Devin can scan your repos and fix what it finds, again as pull requests you review.  <!-- 0253.png -->
+34. To get started, connect your repos and team tools. Then connect runtime data through MCPs.  <!-- 0254.png -->
+35. MCP stands for Model Context Protocol. It lets a Devin session use tools and data from services you authorize.  <!-- 0286.png -->
+36. Open Customize, then MCPs, to choose your connections.  <!-- 0255.png -->
+37. Browse the plugin marketplace to find the tools your team already uses.  <!-- 0257.png -->
+38. With Sentry connected, Devin can inspect errors and stack traces before tracing a failure back to code.  <!-- 0263.png -->
+39. Datadog adds logs, metrics, and traces, so an investigation can start from production evidence, not guesswork.  <!-- 0267.png -->
+40. Metabase connects analytics data and dashboards, useful for investigating changes in product or business metrics.  <!-- 0271.png -->
+41. These are available integrations, not connections in this account. Install the plugin, then authorize its MCP with only the access it needs.  <!-- 0289.png -->
+42. Automations handle the other half: when to start. A schedule or event can trigger a session, with optional conditions and checks before it runs.  <!-- 0287.png -->
+43. Open Automations to see ready-made workflows for recurring work and incoming events.  <!-- 0272.png -->
+44. For example, Fix Sentry Errors Daily is a scheduled error sweep that can investigate issues and open fix pull requests.  <!-- 0273.png -->
+45. Investigate Alerts Triggered uses an alert in Slack and Datadog context to produce a root-cause analysis.  <!-- 0274.png -->
+46. The Fix CI Failures template shows how this is wired. Choose a repository; the trigger matches a completed check run whose conclusion is failure.  <!-- 0279.png -->
+47. The action starts a session. Its instructions tell Devin to read the logs, fix the cause, and run the tests again.  <!-- 0280.png -->
+48. Choose which MCP connections that automation can use. The monitoring templates need the relevant services connected first.  <!-- 0281.png -->
+49. Set spend and rate limits before enabling it. This is a preview only; nothing is being created or turned on.  <!-- 0282.png -->
+50. Now the loop is connected: a signal starts work, MCPs provide context, and Devin investigates and tests. Any proposed fix still goes through your pull requests and human review.  <!-- 0288.png -->
+51. From planning to production feedback, Devin works across the lifecycle. You stay in control of what ships.  <!-- outro -->
