@@ -2,12 +2,12 @@
 shots/demo.json beats and audio/demo*.wav clips. Source: DEMO=<take dir> with f/*.jpg, log.json, mix.wav."""
 import json, os, shutil, subprocess, sys
 D = os.path.dirname(os.path.abspath(__file__))
-SRC = os.environ.get('DEMO', '/Users/devin/t36/demo/t7')
+SRC = os.environ.get('DEMO', '/Users/devin/t36/demo/t13')
 L = json.load(open(os.path.join(SRC, 'log.json')))
 F = [f for f in L['frames'] if isinstance(f[0], int)]; T0 = F[0][1]
 ts = [(f[1] - T0) / 1000 for f in F]
-SEGS = {'demoA': (33.6, 57.0), 'demoB': (58.0, 63.6), 'demoC': (76.2, 92.1)}  # sneak/fail/barge-in/attack, comedic switch, dash + grotto
-STILLS = {'gate': 12.0, 'bridge': 26.0, 'troll': 33.0, 'outro': 95.0}  # silent stills for the narrated intro and the recap
+SEGS = {'demoA': (35.0, 65.6), 'demoB': (66.5, 72.3), 'demoC': (89.8, 110.6)}  # sneak (animated)/barge-in/fight, comedic switch, dash + rope bridge
+STILLS = {'gate': 12.0, 'bridge': 26.0, 'troll': 33.0, 'outro': 111.0}  # silent stills for the narrated intro and the recap
 FPS = 6
 out = os.path.join(D, 'shots', 'demo'); shutil.rmtree(out, ignore_errors=True); os.makedirs(out)
 def near(t): return min(range(len(ts)), key=lambda i: abs(ts[i] - t))

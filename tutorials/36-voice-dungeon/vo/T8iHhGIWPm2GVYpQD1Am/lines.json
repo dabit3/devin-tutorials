@@ -1,7 +1,7 @@
 {
  "demo/gate.jpg": {
   "text": "Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.",
-  "dur": 9.45,
+  "dur": 8.07,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -17,8 +17,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -89,35 +89,35 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.8,
+    "t1": 2.345,
     "text": "Today I'll be building and testing a cross-platform"
    },
    {
-    "t0": 2.88,
-    "t1": 5.24,
+    "t0": 2.403,
+    "t1": 4.307,
     "text": "mobile game just by using my voice."
    },
    {
-    "t0": 5.44,
-    "t1": 6.72,
+    "t0": 4.748,
+    "t1": 5.863,
     "text": "It runs on iOS,"
    },
    {
-    "t0": 6.8,
-    "t1": 8.24,
+    "t0": 5.933,
+    "t1": 6.885,
     "text": "Android, and the web,"
    },
    {
-    "t0": 8.36,
-    "t1": 9.45,
+    "t0": 6.92,
+    "t1": 8.057,
     "text": "from one codebase."
    }
   ]
  },
  "demo/bridge.jpg": {
   "text": "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.",
-  "dur": 9.44,
-  "takeAt": 9.72,
+  "dur": 9.705,
+  "takeAt": 8.345,
   "mode": "single-take-1",
   "take": [
    [
@@ -132,8 +132,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -203,31 +203,31 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.96,
+    "t0": 0.037,
+    "t1": 1.837,
     "text": "I'll talk to Devin with Devin Voice,"
    },
    {
-    "t0": 2.04,
-    "t1": 4.4,
+    "t0": 2.011,
+    "t1": 4.321,
     "text": "which uses ChatGPT voice under the hood."
    },
    {
-    "t0": 4.6,
-    "t1": 6.76,
+    "t0": 4.763,
+    "t1": 7.026,
     "text": "And the game's dungeon master talks to players"
    },
    {
-    "t0": 6.88,
-    "t1": 9.4,
+    "t0": 7.201,
+    "t1": 9.705,
     "text": "through OpenAI's GPT-Live-1 API."
    }
   ]
  },
  "demo/troll.jpg": {
-  "text": "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-  "dur": 7.92,
-  "takeAt": 19.4,
+  "text": "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+  "dur": 8.675,
+  "takeAt": 18.475,
   "mode": "single-take-1",
   "take": [
    [
@@ -242,8 +242,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -313,31 +313,31 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.56,
+    "t0": 0.089,
+    "t1": 1.587,
     "text": "It listens while it talks,"
    },
    {
-    "t0": 1.72,
-    "t1": 4.28,
-    "text": "handles interruptions, and runs tools in the background"
+    "t0": 1.703,
+    "t1": 4.675,
+    "text": "handles interruptions, and runs tools in the background."
    },
    {
-    "t0": 4.36,
-    "t1": 6.36,
-    "text": "that roll the die and update the room,"
+    "t0": 5.058,
+    "t1": 6.974,
+    "text": "Each move plays out on screen before the"
    },
    {
-    "t0": 6.4,
-    "t1": 7.88,
-    "text": "the map, and your hearts."
+    "t0": 7.02,
+    "t1": 8.675,
+    "text": "dungeon master tells you what happened."
    }
   ]
  },
  "0000.png": {
   "text": "Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
-  "dur": 7.28,
-  "takeAt": 27.56,
+  "dur": 7.35,
+  "takeAt": 27.43,
   "mode": "single-take-1",
   "take": [
    [
@@ -352,8 +352,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -424,25 +424,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.08,
+    "t1": 1.13,
     "text": "Here's how I built it."
    },
    {
-    "t0": 1.56,
-    "t1": 4.28,
+    "t0": 1.734,
+    "t1": 4.288,
     "text": "First, I switch the virtual environment from Ubuntu"
    },
    {
-    "t0": 4.36,
-    "t1": 7.24,
+    "t0": 4.369,
+    "t1": 7.35,
     "text": "to macOS, so Devin can run the iPhone simulator."
    }
   ]
  },
  "0009.png": {
   "text": "Then I click the waveform button beside the message box to start a voice call.",
-  "dur": 3.88,
-  "takeAt": 35.16,
+  "dur": 3.515,
+  "takeAt": 35.125,
   "mode": "single-take-1",
   "take": [
    [
@@ -457,8 +457,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -528,21 +528,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.12,
+    "t0": 0.053,
+    "t1": 1.899,
     "text": "Then I click the waveform button beside the"
    },
    {
-    "t0": 2.2,
-    "t1": 3.88,
+    "t0": 1.933,
+    "t1": 3.515,
     "text": "message box to start a voice call."
    }
   ]
  },
  "0292.png": {
   "text": "Devin sets up the Expo app, a small server that keeps the OpenAI key private, the pixel-art screens, and the game tools.",
-  "dur": 7.15,
-  "takeAt": 39.32,
+  "dur": 7.248,
+  "takeAt": 38.982,
   "mode": "single-take-1",
   "take": [
    [
@@ -557,8 +557,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -629,30 +629,30 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.88,
+    "t1": 1.815,
     "text": "Devin sets up the Expo app,"
    },
    {
-    "t0": 1.96,
-    "t1": 4.04,
+    "t0": 1.989,
+    "t1": 4.184,
     "text": "a small server that keeps the OpenAI key"
    },
    {
-    "t0": 4.12,
-    "t1": 6.12,
+    "t0": 4.242,
+    "t1": 6.204,
     "text": "private, the pixel-art screens,"
    },
    {
-    "t0": 6.2,
-    "t1": 7.15,
+    "t0": 6.32,
+    "t1": 7.248,
     "text": "and the game tools."
    }
   ]
  },
  "0362.png": {
   "text": "Mid-build, I rejoin the call from inside the session and ask how it's going.",
-  "dur": 3.89,
-  "takeAt": 46.76,
+  "dur": 3.635,
+  "takeAt": 46.655,
   "mode": "single-take-1",
   "take": [
    [
@@ -667,8 +667,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -738,21 +738,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.36,
+    "t0": 0.086,
+    "t1": 2.188,
     "text": "Mid-build, I rejoin the call from inside the"
    },
    {
-    "t0": 2.44,
-    "t1": 3.88,
+    "t0": 2.234,
+    "t1": 3.635,
     "text": "session and ask how it's going."
    }
   ]
  },
  "0416.png": {
   "text": "When the build is ready, Devin opens a pull request, and starts a second Devin on Ubuntu to test Android.",
-  "dur": 5.69,
-  "takeAt": 50.92,
+  "dur": 6.025,
+  "takeAt": 50.665,
   "mode": "single-take-1",
   "take": [
    [
@@ -767,8 +767,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -838,26 +838,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.24,
+    "t0": 0.059,
+    "t1": 1.127,
     "text": "When the build is ready,"
    },
    {
-    "t0": 1.32,
-    "t1": 2.84,
+    "t0": 1.371,
+    "t1": 2.961,
     "text": "Devin opens a pull request,"
    },
    {
-    "t0": 2.88,
-    "t1": 5.69,
+    "t0": 3.112,
+    "t1": 6.025,
     "text": "and starts a second Devin on Ubuntu to test Android."
    }
   ]
  },
  "0632.png": {
   "text": "Devin tests the web version in Chrome first.",
-  "dur": 2.42,
-  "takeAt": 56.92,
+  "dur": 2.415,
+  "takeAt": 56.985,
   "mode": "single-take-1",
   "take": [
    [
@@ -872,8 +872,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -943,16 +943,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.42,
+    "t0": 0.112,
+    "t1": 2.415,
     "text": "Devin tests the web version in Chrome first."
    }
   ]
  },
  "0637.png": {
   "text": "A typed action rolls the die, the room card updates, and the dungeon master narrates it.",
-  "dur": 4.79,
-  "takeAt": 59.56,
+  "dur": 5.045,
+  "takeAt": 59.605,
   "mode": "single-take-1",
   "take": [
    [
@@ -967,8 +967,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -1038,26 +1038,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.88,
+    "t0": 0.081,
+    "t1": 1.823,
     "text": "A typed action rolls the die,"
    },
    {
-    "t0": 1.96,
-    "t1": 3.16,
+    "t0": 1.997,
+    "t1": 3.262,
     "text": "the room card updates,"
    },
    {
-    "t0": 3.2,
-    "t1": 4.76,
+    "t0": 3.413,
+    "t1": 5.045,
     "text": "and the dungeon master narrates it."
    }
   ]
  },
  "0655.png": {
   "text": "On the iPhone Simulator, the Mac has no microphone, so Devin adds a virtual one, and the dungeon master starts narrating.",
-  "dur": 6.65,
-  "takeAt": 64.6,
+  "dur": 7.118,
+  "takeAt": 64.942,
   "mode": "single-take-1",
   "take": [
    [
@@ -1072,8 +1072,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -1144,30 +1144,30 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.4,
+    "t1": 1.489,
     "text": "On the iPhone Simulator,"
    },
    {
-    "t0": 1.44,
-    "t1": 3.08,
+    "t0": 1.547,
+    "t1": 3.103,
     "text": "the Mac has no microphone,"
    },
    {
-    "t0": 3.16,
-    "t1": 4.76,
+    "t0": 3.312,
+    "t1": 4.961,
     "text": "so Devin adds a virtual one,"
    },
    {
-    "t0": 4.8,
-    "t1": 6.65,
+    "t0": 5.135,
+    "t1": 7.118,
     "text": "and the dungeon master starts narrating."
    }
   ]
  },
  "0668.png": {
   "text": "The comedic narrator and saved progress pass on iPhone too.",
-  "dur": 3.3,
-  "takeAt": 71.48,
+  "dur": 3.325,
+  "takeAt": 72.445,
   "mode": "single-take-1",
   "take": [
    [
@@ -1182,8 +1182,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -1253,16 +1253,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 3.3,
+    "t0": 0.058,
+    "t1": 3.325,
     "text": "The comedic narrator and saved progress pass on iPhone too."
    }
   ]
  },
  "0584.png": {
   "text": "On Android, the second Devin runs the same app on an emulator, typing actions instead of talking.",
-  "dur": 5.45,
-  "takeAt": 75.08,
+  "dur": 5.698,
+  "takeAt": 76.122,
   "mode": "single-take-1",
   "take": [
    [
@@ -1277,8 +1277,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -1349,25 +1349,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.44,
+    "t1": 2.43,
     "text": "On Android, the second Devin runs the same"
    },
    {
-    "t0": 2.52,
-    "t1": 3.72,
+    "t0": 2.477,
+    "t1": 3.638,
     "text": "app on an emulator,"
    },
    {
-    "t0": 3.92,
-    "t1": 5.45,
+    "t0": 3.847,
+    "t1": 5.698,
     "text": "typing actions instead of talking."
    }
   ]
  },
  "0600.png": {
   "text": "The troll roll, the map, the comedic narrator, and resuming a saved game all pass.",
-  "dur": 5.23,
-  "takeAt": 80.76,
+  "dur": 5.142,
+  "takeAt": 82.078,
   "mode": "single-take-1",
   "take": [
    [
@@ -1382,8 +1382,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -1454,25 +1454,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.08,
+    "t1": 0.944,
     "text": "The troll roll,"
    },
    {
-    "t0": 1.12,
-    "t1": 3.0,
+    "t0": 0.991,
+    "t1": 2.755,
     "text": "the map, the comedic narrator,"
    },
    {
-    "t0": 3.08,
-    "t1": 5.23,
+    "t0": 2.929,
+    "t1": 5.142,
     "text": "and resuming a saved game all pass."
    }
   ]
  },
  "0630.png": {
   "text": "Every check passes on all three. The test machines have no speakers, so the voice you heard at the start is from my own run in Chrome.",
-  "dur": 7.0,
-  "takeAt": 86.28,
+  "dur": 7.215,
+  "takeAt": 87.535,
   "mode": "single-take-1",
   "take": [
    [
@@ -1487,8 +1487,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -1558,31 +1558,31 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.0,
+    "t0": 0.073,
+    "t1": 1.826,
     "text": "Every check passes on all three."
    },
    {
-    "t0": 2.2,
-    "t1": 4.12,
+    "t0": 2.151,
+    "t1": 3.962,
     "text": "The test machines have no speakers,"
    },
    {
-    "t0": 4.2,
-    "t1": 5.48,
+    "t0": 4.137,
+    "t1": 5.634,
     "text": "so the voice you heard at the start"
    },
    {
-    "t0": 5.56,
-    "t1": 7.0,
+    "t0": 5.692,
+    "t1": 7.215,
     "text": "is from my own run in Chrome."
    }
   ]
  },
  "demo/outro.jpg": {
   "text": "And that's how you build and test a cross-platform game, just by talking to Devin, with a dungeon master that talks back.",
-  "dur": 6.54,
-  "takeAt": 93.64,
+  "dur": 6.792,
+  "takeAt": 94.988,
   "mode": "single-take-1",
   "take": [
    [
@@ -1597,8 +1597,8 @@
    ],
    [
     "demo/troll.jpg",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.",
-    "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.",
+    "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
    ],
    [
     "0000.png",
@@ -1669,17 +1669,17 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.64,
+    "t1": 1.734,
     "text": "And that's how you build and test a"
    },
    {
-    "t0": 1.72,
-    "t1": 4.6,
+    "t0": 1.804,
+    "t1": 4.706,
     "text": "cross-platform game, just by talking to Devin,"
    },
    {
-    "t0": 4.68,
-    "t1": 6.54,
+    "t0": 4.95,
+    "t1": 6.792,
     "text": "with a dungeon master that talks back."
    }
   ]

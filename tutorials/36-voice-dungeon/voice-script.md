@@ -1,12 +1,12 @@
 # Tutorial 36: Dungeon Voice, voice script
 
-Narration (Nader, ElevenLabs `eleven_v4`, voice `T8iHhGIWPm2GVYpQD1Am`, default settings with no seed or voice_settings, one take cut locally with `_kit/tools/vo.py` and `VO_MODEL=eleven_v4`). It plays only outside the two calls and the app demo. During those, the real audio plays instead. `genspec.py` is the source of these lines. Every Nader line in this tutorial (narration, call lines and the in-app player lines) uses `eleven_v4`. The calls and the app demo were recorded live with an earlier take of the same words; for this cut those lines were re-voiced word for word with `eleven_v4` and placed in their original slots. Devin's replies and the dungeon master's audio are the original live recordings, unchanged.
+Narration (Nader, ElevenLabs `eleven_multilingual_v2`, voice `T8iHhGIWPm2GVYpQD1Am`, default settings, one take cut locally with `_kit/tools/vo.py`). It plays only outside the two calls and the app demo. During those, the real audio plays instead. `genspec.py` is the source of these lines. Every Nader line in this tutorial (narration, call lines and the in-app player lines) uses `eleven_multilingual_v2`. Both cuts have no background music. Devin's replies and the dungeon master's audio are live recordings, unchanged.
 
 ## Narration
 
 - Intro (app demo, gate): Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.
 - Intro (bridge): I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.
-- Intro (troll): It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts.
+- Intro (troll): It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened.
 - *(the real app demo plays: the player talks, interrupts, and the dungeon master answers)*
 - `0000.png`: Here's how I built it. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.
 - `0009.png`: Then I click the waveform button beside the message box to start a voice call.
@@ -26,19 +26,19 @@ Narration (Nader, ElevenLabs `eleven_v4`, voice `T8iHhGIWPm2GVYpQD1Am`, default 
 
 ## The app demo (real)
 
-The opening demo is Dungeon Voice running in Chrome against `gpt-live-1`. The player's lines are Nader's ElevenLabs voice fed in as the microphone (re-voiced with `eleven_v4` for this cut, see above). The dungeon master's lines are GPT-Live-1's own audio from the WebRTC session, not TTS. The room card, map, hearts, inventory and d20 change through the app's background tools (`roll_d20`, `move_on_map`, `update_room`, `update_inventory`, `change_hearts`) while it keeps talking.
+The opening demo is Dungeon Voice running in Chrome against `gpt-live-1`. The player's lines are Nader's ElevenLabs voice fed in as the microphone (`eleven_multilingual_v2`). The dungeon master's lines are GPT-Live-1's own audio from the WebRTC session, not TTS. The room card, map, hearts, inventory and d20 change through the app's background tools (`roll_d20`, `move_on_map`, `update_room`, `update_inventory`, `change_hearts`) while it keeps talking. When a roll starts, the app animates the hero's attempt (a sneak, a fight with the troll) and returns the roll to the dungeon master only after the animation, so the result is narrated after you see it. When the hero leaves a room, it walks off the painting before the next room fades in. This demo was recorded after the take with the animated version of the app (product-demo-apps#81); the Devin in the call built the version before the animations were added.
 
 - Player: I sneak past the troll.
-- Dungeon master: Your foot snaps a plank. The troll's eyes snap open. A low growl rattles up through the bridge-
+- Dungeon master: The die clatters across the stone. A plank whines underfoot. A snort cuts the air, and a hungry-
 - Player: Wait, actually, I attack the troll. *(interrupts)*
-- Dungeon master: You charge, but slam right into its club. You're hurt, and you've lost a heart. What now?
-- *(narrator switched to comedic)* Dungeon master: Oh, splendid choice. Your tragedy now comes with complimentary giggles.
+- Dungeon master: The die spins. Your blade bites the dark. The troll bellows and lurches aside, leaving the way open, but the cold feels sharper now. What will you do?
+- *(narrator switched to comedic)* Dungeon master: Oh, splendid choice. I'll try not to drop the mood in that chasm.
 - Player: I run across the bridge and head north.
-- Dungeon master: With the grace of a startled raccoon, you bolt across, leaving the troll swatting at your afterimage. You land in a glowing grotto full of oversized mushrooms.
+- Dungeon master: The die twirls. You sprint like a caffeinated ferret. Somehow upright, you land in the Mushroom Grotto, disco-lit by fungi. It smells like wizard salad and the floor giggles. North or south, sprinter?
 
 ## The calls (real)
 
-Nader's lines below were generated with his ElevenLabs voice (`eleven_v4`, one take, cut locally into `call/c*.wav`) and fed to Devin Voice as the microphone. Devin heard them live and answered by voice. Its replies in the video are its own WebRTC audio, recorded during the call, not re-synthesized.
+Nader's lines below were generated with his ElevenLabs voice (`eleven_multilingual_v2`, one take, cut locally into `call/c*.wav`) and fed to Devin Voice as the microphone. Devin heard them live and answered by voice. Its replies in the video are its own WebRTC audio, recorded during the call, not re-synthesized.
 
 ### Call 1 (started from the home page, macOS environment)
 

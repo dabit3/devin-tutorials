@@ -25,11 +25,11 @@ ed('demo/gate.jpg', hold=1.8, cursor=False, cap='Dungeon Voice: a fantasy game y
    vo="Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.")
 ed('demo/bridge.jpg', hold=1.6, cursor=False, cap='Built with Devin Voice; the DM is GPT-Live-1',
    vo="I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API.")
-DEMO_CAPS = {'demoA': [(0, 'Real GPT-Live-1 audio: the player speaks, the DM narrates'), (4.0, 'A background tool rolls the d20 while it keeps talking'),
-                       (10.6, 'Interrupt mid-scene: "wait, actually, I attack"'), (15.0, 'Tools update the hearts and the log')],
+DEMO_CAPS = {'demoA': [(0, 'Real GPT-Live-1 audio: the player speaks, the DM narrates'), (3.9, 'The hero acts out the sneak while the d20 rolls'),
+                       (12.4, 'Interrupt mid-scene: "wait, actually, I attack"'), (16.0, 'The fight plays out first, then the DM narrates the result')],
              'demoB': [(0, 'Switch the narrator from spooky to comedic')],
-             'demoC': [(0, '"I run across the bridge and head north"'), (4.7, 'Natural 20: the map and room card update')]}
-first_vo = {'demoA': "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."}
+             'demoC': [(0, '"I run across the bridge and head north"'), (4.0, 'The hero runs off across the bridge, then the map and room update')]}
+first_vo = {'demoA': "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."}
 segs = {}
 for b in DEMO:
     if b['demo'] in DEMO_CAPS: segs.setdefault(b['demo'], []).append(b)

@@ -28,642 +28,642 @@ window.SPEC = {
       "vo": "I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's dungeon master talks to players through OpenAI's GPT-Live-1 API."
     },
     "demo/demoA-000.jpg": {
-      "hold": 0.1333,
+      "hold": 0.1092,
       "cursor": false,
       "fade": 0,
       "clip": "demoA",
       "cap": "Real GPT-Live-1 audio: the player speaks, the DM narrates"
     },
     "demo/demoA-001.jpg": {
-      "hold": 0.1525,
+      "hold": 0.135,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-002.jpg": {
-      "hold": 0.1475,
+      "hold": 0.1392,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-003.jpg": {
-      "hold": 0.1392,
+      "hold": 0.1425,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-004.jpg": {
-      "hold": 0.1375,
+      "hold": 0.1358,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-005.jpg": {
-      "hold": 0.1358,
+      "hold": 0.1417,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-006.jpg": {
-      "hold": 0.145,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-007.jpg": {
-      "hold": 0.1458,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-008.jpg": {
-      "hold": 0.1442,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-009.jpg": {
-      "hold": 0.1342,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-010.jpg": {
-      "hold": 0.145,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-011.jpg": {
-      "hold": 0.075,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-012.jpg": {
-      "hold": 0.1425,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-013.jpg": {
-      "hold": 0.16,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-014.jpg": {
-      "hold": 0.1467,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-015.jpg": {
-      "hold": 0.1542,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-016.jpg": {
-      "hold": 0.1517,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-017.jpg": {
-      "hold": 0.135,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-018.jpg": {
-      "hold": 0.1417,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-019.jpg": {
-      "hold": 0.0742,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-020.jpg": {
-      "hold": 0.155,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-021.jpg": {
-      "hold": 0.1467,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-022.jpg": {
-      "hold": 0.1492,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-023.jpg": {
-      "hold": 0.1425,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-024.jpg": {
-      "hold": 0.1383,
-      "cursor": false,
-      "fade": 0,
-      "cap": "A background tool rolls the d20 while it keeps talking"
-    },
-    "demo/demoA-025.jpg": {
-      "hold": 0.1467,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-026.jpg": {
-      "hold": 0.1025,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-027.jpg": {
-      "hold": 0.1833,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-028.jpg": {
-      "hold": 0.0858,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-029.jpg": {
-      "hold": 0.1658,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-030.jpg": {
-      "hold": 0.165,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-031.jpg": {
-      "hold": 0.0792,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-032.jpg": {
-      "hold": 0.135,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-033.jpg": {
-      "hold": 0.1775,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-034.jpg": {
-      "hold": 0.1425,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-035.jpg": {
-      "hold": 0.1508,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-036.jpg": {
-      "hold": 0.15,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-037.jpg": {
-      "hold": 0.1483,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-038.jpg": {
-      "hold": 0.1342,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-039.jpg": {
-      "hold": 0.0792,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-040.jpg": {
-      "hold": 0.1633,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-041.jpg": {
-      "hold": 0.14,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-042.jpg": {
-      "hold": 0.1525,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-043.jpg": {
-      "hold": 0.1558,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-044.jpg": {
-      "hold": 0.1458,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-045.jpg": {
-      "hold": 0.0867,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-046.jpg": {
-      "hold": 0.1317,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-047.jpg": {
-      "hold": 0.1508,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-048.jpg": {
-      "hold": 0.13,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-049.jpg": {
-      "hold": 0.1375,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-050.jpg": {
-      "hold": 0.14,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-051.jpg": {
-      "hold": 0.1367,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-052.jpg": {
-      "hold": 0.145,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-053.jpg": {
-      "hold": 0.1383,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-054.jpg": {
-      "hold": 0.1325,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-055.jpg": {
-      "hold": 0.16,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-056.jpg": {
-      "hold": 0.1642,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-057.jpg": {
-      "hold": 0.135,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-058.jpg": {
-      "hold": 0.1475,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-059.jpg": {
-      "hold": 0.1358,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-060.jpg": {
-      "hold": 0.1392,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-061.jpg": {
-      "hold": 0.1392,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-062.jpg": {
-      "hold": 0.1483,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-063.jpg": {
-      "hold": 0.1383,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-064.jpg": {
-      "hold": 0.1392,
-      "cursor": false,
-      "fade": 0,
-      "cap": "Interrupt mid-scene: \"wait, actually, I attack\""
-    },
-    "demo/demoA-065.jpg": {
-      "hold": 0.1375,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-066.jpg": {
-      "hold": 0.1467,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-067.jpg": {
-      "hold": 0.1383,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-068.jpg": {
-      "hold": 0.0783,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-069.jpg": {
-      "hold": 0.1383,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-070.jpg": {
-      "hold": 0.1375,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-071.jpg": {
-      "hold": 0.1675,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-072.jpg": {
-      "hold": 0.1592,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-073.jpg": {
-      "hold": 0.1342,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-074.jpg": {
-      "hold": 0.145,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-075.jpg": {
-      "hold": 0.14,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-076.jpg": {
       "hold": 0.1408,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoA-077.jpg": {
-      "hold": 0.085,
+    "demo/demoA-007.jpg": {
+      "hold": 0.1367,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoA-078.jpg": {
-      "hold": 0.165,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-079.jpg": {
-      "hold": 0.1342,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-080.jpg": {
-      "hold": 0.1358,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-081.jpg": {
+    "demo/demoA-008.jpg": {
       "hold": 0.1392,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoA-082.jpg": {
+    "demo/demoA-009.jpg": {
+      "hold": 0.1383,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-010.jpg": {
+      "hold": 0.1383,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-011.jpg": {
+      "hold": 0.1567,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-012.jpg": {
       "hold": 0.1342,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoA-083.jpg": {
-      "hold": 0.1708,
+    "demo/demoA-013.jpg": {
+      "hold": 0.1567,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoA-084.jpg": {
-      "hold": 0.1383,
+    "demo/demoA-014.jpg": {
+      "hold": 0.1375,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoA-085.jpg": {
-      "hold": 0.135,
+    "demo/demoA-015.jpg": {
+      "hold": 0.1367,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoA-086.jpg": {
-      "hold": 0.0933,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-087.jpg": {
-      "hold": 0.1642,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-088.jpg": {
-      "hold": 0.1617,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-089.jpg": {
-      "hold": 0.0908,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-090.jpg": {
-      "hold": 0.1658,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-091.jpg": {
-      "hold": 0.1642,
-      "cursor": false,
-      "fade": 0,
-      "cap": "Tools update the hearts and the log"
-    },
-    "demo/demoA-092.jpg": {
-      "hold": 0.0892,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-093.jpg": {
-      "hold": 0.14,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-094.jpg": {
-      "hold": 0.2,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-095.jpg": {
-      "hold": 0.1383,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-096.jpg": {
+    "demo/demoA-016.jpg": {
       "hold": 0.1417,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoA-097.jpg": {
-      "hold": 0.13,
+    "demo/demoA-017.jpg": {
+      "hold": 0.1375,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoA-098.jpg": {
-      "hold": 0.1458,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-099.jpg": {
-      "hold": 0.1392,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-100.jpg": {
+    "demo/demoA-018.jpg": {
       "hold": 0.1358,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoA-101.jpg": {
-      "hold": 0.135,
+    "demo/demoA-019.jpg": {
+      "hold": 0.1408,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoA-102.jpg": {
-      "hold": 0.145,
+    "demo/demoA-020.jpg": {
+      "hold": 0.1417,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoA-103.jpg": {
-      "hold": 0.1342,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-104.jpg": {
-      "hold": 0.145,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-105.jpg": {
-      "hold": 0.1325,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-106.jpg": {
-      "hold": 0.145,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-107.jpg": {
-      "hold": 0.15,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-108.jpg": {
-      "hold": 0.0667,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-109.jpg": {
-      "hold": 0.1675,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-110.jpg": {
-      "hold": 0.1542,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-111.jpg": {
-      "hold": 0.1517,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-112.jpg": {
-      "hold": 0.1483,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-113.jpg": {
-      "hold": 0.1358,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-114.jpg": {
-      "hold": 0.1383,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-115.jpg": {
-      "hold": 0.1433,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-116.jpg": {
-      "hold": 0.0775,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-117.jpg": {
-      "hold": 0.1458,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-118.jpg": {
-      "hold": 0.1317,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-119.jpg": {
-      "hold": 0.1483,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-120.jpg": {
-      "hold": 0.1267,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-121.jpg": {
-      "hold": 0.1533,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-122.jpg": {
+    "demo/demoA-021.jpg": {
       "hold": 0.1492,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoA-123.jpg": {
-      "hold": 0.1442,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoA-124.jpg": {
+    "demo/demoA-022.jpg": {
       "hold": 0.155,
       "cursor": false,
       "fade": 0
     },
+    "demo/demoA-023.jpg": {
+      "hold": 0.1533,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-024.jpg": {
+      "hold": 0.0867,
+      "cursor": false,
+      "fade": 0,
+      "cap": "The hero acts out the sneak while the d20 rolls"
+    },
+    "demo/demoA-025.jpg": {
+      "hold": 0.1675,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-026.jpg": {
+      "hold": 0.0958,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-027.jpg": {
+      "hold": 0.1658,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-028.jpg": {
+      "hold": 0.1683,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-029.jpg": {
+      "hold": 0.0933,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-030.jpg": {
+      "hold": 0.1692,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-031.jpg": {
+      "hold": 0.0858,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-032.jpg": {
+      "hold": 0.1775,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-033.jpg": {
+      "hold": 0.1667,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-034.jpg": {
+      "hold": 0.0858,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-035.jpg": {
+      "hold": 0.1808,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-036.jpg": {
+      "hold": 0.0967,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-037.jpg": {
+      "hold": 0.1917,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-038.jpg": {
+      "hold": 0.0808,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-039.jpg": {
+      "hold": 0.1817,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-040.jpg": {
+      "hold": 0.1683,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-041.jpg": {
+      "hold": 0.0825,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-042.jpg": {
+      "hold": 0.1808,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-043.jpg": {
+      "hold": 0.0842,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-044.jpg": {
+      "hold": 0.1658,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-045.jpg": {
+      "hold": 0.17,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-046.jpg": {
+      "hold": 0.1033,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-047.jpg": {
+      "hold": 0.1892,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-048.jpg": {
+      "hold": 0.0808,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-049.jpg": {
+      "hold": 0.1325,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-050.jpg": {
+      "hold": 0.1442,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-051.jpg": {
+      "hold": 0.1375,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-052.jpg": {
+      "hold": 0.1467,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-053.jpg": {
+      "hold": 0.1467,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-054.jpg": {
+      "hold": 0.1358,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-055.jpg": {
+      "hold": 0.1367,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-056.jpg": {
+      "hold": 0.1425,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-057.jpg": {
+      "hold": 0.1383,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-058.jpg": {
+      "hold": 0.1383,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-059.jpg": {
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-060.jpg": {
+      "hold": 0.1383,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-061.jpg": {
+      "hold": 0.1408,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-062.jpg": {
+      "hold": 0.1417,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-063.jpg": {
+      "hold": 0.135,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-064.jpg": {
+      "hold": 0.1367,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-065.jpg": {
+      "hold": 0.1425,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-066.jpg": {
+      "hold": 0.1375,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-067.jpg": {
+      "hold": 0.1408,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-068.jpg": {
+      "hold": 0.1533,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-069.jpg": {
+      "hold": 0.1333,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-070.jpg": {
+      "hold": 0.1417,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-071.jpg": {
+      "hold": 0.14,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-072.jpg": {
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-073.jpg": {
+      "hold": 0.1558,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-074.jpg": {
+      "hold": 0.0783,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-075.jpg": {
+      "hold": 0.1425,
+      "cursor": false,
+      "fade": 0,
+      "cap": "Interrupt mid-scene: \"wait, actually, I attack\""
+    },
+    "demo/demoA-076.jpg": {
+      "hold": 0.1375,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-077.jpg": {
+      "hold": 0.1358,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-078.jpg": {
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-079.jpg": {
+      "hold": 0.1417,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-080.jpg": {
+      "hold": 0.135,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-081.jpg": {
+      "hold": 0.1425,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-082.jpg": {
+      "hold": 0.1383,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-083.jpg": {
+      "hold": 0.1367,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-084.jpg": {
+      "hold": 0.1533,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-085.jpg": {
+      "hold": 0.1408,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-086.jpg": {
+      "hold": 0.1367,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-087.jpg": {
+      "hold": 0.1417,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-088.jpg": {
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-089.jpg": {
+      "hold": 0.1483,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-090.jpg": {
+      "hold": 0.1417,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-091.jpg": {
+      "hold": 0.14,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-092.jpg": {
+      "hold": 0.1375,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-093.jpg": {
+      "hold": 0.1525,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-094.jpg": {
+      "hold": 0.1358,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-095.jpg": {
+      "hold": 0.155,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-096.jpg": {
+      "hold": 0.0858,
+      "cursor": false,
+      "fade": 0,
+      "cap": "The fight plays out first, then the DM narrates the result"
+    },
+    "demo/demoA-097.jpg": {
+      "hold": 0.1692,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-098.jpg": {
+      "hold": 0.1658,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-099.jpg": {
+      "hold": 0.0808,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-100.jpg": {
+      "hold": 0.17,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-101.jpg": {
+      "hold": 0.1608,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-102.jpg": {
+      "hold": 0.0883,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-103.jpg": {
+      "hold": 0.1467,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-104.jpg": {
+      "hold": 0.1725,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-105.jpg": {
+      "hold": 0.0842,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-106.jpg": {
+      "hold": 0.1792,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-107.jpg": {
+      "hold": 0.1667,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-108.jpg": {
+      "hold": 0.0875,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-109.jpg": {
+      "hold": 0.1883,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-110.jpg": {
+      "hold": 0.0892,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-111.jpg": {
+      "hold": 0.1775,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-112.jpg": {
+      "hold": 0.085,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-113.jpg": {
+      "hold": 0.1933,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-114.jpg": {
+      "hold": 0.0817,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-115.jpg": {
+      "hold": 0.1658,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-116.jpg": {
+      "hold": 0.1667,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-117.jpg": {
+      "hold": 0.1667,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-118.jpg": {
+      "hold": 0.0842,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-119.jpg": {
+      "hold": 0.165,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-120.jpg": {
+      "hold": 0.1658,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-121.jpg": {
+      "hold": 0.0717,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-122.jpg": {
+      "hold": 0.135,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-123.jpg": {
+      "hold": 0.1408,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-124.jpg": {
+      "hold": 0.1417,
+      "cursor": false,
+      "fade": 0
+    },
     "demo/demoA-125.jpg": {
-      "hold": 0.1342,
+      "hold": 0.15,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-126.jpg": {
-      "hold": 0.1467,
+      "hold": 0.1392,
       "cursor": false,
       "fade": 0
     },
@@ -673,52 +673,52 @@ window.SPEC = {
       "fade": 0
     },
     "demo/demoA-128.jpg": {
-      "hold": 0.1517,
+      "hold": 0.1525,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-129.jpg": {
-      "hold": 0.0833,
+      "hold": 0.1517,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-130.jpg": {
-      "hold": 0.1483,
+      "hold": 0.1567,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-131.jpg": {
-      "hold": 0.1392,
+      "hold": 0.1383,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-132.jpg": {
-      "hold": 0.1367,
+      "hold": 0.1467,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-133.jpg": {
-      "hold": 0.15,
+      "hold": 0.0775,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-134.jpg": {
-      "hold": 0.165,
+      "hold": 0.135,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-135.jpg": {
-      "hold": 0.1317,
+      "hold": 0.1358,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-136.jpg": {
-      "hold": 0.14,
+      "hold": 0.1408,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-137.jpg": {
-      "hold": 0.1392,
+      "hold": 0.1417,
       "cursor": false,
       "fade": 0
     },
@@ -728,49 +728,264 @@ window.SPEC = {
       "fade": 0
     },
     "demo/demoA-139.jpg": {
-      "hold": 0.1617,
+      "hold": 0.1342,
       "cursor": false,
       "fade": 0
     },
     "demo/demoA-140.jpg": {
-      "hold": 0.0175,
+      "hold": 0.14,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-141.jpg": {
+      "hold": 0.1425,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-142.jpg": {
+      "hold": 0.1358,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-143.jpg": {
+      "hold": 0.14,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-144.jpg": {
+      "hold": 0.1417,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-145.jpg": {
+      "hold": 0.1333,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-146.jpg": {
+      "hold": 0.1383,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-147.jpg": {
+      "hold": 0.145,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-148.jpg": {
+      "hold": 0.1508,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-149.jpg": {
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-150.jpg": {
+      "hold": 0.19,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-151.jpg": {
+      "hold": 0.0833,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-152.jpg": {
+      "hold": 0.16,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-153.jpg": {
+      "hold": 0.1508,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-154.jpg": {
+      "hold": 0.1375,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-155.jpg": {
+      "hold": 0.1417,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-156.jpg": {
+      "hold": 0.1367,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-157.jpg": {
+      "hold": 0.1383,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-158.jpg": {
+      "hold": 0.16,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-159.jpg": {
+      "hold": 0.0758,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-160.jpg": {
+      "hold": 0.14,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-161.jpg": {
+      "hold": 0.155,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-162.jpg": {
+      "hold": 0.1333,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-163.jpg": {
+      "hold": 0.1467,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-164.jpg": {
+      "hold": 0.15,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-165.jpg": {
+      "hold": 0.1367,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-166.jpg": {
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-167.jpg": {
+      "hold": 0.1567,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-168.jpg": {
+      "hold": 0.1367,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-169.jpg": {
+      "hold": 0.1517,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-170.jpg": {
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-171.jpg": {
+      "hold": 0.1408,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-172.jpg": {
+      "hold": 0.1492,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-173.jpg": {
+      "hold": 0.0758,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-174.jpg": {
+      "hold": 0.1308,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-175.jpg": {
+      "hold": 0.1425,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-176.jpg": {
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-177.jpg": {
+      "hold": 0.1408,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-178.jpg": {
+      "hold": 0.1467,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-179.jpg": {
+      "hold": 0.1433,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-180.jpg": {
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-181.jpg": {
+      "hold": 0.1358,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-182.jpg": {
+      "hold": 0.1417,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoA-183.jpg": {
+      "hold": 0.0967,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-000.jpg": {
-      "hold": 0.1325,
+      "hold": 0.1383,
       "cursor": false,
       "fade": 0,
       "clip": "demoB",
       "cap": "Switch the narrator from spooky to comedic"
     },
     "demo/demoB-001.jpg": {
-      "hold": 0.1633,
+      "hold": 0.1333,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-002.jpg": {
-      "hold": 0.1492,
+      "hold": 0.1742,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-003.jpg": {
-      "hold": 0.1325,
+      "hold": 0.0775,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-004.jpg": {
-      "hold": 0.1567,
+      "hold": 0.1425,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-005.jpg": {
-      "hold": 0.0742,
+      "hold": 0.1375,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-006.jpg": {
-      "hold": 0.1317,
+      "hold": 0.155,
       "cursor": false,
       "fade": 0
     },
@@ -780,82 +995,82 @@ window.SPEC = {
       "fade": 0
     },
     "demo/demoB-008.jpg": {
-      "hold": 0.1625,
+      "hold": 0.1408,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-009.jpg": {
-      "hold": 0.1325,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoB-010.jpg": {
       "hold": 0.1367,
       "cursor": false,
       "fade": 0
     },
+    "demo/demoB-010.jpg": {
+      "hold": 0.14,
+      "cursor": false,
+      "fade": 0
+    },
     "demo/demoB-011.jpg": {
-      "hold": 0.1467,
+      "hold": 0.1817,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-012.jpg": {
-      "hold": 0.1483,
+      "hold": 0.0792,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-013.jpg": {
-      "hold": 0.1358,
+      "hold": 0.1442,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-014.jpg": {
-      "hold": 0.14,
+      "hold": 0.1333,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-015.jpg": {
-      "hold": 0.1608,
+      "hold": 0.1392,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-016.jpg": {
-      "hold": 0.13,
+      "hold": 0.1442,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-017.jpg": {
-      "hold": 0.14,
+      "hold": 0.1367,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-018.jpg": {
-      "hold": 0.1425,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoB-019.jpg": {
-      "hold": 0.14,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoB-020.jpg": {
-      "hold": 0.095,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoB-021.jpg": {
-      "hold": 0.1417,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoB-022.jpg": {
       "hold": 0.1358,
       "cursor": false,
       "fade": 0
     },
+    "demo/demoB-019.jpg": {
+      "hold": 0.1433,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoB-020.jpg": {
+      "hold": 0.14,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoB-021.jpg": {
+      "hold": 0.1342,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoB-022.jpg": {
+      "hold": 0.1583,
+      "cursor": false,
+      "fade": 0
+    },
     "demo/demoB-023.jpg": {
-      "hold": 0.135,
+      "hold": 0.1358,
       "cursor": false,
       "fade": 0
     },
@@ -865,74 +1080,79 @@ window.SPEC = {
       "fade": 0
     },
     "demo/demoB-025.jpg": {
-      "hold": 0.1425,
+      "hold": 0.14,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-026.jpg": {
-      "hold": 0.1408,
+      "hold": 0.1383,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-027.jpg": {
-      "hold": 0.1342,
+      "hold": 0.1533,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-028.jpg": {
-      "hold": 0.1417,
+      "hold": 0.14,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-029.jpg": {
-      "hold": 0.1433,
+      "hold": 0.1375,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-030.jpg": {
-      "hold": 0.1342,
+      "hold": 0.1367,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-031.jpg": {
-      "hold": 0.1442,
+      "hold": 0.1417,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-032.jpg": {
-      "hold": 0.1333,
+      "hold": 0.1375,
       "cursor": false,
       "fade": 0
     },
     "demo/demoB-033.jpg": {
-      "hold": 0.1158,
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoB-034.jpg": {
+      "hold": 0.1142,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-000.jpg": {
-      "hold": 0.1667,
+      "hold": 0.1708,
       "cursor": false,
       "fade": 0,
       "clip": "demoC",
       "cap": "\"I run across the bridge and head north\""
     },
     "demo/demoC-001.jpg": {
-      "hold": 0.08,
+      "hold": 0.135,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-002.jpg": {
-      "hold": 0.1567,
+      "hold": 0.1367,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-003.jpg": {
-      "hold": 0.145,
+      "hold": 0.1417,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-004.jpg": {
-      "hold": 0.135,
+      "hold": 0.1408,
       "cursor": false,
       "fade": 0
     },
@@ -942,353 +1162,353 @@ window.SPEC = {
       "fade": 0
     },
     "demo/demoC-006.jpg": {
-      "hold": 0.1558,
+      "hold": 0.1358,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-007.jpg": {
-      "hold": 0.1717,
+      "hold": 0.1417,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-008.jpg": {
-      "hold": 0.0767,
+      "hold": 0.1508,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-009.jpg": {
-      "hold": 0.1383,
+      "hold": 0.0692,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-010.jpg": {
-      "hold": 0.1342,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-011.jpg": {
-      "hold": 0.1625,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-012.jpg": {
-      "hold": 0.1583,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-013.jpg": {
-      "hold": 0.1642,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-014.jpg": {
-      "hold": 0.0808,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-015.jpg": {
-      "hold": 0.1383,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-016.jpg": {
-      "hold": 0.1367,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-017.jpg": {
-      "hold": 0.1475,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-018.jpg": {
-      "hold": 0.1442,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-019.jpg": {
-      "hold": 0.1633,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-020.jpg": {
-      "hold": 0.08,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-021.jpg": {
-      "hold": 0.22,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-022.jpg": {
-      "hold": 0.0992,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-023.jpg": {
-      "hold": 0.1692,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-024.jpg": {
-      "hold": 0.0875,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-025.jpg": {
-      "hold": 0.165,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-026.jpg": {
-      "hold": 0.09,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-027.jpg": {
-      "hold": 0.1742,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-028.jpg": {
-      "hold": 0.1642,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-029.jpg": {
-      "hold": 0.0867,
-      "cursor": false,
-      "fade": 0,
-      "cap": "Natural 20: the map and room card update"
-    },
-    "demo/demoC-030.jpg": {
-      "hold": 0.1683,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-031.jpg": {
-      "hold": 0.1725,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-032.jpg": {
-      "hold": 0.0942,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-033.jpg": {
-      "hold": 0.135,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-034.jpg": {
       "hold": 0.1567,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-035.jpg": {
-      "hold": 0.1492,
+    "demo/demoC-011.jpg": {
+      "hold": 0.1575,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-036.jpg": {
+    "demo/demoC-012.jpg": {
       "hold": 0.1475,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-037.jpg": {
-      "hold": 0.14,
+    "demo/demoC-013.jpg": {
+      "hold": 0.1467,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-038.jpg": {
-      "hold": 0.14,
+    "demo/demoC-014.jpg": {
+      "hold": 0.1575,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-039.jpg": {
-      "hold": 0.1358,
+    "demo/demoC-015.jpg": {
+      "hold": 0.0725,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-040.jpg": {
+    "demo/demoC-016.jpg": {
+      "hold": 0.1633,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-017.jpg": {
+      "hold": 0.1575,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-018.jpg": {
       "hold": 0.1517,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-041.jpg": {
-      "hold": 0.1417,
+    "demo/demoC-019.jpg": {
+      "hold": 0.0842,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-042.jpg": {
-      "hold": 0.1425,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-043.jpg": {
-      "hold": 0.2067,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-044.jpg": {
-      "hold": 0.0642,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-045.jpg": {
-      "hold": 0.135,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-046.jpg": {
-      "hold": 0.1617,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-047.jpg": {
-      "hold": 0.07,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-048.jpg": {
-      "hold": 0.1325,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-049.jpg": {
-      "hold": 0.1558,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-050.jpg": {
-      "hold": 0.1375,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-051.jpg": {
-      "hold": 0.155,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-052.jpg": {
+    "demo/demoC-020.jpg": {
       "hold": 0.1358,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-053.jpg": {
+    "demo/demoC-021.jpg": {
+      "hold": 0.1517,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-022.jpg": {
+      "hold": 0.1383,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-023.jpg": {
       "hold": 0.1417,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-054.jpg": {
-      "hold": 0.1367,
+    "demo/demoC-024.jpg": {
+      "hold": 0.1667,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-055.jpg": {
-      "hold": 0.1383,
+    "demo/demoC-025.jpg": {
+      "hold": 0.095,
+      "cursor": false,
+      "fade": 0,
+      "cap": "The hero runs off across the bridge, then the map and room update"
+    },
+    "demo/demoC-026.jpg": {
+      "hold": 0.1842,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-056.jpg": {
-      "hold": 0.1383,
+    "demo/demoC-027.jpg": {
+      "hold": 0.0925,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-057.jpg": {
-      "hold": 0.1408,
+    "demo/demoC-028.jpg": {
+      "hold": 0.1683,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-058.jpg": {
-      "hold": 0.1425,
+    "demo/demoC-029.jpg": {
+      "hold": 0.1675,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-059.jpg": {
-      "hold": 0.1367,
+    "demo/demoC-030.jpg": {
+      "hold": 0.0983,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-060.jpg": {
-      "hold": 0.1383,
+    "demo/demoC-031.jpg": {
+      "hold": 0.1642,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-061.jpg": {
-      "hold": 0.145,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-062.jpg": {
-      "hold": 0.1492,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-063.jpg": {
-      "hold": 0.1325,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-064.jpg": {
-      "hold": 0.145,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-065.jpg": {
-      "hold": 0.1367,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-066.jpg": {
-      "hold": 0.1342,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-067.jpg": {
+    "demo/demoC-032.jpg": {
       "hold": 0.1417,
       "cursor": false,
       "fade": 0
     },
-    "demo/demoC-068.jpg": {
+    "demo/demoC-033.jpg": {
+      "hold": 0.1475,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-034.jpg": {
+      "hold": 0.0858,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-035.jpg": {
+      "hold": 0.1658,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-036.jpg": {
+      "hold": 0.1892,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-037.jpg": {
+      "hold": 0.0933,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-038.jpg": {
+      "hold": 0.0983,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-039.jpg": {
+      "hold": 0.15,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-040.jpg": {
+      "hold": 0.15,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-041.jpg": {
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-042.jpg": {
+      "hold": 0.1383,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-043.jpg": {
       "hold": 0.1375,
       "cursor": false,
       "fade": 0
     },
+    "demo/demoC-044.jpg": {
+      "hold": 0.1417,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-045.jpg": {
+      "hold": 0.155,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-046.jpg": {
+      "hold": 0.1467,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-047.jpg": {
+      "hold": 0.1542,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-048.jpg": {
+      "hold": 0.1367,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-049.jpg": {
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-050.jpg": {
+      "hold": 0.1433,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-051.jpg": {
+      "hold": 0.1358,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-052.jpg": {
+      "hold": 0.0767,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-053.jpg": {
+      "hold": 0.15,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-054.jpg": {
+      "hold": 0.1517,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-055.jpg": {
+      "hold": 0.1558,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-056.jpg": {
+      "hold": 0.1508,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-057.jpg": {
+      "hold": 0.1517,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-058.jpg": {
+      "hold": 0.0875,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-059.jpg": {
+      "hold": 0.1483,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-060.jpg": {
+      "hold": 0.1508,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-061.jpg": {
+      "hold": 0.1433,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-062.jpg": {
+      "hold": 0.15,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-063.jpg": {
+      "hold": 0.14,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-064.jpg": {
+      "hold": 0.1358,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-065.jpg": {
+      "hold": 0.1433,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-066.jpg": {
+      "hold": 0.1483,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-067.jpg": {
+      "hold": 0.1525,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-068.jpg": {
+      "hold": 0.0742,
+      "cursor": false,
+      "fade": 0
+    },
     "demo/demoC-069.jpg": {
-      "hold": 0.1817,
+      "hold": 0.15,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-070.jpg": {
-      "hold": 0.0625,
+      "hold": 0.1375,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-071.jpg": {
-      "hold": 0.1283,
+      "hold": 0.1408,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-072.jpg": {
-      "hold": 0.16,
+      "hold": 0.1633,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-073.jpg": {
-      "hold": 0.1808,
+      "hold": 0.1408,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-074.jpg": {
-      "hold": 0.1342,
+      "hold": 0.1408,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-075.jpg": {
-      "hold": 0.1392,
+      "hold": 0.1375,
       "cursor": false,
       "fade": 0
     },
@@ -1298,97 +1518,242 @@ window.SPEC = {
       "fade": 0
     },
     "demo/demoC-077.jpg": {
-      "hold": 0.1375,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-078.jpg": {
-      "hold": 0.0817,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-079.jpg": {
-      "hold": 0.1475,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-080.jpg": {
-      "hold": 0.1333,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-081.jpg": {
-      "hold": 0.1383,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-082.jpg": {
-      "hold": 0.1408,
-      "cursor": false,
-      "fade": 0
-    },
-    "demo/demoC-083.jpg": {
       "hold": 0.1392,
       "cursor": false,
       "fade": 0
     },
+    "demo/demoC-078.jpg": {
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-079.jpg": {
+      "hold": 0.1392,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-080.jpg": {
+      "hold": 0.1508,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-081.jpg": {
+      "hold": 0.0875,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-082.jpg": {
+      "hold": 0.1592,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-083.jpg": {
+      "hold": 0.1442,
+      "cursor": false,
+      "fade": 0
+    },
     "demo/demoC-084.jpg": {
-      "hold": 0.1342,
+      "hold": 0.1492,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-085.jpg": {
-      "hold": 0.1425,
+      "hold": 0.1433,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-086.jpg": {
-      "hold": 0.1375,
+      "hold": 0.1392,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-087.jpg": {
-      "hold": 0.1567,
+      "hold": 0.1342,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-088.jpg": {
-      "hold": 0.1375,
+      "hold": 0.1558,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-089.jpg": {
-      "hold": 0.145,
+      "hold": 0.0833,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-090.jpg": {
-      "hold": 0.1283,
+      "hold": 0.1525,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-091.jpg": {
-      "hold": 0.1467,
+      "hold": 0.1375,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-092.jpg": {
-      "hold": 0.1608,
+      "hold": 0.14,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-093.jpg": {
-      "hold": 0.1425,
+      "hold": 0.1392,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-094.jpg": {
-      "hold": 0.1333,
+      "hold": 0.1442,
       "cursor": false,
       "fade": 0
     },
     "demo/demoC-095.jpg": {
-      "hold": 0.0492,
+      "hold": 0.16,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-096.jpg": {
+      "hold": 0.1408,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-097.jpg": {
+      "hold": 0.14,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-098.jpg": {
+      "hold": 0.1542,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-099.jpg": {
+      "hold": 0.0792,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-100.jpg": {
+      "hold": 0.155,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-101.jpg": {
+      "hold": 0.14,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-102.jpg": {
+      "hold": 0.1525,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-103.jpg": {
+      "hold": 0.1467,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-104.jpg": {
+      "hold": 0.145,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-105.jpg": {
+      "hold": 0.1492,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-106.jpg": {
+      "hold": 0.1367,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-107.jpg": {
+      "hold": 0.1417,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-108.jpg": {
+      "hold": 0.1542,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-109.jpg": {
+      "hold": 0.0642,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-110.jpg": {
+      "hold": 0.1417,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-111.jpg": {
+      "hold": 0.14,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-112.jpg": {
+      "hold": 0.1617,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-113.jpg": {
+      "hold": 0.14,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-114.jpg": {
+      "hold": 0.1425,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-115.jpg": {
+      "hold": 0.1375,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-116.jpg": {
+      "hold": 0.135,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-117.jpg": {
+      "hold": 0.1442,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-118.jpg": {
+      "hold": 0.145,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-119.jpg": {
+      "hold": 0.1292,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-120.jpg": {
+      "hold": 0.1508,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-121.jpg": {
+      "hold": 0.1342,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-122.jpg": {
+      "hold": 0.1333,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-123.jpg": {
+      "hold": 0.1425,
+      "cursor": false,
+      "fade": 0
+    },
+    "demo/demoC-124.jpg": {
+      "hold": 0.1117,
       "cursor": false,
       "fade": 0
     },
@@ -1396,7 +1761,7 @@ window.SPEC = {
       "hold": 1.2,
       "cursor": false,
       "cap": "It listens while it talks and runs tools",
-      "vo": "It listens while it talks, handles interruptions, and runs tools in the background that roll the die and update the room, the map, and your hearts."
+      "vo": "It listens while it talks, handles interruptions, and runs tools in the background. Each move plays out on screen before the dungeon master tells you what happened."
     },
     "0000.png": {
       "hold": 0.9,
