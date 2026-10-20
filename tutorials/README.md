@@ -27,7 +27,7 @@
 | 23 | Managed Devins: how it works (overview) | `23-managed-devins-overview/` |
 | 24 | Devin Automations: how they work (overview) | `24-automations-overview/` |
 | 25 | Security Swarm, how it works (overview) | `25-security-swarm-overview/` |
-| 26 | Devin across the SDLC — expanded introduction (overview; 5:05 captioned / 5:25 Nader) | [Sources](26-sdlc-overview/) · [Captioned 4K](26-sdlc-overview/26-sdlc-overview.mp4) · [Nader 4K](26-sdlc-overview/26-sdlc-overview-nader.mp4) · [Captioned 1080p](26-sdlc-overview/26-sdlc-overview-1080p.mp4) · [Nader 1080p](26-sdlc-overview/26-sdlc-overview-nader-1080p.mp4) · [Script](26-sdlc-overview/voice-script.md) |
+| 26 | Devin across the SDLC — expanded introduction (overview; 5:30 Nader / 5:30 Nader + music) | [Sources](26-sdlc-overview/) · [Nader 4K](26-sdlc-overview/26-sdlc-overview-nader.mp4) · [Nader + music 4K](26-sdlc-overview/26-sdlc-overview-nader-music.mp4) · [Nader 1080p](26-sdlc-overview/26-sdlc-overview-nader-1080p.mp4) · [Nader + music 1080p](26-sdlc-overview/26-sdlc-overview-nader-music-1080p.mp4) · [Script](26-sdlc-overview/voice-script.md) |
 | 27 | Code Scans, how it works (overview) | `27-code-scans-overview/` |
 | 28 | Devin on every platform (overview) | `28-multiplatform-overview/` |
 | 29 | Managed Devins for experiments | `29-managed-devins-experiments/` |
@@ -35,8 +35,11 @@
 | 32 | Dynamic Workflows: how it works (overview) | `32-dynamic-workflows-overview/` |
 | 33 | Dynamic Workflows | `33-dynamic-workflows/` |
 | 34 | Devin Primitives: when to use what (overview) | `34-devin-primitives-overview/` |
+| 58 | Port an iOS screen to Android and prove parity | `58-ios-to-android-parity/` |
+| 59 | Port an iOS screen to Android: how it works (overview) | `59-ios-to-android-parity-overview/` |
 | 66 | Build a Developer Pain Index on Modal (Nader, dark) | `66-dev-pain-index/` |
 | 67 | Developer Pain Index: how it works (overview; Nader, dark) | `67-dev-pain-index-overview/` |
+| 76 | Devin CLI: what's new in v3000.11.92 (overview) | `76-cli-whats-new-overview/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
 

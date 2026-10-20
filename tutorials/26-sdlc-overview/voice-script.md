@@ -1,131 +1,127 @@
 # Devin across the SDLC — expanded introduction
 
-Nader voice. One continuous take, cut locally at sentence boundaries. ElevenLabs defaults; no seed.
+Nader voice (eleven_multilingual_v2, default settings). The whole script is one continuous ElevenLabs take (one request, no seed), cut locally at sentence boundaries. Two narrated cuts share this script: one with the kit's light music bed and one with the upbeat music track.
 
 ## overview
 
-Devin is more than a coding assistant; it connects code understanding, implementation, testing, review, security, and production feedback into a software development lifecycle your team can direct.
+Devin powers every stage of the software lifecycle, from understanding the code to production feedback. Your team directs the whole process.
 
 ## deepwiki
 
-DeepWiki turns connected repositories into documentation, architecture diagrams, and source-linked explanations, giving both you and Devin a clearer understanding of the system before anyone makes a change.
+DeepWiki turns your repositories into documentation, architecture diagrams, and source-linked explanations. That gives you and Devin a clear picture of the system before anyone makes a change.
 
 ## Proof — Real architecture documentation, grounded in the source
 
-This repository wiki shows generated architecture diagrams alongside links back to the source.
+This repository wiki shows generated architecture diagrams with links back to the source.
 
 ## plan
 
-Ask Devin uses that codebase context to answer questions and help plan changes, while connected Jira and Linear tickets give Devin another way to analyze and scope the work.
+Work often starts as a ticket. With Jira or Linear connected, Devin can analyze and scope that ticket before any code is written. Then Ask Devin answers questions grounded in the codebase. Together, they turn the request into a plan.
 
 ## Proof — The plan points to the files that need to change
 
-The plan here identifies the relevant files, so the handoff starts with a concrete approach.
+Here, the plan points to the exact files that need to change.
 
 ## build
 
-Once you delegate a task, Devin works asynchronously in its own environment with code, a shell, and a browser; repository blueprints prepare the tools and dependencies, and the result is a pull request following your conventions.
+When you delegate a task, Devin works asynchronously on its own Linux, macOS, or Windows machine, with code, a shell, and a browser. Repository blueprints prepare the tools and dependencies. The result is a pull request that follows your conventions.
 
 ## Proof — The work lands in a normal pull request
 
-This completed session opened a pull request in the demo repository, ready for review.
+This session opened a pull request in the demo repository, ready for review.
 
 ## fusion
 
-In Devin CLI and Desktop, Fusion pairs a frontier lead model that plans, investigates, and checks correctness with an efficient sidekick that implements the plan and runs builds and tests, while you interact with a single Devin.
-
-## adaptive
-
-Fusion is model collaboration rather than a single model router; Adaptive is the separate option that evaluates each request and selects an underlying model, balancing the complexity of the task with efficiency.
+Devin Cloud offers many model options, and Fusion is one of the most important. Fusion runs two agents in parallel: a frontier lead and a cost-effective sidekick. The lead makes the key decisions, like the plan and the final review, and delegates the rest. Each agent keeps its own context, and Devin can switch models mid-session as the task changes. On Cognition's coding benchmark, that kept frontier-level performance at up to sixty percent lower cost.
 
 ## managed
 
-For work spanning modules or repositories, a coordinator can delegate to managed Devins in separate virtual machines, monitor progress, resolve conflicts, and combine their results into a coordinated outcome.
+For work that spans modules or repositories, a coordinator can delegate to managed Devins, each in its own virtual machine. It monitors their progress, resolves conflicts, and combines the results.
 
 ## test
 
-Testing is part of the implementation loop: Devin can write new tests using your team's patterns, run existing suites, lint, and type checks, fix failures, and report what it actually checked.
+Testing is part of the implementation loop. Devin can write new tests in your team's style, run your suites, lint, and type checks, and fix failures. Then it reports what it actually checked.
 
 ## Proof — The PR explains the checks that were run
 
-The pull request records the test commands and the browser checks used to verify this change.
+The pull request lists the test commands and browser checks that verified this change.
 
 ## computer
 
-Computer Use adds behavioral testing by letting Devin operate a browser or desktop, interact with the running interface, visually verify the result, and produce recordings or screenshots you can inspect.
+Then Devin verifies the change the way a user would. With Computer Use, it can operate a browser or desktop application, interact with the running interface, and visually verify the result. It also captures screenshots and recordings you can inspect.
 
 ## Proof — UI testing produces visible evidence
 
-Here, the session includes a recording of the application being exercised in the browser.
+Here, the session includes a recording of the app being tested.
 
 ## review
 
-Devin Review provides a first pass for correctness and team standards; when Auto-Fix is enabled, review comments, flagged bugs, and failing checks can flow back into the same pull request as fixes.
+Devin Review gives every pull request a first pass for correctness and team standards. With Auto-Fix enabled, review comments, flagged bugs, and failing checks flow back into the same pull request as fixes.
 
 ## Proof — Review findings appear next to the diff
 
-This review found two bugs, with each finding available alongside the code under review.
+This review found two bugs, each shown right next to the code.
 
 ## secure
 
-Security fits the same workflow: Devin can address findings from scanners such as SonarQube, Fortify, and Veracode, and implement compliance-related changes across repositories without replacing your existing security policies.
+Security fits the same workflow. Devin can fix findings from scanners like SonarQube, Fortify, and Veracode. It can also make compliance changes across repositories, within your existing security policies.
 
 ## Proof — A flagged finding links to its fix pull request
 
-This security finding has a linked change, so the proposed fix can be reviewed through a pull request.
+This security finding links to its fix, ready to review as a pull request.
 
 ## ship
 
-Devin's pull requests follow the same branch protections as a human engineer's; your team reviews and decides what to merge, and existing applications ship through your own delivery pipeline.
+Devin's pull requests follow the same branch protections as a human engineer's. Your team reviews and decides what to merge. Existing applications ship through your own delivery pipeline.
 
 ## mcp
 
-MCP, the Model Context Protocol, extends Devin beyond the repository by exposing tools from external systems; install an integration's plugin, authorize its connection, and Devin can use the tools that server makes available.
+MCP extends Devin beyond the repository. Install an integration's plugin and authorize its connection. Devin can then use the tools that server makes available.
 
 ## Proof — A plugin can supply an enabled MCP server
 
-This installed plugin includes an enabled MCP server, making its tools available to Devin.
+This installed plugin includes an enabled MCP server, so its tools are available to Devin.
 
 ## services
 
-Datadog and Sentry connections let Devin investigate logs and errors, while Metabase brings analytics context; together, connected observability and data tools can help relate a production symptom to the code and the users it affects.
+With Datadog and Sentry connected, Devin can investigate logs and errors. Metabase adds analytics context. Together, they help connect a production symptom to the code and the users it affects.
 
 ## data
 
-For data-focused questions, Devin's Data Analyst can query connected sources, analyze metrics and trends, and create visualizations from Slack or the web app, giving engineering decisions more than code alone to work with.
+For data questions, Devin's Data Analyst can query connected sources, analyze metrics and trends, and create visualizations. You can ask from Slack, the web app, or the mobile app. It works anywhere Devin is accessible, so engineering decisions can draw on more than code.
 
 ## automation
 
-Automations supply the timing: a trigger detects an event or schedule, conditions narrow what should run, and an action starts or messages a Devin session with the event payload included as context.
+Automations decide when work starts. You can create one just by describing it in natural language. A trigger detects an event or a schedule, and conditions narrow what should run. The action starts or messages a Devin session, with the event payload included as context.
 
 ## Proof — A failing GitHub check starts a session with defined instructions
 
-This automation watches for a failing GitHub check and starts a session with instructions to fix that branch.
+This automation watches for a failing GitHub check. It starts a session with instructions to fix that branch.
 
 ## triggers
 
-That can mean fixing a CI failure, sweeping Sentry errors every day, updating dependencies each week, or investigating a Datadog alert through a webhook, using connected MCP tools inside the resulting session.
+That could mean fixing a CI failure, sweeping Sentry errors every day, or updating dependencies each week. A webhook can also start an investigation from a Datadog alert, with connected MCP tools inside the session.
 
 ## Proof — The automation’s event history links to the work it started
 
-The event history here shows completed automation runs and links to the sessions they started.
+The event history shows completed runs, with links to the sessions they started.
 
 ## incident
 
-In a production-feedback workflow, an alert can start an investigation, MCP tools supply runtime evidence, Devin uses codebase context to investigate and test a fix, and your team reviews the pull request before releasing through its pipeline.
+Here's how it fits together in production. An alert starts an investigation, and MCP tools supply runtime evidence. Devin uses codebase context to investigate and test a fix. Your team reviews the pull request before it ships through your pipeline.
 
 ## practices
 
-Skills and playbooks make your team's procedures reusable, while personal memory carries preferences and project lessons into your future sessions; automation-started sessions do not use that personal memory, so shared workflows belong in reusable instructions.
+Skills and playbooks make your team's procedures reusable. Personal memory carries your preferences and project lessons into future sessions. Automation-started sessions don't use personal memory, so shared workflows belong in reusable instructions.
 
 ## uses
 
-The highest-value work often connects several stages: shipping a feature, coordinating a migration, raising test coverage, or reducing a security backlog, with context, verification, and review built into the outcome.
+The highest-value work often spans several stages. Think of shipping a feature, coordinating a migration, raising test coverage, or reducing a security backlog. Context, verification, and review are built into each one.
 
 ## system
 
-The pieces fit together: DeepWiki and Ask Devin explain the system, sessions execute the work, MCPs bring outside context, automations keep the loop moving, and your engineering process determines what ships.
+Here's the whole system. DeepWiki and Ask Devin explain the code, sessions do the work, and MCPs bring in outside context. Automations keep the loop moving, and your engineering process decides what ships.
 
-## Closing
+## outro
 
-Devin supports the entire software lifecycle, while your team stays in control of the priorities, the process, and what ships.
+Devin supports the entire software lifecycle. Your team stays in control of the priorities, the process, and what ships.
