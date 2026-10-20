@@ -1,6 +1,6 @@
 # Voice script: Devin CLI what's new (v3000.11.92), narrated by Nader
 
-ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, model `eleven_v4`, one whole-script take cut into lines by `_kit/tools/vo.py`. Where the spoken text differs from the subtitle, the spoken version (`voSay`) is shown below it.
+ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, model `eleven_multilingual_v2`, one whole-script take cut into lines by `_kit/tools/vo.py`. Where the spoken text differs from the subtitle, the spoken version (`voSay`) is shown below it.
 
 **0000.png**  
 Let's look at what's new in the Devin CLI, starting with new cloud features, then long-running goals, then models, plugins, and other terminal features.
