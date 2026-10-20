@@ -4,6 +4,8 @@ window.SPEC = {
   "outro": "Who won the launch? Now there's data",
   "voOutro": "Who won the launch? Now there's data.",
   "dark": true,
+  "tailHold": 0.3,
+  "outroVoDelay": 0.6,
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.3,
@@ -35,7 +37,7 @@ window.SPEC = {
     },
     "0004.png": {
       "scene": "modalwhy",
-      "hold": 10,
+      "hold": 9,
       "cursor": false,
       "capPos": "bottom",
       "subPos": "bottom",

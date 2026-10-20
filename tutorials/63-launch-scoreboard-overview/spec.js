@@ -4,6 +4,8 @@ window.SPEC = {
   "outro": "Who won the launch? Now you can check",
   "voOutro": "Who won the launch? Now you can check.",
   "dark": true,
+  "tailHold": 0.3,
+  "outroVoDelay": 0.6,
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.3,
@@ -18,7 +20,7 @@ window.SPEC = {
     },
     "0001.png": {
       "scene": "pipeline",
-      "hold": 8,
+      "hold": 6.5,
       "cursor": false,
       "capPos": "bottom",
       "cap": "X posts, Grok with X Search, then Modal",

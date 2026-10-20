@@ -66,7 +66,7 @@ function pipeline(ctx, s, k) {
   sub.forEach((t, i) => card(ctx, k, xs[2] + (i - 1) * 200, 545, 180, 70, t[0], t[1], ap(k, s, 3.0 + i * .3), 0, false));
   if (s > 3) arrow(ctx, k, xs[2], Y + 46 + 8, xs[2], 510 - 8, k.clamp((s - 3) / .4), ap(k, s, 3));
   // group the Modal-hosted parts
-  const g = ap(k, s, 5.95, .8);
+  const g = ap(k, s, 5.7, .8);
   if (g > 0) { ctx.save(); ctx.globalAlpha = k.alpha * g; ctx.setLineDash([6, 6]); ctx.lineWidth = 1.4; ctx.strokeStyle = rgba(BLUE, .7); ctx.beginPath(); ctx.moveTo(585, 294); ctx.lineTo(1390, 294); ctx.lineTo(1390, 600); ctx.lineTo(405, 600); ctx.lineTo(405, 480); ctx.lineTo(585, 480); ctx.closePath(); ctx.stroke(); ctx.restore();
     text(ctx, k, 'RUNS ON MODAL', 605, 278, 13, 600, rgba(BLUE, 1), g, 'left', true); }
 }
@@ -80,19 +80,19 @@ function fanout(ctx, s, k) {
     const y = 380 + (i - (L.length - 1) / 2) * 120, t = 4.3 + i * .15;
     arrow(ctx, k, 345 + 8, 380, 600 - 8, y, k.clamp((s - t) / .5), 1, k.clamp((s - t - .5) / .8) < 1 ? k.clamp((s - t - .5) / .8) : -1);
     card(ctx, k, 720, y, 240, 84, 'analyze_launch', l.name, ap(k, s, t + .2), k.clamp((s - t - 1.2) * 2) * (1 - k.clamp((s - t - 2.6) * 1.5)), true);
-    arrow(ctx, k, 840 + 8, y, 1070 - 8, 380, k.clamp((s - 9.0 - i * .15) / .5), 1);
+    arrow(ctx, k, 840 + 8, y, 1070 - 8, 380, k.clamp((s - 9.3 - i * .15) / .5), 1);
   });
-  text(ctx, k, '.map(): one container per launch, in parallel', 470, 600, 15, 500, rgba(BLUE, 1), ap(k, s, 6.9), 'left', true);
-  card(ctx, k, 1180, 380, 210, 92, D.storage || 'modal.Dict', 'latest results', ap(k, s, 9.1), 0, true);
-  arrow(ctx, k, 1180, 380 + 46 + 8, 1180, 520 - 8, k.clamp((s - 10.9) / .4), ap(k, s, 10.9));
-  card(ctx, k, 1180, 560, 210, 80, 'web endpoint', D.web || '@modal.asgi_app', ap(k, s, 10.95), 0, true);
+  text(ctx, k, '.map(): one container per launch, in parallel', 470, 600, 15, 500, rgba(BLUE, 1), ap(k, s, 6.6), 'left', true);
+  card(ctx, k, 1180, 380, 210, 92, D.storage || 'modal.Dict', 'latest results', ap(k, s, 9.4), 0, true);
+  arrow(ctx, k, 1180, 380 + 46 + 8, 1180, 520 - 8, k.clamp((s - 10.35) / .4), ap(k, s, 10.35));
+  card(ctx, k, 1180, 560, 210, 80, 'web endpoint', D.web || '@modal.asgi_app', ap(k, s, 10.4), 0, true);
 }
 
 // 4. why Modal beats a laptop script or a self-managed server for this job
 function modalwhy(ctx, s, k) {
   eyebrow(ctx, k, 'WHY MODAL', 160, ap(k, s, .1));
   text(ctx, k, 'A few minutes of work, every six hours', k.VW / 2, 225, 40, 600, W2(1), ap(k, s, .3, .8));
-  const B = [['Laptop script', 'Stops when the laptop sleeps', 'No public URL'], ['Your own server', 'Always on', 'Idle between refreshes'], ['Modal', 'Scales to zero, billed per second', 'xAI key in a Modal Secret']], TW = [1.0, 3.85, 6.45];
+  const B = [['Laptop script', 'Stops when the laptop sleeps', 'No public URL'], ['Your own server', 'Always on', 'Idle between refreshes'], ['Modal', 'Scales to zero, billed per second', 'xAI key in a Modal Secret']], TW = [1.1, 3.85, 6.4];
   B.forEach((b, i) => {
     const x = k.VW / 2 + (i - 1) * 400, y = 430, a = ap(k, s, TW[i]), m = i === 2, lift = 14 * (1 - a);
     box(ctx, k, x - 175, y - 85 + lift, 350, 170, a * (m ? 1 : .9), m ? k.clamp((s - TW[i]) * 2) : 0);
@@ -106,14 +106,14 @@ function modalwhy(ctx, s, k) {
 function honest(ctx, s, k) {
   eyebrow(ctx, k, 'WHAT THE NUMBERS MEAN', 170, ap(k, s, .1));
   const R = [['Sampled', 'X Search returns a sample of posts, not the firehose'], ['Model-classified', 'Grok labels each sampled post positive, neutral or negative'], ['Linked', 'Every quoted post links back to the original on X']];
-  R.forEach((r, i) => { const y = 290 + i * 120, a = ap(k, s, [2.25, 4.0, 5.7][i]); box(ctx, k, 330, y - 44, 780, 88, a, 0); text(ctx, k, r[0], 370, y, 22, 600, W2(1), a, 'left'); text(ctx, k, r[1], 590, y, 17, 400, W2(.62), a, 'left'); });
+  R.forEach((r, i) => { const y = 290 + i * 120, a = ap(k, s, [2.2, 3.8, 5.65][i]); box(ctx, k, 330, y - 44, 780, 88, a, 0); text(ctx, k, r[0], 370, y, 22, 600, W2(1), a, 'left'); text(ctx, k, r[1], 590, y, 17, 400, W2(.62), a, 'left'); });
 }
 
 // 6. extensions
 function extend(ctx, s, k) {
   eyebrow(ctx, k, 'WAYS TO EXTEND IT', 150, ap(k, s, .1));
   const E = D.extend || [];
-  E.forEach((e, i) => { const y = 240 + i * 92, a = ap(k, s, [1.0, 2.8, 4.05, 5.9][i]); box(ctx, k, 300, y - 36, 840, 72, a, 0);
+  E.forEach((e, i) => { const y = 240 + i * 92, a = ap(k, s, [1.15, 2.85, 4.2, 6.05][i]); box(ctx, k, 300, y - 36, 840, 72, a, 0);
     text(ctx, k, String(i + 1), 340, y, 20, 600, rgba(BLUE, 1), a, 'left', true); text(ctx, k, e[0], 380, y, 20, 600, W2(1), a, 'left'); text(ctx, k, e[1], 1100, y, 15, 400, W2(.55), a, 'right'); });
 }
 
