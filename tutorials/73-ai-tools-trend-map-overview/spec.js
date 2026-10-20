@@ -3,6 +3,7 @@ window.SPEC = {
   "subtitle": "How it works and what you can do with it",
   "outro": "Let the data show what's catching on",
   "voOutro": "Let the data show what's catching on.",
+  "tailHold": 0.5,
   "outroVoDelay": 0.3,
   "introHold": 3.4,
   "pace": 1,
@@ -51,7 +52,7 @@ window.SPEC = {
       "voSay": "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range."
     },
     "0040.png": {
-      "hold": 9,
+      "hold": 8.2,
       "cap": "Usage report or hype: counts are a sample, not totals",
       "vo": "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
       "scene": "classify"
@@ -62,7 +63,7 @@ window.SPEC = {
       "vo": "In the real run, Devin built the whole app from this one prompt."
     },
     "0051.png": {
-      "hold": 4,
+      "hold": 3.5,
       "cap": "Deployed with modal deploy",
       "ring": {
         "x": 488,
@@ -70,7 +71,7 @@ window.SPEC = {
         "w": 356,
         "h": 30
       },
-      "ringFor": 3,
+      "ringFor": 2.6,
       "vo": "It deployed the app to Modal with modal deploy."
     },
     "0052.png": {

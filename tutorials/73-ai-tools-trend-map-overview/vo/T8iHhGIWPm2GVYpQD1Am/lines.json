@@ -1,7 +1,7 @@
 {
  "0010.png": {
   "text": "Which AI coding tools are people actually using, and which ones are they only talking about? This app answers that with real posts from X, so founders, investors and developers can see what's catching on.",
-  "dur": 11.92,
+  "dur": 10.47,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -69,27 +69,27 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.96,
+    "t1": 2.485,
     "text": "Which AI coding tools are people actually using,"
    },
    {
-    "t0": 3.08,
-    "t1": 5.2,
+    "t0": 2.508,
+    "t1": 4.284,
     "text": "and which ones are they only talking about?"
    },
    {
-    "t0": 5.44,
-    "t1": 7.52,
+    "t0": 4.667,
+    "t1": 6.769,
     "text": "This app answers that with real posts from"
    },
    {
-    "t0": 7.6,
-    "t1": 9.04,
+    "t0": 6.85,
+    "t1": 8.046,
     "text": "X, so founders,"
    },
    {
-    "t0": 9.24,
-    "t1": 11.92,
+    "t0": 8.069,
+    "t1": 10.47,
     "text": "investors and developers can see what's catching on."
    }
   ]
@@ -97,8 +97,8 @@
  "0020.png": {
   "text": "Here's how it works. Grok searches posts on X through the xAI API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
   "say": "Here's how it works. Grok searches posts on X through the ex A I API. Modal runs those searches and keeps the results in a Modal Dict. A web endpoint on the same app serves the page.",
-  "dur": 11.38,
-  "takeAt": 12.2,
+  "dur": 10.545,
+  "takeAt": 10.935,
   "mode": "single-take-1",
   "take": [
    [
@@ -164,28 +164,28 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.0,
+    "t0": 0.06,
+    "t1": 1.058,
     "text": "Here's how it works."
    },
    {
-    "t0": 1.4,
-    "t1": 4.92,
+    "t0": 1.232,
+    "t1": 4.46,
     "text": "Grok searches posts on X through the xAI API."
    },
    {
-    "t0": 5.16,
-    "t1": 7.48,
+    "t0": 4.739,
+    "t1": 6.84,
     "text": "Modal runs those searches and keeps the results"
    },
    {
-    "t0": 7.56,
-    "t1": 8.64,
+    "t0": 6.875,
+    "t1": 7.827,
     "text": "in a Modal Dict."
    },
    {
-    "t0": 8.84,
-    "t1": 11.38,
+    "t0": 8.152,
+    "t1": 10.543,
     "text": "A web endpoint on the same app serves the page."
    }
   ]
@@ -193,8 +193,8 @@
  "0025.png": {
   "text": "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and .map() runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal.run URL. The xAI key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
   "say": "So why Modal? A laptop script can't keep running on a timer, and it has no public URL. A server you manage would sit idle and cost money between refreshes. On Modal, a scheduled function does the daily pull, and dot map runs the searches in parallel across containers. A Modal Dict keeps the results, and a web endpoint serves the page at a modal dot run URL. The ex A I key lives in a Modal Secret. The app scales to zero when nobody is using it, and you only pay for the seconds it runs.",
-  "dur": 29.72,
-  "takeAt": 23.96,
+  "dur": 29.193,
+  "takeAt": 21.637,
   "mode": "single-take-1",
   "take": [
    [
@@ -262,80 +262,80 @@
    {
     "text": "So why Modal?",
     "t0": 0.12,
-    "t1": 1.28
+    "t1": 1.049
    },
    {
     "text": "A laptop script can't keep running on a timer,",
-    "t0": 1.48,
-    "t1": 3.938
+    "t0": 1.328,
+    "t1": 3.676
    },
    {
     "text": "and it has no public URL.",
-    "t0": 4.014,
-    "t1": 5.92
+    "t0": 3.748,
+    "t1": 5.553
    },
    {
     "text": "A server you manage would sit idle",
-    "t0": 6.12,
-    "t1": 7.909
+    "t0": 5.878,
+    "t1": 7.53
    },
    {
     "text": "and cost money between refreshes.",
-    "t0": 7.962,
-    "t1": 9.8
+    "t0": 7.578,
+    "t1": 9.327
    },
    {
     "text": "On Modal, a scheduled function does the daily pull,",
-    "t0": 10.12,
-    "t1": 13.079
+    "t0": 9.768,
+    "t1": 12.723
    },
    {
     "text": "and .map() runs the searches",
-    "t0": 13.137,
-    "t1": 14.761
+    "t0": 12.781,
+    "t1": 14.404
    },
    {
     "text": "in parallel across containers.",
-    "t0": 14.819,
-    "t1": 16.56
+    "t0": 14.462,
+    "t1": 16.2
    },
    {
     "text": "A Modal Dict keeps the results,",
-    "t0": 16.76,
-    "t1": 18.707
+    "t0": 16.641,
+    "t1": 18.511
    },
    {
     "text": "and a web endpoint serves the page",
-    "t0": 18.769,
-    "t1": 20.904
+    "t0": 18.572,
+    "t1": 20.623
    },
    {
     "text": "at a modal.run URL.",
-    "t0": 20.967,
-    "t1": 22.16
+    "t0": 20.684,
+    "t1": 21.83
    },
    {
     "text": "The xAI key lives in a Modal Secret.",
-    "t0": 22.36,
-    "t1": 24.84
+    "t0": 22.271,
+    "t1": 24.651
    },
    {
     "text": "The app scales to zero when nobody is using it,",
-    "t0": 25.0,
-    "t1": 27.445
+    "t0": 25.034,
+    "t1": 27.204
    },
    {
     "text": "and you only pay for the seconds it runs.",
-    "t0": 27.494,
-    "t1": 29.72
+    "t0": 27.248,
+    "t1": 29.193
    }
   ]
  },
  "0030.png": {
   "text": "That's ten tools across four weeks, so each refresh runs forty searches in parallel with .map(). Every search has its own date range.",
   "say": "That's ten tools across four weeks, so each refresh runs forty searches in parallel with dot map. Every search has its own date range.",
-  "dur": 8.12,
-  "takeAt": 53.96,
+  "dur": 7.565,
+  "takeAt": 51.045,
   "mode": "single-take-1",
   "take": [
    [
@@ -402,30 +402,30 @@
   "chunks": [
    {
     "text": "That's ten tools across four weeks,",
-    "t0": 0.12,
-    "t1": 2.264
+    "t0": 0.073,
+    "t1": 1.995
    },
    {
     "text": "so each refresh runs forty searches",
-    "t0": 2.325,
-    "t1": 4.469
+    "t0": 2.05,
+    "t1": 3.971
    },
    {
     "text": "in parallel with .map().",
-    "t0": 4.53,
-    "t1": 6.0
+    "t0": 4.026,
+    "t1": 5.344
    },
    {
     "text": "Every search has its own date range.",
-    "t0": 6.2,
-    "t1": 8.12
+    "t0": 5.727,
+    "t1": 7.565
    }
   ]
  },
  "0040.png": {
   "text": "Each post that Grok finds gets a label, real usage report or hype. The counts are posts found in the X search sample, not totals.",
-  "dur": 7.95,
-  "takeAt": 62.28,
+  "dur": 7.225,
+  "takeAt": 58.875,
   "mode": "single-take-1",
   "take": [
    [
@@ -491,31 +491,31 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.44,
+    "t0": 0.091,
+    "t1": 2.158,
     "text": "Each post that Grok finds gets a label,"
    },
    {
-    "t0": 2.52,
-    "t1": 4.28,
+    "t0": 2.367,
+    "t1": 3.841,
     "text": "real usage report or hype."
    },
    {
-    "t0": 4.44,
-    "t1": 6.2,
+    "t0": 4.224,
+    "t1": 5.861,
     "text": "The counts are posts found in the X"
    },
    {
-    "t0": 6.28,
-    "t1": 7.95,
+    "t0": 5.896,
+    "t1": 7.225,
     "text": "search sample, not totals."
    }
   ]
  },
  "0041.png": {
   "text": "In the real run, Devin built the whole app from this one prompt.",
-  "dur": 3.42,
-  "takeAt": 70.44,
+  "dur": 3.013,
+  "takeAt": 66.427,
   "mode": "single-take-1",
   "take": [
    [
@@ -582,20 +582,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.0,
+    "t1": 0.945,
     "text": "In the real run,"
    },
    {
-    "t0": 1.08,
-    "t1": 3.4,
+    "t0": 1.014,
+    "t1": 3.013,
     "text": "Devin built the whole app from this one prompt."
    }
   ]
  },
  "0051.png": {
   "text": "It deployed the app to Modal with modal deploy.",
-  "dur": 2.56,
-  "takeAt": 74.04,
+  "dur": 2.454,
+  "takeAt": 69.736,
   "mode": "single-take-1",
   "take": [
    [
@@ -662,15 +662,15 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.52,
+    "t1": 2.454,
     "text": "It deployed the app to Modal with modal deploy."
    }
   ]
  },
  "0052.png": {
   "text": "The daily schedule is in the code, but this run deployed with it switched off, because the workspace had hit its limit of scheduled functions.",
-  "dur": 6.74,
-  "takeAt": 76.76,
+  "dur": 6.415,
+  "takeAt": 72.465,
   "mode": "single-take-1",
   "take": [
    [
@@ -737,25 +737,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.88,
+    "t1": 1.652,
     "text": "The daily schedule is in the code,"
    },
    {
-    "t0": 1.96,
-    "t1": 3.96,
+    "t0": 1.675,
+    "t1": 3.521,
     "text": "but this run deployed with it switched off,"
    },
    {
-    "t0": 4.08,
-    "t1": 6.74,
+    "t0": 3.556,
+    "t1": 6.415,
     "text": "because the workspace had hit its limit of scheduled functions."
    }
   ]
  },
  "0061.png": {
   "text": "Devin checked the public URL again after a small color fix, and the code is in a pull request.",
-  "dur": 5.08,
-  "takeAt": 83.72,
+  "dur": 5.118,
+  "takeAt": 79.152,
   "mode": "single-take-1",
   "take": [
    [
@@ -822,25 +822,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.32,
+    "t1": 2.198,
     "text": "Devin checked the public URL again after a"
    },
    {
-    "t0": 2.36,
-    "t1": 3.48,
+    "t0": 2.268,
+    "t1": 3.383,
     "text": "small color fix,"
    },
    {
-    "t0": 3.52,
-    "t1": 5.08,
+    "t0": 3.476,
+    "t1": 5.118,
     "text": "and the code is in a pull request."
    }
   ]
  },
  "0071.png": {
   "text": "Here's the page running on Modal with real data. In this sample, Codex and Cursor have the highest share of usage reports.",
-  "dur": 6.73,
-  "takeAt": 89.0,
+  "dur": 6.503,
+  "takeAt": 84.597,
   "mode": "single-take-1",
   "take": [
    [
@@ -907,25 +907,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.56,
+    "t1": 2.431,
     "text": "Here's the page running on Modal with real data."
    },
    {
-    "t0": 2.76,
-    "t1": 3.64,
+    "t0": 2.675,
+    "t1": 3.476,
     "text": "In this sample,"
    },
    {
-    "t0": 3.72,
-    "t1": 6.73,
+    "t0": 3.522,
+    "t1": 6.503,
     "text": "Codex and Cursor have the highest share of usage reports."
    }
   ]
  },
  "0080.png": {
   "text": "To take it further, add a weekly digest, or alerts when a new tool starts to emerge. You could also track more categories, or add a second source to check the X sample against.",
-  "dur": 10.01,
-  "takeAt": 95.96,
+  "dur": 9.791,
+  "takeAt": 91.389,
   "mode": "single-take-1",
   "take": [
    [
@@ -992,40 +992,40 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.16,
+    "t1": 1.072,
     "text": "To take it further,"
    },
    {
-    "t0": 1.24,
-    "t1": 2.6,
+    "t0": 1.223,
+    "t1": 2.477,
     "text": "add a weekly digest,"
    },
    {
-    "t0": 2.68,
-    "t1": 5.24,
+    "t0": 2.686,
+    "t1": 4.903,
     "text": "or alerts when a new tool starts to emerge."
    },
    {
-    "t0": 5.28,
-    "t1": 7.16,
+    "t0": 5.229,
+    "t1": 7.109,
     "text": "You could also track more categories,"
    },
    {
-    "t0": 7.24,
-    "t1": 8.92,
+    "t0": 7.237,
+    "t1": 8.793,
     "text": "or add a second source to check the"
    },
    {
-    "t0": 9.0,
-    "t1": 10.01,
+    "t0": 8.839,
+    "t1": 9.791,
     "text": "X sample against."
    }
   ]
  },
  "outro": {
   "text": "Let the data show what's catching on.",
-  "dur": 2.01,
-  "takeAt": 106.2,
+  "dur": 1.687,
+  "takeAt": 101.443,
   "mode": "single-take-1",
   "take": [
    [
@@ -1092,7 +1092,7 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.01,
+    "t1": 1.687,
     "text": "Let the data show what's catching on."
    }
   ]
