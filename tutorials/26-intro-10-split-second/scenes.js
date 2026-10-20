@@ -113,13 +113,14 @@ function drawStage(ctx, k, i, s) {
   const [title, sub] = LABELS[i];
   text(ctx, k, title, 0, -13, 24, c.a*(.38 + .62*c.mix), 600);
   if (c.mix < 1) { // waiting: a soft shimmer passes over the hand-off label
-    ctx.save(); ctx.globalAlpha = k.alpha*c.a*(1 - c.mix); ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; k.font(15, 400);
-    const y = 18 - 7*c.mix; ctx.fillStyle = 'rgba(25,25,25,.30)'; ctx.fillText('Waiting on handoff', 0, y);
+    ctx.save(); ctx.globalAlpha = k.alpha*c.a*Math.max(0, 1 - 2*c.mix); ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; k.font(15, 400);
+    const y = 18 - 10*c.mix; ctx.fillStyle = 'rgba(25,25,25,.30)'; ctx.fillText('Waiting on handoff', 0, y);
     const gx = -150 + ((s*.62 + i*.29) % 1)*300, g = ctx.createLinearGradient(gx - 46, 0, gx + 46, 0);
     g.addColorStop(0, 'rgba(25,25,25,0)'); g.addColorStop(.5, 'rgba(25,25,25,.42)'); g.addColorStop(1, 'rgba(25,25,25,0)');
     ctx.fillStyle = g; ctx.fillText('Waiting on handoff', 0, y); ctx.restore();
   }
-  if (c.mix > 0) text(ctx, k, sub, 0, 18 + 7*(1 - c.mix), 15, c.a*c.mix, 400, SUB);
+  const wi = Math.max(0, 2*c.mix - 1);
+  if (wi > 0) text(ctx, k, sub, 0, 18 + 8*(1 - wi), 15, c.a*wi, 400, SUB);
   ctx.restore();
 }
 
