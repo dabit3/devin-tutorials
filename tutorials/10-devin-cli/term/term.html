@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- Tutorial 10's light-mode copy of _kit/capture/term/term.html: white window, dark text, and window.ready also reports the cell grid so rings can be placed on terminal text. -->
+<link rel="stylesheet" href="../../_kit/tools/node_modules/@xterm/xterm/css/xterm.css">
+<style>
+@font-face{font-family:JBM;src:url(../../_kit/fonts/JetBrainsMono-VF.ttf);font-weight:100 800}
+html,body{margin:0;width:1440px;height:810px;background:#ffffff;overflow:hidden}
+#bar{height:44px;display:flex;align-items:center;justify-content:center;position:relative;background:#f2f2f4;border-bottom:1px solid #e2e2e6;font:500 15px -apple-system,BlinkMacSystemFont,sans-serif;color:#6e6e76}
+#dots{position:absolute;left:18px;display:flex;gap:9px}#dots i{width:13px;height:13px;border-radius:50%;display:block}
+#t{position:absolute;left:30px;top:66px;right:30px;bottom:20px}
+.xterm .xterm-viewport{background:transparent!important;overflow:hidden!important}
+</style></head><body>
+<div id="bar"><div id="dots"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div><span id="title">orbit — devin</span></div>
+<div id="t"></div>
+<script src="../../_kit/tools/node_modules/@xterm/xterm/lib/xterm.js"></script>
+<script>
+const FS = Number(new URLSearchParams(location.search).get('fs') || 24);
+const term = new Terminal({ fontFamily: 'JBM', fontSize: FS, lineHeight: 1.08, fontWeight: 400, fontWeightBold: 700, cursorBlink: false, cursorStyle: 'block', allowProposedApi: true, scrollback: 0, drawBoldTextInBrightColors: false,
+  theme: { background: '#ffffff', foreground: '#1e1e1f', cursor: '#1e1e1f', cursorAccent: '#ffffff', selectionBackground: '#d9e6ff',
+    black: '#1e1e1f', red: '#d23f3f', green: '#1f8a4c', yellow: '#a86b00', blue: '#2563d9', magenta: '#8a4fd1', cyan: '#0e7f99', white: '#e6e6e8',
+    brightBlack: '#6e6e76', brightRed: '#e05555', brightGreen: '#2a9d5c', brightYellow: '#b87a00', brightBlue: '#3b78e7', brightMagenta: '#9b62de', brightCyan: '#1793ad', brightWhite: '#f4f4f6' } });
+window.ready = document.fonts.load(`${FS}px JBM`).then(() => {
+  term.open(document.getElementById('t'));
+  const el = document.getElementById('t'), core = term._core, cell = core._renderService.dimensions.css.cell;
+  const cols = Math.floor(el.clientWidth / cell.width), rows = Math.floor(el.clientHeight / cell.height);
+  term.resize(cols, rows); return { cols, rows, x: el.offsetLeft, y: el.offsetTop, cw: cell.width, ch: cell.height };
+});
+window.render = (text, cx, cy, show, title) => new Promise(r => {
+  if (title) document.getElementById('title').textContent = title;
+  const lines = text.replace(/\n$/, '').split('\n');
+  let s = '\x1b[0m\x1b[2J\x1b[H' + (show ? '\x1b[?25h' : '\x1b[?25l');
+  lines.slice(0, term.rows).forEach((l, i) => { s += `\x1b[${i + 1};1H` + l + '\x1b[0m'; });
+  s += `\x1b[${cy + 1};${cx + 1}H`;
+  term.write(s, () => requestAnimationFrame(() => requestAnimationFrame(r)));
+});
+</script></body></html>
