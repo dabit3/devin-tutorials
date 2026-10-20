@@ -1,8 +1,8 @@
 window.SPEC = {
-  "title": "Record a chore once",
-  "subtitle": "Turn a screen recording into a scheduled Playwright automation",
-  "outro": "Record it once, and let Devin run it every morning",
-  "voOutro": "Record it once, and let Devin run it every morning.",
+  "title": "From recording to automation",
+  "subtitle": "Devin builds a scheduled Playwright automation from one screen recording",
+  "outro": "One recording in, an automation Devin builds and runs",
+  "voOutro": "That's how you turn one screen recording into an automation Devin builds and runs for you.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
@@ -14,10 +14,19 @@ window.SPEC = {
     ]
   ],
   "edit": {
+    "scene-builds.png": {
+      "scene": "builds",
+      "hold": 6,
+      "voHold": 14.0,
+      "cursor": false,
+      "capPos": "bottom",
+      "cap": "One screen recording in, a working automation out",
+      "vo": "In this video, Devin builds a working automation from nothing but a screen recording, with no written steps and no code from us. It watches the video, works out what we did and why, then writes a Playwright script, tests it in its own browser, opens a pull request, and puts it on a weekday schedule."
+    },
     "rec1.png": {
       "hold": 5,
       "cap": "We recorded this chore ourselves, on seeded demo data",
-      "vo": "Every morning, someone opens this refund dashboard and does the same few clicks. We recorded that chore once ourselves, in a demo app we built with seeded data that resets on every reload."
+      "vo": "Here's the chore. Every morning, someone opens this refund dashboard and does the same few clicks, so we recorded it once ourselves, in a demo app we built with seeded data that resets on every reload."
     },
     "rec2.png": {
       "hold": 1.6
@@ -43,16 +52,16 @@ window.SPEC = {
     "0000.png": {
       "hold": 1.4,
       "cap": "Start a new Devin session",
-      "vo": "In Devin, start a new session and attach the recording like any other file."
+      "vo": "In Devin, start a new session and attach the recording, which is the only description of the chore that Devin gets."
     },
     "0001.png": {},
     "0002.png": {
-      "cap": "Attach the screen recording"
+      "cap": "The recording is the only spec"
     },
     "0009.png": {
       "hold": 3,
-      "cap": "Give the goal: script it, prove it, schedule it",
-      "vo": "Then give it the goal: watch the video, write a Playwright script that does the same thing, prove it in its browser, and schedule it for every weekday at nine UTC."
+      "cap": "Give the goal, not the steps",
+      "vo": "The prompt gives the goal, not the steps: watch the video, write a Playwright script that does the same thing, prove it in its browser, and schedule it for every weekday at nine UTC."
     },
     "0011.png": {},
     "0013.png": {
@@ -60,14 +69,14 @@ window.SPEC = {
     },
     "0025.png": {
       "hold": 4.5,
-      "cap": "Devin pulls frames and infers the rule",
-      "vo": "Devin pulls frames out of the video and works out the rule behind the clicks: damaged items of fifty dollars or less get approved, and the bigger ones stay pending."
+      "cap": "Nobody told it the rule: Devin infers it from the frames",
+      "vo": "Nobody told it the rule, so Devin pulls frames out of the video and works it out from the clicks: damaged items of fifty dollars or less get approved, and the bigger ones stay pending."
     },
     "0026.png": {
       "hold": 1.1,
       "badge": "Sped up",
-      "cap": "It writes the script and runs it headless",
-      "vo": "It writes the script, runs it headless, and checks that it approves the same six refunds as the recording."
+      "cap": "It writes the script from what it saw",
+      "vo": "From what it saw, it writes the script, runs it headless, and checks that it approves the same six refunds as the recording."
     },
     "0030.png": {
       "hold": 1.1,
@@ -128,11 +137,11 @@ window.SPEC = {
     "0277.png": {
       "hold": 3,
       "cap": "Devin opened a PR with the script",
-      "vo": "Devin also opened a pull request with the script, so the whole chore now lives in the repo as code."
+      "vo": "Devin also opened a pull request with the script, so a chore we only ever showed it on video now lives in the repo as code."
     },
     "0278.png": {
       "hold": 2.2,
-      "cap": "refund-chore.js, the whole chore in code"
+      "cap": "refund-chore.js, written from the recording"
     },
     "0186.png": {
       "hold": 2.6,
@@ -193,7 +202,7 @@ window.SPEC = {
     "0207.png": {
       "hold": 5,
       "cap": "SUCCESS: the same six refunds, CSV attached",
-      "vo": "About a minute later, the run reports success, with the same six approvals, and the CSV and a screenshot attached. From now on, it runs every weekday at nine, without us."
+      "vo": "About a minute later, the run reports success, with the same six approvals, and the CSV and a screenshot attached. From now on, it runs every weekday at nine, without us, and all we ever gave it was one recording and a goal."
     },
     "0224.png": {
       "skip": true
