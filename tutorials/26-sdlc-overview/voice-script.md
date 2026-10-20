@@ -2,6 +2,10 @@
 
 Nader voice (eleven_multilingual_v2, default settings). The whole script is one continuous ElevenLabs take (one request, no seed), cut locally at sentence boundaries. Two narrated cuts share this script: one with the kit's light music bed and one with the upbeat music track.
 
+## intro
+
+What happens after the code is written?
+
 ## overview
 
 Devin powers every stage of the software lifecycle, from understanding the code to production feedback. Your team directs the whole process.
