@@ -4,7 +4,7 @@ window.SPEC = {
   "dark": true,
   "outro": "Bold predictions, checked later, with a source for every verdict",
   "voOutro": "Bold predictions, checked later, with a source for every verdict.",
-  "outroVoDelay": 0.2,
+  "outroVoDelay": 0.0,
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.3,

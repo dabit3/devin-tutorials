@@ -1072,5 +1072,6 @@ window.SPEC = {
       "cap": "Exact quotes, linked to the original posts",
       "vo": "Each card keeps the exact quote and a link to the original post. After filming, the daily schedule was switched off to save cost."
     }
-  }
+  },
+  "outroVoDelay": 0.0
 };
