@@ -3,6 +3,8 @@ window.SPEC = {
   "subtitle": "Hiring, layoffs and job hunting on X, counted from sampled posts",
   "eyebrow": "Modal + xAI",
   "dark": true,
+  "tailHold": 0.5,
+  "outroVoDelay": 0.4,
   "outro": "Your own job-market numbers",
   "voOutro": "Your own job-market numbers, every hour.",
   "speed": 3,
@@ -91,7 +93,7 @@ window.SPEC = {
     },
     "0010.png": {
       "scene": "extend",
-      "hold": 13.5,
+      "hold": 10.3,
       "cursor": false,
       "vo": "To take it further, track one role over time, such as forward deployed engineers. You could post a weekly digest to Slack. You could split the counts by region or seniority. And you could get an alert when a skill suddenly spikes.",
       "cap": "Four ways to extend it"

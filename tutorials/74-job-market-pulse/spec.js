@@ -3,6 +3,8 @@ window.SPEC = {
   "subtitle": "Build and deploy it on Modal with the xAI API, step by step",
   "eyebrow": "Modal + xAI",
   "dark": true,
+  "tailHold": 0.5,
+  "outroVoDelay": 0.4,
   "outro": "Your own job-market numbers, every hour",
   "voOutro": "Your own job-market numbers, every hour.",
   "speed": 3,

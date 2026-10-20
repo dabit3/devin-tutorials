@@ -91,7 +91,7 @@ function intro(ctx, s, k) {
 
 // 2. Why Modal: the job (wake hourly, many Grok calls, store, serve) vs a laptop script or own server, then the Modal pieces this app uses.
 // MT = seconds into the narration when each piece is named (refit after each take).
-const MT = { job: 1.2, alt: 8.0, modal: 13.0, cron: 13.2, map: 17.7, vol: 21.5, sec: 23.55, web: 26.05, zero: 29.1 };
+const MT = { job: 1.5, alt: 7.4, modal: 12.55, cron: 12.75, map: 16.8, vol: 20.6, sec: 22.6, web: 25.2, zero: 28.05 };
 function modal(ctx, s, k) {
   eyebrow(ctx, k, 'WHY MODAL', 86, appear(k, s, 0.05));
   ['Wake up every hour', 'Many Grok calls', 'Store each run', 'Serve a page'].forEach((t, i) => pill(ctx, k, t, 300 + i * 280, 150, appear(k, s, MT.job + i * 0.5)));
@@ -124,21 +124,21 @@ function pipeline(ctx, s, k) {
   s = s / PIPE_PACE;
   eyebrow(ctx, k, 'HOW IT WORKS', 86, appear(k, s, 0.05));
   const x = node(ctx, k, { x: 150, y: 405, t: 'X posts', w: 170 }, appear(k, s, 0.2));
-  const ai = node(ctx, k, { x: 405, y: 405, t: 'xAI API', sub: 'Grok + X search', w: 210 }, appear(k, s, 0.9), appear(k, s, 5.0, 0.5) * (1 - appear(k, s, 6.8, 0.5)));
+  const ai = node(ctx, k, { x: 405, y: 405, t: 'xAI API', sub: 'Grok + X search', w: 210 }, appear(k, s, 0.9), appear(k, s, 4.3, 0.5) * (1 - appear(k, s, 6.5, 0.5)));
   curve(ctx, k, x.r, 405, ai.l, 405, k.eInOut(k.prog(s, 0.6, 1.1)), [k.prog(s, 1.0, 2.0), k.prog(s, 1.5, 2.5)]);
   const ma = appear(k, s, 1.9);
   box(ctx, k, 580, 205 + 12 * (1 - ma), 300, 400, ma, 0, 18, BLUE, '#121214');
   text(ctx, k, 'Modal', 730, 240 + 12 * (1 - ma), 18, 600, k.INK, ma);
-  const subs = [{ t: 'Scheduled function', sub: 'modal.Cron, every hour', t0: 2.7 }, { t: '.map()', sub: 'search + classify', t0: 7.0 }, { t: 'Web endpoint', sub: '@modal.asgi_app', t0: 11.2 }];
+  const subs = [{ t: 'Scheduled function', sub: 'modal.Cron, every hour', t0: 2.5 }, { t: '.map()', sub: 'search + classify', t0: 7.1 }, { t: 'Web endpoint', sub: '@modal.asgi_app', t0: 11.9 }];
   const ns = subs.map((n, i) => node(ctx, k, { x: 730, y: 318 + i * 100, t: n.t, sub: n.sub, w: 250, size: 17 }, appear(k, s, n.t0), appear(k, s, n.t0 + 0.3, 0.4) * (1 - appear(k, s, n.t0 + 1.2, 0.5))));
-  curve(ctx, k, ai.r, 405, 580, 405, k.eInOut(k.prog(s, 2.3, 2.8)), [k.prog(s, 5.4, 6.3), k.prog(s, 5.7, 6.6)]);
-  const v = node(ctx, k, { x: 1040, y: 300, t: 'Modal Volume', sub: 'one JSON file per run', w: 230 }, appear(k, s, 9.5), appear(k, s, 9.8, 0.4) * (1 - appear(k, s, 10.9, 0.5)));
-  curve(ctx, k, 880, 405, v.l, 300, k.eInOut(k.prog(s, 9.3, 9.8)), k.prog(s, 9.7, 10.6));
-  const lp = node(ctx, k, { x: 1040, y: 520, t: 'Public page', sub: '*.modal.run', w: 230 }, appear(k, s, 12.0), appear(k, s, 12.3, 0.4));
-  curve(ctx, k, v.r - 30, v.bot, lp.r - 30, lp.top, k.eInOut(k.prog(s, 11.8, 12.3)), k.prog(s, 12.2, 13.0));
-  curve(ctx, k, 855, 518, lp.l, 520, k.eInOut(k.prog(s, 11.8, 12.3)));
-  pill(ctx, k, 'xAI key in a Modal Secret', 405, 500, appear(k, s, 5.6));
-  pill(ctx, k, 'Counts of sampled posts', 1040, 640, appear(k, s, 12.8));
+  curve(ctx, k, ai.r, 405, 580, 405, k.eInOut(k.prog(s, 2.3, 2.8)), [k.prog(s, 4.7, 5.6), k.prog(s, 5.0, 5.9)]);
+  const v = node(ctx, k, { x: 1040, y: 300, t: 'Modal Volume', sub: 'one JSON file per run', w: 230 }, appear(k, s, 9.9), appear(k, s, 10.2, 0.4) * (1 - appear(k, s, 11.3, 0.5)));
+  curve(ctx, k, 880, 405, v.l, 300, k.eInOut(k.prog(s, 9.7, 10.2)), k.prog(s, 10.1, 11.0));
+  const lp = node(ctx, k, { x: 1040, y: 520, t: 'Public page', sub: '*.modal.run', w: 230 }, appear(k, s, 12.9), appear(k, s, 13.2, 0.4));
+  curve(ctx, k, v.r - 30, v.bot, lp.r - 30, lp.top, k.eInOut(k.prog(s, 12.7, 13.2)), k.prog(s, 13.1, 13.9));
+  curve(ctx, k, 855, 518, lp.l, 520, k.eInOut(k.prog(s, 12.7, 13.2)));
+  pill(ctx, k, 'xAI key in a Modal Secret', 405, 500, appear(k, s, 4.9));
+  pill(ctx, k, 'Counts of sampled posts', 1040, 640, appear(k, s, 13.6));
 }
 
 // 4. Honest numbers: X search returns a sample, and people are only ever counted, never named.
@@ -165,7 +165,7 @@ function extend(ctx, s, k) {
   eyebrow(ctx, k, 'WAYS TO EXTEND IT', 110, appear(k, s, 0.05));
   const items = [['Track one role over time', 'e.g. forward deployed engineer'], ['Post a weekly digest', 'to Slack or email'], ['Split by region or seniority', 'add fields to the schema'], ['Alert on a skill spike', 'compare against earlier runs']];
   items.forEach(([t, sub], i) => {
-    const T = [0.9, 5.2, 7.5, 10.2, 99], cx = 450 + (i % 2) * 540, cy = 300 + Math.floor(i / 2) * 170, a = appear(k, s, T[i]);
+    const T = [0.9, 4.5, 6.8, 9.4, 99], cx = 450 + (i % 2) * 540, cy = 300 + Math.floor(i / 2) * 170, a = appear(k, s, T[i]);
     box(ctx, k, cx - 240, cy - 60 + 12 * (1 - a), 480, 120, a, appear(k, s, T[i] + 0.2, 0.4) * (1 - appear(k, s, T[i + 1], 0.5)), 16);
     text(ctx, k, t, cx - 210, cy - 14 + 12 * (1 - a), 20, 600, k.INK, a, 'left');
     text(ctx, k, sub, cx - 210, cy + 20 + 12 * (1 - a), 14, 400, W(0.5), a, 'left', 'JetBrains Mono');
