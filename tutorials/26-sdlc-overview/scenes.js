@@ -80,7 +80,7 @@ function flow(scene, section, title, active, nodes, footer) {
 }
 function overview(ctx, s, k) {
   text(ctx,k,'THE SOFTWARE LIFECYCLE',720,112,15,enter(k,s),500,SUB,'JetBrains Mono');
-  text(ctx,k,'Devin connects every stage',720,165,38,enter(k,s,.1),600);
+  text(ctx,k,'Devin powers every stage',720,165,38,enter(k,s,.1),600);
   const labels = [['Understand','Code and context'],['Build','Make the change'],['Test','Run the checks'],['Verify','See it working'],['Review','Find and fix issues'],['Secure','Address findings'],['Operate','Act on signals']];
   const w = 172, gap = 14, y = 528, x0 = 720 - (7*w + 6*gap)/2 + w/2;
   const la = enter(k,s,.5,1.2);

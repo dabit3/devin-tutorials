@@ -27,7 +27,7 @@
 | 23 | Managed Devins: how it works (overview) | `23-managed-devins-overview/` |
 | 24 | Devin Automations: how they work (overview) | `24-automations-overview/` |
 | 25 | Security Swarm, how it works (overview) | `25-security-swarm-overview/` |
-| 26 | Devin across the SDLC — expanded introduction (overview; 5:22 Nader / 5:22 Nader + music) | [Sources](26-sdlc-overview/) · [Nader 4K](26-sdlc-overview/26-sdlc-overview-nader.mp4) · [Nader + music 4K](26-sdlc-overview/26-sdlc-overview-nader-music.mp4) · [Nader 1080p](26-sdlc-overview/26-sdlc-overview-nader-1080p.mp4) · [Nader + music 1080p](26-sdlc-overview/26-sdlc-overview-nader-music-1080p.mp4) · [Script](26-sdlc-overview/voice-script.md) |
+| 26 | Devin across the SDLC — expanded introduction (overview; 5:27 Nader / 5:27 Nader + music) | [Sources](26-sdlc-overview/) · [Nader 4K](26-sdlc-overview/26-sdlc-overview-nader.mp4) · [Nader + music 4K](26-sdlc-overview/26-sdlc-overview-nader-music.mp4) · [Nader 1080p](26-sdlc-overview/26-sdlc-overview-nader-1080p.mp4) · [Nader + music 1080p](26-sdlc-overview/26-sdlc-overview-nader-music-1080p.mp4) · [Script](26-sdlc-overview/voice-script.md) |
 | 27 | Code Scans, how it works (overview) | `27-code-scans-overview/` |
 | 28 | Devin on every platform (overview) | `28-multiplatform-overview/` |
 | 29 | Managed Devins for experiments | `29-managed-devins-experiments/` |

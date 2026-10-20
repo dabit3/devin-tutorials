@@ -4,7 +4,7 @@ Nader voice (eleven_multilingual_v2, default settings). The whole script is one 
 
 ## overview
 
-Devin is more than a coding assistant. It connects every stage of the software lifecycle, from understanding the code to production feedback. Your team directs the whole process.
+Devin powers every stage of the software lifecycle, from understanding the code to production feedback. Your team directs the whole process.
 
 ## deepwiki
 
