@@ -208,11 +208,11 @@ const BLUE = '#2078ff', INK = '#191919', SUB = 'rgba(25,25,25,.55)', LINE = 'rgb
 const BEAT = 0.5103;
 let DROP, T_ANS, T_DEVIN, T_MORPH, T_Q;
 const ANSWERS = [
-  { word: 'Tested', label: 'HOW IT WAS TESTED', img: 'tested.png' },
-  { word: 'Verified', label: 'COMPUTER USE', img: 'verified.png' },
-  { word: 'Reviewed', label: 'DEVIN REVIEW', img: 'reviewed.png' },
-  { word: 'Secured', label: 'SECURITY SCAN', img: 'secured.png' },
-  { word: 'Shipped', label: 'PULL REQUEST', img: 'shipped.png' },
+  { word: 'Test', label: 'HOW IT WAS TESTED', img: 'tested.png' },
+  { word: 'Verify', label: 'COMPUTER USE', img: 'verified.png' },
+  { word: 'Review', label: 'DEVIN REVIEW', img: 'reviewed.png' },
+  { word: 'Secure', label: 'SECURITY SCAN', img: 'secured.png' },
+  { word: 'Ship', label: 'PULL REQUEST', img: 'shipped.png' },
 ];
 const QUESTION = 'What happens after the code is written?';
 const LEAD = () => window.SPEC.sceneLead || 0;
