@@ -171,5 +171,41 @@ function uses(ctx, s0, k) {
     txt(ctx, k, l2, cx, yy + 230, 14, 500, ink(0.55), a);
   });
 }
-window.SCENES = { value, flow1: flowStep(1), flow2: flowStep(2), flow3: flowStep(3), flow4: flowStep(4), flow5: flowStep(5), uses };
+// What goes in vs what Devin builds: one recording + a goal on the left, the generated pieces checking off on the right.
+const BUILDS = [
+  ['The steps, and the rule behind them', 'works', 1.6],
+  ['A Playwright script', 'playwright', 2.3],
+  ['A test run in its own browser', 'tests', 3.0],
+  ['A pull request with the code', 'pull', 3.7],
+  ['A weekday Automation', 'schedule', 4.4],
+];
+function builds(ctx, s0, k) {
+  bg(ctx, k); const S = st('builds'), s = s0 / S;
+  const img = Object.keys(window.SPEC.edit).find(i => window.SPEC.edit[i].scene === 'builds');
+  const at = (w, fb) => { const c = cue(img, w, null); return c == null ? fb : c / S; };
+  eyebrow(ctx, k, 'ONE RECORDING IN, A WORKING AUTOMATION OUT', 150, ap(k, s, 0.05));
+  const a1 = ap(k, s, 0.25), y1 = 14 * (1 - a1);
+  card(ctx, k, 150, 250 + y1, 360, 330, a1, 0, 18);
+  txt(ctx, k, 'YOU GIVE IT', 330, 290 + y1, 13, 500, ink(0.48), a1, 'center', 'JetBrains Mono', 2.2);
+  ctx.save(); ctx.globalAlpha = k.alpha * a1; k.rr(186, 318 + y1, 288, 140, 10); ctx.fillStyle = '#f4f5f7'; ctx.fill(); ctx.restore();
+  icon(ctx, k, 'rec', 330, 372 + y1, a1, 0);
+  txt(ctx, k, 'refund-chore.mp4', 330, 428 + y1, 15, 600, '#191919', a1, 'center', 'JetBrains Mono', 0);
+  txt(ctx, k, 'One screen recording', 330, 494 + y1, 18, 600, '#191919', a1);
+  txt(ctx, k, '+ a goal. No steps, no code.', 330, 526 + y1, 15, 500, ink(0.55), a1);
+  const a2 = ap(k, s, 0.8), f1 = hc([510, 415], [650, 415]);
+  path(ctx, k, f1, k.eInOut(k.prog(s, 0.6, 1.0))); signal(ctx, k, f1, k.prog(s, 0.6, 1.2));
+  card(ctx, k, 650, 360 + 12 * (1 - a2), 140, 110, a2, ap(k, s, 0.9) * (1 - k.prog(s, 4.6, 5.2)), 16);
+  avatar(ctx, k, 720, 398 + 12 * (1 - a2), 32, a2);
+  txt(ctx, k, 'Devin', 720, 445 + 12 * (1 - a2), 16, 600, '#191919', a2);
+  const f2 = hc([790, 415], [900, 415]); path(ctx, k, f2, k.eInOut(k.prog(s, 1.1, 1.5))); signal(ctx, k, f2, k.prog(s, 1.1, 1.7));
+  const a3 = ap(k, s, 1.3), y3 = 14 * (1 - a3);
+  card(ctx, k, 900, 230 + y3, 400, 370, a3, 0, 18);
+  txt(ctx, k, 'DEVIN BUILDS', 1100, 270 + y3, 13, 500, ink(0.48), a3, 'center', 'JetBrains Mono', 2.2);
+  BUILDS.forEach(([t, w, fb], i) => {
+    const t0 = at(w, fb), b = ap(k, s, t0, 0.5), yy = 320 + i * 56 + y3 + 8 * (1 - b);
+    check(ctx, k, 944, yy, a3 * b, 10, rgba(BLUE, 1));
+    txt(ctx, k, t, 968, yy, 17, 600, '#191919', a3 * b, 'left');
+  });
+}
+window.SCENES = { value, builds, flow1: flowStep(1), flow2: flowStep(2), flow3: flowStep(3), flow4: flowStep(4), flow5: flowStep(5), uses };
 })();

@@ -1,8 +1,8 @@
 window.SPEC = {
-  "title": "Record a chore once",
+  "title": "From recording to automation",
   "subtitle": "How it works, and what you can hand off",
-  "outro": "Record it once. Devin does it from then on",
-  "voOutro": "Record it once, and let Devin do it from then on.",
+  "outro": "One recording in. Devin builds and runs the rest",
+  "voOutro": "That's how one screen recording becomes an automation that Devin builds and runs for you.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
@@ -10,10 +10,19 @@ window.SPEC = {
     "0000.png": {
       "scene": "value",
       "hold": 4.6,
-      "cap": "Record it once, and Devin runs it on a schedule",
-      "vo": "Record a repetitive web chore once, and Devin turns it into a Playwright script that runs on a schedule without you.",
+      "cap": "One recording in, a working automation out",
+      "vo": "Show Devin a chore once on video, and it builds the automation for you: it works out the steps, writes a Playwright script, and runs it on a schedule without you.",
       "cursor": false,
-      "voHold": 5.8,
+      "voHold": 7.4,
+      "capPos": "bottom"
+    },
+    "0014.png": {
+      "scene": "builds",
+      "hold": 4.4,
+      "cap": "You give it a video. Devin builds the rest",
+      "vo": "You never write down the steps or any code, the recording is the whole spec, and Devin builds everything else from it.",
+      "cursor": false,
+      "voHold": 5.1,
       "capPos": "bottom"
     },
     "0001.png": {
@@ -57,7 +66,7 @@ window.SPEC = {
       "scene": "flow3",
       "hold": 3.4,
       "cap": "3. Devin extracts the workflow",
-      "vo": "Devin pulls frames from the video and works out the steps, and the rule behind them.",
+      "vo": "Devin pulls frames from the video and works out the steps, and the rule behind them, with nobody spelling them out.",
       "cursor": false,
       "voHold": 4.3,
       "capPos": "bottom"
@@ -65,7 +74,7 @@ window.SPEC = {
     "0006.png": {
       "hold": 3.4,
       "cap": "It inferred the rule from the frames",
-      "vo": "Here, it noticed that only damaged items of fifty dollars or less were approved.",
+      "vo": "Here, it noticed on its own that only damaged items of fifty dollars or less were approved.",
       "ring": {
         "x": 725,
         "y": 418,
@@ -78,8 +87,8 @@ window.SPEC = {
     "0007.png": {
       "scene": "flow4",
       "hold": 3.4,
-      "cap": "4. It writes Playwright and runs it",
-      "vo": "Next, it writes a Playwright script and runs it in its own browser to prove it matches.",
+      "cap": "4. It turns what it saw into Playwright",
+      "vo": "Next, it turns what it saw into a Playwright script and runs it in its own browser to prove it matches.",
       "cursor": false,
       "voHold": 4.4,
       "capPos": "bottom"
