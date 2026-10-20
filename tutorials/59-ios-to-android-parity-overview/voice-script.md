@@ -1,12 +1,12 @@
 # Voice script: Port an iOS screen to Android and prove parity (overview)
 
-Narrated cut: `59-ios-to-android-parity-overview-nader.mp4` (voice `T8iHhGIWPm2GVYpQD1Am`, `VO_NAME=nader`). One whole-script ElevenLabs take with default voice settings (`_kit/tools/vo_onetake.py`), cut locally at sentence boundaries, STT check passed.
+Narrated cut: `59-ios-to-android-parity-overview-nader.mp4` (voice `T8iHhGIWPm2GVYpQD1Am`, `VO_NAME=nader`). One whole-script ElevenLabs take with model `eleven_multilingual_v2` and default voice settings (`_kit/tools/vo_onetake.py`), cut locally at sentence boundaries, STT check passed.
 
 Diagram scenes are drawn live by `scenes.js`; every UI shot is a real capture from tutorial 58 (mapping in `shots/SOURCES.json`).
 
 | Shot | Visual | Line |
 |---|---|---|
-| 0000 | diagram `idea` | To port an iOS screen to Android, run the original on a Mac, build the port on an Android emulator, and show both screens in one pull request. |
+| 0000 | diagram `idea` | Here's how to port an iOS screen to Android with Devin: run the original on a Mac, build the port on an Android emulator, and show both screens in one pull request. |
 | 0001 | proof: tutorial 58 `shots/0003.png` | The first session runs on macOS, which you pick from the platform menu. |
 | 0002 | proof: tutorial 58 `shots/0010.png` | It runs the original app in the iPhone Simulator and screenshots the screen. |
 | 0003 | diagram `flow` | From that screenshot it writes a parity spec, and a second session on Ubuntu builds the port to match it, then screenshots the same screen. |
@@ -17,7 +17,7 @@ Diagram scenes are drawn live by `scenes.js`; every UI shot is a real capture fr
 | 0008 | diagram `usecases` | Use it to port an app one screen at a time, check a redesign on both platforms, or catch drift between two apps. |
 | 0009 | diagram `setup` | To set it up, pick macOS for the first session, then ask an Ubuntu session to set up an Android emulator. |
 | 0010 | proof: tutorial 58 `shots/0022.png` | Here, one prompt asked for the emulator, the port and the side by side screenshots. |
-| outro | end card | Run the original, build the port, and let the screenshots prove they match. |
+| outro | end card | The takeaway: when Devin runs both versions and screenshots them, you don't have to take the port on trust, you can see it. |
 
 ## Sources
 
