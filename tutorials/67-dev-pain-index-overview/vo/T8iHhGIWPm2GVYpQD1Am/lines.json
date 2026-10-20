@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
-  "dur": 14.725,
+  "dur": 12.48,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -69,32 +69,32 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.72,
+    "t1": 2.31,
     "text": "Developers complain on X every day about their"
    },
    {
-    "t0": 2.96,
-    "t1": 5.6,
+    "t0": 2.357,
+    "t1": 4.493,
     "text": "tools, their cloud bills and the job market,"
    },
    {
-    "t0": 5.72,
-    "t1": 7.28,
+    "t0": 4.644,
+    "t1": 5.735,
     "text": "but nobody adds it up."
    },
    {
-    "t0": 7.32,
-    "t1": 9.84,
+    "t0": 5.979,
+    "t1": 8.406,
     "text": "The Developer Pain Index turns those posts into"
    },
    {
-    "t0": 9.92,
-    "t1": 11.76,
+    "t0": 8.475,
+    "t1": 9.927,
     "text": "a monthly report you can cite,"
    },
    {
-    "t0": 11.84,
-    "t1": 14.725,
+    "t0": 10.136,
+    "t1": 12.48,
     "text": "with every chart showing its sample size and dates."
    }
   ]
@@ -102,8 +102,8 @@
  "0001.png": {
   "text": "Each month, Grok from xAI searches X for complaint posts in each category, and rates how severe each one is. Everything after that runs on Modal, which groups the complaints into themes, saves the dataset to a Volume and serves the report page.",
   "say": "Each month, Grok from ex A I searches X for complaint posts in each category, and rates how severe each one is. Everything after that runs on Modal, which groups the complaints into themes, saves the dataset to a Volume and serves the report page.",
-  "dur": 14.2,
-  "takeAt": 14.84,
+  "dur": 12.91,
+  "takeAt": 12.79,
   "mode": "single-take-1",
   "take": [
    [
@@ -170,27 +170,27 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 7.08,
+    "t1": 6.053,
     "text": "Each month, Grok from xAI searches X for complaint posts in each category, and rates how severe each one is."
    },
    {
-    "t0": 7.16,
-    "t1": 9.0,
+    "t0": 6.656,
+    "t1": 8.166,
     "text": "Everything after that runs on Modal,"
    },
    {
-    "t0": 9.08,
-    "t1": 11.08,
+    "t0": 8.189,
+    "t1": 9.93,
     "text": "which groups the complaints into themes,"
    },
    {
-    "t0": 11.16,
-    "t1": 13.24,
+    "t0": 10.139,
+    "t1": 12.067,
     "text": "saves the dataset to a Volume and serves"
    },
    {
-    "t0": 13.32,
-    "t1": 14.2,
+    "t0": 12.09,
+    "t1": 12.91,
     "text": "the report page."
    }
   ]
@@ -198,8 +198,8 @@
  "0002.png": {
   "text": "Why Modal? This job runs once a month, so a laptop script would have to stay awake for it, and your own server would sit idle the rest of the time. Modal starts the pull on a cron schedule and keeps the xAI key in a Secret. A Volume stores the results, and a web endpoint serves the page at a public URL. Between runs it scales to zero, so you only pay for the seconds it works.",
   "say": "Why Modal? This job runs once a month, so a laptop script would have to stay awake for it, and your own server would sit idle the rest of the time. Modal starts the pull on a cron schedule and keeps the ex A I key in a Secret. A Volume stores the results, and a web endpoint serves the page at a public URL. Between runs it scales to zero, so you only pay for the seconds it works.",
-  "dur": 21.655,
-  "takeAt": 29.48,
+  "dur": 20.64,
+  "takeAt": 25.84,
   "mode": "single-take-1",
   "take": [
    [
@@ -266,62 +266,62 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.08,
+    "t1": 0.816,
     "text": "Why Modal?"
    },
    {
-    "t0": 1.2,
-    "t1": 2.76,
+    "t0": 1.141,
+    "t1": 2.407,
     "text": "This job runs once a month,"
    },
    {
-    "t0": 2.84,
-    "t1": 4.36,
+    "t0": 2.43,
+    "t1": 4.02,
     "text": "so a laptop script would have to stay"
    },
    {
-    "t0": 4.44,
-    "t1": 5.24,
+    "t0": 4.055,
+    "t1": 4.729,
     "text": "awake for it,"
    },
    {
-    "t0": 5.28,
-    "t1": 6.84,
+    "t0": 4.938,
+    "t1": 6.424,
     "text": "and your own server would sit idle the"
    },
    {
-    "t0": 6.92,
-    "t1": 8.04,
+    "t0": 6.459,
+    "t1": 7.248,
     "text": "rest of the time."
    },
    {
-    "t0": 8.12,
-    "t1": 12.6,
+    "t0": 7.631,
+    "t1": 11.567,
     "text": "Modal starts the pull on a cron schedule and keeps the xAI key in a Secret."
    },
    {
-    "t0": 12.68,
-    "t1": 14.24,
+    "t0": 12.008,
+    "t1": 13.622,
     "text": "A Volume stores the results,"
    },
    {
-    "t0": 14.28,
-    "t1": 16.04,
+    "t0": 13.773,
+    "t1": 15.526,
     "text": "and a web endpoint serves the page at"
    },
    {
-    "t0": 16.08,
-    "t1": 17.4,
+    "t0": 15.561,
+    "t1": 16.478,
     "text": "a public URL."
    },
    {
-    "t0": 17.56,
-    "t1": 19.36,
+    "t0": 16.803,
+    "t1": 18.626,
     "text": "Between runs it scales to zero,"
    },
    {
-    "t0": 19.4,
-    "t1": 21.655,
+    "t0": 18.87,
+    "t1": 20.64,
     "text": "so you only pay for the seconds it works."
    }
   ]
@@ -329,8 +329,8 @@
  "0003.png": {
   "text": "When it runs, one .map() call spreads the searches across containers, so the six-month backfill ran 30 searches in parallel and kept 704 posts.",
   "say": "When it runs, one dot map call spreads the searches across containers, so the six month backfill ran thirty searches in parallel and kept seven hundred and four posts.",
-  "dur": 9.358,
-  "takeAt": 51.187,
+  "dur": 9.308,
+  "takeAt": 46.772,
   "mode": "single-take-1",
   "take": [
    [
@@ -397,15 +397,15 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 9.358,
+    "t1": 9.308,
     "text": "When it runs, one .map() call spreads the searches across containers, so the six-month backfill ran 30 searches in parallel and kept 704 posts."
    }
   ]
  },
  "0004.png": {
   "text": "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
-  "dur": 4.97,
-  "takeAt": 60.545,
+  "dur": 4.345,
+  "takeAt": 56.465,
   "mode": "single-take-1",
   "take": [
    [
@@ -471,26 +471,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.068,
-    "t1": 1.028,
+    "t0": 0,
+    "t1": 0.818,
     "text": "In the real run,"
    },
    {
-    "t0": 1.082,
-    "t1": 3.375,
+    "t0": 0.911,
+    "t1": 3.082,
     "text": "Devin built all of this from one plain-language"
    },
    {
-    "t0": 3.455,
-    "t1": 4.97,
+    "t0": 3.117,
+    "t1": 4.345,
     "text": "prompt in the demo repo."
    }
   ]
  },
  "0005.png": {
   "text": "The workspace had already used all five of its scheduled functions, so Devin asked first. The schedule stayed in the code but switched off, and it hasn't run yet.",
-  "dur": 8.562,
-  "takeAt": 65.533,
+  "dur": 8.155,
+  "takeAt": 61.155,
   "mode": "single-take-1",
   "take": [
    [
@@ -556,28 +556,28 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.227,
+    "t0": 0.03,
+    "t1": 2.015,
     "text": "The workspace had already used all five of"
    },
    {
-    "t0": 2.307,
-    "t1": 3.387,
+    "t0": 2.073,
+    "t1": 3.164,
     "text": "its scheduled functions,"
    },
    {
-    "t0": 3.427,
-    "t1": 5.0,
+    "t0": 3.292,
+    "t1": 4.523,
     "text": "so Devin asked first."
    },
    {
-    "t0": 5.054,
-    "t1": 6.867,
+    "t0": 4.848,
+    "t1": 6.647,
     "text": "The schedule stayed in the code but switched"
    },
    {
-    "t0": 6.947,
-    "t1": 8.562,
+    "t0": 6.705,
+    "t1": 8.155,
     "text": "off, and it hasn't run yet."
    }
   ]
@@ -585,8 +585,8 @@
  "0006.png": {
   "text": "Then modal deploy created each function and gave the report its own modal.run URL.",
   "say": "Then modal deploy created each function and gave the report its own modal dot run URL.",
-  "dur": 5.225,
-  "takeAt": 74.4,
+  "dur": 4.465,
+  "takeAt": 69.515,
   "mode": "single-take-1",
   "take": [
    [
@@ -652,16 +652,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 5.225,
+    "t0": 0.075,
+    "t1": 4.465,
     "text": "Then modal deploy created each function and gave the report its own modal.run URL."
    }
   ]
  },
  "0007.png": {
   "text": "Devin opened a pull request with the whole app and its tests.",
-  "dur": 3.405,
-  "takeAt": 79.72,
+  "dur": 2.757,
+  "takeAt": 74.323,
   "mode": "single-take-1",
   "take": [
    [
@@ -728,12 +728,12 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.88,
+    "t1": 1.792,
     "text": "Devin opened a pull request with the whole"
    },
    {
-    "t0": 1.96,
-    "t1": 3.405,
+    "t0": 1.827,
+    "t1": 2.757,
     "text": "app and its tests."
    }
   ]
@@ -741,8 +741,8 @@
  "0008.png": {
   "text": "The page running on Modal shows September's index at 44 out of 100 from 109 posts found, with six real months on the trend line.",
   "say": "The page running on Modal shows September's index at forty four out of a hundred from a hundred and nine posts found, with six real months on the trend line.",
-  "dur": 8.022,
-  "takeAt": 83.133,
+  "dur": 7.488,
+  "takeAt": 77.307,
   "mode": "single-take-1",
   "take": [
    [
@@ -809,15 +809,15 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 8.022,
+    "t1": 7.488,
     "text": "The page running on Modal shows September's index at 44 out of 100 from 109 posts found, with six real months on the trend line."
    }
   ]
  },
  "0009.png": {
   "text": "Each category lists its top themes and the loudest real posts behind them.",
-  "dur": 4.015,
-  "takeAt": 91.32,
+  "dur": 3.669,
+  "takeAt": 85.121,
   "mode": "single-take-1",
   "take": [
    [
@@ -884,12 +884,12 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.2,
+    "t1": 2.187,
     "text": "Each category lists its top themes and the"
    },
    {
-    "t0": 2.24,
-    "t1": 4.015,
+    "t0": 2.245,
+    "t1": 3.669,
     "text": "loudest real posts behind them."
    }
   ]
@@ -897,8 +897,88 @@
  "0010.png": {
   "text": "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
   "say": "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers.",
-  "dur": 11.685,
-  "takeAt": 95.4,
+  "dur": 11.255,
+  "takeAt": 89.175,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
+    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates."
+   ],
+   [
+    "0001.png",
+    "Each month, Grok from xAI searches X for complaint posts in each category, and rates how severe each one is. Everything after that runs on Modal, which groups the complaints into themes, saves the dataset to a Volume and serves the report page.",
+    "Each month, Grok from ex A I searches X for complaint posts in each category, and rates how severe each one is. Everything after that runs on Modal, which groups the complaints into themes, saves the dataset to a Volume and serves the report page."
+   ],
+   [
+    "0002.png",
+    "Why Modal? This job runs once a month, so a laptop script would have to stay awake for it, and your own server would sit idle the rest of the time. Modal starts the pull on a cron schedule and keeps the xAI key in a Secret. A Volume stores the results, and a web endpoint serves the page at a public URL. Between runs it scales to zero, so you only pay for the seconds it works.",
+    "Why Modal? This job runs once a month, so a laptop script would have to stay awake for it, and your own server would sit idle the rest of the time. Modal starts the pull on a cron schedule and keeps the ex A I key in a Secret. A Volume stores the results, and a web endpoint serves the page at a public URL. Between runs it scales to zero, so you only pay for the seconds it works."
+   ],
+   [
+    "0003.png",
+    "When it runs, one .map() call spreads the searches across containers, so the six-month backfill ran 30 searches in parallel and kept 704 posts.",
+    "When it runs, one dot map call spreads the searches across containers, so the six month backfill ran thirty searches in parallel and kept seven hundred and four posts."
+   ],
+   [
+    "0004.png",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
+    "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
+   ],
+   [
+    "0005.png",
+    "The workspace had already used all five of its scheduled functions, so Devin asked first. The schedule stayed in the code but switched off, and it hasn't run yet.",
+    "The workspace had already used all five of its scheduled functions, so Devin asked first. The schedule stayed in the code but switched off, and it hasn't run yet."
+   ],
+   [
+    "0006.png",
+    "Then modal deploy created each function and gave the report its own modal.run URL.",
+    "Then modal deploy created each function and gave the report its own modal dot run URL."
+   ],
+   [
+    "0007.png",
+    "Devin opened a pull request with the whole app and its tests.",
+    "Devin opened a pull request with the whole app and its tests."
+   ],
+   [
+    "0008.png",
+    "The page running on Modal shows September's index at 44 out of 100 from 109 posts found, with six real months on the trend line.",
+    "The page running on Modal shows September's index at forty four out of a hundred from a hundred and nine posts found, with six real months on the trend line."
+   ],
+   [
+    "0009.png",
+    "Each category lists its top themes and the loudest real posts behind them.",
+    "Each category lists its top themes and the loudest real posts behind them."
+   ],
+   [
+    "0010.png",
+    "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
+    "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers."
+   ],
+   [
+    "outro",
+    "Real posts from X, turned into a monthly report you can cite.",
+    "Real posts from X, turned into a monthly report you can cite."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.06,
+    "t1": 4.367,
+    "text": "You could extend it with alerts when a theme spikes and with drill-downs for a single tool."
+   },
+   {
+    "t0": 4.808,
+    "t1": 11.255,
+    "text": "A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Real posts from X, turned into a monthly report you can cite.",
+  "dur": 3.362,
+  "takeAt": 100.818,
   "mode": "single-take-1",
   "take": [
    [
@@ -965,92 +1045,12 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 4.48,
-    "text": "You could extend it with alerts when a theme spikes and with drill-downs for a single tool."
-   },
-   {
-    "t0": 4.52,
-    "t1": 11.685,
-    "text": "A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers."
-   }
-  ]
- },
- "outro": {
-  "text": "Real posts from X, turned into a monthly report you can cite.",
-  "dur": 3.685,
-  "takeAt": 107.085,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates.",
-    "Developers complain on X every day about their tools, their cloud bills and the job market, but nobody adds it up. The Developer Pain Index turns those posts into a monthly report you can cite, with every chart showing its sample size and dates."
-   ],
-   [
-    "0001.png",
-    "Each month, Grok from xAI searches X for complaint posts in each category, and rates how severe each one is. Everything after that runs on Modal, which groups the complaints into themes, saves the dataset to a Volume and serves the report page.",
-    "Each month, Grok from ex A I searches X for complaint posts in each category, and rates how severe each one is. Everything after that runs on Modal, which groups the complaints into themes, saves the dataset to a Volume and serves the report page."
-   ],
-   [
-    "0002.png",
-    "Why Modal? This job runs once a month, so a laptop script would have to stay awake for it, and your own server would sit idle the rest of the time. Modal starts the pull on a cron schedule and keeps the xAI key in a Secret. A Volume stores the results, and a web endpoint serves the page at a public URL. Between runs it scales to zero, so you only pay for the seconds it works.",
-    "Why Modal? This job runs once a month, so a laptop script would have to stay awake for it, and your own server would sit idle the rest of the time. Modal starts the pull on a cron schedule and keeps the ex A I key in a Secret. A Volume stores the results, and a web endpoint serves the page at a public URL. Between runs it scales to zero, so you only pay for the seconds it works."
-   ],
-   [
-    "0003.png",
-    "When it runs, one .map() call spreads the searches across containers, so the six-month backfill ran 30 searches in parallel and kept 704 posts.",
-    "When it runs, one dot map call spreads the searches across containers, so the six month backfill ran thirty searches in parallel and kept seven hundred and four posts."
-   ],
-   [
-    "0004.png",
-    "In the real run, Devin built all of this from one plain-language prompt in the demo repo.",
-    "In the real run, Devin built all of this from one plain-language prompt in the demo repo."
-   ],
-   [
-    "0005.png",
-    "The workspace had already used all five of its scheduled functions, so Devin asked first. The schedule stayed in the code but switched off, and it hasn't run yet.",
-    "The workspace had already used all five of its scheduled functions, so Devin asked first. The schedule stayed in the code but switched off, and it hasn't run yet."
-   ],
-   [
-    "0006.png",
-    "Then modal deploy created each function and gave the report its own modal.run URL.",
-    "Then modal deploy created each function and gave the report its own modal dot run URL."
-   ],
-   [
-    "0007.png",
-    "Devin opened a pull request with the whole app and its tests.",
-    "Devin opened a pull request with the whole app and its tests."
-   ],
-   [
-    "0008.png",
-    "The page running on Modal shows September's index at 44 out of 100 from 109 posts found, with six real months on the trend line.",
-    "The page running on Modal shows September's index at forty four out of a hundred from a hundred and nine posts found, with six real months on the trend line."
-   ],
-   [
-    "0009.png",
-    "Each category lists its top themes and the loudest real posts behind them.",
-    "Each category lists its top themes and the loudest real posts behind them."
-   ],
-   [
-    "0010.png",
-    "You could extend it with alerts when a theme spikes and with drill-downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data.json route lets other sites embed the numbers.",
-    "You could extend it with alerts when a theme spikes and with drill downs for a single tool. A weekly edition just needs a weekly schedule and shorter search windows, and the data dot jason route lets other sites embed the numbers."
-   ],
-   [
-    "outro",
-    "Real posts from X, turned into a monthly report you can cite.",
-    "Real posts from X, turned into a monthly report you can cite."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.115,
-    "t1": 1.635,
+    "t1": 1.281,
     "text": "Real posts from X,"
    },
    {
-    "t0": 1.715,
-    "t1": 3.685,
+    "t0": 1.432,
+    "t1": 3.362,
     "text": "turned into a monthly report you can cite."
    }
   ]

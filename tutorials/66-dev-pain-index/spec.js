@@ -9,6 +9,7 @@ window.SPEC = {
   "maxZoom": 1.3,
   "pollRunMax": 1.3,
   "tailHold": 0,
+  "outroVoDelay": 0.9,
   "noZoom": [
     [
       "0009.png"

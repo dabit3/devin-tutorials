@@ -4,6 +4,8 @@ window.SPEC = {
   "outro": "Real posts from X, a report you can cite",
   "voOutro": "Real posts from X, turned into a monthly report you can cite.",
   "dark": true,
+  "tailHold": 0,
+  "outroVoDelay": 0.9,
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.3,

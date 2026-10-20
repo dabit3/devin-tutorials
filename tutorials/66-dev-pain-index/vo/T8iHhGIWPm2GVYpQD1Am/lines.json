@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time.",
-  "dur": 8.08,
+  "dur": 7.36,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -114,30 +114,30 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.8,
+    "t1": 2.543,
     "text": "The Developer Pain Index ranks what developers complain"
    },
    {
-    "t0": 2.88,
-    "t1": 4.56,
+    "t0": 2.577,
+    "t1": 3.889,
     "text": "about on X each month,"
    },
    {
-    "t0": 4.6,
-    "t1": 6.48,
+    "t0": 4.098,
+    "t1": 5.968,
     "text": "and it groups similar complaints so you can"
    },
    {
-    "t0": 6.64,
-    "t1": 8.08,
+    "t0": 6.026,
+    "t1": 7.36,
     "text": "follow each trend over time."
    }
   ]
  },
  "0002.png": {
   "text": "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover.",
-  "dur": 8.85,
-  "takeAt": 8.44,
+  "dur": 7.855,
+  "takeAt": 7.625,
   "mode": "single-take-1",
   "take": [
    [
@@ -248,31 +248,31 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.04,
+    "t0": 0.119,
+    "t1": 2.023,
     "text": "It works like an industry survey people can"
    },
    {
-    "t0": 2.12,
-    "t1": 4.76,
+    "t0": 2.081,
+    "t1": 4.066,
     "text": "cite, except it's built from real posts,"
    },
    {
-    "t0": 4.84,
-    "t1": 6.52,
+    "t0": 4.275,
+    "t1": 5.854,
     "text": "so every chart has to say how many"
    },
    {
-    "t0": 6.6,
-    "t1": 8.85,
+    "t0": 5.924,
+    "t1": 7.855,
     "text": "posts it used and which dates they cover."
    }
   ]
  },
  "0004.png": {
   "text": "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo.",
-  "dur": 7.17,
-  "takeAt": 17.64,
+  "dur": 6.805,
+  "takeAt": 15.775,
   "mode": "single-take-1",
   "take": [
    [
@@ -383,23 +383,23 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.8,
+    "t0": 0.026,
+    "t1": 1.489,
     "text": "The goal is a report page at a"
    },
    {
-    "t0": 1.88,
-    "t1": 3.4,
+    "t0": 1.535,
+    "t1": 2.859,
     "text": "public URL on Modal,"
    },
    {
-    "t0": 3.48,
-    "t1": 5.08,
+    "t0": 3.068,
+    "t1": 4.449,
     "text": "with real data from X,"
    },
    {
-    "t0": 5.24,
-    "t1": 7.17,
+    "t0": 4.774,
+    "t1": 6.805,
     "text": "plus a pull request in the demo repo."
    }
   ]
@@ -407,8 +407,8 @@
  "0007.png": {
   "text": "The prompt asks for a Modal app that calls Grok from xAI, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points.",
   "say": "The prompt asks for a Modal app that calls Grok from ex A I, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points.",
-  "dur": 12.13,
-  "takeAt": 25.24,
+  "dur": 11.595,
+  "takeAt": 22.925,
   "mode": "single-take-1",
   "take": [
    [
@@ -519,18 +519,18 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 6.2,
+    "t0": 0.097,
+    "t1": 6.041,
     "text": "The prompt asks for a Modal app that calls Grok from xAI, and uses its X search tool to find the posts."
    },
    {
-    "t0": 6.68,
-    "t1": 8.84,
+    "t0": 6.483,
+    "t1": 8.445,
     "text": "It runs on a monthly schedule and backfills"
    },
    {
-    "t0": 8.92,
-    "t1": 12.13,
+    "t0": 8.503,
+    "t1": 11.595,
     "text": "earlier months, so every trend line has real data points."
    }
   ]
@@ -538,8 +538,8 @@
  "0007a.png": {
   "text": "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and .map() runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The xAI key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works.",
   "say": "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and dot map runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The ex A I key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works.",
-  "dur": 24.81,
-  "takeAt": 37.88,
+  "dur": 22.804,
+  "takeAt": 34.826,
   "mode": "single-take-1",
   "take": [
    [
@@ -651,55 +651,55 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.24,
+    "t1": 0.932,
     "text": "So why Modal?"
    },
    {
-    "t0": 1.72,
-    "t1": 3.88,
+    "t0": 0.99,
+    "t1": 2.836,
     "text": "A monthly job shouldn't depend on a laptop"
    },
    {
-    "t0": 3.96,
-    "t1": 5.88,
+    "t0": 2.883,
+    "t1": 4.787,
     "text": "being awake, or on a server you pay"
    },
    {
-    "t0": 5.96,
-    "t1": 6.8,
+    "t0": 4.845,
+    "t1": 5.576,
     "text": "for all month."
    },
    {
-    "t0": 7.08,
-    "t1": 12.92,
+    "t0": 5.82,
+    "t1": 10.998,
     "text": "On Modal, a cron schedule starts the pull and .map() runs the searches in parallel containers."
    },
    {
-    "t0": 13.0,
-    "t1": 14.6,
+    "t0": 11.277,
+    "t1": 12.867,
     "text": "A Volume keeps the results,"
    },
    {
-    "t0": 14.64,
-    "t1": 16.36,
+    "t0": 12.983,
+    "t1": 14.771,
     "text": "and a web endpoint serves the page at"
    },
    {
-    "t0": 16.4,
-    "t1": 17.8,
+    "t0": 14.806,
+    "t1": 15.746,
     "text": "a public URL."
    },
    {
-    "t0": 17.88,
-    "t1": 24.81,
+    "t0": 16.025,
+    "t1": 22.804,
     "text": "The xAI key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works."
    }
   ]
  },
  "0011.png": {
   "text": "Devin replies with a short plan before it starts.",
-  "dur": 2.59,
-  "takeAt": 63.16,
+  "dur": 2.558,
+  "takeAt": 57.952,
   "mode": "single-take-1",
   "take": [
    [
@@ -811,15 +811,15 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.59,
+    "t1": 2.558,
     "text": "Devin replies with a short plan before it starts."
    }
   ]
  },
  "0015.png": {
   "text": "From there it works on its own, and runs a real six month backfill of posts from X.",
-  "dur": 4.71,
-  "takeAt": 66.16,
+  "dur": 4.525,
+  "takeAt": 60.855,
   "mode": "single-take-1",
   "take": [
    [
@@ -930,26 +930,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.813,
+    "t0": 0.038,
+    "t1": 1.397,
     "text": "From there it works on its own,"
    },
    {
-    "t0": 1.867,
-    "t1": 3.76,
+    "t0": 1.571,
+    "t1": 3.568,
     "text": "and runs a real six month backfill of"
    },
    {
-    "t0": 3.92,
-    "t1": 4.71,
+    "t0": 3.637,
+    "t1": 4.525,
     "text": "posts from X."
    }
   ]
  },
  "0140.png": {
   "text": "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app.",
-  "dur": 8.83,
-  "takeAt": 71.24,
+  "dur": 9.222,
+  "takeAt": 65.708,
   "mode": "single-take-1",
   "take": [
    [
@@ -1061,30 +1061,30 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.6,
+    "t1": 2.883,
     "text": "The first deploy fails because the Modal workspace"
    },
    {
-    "t0": 2.68,
-    "t1": 5.48,
+    "t0": 2.999,
+    "t1": 5.843,
     "text": "already uses all five of its scheduled functions,"
    },
    {
-    "t0": 5.56,
-    "t1": 7.4,
+    "t0": 6.052,
+    "t1": 7.84,
     "text": "so Devin asks how to handle it instead"
    },
    {
-    "t0": 7.44,
-    "t1": 8.83,
+    "t0": 7.875,
+    "t1": 9.222,
     "text": "of stopping someone else's app."
    }
   ]
  },
  "0152.png": {
   "text": "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet.",
-  "dur": 4.99,
-  "takeAt": 80.44,
+  "dur": 5.285,
+  "takeAt": 75.365,
   "mode": "single-take-1",
   "take": [
    [
@@ -1195,151 +1195,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.12,
+    "t0": 0.052,
+    "t1": 1.991,
     "text": "I tell it to leave the cron off for now."
    },
    {
-    "t0": 2.36,
-    "t1": 3.96,
+    "t0": 2.804,
+    "t1": 4.243,
     "text": "The schedule stays in the code,"
    },
    {
-    "t0": 4.0,
-    "t1": 4.99,
+    "t0": 4.278,
+    "t1": 5.285,
     "text": "but it hasn't run yet."
    }
   ]
  },
  "0155.png": {
   "text": "Devin redeploys without the schedule and checks the page at its public URL.",
-  "dur": 4.285,
-  "takeAt": 85.805,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time.",
-    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time."
-   ],
-   [
-    "0002.png",
-    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover.",
-    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover."
-   ],
-   [
-    "0004.png",
-    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo.",
-    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo."
-   ],
-   [
-    "0007.png",
-    "The prompt asks for a Modal app that calls Grok from xAI, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points.",
-    "The prompt asks for a Modal app that calls Grok from ex A I, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points."
-   ],
-   [
-    "0007a.png",
-    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and .map() runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The xAI key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works.",
-    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and dot map runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The ex A I key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works."
-   ],
-   [
-    "0011.png",
-    "Devin replies with a short plan before it starts.",
-    "Devin replies with a short plan before it starts."
-   ],
-   [
-    "0015.png",
-    "From there it works on its own, and runs a real six month backfill of posts from X.",
-    "From there it works on its own, and runs a real six month backfill of posts from X."
-   ],
-   [
-    "0140.png",
-    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app.",
-    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app."
-   ],
-   [
-    "0152.png",
-    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet.",
-    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet."
-   ],
-   [
-    "0155.png",
-    "Devin redeploys without the schedule and checks the page at its public URL.",
-    "Devin redeploys without the schedule and checks the page at its public URL."
-   ],
-   [
-    "0195.png",
-    "Then it opens a pull request in the demo repo with the whole app.",
-    "Then it opens a pull request in the demo repo with the whole app."
-   ],
-   [
-    "0269.png",
-    "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage. All 14 unit tests pass.",
-    "When it finishes, the summary says the backfill kept seven hundred and four posts across six months, for about twenty four dollars and fifty cents of ex A I usage. All fourteen unit tests pass."
-   ],
-   [
-    "0314.png",
-    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint.",
-    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint."
-   ],
-   [
-    "0315.png",
-    "The web endpoint gets its own modal.run URL, which is the public address of the report.",
-    "The web endpoint gets its own modal dot run URL, which is the public address of the report."
-   ],
-   [
-    "0328.png",
-    "The page running on Modal shows September's index at 44 out of 100, built from 109 posts found in September.",
-    "The page running on Modal shows September's index at forty four out of a hundred, built from a hundred and nine posts found in September."
-   ],
-   [
-    "0329.png",
-    "Each category gets its own trend line, with six real months behind it and nothing extrapolated.",
-    "Each category gets its own trend line, with six real months behind it and nothing extrapolated."
-   ],
-   [
-    "0330.png",
-    "Every category card shows its top complaint themes for the month.",
-    "Every category card shows its top complaint themes for the month."
-   ],
-   [
-    "0331.png",
-    "The loudest complaints are real posts from X, each linked to its author.",
-    "The loudest complaints are real posts from X, each linked to its author."
-   ],
-   [
-    "0334.png",
-    "In September, layoffs scored highest at 72, with AI coding agents second at 41 points.",
-    "In September, layoffs scored highest at seventy two, with AI coding agents second at forty one points."
-   ],
-   [
-    "0336.png",
-    "A methodology note explains that these numbers come from a sample of posts, not a total count.",
-    "A methodology note explains that these numbers come from a sample of posts, not a total count."
-   ],
-   [
-    "outro",
-    "Describe the report you want, and Devin builds it and ships it to Modal.",
-    "Describe the report you want, and Devin builds it and ships it to Modal."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.115,
-    "t1": 2.755,
-    "text": "Devin redeploys without the schedule and checks the"
-   },
-   {
-    "t0": 2.835,
-    "t1": 4.285,
-    "text": "page at its public URL."
-   }
-  ]
- },
- "0195.png": {
-  "text": "Then it opens a pull request in the demo repo with the whole app.",
-  "dur": 3.46,
-  "takeAt": 90.44,
+  "dur": 3.838,
+  "takeAt": 80.882,
   "mode": "single-take-1",
   "take": [
    [
@@ -1451,12 +1326,137 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.8,
+    "t1": 2.465,
+    "text": "Devin redeploys without the schedule and checks the"
+   },
+   {
+    "t0": 2.511,
+    "t1": 3.838,
+    "text": "page at its public URL."
+   }
+  ]
+ },
+ "0195.png": {
+  "text": "Then it opens a pull request in the demo repo with the whole app.",
+  "dur": 3.139,
+  "takeAt": 85.131,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time.",
+    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time."
+   ],
+   [
+    "0002.png",
+    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover.",
+    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover."
+   ],
+   [
+    "0004.png",
+    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo.",
+    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo."
+   ],
+   [
+    "0007.png",
+    "The prompt asks for a Modal app that calls Grok from xAI, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points.",
+    "The prompt asks for a Modal app that calls Grok from ex A I, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points."
+   ],
+   [
+    "0007a.png",
+    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and .map() runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The xAI key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works.",
+    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and dot map runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The ex A I key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works."
+   ],
+   [
+    "0011.png",
+    "Devin replies with a short plan before it starts.",
+    "Devin replies with a short plan before it starts."
+   ],
+   [
+    "0015.png",
+    "From there it works on its own, and runs a real six month backfill of posts from X.",
+    "From there it works on its own, and runs a real six month backfill of posts from X."
+   ],
+   [
+    "0140.png",
+    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app.",
+    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app."
+   ],
+   [
+    "0152.png",
+    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet.",
+    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet."
+   ],
+   [
+    "0155.png",
+    "Devin redeploys without the schedule and checks the page at its public URL.",
+    "Devin redeploys without the schedule and checks the page at its public URL."
+   ],
+   [
+    "0195.png",
+    "Then it opens a pull request in the demo repo with the whole app.",
+    "Then it opens a pull request in the demo repo with the whole app."
+   ],
+   [
+    "0269.png",
+    "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage. All 14 unit tests pass.",
+    "When it finishes, the summary says the backfill kept seven hundred and four posts across six months, for about twenty four dollars and fifty cents of ex A I usage. All fourteen unit tests pass."
+   ],
+   [
+    "0314.png",
+    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint.",
+    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint."
+   ],
+   [
+    "0315.png",
+    "The web endpoint gets its own modal.run URL, which is the public address of the report.",
+    "The web endpoint gets its own modal dot run URL, which is the public address of the report."
+   ],
+   [
+    "0328.png",
+    "The page running on Modal shows September's index at 44 out of 100, built from 109 posts found in September.",
+    "The page running on Modal shows September's index at forty four out of a hundred, built from a hundred and nine posts found in September."
+   ],
+   [
+    "0329.png",
+    "Each category gets its own trend line, with six real months behind it and nothing extrapolated.",
+    "Each category gets its own trend line, with six real months behind it and nothing extrapolated."
+   ],
+   [
+    "0330.png",
+    "Every category card shows its top complaint themes for the month.",
+    "Every category card shows its top complaint themes for the month."
+   ],
+   [
+    "0331.png",
+    "The loudest complaints are real posts from X, each linked to its author.",
+    "The loudest complaints are real posts from X, each linked to its author."
+   ],
+   [
+    "0334.png",
+    "In September, layoffs scored highest at 72, with AI coding agents second at 41 points.",
+    "In September, layoffs scored highest at seventy two, with AI coding agents second at forty one points."
+   ],
+   [
+    "0336.png",
+    "A methodology note explains that these numbers come from a sample of posts, not a total count.",
+    "A methodology note explains that these numbers come from a sample of posts, not a total count."
+   ],
+   [
+    "outro",
+    "Describe the report you want, and Devin builds it and ships it to Modal.",
+    "Describe the report you want, and Devin builds it and ships it to Modal."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.676,
     "text": "Then it opens a pull request in the"
    },
    {
-    "t0": 1.88,
-    "t1": 3.46,
+    "t0": 1.722,
+    "t1": 3.139,
     "text": "demo repo with the whole app."
    }
   ]
@@ -1464,8 +1464,133 @@
  "0269.png": {
   "text": "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage. All 14 unit tests pass.",
   "say": "When it finishes, the summary says the backfill kept seven hundred and four posts across six months, for about twenty four dollars and fifty cents of ex A I usage. All fourteen unit tests pass.",
-  "dur": 11.29,
-  "takeAt": 94.28,
+  "dur": 10.375,
+  "takeAt": 88.675,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time.",
+    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time."
+   ],
+   [
+    "0002.png",
+    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover.",
+    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover."
+   ],
+   [
+    "0004.png",
+    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo.",
+    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo."
+   ],
+   [
+    "0007.png",
+    "The prompt asks for a Modal app that calls Grok from xAI, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points.",
+    "The prompt asks for a Modal app that calls Grok from ex A I, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points."
+   ],
+   [
+    "0007a.png",
+    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and .map() runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The xAI key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works.",
+    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and dot map runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The ex A I key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works."
+   ],
+   [
+    "0011.png",
+    "Devin replies with a short plan before it starts.",
+    "Devin replies with a short plan before it starts."
+   ],
+   [
+    "0015.png",
+    "From there it works on its own, and runs a real six month backfill of posts from X.",
+    "From there it works on its own, and runs a real six month backfill of posts from X."
+   ],
+   [
+    "0140.png",
+    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app.",
+    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app."
+   ],
+   [
+    "0152.png",
+    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet.",
+    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet."
+   ],
+   [
+    "0155.png",
+    "Devin redeploys without the schedule and checks the page at its public URL.",
+    "Devin redeploys without the schedule and checks the page at its public URL."
+   ],
+   [
+    "0195.png",
+    "Then it opens a pull request in the demo repo with the whole app.",
+    "Then it opens a pull request in the demo repo with the whole app."
+   ],
+   [
+    "0269.png",
+    "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage. All 14 unit tests pass.",
+    "When it finishes, the summary says the backfill kept seven hundred and four posts across six months, for about twenty four dollars and fifty cents of ex A I usage. All fourteen unit tests pass."
+   ],
+   [
+    "0314.png",
+    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint.",
+    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint."
+   ],
+   [
+    "0315.png",
+    "The web endpoint gets its own modal.run URL, which is the public address of the report.",
+    "The web endpoint gets its own modal dot run URL, which is the public address of the report."
+   ],
+   [
+    "0328.png",
+    "The page running on Modal shows September's index at 44 out of 100, built from 109 posts found in September.",
+    "The page running on Modal shows September's index at forty four out of a hundred, built from a hundred and nine posts found in September."
+   ],
+   [
+    "0329.png",
+    "Each category gets its own trend line, with six real months behind it and nothing extrapolated.",
+    "Each category gets its own trend line, with six real months behind it and nothing extrapolated."
+   ],
+   [
+    "0330.png",
+    "Every category card shows its top complaint themes for the month.",
+    "Every category card shows its top complaint themes for the month."
+   ],
+   [
+    "0331.png",
+    "The loudest complaints are real posts from X, each linked to its author.",
+    "The loudest complaints are real posts from X, each linked to its author."
+   ],
+   [
+    "0334.png",
+    "In September, layoffs scored highest at 72, with AI coding agents second at 41 points.",
+    "In September, layoffs scored highest at seventy two, with AI coding agents second at forty one points."
+   ],
+   [
+    "0336.png",
+    "A methodology note explains that these numbers come from a sample of posts, not a total count.",
+    "A methodology note explains that these numbers come from a sample of posts, not a total count."
+   ],
+   [
+    "outro",
+    "Describe the report you want, and Devin builds it and ships it to Modal.",
+    "Describe the report you want, and Devin builds it and ships it to Modal."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 8.162,
+    "text": "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage."
+   },
+   {
+    "t0": 8.673,
+    "t1": 10.375,
+    "text": "All 14 unit tests pass."
+   }
+  ]
+ },
+ "0314.png": {
+  "text": "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint.",
+  "dur": 8.037,
+  "takeAt": 99.353,
   "mode": "single-take-1",
   "take": [
    [
@@ -1577,142 +1702,17 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 9.08,
-    "text": "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage."
-   },
-   {
-    "t0": 9.32,
-    "t1": 11.29,
-    "text": "All 14 unit tests pass."
-   }
-  ]
- },
- "0314.png": {
-  "text": "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint.",
-  "dur": 8.235,
-  "takeAt": 105.975,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time.",
-    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time."
-   ],
-   [
-    "0002.png",
-    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover.",
-    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover."
-   ],
-   [
-    "0004.png",
-    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo.",
-    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo."
-   ],
-   [
-    "0007.png",
-    "The prompt asks for a Modal app that calls Grok from xAI, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points.",
-    "The prompt asks for a Modal app that calls Grok from ex A I, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points."
-   ],
-   [
-    "0007a.png",
-    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and .map() runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The xAI key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works.",
-    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and dot map runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The ex A I key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works."
-   ],
-   [
-    "0011.png",
-    "Devin replies with a short plan before it starts.",
-    "Devin replies with a short plan before it starts."
-   ],
-   [
-    "0015.png",
-    "From there it works on its own, and runs a real six month backfill of posts from X.",
-    "From there it works on its own, and runs a real six month backfill of posts from X."
-   ],
-   [
-    "0140.png",
-    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app.",
-    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app."
-   ],
-   [
-    "0152.png",
-    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet.",
-    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet."
-   ],
-   [
-    "0155.png",
-    "Devin redeploys without the schedule and checks the page at its public URL.",
-    "Devin redeploys without the schedule and checks the page at its public URL."
-   ],
-   [
-    "0195.png",
-    "Then it opens a pull request in the demo repo with the whole app.",
-    "Then it opens a pull request in the demo repo with the whole app."
-   ],
-   [
-    "0269.png",
-    "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage. All 14 unit tests pass.",
-    "When it finishes, the summary says the backfill kept seven hundred and four posts across six months, for about twenty four dollars and fifty cents of ex A I usage. All fourteen unit tests pass."
-   ],
-   [
-    "0314.png",
-    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint.",
-    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint."
-   ],
-   [
-    "0315.png",
-    "The web endpoint gets its own modal.run URL, which is the public address of the report.",
-    "The web endpoint gets its own modal dot run URL, which is the public address of the report."
-   ],
-   [
-    "0328.png",
-    "The page running on Modal shows September's index at 44 out of 100, built from 109 posts found in September.",
-    "The page running on Modal shows September's index at forty four out of a hundred, built from a hundred and nine posts found in September."
-   ],
-   [
-    "0329.png",
-    "Each category gets its own trend line, with six real months behind it and nothing extrapolated.",
-    "Each category gets its own trend line, with six real months behind it and nothing extrapolated."
-   ],
-   [
-    "0330.png",
-    "Every category card shows its top complaint themes for the month.",
-    "Every category card shows its top complaint themes for the month."
-   ],
-   [
-    "0331.png",
-    "The loudest complaints are real posts from X, each linked to its author.",
-    "The loudest complaints are real posts from X, each linked to its author."
-   ],
-   [
-    "0334.png",
-    "In September, layoffs scored highest at 72, with AI coding agents second at 41 points.",
-    "In September, layoffs scored highest at seventy two, with AI coding agents second at forty one points."
-   ],
-   [
-    "0336.png",
-    "A methodology note explains that these numbers come from a sample of posts, not a total count.",
-    "A methodology note explains that these numbers come from a sample of posts, not a total count."
-   ],
-   [
-    "outro",
-    "Describe the report you want, and Devin builds it and ships it to Modal.",
-    "Describe the report you want, and Devin builds it and ships it to Modal."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.105,
-    "t1": 3.385,
+    "t1": 2.999,
     "text": "Devin's deploy step shows the real modal deploy output."
    },
    {
-    "t0": 3.625,
-    "t1": 5.945,
+    "t0": 3.382,
+    "t1": 5.6,
     "text": "It lists every function Modal created,"
    },
    {
-    "t0": 6.025,
-    "t1": 8.235,
+    "t0": 5.809,
+    "t1": 8.037,
     "text": "from the parallel searches to the web endpoint."
    }
   ]
@@ -1720,8 +1720,8 @@
  "0315.png": {
   "text": "The web endpoint gets its own modal.run URL, which is the public address of the report.",
   "say": "The web endpoint gets its own modal dot run URL, which is the public address of the report.",
-  "dur": 5.025,
-  "takeAt": 114.545,
+  "dur": 4.765,
+  "takeAt": 107.685,
   "mode": "single-take-1",
   "take": [
    [
@@ -1832,8 +1832,8 @@
   ],
   "chunks": [
    {
-    "t0": 0.095,
-    "t1": 5.025,
+    "t0": 0.066,
+    "t1": 4.765,
     "text": "The web endpoint gets its own modal.run URL, which is the public address of the report."
    }
   ]
@@ -1841,8 +1841,8 @@
  "0328.png": {
   "text": "The page running on Modal shows September's index at 44 out of 100, built from 109 posts found in September.",
   "say": "The page running on Modal shows September's index at forty four out of a hundred, built from a hundred and nine posts found in September.",
-  "dur": 7.025,
-  "takeAt": 119.975,
+  "dur": 7.135,
+  "takeAt": 112.825,
   "mode": "single-take-1",
   "take": [
    [
@@ -1953,266 +1953,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.105,
-    "t1": 7.025,
+    "t0": 0.046,
+    "t1": 7.135,
     "text": "The page running on Modal shows September's index at 44 out of 100, built from 109 posts found in September."
    }
   ]
  },
  "0329.png": {
   "text": "Each category gets its own trend line, with six real months behind it and nothing extrapolated.",
-  "dur": 5.185,
-  "takeAt": 127.445,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time.",
-    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time."
-   ],
-   [
-    "0002.png",
-    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover.",
-    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover."
-   ],
-   [
-    "0004.png",
-    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo.",
-    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo."
-   ],
-   [
-    "0007.png",
-    "The prompt asks for a Modal app that calls Grok from xAI, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points.",
-    "The prompt asks for a Modal app that calls Grok from ex A I, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points."
-   ],
-   [
-    "0007a.png",
-    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and .map() runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The xAI key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works.",
-    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and dot map runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The ex A I key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works."
-   ],
-   [
-    "0011.png",
-    "Devin replies with a short plan before it starts.",
-    "Devin replies with a short plan before it starts."
-   ],
-   [
-    "0015.png",
-    "From there it works on its own, and runs a real six month backfill of posts from X.",
-    "From there it works on its own, and runs a real six month backfill of posts from X."
-   ],
-   [
-    "0140.png",
-    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app.",
-    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app."
-   ],
-   [
-    "0152.png",
-    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet.",
-    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet."
-   ],
-   [
-    "0155.png",
-    "Devin redeploys without the schedule and checks the page at its public URL.",
-    "Devin redeploys without the schedule and checks the page at its public URL."
-   ],
-   [
-    "0195.png",
-    "Then it opens a pull request in the demo repo with the whole app.",
-    "Then it opens a pull request in the demo repo with the whole app."
-   ],
-   [
-    "0269.png",
-    "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage. All 14 unit tests pass.",
-    "When it finishes, the summary says the backfill kept seven hundred and four posts across six months, for about twenty four dollars and fifty cents of ex A I usage. All fourteen unit tests pass."
-   ],
-   [
-    "0314.png",
-    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint.",
-    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint."
-   ],
-   [
-    "0315.png",
-    "The web endpoint gets its own modal.run URL, which is the public address of the report.",
-    "The web endpoint gets its own modal dot run URL, which is the public address of the report."
-   ],
-   [
-    "0328.png",
-    "The page running on Modal shows September's index at 44 out of 100, built from 109 posts found in September.",
-    "The page running on Modal shows September's index at forty four out of a hundred, built from a hundred and nine posts found in September."
-   ],
-   [
-    "0329.png",
-    "Each category gets its own trend line, with six real months behind it and nothing extrapolated.",
-    "Each category gets its own trend line, with six real months behind it and nothing extrapolated."
-   ],
-   [
-    "0330.png",
-    "Every category card shows its top complaint themes for the month.",
-    "Every category card shows its top complaint themes for the month."
-   ],
-   [
-    "0331.png",
-    "The loudest complaints are real posts from X, each linked to its author.",
-    "The loudest complaints are real posts from X, each linked to its author."
-   ],
-   [
-    "0334.png",
-    "In September, layoffs scored highest at 72, with AI coding agents second at 41 points.",
-    "In September, layoffs scored highest at seventy two, with AI coding agents second at forty one points."
-   ],
-   [
-    "0336.png",
-    "A methodology note explains that these numbers come from a sample of posts, not a total count.",
-    "A methodology note explains that these numbers come from a sample of posts, not a total count."
-   ],
-   [
-    "outro",
-    "Describe the report you want, and Devin builds it and ships it to Modal.",
-    "Describe the report you want, and Devin builds it and ships it to Modal."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.075,
-    "t1": 2.155,
-    "text": "Each category gets its own trend line,"
-   },
-   {
-    "t0": 2.275,
-    "t1": 5.185,
-    "text": "with six real months behind it and nothing extrapolated."
-   }
-  ]
- },
- "0330.png": {
-  "text": "Every category card shows its top complaint themes for the month.",
-  "dur": 3.235,
-  "takeAt": 133.075,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time.",
-    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time."
-   ],
-   [
-    "0002.png",
-    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover.",
-    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover."
-   ],
-   [
-    "0004.png",
-    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo.",
-    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo."
-   ],
-   [
-    "0007.png",
-    "The prompt asks for a Modal app that calls Grok from xAI, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points.",
-    "The prompt asks for a Modal app that calls Grok from ex A I, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points."
-   ],
-   [
-    "0007a.png",
-    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and .map() runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The xAI key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works.",
-    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and dot map runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The ex A I key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works."
-   ],
-   [
-    "0011.png",
-    "Devin replies with a short plan before it starts.",
-    "Devin replies with a short plan before it starts."
-   ],
-   [
-    "0015.png",
-    "From there it works on its own, and runs a real six month backfill of posts from X.",
-    "From there it works on its own, and runs a real six month backfill of posts from X."
-   ],
-   [
-    "0140.png",
-    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app.",
-    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app."
-   ],
-   [
-    "0152.png",
-    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet.",
-    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet."
-   ],
-   [
-    "0155.png",
-    "Devin redeploys without the schedule and checks the page at its public URL.",
-    "Devin redeploys without the schedule and checks the page at its public URL."
-   ],
-   [
-    "0195.png",
-    "Then it opens a pull request in the demo repo with the whole app.",
-    "Then it opens a pull request in the demo repo with the whole app."
-   ],
-   [
-    "0269.png",
-    "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage. All 14 unit tests pass.",
-    "When it finishes, the summary says the backfill kept seven hundred and four posts across six months, for about twenty four dollars and fifty cents of ex A I usage. All fourteen unit tests pass."
-   ],
-   [
-    "0314.png",
-    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint.",
-    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint."
-   ],
-   [
-    "0315.png",
-    "The web endpoint gets its own modal.run URL, which is the public address of the report.",
-    "The web endpoint gets its own modal dot run URL, which is the public address of the report."
-   ],
-   [
-    "0328.png",
-    "The page running on Modal shows September's index at 44 out of 100, built from 109 posts found in September.",
-    "The page running on Modal shows September's index at forty four out of a hundred, built from a hundred and nine posts found in September."
-   ],
-   [
-    "0329.png",
-    "Each category gets its own trend line, with six real months behind it and nothing extrapolated.",
-    "Each category gets its own trend line, with six real months behind it and nothing extrapolated."
-   ],
-   [
-    "0330.png",
-    "Every category card shows its top complaint themes for the month.",
-    "Every category card shows its top complaint themes for the month."
-   ],
-   [
-    "0331.png",
-    "The loudest complaints are real posts from X, each linked to its author.",
-    "The loudest complaints are real posts from X, each linked to its author."
-   ],
-   [
-    "0334.png",
-    "In September, layoffs scored highest at 72, with AI coding agents second at 41 points.",
-    "In September, layoffs scored highest at seventy two, with AI coding agents second at forty one points."
-   ],
-   [
-    "0336.png",
-    "A methodology note explains that these numbers come from a sample of posts, not a total count.",
-    "A methodology note explains that these numbers come from a sample of posts, not a total count."
-   ],
-   [
-    "outro",
-    "Describe the report you want, and Devin builds it and ships it to Modal.",
-    "Describe the report you want, and Devin builds it and ships it to Modal."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.045,
-    "t1": 2.605,
-    "text": "Every category card shows its top complaint themes"
-   },
-   {
-    "t0": 2.685,
-    "t1": 3.235,
-    "text": "for the month."
-   }
-  ]
- },
- "0331.png": {
-  "text": "The loudest complaints are real posts from X, each linked to its author.",
-  "dur": 3.96,
-  "takeAt": 136.68,
+  "dur": 4.783,
+  "takeAt": 120.517,
   "mode": "single-take-1",
   "take": [
    [
@@ -2324,12 +2074,262 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.76,
+    "t1": 2.059,
+    "text": "Each category gets its own trend line,"
+   },
+   {
+    "t0": 2.117,
+    "t1": 4.783,
+    "text": "with six real months behind it and nothing extrapolated."
+   }
+  ]
+ },
+ "0330.png": {
+  "text": "Every category card shows its top complaint themes for the month.",
+  "dur": 3.335,
+  "takeAt": 125.665,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time.",
+    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time."
+   ],
+   [
+    "0002.png",
+    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover.",
+    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover."
+   ],
+   [
+    "0004.png",
+    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo.",
+    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo."
+   ],
+   [
+    "0007.png",
+    "The prompt asks for a Modal app that calls Grok from xAI, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points.",
+    "The prompt asks for a Modal app that calls Grok from ex A I, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points."
+   ],
+   [
+    "0007a.png",
+    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and .map() runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The xAI key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works.",
+    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and dot map runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The ex A I key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works."
+   ],
+   [
+    "0011.png",
+    "Devin replies with a short plan before it starts.",
+    "Devin replies with a short plan before it starts."
+   ],
+   [
+    "0015.png",
+    "From there it works on its own, and runs a real six month backfill of posts from X.",
+    "From there it works on its own, and runs a real six month backfill of posts from X."
+   ],
+   [
+    "0140.png",
+    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app.",
+    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app."
+   ],
+   [
+    "0152.png",
+    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet.",
+    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet."
+   ],
+   [
+    "0155.png",
+    "Devin redeploys without the schedule and checks the page at its public URL.",
+    "Devin redeploys without the schedule and checks the page at its public URL."
+   ],
+   [
+    "0195.png",
+    "Then it opens a pull request in the demo repo with the whole app.",
+    "Then it opens a pull request in the demo repo with the whole app."
+   ],
+   [
+    "0269.png",
+    "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage. All 14 unit tests pass.",
+    "When it finishes, the summary says the backfill kept seven hundred and four posts across six months, for about twenty four dollars and fifty cents of ex A I usage. All fourteen unit tests pass."
+   ],
+   [
+    "0314.png",
+    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint.",
+    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint."
+   ],
+   [
+    "0315.png",
+    "The web endpoint gets its own modal.run URL, which is the public address of the report.",
+    "The web endpoint gets its own modal dot run URL, which is the public address of the report."
+   ],
+   [
+    "0328.png",
+    "The page running on Modal shows September's index at 44 out of 100, built from 109 posts found in September.",
+    "The page running on Modal shows September's index at forty four out of a hundred, built from a hundred and nine posts found in September."
+   ],
+   [
+    "0329.png",
+    "Each category gets its own trend line, with six real months behind it and nothing extrapolated.",
+    "Each category gets its own trend line, with six real months behind it and nothing extrapolated."
+   ],
+   [
+    "0330.png",
+    "Every category card shows its top complaint themes for the month.",
+    "Every category card shows its top complaint themes for the month."
+   ],
+   [
+    "0331.png",
+    "The loudest complaints are real posts from X, each linked to its author.",
+    "The loudest complaints are real posts from X, each linked to its author."
+   ],
+   [
+    "0334.png",
+    "In September, layoffs scored highest at 72, with AI coding agents second at 41 points.",
+    "In September, layoffs scored highest at seventy two, with AI coding agents second at forty one points."
+   ],
+   [
+    "0336.png",
+    "A methodology note explains that these numbers come from a sample of posts, not a total count.",
+    "A methodology note explains that these numbers come from a sample of posts, not a total count."
+   ],
+   [
+    "outro",
+    "Describe the report you want, and Devin builds it and ships it to Modal.",
+    "Describe the report you want, and Devin builds it and ships it to Modal."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.092,
+    "t1": 2.739,
+    "text": "Every category card shows its top complaint themes"
+   },
+   {
+    "t0": 2.785,
+    "t1": 3.335,
+    "text": "for the month."
+   }
+  ]
+ },
+ "0331.png": {
+  "text": "The loudest complaints are real posts from X, each linked to its author.",
+  "dur": 3.976,
+  "takeAt": 129.364,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time.",
+    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time."
+   ],
+   [
+    "0002.png",
+    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover.",
+    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover."
+   ],
+   [
+    "0004.png",
+    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo.",
+    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo."
+   ],
+   [
+    "0007.png",
+    "The prompt asks for a Modal app that calls Grok from xAI, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points.",
+    "The prompt asks for a Modal app that calls Grok from ex A I, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points."
+   ],
+   [
+    "0007a.png",
+    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and .map() runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The xAI key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works.",
+    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and dot map runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The ex A I key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works."
+   ],
+   [
+    "0011.png",
+    "Devin replies with a short plan before it starts.",
+    "Devin replies with a short plan before it starts."
+   ],
+   [
+    "0015.png",
+    "From there it works on its own, and runs a real six month backfill of posts from X.",
+    "From there it works on its own, and runs a real six month backfill of posts from X."
+   ],
+   [
+    "0140.png",
+    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app.",
+    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app."
+   ],
+   [
+    "0152.png",
+    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet.",
+    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet."
+   ],
+   [
+    "0155.png",
+    "Devin redeploys without the schedule and checks the page at its public URL.",
+    "Devin redeploys without the schedule and checks the page at its public URL."
+   ],
+   [
+    "0195.png",
+    "Then it opens a pull request in the demo repo with the whole app.",
+    "Then it opens a pull request in the demo repo with the whole app."
+   ],
+   [
+    "0269.png",
+    "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage. All 14 unit tests pass.",
+    "When it finishes, the summary says the backfill kept seven hundred and four posts across six months, for about twenty four dollars and fifty cents of ex A I usage. All fourteen unit tests pass."
+   ],
+   [
+    "0314.png",
+    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint.",
+    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint."
+   ],
+   [
+    "0315.png",
+    "The web endpoint gets its own modal.run URL, which is the public address of the report.",
+    "The web endpoint gets its own modal dot run URL, which is the public address of the report."
+   ],
+   [
+    "0328.png",
+    "The page running on Modal shows September's index at 44 out of 100, built from 109 posts found in September.",
+    "The page running on Modal shows September's index at forty four out of a hundred, built from a hundred and nine posts found in September."
+   ],
+   [
+    "0329.png",
+    "Each category gets its own trend line, with six real months behind it and nothing extrapolated.",
+    "Each category gets its own trend line, with six real months behind it and nothing extrapolated."
+   ],
+   [
+    "0330.png",
+    "Every category card shows its top complaint themes for the month.",
+    "Every category card shows its top complaint themes for the month."
+   ],
+   [
+    "0331.png",
+    "The loudest complaints are real posts from X, each linked to its author.",
+    "The loudest complaints are real posts from X, each linked to its author."
+   ],
+   [
+    "0334.png",
+    "In September, layoffs scored highest at 72, with AI coding agents second at 41 points.",
+    "In September, layoffs scored highest at seventy two, with AI coding agents second at forty one points."
+   ],
+   [
+    "0336.png",
+    "A methodology note explains that these numbers come from a sample of posts, not a total count.",
+    "A methodology note explains that these numbers come from a sample of posts, not a total count."
+   ],
+   [
+    "outro",
+    "Describe the report you want, and Devin builds it and ships it to Modal.",
+    "Describe the report you want, and Devin builds it and ships it to Modal."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.511,
     "text": "The loudest complaints are real posts from X,"
    },
    {
-    "t0": 2.88,
-    "t1": 3.96,
+    "t0": 2.686,
+    "t1": 3.976,
     "text": "each linked to its author."
    }
   ]
@@ -2337,8 +2337,8 @@
  "0334.png": {
   "text": "In September, layoffs scored highest at 72, with AI coding agents second at 41 points.",
   "say": "In September, layoffs scored highest at seventy two, with AI coding agents second at forty one points.",
-  "dur": 6.49,
-  "takeAt": 141.0,
+  "dur": 5.965,
+  "takeAt": 133.675,
   "mode": "single-take-1",
   "take": [
    [
@@ -2449,146 +2449,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 6.49,
+    "t0": 0.104,
+    "t1": 5.965,
     "text": "In September, layoffs scored highest at 72, with AI coding agents second at 41 points."
    }
   ]
  },
  "0336.png": {
   "text": "A methodology note explains that these numbers come from a sample of posts, not a total count.",
-  "dur": 5.415,
-  "takeAt": 147.595,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time.",
-    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time."
-   ],
-   [
-    "0002.png",
-    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover.",
-    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover."
-   ],
-   [
-    "0004.png",
-    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo.",
-    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo."
-   ],
-   [
-    "0007.png",
-    "The prompt asks for a Modal app that calls Grok from xAI, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points.",
-    "The prompt asks for a Modal app that calls Grok from ex A I, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points."
-   ],
-   [
-    "0007a.png",
-    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and .map() runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The xAI key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works.",
-    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and dot map runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The ex A I key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works."
-   ],
-   [
-    "0011.png",
-    "Devin replies with a short plan before it starts.",
-    "Devin replies with a short plan before it starts."
-   ],
-   [
-    "0015.png",
-    "From there it works on its own, and runs a real six month backfill of posts from X.",
-    "From there it works on its own, and runs a real six month backfill of posts from X."
-   ],
-   [
-    "0140.png",
-    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app.",
-    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app."
-   ],
-   [
-    "0152.png",
-    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet.",
-    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet."
-   ],
-   [
-    "0155.png",
-    "Devin redeploys without the schedule and checks the page at its public URL.",
-    "Devin redeploys without the schedule and checks the page at its public URL."
-   ],
-   [
-    "0195.png",
-    "Then it opens a pull request in the demo repo with the whole app.",
-    "Then it opens a pull request in the demo repo with the whole app."
-   ],
-   [
-    "0269.png",
-    "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage. All 14 unit tests pass.",
-    "When it finishes, the summary says the backfill kept seven hundred and four posts across six months, for about twenty four dollars and fifty cents of ex A I usage. All fourteen unit tests pass."
-   ],
-   [
-    "0314.png",
-    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint.",
-    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint."
-   ],
-   [
-    "0315.png",
-    "The web endpoint gets its own modal.run URL, which is the public address of the report.",
-    "The web endpoint gets its own modal dot run URL, which is the public address of the report."
-   ],
-   [
-    "0328.png",
-    "The page running on Modal shows September's index at 44 out of 100, built from 109 posts found in September.",
-    "The page running on Modal shows September's index at forty four out of a hundred, built from a hundred and nine posts found in September."
-   ],
-   [
-    "0329.png",
-    "Each category gets its own trend line, with six real months behind it and nothing extrapolated.",
-    "Each category gets its own trend line, with six real months behind it and nothing extrapolated."
-   ],
-   [
-    "0330.png",
-    "Every category card shows its top complaint themes for the month.",
-    "Every category card shows its top complaint themes for the month."
-   ],
-   [
-    "0331.png",
-    "The loudest complaints are real posts from X, each linked to its author.",
-    "The loudest complaints are real posts from X, each linked to its author."
-   ],
-   [
-    "0334.png",
-    "In September, layoffs scored highest at 72, with AI coding agents second at 41 points.",
-    "In September, layoffs scored highest at seventy two, with AI coding agents second at forty one points."
-   ],
-   [
-    "0336.png",
-    "A methodology note explains that these numbers come from a sample of posts, not a total count.",
-    "A methodology note explains that these numbers come from a sample of posts, not a total count."
-   ],
-   [
-    "outro",
-    "Describe the report you want, and Devin builds it and ships it to Modal.",
-    "Describe the report you want, and Devin builds it and ships it to Modal."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.085,
-    "t1": 2.645,
-    "text": "A methodology note explains that these numbers come"
-   },
-   {
-    "t0": 2.725,
-    "t1": 4.245,
-    "text": "from a sample of posts,"
-   },
-   {
-    "t0": 4.365,
-    "t1": 5.415,
-    "text": "not a total count."
-   }
-  ]
- },
- "outro": {
-  "text": "Describe the report you want, and Devin builds it and ships it to Modal.",
-  "dur": 3.78,
-  "takeAt": 153.4,
+  "dur": 4.783,
+  "takeAt": 139.987,
   "mode": "single-take-1",
   "take": [
    [
@@ -2700,12 +2570,142 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.64,
+    "t1": 2.616,
+    "text": "A methodology note explains that these numbers come"
+   },
+   {
+    "t0": 2.651,
+    "t1": 3.835,
+    "text": "from a sample of posts,"
+   },
+   {
+    "t0": 3.893,
+    "t1": 4.783,
+    "text": "not a total count."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Describe the report you want, and Devin builds it and ships it to Modal.",
+  "dur": 3.385,
+  "takeAt": 145.165,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time.",
+    "The Developer Pain Index ranks what developers complain about on X each month, and it groups similar complaints so you can follow each trend over time."
+   ],
+   [
+    "0002.png",
+    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover.",
+    "It works like an industry survey people can cite, except it's built from real posts, so every chart has to say how many posts it used and which dates they cover."
+   ],
+   [
+    "0004.png",
+    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo.",
+    "The goal is a report page at a public URL on Modal, with real data from X, plus a pull request in the demo repo."
+   ],
+   [
+    "0007.png",
+    "The prompt asks for a Modal app that calls Grok from xAI, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points.",
+    "The prompt asks for a Modal app that calls Grok from ex A I, and uses its X search tool to find the posts. It runs on a monthly schedule and backfills earlier months, so every trend line has real data points."
+   ],
+   [
+    "0007a.png",
+    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and .map() runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The xAI key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works.",
+    "So why Modal? A monthly job shouldn't depend on a laptop being awake, or on a server you pay for all month. On Modal, a cron schedule starts the pull and dot map runs the searches in parallel containers. A Volume keeps the results, and a web endpoint serves the page at a public URL. The ex A I key sits in a Modal Secret, and the app scales to zero between runs, so you only pay for the seconds it works."
+   ],
+   [
+    "0011.png",
+    "Devin replies with a short plan before it starts.",
+    "Devin replies with a short plan before it starts."
+   ],
+   [
+    "0015.png",
+    "From there it works on its own, and runs a real six month backfill of posts from X.",
+    "From there it works on its own, and runs a real six month backfill of posts from X."
+   ],
+   [
+    "0140.png",
+    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app.",
+    "The first deploy fails because the Modal workspace already uses all five of its scheduled functions, so Devin asks how to handle it instead of stopping someone else's app."
+   ],
+   [
+    "0152.png",
+    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet.",
+    "I tell it to leave the cron off for now. The schedule stays in the code, but it hasn't run yet."
+   ],
+   [
+    "0155.png",
+    "Devin redeploys without the schedule and checks the page at its public URL.",
+    "Devin redeploys without the schedule and checks the page at its public URL."
+   ],
+   [
+    "0195.png",
+    "Then it opens a pull request in the demo repo with the whole app.",
+    "Then it opens a pull request in the demo repo with the whole app."
+   ],
+   [
+    "0269.png",
+    "When it finishes, the summary says the backfill kept 704 posts across six months, for about $24.50 of xAI usage. All 14 unit tests pass.",
+    "When it finishes, the summary says the backfill kept seven hundred and four posts across six months, for about twenty four dollars and fifty cents of ex A I usage. All fourteen unit tests pass."
+   ],
+   [
+    "0314.png",
+    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint.",
+    "Devin's deploy step shows the real modal deploy output. It lists every function Modal created, from the parallel searches to the web endpoint."
+   ],
+   [
+    "0315.png",
+    "The web endpoint gets its own modal.run URL, which is the public address of the report.",
+    "The web endpoint gets its own modal dot run URL, which is the public address of the report."
+   ],
+   [
+    "0328.png",
+    "The page running on Modal shows September's index at 44 out of 100, built from 109 posts found in September.",
+    "The page running on Modal shows September's index at forty four out of a hundred, built from a hundred and nine posts found in September."
+   ],
+   [
+    "0329.png",
+    "Each category gets its own trend line, with six real months behind it and nothing extrapolated.",
+    "Each category gets its own trend line, with six real months behind it and nothing extrapolated."
+   ],
+   [
+    "0330.png",
+    "Every category card shows its top complaint themes for the month.",
+    "Every category card shows its top complaint themes for the month."
+   ],
+   [
+    "0331.png",
+    "The loudest complaints are real posts from X, each linked to its author.",
+    "The loudest complaints are real posts from X, each linked to its author."
+   ],
+   [
+    "0334.png",
+    "In September, layoffs scored highest at 72, with AI coding agents second at 41 points.",
+    "In September, layoffs scored highest at seventy two, with AI coding agents second at forty one points."
+   ],
+   [
+    "0336.png",
+    "A methodology note explains that these numbers come from a sample of posts, not a total count.",
+    "A methodology note explains that these numbers come from a sample of posts, not a total count."
+   ],
+   [
+    "outro",
+    "Describe the report you want, and Devin builds it and ships it to Modal.",
+    "Describe the report you want, and Devin builds it and ships it to Modal."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.062,
+    "t1": 1.42,
     "text": "Describe the report you want,"
    },
    {
-    "t0": 1.72,
-    "t1": 3.78,
+    "t0": 1.444,
+    "t1": 3.385,
     "text": "and Devin builds it and ships it to Modal."
    }
   ]
