@@ -16,7 +16,7 @@ This repository wiki shows generated architecture diagrams with links back to th
 
 ## plan
 
-Ask Devin uses that context to answer questions and plan changes. Devin can also analyze and scope connected Jira and Linear tickets.
+Work often starts as a ticket. With Jira or Linear connected, Devin can analyze and scope that ticket before any code is written. Then Ask Devin answers questions grounded in the codebase. Together, they turn the request into a plan.
 
 ## Proof — The plan points to the files that need to change
 
