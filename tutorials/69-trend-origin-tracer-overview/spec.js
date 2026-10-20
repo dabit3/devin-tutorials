@@ -5,6 +5,7 @@ window.SPEC = {
   "outro": "Paste a phrase, and watch how it spread",
   "voOutro": "Paste a phrase, and watch how it spread.",
   "outroVoDelay": 0.2,
+  "tailHold": 0.5,
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.4,

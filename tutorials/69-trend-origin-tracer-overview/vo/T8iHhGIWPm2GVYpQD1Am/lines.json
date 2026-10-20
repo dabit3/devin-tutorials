@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "How did this blow up? It's one of the internet's favourite questions. Paste a phrase like vibe coding, and this app shows the earliest post it can find on X, who amplified it, and how it spread over time. Modal is what makes this possible. Anyone can paste a phrase into a public page, and Modal runs the searches in parallel, with no server to keep running.",
-  "dur": 20.51,
+  "dur": 19.06,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "take": [
@@ -74,57 +74,57 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 1.36,
+    "t1": 0.894,
     "text": "How did this blow up?"
    },
    {
-    "t0": 1.6,
-    "t1": 3.88,
+    "t0": 0.917,
+    "t1": 2.752,
     "text": "It's one of the internet's favourite questions."
    },
    {
-    "t0": 4.08,
-    "t1": 6.0,
+    "t0": 3.077,
+    "t1": 4.725,
     "text": "Paste a phrase like vibe coding,"
    },
    {
-    "t0": 6.08,
-    "t1": 7.84,
+    "t0": 4.748,
+    "t1": 6.745,
     "text": "and this app shows the earliest post it"
    },
    {
-    "t0": 7.92,
-    "t1": 9.12,
+    "t0": 6.78,
+    "t1": 7.802,
     "text": "can find on X,"
    },
    {
-    "t0": 9.2,
-    "t1": 10.24,
+    "t0": 7.953,
+    "t1": 8.882,
     "text": "who amplified it,"
    },
    {
-    "t0": 10.28,
-    "t1": 11.92,
+    "t0": 9.056,
+    "t1": 10.449,
     "text": "and how it spread over time."
    },
    {
-    "t0": 12.24,
-    "t1": 14.24,
+    "t0": 10.832,
+    "t1": 12.539,
     "text": "Modal is what makes this possible."
    },
    {
-    "t0": 14.44,
-    "t1": 16.16,
+    "t0": 12.864,
+    "t1": 14.559,
     "text": "Anyone can paste a phrase into a public"
    },
    {
-    "t0": 16.24,
-    "t1": 18.96,
+    "t0": 14.605,
+    "t1": 17.403,
     "text": "page, and Modal runs the searches in parallel,"
    },
    {
-    "t0": 19.08,
-    "t1": 20.51,
+    "t0": 17.554,
+    "t1": 19.06,
     "text": "with no server to keep running."
    }
   ]
@@ -132,8 +132,8 @@
  "0001.png": {
   "text": "It starts with real posts on X. The app asks Grok, through the xAI API, with X search turned on.",
   "say": "It starts with real posts on X. The app asks Grok, through the ex A I API, with X search turned on.",
-  "dur": 6.91,
-  "takeAt": 20.84,
+  "dur": 6.865,
+  "takeAt": 19.485,
   "mode": "single-take-1",
   "take": [
    [
@@ -204,26 +204,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.44,
+    "t0": 0.054,
+    "t1": 1.877,
     "text": "It starts with real posts on X."
    },
    {
-    "t0": 2.52,
-    "t1": 5.24,
+    "t0": 2.156,
+    "t1": 4.976,
     "text": "The app asks Grok, through the xAI API,"
    },
    {
-    "t0": 5.54,
-    "t1": 6.91,
+    "t0": 5.126,
+    "t1": 6.865,
     "text": "with X search turned on."
    }
   ]
  },
  "0002.png": {
   "text": "Modal does the rest. It splits each trace into searches, one per time window, and runs them in parallel. For vibe coding, that was twenty-five searches.",
-  "dur": 9.21,
-  "takeAt": 28.04,
+  "dur": 8.725,
+  "takeAt": 26.685,
   "mode": "single-take-1",
   "take": [
    [
@@ -294,41 +294,41 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.56,
+    "t0": 0.111,
+    "t1": 1.237,
     "text": "Modal does the rest."
    },
    {
-    "t0": 1.64,
-    "t1": 3.8,
+    "t0": 1.446,
+    "t1": 3.315,
     "text": "It splits each trace into searches,"
    },
    {
-    "t0": 3.88,
-    "t1": 5.0,
+    "t0": 3.524,
+    "t1": 4.674,
     "text": "one per time window,"
    },
    {
-    "t0": 5.08,
-    "t1": 6.6,
+    "t0": 4.825,
+    "t1": 6.148,
     "text": "and runs them in parallel."
    },
    {
-    "t0": 6.68,
-    "t1": 7.64,
+    "t0": 6.473,
+    "t1": 7.356,
     "text": "For vibe coding,"
    },
    {
-    "t0": 7.68,
-    "t1": 9.21,
+    "t0": 7.379,
+    "t1": 8.725,
     "text": "that was twenty-five searches."
    }
   ]
  },
  "0003.png": {
   "text": "It keeps the results, and serves the page at a public URL that anyone can use.",
-  "dur": 4.41,
-  "takeAt": 37.56,
+  "dur": 4.215,
+  "takeAt": 35.685,
   "mode": "single-take-1",
   "take": [
    [
@@ -400,25 +400,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.16,
+    "t1": 1.165,
     "text": "It keeps the results,"
    },
    {
-    "t0": 1.24,
-    "t1": 3.16,
+    "t0": 1.2,
+    "t1": 3.092,
     "text": "and serves the page at a public URL"
    },
    {
-    "t0": 3.28,
-    "t1": 4.41,
+    "t0": 3.15,
+    "t1": 4.207,
     "text": "that anyone can use."
    }
   ]
  },
  "0004.png": {
   "text": "Modal can also refresh saved phrases every morning. This workspace had no free schedule slot, so for now the page starts that refresh itself.",
-  "dur": 8.33,
-  "takeAt": 42.28,
+  "dur": 7.665,
+  "takeAt": 40.155,
   "mode": "single-take-1",
   "take": [
    [
@@ -490,25 +490,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 3.32,
+    "t1": 2.697,
     "text": "Modal can also refresh saved phrases every morning."
    },
    {
-    "t0": 3.44,
-    "t1": 5.72,
+    "t0": 3.022,
+    "t1": 5.217,
     "text": "This workspace had no free schedule slot,"
    },
    {
-    "t0": 5.8,
-    "t1": 8.33,
+    "t0": 5.252,
+    "t1": 7.665,
     "text": "so for now the page starts that refresh itself."
    }
   ]
  },
  "m01.png": {
   "text": "So why Modal? A laptop script would run the searches one at a time, with no public URL. Your own server would sit there idle, and you'd pay for it anyway. On Modal, it scales to zero between traces, and you pay by the second while it runs.",
-  "dur": 14.24,
-  "takeAt": 51.04,
+  "dur": 13.746,
+  "takeAt": 48.154,
   "mode": "single-take-1",
   "take": [
    [
@@ -580,50 +580,50 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.12,
+    "t1": 1.003,
     "text": "So why Modal?"
    },
    {
-    "t0": 1.52,
-    "t1": 3.52,
+    "t0": 1.212,
+    "t1": 3.232,
     "text": "A laptop script would run the searches one"
    },
    {
-    "t0": 3.56,
-    "t1": 4.24,
+    "t0": 3.255,
+    "t1": 3.859,
     "text": "at a time,"
    },
    {
-    "t0": 4.32,
-    "t1": 5.72,
+    "t0": 4.033,
+    "t1": 5.275,
     "text": "with no public URL."
    },
    {
-    "t0": 5.92,
-    "t1": 7.76,
+    "t0": 5.6,
+    "t1": 7.156,
     "text": "Your own server would sit there idle,"
    },
    {
-    "t0": 7.8,
-    "t1": 9.28,
+    "t0": 7.179,
+    "t1": 8.387,
     "text": "and you'd pay for it anyway."
    },
    {
-    "t0": 9.36,
-    "t1": 12.32,
+    "t0": 8.77,
+    "t1": 11.626,
     "text": "On Modal, it scales to zero between traces,"
    },
    {
-    "t0": 12.36,
-    "t1": 14.24,
+    "t0": 11.8,
+    "t1": 13.746,
     "text": "and you pay by the second while it runs."
    }
   ]
  },
  "0005.png": {
   "text": "The labels stay honest. The earliest post found isn't proof of origin. Counts are posts found in a sample, not totals. And every edge comes from a real reply, quote or mention in the data.",
-  "dur": 11.92,
-  "takeAt": 65.56,
+  "dur": 10.803,
+  "takeAt": 62.087,
   "mode": "single-take-1",
   "take": [
    [
@@ -695,35 +695,35 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.68,
+    "t1": 1.455,
     "text": "The labels stay honest."
    },
    {
-    "t0": 1.88,
-    "t1": 4.36,
+    "t0": 1.838,
+    "t1": 4.218,
     "text": "The earliest post found isn't proof of origin."
    },
    {
-    "t0": 4.68,
-    "t1": 7.96,
+    "t0": 4.496,
+    "t1": 6.83,
     "text": "Counts are posts found in a sample, not totals."
    },
    {
-    "t0": 8.04,
-    "t1": 10.36,
+    "t0": 7.039,
+    "t1": 9.117,
     "text": "And every edge comes from a real reply,"
    },
    {
-    "t0": 10.52,
-    "t1": 11.92,
+    "t0": 9.396,
+    "t1": 10.803,
     "text": "quote or mention in the data."
    }
   ]
  },
  "0006.png": {
   "text": "Devin built the whole thing from one short prompt, in a single session.",
-  "dur": 3.7,
-  "takeAt": 77.8,
+  "dur": 3.38,
+  "takeAt": 73.22,
   "mode": "single-take-1",
   "take": [
    [
@@ -795,20 +795,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.12,
+    "t1": 1.804,
     "text": "Devin built the whole thing from one short"
    },
    {
-    "t0": 2.2,
-    "t1": 3.7,
+    "t0": 1.85,
+    "t1": 3.38,
     "text": "prompt, in a single session."
    }
   ]
  },
  "0007.png": {
   "text": "It deployed the app with modal deploy, which printed the public URL. Then it tested the deployed endpoint with a real trace.",
-  "dur": 6.93,
-  "takeAt": 81.76,
+  "dur": 6.295,
+  "takeAt": 76.905,
   "mode": "single-take-1",
   "take": [
    [
@@ -879,26 +879,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.08,
+    "t0": 0.116,
+    "t1": 1.961,
     "text": "It deployed the app with modal deploy,"
    },
    {
-    "t0": 2.16,
-    "t1": 4.0,
+    "t0": 2.112,
+    "t1": 3.505,
     "text": "which printed the public URL."
    },
    {
-    "t0": 4.08,
-    "t1": 6.93,
+    "t0": 3.714,
+    "t1": 6.28,
     "text": "Then it tested the deployed endpoint with a real trace."
    }
   ]
  },
  "0008.png": {
   "text": "Here's the page running on Modal. For vibe coding, the earliest post it found is from May twenty twenty-two.",
-  "dur": 5.925,
-  "takeAt": 89.0,
+  "dur": 5.582,
+  "takeAt": 83.448,
   "mode": "single-take-1",
   "take": [
    [
@@ -970,25 +970,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.88,
+    "t1": 1.618,
     "text": "Here's the page running on Modal."
    },
    {
-    "t0": 1.96,
-    "t1": 2.973,
+    "t0": 1.827,
+    "t1": 2.744,
     "text": "For vibe coding,"
    },
    {
-    "t0": 3.027,
-    "t1": 5.925,
+    "t0": 2.791,
+    "t1": 5.582,
     "text": "the earliest post it found is from May twenty twenty-two."
    }
   ]
  },
  "0009.png": {
   "text": "It found sixty-nine posts with the phrase, and the graph shows who passed it to whom, with Karpathy as the top amplifier.",
-  "dur": 6.66,
-  "takeAt": 95.0,
+  "dur": 6.595,
+  "takeAt": 89.265,
   "mode": "single-take-1",
   "take": [
    [
@@ -1060,25 +1060,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.44,
+    "t1": 2.407,
     "text": "It found sixty-nine posts with the phrase,"
    },
    {
-    "t0": 2.48,
-    "t1": 4.04,
+    "t0": 2.582,
+    "t1": 4.068,
     "text": "and the graph shows who passed it to"
    },
    {
-    "t0": 4.12,
-    "t1": 6.66,
+    "t0": 4.114,
+    "t1": 6.595,
     "text": "whom, with Karpathy as the top amplifier."
    }
   ]
  },
  "0010.png": {
   "text": "There's plenty to build on top. You could alert when a saved phrase starts climbing, compare two phrases side by side, or export the graph for a write-up. You could also trace a product launch from its very first post.",
-  "dur": 12.25,
-  "takeAt": 101.92,
+  "dur": 11.406,
+  "takeAt": 96.104,
   "mode": "single-take-1",
   "take": [
    [
@@ -1150,40 +1150,40 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.08,
+    "t1": 1.524,
     "text": "There's plenty to build on top."
    },
    {
-    "t0": 2.12,
-    "t1": 3.92,
+    "t0": 1.849,
+    "t1": 3.707,
     "text": "You could alert when a saved phrase starts"
    },
    {
-    "t0": 3.96,
-    "t1": 6.8,
+    "t0": 3.754,
+    "t1": 6.47,
     "text": "climbing, compare two phrases side by side,"
    },
    {
-    "t0": 6.92,
-    "t1": 9.04,
+    "t0": 6.644,
+    "t1": 8.339,
     "text": "or export the graph for a write-up."
    },
    {
-    "t0": 9.08,
-    "t1": 10.8,
+    "t0": 8.548,
+    "t1": 10.278,
     "text": "You could also trace a product launch from"
    },
    {
-    "t0": 10.88,
-    "t1": 12.25,
+    "t0": 10.325,
+    "t1": 11.406,
     "text": "its very first post."
    }
   ]
  },
  "outro": {
   "text": "Paste a phrase, and watch how it spread.",
-  "dur": 2.16,
-  "takeAt": 114.48,
+  "dur": 1.979,
+  "takeAt": 107.771,
   "mode": "single-take-1",
   "take": [
    [
@@ -1255,12 +1255,12 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 0.96,
+    "t1": 0.91,
     "text": "Paste a phrase,"
    },
    {
-    "t0": 1.08,
-    "t1": 2.16,
+    "t0": 0.933,
+    "t1": 1.979,
     "text": "and watch how it spread."
    }
   ]
