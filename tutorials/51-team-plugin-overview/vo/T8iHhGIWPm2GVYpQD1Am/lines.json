@@ -1,885 +1,280 @@
 {
  "0000.png": {
   "text": "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up.",
-  "dur": 9.53,
-  "takeAt": 0.0,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up.",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up."
-   ],
-   [
-    "0001.png",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks.",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks."
-   ],
-   [
-    "0002.png",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session.",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session."
-   ],
-   [
-    "0003.png",
-    "On the Plugins page, Orbit Team shows as required for the whole organization.",
-    "On the Plugins page, Orbit Team shows as required for the whole organization."
-   ],
-   [
-    "0004.png",
-    "On a laptop, the same plugin shows up in the Devin CLI.",
-    "On a laptop, the same plugin shows up in the Devin CLI."
-   ],
-   [
-    "0005.png",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run.",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run."
-   ],
-   [
-    "0006.png",
-    "In a real cloud session, the rule is injected and Devin activates the skill.",
-    "In a real cloud session, the rule is injected and Devin activates the skill."
-   ],
-   [
-    "0007.png",
-    "Its pull request lists every check the skill asked for, with the result of each one.",
-    "Its pull request lists every check the skill asked for, with the result of each one."
-   ],
-   [
-    "0008.png",
-    "In the CLI, the hook stops a force-push before it runs.",
-    "In the CLI, the hook stops a force-push before it runs."
-   ],
-   [
-    "0009.png",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands.",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands."
-   ],
-   [
-    "outro",
-    "Package it once, and every Devin works your way.",
-    "Package it once, and every Devin works your way."
-   ]
-  ],
+  "dur": 8.265,
+  "at": 0.0,
+  "end": 8.265,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.64,
+    "t1": 2.392,
     "text": "A Devin plugin packages how your team works,"
    },
    {
-    "t0": 2.72,
-    "t1": 4.32,
+    "t0": 2.508,
+    "t1": 3.634,
     "text": "its skills, rules,"
    },
    {
-    "t0": 4.4,
-    "t1": 6.16,
+    "t0": 3.669,
+    "t1": 5.155,
     "text": "MCP servers and hooks,"
    },
    {
-    "t0": 6.24,
-    "t1": 8.24,
+    "t0": 5.283,
+    "t1": 7.117,
     "text": "into one bundle that every Devin in your"
    },
    {
-    "t0": 8.6,
-    "t1": 9.53,
+    "t0": 7.152,
+    "t1": 8.265,
     "text": "organization picks up."
    }
   ]
  },
  "0001.png": {
   "text": "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks.",
-  "dur": 7.81,
-  "takeAt": 9.96,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up.",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up."
-   ],
-   [
-    "0001.png",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks.",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks."
-   ],
-   [
-    "0002.png",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session.",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session."
-   ],
-   [
-    "0003.png",
-    "On the Plugins page, Orbit Team shows as required for the whole organization.",
-    "On the Plugins page, Orbit Team shows as required for the whole organization."
-   ],
-   [
-    "0004.png",
-    "On a laptop, the same plugin shows up in the Devin CLI.",
-    "On a laptop, the same plugin shows up in the Devin CLI."
-   ],
-   [
-    "0005.png",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run.",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run."
-   ],
-   [
-    "0006.png",
-    "In a real cloud session, the rule is injected and Devin activates the skill.",
-    "In a real cloud session, the rule is injected and Devin activates the skill."
-   ],
-   [
-    "0007.png",
-    "Its pull request lists every check the skill asked for, with the result of each one.",
-    "Its pull request lists every check the skill asked for, with the result of each one."
-   ],
-   [
-    "0008.png",
-    "In the CLI, the hook stops a force-push before it runs.",
-    "In the CLI, the hook stops a force-push before it runs."
-   ],
-   [
-    "0009.png",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands.",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands."
-   ],
-   [
-    "outro",
-    "Package it once, and every Devin works your way.",
-    "Package it once, and every Devin works your way."
-   ]
-  ],
+  "dur": 7.225,
+  "at": 8.72,
+  "end": 15.945,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.2,
+    "t0": 0.115,
+    "t1": 1.81,
     "text": "Under the hood it's plain files:"
    },
    {
-    "t0": 2.24,
-    "t1": 5.0,
+    "t0": 1.984,
+    "t1": 4.446,
     "text": "a manifest, folders for skills and rules,"
    },
    {
-    "t0": 5.08,
-    "t1": 7.81,
+    "t0": 4.655,
+    "t1": 7.225,
     "text": "and JSON files for MCP servers and hooks."
    }
   ]
  },
  "0002.png": {
   "text": "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session.",
-  "dur": 11.11,
-  "takeAt": 18.36,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up.",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up."
-   ],
-   [
-    "0001.png",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks.",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks."
-   ],
-   [
-    "0002.png",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session.",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session."
-   ],
-   [
-    "0003.png",
-    "On the Plugins page, Orbit Team shows as required for the whole organization.",
-    "On the Plugins page, Orbit Team shows as required for the whole organization."
-   ],
-   [
-    "0004.png",
-    "On a laptop, the same plugin shows up in the Devin CLI.",
-    "On a laptop, the same plugin shows up in the Devin CLI."
-   ],
-   [
-    "0005.png",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run.",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run."
-   ],
-   [
-    "0006.png",
-    "In a real cloud session, the rule is injected and Devin activates the skill.",
-    "In a real cloud session, the rule is injected and Devin activates the skill."
-   ],
-   [
-    "0007.png",
-    "Its pull request lists every check the skill asked for, with the result of each one.",
-    "Its pull request lists every check the skill asked for, with the result of each one."
-   ],
-   [
-    "0008.png",
-    "In the CLI, the hook stops a force-push before it runs.",
-    "In the CLI, the hook stops a force-push before it runs."
-   ],
-   [
-    "0009.png",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands.",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands."
-   ],
-   [
-    "outro",
-    "Package it once, and every Devin works your way.",
-    "Package it once, and every Devin works your way."
-   ]
-  ],
+  "dur": 10.89,
+  "at": 16.3,
+  "end": 27.19,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.8,
+    "t0": 0.071,
+    "t1": 1.835,
     "text": "Installed in Organization scope,"
    },
    {
-    "t0": 1.84,
-    "t1": 3.72,
+    "t0": 2.009,
+    "t1": 3.797,
     "text": "it applies to every cloud session in the"
    },
    {
-    "t0": 4.08,
-    "t1": 6.76,
+    "t0": 3.844,
+    "t1": 6.677,
     "text": "organization, and to the CLI and Desktop of"
    },
    {
-    "t0": 6.96,
-    "t1": 9.32,
+    "t0": 6.746,
+    "t1": 8.999,
     "text": "everyone whose primary organization it is,"
    },
    {
-    "t0": 9.52,
-    "t1": 11.11,
+    "t0": 9.173,
+    "t1": 10.844,
     "text": "starting with their next new session."
    }
   ]
  },
  "0003.png": {
   "text": "On the Plugins page, Orbit Team shows as required for the whole organization.",
-  "dur": 4.39,
-  "takeAt": 29.88,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up.",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up."
-   ],
-   [
-    "0001.png",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks.",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks."
-   ],
-   [
-    "0002.png",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session.",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session."
-   ],
-   [
-    "0003.png",
-    "On the Plugins page, Orbit Team shows as required for the whole organization.",
-    "On the Plugins page, Orbit Team shows as required for the whole organization."
-   ],
-   [
-    "0004.png",
-    "On a laptop, the same plugin shows up in the Devin CLI.",
-    "On a laptop, the same plugin shows up in the Devin CLI."
-   ],
-   [
-    "0005.png",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run.",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run."
-   ],
-   [
-    "0006.png",
-    "In a real cloud session, the rule is injected and Devin activates the skill.",
-    "In a real cloud session, the rule is injected and Devin activates the skill."
-   ],
-   [
-    "0007.png",
-    "Its pull request lists every check the skill asked for, with the result of each one.",
-    "Its pull request lists every check the skill asked for, with the result of each one."
-   ],
-   [
-    "0008.png",
-    "In the CLI, the hook stops a force-push before it runs.",
-    "In the CLI, the hook stops a force-push before it runs."
-   ],
-   [
-    "0009.png",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands.",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands."
-   ],
-   [
-    "outro",
-    "Package it once, and every Devin works your way.",
-    "Package it once, and every Devin works your way."
-   ]
-  ],
+  "dur": 3.865,
+  "at": 27.5,
+  "end": 31.365,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.32,
+    "t0": 0.085,
+    "t1": 1.2,
     "text": "On the Plugins page,"
    },
    {
-    "t0": 1.4,
-    "t1": 4.39,
+    "t0": 1.246,
+    "t1": 3.865,
     "text": "Orbit Team shows as required for the whole organization."
    }
   ]
  },
  "0004.png": {
   "text": "On a laptop, the same plugin shows up in the Devin CLI.",
-  "dur": 3.41,
-  "takeAt": 34.68,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up.",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up."
-   ],
-   [
-    "0001.png",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks.",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks."
-   ],
-   [
-    "0002.png",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session.",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session."
-   ],
-   [
-    "0003.png",
-    "On the Plugins page, Orbit Team shows as required for the whole organization.",
-    "On the Plugins page, Orbit Team shows as required for the whole organization."
-   ],
-   [
-    "0004.png",
-    "On a laptop, the same plugin shows up in the Devin CLI.",
-    "On a laptop, the same plugin shows up in the Devin CLI."
-   ],
-   [
-    "0005.png",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run.",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run."
-   ],
-   [
-    "0006.png",
-    "In a real cloud session, the rule is injected and Devin activates the skill.",
-    "In a real cloud session, the rule is injected and Devin activates the skill."
-   ],
-   [
-    "0007.png",
-    "Its pull request lists every check the skill asked for, with the result of each one.",
-    "Its pull request lists every check the skill asked for, with the result of each one."
-   ],
-   [
-    "0008.png",
-    "In the CLI, the hook stops a force-push before it runs.",
-    "In the CLI, the hook stops a force-push before it runs."
-   ],
-   [
-    "0009.png",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands.",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands."
-   ],
-   [
-    "outro",
-    "Package it once, and every Devin works your way.",
-    "Package it once, and every Devin works your way."
-   ]
-  ],
+  "dur": 3.23,
+  "at": 31.6,
+  "end": 34.83,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.0,
+    "t0": 0.06,
+    "t1": 0.861,
     "text": "On a laptop,"
    },
    {
-    "t0": 1.08,
-    "t1": 3.41,
+    "t0": 0.885,
+    "t1": 3.23,
     "text": "the same plugin shows up in the Devin CLI."
    }
   ]
  },
  "0005.png": {
   "text": "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run.",
-  "dur": 10.41,
-  "takeAt": 38.52,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up.",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up."
-   ],
-   [
-    "0001.png",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks.",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks."
-   ],
-   [
-    "0002.png",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session.",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session."
-   ],
-   [
-    "0003.png",
-    "On the Plugins page, Orbit Team shows as required for the whole organization.",
-    "On the Plugins page, Orbit Team shows as required for the whole organization."
-   ],
-   [
-    "0004.png",
-    "On a laptop, the same plugin shows up in the Devin CLI.",
-    "On a laptop, the same plugin shows up in the Devin CLI."
-   ],
-   [
-    "0005.png",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run.",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run."
-   ],
-   [
-    "0006.png",
-    "In a real cloud session, the rule is injected and Devin activates the skill.",
-    "In a real cloud session, the rule is injected and Devin activates the skill."
-   ],
-   [
-    "0007.png",
-    "Its pull request lists every check the skill asked for, with the result of each one.",
-    "Its pull request lists every check the skill asked for, with the result of each one."
-   ],
-   [
-    "0008.png",
-    "In the CLI, the hook stops a force-push before it runs.",
-    "In the CLI, the hook stops a force-push before it runs."
-   ],
-   [
-    "0009.png",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands.",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands."
-   ],
-   [
-    "outro",
-    "Package it once, and every Devin works your way.",
-    "Package it once, and every Devin works your way."
-   ]
-  ],
+  "dur": 9.68,
+  "at": 35.195,
+  "end": 44.875,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.24,
+    "t0": 0.076,
+    "t1": 1.075,
     "text": "Inside a session,"
    },
    {
-    "t0": 1.32,
-    "t1": 3.4,
+    "t0": 1.121,
+    "t1": 3.269,
     "text": "the skill runs on request or when it's"
    },
    {
-    "t0": 3.64,
-    "t1": 5.96,
+    "t0": 3.315,
+    "t1": 4.859,
     "text": "relevant, the rule is always on,"
    },
    {
-    "t0": 6.0,
-    "t1": 8.04,
+    "t0": 5.138,
+    "t1": 7.262,
     "text": "the MCP server adds its tools,"
    },
    {
-    "t0": 8.08,
-    "t1": 10.41,
+    "t0": 7.436,
+    "t1": 9.654,
     "text": "and the hook checks tool calls before they run."
    }
   ]
  },
  "0006.png": {
   "text": "In a real cloud session, the rule is injected and Devin activates the skill.",
-  "dur": 4.31,
-  "takeAt": 49.32,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up.",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up."
-   ],
-   [
-    "0001.png",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks.",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks."
-   ],
-   [
-    "0002.png",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session.",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session."
-   ],
-   [
-    "0003.png",
-    "On the Plugins page, Orbit Team shows as required for the whole organization.",
-    "On the Plugins page, Orbit Team shows as required for the whole organization."
-   ],
-   [
-    "0004.png",
-    "On a laptop, the same plugin shows up in the Devin CLI.",
-    "On a laptop, the same plugin shows up in the Devin CLI."
-   ],
-   [
-    "0005.png",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run.",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run."
-   ],
-   [
-    "0006.png",
-    "In a real cloud session, the rule is injected and Devin activates the skill.",
-    "In a real cloud session, the rule is injected and Devin activates the skill."
-   ],
-   [
-    "0007.png",
-    "Its pull request lists every check the skill asked for, with the result of each one.",
-    "Its pull request lists every check the skill asked for, with the result of each one."
-   ],
-   [
-    "0008.png",
-    "In the CLI, the hook stops a force-push before it runs.",
-    "In the CLI, the hook stops a force-push before it runs."
-   ],
-   [
-    "0009.png",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands.",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands."
-   ],
-   [
-    "outro",
-    "Package it once, and every Devin works your way.",
-    "Package it once, and every Devin works your way."
-   ]
-  ],
+  "dur": 4.2,
+  "at": 45.22,
+  "end": 49.42,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.48,
+    "t0": 0.07,
+    "t1": 1.405,
     "text": "In a real cloud session,"
    },
    {
-    "t0": 1.56,
-    "t1": 4.28,
+    "t0": 1.579,
+    "t1": 4.2,
     "text": "the rule is injected and Devin activates the skill."
    }
   ]
  },
  "0007.png": {
   "text": "Its pull request lists every check the skill asked for, with the result of each one.",
-  "dur": 4.65,
-  "takeAt": 53.96,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up.",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up."
-   ],
-   [
-    "0001.png",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks.",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks."
-   ],
-   [
-    "0002.png",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session.",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session."
-   ],
-   [
-    "0003.png",
-    "On the Plugins page, Orbit Team shows as required for the whole organization.",
-    "On the Plugins page, Orbit Team shows as required for the whole organization."
-   ],
-   [
-    "0004.png",
-    "On a laptop, the same plugin shows up in the Devin CLI.",
-    "On a laptop, the same plugin shows up in the Devin CLI."
-   ],
-   [
-    "0005.png",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run.",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run."
-   ],
-   [
-    "0006.png",
-    "In a real cloud session, the rule is injected and Devin activates the skill.",
-    "In a real cloud session, the rule is injected and Devin activates the skill."
-   ],
-   [
-    "0007.png",
-    "Its pull request lists every check the skill asked for, with the result of each one.",
-    "Its pull request lists every check the skill asked for, with the result of each one."
-   ],
-   [
-    "0008.png",
-    "In the CLI, the hook stops a force-push before it runs.",
-    "In the CLI, the hook stops a force-push before it runs."
-   ],
-   [
-    "0009.png",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands.",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands."
-   ],
-   [
-    "outro",
-    "Package it once, and every Devin works your way.",
-    "Package it once, and every Devin works your way."
-   ]
-  ],
+  "dur": 4.555,
+  "at": 49.625,
+  "end": 54.18,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.44,
+    "t0": 0.089,
+    "t1": 2.318,
     "text": "Its pull request lists every check the skill"
    },
    {
-    "t0": 2.52,
-    "t1": 4.65,
+    "t0": 2.376,
+    "t1": 4.501,
     "text": "asked for, with the result of each one."
    }
   ]
  },
  "0008.png": {
   "text": "In the CLI, the hook stops a force-push before it runs.",
-  "dur": 3.54,
-  "takeAt": 59.0,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up.",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up."
-   ],
-   [
-    "0001.png",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks.",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks."
-   ],
-   [
-    "0002.png",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session.",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session."
-   ],
-   [
-    "0003.png",
-    "On the Plugins page, Orbit Team shows as required for the whole organization.",
-    "On the Plugins page, Orbit Team shows as required for the whole organization."
-   ],
-   [
-    "0004.png",
-    "On a laptop, the same plugin shows up in the Devin CLI.",
-    "On a laptop, the same plugin shows up in the Devin CLI."
-   ],
-   [
-    "0005.png",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run.",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run."
-   ],
-   [
-    "0006.png",
-    "In a real cloud session, the rule is injected and Devin activates the skill.",
-    "In a real cloud session, the rule is injected and Devin activates the skill."
-   ],
-   [
-    "0007.png",
-    "Its pull request lists every check the skill asked for, with the result of each one.",
-    "Its pull request lists every check the skill asked for, with the result of each one."
-   ],
-   [
-    "0008.png",
-    "In the CLI, the hook stops a force-push before it runs.",
-    "In the CLI, the hook stops a force-push before it runs."
-   ],
-   [
-    "0009.png",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands.",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands."
-   ],
-   [
-    "outro",
-    "Package it once, and every Devin works your way.",
-    "Package it once, and every Devin works your way."
-   ]
-  ],
+  "dur": 2.93,
+  "at": 54.43,
+  "end": 57.36,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.16,
+    "t0": 0.079,
+    "t1": 0.88,
     "text": "In the CLI,"
    },
    {
-    "t0": 1.2,
-    "t1": 3.54,
+    "t0": 0.903,
+    "t1": 2.93,
     "text": "the hook stops a force-push before it runs."
    }
   ]
  },
  "0009.png": {
   "text": "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands.",
-  "dur": 7.16,
-  "takeAt": 62.92,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up.",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up."
-   ],
-   [
-    "0001.png",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks.",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks."
-   ],
-   [
-    "0002.png",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session.",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session."
-   ],
-   [
-    "0003.png",
-    "On the Plugins page, Orbit Team shows as required for the whole organization.",
-    "On the Plugins page, Orbit Team shows as required for the whole organization."
-   ],
-   [
-    "0004.png",
-    "On a laptop, the same plugin shows up in the Devin CLI.",
-    "On a laptop, the same plugin shows up in the Devin CLI."
-   ],
-   [
-    "0005.png",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run.",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run."
-   ],
-   [
-    "0006.png",
-    "In a real cloud session, the rule is injected and Devin activates the skill.",
-    "In a real cloud session, the rule is injected and Devin activates the skill."
-   ],
-   [
-    "0007.png",
-    "Its pull request lists every check the skill asked for, with the result of each one.",
-    "Its pull request lists every check the skill asked for, with the result of each one."
-   ],
-   [
-    "0008.png",
-    "In the CLI, the hook stops a force-push before it runs.",
-    "In the CLI, the hook stops a force-push before it runs."
-   ],
-   [
-    "0009.png",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands.",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands."
-   ],
-   [
-    "outro",
-    "Package it once, and every Devin works your way.",
-    "Package it once, and every Devin works your way."
-   ]
-  ],
+  "dur": 7.065,
+  "at": 57.58,
+  "end": 64.645,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.96,
+    "t0": 0.075,
+    "t1": 1.793,
     "text": "Package your pre-PR checklist,"
    },
    {
-    "t0": 2.04,
-    "t1": 3.24,
+    "t0": 1.968,
+    "t1": 3.117,
     "text": "your house conventions,"
    },
    {
-    "t0": 3.32,
-    "t1": 4.84,
+    "t0": 3.291,
+    "t1": 4.708,
     "text": "the tools your team shares,"
    },
    {
-    "t0": 4.88,
-    "t1": 7.16,
+    "t0": 4.917,
+    "t1": 7.065,
     "text": "and the guardrails that stop risky commands."
    }
   ]
  },
  "outro": {
   "text": "Package it once, and every Devin works your way.",
-  "dur": 3.0,
-  "takeAt": 70.44,
-  "mode": "single-take-1",
-  "take": [
-   [
-    "0000.png",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up.",
-    "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up."
-   ],
-   [
-    "0001.png",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks.",
-    "Under the hood it's plain files: a manifest, folders for skills and rules, and JSON files for MCP servers and hooks."
-   ],
-   [
-    "0002.png",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session.",
-    "Installed in Organization scope, it applies to every cloud session in the organization, and to the CLI and Desktop of everyone whose primary organization it is, starting with their next new session."
-   ],
-   [
-    "0003.png",
-    "On the Plugins page, Orbit Team shows as required for the whole organization.",
-    "On the Plugins page, Orbit Team shows as required for the whole organization."
-   ],
-   [
-    "0004.png",
-    "On a laptop, the same plugin shows up in the Devin CLI.",
-    "On a laptop, the same plugin shows up in the Devin CLI."
-   ],
-   [
-    "0005.png",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run.",
-    "Inside a session, the skill runs on request or when it's relevant, the rule is always on, the MCP server adds its tools, and the hook checks tool calls before they run."
-   ],
-   [
-    "0006.png",
-    "In a real cloud session, the rule is injected and Devin activates the skill.",
-    "In a real cloud session, the rule is injected and Devin activates the skill."
-   ],
-   [
-    "0007.png",
-    "Its pull request lists every check the skill asked for, with the result of each one.",
-    "Its pull request lists every check the skill asked for, with the result of each one."
-   ],
-   [
-    "0008.png",
-    "In the CLI, the hook stops a force-push before it runs.",
-    "In the CLI, the hook stops a force-push before it runs."
-   ],
-   [
-    "0009.png",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands.",
-    "Package your pre-PR checklist, your house conventions, the tools your team shares, and the guardrails that stop risky commands."
-   ],
-   [
-    "outro",
-    "Package it once, and every Devin works your way.",
-    "Package it once, and every Devin works your way."
-   ]
-  ],
+  "dur": 2.73,
+  "at": 64.91,
+  "end": 67.64,
+  "mode": "one-take",
+  "checked": true,
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.08,
+    "t0": 0.083,
+    "t1": 1.058,
     "text": "Package it once,"
    },
    {
-    "t0": 1.2,
-    "t1": 3.0,
+    "t0": 1.267,
+    "t1": 2.73,
     "text": "and every Devin works your way."
    }
   ]
