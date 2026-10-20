@@ -1,5 +1,5 @@
 window.SPEC = {
-  "title": "Job-market pulse",
+  "title": "Job-market tracker",
   "subtitle": "Build and deploy it on Modal with the xAI API, step by step",
   "eyebrow": "Modal + xAI",
   "dark": true,
@@ -15,15 +15,15 @@ window.SPEC = {
       "hold": 6,
       "cursor": false,
       "cap": "Hourly job-market counts from sampled X posts",
-      "vo": "This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
+      "vo": "This is a job-market tracker. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most."
     },
     "0000a.png": {
       "scene": "modal",
       "hold": 4,
       "cursor": false,
       "cap": "Modal runs it hourly, in parallel, with no server",
-      "vo": "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
-      "voSay": "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
+      "vo": "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. You could run your own server and database. But that machine stays on all day for a few minutes of work each hour. You'd also wire up the schedule and the parallel calls yourself. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works.",
+      "voSay": "Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. You could run your own server and database. But that machine stays on all day for a few minutes of work each hour. You'd also wire up the schedule and the parallel calls yourself. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the ex A I calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the ex A I key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works."
     },
     "0001.png": {
       "skip": true

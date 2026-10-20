@@ -1,4 +1,4 @@
-// Job-market pulse diagrams (spec `scene:`), dark palette, drawn in 1440x810 UI coords. s = seconds since the beat started.
+// Job-market tracker diagrams (spec `scene:`), dark palette, drawn in 1440x810 UI coords. s = seconds since the beat started.
 (() => {
 const BLUE = [72, 146, 255], AMBER = [226, 170, 84], ROSE = [232, 106, 96];
 const rgba = (c, a) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
@@ -70,7 +70,7 @@ function bar(ctx, k, x, y, w, max, p, col, a) {
 const CATS = [{ t: 'Hiring', col: BLUE }, { t: 'Layoffs', col: ROSE }, { t: 'Looking for work', col: AMBER }];
 // 1. Posts about hiring, layoffs and job hunting are sorted into three buckets, then tallied by role, company and skill.
 function intro(ctx, s, k) {
-  eyebrow(ctx, k, 'JOB-MARKET PULSE', 86, appear(k, s, 0.05));
+  eyebrow(ctx, k, 'JOB-MARKET TRACKER', 86, appear(k, s, 0.05));
   const order = [0, 1, 0, 2, 0, 1];
   order.forEach((c, i) => post(ctx, k, 150, 168 + i * 82, 300, appear(k, s, 0.3 + i * 0.18), CATS[c].col, appear(k, s, 2.2 + i * 0.25, 0.4)));
   const g = node(ctx, k, { x: 640, y: 405, t: 'Grok', sub: 'classifies each post' }, appear(k, s, 1.0), appear(k, s, 2.0, 0.5) * (1 - appear(k, s, 4.6, 0.6)));
@@ -89,17 +89,17 @@ function intro(ctx, s, k) {
   });
 }
 
-// 2. Why Modal: the job (wake hourly, many Grok calls, store, serve) vs a laptop script or own server, then the Modal pieces this app uses.
+// 2. Why Modal: the job (wake hourly, many Grok calls, store, serve) vs your own server and database, then the Modal pieces this app uses.
 // MT = seconds into the narration when each piece is named (refit after each take).
-const MT = { job: 1.0, alt: 7.0, modal: 12.3, cron: 12.5, map: 16.8, vol: 20.7, sec: 22.6, web: 25.2, zero: 28.2 };
+const MT = { job: 1.0, alt: 7.0, b: [10.0, 11.0, 13.4, 14.5], modal: 16.2, cron: 17.4, map: 20.2, vol: 24.3, sec: 26.5, web: 29.2, zero: 32.9 };
 function modal(ctx, s, k) {
   eyebrow(ctx, k, 'WHY MODAL', 86, appear(k, s, 0.05));
   ['Wake up every hour', 'Many Grok calls', 'Store each run', 'Serve a page'].forEach((t, i) => pill(ctx, k, t, 300 + i * 280, 150, appear(k, s, MT.job + i * 0.5)));
   const la = appear(k, s, MT.alt), dim = 1 - 0.45 * appear(k, s, MT.modal, 0.8);
   box(ctx, k, 110, 220 + 12 * (1 - la), 420, 360, la * dim, 0, 16);
-  text(ctx, k, 'Laptop script or own server', 140, 262 + 12 * (1 - la), 18, 600, k.INK, la * dim, 'left');
-  ['Stops when the lid closes', 'Or sits idle most of the day', 'Calls run one at a time', 'You host the page and the key'].forEach((t, i) => {
-    const a = appear(k, s, MT.alt + 0.4 + i * 0.35) * dim, yy = 322 + i * 56 + 12 * (1 - la);
+  text(ctx, k, 'Your own server + database', 140, 262 + 12 * (1 - la), 18, 600, k.INK, la * dim, 'left');
+  ['Stays on all day', 'Busy a few minutes an hour', 'You wire up the schedule', 'Calls run one at a time'].forEach((t, i) => {
+    const a = appear(k, s, MT.b[i]) * dim, yy = 322 + i * 56 + 12 * (1 - la);
     if (a <= 0) return;
     ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.beginPath(); ctx.arc(150, yy, 4, 0, Math.PI * 2); ctx.fillStyle = W(0.3); ctx.fill(); ctx.restore();
     text(ctx, k, t, 168, yy, 16, 400, W(0.62), a, 'left');

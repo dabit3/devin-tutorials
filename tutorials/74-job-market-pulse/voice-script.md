@@ -1,4 +1,4 @@
-# Tutorial 74: Job-market pulse on Modal with the xAI API (voice script)
+# Tutorial 74: Job-market tracker on Modal with the xAI API (voice script)
 
 Narrator: Nader (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, saved default settings). Generated as one full-script take with `_kit/tools/vo.py` and cut locally at sentence boundaries. `voSay` overrides: "xAI" is spoken "ex A I". The word "live" is avoided in narration (it was voiced as "liv").
 
@@ -6,8 +6,8 @@ Real run: https://app.devin.ai/sessions/2cbce76d537f403d89b569eef12074cf (thequa
 
 | Beat | Caption | Narration |
 |---|---|---|
-| 0000.png | Hourly job-market counts from sampled X posts | This is a job-market pulse. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most. |
-| 0000a.png | Modal runs it hourly, in parallel, with no server | Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. A laptop script stops when the lid closes, and your own server sits idle most of the day. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works. |
+| 0000.png | Hourly job-market counts from sampled X posts | This is a job-market tracker. Every hour, it samples tech posts on X about hiring, layoffs and people looking for work, sorts them with Grok, and shows which roles, companies and skills come up most. |
+| 0000a.png | Modal runs it hourly, in parallel, with no server | Why Modal? The app has to wake up every hour and make many Grok calls. Then it has to store the results and serve them on a page. You could run your own server and database. But that machine stays on all day for a few minutes of work each hour. You'd also wire up the schedule and the parallel calls yourself. On Modal, the collection is a scheduled function, so there's nothing to keep running. Dot map runs the xAI calls in parallel across containers. A Modal Volume stores each run, and a Modal Secret holds the xAI key. A web endpoint serves the page at a public URL. And between runs it scales to zero, so you only pay for the seconds it works. |
 | 0007.png | One plain prompt: build, deploy, test, open a PR | Here's the prompt. I'm asking Devin to build it on Modal with the xAI API and X search, to label every number as a count of sampled posts, and to never name people who posted about layoffs or job hunting. |
 | 0012.png |  | Devin also deploys it, tests the public URL, and opens a pull request. |
 | 0020.png | Current xAI docs, and the key in a Modal Secret | First, Devin checks the current xAI docs for X search, and plans to keep the API key in a Modal Secret. |
