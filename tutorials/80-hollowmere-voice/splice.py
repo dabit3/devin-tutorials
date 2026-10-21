@@ -14,7 +14,7 @@ CAPS = ["Today: a cross-platform game, built and tested by voice", "Built with D
         "Change her style: “talk like an old bard from now on”", "She stays in character while the hero walks",
         "“Ask him about the barrow” → ask_about", "“What's in my pack?” → open_pack",
         "Our own check, live on GPT-Live-1: “Eira, mark the barrow”", "mark_waypoint fires: a beam of light at the barrow, a pin on the compass",
-        "“Clear the marker” → clear_waypoint", "iPhone simulator: Devin saw the beam + pin at ~1 frame/min; Android emulator: valley rendered (~1 fps) but the typed command stalled the app — marker not checked; no physical devices"]
+        "“Clear the marker” → clear_waypoint", "iPhone simulator: Devin saw the beam + pin at ~1 frame/min\nAndroid emulator: valley rendered (~1 fps), but the typed command stalled the app, so the marker was not checked\nNo physical devices were tested"]
 subprocess.run(['node', os.path.join(D, 'caps.mjs'), B, *CAPS], env={**os.environ, 'CAPPOS': 'top'}, check=True)
 cap = lambda i: os.path.join(B, f'cap{i}.png')
 X264 = ['-c:v', 'libx264', '-profile:v', 'high', '-preset', 'slow', '-crf', '18', '-tune', 'animation', '-g', '120', '-bf', '2', '-pix_fmt', 'yuv420p',
@@ -47,7 +47,7 @@ def seg(out, ss, to, caps, audio, source=None):
     vlast = f'[v{len(caps)}]'
     f += f';{vlast}fade=out:st={dur - 0.4}:d=0.4[vo]'
     if audio == 'intro':
-        f += f';[0:a]loudnorm=I=-16:TP=-2:LRA=11,afade=out:st={dur - 0.5}:d=0.5,aresample=48000[ao]'
+        f += f';[0:a]apad,atrim=0:{dur},loudnorm=I=-16:TP=-2:LRA=11,afade=out:st={dur - 0.5}:d=0.5,aresample=48000[ao]'
     elif wavs:
         n0 = 1 + len(caps)
         f += ''.join(f';[{n0 + k}:a]adelay={int(t * 1000)}:all=1[w{k}]' for k, (_, t) in enumerate(wavs))
@@ -63,7 +63,9 @@ S0 = 1.0
 live = seg(os.path.join(B, 'live.mp4'), S0, 53.4,
            [(i, a - S0, b - S0) for i, a, b in [(2, 2.4, 8.8), (3, 9.2, 12.9), (4, 13.1, 16.2), (5, 16.4, 19.3), (6, 19.6, 24.2), (7, 24.5, 35.7), (8, 38.9, 44.3), (9, 44.7, 52.6)]], 'intro')
 TEST = os.path.join(D, 'live', 'test.mp4')
-test = seg(os.path.join(B, 'test.mp4'), 8.5, 31.7, [(10, 0.3, 7.6), (11, 8.0, 15.5), (12, 15.8, 19.6), (13, 19.8, 22.9)], 'intro', source=TEST)
+# beam appears at 21.0 s and goes out at 30.0 s in live/test.mp4 (seg 12.5 / 21.5); the last frame is held for the wrapped disclosure pill
+TD = 29.0
+test = seg(os.path.join(B, 'test.mp4'), 8.5, 8.5 + TD, [(10, 0.3, 12.2), (11, 12.5, 21.2), (12, 21.5, 23.6), (13, 23.9, TD - 0.3)], 'intro', source=TEST)
 TS = 12.0  # title/teaser footage: the redirect and the bard walk
 parts = [live]
 if mode == 'cap':  # title card: the captioned cut has no narration, so pills 0-1 carry the intro line and the stack (Devin Voice = ChatGPT voice)
@@ -83,7 +85,7 @@ if mode in ('nader', 'nomusic'):
     # our live check of the feature, narrated (i3 over the ask, i4 over the beam / clear / native notes), real Eira audio under it
     tw = [(os.path.join(D, 'intro', 'i3.png.wav'), 0.3), (os.path.join(D, 'intro', 'i4.png.wav'), 8.0)]
     t4 = 8.0 + I['i4.png']['dur'] + 0.6
-    test = seg(os.path.join(B, 'test-n.mp4'), 8.5, 8.5 + max(23.2, t4), [(10, 0.3, 7.6), (11, 8.0, 15.5), (12, 15.8, 19.6), (13, 19.8, max(23.2, t4) - 0.3)], tw, source=TEST)
+    test = seg(os.path.join(B, 'test-n.mp4'), 8.5, 8.5 + max(TD, t4), [(10, 0.3, 12.2), (11, 12.5, 21.2), (12, 21.5, 23.6), (13, 23.9, max(TD, t4) - 0.3)], tw, source=TEST)
     name += '-nader' + ('-nomusic' if mode == 'nomusic' else '')
 kit = os.path.join(D, name + '.mp4')
 norm = os.path.join(B, 'kit.mp4')

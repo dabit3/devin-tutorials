@@ -51,10 +51,14 @@ new-session page (`shots-pick/`) and the first 24 s of the call hold the first s
 - No physical iPhone or Android device was used anywhere in this tutorial, by us or by Devin. The video and captions say so.
 
 ## Redaction
-- OCR of every second of both finals (`ocrscan.py video <mp4> 1`, tesseract 5.5), terms: 403, fatal, git-manager, unable to access, usage limit, GITHUB_PAT. Narrated cut: 324 frames, 0 hits. Captioned cut: 283 frames, 0 hits. The no-music cut has the identical video stream as the narrated cut (same kit video, different audio), so it shares that result. The 498 session stills were also scanned before the build: 0 hits.
+- OCR of every second of both finals (`ocrscan.py video <mp4> 1`, tesseract 5.5), terms: 403, fatal, git-manager, unable to access, usage limit, GITHUB_PAT. Narrated cut: 326 frames, 0 hits. Captioned cut: 289 frames, 0 hits. The no-music cut has the identical video stream as the narrated cut (same kit video, different audio), so it shares that result. The 498 session stills were also scanned before the build: 0 hits.
 - MASK_TEXT=eigenexplorer hides the capture account's e-mail in the session stills.
 
 ## STT checks (ElevenLabs scribe_v1, `stt.py`)
 - Narrated cut (`stt-nader.json`): opens 0.6-4.5 s "Today I'll be building and testing a cross-platform mobile game just by using my voice."; 30.2-32.6 s "Devin Voice uses ChatGPT Voice under the hood."; Eira's live lines, Devin's call lines and the closing "No physical devices were tested." (321-323 s) are all transcribed. Scribe spells Hollowmere "Holomere" and Eira "Era".
 - No-music cut (`stt-nomusic.json`): same narration and call audio, same lines found.
 - Captioned cut (`stt-cap.json`): no narration in this cut; Eira's cold-open lines (8.5 s "The shrine's gone dark…", 16.3 s "Eira, walk us to the shrine"), Nader's barge-in (136.5 s "Oh, and make the marker a tall beam of light…"), Devin's "Tall beam of light." (142.4 s) and Eira's "Marker's cleared, friend." (276.9 s) are all transcribed.
+
+## Revision after the first review
+- Call stills 0200–0216 carried the Devin app's yellow maintenance warning ("Running pull commands for thequantexplorer/product-demo-apps took 2m 27s…"). It is painted over with the panel colour in the stills (originals kept locally); no timing change, same treatment as Tutorial 77.
+- The native disclosure pill is now three lines inside the safe area (caps.mjs supports `\n`). `mark_waypoint fires…` starts on the beam's first frame (21.0 s in live/test.mp4) and `Clear the marker → clear_waypoint` on the frame the beam goes out (30.0 s); the last frame is held so the disclosure pill gets ~5 s.
