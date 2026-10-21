@@ -1,7 +1,7 @@
 """Puts the live gameplay intro (real GPT-Live-1 Coach audio, captured from the Chrome build) in front of a kit cut.
 usage: python3 splice.py cap|nader|nomusic <intro.mp4>   (or: splice.py fit <mp4> to just squeeze a file under 95 MB)
-  cap:   an 8 s title (intro 42.5 s on, kit music bed, caption pills 0-1), then intro 2.5-67.6 s with its real audio + caption pills, then 21-devin-voice.mp4
-  nader: intro 42.5-66.9 s muted under Nader's three intro lines (intro/i*.png.wav), then the same 2.5-67.6 s, then 21-devin-voice-nader.mp4
+  cap:   an 8 s title (intro 66.8 s on, kit music bed, caption pills 0-1), then intro 4.5-73.5 s with its real audio + caption pills, then 21-devin-voice.mp4
+  nader: intro from 66.8 s muted under Nader's three intro lines (intro/i*.png.wav), then the same 4.5-73.5 s, then 21-devin-voice-nader.mp4
   nomusic: same as nader, onto 21-devin-voice-nader-nomusic.mp4 (kit video + voiceonly.py audio: narration and real call audio, no music or SFX)
 Caption pills come from caps.mjs (CAPPOS=top keeps them clear of the Coach panel). Output overwrites the kit cut."""
 import glob, json, os, subprocess, sys
@@ -9,10 +9,11 @@ D = os.path.dirname(os.path.abspath(__file__))
 mode, src = sys.argv[1], sys.argv[2]
 B = os.path.join(D, 'build', 'splice'); os.makedirs(B, exist_ok=True)
 CAPS = ["Today: a cross-platform game, built and tested by voice", "Built with Devin + Devin Voice, which uses ChatGPT voice under the hood",
-        "Coach Otter: a live voice sidekick on GPT-Live-1", "Talk back: “give me a creatine boost”",
-        "A background tool drops creatine while he keeps talking", "Interrupt him: “make it night time”",
-        "Another tool runs, and the city goes dark", "Change his style: chill surfer",
-        "Ask him: “what's my best score?”"]
+        "Coach Otto: a live voice sidekick on GPT-Live-1", "Talk back: “give me a creatine rush”",
+        "Creatine Rush: the otter goes giant and smashes traffic", "Interrupt him: “wait, wait, freeze time”",
+        "Freeze Time: every car and cable car stops", "“Call me a seagull taxi”",
+        "Seagull Taxi: flown ten rows ahead", "“Surf's up. Give me a surfboard.”",
+        "Surfboard: ride across open bay water"]
 subprocess.run(['node', os.path.join(D, 'caps.mjs'), B, *CAPS], env={**os.environ, 'CAPPOS': 'top'}, check=True)
 cap = lambda i: os.path.join(B, f'cap{i}.png')
 X264 = ['-c:v', 'libx264', '-profile:v', 'high', '-preset', 'slow', '-crf', '18', '-tune', 'animation', '-g', '120', '-bf', '2', '-pix_fmt', 'yuv420p',
@@ -56,10 +57,11 @@ def seg(out, ss, to, caps, audio):
     subprocess.run(cmd + ['-filter_complex', f, '-map', '[vo]', '-map', '[ao]', *X264, *AAC, '-t', str(dur), out], check=True)
     return out
 # real Coach run (segment time = intro time): STT of the intro audio sets these windows
-S0 = 2.5  # skip the first seconds of 'connecting'
-live = seg(os.path.join(B, 'live.mp4'), S0, 67.6,
-           [(i, a - S0, b - S0) for i, a, b in [(2, 2.8, 9.9), (3, 11.0, 14.4), (4, 14.6, 27.0), (5, 35.9, 39.0), (6, 39.2, 46.0), (7, 52.6, 58.6), (8, 58.8, 67.4)]], 'intro')
-TS = 42.5  # title/teaser footage: night-mode gameplay (night from ~40.3 s) that ends before the run's only death (~68 s)
+S0 = 4.5  # skip the first seconds of 'connecting'
+live = seg(os.path.join(B, 'live.mp4'), S0, 73.5,
+           [(i, a - S0, b - S0) for i, a, b in [(2, 5.7, 11.4), (3, 12.3, 17.6), (4, 18.0, 32.4), (5, 33.2, 36.3), (6, 36.5, 45.8),
+                                                (7, 46.0, 50.8), (8, 51.0, 59.9), (9, 60.1, 65.4), (10, 65.6, 73.3)]], 'intro')
+TS = 66.8  # title/teaser footage: the surfboard run at the end of the take (no deaths in the take)
 parts = [live]
 if mode == 'cap':  # title card: the captioned cut has no narration, so pills 0-1 carry the intro line and the stack (Devin Voice = ChatGPT voice)
     MB = os.path.join(B, 'music'); os.makedirs(os.path.join(MB, 'build'), exist_ok=True)

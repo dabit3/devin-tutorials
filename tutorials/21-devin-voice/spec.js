@@ -43,47 +43,47 @@ window.SPEC = {
     },
     "0010.png": {
       "cap": "Devin picks up and says hi",
-      "hold": 0.6917,
+      "hold": 0.5833,
       "clip": "call1"
     },
-    "0025.png": {
+    "0027.png": {
       "cap": "Pitch the game: Jumpy Otter, one Expo codebase",
-      "hold": 0.525
+      "hold": 0.5258
     },
-    "0047.png": {
+    "0071.png": {
       "cap": "Add Coach Otto, a voice sidekick built on GPT-Live-1",
+      "hold": 0.55
+    },
+    "0120.png": {
+      "cap": "Interrupt mid-answer: voice requests should change the gameplay",
+      "hold": 0.5533
+    },
+    "0158.png": {
+      "cap": "Docs tip: ask Devin to speak faster",
+      "hold": 0.5525
+    },
+    "0214.png": {
+      "cap": "Keep the key on a server; test web, iPhone, and Android on Ubuntu",
       "hold": 0.5417
     },
-    "0114.png": {
-      "cap": "Interrupt mid-answer: Otto runs game tools and switches style",
-      "hold": 0.555
-    },
-    "0144.png": {
-      "cap": "Docs tip: ask Devin to speak faster",
-      "hold": 0.5458
-    },
-    "0181.png": {
-      "cap": "Keep the key on a server; test web, iPhone, and Android on Ubuntu",
+    "0256.png": {
+      "cap": "Then let Devin start building",
       "hold": 0.5817
     },
-    "0221.png": {
-      "cap": "Then let Devin start building",
-      "hold": 0.56
-    },
-    "0334.png": {
+    "0430.png": {
       "cap": "Same session: the call picks up where it left off",
-      "hold": 0.9258,
+      "hold": 0.5583,
       "clip": "call2"
     },
-    "0340.png": {
+    "0439.png": {
       "cap": "Ask how the game's coming along",
-      "hold": 0.9508
+      "hold": 0.59
     },
-    "0345.png": {
+    "0458.png": {
       "cap": "Interrupt Devin mid-sentence",
-      "hold": 0.9283
+      "hold": 0.5608
     },
-    "0135.png": {
+    "0151.png": {
       "hl": [
         {
           "x": 308.75,
@@ -99,92 +99,47 @@ window.SPEC = {
         }
       ],
       "cap": "Mute your mic, or silence Devin, any time",
-      "hold": 0.57
+      "hold": 0.6375
     },
-    "0136.png": {
+    "0152.png": {
       "hl": "keep",
-      "hold": 0.5558
+      "hold": 0.5408
     },
-    "0137.png": {
+    "0153.png": {
       "hl": "keep",
-      "hold": 0.5458
+      "hold": 0.5467
     },
-    "0138.png": {
+    "0154.png": {
       "hl": "keep",
-      "hold": 0.5517
+      "hold": 0.5592
     },
-    "0139.png": {
+    "0155.png": {
       "hl": "keep",
-      "hold": 0.5525
+      "hold": 0.5783
     },
-    "0140.png": {
+    "0156.png": {
       "hl": "keep",
-      "hold": 0.5558
+      "hold": 0.5483
     },
-    "0141.png": {
+    "0157.png": {
       "hl": "keep",
-      "hold": 0.5658
+      "hold": 0.5925
     },
-    "0215.png": {
+    "0250.png": {
       "cap": "Every turn lands in the session history",
-      "hold": 0.5742
+      "hold": 0.5617
     },
-    "0254.png": {
+    "0269.png": {
       "cap": "End the call; Devin keeps working",
       "hl": true
     },
-    "0255.png": {
+    "0270.png": {
       "hold": 1.6,
       "cap": "Devin builds the game and wires up GPT-Live-1",
-      "vo": "Devin sets up the Expo project, builds the voxel city, and connects Coach Otter to GPT-Live-1 through a small server that keeps the API key."
-    },
-    "0258.png": {
-      "badge": "Sped up"
-    },
-    "0259.png": {
-      "skip": true
-    },
-    "0260.png": {
-      "skip": true
-    },
-    "0261.png": {
-      "skip": true
-    },
-    "0262.png": {
-      "skip": true
-    },
-    "0263.png": {
-      "skip": true
-    },
-    "0264.png": {
-      "skip": true
-    },
-    "0265.png": {
-      "skip": true
-    },
-    "0266.png": {
-      "skip": true
-    },
-    "0267.png": {
-      "skip": true
-    },
-    "0268.png": {
-      "skip": true
-    },
-    "0269.png": {
-      "skip": true
-    },
-    "0270.png": {
-      "skip": true
-    },
-    "0271.png": {
-      "skip": true
-    },
-    "0272.png": {
-      "skip": true
+      "vo": "Devin sets up the Expo project, builds the San Francisco board, and turns each power-up into a tool Coach Otto can call through GPT-Live-1. A small server keeps the API key."
     },
     "0273.png": {
-      "skip": true
+      "badge": "Sped up"
     },
     "0274.png": {
       "skip": true
@@ -361,14 +316,82 @@ window.SPEC = {
       "skip": true
     },
     "0332.png": {
-      "hold": 1.6,
-      "hl": true,
-      "cap": "Mid-build: rejoin the call from inside the session",
-      "vo": "Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along."
+      "skip": true
+    },
+    "0333.png": {
+      "skip": true
+    },
+    "0334.png": {
+      "skip": true
+    },
+    "0335.png": {
+      "skip": true
+    },
+    "0336.png": {
+      "skip": true
+    },
+    "0337.png": {
+      "skip": true
+    },
+    "0338.png": {
+      "skip": true
+    },
+    "0339.png": {
+      "skip": true
+    },
+    "0340.png": {
+      "skip": true
+    },
+    "0341.png": {
+      "skip": true
+    },
+    "0342.png": {
+      "skip": true
+    },
+    "0343.png": {
+      "skip": true
+    },
+    "0344.png": {
+      "skip": true
+    },
+    "0345.png": {
+      "skip": true
+    },
+    "0346.png": {
+      "skip": true
+    },
+    "0347.png": {
+      "skip": true
+    },
+    "0348.png": {
+      "skip": true
+    },
+    "0349.png": {
+      "skip": true
+    },
+    "0350.png": {
+      "skip": true
+    },
+    "0351.png": {
+      "skip": true
+    },
+    "0352.png": {
+      "skip": true
+    },
+    "0353.png": {
+      "skip": true
+    },
+    "0354.png": {
+      "skip": true
+    },
+    "0355.png": {
+      "skip": true
+    },
+    "0356.png": {
+      "skip": true
     },
     "0357.png": {
-      "hl": true,
-      "cap": "End the call again"
+      "skip": true
     },
     "0358.png": {
       "skip": true
@@ -581,115 +604,14 @@ window.SPEC = {
       "skip": true
     },
     "0428.png": {
-      "skip": true
-    },
-    "0429.png": {
-      "skip": true
-    },
-    "0430.png": {
-      "skip": true
-    },
-    "0431.png": {
-      "skip": true
-    },
-    "0432.png": {
-      "skip": true
-    },
-    "0433.png": {
-      "skip": true
-    },
-    "0434.png": {
-      "skip": true
-    },
-    "0435.png": {
-      "skip": true
-    },
-    "0436.png": {
-      "skip": true
-    },
-    "0437.png": {
-      "skip": true
-    },
-    "0438.png": {
-      "skip": true
-    },
-    "0439.png": {
-      "skip": true
-    },
-    "0440.png": {
-      "skip": true
-    },
-    "0441.png": {
-      "skip": true
-    },
-    "0442.png": {
-      "skip": true
-    },
-    "0443.png": {
-      "skip": true
-    },
-    "0444.png": {
-      "skip": true
-    },
-    "0445.png": {
-      "skip": true
-    },
-    "0446.png": {
-      "skip": true
-    },
-    "0447.png": {
-      "skip": true
-    },
-    "0448.png": {
-      "skip": true
-    },
-    "0449.png": {
-      "skip": true
-    },
-    "0450.png": {
-      "skip": true
-    },
-    "0451.png": {
-      "skip": true
-    },
-    "0452.png": {
-      "skip": true
-    },
-    "0453.png": {
-      "skip": true
-    },
-    "0454.png": {
-      "skip": true
-    },
-    "0455.png": {
-      "skip": true
-    },
-    "0456.png": {
-      "skip": true
-    },
-    "0457.png": {
-      "skip": true
-    },
-    "0458.png": {
-      "skip": true
-    },
-    "0459.png": {
-      "skip": true
-    },
-    "0460.png": {
-      "skip": true
-    },
-    "0461.png": {
-      "skip": true
-    },
-    "0462.png": {
-      "skip": true
-    },
-    "0463.png": {
-      "skip": true
+      "hold": 1.6,
+      "hl": true,
+      "cap": "Mid-build: rejoin the call from inside the session",
+      "vo": "Mid-build, you can rejoin the call from inside the session and ask how the game's coming along."
     },
     "0464.png": {
-      "skip": true
+      "hl": true,
+      "cap": "End the call again"
     },
     "0465.png": {
       "skip": true
@@ -797,7 +719,9 @@ window.SPEC = {
       "skip": true
     },
     "0500.png": {
-      "skip": true
+      "hold": 1.4,
+      "cap": "Computer Use plays the web build in Chrome",
+      "vo": "Then Devin plays the web build in Chrome with Computer Use."
     },
     "0501.png": {
       "skip": true
@@ -839,9 +763,7 @@ window.SPEC = {
       "skip": true
     },
     "0514.png": {
-      "hold": 2.0,
-      "cap": "A second Devin on Ubuntu tests Android",
-      "vo": "Devin starts a second Devin on Ubuntu to test Android. Its update says Coach Otter already talks on the web, and runs tools while he talks."
+      "skip": true
     },
     "0515.png": {
       "skip": true
@@ -919,7 +841,9 @@ window.SPEC = {
       "skip": true
     },
     "0540.png": {
-      "skip": true
+      "hold": 1.4,
+      "cap": "iPhone simulator: power-ups tested with the buttons",
+      "vo": "On the iPhone simulator, it taps the power-up buttons, since there's no microphone to talk through."
     },
     "0541.png": {
       "skip": true
@@ -1036,85 +960,13 @@ window.SPEC = {
       "skip": true
     },
     "0579.png": {
-      "skip": true
-    },
-    "0580.png": {
-      "skip": true
-    },
-    "0581.png": {
-      "skip": true
+      "hold": 1.6,
+      "cap": "Every test run comes with a recording and checks",
+      "vo": "Every test comes with a recording and pass fail checks."
     },
     "0582.png": {
-      "skip": true
-    },
-    "0583.png": {
-      "skip": true
-    },
-    "0584.png": {
-      "skip": true
-    },
-    "0585.png": {
-      "skip": true
-    },
-    "0586.png": {
-      "skip": true
-    },
-    "0587.png": {
-      "skip": true
-    },
-    "0588.png": {
-      "skip": true
-    },
-    "0589.png": {
-      "skip": true
-    },
-    "0590.png": {
-      "skip": true
-    },
-    "0591.png": {
-      "skip": true
-    },
-    "0592.png": {
-      "skip": true
-    },
-    "0593.png": {
-      "skip": true
-    },
-    "0594.png": {
-      "skip": true
-    },
-    "0595.png": {
-      "skip": true
-    },
-    "0596.png": {
-      "skip": true
-    },
-    "0597.png": {
-      "skip": true
-    },
-    "0598.png": {
-      "skip": true
-    },
-    "0599.png": {
-      "skip": true
-    },
-    "0600.png": {
-      "skip": true
-    },
-    "0601.png": {
-      "skip": true
-    },
-    "0602.png": {
-      "skip": true
-    },
-    "0603.png": {
-      "skip": true
-    },
-    "0604.png": {
-      "skip": true
-    },
-    "0605.png": {
-      "skip": true
+      "cap": "Chrome: 9 passed, 1 failed",
+      "vo": "In Chrome, all four power-ups work by voice. The first voice attempt stalled, so one check failed, and a fresh browser fixed it."
     },
     "0606.png": {
       "skip": true
@@ -1195,21 +1047,45 @@ window.SPEC = {
       "skip": true
     },
     "0632.png": {
+      "hold": 1.2,
+      "cap": "iPhone: 4 passed, voice untested",
+      "vo": "On the iPhone, gameplay and all four power-up buttons pass. Voice is left untested there."
+    },
+    "0659.png": {
       "skip": true
     },
-    "0633.png": {
+    "0660.png": {
       "skip": true
     },
-    "0634.png": {
+    "0661.png": {
       "skip": true
     },
-    "0635.png": {
+    "0662.png": {
       "skip": true
     },
-    "0636.png": {
-      "hold": 1.4,
-      "cap": "Computer Use plays the web build in Chrome",
-      "vo": "Then it plays the web build in Chrome with Computer Use."
+    "0663.png": {
+      "skip": true
+    },
+    "0664.png": {
+      "skip": true
+    },
+    "0665.png": {
+      "skip": true
+    },
+    "0666.png": {
+      "skip": true
+    },
+    "0667.png": {
+      "skip": true
+    },
+    "0668.png": {
+      "skip": true
+    },
+    "0669.png": {
+      "skip": true
+    },
+    "0670.png": {
+      "skip": true
     },
     "0671.png": {
       "skip": true
@@ -1254,54 +1130,9 @@ window.SPEC = {
       "skip": true
     },
     "0685.png": {
-      "skip": true
-    },
-    "0686.png": {
-      "skip": true
-    },
-    "0687.png": {
-      "skip": true
-    },
-    "0688.png": {
-      "skip": true
-    },
-    "0689.png": {
-      "skip": true
-    },
-    "0690.png": {
-      "skip": true
-    },
-    "0691.png": {
-      "skip": true
-    },
-    "0692.png": {
-      "skip": true
-    },
-    "0693.png": {
-      "skip": true
-    },
-    "0694.png": {
-      "skip": true
-    },
-    "0695.png": {
-      "skip": true
-    },
-    "0696.png": {
-      "skip": true
-    },
-    "0697.png": {
-      "skip": true
-    },
-    "0698.png": {
-      "skip": true
-    },
-    "0699.png": {
-      "skip": true
-    },
-    "0700.png": {
       "hold": 1.4,
-      "cap": "iPhone simulator: Coach tested with typed input",
-      "vo": "On the iPhone simulator, audio doesn't work on this Mac, so Devin types to Coach instead of talking."
+      "cap": "Android, tested by an Ubuntu Devin: 10 passed, 1 untested",
+      "vo": "A second Devin on Ubuntu ran the game on an Android emulator. Ten checks pass, and spoken voice is left untested."
     },
     "0701.png": {
       "skip": true
@@ -1384,1951 +1215,837 @@ window.SPEC = {
     "0727.png": {
       "skip": true
     },
-    "0728.png": {
-      "skip": true
-    },
-    "0729.png": {
-      "skip": true
-    },
     "0730.png": {
-      "skip": true
-    },
-    "0731.png": {
-      "skip": true
-    },
-    "0732.png": {
-      "skip": true
-    },
-    "0734.png": {
-      "skip": true
-    },
-    "0735.png": {
-      "skip": true
-    },
-    "0736.png": {
-      "skip": true
-    },
-    "0737.png": {
-      "skip": true
-    },
-    "0738.png": {
-      "skip": true
-    },
-    "0739.png": {
-      "skip": true
-    },
-    "0740.png": {
-      "skip": true
-    },
-    "0741.png": {
-      "skip": true
-    },
-    "0742.png": {
-      "skip": true
-    },
-    "0743.png": {
-      "skip": true
-    },
-    "0744.png": {
-      "skip": true
-    },
-    "0746.png": {
-      "skip": true
-    },
-    "0747.png": {
-      "skip": true
-    },
-    "0748.png": {
-      "skip": true
-    },
-    "0749.png": {
-      "skip": true
-    },
-    "0750.png": {
-      "skip": true
-    },
-    "0752.png": {
-      "skip": true
-    },
-    "0753.png": {
-      "skip": true
-    },
-    "0754.png": {
-      "skip": true
-    },
-    "0755.png": {
-      "skip": true
-    },
-    "0756.png": {
-      "skip": true
-    },
-    "0757.png": {
-      "skip": true
-    },
-    "0758.png": {
-      "skip": true
-    },
-    "0759.png": {
-      "skip": true
-    },
-    "0760.png": {
-      "skip": true
-    },
-    "0761.png": {
-      "skip": true
-    },
-    "0762.png": {
-      "skip": true
-    },
-    "0763.png": {
-      "skip": true
-    },
-    "0764.png": {
-      "skip": true
-    },
-    "0765.png": {
-      "skip": true
-    },
-    "0766.png": {
-      "skip": true
-    },
-    "0767.png": {
-      "skip": true
-    },
-    "0768.png": {
-      "skip": true
-    },
-    "0769.png": {
-      "skip": true
-    },
-    "0770.png": {
-      "skip": true
-    },
-    "0771.png": {
-      "skip": true
-    },
-    "0772.png": {
-      "skip": true
-    },
-    "0773.png": {
-      "skip": true
-    },
-    "0774.png": {
-      "skip": true
-    },
-    "0775.png": {
-      "skip": true
-    },
-    "0776.png": {
-      "skip": true
-    },
-    "0777.png": {
-      "skip": true
-    },
-    "0778.png": {
-      "skip": true
-    },
-    "0779.png": {
-      "skip": true
-    },
-    "0780.png": {
-      "skip": true
-    },
-    "0781.png": {
-      "skip": true
-    },
-    "0782.png": {
-      "skip": true
-    },
-    "0783.png": {
-      "skip": true
-    },
-    "0784.png": {
-      "skip": true
-    },
-    "0785.png": {
-      "skip": true
-    },
-    "0786.png": {
-      "skip": true
-    },
-    "0787.png": {
-      "skip": true
-    },
-    "0788.png": {
-      "skip": true
-    },
-    "0789.png": {
-      "skip": true
-    },
-    "0790.png": {
-      "skip": true
-    },
-    "0791.png": {
-      "skip": true
-    },
-    "0792.png": {
-      "skip": true
-    },
-    "0793.png": {
-      "skip": true
-    },
-    "0794.png": {
-      "skip": true
-    },
-    "0795.png": {
-      "skip": true
-    },
-    "0796.png": {
-      "skip": true
-    },
-    "0797.png": {
-      "skip": true
-    },
-    "0798.png": {
-      "skip": true
-    },
-    "0799.png": {
-      "skip": true
-    },
-    "0800.png": {
-      "skip": true
-    },
-    "0801.png": {
-      "skip": true
-    },
-    "0802.png": {
-      "skip": true
-    },
-    "0803.png": {
-      "skip": true
-    },
-    "0804.png": {
-      "skip": true
-    },
-    "0805.png": {
-      "skip": true
-    },
-    "0806.png": {
-      "skip": true
-    },
-    "0807.png": {
-      "skip": true
-    },
-    "0808.png": {
-      "skip": true
-    },
-    "0809.png": {
-      "skip": true
-    },
-    "0810.png": {
-      "skip": true
-    },
-    "0811.png": {
-      "skip": true
-    },
-    "0812.png": {
-      "skip": true
-    },
-    "0813.png": {
-      "skip": true
-    },
-    "0814.png": {
-      "skip": true
-    },
-    "0815.png": {
-      "skip": true
-    },
-    "0816.png": {
-      "skip": true
-    },
-    "0817.png": {
-      "skip": true
-    },
-    "0818.png": {
-      "skip": true
-    },
-    "0819.png": {
-      "skip": true
-    },
-    "0820.png": {
-      "skip": true
-    },
-    "0821.png": {
-      "skip": true
-    },
-    "0822.png": {
-      "skip": true
-    },
-    "0823.png": {
-      "skip": true
-    },
-    "0824.png": {
-      "skip": true
-    },
-    "0825.png": {
-      "skip": true
-    },
-    "0826.png": {
-      "skip": true
-    },
-    "0827.png": {
-      "skip": true
-    },
-    "0828.png": {
-      "skip": true
-    },
-    "0829.png": {
-      "skip": true
-    },
-    "0830.png": {
-      "skip": true
-    },
-    "0831.png": {
-      "skip": true
-    },
-    "0832.png": {
-      "skip": true
-    },
-    "0833.png": {
-      "skip": true
-    },
-    "0834.png": {
-      "skip": true
-    },
-    "0835.png": {
-      "skip": true
-    },
-    "0836.png": {
-      "skip": true
-    },
-    "0837.png": {
-      "skip": true
-    },
-    "0838.png": {
-      "skip": true
-    },
-    "0839.png": {
-      "skip": true
-    },
-    "0840.png": {
-      "skip": true
-    },
-    "0841.png": {
-      "skip": true
-    },
-    "0842.png": {
-      "skip": true
-    },
-    "0843.png": {
-      "skip": true
-    },
-    "0844.png": {
-      "skip": true
-    },
-    "0845.png": {
-      "skip": true
-    },
-    "0846.png": {
-      "skip": true
-    },
-    "0847.png": {
-      "skip": true
-    },
-    "0848.png": {
-      "skip": true
-    },
-    "0849.png": {
-      "skip": true
-    },
-    "0850.png": {
-      "skip": true
-    },
-    "0851.png": {
-      "skip": true
-    },
-    "0852.png": {
-      "skip": true
-    },
-    "0853.png": {
-      "skip": true
-    },
-    "0854.png": {
-      "skip": true
-    },
-    "0855.png": {
-      "skip": true
-    },
-    "0856.png": {
-      "skip": true
-    },
-    "0857.png": {
-      "skip": true
-    },
-    "0858.png": {
-      "skip": true
-    },
-    "0859.png": {
-      "skip": true
-    },
-    "0860.png": {
-      "skip": true
-    },
-    "0861.png": {
-      "skip": true
-    },
-    "0862.png": {
-      "skip": true
-    },
-    "0863.png": {
-      "skip": true
-    },
-    "0864.png": {
-      "skip": true
-    },
-    "0865.png": {
-      "skip": true
-    },
-    "0866.png": {
-      "skip": true
-    },
-    "0867.png": {
-      "skip": true
-    },
-    "0868.png": {
-      "skip": true
-    },
-    "0869.png": {
-      "skip": true
-    },
-    "0870.png": {
-      "skip": true
-    },
-    "0871.png": {
-      "skip": true
-    },
-    "0872.png": {
-      "skip": true
-    },
-    "0873.png": {
-      "skip": true
-    },
-    "0874.png": {
-      "skip": true
-    },
-    "0875.png": {
-      "skip": true
-    },
-    "0876.png": {
-      "skip": true
-    },
-    "0877.png": {
-      "skip": true
-    },
-    "0878.png": {
-      "skip": true
-    },
-    "0879.png": {
-      "skip": true
-    },
-    "0880.png": {
-      "skip": true
-    },
-    "0881.png": {
-      "skip": true
-    },
-    "0882.png": {
-      "skip": true
-    },
-    "0883.png": {
-      "skip": true
-    },
-    "0884.png": {
-      "skip": true
-    },
-    "0885.png": {
-      "skip": true
-    },
-    "0886.png": {
-      "skip": true
-    },
-    "0887.png": {
-      "skip": true
-    },
-    "0888.png": {
-      "skip": true
-    },
-    "0889.png": {
-      "skip": true
-    },
-    "0890.png": {
-      "skip": true
-    },
-    "0891.png": {
-      "skip": true
-    },
-    "0892.png": {
-      "skip": true
-    },
-    "0893.png": {
-      "skip": true
-    },
-    "0894.png": {
-      "skip": true
-    },
-    "0895.png": {
-      "skip": true
-    },
-    "0896.png": {
-      "skip": true
-    },
-    "0897.png": {
-      "skip": true
-    },
-    "0898.png": {
-      "skip": true
-    },
-    "0899.png": {
-      "skip": true
-    },
-    "0900.png": {
-      "skip": true
-    },
-    "0901.png": {
-      "skip": true
-    },
-    "0902.png": {
-      "skip": true
-    },
-    "0903.png": {
-      "skip": true
-    },
-    "0904.png": {
-      "skip": true
-    },
-    "0905.png": {
-      "skip": true
-    },
-    "0906.png": {
-      "skip": true
-    },
-    "0907.png": {
-      "skip": true
-    },
-    "0908.png": {
-      "skip": true
-    },
-    "0909.png": {
-      "skip": true
-    },
-    "0910.png": {
-      "skip": true
-    },
-    "0911.png": {
-      "skip": true
-    },
-    "0912.png": {
-      "skip": true
-    },
-    "0913.png": {
-      "skip": true
-    },
-    "0914.png": {
-      "skip": true
-    },
-    "0915.png": {
-      "skip": true
-    },
-    "0916.png": {
-      "skip": true
-    },
-    "0917.png": {
-      "skip": true
-    },
-    "0918.png": {
-      "skip": true
-    },
-    "0919.png": {
-      "skip": true
-    },
-    "0920.png": {
-      "skip": true
-    },
-    "0921.png": {
-      "skip": true
-    },
-    "0922.png": {
-      "skip": true
-    },
-    "0923.png": {
-      "skip": true
-    },
-    "0924.png": {
-      "skip": true
-    },
-    "0925.png": {
-      "skip": true
-    },
-    "0926.png": {
-      "skip": true
-    },
-    "0927.png": {
-      "skip": true
-    },
-    "0928.png": {
-      "skip": true
-    },
-    "0929.png": {
-      "skip": true
-    },
-    "0930.png": {
-      "skip": true
-    },
-    "0931.png": {
-      "skip": true
-    },
-    "0932.png": {
-      "skip": true
-    },
-    "0933.png": {
-      "skip": true
-    },
-    "0934.png": {
-      "skip": true
-    },
-    "0935.png": {
-      "skip": true
-    },
-    "0936.png": {
-      "skip": true
-    },
-    "0937.png": {
-      "skip": true
-    },
-    "0938.png": {
-      "skip": true
-    },
-    "0939.png": {
-      "skip": true
-    },
-    "0940.png": {
-      "skip": true
-    },
-    "0941.png": {
-      "skip": true
-    },
-    "0942.png": {
-      "skip": true
-    },
-    "0943.png": {
-      "skip": true
-    },
-    "0944.png": {
-      "skip": true
-    },
-    "0945.png": {
-      "skip": true
-    },
-    "0946.png": {
-      "skip": true
-    },
-    "0947.png": {
-      "skip": true
-    },
-    "0948.png": {
-      "skip": true
-    },
-    "0949.png": {
-      "skip": true
-    },
-    "0950.png": {
-      "skip": true
-    },
-    "0951.png": {
-      "skip": true
-    },
-    "0952.png": {
-      "skip": true
-    },
-    "0953.png": {
-      "skip": true
-    },
-    "0954.png": {
-      "skip": true
-    },
-    "0955.png": {
-      "skip": true
-    },
-    "0956.png": {
-      "skip": true
-    },
-    "0957.png": {
-      "skip": true
-    },
-    "0958.png": {
-      "skip": true
-    },
-    "0959.png": {
-      "skip": true
-    },
-    "0960.png": {
-      "skip": true
-    },
-    "0961.png": {
-      "skip": true
-    },
-    "0962.png": {
-      "skip": true
-    },
-    "0963.png": {
-      "skip": true
-    },
-    "0964.png": {
-      "skip": true
-    },
-    "0965.png": {
-      "skip": true
-    },
-    "0966.png": {
-      "skip": true
-    },
-    "0967.png": {
-      "skip": true
-    },
-    "0968.png": {
-      "skip": true
-    },
-    "0969.png": {
-      "skip": true
-    },
-    "0970.png": {
-      "skip": true
-    },
-    "0971.png": {
-      "skip": true
-    },
-    "0972.png": {
-      "skip": true
-    },
-    "0973.png": {
-      "skip": true
-    },
-    "0974.png": {
-      "skip": true
-    },
-    "0975.png": {
-      "skip": true
-    },
-    "0976.png": {
-      "skip": true
-    },
-    "0977.png": {
-      "skip": true
-    },
-    "0978.png": {
-      "skip": true
-    },
-    "0979.png": {
-      "skip": true
-    },
-    "0980.png": {
-      "skip": true
-    },
-    "0981.png": {
-      "skip": true
-    },
-    "0982.png": {
-      "skip": true
-    },
-    "0983.png": {
-      "skip": true
-    },
-    "0984.png": {
-      "skip": true
-    },
-    "0985.png": {
-      "skip": true
-    },
-    "0986.png": {
-      "skip": true
-    },
-    "0987.png": {
-      "skip": true
-    },
-    "0988.png": {
-      "skip": true
-    },
-    "0989.png": {
-      "skip": true
-    },
-    "0990.png": {
-      "skip": true
-    },
-    "0991.png": {
-      "skip": true
-    },
-    "0992.png": {
-      "skip": true
-    },
-    "0993.png": {
-      "skip": true
-    },
-    "0994.png": {
-      "skip": true
-    },
-    "0995.png": {
-      "skip": true
-    },
-    "0996.png": {
-      "skip": true
-    },
-    "0997.png": {
-      "skip": true
-    },
-    "0998.png": {
-      "skip": true
-    },
-    "0999.png": {
-      "skip": true
-    },
-    "1000.png": {
-      "skip": true
-    },
-    "1001.png": {
-      "skip": true
-    },
-    "1002.png": {
-      "skip": true
-    },
-    "1003.png": {
-      "skip": true
-    },
-    "1004.png": {
-      "skip": true
-    },
-    "1005.png": {
-      "skip": true
-    },
-    "1006.png": {
-      "skip": true
-    },
-    "1007.png": {
-      "skip": true
-    },
-    "1008.png": {
-      "skip": true
-    },
-    "1009.png": {
-      "skip": true
-    },
-    "1010.png": {
-      "skip": true
-    },
-    "1011.png": {
-      "skip": true
-    },
-    "1012.png": {
-      "skip": true
-    },
-    "1013.png": {
-      "skip": true
-    },
-    "1014.png": {
-      "skip": true
-    },
-    "1015.png": {
-      "skip": true
-    },
-    "1016.png": {
-      "skip": true
-    },
-    "1017.png": {
-      "skip": true
-    },
-    "1018.png": {
-      "skip": true
-    },
-    "1019.png": {
-      "skip": true
-    },
-    "1020.png": {
-      "skip": true
-    },
-    "1021.png": {
-      "skip": true
-    },
-    "1022.png": {
-      "skip": true
-    },
-    "1023.png": {
-      "skip": true
-    },
-    "1024.png": {
-      "skip": true
-    },
-    "1025.png": {
-      "skip": true
-    },
-    "1026.png": {
-      "skip": true
-    },
-    "1027.png": {
-      "skip": true
-    },
-    "1028.png": {
-      "skip": true
-    },
-    "1029.png": {
-      "skip": true
-    },
-    "1030.png": {
-      "skip": true
-    },
-    "1031.png": {
-      "skip": true
-    },
-    "1032.png": {
-      "skip": true
-    },
-    "1033.png": {
-      "skip": true
-    },
-    "1034.png": {
-      "skip": true
-    },
-    "1035.png": {
-      "skip": true
-    },
-    "1036.png": {
-      "skip": true
-    },
-    "1037.png": {
-      "skip": true
-    },
-    "1038.png": {
-      "skip": true
-    },
-    "1039.png": {
-      "skip": true
-    },
-    "1040.png": {
-      "skip": true
-    },
-    "1041.png": {
-      "skip": true
-    },
-    "1042.png": {
-      "skip": true
-    },
-    "1043.png": {
-      "skip": true
-    },
-    "1044.png": {
-      "skip": true
-    },
-    "1045.png": {
-      "skip": true
-    },
-    "1046.png": {
-      "skip": true
-    },
-    "1047.png": {
-      "skip": true
-    },
-    "1048.png": {
-      "skip": true
-    },
-    "1049.png": {
-      "skip": true
-    },
-    "1050.png": {
-      "skip": true
-    },
-    "1051.png": {
-      "skip": true
-    },
-    "1052.png": {
-      "skip": true
-    },
-    "1053.png": {
-      "skip": true
-    },
-    "1054.png": {
-      "skip": true
-    },
-    "1055.png": {
-      "skip": true
-    },
-    "1056.png": {
-      "skip": true
-    },
-    "1057.png": {
-      "skip": true
-    },
-    "1058.png": {
-      "skip": true
-    },
-    "1059.png": {
-      "skip": true
-    },
-    "1060.png": {
-      "skip": true
-    },
-    "1061.png": {
-      "skip": true
-    },
-    "1062.png": {
-      "skip": true
-    },
-    "1063.png": {
-      "skip": true
-    },
-    "1064.png": {
-      "skip": true
-    },
-    "1065.png": {
-      "skip": true
-    },
-    "1066.png": {
-      "skip": true
-    },
-    "1067.png": {
-      "skip": true
-    },
-    "1068.png": {
-      "skip": true
-    },
-    "1069.png": {
-      "skip": true
-    },
-    "1070.png": {
-      "skip": true
-    },
-    "1071.png": {
-      "skip": true
-    },
-    "1072.png": {
-      "skip": true
-    },
-    "1073.png": {
-      "skip": true
-    },
-    "1074.png": {
-      "skip": true
-    },
-    "1075.png": {
-      "skip": true
-    },
-    "1076.png": {
-      "skip": true
-    },
-    "1077.png": {
-      "skip": true
-    },
-    "1078.png": {
-      "skip": true
-    },
-    "1079.png": {
-      "skip": true
-    },
-    "1080.png": {
-      "skip": true
-    },
-    "1081.png": {
-      "skip": true
-    },
-    "1082.png": {
-      "skip": true
-    },
-    "1083.png": {
-      "skip": true
-    },
-    "1084.png": {
-      "skip": true
-    },
-    "1085.png": {
-      "skip": true
-    },
-    "1086.png": {
-      "skip": true
-    },
-    "1087.png": {
-      "skip": true
-    },
-    "1088.png": {
-      "skip": true
-    },
-    "1089.png": {
-      "skip": true
-    },
-    "1090.png": {
-      "skip": true
-    },
-    "1091.png": {
-      "skip": true
-    },
-    "1092.png": {
-      "skip": true
-    },
-    "1093.png": {
-      "skip": true
-    },
-    "1094.png": {
-      "hold": 1.6,
-      "cap": "Every test run comes with a recording and checks",
-      "vo": "Every test comes with a recording and pass fail checks."
-    },
-    "1097.png": {
-      "cap": "Chrome: 11 passed, 1 untested",
-      "vo": "In Chrome, Coach connects, runs the boost, night, and best score tools, and switches style. Eleven checks pass, and one is left untested."
-    },
-    "1121.png": {
-      "skip": true
-    },
-    "1122.png": {
-      "skip": true
-    },
-    "1123.png": {
-      "skip": true
-    },
-    "1124.png": {
-      "skip": true
-    },
-    "1125.png": {
-      "skip": true
-    },
-    "1126.png": {
-      "skip": true
-    },
-    "1127.png": {
-      "hold": 1.2,
-      "cap": "iPhone: 8 passed, with typed input",
-      "vo": "On the iPhone, the tools, both styles, and reconnecting all work, and eight checks pass. The voice you heard at the start ran in Chrome."
-    },
-    "1154.png": {
-      "skip": true
-    },
-    "1155.png": {
-      "skip": true
-    },
-    "1156.png": {
-      "skip": true
-    },
-    "1157.png": {
-      "skip": true
-    },
-    "1158.png": {
-      "skip": true
-    },
-    "1159.png": {
-      "skip": true
-    },
-    "1160.png": {
-      "hold": 1.4,
-      "cap": "Android, tested by the Ubuntu Devin: 12 passed",
-      "vo": "The Ubuntu Devin ran the game on an Android emulator with software rendering. All twelve checks pass, Coach tools included."
-    },
-    "1188.png": {
-      "skip": true
-    },
-    "1189.png": {
-      "skip": true
-    },
-    "1190.png": {
-      "skip": true
-    },
-    "1191.png": {
-      "skip": true
-    },
-    "1192.png": {
-      "skip": true
-    },
-    "1193.png": {
-      "skip": true
-    },
-    "1194.png": {
-      "skip": true
-    },
-    "1195.png": {
-      "skip": true
-    },
-    "1196.png": {
-      "skip": true
-    },
-    "1197.png": {
-      "skip": true
-    },
-    "1198.png": {
-      "skip": true
-    },
-    "1199.png": {
-      "skip": true
-    },
-    "1200.png": {
-      "skip": true
-    },
-    "1201.png": {
-      "skip": true
-    },
-    "1204.png": {
       "hold": 1.8,
       "cap": "Devin opens a PR with the reports"
     },
-    "1205.png": {
-      "skip": true
-    },
-    "1206.png": {
-      "hold": 1.2
-    },
-    "1202.png": {
+    "0729.png": {
       "vo": "Then it opens a pull request with the code, the reports, and the recordings."
     },
-    "0250.png": {
-      "skip": true
-    },
-    "0251.png": {
-      "skip": true
-    },
-    "0252.png": {
-      "skip": true
-    },
     "0011.png": {
-      "hold": 0.73
+      "hold": 0.5817
     },
     "0012.png": {
-      "hold": 0.5342
+      "hold": 0.5225
     },
     "0013.png": {
-      "hold": 0.5275
+      "hold": 0.5283
     },
     "0014.png": {
-      "hold": 0.5392
+      "hold": 0.5233
     },
     "0015.png": {
-      "hold": 0.5275
+      "hold": 0.5383
     },
     "0016.png": {
-      "hold": 0.525
+      "hold": 0.53
     },
     "0017.png": {
-      "hold": 0.5208
+      "hold": 0.5325
     },
     "0018.png": {
-      "hold": 0.5467
+      "hold": 0.5233
     },
     "0019.png": {
-      "hold": 0.5083
+      "hold": 0.5508
     },
     "0020.png": {
-      "hold": 0.5433
+      "hold": 0.5242
     },
     "0021.png": {
-      "hold": 0.5358
+      "hold": 0.54
     },
     "0022.png": {
-      "hold": 0.5325
+      "hold": 0.5233
     },
     "0023.png": {
-      "hold": 0.5325
+      "hold": 0.5433
     },
     "0024.png": {
-      "hold": 0.5275
+      "hold": 0.5333
+    },
+    "0025.png": {
+      "hold": 0.5217
     },
     "0026.png": {
-      "hold": 0.545
-    },
-    "0027.png": {
-      "hold": 0.5392
+      "hold": 0.5383
     },
     "0028.png": {
-      "hold": 0.53
+      "hold": 0.5242
     },
     "0029.png": {
-      "hold": 0.5267
+      "hold": 0.5258
     },
     "0030.png": {
-      "hold": 0.53
+      "hold": 0.5325
     },
     "0031.png": {
       "hold": 0.5233
     },
     "0032.png": {
-      "hold": 0.5333
+      "hold": 0.53
     },
     "0033.png": {
-      "hold": 0.54
+      "hold": 0.53
     },
     "0034.png": {
-      "hold": 0.5325
+      "hold": 0.5267
     },
     "0035.png": {
-      "hold": 0.5358
-    },
-    "0036.png": {
-      "hold": 0.5275
-    },
-    "0037.png": {
-      "hold": 0.5267
-    },
-    "0038.png": {
-      "hold": 0.5308
-    },
-    "0039.png": {
-      "hold": 0.5475
-    },
-    "0040.png": {
-      "hold": 0.6467
-    },
-    "0041.png": {
-      "hold": 0.525
-    },
-    "0042.png": {
-      "hold": 0.5358
-    },
-    "0043.png": {
-      "hold": 0.5367
-    },
-    "0044.png": {
-      "hold": 0.5267
-    },
-    "0045.png": {
-      "hold": 0.5308
-    },
-    "0046.png": {
-      "hold": 0.5367
-    },
-    "0048.png": {
-      "hold": 0.5442
-    },
-    "0049.png": {
-      "hold": 0.5325
-    },
-    "0050.png": {
-      "hold": 0.5417
-    },
-    "0051.png": {
-      "hold": 0.5425
-    },
-    "0052.png": {
-      "hold": 0.54
-    },
-    "0053.png": {
-      "hold": 0.5433
-    },
-    "0054.png": {
-      "hold": 0.565
-    },
-    "0055.png": {
-      "hold": 0.5392
-    },
-    "0056.png": {
-      "hold": 0.535
-    },
-    "0057.png": {
-      "hold": 0.5467
-    },
-    "0058.png": {
-      "hold": 0.5525
-    },
-    "0059.png": {
-      "hold": 0.5425
-    },
-    "0060.png": {
-      "hold": 0.5475
-    },
-    "0061.png": {
-      "hold": 0.5408
-    },
-    "0062.png": {
-      "hold": 0.5442
-    },
-    "0063.png": {
-      "hold": 0.55
-    },
-    "0064.png": {
-      "hold": 0.5525
-    },
-    "0065.png": {
-      "hold": 0.5467
-    },
-    "0066.png": {
-      "hold": 0.6625
-    },
-    "0067.png": {
-      "hold": 0.5483
-    },
-    "0068.png": {
-      "hold": 0.5533
-    },
-    "0069.png": {
-      "hold": 0.545
-    },
-    "0070.png": {
-      "hold": 0.5533
-    },
-    "0071.png": {
-      "hold": 0.5425
-    },
-    "0072.png": {
-      "hold": 0.5658
-    },
-    "0073.png": {
-      "hold": 0.5458
-    },
-    "0074.png": {
-      "hold": 0.5558
-    },
-    "0075.png": {
-      "hold": 0.5667
-    },
-    "0076.png": {
-      "hold": 0.5483
-    },
-    "0077.png": {
-      "hold": 0.5575
-    },
-    "0078.png": {
-      "hold": 0.555
-    },
-    "0079.png": {
-      "hold": 0.555
-    },
-    "0080.png": {
-      "hold": 0.6425
-    },
-    "0081.png": {
-      "hold": 0.5608
-    },
-    "0082.png": {
-      "hold": 0.5567
-    },
-    "0083.png": {
-      "hold": 0.5575
-    },
-    "0084.png": {
-      "hold": 0.5525
-    },
-    "0085.png": {
-      "hold": 0.5617
-    },
-    "0086.png": {
-      "hold": 0.5475
-    },
-    "0087.png": {
-      "hold": 0.5433
-    },
-    "0088.png": {
-      "hold": 0.5742
-    },
-    "0089.png": {
-      "hold": 0.5533
-    },
-    "0090.png": {
-      "hold": 0.5675
-    },
-    "0091.png": {
-      "hold": 0.5608
-    },
-    "0092.png": {
-      "hold": 0.565
-    },
-    "0093.png": {
-      "hold": 0.5633
-    },
-    "0094.png": {
-      "hold": 0.5692
-    },
-    "0095.png": {
-      "hold": 0.56
-    },
-    "0096.png": {
-      "hold": 0.5658
-    },
-    "0097.png": {
-      "hold": 0.5625
-    },
-    "0098.png": {
-      "hold": 0.5617
-    },
-    "0099.png": {
-      "hold": 0.5842
-    },
-    "0100.png": {
-      "hold": 0.5567
-    },
-    "0101.png": {
-      "hold": 0.5575
-    },
-    "0102.png": {
-      "hold": 0.5558
-    },
-    "0103.png": {
-      "hold": 0.5783
-    },
-    "0104.png": {
-      "hold": 0.5708
-    },
-    "0105.png": {
-      "hold": 0.5542
-    },
-    "0106.png": {
-      "hold": 0.5708
-    },
-    "0107.png": {
-      "hold": 0.5658
-    },
-    "0108.png": {
-      "hold": 0.57
-    },
-    "0109.png": {
-      "hold": 0.5725
-    },
-    "0110.png": {
-      "hold": 0.5517
-    },
-    "0111.png": {
-      "hold": 0.5608
-    },
-    "0112.png": {
-      "hold": 0.5675
-    },
-    "0113.png": {
-      "hold": 0.5625
-    },
-    "0115.png": {
-      "hold": 0.5567
-    },
-    "0116.png": {
-      "hold": 0.555
-    },
-    "0117.png": {
-      "hold": 0.5592
-    },
-    "0118.png": {
-      "hold": 0.5642
-    },
-    "0119.png": {
-      "hold": 0.57
-    },
-    "0120.png": {
-      "hold": 0.5708
-    },
-    "0121.png": {
-      "hold": 0.5542
-    },
-    "0122.png": {
-      "hold": 0.5592
-    },
-    "0123.png": {
-      "hold": 0.5583
-    },
-    "0124.png": {
-      "hold": 0.55
-    },
-    "0125.png": {
-      "hold": 0.56
-    },
-    "0126.png": {
-      "hold": 0.58
-    },
-    "0127.png": {
-      "hold": 0.5525
-    },
-    "0128.png": {
-      "hold": 0.5408
-    },
-    "0129.png": {
-      "hold": 0.5508
-    },
-    "0130.png": {
-      "hold": 0.5567
-    },
-    "0131.png": {
-      "hold": 0.5517
-    },
-    "0132.png": {
-      "hold": 0.5533
-    },
-    "0133.png": {
-      "hold": 0.5617
-    },
-    "0134.png": {
-      "hold": 0.575
-    },
-    "0142.png": {
-      "hold": 0.5483
-    },
-    "0143.png": {
-      "hold": 0.5483
-    },
-    "0145.png": {
-      "hold": 0.5475
-    },
-    "0146.png": {
-      "hold": 0.5408
-    },
-    "0147.png": {
-      "hold": 0.5408
-    },
-    "0148.png": {
-      "hold": 0.55
-    },
-    "0149.png": {
       "hold": 0.5342
     },
-    "0150.png": {
-      "hold": 0.5567
+    "0036.png": {
+      "hold": 0.5333
     },
-    "0151.png": {
-      "hold": 0.5408
+    "0037.png": {
+      "hold": 0.5283
     },
-    "0152.png": {
-      "hold": 0.5567
+    "0038.png": {
+      "hold": 0.5333
     },
-    "0153.png": {
-      "hold": 0.5608
+    "0039.png": {
+      "hold": 0.5508
     },
-    "0154.png": {
-      "hold": 0.5558
+    "0040.png": {
+      "hold": 0.5467
     },
-    "0155.png": {
-      "hold": 0.55
-    },
-    "0156.png": {
-      "hold": 0.5708
-    },
-    "0157.png": {
-      "hold": 0.5517
-    },
-    "0158.png": {
-      "hold": 0.5533
-    },
-    "0159.png": {
-      "hold": 0.5558
-    },
-    "0160.png": {
+    "0041.png": {
       "hold": 0.5525
     },
-    "0161.png": {
+    "0042.png": {
+      "hold": 0.5308
+    },
+    "0043.png": {
+      "hold": 0.595
+    },
+    "0044.png": {
+      "hold": 0.55
+    },
+    "0045.png": {
+      "hold": 0.6192
+    },
+    "0046.png": {
       "hold": 0.5392
     },
-    "0162.png": {
-      "hold": 0.55
+    "0047.png": {
+      "hold": 0.5392
     },
-    "0163.png": {
-      "hold": 0.5658
-    },
-    "0164.png": {
+    "0048.png": {
       "hold": 0.5667
     },
-    "0165.png": {
-      "hold": 0.5808
+    "0049.png": {
+      "hold": 0.5733
     },
-    "0166.png": {
-      "hold": 0.5492
+    "0050.png": {
+      "hold": 0.5517
     },
-    "0167.png": {
-      "hold": 0.5567
-    },
-    "0168.png": {
-      "hold": 0.5525
-    },
-    "0169.png": {
+    "0051.png": {
       "hold": 0.555
     },
+    "0052.png": {
+      "hold": 0.5483
+    },
+    "0053.png": {
+      "hold": 0.5508
+    },
+    "0054.png": {
+      "hold": 0.5642
+    },
+    "0055.png": {
+      "hold": 0.5583
+    },
+    "0056.png": {
+      "hold": 0.5517
+    },
+    "0057.png": {
+      "hold": 0.55
+    },
+    "0058.png": {
+      "hold": 0.5508
+    },
+    "0059.png": {
+      "hold": 0.6575
+    },
+    "0060.png": {
+      "hold": 0.5492
+    },
+    "0061.png": {
+      "hold": 0.5583
+    },
+    "0062.png": {
+      "hold": 0.555
+    },
+    "0063.png": {
+      "hold": 0.5375
+    },
+    "0064.png": {
+      "hold": 0.5467
+    },
+    "0065.png": {
+      "hold": 0.5692
+    },
+    "0066.png": {
+      "hold": 0.6142
+    },
+    "0067.png": {
+      "hold": 0.6475
+    },
+    "0068.png": {
+      "hold": 0.5975
+    },
+    "0069.png": {
+      "hold": 0.58
+    },
+    "0070.png": {
+      "hold": 0.5933
+    },
+    "0072.png": {
+      "hold": 0.5492
+    },
+    "0073.png": {
+      "hold": 0.5392
+    },
+    "0074.png": {
+      "hold": 0.5433
+    },
+    "0075.png": {
+      "hold": 0.5375
+    },
+    "0076.png": {
+      "hold": 0.5517
+    },
+    "0077.png": {
+      "hold": 0.565
+    },
+    "0078.png": {
+      "hold": 0.5425
+    },
+    "0079.png": {
+      "hold": 0.5433
+    },
+    "0080.png": {
+      "hold": 0.5517
+    },
+    "0081.png": {
+      "hold": 0.5525
+    },
+    "0082.png": {
+      "hold": 0.5458
+    },
+    "0083.png": {
+      "hold": 0.5675
+    },
+    "0084.png": {
+      "hold": 0.59
+    },
+    "0085.png": {
+      "hold": 0.56
+    },
+    "0086.png": {
+      "hold": 0.5483
+    },
+    "0087.png": {
+      "hold": 0.5358
+    },
+    "0088.png": {
+      "hold": 0.5383
+    },
+    "0089.png": {
+      "hold": 0.5492
+    },
+    "0090.png": {
+      "hold": 0.54
+    },
+    "0091.png": {
+      "hold": 0.6067
+    },
+    "0092.png": {
+      "hold": 0.5742
+    },
+    "0093.png": {
+      "hold": 0.5508
+    },
+    "0094.png": {
+      "hold": 0.5558
+    },
+    "0095.png": {
+      "hold": 0.5583
+    },
+    "0096.png": {
+      "hold": 0.5542
+    },
+    "0097.png": {
+      "hold": 0.5408
+    },
+    "0098.png": {
+      "hold": 0.5425
+    },
+    "0099.png": {
+      "hold": 0.5442
+    },
+    "0100.png": {
+      "hold": 0.59
+    },
+    "0101.png": {
+      "hold": 0.5733
+    },
+    "0102.png": {
+      "hold": 0.5358
+    },
+    "0103.png": {
+      "hold": 0.66
+    },
+    "0104.png": {
+      "hold": 0.55
+    },
+    "0105.png": {
+      "hold": 0.5558
+    },
+    "0106.png": {
+      "hold": 0.5342
+    },
+    "0107.png": {
+      "hold": 0.5367
+    },
+    "0108.png": {
+      "hold": 0.5392
+    },
+    "0109.png": {
+      "hold": 0.5433
+    },
+    "0110.png": {
+      "hold": 0.5742
+    },
+    "0111.png": {
+      "hold": 0.5392
+    },
+    "0112.png": {
+      "hold": 0.5417
+    },
+    "0113.png": {
+      "hold": 0.5442
+    },
+    "0114.png": {
+      "hold": 0.5558
+    },
+    "0115.png": {
+      "hold": 0.5483
+    },
+    "0116.png": {
+      "hold": 0.545
+    },
+    "0117.png": {
+      "hold": 0.5392
+    },
+    "0118.png": {
+      "hold": 0.54
+    },
+    "0119.png": {
+      "hold": 0.5433
+    },
+    "0121.png": {
+      "hold": 0.56
+    },
+    "0122.png": {
+      "hold": 0.5433
+    },
+    "0123.png": {
+      "hold": 0.5417
+    },
+    "0124.png": {
+      "hold": 0.5392
+    },
+    "0125.png": {
+      "hold": 0.5708
+    },
+    "0126.png": {
+      "hold": 0.5592
+    },
+    "0127.png": {
+      "hold": 0.5975
+    },
+    "0128.png": {
+      "hold": 0.545
+    },
+    "0129.png": {
+      "hold": 0.5575
+    },
+    "0130.png": {
+      "hold": 0.5583
+    },
+    "0131.png": {
+      "hold": 0.5583
+    },
+    "0132.png": {
+      "hold": 0.555
+    },
+    "0133.png": {
+      "hold": 0.5433
+    },
+    "0134.png": {
+      "hold": 0.5392
+    },
+    "0135.png": {
+      "hold": 0.5867
+    },
+    "0136.png": {
+      "hold": 0.5458
+    },
+    "0137.png": {
+      "hold": 0.5467
+    },
+    "0138.png": {
+      "hold": 0.5575
+    },
+    "0139.png": {
+      "hold": 0.5542
+    },
+    "0140.png": {
+      "hold": 0.5583
+    },
+    "0141.png": {
+      "hold": 0.5467
+    },
+    "0142.png": {
+      "hold": 0.5425
+    },
+    "0143.png": {
+      "hold": 0.5325
+    },
+    "0144.png": {
+      "hold": 0.5492
+    },
+    "0145.png": {
+      "hold": 0.5392
+    },
+    "0146.png": {
+      "hold": 0.5525
+    },
+    "0147.png": {
+      "hold": 0.5467
+    },
+    "0148.png": {
+      "hold": 0.5392
+    },
+    "0149.png": {
+      "hold": 0.5417
+    },
+    "0150.png": {
+      "hold": 0.5408
+    },
+    "0159.png": {
+      "hold": 0.5575
+    },
+    "0160.png": {
+      "hold": 0.5425
+    },
+    "0161.png": {
+      "hold": 0.5625
+    },
+    "0162.png": {
+      "hold": 0.5842
+    },
+    "0163.png": {
+      "hold": 0.5733
+    },
+    "0164.png": {
+      "hold": 0.55
+    },
+    "0165.png": {
+      "hold": 0.5608
+    },
+    "0166.png": {
+      "hold": 0.5467
+    },
+    "0167.png": {
+      "hold": 0.5375
+    },
+    "0168.png": {
+      "hold": 0.5542
+    },
+    "0169.png": {
+      "hold": 0.5425
+    },
     "0170.png": {
-      "hold": 0.5658
+      "hold": 0.5958
     },
     "0171.png": {
       "hold": 0.5508
     },
     "0172.png": {
-      "hold": 0.5567
-    },
-    "0173.png": {
-      "hold": 0.5617
-    },
-    "0174.png": {
-      "hold": 0.5675
-    },
-    "0175.png": {
-      "hold": 0.5783
-    },
-    "0176.png": {
-      "hold": 0.5642
-    },
-    "0177.png": {
-      "hold": 0.5667
-    },
-    "0178.png": {
-      "hold": 0.5725
-    },
-    "0179.png": {
-      "hold": 0.56
-    },
-    "0180.png": {
-      "hold": 0.5717
-    },
-    "0182.png": {
-      "hold": 0.5775
-    },
-    "0183.png": {
-      "hold": 0.5625
-    },
-    "0184.png": {
-      "hold": 0.5525
-    },
-    "0185.png": {
-      "hold": 0.5567
-    },
-    "0186.png": {
       "hold": 0.5608
     },
-    "0187.png": {
-      "hold": 0.5483
+    "0173.png": {
+      "hold": 0.585
     },
-    "0188.png": {
-      "hold": 0.555
+    "0174.png": {
+      "hold": 0.5525
     },
-    "0189.png": {
-      "hold": 0.5717
+    "0175.png": {
+      "hold": 0.5917
     },
-    "0190.png": {
-      "hold": 0.5708
+    "0176.png": {
+      "hold": 0.59
     },
-    "0191.png": {
-      "hold": 0.5508
+    "0177.png": {
+      "hold": 0.6142
     },
-    "0192.png": {
-      "hold": 0.5558
-    },
-    "0193.png": {
+    "0178.png": {
       "hold": 0.5642
     },
-    "0194.png": {
-      "hold": 0.5533
+    "0179.png": {
+      "hold": 0.5633
     },
-    "0195.png": {
-      "hold": 0.5533
+    "0180.png": {
+      "hold": 0.565
     },
-    "0196.png": {
-      "hold": 0.5533
+    "0181.png": {
+      "hold": 0.5625
     },
-    "0197.png": {
-      "hold": 0.555
+    "0182.png": {
+      "hold": 0.565
     },
-    "0198.png": {
-      "hold": 0.5592
+    "0183.png": {
+      "hold": 0.5608
     },
-    "0199.png": {
-      "hold": 0.5592
+    "0184.png": {
+      "hold": 0.5742
     },
-    "0200.png": {
-      "hold": 0.5725
+    "0185.png": {
+      "hold": 0.5675
     },
-    "0201.png": {
-      "hold": 0.5583
+    "0186.png": {
+      "hold": 0.5692
     },
-    "0202.png": {
-      "hold": 0.5867
+    "0187.png": {
+      "hold": 0.5717
     },
-    "0203.png": {
-      "hold": 0.5575
+    "0188.png": {
+      "hold": 0.5633
     },
-    "0204.png": {
-      "hold": 0.5558
+    "0189.png": {
+      "hold": 0.5758
     },
-    "0205.png": {
-      "hold": 0.55
+    "0190.png": {
+      "hold": 0.565
     },
-    "0206.png": {
-      "hold": 0.58
+    "0191.png": {
+      "hold": 0.605
     },
-    "0207.png": {
+    "0192.png": {
+      "hold": 0.565
+    },
+    "0193.png": {
       "hold": 0.5767
     },
+    "0194.png": {
+      "hold": 0.5758
+    },
+    "0195.png": {
+      "hold": 0.5692
+    },
+    "0196.png": {
+      "hold": 0.5667
+    },
+    "0197.png": {
+      "hold": 0.5667
+    },
+    "0198.png": {
+      "hold": 0.5708
+    },
+    "0199.png": {
+      "hold": 0.5725
+    },
+    "0200.png": {
+      "hold": 0.5658
+    },
+    "0201.png": {
+      "hold": 0.5708
+    },
+    "0202.png": {
+      "hold": 0.5617
+    },
+    "0203.png": {
+      "hold": 0.5675
+    },
+    "0204.png": {
+      "hold": 0.5633
+    },
+    "0205.png": {
+      "hold": 0.5733
+    },
+    "0206.png": {
+      "hold": 0.5725
+    },
+    "0207.png": {
+      "hold": 0.5742
+    },
     "0208.png": {
-      "hold": 0.56
+      "hold": 0.5692
     },
     "0209.png": {
-      "hold": 0.5675
+      "hold": 0.5617
     },
     "0210.png": {
       "hold": 0.5667
     },
     "0211.png": {
-      "hold": 0.5542
+      "hold": 0.6033
     },
     "0212.png": {
-      "hold": 0.5533
+      "hold": 0.5725
     },
     "0213.png": {
-      "hold": 0.56
+      "hold": 0.5492
     },
-    "0214.png": {
-      "hold": 0.5533
+    "0215.png": {
+      "hold": 0.5525
     },
     "0216.png": {
-      "hold": 0.5817
+      "hold": 0.555
     },
     "0217.png": {
-      "hold": 0.5717
-    },
-    "0218.png": {
-      "hold": 0.57
-    },
-    "0219.png": {
-      "hold": 0.5683
-    },
-    "0220.png": {
-      "hold": 0.5542
-    },
-    "0222.png": {
-      "hold": 0.5683
-    },
-    "0223.png": {
       "hold": 0.5517
     },
+    "0218.png": {
+      "hold": 0.6742
+    },
+    "0219.png": {
+      "hold": 0.5767
+    },
+    "0220.png": {
+      "hold": 0.5667
+    },
+    "0221.png": {
+      "hold": 0.5625
+    },
+    "0222.png": {
+      "hold": 0.5658
+    },
+    "0223.png": {
+      "hold": 0.5558
+    },
     "0224.png": {
-      "hold": 0.5475
+      "hold": 0.5658
     },
     "0225.png": {
-      "hold": 0.5583
-    },
-    "0226.png": {
-      "hold": 0.5667
-    },
-    "0227.png": {
-      "hold": 0.5925
-    },
-    "0228.png": {
-      "hold": 0.5608
-    },
-    "0229.png": {
-      "hold": 0.5583
-    },
-    "0230.png": {
-      "hold": 0.5667
-    },
-    "0231.png": {
-      "hold": 0.5625
-    },
-    "0232.png": {
-      "hold": 0.5533
-    },
-    "0233.png": {
-      "hold": 0.5675
-    },
-    "0234.png": {
-      "hold": 0.555
-    },
-    "0235.png": {
-      "hold": 0.5667
-    },
-    "0236.png": {
-      "hold": 0.5817
-    },
-    "0237.png": {
-      "hold": 0.5583
-    },
-    "0238.png": {
       "hold": 0.56
     },
+    "0226.png": {
+      "hold": 0.5708
+    },
+    "0227.png": {
+      "hold": 0.5667
+    },
+    "0228.png": {
+      "hold": 0.5592
+    },
+    "0229.png": {
+      "hold": 0.5625
+    },
+    "0230.png": {
+      "hold": 0.5658
+    },
+    "0231.png": {
+      "hold": 0.5667
+    },
+    "0232.png": {
+      "hold": 0.5667
+    },
+    "0233.png": {
+      "hold": 0.5633
+    },
+    "0234.png": {
+      "hold": 0.5583
+    },
+    "0235.png": {
+      "hold": 0.5633
+    },
+    "0236.png": {
+      "hold": 0.5617
+    },
+    "0237.png": {
+      "hold": 0.5558
+    },
+    "0238.png": {
+      "hold": 0.5508
+    },
     "0239.png": {
-      "hold": 0.5567
+      "hold": 0.56
     },
     "0240.png": {
-      "hold": 0.565
-    },
-    "0241.png": {
-      "hold": 0.5625
-    },
-    "0242.png": {
-      "hold": 0.5625
-    },
-    "0243.png": {
-      "hold": 0.5533
-    },
-    "0244.png": {
-      "hold": 0.5642
-    },
-    "0245.png": {
-      "hold": 0.5533
-    },
-    "0246.png": {
       "hold": 0.555
     },
+    "0241.png": {
+      "hold": 0.5525
+    },
+    "0242.png": {
+      "hold": 0.5558
+    },
+    "0243.png": {
+      "hold": 0.5642
+    },
+    "0244.png": {
+      "hold": 0.5658
+    },
+    "0245.png": {
+      "hold": 0.5608
+    },
+    "0246.png": {
+      "hold": 0.5575
+    },
     "0247.png": {
-      "hold": 0.5467
+      "hold": 0.56
     },
     "0248.png": {
-      "hold": 0.5433
+      "hold": 0.5517
     },
     "0249.png": {
-      "hold": 0.4
+      "hold": 0.5658
     },
-    "0354.png": {
-      "skip": true
+    "0251.png": {
+      "hold": 0.56
     },
-    "0355.png": {
-      "skip": true
+    "0252.png": {
+      "hold": 0.5575
     },
-    "0335.png": {
-      "hold": 0.945
+    "0253.png": {
+      "hold": 0.5625
     },
-    "0336.png": {
-      "hold": 0.9433
+    "0254.png": {
+      "hold": 0.5833
     },
-    "0337.png": {
-      "hold": 0.9433
+    "0255.png": {
+      "hold": 0.5817
     },
-    "0338.png": {
-      "hold": 0.9417
+    "0257.png": {
+      "hold": 0.55
     },
-    "0339.png": {
-      "hold": 0.9442
+    "0258.png": {
+      "hold": 0.5475
     },
-    "0341.png": {
-      "hold": 0.935
+    "0259.png": {
+      "hold": 0.5475
     },
-    "0342.png": {
-      "hold": 0.9267
+    "0260.png": {
+      "hold": 0.6033
     },
-    "0343.png": {
-      "hold": 0.9283
+    "0261.png": {
+      "hold": 0.7067
     },
-    "0344.png": {
-      "hold": 0.9417
+    "0262.png": {
+      "hold": 0.5617
     },
-    "0346.png": {
-      "hold": 0.915
+    "0263.png": {
+      "hold": 0.5442
     },
-    "0347.png": {
-      "hold": 0.9
+    "0264.png": {
+      "hold": 0.5475
     },
-    "0348.png": {
-      "hold": 0.9025
+    "0265.png": {
+      "hold": 0.5542
     },
-    "0349.png": {
-      "hold": 0.8883
+    "0266.png": {
+      "hold": 0.5525
     },
-    "0350.png": {
-      "hold": 0.9092
+    "0267.png": {
+      "hold": 0.7017
     },
-    "0351.png": {
-      "hold": 0.9125
+    "0431.png": {
+      "hold": 0.5683
     },
-    "0352.png": {
-      "hold": 0.8883
+    "0432.png": {
+      "hold": 0.5742
     },
-    "0353.png": {
-      "hold": 0.0967
+    "0433.png": {
+      "hold": 0.61
+    },
+    "0434.png": {
+      "hold": 0.6117
+    },
+    "0435.png": {
+      "hold": 0.6042
+    },
+    "0436.png": {
+      "hold": 0.5983
+    },
+    "0437.png": {
+      "hold": 0.6183
+    },
+    "0438.png": {
+      "hold": 0.5825
+    },
+    "0440.png": {
+      "hold": 0.6542
+    },
+    "0441.png": {
+      "hold": 0.6133
+    },
+    "0442.png": {
+      "hold": 0.5975
+    },
+    "0443.png": {
+      "hold": 0.5867
+    },
+    "0444.png": {
+      "hold": 0.5858
+    },
+    "0445.png": {
+      "hold": 0.59
+    },
+    "0446.png": {
+      "hold": 0.5883
+    },
+    "0447.png": {
+      "hold": 0.5908
+    },
+    "0448.png": {
+      "hold": 0.6042
+    },
+    "0449.png": {
+      "hold": 0.5975
+    },
+    "0450.png": {
+      "hold": 0.5558
+    },
+    "0451.png": {
+      "hold": 0.5508
+    },
+    "0452.png": {
+      "hold": 0.5583
+    },
+    "0453.png": {
+      "hold": 0.5542
+    },
+    "0454.png": {
+      "hold": 0.555
+    },
+    "0455.png": {
+      "hold": 0.5583
+    },
+    "0456.png": {
+      "hold": 0.5542
+    },
+    "0457.png": {
+      "hold": 0.5558
+    },
+    "0459.png": {
+      "hold": 2.4017
+    },
+    "0460.png": {
+      "hold": 1.0817
+    },
+    "0461.png": {
+      "hold": 1.1742
+    },
+    "0462.png": {
+      "hold": 0.6742
     }
   }
 };
 const NARRATED = !!new URLSearchParams(location.search).get('voice');
 if (NARRATED) {
   SPEC.pollRunMax = 1.0;
-  for (const [k, v] of Object.entries({"0007.png": {"hold": 0.6}, "0254.png": {"travel": 0.45, "dwell": 0.1}, "0255.png": {"hold": 0.35}, "0357.png": {"travel": 0.45, "dwell": 0.1}, "0333.png": {"waitVo": true}}))
+  for (const [k, v] of Object.entries({"0007.png": {"hold": 0.6}, "0269.png": {"travel": 0.45, "dwell": 0.1}, "0270.png": {"hold": 0.35}, "0464.png": {"travel": 0.45, "dwell": 0.1}, "0429.png": {"waitVo": true}}))
     Object.assign(SPEC.edit[k] ??= {}, v);
 }
