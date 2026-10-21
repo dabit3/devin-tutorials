@@ -38,6 +38,7 @@
 | 58 | Port an iOS screen to Android and prove parity | `58-ios-to-android-parity/` |
 | 59 | Port an iOS screen to Android: how it works (overview) | `59-ios-to-android-parity-overview/` |
 | 76 | Devin CLI: what's new in v3000.11.92 (overview) | `76-cli-whats-new-overview/` |
+| 78 | ACE RALLY: add a GPT-Live-1 umpire feature by voice (Devin Voice; 4:57 captioned / 5:46 Nader) | [Sources](78-ace-rally-voice/) · [Captioned 4K](78-ace-rally-voice/78-ace-rally-voice.mp4) · [Nader 4K](78-ace-rally-voice/78-ace-rally-voice-nader.mp4) · [Nader, no music](78-ace-rally-voice/78-ace-rally-voice-nader-nomusic.mp4) · [Script](78-ace-rally-voice/voice-script.md) |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
 

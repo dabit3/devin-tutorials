@@ -11,7 +11,7 @@ def skip(a, b):
 
 # The live gameplay intro (intro/) is spliced in front of this cut by splice.py; the kit cut starts at the session.
 ed(0, hold=1.4, cursor=False, cap='Start in a new Devin session',
-   vo="Here's how I built it, starting from a new Devin session.")
+   vo="Here's how I did it, starting from a new Devin session.")
 ed(3, hl=True, hold=1.0, cap='Pick macOS so Devin can run the iPhone simulator', capPos='auto')
 ed(1, vo="First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.")
 ed(5, hl=True)
@@ -47,47 +47,54 @@ ed(r3, cap='Every turn lands in the session history')
 mark = lambda m, after=0: [n for n, b in enumerate(B) if b.get('mark') == m and n > after][0]
 end1, rejoin = mark('call1-ended'), mark('rejoin')
 ed(end1, cap='End the call; Devin keeps working', hl=True)
-ed(end1 + 1, hold=1.6, cap='Devin builds the game and wires up GPT-Live-1',
-   vo="Devin sets up the Expo project, builds the voxel city, and connects Coach Otter to GPT-Live-1 through a small server that keeps the API key.")
-ed(end1 + 4, badge='Sped up')
-skip(end1 + 5, rejoin)
-# 330/331 show the idle Computer view's Take control overlay; 332 (hover on the call button) shows the game on the iPhone
-ed(332, hold=1.6, hl=True, cap='Mid-build: rejoin the call from inside the session',
-   vo="Soon the game is running on the iPhone simulator, live in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how the game's coming along.")
-
+# 205-249: the pull warning, the off-camera GitHub fix and the nudge; not part of the story
+skip(end1 + 1, 249)
+ed(250, hold=1.8, cap='Devin adds a language tool to Chair and a language badge', badge='Sped up',
+   vo="Devin pulls the game, adds a set language tool to Chair, and shows the current language in his panel. The OpenAI key stays on the project's small server.")
+skip(251, 259); ed(260, hold=1.2, badge='Sped up'); skip(261, 275); ed(276, hold=1.2, badge='Sped up'); skip(277, rejoin - 1)
+ed(rejoin, hold=1.6, hl=True, cap='Mid-build: rejoin the call from inside the session',
+   vo="Soon the web build is running in the Computer tab. Mid-build, you can rejoin the call from inside the session and ask how it's going.")
 end2 = mark('call2-ended')
 ed(end2, hl=True, cap='End the call again')
-skip(end2 + 1, 513)
-ed(514, hold=2.0, cap='A second Devin on Ubuntu tests Android',
-   vo="Devin starts a second Devin on Ubuntu to test Android. Its update says Coach Otter already talks on the web, and runs tools while he talks.")
-skip(515, 635)
-ed(636, hold=1.4, cap='Computer Use plays the web build in Chrome',
-   vo="Then it plays the web build in Chrome with Computer Use.")
-skip(671, 699)
-ed(700, hold=1.4, cap='iPhone simulator: Coach tested with typed input',
-   vo="On the iPhone simulator, audio doesn't work on this Mac, so Devin types to Coach instead of talking.")
-skip(701, 732); skip(734, 744); skip(746, 750); skip(752, 1093)
-web, ios, android = [n for n, b in enumerate(B) if b.get('mark') == 'card']
+skip(end2 + 1, 339)
+ed(340, hold=1.6, cap='Computer Use tests the web build: Spanish, then Japanese', badge='Sped up',
+   vo="Then Devin tests it with Computer Use. In Chrome, he asks Chair to call the match in Spanish, then Japanese, while the match keeps going.")
+skip(341, 399)
+ed(400, hold=1.8, cap='A second Devin on Ubuntu tests Android',
+   vo="Your Mac can't run Android, so Devin starts a second Devin on Ubuntu for the emulator.")
+skip(401, 412)
+ed(413, hold=1.6, cap='iPhone simulator: Chair tested with typed input', badge='Sped up',
+   vo="On the iPhone simulator, this Mac has no audio device, so Devin types to Chair instead of talking.")
+skip(414, 533)
+ed(534, hold=1.8, cap='Japanese: the badge, the captions and the greeting after a reboot')
+skip(535, 559)
+ed(560, hold=1.2, cap='Waiting for the Android Devin')
+skip(561, 645)   # blueprint suggestion card and the wait
+web, ios = [n for n, b in enumerate(B) if b.get('mark') == 'card']
 ed(web, hold=1.6, cap='Every test run comes with a recording and checks',
    vo="Every test comes with a recording and pass fail checks.")
-ed(web + 3, cap='Chrome: 11 passed, 1 untested',
-   vo="In Chrome, Coach connects, runs the boost, night, and best score tools, and switches style. Eleven checks pass, and one is left untested.")
-skip(web + 27, ios - 1)
-ed(ios, hold=1.2, cap='iPhone: 8 passed, with typed input',
-   vo="On the iPhone, the tools, both styles, and reconnecting all work, and eight checks pass. The voice you heard at the start ran in Chrome.")
-skip(ios + 27, android - 1)
-ed(android, hold=1.4, cap='Android, tested by the Ubuntu Devin: 12 passed',
-   vo="The Ubuntu Devin ran the game on an Android emulator with software rendering. All twelve checks pass, Coach tools included.")
-skip(android + 28, mark('tab') - 1)
-tab = mark('tab')
-ed(tab + 2, hold=1.8, cap='Devin opens a PR with the reports')
-skip(tab + 3, tab + 3)
-ed(tab + 4, hold=1.2)
-ed(tab, vo="Then it opens a pull request with the code, the reports, and the recordings.")
-spec = {'title': 'Devin Voice + GPT-Live-1', 'subtitle': 'Build and test a cross-platform game by voice',
-        'outro': 'One call: iOS, Android and web',
-        'voOutro': "That's how you build and test a cross-platform game with your voice, using Devin Voice and GPT-Live-1.", 'speed': 3, 'cps': 48, 'capPos': 'bottom',
-        'pollRunMax': 2.5, 'edit': E}
+ed(web + 3, cap='Chrome: 9 passed',
+   vo="In Chrome, the badge starts in English, switches to Spanish and Japanese while the match keeps going, Japanese survives a reload, and nine checks pass.")
+skip(web + 24, ios - 1)
+ed(ios, hold=1.2, cap='iPhone recheck: 4 passed', vo="On the iPhone, the same switches, the panel fix and the reconnect in Japanese pass: four checks in the final recheck.")
+skip(ios + 20, 707)
+agents = mark('agents')
+ed(agents, hl=True)
+ed(agents + 1, hold=2.2, cap='Android, by the Ubuntu Devin: Spanish and Japanese pass, one drop flagged',
+   vo="The Ubuntu Devin ran it on an Android emulator. Spanish and Japanese pass, and it flags one dropped connection that came back with a tap.")
+skip(agents + 2, agents + 2)
+tab = agents + 3
+ed(tab, hl=True)
+ed(tab + 1, hold=1.8, cap='Devin opens a PR with the reports and recordings',
+   vo="Then it opens a pull request with the code, the reports, and the recordings.")
+ed(tab + 2, hold=1.2); skip(tab + 3, tab + 3)
+summ = mark('summary')
+ed(summ, hold=2.0, cap='One call, one feature, tested on web, iPhone and Android')
+skip(summ + 1, len(B) - 1)
+spec = {'title': 'Devin Voice + GPT-Live-1', 'subtitle': 'Add and test a game feature by voice',
+        'outro': 'One call: web, iPhone and Android',
+        'voOutro': "That's how you add and test a feature in a cross-platform game with your voice, using Devin Voice and GPT-Live-1.", 'speed': 3, 'cps': 48, 'capPos': 'bottom',
+        'pollRunMax': 2.5, 'outroVoDelay': 0, 'edit': E}
 # narrated cut only: keep silences between lines near 1 s (calls untouched)
 I4 = lambda n: f'{n:04d}.png'
 NARRATED_JS = """const NARRATED = !!new URLSearchParams(location.search).get('voice');

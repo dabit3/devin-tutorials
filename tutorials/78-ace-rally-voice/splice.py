@@ -55,14 +55,12 @@ def seg(out, ss, to, caps, audio):
         f += f';anullsrc=r=48000:cl=stereo,atrim=0:{dur}[ao]'
     subprocess.run(cmd + ['-filter_complex', f, '-map', '[vo]', '-map', '[ao]', *X264, *AAC, '-t', str(dur), out], check=True)
     return out
-# real Chair run (segment time = capture time; /tmp/ace-intro3/intro.mp4): STT of the capture sets these windows. Part A: greeting,
-# the request, three tools, match start, the rally and the barge-in; part B skips ten seconds of power-shot commentary, then the score question.
-A0, A1, B0, B1 = 0.3, 50.0, 59.6, 77.0
-liveA = seg(os.path.join(B, 'liveA.mp4'), A0, A1, [(i, a - A0, b - A0) for i, a, b in
-           [(2, 0.8, 11.4), (3, 11.7, 18.8), (4, 19.2, 26.0), (5, 31.2, 36.3), (6, 36.6, 41.8), (7, 42.8, 49.8)]], 'intro')
-liveB = seg(os.path.join(B, 'liveB.mp4'), B0, B1, [(i, a - B0, b - B0) for i, a, b in [(8, 63.0, 67.8), (9, 68.4, 76.6)]], 'intro')
-live = [liveA, liveB]
-TS = 38.0  # teaser footage: the night-court rally under the narration (match play from ~38 s)
+# real Chair run (segment time = capture time; intro/record-intro.mjs take in ~/ace-evidence/intro4): STT of the capture sets these
+# windows. One continuous stretch: greeting, the request, three tools, match start, the rally, the barge-in and the score question.
+A0, A1 = 0.3, 66.8
+live = [seg(os.path.join(B, 'live.mp4'), A0, A1, [(i, a - A0, b - A0) for i, a, b in
+        [(2, 0.8, 10.2), (3, 10.5, 17.0), (4, 17.3, 24.2), (5, 29.0, 35.6), (6, 35.8, 41.0), (7, 41.4, 46.0), (8, 61.3, 63.2), (9, 63.4, 66.6)]], 'intro')]
+TS = 40.0  # teaser footage: the night-court rally under the narration (hype commentary from ~41 s)
 parts = [*live]
 name = os.path.basename(D)
 if mode in ('nader', 'nomusic'):
