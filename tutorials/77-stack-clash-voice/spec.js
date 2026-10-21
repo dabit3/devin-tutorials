@@ -2614,7 +2614,8 @@ window.SPEC = {
       "skip": true
     },
     "0918.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0919.png": {
       "hold": 0.2,
@@ -2641,7 +2642,8 @@ window.SPEC = {
       "skip": true
     },
     "0925.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0926.png": {
       "hold": 0.2,
@@ -2668,7 +2670,8 @@ window.SPEC = {
       "skip": true
     },
     "0932.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0933.png": {
       "hold": 0.2,
@@ -2695,7 +2698,8 @@ window.SPEC = {
       "skip": true
     },
     "0939.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0940.png": {
       "hold": 0.2,
@@ -2722,7 +2726,8 @@ window.SPEC = {
       "skip": true
     },
     "0946.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0947.png": {
       "hold": 0.2,
@@ -2749,7 +2754,8 @@ window.SPEC = {
       "skip": true
     },
     "0953.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0954.png": {
       "hold": 0.2,
@@ -2776,7 +2782,8 @@ window.SPEC = {
       "skip": true
     },
     "0960.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0961.png": {
       "hold": 0.2,
@@ -2803,7 +2810,8 @@ window.SPEC = {
       "skip": true
     },
     "0967.png": {
-      "hold": 0.2
+      "hold": 0.2,
+      "skip": true
     },
     "0968.png": {
       "hold": 0.2,
@@ -2939,189 +2947,6 @@ window.SPEC = {
     },
     "1001.png": {
       "hold": 0.2,
-      "skip": true
-    },
-    "0188.png": {
-      "skip": true
-    },
-    "0189.png": {
-      "skip": true
-    },
-    "0190.png": {
-      "skip": true
-    },
-    "0191.png": {
-      "skip": true
-    },
-    "0192.png": {
-      "skip": true
-    },
-    "0193.png": {
-      "skip": true
-    },
-    "0194.png": {
-      "skip": true
-    },
-    "0195.png": {
-      "skip": true
-    },
-    "0196.png": {
-      "skip": true
-    },
-    "0197.png": {
-      "skip": true
-    },
-    "0198.png": {
-      "skip": true
-    },
-    "0199.png": {
-      "skip": true
-    },
-    "0200.png": {
-      "skip": true
-    },
-    "0201.png": {
-      "skip": true
-    },
-    "0202.png": {
-      "skip": true
-    },
-    "0203.png": {
-      "skip": true
-    },
-    "0204.png": {
-      "skip": true
-    },
-    "0205.png": {
-      "skip": true
-    },
-    "0206.png": {
-      "skip": true
-    },
-    "0207.png": {
-      "skip": true
-    },
-    "0208.png": {
-      "skip": true
-    },
-    "0209.png": {
-      "skip": true
-    },
-    "0210.png": {
-      "skip": true
-    },
-    "0211.png": {
-      "skip": true
-    },
-    "0212.png": {
-      "skip": true
-    },
-    "0213.png": {
-      "skip": true
-    },
-    "0214.png": {
-      "skip": true
-    },
-    "0215.png": {
-      "skip": true
-    },
-    "0216.png": {
-      "skip": true
-    },
-    "0217.png": {
-      "skip": true
-    },
-    "0218.png": {
-      "skip": true
-    },
-    "0219.png": {
-      "skip": true
-    },
-    "0220.png": {
-      "skip": true
-    },
-    "0221.png": {
-      "skip": true
-    },
-    "0222.png": {
-      "skip": true
-    },
-    "0223.png": {
-      "skip": true
-    },
-    "0224.png": {
-      "skip": true
-    },
-    "0225.png": {
-      "skip": true
-    },
-    "0226.png": {
-      "skip": true
-    },
-    "0227.png": {
-      "skip": true
-    },
-    "0228.png": {
-      "skip": true
-    },
-    "0229.png": {
-      "skip": true
-    },
-    "0230.png": {
-      "skip": true
-    },
-    "0231.png": {
-      "skip": true
-    },
-    "0232.png": {
-      "skip": true
-    },
-    "0233.png": {
-      "skip": true
-    },
-    "0234.png": {
-      "skip": true
-    },
-    "0235.png": {
-      "skip": true
-    },
-    "0236.png": {
-      "skip": true
-    },
-    "0237.png": {
-      "skip": true
-    },
-    "0238.png": {
-      "skip": true
-    },
-    "0239.png": {
-      "skip": true
-    },
-    "0240.png": {
-      "skip": true
-    },
-    "0241.png": {
-      "skip": true
-    },
-    "0242.png": {
-      "skip": true
-    },
-    "0243.png": {
-      "skip": true
-    },
-    "0244.png": {
-      "skip": true
-    },
-    "0245.png": {
-      "skip": true
-    },
-    "0246.png": {
-      "skip": true
-    },
-    "0247.png": {
-      "skip": true
-    },
-    "0248.png": {
       "skip": true
     },
     "1002.png": {

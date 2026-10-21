@@ -25,6 +25,7 @@ def utc(h, m): return dt.datetime(2026, 10, 21, h, m, tzinfo=dt.timezone.utc).ti
 HIDE = [(utc(4, 38), utc(4, 53)), (utc(6, 8), utc(6, 34)), (utc(7, 9), utc(7, 18))]
 hidden = []
 for n in range(TESTS[1]):
+    if not os.path.exists(os.path.join(S, I(n))): continue  # already pruned (prune.py drops skipped stills)
     t = os.path.getmtime(os.path.join(S, I(n)))
     if any(a <= t <= b for a, b in HIDE): hidden.append(n)
 print('hidden frames', len(hidden), hidden[:3], hidden[-3:])
@@ -84,6 +85,9 @@ for n in range(TESTS[0] + 1, TESTS[1]): ed(n, hold=0.2)
 for n in range(TESTS[0] + 1, TESTS[1]):
     if (TESTS[1] - n) % 7: ed(n, skip=True)
 for n in hidden: ed(n, skip=True)
+for n in range(918, 975): ed(n, skip=True)
+for b in B:  # stills removed by prune.py stay skipped
+    if b['img'].endswith('.png') and not os.path.exists(os.path.join(S, b['img'])): ed(b['img'], skip=True)  # frames where the session's usage-limit banner was on screen (OCR check)
 CARD_CAM = dict(cam={'x': 487, 'y': 432, 'z': 2.0}, camForce=True, camDur=0.8)
 ed(CARD, badge='', hold=1.0, cap="Devin's test recording: web in Chrome, then the iPhone Simulator", **CARD_CAM,
    vo="Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds.")
