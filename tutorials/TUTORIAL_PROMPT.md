@@ -121,7 +121,7 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - Listen end to end for clipped consonants, dull closing lines, rushing, unnatural comma pauses and rising/unfinished endings. Transcript checks do not judge tone. Rephrase and rerecord when a pause problem affects tone instead of mechanically trimming silence. Preserve deliberate natural sentence pauses, not an identical imposed gap after every line.
 - Display menu paths with arrows in `vo`/captions (e.g. "Settings → Playbooks"); use `voSay` only when spoken pronunciation/punctuation needs to differ. Keep its sentence structure compatible with displayed `vo`, regenerate the take and subtitle chunks, and check timing/word coverage. Say "Devin" except when clicking the "Devin Local" label; display "SWE-2" while `voSay` says "swee two".
 - Keep names, digits and file paths pronounceable. The transcript check compares against displayed `vo` with existing aliases, not just `voSay`; prefer natural wording it can verify. `voOutro` has no separate `voSay` field, so avoid words needing a pronunciation override there.
-- The Nader voice reads the heteronym "live" as "liv". Respelling it as "lyve" in `voSay` gave mixed results, so reword instead ("public URL", "the page running on Modal"). Say "xAI" as "ex A I".
+- The Nader voice reads the heteronym "live" as "liv". Respelling it as "lyve" in `voSay` gave mixed results, so reword instead ("public URL", "the page running on Modal"). Say "xAI" as "ex A I". For dark-mode videos, never write "dark web" (say "dark page" or "public page").
 
 ### Layout, timing and coverage
 
