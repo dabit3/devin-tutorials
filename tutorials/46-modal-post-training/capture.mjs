@@ -1,4 +1,4 @@
-// Tutorial 46 capture: a real Devin session in thequantexplorer post-trains Qwen2.5-Coder-7B on Modal, recorded over CDP at 125% zoom.
+// Tutorial 46 capture: a real Devin session in thequantexplorer post-trains an open-weights model on Modal, recorded over CDP at 125% zoom.
 //   ZOOM=1.25 PHASE=start|say|watch|shot|goto|scroll SESSION=<url> RESUME=1 node capture.mjs
 //   start: PROMPT (new session on product-demo-apps)   say: PROMPT (follow-up in SESSION)
 //   watch: polls until Devin is idle (IDLE regex) or /tmp/stop46 exists   shot: CAP, RING (regex to ring)   goto: URL

@@ -102,7 +102,7 @@ function chip(ctx, k, t, x, y, a, on = 0) {
   txt(ctx, k, t, x, y, 13, 500, on ? rgba(BLUE, 1) : ink(0.7), a, 'center', 'JetBrains Mono', 0);
 }
 
-// 1. What you build: the app's SQL generator moves from a frontier API to your own 7B model on Modal.
+// 1. What you build: your own 27B model on Modal, served as an API endpoint the app calls.
 function value(ctx, s0, k) {
   bg(ctx, k); const s = s0 / st('value');
   eyebrow(ctx, k, 'POST-TRAINING ON MODAL', 140, ap(k, s, 0.05));
@@ -111,19 +111,19 @@ function value(ctx, s0, k) {
   txt(ctx, k, 'Ask your data', 260, ay + 44, 19, 600, '#191919', aa);
   txt(ctx, k, 'Question in, SQL out', 260, ay + 74, 14, 500, ink(0.55), aa);
   chip(ctx, k, 'generate_sql()', 260, ay + 112, aa);
-  const swapAt = T('0000.png', 'open', 1.6), doneAt = T('0000.png', 'swap', 3.2);
+  const modelAt = T('0000.png', 'open', 1.6), doneAt = T('0000.png', 'endpoint', 3.2);
   const fa = ap(k, s, 0.7), fy = 220 + 12 * (1 - fa), fade = 1 - 0.55 * ap(k, s, doneAt, 0.6);
   card(ctx, k, 960, fy, 370, 120, fa * fade);
   txt(ctx, k, 'Frontier API', 1145, fy + 44, 18, 600, '#191919', fa * fade);
-  txt(ctx, k, 'gpt-4.1, per-token pricing', 1145, fy + 76, 14, 500, ink(0.55), fa * fade);
+  txt(ctx, k, 'gpt-6.1-sol, per-token pricing', 1145, fy + 76, 14, 500, ink(0.55), fa * fade);
   const f1 = hc([410, 405], [960, 280]);
   path(ctx, k, f1, k.eInOut(k.prog(s, 0.8, 1.4)), ink(0.2 * fade));
   if (s < doneAt) signal(ctx, k, f1, ((s - 1.2) % 1.6) / 1.6);
-  const ma = ap(k, s, swapAt), my = 470 + 12 * (1 - ma), lit = ap(k, s, doneAt, 0.5);
+  const ma = ap(k, s, modelAt), my = 470 + 12 * (1 - ma), lit = ap(k, s, doneAt, 0.5);
   card(ctx, k, 960, my, 370, 140, ma, lit);
   avatar(ctx, k, 996, my + 42, 20, ma);
-  txt(ctx, k, 'Your 7B model', 1016, my + 42, 18, 600, '#191919', ma, 'left');
-  txt(ctx, k, 'Qwen2.5-Coder-7B, post-trained', 996, my + 76, 14, 500, ink(0.55), ma, 'left');
+  txt(ctx, k, 'Your 27B model', 1016, my + 42, 18, 600, '#191919', ma, 'left');
+  txt(ctx, k, 'Qwen3.8-27B, post-trained', 996, my + 76, 14, 500, ink(0.55), ma, 'left');
   chip(ctx, k, 'Modal H100 endpoint', 1072, my + 108, ma, lit);
   const f2 = hc([410, 405], [960, 540]);
   path(ctx, k, f2, k.eInOut(k.prog(s, doneAt, doneAt + 0.6)), rgba(BLUE, 0.7));
@@ -133,8 +133,8 @@ function value(ctx, s0, k) {
 
 // 2. Every ML-engineering step Devin runs end to end.
 const STAGES = [
-  ['Dataset', 'Spider splits', 'dataset'], ['Baseline', 'gpt-4.1 vs 7B', 'baseline'], ['SFT', 'LoRA, H100', 'finetuning'],
-  ['RL', 'GRPO + reward', 'reinforcement'], ['Sweep', '4 managed Devins', 'parallel'], ['Eval', '200 held-out', 'eval'], ['Deploy', 'modal deploy', 'deploy'],
+  ['Dataset', 'BIRD splits', 'dataset'], ['Baseline', 'gpt-6.1-sol vs 27B', 'baseline'], ['SFT', 'LoRA, H200', 'finetuning'],
+  ['RL', 'GRPO + reward', 'reinforcement'], ['Sweep', '4 managed Devins', 'parallel'], ['Eval', '500 held-out', 'eval'], ['Deploy', 'modal deploy', 'deploy'],
 ];
 function steps(ctx, s0, k) {
   bg(ctx, k); const s = s0 / st('steps');
@@ -154,7 +154,7 @@ function steps(ctx, s0, k) {
     txt(ctx, k, sub, x + cw / 2, yy + 70, 13, 500, ink(0.55), a);
     if (s > at[i] + 0.5) check(ctx, k, x + cw - 16, yy + 16, a * ap(k, s, at[i] + 0.5, 0.3), 7);
   });
-  txt(ctx, k, 'You review the results, not the code.', 720, 650, 20, 500, ink(0.65), ap(k, s, at[6] + 0.7));
+  txt(ctx, k, 'Each step lands as a pull request.', 720, 650, 20, 500, ink(0.65), ap(k, s, at[6] + 0.7));
 }
 
 // 3. The reward is something the computer checks: run both queries, compare the rows.
@@ -164,10 +164,10 @@ function reward(ctx, s0, k) {
   const pa = ap(k, s, 0.2), ga = ap(k, s, 0.45);
   card(ctx, k, 90, 250 + 10 * (1 - pa), 330, 96, pa);
   txt(ctx, k, 'Predicted SQL', 120, 282 + 10 * (1 - pa), 16, 600, '#191919', pa, 'left');
-  txt(ctx, k, 'SELECT count(*) FROM singer', 120, 314 + 10 * (1 - pa), 13, 500, ink(0.6), pa, 'left', 'JetBrains Mono', 0);
+  txt(ctx, k, "SELECT count(*) FROM drivers WHERE nationality = 'British'", 120, 314 + 10 * (1 - pa), 13, 500, ink(0.6), pa, 'left', 'JetBrains Mono', 0);
   card(ctx, k, 90, 400 + 10 * (1 - ga), 330, 96, ga);
   txt(ctx, k, 'Gold SQL', 120, 432 + 10 * (1 - ga), 16, 600, '#191919', ga, 'left');
-  txt(ctx, k, 'SELECT count(*) FROM singer', 120, 464 + 10 * (1 - ga), 13, 500, ink(0.6), ga, 'left', 'JetBrains Mono', 0);
+  txt(ctx, k, "SELECT count(*) FROM drivers WHERE nationality = 'British'", 120, 464 + 10 * (1 - ga), 13, 500, ink(0.6), ga, 'left', 'JetBrains Mono', 0);
   const runAt = 0.9, da = ap(k, s, runAt), dl = ap(k, s, runAt + 0.5, 0.3) * (1 - k.prog(s, runAt + 1.4, runAt + 1.8));
   [[298], [448]].forEach(([y], i) => { const f = hc([420, y], [560, 373]); path(ctx, k, f, k.eInOut(k.prog(s, runAt + i * 0.1, runAt + 0.5 + i * 0.1))); signal(ctx, k, f, k.prog(s, runAt + i * 0.1, runAt + 0.7)); });
   card(ctx, k, 560, 318 + 10 * (1 - da), 250, 110, da, dl);
@@ -186,7 +186,7 @@ function reward(ctx, s0, k) {
 }
 
 // 4. One coordinator, four managed Devins, each with its own VM and Modal job.
-const VARIANTS = [['Learning rate 2e-5', 'lr'], ['LoRA rank 64', 'rank'], ['16 generations / prompt', 'gens'], ['Partial-credit reward', 'shape']];
+const VARIANTS = [['Learning rate 5e-5', 'lr'], ['LoRA rank 64', 'rank'], ['16 generations / prompt', 'gens'], ['Partial-credit reward', 'shape']];
 function sweep(ctx, s0, k) {
   bg(ctx, k); const s = s0 / st('sweep');
   eyebrow(ctx, k, 'A PARALLEL SWEEP', 120, ap(k, s, 0.05));
@@ -200,7 +200,7 @@ function sweep(ctx, s0, k) {
     agentCard(ctx, k, 640, ys[i], 340, t, a, { sub: 'own VM', state: done ? 'done' : 'run', s: s + i * 0.3 });
     const ca = ap(k, s, T('0005.png', 'modal', 2.4) + i * 0.1);
     path(ctx, k, hc([810, ys[i]], [880, ys[i]]), ca);
-    chip(ctx, k, 'Modal H100 job', 960, ys[i], ca);
+    chip(ctx, k, 'Modal B200 job', 960, ys[i], ca);
     const g = hc([1040, ys[i]], [1130, 400]); path(ctx, k, g, k.eInOut(k.prog(s, doneAt + i * 0.25, doneAt + 0.5 + i * 0.25)));
   });
   const ra = ap(k, s, doneAt + 0.6), win = ap(k, s, doneAt + 1.4, 0.4);
@@ -210,9 +210,9 @@ function sweep(ctx, s0, k) {
   pill(ctx, k, 'Promote', 1245, 438 + 10 * (1 - ra), win, true, 13);
 }
 
-// 5. The payoff: the real scorecard on the same 200 held-out Spider questions.
-const COLS = ['gpt-4.1', 'Base 7B', 'SFT', 'SFT + GRPO'];
-const ROWS = [['Exec accuracy', ['73.5%', '77.0%', '79.0%', '82.0%'], 'accuracy'], ['p50 latency', ['0.64 s', '0.48 s', '0.50 s', '0.30 s'], 'latency'], ['$ / 1M queries', ['$993', '$72', '$75', '$49'], 'cost']];
+// 5. The payoff: the real scorecard on the same 500 held-out BIRD questions.
+const COLS = ['gpt-6.1-sol', 'Base 27B', 'SFT', 'GRPO'];
+const ROWS = [['Exec accuracy', ['63.8%', '64.0%', '66.4%', '67.4%'], 'accuracy'], ['p50 latency', ['2.32 s', '1.61 s', '2.08 s', '1.96 s'], 'latency'], ['$ / 1M queries', ['$2,546', '$231', '$293', '$283'], 'cost']];
 function score(ctx, s0, k) {
   bg(ctx, k); const s = s0 / st('score');
   eyebrow(ctx, k, 'THE SCORECARD', 112, ap(k, s, 0.05));
@@ -228,9 +228,25 @@ function score(ctx, s0, k) {
     vals.forEach((v, j) => txt(ctx, k, v, c0 + j * cw + cw / 2, ry, 26, 600, j === 3 ? rgba(BLUE, 1) : '#191919', ra, 'center', undefined, -0.4));
   });
   const na = ap(k, s, 2.4);
-  txt(ctx, k, '200 held-out Spider questions. 7B costs: warm H100 at concurrency 8. Latency gaps between the 7B models are noise.', 720, y + h + 44, 14, 500, ink(0.5), na);
-  txt(ctx, k, 'Base vs gpt-4.1, SFT vs base and GRPO vs SFT are each within noise (McNemar).', 720, y + h + 70, 14, 500, ink(0.5), na);
+  txt(ctx, k, '500 held-out BIRD questions. 27B costs: a warm, busy H100 at 8 requests in flight, without cold starts or idle time.', 720, y + h + 44, 14, 500, ink(0.5), na);
+  txt(ctx, k, 'GRPO vs base: p = 0.024, uncorrected. GRPO vs gpt-6.1-sol (p = 0.09) and vs SFT (p = 0.60): not significant.', 720, y + h + 70, 14, 500, ink(0.5), na);
 }
 
-window.SCENES = { value, steps, reward, sweep, score };
+// 6. Recap: what we just did, revealed as the narration names each step.
+const RECAP = [['Reward script', 'scores every answer', 'script'], ['Baseline first', 'gpt-6.1-sol and the base 27B', 'baseline'], ['Train and sweep', 'SFT, GRPO, four variants', 'trained'], ['Deploy', 'OpenAI-compatible endpoint', 'deployed']];
+function recap(ctx, s0, k) {
+  bg(ctx, k); const s = s0 / st('recap');
+  eyebrow(ctx, k, 'WHAT WE DID', 170, ap(k, s, 0.05));
+  const cw = 260, gap = 26, x0 = (k.VW - (4 * cw + 3 * gap)) / 2, y = 330, ch = 130;
+  RECAP.forEach(([t, sub, w], i) => {
+    const at = T('0011.png', w, 0.6 + i * 1.6), a = ap(k, s, at), yy = y + 14 * (1 - a), x = x0 + i * (cw + gap);
+    if (i > 0) { const f = hc([x - gap, y + ch / 2], [x, y + ch / 2]); path(ctx, k, f, k.eInOut(k.prog(s, at - 0.25, at + 0.2))); }
+    card(ctx, k, x, yy, cw, ch, a, ap(k, s, at, 0.3), 16);
+    txt(ctx, k, t, x + cw / 2, yy + 54, 20, 600, '#191919', a);
+    txt(ctx, k, sub, x + cw / 2, yy + 88, 14, 500, ink(0.55), a);
+    if (s > at + 0.5) check(ctx, k, x + cw - 18, yy + 18, a * ap(k, s, at + 0.5, 0.3), 7);
+  });
+}
+
+window.SCENES = { value, steps, reward, sweep, score, recap };
 })();

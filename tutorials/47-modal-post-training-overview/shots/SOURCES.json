@@ -1,51 +1,55 @@
 {
-  "note": "Every UI shot is a real screenshot captured for tutorial 46 by 46-modal-post-training/capture.mjs in the thequantexplorer Devin org (light mode, 125% zoom). Diagram beats are blank placeholders drawn live by scenes.js.",
-  "session": "https://app.devin.ai/sessions/ced98d067c894a1c807a4072537d6ee4",
+  "note": "Every UI shot is a real screenshot from the tutorial 46 Devin session in the thequantexplorer org (light mode, 125% zoom), captured by 46-modal-post-training/capture.mjs. Shots 0008 and 0010 are Devin's own browser screenshots from that session, opened full size in the session viewer. Diagram beats are blank placeholders drawn live by scenes.js.",
+  "session": "https://app.devin.ai/sessions/1a90528b1acb4f74ae3c49c99de1dc3d",
   "repo": "thequantexplorer/product-demo-apps (text-to-sql-modal/)",
   "shots": {
     "0000.png": {
       "scene": "value",
-      "what": "The app's SQL generator moves from a frontier API (gpt-4.1) to a post-trained Qwen2.5-Coder-7B endpoint on Modal"
+      "what": "The app's SQL generator: gpt-6.1-sol next to our post-trained Qwen3.8-27B endpoint on Modal"
     },
     "0001.png": {
       "scene": "steps",
       "what": "Every ML-engineering step: dataset, baseline, SFT, RL with a verifiable reward, parallel sweep, eval, deploy"
     },
     "0002.png": {
-      "source": "46-modal-post-training/shots/0051.png",
-      "what": "Step 2 prompt: Spider splits with the SQLite DBs and reward.py (1 / 0 / -0.5)"
+      "source": "46-modal-post-training session, frame 0389.png",
+      "what": "Devin's step 2 report: BIRD's 1,534 questions shuffled with seed 42 into 500 test and 1,034 train, and reward.py (1 / 0 / -0.5) with 10 passing unit tests"
     },
     "0003.png": {
       "scene": "reward",
       "what": "Executable reward: predicted and gold SQL run on read-only SQLite; match 1.0, wrong rows 0.0, fails to run -0.5"
     },
     "0004.png": {
-      "source": "46-modal-post-training/shots/0337.png",
-      "what": "results.md baseline: gpt-4.1 73.5% vs base Qwen-7B 77.0% execution accuracy on 200 eval questions"
+      "source": "46-modal-post-training session, frame 1059.png",
+      "what": "results.md baseline on 500 BIRD test questions: gpt-6.1-sol 63.8% vs base Qwen3.8-27B 64.0%"
     },
     "0005.png": {
       "scene": "sweep",
-      "what": "One coordinator session starts four managed Devins, each with its own VM and Modal H100 GRPO job"
+      "what": "Four managed Devins, each with its own VM and a Modal B200 GRPO job"
     },
     "0006.png": {
-      "source": "46-modal-post-training/shots/2496.png",
-      "what": "Created child sessions card: the four GRPO variant Devins (lr 2e-5, LoRA rank 64, 16 generations, partial-credit reward)"
+      "source": "46-modal-post-training session, frame 4013.png",
+      "what": "Sweep plan: the four GRPO variants (learning rate 5e-5, LoRA rank 64, 16 generations, reward shaping)"
     },
     "0007.png": {
-      "source": "46-modal-post-training/shots/2915.png",
-      "what": "Sweep table: 16 generations wins on validation (77.5%), promoted to /checkpoints/qwen7b-grpo-best/, 82.0% on eval"
+      "source": "46-modal-post-training session, frame 5982.png",
+      "what": "Validation table: no variant beat the base model (62.7%); rank 64 promoted by one question, 69.4% on test with learned reasoning output"
     },
     "0008.png": {
-      "source": "46-modal-post-training/shots/2960.png",
-      "what": "Devin's Computer tab: the app answering with Backend frontier, model gpt-4.1"
+      "source": "46-modal-post-training session, Devin's browser screenshot",
+      "what": "The demo app answering the formula_1 question with gpt-6.1-sol (3364 ms)"
     },
     "0010.png": {
-      "source": "46-modal-post-training/shots/2964.png",
-      "what": "Devin's Computer tab: the same question with Backend finetuned, model qwen-sql-grpo on the Modal endpoint"
+      "source": "46-modal-post-training session, Devin's browser screenshot",
+      "what": "The same question answered by qwen3.8-27b-bird-grpo on the Modal endpoint (2914 ms), same result"
     },
     "0009.png": {
       "scene": "score",
-      "what": "Scorecard with the measured numbers from results.md and the sweep table"
+      "what": "Scorecard from results.md: accuracy with 95% bootstrap CIs, p50 latency and cost per 1M queries"
+    },
+    "0011.png": {
+      "scene": "recap",
+      "what": "Recap: reward script, baseline first, train and sweep, deploy as an endpoint"
     }
   }
 }

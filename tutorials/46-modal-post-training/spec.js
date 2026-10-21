@@ -1,213 +1,163 @@
 window.SPEC = {
   "title": "Post-train a model on Modal",
-  "subtitle": "Devin trains and deploys a model to replace a frontier API call",
-  "outro": "Devin does the work. You review the results",
-  "voOutro": "Devin did every step on its own, and I reviewed results instead of code.",
+  "subtitle": "Devin trains your own model and deploys it as an API endpoint",
+  "outro": "Start with a script that scores the answer",
+  "voOutro": "The big takeaway: start with a script that scores the answer. With that, Devin can train, compare, and deploy a model for your task, and the playbook lets you run it again on your own data.",
+  "tailHold": 0.3,
+  "outroVoDelay": 0.6,
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
-  "pollRunMax": 2.5,
+  "pollRunMax": 0.8,
   "noZoom": [
     [
-      "0009.png"
+      "0000.png"
     ]
   ],
   "edit": {
-    "0001.png": {
-      "cap": "Modal and OpenAI keys saved as Devin secrets",
-      "vo": "First, I saved my Modal token and an OpenAI key as Devin secrets, so sessions can use them without the values ever showing.",
-      "hold": 3.2
-    },
-    "0002.png": {
-      "cap": "Our example: a text-to-SQL demo app",
-      "vo": "Our example in this video is text-to-SQL, but the same steps work for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which uses gpt-4.1 to turn questions into SQL.",
-      "hold": 5.2,
+    "0000.png": {
+      "cap": "Post-train an open model on Modal",
+      "vo": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model, on Modal, so it turns plain-English questions into SQL. Modal runs each GPU job only while it's needed and serves the finished model as an endpoint that scales to zero, so you pay for training and traffic, not for idle servers.",
+      "hold": 3.0,
       "cursor": false,
-      "voSay": "Our example in this video is text-to-SQL, but the same steps work for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which uses GPT four point one to turn questions into SQL."
+      "voSay": "In this video, we'll have Devin post-train Qwen three point eight, twenty-seven B, an open model, on Modal, so it turns plain-English questions into SQL. Modal runs each GPU job only while it's needed and serves the finished model as an endpoint that scales to zero, so you pay for training and traffic, not for idle servers."
     },
-    "0009.png": {
+    "0007.png": {
       "cap": "Step 1: set the folder up for Modal",
-      "vo": "I start one session and ask Devin to set the folder up for Modal training, check that auth works, and save the setup as a skill.",
-      "hold": 3.2
+      "vo": "I start one session and ask Devin to set the folder up for Modal training, check that auth works, and save the setup as a skill. The repo already has a small demo app we added beforehand, which uses gpt-6.1-sol.",
+      "hold": 3.2,
+      "cursor": false,
+      "voSay": "I start one session and ask Devin to set the folder up for Modal training, check that auth works, and save the setup as a skill. The repo already has a small demo app we added beforehand, which uses GPT six point one sol."
     },
-    "0044.png": {
-      "cap": "Auth verified, smoke jobs ran on Modal",
-      "vo": "Devin verifies the token, runs a small CPU and GPU job on Modal, and opens a pull request.",
+    "0300.png": {
+      "cap": "Auth checked; setup saved as a skill",
+      "vo": "Devin verifies the Modal token, runs a small GPU job, and proposes the setup as a skill, so future sessions start ready.",
       "hold": 2.8
     },
-    "0048.png": {
-      "cap": "Approved: future sessions start ready",
-      "vo": "It proposes a skill with the setup, and I approve it so future sessions start ready.",
-      "hold": 2.6
-    },
-    "0051.png": {
-      "cap": "Step 2: Spider splits and an executable reward",
-      "vo": "Next, the dataset and the reward: Spider splits with their SQLite databases, and a reward script that runs the SQL.",
+    "0310.png": {
+      "cap": "Step 2: BIRD splits and an executable reward",
+      "vo": "Next, the data. BIRD is a hard public text-to-SQL benchmark with real databases, and I ask for a fixed-seed split and a reward script that runs the SQL.",
       "hold": 3.2,
-      "voSay": "Next, the data set and the reward: Spider splits with their SQLite databases, and a reward script that runs the SQL."
+      "cursor": false
     },
-    "0116.png": {
-      "cap": "2,000 train, 200 eval, separate databases",
-      "vo": "It builds two thousand training and two hundred eval questions on separate databases, and writes the reward with unit tests. The reward is checked by the computer, not an AI judge.",
+    "0389.png": {
+      "cap": "1,034 train, 500 test; reward runs the SQL",
+      "vo": "Devin builds one thousand thirty-four training questions and five hundred test questions. The reward runs both queries and compares the rows: one for a match, zero for a mismatch, and minus a half when the query fails.",
       "hold": 3.4
     },
-    "0118.png": {
-      "cap": "Step 3: baseline gpt-4.1 and the base 7B",
-      "vo": "Then the baseline: gpt-4.1 and the base Qwen 7B on a Modal H100, measured for accuracy, latency and cost on the eval split.",
-      "hold": 3.2,
-      "voSay": "Then the baseline: GPT four point one and the base Qwen seven B on a Modal H one hundred, measured for accuracy, latency and cost on the eval split."
-    },
-    "0250.png": {
-      "cap": "No CUDA compiler: Devin switches images",
-      "vo": "When the vLLM server fails because the image has no CUDA compiler, Devin switches to a CUDA image and redeploys.",
-      "hold": 2.6,
-      "badge": "Sped up"
-    },
-    "0337.png": {
-      "cap": "Base 7B 77.0%, gpt-4.1 73.5%: within noise",
-      "vo": "The base 7B already scores seventy-seven percent to gpt-4.1's seventy-three and a half, and Devin notes the gap is within noise.",
-      "hold": 3.2,
-      "voSay": "The base seven B already scores seventy-seven percent to GPT four point one's seventy-three and a half, and Devin notes the gap is within noise."
-    },
-    "0352.png": {
-      "cap": "Step 4: LoRA SFT on a Modal H100",
-      "vo": "Now supervised fine-tuning: a LoRA run on a Modal H100, with checkpoints on a Modal volume.",
+    "0397.png": {
+      "cap": "Step 3: baseline gpt-6.1-sol and the base 27B",
+      "vo": "Then the baseline. Devin measures accuracy, latency and cost on the test split for gpt-6.1-sol and for the base model on a Modal H100.",
       "hold": 3.0,
-      "voSay": "Now supervised fine-tuning: a LoRA run on a Modal H one hundred, with checkpoints on a Modal volume."
+      "cursor": false,
+      "voSay": "Then the baseline. Devin measures accuracy, latency and cost on the test split for GPT six point one sol and for the base model on a Modal H one hundred."
     },
-    "0400.png": {
-      "cap": "A real launch failure, fixed and relaunched",
-      "vo": "The first launch fails on a config option the trainer no longer accepts, so Devin fixes it and relaunches.",
-      "hold": 2.6,
-      "badge": "Sped up"
-    },
-    "0589.png": {
-      "cap": "SFT: 79.0%, still within noise",
-      "vo": "The fine-tuned model scores seventy-nine percent, still within noise of the base model.",
-      "hold": 3.0
-    },
-    "0603.png": {
-      "cap": "Step 5: GRPO with the same reward",
-      "vo": "Then reinforcement learning with GRPO, using the same reward script, with early stopping.",
-      "hold": 3.0
-    },
-    "0977.png": {
-      "cap": "Run 1 plateaus; Devin raises the learning rate",
-      "vo": "The first run plateaus, because the fine-tuned model is so confident that most samples get the same reward, so Devin raises the learning rate.",
-      "hold": 3.0
-    },
-    "1163.png": {
-      "cap": "Out of GPU memory: smaller micro-batches",
-      "vo": "The next run runs out of GPU memory, and Devin splits each step into smaller batches.",
-      "hold": 2.6,
-      "badge": "Sped up"
-    },
-    "1763.png": {
-      "cap": "More fixes: data, reward CPU, early stopping",
-      "vo": "Over a few more runs it fixes a data bug, gives the reward more CPU, and rewrites early stopping.",
-      "hold": 2.6,
-      "badge": "Sped up"
-    },
-    "2358.png": {
-      "cap": "GRPO: 81.5% on the same 200 questions",
-      "vo": "The final run scores eighty-one and a half percent, ahead of gpt-4.1, though the gain over fine-tuning alone is within noise.",
-      "hold": 3.0,
-      "voSay": "The final run scores eighty-one and a half percent, ahead of GPT four point one, though the gain over fine-tuning alone is within noise."
-    },
-    "2378.png": {
-      "cap": "Step 6: four managed Devins, one variant each",
-      "vo": "Now the sweep: I ask for four managed Devins, each running one GRPO variant, then a table and the best checkpoint.",
-      "hold": 3.2
-    },
-    "2393.png": {
-      "cap": "One coordinator plans four child sessions",
-      "vo": "Devin pushes the training code and plans four child sessions, each with its own VM and Modal job.",
-      "hold": 2.6
-    },
-    "2496.png": {
-      "cap": "Four Devins, each with its own Modal job",
-      "vo": "Each child gets one variant: a lower learning rate, a bigger LoRA rank, sixteen generations per prompt, or a partial-credit reward.",
-      "hold": 3.2
-    },
-    "2642.png": {
-      "cap": "One child: its own VM and Modal run",
-      "vo": "Inside one child, Devin launches its GRPO run on Modal and watches it train.",
-      "hold": 2.8,
-      "cam": {
-        "x": 720,
-        "y": 520,
-        "z": 1.5,
-        "camForce": true
-      }
-    },
-    "2835.png": {
-      "cap": "Same eval set for every variant",
-      "vo": "When they finish, the coordinator serves each best checkpoint and scores it on the same eval set.",
-      "hold": 2.6
-    },
-    "2915.png": {
-      "cap": "Picked by validation: 82.0% on eval",
-      "vo": "Sixteen generations wins on validation and gets promoted. It scores eighty-two percent on eval, and Devin notes no variant is significantly better.",
-      "hold": 3.4
-    },
-    "2918.png": {
-      "cap": "Step 7: deploy and swap it into the app",
-      "vo": "Next, I ask Devin to deploy the winner with modal deploy, add a feature flag to the app, and show it working in the browser.",
-      "hold": 3.2
-    },
-    "2955.png": {
-      "cap": "Testing in the session's browser",
-      "vo": "Devin's testing agent opens the app in the session's browser.",
-      "hold": 2.4
-    },
-    "2960.png": {
-      "cap": "Before: the frontier backend, gpt-4.1",
-      "vo": "With the flag set to frontier, gpt-4.1 writes the SQL.",
-      "hold": 2.8,
-      "voSay": "With the flag set to frontier, GPT four point one writes the SQL."
-    },
-    "2964.png": {
-      "cap": "After: our model on the Modal endpoint",
-      "vo": "Flipped to finetuned, the same question goes to our endpoint on Modal and returns the same rows.",
-      "hold": 3.0,
-      "voSay": "Flipped to fine tuned, the same question goes to our endpoint on Modal and returns the same rows."
-    },
-    "2979.png": {
-      "cap": "Deployed: text-to-sql-vllm-prod on Modal",
-      "vo": "Devin confirms the production endpoint is deployed on Modal, and nothing else is left running.",
-      "hold": 2.8
-    },
-    "2983.png": {
-      "cap": "Step 8: the scorecard, real numbers only",
-      "vo": "Step eight: the scorecard, filled in with the real numbers.",
-      "hold": 3.0
-    },
-    "3038.png": {
-      "cap": "The scorecard: measured numbers only",
-      "vo": "On the same two hundred questions, gpt-4.1 scores seventy-three and a half percent, the base 7B seventy-seven, fine-tuning seventy-nine, and the promoted GRPO model eighty-two. Only its lead over gpt-4.1 is statistically significant.",
-      "hold": 3.6,
-      "voSay": "On the same two hundred questions, GPT four point one scores seventy-three and a half percent, the base seven B seventy-seven, fine-tuning seventy-nine, and the promoted GRPO model eighty-two. Only its lead over GPT four point one is statistically significant."
-    },
-    "3008.png": {
-      "cap": "Qwen cost assumes a warm, busy H100",
-      "vo": "On a warm, busy H100 our model costs about forty-nine dollars per million queries, against nine hundred ninety-three for gpt-4.1, not counting cold starts or idle time. The latency differences between the Qwen models are noise.",
+    "1059.png": {
+      "cap": "Base 64.0% vs gpt-6.1-sol 63.8%: a tie",
+      "vo": "Before any training, the base model scores sixty-four percent and gpt-6.1-sol sixty-three point eight. That's a tie, but our model answers faster and costs about a tenth as much.",
       "hold": 3.4,
-      "voSay": "On a warm, busy H one hundred our model costs about forty-nine dollars per million queries, against nine hundred ninety-three for GPT four point one, not counting cold starts or idle time. The latency differences between the Qwen models are noise."
+      "voSay": "Before any training, the base model scores sixty-four percent and GPT six point one sol sixty-three point eight. That's a tie, but our model answers faster and costs about a tenth as much."
     },
-    "3014.png": {
-      "cap": "Step 9: save the recipe as a playbook",
-      "vo": "Finally, I ask Devin to save the whole recipe as a playbook.",
+    "1065.png": {
+      "cap": "Step 4: LoRA fine-tuning on a Modal H200",
+      "vo": "Now supervised fine-tuning: a LoRA run on one Modal H200, with checkpoints saved on a Modal volume.",
+      "hold": 3.0,
+      "cursor": false,
+      "voSay": "Now supervised fine-tuning: a LoRA run on one Modal H two hundred, with checkpoints saved on a Modal volume."
+    },
+    "1709.png": {
+      "cap": "SFT: 66.4%, not significant yet",
+      "vo": "Training takes eighteen minutes and lifts the model to sixty-six point four percent, but that gain isn't statistically significant yet.",
+      "hold": 3.2
+    },
+    "1777.png": {
+      "cap": "Step 5: GRPO with the SQL reward",
+      "vo": "Next comes reinforcement learning with GRPO on a B200. The reward script grades every answer the model tries by running it.",
+      "hold": 3.0,
+      "cursor": false,
+      "voSay": "Next comes reinforcement learning with GRPO on a B two hundred. The reward script grades every answer the model tries by running it."
+    },
+    "1943.png": {
+      "cap": "Smoke test passes; 250-step run launched",
+      "vo": "A two-step smoke test passes, so Devin launches the full run of two hundred fifty steps.",
       "hold": 2.8
     },
-    "3032.png": {
-      "cap": "Devin drafts the playbook; I create it",
-      "vo": "Devin drafts it as general steps, with this project as the worked example, and I create it.",
+    "2501.png": {
+      "cap": "Crash at step 54: fixed and resumed",
+      "vo": "At step fifty-four, the run crashes on a slow scoring query. Devin finds the cause, fixes the scoring, and resumes from the last checkpoint.",
+      "hold": 3.0,
+      "badge": "Sped up"
+    },
+    "4002.png": {
+      "cap": "GRPO: 67.4% on the test set",
+      "vo": "The trained model reaches sixty-seven point four percent. Against the base model, that's suggestive but not conclusive.",
+      "hold": 3.2
+    },
+    "4008.png": {
+      "cap": "Step 6: four managed Devins, one variant each",
+      "vo": "Now the sweep. I ask for four managed Devins, each training one variant, and Devin holds out a validation set so the test set stays untouched.",
+      "hold": 3.2,
+      "cursor": false
+    },
+    "4013.png": {
+      "cap": "Four variants, 150 steps each on a B200",
+      "vo": "The variants change the learning rate, the LoRA rank, the number of samples per question, or the reward itself.",
       "hold": 3.0
     },
-    "3036.png": {
-      "cap": "Saved as an org playbook",
-      "vo": "Now it's an organization playbook, so the next task model starts from this recipe.",
+    "4565.png": {
+      "cap": "Base model: 62.7% on validation",
+      "vo": "While they train, Devin scores the untrained model on validation as a reference.",
       "hold": 2.8
+    },
+    "5982.png": {
+      "cap": "No variant beat the base on validation",
+      "vo": "None of the four beats the base model on validation. The rank sixty-four variant wins the pick by one question and scores sixty-nine point four on test, but it now writes reasoning first, at about three times the cost.",
+      "hold": 3.6
+    },
+    "5988.png": {
+      "cap": "Step 7: deploy the 250-step model",
+      "vo": "So I ask Devin to deploy the earlier reinforcement learning model with modal deploy, as an endpoint that scales to zero, and show it in the demo app.",
+      "hold": 3.2,
+      "cursor": false
+    },
+    "6051.png": {
+      "cap": "The app, with gpt-6.1-sol and with our endpoint",
+      "vo": "Devin adds a backend setting to the app and runs it twice, once with gpt-6.1-sol and once with our endpoint.",
+      "hold": 2.8,
+      "voSay": "Devin adds a backend setting to the app and runs it twice, once with GPT six point one sol and once with our endpoint."
+    },
+    "6134.png": {
+      "cap": "Same question, same answer from both",
+      "vo": "In the browser, both return the same average lap time for Lewis Hamilton, and our endpoint answers a little faster.",
+      "hold": 3.2
+    },
+    "6140.png": {
+      "cap": "Step 8: the final scorecard",
+      "vo": "Step eight is the final scorecard on the five hundred test questions, with significance tests.",
+      "hold": 3.0,
+      "cursor": false
+    },
+    "6159.png": {
+      "cap": "67.4% vs 63.8%; $283 vs $2,546 per 1M",
+      "vo": "The deployed model scores sixty-seven point four percent, against sixty-three point eight for gpt-6.1-sol. That gap isn't statistically significant, but it costs about two hundred eighty dollars per million queries, against about twenty-five hundred.",
+      "hold": 3.6,
+      "voSay": "The deployed model scores sixty-seven point four percent, against sixty-three point eight for GPT six point one sol. That gap isn't statistically significant, but it costs about two hundred eighty dollars per million queries, against about twenty-five hundred."
+    },
+    "6161.png": {
+      "cap": "Costs leave out cold starts and idle time",
+      "vo": "Devin also spells out what that cost leaves out: cold starts, idle time, and the training itself.",
+      "hold": 3.2
+    },
+    "6165.png": {
+      "cursor": false,
+      "cap": "Step 9: save it as a playbook",
+      "vo": "Last, I ask Devin to save the whole recipe as a playbook.",
+      "hold": 2.8
+    },
+    "6180.png": {
+      "cap": "Playbook saved: Post-train a task model on Modal",
+      "vo": "Devin writes it up with the steps, the fixes it needed along the way, and what not to do, so the next model on new data is one request.",
+      "hold": 3.4
     }
   }
 };

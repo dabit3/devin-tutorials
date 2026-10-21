@@ -1,75 +1,55 @@
 # Post-train a model on Modal, voice script
 
-Narrated by Nader (ElevenLabs voice T8iHhGIWPm2GVYpQD1Am, default settings, no seed), recorded as one full-script take and cut at sentence boundaries.
+Narrated by Nader (ElevenLabs voice T8iHhGIWPm2GVYpQD1Am, eleven_multilingual_v2, default settings, no seed), recorded as one full-script take and cut at sentence boundaries.
 
-First, I saved my Modal token and an OpenAI key as Devin secrets, so sessions can use them without the values ever showing.
+In this video, we'll have Devin post-train Qwen3.8-27B, an open model, on Modal, so it turns plain-English questions into SQL. Modal runs each GPU job only while it's needed and serves the finished model as an endpoint that scales to zero, so you pay for training and traffic, not for idle servers.
 
-Our example in this video is text-to-SQL, but the same steps work for any task where a script can score the answer. The repo already has a small demo app we added beforehand, which uses gpt-4.1 to turn questions into SQL.
+I start one session and ask Devin to set the folder up for Modal training, check that auth works, and save the setup as a skill. The repo already has a small demo app we added beforehand, which uses gpt-6.1-sol.
 
-I start one session and ask Devin to set the folder up for Modal training, check that auth works, and save the setup as a skill.
+Devin verifies the Modal token, runs a small GPU job, and proposes the setup as a skill, so future sessions start ready.
 
-Devin verifies the token, runs a small CPU and GPU job on Modal, and opens a pull request.
+Next, the data. BIRD is a hard public text-to-SQL benchmark with real databases, and I ask for a fixed-seed split and a reward script that runs the SQL.
 
-It proposes a skill with the setup, and I approve it so future sessions start ready.
+Devin builds one thousand thirty-four training questions and five hundred test questions. The reward runs both queries and compares the rows: one for a match, zero for a mismatch, and minus a half when the query fails.
 
-Next, the dataset and the reward: Spider splits with their SQLite databases, and a reward script that runs the SQL.
+Then the baseline. Devin measures accuracy, latency and cost on the test split for gpt-6.1-sol and for the base model on a Modal H100.
 
-It builds two thousand training and two hundred eval questions on separate databases, and writes the reward with unit tests. The reward is checked by the computer, not an AI judge.
+Before any training, the base model scores sixty-four percent and gpt-6.1-sol sixty-three point eight. That's a tie, but our model answers faster and costs about a tenth as much.
 
-Then the baseline: gpt-4.1 and the base Qwen 7B on a Modal H100, measured for accuracy, latency and cost on the eval split.
+Now supervised fine-tuning: a LoRA run on one Modal H200, with checkpoints saved on a Modal volume.
 
-When the vLLM server fails because the image has no CUDA compiler, Devin switches to a CUDA image and redeploys.
+Training takes eighteen minutes and lifts the model to sixty-six point four percent, but that gain isn't statistically significant yet.
 
-The base 7B already scores seventy-seven percent to gpt-4.1's seventy-three and a half, and Devin notes the gap is within noise.
+Next comes reinforcement learning with GRPO on a B200. The reward script grades every answer the model tries by running it.
 
-Now supervised fine-tuning: a LoRA run on a Modal H100, with checkpoints on a Modal volume.
+A two-step smoke test passes, so Devin launches the full run of two hundred fifty steps.
 
-The first launch fails on a config option the trainer no longer accepts, so Devin fixes it and relaunches.
+At step fifty-four, the run crashes on a slow scoring query. Devin finds the cause, fixes the scoring, and resumes from the last checkpoint.
 
-The fine-tuned model scores seventy-nine percent, still within noise of the base model.
+The trained model reaches sixty-seven point four percent. Against the base model, that's suggestive but not conclusive.
 
-Then reinforcement learning with GRPO, using the same reward script, with early stopping.
+Now the sweep. I ask for four managed Devins, each training one variant, and Devin holds out a validation set so the test set stays untouched.
 
-The first run plateaus, because the fine-tuned model is so confident that most samples get the same reward, so Devin raises the learning rate.
+The variants change the learning rate, the LoRA rank, the number of samples per question, or the reward itself.
 
-The next run runs out of GPU memory, and Devin splits each step into smaller batches.
+While they train, Devin scores the untrained model on validation as a reference.
 
-Over a few more runs it fixes a data bug, gives the reward more CPU, and rewrites early stopping.
+None of the four beats the base model on validation. The rank sixty-four variant wins the pick by one question and scores sixty-nine point four on test, but it now writes reasoning first, at about three times the cost.
 
-The final run scores eighty-one and a half percent, ahead of gpt-4.1, though the gain over fine-tuning alone is within noise.
+So I ask Devin to deploy the earlier reinforcement learning model with modal deploy, as an endpoint that scales to zero, and show it in the demo app.
 
-Now the sweep: I ask for four managed Devins, each running one GRPO variant, then a table and the best checkpoint.
+Devin adds a backend setting to the app and runs it twice, once with gpt-6.1-sol and once with our endpoint.
 
-Devin pushes the training code and plans four child sessions, each with its own VM and Modal job.
+In the browser, both return the same average lap time for Lewis Hamilton, and our endpoint answers a little faster.
 
-Each child gets one variant: a lower learning rate, a bigger LoRA rank, sixteen generations per prompt, or a partial-credit reward.
+Step eight is the final scorecard on the five hundred test questions, with significance tests.
 
-Inside one child, Devin launches its GRPO run on Modal and watches it train.
+The deployed model scores sixty-seven point four percent, against sixty-three point eight for gpt-6.1-sol. That gap isn't statistically significant, but it costs about two hundred eighty dollars per million queries, against about twenty-five hundred.
 
-When they finish, the coordinator serves each best checkpoint and scores it on the same eval set.
+Devin also spells out what that cost leaves out: cold starts, idle time, and the training itself.
 
-Sixteen generations wins on validation and gets promoted. It scores eighty-two percent on eval, and Devin notes no variant is significantly better.
+Last, I ask Devin to save the whole recipe as a playbook.
 
-Next, I ask Devin to deploy the winner with modal deploy, add a feature flag to the app, and show it working in the browser.
+Devin writes it up with the steps, the fixes it needed along the way, and what not to do, so the next model on new data is one request.
 
-Devin's testing agent opens the app in the session's browser.
-
-With the flag set to frontier, gpt-4.1 writes the SQL.
-
-Flipped to finetuned, the same question goes to our endpoint on Modal and returns the same rows.
-
-Devin confirms the production endpoint is deployed on Modal, and nothing else is left running.
-
-Step eight: the scorecard, filled in with the real numbers.
-
-On the same two hundred questions, gpt-4.1 scores seventy-three and a half percent, the base 7B seventy-seven, fine-tuning seventy-nine, and the promoted GRPO model eighty-two. Only its lead over gpt-4.1 is statistically significant.
-
-On a warm, busy H100 our model costs about forty-nine dollars per million queries, against nine hundred ninety-three for gpt-4.1, not counting cold starts or idle time. The latency differences between the Qwen models are noise.
-
-Finally, I ask Devin to save the whole recipe as a playbook.
-
-Devin drafts it as general steps, with this project as the worked example, and I create it.
-
-Now it's an organization playbook, so the next task model starts from this recipe.
-
-Devin did every step on its own, and I reviewed results instead of code.
+The big takeaway: start with a script that scores the answer. With that, Devin can train, compare, and deploy a model for your task, and the playbook lets you run it again on your own data.
