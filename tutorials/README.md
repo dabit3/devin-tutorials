@@ -37,6 +37,8 @@
 | 34 | Devin Primitives: when to use what (overview) | `34-devin-primitives-overview/` |
 | 58 | Port an iOS screen to Android and prove parity | `58-ios-to-android-parity/` |
 | 59 | Port an iOS screen to Android: how it works (overview) | `59-ios-to-android-parity-overview/` |
+| 74 | Job-market tracker on Modal with the xAI API | `74-job-market-pulse/` |
+| 75 | Job-market tracker: how it works (overview) | `75-job-market-pulse-overview/` |
 | 76 | Devin CLI: what's new in v3000.11.92 (overview) | `76-cli-whats-new-overview/` |
 | 77 | Stack Clash: add a feature to a voice-driven game by voice | `77-stack-clash-voice/` |
 
