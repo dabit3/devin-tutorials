@@ -71,7 +71,7 @@ function badge(ctx, k, x, y, ok, a, r = 11) {
   if (ok) { ctx.moveTo(-q, 0); ctx.lineTo(-q * 0.25, q * 0.75); ctx.lineTo(q, -q * 0.7); } else { ctx.moveTo(-q, -q); ctx.lineTo(q, q); ctx.moveTo(q, -q); ctx.lineTo(-q, q); }
   ctx.stroke(); ctx.restore();
 }
-// a docs page: title, prose lines, and code blocks (each code block gets a status badge when `st[i]` > 0)
+// a walkthrough page: title, then groups of numbered plain-English steps (each group gets a status badge when `st[i]` > 0)
 function page(ctx, k, x, y, w, h, title, blocks, a, st = [], on = 0, onCol = BLUE) {
   if (a <= 0) return;
   const yy = y + 14 * (1 - a);
@@ -80,43 +80,47 @@ function page(ctx, k, x, y, w, h, title, blocks, a, st = [], on = 0, onCol = BLU
   let cy = yy + 58;
   blocks.forEach((b, i) => {
     ctx.save(); ctx.globalAlpha = k.alpha * a;
-    [0.86, 0.62].forEach((f, j) => { k.rr(x + 22, cy + j * 13, (w - 44) * f, 5, 2.5); ctx.fillStyle = 'rgba(25,25,25,.09)'; ctx.fill(); });
-    cy += 34;
-    const bh = 22 + b * 13; k.rr(x + 22, cy, w - 44, bh, 8); ctx.fillStyle = 'rgba(25,25,25,.045)'; ctx.fill();
-    for (let j = 0; j < b; j++) { k.rr(x + 36, cy + 12 + j * 13, (w - 110) * [0.7, 0.9, 0.55, 0.8, 0.6][j % 5], 5, 2.5); ctx.fillStyle = rgba(BLUE, 0.28); ctx.fill(); }
+    const bh = 8 + b * 22;
+    for (let j = 0; j < b; j++) {
+      const ry = cy + 8 + j * 22;
+      ctx.beginPath(); ctx.arc(x + 30, ry + 2.5, 6, 0, Math.PI * 2); ctx.fillStyle = rgba(BLUE, 0.35); ctx.fill();
+      k.rr(x + 44, ry, (w - 110) * [0.8, 0.95, 0.6, 0.85, 0.7][(i + j) % 5], 5, 2.5); ctx.fillStyle = 'rgba(25,25,25,.11)'; ctx.fill();
+    }
     ctx.restore();
-    if (st[i]) badge(ctx, k, x + w - 38, cy + 15, st[i] > 0, Math.abs(st[i]));
-    cy += bh + 16;
+    if (st[i]) badge(ctx, k, x + w - 38, cy + 10, st[i] > 0, Math.abs(st[i]));
+    cy += bh + 18;
   });
 }
 
-// 1. Every snippet on a docs page runs exactly as written, and each one passes or fails.
+// 1. A walkthrough is followed step by step in a real browser on a fresh VM, and each step matches or doesn't.
 function intro(ctx, s, k) {
   eyebrow(ctx, k, 'DOCS THAT TEST THEMSELVES', 92, appear(k, s, 0.05));
   const a = appear(k, s, 0.2), BY = [292, 416, 534];
   const st = [appear(k, s, 3.3, 0.4), -appear(k, s, 4.0, 0.4), appear(k, s, 4.7, 0.4)];
-  page(ctx, k, 240, 170, 400, 470, 'quickstart.md', [3, 5, 2], a, st);
+  page(ctx, k, 240, 170, 400, 470, 'getting-started.md', [3, 5, 2], a, st);
   // the VM
   const va = appear(k, s, 1.2);
   box(ctx, k, 880, 300 + 12 * (1 - va), 320, 200, va, 0, 16);
   if (va > 0) {
     const y0 = 300 + 12 * (1 - va);
     text(ctx, k, 'Fresh VM', 1040, y0 + 34, 20, 600, k.INK, va);
-    ctx.save(); ctx.globalAlpha = k.alpha * va; k.rr(906, y0 + 62, 268, 112, 10); ctx.fillStyle = '#16181d'; ctx.fill(); ctx.restore();
-    const lines = ['$ pip install -e .', '$ python snippet_1.py', '$ python snippet_2.py', '$ python snippet_3.py'];
-    lines.forEach((l, i) => text(ctx, k, l, 922, y0 + 82 + i * 22, 13, 500, 'rgba(255,255,255,.85)', va * k.prog(s, 1.8 + i * 0.7, 2.1 + i * 0.7), 'left', 'JetBrains Mono'));
+    ctx.save(); ctx.globalAlpha = k.alpha * va; k.rr(906, y0 + 62, 268, 112, 10); ctx.fillStyle = '#fff'; ctx.fill(); ctx.strokeStyle = 'rgba(25,25,25,.14)'; ctx.lineWidth = 1; ctx.stroke();
+    k.rr(906, y0 + 62, 268, 20, 10); ctx.fillStyle = 'rgba(25,25,25,.06)'; ctx.fill(); ctx.restore();
+    text(ctx, k, 'localhost:8040', 1040, y0 + 72, 11, 500, MUTED(1), va, 'center', 'JetBrains Mono');
+    const lines = ['Click New invoice', 'Add 2 × Design sprint', 'Add Hosting', 'Check the subtotal'];
+    lines.forEach((l, i) => text(ctx, k, (i + 1) + '. ' + l, 922, y0 + 98 + i * 20, 13, 500, k.INK, va * k.prog(s, 1.8 + i * 0.7, 2.1 + i * 0.7), 'left'));
   }
-  // snippets travel to the VM
+  // steps travel to the VM
   BY.forEach((y, i) => { const t0 = 2.4 + i * 0.7; curve(ctx, k, 640, y, 880, 400, k.eInOut(k.prog(s, 1.6, 2.2)), k.prog(s, t0, t0 + 0.6), true); });
-  pill(ctx, k, 'Exactly as written', 760, 210, appear(k, s, 2.0));
+  pill(ctx, k, 'Step by step, like a user', 760, 210, appear(k, s, 2.0));
 }
 
-// 2. One coordinator, one managed Devin per docs page, each on its own fresh VM.
-const PAGES = ['quickstart', 'money', 'invoices', 'discounts', 'exporting'];
+// 2. One coordinator, one managed Devin per walkthrough, each on its own fresh VM.
+const PAGES = ['getting-started', 'discounts', 'currencies', 'getting-paid', 'exporting'];
 const PX = [240, 480, 720, 960, 1200];
 function fanout(ctx, s, k) {
   eyebrow(ctx, k, 'ONE DEVIN PER PAGE', 70, appear(k, s, 0.05));
-  const co = node(ctx, k, { x: 720, y: 150, t: 'Coordinator', sub: 'Lists the docs pages', size: 22 }, appear(k, s, 0.1));
+  const co = node(ctx, k, { x: 720, y: 150, t: 'Coordinator', sub: 'Lists the walkthroughs', size: 22 }, appear(k, s, 0.1));
   PAGES.forEach((p, i) => {
     const t0 = 1.0 + i * 0.18;
     curve(ctx, k, 720, co.bot, PX[i], 300, k.eInOut(k.prog(s, t0, t0 + 0.7)), k.prog(s, t0 + 0.1, t0 + 1.0));
@@ -124,7 +128,7 @@ function fanout(ctx, s, k) {
     node(ctx, k, { x: PX[i], y: 327, t: 'Devin', w: 190, size: 18 }, a);
     pill(ctx, k, 'Fresh VM', PX[i], 388, appear(k, s, t0 + 0.9));
     const pa = appear(k, s, t0 + 1.3);
-    const fail = i === 0 || i === 2, done = appear(k, s, 4.6 + i * 0.35, 0.4);
+    const fail = i === 0 || i === 3, done = appear(k, s, 4.6 + i * 0.35, 0.4);
     page(ctx, k, PX[i] - 90, 430, 180, 230, p + '.md', [2, 3], pa, [], done * (fail ? 1 : 0), RED);
     if (pa > 0.5 && s > 3.4) {
       ctx.save(); ctx.globalAlpha = k.alpha * k.prog(s, 3.4, 3.8); const bw = 140, by = 690;
@@ -135,15 +139,15 @@ function fanout(ctx, s, k) {
   });
 }
 
-// 3. A failing snippet: is the page stale, or is the SDK wrong? Each answer becomes a different pull request.
+// 3. A step that doesn't match: is the walkthrough stale, or is the app wrong? Each answer becomes a different pull request.
 function decide(ctx, s, k) {
-  eyebrow(ctx, k, 'DOCS WRONG OR SDK WRONG?', 70, appear(k, s, 0.05));
+  eyebrow(ctx, k, 'WALKTHROUGH WRONG OR APP WRONG?', 70, appear(k, s, 0.05));
   const fa = appear(k, s, 0.1);
-  box(ctx, k, 560, 120 + 12 * (1 - fa), 320, 64, fa, fa, 14, RED);
-  badge(ctx, k, 596, 152 + 12 * (1 - fa), false, fa);
-  text(ctx, k, 'A snippet fails', 620, 152 + 12 * (1 - fa), 20, 600, k.INK, fa, 'left');
+  box(ctx, k, 540, 120 + 12 * (1 - fa), 360, 64, fa, fa, 14, RED);
+  badge(ctx, k, 576, 152 + 12 * (1 - fa), false, fa);
+  text(ctx, k, "A step doesn't match", 600, 152 + 12 * (1 - fa), 20, 600, k.INK, fa, 'left');
   // evidence Devin checks
-  const ev = ['CHANGELOG', 'Docstrings', 'Tests', 'Git history'];
+  const ev = ['CHANGELOG', "The app's code", 'Tests', 'Git history'];
   text(ctx, k, 'Devin checks', 720, 300, 14, 500, MUTED(1), appear(k, s, 0.8));
   ev.forEach((e, i) => pill(ctx, k, e, 720, 340 + i * 42, appear(k, s, 0.9 + i * 0.25)));
   const L = 420, R = 1020;
@@ -151,8 +155,8 @@ function decide(ctx, s, k) {
   curve(ctx, k, 720, 184, R, 330, k.eInOut(k.prog(s, 2.4, 3.1)), k.prog(s, 2.5, 3.4));
   const la = appear(k, s, 3.0), ra = appear(k, s, 3.4);
   const cards = [
-    [L, la, 'The docs are stale', 'The SDK changed on purpose', 'Fix the docs page', 'docs/invoices.md'],
-    [R, ra, 'The SDK has a bug', 'It breaks its own contract', 'Fix the SDK, add a test', 'ledgerkit/invoice.py'],
+    [L, la, 'The walkthrough is stale', 'The app changed on purpose', 'Fix the walkthrough', 'docs/getting-paid.md'],
+    [R, ra, 'The app has a bug', 'Its numbers are wrong', 'Fix the app, add a test', 'ledgerkit/invoice.py'],
   ];
   cards.forEach(([x, a, t, sub, pr, file], i) => {
     node(ctx, k, { x, y: 370, t, sub, icon: false, w: 330, size: 20 }, a);
@@ -165,10 +169,10 @@ function decide(ctx, s, k) {
   });
 }
 
-// 4. Make it repeatable: a playbook holds the procedure, an automation runs it when docs change or on a schedule.
+// 4. Make it repeatable: a playbook holds the procedure, an automation runs it when walkthroughs change or on a schedule.
 function repeat(ctx, s, k) {
   eyebrow(ctx, k, 'MAKE IT REPEATABLE', 92, appear(k, s, 0.05));
-  const tr = [['Docs change on main', 'GitHub push'], ['Every Monday', 'Schedule']];
+  const tr = [['Walkthroughs change', 'GitHub push'], ['Every Monday', 'Schedule']];
   tr.forEach(([t, sub], i) => {
     const a = appear(k, s, 0.3 + i * 0.4), y = 300 + i * 170;
     node(ctx, k, { x: 260, y, t, sub, icon: false, w: 270, size: 19 }, a);
@@ -179,7 +183,7 @@ function repeat(ctx, s, k) {
   const pa = appear(k, s, 2.4);
   box(ctx, k, 610, 495 + 10 * (1 - pa), 220, 78, pa, 0, 12);
   text(ctx, k, 'Playbook', 630, 520 + 10 * (1 - pa), 17, 600, k.INK, pa, 'left');
-  text(ctx, k, 'the docs-test procedure', 630, 547 + 10 * (1 - pa), 13, 400, MUTED(1), pa, 'left');
+  text(ctx, k, 'the walkthrough test', 630, 547 + 10 * (1 - pa), 13, 400, MUTED(1), pa, 'left');
   curve(ctx, k, 720, 495, 720, 426, k.eInOut(k.prog(s, 2.6, 3.0)));
   curve(ctx, k, 850, 385, 1040, 385, k.eInOut(k.prog(s, 3.2, 3.8)), k.prog(s, 3.6, 4.5), true);
   const ca = appear(k, s, 3.7);
@@ -192,10 +196,10 @@ function repeat(ctx, s, k) {
 function uses(ctx, s, k) {
   eyebrow(ctx, k, 'WHERE IT HELPS', 150, appear(k, s, 0.05));
   const C = [
-    ['SDK docs', 'Every example still runs'],
-    ['README quickstarts', 'Install steps work from scratch'],
-    ['API guides', 'Requests and responses match'],
-    ['Tutorials', 'Each step, in order'],
+    ['Product walkthroughs', 'Every click still works'],
+    ['Onboarding guides', 'New users reach the end'],
+    ['Help center articles', 'Screens match the steps'],
+    ['Runbooks', 'Each step, in order'],
   ];
   const cw = 280, ch = 300, gap = 28, x0 = (k.VW - (4 * cw + 3 * gap)) / 2, y = 225;
   C.forEach(([t, sub], i) => {

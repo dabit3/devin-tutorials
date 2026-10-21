@@ -1,8 +1,8 @@
 window.SPEC = {
   "title": "Docs that test themselves",
   "subtitle": "How it works, and what you can do with it",
-  "outro": "Docs that stay true to your code",
-  "voOutro": "Docs that stay true to your code.",
+  "outro": "Walkthroughs that test themselves",
+  "voOutro": "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the product.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.3,
@@ -12,16 +12,16 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "hold": 7,
-      "cap": "In this video: how docs that test themselves work",
-      "vo": "In this video, we'll show how docs that test themselves work, where every code snippet on every docs page is run exactly as written on a fresh machine, so you find out which examples are broken before your users do."
+      "cap": "In this video: walkthroughs that test themselves",
+      "vo": "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the product is wrong, and how to make it run on its own."
     },
     "0001.png": {
       "scene": "fanout",
       "cursor": false,
       "capPos": "bottom",
       "hold": 6,
-      "cap": "One coordinator, one managed Devin per page",
-      "vo": "One Devin coordinates the run, and it starts a managed Devin for each docs page, each on its own fresh VM, all in parallel."
+      "cap": "One coordinator, one managed Devin per walkthrough",
+      "vo": "One Devin coordinates the run. It starts a managed Devin for each walkthrough, each on its own fresh machine, all in parallel."
     },
     "0002.png": {
       "cursor": false,
@@ -116,7 +116,7 @@ window.SPEC = {
       "capPos": "bottom",
       "hold": 6,
       "cap": "A playbook, run by an automation",
-      "vo": "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the docs change, and on a schedule."
+      "vo": "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
     },
     "0010.png": {
       "cursor": false,
@@ -136,8 +136,8 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "hold": 5,
-      "cap": "SDK docs, quickstarts, API guides, tutorials",
-      "vo": "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+      "cap": "Walkthroughs, onboarding, help articles, runbooks",
+      "vo": "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
     }
   }
 };
