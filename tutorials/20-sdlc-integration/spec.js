@@ -51,6 +51,18 @@ window.SPEC = {
       "vo": "Two connections make this bigger than a coding assistant. MCPs give Devin tools and context, and automations decide when work starts.",
       "hl": null
     },
+    "0290.png": {
+      "scene": "verification",
+      "badge": null,
+      "hold": 4.6,
+      "cursor": false,
+      "cam": "reset",
+      "capPos": "bottom",
+      "cap": "Testing is not verification",
+      "vo": "Testing and verification are not the same thing. Tests check the code. Verification proves the change works the way a user would see it.",
+      "voGap": 1.2,
+      "hl": null
+    },
     "0006.png": {
       "capPos": "bottom",
       "cap": "Plan the change in Ask mode",
@@ -211,7 +223,7 @@ window.SPEC = {
       "hold": 2.6,
       "capPos": "bottom",
       "cap": "Then it opens a pull request",
-      "vo": "Then it opens a pull request.",
+      "vo": "When every check passes, it opens a pull request.",
       "hl": [
         {
           "x": 713.75,
@@ -368,8 +380,8 @@ window.SPEC = {
     "0141.png": {
       "voGap": 1.3,
       "capPos": "bottom",
-      "cap": "Fix the other bug, then test it",
-      "vo": "Then ask the same session to fix the other bug and test the flow in its browser.",
+      "cap": "Fix the other bug, then verify it",
+      "vo": "So ask the same session to fix the other bug, then test the flow in its browser and send a recording.",
       "hl": null
     },
     "0142.png": {
@@ -464,30 +476,16 @@ window.SPEC = {
       "voGap": 1.2,
       "hold": 2.6,
       "capPos": "bottom",
-      "cap": "Fixed, then tested end to end",
-      "hl": [
-        {
-          "x": 700.0,
-          "y": 148.0,
-          "w": 836,
-          "h": 76
-        }
-      ],
-      "vo": "Devin fixes it, then tests the fixed case and the full flow again."
+      "cap": "Devin uses the app like a user",
+      "hl": [{"x": 700.0, "y": 148.0, "w": 836, "h": 76}],
+      "vo": "Devin runs the app and uses it the way a person would. It checks the fixed case first, then the whole flow again."
     },
     "0172.png": {
       "hold": 2.4,
       "capPos": "bottom",
-      "cap": "A recording of the test: 8 passed",
-      "hl": [
-        {
-          "x": 507.0,
-          "y": 411.0,
-          "w": 450,
-          "h": 382
-        }
-      ],
-      "vo": "It sends back a recording of the test, with eight checks passed."
+      "cap": "A recording as proof: 8 passed",
+      "hl": [{"x": 507.0, "y": 411.0, "w": 450, "h": 382}],
+      "vo": "Then it sends back a recording as proof, with eight checks passed."
     },
     "0175.png": {
       "skip": true
@@ -527,8 +525,8 @@ window.SPEC = {
     },
     "0176.png": {
       "capPos": "bottom",
-      "cap": "Each check is listed next to the video",
-      "vo": "Each check is listed next to the video.",
+      "cap": "Each check: what it expected, what it saw",
+      "vo": "Each check is listed next to the video, with what Devin expected and what it actually saw.",
       "hl": null
     },
     "0201.png": {
@@ -919,6 +917,7 @@ window.SPEC = {
       "hl": null
     },
     "0111.png": {
+      "badge": "Sped up",
       "hl": null
     },
     "0112.png": {
@@ -1024,7 +1023,10 @@ window.SPEC = {
       "hl": null
     },
     "0184.png": {
-      "hl": null
+      "hl": null,
+      "capPos": "bottom",
+      "cap": "Proof before you merge",
+      "vo": "So a reviewer can watch the change work without pulling the branch or running it themselves."
     },
     "0186.png": {
       "hl": null
@@ -1036,7 +1038,10 @@ window.SPEC = {
       "hl": null
     },
     "0192.png": {
-      "hl": null
+      "hl": null,
+      "capPos": "bottom",
+      "cap": "Evidence, not just a green check",
+      "vo": "That's verification: evidence that it works, not just a passing check."
     },
     "0194.png": {
       "hl": null
@@ -1087,7 +1092,7 @@ window.SPEC = {
     "0266.png": { "skip": true },
     "0267.png": {
       "hold": 2.4, "capPos": "bottom", "cap": "Datadog: logs, metrics and traces",
-      "vo": "Datadog adds logs, metrics, and traces, so an investigation can use production evidence instead of guesswork.",
+      "vo": "Datadog adds logs, metrics, and traces, so an investigation can start from production evidence, not guesswork.",
       "cam": { "x": 900, "y": 315, "z": 1.35 },
       "hl": { "x": 930, "y": 143, "w": 880, "h": 119, "pad": 4 }
     },
