@@ -1,0 +1,927 @@
+{
+ "0000.png": {
+  "text": "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+  "dur": 8.61,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0262.png",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color.",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color."
+   ],
+   [
+    "0343.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0368.png",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again.",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again."
+   ],
+   [
+    "1002.png",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds.",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds."
+   ],
+   [
+    "1018.png",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing.",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing."
+   ],
+   [
+    "1134.png",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue.",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue."
+   ],
+   [
+    "1074.png",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint.",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint."
+   ],
+   [
+    "1155.png",
+    "Every check passes on web and iPhone, and on Android, except that one known issue.",
+    "Every check passes on web and iPhone, and on Android, except that one known issue."
+   ],
+   [
+    "outro-ember.jpg",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back.",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.521,
+    "text": "Here's how I added a feature to it,"
+   },
+   {
+    "t0": 1.556,
+    "t1": 2.426,
+    "text": "just by talking."
+   },
+   {
+    "t0": 2.752,
+    "t1": 5.526,
+    "text": "First, I switch the virtual environment from Ubuntu"
+   },
+   {
+    "t0": 5.596,
+    "t1": 8.61,
+    "text": "to macOS, so Devin can run the iPhone simulator."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "Then I click the waveform button beside the message box to start a voice call.",
+  "dur": 3.725,
+  "takeAt": 8.785,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0262.png",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color.",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color."
+   ],
+   [
+    "0343.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0368.png",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again.",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again."
+   ],
+   [
+    "1002.png",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds.",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds."
+   ],
+   [
+    "1018.png",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing.",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing."
+   ],
+   [
+    "1134.png",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue.",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue."
+   ],
+   [
+    "1074.png",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint.",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint."
+   ],
+   [
+    "1155.png",
+    "Every check passes on web and iPhone, and on Android, except that one known issue.",
+    "Every check passes on web and iPhone, and on Android, except that one known issue."
+   ],
+   [
+    "outro-ember.jpg",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back.",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.047,
+    "text": "Then I click the waveform button beside the"
+   },
+   {
+    "t0": 2.082,
+    "t1": 3.725,
+    "text": "message box to start a voice call."
+   }
+  ]
+ },
+ "0262.png": {
+  "text": "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color.",
+  "dur": 7.3,
+  "takeAt": 12.86,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0262.png",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color.",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color."
+   ],
+   [
+    "0343.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0368.png",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again.",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again."
+   ],
+   [
+    "1002.png",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds.",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds."
+   ],
+   [
+    "1018.png",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing.",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing."
+   ],
+   [
+    "1134.png",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue.",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue."
+   ],
+   [
+    "1074.png",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint.",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint."
+   ],
+   [
+    "1155.png",
+    "Every check passes on web and iPhone, and on Android, except that one known issue.",
+    "Every check passes on web and iPhone, and on Android, except that one known issue."
+   ],
+   [
+    "outro-ember.jpg",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back.",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.07,
+    "text": "Devin reads how Rivet is wired up,"
+   },
+   {
+    "t0": 2.279,
+    "t1": 4.531,
+    "text": "adds a tool that inspects the player's board,"
+   },
+   {
+    "t0": 4.74,
+    "t1": 6.47,
+    "text": "and draws the tip under the board in"
+   },
+   {
+    "t0": 6.505,
+    "t1": 7.3,
+    "text": "the player's color."
+   }
+  ]
+ },
+ "0343.png": {
+  "text": "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+  "dur": 3.895,
+  "takeAt": 20.505,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0262.png",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color.",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color."
+   ],
+   [
+    "0343.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0368.png",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again.",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again."
+   ],
+   [
+    "1002.png",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds.",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds."
+   ],
+   [
+    "1018.png",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing.",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing."
+   ],
+   [
+    "1134.png",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue.",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue."
+   ],
+   [
+    "1074.png",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint.",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint."
+   ],
+   [
+    "1155.png",
+    "Every check passes on web and iPhone, and on Android, except that one known issue.",
+    "Every check passes on web and iPhone, and on Android, except that one known issue."
+   ],
+   [
+    "outro-ember.jpg",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back.",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.056,
+    "t1": 2.088,
+    "text": "Mid-build, I rejoin the call from inside the"
+   },
+   {
+    "t0": 2.146,
+    "t1": 3.895,
+    "text": "session and ask how it's going."
+   }
+  ]
+ },
+ "0368.png": {
+  "text": "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again.",
+  "dur": 14.305,
+  "takeAt": 24.795,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0262.png",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color.",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color."
+   ],
+   [
+    "0343.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0368.png",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again.",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again."
+   ],
+   [
+    "1002.png",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds.",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds."
+   ],
+   [
+    "1018.png",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing.",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing."
+   ],
+   [
+    "1134.png",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue.",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue."
+   ],
+   [
+    "1074.png",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint.",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint."
+   ],
+   [
+    "1155.png",
+    "Every check passes on web and iPhone, and on Android, except that one known issue.",
+    "Every check passes on web and iPhone, and on Android, except that one known issue."
+   ],
+   [
+    "outro-ember.jpg",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back.",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.71,
+    "text": "Devin opens a pull request,"
+   },
+   {
+    "t0": 1.884,
+    "t1": 3.672,
+    "text": "then tests the feature itself:"
+   },
+   {
+    "t0": 3.951,
+    "t1": 6.25,
+    "text": "in Chrome, on the iPhone Simulator,"
+   },
+   {
+    "t0": 6.575,
+    "t1": 9.303,
+    "text": "and through a second Devin on Ubuntu for Android."
+   },
+   {
+    "t0": 9.686,
+    "t1": 12.241,
+    "text": "The first run caught two iPhone layout failures,"
+   },
+   {
+    "t0": 12.391,
+    "t1": 14.305,
+    "text": "so Devin fixed them and ran it again."
+   }
+  ]
+ },
+ "1002.png": {
+  "text": "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds.",
+  "dur": 9.69,
+  "takeAt": 39.33,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0262.png",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color.",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color."
+   ],
+   [
+    "0343.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0368.png",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again.",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again."
+   ],
+   [
+    "1002.png",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds.",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds."
+   ],
+   [
+    "1018.png",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing.",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing."
+   ],
+   [
+    "1134.png",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue.",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue."
+   ],
+   [
+    "1074.png",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint.",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint."
+   ],
+   [
+    "1155.png",
+    "Every check passes on web and iPhone, and on Android, except that one known issue.",
+    "Every check passes on web and iPhone, and on Android, except that one known issue."
+   ],
+   [
+    "outro-ember.jpg",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back.",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.362,
+    "text": "Here's Devin's recording."
+   },
+   {
+    "t0": 1.966,
+    "t1": 3.766,
+    "text": "In Chrome, Rivet reads the board,"
+   },
+   {
+    "t0": 3.94,
+    "t1": 4.845,
+    "text": "speaks a tip,"
+   },
+   {
+    "t0": 5.124,
+    "t1": 7.353,
+    "text": "and the caption shows under the right board,"
+   },
+   {
+    "t0": 7.388,
+    "t1": 8.398,
+    "text": "in the player's color,"
+   },
+   {
+    "t0": 8.572,
+    "t1": 9.69,
+    "text": "for about six seconds."
+   }
+  ]
+ },
+ "1018.png": {
+  "text": "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing.",
+  "dur": 8.285,
+  "takeAt": 49.605,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0262.png",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color.",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color."
+   ],
+   [
+    "0343.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0368.png",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again.",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again."
+   ],
+   [
+    "1002.png",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds.",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds."
+   ],
+   [
+    "1018.png",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing.",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing."
+   ],
+   [
+    "1134.png",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue.",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue."
+   ],
+   [
+    "1074.png",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint.",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint."
+   ],
+   [
+    "1155.png",
+    "Every check passes on web and iPhone, and on Android, except that one known issue.",
+    "Every check passes on web and iPhone, and on Android, except that one known issue."
+   ],
+   [
+    "outro-ember.jpg",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back.",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.221,
+    "text": "On the iPhone Simulator the Mac has no"
+   },
+   {
+    "t0": 2.291,
+    "t1": 5.251,
+    "text": "microphone, so Devin triggers the same tool calls"
+   },
+   {
+    "t0": 5.309,
+    "t1": 7.213,
+    "text": "directly, and checks the layout,"
+   },
+   {
+    "t0": 7.387,
+    "t1": 8.285,
+    "text": "color and timing."
+   }
+  ]
+ },
+ "1134.png": {
+  "text": "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue.",
+  "dur": 11.311,
+  "takeAt": 58.324,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0262.png",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color.",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color."
+   ],
+   [
+    "0343.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0368.png",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again.",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again."
+   ],
+   [
+    "1002.png",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds.",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds."
+   ],
+   [
+    "1018.png",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing.",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing."
+   ],
+   [
+    "1134.png",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue.",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue."
+   ],
+   [
+    "1074.png",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint.",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint."
+   ],
+   [
+    "1155.png",
+    "Every check passes on web and iPhone, and on Android, except that one known issue.",
+    "Every check passes on web and iPhone, and on Android, except that one known issue."
+   ],
+   [
+    "outro-ember.jpg",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back.",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.871,
+    "text": "On Android, the second Devin talks to Rivet"
+   },
+   {
+    "t0": 2.918,
+    "t1": 4.264,
+    "text": "for real on an emulator,"
+   },
+   {
+    "t0": 4.439,
+    "t1": 6.772,
+    "text": "and the tip lands in portrait and landscape."
+   },
+   {
+    "t0": 7.155,
+    "t1": 9.756,
+    "text": "It also noted one intermittent connection drop in"
+   },
+   {
+    "t0": 9.803,
+    "t1": 11.311,
+    "text": "the PR as a known issue."
+   }
+  ]
+ },
+ "1074.png": {
+  "text": "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint.",
+  "dur": 6.432,
+  "takeAt": 69.818,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0262.png",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color.",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color."
+   ],
+   [
+    "0343.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0368.png",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again.",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again."
+   ],
+   [
+    "1002.png",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds.",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds."
+   ],
+   [
+    "1018.png",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing.",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing."
+   ],
+   [
+    "1134.png",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue.",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue."
+   ],
+   [
+    "1074.png",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint.",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint."
+   ],
+   [
+    "1155.png",
+    "Every check passes on web and iPhone, and on Android, except that one known issue.",
+    "Every check passes on web and iPhone, and on Android, except that one known issue."
+   ],
+   [
+    "outro-ember.jpg",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back.",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.803,
+    "text": "The pull request has the tool,"
+   },
+   {
+    "t0": 1.92,
+    "t1": 3.661,
+    "text": "the caption, and the tests:"
+   },
+   {
+    "t0": 3.94,
+    "t1": 6.432,
+    "text": "thirty-three pass, with typecheck and lint."
+   }
+  ]
+ },
+ "1155.png": {
+  "text": "Every check passes on web and iPhone, and on Android, except that one known issue.",
+  "dur": 5.035,
+  "takeAt": 76.535,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0262.png",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color.",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color."
+   ],
+   [
+    "0343.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0368.png",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again.",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again."
+   ],
+   [
+    "1002.png",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds.",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds."
+   ],
+   [
+    "1018.png",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing.",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing."
+   ],
+   [
+    "1134.png",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue.",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue."
+   ],
+   [
+    "1074.png",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint.",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint."
+   ],
+   [
+    "1155.png",
+    "Every check passes on web and iPhone, and on Android, except that one known issue.",
+    "Every check passes on web and iPhone, and on Android, except that one known issue."
+   ],
+   [
+    "outro-ember.jpg",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back.",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.09,
+    "t1": 2.215,
+    "text": "Every check passes on web and iPhone,"
+   },
+   {
+    "t0": 2.389,
+    "t1": 3.388,
+    "text": "and on Android,"
+   },
+   {
+    "t0": 3.597,
+    "t1": 5.035,
+    "text": "except that one known issue."
+   }
+  ]
+ },
+ "outro-ember.jpg": {
+  "text": "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back.",
+  "dur": 5.785,
+  "takeAt": 81.715,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.",
+    "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+   ],
+   [
+    "0009.png",
+    "Then I click the waveform button beside the message box to start a voice call.",
+    "Then I click the waveform button beside the message box to start a voice call."
+   ],
+   [
+    "0262.png",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color.",
+    "Devin reads how Rivet is wired up, adds a tool that inspects the player's board, and draws the tip under the board in the player's color."
+   ],
+   [
+    "0343.png",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going.",
+    "Mid-build, I rejoin the call from inside the session and ask how it's going."
+   ],
+   [
+    "0368.png",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again.",
+    "Devin opens a pull request, then tests the feature itself: in Chrome, on the iPhone Simulator, and through a second Devin on Ubuntu for Android. The first run caught two iPhone layout failures, so Devin fixed them and ran it again."
+   ],
+   [
+    "1002.png",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds.",
+    "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds."
+   ],
+   [
+    "1018.png",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing.",
+    "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing."
+   ],
+   [
+    "1134.png",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue.",
+    "On Android, the second Devin talks to Rivet for real on an emulator, and the tip lands in portrait and landscape. It also noted one intermittent connection drop in the PR as a known issue."
+   ],
+   [
+    "1074.png",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint.",
+    "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint."
+   ],
+   [
+    "1155.png",
+    "Every check passes on web and iPhone, and on Android, except that one known issue.",
+    "Every check passes on web and iPhone, and on Android, except that one known issue."
+   ],
+   [
+    "outro-ember.jpg",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back.",
+    "And that's how you add a feature to a cross-platform game just by talking to Devin, with an announcer that talks back."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.065,
+    "t1": 1.435,
+    "text": "And that's how you add a feature to"
+   },
+   {
+    "t0": 1.504,
+    "t1": 3.966,
+    "text": "a cross-platform game just by talking to Devin,"
+   },
+   {
+    "t0": 4.175,
+    "t1": 5.785,
+    "text": "with an announcer that talks back."
+   }
+  ]
+ }
+}

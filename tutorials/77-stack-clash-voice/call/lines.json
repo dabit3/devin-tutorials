@@ -1,0 +1,647 @@
+{
+ "c1": {
+  "text": "Hey Devin. There's a game in the product demo apps repo called Stack Clash.",
+  "dur": 3.87,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash.",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash."
+   ],
+   [
+    "c2",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds.",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds."
+   ],
+   [
+    "c3",
+    "How would you wire that up?",
+    "How would you wire that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Make the tip caption use the player's color.",
+    "Oh, wait, one more thing. Make the tip caption use the player's color."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR.",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the feature coming along?",
+    "Hey Devin, how's the feature coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 0.604,
+    "text": "Hey Devin."
+   },
+   {
+    "t0": 0.627,
+    "t1": 2.334,
+    "text": "There's a game in the product demo apps"
+   },
+   {
+    "t0": 2.38,
+    "t1": 3.87,
+    "text": "repo called Stack Clash."
+   }
+  ]
+ },
+ "c2": {
+  "text": "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds.",
+  "dur": 21.019,
+  "takeAt": 4.071,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash.",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash."
+   ],
+   [
+    "c2",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds.",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds."
+   ],
+   [
+    "c3",
+    "How would you wire that up?",
+    "How would you wire that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Make the tip caption use the player's color.",
+    "Oh, wait, one more thing. Make the tip caption use the player's color."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR.",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the feature coming along?",
+    "Hey Devin, how's the feature coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.849,
+    "text": "It's a two-player falling-block game built with Expo,"
+   },
+   {
+    "t0": 3.127,
+    "t1": 5.043,
+    "text": "so one codebase runs on iOS,"
+   },
+   {
+    "t0": 5.078,
+    "t1": 6.146,
+    "text": "Android, and the web."
+   },
+   {
+    "t0": 6.529,
+    "t1": 8.526,
+    "text": "It has a ringside announcer called Rivet,"
+   },
+   {
+    "t0": 8.735,
+    "t1": 11.254,
+    "text": "and Rivet runs on OpenAI's GPT-Live-1."
+   },
+   {
+    "t0": 11.498,
+    "t1": 12.67,
+    "text": "I want to add one feature."
+   },
+   {
+    "t0": 12.995,
+    "t1": 14.516,
+    "text": "When I ask Rivet for advice,"
+   },
+   {
+    "t0": 14.644,
+    "t1": 15.886,
+    "text": "it should look at my board and give"
+   },
+   {
+    "t0": 15.921,
+    "t1": 17.024,
+    "text": "me a short coaching tip."
+   },
+   {
+    "t0": 17.465,
+    "t1": 19.032,
+    "text": "That tip should also show up as a"
+   },
+   {
+    "t0": 19.09,
+    "t1": 21.019,
+    "text": "caption under my board for a few seconds."
+   }
+  ]
+ },
+ "c3": {
+  "text": "How would you wire that up?",
+  "dur": 1.178,
+  "takeAt": 25.317,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash.",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash."
+   ],
+   [
+    "c2",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds.",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds."
+   ],
+   [
+    "c3",
+    "How would you wire that up?",
+    "How would you wire that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Make the tip caption use the player's color.",
+    "Oh, wait, one more thing. Make the tip caption use the player's color."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR.",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the feature coming along?",
+    "Hey Devin, how's the feature coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.153,
+    "text": "How would you wire that up?"
+   }
+  ]
+ },
+ "c4": {
+  "text": "Oh, wait, one more thing. Make the tip caption use the player's color.",
+  "dur": 3.735,
+  "takeAt": 26.495,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash.",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash."
+   ],
+   [
+    "c2",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds.",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds."
+   ],
+   [
+    "c3",
+    "How would you wire that up?",
+    "How would you wire that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Make the tip caption use the player's color.",
+    "Oh, wait, one more thing. Make the tip caption use the player's color."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR.",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the feature coming along?",
+    "Hey Devin, how's the feature coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.01,
+    "t1": 1.148,
+    "text": "Oh, wait, one more thing."
+   },
+   {
+    "t0": 1.589,
+    "t1": 3.735,
+    "text": "Make the tip caption use the player's color."
+   }
+  ]
+ },
+ "c5": {
+  "text": "Can you speak a little faster?",
+  "dur": 1.365,
+  "takeAt": 30.475,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash.",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash."
+   ],
+   [
+    "c2",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds.",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds."
+   ],
+   [
+    "c3",
+    "How would you wire that up?",
+    "How would you wire that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Make the tip caption use the player's color.",
+    "Oh, wait, one more thing. Make the tip caption use the player's color."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR.",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the feature coming along?",
+    "Hey Devin, how's the feature coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.082,
+    "t1": 1.365,
+    "text": "Can you speak a little faster?"
+   }
+  ]
+ },
+ "c6": {
+  "text": "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR.",
+  "dur": 12.99,
+  "takeAt": 32.41,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash.",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash."
+   ],
+   [
+    "c2",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds.",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds."
+   ],
+   [
+    "c3",
+    "How would you wire that up?",
+    "How would you wire that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Make the tip caption use the player's color.",
+    "Oh, wait, one more thing. Make the tip caption use the player's color."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR.",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the feature coming along?",
+    "Hey Devin, how's the feature coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.768,
+    "text": "Test it in your browser and on the iPhone simulator."
+   },
+   {
+    "t0": 3.093,
+    "t1": 4.753,
+    "text": "Your Mac can't run Android,"
+   },
+   {
+    "t0": 4.927,
+    "t1": 7.226,
+    "text": "so start a second Devin on Ubuntu to"
+   },
+   {
+    "t0": 7.296,
+    "t1": 8.968,
+    "text": "test it on an Android emulator."
+   },
+   {
+    "t0": 9.211,
+    "t1": 11.046,
+    "text": "Send me a test recording with pass fail"
+   },
+   {
+    "t0": 11.092,
+    "t1": 11.87,
+    "text": "checks for each,"
+   },
+   {
+    "t0": 12.044,
+    "t1": 12.99,
+    "text": "then open a PR."
+   }
+  ]
+ },
+ "c7": {
+  "text": "Perfect. Go ahead and start building.",
+  "dur": 1.685,
+  "takeAt": 45.645,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash.",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash."
+   ],
+   [
+    "c2",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds.",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds."
+   ],
+   [
+    "c3",
+    "How would you wire that up?",
+    "How would you wire that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Make the tip caption use the player's color.",
+    "Oh, wait, one more thing. Make the tip caption use the player's color."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR.",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the feature coming along?",
+    "Hey Devin, how's the feature coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 0.528,
+    "text": "Perfect."
+   },
+   {
+    "t0": 0.574,
+    "t1": 1.685,
+    "text": "Go ahead and start building."
+   }
+  ]
+ },
+ "c8": {
+  "text": "Hey Devin, how's the feature coming along?",
+  "dur": 1.838,
+  "takeAt": 47.597,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash.",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash."
+   ],
+   [
+    "c2",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds.",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds."
+   ],
+   [
+    "c3",
+    "How would you wire that up?",
+    "How would you wire that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Make the tip caption use the player's color.",
+    "Oh, wait, one more thing. Make the tip caption use the player's color."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR.",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the feature coming along?",
+    "Hey Devin, how's the feature coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.826,
+    "text": "Hey Devin, how's the feature coming along?"
+   }
+  ]
+ },
+ "c9": {
+  "text": "Nice. Thanks, Devin!",
+  "dur": 1.425,
+  "takeAt": 49.435,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash.",
+    "Hey Devin. There's a game in the product demo apps repo called Stack Clash."
+   ],
+   [
+    "c2",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds.",
+    "It's a two-player falling-block game built with Expo, so one codebase runs on iOS, Android, and the web. It has a ringside announcer called Rivet, and Rivet runs on OpenAI's GPT-Live-1. I want to add one feature. When I ask Rivet for advice, it should look at my board and give me a short coaching tip. That tip should also show up as a caption under my board for a few seconds."
+   ],
+   [
+    "c3",
+    "How would you wire that up?",
+    "How would you wire that up?"
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Make the tip caption use the player's color.",
+    "Oh, wait, one more thing. Make the tip caption use the player's color."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR.",
+    "Test it in your browser and on the iPhone simulator. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. Send me a test recording with pass fail checks for each, then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's the feature coming along?",
+    "Hey Devin, how's the feature coming along?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.07,
+    "t1": 0.592,
+    "text": "Nice."
+   },
+   {
+    "t0": 0.766,
+    "t1": 1.425,
+    "text": "Thanks, Devin!"
+   }
+  ]
+ }
+}
