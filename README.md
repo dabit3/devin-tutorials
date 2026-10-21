@@ -85,7 +85,7 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 <!-- -->
 
-76. **Devin CLI: what's new in v3000.11.92** (overview, narrated by Nader, 1:55): A dark-mode overview of the October 14, 2026 stable release, filmed in the real CLI with Ghostty's GitHub Dark High Contrast palette. `/goal` runs a real task in orbit-demo until tests, lint and build pass, with a steering message and Ctrl+C clearing a draft mid-run; then Alt+Enter in the model picker, `devin mcp list` with its new `Source:` line and `devin cloud`, plus build-up cards for config, plugins, hooks, MCP, terminal and the Changed and Fixed highlights. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/76-cli-whats-new-overview/76-cli-whats-new-overview-nader.mp4) · [Voice script](tutorials/76-cli-whats-new-overview/voice-script.md)
+76. **Devin CLI: what's new in v3000.11.92** (overview, narrated by Nader, 2:12): A dark-mode overview of the October 14, 2026 stable release, filmed in the real CLI with Ghostty's GitHub Dark High Contrast palette. It opens with the new cloud features (`devin cloud`, `devin connect` file copy, remote MCPs), then `/goal` runs a real task in orbit-demo until tests, lint and build pass, with a steering message and Ctrl+C clearing a draft mid-run. The rest, each with a spoken lead-in: Alt+Enter in the model picker, provider-plan billing, new settings, `devin mcp list` with its new `Source:` line, plugins and hooks, terminal status and sandbox allow, and a short polish card. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/76-cli-whats-new-overview/76-cli-whats-new-overview-nader.mp4) · [Voice script](tutorials/76-cli-whats-new-overview/voice-script.md)
 
 ## Narrated tutorials
 
