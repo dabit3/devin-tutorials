@@ -1,10 +1,12 @@
-// Live capture: pick macOS, talk an app into existence over a real Devin Voice call, then watch Devin build it
-// and test it on the web, the iPhone Simulator and the iPad Simulator.
+// Live capture: pick macOS, talk a game into existence over a real Devin Voice call, then watch Devin build it and
+// test it on the web and the iPhone Simulator, while an Ubuntu Devin it starts tests it on an Android emulator.
 //   MASK_TEXT=<email name> ZOOM=1.25 PHASE=start node capture.mjs        (macOS pick + voice call 1 + Computer tab)
 //   RESUME=1 PHASE=watch SESSION=<url> WAIT=<ms> node capture.mjs        (poll the Computer tab)
 //   RESUME=1 PHASE=rejoin SESSION=<url> node capture.mjs                 (voice call 2 from inside the session)
 //   RESUME=1 PHASE=end SESSION=<url> CARD=<recording title> node capture.mjs
+//   RESUME=1 PHASE=agents SESSION=<url> node capture.mjs                 (the Ubuntu Devin under the Agents tab)
 //   RESUME=1 PHASE=summary SESSION=<url> node capture.mjs
+//   RESUME=1 PHASE=tab SESSION=<url> TAB="PR #85" node capture.mjs                (open a right-panel tab)
 // The VM has no microphone: voice-hook.js plays call/c*.wav (Nader's ElevenLabs voice) into getUserMedia and records
 // Devin's real WebRTC audio. Each call writes <shots>/callN.json + callN.webm; mixcall.py turns them into audio/callN.wav.
 import fs from 'fs';
@@ -165,19 +167,36 @@ if (PHASE === 'end') {
   await p.keyboard.press('Escape'); await sleep(800);
   if (process.env.SESSION) await r.goto(process.env.SESSION, 6000);
   await tidy();
-  const card = (title) => p.evaluate((title) => {
-    const els = [...document.querySelectorAll('main *')].filter(e => (e.innerText || '').trim().startsWith(title) && e.getBoundingClientRect().height > 150);
-    const e = els.sort((a, b) => a.getBoundingClientRect().height - b.getBoundingClientRect().height)[0];
-    if (!e) return null; e.scrollIntoView({ block: 'center' });
-    const t = e.querySelector('video, img') || e; const bb = t.getBoundingClientRect();
+  if (process.env.HIDE_PANEL) { const h = await r.find({ attr: ['aria-label', 'Hide tabs panel'], sel: 'button' }); if (h) { await p.mouse.click(h.x, h.y); await sleep(1200); } }
+  const card = (title) => p.evaluate(([title, src]) => {
+    if (src) {
+      const sv = [...document.querySelectorAll('main video')].find(v => (v.currentSrc || v.src || '').includes(src));
+      if (!sv) return null; sv.scrollIntoView({ block: 'center' }); const sb = sv.getBoundingClientRect();
+      return { x: sb.x + sb.width / 2, y: sb.y + sb.height / 2, w: sb.width, h: sb.height };
+    }
+    // the recording that follows the message text (reports embed screenshots before the video)
+    const heads = [...document.querySelectorAll('main *')].filter(e => (e.innerText || '').includes(title));
+    const head = heads.sort((a, b) => a.innerText.length - b.innerText.length)[0];
+    if (!head) return null;
+    const v = [...document.querySelectorAll('main video')].find(v => head.contains(v) || (head.compareDocumentPosition(v) & Node.DOCUMENT_POSITION_FOLLOWING));
+    const t = v || head; t.scrollIntoView({ block: 'center' });
+    const bb = t.getBoundingClientRect();
     return { x: bb.x + bb.width / 2, y: bb.y + bb.height / 2, w: bb.width, h: bb.height };
-  }, title);
+  }, [title, process.env.CARD_SRC || '']);
   const title = process.env.CARD;
-  await card(title); await sleep(1500);
+  for (let i = 0; i < 60 && !(await card(title)); i++) {
+    await p.evaluate(() => { const el = [...document.querySelectorAll('main *')].find(e => e.scrollHeight > e.clientHeight + 200 && /auto|scroll/.test(getComputedStyle(e).overflowY) && e.getBoundingClientRect().x < 700); if (el) el.scrollBy({ top: -700 }); });
+    await sleep(600);
+  }
+  await sleep(1500);
   const c = await card(title); if (!c) throw new Error('card not found: ' + title);
   await r.shot({ hold: 1.5, mark: 'card' });
   await r.click(c, { wait: 1500 });
-  await p.evaluate(() => { const v = [...document.querySelectorAll('video')].filter(v => v.getBoundingClientRect().width > 0).pop(); if (v) { v.muted = true; v.play(); } });
+  await p.evaluate(([src, seek]) => {
+    const vs = [...document.querySelectorAll('video')].filter(v => v.getBoundingClientRect().width > 0);
+    const v = (src && vs.find(v => (v.currentSrc || v.src || '').includes(src))) || vs.pop();
+    if (v) { v.muted = true; if (seek) v.currentTime = seek; v.play(); }
+  }, [process.env.CARD_SRC || '', Number(process.env.CARD_SEEK || 0)]);
   r.mark('playing');
   for (let i = 0; i < Number(process.env.PLAY || 50); i++) { await sleep(1000); await r.shot({ kind: 'poll', at: i * 1000 }); }
 }
@@ -193,6 +212,30 @@ if (PHASE === 'summary') {
   await scrollChat(-Number(process.env.UP || 700)); await sleep(1500);
   await r.shot({ hold: 2.0, mark: 'summary' });
   for (let i = 0; i < Number(process.env.STEPS || 3); i++) { await scrollChat(230); await sleep(1300); await r.shot({ hold: 1.6 }); }
+}
+if (PHASE === 'tab') {   // TAB=<tab label prefix>: open a right-panel tab (e.g. the PR) and hold on it
+  if (process.env.SESSION) await r.goto(process.env.SESSION, 6000);
+  await tidy();
+  const t = await p.evaluate(label => {
+    const e = [...document.querySelectorAll('button, a, [role=tab]')].find(e => e.innerText.trim().startsWith(label) && e.getBoundingClientRect().width);
+    if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2, w: b.width, h: b.height };
+  }, process.env.TAB);
+  if (!t) throw new Error('tab not found: ' + process.env.TAB);
+  await r.click(t, { wait: 3500, mark: 'tab' });
+  for (let i = 0; i < Number(process.env.STEPS || 3); i++) { await sleep(1200); await r.shot({ hold: 1.6 }); }
+}
+if (PHASE === 'agents') {
+  // the Ubuntu Devin started for Android shows up under the session's Agents tab
+  if (process.env.SESSION) await r.goto(process.env.SESSION, 6000);
+  await tidy();
+  const show = await btnBy(/^Show tabs panel$/, 'main button');
+  if (show) { await r.click(show, { wait: 1500 }); r.mark('tabs-panel'); }
+  const ag = await btnBy(/^Agents/, 'main button');
+  if (!ag) throw new Error('Agents tab not found');
+  await r.click(ag, { wait: 2000 }); r.mark('agents');
+  await r.shot({ hold: 1.5 });
+  const view = await btnBy(/^View session$/, 'main a, main button');
+  if (view) { await r.move(view); await sleep(800); await r.shot({ kind: 'hover', hold: 1.2, mark: 'view-child' }); }
 }
 r.done();
 console.log('beats', r.beats.length);
