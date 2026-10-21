@@ -1,4 +1,4 @@
-// Live capture: a coordinator Devin starts one managed Devin per docs page of ledgerkit; each runs every snippet verbatim on its own VM and opens fix PRs.
+// Live capture: a coordinator Devin starts one managed Devin per ledgerkit walkthrough; each follows its walkthrough in the browser on its own VM and opens fix PRs.
 //   ZOOM=1.25 MASK_TEXT=<email name> PHASE=start|watch|sidebar|child|computer|payoff|repeat|goto|shot node capture.mjs   (RESUME=1 appends to shots/beats.json)
 //   watch/child/computer phases poll until /tmp/stop36 exists, so the operator decides when a phase ends.
 import fs from 'fs';
@@ -6,7 +6,7 @@ import { Rec, sleep } from '../_kit/capture/rec.mjs';
 import { ensureAgent, clearComposer, closeMenus, mentionRepo, editorBox } from '../_kit/capture/composer.mjs';
 
 const ORG = process.env.DEVIN_ORG_URL || 'https://app.devin.ai/org/thequantexplorer';
-const TASK = process.env.TASK || 'Test the docs in ledgerkit/. For every page in ledgerkit/docs/, start a managed Devin on its own fresh machine that runs each code snippet exactly as written. When a snippet fails, decide whether the docs or the SDK is wrong and open a PR that fixes the right one. Then send me a summary.';
+const TASK = process.env.TASK || "Test the walkthroughs in ledgerkit/docs/. For every page, start a managed Devin on its own fresh machine that runs the app and follows the walkthrough step by step in the browser on its computer, exactly as a new user would. When a step doesn't match what the app does, decide whether the walkthrough or the app is wrong, and open a PR that fixes the right one. Then send me a summary.";
 const PHASE = process.env.PHASE || 'start';
 const STOP = '/tmp/stop36';
 
