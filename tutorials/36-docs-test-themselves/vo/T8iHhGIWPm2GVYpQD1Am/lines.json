@@ -1,0 +1,2587 @@
+{
+ "s000.png": {
+  "text": "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+  "dur": 12.59,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 0.72,
+    "text": "In this video,"
+   },
+   {
+    "t0": 0.743,
+    "t1": 2.322,
+    "text": "we'll show how to build docs that test"
+   },
+   {
+    "t0": 2.357,
+    "t1": 5.155,
+    "text": "themselves, where Devin runs every code snippet on"
+   },
+   {
+    "t0": 5.213,
+    "t1": 7.338,
+    "text": "every docs page exactly as written on a"
+   },
+   {
+    "t0": 7.384,
+    "t1": 9.985,
+    "text": "fresh machine, and fixes each broken one with"
+   },
+   {
+    "t0": 10.019,
+    "t1": 12.59,
+    "text": "a pull request to either the docs or the SDK."
+   }
+  ],
+  "at": 0.0,
+  "end": 12.59
+ },
+ "s001.png": {
+  "text": "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+  "dur": 5.495,
+  "takeAt": 12.895,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.108,
+    "t1": 1.78,
+    "text": "It works for SDK docs,"
+   },
+   {
+    "t0": 1.989,
+    "t1": 4.079,
+    "text": "README quickstarts, API guides,"
+   },
+   {
+    "t0": 4.102,
+    "t1": 5.495,
+    "text": "and step-by-step tutorials."
+   }
+  ],
+  "at": 12.895,
+  "end": 18.39
+ },
+ "0007.png": {
+  "text": "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+  "dur": 6.945,
+  "takeAt": 18.725,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.071,
+    "t1": 2.672,
+    "text": "Our demo is a small Python invoicing SDK"
+   },
+   {
+    "t0": 2.881,
+    "t1": 4.263,
+    "text": "with five docs pages,"
+   },
+   {
+    "t0": 4.472,
+    "t1": 6.945,
+    "text": "and we planted two broken examples on purpose."
+   }
+  ],
+  "at": 18.725,
+  "end": 25.67
+ },
+ "0008.png": {
+  "text": "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+  "dur": 10.067,
+  "takeAt": 25.933,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.035,
+    "text": "I ask Devin to start a managed Devin"
+   },
+   {
+    "t0": 2.093,
+    "t1": 2.987,
+    "text": "for each page,"
+   },
+   {
+    "t0": 3.138,
+    "t1": 4.415,
+    "text": "on its own fresh machine,"
+   },
+   {
+    "t0": 4.589,
+    "t1": 6.505,
+    "text": "run every snippet exactly as written,"
+   },
+   {
+    "t0": 6.679,
+    "t1": 9.257,
+    "text": "and open a pull request that fixes whichever"
+   },
+   {
+    "t0": 9.338,
+    "t1": 10.067,
+    "text": "side is wrong."
+   }
+  ],
+  "at": 25.933,
+  "end": 36.0
+ },
+ "0020.png": {
+  "text": "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+  "dur": 5.218,
+  "takeAt": 36.312,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.908,
+    "text": "The coordinator reads the SDK,"
+   },
+   {
+    "t0": 1.966,
+    "t1": 3.812,
+    "text": "the docs, and the changelog first,"
+   },
+   {
+    "t0": 3.963,
+    "t1": 5.218,
+    "text": "so it can brief each Devin."
+   }
+  ],
+  "at": 36.312,
+  "end": 41.53
+ },
+ "0027.png": {
+  "text": "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+  "dur": 4.927,
+  "takeAt": 41.803,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.117,
+    "text": "Then it starts five managed Devins,"
+   },
+   {
+    "t0": 2.198,
+    "t1": 3.348,
+    "text": "one per docs page,"
+   },
+   {
+    "t0": 3.591,
+    "t1": 4.927,
+    "text": "each on its own fresh VM."
+   }
+  ],
+  "at": 41.803,
+  "end": 46.73
+ },
+ "0035.png": {
+  "text": "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+  "dur": 8.125,
+  "takeAt": 47.165,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.064,
+    "t1": 2.339,
+    "text": "Each one makes a fresh virtual environment,"
+   },
+   {
+    "t0": 2.513,
+    "t1": 3.872,
+    "text": "installs the SDK,"
+   },
+   {
+    "t0": 4.046,
+    "t1": 5.95,
+    "text": "and runs every snippet on its page,"
+   },
+   {
+    "t0": 6.124,
+    "t1": 8.125,
+    "text": "comparing the output with what the docs say."
+   }
+  ],
+  "at": 47.165,
+  "end": 55.29
+ },
+ "0222.png": {
+  "text": "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+  "dur": 7.159,
+  "takeAt": 55.701,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.664,
+    "text": "In the invoices Devin's shell,"
+   },
+   {
+    "t0": 1.698,
+    "t1": 2.929,
+    "text": "the first snippet fails,"
+   },
+   {
+    "t0": 3.103,
+    "t1": 5.402,
+    "text": "because the page still passes a keyword that"
+   },
+   {
+    "t0": 5.449,
+    "t1": 7.159,
+    "text": "the SDK has since renamed."
+   }
+  ],
+  "at": 55.701,
+  "end": 62.86
+ },
+ "0223.png": {
+  "text": "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+  "dur": 7.218,
+  "takeAt": 63.212,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.338,
+    "text": "The changelog shows the rename was deliberate,"
+   },
+   {
+    "t0": 2.547,
+    "t1": 3.731,
+    "text": "so the docs are wrong,"
+   },
+   {
+    "t0": 3.905,
+    "t1": 6.32,
+    "text": "and after the fix both snippets print exactly"
+   },
+   {
+    "t0": 6.355,
+    "t1": 7.218,
+    "text": "what the page says."
+   }
+  ],
+  "at": 63.212,
+  "end": 70.43
+ },
+ "0226.png": {
+  "text": "So its pull request is a one-line docs fix.",
+  "dur": 2.478,
+  "takeAt": 70.712,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.478,
+    "text": "So its pull request is a one-line docs fix."
+   }
+  ],
+  "at": 70.712,
+  "end": 73.19
+ },
+ "0229.png": {
+  "text": "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+  "dur": 10.436,
+  "takeAt": 73.464,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.082,
+    "text": "The quickstart printed the wrong total,"
+   },
+   {
+    "t0": 2.36,
+    "t1": 4.891,
+    "text": "because the subtotal ignored each line's quantity,"
+   },
+   {
+    "t0": 5.066,
+    "t1": 6.54,
+    "text": "against its own docstring,"
+   },
+   {
+    "t0": 6.691,
+    "t1": 9.222,
+    "text": "so that pull request fixes the SDK and"
+   },
+   {
+    "t0": 9.291,
+    "t1": 10.436,
+    "text": "adds a regression test."
+   }
+  ],
+  "at": 73.464,
+  "end": 83.9
+ },
+ "0050.png": {
+  "text": "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+  "dur": 9.695,
+  "takeAt": 84.305,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.053,
+    "t1": 2.409,
+    "text": "The coordinator collects everything into one summary:"
+   },
+   {
+    "t0": 2.851,
+    "t1": 4.58,
+    "text": "three pages passed as written,"
+   },
+   {
+    "t0": 4.906,
+    "t1": 6.206,
+    "text": "one had a docs bug,"
+   },
+   {
+    "t0": 6.38,
+    "t1": 8.133,
+    "text": "and one found an SDK bug,"
+   },
+   {
+    "t0": 8.458,
+    "t1": 9.695,
+    "text": "each with its pull request."
+   }
+  ],
+  "at": 84.305,
+  "end": 94.0
+ },
+ "0051.png": {
+  "text": "It also tried both fixes together, and all eight tests and every snippet passed.",
+  "dur": 4.335,
+  "takeAt": 94.425,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.068,
+    "t1": 1.914,
+    "text": "It also tried both fixes together,"
+   },
+   {
+    "t0": 1.972,
+    "t1": 4.335,
+    "text": "and all eight tests and every snippet passed."
+   }
+  ],
+  "at": 94.425,
+  "end": 98.76
+ },
+ "0101.png": {
+  "text": "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+  "dur": 8.096,
+  "takeAt": 98.924,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.119,
+    "text": "To make it repeatable,"
+   },
+   {
+    "t0": 1.165,
+    "t1": 2.686,
+    "text": "I ask Devin to save this as a"
+   },
+   {
+    "t0": 2.733,
+    "t1": 5.333,
+    "text": "playbook, and to create an automation that runs"
+   },
+   {
+    "t0": 5.391,
+    "t1": 7.133,
+    "text": "it whenever the docs change on main,"
+   },
+   {
+    "t0": 7.249,
+    "t1": 8.096,
+    "text": "and every Monday."
+   }
+  ],
+  "at": 98.924,
+  "end": 107.02
+ },
+ "0159.png": {
+  "text": "Devin writes the playbook from the run it just did, and I approve it.",
+  "dur": 2.93,
+  "takeAt": 107.33,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.757,
+    "text": "Devin writes the playbook from the run it"
+   },
+   {
+    "t0": 1.803,
+    "t1": 2.93,
+    "text": "just did, and I approve it."
+   }
+  ],
+  "at": 107.33,
+  "end": 110.26
+ },
+ "0186.png": {
+  "text": "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+  "dur": 6.635,
+  "takeAt": 110.615,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.49,
+    "text": "Then it drafts the automation,"
+   },
+   {
+    "t0": 1.641,
+    "t1": 3.51,
+    "text": "with a push trigger for changes to the"
+   },
+   {
+    "t0": 3.557,
+    "t1": 4.788,
+    "text": "docs folder on main,"
+   },
+   {
+    "t0": 4.962,
+    "t1": 6.635,
+    "text": "and a weekly schedule on Mondays."
+   }
+  ],
+  "at": 110.615,
+  "end": 117.25
+ },
+ "0190.png": {
+  "text": "Once I approve it, the automation is created, and its next run is already scheduled.",
+  "dur": 3.855,
+  "takeAt": 117.745,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.038,
+    "t1": 0.966,
+    "text": "Once I approve it,"
+   },
+   {
+    "t0": 1.001,
+    "t1": 2.174,
+    "text": "the automation is created,"
+   },
+   {
+    "t0": 2.197,
+    "t1": 3.855,
+    "text": "and its next run is already scheduled."
+   }
+  ],
+  "at": 117.745,
+  "end": 121.6
+ },
+ "0220.png": {
+  "text": "The automation's page shows both triggers, and every run it starts.",
+  "dur": 3.319,
+  "takeAt": 121.761,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.117,
+    "text": "The automation's page shows both triggers,"
+   },
+   {
+    "t0": 2.14,
+    "t1": 3.319,
+    "text": "and every run it starts."
+   }
+  ],
+  "at": 121.761,
+  "end": 125.08
+ },
+ "0225.png": {
+  "text": "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+  "dur": 4.362,
+  "takeAt": 125.418,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.513,
+    "text": "I started one manual run,"
+   },
+   {
+    "t0": 1.536,
+    "t1": 3.347,
+    "text": "and it followed the playbook and started five"
+   },
+   {
+    "t0": 3.382,
+    "t1": 4.362,
+    "text": "fresh Devins again."
+   }
+  ],
+  "at": 125.418,
+  "end": 129.78
+ },
+ "outro": {
+  "text": "Docs that stay true to your code.",
+  "dur": 1.585,
+  "takeAt": 130.175,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "s000.png",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK.",
+    "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+   ],
+   [
+    "s001.png",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.",
+    "It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials."
+   ],
+   [
+    "0007.png",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose.",
+    "Our demo is a small Python invoicing SDK with five docs pages, and we planted two broken examples on purpose."
+   ],
+   [
+    "0008.png",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong.",
+    "I ask Devin to start a managed Devin for each page, on its own fresh machine, run every snippet exactly as written, and open a pull request that fixes whichever side is wrong."
+   ],
+   [
+    "0020.png",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin.",
+    "The coordinator reads the SDK, the docs, and the changelog first, so it can brief each Devin."
+   ],
+   [
+    "0027.png",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM.",
+    "Then it starts five managed Devins, one per docs page, each on its own fresh VM."
+   ],
+   [
+    "0035.png",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say.",
+    "Each one makes a fresh virtual environment, installs the SDK, and runs every snippet on its page, comparing the output with what the docs say."
+   ],
+   [
+    "0222.png",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed.",
+    "In the invoices Devin's shell, the first snippet fails, because the page still passes a keyword that the SDK has since renamed."
+   ],
+   [
+    "0223.png",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says.",
+    "The changelog shows the rename was deliberate, so the docs are wrong, and after the fix both snippets print exactly what the page says."
+   ],
+   [
+    "0226.png",
+    "So its pull request is a one-line docs fix.",
+    "So its pull request is a one-line docs fix."
+   ],
+   [
+    "0229.png",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test.",
+    "The quickstart printed the wrong total, because the subtotal ignored each line's quantity, against its own docstring, so that pull request fixes the SDK and adds a regression test."
+   ],
+   [
+    "0050.png",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request.",
+    "The coordinator collects everything into one summary: three pages passed as written, one had a docs bug, and one found an SDK bug, each with its pull request."
+   ],
+   [
+    "0051.png",
+    "It also tried both fixes together, and all eight tests and every snippet passed.",
+    "It also tried both fixes together, and all eight tests and every snippet passed."
+   ],
+   [
+    "0101.png",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday.",
+    "To make it repeatable, I ask Devin to save this as a playbook, and to create an automation that runs it whenever the docs change on main, and every Monday."
+   ],
+   [
+    "0159.png",
+    "Devin writes the playbook from the run it just did, and I approve it.",
+    "Devin writes the playbook from the run it just did, and I approve it."
+   ],
+   [
+    "0186.png",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays.",
+    "Then it drafts the automation, with a push trigger for changes to the docs folder on main, and a weekly schedule on Mondays."
+   ],
+   [
+    "0190.png",
+    "Once I approve it, the automation is created, and its next run is already scheduled.",
+    "Once I approve it, the automation is created, and its next run is already scheduled."
+   ],
+   [
+    "0220.png",
+    "The automation's page shows both triggers, and every run it starts.",
+    "The automation's page shows both triggers, and every run it starts."
+   ],
+   [
+    "0225.png",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again.",
+    "I started one manual run, and it followed the playbook and started five fresh Devins again."
+   ],
+   [
+    "outro",
+    "Docs that stay true to your code.",
+    "Docs that stay true to your code."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.585,
+    "text": "Docs that stay true to your code."
+   }
+  ],
+  "at": 130.175,
+  "end": 131.76
+ }
+}
