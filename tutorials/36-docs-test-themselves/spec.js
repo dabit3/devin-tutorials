@@ -1,8 +1,8 @@
 window.SPEC = {
   "title": "Docs that test themselves",
-  "subtitle": "Every snippet, run exactly as written, on a fresh machine",
-  "outro": "Docs that stay true to your code",
-  "voOutro": "Docs that stay true to your code.",
+  "subtitle": "Every walkthrough, followed step by step on a fresh machine",
+  "outro": "Walkthroughs that test themselves",
+  "voOutro": "So, the main takeaways. Write your docs as plain-English walkthroughs. Give one coordinator Devin the goal, and it starts a fresh Devin per walkthrough that follows every step in a real browser. When a step breaks, Devin works out whether the walkthrough or the product is wrong and opens a pull request for the right one. And with a playbook and an automation, it happens every time the walkthroughs change.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.3,
@@ -16,8 +16,8 @@ window.SPEC = {
       "scene": "intro",
       "hold": 7,
       "cursor": false,
-      "cap": "In this video: docs that test themselves, run on fresh VMs",
-      "vo": "In this video, we'll show how to build docs that test themselves, where Devin runs every code snippet on every docs page exactly as written on a fresh machine, and fixes each broken one with a pull request to either the docs or the SDK."
+      "cap": "In this video: walkthroughs that test themselves",
+      "vo": "In this video, you'll learn how to build docs that test themselves. You'll learn how to have Devin follow every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the product is wrong, and how to make it repeat on its own whenever your docs change."
     },
     "s001.png": {
       "scene": "uses",
