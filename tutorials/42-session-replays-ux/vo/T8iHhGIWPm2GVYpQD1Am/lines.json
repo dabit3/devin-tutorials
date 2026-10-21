@@ -1,0 +1,542 @@
+{
+ "0000.png": {
+  "text": "Devin can turn product analytics into a shipped fix. It finds where users drop off, watches those sessions, forms a hypothesis, and opens a pull request behind a feature flag.",
+  "dur": 9.92,
+  "at": 0.0,
+  "end": 9.92,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.229,
+    "text": "Devin can turn product analytics into a shipped"
+   },
+   {
+    "t0": 2.264,
+    "t1": 4.644,
+    "text": "fix. It finds where users drop off,"
+   },
+   {
+    "t0": 4.76,
+    "t1": 5.991,
+    "text": "watches those sessions,"
+   },
+   {
+    "t0": 6.2,
+    "t1": 7.465,
+    "text": "forms a hypothesis,"
+   },
+   {
+    "t0": 7.616,
+    "t1": 9.92,
+    "text": "and opens a pull request behind a feature flag."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "First, I installed the Metabase plugin from the marketplace, which gives Devin a Metabase MCP server.",
+  "dur": 5.365,
+  "at": 10.315,
+  "end": 15.68,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.064,
+    "t1": 2.084,
+    "text": "First, I installed the Metabase plugin from the"
+   },
+   {
+    "t0": 2.119,
+    "t1": 5.335,
+    "text": "marketplace, which gives Devin a Metabase MCP server."
+   }
+  ]
+ },
+ "0016.png": {
+  "text": "Its API key and URL are saved as write-only secrets.",
+  "dur": 3.19,
+  "at": 15.85,
+  "end": 19.04,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.078,
+    "t1": 3.19,
+    "text": "Its API key and URL are saved as write-only secrets."
+   }
+  ]
+ },
+ "0017.png": {
+  "text": "For this demo, we built a small checkout app called Pantry, and we planted a UX bug on purpose. The traffic is simulated too: three hundred and twenty scripted browser sessions.",
+  "dur": 9.165,
+  "at": 19.31,
+  "end": 28.475,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.055,
+    "t1": 0.752,
+    "text": "For this demo,"
+   },
+   {
+    "t0": 0.775,
+    "t1": 2.957,
+    "text": "we built a small checkout app called Pantry,"
+   },
+   {
+    "t0": 3.039,
+    "t1": 5.047,
+    "text": "and we planted a UX bug on purpose."
+   },
+   {
+    "t0": 5.256,
+    "t1": 6.708,
+    "text": "The traffic is simulated too:"
+   },
+   {
+    "t0": 6.917,
+    "t1": 9.146,
+    "text": "three hundred and twenty scripted browser sessions."
+   }
+  ]
+ },
+ "0018.png": {
+  "text": "Each session is recorded with rrweb, the open-source recorder PostHog uses, and its funnel events go to Postgres, where Metabase reads them.",
+  "dur": 7.86,
+  "at": 28.61,
+  "end": 36.47,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.09,
+    "t1": 2.098,
+    "text": "Each session is recorded with rrweb,"
+   },
+   {
+    "t0": 2.342,
+    "t1": 4.467,
+    "text": "the open-source recorder PostHog uses,"
+   },
+   {
+    "t0": 4.618,
+    "t1": 6.417,
+    "text": "and its funnel events go to Postgres,"
+   },
+   {
+    "t0": 6.626,
+    "t1": 7.81,
+    "text": "where Metabase reads them."
+   }
+  ]
+ },
+ "0028.png": {
+  "text": "Now the prompt. I mention the product demo apps repo, and I give Devin the goal, not the answer.",
+  "dur": 5.305,
+  "at": 36.725,
+  "end": 42.03,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.078,
+    "t1": 0.845,
+    "text": "Now the prompt."
+   },
+   {
+    "t0": 1.17,
+    "t1": 3.155,
+    "text": "I mention the product demo apps repo,"
+   },
+   {
+    "t0": 3.306,
+    "t1": 4.433,
+    "text": "and I give Devin the goal,"
+   },
+   {
+    "t0": 4.479,
+    "t1": 5.305,
+    "text": "not the answer."
+   }
+  ]
+ },
+ "0045.png": {
+  "text": "Devin plans the work and reaches for the Metabase MCP.",
+  "dur": 3.115,
+  "at": 42.23,
+  "end": 45.345,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.135,
+    "t1": 3.084,
+    "text": "Devin plans the work and reaches for the Metabase MCP."
+   }
+  ]
+ },
+ "0050.png": {
+  "text": "The MCP server didn't start at first, because Node wasn't on the machine's default path, so Devin fixed that and kept going.",
+  "dur": 6.35,
+  "at": 45.46,
+  "end": 51.81,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.098,
+    "t1": 2.037,
+    "text": "The MCP server didn't start at first,"
+   },
+   {
+    "t0": 2.06,
+    "t1": 4.37,
+    "text": "because Node wasn't on the machine's default path,"
+   },
+   {
+    "t0": 4.544,
+    "t1": 6.309,
+    "text": "so Devin fixed that and kept going."
+   }
+  ]
+ },
+ "0055.png": {
+  "text": "Then it queries the checkout funnel through Metabase.",
+  "dur": 2.375,
+  "at": 52.025,
+  "end": 54.4,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.069,
+    "t1": 2.375,
+    "text": "Then it queries the checkout funnel through Metabase."
+   }
+  ]
+ },
+ "0061.png": {
+  "text": "My replay viewer runs behind a tunnel, and Chrome blocked that link, so Devin copied the replay page locally and opened it in its own browser.",
+  "dur": 7.32,
+  "at": 54.715,
+  "end": 62.035,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.084,
+    "t1": 2.081,
+    "text": "My replay viewer runs behind a tunnel,"
+   },
+   {
+    "t0": 2.197,
+    "t1": 3.44,
+    "text": "and Chrome blocked that link,"
+   },
+   {
+    "t0": 3.474,
+    "t1": 5.924,
+    "text": "so Devin copied the replay page locally and"
+   },
+   {
+    "t0": 5.994,
+    "t1": 7.32,
+    "text": "opened it in its own browser."
+   }
+  ]
+ },
+ "0066.png": {
+  "text": "In its Computer tab, Devin watches a session that dropped at shipping. The phone number is formatted, the user clicks Continue five times, and nothing on screen changes.",
+  "dur": 9.11,
+  "at": 62.39,
+  "end": 71.5,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.083,
+    "t1": 1.14,
+    "text": "In its Computer tab,"
+   },
+   {
+    "t0": 1.175,
+    "t1": 3.288,
+    "text": "Devin watches a session that dropped at shipping."
+   },
+   {
+    "t0": 3.671,
+    "t1": 5.053,
+    "text": "The phone number is formatted,"
+   },
+   {
+    "t0": 5.262,
+    "t1": 7.63,
+    "text": "the user clicks Continue five times,"
+   },
+   {
+    "t0": 7.653,
+    "t1": 9.11,
+    "text": "and nothing on screen changes."
+   }
+  ]
+ },
+ "0071.png": {
+  "text": "Here's its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there, while sessions with bare digits went on to order.",
+  "dur": 10.15,
+  "at": 71.91,
+  "end": 82.06,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.049,
+    "t1": 1.303,
+    "text": "Here's its hypothesis."
+   },
+   {
+    "t0": 1.628,
+    "t1": 3.799,
+    "text": "Shipping loses fifty-five percent of sessions."
+   },
+   {
+    "t0": 4.124,
+    "t1": 6.505,
+    "text": "All one hundred fifty-four sessions with a formatted"
+   },
+   {
+    "t0": 6.539,
+    "t1": 7.654,
+    "text": "phone number dropped there,"
+   },
+   {
+    "t0": 7.782,
+    "t1": 10.115,
+    "text": "while sessions with bare digits went on to order."
+   }
+  ]
+ },
+ "0072.png": {
+  "text": "The fix goes behind a flag called forgiving shipping form, off by default. It accepts common phone formats, shows the error on the field that failed, and logs which fields failed.",
+  "dur": 9.795,
+  "at": 82.295,
+  "end": 92.09,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.055,
+    "t1": 2.168,
+    "text": "The fix goes behind a flag called forgiving"
+   },
+   {
+    "t0": 2.215,
+    "t1": 3.968,
+    "text": "shipping form, off by default."
+   },
+   {
+    "t0": 4.212,
+    "t1": 6.011,
+    "text": "It accepts common phone formats,"
+   },
+   {
+    "t0": 6.22,
+    "t1": 8.02,
+    "text": "shows the error on the field that failed,"
+   },
+   {
+    "t0": 8.229,
+    "t1": 9.795,
+    "text": "and logs which fields failed."
+   }
+  ]
+ },
+ "0081.png": {
+  "text": "Devin runs the tests and opens a pull request.",
+  "dur": 2.435,
+  "at": 92.635,
+  "end": 95.07,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.095,
+    "t1": 2.435,
+    "text": "Devin runs the tests and opens a pull request."
+   }
+  ]
+ },
+ "0090.png": {
+  "text": "It also lists the two setup issues, and offers to test the change in its browser.",
+  "dur": 4.325,
+  "at": 95.23,
+  "end": 99.555,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.077,
+    "t1": 2.086,
+    "text": "It also lists the two setup issues,"
+   },
+   {
+    "t0": 2.26,
+    "t1": 4.325,
+    "text": "and offers to test the change in its browser."
+   }
+  ]
+ },
+ "0100.png": {
+  "text": "I click Test, and Devin walks through checkout with the flag on.",
+  "dur": 3.415,
+  "at": 100.11,
+  "end": 103.525,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.097,
+    "t1": 1.107,
+    "text": "I click Test,"
+   },
+   {
+    "t0": 1.281,
+    "t1": 3.415,
+    "text": "and Devin walks through checkout with the flag on."
+   }
+  ]
+ },
+ "0109.png": {
+  "text": "With a formatted phone number, the order goes through.",
+  "dur": 2.285,
+  "at": 104.0,
+  "end": 106.285,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.05,
+    "t1": 1.304,
+    "text": "With a formatted phone number,"
+   },
+   {
+    "t0": 1.327,
+    "t1": 2.221,
+    "text": "the order goes through."
+   }
+  ]
+ },
+ "0115.png": {
+  "text": "And when a field really is wrong, the error now shows right on that field.",
+  "dur": 3.44,
+  "at": 106.285,
+  "end": 109.725,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.468,
+    "text": "And when a field really is wrong,"
+   },
+   {
+    "t0": 1.527,
+    "t1": 3.44,
+    "text": "the error now shows right on that field."
+   }
+  ]
+ },
+ "0160.png": {
+  "text": "Testing turned up a few polish issues, so Devin pushed a follow-up commit and retested on a phone-sized screen.",
+  "dur": 5.76,
+  "at": 110.17,
+  "end": 115.93,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.068,
+    "t1": 2.065,
+    "text": "Testing turned up a few polish issues,"
+   },
+   {
+    "t0": 2.181,
+    "t1": 4.48,
+    "text": "so Devin pushed a follow-up commit and retested"
+   },
+   {
+    "t0": 4.538,
+    "t1": 5.723,
+    "text": "on a phone-sized screen."
+   }
+  ]
+ },
+ "0162.png": {
+  "text": "Finally, here's the pull request branch running locally. With the flag off, I type the same formatted number, and Continue still does nothing visible.",
+  "dur": 7.51,
+  "at": 116.27,
+  "end": 123.78,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.064,
+    "t1": 2.49,
+    "text": "Finally, here's the pull request branch running locally."
+   },
+   {
+    "t0": 2.931,
+    "t1": 3.756,
+    "text": "With the flag off,"
+   },
+   {
+    "t0": 3.779,
+    "t1": 5.393,
+    "text": "I type the same formatted number,"
+   },
+   {
+    "t0": 5.567,
+    "t1": 7.47,
+    "text": "and Continue still does nothing visible."
+   }
+  ]
+ },
+ "0174.png": {
+  "text": "With the flag on, the same number takes me straight to payment.",
+  "dur": 2.685,
+  "at": 124.045,
+  "end": 126.73,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.021,
+    "t1": 0.88,
+    "text": "With the flag on,"
+   },
+   {
+    "t0": 0.903,
+    "t1": 2.656,
+    "text": "the same number takes me straight to payment."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Analytics in, a flagged fix out.",
+  "dur": 1.95,
+  "at": 127.08,
+  "end": 129.03,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.062,
+    "t1": 1.95,
+    "text": "Analytics in, a flagged fix out."
+   }
+  ]
+ }
+}
