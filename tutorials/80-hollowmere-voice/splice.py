@@ -84,8 +84,9 @@ TD = 26.0
 TS0, TD, TZ = 15.8, 5.0, (1.35, 1.5, 0.4, 3.4)  # the beam is up from 16.25 s; the frame is held on the beam + compass pin, not the standing pair
 test = seg(os.path.join(B, 'test.mp4'), TS0, TS0 + TD, [(11, 0.3, TD - 0.3)], 'intro', source=TEST, zoom=TZ)
 BR1 = os.path.join(D, 'live', 'broll', 'video.webm')
-WALK = (116.0, 134.8)  # broll1: the walk back to the shrine with the ember-stone, seen from behind
-walk = seg(os.path.join(B, 'walk.mp4'), WALK[0], WALK[1], [(13, 0.3, 6.5)], None, source=BR1)
+WALK = [(116.0, 130.0), (141.0, 147.5)]  # broll1: the walk back to the shrine with the ember-stone, seen from behind (cut before the stones pass the lens at 130-135), then the brazier burning
+walkv = montage('walk', WALK); WD = sum(b - a for a, b in WALK)
+walk = seg(os.path.join(B, 'walk.mp4'), 0, WD, [(13, 0.3, 19.5)], None, source=walkv)
 parts = [live]
 if mode == 'cap':  # title card: the captioned cut has no narration, so pills 0-1 carry the intro line and the stack (Devin Voice = ChatGPT voice)
     MB = os.path.join(B, 'music'); os.makedirs(os.path.join(MB, 'build'), exist_ok=True)
@@ -106,7 +107,7 @@ if mode in ('nader', 'nomusic'):
     # our live check of the feature, narrated (i3 over the ask, i4 over the beam / clear / native notes), real Eira audio under it
     tw = [(os.path.join(D, 'intro', 'i3.png.wav'), 0.3)]
     test = seg(os.path.join(B, 'test-n.mp4'), TS0, TS0 + TD, [(11, 0.3, TD - 0.3)], tw, source=TEST, zoom=TZ)
-    walk = seg(os.path.join(B, 'walk-n.mp4'), WALK[0], WALK[1], [(13, 0.3, 6.5)], [(os.path.join(D, 'intro', 'i4.png.wav'), 0.4)], source=BR1)
+    walk = seg(os.path.join(B, 'walk-n.mp4'), 0, WD, [(13, 0.3, 19.5)], [(os.path.join(D, 'intro', 'i4.png.wav'), 0.4)], source=walkv)
     name += '-nader' + ('-nomusic' if mode == 'nomusic' else '')
 kit = os.path.join(D, name + '.mp4')
 # v3 (review notes): the chat-UI stretch of the call runs as a split screen — the kit frame as a 55 % card on the left over
@@ -127,7 +128,7 @@ def aud(src, ss, dur, out):  # broll audio.webm starts ~8.6 s after its video (r
     a0 = max(0.0, ss - 8.6)
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(a0), '-t', str(dur), '-i', src, '-af', f'adelay={int(max(0, 8.6 - ss) * 1000)}:all=1,apad,atrim=0:{dur}', '-ar', '48000', '-ac', '2', out], check=True); return out
 PANE = [(os.path.join(BR2, 'video.mp4'), 10.0, 47.0), (os.path.join(BR2, 'video.mp4'), 62.0, 96.0), (os.path.join(BR2, 'video.mp4'), 106.0, 156.0),
-        (os.path.join(D, 'live', 'broll', 'video.webm'), 24.5, 58.0)]  # unused footage only: flights, the mere walk, Brann, the barrow road + wight, the barrow walk
+        (os.path.join(D, 'live', 'broll', 'video.webm'), 30.5, 58.0), (os.path.join(D, 'live', 'broll', 'video.webm'), 140.5, 153.0)]  # unused footage only: flights, the mere walk, Brann, the barrow road + wight, the watchpost road from behind (24.5-30.5 flies between the standing stones, so it is skipped), the lit brazier
 def pane(out):
     if os.environ.get('REUSE') and os.path.exists(out): return out
     outs = [seg(os.path.join(B, f'pane-{i}.mp4'), a, b, [], None, source=src, dip=False) for i, (src, a, b) in enumerate(PANE)]
