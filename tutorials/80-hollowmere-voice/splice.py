@@ -58,14 +58,15 @@ def seg(out, ss, to, caps, audio, source=None):
         f += f';anullsrc=r=48000:cl=stereo,atrim=0:{dur}[ao]'
     subprocess.run(cmd + ['-filter_complex', f, '-map', '[vo]', '-map', '[ao]', *X264, *AAC, '-t', str(dur), out], check=True)
     return out
-# live/stt.json windows for the Hollowmere take: k1 9.3 s, "wait, wait, stop" 13.1, bard 19.6, barrow 39.1, pack 44.7
+# live/stt.json windows for the Hollowmere take 4 (rig-facing fix): k1 9.5 s, "wait, wait, stop" 12.7, bard 20.6, Brann reached ~33, barrow 41.1, pack 57.3, last Eira line ends 66.5
 S0 = 1.0
-live = seg(os.path.join(B, 'live.mp4'), S0, 53.4,
-           [(i, a - S0, b - S0) for i, a, b in [(2, 2.4, 8.8), (3, 9.2, 12.9), (4, 13.1, 16.2), (5, 16.4, 19.3), (6, 19.6, 24.2), (7, 24.5, 35.7), (8, 38.9, 44.3), (9, 44.7, 52.6)]], 'intro')
+live = seg(os.path.join(B, 'live.mp4'), S0, 69.5,
+           [(i, a - S0, b - S0) for i, a, b in [(2, 2.4, 9.0), (3, 9.4, 12.0), (4, 12.6, 15.0), (5, 15.2, 20.2), (6, 20.6, 24.8), (7, 25.0, 40.5), (8, 41.0, 56.5), (9, 57.2, 68.5)]], 'intro')
 TEST = os.path.join(D, 'live', 'test.mp4')
-# beam appears at 21.0 s and goes out at 30.0 s in live/test.mp4 (seg 12.5 / 21.5); the last frame is held for the wrapped disclosure pill
-TD = 29.0
-test = seg(os.path.join(B, 'test.mp4'), 8.5, 8.5 + TD, [(10, 0.3, 12.2), (11, 12.5, 21.2), (12, 21.5, 23.6), (13, 23.9, TD - 0.3)], 'intro', source=TEST)
+# live/test.mp4 (take 3, rig-facing fix): t1 at 11.3 s, beam appears at 16.25 s and goes out at 26.5 s (seg 5.45 / 15.7); the last frame is held for the wrapped disclosure pill
+TS0 = 10.8
+TD = 26.0
+test = seg(os.path.join(B, 'test.mp4'), TS0, TS0 + TD, [(10, 0.3, 5.2), (11, 5.5, 15.4), (12, 15.7, 17.8), (13, 18.1, TD - 0.3)], 'intro', source=TEST)
 TS = 12.0  # title/teaser footage: the redirect and the bard walk
 parts = [live]
 if mode == 'cap':  # title card: the captioned cut has no narration, so pills 0-1 carry the intro line and the stack (Devin Voice = ChatGPT voice)
@@ -83,9 +84,9 @@ if mode in ('nader', 'nomusic'):
         wavs.append((os.path.join(D, 'intro', k + '.wav'), t)); caps.append((ci, t, t + I[k]['dur'] + 0.3)); t += I[k]["dur"] + 0.35
     parts = [seg(os.path.join(B, 'teaser.mp4'), TS, TS + t + 0.6, caps, wavs), live]
     # our live check of the feature, narrated (i3 over the ask, i4 over the beam / clear / native notes), real Eira audio under it
-    tw = [(os.path.join(D, 'intro', 'i3.png.wav'), 0.3), (os.path.join(D, 'intro', 'i4.png.wav'), 8.0)]
-    t4 = 8.0 + I['i4.png']['dur'] + 0.6
-    test = seg(os.path.join(B, 'test-n.mp4'), 8.5, 8.5 + max(TD, t4), [(10, 0.3, 12.2), (11, 12.5, 21.2), (12, 21.5, 23.6), (13, 23.9, max(TD, t4) - 0.3)], tw, source=TEST)
+    tw = [(os.path.join(D, 'intro', 'i3.png.wav'), 0.3), (os.path.join(D, 'intro', 'i4.png.wav'), 6.7)]
+    t4 = 6.7 + I['i4.png']['dur'] + 0.6
+    test = seg(os.path.join(B, 'test-n.mp4'), TS0, TS0 + max(TD, t4), [(10, 0.3, 5.2), (11, 5.5, 15.4), (12, 15.7, 17.8), (13, 18.1, max(TD, t4) - 0.3)], tw, source=TEST)
     name += '-nader' + ('-nomusic' if mode == 'nomusic' else '')
 kit = os.path.join(D, name + '.mp4')
 norm = os.path.join(B, 'kit.mp4')
