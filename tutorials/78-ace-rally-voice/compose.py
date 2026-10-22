@@ -30,10 +30,12 @@ print(f'call 1 {R1[0]:.2f}-{R1[1]:.2f} ({D1:.1f} s)  call 2 {R2[0]:.2f}-{R2[1]:.
 # take windows the cold open does not use (splice2: A 61.4-71.9, B 84.1-91.2 / 101.8-114.1 / 133.7-143.5 / 155.7-163.5 / 201.6-211.8, C 225-248)
 # and none of the replays (REPLAY badge ~1-14 s after a Winner!: 72-84, 167-180, 212-225), plus BROLL, a second scripted take on the night court
 BROLL = os.environ.get('BROLL')  # <mp4> already cropped to the game viewport
-REEL = [(src, 248.5, 290.3), (src, 180.5, 201.6), (src, 114.1, 133.7), (src, 143.5, 155.7), (src, 91.2, 101.8), (src, 46.5, 61.4)]
-if BROLL: REEL = [(BROLL, float(a), float(b)) for a, b in (w.split('-') for w in os.environ['BROLL_WINDOWS'].split(','))] + REEL
+REEL = [(src, 248.5, 290.3), (src, 181.5, 201.6), (src, 114.1, 133.7), (src, 143.5, 155.7), (src, 91.2, 101.8), (src, 46.5, 61.4)]
+# red-pill scan of the b-roll (top-centre band, 2 fps): REPLAY badge 70.75-83.25 s (fade-in to fade-out), so that window is out
+if BROLL: REEL = [(BROLL, float(a), float(b)) for a, b in (w.split('-') for w in os.environ.get('BROLL_WINDOWS', '14.0-69.5,84.2-107.5').split(','))] + REEL
 OUTRO = (290.3, 297.4)   # "Mina sends a rocket" … point 10 Winner!, out before its replay
-reel = os.path.join(W, 'reel.mp4')
+import hashlib
+reel = os.path.join(W, 'reel-%s.mp4' % hashlib.md5(repr(REEL).encode()).hexdigest()[:8])   # cache keyed on the windows: a stale reel kept a replay in once
 if not os.path.exists(reel):
     # one clip per window (input seeking), then a concat: trimming seven windows out of one decode queues hundreds of frames
     lst = os.path.join(W, 'reel.txt'); parts = []

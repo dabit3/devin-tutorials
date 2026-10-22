@@ -22,12 +22,12 @@ hl = mark('match1 highlight')
 # the highlight point: last point mark before the highlight mark that has a grade
 pts = [m for m in marks if m['name'].startswith('point ') and m['t'] < (hl['t'] if hl else g1)]
 hp = [m for m in pts if ('POWER SHOT' in m['name'] or 'Winner' in m['name'] or 'PERFECT' in m['name'])][-1] if pts else None
-A1 = env('A1', (hp['t'] if hp else g1 - 8) + 1.9)  # end on the Winner! banner, before the replay (its far-end camera passes a light pole on grass)
+A1 = env('A1', (hp['t'] if hp else g1 - 8) + 1.0)  # end on the Winner! banner, out before the replay badge fades in (take 71.5) (its far-end camera passes a light pole on grass)
 A0 = env('A0', A1 - 10.5)
 B0 = env('B0', g1 - 0.6)
 g3ans = mark('g3 answered')
 B1 = env('B1', (g3ans['t'] if g3ans else g3 + 6) + 5.5)
-C0 = env('C0', 225.0)  # after the night highlight and its replay (ends ~224.6): no footage appears twice, no REPLAY badge
+C0 = env('C0', 225.8)  # after the night highlight and its replay (badge fades out until ~225.0): no footage appears twice, no REPLAY badge
 print(f'A {A0:.1f}-{A1:.1f}  B {B0:.1f}-{B1:.1f}  C from {C0:.1f}', 'highlight', hp['name'] if hp else None)
 B = os.path.join(D, 'build', 'splice2'); os.makedirs(B, exist_ok=True)
 CAPS = ["Chair, a live GPT-Live-1 umpire, is calling the match", "One sentence changes the court, the players and the format",
@@ -101,16 +101,16 @@ g1b = plays.get('g1b')
 if g1b and g1b['rel'] < m2['t']:
     # Chair acknowledged the first ask without running the tools; the re-ask is what swapped the match. Keep both, cut the wait between them.
     g1e = g1 + plays['g1']['dur']
-    W.append(win(g1 - 0.6, g1e + 1.6, caps=[(1, g1 + 0.4, g1e + 1.4)], punch=[(g1 + 1.2, g1e + 0.4)], tag='swap-ask'))
+    W.append(win(g1 - 0.1, g1e + 1.6, caps=[(1, g1 + 0.4, g1e + 1.4)], punch=[(g1 + 1.2, g1e + 0.4)], tag='swap-ask'))
     W.append(win(g1b['rel'] - 0.2, m2['t'] - 0.15, punch=[(g1b['rel'] + 0.4, min(g1b['rel'] + 4.2, m2['t'] - 0.2))], tag='swap-re-ask'))
 else:
-    W.append(win(g1 - 0.6, m2['t'] - 0.15, caps=[(1, g1 + 0.4, m2['t'] - 0.3)], punch=[(g1 + 1.2, m2['t'] - 0.2)], tag='swap-ask'))
+    W.append(win(g1 - 0.1, m2['t'] - 0.15, caps=[(1, g1 + 0.4, m2['t'] - 0.3)], punch=[(g1 + 1.2, m2['t'] - 0.2)], tag='swap-ask'))
 W.append(win(m2['t'] + 1.0, min(m2['t'] + 5.5, g2 - 2.5), caps=[(2, m2['t'] + 1.6, m2['t'] + 5.0)], tag='night-start'))
 # B2: the barge-in
 W.append(win(g2 - 1.4, hyp['t'] + 3.8, caps=[(3, g2 - 0.4, g2 + 2.6), (4, hyp['t'] + 0.3, hyp['t'] + 3.6)], punch=[(g2 - 0.2, hyp['t'] + 2.6)], tag='barge-in'))
 # B3: the long rally with the power-shot finish, slow push-in, then its far-end replay
 if hp2:
-    W.append(win(hp2['t'] - 9.0, hp2['t'] + 1.2, push=(hp2['t'] - 8.5, hp2['t'] - 1.0), tag='night-highlight'))  # out before the replay badge
+    W.append(win(hp2['t'] - 9.0, hp2['t'] + 0.9, push=(hp2['t'] - 8.5, hp2['t'] - 1.0), tag='night-highlight'))  # out before the replay badge
 # B4: the score question
 W.append(win(g3 - 1.0, sc['t'] + 3.0, caps=[(5, g3 - 0.4, sc['t'] + 3.5)], punch=[(g3 - 0.2, sc['t'] + 3.6)], tag='score'))
 W = sorted([w for w in W if w['b'] - w['a'] > 2.5], key=lambda w: w['a'])

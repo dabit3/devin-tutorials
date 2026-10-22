@@ -38,7 +38,7 @@ PHONE_L = {'x': 1010, 'y': 377, 'z': 1.6}  # the landscape iPhone simulator in t
 MODAL = {'x': 710, 'y': 404, 'z': 1.1}     # the whole test-report modal
 CARD = {'x': 480, 'y': 450, 'z': 1.5}      # the test-run card in the chat column
 CHATCOL = {'x': 480, 'y': 440, 'z': 1.5}   # the chat column beside the Agents tab
-PRTAB = {'x': 1010, 'y': 330, 'z': 1.6}    # the PR panel
+PRTAB = {'x': 1002, 'y': 330, 'z': 1.7}    # the PR panel: window x 578-1425, past the chat text (ends 545) and the divider (576), 10 px before the panel text (589)
 PANE_W = 792
 BASE1 = {'x': 716, 'y': 405, 'z': 0.88}    # call 1: the whole chat column (x 275-1157) with a 9 px margin
 BASE2 = {'x': 531, 'y': 512, 'z': 1.356}   # call 2: the narrow chat column (x 0-584) lands in the left 55 % of the frame, call bar included
@@ -116,6 +116,7 @@ skip(tab + 2, tab + 3)   # the PR page stays under 3 s
 summ = mark('summary')
 ed(summ, hold=2.0, cam='reset', camDur=1.2, cap='One call, one feature, tested on web, iPhone and Android')
 skip(summ + 1, len(B) - 1)
+for n in range(len(B)): ed(n, fade=0)   # hard cuts between stills: a dissolve of two scroll positions stacks the text (the only crossfades are in the gameplay, splice2.py)
 spec = {'title': 'Devin Voice + GPT-Live-1', 'subtitle': 'Add and test a game feature by voice',
         'outro': 'One call: web, iPhone and Android',
         'voOutro': "That's how you add and test a feature in a cross-platform game with your voice, using Devin Voice and GPT-Live-1.", 'speed': 3, 'cps': 48, 'capPos': 'bottom',
