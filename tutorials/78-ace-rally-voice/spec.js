@@ -74,13 +74,6 @@ window.SPEC = {
     },
     "0022.png": {
       "cap": "An Expo tennis game with Chair, a GPT-Live-1 umpire",
-      "cam": {
-        "x": 780.0,
-        "y": 388.6363636363636,
-        "z": 0.961
-      },
-      "camDur": 1.5,
-      "camForce": true,
       "hold": 0.5317
     },
     "0043.png": {
@@ -95,13 +88,6 @@ window.SPEC = {
     },
     "0050.png": {
       "cap": "The ask: switch Chair\u2019s language as a background tool",
-      "cam": {
-        "x": 920.5,
-        "y": 532.3295454545455,
-        "z": 1.459
-      },
-      "camDur": 1.5,
-      "camForce": true,
       "hold": 0.5383
     },
     "0074.png": {
@@ -116,13 +102,6 @@ window.SPEC = {
     },
     "0083.png": {
       "cap": "Interrupt mid-answer: the key stays on the server",
-      "cam": {
-        "x": 790.0,
-        "y": 398.8636363636364,
-        "z": 0.985
-      },
-      "camDur": 1.5,
-      "camForce": true,
       "hold": 0.5575
     },
     "0095.png": {
@@ -137,13 +116,6 @@ window.SPEC = {
     },
     "0101.png": {
       "cap": "Docs tip: ask Devin to speak faster",
-      "cam": {
-        "x": 790.0,
-        "y": 398.8636363636364,
-        "z": 0.985
-      },
-      "camDur": 1.5,
-      "camForce": true,
       "hl": "keep",
       "hold": 0.5933
     },
@@ -159,13 +131,6 @@ window.SPEC = {
     },
     "0156.png": {
       "cap": "Web and iPhone here; an Ubuntu Devin tests Android",
-      "cam": {
-        "x": 799.0,
-        "y": 408.06818181818176,
-        "z": 1.008
-      },
-      "camDur": 1.5,
-      "camForce": true,
       "hold": 0.5583
     },
     "0178.png": {
@@ -180,13 +145,6 @@ window.SPEC = {
     },
     "0189.png": {
       "cap": "Then let Devin start building",
-      "cam": {
-        "x": 780.0,
-        "y": 388.6363636363636,
-        "z": 0.961
-      },
-      "camDur": 1.5,
-      "camForce": true,
       "hold": 0.5517
     },
     "0192.png": {
@@ -1702,13 +1660,8 @@ window.SPEC = {
     "0710.png": {
       "kind": "still",
       "hold": 2.2,
-      "cam": {
-        "x": 480,
-        "y": 440,
-        "z": 1.5
-      },
+      "cam": "reset",
       "camDur": 1.5,
-      "camForce": true,
       "cap": "Android, by the Ubuntu Devin: Spanish and Japanese pass, one drop flagged",
       "vo": "The Ubuntu Devin ran it on an Android emulator. Spanish and Japanese pass, and it flags one dropped connection that came back with a tap."
     },
@@ -1723,12 +1676,12 @@ window.SPEC = {
       "camForce": true
     },
     "0712.png": {
-      "hold": 1.8,
+      "hold": 0.6,
       "cap": "Devin opens a PR with the reports and recordings",
       "vo": "Then it opens a pull request with the code, the reports, and the recordings."
     },
     "0713.png": {
-      "hold": 1.2
+      "skip": true
     },
     "0714.png": {
       "skip": true

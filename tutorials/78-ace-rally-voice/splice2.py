@@ -27,7 +27,7 @@ A0 = env('A0', A1 - 10.5)
 B0 = env('B0', g1 - 0.6)
 g3ans = mark('g3 answered')
 B1 = env('B1', (g3ans['t'] if g3ans else g3 + 6) + 5.5)
-C0 = env('C0', 216.0)  # after the night highlight (201.6-215.6): no footage appears twice in the cut
+C0 = env('C0', 225.0)  # after the night highlight and its replay (ends ~224.6): no footage appears twice, no REPLAY badge
 print(f'A {A0:.1f}-{A1:.1f}  B {B0:.1f}-{B1:.1f}  C from {C0:.1f}', 'highlight', hp['name'] if hp else None)
 B = os.path.join(D, 'build', 'splice2'); os.makedirs(B, exist_ok=True)
 CAPS = ["Chair, a live GPT-Live-1 umpire, is calling the match", "One sentence changes the court, the players and the format",
@@ -110,7 +110,7 @@ W.append(win(m2['t'] + 1.0, min(m2['t'] + 5.5, g2 - 2.5), caps=[(2, m2['t'] + 1.
 W.append(win(g2 - 1.4, hyp['t'] + 3.8, caps=[(3, g2 - 0.4, g2 + 2.6), (4, hyp['t'] + 0.3, hyp['t'] + 3.6)], punch=[(g2 - 0.2, hyp['t'] + 2.6)], tag='barge-in'))
 # B3: the long rally with the power-shot finish, slow push-in, then its far-end replay
 if hp2:
-    W.append(win(hp2['t'] - 9.0, hp2['t'] + 5.0, push=(hp2['t'] - 8.5, hp2['t'] - 1.0), tag='night-highlight'))
+    W.append(win(hp2['t'] - 9.0, hp2['t'] + 1.2, push=(hp2['t'] - 8.5, hp2['t'] - 1.0), tag='night-highlight'))  # out before the replay badge
 # B4: the score question
 W.append(win(g3 - 1.0, sc['t'] + 3.0, caps=[(5, g3 - 0.4, sc['t'] + 3.5)], punch=[(g3 - 0.2, sc['t'] + 3.6)], tag='score'))
 W = sorted([w for w in W if w['b'] - w['a'] > 2.5], key=lambda w: w['a'])

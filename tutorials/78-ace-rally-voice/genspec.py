@@ -57,8 +57,7 @@ for name, caps, base in (('call1', CAPS1, BASE1), ('call2', CAPS2, BASE2)):
         ph = b['phase']
         if ph in caps and ph not in seen:
             seen.add(ph); ed(n, cap=caps[ph], **({'capPos': {'x': 0.275, 'y': 0.93}} if name == 'call2' else {}))
-            lc = linecam(name, ph)
-            if lc: ed(n, cam=lc, camDur=1.5, camForce=True)   # eased punch-in on the line as it lands
+            # no horizontal punch-ins: any window narrower than the column (x 275-1157) cuts Devin's wrapped lines at an edge
         if ph.startswith('reply') and ph != prev: ed(n, cam=base, camDur=1.5, camForce=True)
         prev = ph
 # mute / silence highlight while Devin answers the interruption
@@ -107,13 +106,13 @@ ed(ios + 2, cam=MODAL, camDur=1.5, camForce=True)
 skip(ios + 20, 707)
 agents = mark('agents')
 skip(agents - 1, agents + 1)   # the Agents tab and the chat column are still loading on these three
-ed(agents + 2, kind='still', hold=2.2, cam=CHATCOL, camDur=1.5, camForce=True, cap='Android, by the Ubuntu Devin: Spanish and Japanese pass, one drop flagged',
+ed(agents + 2, kind='still', hold=2.2, cam='reset', camDur=1.5, cap='Android, by the Ubuntu Devin: Spanish and Japanese pass, one drop flagged',
    vo="The Ubuntu Devin ran it on an Android emulator. Spanish and Japanese pass, and it flags one dropped connection that came back with a tap.")
 tab = agents + 3
 ed(tab, hl=True, cam=PRTAB, camDur=1.5, camForce=True)
-ed(tab + 1, hold=1.8, cap='Devin opens a PR with the reports and recordings',
+ed(tab + 1, hold=0.6, cap='Devin opens a PR with the reports and recordings',
    vo="Then it opens a pull request with the code, the reports, and the recordings.")
-ed(tab + 2, hold=1.2); skip(tab + 3, tab + 3)
+skip(tab + 2, tab + 3)   # the PR page stays under 3 s
 summ = mark('summary')
 ed(summ, hold=2.0, cam='reset', camDur=1.2, cap='One call, one feature, tested on web, iPhone and Android')
 skip(summ + 1, len(B) - 1)
