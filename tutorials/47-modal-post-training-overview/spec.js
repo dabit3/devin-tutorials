@@ -18,7 +18,7 @@ window.SPEC = {
       "cap": "Your own model, served as an API endpoint",
       "vo": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model, on Modal, check it against gpt-6.1-sol, and deploy it as an API endpoint our app can call. Our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
       "hl": null,
-      "voSay": "In this video, we'll have Devin post-train Qwen three point eight, twenty-seven B, an open model, on Modal, check it against GPT six point one sol, and deploy it as an API endpoint our app can call. Our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+      "voSay": "In this video, we'll have Devin post-train Qwen three point eight, twenty-seven B, an open model, on Modal, check it against GPT six point one sol, and deploy it as an API endpoint our app can call. Our example is text-to-sequel, but the same steps work for any task where a script can score the answer."
     },
     "0001.png": {
       "scene": "steps",
@@ -33,7 +33,8 @@ window.SPEC = {
       "hold": 3.2,
       "cap": "BIRD splits and a reward that runs the SQL",
       "vo": "First, I ask for training and test splits from BIRD, a hard public text-to-SQL benchmark, and a reward that runs the SQL.",
-      "hl": null
+      "hl": null,
+      "voSay": "First, I ask for training and test splits from BIRD, a hard public text-to-sequel benchmark, and a reward that runs the sequel."
     },
     "0003.png": {
       "scene": "reward",
@@ -42,7 +43,8 @@ window.SPEC = {
       "capPos": "bottom",
       "cap": "Match 1, wrong rows 0, fails to run -0.5",
       "vo": "The reward runs the SQL instead of asking an AI judge. Right rows score one, wrong rows score zero, and SQL that fails to run scores minus a half.",
-      "hl": null
+      "hl": null,
+      "voSay": "The reward runs the sequel instead of asking an AI judge. Right rows score one, wrong rows score zero, and sequel that fails to run scores minus a half."
     },
     "0004.png": {
       "hold": 3.4,

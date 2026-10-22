@@ -35,7 +35,7 @@
 | 32 | Dynamic Workflows: how it works (overview) | `32-dynamic-workflows-overview/` |
 | 33 | Dynamic Workflows | `33-dynamic-workflows/` |
 | 34 | Devin Primitives: when to use what (overview) | `34-devin-primitives-overview/` |
-| 46 | Post-train a model on Modal (4:09, narrated by Nader) | `46-modal-post-training/` |
+| 46 | Post-train a model on Modal (4:12, narrated by Nader) | `46-modal-post-training/` |
 | 47 | Post-training on Modal: how it works (overview; 2:29, narrated by Nader) | `47-modal-post-training-overview/` |
 | 58 | Port an iOS screen to Android and prove parity | `58-ios-to-android-parity/` |
 | 59 | Port an iOS screen to Android: how it works (overview) | `59-ios-to-android-parity-overview/` |

@@ -20,7 +20,7 @@ window.SPEC = {
       "vo": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model, on Modal, so it turns plain-English questions into SQL. Modal runs each GPU job only while it's needed and serves the finished model as an endpoint that scales to zero, so you pay for training and traffic, not for idle servers.",
       "hold": 3.0,
       "cursor": false,
-      "voSay": "In this video, we'll have Devin post-train Qwen three point eight, twenty-seven B, an open model, on Modal, so it turns plain-English questions into SQL. Modal runs each GPU job only while it's needed and serves the finished model as an endpoint that scales to zero, so you pay for training and traffic, not for idle servers."
+      "voSay": "In this video, we'll have Devin post-train Qwen three point eight, twenty-seven B, an open model, on Modal, so it turns plain-English questions into sequel. Modal runs each GPU job only while it's needed and serves the finished model as an endpoint that scales to zero, so you pay for training and traffic, not for idle servers."
     },
     "0007.png": {
       "cap": "Step 1: set the folder up for Modal",
@@ -38,7 +38,8 @@ window.SPEC = {
       "cap": "Step 2: BIRD splits and an executable reward",
       "vo": "Next, the data. BIRD is a hard public text-to-SQL benchmark with real databases, and I ask for a fixed-seed split and a reward script that runs the SQL.",
       "hold": 3.2,
-      "cursor": false
+      "cursor": false,
+      "voSay": "Next, the data. BIRD is a hard public text-to-sequel benchmark with real databases, and I ask for a fixed-seed split and a reward script that runs the sequel."
     },
     "0389.png": {
       "cap": "1,034 train, 500 test; reward runs the SQL",
