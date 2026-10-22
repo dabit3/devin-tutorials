@@ -40,8 +40,8 @@ async function openPage() {
 const first = await openPage();
 const total = await first.evaluate(() => window.film.frames);
 fs.mkdirSync(path.join(ROOT, VIDEO, 'build'), { recursive: true });
-if (args.includes('--count')) { const late = await first.evaluate(() => window.film.cues().voLate); if (late && late.length) console.error('narration waits on visuals:', late.join(', ')); console.log(total); process.exit(0); }
 fs.writeFileSync(path.join(ROOT, VIDEO, 'build', 'cues.json'), JSON.stringify(await first.evaluate(() => window.film.cues()), null, 1));
+if (args.includes('--count')) { const late = await first.evaluate(() => window.film.cues().voLate); if (late && late.length) console.error('narration waits on visuals:', late.join(', ')); console.log(total); process.exit(0); }
 const list = flag('--frames', null);
 const from = Number(flag('--from', 0)), to = Math.min(total, Number(flag('--to', total)));
 const frames = list ? list.split(',').map(Number) : []; if (!list) for (let f = from; f < to; f += EVERY) frames.push(f);

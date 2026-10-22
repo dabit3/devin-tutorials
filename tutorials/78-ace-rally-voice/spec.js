@@ -2,45 +2,70 @@ window.SPEC = {
   "title": "Devin Voice + GPT-Live-1",
   "subtitle": "Add and test a game feature by voice",
   "outro": "One call: web, iPhone and Android",
-  "voOutro": "That's how you add and test a feature in a cross-platform game with your voice, using Devin Voice and GPT-Live-1.",
   "speed": 3,
   "cps": 48,
   "capPos": "bottom",
   "pollRunMax": 2.5,
   "outroVoDelay": 0,
+  "maxZoom": 2.0,
+  "capScale": 1.3,
+  "voCapScale": 1.3,
   "edit": {
     "0000.png": {
-      "hold": 1.4,
-      "cursor": false,
-      "cap": "Start in a new Devin session",
-      "vo": "Here's how I did it, starting from a new Devin session."
-    },
-    "0003.png": {
-      "hl": true,
-      "hold": 1.0,
-      "cap": "Pick macOS so Devin can run the iPhone simulator",
-      "capPos": "auto"
+      "skip": true
     },
     "0001.png": {
-      "vo": "First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+      "skip": true
+    },
+    "0002.png": {
+      "skip": true
+    },
+    "0003.png": {
+      "hold": 1.0,
+      "hl": true,
+      "cam": {
+        "x": 690,
+        "y": 585,
+        "z": 1.5
+      },
+      "camDur": 0.8,
+      "camForce": true,
+      "cap": "Pick macOS: Devin can run the iPhone simulator",
+      "vo": "Here's how I did it. In a new Devin session, pick macOS, so Devin can run the iPhone simulator, then start a voice call."
+    },
+    "0004.png": {
+      "skip": true
     },
     "0005.png": {
-      "hl": true
+      "skip": true
     },
     "0006.png": {
-      "hold": 1.4,
-      "hl": true,
-      "capPos": "auto",
-      "cap": "Ubuntu \u2192 macOS"
+      "hold": 0.5,
+      "hl": true
     },
     "0007.png": {
-      "hold": 0.8
+      "skip": true
     },
     "0008.png": {
+      "hold": 1.2,
+      "cam": {
+        "x": 900,
+        "y": 470,
+        "z": 2.0
+      },
+      "camDur": 1.0,
+      "camForce": true,
       "cap": "Start a voice call with the waveform button",
-      "capPos": "auto",
-      "hl": true,
-      "vo": "Then click the waveform button beside the message box to start a voice call."
+      "hl": true
+    },
+    "0009.png": {
+      "cam": {
+        "x": 716,
+        "y": 405,
+        "z": 0.88
+      },
+      "camDur": 1.0,
+      "camForce": true
     },
     "0010.png": {
       "cap": "Devin picks up and says hi",
@@ -48,42 +73,185 @@ window.SPEC = {
       "clip": "call1"
     },
     "0022.png": {
-      "cap": "ACE RALLY: an Expo tennis game with Chair, a GPT-Live-1 umpire",
+      "cap": "An Expo tennis game with Chair, a GPT-Live-1 umpire",
+      "cam": {
+        "x": 780.0,
+        "y": 388.6363636363636,
+        "z": 0.961
+      },
+      "camDur": 1.5,
+      "camForce": true,
       "hold": 0.5317
     },
+    "0043.png": {
+      "cam": {
+        "x": 716,
+        "y": 405,
+        "z": 0.88
+      },
+      "camDur": 1.5,
+      "camForce": true,
+      "hold": 0.5433
+    },
     "0050.png": {
-      "cap": "The ask: let players switch Chair\u2019s language, as a background tool",
+      "cap": "The ask: switch Chair\u2019s language as a background tool",
+      "cam": {
+        "x": 920.5,
+        "y": 532.3295454545455,
+        "z": 1.459
+      },
+      "camDur": 1.5,
+      "camForce": true,
       "hold": 0.5383
     },
+    "0074.png": {
+      "cam": {
+        "x": 716,
+        "y": 405,
+        "z": 0.88
+      },
+      "camDur": 1.5,
+      "camForce": true,
+      "hold": 0.575
+    },
     "0083.png": {
-      "cap": "Interrupt mid-answer: the OpenAI key stays on the server",
+      "cap": "Interrupt mid-answer: the key stays on the server",
+      "cam": {
+        "x": 790.0,
+        "y": 398.8636363636364,
+        "z": 0.985
+      },
+      "camDur": 1.5,
+      "camForce": true,
       "hold": 0.5575
+    },
+    "0095.png": {
+      "cam": {
+        "x": 716,
+        "y": 405,
+        "z": 0.88
+      },
+      "camDur": 1.5,
+      "camForce": true,
+      "hold": 0.5442
     },
     "0101.png": {
       "cap": "Docs tip: ask Devin to speak faster",
+      "cam": {
+        "x": 790.0,
+        "y": 398.8636363636364,
+        "z": 0.985
+      },
+      "camDur": 1.5,
+      "camForce": true,
       "hl": "keep",
       "hold": 0.5933
     },
+    "0103.png": {
+      "cam": {
+        "x": 716,
+        "y": 405,
+        "z": 0.88
+      },
+      "camDur": 1.5,
+      "camForce": true,
+      "hold": 0.5567
+    },
     "0156.png": {
-      "cap": "Test on web and iPhone; a second Devin on Ubuntu tests Android",
+      "cap": "Web and iPhone here; an Ubuntu Devin tests Android",
+      "cam": {
+        "x": 799.0,
+        "y": 408.06818181818176,
+        "z": 1.008
+      },
+      "camDur": 1.5,
+      "camForce": true,
       "hold": 0.5583
+    },
+    "0178.png": {
+      "cam": {
+        "x": 716,
+        "y": 405,
+        "z": 0.88
+      },
+      "camDur": 1.5,
+      "camForce": true,
+      "hold": 0.5458
     },
     "0189.png": {
       "cap": "Then let Devin start building",
+      "cam": {
+        "x": 780.0,
+        "y": 388.6363636363636,
+        "z": 0.961
+      },
+      "camDur": 1.5,
+      "camForce": true,
       "hold": 0.5517
+    },
+    "0192.png": {
+      "cam": {
+        "x": 716,
+        "y": 405,
+        "z": 0.88
+      },
+      "camDur": 1.5,
+      "camForce": true,
+      "hold": 0.5625
+    },
+    "0294.png": {
+      "cam": {
+        "x": 531,
+        "y": 512,
+        "z": 1.356
+      },
+      "camDur": 1.0,
+      "camForce": true
     },
     "0295.png": {
       "cap": "Same session: the call picks up where it left off",
+      "capPos": {
+        "x": 0.275,
+        "y": 0.93
+      },
       "hold": 0.8658,
       "clip": "call2"
     },
     "0301.png": {
       "cap": "Ask how it\u2019s going",
+      "capPos": {
+        "x": 0.275,
+        "y": 0.93
+      },
       "hold": 0.8617
+    },
+    "0303.png": {
+      "cam": {
+        "x": 531,
+        "y": 512,
+        "z": 1.356
+      },
+      "camDur": 1.5,
+      "camForce": true,
+      "hold": 0.8575
     },
     "0309.png": {
       "cap": "Interrupt Devin mid-sentence",
+      "capPos": {
+        "x": 0.275,
+        "y": 0.93
+      },
       "hold": 0.8617
+    },
+    "0310.png": {
+      "cam": {
+        "x": 531,
+        "y": 512,
+        "z": 1.356
+      },
+      "camDur": 1.5,
+      "camForce": true,
+      "hold": 0.8592
     },
     "0096.png": {
       "hl": [
@@ -129,7 +297,9 @@ window.SPEC = {
     },
     "0204.png": {
       "cap": "End the call; Devin keeps working",
-      "hl": true
+      "hl": true,
+      "cam": "reset",
+      "camDur": 1.0
     },
     "0205.png": {
       "skip": true
@@ -395,7 +565,9 @@ window.SPEC = {
       "skip": true
     },
     "0291.png": {
-      "skip": true
+      "skip": true,
+      "cam": "reset",
+      "camDur": 1.5
     },
     "0292.png": {
       "hold": 1.6,
@@ -405,7 +577,9 @@ window.SPEC = {
     },
     "0317.png": {
       "hl": true,
-      "cap": "End the call again"
+      "cap": "End the call again",
+      "cam": "reset",
+      "camDur": 1.0
     },
     "0318.png": {
       "skip": true
@@ -475,6 +649,13 @@ window.SPEC = {
     },
     "0340.png": {
       "hold": 1.6,
+      "cam": {
+        "x": 1010,
+        "y": 377,
+        "z": 1.6
+      },
+      "camDur": 1.5,
+      "camForce": true,
       "cap": "Computer Use tests the web build: Spanish, then Japanese",
       "badge": "Sped up",
       "vo": "Then Devin tests it with Computer Use. In Chrome, he asks Chair to call the match in Spanish, then Japanese, while the match keeps going."
@@ -658,6 +839,8 @@ window.SPEC = {
     },
     "0400.png": {
       "hold": 1.8,
+      "cam": "reset",
+      "camDur": 1.5,
       "cap": "A second Devin on Ubuntu tests Android",
       "vo": "Your Mac can't run Android, so Devin starts a second Devin on Ubuntu for the emulator."
     },
@@ -699,6 +882,13 @@ window.SPEC = {
     },
     "0413.png": {
       "hold": 1.6,
+      "cam": {
+        "x": 1010,
+        "y": 377,
+        "z": 1.6
+      },
+      "camDur": 1.5,
+      "camForce": true,
       "cap": "iPhone simulator: Chair tested with typed input",
       "badge": "Sped up",
       "vo": "On the iPhone simulator, this Mac has no audio device, so Devin types to Chair instead of talking."
@@ -1144,6 +1334,8 @@ window.SPEC = {
     },
     "0560.png": {
       "hold": 1.2,
+      "cam": "reset",
+      "camDur": 1.5,
       "cap": "Waiting for the Android Devin"
     },
     "0561.png": {
@@ -1403,8 +1595,24 @@ window.SPEC = {
     },
     "0646.png": {
       "hold": 1.6,
+      "cam": {
+        "x": 480,
+        "y": 450,
+        "z": 1.5
+      },
+      "camDur": 1.5,
+      "camForce": true,
       "cap": "Every test run comes with a recording and checks",
       "vo": "Every test comes with a recording and pass fail checks."
+    },
+    "0648.png": {
+      "cam": {
+        "x": 710,
+        "y": 404,
+        "z": 1.1
+      },
+      "camDur": 1.5,
+      "camForce": true
     },
     "0649.png": {
       "cap": "Chrome: 9 passed",
@@ -1439,8 +1647,24 @@ window.SPEC = {
     },
     "0679.png": {
       "hold": 1.2,
+      "cam": {
+        "x": 480,
+        "y": 450,
+        "z": 1.5
+      },
+      "camDur": 1.5,
+      "camForce": true,
       "cap": "iPhone recheck: 4 passed",
       "vo": "On the iPhone, the same switches, the panel fix and the reconnect in Japanese pass: four checks in the final recheck."
+    },
+    "0681.png": {
+      "cam": {
+        "x": 710,
+        "y": 404,
+        "z": 1.1
+      },
+      "camDur": 1.5,
+      "camForce": true
     },
     "0699.png": {
       "skip": true
@@ -1470,18 +1694,33 @@ window.SPEC = {
       "skip": true
     },
     "0708.png": {
-      "hl": true
+      "skip": true
     },
     "0709.png": {
+      "skip": true
+    },
+    "0710.png": {
+      "kind": "still",
       "hold": 2.2,
+      "cam": {
+        "x": 480,
+        "y": 440,
+        "z": 1.5
+      },
+      "camDur": 1.5,
+      "camForce": true,
       "cap": "Android, by the Ubuntu Devin: Spanish and Japanese pass, one drop flagged",
       "vo": "The Ubuntu Devin ran it on an Android emulator. Spanish and Japanese pass, and it flags one dropped connection that came back with a tap."
     },
-    "0710.png": {
-      "skip": true
-    },
     "0711.png": {
-      "hl": true
+      "hl": true,
+      "cam": {
+        "x": 1010,
+        "y": 330,
+        "z": 1.6
+      },
+      "camDur": 1.5,
+      "camForce": true
     },
     "0712.png": {
       "hold": 1.8,
@@ -1496,6 +1735,8 @@ window.SPEC = {
     },
     "0715.png": {
       "hold": 2.0,
+      "cam": "reset",
+      "camDur": 1.2,
       "cap": "One call, one feature, tested on web, iPhone and Android"
     },
     "0716.png": {
@@ -1600,9 +1841,6 @@ window.SPEC = {
     "0042.png": {
       "hold": 0.535
     },
-    "0043.png": {
-      "hold": 0.5433
-    },
     "0044.png": {
       "hold": 0.5358
     },
@@ -1690,9 +1928,6 @@ window.SPEC = {
     "0073.png": {
       "hold": 0.5683
     },
-    "0074.png": {
-      "hold": 0.575
-    },
     "0075.png": {
       "hold": 0.5858
     },
@@ -1749,12 +1984,6 @@ window.SPEC = {
     },
     "0094.png": {
       "hold": 0.55
-    },
-    "0095.png": {
-      "hold": 0.5442
-    },
-    "0103.png": {
-      "hold": 0.5567
     },
     "0104.png": {
       "hold": 0.5633
@@ -1975,9 +2204,6 @@ window.SPEC = {
     "0177.png": {
       "hold": 0.5583
     },
-    "0178.png": {
-      "hold": 0.5458
-    },
     "0179.png": {
       "hold": 0.5567
     },
@@ -2010,9 +2236,6 @@ window.SPEC = {
     },
     "0191.png": {
       "hold": 0.5558
-    },
-    "0192.png": {
-      "hold": 0.5625
     },
     "0193.png": {
       "hold": 0.5633
@@ -2062,9 +2285,6 @@ window.SPEC = {
     "0302.png": {
       "hold": 0.8592
     },
-    "0303.png": {
-      "hold": 0.8575
-    },
     "0304.png": {
       "hold": 0.865
     },
@@ -2079,9 +2299,6 @@ window.SPEC = {
     },
     "0308.png": {
       "hold": 0.855
-    },
-    "0310.png": {
-      "hold": 0.8592
     },
     "0311.png": {
       "hold": 0.8608

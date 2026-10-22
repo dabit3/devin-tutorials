@@ -19,7 +19,7 @@ for name in sorted({b['call'] for b in beats if b.get('call')}):
     cs = [b for b in beats if b.get('call') == name and m['t0'] <= b['wall'] < m['t1']]
     for i, b in enumerate(cs):
         e = E.setdefault(b['img'], {})
-        assert not e.get('skip') and not e.get('cam') and not e.get('vo'), f"{b['img']}: call stills can't skip, zoom or carry vo"
+        assert not e.get('skip') and not e.get('vo'), f"{b['img']}: call stills can't skip or carry vo (a cam punch-in is fine: it doesn't change timing)"
         nxt = cs[i + 1]['wall'] if i + 1 < len(cs) else m['t1']
         e['hold'] = round((nxt - b['wall']) / 1000 / pace, 4)
         if i == 0: e['clip'] = name
