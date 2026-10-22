@@ -100,7 +100,7 @@ page.on('console', (m) => {
 })
 page.on('pageerror', (e) => log('[pageerror]', String(e).slice(0, 300)))
 
-await page.goto(process.env.URL ?? 'http://localhost:8081/', { waitUntil: 'networkidle' })
+await page.goto(process.env.URL ?? 'http://localhost:8081/?cine=1', { waitUntil: 'networkidle' })
 await page.waitForFunction(() => globalThis.__hollowmere?.game?.ui?.state?.ready === true, null, { timeout: 120000 })
 await page.waitForTimeout(1500)
 await page.getByText('Begin').click()
@@ -109,6 +109,7 @@ await page.waitForFunction(() => globalThis.__hollowmere?.companion?.view?.statu
 log('live')
 await page.waitForFunction(() => Boolean(document.querySelector('audio[data-coach]')?.srcObject), null, { timeout: 30000 })
 const hooked = await page.evaluate(() => globalThis.__recStart())
+const T0 = Date.now()
 log('recording, remote hooked =', hooked)
 
 const view = () => page.evaluate(() => {
@@ -149,13 +150,31 @@ const waitFor = async (pred, max, label) => {
   return false
 }
 
+// v2 opening: director camera (shrine ring → valley vista → watchpost forge → settle behind the pair, ~19.5 s) while Eira greets.
+const director = (keys) => page.evaluate((k) => globalThis.__hollowmere.director(k), keys)
+if (process.env.SEQ !== 'test') {
+  await director([
+    { pos: [36, 4.8, 0], look: [24, 3, -14], t: 0 }, { pos: [30, 5, -5], look: [24, 2.8, -14], t: 6 },
+    { pos: [40, 7.5, 16], look: [-8, 3, -40], t: 0 }, { pos: [34, 7, 10], look: [-8, 3, -42], t: 6 },
+    { pos: [0, 5.5, 28], look: [-18, 2.5, 10], t: 0 }, { pos: [-4, 6, 30], look: [-16, 2.2, 12], t: 5 },
+    { pos: [1.25, 3.6, 53.5], look: [1.25, 1.6, 43.6], t: 2.5 },
+  ])
+  log('director opening')
+}
 await waitQuiet(4000, 20000) // greeting
+if (process.env.SEQ !== 'test') await page.waitForTimeout(Math.max(0, 20500 - (Date.now() - T0)))
 if (process.env.SEQ === 'test') {
   await speak('t1'); await waitQuiet(5000, 25000)
   await speak('t2'); await waitQuiet(5000, 20000)
 } else {
 await speak('k1') // walk us to the shrine (background move_to while she talks)
-await page.waitForTimeout(Number(process.env.INT_MS ?? 3000))
+// Interrupt only once her move_to has actually landed (she speaks first, calls the tool a beat later); cutting in before
+// that leaves the model with one pending plan, and it walks to the shrine anyway.
+{
+  const t0 = Date.now()
+  while (Date.now() - t0 < 8000 && !(await view()).tools.some((t) => (t.name ?? t.summary ?? '').toString().includes('move_to'))) await page.waitForTimeout(200)
+  await page.waitForTimeout(Number(process.env.INT_MS ?? 900))
+}
 await speak('k2') // INTERRUPT mid-sentence: stop, go to the blacksmith instead
 await waitQuiet(4000, 20000)
 await speak('k3') // style change: old bard
@@ -166,8 +185,14 @@ await speak('k4') // ask him about the barrow
 await waitQuiet(5000, 25000)
 await speak('k5') // what's in my pack?
 await waitQuiet(4000, 20000)
+// end beat: crane up from the forge fire over the valley toward the shrine
+await director([
+  { pos: [-15.2, 3.4, 19.6], look: [-12.4, 1.7, 13.8], t: 0 }, { pos: [-10, 5.5, 22], look: [-12.6, 2.2, 13.8], t: 4 }, { pos: [-4, 10, 28], look: [8, 2, -12], t: 5 },
+])
+log('end beat')
+await page.waitForTimeout(9500)
 }
-await page.waitForTimeout(3000)
+await page.waitForTimeout(1500)
 log('final snapshot', JSON.stringify(await snap()))
 log('fps', await page.evaluate(() => globalThis.__hollowmere.game.ui.state.fps))
 await page.evaluate(() => globalThis.__recStop())

@@ -11,13 +11,14 @@ def skip(a, b):
 mark = lambda m, after=0: [n for n, b in enumerate(B) if b.get('mark') == m and n > after][0]
 
 # The live cold open (live/live.mp4) and the intro are spliced in front of this cut by splice.py; the kit cut starts at the session.
-ed(0, hold=1.4, cursor=False, cap='Start in a new Devin session',
+ed(0, hold=0.6, cursor=False, cap='Start in a new Devin session',
    vo="Here's how I added the feature, starting from a new Devin session.")
-ed(3, hl=True, hold=1.0, cap='Pick macOS so Devin can run the iPhone simulator', capPos='auto')
-ed(1, vo="First, switch the virtual environment to macOS, so Devin can run the iPhone simulator.")
-ed(5, hl=True)
-ed(6, hold=1.4, hl=True, capPos='auto', cap='Ubuntu → macOS')
-ed(7, hold=2.2, cap='Start a voice call with the waveform button', capPos='auto', hl=True,
+skip(1, 2)
+ed(3, hl=True, hold=0.7, cap='Pick macOS so Devin can run the iPhone simulator', capPos='auto',
+   vo="First, switch the virtual environment to macOS, so Devin can run the iPhone simulator.")
+skip(4, 5)
+ed(6, hold=0.6, hl=True, capPos='auto', cap='Ubuntu → macOS')
+ed(7, hold=1.3, cap='Start a voice call with the waveform button', capPos='auto', hl=True, cam={'x': 1000, 'y': 420, 'z': 1.9}, camForce=True, camDur=0.7,
    vo="Then click the waveform button beside the message box to start a voice call.")
 
 calls = {}
@@ -78,11 +79,25 @@ ed(ios, hold=1.8, cap='The iPhone recording: beam and pin seen, 2 checks passed,
    vo="On the iPhone simulator, Devin saw the beam and the compass pin. Two checks passed; two were not tested, because the frames come so slowly.")
 skip(ios + 16, len(B) - 1)
 
+# Punch-ins (v2 quality pass): kit camera moves onto what matters — the transcript line, the barge-in reply, the beam in Devin's own
+# Chrome test, the iPhone simulator, the PR diff. UI coords are the kit's 1440x810 space; 'reset' eases back to the full window.
+Z = lambda n, x, y, z, **k: ed(n, cam={'x': x, 'y': y, 'z': z}, camForce=True, camDur=1.2, **k)
+# every punch-in frames a whole panel or bubble (nothing cut at the frame edge); phone footage is framed on the phone itself
+ed(8, cam='reset', camDur=0.8)
+Z(33, 790, 260, 1.8); ed(36, cam='reset')                      # the ask bubble
+Z(63, 720, 500, 1.6); Z(66, 720, 260, 1.6); ed(70, cam='reset')  # barge-in pill + "Okay, I'll take a look. And", then "Got it. Tall beam of light."
+E['0234.png'] = {'skip': False, 'hold': 2.4, 'cam': {'x': 864, 'y': 395, 'z': 1.25}, 'camForce': True, 'camDur': 1.4,
+                 'cap': 'Devin\'s Chrome test: the beam goes up across the valley, the pin lands on the compass'}
+Z(249, 1009, 240, 1.7); ed(251, cam='reset')                   # the iPhone simulator window
+Z(346, 450, 360, 1.7)                                          # the iPhone test card + CI status
+E['0350.png'] = {'skip': False, 'hold': 2.2, 'cam': {'x': 864, 'y': 420, 'z': 1.25}, 'camForce': True, 'camDur': 1.2,
+                 'cap': 'PR #91: 17 files, +332 −20'}
+ed(web, cam='reset'); Z(ios, 512, 420, 2.1)                    # the iPhone recording card
 spec = {
     'title': 'Hollowmere × GPT-Live-1', 'subtitle': 'Add a feature to a voice-controlled RPG, by voice',
     'outro': 'One call: web, iPhone simulator, and a PR',
     'voOutro': "That's how you add a feature to a cross-platform game with your voice, using Devin Voice and GPT-Live-1.",
-    'speed': 3, 'cps': 48, 'capPos': 'bottom', 'pollRunMax': 2.5, 'edit': E,
+    'speed': 3, 'cps': 48, 'maxZoom': 2.2, 'capPos': 'bottom', 'pollRunMax': 2.5, 'edit': E,
 }
 open(os.path.join(D, 'spec.js'), 'w').write('window.SPEC = ' + json.dumps(spec, indent=2, ensure_ascii=False) + ';\n')
 print('spec.js', len(E), 'edits')

@@ -5,42 +5,59 @@ window.SPEC = {
   "voOutro": "That's how you add a feature to a cross-platform game with your voice, using Devin Voice and GPT-Live-1.",
   "speed": 3,
   "cps": 48,
+  "maxZoom": 2.2,
   "capPos": "bottom",
   "pollRunMax": 2.5,
   "edit": {
     "0000.png": {
-      "hold": 1.4,
+      "hold": 0.6,
       "cursor": false,
       "cap": "Start in a new Devin session",
       "vo": "Here's how I added the feature, starting from a new Devin session."
     },
+    "0001.png": {
+      "skip": true
+    },
+    "0002.png": {
+      "skip": true
+    },
     "0003.png": {
       "hl": true,
-      "hold": 1.0,
+      "hold": 0.7,
       "cap": "Pick macOS so Devin can run the iPhone simulator",
-      "capPos": "auto"
-    },
-    "0001.png": {
+      "capPos": "auto",
       "vo": "First, switch the virtual environment to macOS, so Devin can run the iPhone simulator."
     },
+    "0004.png": {
+      "skip": true
+    },
     "0005.png": {
-      "hl": true
+      "skip": true
     },
     "0006.png": {
-      "hold": 1.4,
+      "hold": 0.6,
       "hl": true,
       "capPos": "auto",
       "cap": "Ubuntu \u2192 macOS"
     },
     "0007.png": {
-      "hold": 2.2,
+      "hold": 1.3,
       "cap": "Start a voice call with the waveform button",
       "capPos": "auto",
       "hl": true,
+      "cam": {
+        "x": 1000,
+        "y": 420,
+        "z": 1.9
+      },
+      "camForce": true,
+      "camDur": 0.7,
       "vo": "Then click the waveform button beside the message box to start a voice call."
     },
     "0008.png": {
       "cap": "Devin picks up",
+      "cam": "reset",
+      "camDur": 0.8,
       "hold": 20.8117,
       "clip": "call1"
     },
@@ -50,6 +67,13 @@ window.SPEC = {
     },
     "0033.png": {
       "cap": "The ask: a mark_waypoint tool \u2014 a glowing marker in the world, plus a compass pin",
+      "cam": {
+        "x": 790,
+        "y": 260,
+        "z": 1.8
+      },
+      "camForce": true,
+      "camDur": 1.2,
       "hold": 0.5775
     },
     "0061.png": {
@@ -310,7 +334,16 @@ window.SPEC = {
       "skip": true
     },
     "0234.png": {
-      "skip": true
+      "skip": false,
+      "hold": 2.4,
+      "cam": {
+        "x": 864,
+        "y": 395,
+        "z": 1.25
+      },
+      "camForce": true,
+      "camDur": 1.4,
+      "cap": "Devin's Chrome test: the beam goes up across the valley, the pin lands on the compass"
     },
     "0235.png": {
       "skip": true
@@ -357,7 +390,14 @@ window.SPEC = {
     "0249.png": {
       "hold": 1.8,
       "cap": "iPhone simulator: software rendering, about one frame a minute",
-      "vo": "Then the iPhone simulator. It renders in software here, about one frame a minute, so this part takes a while."
+      "vo": "Then the iPhone simulator. It renders in software here, about one frame a minute, so this part takes a while.",
+      "cam": {
+        "x": 1009,
+        "y": 240,
+        "z": 1.7
+      },
+      "camForce": true,
+      "camDur": 1.2
     },
     "0252.png": {
       "badge": "Sped up"
@@ -644,7 +684,14 @@ window.SPEC = {
     "0346.png": {
       "hold": 2.2,
       "cap": "PR #91: mark_waypoint tool with beam of light and compass pin",
-      "vo": "The pull request has the code, the tests, and both recordings. The repo has no CI, so nothing ran on it."
+      "vo": "The pull request has the code, the tests, and both recordings. The repo has no CI, so nothing ran on it.",
+      "cam": {
+        "x": 450,
+        "y": 360,
+        "z": 1.7
+      },
+      "camForce": true,
+      "camDur": 1.2
     },
     "0347.png": {
       "skip": true
@@ -656,12 +703,22 @@ window.SPEC = {
       "skip": true
     },
     "0350.png": {
-      "skip": true
+      "skip": false,
+      "hold": 2.2,
+      "cam": {
+        "x": 864,
+        "y": 420,
+        "z": 1.25
+      },
+      "camForce": true,
+      "camDur": 1.2,
+      "cap": "PR #91: 17 files, +332 \u221220"
     },
     "0351.png": {
       "hold": 1.4,
       "cap": "The Chrome recording, in real time: five checks passed",
-      "vo": "The Chrome recording: five checks passed. The hero stays put when you mark, a new mark replaces the old one, and arriving clears it."
+      "vo": "The Chrome recording: five checks passed. The hero stays put when you mark, a new mark replaces the old one, and arriving clears it.",
+      "cam": "reset"
     },
     "0371.png": {
       "skip": true
@@ -888,7 +945,14 @@ window.SPEC = {
     "0445.png": {
       "hold": 1.8,
       "cap": "The iPhone recording: beam and pin seen, 2 checks passed, 2 untested",
-      "vo": "On the iPhone simulator, Devin saw the beam and the compass pin. Two checks passed; two were not tested, because the frames come so slowly."
+      "vo": "On the iPhone simulator, Devin saw the beam and the compass pin. Two checks passed; two were not tested, because the frames come so slowly.",
+      "cam": {
+        "x": 512,
+        "y": 420,
+        "z": 2.1
+      },
+      "camForce": true,
+      "camDur": 1.2
     },
     "0461.png": {
       "skip": true
@@ -1001,6 +1065,37 @@ window.SPEC = {
     "0497.png": {
       "skip": true
     },
+    "0036.png": {
+      "cam": "reset",
+      "hold": 0.5558
+    },
+    "0063.png": {
+      "cam": {
+        "x": 720,
+        "y": 500,
+        "z": 1.6
+      },
+      "camForce": true,
+      "camDur": 1.2,
+      "hold": 0.5517
+    },
+    "0066.png": {
+      "cam": {
+        "x": 720,
+        "y": 260,
+        "z": 1.6
+      },
+      "camForce": true,
+      "camDur": 1.2,
+      "hold": 0.5625
+    },
+    "0070.png": {
+      "cam": "reset",
+      "hold": 0.5775
+    },
+    "0251.png": {
+      "cam": "reset"
+    },
     "0010.png": {
       "hold": 0.5483
     },
@@ -1075,9 +1170,6 @@ window.SPEC = {
     },
     "0035.png": {
       "hold": 0.5525
-    },
-    "0036.png": {
-      "hold": 0.5558
     },
     "0037.png": {
       "hold": 0.715
@@ -1154,14 +1246,8 @@ window.SPEC = {
     "0062.png": {
       "hold": 0.555
     },
-    "0063.png": {
-      "hold": 0.5517
-    },
     "0065.png": {
       "hold": 0.5467
-    },
-    "0066.png": {
-      "hold": 0.5625
     },
     "0067.png": {
       "hold": 0.5633
@@ -1171,9 +1257,6 @@ window.SPEC = {
     },
     "0069.png": {
       "hold": 0.5458
-    },
-    "0070.png": {
-      "hold": 0.5775
     },
     "0071.png": {
       "hold": 0.5667

@@ -32,7 +32,7 @@ def fit(path, mb=float(os.environ.get('MAXMB', 95))):
     os.replace(tmp, path); print('fit', path, kbps, 'kbps', round(os.path.getsize(path) / 1e6, 1), 'MB')
     for f in glob.glob(log + '*'): os.remove(f)
 if mode == 'fit': fit(src); sys.exit(0)
-def seg(out, ss, to, caps, audio, source=None):
+def seg(out, ss, to, caps, audio, source=None, dip=True, zoom=None):
     if os.environ.get('REUSE') and os.path.exists(out) and os.path.getsize(out) > 0: return out
     """caps: [(png index, t0, t1)] in segment time; audio: 'intro' or [(wav, t0)] or ('music', wav) or None"""
     dur = to - ss
@@ -41,12 +41,18 @@ def seg(out, ss, to, caps, audio, source=None):
     wavs = audio if isinstance(audio, list) else []
     for w, _ in wavs: cmd += ['-i', w]
     if isinstance(audio, tuple): cmd += ['-i', audio[1]]
-    f = f'[0:v]scale=3840:2160:flags=lanczos,setsar=1,fps=60,tpad=stop_mode=clone:stop_duration=60[v0]'
+    f = f'[0:v]scale=3840:2160:flags=lanczos,setsar=1,fps=60'
+    if zoom:  # eased punch-in (smoothstep between t0 and t1), framed on the upper-middle of the picture (the beam and the compass)
+        z0, z1, t0, t1 = zoom; u = f'min(max((t-{t0})/{t1 - t0},0),1)'; z = f'({z0}+({z1}-{z0})*(3*pow({u},2)-2*pow({u},3)))'
+        f += f",crop=w='iw/{z}':h='ih/{z}':x='(iw-ow)/2':y='(ih-oh)*0.3',scale=3840:2160:flags=lanczos"
+    f += ',tpad=stop_mode=clone:stop_duration=60[v0]'
     for k, (i, t0, t1) in enumerate(caps):
         f += f';[{k + 1}:v]format=rgba,fade=in:st={t0}:d=0.25:alpha=1,fade=out:st={t1 - 0.25}:d=0.25:alpha=1[c{k}];[v{k}][c{k}]overlay=0:0:shortest=1[v{k + 1}]'
     vlast = f'[v{len(caps)}]'
-    f += f';{vlast}fade=out:st={dur - 0.4}:d=0.4[vo]'
-    if audio == 'intro':
+    f += f';{vlast}fade=out:st={dur - 0.4}:d=0.4[vo]' if dip else f';{vlast}copy[vo]'
+    if audio == 'copy':
+        f += f';[0:a]apad,atrim=0:{dur},aresample=48000[ao]'
+    elif audio == 'intro':
         f += f';[0:a]apad,atrim=0:{dur},loudnorm=I=-16:TP=-2:LRA=11,afade=out:st={dur - 0.5}:d=0.5,aresample=48000[ao]'
     elif wavs:
         n0 = 1 + len(caps)
@@ -58,16 +64,25 @@ def seg(out, ss, to, caps, audio, source=None):
         f += f';anullsrc=r=48000:cl=stereo,atrim=0:{dur}[ao]'
     subprocess.run(cmd + ['-filter_complex', f, '-map', '[vo]', '-map', '[ao]', *X264, *AAC, '-t', str(dur), out], check=True)
     return out
-# live/stt.json windows for the Hollowmere take 4 (rig-facing fix): k1 9.5 s, "wait, wait, stop" 12.7, bard 20.6, Brann reached ~33, barrow 41.1, pack 57.3, last Eira line ends 66.5
-S0 = 1.0
-live = seg(os.path.join(B, 'live.mp4'), S0, 69.5,
-           [(i, a - S0, b - S0) for i, a, b in [(2, 2.4, 9.0), (3, 9.4, 12.0), (4, 12.6, 15.0), (5, 15.2, 20.2), (6, 20.6, 24.8), (7, 25.0, 40.5), (8, 41.0, 56.5), (9, 57.2, 68.5)]], 'intro')
+# The cold open is build/coldopen-v2.mp4: coldopen_edit.py's cut of the take-9 live draft (real GPT-Live-1 audio, director opening,
+# its own large subtitles), already 4K60 + loudnormed with the same x264/AAC settings, so it concatenates as-is.
+live = os.path.join(B, '..', 'coldopen-v2.mp4')
+# Intro teasers come from live/broll/video.webm (broll.mjs: no GPT-Live, typed commands + director camera) so nothing in the
+# cold open is shown twice: valley flight, the cold shrine, the walk to the barrow, the frost hit, the relit brazier, the ending.
+BROLL = os.path.join(D, 'live', 'broll', 'video.webm')
+TEASE = [(10.5, 16.5), (20.5, 24.5), (68.0, 74.0), (87.5, 91.0), (94.5, 97.5), (136.8, 140.3), (141.0, 148.3)]  # the ending's white flash runs 135.8-136.6 s
+def montage(name, wins):
+    outs = [seg(os.path.join(B, f'{name}-{i}.mp4'), a, b, [], None, source=BROLL, dip=False) for i, (a, b) in enumerate(wins)]
+    lst = os.path.join(B, f'{name}.txt'); open(lst, 'w').write(''.join(f"file '{p}'\n" for p in outs))
+    out = os.path.join(B, f'{name}-v.mp4')
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', out], check=True)
+    return out
 TEST = os.path.join(D, 'live', 'test.mp4')
 # live/test.mp4 (take 3, rig-facing fix): t1 at 11.3 s, beam appears at 16.25 s and goes out at 26.5 s (seg 5.45 / 15.7); the last frame is held for the wrapped disclosure pill
 TS0 = 10.8
 TD = 26.0
-test = seg(os.path.join(B, 'test.mp4'), TS0, TS0 + TD, [(10, 0.3, 5.2), (11, 5.5, 15.4), (12, 15.7, 17.8), (13, 18.1, TD - 0.3)], 'intro', source=TEST)
-TS = 12.0  # title/teaser footage: the redirect and the bard walk
+TZ = (1.0, 1.32, 6.0, 8.5)
+test = seg(os.path.join(B, 'test.mp4'), TS0, TS0 + TD, [(10, 0.3, 5.2), (11, 5.5, 15.4), (12, 15.7, 17.8), (13, 18.1, TD - 0.3)], 'intro', source=TEST, zoom=TZ)
 parts = [live]
 if mode == 'cap':  # title card: the captioned cut has no narration, so pills 0-1 carry the intro line and the stack (Devin Voice = ChatGPT voice)
     MB = os.path.join(B, 'music'); os.makedirs(os.path.join(MB, 'build'), exist_ok=True)
@@ -75,23 +90,61 @@ if mode == 'cap':  # title card: the captioned cut has no narration, so pills 0-
     subprocess.run(['python3', os.path.join(D, '..', '_kit', 'tools', 'audio.py'), MB], check=True)
     music = os.path.join(B, 'music.wav')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.path.join(MB, 'build', 'audio.wav'), '-t', '8', '-af', 'afade=t=out:st=7.3:d=0.7,loudnorm=I=-18:TP=-2:LRA=11', '-ar', '48000', '-ac', '2', music], check=True)
-    parts = [seg(os.path.join(B, 'title.mp4'), TS, TS + 8, [(0, 0.3, 3.8), (1, 4.0, 7.6)], ('music', music)), live]
+    tv = montage('title', [(10.5, 14.5), (136.8, 140.8)])
+    parts = [seg(os.path.join(B, 'title.mp4'), 0, 8, [(0, 0.3, 3.8), (1, 4.0, 7.6)], ('music', music), source=tv), live]
 name = '80-hollowmere-voice'
 if mode in ('nader', 'nomusic'):
     I = json.load(open(os.path.join(D, 'intro', 'lines.json')))
     t, wavs, caps = 0.5, [], []
     for k, ci in zip(['i0.png', 'i1.png', 'i2.png'], [0, 1, 2]):
         wavs.append((os.path.join(D, 'intro', k + '.wav'), t)); caps.append((ci, t, t + I[k]['dur'] + 0.3)); t += I[k]["dur"] + 0.35
-    parts = [seg(os.path.join(B, 'teaser.mp4'), TS, TS + t + 0.6, caps, wavs), live]
+    tv = montage('teaser', TEASE)
+    parts = [seg(os.path.join(B, 'teaser.mp4'), 0, min(t + 0.6, sum(b - a for a, b in TEASE)), caps, wavs, source=tv), live]
     # our live check of the feature, narrated (i3 over the ask, i4 over the beam / clear / native notes), real Eira audio under it
     tw = [(os.path.join(D, 'intro', 'i3.png.wav'), 0.3), (os.path.join(D, 'intro', 'i4.png.wav'), 6.7)]
     t4 = 6.7 + I['i4.png']['dur'] + 0.6
-    test = seg(os.path.join(B, 'test-n.mp4'), TS0, TS0 + max(TD, t4), [(10, 0.3, 5.2), (11, 5.5, 15.4), (12, 15.7, 17.8), (13, 18.1, max(TD, t4) - 0.3)], tw, source=TEST)
+    test = seg(os.path.join(B, 'test-n.mp4'), TS0, TS0 + max(TD, t4), [(10, 0.3, 5.2), (11, 5.5, 15.4), (12, 15.7, 17.8), (13, 18.1, max(TD, t4) - 0.3)], tw, source=TEST, zoom=TZ)
     name += '-nader' + ('-nomusic' if mode == 'nomusic' else '')
 kit = os.path.join(D, name + '.mp4')
-norm = os.path.join(B, 'kit.mp4')
-subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', kit, '-c:v', 'copy', *AAC, norm], check=True)
-lst = os.path.join(B, 'list.txt'); open(lst, 'w').write(''.join(f"file '{p}'\n" for p in parts + [norm, test]))
+# v3 (review notes): the chat-UI stretch of the call runs as a split screen — the kit frame as a 55 % card on the left over
+# gameplay with its own audio from live/broll2 (unused footage, never the cold open), a sharp centre slice on the right —
+# and the video ends on a native-4K gameplay beat (live/broll3) before the kit's recap card.
+BR2, BR3 = os.path.join(D, 'live', 'broll2'), os.path.join(D, 'live', 'broll3')
+def probe(path): return float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', path], capture_output=True, text=True).stdout)
+def card_start(path):
+    """First time in the kit's last 25 s where the frame goes near-white (the recap card fading in)."""
+    end = probe(path); t0 = end - 25
+    r = subprocess.run(['ffmpeg', '-v', 'info', '-y', '-ss', str(t0), '-i', path, '-vf', 'fps=10,scale=96:54,signalstats,metadata=print:key=lavfi.signalstats.YAVG', '-f', 'null', '-'], capture_output=True, text=True).stderr
+    import re as _re
+    ts = _re.findall(r'pts_time:([0-9.]+)', r); ys = _re.findall(r'YAVG=([0-9.]+)', r)
+    for t, y in zip(ts, ys):
+        if float(y) > 215: return t0 + float(t) - 0.1
+    raise SystemExit('no recap card found')
+def aud(src, ss, dur, out):  # broll audio.webm starts ~8.6 s after its video (recording hooks after Begin): align and trim
+    a0 = max(0.0, ss - 8.6)
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(a0), '-t', str(dur), '-i', src, '-af', f'adelay={int(max(0, 8.6 - ss) * 1000)}:all=1,apad,atrim=0:{dur}', '-ar', '48000', '-ac', '2', out], check=True); return out
+def splitcall(kit, c0, c1, out, g0=12.0):
+    if os.environ.get('REUSE') and os.path.exists(out): return out
+    dur = c1 - c0; ga = aud(os.path.join(BR2, 'audio.webm'), g0, dur, os.path.join(B, 'split-game.wav'))
+    f = ('[1:v]scale=3840:2160:flags=lanczos,fps=60,setsar=1,split[g1][g2];[g1]boxblur=40:2,eq=brightness=-0.28:saturation=0.8[bg];'
+         '[g2]crop=1632:2160:1104:0[slice];[bg][slice]overlay=2208:0[b1];'
+         '[0:v]scale=2112:1188:flags=lanczos,fps=60,setsar=1,format=rgba[card];[3:v]format=gray[m];[card][m]alphamerge[cardm];[b1][cardm]overlay=96:486:format=auto[vo];'
+         f'[2:a]volume=0.18[gq];[0:a][gq]amix=inputs=2:normalize=0,atrim=0:{dur},aresample=48000[ao]')
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(c0), '-to', str(c1), '-i', kit, '-ss', str(g0), '-t', str(dur), '-i', os.path.join(BR2, 'video.mp4'), '-i', ga,
+                    '-i', os.path.join(B, '..', 'card-mask.png'), '-filter_complex', f, '-map', '[vo]', '-map', '[ao]', *X264, *AAC, '-t', str(dur), out], check=True)
+    return out
+cues = json.load(open(os.path.join(D, 'build', 'cues.json' if mode == 'cap' else 'cues-nader.json')))
+cl = {c['file']: c['t'] / 60 for c in cues['clips']}
+C0, C1 = cl['call1'] - 0.3, cl['call2'] + 24.6 + 1.0
+SPLIT, KEND = card_start(kit), probe(kit)
+k0 = seg(os.path.join(B, 'kit-a.mp4'), 0, C0, [], 'copy', source=kit, dip=False)
+ks = splitcall(kit, C0, C1, os.path.join(B, 'kit-split.mp4'))
+k1 = seg(os.path.join(B, 'kit-b.mp4'), C1, SPLIT, [], 'copy', source=kit)
+outro = seg(os.path.join(B, 'kit-outro.mp4'), SPLIT, KEND, [], 'copy', source=kit)
+BEAT = (19.0, 24.5)  # broll3: the forge, then out over the valley (earlier frames have the hero walking toward the lens)
+beat = seg(os.path.join(B, 'outro-beat.mp4'), BEAT[0], BEAT[1], [], ('music', aud(os.path.join(BR3, 'audio.webm'), BEAT[0], BEAT[1] - BEAT[0], os.path.join(B, 'beat.wav'))), source=os.path.join(BR3, 'video.mp4'))
+lst = os.path.join(B, 'list.txt'); open(lst, 'w').write(''.join(f"file '{p}'\n" for p in parts + [k0, ks, k1, test, beat, outro]))
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', '-movflags', '+faststart', kit], check=True)
+print('kit', round(C0, 1), round(C1, 1), round(SPLIT, 1), round(KEND, 1))
 print('spliced', kit)
 fit(kit)

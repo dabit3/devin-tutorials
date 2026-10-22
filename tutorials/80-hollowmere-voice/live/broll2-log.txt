@@ -1,0 +1,13 @@
+[7.8] begin
+[8.6] rec true
+[11.1] flight A
+[28.6] run walk to the mere -> {"ok":true,"walking_to":"the mere","eta_seconds":16}
+[51.7] at the mere ok stage=arrive
+[51.7] run look around -> {"ok":true,"looking_at":"the mere","description":"The Hollowmere itself: a black
+[57.7] flight B
+[66.2] run talk to Brann -> {"ok":true,"walking_to":"Brann","eta_seconds":19,"note":"Will talk to Brann on a
+[96.8] at Brann ok stage=to_barrow
+[105.8] run walk to the barrow -> {"ok":true,"walking_to":"the barrow","eta_seconds":21}
+[150.8] run look around -> {"ok":true,"looking_at":"the hollow-wight","description":"A barrow-dead warrior 
+[156.8] final {"quest":"The Cold Brazier","stage":"wight","objective":"Defeat the hollow-wight at the barrow mouth.","hero_hp":"100/100","sword_drawn":false,"walking_to":null,"nearest":"the hollow-wight","pack":"iron sword, 2 health potion","combat":{"wight_hp":70,"chilled":false,"round":0},"flags":{"brannMet":true,"wightRisen":true,"wightDead":false,"chestLooted":false,"brazierLit":false}} fps 39
+[158.4] done
