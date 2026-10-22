@@ -44,13 +44,21 @@ def plain(ss, to, dst):
 def outro_clip(ss, to, dst):
     """take6 K.O. moment (full frame) with the kit's outro caption/subtitles (rendered over black) keyed on top, kit audio"""
     n = to - ss
-    fc = (f'[1:v]trim=start=76.5:end={76.5 + n},setpts=PTS-STARTPTS,scale=3840:2160:flags=lanczos,fps=60[g];'
+    fc = (f'[1:v]trim=start=76.5:end={76.5 + n},setpts=PTS-STARTPTS,scale=3840:2160:flags=lanczos,fps=60,drawbox=x=0:y=1850:w=3840:h=310:color=black@0.45:t=fill[g];'
           f'[0:v]trim=start={ss}:end={to},setpts=PTS-STARTPTS,colorkey=0x000000:0.25:0.1[k];[g][k]overlay=0:0:shortest=1,fade=out:st={n - 0.4}:d=0.4,format=yuv420p[v];'
           f'[0:a]atrim=start={ss}:end={to},asetpts=PTS-STARTPTS[a]')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', kit, '-i', os.path.join(R, 'take6.mp4'), '-filter_complex', fc, '-map', '[v]', '-map', '[a]', '-t', str(n), *X264, *AAC, dst], check=True); return dst
 g1 = game([('take8.mp4', 40.0, 61.0), ('take8.mp4', 131.5, 200.5)], L1, os.path.join(B, 'g1.mp4'))
 g2 = game([('take8.mp4', 61.0, 84.2)], L2, os.path.join(B, 'g2.mp4'))
-parts = [plain(0, c1, os.path.join(B, 'p0.mp4')), split(c1, L1, g1, os.path.join(B, 's1.mp4'), 'chat'), plain(c1 + L1, c2, os.path.join(B, 'p1.mp4')),
+NARR = bool(cues.get('vo'))
+T0 = cues['intro'] / FPS + (2.7 if NARR else 0.8)     # title + first beat (with its VO in the narrated cut)
+T1 = 0.8 if NARR else 2.2                              # tail of the pick: the punch-in on the voice-call button
+def pick(dst):
+    """macOS pick <= 3 s: keep the title + first beat, jump to the call-button punch-in (kit audio crossfaded)"""
+    fc = (f'[0:v]trim=start=0:end={T0},setpts=PTS-STARTPTS[v0];[0:v]trim=start={c1 - T1}:end={c1},setpts=PTS-STARTPTS[v1];[v0][v1]concat=n=2:v=1:a=0[v];'
+          f'[0:a]atrim=start=0:end={T0},asetpts=PTS-STARTPTS[a0];[0:a]atrim=start={c1 - T1}:end={c1},asetpts=PTS-STARTPTS[a1];[a0][a1]acrossfade=d=0.08[a]')
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', kit, '-filter_complex', fc, '-map', '[v]', '-map', '[a]', *X264, *AAC, dst], check=True); return dst
+parts = [pick(os.path.join(B, 'p0.mp4')), split(c1, L1, g1, os.path.join(B, 's1.mp4'), 'chat'), plain(c1 + L1, c2, os.path.join(B, 'p1.mp4')),
          split(c2, L2, g2, os.path.join(B, 's2.mp4'), 'pane'), plain(c2 + L2, outro, os.path.join(B, 'p2.mp4')), outro_clip(outro, ui_end, os.path.join(B, 'o.mp4')), plain(ui_end, total, os.path.join(B, 'p3.mp4'))]
 lst = os.path.join(B, 'list.txt'); open(lst, 'w').write(''.join(f"file '{p}'\n" for p in parts))
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', '-movflags', '+faststart', out], check=True)
