@@ -63,27 +63,45 @@ window.SPEC = {
       "clip": "call1"
     },
     "0018.png": {
+      "cam": {"x": 720, "y": 240, "z": 1.5},
+      "camForce": true,
+      "camDur": 0.9,
       "cap": "Pitch the game: Stack Clash, one Expo codebase for iOS, Android and web",
       "hold": 0.5417
     },
     "0029.png": {
+      "cam": {"x": 819, "y": 204, "z": 1.69},
+      "camForce": true,
+      "camDur": 0.9,
       "cap": "RIVET runs on GPT-Live-1; ask for a coaching-tip tool that reads the board",
       "hold": 0.7692
     },
     "0076.png": {
+      "cam": {"x": 782, "y": 244, "z": 1.52},
+      "camForce": true,
+      "camDur": 0.9,
       "cap": "Interrupt mid-answer: the tip caption should use the player's color",
       "hold": 0.5692
     },
     "0087.png": {
+      "cam": {"x": 859, "y": 459, "z": 1.8},
+      "camForce": true,
+      "camDur": 0.9,
       "cap": "Docs tip: ask Devin to speak faster",
       "hl": "keep",
       "hold": 0.6
     },
     "0100.png": {
+      "cam": {"x": 720, "y": 480, "z": 1.5},
+      "camForce": true,
+      "camDur": 0.9,
       "cap": "Test on web and iPhone, and start an Ubuntu Devin for Android",
       "hold": 0.5892
     },
     "0129.png": {
+      "cam": {"x": 791, "y": 302, "z": 1.56},
+      "camForce": true,
+      "camDur": 0.9,
       "cap": "Then let Devin start building",
       "hold": 0.5517
     },
@@ -95,14 +113,23 @@ window.SPEC = {
       "clip": "call2"
     },
     "0352.png": {
+      "cam": {"x": 413, "y": 167, "z": 1.8},
+      "camForce": true,
+      "camDur": 0.9,
       "cap": "Ask how the feature's coming along",
       "hold": 0.8825
     },
     "0359.png": {
+      "cam": {"x": 413, "y": 422, "z": 1.8},
+      "camForce": true,
+      "camDur": 0.9,
       "cap": "Interrupt Devin mid-sentence",
       "hold": 1.005
     },
     "0082.png": {
+      "cam": {"x": 859, "y": 559, "z": 1.8},
+      "camForce": true,
+      "camDur": 0.9,
       "hl": [
         {
           "x": 308.75,
@@ -137,14 +164,23 @@ window.SPEC = {
       "hold": 0.5842
     },
     "0123.png": {
+      "cam": {"x": 791, "y": 434, "z": 1.56},
+      "camForce": true,
+      "camDur": 0.9,
       "cap": "Every turn lands in the session history",
       "hold": 0.5575
     },
     "0140.png": {
+      "cam": {"x": 988, "y": 479, "z": 1.8},
+      "camForce": true,
+      "camDur": 0.9,
       "hl": true,
       "cap": "End the call"
     },
     "0262.png": {
+      "cam": {"x": 270, "y": 450, "z": 1.6},
+      "camForce": true,
+      "camDur": 0.9,
       "hold": 0.8,
       "cap": "Devin builds the coaching-tip tool",
       "badge": "Sped up",
@@ -466,6 +502,9 @@ window.SPEC = {
       "hold": 0.6
     },
     "0367.png": {
+      "cam": "reset",
+      "camForce": true,
+      "camDur": 0.9,
       "hl": true,
       "cap": "End the call again"
     },
@@ -3005,6 +3044,9 @@ window.SPEC = {
       "hold": 0.9
     },
     "1018.png": {
+      "cam": {"x": 715, "y": 392, "z": 1.2},
+      "camForce": true,
+      "camDur": 0.9,
       "hold": 0.9,
       "cap": "iPhone Simulator: no mic on that Mac, so the tool calls are triggered directly",
       "vo": "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing."
@@ -3109,10 +3151,16 @@ window.SPEC = {
       "hold": 0.9
     },
     "1073.png": {
+      "cam": {"x": 1000, "y": 300, "z": 1.55},
+      "camForce": true,
+      "camDur": 0.9,
       "hold": 1.0,
       "cap": "The pull request: tool, caption, 33 tests, typecheck and lint"
     },
     "1074.png": {
+      "cam": "reset",
+      "camForce": true,
+      "camDur": 0.9,
       "hold": 1.6,
       "cap": "The pull request: tool, caption, 33 tests, typecheck and lint",
       "vo": "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint."
@@ -3127,6 +3175,9 @@ window.SPEC = {
       "hold": 1.0
     },
     "1155.png": {
+      "cam": {"x": 280, "y": 520, "z": 1.6},
+      "camForce": true,
+      "camDur": 0.9,
       "hold": 2.6,
       "cap": "Passes on web and iPhone; Android passes except one known issue",
       "vo": "Every check passes on web and iPhone, and on Android, except that one known issue."
