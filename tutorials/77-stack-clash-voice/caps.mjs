@@ -17,7 +17,7 @@ for (const [i, text] of caps.entries()) {
   const png = await p.evaluate(([text, top]) => {
     const K = 3840 / 1440, c = document.getElementById('c'), ctx = c.getContext('2d'); ctx.clearRect(0, 0, c.width, c.height);
     ctx.font = '500 64px "Inter"'; const sw = t => { let w = 0; for (const ch of t) w += ctx.measureText(ch).width - 0.8; return w + 0.8; };
-    const w = sw(text) + 112, h = 124, x = 3840 / 2 - w / 2, y = top ? 110 : 2160 - 110 - h;
+    const w = sw(text) + 112, h = 124, x = 3840 / 2 - w / 2, y = top ? 110 : 2160 - 30 - h;
     ctx.save(); ctx.shadowColor = 'rgba(0,0,0,.25)'; ctx.shadowBlur = 50; ctx.shadowOffsetY = 14;
     ctx.beginPath(); ctx.roundRect(x, y, w, h, 30); ctx.fillStyle = 'rgba(25,25,25,.94)'; ctx.fill(); ctx.restore();
     ctx.fillStyle = '#fff'; ctx.textBaseline = 'middle'; let cx = x + 56; for (const ch of text) { ctx.fillText(ch, cx, y + h / 2 + 2); cx += ctx.measureText(ch).width - 0.8; }
