@@ -16,24 +16,29 @@ window.SPEC = {
   ],
   "edit": {
     "0000.png": {
-      "hold": 0.9,
+      "hold": 0.8,
       "cap": "Start in the Devin web app",
       "capPos": "auto",
-      "vo": "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+      "vo": "Here's how I added a feature to it, just by talking."
     },
     "0001.png": {
+      "skip": true,
       "hold": 0.5
     },
     "0002.png": {
+      "skip": true,
       "hold": 0.5
     },
     "0004.png": {
+      "skip": true,
       "hold": 0.5
     },
     "0007.png": {
+      "skip": true,
       "hold": 0.5
     },
     "0008.png": {
+      "skip": true,
       "hold": 0.5
     },
     "0003.png": {
@@ -46,90 +51,70 @@ window.SPEC = {
       "hl": true
     },
     "0006.png": {
-      "hold": 0.8,
+      "hold": 0.6,
       "hl": true,
       "capPos": "auto",
       "cap": "Ubuntu \u2192 macOS"
     },
     "0009.png": {
+      "cam": {"x": 1044, "y": 447, "z": 2.0},
+      "camForce": true,
+      "camDur": 0.7,
+      "hold": 1.0,
       "cap": "Start a voice call",
       "capPos": "auto",
-      "hl": true,
-      "vo": "Then I click the waveform button beside the message box to start a voice call."
+      "hl": true
     },
     "0010.png": {
+      "cam": "reset",
+      "camForce": true,
+      "camDur": 0.6,
       "cap": "Devin picks up and says hi",
       "hold": 0.8417,
       "clip": "call1"
     },
     "0018.png": {
-      "cam": {"x": 720, "y": 240, "z": 1.5},
-      "camForce": true,
-      "camDur": 0.9,
       "cap": "Pitch the game: Stack Clash, one Expo codebase for iOS, Android and web",
       "hold": 0.5417
     },
     "0029.png": {
-      "cam": {"x": 819, "y": 204, "z": 1.69},
-      "camForce": true,
-      "camDur": 0.9,
       "cap": "RIVET runs on GPT-Live-1; ask for a coaching-tip tool that reads the board",
       "hold": 0.7692
     },
     "0076.png": {
-      "cam": {"x": 782, "y": 244, "z": 1.52},
-      "camForce": true,
-      "camDur": 0.9,
       "cap": "Interrupt mid-answer: the tip caption should use the player's color",
       "hold": 0.5692
     },
     "0087.png": {
-      "cam": {"x": 859, "y": 459, "z": 1.8},
-      "camForce": true,
-      "camDur": 0.9,
       "cap": "Docs tip: ask Devin to speak faster",
       "hl": "keep",
       "hold": 0.6
     },
     "0100.png": {
-      "cam": {"x": 720, "y": 480, "z": 1.5},
-      "camForce": true,
-      "camDur": 0.9,
       "cap": "Test on web and iPhone, and start an Ubuntu Devin for Android",
       "hold": 0.5892
     },
     "0129.png": {
-      "cam": {"x": 791, "y": 302, "z": 1.56},
-      "camForce": true,
-      "camDur": 0.9,
       "cap": "Then let Devin start building",
       "hold": 0.5517
     },
     "0346.png": {
-      "cap": "Same session: the call picks up where it left off",
       "cam": "reset",
+      "camForce": true,
       "camDur": 0.6,
+      "cap": "Same session: the call picks up where it left off",
       "hold": 0.9575,
       "clip": "call2"
     },
     "0352.png": {
-      "cam": {"x": 413, "y": 167, "z": 1.8},
-      "camForce": true,
-      "camDur": 0.9,
       "cap": "Ask how the feature's coming along",
       "hold": 0.8825
     },
     "0359.png": {
-      "cam": {"x": 413, "y": 422, "z": 1.8},
-      "camForce": true,
-      "camDur": 0.9,
       "cap": "Interrupt Devin mid-sentence",
       "hold": 1.005
     },
     "0082.png": {
-      "cam": {"x": 859, "y": 559, "z": 1.8},
-      "camForce": true,
-      "camDur": 0.9,
       "hl": [
         {
           "x": 308.75,
@@ -164,16 +149,10 @@ window.SPEC = {
       "hold": 0.5842
     },
     "0123.png": {
-      "cam": {"x": 791, "y": 434, "z": 1.56},
-      "camForce": true,
-      "camDur": 0.9,
       "cap": "Every turn lands in the session history",
       "hold": 0.5575
     },
     "0140.png": {
-      "cam": {"x": 988, "y": 479, "z": 1.8},
-      "camForce": true,
-      "camDur": 0.9,
       "hl": true,
       "cap": "End the call"
     },
@@ -2992,11 +2971,7 @@ window.SPEC = {
       "badge": "",
       "hold": 1.0,
       "cap": "Devin's test recording: web in Chrome, then the iPhone Simulator",
-      "cam": {
-        "x": 487,
-        "y": 432,
-        "z": 2.0
-      },
+      "cam": {"x": 360, "y": 400, "z": 2.0},
       "camForce": true,
       "camDur": 0.8,
       "vo": "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds."
@@ -3175,7 +3150,7 @@ window.SPEC = {
       "hold": 1.0
     },
     "1155.png": {
-      "cam": {"x": 280, "y": 520, "z": 1.6},
+      "cam": "reset",
       "camForce": true,
       "camDur": 0.9,
       "hold": 2.6,
