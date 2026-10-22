@@ -44,7 +44,7 @@ def plain(ss, to, dst):
 def outro_clip(ss, to, dst):
     """take6 K.O. moment (full frame) with the kit's outro caption/subtitles (rendered over black) keyed on top, kit audio"""
     n = to - ss
-    fc = (f'[1:v]trim=start=76.5:end={76.5 + n},setpts=PTS-STARTPTS,scale=3840:2160:flags=lanczos,fps=60,drawbox=x=0:y=1850:w=3840:h=310:color=black@0.45:t=fill[g];'
+    fc = (f'[1:v]trim=start=76.5:end={76.5 + n},setpts=PTS-STARTPTS,delogo=x=560:y=864:w=480:h=32:show=0,scale=3840:2160:flags=lanczos,fps=60,drawbox=x=0:y=1850:w=3840:h=310:color=black@0.45:t=fill[g];'
           f'[0:v]trim=start={ss}:end={to},setpts=PTS-STARTPTS,colorkey=0x000000:0.25:0.1[k];[g][k]overlay=0:0:shortest=1,fade=out:st={n - 0.4}:d=0.4,format=yuv420p[v];'
           f'[0:a]atrim=start={ss}:end={to},asetpts=PTS-STARTPTS[a]')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', kit, '-i', os.path.join(R, 'take6.mp4'), '-filter_complex', fc, '-map', '[v]', '-map', '[a]', '-t', str(n), *X264, *AAC, dst], check=True); return dst
