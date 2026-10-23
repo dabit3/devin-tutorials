@@ -20,7 +20,7 @@ window.SPEC = {
       "vo": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model, on Modal, so it turns plain-English questions into SQL. Modal runs each GPU job only while it's needed and serves the finished model as an endpoint that scales to zero, so you pay for training and traffic, not for idle servers.",
       "hold": 3.0,
       "cursor": false,
-      "voSay": "In this video, we'll have Devin post-train Qwen three point eight, twenty-seven B, an open model, on Modal, so it turns plain-English questions into sequel. Modal runs each GPU job only while it's needed and serves the finished model as an endpoint that scales to zero, so you pay for training and traffic, not for idle servers."
+      "voSay": "In this video, we'll have Devin post-train Qwen three point eight twenty-seven B, an open model on Modal, so it turns plain-English questions into sequel. Modal runs each GPU job only while it's needed and serves the finished model as an endpoint that scales to zero, so you pay for training and traffic, not for idle servers."
     },
     "0007.png": {
       "cap": "Step 1: set the folder up for Modal",
@@ -33,13 +33,6 @@ window.SPEC = {
       "cap": "Auth checked; setup saved as a skill",
       "vo": "Devin verifies the Modal token, runs a small GPU job, and proposes the setup as a skill, so future sessions start ready.",
       "hold": 2.8
-    },
-    "0310.png": {
-      "cap": "Step 2: BIRD splits and an executable reward",
-      "vo": "Next, the data. BIRD is a hard public text-to-SQL benchmark with real databases, and I ask for a fixed-seed split and a reward script that runs the SQL.",
-      "hold": 3.2,
-      "cursor": false,
-      "voSay": "Next, the data. BIRD is a hard public text-to-sequel benchmark with real databases, and I ask for a fixed-seed split and a reward script that runs the sequel."
     },
     "0389.png": {
       "cap": "1,034 train, 500 test; reward runs the SQL",
@@ -159,6 +152,31 @@ window.SPEC = {
       "cap": "Playbook saved: Post-train a task model on Modal",
       "vo": "Devin writes it up with the steps, the fixes it needed along the way, and what not to do, so the next model on new data is one request.",
       "hold": 3.4
+    },
+    "0321.png": {
+      "cap": "Step 2: BIRD splits and an executable reward",
+      "vo": "Next, the data. BIRD is a hard public text-to-SQL benchmark with real databases, and I ask for a fixed-seed split and a reward script that runs the SQL.",
+      "hold": 3.2,
+      "cursor": false,
+      "voSay": "Next, the data. BIRD is a hard public text-to-sequel benchmark with real databases, and I ask for a fixed-seed split and a reward script that runs the sequel."
+    },
+    "0032.png": {
+      "skip": true
+    },
+    "0255.png": {
+      "skip": true
+    },
+    "0277.png": {
+      "skip": true
+    },
+    "0310.png": {
+      "skip": true
+    },
+    "0311.png": {
+      "skip": true
+    },
+    "0312.png": {
+      "skip": true
     }
   }
 };

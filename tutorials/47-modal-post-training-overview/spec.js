@@ -18,7 +18,7 @@ window.SPEC = {
       "cap": "Your own model, served as an API endpoint",
       "vo": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model, on Modal, check it against gpt-6.1-sol, and deploy it as an API endpoint our app can call. Our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
       "hl": null,
-      "voSay": "In this video, we'll have Devin post-train Qwen three point eight, twenty-seven B, an open model, on Modal, check it against GPT six point one sol, and deploy it as an API endpoint our app can call. Our example is text-to-sequel, but the same steps work for any task where a script can score the answer."
+      "voSay": "In this video, we'll have Devin post-train Qwen three point eight twenty-seven B, an open model on Modal, check it against GPT six point one sol, and deploy it as an API endpoint our app can call. Our example is text-to-sequel, but the same steps work for any task where a script can score the answer."
     },
     "0001.png": {
       "scene": "steps",
