@@ -13,7 +13,7 @@ Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, model `eleven_multili
 ## Cold open (live gameplay, Chrome)
 
 - Teaser, game audio muted: Today I'll be building and testing a cross-platform mobile game just by using my voice. It's a tennis game that runs on iOS, Android, and the web, from one codebase.
-- I built the base game earlier with Devin. Today I'll use Devin Voice, which uses ChatGPT voice under the hood. And the game itself talks to players through OpenAI's GPT-Live-1 API.
+- I built the base game earlier with Devin. Today I'll use Devin Voice. Devin Voice uses ChatGPT voice under the hood. And the game itself talks to players through OpenAI's GPT-Live-1 API.
 - This is Chair, the live umpire. He talks and listens at the same time, and runs game actions as tools in the background.
 - Then the real run plays with its own audio: Chair greets the players; Nader: "Chair, put us on the night court. Rex for player one, Mina for player two, and start a quick set." (the venue, both players and the match start run as tools); Chair commentates the rally; Nader, over him: "Wait, wait. Switch to hype mode." (Chair: "Wait, wait, switch to hype mode? Sure. Hype mode on", and carries on in the hype style); later Nader: "Chair, what's the score?" and Chair reads the live score ("Fifteen love, Mina leading").
 
@@ -38,7 +38,7 @@ Narration (Nader, ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, model `eleven_multili
 
 Call 1 and call 2 play as real audio where they fall in the session; the lines below play between them.
 
-- `0000.png`: Here's how I did it, starting from a new Devin session.
+- `0003.png`: Here's how I did it. A new Devin session on macOS, then a voice call.
 - `0001.png`: First, switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator.
 - `0008.png`: Then click the waveform button beside the message box to start a voice call.
 - `0250.png`: Devin pulls the game, adds a set language tool to Chair, and shows the current language in his panel. The OpenAI key stays on the project's small server.

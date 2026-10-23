@@ -136,7 +136,7 @@ if mode in ('nader', 'nomusic'):
     t, wavs, caps = 0.6, [], []
     for k, ci in zip(['i0.png', 'i1.png'], [6, 7]):
         wavs.append((os.path.join(D, 'intro', k + '.wav'), t)); caps.append((ci, t + 0.2, t + I[k]['dur'] + 0.2)); t += I[k]['dur'] + 0.5
-    parts.append(seg(os.path.join(B, 'c.mp4'), C0, C0 + t + 0.4, caps, wavs, hide_card=2.5))
+    parts.append(seg(os.path.join(B, 'c.mp4'), C0, C0 + t + 0.4, caps, wavs))   # the card stays legible (no delogo/smear): Chair keeps calling the points under the narration
     parts = [xfade(os.path.join(B, 'abc.mp4'), parts)]
     name += '-nader' + ('-nomusic' if mode == 'nomusic' else '')
 final = os.path.join(D, name + '.mp4')

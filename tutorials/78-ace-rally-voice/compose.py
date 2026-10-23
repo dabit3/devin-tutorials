@@ -17,13 +17,14 @@ run = lambda cmd: subprocess.run(cmd, check=True)
 dur = lambda p: float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', p], capture_output=True, text=True).stdout)
 
 c = json.load(open(os.environ.get('CUES') or os.path.join(D, 'build', 'cues.json')))  # CUES=<copy>: the next build rewrites build/cues.json
-st = {s['img']: s['t0'] / 60 for s in c['steps']}
+CUT = (c['intro'] + 72) / 60   # the kit's title card (introHold 0) and its 1.2 s window entrance are cut: the cut opens on the environment menu
+st = {s['img']: s['t0'] / 60 - CUT for s in c['steps']}
 B = json.load(open(os.path.join(D, 'shots', 'beats.json')))
 T = lambda m: st[next(b['img'] for b in B if b.get('mark') == m)]
-R1 = (T('call-start'), T('call1-ended'))
+R1 = (st[next(b['img'] for b in B if b.get('call') == 'call1' and b['img'] in st)], T('call1-ended'))   # first kept call still: the blank "Calling…" stills before Devin's greeting are trimmed by shots/call1.json t0
 done2 = next(b['img'] for b in B if b.get('call') == 'call2' and b.get('phase') == 'done')
 R2 = (T('call2-start'), st[done2])   # the split ends when call 2 is done; the "End the call" beat shows the session itself
-UI_END = c['uiEnd'] / 60
+UI_END = c['uiEnd'] / 60 - CUT
 D1, D2 = R1[1] - R1[0], R2[1] - R2[0]
 print(f'call 1 {R1[0]:.2f}-{R1[1]:.2f} ({D1:.1f} s)  call 2 {R2[0]:.2f}-{R2[1]:.2f} ({D2:.1f} s)  ui end {UI_END:.2f}')
 
@@ -71,14 +72,15 @@ f += f';[a0]loudnorm=I=-16:TP=-2:LRA=11,afade=in:st=0:d=0.3,afade=out:st={od - 0
 run(cmd + ['-filter_complex', f, '-map', f'[v{n}]', '-map', '[ao]', *X264, *AAC, '-t', str(od), clip])
 
 fi = lambda a, b: f'format=rgba,fade=in:st={a}:d=0.3:alpha=1,fade=out:st={b - 0.3}:d=0.3:alpha=1'
-f = ('[0:v]split=3[base][l1][l2];[l1]crop=2112:2160:864:0[L1];[l2]crop=2112:2160:0:0[L2];'
+f = (f'[0:v]trim=start={CUT},setpts=PTS-STARTPTS,split=3[base][l1][l2];[0:a]atrim=start={CUT},asetpts=PTS-STARTPTS[ka];'
+     '[l1]crop=2112:2160:864:0[L1];[l2]crop=2112:2160:0:0[L2];'
      f'[1:v]split[r1][r2];[r1]trim=0:{D1},setpts=PTS-STARTPTS,tpad=start_duration={R1[0]}:start_mode=add,{fi(R1[0], R1[1])}[P1];'
      f'[r2]trim={D1}:{D1 + D2},setpts=PTS-STARTPTS,tpad=start_duration={R2[0]}:start_mode=add,{fi(R2[0], R2[1])}[P2];'
      f"[base][L1]overlay=0:0:enable='between(t,{R1[0]},{R1[1]})'[v1];[v1][P1]overlay=2112:0:eof_action=pass:enable='between(t,{R1[0]},{R1[1]})'[v2];"
      f"[v2][L2]overlay=0:0:enable='between(t,{R2[0]},{R2[1]})'[v3];[v3][P2]overlay=2112:0:eof_action=pass:enable='between(t,{R2[0]},{R2[1]})'[vm];"
      f'[1:a]asplit[ra1][ra2];[ra1]atrim=0:{D1},asetpts=PTS-STARTPTS,adelay={int(R1[0] * 1000)}:all=1,volume=0.12[A1];'
      f'[ra2]atrim={D1}:{D1 + D2},asetpts=PTS-STARTPTS,adelay={int(R2[0] * 1000)}:all=1,volume=0.12[A2];'
-     '[0:a][A1][A2]amix=inputs=3:normalize=0:duration=first[am];'
+     '[ka][A1][A2]amix=inputs=3:normalize=0:duration=first[am];'
      f'[vm]split[vmA][vmB];[vmA]trim=0:{UI_END},setpts=PTS-STARTPTS[va];[vmB]trim={UI_END}:{UI_END + 3.0},setpts=PTS-STARTPTS,fade=in:st=0:d=0.3,fade=out:st=2.6:d=0.4[vb];'
      f'[am]asplit[amA][amB];[amA]afade=out:st={UI_END - 0.4}:d=0.4,atrim=0:{UI_END},asetpts=PTS-STARTPTS,aformat=sample_rates=48000:channel_layouts=stereo[aa];'
      f'[amB]atrim={UI_END}:{UI_END + 3.0},asetpts=PTS-STARTPTS,afade=in:st=0:d=0.4,afade=out:st=2.5:d=0.5,aformat=sample_rates=48000:channel_layouts=stereo[ab];'

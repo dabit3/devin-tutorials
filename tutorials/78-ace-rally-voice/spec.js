@@ -2,12 +2,12 @@ window.SPEC = {
   "title": "Devin Voice + GPT-Live-1",
   "subtitle": "Add and test a game feature by voice",
   "outro": "One call: web, iPhone and Android",
-  "voOutro": "That's how you add and test a feature in a cross-platform game with your voice, using Devin Voice and GPT-Live-1.",
   "speed": 3,
   "cps": 48,
   "capPos": "bottom",
   "pollRunMax": 2.5,
   "outroVoDelay": 0,
+  "introHold": 0.3,
   "maxZoom": 2.0,
   "capScale": 1.3,
   "voCapScale": 1.3,
@@ -25,7 +25,7 @@ window.SPEC = {
       "fade": 0
     },
     "0003.png": {
-      "hold": 1.0,
+      "hold": 1.3,
       "hl": true,
       "cam": {
         "x": 690,
@@ -35,7 +35,7 @@ window.SPEC = {
       "camDur": 0.8,
       "camForce": true,
       "cap": "Pick macOS: Devin can run the iPhone simulator",
-      "vo": "Here's how I did it. In a new Devin session, pick macOS, so Devin can run the iPhone simulator, then start a voice call.",
+      "vo": "Here's how I did it. A new Devin session on macOS, then a voice call.",
       "fade": 0
     },
     "0004.png": {
@@ -47,8 +47,7 @@ window.SPEC = {
       "fade": 0
     },
     "0006.png": {
-      "hold": 0.5,
-      "hl": true,
+      "skip": true,
       "fade": 0
     },
     "0007.png": {
@@ -56,7 +55,7 @@ window.SPEC = {
       "fade": 0
     },
     "0008.png": {
-      "hold": 1.2,
+      "hold": 1.4,
       "cam": {
         "x": 900,
         "y": 470,
@@ -69,19 +68,20 @@ window.SPEC = {
       "fade": 0
     },
     "0009.png": {
+      "skip": true,
+      "fade": 0
+    },
+    "0015.png": {
       "cam": {
         "x": 716,
         "y": 405,
         "z": 0.88
       },
-      "camDur": 1.0,
+      "camDur": 0.4,
       "camForce": true,
-      "fade": 0
-    },
-    "0010.png": {
       "cap": "Devin picks up and says hi",
       "fade": 0,
-      "hold": 0.5325,
+      "hold": 0.5425,
       "clip": "call1"
     },
     "0022.png": {
@@ -2173,8 +2173,13 @@ window.SPEC = {
     },
     "0715.png": {
       "hold": 2.0,
-      "cam": "reset",
+      "cam": {
+        "x": 1002,
+        "y": 330,
+        "z": 1.7
+      },
       "camDur": 1.2,
+      "camForce": true,
       "cap": "One call, one feature, tested on web, iPhone and Android",
       "fade": 0
     },
@@ -2190,25 +2195,25 @@ window.SPEC = {
       "skip": true,
       "fade": 0
     },
+    "0010.png": {
+      "fade": 0,
+      "skip": true
+    },
     "0011.png": {
       "fade": 0,
-      "hold": 0.5308
+      "skip": true
     },
     "0012.png": {
       "fade": 0,
-      "hold": 0.5292
+      "skip": true
     },
     "0013.png": {
       "fade": 0,
-      "hold": 0.5367
+      "skip": true
     },
     "0014.png": {
       "fade": 0,
-      "hold": 0.535
-    },
-    "0015.png": {
-      "fade": 0,
-      "hold": 0.5425
+      "skip": true
     },
     "0016.png": {
       "fade": 0,

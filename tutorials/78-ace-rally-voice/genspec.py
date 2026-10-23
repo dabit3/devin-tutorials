@@ -12,12 +12,11 @@ def skip(a, b):
 # The live gameplay intro (intro/) is spliced in front of this cut by splice.py; the kit cut starts at the session.
 skip(0, 2)
 # the macOS pick stays under 3 s: punch in on the environment menu, then on the voice-call button
-ed(3, hold=1.0, hl=True, cam={'x': 690, 'y': 585, 'z': 1.5}, camDur=0.8, camForce=True, cap='Pick macOS: Devin can run the iPhone simulator',
-   vo="Here's how I did it. In a new Devin session, pick macOS, so Devin can run the iPhone simulator, then start a voice call.")
-skip(4, 5)
-ed(6, hold=0.5, hl=True)
-skip(7, 7)
-ed(8, hold=1.2, cam={'x': 900, 'y': 470, 'z': 2.0}, camDur=1.0, camForce=True, cap='Start a voice call with the waveform button', hl=True)
+ed(3, hold=1.3, hl=True, cam={'x': 690, 'y': 585, 'z': 1.5}, camDur=0.8, camForce=True, cap='Pick macOS: Devin can run the iPhone simulator',
+   vo="Here's how I did it. A new Devin session on macOS, then a voice call.")
+skip(4, 7)
+ed(8, hold=1.4, cam={'x': 900, 'y': 470, 'z': 2.0}, camDur=1.0, camForce=True, cap='Start a voice call with the waveform button', hl=True)
+skip(9, 9)   # the blank "Calling…" page (a poll beat, 3 s minimum) between the call button and Devin's greeting
 
 calls = {}
 for n, b in enumerate(B):
@@ -52,7 +51,9 @@ def linecam(name, phase):
     return {'x': (x0 + x1) / 2, 'y': min(max((y0 + y1) / 2, hh), 810 - hh), 'z': round(z, 3)}
 for name, caps, base in (('call1', CAPS1, BASE1), ('call2', CAPS2, BASE2)):
     seen, prev = set(), None
-    ed(kept[name][0][0] - 1, cam=base, camDur=1.0, camForce=True)
+    first = kept[name][0][0]
+    # call 1 starts on its first kept still (the blank stills before it are trimmed by call1.json t0 and skipped), so the column cam goes on that still
+    ed(first if name == 'call1' else first - 1, cam=base, camDur=0.4 if name == 'call1' else 1.0, camForce=True)
     for n, b in kept[name]:
         ph = b['phase']
         if ph in caps and ph not in seen:
@@ -114,13 +115,13 @@ ed(tab + 1, hold=0.6, cap='Devin opens a PR with the reports and recordings',
    vo="Then it opens a pull request with the code, the reports, and the recordings.")
 skip(tab + 2, tab + 3)   # the PR page stays under 3 s
 summ = mark('summary')
-ed(summ, hold=2.0, cam='reset', camDur=1.2, cap='One call, one feature, tested on web, iPhone and Android')
+ed(summ, hold=2.0, cam=PRTAB, camDur=1.2, camForce=True, cap='One call, one feature, tested on web, iPhone and Android')
 skip(summ + 1, len(B) - 1)
 for n in range(len(B)): ed(n, fade=0)   # hard cuts between stills: a dissolve of two scroll positions stacks the text (the only crossfades are in the gameplay, splice2.py)
 spec = {'title': 'Devin Voice + GPT-Live-1', 'subtitle': 'Add and test a game feature by voice',
         'outro': 'One call: web, iPhone and Android',
         'voOutro': "That's how you add and test a feature in a cross-platform game with your voice, using Devin Voice and GPT-Live-1.", 'speed': 3, 'cps': 48, 'capPos': 'bottom',
-        'pollRunMax': 2.5, 'outroVoDelay': 0, 'maxZoom': 2.0, 'capScale': 1.3, 'voCapScale': 1.3, 'edit': E}
+        'pollRunMax': 2.5, 'outroVoDelay': 0, 'introHold': 0.3, 'maxZoom': 2.0, 'capScale': 1.3, 'voCapScale': 1.3, 'edit': E}
 if os.environ.get('NO_OUTRO_VO'): del spec['voOutro']   # the recap plays over the closing gameplay clip (compose.py), not the end card
 # narrated cut only: keep silences between lines near 1 s (calls untouched)
 I4 = lambda n: f'{n:04d}.png'
