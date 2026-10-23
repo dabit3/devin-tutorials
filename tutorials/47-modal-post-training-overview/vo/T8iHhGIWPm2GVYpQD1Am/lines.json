@@ -1,0 +1,328 @@
+{
+ "0000.png": {
+  "text": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model, on Modal, check it against gpt-6.1-sol, and deploy it as an API endpoint our app can call. Our example is text-to-SQL, but the same steps work for any task where a script can score the answer.",
+  "say": "In this video, we'll have Devin post-train Qwen three point eight twenty-seven B, an open model on Modal, check it against GPT six point one sol, and deploy it as an API endpoint our app can call. Our example is text-to-sequel, but the same steps work for any task where a script can score the answer.",
+  "dur": 17.06,
+  "at": 0.0,
+  "end": 17.06,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 17.02,
+    "text": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model, on Modal, check it against gpt-6.1-sol, and deploy it as an API endpoint our app can call. Our example is text-to-SQL, but the same steps work for any task where a script can score the answer."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "Devin runs every step an ML engineer would, from dataset to deploy, and each step lands as a pull request. Modal provides the GPUs on demand and hosts the finished model, so you only pay while it runs.",
+  "dur": 13.075,
+  "at": 17.325,
+  "end": 30.4,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.137,
+    "t1": 2.691,
+    "text": "Devin runs every step an ML engineer would,"
+   },
+   {
+    "t0": 2.935,
+    "t1": 4.456,
+    "text": "from dataset to deploy,"
+   },
+   {
+    "t0": 4.606,
+    "t1": 6.661,
+    "text": "and each step lands as a pull request."
+   },
+   {
+    "t0": 7.045,
+    "t1": 10.121,
+    "text": "Modal provides the GPUs on demand and hosts"
+   },
+   {
+    "t0": 10.202,
+    "t1": 11.155,
+    "text": "the finished model,"
+   },
+   {
+    "t0": 11.48,
+    "t1": 13.075,
+    "text": "so you only pay while it runs."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "First, I ask for training and test splits from BIRD, a hard public text-to-SQL benchmark, and a reward that runs the SQL.",
+  "say": "First, I ask for training and test splits from BIRD, a hard public text-to-sequel benchmark, and a reward that runs the sequel.",
+  "dur": 7.075,
+  "at": 30.75,
+  "end": 37.825,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 7.075,
+    "text": "First, I ask for training and test splits from BIRD, a hard public text-to-SQL benchmark, and a reward that runs the SQL."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "The reward runs the SQL instead of asking an AI judge. Right rows score one, wrong rows score zero, and SQL that fails to run scores minus a half.",
+  "say": "The reward runs the sequel instead of asking an AI judge. Right rows score one, wrong rows score zero, and sequel that fails to run scores minus a half.",
+  "dur": 9.21,
+  "at": 38.28,
+  "end": 47.49,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.056,
+    "t1": 9.21,
+    "text": "The reward runs the SQL instead of asking an AI judge. Right rows score one, wrong rows score zero, and SQL that fails to run scores minus a half."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "Before any training, the base model already matched gpt-6.1-sol on five hundred held-out questions.",
+  "say": "Before any training, the base model already matched GPT six point one sol on five hundred held-out questions.",
+  "dur": 6.285,
+  "at": 47.95,
+  "end": 54.235,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.057,
+    "t1": 6.285,
+    "text": "Before any training, the base model already matched gpt-6.1-sol on five hundred held-out questions."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins, each with its own VM and Modal job.",
+  "dur": 8.6,
+  "at": 54.58,
+  "end": 63.18,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.149,
+    "t1": 2.971,
+    "text": "Next, Devin fine-tunes the model and runs reinforcement"
+   },
+   {
+    "t0": 3.006,
+    "t1": 4.097,
+    "text": "learning with that reward."
+   },
+   {
+    "t0": 4.422,
+    "t1": 6.373,
+    "text": "Then it starts four managed Devins,"
+   },
+   {
+    "t0": 6.616,
+    "t1": 8.544,
+    "text": "each with its own VM and Modal job."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "Each one tries a different learning rate, LoRA rank, generation count, or reward shaping.",
+  "dur": 4.925,
+  "at": 63.305,
+  "end": 68.23,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.062,
+    "t1": 1.769,
+    "text": "Each one tries a different learning rate,"
+   },
+   {
+    "t0": 2.048,
+    "t1": 3.812,
+    "text": "LoRA rank, generation count,"
+   },
+   {
+    "t0": 3.859,
+    "t1": 4.892,
+    "text": "or reward shaping."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "Devin picks the winner by validation score. None of the four beat the base model there, and the winner's test gain came from long reasoning at three times the cost, so we deploy the earlier reinforcement learning model.",
+  "dur": 11.43,
+  "at": 68.55,
+  "end": 79.98,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.158,
+    "t1": 2.375,
+    "text": "Devin picks the winner by validation score."
+   },
+   {
+    "t0": 2.7,
+    "t1": 4.198,
+    "text": "None of the four beat the base model"
+   },
+   {
+    "t0": 4.244,
+    "t1": 6.601,
+    "text": "there, and the winner's test gain came from"
+   },
+   {
+    "t0": 6.682,
+    "t1": 8.621,
+    "text": "long reasoning at three times the cost,"
+   },
+   {
+    "t0": 8.83,
+    "t1": 11.43,
+    "text": "so we deploy the earlier reinforcement learning model."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Then Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here's the demo app answering a question with gpt-6.1-sol first.",
+  "say": "Then Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here's the demo app answering a question with GPT six point one sol first.",
+  "dur": 9.855,
+  "at": 80.265,
+  "end": 90.12,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.111,
+    "t1": 9.829,
+    "text": "Then Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here's the demo app answering a question with gpt-6.1-sol first."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "And here's the same question answered by our model's endpoint on Modal, with the same rows back.",
+  "dur": 4.895,
+  "at": 90.425,
+  "end": 95.32,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.967,
+    "text": "And here's the same question answered by our"
+   },
+   {
+    "t0": 2.025,
+    "t1": 3.477,
+    "text": "model's endpoint on Modal,"
+   },
+   {
+    "t0": 3.686,
+    "t1": 4.895,
+    "text": "with the same rows back."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "The trained model scored sixty-seven point four percent, against sixty-three point eight for gpt-6.1-sol. That gap isn't statistically significant, but it answers faster, and on a warm H100 it costs about two hundred eighty dollars per million queries, against about twenty-five hundred for gpt-6.1-sol, before cold starts and idle time.",
+  "say": "The trained model scored sixty-seven point four percent, against sixty-three point eight for GPT six point one sol. That gap isn't statistically significant, but it answers faster, and on a warm H one hundred it costs about two hundred eighty dollars per million queries, against about twenty-five hundred for GPT six point one sol, before cold starts and idle time.",
+  "dur": 22.38,
+  "at": 95.65,
+  "end": 118.03,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 22.354,
+    "text": "The trained model scored sixty-seven point four percent, against sixty-three point eight for gpt-6.1-sol. That gap isn't statistically significant, but it answers faster, and on a warm H100 it costs about two hundred eighty dollars per million queries, against about twenty-five hundred for gpt-6.1-sol, before cold starts and idle time."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "To recap, we gave Devin a script that scores answers and a baseline to beat. It trained the model, compared four variants in parallel, and deployed the model that held up as an endpoint.",
+  "dur": 10.02,
+  "at": 118.37,
+  "end": 128.39,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.076,
+    "t1": 1.945,
+    "text": "To recap, we gave Devin a script that"
+   },
+   {
+    "t0": 1.991,
+    "t1": 4.151,
+    "text": "scores answers and a baseline to beat."
+   },
+   {
+    "t0": 4.592,
+    "t1": 5.567,
+    "text": "It trained the model,"
+   },
+   {
+    "t0": 5.614,
+    "t1": 7.448,
+    "text": "compared four variants in parallel,"
+   },
+   {
+    "t0": 7.599,
+    "t1": 10.02,
+    "text": "and deployed the model that held up as an endpoint."
+   }
+  ]
+ },
+ "outro": {
+  "text": "The big takeaway: start with a script that scores the answer. With that, Devin can train, compare, and deploy a model for your task, and a playbook lets you run it again on your own data.",
+  "dur": 10.445,
+  "at": 128.745,
+  "end": 139.19,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.034,
+    "t1": 0.974,
+    "text": "The big takeaway:"
+   },
+   {
+    "t0": 1.299,
+    "t1": 3.354,
+    "text": "start with a script that scores the answer."
+   },
+   {
+    "t0": 3.737,
+    "t1": 5.281,
+    "text": "With that, Devin can train,"
+   },
+   {
+    "t0": 5.455,
+    "t1": 7.673,
+    "text": "compare, and deploy a model for your task,"
+   },
+   {
+    "t0": 7.952,
+    "t1": 9.531,
+    "text": "and a playbook lets you run it again"
+   },
+   {
+    "t0": 9.6,
+    "t1": 10.445,
+    "text": "on your own data."
+   }
+  ]
+ }
+}
