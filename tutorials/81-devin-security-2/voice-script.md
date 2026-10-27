@@ -1,6 +1,6 @@
 # Tutorial 81 — Devin Security 2.0: voice script
 
-Two narrated cuts share the same footage, script and subtitles. Both use ElevenLabs model `eleven_v4`, with one whole-script request per voice through `_kit/tools/vo.py` (no seed or voice settings), cut locally into lines.
+Two narrated cuts share the same footage, script and subtitles. Both use ElevenLabs model `eleven_multilingual_v2`, with one whole-script request per voice through `_kit/tools/vo.py` (no seed or voice settings), cut locally into lines. Run it through the tutorial-local wrapper: `VO_MODEL=eleven_multilingual_v2 python3 81-devin-security-2/tools/vo.py 81-devin-security-2 <voice-id>` from `tutorials/`. The wrapper starts each cut search just after the aligned end of the line, because this model's alignment ends the last word early and the kit's boundary check then rejected every take.
 
 - `81-devin-security-2-harper.mp4`: voice `c1uwEpPUcC16tq1udqxk` (Harper)
 - `81-devin-security-2-nader.mp4`: voice `T8iHhGIWPm2GVYpQD1Am` (Nader)

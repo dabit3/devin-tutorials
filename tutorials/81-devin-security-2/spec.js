@@ -207,8 +207,8 @@ window.SPEC = {
     "y": 405,
     "z": 1.3
    },
-   "camDur": 0.7,
-   "hold": 0.6
+   "camDur": 0.4,
+   "hold": 0.3
   },
   "0019.png": {
    "cam": {
