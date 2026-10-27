@@ -57,7 +57,8 @@ function build() {
     voLast = L.text; voStart = t0; voPrev = L;
     tl.vo.push({ t: t0, file: key });
     const pos = (edits[key] || {}).subPos || S.subPos || 'bottom';
-    for (const c of L.chunks.flatMap(splitChunk)) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos });
+    const sw = (edits[key] || {}).subWords;
+    for (const c of L.chunks.flatMap(c => sw ? splitChunk(c, sw, sw) : splitChunk(c))) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos });
     tl.caps.push({ t: t0 + sec(L.dur + 0.3), text: '', pos });
     return t0 + sec(L.dur);
   };
@@ -463,9 +464,9 @@ async function renderFrame(f) {
 }
 
 // a subtitle chunk of more than 10 words (vo_onetake falls back to one chunk when voSay differs) is split by character share of its time
-function splitChunk(c) {
-  const w = c.text.split(' '); if (w.length <= 10 || !(c.t1 > c.t0)) return [c];
-  const n = Math.ceil(w.length / 7), out = []; let acc = 0;
+function splitChunk(c, max = 10, per = 7) {
+  const w = c.text.split(' '); if (w.length <= max || !(c.t1 > c.t0)) return [c];
+  const n = Math.ceil(w.length / per), out = []; let acc = 0;
   for (let k = 0; k < n; k++) {
     const g = w.slice(Math.round(k * w.length / n), Math.round((k + 1) * w.length / n)).join(' ');
     out.push({ text: g, t0: c.t0 + (c.t1 - c.t0) * acc / c.text.length }); acc += g.length + 1;
