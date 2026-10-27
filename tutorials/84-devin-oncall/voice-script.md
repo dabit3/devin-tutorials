@@ -1,6 +1,6 @@
 # Devin Oncall: set up a responder and watch it handle a real alert
 
-Narration for both cuts (Nader `T8iHhGIWPm2GVYpQD1Am`, Harper `c1uwEpPUcC16tq1udqxk`), generated with ElevenLabs `eleven_v4` through `_kit/tools/vo.py`. Each line is keyed to the captured frame it plays over.
+Narration for both cuts (Nader `T8iHhGIWPm2GVYpQD1Am`, Harper `c1uwEpPUcC16tq1udqxk`), generated with ElevenLabs `eleven_multilingual_v2` through `_kit/tools/vo.py`. Each line is keyed to the captured frame it plays over.
 
 - `0000.png` — *Oncall in thequantexplorer*: Devin Oncall investigates your alerts, finds the root cause, and opens the fix. Let's set it up from scratch, then watch it handle a real alert.
 - `0001.png` — *Set up*: On the Oncall page, click Set up.

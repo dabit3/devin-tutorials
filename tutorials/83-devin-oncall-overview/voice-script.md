@@ -1,6 +1,6 @@
 # Devin Oncall: overview
 
-Narration for both cuts (Nader `T8iHhGIWPm2GVYpQD1Am`, Harper `c1uwEpPUcC16tq1udqxk`), generated with ElevenLabs `eleven_v4` through `_kit/tools/vo.py`. Each line is keyed to the shot it plays over: **[REAL]** is a real capture from the tutorial run in `84-devin-oncall`, **[DIAGRAM]** is an animated diagram from `scenes.js`. The blog's statistics are left out on purpose.
+Narration for both cuts (Nader `T8iHhGIWPm2GVYpQD1Am`, Harper `c1uwEpPUcC16tq1udqxk`), generated with ElevenLabs `eleven_multilingual_v2` through `_kit/tools/vo.py`. Each line is keyed to the shot it plays over: **[REAL]** is a real capture from the tutorial run in `84-devin-oncall`, **[DIAGRAM]** is an animated diagram from `scenes.js`. The blog's statistics are left out on purpose.
 
 - `0001.png` [REAL] 0101.png: An alert fires. Checkout errors jump to thirty-one percent.
 - `0002.png` [REAL] 0104.png: Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.
