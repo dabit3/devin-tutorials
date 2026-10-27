@@ -5,7 +5,8 @@ All lines are generated as one take and cut apart; changing any line regenerates
 import array, base64, wave, difflib, json, math, os, re, subprocess, sys, urllib.request, uuid
 
 VD, VOICE = os.path.abspath(sys.argv[1]), sys.argv[2]
-MODEL = os.environ.get('VO_MODEL', 'eleven_multilingual_v2')
+# Default TTS model lives in _kit/settings.json ("ttsModel"); VO_MODEL overrides it for one run.
+MODEL = os.environ.get('VO_MODEL') or json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'settings.json')))['ttsModel']
 KEY = os.environ['ELEVEN_LABS_API_KEY']
 src = open(os.path.join(VD, 'spec.js')).read()
 spec = json.loads(re.sub(r'^\s*window\.SPEC\s*=\s*', '', src).rstrip().rstrip(';'))
@@ -98,7 +99,7 @@ def write(wav, samples):
 MODE = 'single-take-1'
 items = [(img, text, says.get(img, text)) for img, text in order]
 key = [list(x) for x in items]
-if all(old.get(img, {}).get('mode') == MODE and old[img].get('take') == key and os.path.exists(os.path.join(out, f'{img}.wav')) for img, _, _ in items):
+if all(old.get(img, {}).get('mode') == MODE and old[img].get('take') == key and old[img].get('model', MODEL) == MODEL and os.path.exists(os.path.join(out, f'{img}.wav')) for img, _, _ in items):
     sys.exit('narration unchanged')
 U = ' '.join(say for _, _, say in items)
 bounds, o = [], 0
@@ -174,7 +175,7 @@ for li, ((img, text, say), (a0, a1)) in enumerate(zip(items, bounds)):
         cs = chunks(ssay, al)
         if ssay != stext: cs = [{**cs[0], 't1': cs[-1]['t1'], 'text': stext}]
         ch += [{**c, 't0': round(max(0, c['t0']), 3), 't1': round(min(c['t1'], c1 - c0), 3)} for c in cs]
-    res[img] = {'text': text, **({'say': say} if say != text else {}), 'dur': round(c1 - c0, 3), 'takeAt': round(c0, 3), 'mode': MODE, 'take': key, 'chunks': ch}
+    res[img] = {'text': text, **({'say': say} if say != text else {}), 'dur': round(c1 - c0, 3), 'takeAt': round(c0, 3), 'mode': MODE, 'model': MODEL, 'take': key, 'chunks': ch}
     print(f'{img}: {c1 - c0:.2f}s  {text}')
 os.remove(take_wav)
 json.dump(res, open(manifest_p, 'w'), indent=1)
