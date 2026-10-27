@@ -1,6 +1,6 @@
 # Voice script: Devin Desktop: what's new
 
-One whole-script ElevenLabs `eleven_v4` take per voice (`T8iHhGIWPm2GVYpQD1Am`, Nader, and `c1uwEpPUcC16tq1udqxk`), cut into lines by `_kit/tools/vo.py`. Spoken text that differs from the subtitle is shown below it.
+One whole-script ElevenLabs `eleven_multilingual_v2` take per voice (`T8iHhGIWPm2GVYpQD1Am`, Nader, and `c1uwEpPUcC16tq1udqxk`), cut into lines by `_kit/tools/vo.py`. Spoken text that differs from the subtitle is shown below it.
 
 **0000.png**: This is the new Devin Desktop. A local Devin, a cloud Devin and Codex, side by side in one window.
 

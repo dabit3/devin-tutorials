@@ -98,7 +98,7 @@ def write(wav, samples):
 MODE = 'single-take-1'
 items = [(img, text, says.get(img, text)) for img, text in order]
 key = [list(x) for x in items]
-if all(old.get(img, {}).get('mode') == MODE and old[img].get('take') == key and os.path.exists(os.path.join(out, f'{img}.wav')) for img, _, _ in items):
+if all(old.get(img, {}).get('mode') == MODE and old[img].get('model') == MODEL and old[img].get('take') == key and os.path.exists(os.path.join(out, f'{img}.wav')) for img, _, _ in items):
     sys.exit('narration unchanged')
 U = ' '.join(say for _, _, say in items)
 bounds, o = [], 0
@@ -195,7 +195,7 @@ for li, ((img, text, say), (a0, a1)) in enumerate(zip(items, bounds)):
         cs = chunks(ssay, al)
         if ssay != stext: cs = [{**cs[0], 't1': cs[-1]['t1'], 'text': stext}]
         ch += [{**c, 't0': round(max(0, c['t0']), 3), 't1': round(min(c['t1'], c1 - c0), 3)} for c in cs]
-    res[img] = {'text': text, **({'say': say} if say != text else {}), 'dur': round(c1 - c0, 3), 'takeAt': round(c0, 3), 'mode': MODE, 'take': key, 'chunks': ch}
+    res[img] = {'text': text, **({'say': say} if say != text else {}), 'dur': round(c1 - c0, 3), 'takeAt': round(c0, 3), 'mode': MODE, 'model': MODEL, 'take': key, 'chunks': ch}
     print(f'{img}: {c1 - c0:.2f}s  {text}')
 os.remove(take_wav)
 json.dump(res, open(manifest_p, 'w'), indent=1)

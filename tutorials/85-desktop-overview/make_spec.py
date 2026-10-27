@@ -25,7 +25,7 @@ def polls(take, a, b, keep=()):
 exec(open(f'{D}/plan.py').read())
 spec = dict(SPEC_BASE, edit=E)
 open(f'{D}/spec.js', 'w').write('window.SPEC = ' + json.dumps(spec, indent=2, ensure_ascii=False) + ';\n')
-lines = [f'# Voice script: {spec["title"]}', '', 'One whole-script ElevenLabs `eleven_v4` take per voice (`T8iHhGIWPm2GVYpQD1Am`, Nader, and `c1uwEpPUcC16tq1udqxk`), cut into lines by `_kit/tools/vo.py`. Spoken text that differs from the subtitle is shown below it.', '']
+lines = [f'# Voice script: {spec["title"]}', '', 'One whole-script ElevenLabs `eleven_multilingual_v2` take per voice (`T8iHhGIWPm2GVYpQD1Am`, Nader, and `c1uwEpPUcC16tq1udqxk`), cut into lines by `_kit/tools/vo.py`. Spoken text that differs from the subtitle is shown below it.', '']
 for img in sorted(E):
     v = E[img]
     if v.get('vo'):
