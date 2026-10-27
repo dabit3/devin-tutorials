@@ -3,6 +3,8 @@ window.SPEC = {
   "subtitle": "Set up a responder and watch it handle a real alert",
   "outro": "Devin investigates. Your team reviews the fix.",
   "dark": true,
+  "tailHold": 0.4,
+  "outroVoDelay": 0.5,
   "speed": 3,
   "cps": 48,
   "pollRunMax": 1.2,

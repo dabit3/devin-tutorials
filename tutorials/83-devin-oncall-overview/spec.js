@@ -4,6 +4,8 @@ window.SPEC = {
   "outro": "Devin investigates. Your team reviews the fix.",
   "voOutro": "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
   "dark": true,
+  "tailHold": 0.4,
+  "outroVoDelay": 0.5,
   "speed": 3,
   "maxZoom": 1.3,
   "voSentGap": 0.45,
