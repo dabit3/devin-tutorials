@@ -11,6 +11,7 @@ window.SPEC = {
   "voSentGap": 0.45,
   "subPos": "auto",
   "voCapScale": 0.9,
+  "outroVoDelay": -0.3,
   "edit": {
     "0000.png": {
       "hold": 0.5,
@@ -727,42 +728,42 @@ window.SPEC = {
       }
     },
     "0246.png": {
-      "hold": 0.3,
+      "hold": 0.1,
       "subPos": {
         "x": 0.78,
         "y": 0.86
       }
     },
     "0247.png": {
-      "hold": 0.3,
+      "hold": 0.1,
       "subPos": {
         "x": 0.78,
         "y": 0.86
       }
     },
     "0248.png": {
-      "hold": 0.3,
+      "hold": 0.1,
       "subPos": {
         "x": 0.78,
         "y": 0.86
       }
     },
     "0249.png": {
-      "hold": 0.3,
+      "hold": 0.1,
       "subPos": {
         "x": 0.78,
         "y": 0.86
       }
     },
     "0250.png": {
-      "hold": 0.2,
+      "hold": 0.1,
       "subPos": {
         "x": 0.78,
         "y": 0.86
       }
     },
     "0251.png": {
-      "hold": 0.4,
+      "hold": 0.2,
       "subPos": {
         "x": 0.77,
         "y": 0.15
@@ -809,7 +810,7 @@ window.SPEC = {
       }
     },
     "0260.png": {
-      "hold": 1.2,
+      "hold": 0.8,
       "vo": "and groups sessions by workspace.",
       "subPos": {
         "x": 0.77,
@@ -820,7 +821,8 @@ window.SPEC = {
       "subPos": {
         "x": 0.77,
         "y": 0.15
-      }
+      },
+      "hold": 0.6
     },
     "0262.png": {
       "subPos": {
@@ -845,7 +847,8 @@ window.SPEC = {
       "subPos": {
         "x": 0.77,
         "y": 0.15
-      }
+      },
+      "hold": 0.6
     },
     "0266.png": {
       "subPos": {
@@ -934,7 +937,7 @@ window.SPEC = {
         "x": 0.77,
         "y": 0.15
       },
-      "hold": 0.8
+      "hold": 0.5
     }
   }
 };

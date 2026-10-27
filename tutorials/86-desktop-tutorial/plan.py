@@ -144,3 +144,7 @@ ed(P('preview2', 'reload'), subPos=LEFT)  # this line runs on into the Changes t
 ed('acp/8', hold=0.1)
 ed('acp/9', skip=True)
 ed('acp/11', hold=0.1)
+# Tighter timing: outro voice right as the outro card lands; drag frames and folder moves held more briefly
+SPEC_BASE['outroVoDelay'] = -0.3
+for k, h in (('org/15', 0.1), ('org/16', 0.1), ('org/17', 0.1), ('org/18', 0.1), ('org/19', 0.1), ('org/20', 0.2), ('org/21#2', 0.5),
+             ('org/29', 0.8), ('org/30', 0.6), ('org/34', 0.6)): ed(k, hold=h)

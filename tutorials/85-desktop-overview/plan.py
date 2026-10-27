@@ -102,3 +102,7 @@ for t, a, b, pos in (('local', 30, 83, LEFT), ('preview2', 0, 40, LEFT), ('cloud
 for n in range(0, 40):
     k = f'preview2/{n}'
     if k in IDX: ed(k, subPos={'x': 0.83, 'y': 0.2} if 1 <= n <= 15 else {'x': 0.77, 'y': 0.7})
+# Tighter timing: outro voice right as the outro card lands; shorter holds on the folder moves
+SPEC_BASE['outroVoDelay'] = -0.3
+for k, h in (('org/34', 0.2), ('org/39', 0.2), ('org/42', 0.2), ('org/49', 0.2)): ed(k, hold=h)
+ed('preview2/9', hold=0.3)
