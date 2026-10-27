@@ -3,7 +3,7 @@
 Narration by Nader (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, `eleven_multilingual_v2`, one full-script take via `_kit/tools/vo_onetake.py`). Each line plays on the frame named before it; `voSay` spellings in `spec.js` only change pronunciation.
 
 **x_demo1.png** (Find clauses in contracts with an open model)  
-In this video, we'll have Devin post-train Qwen3.8-27B, an open model on Modal, to find clauses in contracts.
+In this video, we'll have Devin post-train the open model Qwen3.8-27B on Modal to find clauses in contracts.
 
 **x_demo1b.png** (gpt-6.1-sol: NOT PRESENT)  
 Here's the result. On the same contract, gpt-6.1-sol says the clause isn't there.

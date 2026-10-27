@@ -29,9 +29,9 @@ window.SPEC = {
   "edit": {
     "x_demo1.png": {
       "cap": "Find clauses in contracts with an open model",
-      "vo": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model on Modal, to find clauses in contracts.",
+      "vo": "In this video, we'll have Devin post-train the open model Qwen3.8-27B on Modal to find clauses in contracts.",
       "hold": 3.0,
-      "voSay": "In this video, we'll have Devin post-train Qwen three point eight twenty-seven B, an open model on Modal, to find clauses in contracts.",
+      "voSay": "In this video, we'll have Devin post-train the open model Qwen three point eight twenty-seven B on Modal to find clauses in contracts.",
       "cursor": false
     },
     "x_demo1b.png": {
@@ -113,7 +113,8 @@ window.SPEC = {
       "cap": "Reward hacking: 300 false alarms, F1 0.461",
       "vo": "So it misses nothing, but it raises three hundred false alarms, and mean F1 drops to 0.461. Devin spots the reward hacking, so the sweep starts from the fine-tuned model, with a penalty for drifting away from it.",
       "hold": 3.0,
-      "voSay": "So it misses nothing, but it raises three hundred false alarms, and mean F one drops to point four six one. Devin spots the reward hacking, so the sweep starts from the fine-tuned model, with a penalty for drifting away from it."
+      "voSay": "So it misses nothing, but it raises three hundred false alarms, and mean F one drops to point four six one. Devin spots the reward hacking, so the sweep starts from the fine-tuned model, with a penalty for drifting away from it.",
+      "badge": ""
     },
     "3444.png": {
       "cap": "Step 6: four managed Devins, one variant each",
@@ -124,7 +125,8 @@ window.SPEC = {
     "3650.png": {
       "cap": "Each variant runs on its own GPU",
       "vo": "They all run in parallel, each on its own GPU, and they're scored only on a validation set held out from training.",
-      "hold": 3.0
+      "hold": 3.0,
+      "badge": "Sped up"
     },
     "5240.png": {
       "cap": "No free B200s: three runs move to H200s",
@@ -137,7 +139,8 @@ window.SPEC = {
       "cap": "16 samples per prompt wins on validation",
       "vo": "Sixteen samples per prompt wins on validation, at 0.893. The margin over the next run is small, and Devin says so.",
       "hold": 3.0,
-      "voSay": "Sixteen samples per prompt wins on validation, at point eight nine three. The margin over the next run is small, and Devin says so."
+      "voSay": "Sixteen samples per prompt wins on validation, at point eight nine three. The margin over the next run is small, and Devin says so.",
+      "badge": ""
     },
     "x_test.png": {
       "cap": "Test: 0.893 vs 0.867; misses 55 to 35",
