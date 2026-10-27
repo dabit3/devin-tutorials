@@ -1,0 +1,617 @@
+{
+ "x_demo1.png": {
+  "text": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model on Modal, to find clauses in contracts.",
+  "say": "In this video, we'll have Devin post-train Qwen three point eight twenty-seven B, an open model on Modal, to find clauses in contracts.",
+  "dur": 7.29,
+  "at": 0.0,
+  "end": 7.29,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 7.245,
+    "text": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model on Modal, to find clauses in contracts."
+   }
+  ]
+ },
+ "x_demo1b.png": {
+  "text": "Here's the result. On the same contract, gpt-6.1-sol says the clause isn't there.",
+  "say": "Here's the result. On the same contract, GPT six point one sol says the clause isn't there.",
+  "dur": 5.395,
+  "at": 7.475,
+  "end": 12.87,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 5.319,
+    "text": "Here's the result. On the same contract, gpt-6.1-sol says the clause isn't there."
+   }
+  ]
+ },
+ "x_demo2.png": {
+  "text": "Our trained model copies the whole clause, in under a second.",
+  "dur": 3.03,
+  "at": 13.02,
+  "end": 16.05,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.1,
+    "t1": 2.062,
+    "text": "Our trained model copies the whole clause,"
+   },
+   {
+    "t0": 2.085,
+    "t1": 2.944,
+    "text": "in under a second."
+   }
+  ]
+ },
+ "0000.png": {
+  "text": "Modal runs each GPU job only while it's needed and bills by the second. It runs a sweep in parallel and serves the model as an endpoint that scales to zero. And because the model runs on your own GPU, the contracts never leave.",
+  "dur": 12.805,
+  "at": 16.195,
+  "end": 29.0,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.094,
+    "t1": 2.532,
+    "text": "Modal runs each GPU job only while it's"
+   },
+   {
+    "t0": 2.59,
+    "t1": 4.297,
+    "text": "needed and bills by the second."
+   },
+   {
+    "t0": 4.622,
+    "t1": 6.828,
+    "text": "It runs a sweep in parallel and serves"
+   },
+   {
+    "t0": 6.874,
+    "t1": 8.581,
+    "text": "the model as an endpoint that scales to"
+   },
+   {
+    "t0": 8.651,
+    "t1": 10.729,
+    "text": "zero. And because the model runs on your"
+   },
+   {
+    "t0": 10.764,
+    "t1": 12.784,
+    "text": "own GPU, the contracts never leave."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "I start one session and ask Devin to follow our playbook for training a task model on Modal, this time for contract review. Devin checks the Modal login and saves the setup as a skill.",
+  "dur": 9.7,
+  "at": 29.22,
+  "end": 38.92,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.084,
+    "t1": 1.919,
+    "text": "I start one session and ask Devin to"
+   },
+   {
+    "t0": 1.977,
+    "t1": 4.032,
+    "text": "follow our playbook for training a task model"
+   },
+   {
+    "t0": 4.101,
+    "t1": 6.4,
+    "text": "on Modal, this time for contract review."
+   },
+   {
+    "t0": 6.783,
+    "t1": 8.676,
+    "text": "Devin checks the Modal login and saves the"
+   },
+   {
+    "t0": 8.722,
+    "t1": 9.674,
+    "text": "setup as a skill."
+   }
+  ]
+ },
+ "0074.png": {
+  "text": "Next, the data. CUAD is a public set of five hundred ten commercial contracts, with clauses labeled by lawyers. Devin splits it by contract, so no contract shows up in both training and test.",
+  "say": "Next, the data. C U A D is a public set of five hundred ten commercial contracts, with clauses labeled by lawyers. Devin splits it by contract, so no contract shows up in both training and test.",
+  "dur": 11.505,
+  "at": 39.145,
+  "end": 50.65,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.074,
+    "t1": 11.475,
+    "text": "Next, the data. CUAD is a public set of five hundred ten commercial contracts, with clauses labeled by lawyers. Devin splits it by contract, so no contract shows up in both training and test."
+   }
+  ]
+ },
+ "0084.png": {
+  "text": "The test set has six hundred thirty-eight examples, half with the clause and half without. The grading rule gives partial credit for how much of the clause text matches, and one point for a correct not present. Made-up text costs half a point.",
+  "dur": 12.85,
+  "at": 51.0,
+  "end": 63.85,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.062,
+    "t1": 2.79,
+    "text": "The test set has six hundred thirty-eight examples,"
+   },
+   {
+    "t0": 2.964,
+    "t1": 4.624,
+    "text": "half with the clause and half without."
+   },
+   {
+    "t0": 4.903,
+    "t1": 6.819,
+    "text": "The grading rule gives partial credit for how"
+   },
+   {
+    "t0": 6.865,
+    "t1": 8.525,
+    "text": "much of the clause text matches,"
+   },
+   {
+    "t0": 8.699,
+    "t1": 10.661,
+    "text": "and one point for a correct not present."
+   },
+   {
+    "t0": 11.045,
+    "t1": 12.85,
+    "text": "Made-up text costs half a point."
+   }
+  ]
+ },
+ "0129.png": {
+  "text": "Then the baseline: gpt-6.1-sol against the base model, with one shared prompt.",
+  "say": "Then the baseline: GPT six point one sol against the base model, with one shared prompt.",
+  "dur": 5.0,
+  "at": 64.03,
+  "end": 69.03,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.105,
+    "t1": 4.969,
+    "text": "Then the baseline: gpt-6.1-sol against the base model, with one shared prompt."
+   }
+  ]
+ },
+ "x_p3.png": {
+  "text": "It's a tie on mean F1, 0.790 against 0.782. But on clauses that really are there, the base model misses fifty-nine and gets only 0.59 of the text right. That's where training can help.",
+  "say": "It's a tie on mean F one, point seven nine zero against point seven eight two. But on clauses that really are there, the base model misses fifty-nine and gets only point five nine of the text right. That's where training can help.",
+  "dur": 11.835,
+  "at": 69.245,
+  "end": 81.08,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 11.817,
+    "text": "It's a tie on mean F1, 0.790 against 0.782. But on clauses that really are there, the base model misses fifty-nine and gets only 0.59 of the text right. That's where training can help."
+   }
+  ]
+ },
+ "0543.png": {
+  "text": "Now supervised fine-tuning: a LoRA run on one Modal H200.",
+  "say": "Now supervised fine-tuning: a LoRA run on one Modal H two hundred.",
+  "dur": 4.25,
+  "at": 81.26,
+  "end": 85.51,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.127,
+    "t1": 4.214,
+    "text": "Now supervised fine-tuning: a LoRA run on one Modal H200."
+   }
+  ]
+ },
+ "1518.png": {
+  "text": "Thirty-eight minutes later, mean F1 is up to 0.867. Exact copies of the clause jump from fifty-four to two hundred nine, and the gain is significant against both models.",
+  "say": "Thirty-eight minutes later, mean F one is up to point eight six seven. Exact copies of the clause jump from fifty-four to two hundred nine, and the gain is significant against both models.",
+  "dur": 9.51,
+  "at": 85.75,
+  "end": 95.26,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.049,
+    "t1": 9.488,
+    "text": "Thirty-eight minutes later, mean F1 is up to 0.867. Exact copies of the clause jump from fifty-four to two hundred nine, and the gain is significant against both models."
+   }
+  ]
+ },
+ "1535.png": {
+  "text": "Next, reinforcement learning with GRPO on a B200, from the base model, with the grading script as the reward.",
+  "say": "Next, reinforcement learning with GRPO on a B two hundred, from the base model, with the grading script as the reward.",
+  "dur": 6.49,
+  "at": 95.48,
+  "end": 101.97,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.141,
+    "t1": 6.422,
+    "text": "Next, reinforcement learning with GRPO on a B200, from the base model, with the grading script as the reward."
+   }
+  ]
+ },
+ "3087.png": {
+  "text": "Here's an honest failure. The mean reward rises at first, then falls. The model learns to almost never say not present.",
+  "dur": 6.55,
+  "at": 102.07,
+  "end": 108.62,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.041,
+    "t1": 1.179,
+    "text": "Here's an honest failure."
+   },
+   {
+    "t0": 1.33,
+    "t1": 2.886,
+    "text": "The mean reward rises at first,"
+   },
+   {
+    "t0": 2.909,
+    "t1": 5.37,
+    "text": "then falls. The model learns to almost never"
+   },
+   {
+    "t0": 5.44,
+    "t1": 6.496,
+    "text": "say not present."
+   }
+  ]
+ },
+ "3414.png": {
+  "text": "So it misses nothing, but it raises three hundred false alarms, and mean F1 drops to 0.461. Devin spots the reward hacking, so the sweep starts from the fine-tuned model, with a penalty for drifting away from it.",
+  "say": "So it misses nothing, but it raises three hundred false alarms, and mean F one drops to point four six one. Devin spots the reward hacking, so the sweep starts from the fine-tuned model, with a penalty for drifting away from it.",
+  "dur": 11.83,
+  "at": 108.78,
+  "end": 120.61,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.112,
+    "t1": 11.803,
+    "text": "So it misses nothing, but it raises three hundred false alarms, and mean F1 drops to 0.461. Devin spots the reward hacking, so the sweep starts from the fine-tuned model, with a penalty for drifting away from it."
+   }
+  ]
+ },
+ "3444.png": {
+  "text": "Now the sweep. Four managed Devins each train one variant: the learning rate, the LoRA rank, the samples per prompt, or a penalty for false alarms.",
+  "dur": 8.86,
+  "at": 120.88,
+  "end": 129.74,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.144,
+    "t1": 0.934,
+    "text": "Now the sweep."
+   },
+   {
+    "t0": 1.259,
+    "t1": 3.593,
+    "text": "Four managed Devins each train one variant:"
+   },
+   {
+    "t0": 3.685,
+    "t1": 4.51,
+    "text": "the learning rate,"
+   },
+   {
+    "t0": 4.684,
+    "t1": 5.555,
+    "text": "the LoRA rank,"
+   },
+   {
+    "t0": 5.799,
+    "t1": 7.064,
+    "text": "the samples per prompt,"
+   },
+   {
+    "t0": 7.238,
+    "t1": 8.852,
+    "text": "or a penalty for false alarms."
+   }
+  ]
+ },
+ "3650.png": {
+  "text": "They all run in parallel, each on its own GPU, and they're scored only on a validation set held out from training.",
+  "dur": 6.125,
+  "at": 130.01,
+  "end": 136.135,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.047,
+    "t1": 1.336,
+    "text": "They all run in parallel,"
+   },
+   {
+    "t0": 1.51,
+    "t1": 2.868,
+    "text": "each on its own GPU,"
+   },
+   {
+    "t0": 2.996,
+    "t1": 5.028,
+    "text": "and they're scored only on a validation set"
+   },
+   {
+    "t0": 5.098,
+    "t1": 6.125,
+    "text": "held out from training."
+   }
+  ]
+ },
+ "5240.png": {
+  "text": "Modal has no free B200s that day, so Devin moves the last three runs to two H200s each, with the same settings.",
+  "say": "Modal has no free B two hundreds that day, so Devin moves the last three runs to two H two hundreds each, with the same settings.",
+  "dur": 6.95,
+  "at": 136.43,
+  "end": 143.38,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.117,
+    "t1": 6.944,
+    "text": "Modal has no free B200s that day, so Devin moves the last three runs to two H200s each, with the same settings."
+   }
+  ]
+ },
+ "x_val.png": {
+  "text": "Sixteen samples per prompt wins on validation, at 0.893. The margin over the next run is small, and Devin says so.",
+  "say": "Sixteen samples per prompt wins on validation, at point eight nine three. The margin over the next run is small, and Devin says so.",
+  "dur": 7.385,
+  "at": 143.615,
+  "end": 151.0,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.084,
+    "t1": 7.363,
+    "text": "Sixteen samples per prompt wins on validation, at 0.893. The margin over the next run is small, and Devin says so."
+   }
+  ]
+ },
+ "x_test.png": {
+  "text": "Only then does it touch the test set: 0.893 mean F1, up from 0.867, and missed clauses fall from fifty-five to thirty-five.",
+  "say": "Only then does it touch the test set: point eight nine three mean F one, up from point eight six seven, and missed clauses fall from fifty-five to thirty-five.",
+  "dur": 8.68,
+  "at": 151.11,
+  "end": 159.79,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.112,
+    "t1": 8.68,
+    "text": "Only then does it touch the test set: 0.893 mean F1, up from 0.867, and missed clauses fall from fifty-five to thirty-five."
+   }
+  ]
+ },
+ "10276.png": {
+  "text": "Step seven: deploy it with modal deploy, behind an API key, scaling to zero when idle.",
+  "dur": 5.54,
+  "at": 160.11,
+  "end": 165.65,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.122,
+    "t1": 2.653,
+    "text": "Step seven: deploy it with modal deploy,"
+   },
+   {
+    "t0": 2.862,
+    "t1": 4.023,
+    "text": "behind an API key,"
+   },
+   {
+    "t0": 4.081,
+    "t1": 5.52,
+    "text": "scaling to zero when idle."
+   }
+  ]
+ },
+ "x_p7.png": {
+  "text": "Devin adds a backend setting to the app and picks a real test contract where the base model missed the clause.",
+  "dur": 5.065,
+  "at": 165.94,
+  "end": 171.005,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.131,
+    "t1": 1.966,
+    "text": "Devin adds a backend setting to the app"
+   },
+   {
+    "t0": 2.012,
+    "t1": 3.661,
+    "text": "and picks a real test contract where the"
+   },
+   {
+    "t0": 3.707,
+    "t1": 5.065,
+    "text": "base model missed the clause."
+   }
+  ]
+ },
+ "x_rec1.png": {
+  "text": "On this BellRing Brands manufacturing contract, gpt-6.1-sol says the minimum commitment clause is not present.",
+  "say": "On this BellRing Brands manufacturing contract, GPT six point one sol says the minimum commitment clause is not present.",
+  "dur": 6.67,
+  "at": 171.23,
+  "end": 177.9,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.077,
+    "t1": 6.637,
+    "text": "On this BellRing Brands manufacturing contract, gpt-6.1-sol says the minimum commitment clause is not present."
+   }
+  ]
+ },
+ "x_rec2.png": {
+  "text": "Our endpoint returns the whole clause, word for word, in under a second, and the app highlights it in the passage.",
+  "dur": 5.355,
+  "at": 178.205,
+  "end": 183.56,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.103,
+    "t1": 1.787,
+    "text": "Our endpoint returns the whole clause,"
+   },
+   {
+    "t0": 1.81,
+    "t1": 2.449,
+    "text": "word for word,"
+   },
+   {
+    "t0": 2.484,
+    "t1": 3.424,
+    "text": "in under a second,"
+   },
+   {
+    "t0": 3.575,
+    "t1": 5.34,
+    "text": "and the app highlights it in the passage."
+   }
+  ]
+ },
+ "10403.png": {
+  "text": "Last, the final scorecard on the six hundred thirty-eight test examples.",
+  "dur": 3.425,
+  "at": 183.885,
+  "end": 187.31,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.101,
+    "t1": 2.086,
+    "text": "Last, the final scorecard on the six hundred"
+   },
+   {
+    "t0": 2.121,
+    "t1": 3.425,
+    "text": "thirty-eight test examples."
+   }
+  ]
+ },
+ "x_score.png": {
+  "text": "The deployed model reaches 0.893 mean F1, against 0.790 for gpt-6.1-sol, and misses thirty-five clauses instead of fifty. Eleven of twelve paired comparisons are significant after Holm correction. The one loss is clause text against the hacked GRPO model, which answers almost every row.",
+  "say": "The deployed model reaches point eight nine three mean F one, against point seven nine zero for GPT six point one sol, and misses thirty-five clauses instead of fifty. Eleven of twelve paired comparisons are significant after Holm correction. The one loss is clause text against the hacked GRPO model, which answers almost every row.",
+  "dur": 18.115,
+  "at": 187.615,
+  "end": 205.73,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.051,
+    "t1": 18.104,
+    "text": "The deployed model reaches 0.893 mean F1, against 0.790 for gpt-6.1-sol, and misses thirty-five clauses instead of fifty. Eleven of twelve paired comparisons are significant after Holm correction. The one loss is clause text against the hacked GRPO model, which answers almost every row."
+   }
+  ]
+ },
+ "10499.png": {
+  "text": "It answers in 0.68 seconds against 1.62, and costs about a hundred thirty-four dollars per million requests, against about three thousand two hundred. Devin spells out what that leaves out: cold starts, idle time, training and storage.",
+  "say": "It answers in point six eight seconds against one point six two, and costs about a hundred thirty-four dollars per million requests, against about three thousand two hundred. Devin spells out what that leaves out: cold starts, idle time, training and storage.",
+  "dur": 13.23,
+  "at": 205.885,
+  "end": 219.115,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.078,
+    "t1": 13.23,
+    "text": "It answers in 0.68 seconds against 1.62, and costs about a hundred thirty-four dollars per million requests, against about three thousand two hundred. Devin spells out what that leaves out: cold starts, idle time, training and storage."
+   }
+  ]
+ },
+ "outro": {
+  "text": "That's how you post-train a private model for your task: start with a script that scores the answer, and check the outputs, not just the reward. With that, Devin can train, compare and deploy it on Modal.",
+  "dur": 10.19,
+  "at": 219.43,
+  "end": 229.62,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.071,
+    "t1": 1.893,
+    "text": "That's how you post-train a private model for"
+   },
+   {
+    "t0": 1.928,
+    "t1": 4.123,
+    "text": "your task: start with a script that scores"
+   },
+   {
+    "t0": 4.146,
+    "t1": 5.713,
+    "text": "the answer, and check the outputs,"
+   },
+   {
+    "t0": 5.956,
+    "t1": 6.967,
+    "text": "not just the reward."
+   },
+   {
+    "t0": 7.176,
+    "t1": 8.58,
+    "text": "With that, Devin can train,"
+   },
+   {
+    "t0": 8.662,
+    "t1": 10.19,
+    "text": "compare and deploy it on Modal."
+   }
+  ]
+ }
+}
