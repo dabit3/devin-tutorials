@@ -15,6 +15,13 @@ LINES = {
     'k4': "Ask him about the barrow.",
     'k5': "What's in my pack?",
   },
+  'cold2': {
+    'm1': "Eira, let's go talk to Brann at the watchpost.",
+    'm2': "Change your voice. Try a soft Irish one.",
+    'm3': "Ask him about the barrow.",
+    'm4': "What's in my pack?",
+    'm5': "Alright, take us to the shrine.",
+  },
   'call': json.load(open(os.path.join(D, 'call', 'call-text.json'))) if os.path.exists(os.path.join(D, 'call', 'call-text.json')) else {},
 }[SET]
 out = {}

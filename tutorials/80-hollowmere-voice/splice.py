@@ -9,8 +9,8 @@ D = os.path.dirname(os.path.abspath(__file__))
 mode, src = sys.argv[1], sys.argv[2]
 B = os.path.join(D, 'build', 'splice'); os.makedirs(B, exist_ok=True)
 CAPS = ["Today: a cross-platform game, built and tested by voice", "Built with Devin + Devin Voice, which uses ChatGPT voice under the hood",
-        "Hollowmere's companion, Eira: a live voice on GPT-Live-1", "“Eira, walk us to the shrine” → a background move_to while she talks",
-        "Interrupt her mid-sentence: “wait, wait, stop — go talk to Brann instead”", "She reroutes: stop, then a new move_to",
+        "Hollowmere's companion, Eira: a live voice on GPT-Live-1", "“Eira, let's go talk to Brann” → talk_to while she answers",
+        "Brann answers out loud; Eira waits, then replies to him", "“Change your voice” → change_voice: a new GPT-Live voice mid-conversation",
         "Change her style: “talk like an old bard from now on”", "She stays in character while the hero walks",
         "“Ask him about the barrow” → ask_about", "“What's in my pack?” → open_pack",
         "Our own check, live on GPT-Live-1: “Eira, mark the barrow”", "mark_waypoint fires: a beam of light at the barrow, a pin on the compass",
@@ -64,9 +64,9 @@ def seg(out, ss, to, caps, audio, source=None, dip=True, zoom=None):
         f += f';anullsrc=r=48000:cl=stereo,atrim=0:{dur}[ao]'
     subprocess.run(cmd + ['-filter_complex', f, '-map', '[vo]', '-map', '[ao]', *X264, *AAC, '-t', str(dur), out], check=True)
     return out
-# The cold open is build/coldopen-v2.mp4: coldopen_edit.py's cut of the take-9 live draft (real GPT-Live-1 audio, director opening,
+# The cold open is build/coldopen-v7.mp4: coldopen_edit_v7.py's cut of live take 13 (no interruptions; Brann speaks aloud; real voice change) (real GPT-Live-1 audio, director opening,
 # its own large subtitles), already 4K60 + loudnormed with the same x264/AAC settings, so it concatenates as-is.
-live = os.path.join(B, '..', 'coldopen-v2.mp4')
+live = os.path.join(B, '..', 'coldopen-v7.mp4')
 # Intro teasers come from live/broll/video.webm (broll.mjs: no GPT-Live, typed commands + director camera) so nothing in the
 # cold open is shown twice: valley flight, the cold shrine, the walk to the barrow, the frost hit, the relit brazier, the ending.
 BROLL = os.path.join(D, 'live', 'broll', 'video.webm')

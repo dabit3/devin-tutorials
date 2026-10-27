@@ -47,30 +47,48 @@ await ctx.addInitScript(() => {
       actx = new AC({ sampleRate: 48000 })
       const dest = actx.createMediaStreamDestination()
       const mix = actx.createMediaStreamDestination()
+      const bus = actx.createGain() // everything Nader "says" goes through here; each getUserMedia call gets its own live stream from it
+      bus.connect(dest)
       actx.createMediaStreamSource(dest.stream).connect(mix)
-      globalThis.__vmic = { ctx: actx, dest, mix, remoteHooked: false }
-      noiseFloor(actx, dest)
+      globalThis.__vmic = { ctx: actx, dest, mix, bus, remoteHooked: false }
+      noiseFloor(actx, bus)
     }
     return globalThis.__vmic
   }
-  navigator.mediaDevices.getUserMedia = async () => ensure().dest.stream
+  navigator.mediaDevices.getUserMedia = async () => {
+    const v = ensure()
+    const d = v.ctx.createMediaStreamDestination()
+    v.bus.connect(d)
+    return d.stream
+  }
   globalThis.__vmicSpeak = async (b64) => {
     const v = ensure()
     const bytes = Uint8Array.from(atob(b64), (c) => c.charCodeAt(0))
     const buf = await v.ctx.decodeAudioData(bytes.buffer)
     const src = v.ctx.createBufferSource()
     src.buffer = buf
-    src.connect(v.dest)
+    src.connect(v.bus)
     src.start()
     return buf.duration
   }
+  // Hook every remote-audio element (a voice change reconnects Eira and makes a new one) plus the game's own audio.
+  const hooked = new WeakSet()
+  const hookRemote = () => {
+    const v = ensure()
+    for (const el of document.querySelectorAll('audio[data-coach]')) {
+      if (el.srcObject && !hooked.has(el)) {
+        hooked.add(el)
+        v.ctx.createMediaStreamSource(el.srcObject).connect(v.mix)
+        v.remoteHooked = true
+      }
+    }
+  }
   globalThis.__recStart = () => {
     const v = ensure()
-    const el = document.querySelector('audio[data-coach]')
-    if (el?.srcObject && !v.remoteHooked) {
-      v.ctx.createMediaStreamSource(el.srcObject).connect(v.mix)
-      v.remoteHooked = true
-    }
+    hookRemote()
+    setInterval(hookRemote, 250)
+    const game = globalThis.__hollowmere?.captureAudio?.()
+    if (game) v.ctx.createMediaStreamSource(game).connect(v.mix)
     const rec = new MediaRecorder(v.mix.stream, { mimeType: 'audio/webm;codecs=opus' })
     rec.ondataavailable = (e) => {
       const r = new FileReader()
@@ -108,6 +126,16 @@ log('begin')
 await page.waitForFunction(() => globalThis.__hollowmere?.companion?.view?.status === 'live', null, { timeout: 60000 })
 log('live')
 await page.waitForFunction(() => Boolean(document.querySelector('audio[data-coach]')?.srcObject), null, { timeout: 30000 })
+await page.evaluate(() => {
+  // Debug trace of data-channel event types (dumped at the end of the log).
+  const c = globalThis.__hollowmere.companion
+  globalThis.__ev = []
+  const orig = c.onMessage.bind(c)
+  c.onMessage = (d) => {
+    try { const m = JSON.parse(d); const t = String(m.type); if (!t.endsWith('.delta')) globalThis.__ev.push(`${new Date().toISOString().slice(11, 23)} ${t}${t === 'error' ? ' ' + JSON.stringify(m.error).slice(0, 220) : ''}`) } catch {}
+    return orig(d)
+  }
+})
 const hooked = await page.evaluate(() => globalThis.__recStart())
 const T0 = Date.now()
 log('recording, remote hooked =', hooked)
@@ -136,6 +164,22 @@ const waitQuiet = async (min, max, quiet = 1500) => {
   const v = await view()
   log(`  eira: "${v.eira.slice(0, 140)}" tools=${JSON.stringify(v.tools.map((t) => t.name ?? t))}`)
 }
+/** Speak a line and wait for its effect; GPT-Live occasionally drops a short utterance, so say it once more if nothing happened. */
+const speakUntil = async (id, get, pred, max, label) => {
+  for (let attempt = 0; attempt < 2; attempt++) {
+    await speak(id)
+    const t0 = Date.now()
+    while (Date.now() - t0 < max) {
+      if (pred(await get())) {
+        log(`  ${label}: ok (${((Date.now() - t0) / 1000).toFixed(1)}s)${attempt ? ' after retry' : ''}`)
+        return true
+      }
+      await page.waitForTimeout(500)
+    }
+    log(`  ${label}: no effect, retrying ${id}`)
+  }
+  return false
+}
 const waitFor = async (pred, max, label) => {
   const t0 = Date.now()
   while (Date.now() - t0 < max) {
@@ -163,9 +207,38 @@ if (process.env.SEQ !== 'test') {
 }
 await waitQuiet(4000, 20000) // greeting
 if (process.env.SEQ !== 'test') await page.waitForTimeout(Math.max(0, 20500 - (Date.now() - T0)))
+const waitLive = async (max) => {
+  const t0 = Date.now()
+  while (Date.now() - t0 < max && (await view()).status !== 'live') await page.waitForTimeout(200)
+  log(`  live again after ${((Date.now() - t0) / 1000).toFixed(1)}s status=${(await view()).status}`)
+}
 if (process.env.SEQ === 'test') {
   await speak('t1'); await waitQuiet(5000, 25000)
   await speak('t2'); await waitQuiet(5000, 20000)
+} else if (process.env.SEQ === 'vt') {
+  await speak('m2'); await page.waitForTimeout(4000); await waitLive(20000); await waitQuiet(3000, 15000)
+  log('  mic ' + JSON.stringify(await page.evaluate(() => { const c = globalThis.__hollowmere.companion; return { tracks: c.mic?.getTracks().map((t) => [t.readyState, t.enabled, t.muted]), senders: c.pc?.getSenders().map((x) => x.track?.readyState ?? null), status: c.view.status, voice: c.view.voice, err: c.view.error } })))
+  await speak('m4'); await waitQuiet(4000, 15000)
+} else if (process.env.SEQ === 'v7') {
+  // v7: no interruptions. Walk to Brann (he greets aloud, Eira answers him), real voice change, ask about the barrow, pack, walk to the shrine.
+  await speak('m1') // let's go see Brann
+  await waitQuiet(3000, 15000)
+  await waitFor((s) => s.flags?.brannMet || (s.stage !== 'arrive' && s.stage !== 'seek_brann'), 60000, 'reached Brann')
+  await waitQuiet(16000, 40000, 2500) // Brann's greeting (~15 s) + Eira's answer
+  await speak('m2') // change your voice: soft Irish one -> change_voice(willow) reconnect
+  await page.waitForTimeout(4000)
+  await waitLive(20000)
+  await waitQuiet(3000, 20000)
+  await speak('m3') // ask him about the barrow -> Brann answers aloud (~12 s), Eira replies
+  await waitQuiet(19000, 40000, 3000)
+  await speakUntil('m4', view, (v) => (v.tools[0]?.name ?? v.tools[0]) === 'open_pack', 8000, 'open_pack') // what's in my pack?
+  await waitQuiet(5000, 20000, 2500)
+  await speakUntil('m5', snap, (s) => Boolean(s.walking_to), 8000, 'move_to shrine') // take us to the shrine -> move_to while the end crane plays
+  await director([
+    { pos: [-15.2, 3.4, 19.6], look: [-12.4, 1.7, 13.8], t: 0 }, { pos: [-10, 5.5, 22], look: [-12.6, 2.2, 13.8], t: 4 }, { pos: [-4, 10, 28], look: [8, 2, -12], t: 5 },
+  ])
+  log('end beat')
+  await page.waitForTimeout(11000)
 } else {
 await speak('k1') // walk us to the shrine (background move_to while she talks)
 // Interrupt only once her move_to has actually landed (she speaks first, calls the tool a beat later); cutting in before
@@ -193,6 +266,7 @@ log('end beat')
 await page.waitForTimeout(9500)
 }
 await page.waitForTimeout(1500)
+log('events:\n' + (await page.evaluate(() => globalThis.__ev.join('\n'))))
 log('final snapshot', JSON.stringify(await snap()))
 log('fps', await page.evaluate(() => globalThis.__hollowmere.game.ui.state.fps))
 await page.evaluate(() => globalThis.__recStop())

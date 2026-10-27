@@ -2,22 +2,24 @@
 
 What is in the video, line by line, and what is real versus synthesized.
 
-## Cold open (build/coldopen-v2.mp4, 61 s, cut from the take-9 live draft; see Revision 3)
+## Cold open (build/coldopen-v7.mp4, cut from live take 13; see Rev. 7)
 Real Hollowmere gameplay in Chrome (Playwright Chromium, 1920×1080) with Eira live on OpenAI **GPT-Live-1** over WebRTC. Her
-audio is the recorded remote track; nothing was re-voiced. The player's lines are Nader's ElevenLabs voice
-(`T8iHhGIWPm2GVYpQD1Am`, `eleven_multilingual_v2`, `genlines.py`), played into the page's `getUserMedia` through a
-virtual microphone with a real room-tone floor (pure digital silence makes GPT-Live close the session after ~30 s).
+audio is the recorded remote track; nothing was re-voiced. Brann's lines are prerecorded ElevenLabs audio (`eleven_multilingual_v2`,
+`public/audio/brann/`) played by the game itself. The player's lines are Nader's ElevenLabs voice (`T8iHhGIWPm2GVYpQD1Am`,
+`eleven_multilingual_v2`, `genlines.py`), played into the page's `getUserMedia` through a virtual microphone with a real room-tone floor.
+No interruptions: every line is spoken after Eira has finished.
 
-| t | Nader (ElevenLabs) | Eira (GPT-Live-1, real) | Tool calls (real, background) |
+| t | Nader (ElevenLabs) | Eira (GPT-Live-1, real) | Tool calls (real) |
 |---|---|---|---|
-| greeting | — | greets the hero | — |
-| k1 | "Eira, walk us to the shrine." | "On my way." | `move_to(shrine)` while she talks |
-| k2, 3 s later | "Wait, wait, stop. Go talk to Brann instead." | cut off mid-sentence, reroutes | `stop`, `talk_to(Brann)` |
-| k3 | "Talk like an old bard from now on." | "Hark. Brann yet lives, and names a barrow and an ember-stone for thee." | — (style change) |
-| k4 | "Ask him about the barrow." | "Aye, I'll ask." | `ask_about(barrow)` |
-| k5 | "What's in my pack?" | "What's in my pack? Checking." | `open_pack` |
+| greeting | — | "Friend, that shrine's gone dark, but there's smoke from the watchpost…" | — |
+| m1 20 s | "Eira, let's go talk to Brann at the watchpost." | "You got it. I'll take us there…" | `talk_to(Brann)` (walks there) |
+| 42 s | — | Brann greets aloud (14 s, his own audio); Eira is muted until he finishes, then answers him | — |
+| m2 67 s | "Change your voice. Try a soft Irish one." | "Sure, just a breath." (marin) → "Soft it is, friend. Go on. I'm here." (willow) | `change_voice(willow)`: the GPT-Live session is reconnected with the new voice, context carried |
+| m3 77 s | "Ask him about the barrow." | "Yeah, let's hear what he'll say." → Brann answers aloud (11 s) → "Then there's our trail." | `ask_about(barrow)` |
+| m4 100 s | "What's in my pack?" | "You've an iron sword and two health potions…" | `open_pack` |
+| m5 113 s | "Alright, take us to the shrine." | "Right, I'll get us moving." | `move_to(shrine)` under the end crane |
 
-The run log (`live/raw/run.log`) has every event. Take 1 (`live/raw-take1`, 102 s) was not used: 50 s of silent walking.
+The run log (`live/v13/run.log`) has every event; `live/v13/stt.json` is the scribe transcript of the take.
 
 ## Intro narration (intro/, Nader's ElevenLabs voice, one take with the rest of the narration)
 i0 "Today I'll be building and testing a cross-platform mobile game just by using my voice. …" (exact opening line)
@@ -86,3 +88,9 @@ Nader: "the beginning of the game gives a very bad first impression… the perso
 - Narration line i3 re-recorded shorter ("Then I checked it myself, live on the web build. I ask Eira to mark the barrow.", 4.1 s) so it finishes inside the 5 s live check; the v5 take was cut off after "GPT-Live-1".
 - No-music master: the split-screen call section is now rebuilt from the no-music kit; in v5 it reused the narrated kit's render, so the call section still carried the music bed.
 - Each mode now builds its own split-screen call section from its own kit (cap 149.7 s, narrated/no-music 146.8 s); v5 reused the narrated render in the captioned and no-music cuts. Finals: captioned 5:10, narrated 5:32, no-music 5:32, all 92.1-92.4 MB.
+
+## Rev. 7 (Nader: cut the blank space, Brann talks back, Eira's voice really changes, no interruptions, smoother gameplay, Blender pass)
+- Game (#152 branch): `change_voice` tool reconnects GPT-Live with a new `audio.output.voice` (the API fixes the voice per session) carrying the recent transcript; Brann's lines play as real audio (`audio.bark`) and Eira is muted (`hold()`) while he speaks, then reacts when he finishes; the interruption policy is gone from her instructions; the director camera is no longer clobbered by tool camera events.
+- Blender 5.2 props exported as GLB and loaded with `loadGltf`: shrine brazier (carved bowl, rune band, chains, claw legs), watchpost forge (arched hood, chimney, grate, anvil on a stump) and the barrow facade (megalith jambs, cracked lintel, dry-stone wings, snow caps), all on the game's PBR sets.
+- Cold open re-recorded as take 13 (`coldopen.mjs` SEQ=v7, `conform.py` re-times the 25 fps-tagged recording to its audio): no "wait, wait", no barge-in; two cutaways (`cutaways.mjs`: the cold brazier under Brann's "the shrine-fire went out", a low dolly on the barrow door under his barrow answer) break up the two-shot. Subtitles re-rendered (36 px lines, one speaker at a time) over a short frosted strip instead of the old 28 % band.
+- Narration line i1 re-voiced ("Brann the warden answers you out loud, and when you ask, Eira changes her voice."); call-section captions no longer say "interrupt"/"barge-in".

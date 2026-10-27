@@ -77,7 +77,7 @@ window.SPEC = {
       "hold": 0.5775
     },
     "0061.png": {
-      "cap": "Interrupt mid-answer: \u201cmake the marker a tall beam of light\u201d",
+      "cap": "Add a detail: \u201cmake the marker a tall beam of light\u201d",
       "hold": 0.5508
     },
     "0076.png": {
@@ -98,11 +98,11 @@ window.SPEC = {
       "hold": 1.0258
     },
     "0212.png": {
-      "cap": "Interrupt Devin mid-sentence",
+      "cap": "\u201cGreat, let me know when the pull request is up\u201d",
       "hold": 1.06
     },
     "0064.png": {
-      "cap": "Devin picks the barge-in up mid-sentence: \u201cGot it. Tall beam of light.\u201d",
+      "cap": "Devin: \u201cGot it. Tall beam of light.\u201d",
       "hold": 0.5525
     },
     "0102.png": {
