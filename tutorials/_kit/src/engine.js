@@ -57,7 +57,9 @@ function build() {
     voLast = L.text; voStart = t0; voPrev = L;
     tl.vo.push({ t: t0, file: key });
     const pos = (edits[key] || {}).subPos || S.subPos || 'bottom';
-    for (const c of L.chunks.flatMap(splitChunk)) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos });
+    const maxPx = typeof pos === 'object' && pos.maxW ? pos.maxW * W : 0;
+    const chunks = L.chunks.map((c, i, a) => ({ ...c, t1: c.t1 ?? (a[i + 1] ? a[i + 1].t0 : L.dur) }));
+    for (const c of chunks.flatMap(c => splitChunk(c, maxPx))) tl.caps.push({ t: t0 + sec(c.t0), text: c.text, pos });
     tl.caps.push({ t: t0 + sec(L.dur + 0.3), text: '', pos });
     return t0 + sec(L.dur);
   };
@@ -462,15 +464,27 @@ async function renderFrame(f) {
   if (f >= I && f < U + sec(0.4)) { ctx.save(); ctx.globalAlpha = 1 - prog(f, U, U + sec(0.4)); drawCaption(f); drawBadge(f); ctx.restore(); }
 }
 
-// a subtitle chunk of more than 10 words (vo_onetake falls back to one chunk when voSay differs) is split by character share of its time
-function splitChunk(c) {
-  const w = c.text.split(' '); if (w.length <= 10 || !(c.t1 > c.t0)) return [c];
-  const n = Math.ceil(w.length / 7), out = []; let acc = 0;
+// a subtitle chunk of more than 10 words (vo_onetake falls back to one chunk when voSay differs) is split by character share of its time;
+// with maxPx (subPos.maxW), pieces are split further until each caption fits that width
+function splitN(c, n) {
+  const w = c.text.split(' '), out = []; let acc = 0;
   for (let k = 0; k < n; k++) {
     const g = w.slice(Math.round(k * w.length / n), Math.round((k + 1) * w.length / n)).join(' ');
     out.push({ text: g, t0: c.t0 + (c.t1 - c.t0) * acc / c.text.length }); acc += g.length + 1;
   }
+  out.forEach((p, i) => { p.t1 = out[i + 1] ? out[i + 1].t0 : c.t1; });
   return out;
+}
+function splitChunk(c, maxPx = 0) {
+  if (!(c.t1 > c.t0)) return [c];
+  const n = c.text.split(' ').length;
+  const out = n > 10 ? splitN(c, Math.ceil(n / 7)) : [c];
+  if (!maxPx) return out;
+  return out.flatMap(p => {
+    const m = p.text.split(' ').length;
+    for (let k = 1; k <= m; k++) { const s = k === 1 ? [p] : splitN(p, k); if (s.every(q => capSize(q.text).w <= maxPx)) return s; }
+    return splitN(p, m);
+  });
 }
 function cues() {
   return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, clicks: TL.clicks.map(c => c.t), typing: TL.typing, clips: TL.clips, caps: SPEC.voLines ? [] : TL.caps.filter(c => c.text).map(c => c.t), vo: TL.vo, voLate: TL.voLate };
@@ -493,5 +507,5 @@ const ready = (async () => {
   if (BEATS.some(b => (SPEC.edit || {})[b.img]?.scene)) await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/scenes.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
   TL = build(); await placeCaptions(); window.film.frames = TL.frames;
 })();
-window.film = { ready, frames: 0, renderFrame, cues, timeline: () => TL };
+window.film = { ready, frames: 0, renderFrame, cues, timeline: () => TL, capSize, busyMap, busyGrid: [BG_W, BG_H] };
 })();

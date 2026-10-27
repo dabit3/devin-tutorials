@@ -1,0 +1,343 @@
+{
+ "note": "Every non-scene shot is a real 4K capture of Devin Desktop 3.11.216 (macOS, dark theme) via CDP (_kit/capture/desktop.mjs), signed in to the thequantexplorer demo org with the account email masked. Unrelated sessions created by other bots in the shared account are hidden in the sidebar. Scene beats are drawn by scenes.js. Beats with inCut=false are not in the cut.",
+ "desktop": "Devin Desktop 3.11.216 (released 2026-10-24)",
+ "repo": "thequantexplorer/product-demo-apps (pagemark/, commit 841273a; the pagemark-read-state demo branch was deleted after capture, no PR was opened)",
+ "takes": {
+  "local": {
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "what": "New session: Cloud/Local toggle, session folder, agent, mode and model pickers (Fusion, SWE-2 High), then the real Fusion task with one command approval. The sidebar Recent list in frames local/0031-0060 is patched from local/0061 to hide an unrelated session from another bot in the shared demo account."
+  },
+  "preview2": {
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "what": "Preview tab of the same session: Mark as read, Unread only, reload keeps read state; Changes tab diff."
+  },
+  "tests": {
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "what": "Follow-up turn \"Run the full test suite again\": All 13 tests passed (readState.test.ts 8, books.test.ts 5)."
+  },
+  "acp": {
+   "session": "Devin Settings > App settings > Agents",
+   "what": "Search for Codex and enable it (ACP agent via @openai/codex, signed in with an API key off camera)."
+  },
+  "acp2": {
+   "session": "Local ACP session \"Unread filter and read state\" with agent Codex",
+   "what": "Codex explains the new filter in pagemark; no files changed. The composer stayed on \"Setting up...\" after the answer (a Desktop UI state), so later frames are not used."
+  },
+  "cloud": {
+   "session": "Devin Cloud session \"Test pagemark read-state controls\" (devin-92d4af16098b4267a7dd647eb1587d6e)",
+   "what": "Configuration (Virtual environment Ubuntu; Hosted/Ubuntu/macOS/Windows list; Notable repositories), capability menu (Fusion, Ultra, Normal, Lite, SWE-2 preview), then the real run: Chrome test on branch pagemark-read-state (841273a), npm test 13 passed, build passed, two UX notes."
+  },
+  "org": {
+   "session": "All three sessions above",
+   "what": "Drag sessions onto the open session for a three-pane view; Properties Sort/Filter/Group; right-click Folder > New folder \"Pagemark launch\" and move sessions into it."
+  }
+ },
+ "shots": {
+  "0000.png": {
+   "src": "~/w81/cap/org/0021.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "three-up"
+  },
+  "0001.png": {
+   "kind": "scene",
+   "scene": "whatsnew",
+   "note": "dark diagram drawn by scenes.js over this beat"
+  },
+  "0002.png": {
+   "kind": "scene",
+   "scene": "localcloud",
+   "note": "dark diagram drawn by scenes.js over this beat"
+  },
+  "0004.png": {
+   "src": "~/w81/cap/local/0003.png",
+   "take": "local",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "local-toggle"
+  },
+  "0018.png": {
+   "src": "~/w81/cap/local/0017.png",
+   "take": "local",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "model-menu"
+  },
+  "0019.png": {
+   "src": "~/w81/cap/local/0018.png",
+   "take": "local",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "model-list"
+  },
+  "0021.png": {
+   "kind": "scene",
+   "scene": "fusion",
+   "note": "dark diagram drawn by scenes.js over this beat"
+  },
+  "0031.png": {
+   "src": "~/w81/cap/local/0030.png",
+   "take": "local",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "send"
+  },
+  "0039.png": {
+   "src": "~/w81/cap/local/0038.png",
+   "take": "local",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "work"
+  },
+  "0051.png": {
+   "src": "~/w81/cap/local/0050.png",
+   "take": "local",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "work"
+  },
+  "0057.png": {
+   "src": "~/w81/cap/local/0056.png",
+   "take": "local",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "work"
+  },
+  "0061.png": {
+   "src": "~/w81/cap/local/0060.png",
+   "take": "local",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "done"
+  },
+  "0085.png": {
+   "src": "~/w81/cap/preview2/0001.png",
+   "take": "preview2",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "tab-preview"
+  },
+  "0088.png": {
+   "src": "~/w81/cap/preview2/0004.png",
+   "take": "preview2",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "mark"
+  },
+  "0092.png": {
+   "src": "~/w81/cap/preview2/0008.png",
+   "take": "preview2",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "unread-on"
+  },
+  "0093.png": {
+   "src": "~/w81/cap/preview2/0009.png",
+   "take": "preview2",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "unread-list"
+  },
+  "0100.png": {
+   "src": "~/w81/cap/preview2/0016.png",
+   "take": "preview2",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "tab-changes"
+  },
+  "0101.png": {
+   "src": "~/w81/cap/preview2/0017.png",
+   "take": "preview2",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "changes"
+  },
+  "0136.png": {
+   "src": "~/w81/cap/tests/0034.png",
+   "take": "tests",
+   "session": "Devin Local session \"Add Book Read-State Toggle and Unread-Only Filter\" (id devin-acp/devin-cli/famous-whitefish), pagemark folder, model Fusion",
+   "phase": "tests-done"
+  },
+  "0137.png": {
+   "kind": "scene",
+   "scene": "acp",
+   "note": "dark diagram drawn by scenes.js over this beat"
+  },
+  "0141.png": {
+   "src": "~/w81/cap/acp/0004.png",
+   "take": "acp",
+   "session": "Devin Settings > App settings > Agents",
+   "phase": "app-settings"
+  },
+  "0142.png": {
+   "src": "~/w81/cap/acp/0005.png",
+   "take": "acp",
+   "session": "Devin Settings > App settings > Agents",
+   "phase": "agents-list"
+  },
+  "0145.png": {
+   "src": "~/w81/cap/acp/0008.png",
+   "take": "acp",
+   "session": "Devin Settings > App settings > Agents",
+   "phase": "agent-filtered"
+  },
+  "0148.png": {
+   "src": "~/w81/cap/acp/0011.png",
+   "take": "acp",
+   "session": "Devin Settings > App settings > Agents",
+   "phase": "agent-enabled"
+  },
+  "0158.png": {
+   "src": "~/w81/cap/acp2/0005.png",
+   "take": "acp2",
+   "session": "Local ACP session \"Unread filter and read state\" with agent Codex",
+   "phase": "agent-menu2"
+  },
+  "0159.png": {
+   "src": "~/w81/cap/acp2/0006.png",
+   "take": "acp2",
+   "session": "Local ACP session \"Unread filter and read state\" with agent Codex",
+   "phase": "agent-list2"
+  },
+  "0179.png": {
+   "src": "~/w81/cap/acp2/0026.png",
+   "take": "acp2",
+   "session": "Local ACP session \"Unread filter and read state\" with agent Codex",
+   "phase": "acp-work"
+  },
+  "0182.png": {
+   "kind": "scene",
+   "scene": "envs",
+   "note": "dark diagram drawn by scenes.js over this beat"
+  },
+  "0188.png": {
+   "src": "~/w81/cap/cloud/0008.png",
+   "take": "cloud",
+   "session": "Devin Cloud session \"Test pagemark read-state controls\" (devin-92d4af16098b4267a7dd647eb1587d6e)",
+   "phase": "env-list"
+  },
+  "0193.png": {
+   "src": "~/w81/cap/cloud/0013.png",
+   "take": "cloud",
+   "session": "Devin Cloud session \"Test pagemark read-state controls\" (devin-92d4af16098b4267a7dd647eb1587d6e)",
+   "phase": "caps-list"
+  },
+  "0206.png": {
+   "src": "~/w81/cap/cloud/0026.png",
+   "take": "cloud",
+   "session": "Devin Cloud session \"Test pagemark read-state controls\" (devin-92d4af16098b4267a7dd647eb1587d6e)",
+   "phase": "cloud-send"
+  },
+  "0220.png": {
+   "src": "~/w81/cap/cloud/0040.png",
+   "take": "cloud",
+   "session": "Devin Cloud session \"Test pagemark read-state controls\" (devin-92d4af16098b4267a7dd647eb1587d6e)",
+   "phase": "cloud-work"
+  },
+  "0230.png": {
+   "src": "~/w81/cap/cloud/0050.png",
+   "take": "cloud",
+   "session": "Devin Cloud session \"Test pagemark read-state controls\" (devin-92d4af16098b4267a7dd647eb1587d6e)",
+   "phase": "cloud-done"
+  },
+  "0233.png": {
+   "src": "~/w81/cap/org/0002.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "cloud-report"
+  },
+  "0237.png": {
+   "src": "~/w81/cap/org/0006.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "local-open"
+  },
+  "0238.png": {
+   "src": "~/w81/cap/org/0007.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "split1-grab"
+  },
+  "0240.png": {
+   "src": "~/w81/cap/org/0009.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "split1-drag"
+  },
+  "0242.png": {
+   "src": "~/w81/cap/org/0011.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "split1-drag"
+  },
+  "0243.png": {
+   "src": "~/w81/cap/org/0012.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "split1-zone"
+  },
+  "0244.png": {
+   "src": "~/w81/cap/org/0013.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "split1-drop"
+  },
+  "0252.png": {
+   "src": "~/w81/cap/org/0021.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "three-up"
+  },
+  "0254.png": {
+   "src": "~/w81/cap/org/0023.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "props"
+  },
+  "0256.png": {
+   "src": "~/w81/cap/org/0025.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "sort-open"
+  },
+  "0258.png": {
+   "src": "~/w81/cap/org/0027.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "filter-open"
+  },
+  "0260.png": {
+   "src": "~/w81/cap/org/0029.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "group-open"
+  },
+  "0263.png": {
+   "src": "~/w81/cap/org/0032.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "ctx"
+  },
+  "0265.png": {
+   "src": "~/w81/cap/org/0034.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "folder-open"
+  },
+  "0267.png": {
+   "src": "~/w81/cap/org/0036.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "new-folder"
+  },
+  "0270.png": {
+   "src": "~/w81/cap/org/0039.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "folder-typed"
+  },
+  "0273.png": {
+   "src": "~/w81/cap/org/0042.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "folder-made"
+  },
+  "0280.png": {
+   "src": "~/w81/cap/org/0049.png",
+   "take": "org",
+   "session": "All three sessions above",
+   "phase": "org-done"
+  },
+  "0281.png": {
+   "kind": "scene",
+   "scene": "recap",
+   "note": "dark diagram drawn by scenes.js over this beat"
+  }
+ }
+}
