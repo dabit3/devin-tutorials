@@ -117,6 +117,28 @@ def cut_take():
     st, en = al['character_start_times_seconds'], al['character_end_times_seconds']
     if ''.join(al['characters']) != U: sys.exit('alignment text differs from the request')
     times = list(zip(st, en))
+    heard = stt(take_wav, timed=True)
+    # the alignment can drift from the audio by a few hundred ms on long takes; warp it onto the transcript's word times
+    import bisect, difflib, re
+    aw = [(m.start(), m.end(), m.group().lower()) for m in re.finditer(r'[A-Za-z0-9]+', U)]
+    hw = [re.sub(r'[^a-z0-9]', '', w['text'].lower()) for w in heard]
+    anc = []
+    for i, j, n in difflib.SequenceMatcher(None, [w[2] for w in aw], hw, autojunk=False).get_matching_blocks():
+        for d in range(n):
+            (c0, c1, _), h = aw[i + d], heard[j + d]
+            anc += [(times[c0][0], h['start']), (times[c1 - 1][1], h['end'])]
+    anc.sort(); A, H = [], []
+    for x, y in anc:
+        if (not A or x > A[-1]) and (not H or y >= H[-1]): A.append(x); H.append(y)
+    if len(A) >= 4:
+        def warp(t):
+            k = bisect.bisect_left(A, t)
+            if k == 0: return t + H[0] - A[0]
+            if k >= len(A): return t + H[-1] - A[-1]
+            return H[k - 1] + (t - A[k - 1]) * (H[k] - H[k - 1]) / (A[k] - A[k - 1])
+        drift = max(abs(y - x) for x, y in zip(A, H))
+        times = [(warp(x), warp(y)) for x, y in times]
+        print(f'  alignment warped onto {len(A)} transcript anchors (max drift {drift:.2f}s)')
     n = SR // 100
     e = [math.sqrt(sum(x * x for x in track[i:i + n]) / n + 1e-9) for i in range(0, len(track), n)]
     q = [sum(e[f:f + 3]) / len(e[f:f + 3]) for f in range(len(e))]
@@ -129,7 +151,6 @@ def cut_take():
         f = min(range(int(lo * 100), max(int(lo * 100) + 1, int(hi * 100))), key=lambda f: q[min(f, len(q) - 1)])
         cuts.append(f / 100 + 0.015)
     # every cut must fall between the last heard word of one line and the first heard word of the next
-    heard = stt(take_wav, timed=True)
     if not matches(' '.join(t for _, t, _ in items), ' '.join(w['text'] for w in heard)):
         print('  retake: transcript differs:', ' '.join(w['text'] for w in heard)); return None
     for li, c in enumerate(cuts):
