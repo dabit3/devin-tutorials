@@ -1,0 +1,690 @@
+{
+ "0000.png": {
+  "text": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model, on Modal, so it reads a product description from an invoice and returns its H-S tariff code.",
+  "say": "In this video, we'll have Devin post-train Qwen three point eight twenty-seven B, an open model on Modal, so it reads a product description from an invoice and returns its H-S tariff code.",
+  "dur": 9.45,
+  "at": 0.0,
+  "end": 9.45,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 9.427,
+    "text": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model, on Modal, so it reads a product description from an invoice and returns its H-S tariff code."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "Modal runs each GPU job only while it's needed and bills by the second, so Devin can run a whole sweep in parallel and serve the finished model as an endpoint that scales to zero.",
+  "dur": 9.065,
+  "at": 9.76,
+  "end": 18.825,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.108,
+    "t1": 2.268,
+    "text": "Modal runs each GPU job only while it's"
+   },
+   {
+    "t0": 2.314,
+    "t1": 3.731,
+    "text": "needed and bills by the second,"
+   },
+   {
+    "t0": 3.94,
+    "t1": 5.426,
+    "text": "so Devin can run a whole sweep in"
+   },
+   {
+    "t0": 5.472,
+    "t1": 7.551,
+    "text": "parallel and serve the finished model as an"
+   },
+   {
+    "t0": 7.609,
+    "t1": 9.065,
+    "text": "endpoint that scales to zero."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "Importers and customs brokers classify thousands of products, and a wrong code means paying the wrong duty.",
+  "dur": 5.64,
+  "at": 19.13,
+  "end": 24.77,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.085,
+    "t1": 3.242,
+    "text": "Importers and customs brokers classify thousands of products,"
+   },
+   {
+    "t0": 3.417,
+    "t1": 5.599,
+    "text": "and a wrong code means paying the wrong duty."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "I start one session and ask Devin to follow our saved playbook for post-training on Modal, so this new task reuses the same recipe.",
+  "dur": 7.205,
+  "at": 24.96,
+  "end": 32.165,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.094,
+    "t1": 1.952,
+    "text": "I start one session and ask Devin to"
+   },
+   {
+    "t0": 2.033,
+    "t1": 4.599,
+    "text": "follow our saved playbook for post-training on Modal,"
+   },
+   {
+    "t0": 4.843,
+    "t1": 7.188,
+    "text": "so this new task reuses the same recipe."
+   }
+  ]
+ },
+ "0016.png": {
+  "text": "First, Devin sets up the folder, checks the Modal login, and saves the setup as a skill.",
+  "dur": 5.23,
+  "at": 32.52,
+  "end": 37.75,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.069,
+    "t1": 1.962,
+    "text": "First, Devin sets up the folder,"
+   },
+   {
+    "t0": 2.136,
+    "t1": 3.401,
+    "text": "checks the Modal login,"
+   },
+   {
+    "t0": 3.575,
+    "t1": 5.224,
+    "text": "and saves the setup as a skill."
+   }
+  ]
+ },
+ "0025.png": {
+  "text": "Step two is the data: public U.S. Customs rulings, each a product description with its official code.",
+  "dur": 5.83,
+  "at": 37.95,
+  "end": 43.78,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.119,
+    "t1": 1.361,
+    "text": "Step two is the data:"
+   },
+   {
+    "t0": 1.745,
+    "t1": 3.428,
+    "text": "public U.S. Customs rulings,"
+   },
+   {
+    "t0": 3.637,
+    "t1": 5.785,
+    "text": "each a product description with its official code."
+   }
+  ]
+ },
+ "0030.png": {
+  "text": "The grading rule gives full credit for the exact six-digit code, half for the right four-digit heading, a quarter for the right chapter, and a penalty when there's no valid code.",
+  "dur": 9.415,
+  "at": 44.11,
+  "end": 53.525,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.066,
+    "t1": 1.982,
+    "text": "The grading rule gives full credit for the"
+   },
+   {
+    "t0": 2.051,
+    "t1": 3.537,
+    "text": "exact six-digit code,"
+   },
+   {
+    "t0": 3.863,
+    "t1": 5.558,
+    "text": "half for the right four-digit heading,"
+   },
+   {
+    "t0": 5.767,
+    "t1": 7.241,
+    "text": "a quarter for the right chapter,"
+   },
+   {
+    "t0": 7.392,
+    "t1": 9.413,
+    "text": "and a penalty when there's no valid code."
+   }
+  ]
+ },
+ "0037.png": {
+  "text": "Devin cleans the rulings down to 13,555 and sets aside 1,000 for the final test.",
+  "say": "Devin cleans the rulings down to thirteen thousand five hundred fifty-five and sets aside one thousand for the final test.",
+  "dur": 6.33,
+  "at": 53.7,
+  "end": 60.03,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.148,
+    "t1": 6.301,
+    "text": "Devin cleans the rulings down to 13,555 and sets aside 1,000 for the final test."
+   }
+  ]
+ },
+ "0040.png": {
+  "text": "Step three is the baseline. Both models get the same short prompt, with no examples.",
+  "dur": 4.68,
+  "at": 60.15,
+  "end": 64.83,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.13,
+    "t1": 1.523,
+    "text": "Step three is the baseline."
+   },
+   {
+    "t0": 1.801,
+    "t1": 3.589,
+    "text": "Both models get the same short prompt,"
+   },
+   {
+    "t0": 3.613,
+    "t1": 4.646,
+    "text": "with no examples."
+   }
+  ]
+ },
+ "0056.png": {
+  "text": "gpt-6.1-sol gets 63% of codes exactly right. The base open model gets only 19%.",
+  "say": "GPT six point one sol gets sixty-three percent of codes exactly right. The base open model gets only nineteen percent.",
+  "dur": 6.49,
+  "at": 65.01,
+  "end": 71.5,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.111,
+    "t1": 6.485,
+    "text": "gpt-6.1-sol gets 63% of codes exactly right. The base open model gets only 19%."
+   }
+  ]
+ },
+ "0059.png": {
+  "text": "Step four is supervised fine-tuning with LoRA on one H200 GPU.",
+  "say": "Step four is supervised fine-tuning with Laura on one H two hundred GPU.",
+  "dur": 4.215,
+  "at": 71.76,
+  "end": 75.975,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.118,
+    "t1": 4.215,
+    "text": "Step four is supervised fine-tuning with LoRA on one H200 GPU."
+   }
+  ]
+ },
+ "0063.png": {
+  "text": "Devin launches the job on Modal, watches the logs, and scores the result. Training takes about seventeen minutes.",
+  "dur": 5.845,
+  "at": 76.24,
+  "end": 82.085,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.108,
+    "t1": 1.768,
+    "text": "Devin launches the job on Modal,"
+   },
+   {
+    "t0": 1.919,
+    "t1": 2.802,
+    "text": "watches the logs,"
+   },
+   {
+    "t0": 2.825,
+    "t1": 3.812,
+    "text": "and scores the result."
+   },
+   {
+    "t0": 4.137,
+    "t1": 5.845,
+    "text": "Training takes about seventeen minutes."
+   }
+  ]
+ },
+ "0077.png": {
+  "text": "Fine-tuning lifts exact accuracy from 19% to 56%, but gpt-6.1-sol is still ahead.",
+  "say": "Fine-tuning lifts exact accuracy from nineteen to fifty-six percent, but GPT six point one sol is still ahead.",
+  "dur": 6.49,
+  "at": 82.37,
+  "end": 88.86,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.062,
+    "t1": 6.482,
+    "text": "Fine-tuning lifts exact accuracy from 19% to 56%, but gpt-6.1-sol is still ahead."
+   }
+  ]
+ },
+ "0080.png": {
+  "text": "Step five is reinforcement learning with GRPO on a B200, starting from the base model and scored by the grading rule.",
+  "say": "Step five is reinforcement learning with G R P O on a B two hundred, starting from the base model and scored by the grading rule.",
+  "dur": 6.47,
+  "at": 89.12,
+  "end": 95.59,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.115,
+    "t1": 6.408,
+    "text": "Step five is reinforcement learning with GRPO on a B200, starting from the base model and scored by the grading rule."
+   }
+  ]
+ },
+ "0099.png": {
+  "text": "Partway through, Devin spots a problem. The reward only checked the first code, so the model learned to keep writing until it hit the length limit.",
+  "dur": 7.25,
+  "at": 95.83,
+  "end": 103.08,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.081,
+    "t1": 2.043,
+    "text": "Partway through, Devin spots a problem."
+   },
+   {
+    "t0": 2.368,
+    "t1": 4.249,
+    "text": "The reward only checked the first code,"
+   },
+   {
+    "t0": 4.423,
+    "t1": 6.188,
+    "text": "so the model learned to keep writing until"
+   },
+   {
+    "t0": 6.246,
+    "t1": 7.244,
+    "text": "it hit the length limit."
+   }
+  ]
+ },
+ "0100.png": {
+  "text": "On the test set, exact accuracy falls to 13.7%. Devin explains why and suggests three fixes.",
+  "say": "On the test set, exact accuracy falls to thirteen point seven percent. Devin explains why and suggests three fixes.",
+  "dur": 6.715,
+  "at": 103.385,
+  "end": 110.1,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.072,
+    "t1": 6.702,
+    "text": "On the test set, exact accuracy falls to 13.7%. Devin explains why and suggests three fixes."
+   }
+  ]
+ },
+ "0103.png": {
+  "text": "I ask for all three: start from the fine-tuned model, penalize anything after the code, and use more prompts per step.",
+  "dur": 6.475,
+  "at": 110.405,
+  "end": 116.88,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.065,
+    "t1": 1.028,
+    "text": "I ask for all three:"
+   },
+   {
+    "t0": 1.272,
+    "t1": 2.897,
+    "text": "start from the fine-tuned model,"
+   },
+   {
+    "t0": 3.071,
+    "t1": 4.778,
+    "text": "penalize anything after the code,"
+   },
+   {
+    "t0": 4.929,
+    "t1": 6.475,
+    "text": "and use more prompts per step."
+   }
+  ]
+ },
+ "0121.png": {
+  "text": "The fixed run reaches 58.2%, and no answer runs to the limit. The gain over fine-tuning alone is borderline.",
+  "say": "The fixed run reaches fifty-eight point two percent, and no answer runs to the limit. The gain over fine-tuning alone is borderline.",
+  "dur": 6.955,
+  "at": 117.23,
+  "end": 124.185,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.055,
+    "t1": 6.951,
+    "text": "The fixed run reaches 58.2%, and no answer runs to the limit. The gain over fine-tuning alone is borderline."
+   }
+  ]
+ },
+ "0124.png": {
+  "text": "Step six is a sweep. Four managed Devins each train one variant in parallel: learning rate, LoRA rank, generations per prompt, and reward shaping.",
+  "say": "Step six is a sweep. Four managed Devins each train one variant in parallel: learning rate, Laura rank, generations per prompt, and reward shaping.",
+  "dur": 8.755,
+  "at": 124.5,
+  "end": 133.255,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.122,
+    "t1": 8.755,
+    "text": "Step six is a sweep. Four managed Devins each train one variant in parallel: learning rate, LoRA rank, generations per prompt, and reward shaping."
+   }
+  ]
+ },
+ "0128.png": {
+  "text": "Each variant is scored on 500 examples held out from training, so the test set stays untouched.",
+  "say": "Each variant is scored on five hundred examples held out from training, so the test set stays untouched.",
+  "dur": 5.68,
+  "at": 133.61,
+  "end": 139.29,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.091,
+    "t1": 5.652,
+    "text": "Each variant is scored on 500 examples held out from training, so the test set stays untouched."
+   }
+  ]
+ },
+ "0145.png": {
+  "text": "No variant clearly beats the fine-tuned reference. A higher learning rate or a larger rank makes it worse, and reward shaping wins by a single example, so Devin promotes it.",
+  "dur": 9.73,
+  "at": 139.665,
+  "end": 149.395,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.108,
+    "t1": 2.744,
+    "text": "No variant clearly beats the fine-tuned reference."
+   },
+   {
+    "t0": 2.987,
+    "t1": 4.857,
+    "text": "A higher learning rate or a larger rank"
+   },
+   {
+    "t0": 4.915,
+    "t1": 5.716,
+    "text": "makes it worse,"
+   },
+   {
+    "t0": 5.89,
+    "t1": 8.351,
+    "text": "and reward shaping wins by a single example,"
+   },
+   {
+    "t0": 8.595,
+    "t1": 9.73,
+    "text": "so Devin promotes it."
+   }
+  ]
+ },
+ "0146.png": {
+  "text": "On the test set, the promoted model scores 56.9%.",
+  "say": "On the test set, the promoted model scores fifty-six point nine percent.",
+  "dur": 3.96,
+  "at": 149.76,
+  "end": 153.72,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.091,
+    "t1": 3.957,
+    "text": "On the test set, the promoted model scores 56.9%."
+   }
+  ]
+ },
+ "0149.png": {
+  "text": "Step seven deploys that model as an endpoint behind an API key that scales to zero, and adds a backend setting to the demo app.",
+  "say": "Step seven deploys that model as an endpoint behind an A P I key that scales to zero, and adds a backend setting to the demo app.",
+  "dur": 7.125,
+  "at": 154.075,
+  "end": 161.2,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.083,
+    "t1": 7.125,
+    "text": "Step seven deploys that model as an endpoint behind an API key that scales to zero, and adds a backend setting to the demo app."
+   }
+  ]
+ },
+ "0167.png": {
+  "text": "Devin opens the app with gpt-6.1-sol and classifies a men's acrylic knit pullover.",
+  "say": "Devin opens the app with GPT six point one sol and classifies a men's acrylic knit pullover.",
+  "dur": 5.585,
+  "at": 161.6,
+  "end": 167.185,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.07,
+    "t1": 5.585,
+    "text": "Devin opens the app with gpt-6.1-sol and classifies a men's acrylic knit pullover."
+   }
+  ]
+ },
+ "0168.png": {
+  "text": "It returns 6110.30: knitted sweaters of man-made fibres.",
+  "say": "It returns sixty-one ten point thirty: knitted sweaters of man-made fibres.",
+  "dur": 4.58,
+  "at": 167.54,
+  "end": 172.12,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 4.58,
+    "text": "It returns 6110.30: knitted sweaters of man-made fibres."
+   }
+  ]
+ },
+ "0170.png": {
+  "text": "Now the same product through our endpoint.",
+  "dur": 2.13,
+  "at": 172.56,
+  "end": 174.69,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.128,
+    "t1": 2.125,
+    "text": "Now the same product through our endpoint."
+   }
+  ]
+ },
+ "0171.png": {
+  "text": "Same code, in about half a second instead of two. The base model had picked 6110.20, the line for cotton.",
+  "say": "Same code, in about half a second instead of two. The base model had picked sixty-one ten point twenty, the line for cotton.",
+  "dur": 6.84,
+  "at": 174.88,
+  "end": 181.72,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.13,
+    "t1": 6.828,
+    "text": "Same code, in about half a second instead of two. The base model had picked 6110.20, the line for cotton."
+   }
+  ]
+ },
+ "0174.png": {
+  "text": "Step eight is the final scorecard on the 1,000 test examples, with significance tests.",
+  "say": "Step eight is the final scorecard on the one thousand test examples, with significance tests.",
+  "dur": 4.96,
+  "at": 182.04,
+  "end": 187.0,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.11,
+    "t1": 4.928,
+    "text": "Step eight is the final scorecard on the 1,000 test examples, with significance tests."
+   }
+  ]
+ },
+ "0187.png": {
+  "text": "Training closes most of the gap, from 19% to 57%. gpt-6.1-sol stays about six points ahead, and that difference is significant.",
+  "say": "Training closes most of the gap, from nineteen percent to fifty-seven. GPT six point one sol stays about six points ahead, and that difference is significant.",
+  "dur": 8.48,
+  "at": 187.285,
+  "end": 195.765,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.008,
+    "t1": 8.48,
+    "text": "Training closes most of the gap, from 19% to 57%. gpt-6.1-sol stays about six points ahead, and that difference is significant."
+   }
+  ]
+ },
+ "0188.png": {
+  "text": "But at 128 requests in flight, our model costs about $14 per million requests, against about $1,367 for gpt-6.1-sol, and it answers about five times faster.",
+  "say": "But at a hundred twenty-eight requests in flight, our model costs about fourteen dollars per million requests, against about thirteen hundred sixty-seven dollars for GPT six point one sol, and it answers about five times faster.",
+  "dur": 12.33,
+  "at": 196.14,
+  "end": 208.47,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.046,
+    "t1": 12.283,
+    "text": "But at 128 requests in flight, our model costs about $14 per million requests, against about $1,367 for gpt-6.1-sol, and it answers about five times faster."
+   }
+  ]
+ },
+ "0189.png": {
+  "text": "The cost leaves out cold starts, idle time, training, and storage, and the differences against the other trained models aren't significant.",
+  "dur": 6.49,
+  "at": 208.675,
+  "end": 215.165,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.027,
+    "t1": 1.71,
+    "text": "The cost leaves out cold starts,"
+   },
+   {
+    "t0": 1.768,
+    "t1": 2.767,
+    "text": "idle time, training,"
+   },
+   {
+    "t0": 2.79,
+    "t1": 4.996,
+    "text": "and storage, and the differences against the other"
+   },
+   {
+    "t0": 5.042,
+    "t1": 6.49,
+    "text": "trained models aren't significant."
+   }
+  ]
+ },
+ "outro": {
+  "text": "That's how you post-train an open model for your own task: grade the answer with a script, compare against a frontier model, and let Devin train, sweep, deploy, and report honestly where it lands.",
+  "dur": 10.9,
+  "at": 215.47,
+  "end": 226.37,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.058,
+    "t1": 1.975,
+    "text": "That's how you post-train an open model for"
+   },
+   {
+    "t0": 2.009,
+    "t1": 2.799,
+    "text": "your own task:"
+   },
+   {
+    "t0": 3.182,
+    "t1": 4.656,
+    "text": "grade the answer with a script,"
+   },
+   {
+    "t0": 4.831,
+    "t1": 6.491,
+    "text": "compare against a frontier model,"
+   },
+   {
+    "t0": 6.665,
+    "t1": 7.896,
+    "text": "and let Devin train,"
+   },
+   {
+    "t0": 8.07,
+    "t1": 10.9,
+    "text": "sweep, deploy, and report honestly where it lands."
+   }
+  ]
+ }
+}
