@@ -39,6 +39,7 @@
 | 59 | Port an iOS screen to Android: how it works (overview) | `59-ios-to-android-parity-overview/` |
 | 76 | Devin CLI: what's new in v3000.11.92 (overview) | `76-cli-whats-new-overview/` |
 | 77 | Stack Clash: add a feature to a voice-driven game by voice | `77-stack-clash-voice/` |
+| 87 | Multiplayer development with Devin (narrated by Nader) | `87-multiplayer-devin/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
 
