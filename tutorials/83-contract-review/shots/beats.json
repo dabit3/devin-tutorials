@@ -1,0 +1,1429 @@
+[
+{
+"img": "x_demo1.png",
+"kind": "still",
+"hold": 3.0,
+"cur": {
+"x": 720,
+"y": 600
+}
+},
+{
+"img": "x_demo1b.png",
+"kind": "still",
+"hold": 3.0,
+"cur": {
+"x": 720,
+"y": 600
+}
+},
+{
+"img": "x_demo2.png",
+"kind": "still",
+"hold": 3.0,
+"cur": {
+"x": 720,
+"y": 600
+}
+},
+{
+"img": "0000.png",
+"cur": {
+"x": 720,
+"y": 600
+},
+"hold": 1.2,
+"mark": "home"
+},
+{
+"img": "0007.png",
+"cur": {
+"x": 433.232421875,
+"y": 402.5
+},
+"kind": "still",
+"hold": 3.2,
+"cap": "Step 1: set the folder up for Modal",
+"hlBox": {
+"x": 720.625,
+"y": 387.5,
+"w": 842.5,
+"h": 175
+},
+"mark": "prompt"
+},
+{
+"img": "0008.png",
+"cur": {
+"x": 1084.375,
+"y": 485
+},
+"kind": "hover",
+"target": {
+"x": 1084.375,
+"y": 485,
+"w": 35,
+"h": 35,
+"text": ""
+}
+},
+{
+"img": "0009.png",
+"cur": {
+"x": 1084.375,
+"y": 485
+},
+"kind": "click",
+"target": {
+"x": 1084.375,
+"y": 485,
+"w": 35,
+"h": 35,
+"text": ""
+},
+"clickAt": {
+"x": 1084.375,
+"y": 485
+},
+"mark": "sent"
+},
+{
+"img": "0010.png",
+"cur": {
+"x": 1084.375,
+"y": 485
+},
+"kind": "poll",
+"at": 4,
+"cap": null
+},
+{
+"img": "0012.png",
+"cur": {
+"x": 1084.375,
+"y": 485
+},
+"kind": "poll",
+"at": 10035,
+"cap": null
+},
+{
+"img": "0033.png",
+"cur": {
+"x": 1084.375,
+"y": 485
+},
+"kind": "poll",
+"at": 115265,
+"cap": null
+},
+{
+"img": "0044.png",
+"cur": {
+"x": 1084.375,
+"y": 485
+},
+"kind": "poll",
+"at": 175270,
+"cap": null
+},
+{
+"img": "0049.png",
+"cur": {
+"x": 1084.375,
+"y": 485
+},
+"kind": "poll",
+"at": 200277,
+"cap": null
+},
+{
+"img": "0054.png",
+"cur": {
+"x": 1084.375,
+"y": 485
+},
+"kind": "poll",
+"at": 225279,
+"cap": null
+},
+{
+"img": "0059.png",
+"cur": {
+"x": 1084.375,
+"y": 485
+},
+"kind": "poll",
+"at": 250286,
+"cap": null
+},
+{
+"img": "0074.png",
+"cur": {
+"x": 446.25,
+"y": 616.25
+},
+"kind": "still",
+"hold": 3,
+"cap": "Step 2: the data and the grading rule",
+"capPos": "top",
+"hlBox": {
+"x": 720,
+"y": 620,
+"w": 930,
+"h": 385
+},
+"mark": "p2"
+},
+{
+"img": "0084.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 35052,
+"cap": null
+},
+{
+"img": "0090.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 65126,
+"cap": null
+},
+{
+"img": "0097.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 100184,
+"cap": null
+},
+{
+"img": "0104.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 135188,
+"cap": null
+},
+{
+"img": "0111.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 170191,
+"cap": null
+},
+{
+"img": "0129.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 5031,
+"cap": null
+},
+{
+"img": "0464.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 1680541,
+"cap": null
+},
+{
+"img": "0478.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 1750552,
+"cap": null
+},
+{
+"img": "0493.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 1825570,
+"cap": null
+},
+{
+"img": "0509.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 1905576,
+"cap": null
+},
+{
+"img": "0524.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 1980597,
+"cap": null
+},
+{
+"img": "0539.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 2055644,
+"cap": null
+},
+{
+"img": "x_p3.png",
+"kind": "still",
+"hold": 3.0,
+"cur": {
+"x": 1475,
+"y": 375
+}
+},
+{
+"img": "0540.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"hold": 1.2,
+"mark": "idle"
+},
+{
+"img": "0543.png",
+"cur": {
+"x": 446.25,
+"y": 698.75
+},
+"kind": "still",
+"hold": 3,
+"cap": "Step 4: fine-tune with LoRA on an H200",
+"capPos": "top",
+"hlBox": {
+"x": 720,
+"y": 711.25,
+"w": 930,
+"h": 202.5
+},
+"mark": "p4"
+},
+{
+"img": "1241.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 3475900,
+"cap": null
+},
+{
+"img": "1276.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 3650924,
+"cap": null
+},
+{
+"img": "1310.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 3820954,
+"cap": null
+},
+{
+"img": "1345.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 3995986,
+"cap": null
+},
+{
+"img": "1379.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 4166009,
+"cap": null
+},
+{
+"img": "1414.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 4341051,
+"cap": null
+},
+{
+"img": "1448.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 4511081,
+"cap": null
+},
+{
+"img": "1483.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 4686121,
+"cap": null
+},
+{
+"img": "1517.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 4856153,
+"cap": null
+},
+{
+"img": "1518.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 4861155,
+"cap": null
+},
+{
+"img": "1519.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 4866156,
+"cap": null
+},
+{
+"img": "1532.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"hold": 1.2,
+"mark": "idle"
+},
+{
+"img": "1535.png",
+"cur": {
+"x": 446.25,
+"y": 698.75
+},
+"kind": "still",
+"hold": 3,
+"cap": "Step 5: reinforcement learning with GRPO on a B200",
+"capPos": "top",
+"hlBox": {
+"x": 720,
+"y": 711.25,
+"w": 930,
+"h": 202.5
+},
+"mark": "p5"
+},
+{
+"img": "2046.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 2540765,
+"cap": null
+},
+{
+"img": "2121.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 2915831,
+"cap": null
+},
+{
+"img": "2195.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 3285899,
+"cap": null
+},
+{
+"img": "2269.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 3655963,
+"cap": null
+},
+{
+"img": "2343.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 4026031,
+"cap": null
+},
+{
+"img": "2418.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 4401101,
+"cap": null
+},
+{
+"img": "2492.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 4771168,
+"cap": null
+},
+{
+"img": "2566.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 5141233,
+"cap": null
+},
+{
+"img": "2640.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 5511305,
+"cap": null
+},
+{
+"img": "2715.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 5886365,
+"cap": null
+},
+{
+"img": "2789.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 6256436,
+"cap": null
+},
+{
+"img": "2863.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 6626521,
+"cap": null
+},
+{
+"img": "2937.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 6996700,
+"cap": null
+},
+{
+"img": "3012.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 7371637,
+"cap": null
+},
+{
+"img": "3086.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 7741711,
+"cap": null
+},
+{
+"img": "3087.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 7746711,
+"cap": null
+},
+{
+"img": "3088.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 7751712,
+"cap": null
+},
+{
+"img": "3153.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 8076774,
+"cap": null
+},
+{
+"img": "3218.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 8401827,
+"cap": null
+},
+{
+"img": "3283.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 8726881,
+"cap": null
+},
+{
+"img": "3348.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 9051946,
+"cap": null
+},
+{
+"img": "3413.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 9377006,
+"cap": null
+},
+{
+"img": "3414.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 9382017,
+"cap": null
+},
+{
+"img": "3444.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 30046,
+"cap": null
+},
+{
+"img": "3445.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 35059,
+"cap": null
+},
+{
+"img": "3513.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 375285,
+"cap": null
+},
+{
+"img": "3581.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 715335,
+"cap": null
+},
+{
+"img": "3649.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 1060414,
+"cap": null
+},
+{
+"img": "3650.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 1065410,
+"cap": null
+},
+{
+"img": "3651.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 1070410,
+"cap": null
+},
+{
+"img": "3770.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 1665509,
+"cap": null
+},
+{
+"img": "3888.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 2255616,
+"cap": null
+},
+{
+"img": "4007.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 2850725,
+"cap": null
+},
+{
+"img": "4125.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 3440831,
+"cap": null
+},
+{
+"img": "4244.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 4035936,
+"cap": null
+},
+{
+"img": "4362.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 4626039,
+"cap": null
+},
+{
+"img": "4481.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 5221131,
+"cap": null
+},
+{
+"img": "4599.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 5811242,
+"cap": null
+},
+{
+"img": "4718.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 6406337,
+"cap": null
+},
+{
+"img": "4836.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 6996449,
+"cap": null
+},
+{
+"img": "4955.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 7591544,
+"cap": null
+},
+{
+"img": "5073.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 8181639,
+"cap": null
+},
+{
+"img": "5192.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 8776748,
+"cap": null
+},
+{
+"img": "5210.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 5025,
+"cap": null
+},
+{
+"img": "5224.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 75207,
+"cap": null
+},
+{
+"img": "5239.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 150297,
+"cap": null
+},
+{
+"img": "5240.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 155298,
+"cap": null
+},
+{
+"img": "5241.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 160299,
+"cap": null
+},
+{
+"img": "5429.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 1100466,
+"cap": null
+},
+{
+"img": "5616.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 2035644,
+"cap": null
+},
+{
+"img": "5804.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 2975817,
+"cap": null
+},
+{
+"img": "5991.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 3910987,
+"cap": null
+},
+{
+"img": "6179.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 4851162,
+"cap": null
+},
+{
+"img": "6366.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 5786336,
+"cap": null
+},
+{
+"img": "6554.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 6726507,
+"cap": null
+},
+{
+"img": "6741.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 7661684,
+"cap": null
+},
+{
+"img": "6929.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 8601856,
+"cap": null
+},
+{
+"img": "7117.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 9542017,
+"cap": null
+},
+{
+"img": "7304.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 10477188,
+"cap": null
+},
+{
+"img": "7492.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 11417360,
+"cap": null
+},
+{
+"img": "7679.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 12352545,
+"cap": null
+},
+{
+"img": "7867.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 13292700,
+"cap": null
+},
+{
+"img": "8054.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 14227915,
+"cap": null
+},
+{
+"img": "8242.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 15168054,
+"cap": null
+},
+{
+"img": "8430.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 16108223,
+"cap": null
+},
+{
+"img": "8617.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 17043389,
+"cap": null
+},
+{
+"img": "8805.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 17983560,
+"cap": null
+},
+{
+"img": "8992.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 18918747,
+"cap": null
+},
+{
+"img": "9180.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 19858922,
+"cap": null
+},
+{
+"img": "9367.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 20794113,
+"cap": null
+},
+{
+"img": "9555.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 21734290,
+"cap": null
+},
+{
+"img": "9742.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 22669469,
+"cap": null
+},
+{
+"img": "x_val.png",
+"kind": "still",
+"hold": 3.0,
+"cur": {
+"x": 1475,
+"y": 375
+}
+},
+{
+"img": "10226.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 1395517,
+"cap": null
+},
+{
+"img": "10272.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 1625562,
+"cap": null
+},
+{
+"img": "x_test.png",
+"kind": "still",
+"hold": 3.0,
+"cur": {
+"x": 1475,
+"y": 375
+}
+},
+{
+"img": "10276.png",
+"cur": {
+"x": 446.25,
+"y": 698.75
+},
+"kind": "still",
+"hold": 3,
+"cap": "Step 7: deploy and compare in the app",
+"capPos": "top",
+"hlBox": {
+"x": 720,
+"y": 698.75,
+"w": 930,
+"h": 227.5
+},
+"mark": "p7"
+},
+{
+"img": "10277.png",
+"cur": {
+"x": 1131.25,
+"y": 766.25
+},
+"kind": "hover",
+"target": {
+"x": 1131.25,
+"y": 766.25,
+"w": 35,
+"h": 35,
+"text": ""
+}
+},
+{
+"img": "10301.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 110279,
+"cap": null
+},
+{
+"img": "10326.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 235303,
+"cap": null
+},
+{
+"img": "10350.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 355325,
+"cap": null
+},
+{
+"img": "10375.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 480336,
+"cap": null
+},
+{
+"img": "10399.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 600347,
+"cap": null
+},
+{
+"img": "x_p7.png",
+"kind": "still",
+"hold": 3.0,
+"cur": {
+"x": 1475,
+"y": 375
+}
+},
+{
+"img": "x_rec1.png",
+"kind": "still",
+"hold": 3.0,
+"cur": {
+"x": 1475,
+"y": 375
+}
+},
+{
+"img": "x_rec2.png",
+"kind": "still",
+"hold": 3.0,
+"cur": {
+"x": 1475,
+"y": 375
+}
+},
+{
+"img": "10400.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"hold": 1.2,
+"mark": "idle"
+},
+{
+"img": "10403.png",
+"cur": {
+"x": 446.25,
+"y": 698.75
+},
+"kind": "still",
+"hold": 3,
+"cap": "Step 8: the final scorecard",
+"capPos": "top",
+"hlBox": {
+"x": 720,
+"y": 686.25,
+"w": 930,
+"h": 252.5
+},
+"mark": "p8"
+},
+{
+"img": "10404.png",
+"cur": {
+"x": 1131.25,
+"y": 766.25
+},
+"kind": "hover",
+"target": {
+"x": 1131.25,
+"y": 766.25,
+"w": 35,
+"h": 35,
+"text": ""
+}
+},
+{
+"img": "10428.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 110286,
+"cap": null
+},
+{
+"img": "10451.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 225306,
+"cap": null
+},
+{
+"img": "10474.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"kind": "poll",
+"at": 340328,
+"cap": null
+},
+{
+"img": "x_score.png",
+"kind": "still",
+"hold": 3.0,
+"cur": {
+"x": 1475,
+"y": 375
+}
+},
+{
+"img": "10499.png",
+"cur": {
+"x": 1475,
+"y": 375
+},
+"hold": 1.2,
+"mark": "idle"
+}
+]
