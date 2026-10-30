@@ -1,0 +1,646 @@
+{
+ "0000.png": {
+  "text": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model, on Modal, so it turns plain-English questions into SQL. Modal runs each GPU job only while it's needed and serves the finished model as an endpoint that scales to zero, so you pay for training and traffic, not for idle servers.",
+  "say": "In this video, we'll have Devin post-train Qwen three point eight twenty-seven B, an open model on Modal, so it turns plain-English questions into sequel. Modal runs each GPU job only while it's needed and serves the finished model as an endpoint that scales to zero, so you pay for training and traffic, not for idle servers.",
+  "dur": 17.87,
+  "at": 0.0,
+  "end": 17.87,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 17.87,
+    "text": "In this video, we'll have Devin post-train Qwen3.8-27B, an open model, on Modal, so it turns plain-English questions into SQL. Modal runs each GPU job only while it's needed and serves the finished model as an endpoint that scales to zero, so you pay for training and traffic, not for idle servers."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "I start one session and ask Devin to set the folder up for Modal training, check that auth works, and save the setup as a skill. The repo already has a small demo app we added beforehand, which uses gpt-6.1-sol.",
+  "say": "I start one session and ask Devin to set the folder up for Modal training, check that auth works, and save the setup as a skill. The repo already has a small demo app we added beforehand, which uses GPT six point one sol.",
+  "dur": 12.365,
+  "at": 18.16,
+  "end": 30.525,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.114,
+    "t1": 12.365,
+    "text": "I start one session and ask Devin to set the folder up for Modal training, check that auth works, and save the setup as a skill. The repo already has a small demo app we added beforehand, which uses gpt-6.1-sol."
+   }
+  ]
+ },
+ "0300.png": {
+  "text": "Devin verifies the Modal token, runs a small GPU job, and proposes the setup as a skill, so future sessions start ready.",
+  "dur": 7.575,
+  "at": 31.09,
+  "end": 38.665,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.118,
+    "t1": 1.929,
+    "text": "Devin verifies the Modal token,"
+   },
+   {
+    "t0": 2.138,
+    "t1": 3.775,
+    "text": "runs a small GPU job,"
+   },
+   {
+    "t0": 3.949,
+    "t1": 5.748,
+    "text": "and proposes the setup as a skill,"
+   },
+   {
+    "t0": 5.992,
+    "t1": 7.575,
+    "text": "so future sessions start ready."
+   }
+  ]
+ },
+ "0321.png": {
+  "text": "Next, the data. BIRD is a hard public text-to-SQL benchmark with real databases, and I ask for a fixed-seed split and a reward script that runs the SQL.",
+  "say": "Next, the data. BIRD is a hard public text-to-sequel benchmark with real databases, and I ask for a fixed-seed split and a reward script that runs the sequel.",
+  "dur": 8.955,
+  "at": 39.02,
+  "end": 47.975,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.14,
+    "t1": 8.955,
+    "text": "Next, the data. BIRD is a hard public text-to-SQL benchmark with real databases, and I ask for a fixed-seed split and a reward script that runs the SQL."
+   }
+  ]
+ },
+ "0389.png": {
+  "text": "Devin builds one thousand thirty-four training questions and five hundred test questions. The reward runs both queries and compares the rows: one for a match, zero for a mismatch, and minus a half when the query fails.",
+  "dur": 12.085,
+  "at": 48.35,
+  "end": 60.435,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.133,
+    "t1": 2.989,
+    "text": "Devin builds one thousand thirty-four training questions and"
+   },
+   {
+    "t0": 3.059,
+    "t1": 4.615,
+    "text": "five hundred test questions."
+   },
+   {
+    "t0": 4.998,
+    "t1": 7.181,
+    "text": "The reward runs both queries and compares the"
+   },
+   {
+    "t0": 7.227,
+    "t1": 9.027,
+    "text": "rows: one for a match,"
+   },
+   {
+    "t0": 9.177,
+    "t1": 10.269,
+    "text": "zero for a mismatch,"
+   },
+   {
+    "t0": 10.292,
+    "t1": 12.085,
+    "text": "and minus a half when the query fails."
+   }
+  ]
+ },
+ "0397.png": {
+  "text": "Then the baseline. Devin measures accuracy, latency and cost on the test split for gpt-6.1-sol and for the base model on a Modal H100.",
+  "say": "Then the baseline. Devin measures accuracy, latency and cost on the test split for GPT six point one sol and for the base model on a Modal H one hundred.",
+  "dur": 9.83,
+  "at": 60.68,
+  "end": 70.51,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.075,
+    "t1": 9.805,
+    "text": "Then the baseline. Devin measures accuracy, latency and cost on the test split for gpt-6.1-sol and for the base model on a Modal H100."
+   }
+  ]
+ },
+ "1059.png": {
+  "text": "Before any training, the base model scores sixty-four percent and gpt-6.1-sol sixty-three point eight. That's a tie, but our model answers faster and costs about a tenth as much.",
+  "say": "Before any training, the base model scores sixty-four percent and GPT six point one sol sixty-three point eight. That's a tie, but our model answers faster and costs about a tenth as much.",
+  "dur": 10.515,
+  "at": 70.845,
+  "end": 81.36,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.023,
+    "t1": 10.506,
+    "text": "Before any training, the base model scores sixty-four percent and gpt-6.1-sol sixty-three point eight. That's a tie, but our model answers faster and costs about a tenth as much."
+   }
+  ]
+ },
+ "1065.png": {
+  "text": "Now supervised fine-tuning: a LoRA run on one Modal H200, with checkpoints saved on a Modal volume.",
+  "say": "Now supervised fine-tuning: a LoRA run on one Modal H two hundred, with checkpoints saved on a Modal volume.",
+  "dur": 6.56,
+  "at": 81.54,
+  "end": 88.1,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.136,
+    "t1": 6.499,
+    "text": "Now supervised fine-tuning: a LoRA run on one Modal H200, with checkpoints saved on a Modal volume."
+   }
+  ]
+ },
+ "1709.png": {
+  "text": "Training takes eighteen minutes and lifts the model to sixty-six point four percent, but that gain isn't statistically significant yet.",
+  "dur": 6.875,
+  "at": 88.305,
+  "end": 95.18,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.059,
+    "t1": 2.195,
+    "text": "Training takes eighteen minutes and lifts the model"
+   },
+   {
+    "t0": 2.265,
+    "t1": 3.971,
+    "text": "to sixty-six point four percent,"
+   },
+   {
+    "t0": 4.296,
+    "t1": 6.875,
+    "text": "but that gain isn't statistically significant yet."
+   }
+  ]
+ },
+ "1777.png": {
+  "text": "Next comes reinforcement learning with GRPO on a B200. The reward script grades every answer the model tries by running it.",
+  "say": "Next comes reinforcement learning with GRPO on a B two hundred. The reward script grades every answer the model tries by running it.",
+  "dur": 7.49,
+  "at": 95.5,
+  "end": 102.99,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.131,
+    "t1": 7.48,
+    "text": "Next comes reinforcement learning with GRPO on a B200. The reward script grades every answer the model tries by running it."
+   }
+  ]
+ },
+ "1943.png": {
+  "text": "A two-step smoke test passes, so Devin launches the full run of two hundred fifty steps.",
+  "dur": 5.07,
+  "at": 103.27,
+  "end": 108.34,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.094,
+    "t1": 1.905,
+    "text": "A two-step smoke test passes,"
+   },
+   {
+    "t0": 2.079,
+    "t1": 3.971,
+    "text": "so Devin launches the full run of two"
+   },
+   {
+    "t0": 4.006,
+    "t1": 5.062,
+    "text": "hundred fifty steps."
+   }
+  ]
+ },
+ "2501.png": {
+  "text": "At step fifty-four, the run crashes on a slow scoring query. Devin finds the cause, fixes the scoring, and resumes from the last checkpoint.",
+  "dur": 8.445,
+  "at": 108.575,
+  "end": 117.02,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.082,
+    "t1": 1.209,
+    "text": "At step fifty-four,"
+   },
+   {
+    "t0": 1.255,
+    "t1": 3.449,
+    "text": "the run crashes on a slow scoring query."
+   },
+   {
+    "t0": 3.89,
+    "t1": 5.191,
+    "text": "Devin finds the cause,"
+   },
+   {
+    "t0": 5.4,
+    "t1": 6.514,
+    "text": "fixes the scoring,"
+   },
+   {
+    "t0": 6.688,
+    "t1": 8.442,
+    "text": "and resumes from the last checkpoint."
+   }
+  ]
+ },
+ "4002.png": {
+  "text": "The trained model reaches sixty-seven point four percent. Against the base model, that's suggestive but not conclusive.",
+  "dur": 6.1,
+  "at": 117.34,
+  "end": 123.44,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.06,
+    "t1": 2.881,
+    "text": "The trained model reaches sixty-seven point four percent."
+   },
+   {
+    "t0": 3.264,
+    "t1": 4.274,
+    "text": "Against the base model,"
+   },
+   {
+    "t0": 4.298,
+    "t1": 6.097,
+    "text": "that's suggestive but not conclusive."
+   }
+  ]
+ },
+ "4008.png": {
+  "text": "Now the sweep. I ask for four managed Devins, each training one variant, and Devin holds out a validation set so the test set stays untouched.",
+  "dur": 8.71,
+  "at": 123.56,
+  "end": 132.27,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.121,
+    "t1": 0.876,
+    "text": "Now the sweep."
+   },
+   {
+    "t0": 1.201,
+    "t1": 3.082,
+    "text": "I ask for four managed Devins,"
+   },
+   {
+    "t0": 3.407,
+    "t1": 4.765,
+    "text": "each training one variant,"
+   },
+   {
+    "t0": 4.974,
+    "t1": 7.157,
+    "text": "and Devin holds out a validation set so"
+   },
+   {
+    "t0": 7.215,
+    "t1": 8.71,
+    "text": "the test set stays untouched."
+   }
+  ]
+ },
+ "4013.png": {
+  "text": "The variants change the learning rate, the LoRA rank, the number of samples per question, or the reward itself.",
+  "dur": 5.86,
+  "at": 132.55,
+  "end": 138.41,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.059,
+    "t1": 1.697,
+    "text": "The variants change the learning rate,"
+   },
+   {
+    "t0": 1.813,
+    "t1": 2.73,
+    "text": "the LoRA rank,"
+   },
+   {
+    "t0": 2.904,
+    "t1": 4.495,
+    "text": "the number of samples per question,"
+   },
+   {
+    "t0": 4.704,
+    "t1": 5.86,
+    "text": "or the reward itself."
+   }
+  ]
+ },
+ "4565.png": {
+  "text": "While they train, Devin scores the untrained model on validation as a reference.",
+  "dur": 4.095,
+  "at": 138.88,
+  "end": 142.975,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.069,
+    "t1": 0.846,
+    "text": "While they train,"
+   },
+   {
+    "t0": 0.904,
+    "t1": 4.095,
+    "text": "Devin scores the untrained model on validation as a reference."
+   }
+  ]
+ },
+ "5982.png": {
+  "text": "None of the four beats the base model on validation. The rank sixty-four variant wins the pick by one question and scores sixty-nine point four on test, but it now writes reasoning first, at about three times the cost.",
+  "dur": 12.11,
+  "at": 143.4,
+  "end": 155.51,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.134,
+    "t1": 1.795,
+    "text": "None of the four beats the base model"
+   },
+   {
+    "t0": 1.864,
+    "t1": 4.825,
+    "text": "on validation. The rank sixty-four variant wins the"
+   },
+   {
+    "t0": 4.871,
+    "t1": 7.402,
+    "text": "pick by one question and scores sixty-nine point"
+   },
+   {
+    "t0": 7.449,
+    "t1": 8.308,
+    "text": "four on test,"
+   },
+   {
+    "t0": 8.552,
+    "t1": 10.235,
+    "text": "but it now writes reasoning first,"
+   },
+   {
+    "t0": 10.479,
+    "t1": 12.093,
+    "text": "at about three times the cost."
+   }
+  ]
+ },
+ "5988.png": {
+  "text": "So I ask Devin to deploy the earlier reinforcement learning model with modal deploy, as an endpoint that scales to zero, and show it in the demo app.",
+  "dur": 7.915,
+  "at": 155.875,
+  "end": 163.79,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.059,
+    "t1": 1.882,
+    "text": "So I ask Devin to deploy the earlier"
+   },
+   {
+    "t0": 1.94,
+    "t1": 4.158,
+    "text": "reinforcement learning model with modal deploy,"
+   },
+   {
+    "t0": 4.483,
+    "t1": 6.363,
+    "text": "as an endpoint that scales to zero,"
+   },
+   {
+    "t0": 6.607,
+    "t1": 7.915,
+    "text": "and show it in the demo app."
+   }
+  ]
+ },
+ "6051.png": {
+  "text": "Devin adds a backend setting to the app and runs it twice, once with gpt-6.1-sol and once with our endpoint.",
+  "say": "Devin adds a backend setting to the app and runs it twice, once with GPT six point one sol and once with our endpoint.",
+  "dur": 7.46,
+  "at": 164.15,
+  "end": 171.61,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.143,
+    "t1": 7.46,
+    "text": "Devin adds a backend setting to the app and runs it twice, once with gpt-6.1-sol and once with our endpoint."
+   }
+  ]
+ },
+ "6134.png": {
+  "text": "In the browser, both return the same average lap time for Lewis Hamilton, and our endpoint answers a little faster.",
+  "dur": 5.92,
+  "at": 172.03,
+  "end": 177.95,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.065,
+    "t1": 0.797,
+    "text": "In the browser,"
+   },
+   {
+    "t0": 0.831,
+    "t1": 2.863,
+    "text": "both return the same average lap time for"
+   },
+   {
+    "t0": 2.921,
+    "t1": 5.917,
+    "text": "Lewis Hamilton, and our endpoint answers a little faster."
+   }
+  ]
+ },
+ "6140.png": {
+  "text": "Step eight is the final scorecard on the five hundred test questions, with significance tests.",
+  "dur": 5.21,
+  "at": 178.33,
+  "end": 183.54,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.127,
+    "t1": 2.078,
+    "text": "Step eight is the final scorecard on the"
+   },
+   {
+    "t0": 2.136,
+    "t1": 3.61,
+    "text": "five hundred test questions,"
+   },
+   {
+    "t0": 3.761,
+    "t1": 5.201,
+    "text": "with significance tests."
+   }
+  ]
+ },
+ "6159.png": {
+  "text": "The deployed model scores sixty-seven point four percent, against sixty-three point eight for gpt-6.1-sol. That gap isn't statistically significant, but it costs about two hundred eighty dollars per million queries, against about twenty-five hundred.",
+  "say": "The deployed model scores sixty-seven point four percent, against sixty-three point eight for GPT six point one sol. That gap isn't statistically significant, but it costs about two hundred eighty dollars per million queries, against about twenty-five hundred.",
+  "dur": 14.25,
+  "at": 183.86,
+  "end": 198.11,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.054,
+    "t1": 14.184,
+    "text": "The deployed model scores sixty-seven point four percent, against sixty-three point eight for gpt-6.1-sol. That gap isn't statistically significant, but it costs about two hundred eighty dollars per million queries, against about twenty-five hundred."
+   }
+  ]
+ },
+ "6161.png": {
+  "text": "Devin also spells out what that cost leaves out: cold starts, idle time, and the training itself.",
+  "dur": 5.41,
+  "at": 198.18,
+  "end": 203.59,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.073,
+    "t1": 2.116,
+    "text": "Devin also spells out what that cost leaves"
+   },
+   {
+    "t0": 2.162,
+    "t1": 3.707,
+    "text": "out: cold starts,"
+   },
+   {
+    "t0": 3.788,
+    "t1": 5.41,
+    "text": "idle time, and the training itself."
+   }
+  ]
+ },
+ "6165.png": {
+  "text": "Last, I ask Devin to save the whole recipe as a playbook.",
+  "dur": 3.05,
+  "at": 204.0,
+  "end": 207.05,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.104,
+    "t1": 1.938,
+    "text": "Last, I ask Devin to save the whole"
+   },
+   {
+    "t0": 1.973,
+    "t1": 3.05,
+    "text": "recipe as a playbook."
+   }
+  ]
+ },
+ "6180.png": {
+  "text": "Devin writes it up with the steps, the fixes it needed along the way, and what not to do, so the next model on new data is one request.",
+  "dur": 7.05,
+  "at": 207.39,
+  "end": 214.44,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.093,
+    "t1": 1.672,
+    "text": "Devin writes it up with the steps,"
+   },
+   {
+    "t0": 1.846,
+    "t1": 3.425,
+    "text": "the fixes it needed along the way,"
+   },
+   {
+    "t0": 3.448,
+    "t1": 4.47,
+    "text": "and what not to do,"
+   },
+   {
+    "t0": 4.679,
+    "t1": 7.05,
+    "text": "so the next model on new data is one request."
+   }
+  ]
+ },
+ "outro": {
+  "text": "The big takeaway: start with a script that scores the answer. With that, Devin can train, compare, and deploy a model for your task, and the playbook lets you run it again on your own data.",
+  "dur": 9.545,
+  "at": 214.675,
+  "end": 224.22,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.006,
+    "t1": 0.865,
+    "text": "The big takeaway:"
+   },
+   {
+    "t0": 0.993,
+    "t1": 2.932,
+    "text": "start with a script that scores the answer."
+   },
+   {
+    "t0": 3.141,
+    "t1": 4.754,
+    "text": "With that, Devin can train,"
+   },
+   {
+    "t0": 4.905,
+    "t1": 7.053,
+    "text": "compare, and deploy a model for your task,"
+   },
+   {
+    "t0": 7.204,
+    "t1": 8.679,
+    "text": "and the playbook lets you run it again"
+   },
+   {
+    "t0": 8.737,
+    "t1": 9.545,
+    "text": "on your own data."
+   }
+  ]
+ }
+}
