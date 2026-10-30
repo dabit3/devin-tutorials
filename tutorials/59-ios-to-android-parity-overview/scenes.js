@@ -74,8 +74,8 @@ function idea(ctx, s, k) {
   eyebrow(ctx, k, 'PORT A SCREEN, PROVE PARITY', 160, k.eOut(k.prog(s, 0.05, 0.6)));
   const cw = 360, ch = 150, y = 214, xl = 200, xr = k.VW - 200 - cw;
   const sides = [
-    { x: xl, g: 'macOS', t: 'macOS session', sub: 'The original, in the iPhone Simulator', t0: 1.2 },
-    { x: xr, g: 'Android', t: 'Ubuntu session', sub: 'The port, on the Android emulator', t0: 3.0 },
+    { x: xl, g: 'macOS', t: 'macOS session', sub: 'The original, in the iPhone Simulator', t0: 2.6 },
+    { x: xr, g: 'Android', t: 'Ubuntu session', sub: 'The port, on the Android emulator', t0: 4.1 },
   ];
   const px = k.VW / 2 - 230, pw = 460, py = 446, ph = 230;
   sides.forEach((c, i) => {
@@ -84,19 +84,19 @@ function idea(ctx, s, k) {
     glyph(ctx, k, c.g, c.x + 52, yy + 58, 34, a);
     text(ctx, k, c.t, c.x + 88, yy + 58, 25, 600, k.INK, a, 'left');
     text(ctx, k, c.sub, c.x + 36, yy + 106, 16, 400, MUTED(0.55), a, 'left');
-    const x0 = c.x + cw / 2, x1 = px + (i ? pw - 110 : 110), lp = k.eInOut(k.prog(s, 4.4 + i * 0.3, 5.2 + i * 0.3));
+    const x0 = c.x + cw / 2, x1 = px + (i ? pw - 110 : 110), lp = k.eInOut(k.prog(s, 5.6 + i * 0.3, 6.4 + i * 0.3));
     curve(ctx, k, x0, y + ch, x1, py, lp, MUTED(0.16), 1.5, false);
-    const q = k.prog(s, 5.0 + i * 0.3, 5.8 + i * 0.3);
+    const q = k.prog(s, 6.2 + i * 0.3, 7.0 + i * 0.3);
     if (q > 0 && q < 1) { const pt = curve(ctx, k, x0, y + ch, x1, py, 0.0001, 'transparent', 1, false); const [qx, qy] = pt(k.eInOut(q)); dot(ctx, k, qx, qy, 1); }
   });
-  const a = k.eOutQuint(k.prog(s, 5.2, 6.0)), yy = py + 16 * (1 - a);
-  card(ctx, k, px, yy, pw, ph, a, k.eOutQuint(k.prog(s, 6.4, 7.0)));
+  const a = k.eOutQuint(k.prog(s, 6.4, 7.2)), yy = py + 16 * (1 - a);
+  card(ctx, k, px, yy, pw, ph, a, k.eOutQuint(k.prog(s, 7.6, 8.2)));
   glyph(ctx, k, 'PR', px + 44, yy + 40, 22, a);
   text(ctx, k, 'One pull request', px + 66, yy + 40, 20, 600, k.INK, a, 'left');
-  phone(ctx, k, px + pw / 2 - 70, yy + 140, 136, k.eOutQuint(k.prog(s, 5.8, 6.4)));
-  phone(ctx, k, px + pw / 2 + 70, yy + 140, 136, k.eOutQuint(k.prog(s, 6.1, 6.7)));
-  text(ctx, k, 'iOS', px + pw / 2 - 70, yy + 40, 14, 500, MUTED(0.5), k.eOut(k.prog(s, 6.0, 6.5)));
-  text(ctx, k, 'Android', px + pw / 2 + 70, yy + 40, 14, 500, MUTED(0.5), k.eOut(k.prog(s, 6.3, 6.8)));
+  phone(ctx, k, px + pw / 2 - 70, yy + 140, 136, k.eOutQuint(k.prog(s, 7.0, 7.6)));
+  phone(ctx, k, px + pw / 2 + 70, yy + 140, 136, k.eOutQuint(k.prog(s, 7.3, 7.9)));
+  text(ctx, k, 'iOS', px + pw / 2 - 70, yy + 40, 14, 500, MUTED(0.5), k.eOut(k.prog(s, 7.2, 7.7)));
+  text(ctx, k, 'Android', px + pw / 2 + 70, yy + 40, 14, 500, MUTED(0.5), k.eOut(k.prog(s, 7.5, 8.0)));
 }
 
 // 2. How it works: five steps across two sessions, a signal travelling through them.

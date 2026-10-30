@@ -1,6 +1,6 @@
 # Voice script: Port an iOS screen to Android and prove parity
 
-Narrated cut: `58-ios-to-android-parity-nader.mp4` (voice `T8iHhGIWPm2GVYpQD1Am`, `VO_NAME=nader`). The whole script is generated as one ElevenLabs take (default voice settings) with `_kit/tools/vo_onetake.py` from the `vo` fields in `spec.js`, then cut locally into sentence-aligned lines and checked with Speech-to-Text. "Spoken as" is the `voSay` spelling sent to the voice where it differs.
+Narrated cut: `58-ios-to-android-parity-nader.mp4` (voice `T8iHhGIWPm2GVYpQD1Am`, `VO_NAME=nader`). The whole script is generated as one ElevenLabs take with model `eleven_multilingual_v2` (default voice settings) with `_kit/tools/vo_onetake.py` from the `vo` fields in `spec.js`, then cut locally into sentence-aligned lines and checked with Speech-to-Text. "Spoken as" is the `voSay` spelling sent to the voice where it differs.
 
 Two real sessions in the `thequantexplorer` org, both on `thequantexplorer/product-demo-apps` (the existing SwiftUI app `wisp/`), ending in one pull request (product-demo-apps#79; the macOS session first opened #45, which was closed after an earlier take, and its spec commit was reopened as #79 for the Android take).
 
@@ -18,7 +18,7 @@ Session 2, platform **Ubuntu** (switched back on camera; Android has no menu opt
 
 | Shot | Line | Spoken as |
 |---|---|---|
-| 0000 | Here's how to port an iOS screen to Android with Devin, and prove that both versions match. |  |
+| 0000 | In this video, you'll see how to port an iOS screen to Android with Devin, and prove that both versions match. |  |
 | 0001 | Start with the original app. Open the platform menu below the prompt box. |  |
 | 0003 | Pick macOS, so the session runs on a Mac with Xcode and the iOS Simulator. |  |
 | 0005 | Ask Devin to run the app in the iPhone Simulator, screenshot the screen, and write a parity spec of its layout, copy, fonts and colors. |  |
@@ -34,9 +34,11 @@ Session 2, platform **Ubuntu** (switched back on camera; Android has no menu opt
 | 0044 | The description explains how the port follows the parity spec. |  |
 | 0045 | Below it, the iOS and Android screenshots sit side by side, at the same size. |  |
 | 0046 | It also maps each part of the spec to Compose, from padding to font sizes, so reviewers can check it line by line. |  |
-| outro | Run the original on macOS, port it on Android, and prove they match in one pull request. |  |
+| outro | The takeaway: when Devin can run both the original and the port, the pull request doesn't just say they match, it shows you. |  |
 
 ## Sources
 
 - macOS support: https://docs.devin.ai/onboard-devin/environment/macos-support
 - Android emulator support: https://docs.devin.ai/onboard-devin/environment/android-emulation
+
+Two cuts share the same picture and narration: `58-ios-to-android-parity-nader.mp4` uses the kit's music bed, and `58-ios-to-android-parity-nader-upbeat.mp4` uses Nader's supplied upbeat track instead, ducked under the voice and matched to the kit bed's level.
