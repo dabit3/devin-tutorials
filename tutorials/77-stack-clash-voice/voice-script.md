@@ -4,15 +4,17 @@ Nader's voice throughout is ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`, model `elev
 
 ## Cold open (real RIVET run in Chrome, captured with the game's audio)
 
+The cut enters the take mid-match (a QUAD slam into BLUSH's garbage stack) and never shows the title or menus. Player 1 (VOLT) is the game's own CPU planner driven through real keyboard events at a human pace; nobody plays by hand. The match is a best-of-three so the round-1 K.O. does not end it; the round-2 start and the round-3 start are trimmed to the GO! banner.
+
 Nader's lines were played into Chrome as the microphone (`voice-hook.js` style WebAudio hook); RIVET heard them over its real WebRTC session and ran the tools itself (`start_match`, `set_stage`, `set_style`).
 
-- Nader: Hey Rivet, start a best-of-one match against the CPU on hard.
+- Nader: Rivet, start a best-of-three match against the CPU on normal.  *(before the cut-in; the match is already running at 0:00)*
 - Nader: Rivet, switch the stage to Ember Fields.
 - Nader: Rivet, how's the score looking?
 - Nader: Actually, hold on. Just tell me who's ahead.  *(interrupts RIVET mid-sentence)*
 - Nader: Rivet, switch to a calm commentary style.
 
-## Intro narration (narrated cut only, over a muted gameplay teaser)
+## Intro narration (narrated cut only, over the round-3 footage with the game audio ducked)
 
 - `i0`: Today I'll be building and testing a cross-platform mobile game just by using my voice. It runs on iOS, Android, and the web, from one codebase.
 - `i1`: I'll talk to Devin with Devin Voice, which uses ChatGPT voice under the hood. And the game's ringside announcer, Rivet, talks to players through OpenAI's GPT-Live-1 API.
