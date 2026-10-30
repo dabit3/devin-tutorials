@@ -473,7 +473,7 @@ function splitChunk(c) {
   return out;
 }
 function cues() {
-  return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, clicks: TL.clicks.map(c => c.t), typing: TL.typing, clips: TL.clips, caps: SPEC.voLines ? [] : TL.caps.filter(c => c.text).map(c => c.t), vo: TL.vo, voLate: TL.voLate };
+  return { fps: FPS, frames: TL.frames, intro: TL.introEnd, uiEnd: TL.uiEnd, steps: TL.steps.filter(s => s.img).map(s => ({ img: s.img, t0: s.t0, t1: s.t1 })), clicks: TL.clicks.map(c => c.t), typing: TL.typing, clips: TL.clips, caps: SPEC.voLines ? [] : TL.caps.filter(c => c.text).map(c => c.t), vo: TL.vo, voLate: TL.voLate };
 }
 const ready = (async () => {
   await new Promise((res, rej) => { const s = document.createElement('script'); s.src = `../../${V}/spec.js`; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
