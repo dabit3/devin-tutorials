@@ -1,42 +1,43 @@
 {
   "tutorial": "87-multiplayer-devin",
   "capture": {
-    "account": "capture account in the thequantexplorer Devin org (identity masked with MASK_TEXT)",
-    "browser": "Chrome over CDP, ZOOM=1.25, light mode",
-    "script": "tutorials/87-multiplayer-devin/capture.mjs (phases start, guide, sidebar, review, url, app)",
-    "humans_on_screen": 1,
-    "note": "Every shot is a real capture. Beats were captured in workflow order except the review, combined-summary and browser-test shots, which were captured after the run and placed in story order in beats.json. No diagrams."
+    "browser": "Chrome over CDP, ZOOM=1.25, light mode, one Chrome profile per account",
+    "script": "tutorials/87-multiplayer-devin/capture.mjs (phases start, join, watch, url, app, review)",
+    "humans_on_screen": 3,
+    "accounts": {
+      "Nader Dabit": "the capture account in the thequantexplorer Devin org (display name set to Nader Dabit; email masked with MASK_TEXT), CDP 9333",
+      "Maya Chen": "separate Devin account made for this demo with a temporary email inbox, invited to thequantexplorer as a member, CDP 9334",
+      "Leo Park": "separate Devin account made for this demo with a temporary email inbox, invited to thequantexplorer as a member, CDP 9335"
+    },
+    "disclosure": "Maya Chen and Leo Park are real, separate Devin accounts and org members, but they are demo accounts operated by the person making this video (as Nader asked), not other people. Each message was typed and sent from that account's own browser profile.",
+    "note": "Every shot is a real capture. The Devin Review and browser-test shots (0365, 0255) were captured or picked from the run and placed in story order in beats.json; capture order is recoverable from the shot numbers. No diagrams."
   },
   "real_activity": {
-    "coordinator_session": "https://app.devin.ai/sessions/2e6cb7e68954456b8ece70c99999ca6f",
-    "managed_devins": {
-      "column_rail": "https://app.devin.ai/sessions/b7af6272ec29482eb10b0de2b3677570",
-      "issue_comments": "https://app.devin.ai/sessions/189dc2a686bf4857b3fcd5dfe0cef263",
-      "undo_toast": "https://app.devin.ai/sessions/8860cfdb63c049aa987a8ff7a85d463e"
+    "session": "https://app.devin.ai/sessions/eee986ccc9944b06ae9496f088d58acd (one session; Nader started it, Maya and Leo posted in it from their own accounts)",
+    "messages": {
+      "Nader": "In thequantexplorer/orbit-demo, add checklists to issues: a Checklist section in the issue editor where you can add items, check them off and remove them. Open one PR. Maya and Leo are joining this session too.",
+      "Maya": "Maya here. Can cards on the board also show checklist progress, like 2/4, so we can see it without opening the issue?",
+      "Leo": "Leo here. Please fix anything Devin Review flags on the PR, and record a browser test of the checklist and the board progress before we merge.",
+      "Maya (sign-off)": "Maya again: the 2/4 chip on the board is exactly what we wanted. Looks good to me."
     },
-    "pull_requests": {
-      "72": "https://github.com/thequantexplorer/orbit-demo/pull/72 (column rail; Devin Review flagged rail drops moving cards into another column, fixed in 0aae853, re-review clean)",
-      "73": "https://github.com/thequantexplorer/orbit-demo/pull/73 (Undo toast; Devin Review flagged Ctrl/Cmd+Z missing from the shortcuts dialog, fixed)",
-      "74": "https://github.com/thequantexplorer/orbit-demo/pull/74 (issue comments; Devin Review found no issues)",
-      "75": "https://github.com/thequantexplorer/orbit-demo/pull/75 (combined branch built from the final PRs; Devin Review found no issues)"
-    },
-    "ci": "lint-test-build passed on #72, #73, #74 and #75; coordinator reported 85 tests and 18 combined browser checks passing",
-    "app_footage": "Orbit served locally with Vite from the #75 branch (devin/1793314941-orbit-combined-features); rail, comment, delete and Undo performed live in the capture browser"
+    "pull_request": "https://github.com/thequantexplorer/orbit-demo/pull/76 (Add checklists to issues; Devin Review: No Issues Found; CI lint-test-build; 69 tests passing; Devin's browser test posted as a PR comment)",
+    "app_footage": "Orbit served locally with Vite from the PR #76 branch (devin/1793336812-issue-checklists); five items added, two checked, one removed, saved, 2/4 chip on the KB-1 card, all performed live in the capture browser"
   },
   "shots": {
-    "0003.png": "coordinator prompt",
-    "0060.png": "coordinator running three managed Devins",
-    "0685.png": "coordinator session: Column rail browser verification recording card (7 passed)",
-    "0345.png": "follow-up message to the coordinator after GitHub access was granted",
-    "0649.png": "sidebar: three managed Devins nested under the coordinator, each with a PR",
-    "0683.png": "Devin Review on PR #72: flagged bug and the managed Devin's fix reply",
-    "0684.png": "coordinator final summary: four PRs, CI, reviews, tests",
-    "0655.png-0678.png": "combined Orbit app: board, collapsed Done rail, comment, delete toast, Undo"
+    "0003.png": "Nader's prompt (Nader's browser)",
+    "0057.png": "Maya typing in the session (Maya's browser)",
+    "0064.png": "Maya's message under her name and Devin's reply (Leo's browser)",
+    "0115.png": "Leo typing (Leo's browser)",
+    "0122.png-0123.png": "Devin's reply to Leo and work in progress (Nader's browser)",
+    "0365.png": "PR #76 Discussion in Devin Review: No Issues Found and the browser-test comment",
+    "0255.png": "session: Devin's browser-test screenshots and Action required: Review PR",
+    "0299.png": "Maya typing her sign-off (Maya's browser)",
+    "0310.png": "Maya's sign-off under her name and Devin: ready to merge (Nader's browser)",
+    "0311.png-0361.png": "Orbit app on the PR #76 branch: checklist add, check, remove, save, 2/4 board chip"
   },
   "docs": [
-    "https://docs.devin.ai/work-with-devin/advanced-capabilities#managed-devins",
+    "https://docs.devin.ai/product-guides/invite-team",
     "https://docs.devin.ai/work-with-devin/devin-review",
-    "https://docs.devin.ai/work-with-devin/testing-and-recordings",
-    "https://docs.devin.ai/work-with-devin/dynamic-workflows"
+    "https://docs.devin.ai/work-with-devin/testing-and-recordings"
   ]
 }

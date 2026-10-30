@@ -1,4 +1,5 @@
-// Live capture: one coordinator Devin hands three Orbit features to managed Devins in parallel, then integrates their PRs.
+// Live capture: three teammates (Nader on 9333, Maya on 9334, Leo on 9335; set CDP_URL) steer one Devin session on one Orbit feature.
+//   PHASE=start (Nader opens the session) | join (SESSION=<url> MSG=<text>: a teammate opens the session and posts) | watch | review | url | app
 //   ZOOM=1.25 MASK_TEXT=<email name> PHASE=start|watch|sidebar|child|guide|payoff|prefs node capture.mjs   (RESUME=1 appends to shots/beats.json)
 //   watch/child phases poll until /tmp/stop87 exists, so the operator decides when a phase ends.
 import fs from 'fs';
@@ -6,7 +7,7 @@ import { Rec, sleep } from '../_kit/capture/rec.mjs';
 import { ensureAgent, clearComposer, closeMenus, mentionRepo, editorBox } from '../_kit/capture/composer.mjs';
 
 const ORG = process.env.DEVIN_ORG_URL || 'https://app.devin.ai/org/thequantexplorer';
-const TASK = process.env.TASK || 'In thequantexplorer/orbit-demo, build three Orbit features at once. Start a managed Devin for each, in parallel, each with its own PR: 1) collapse a column into a slim rail from its header, 2) comments on issues in the issue editor, 3) an Undo toast for 5 seconds after deleting a card. Each Devin fixes what Devin Review flags on its PR and tests its feature in the browser with a recording. Then combine all three on one branch, check they work together, and send me a summary.';
+const TASK = process.env.TASK || 'In thequantexplorer/orbit-demo, add checklists to issues: a Checklist section in the issue editor where you can add items, check them off and remove them. Open one PR. Maya and Leo are joining this session too.';
 const PHASE = process.env.PHASE || 'start';
 const STOP = '/tmp/stop87';
 
@@ -33,7 +34,7 @@ if (PHASE === 'start') {
   const ed = await editorBox(p); await r.click(ed, { wait: 300 });
   await p.send('Input.insertText', { text: TASK }); await sleep(800);
   const txt = await p.evaluate(() => document.querySelector('main [contenteditable=true]').innerText);
-  if (!/orbit-demo/.test(txt) || !txt.includes('managed Devin')) fail('composer: ' + txt);
+  if (!/orbit-demo/.test(txt) || !txt.includes('Checklist')) fail('composer: ' + txt);
   await r.shot({ kind: 'still', hold: 3.2 }); r.mark('prompt');
   console.log('COMPOSER', JSON.stringify(txt));
   if (process.env.DRY) { await clearComposer(p); await clearComposer(p); r.done(); process.exit(0); }
@@ -47,6 +48,25 @@ if (PHASE === 'start') {
 if (PHASE === 'watch' || PHASE === 'child') {
   if (process.env.SESSION) { await r.goto(process.env.SESSION, 5000); await collapseNav(); await hideEmptyPanel(); await settle(); await r.shot({ hold: 1.2 }); r.mark(PHASE + '-open'); }
   await watch(+(process.env.EVERY || 5000));
+}
+
+if (PHASE === 'join') {
+  const MSG = process.env.MSG;
+  await r.goto(process.env.SESSION, 7000); await collapseNav(); await hideEmptyPanel(); await settle();
+  await r.shot({ hold: 1.2 }); r.mark('join-open');
+  const ed = await editorBox(p);
+  await r.click(ed, { wait: 400 });
+  await r.type(MSG, { every: 3 }); await sleep(500);
+  const typed = await p.evaluate(() => [...document.querySelectorAll('main [contenteditable=true]')].map(e => e.innerText).join('|'));
+  if (!typed.includes(MSG.slice(0, 30))) fail('join not typed: ' + typed);
+  await r.shot({ hold: 1.2 }); r.mark('join-typed');
+  const send = await r.find({ attr: ['aria-label', 'Send'], sel: 'main button' });
+  if (send) await p.mouse.click(send.x, send.y); else await p.keyboard.press('Enter');
+  for (let i = 0; i < 20 && (await p.evaluate(() => [...document.querySelectorAll('main [contenteditable=true]')].map(e => e.innerText).join('').trim().length)); i++) await sleep(500);
+  await sleep(2500);
+  if (!(await main()).includes(MSG.slice(0, 40))) fail('join message not sent');
+  await r.shot({ hold: 1.2 }); r.mark('join-sent');
+  await watch(+(process.env.EVERY || 4000));
 }
 
 if (PHASE === 'guide') {
@@ -209,24 +229,34 @@ if (PHASE === 'url') { await r.goto(process.env.URL, +(process.env.WAIT || 6000)
 }
 
 if (PHASE === 'app') {
-  // the combined Orbit branch from the coordinator's PR, served locally: rail + comment + delete/Undo on one card
+  // PR #76 branch served locally: open an issue, build a checklist, tick two, remove one, save, see 2/4 on the card
   const APP = process.env.APP || 'http://localhost:5187/';
   await r.goto(APP, 3000);
-  await p.evaluate(() => { localStorage.removeItem('kanban-board:v1'); });
+  await p.evaluate(() => { localStorage.clear(); });
   await r.goto(APP, 3500); await settle();
   await p.mouse.move(900, 500); r.cur = { x: 900, y: 500 };
   await r.shot({ hold: 1.5 }); r.mark('app-board');
-  await r.click({ attr: ['aria-label', 'Collapse ' + (process.env.COLLAPSE || 'Done')], sel: 'button' }, { wait: 1200 });
-  r.mark('app-rail');
-  const card = await p.evaluate(() => { const e = document.querySelector('article[data-card-id]'); const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2, w: b.width, h: b.height }; });
+  const box = sel => p.evaluate(s => { const e = document.querySelector(s); if (!e) return null; e.scrollIntoView({ block: 'nearest' }); const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2, w: b.width, h: b.height }; }, sel);
+  const card = await box('article[data-card-id]');
   await r.click(card, { wait: 1500 }); r.mark('app-modal');
-  await r.click({ attr: ['placeholder', 'Leave a comment…'], sel: 'textarea' }, { wait: 400 });
-  await r.type(process.env.COMMENT || 'Ready to ship with the new rail.', { every: 4 });
-  await r.click({ text: 'Comment', sel: 'button' }, { wait: 1200 }); r.mark('app-comment');
-  await r.click({ attr: ['aria-label', 'Delete issue'], sel: 'button' }, { wait: 800 });
-  await r.click({ text: 'Delete issue', sel: 'button' }, { wait: 1200 }); r.mark('app-toast');
-  await r.click({ text: 'Undo', sel: 'button.toast__undo' }, { wait: 1500 }); r.mark('app-undo');
-  await r.shot({ hold: 2 }); r.mark('app-final');
+  const items = (process.env.ITEMS || 'Wireframes approved|Copy reviewed|Scratch item|QA pass|Release notes').split('|');
+  for (const it of items) {
+    await r.click(await box('#checklist-new-item'), { wait: 250 });
+    await r.type(it, { every: 3 }); await p.keyboard.press('Enter'); await sleep(350); await r.shot({ hold: 0.3 });
+  }
+  r.mark('app-items');
+  const n = await p.evaluate(() => document.querySelectorAll('.checklist-item').length);
+  if (n !== items.length) fail('items ' + n);
+  for (const i of [1, 2]) { await r.click(await box(`.checklist-item:nth-child(${i}) input[type=checkbox]`), { wait: 600 }); }
+  r.mark('app-checked');
+  await r.click(await box('.checklist-item:nth-child(3) .checklist-item__remove'), { wait: 900 }); r.mark('app-removed');
+  const cnt = await p.evaluate(() => document.querySelector('.checklist__count')?.innerText);
+  if (cnt !== '2/4') fail('count ' + cnt);
+  await r.click({ text: 'Save changes', exact: false, sel: 'button' }, { wait: 1500 }); r.mark('app-saved');
+  const chip = await p.evaluate(() => document.querySelector('.checklist-chip')?.innerText);
+  if (chip !== '2/4') fail('chip ' + chip);
+  const cb = await box('.checklist-chip'); await p.mouse.move(cb.x, cb.y); r.cur = { x: cb.x, y: cb.y };
+  await r.shot({ hold: 2 }); r.mark('app-chip');
 }
 
 if (PHASE === 'shot') { await settle(); await r.shot({ hold: +(process.env.HOLD || 1.5) }); if (process.env.MARK) r.mark(process.env.MARK); }

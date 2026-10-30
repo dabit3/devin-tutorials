@@ -1,13 +1,214 @@
 window.SPEC = {
   "title": "Multiplayer development with Devin",
-  "subtitle": "One person, a team of Devins, one app",
-  "outro": "One chat, a team of Devins, one app",
-  "voOutro": "One chat, a team of Devins, one app.",
+  "subtitle": "Three teammates, one Devin, one feature",
+  "outro": "One Devin, a whole team, one feature",
+  "voOutro": "One Devin, a whole team, one feature.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.4,
-  "pollRunMax": 2.5,
+  "pollRunMax": 2.2,
+  "subPos": "top",
+  "outroVoDelay": 0.2,
+  "tailHold": 0.2,
   "edit": {
+    "0003.png": {
+      "hold": 4.4,
+      "cursor": false,
+      "cap": "Nader asks for checklists on Orbit issues",
+      "vo": "Multiplayer means my whole team works with the same Devin. I ask it for checklists on Orbit issues, and tell it Maya and Leo are joining.",
+      "subPos": "top"
+    },
+    "0057.png": {
+      "cap": "Maya joins from her own account",
+      "vo": "Maya opens the same session from her own account and asks for checklist progress on the board cards.",
+      "subPos": "top"
+    },
+    "0058.png": {},
+    "0064.png": {
+      "hold": 2.6,
+      "cap": "Devin adds it to the same PR",
+      "vo": "Devin adds that to the same pull request.",
+      "subPos": "top"
+    },
+    "0115.png": {
+      "cap": "Leo sets the bar for merging",
+      "vo": "Leo adds his bar for merging: fix what Devin Review flags, and record a browser test.",
+      "subPos": "top"
+    },
+    "0116.png": {},
+    "0122.png": {
+      "cap": "Three teammates, one Devin, one thread",
+      "vo": "Devin answers each of us by name and keeps building in one thread.",
+      "subPos": "top"
+    },
+    "0123.png": {},
+    "0124.png": {
+      "skip": true
+    },
+    "0125.png": {
+      "skip": true
+    },
+    "0126.png": {
+      "skip": true
+    },
+    "0365.png": {
+      "hold": 3.2,
+      "cap": "Devin Review: no issues found",
+      "vo": "Devin Review checks the pull request and finds no issues.",
+      "subPos": "top"
+    },
+    "0366.png": {
+      "skip": true
+    },
+    "0255.png": {
+      "hold": 3.2,
+      "cap": "Devin tests it in its own browser",
+      "vo": "Then Devin tests the checklist and the board chip in its own browser.",
+      "subPos": "top"
+    },
+    "0299.png": {
+      "cap": "Maya signs off",
+      "vo": "Maya signs off, and Devin says it's ready to merge.",
+      "subPos": "top"
+    },
+    "0300.png": {
+      "skip": true
+    },
+    "0310.png": {
+      "hold": 1.6
+    },
+    "0311.png": {
+      "hold": 0.4
+    },
+    "0312.png": {
+      "skip": true
+    },
+    "0313.png": {
+      "cap": "Add, check off and remove items",
+      "vo": "Here's the feature. I open an issue and add five items to its checklist.",
+      "subPos": "top"
+    },
+    "0314.png": {},
+    "0315.png": {},
+    "0316.png": {},
+    "0317.png": {},
+    "0318.png": {},
+    "0319.png": {},
+    "0320.png": {},
+    "0321.png": {},
+    "0322.png": {},
+    "0323.png": {},
+    "0324.png": {
+      "skip": true
+    },
+    "0325.png": {
+      "skip": true
+    },
+    "0326.png": {
+      "skip": true
+    },
+    "0327.png": {
+      "skip": true
+    },
+    "0328.png": {
+      "skip": true
+    },
+    "0329.png": {
+      "skip": true
+    },
+    "0330.png": {
+      "skip": true
+    },
+    "0331.png": {
+      "hold": 0.35
+    },
+    "0332.png": {
+      "skip": true
+    },
+    "0333.png": {
+      "skip": true
+    },
+    "0334.png": {
+      "skip": true
+    },
+    "0335.png": {
+      "skip": true
+    },
+    "0336.png": {
+      "skip": true
+    },
+    "0337.png": {
+      "skip": true
+    },
+    "0338.png": {
+      "skip": true
+    },
+    "0339.png": {
+      "skip": true
+    },
+    "0340.png": {
+      "skip": true
+    },
+    "0341.png": {
+      "skip": true
+    },
+    "0342.png": {
+      "skip": true
+    },
+    "0343.png": {
+      "skip": true
+    },
+    "0344.png": {
+      "skip": true
+    },
+    "0345.png": {
+      "skip": true
+    },
+    "0346.png": {
+      "skip": true
+    },
+    "0347.png": {
+      "skip": true
+    },
+    "0348.png": {
+      "skip": true
+    },
+    "0349.png": {
+      "skip": true
+    },
+    "0350.png": {
+      "skip": true
+    },
+    "0351.png": {
+      "skip": true
+    },
+    "0352.png": {
+      "hold": 0.35
+    },
+    "0353.png": {
+      "skip": true
+    },
+    "0354.png": {
+      "vo": "Then I check two of them off, and remove one."
+    },
+    "0355.png": {
+      "skip": true
+    },
+    "0356.png": {},
+    "0357.png": {
+      "skip": true
+    },
+    "0358.png": {},
+    "0359.png": {
+      "vo": "And the card on the board shows two of four, just like Maya asked.",
+      "cap": "2/4 on the board card",
+      "subPos": "top"
+    },
+    "0360.png": {},
+    "0361.png": {
+      "hold": 3.2,
+      "subPos": "top"
+    },
     "0000.png": {
       "skip": true
     },
@@ -16,16 +217,6 @@ window.SPEC = {
     },
     "0002.png": {
       "skip": true
-    },
-    "0003.png": {
-      "hold": 4.0,
-      "cursor": false,
-      "cap": "Ask for three features at once, one PR each",
-      "vo": "With Devin, one person can steer a whole team of Devins building the same app. Here I ask Devin for three Orbit features at once, each with its own pull request.",
-      "subPos": {
-        "x": 0.5,
-        "y": 0.7
-      }
     },
     "0004.png": {
       "skip": true
@@ -186,22 +377,11 @@ window.SPEC = {
     "0056.png": {
       "skip": true
     },
-    "0057.png": {
-      "skip": true
-    },
-    "0058.png": {
-      "skip": true
-    },
     "0059.png": {
       "skip": true
     },
     "0060.png": {
-      "cap": "Three managed Devins, one per feature",
-      "vo": "It starts three managed Devins in parallel, one per feature.",
-      "subPos": {
-        "x": 0.68,
-        "y": 0.71
-      }
+      "skip": true
     },
     "0061.png": {
       "skip": true
@@ -210,9 +390,6 @@ window.SPEC = {
       "skip": true
     },
     "0063.png": {
-      "skip": true
-    },
-    "0064.png": {
       "skip": true
     },
     "0065.png": {
@@ -365,12 +542,6 @@ window.SPEC = {
     "0114.png": {
       "skip": true
     },
-    "0115.png": {
-      "skip": true
-    },
-    "0116.png": {
-      "skip": true
-    },
     "0117.png": {
       "skip": true
     },
@@ -384,21 +555,6 @@ window.SPEC = {
       "skip": true
     },
     "0121.png": {
-      "skip": true
-    },
-    "0122.png": {
-      "skip": true
-    },
-    "0123.png": {
-      "skip": true
-    },
-    "0124.png": {
-      "skip": true
-    },
-    "0125.png": {
-      "skip": true
-    },
-    "0126.png": {
       "skip": true
     },
     "0127.png": {
@@ -785,9 +941,6 @@ window.SPEC = {
     "0254.png": {
       "skip": true
     },
-    "0255.png": {
-      "skip": true
-    },
     "0256.png": {
       "skip": true
     },
@@ -917,12 +1070,6 @@ window.SPEC = {
     "0298.png": {
       "skip": true
     },
-    "0299.png": {
-      "skip": true
-    },
-    "0300.png": {
-      "skip": true
-    },
     "0301.png": {
       "skip": true
     },
@@ -950,167 +1097,6 @@ window.SPEC = {
     "0309.png": {
       "skip": true
     },
-    "0310.png": {
-      "skip": true
-    },
-    "0311.png": {
-      "skip": true
-    },
-    "0312.png": {
-      "skip": true
-    },
-    "0313.png": {
-      "skip": true
-    },
-    "0314.png": {
-      "skip": true
-    },
-    "0315.png": {
-      "skip": true
-    },
-    "0316.png": {
-      "skip": true
-    },
-    "0317.png": {
-      "skip": true
-    },
-    "0318.png": {
-      "skip": true
-    },
-    "0319.png": {
-      "skip": true
-    },
-    "0320.png": {
-      "skip": true
-    },
-    "0321.png": {
-      "skip": true
-    },
-    "0322.png": {
-      "skip": true
-    },
-    "0323.png": {
-      "skip": true
-    },
-    "0324.png": {
-      "skip": true
-    },
-    "0325.png": {
-      "skip": true
-    },
-    "0326.png": {
-      "skip": true
-    },
-    "0327.png": {
-      "skip": true
-    },
-    "0328.png": {
-      "skip": true
-    },
-    "0329.png": {
-      "skip": true
-    },
-    "0330.png": {
-      "skip": true
-    },
-    "0331.png": {
-      "skip": true
-    },
-    "0332.png": {
-      "skip": true
-    },
-    "0333.png": {
-      "skip": true
-    },
-    "0334.png": {
-      "skip": true
-    },
-    "0335.png": {
-      "skip": true
-    },
-    "0336.png": {
-      "skip": true
-    },
-    "0337.png": {
-      "skip": true
-    },
-    "0338.png": {
-      "skip": true
-    },
-    "0339.png": {
-      "skip": true
-    },
-    "0340.png": {
-      "skip": true
-    },
-    "0341.png": {
-      "skip": true
-    },
-    "0342.png": {
-      "skip": true
-    },
-    "0343.png": {
-      "skip": true
-    },
-    "0344.png": {
-      "skip": true
-    },
-    "0345.png": {
-      "cap": "Steer the whole team from one chat",
-      "vo": "From one chat, I tell the coordinator to have each Devin open its PR and fix what Devin Review flags.",
-      "subPos": {
-        "x": 0.68,
-        "y": 0.765
-      }
-    },
-    "0346.png": {
-      "skip": true
-    },
-    "0347.png": {
-      "skip": true
-    },
-    "0348.png": {
-      "skip": true
-    },
-    "0349.png": {
-      "skip": true
-    },
-    "0350.png": {
-      "skip": true
-    },
-    "0351.png": {
-      "skip": true
-    },
-    "0352.png": {
-      "skip": true
-    },
-    "0353.png": {
-      "skip": true
-    },
-    "0354.png": {
-      "skip": true
-    },
-    "0355.png": {
-      "skip": true
-    },
-    "0356.png": {
-      "skip": true
-    },
-    "0357.png": {
-      "skip": true
-    },
-    "0358.png": {
-      "skip": true
-    },
-    "0359.png": {
-      "skip": true
-    },
-    "0360.png": {
-      "skip": true
-    },
-    "0361.png": {
-      "skip": true
-    },
     "0362.png": {
       "skip": true
     },
@@ -1119,979 +1105,6 @@ window.SPEC = {
     },
     "0364.png": {
       "skip": true
-    },
-    "0365.png": {
-      "skip": true
-    },
-    "0366.png": {
-      "skip": true
-    },
-    "0367.png": {
-      "skip": true
-    },
-    "0368.png": {
-      "skip": true
-    },
-    "0369.png": {
-      "skip": true
-    },
-    "0370.png": {
-      "skip": true
-    },
-    "0371.png": {
-      "skip": true
-    },
-    "0372.png": {
-      "skip": true
-    },
-    "0373.png": {
-      "skip": true
-    },
-    "0374.png": {
-      "skip": true
-    },
-    "0375.png": {
-      "skip": true
-    },
-    "0376.png": {
-      "skip": true
-    },
-    "0377.png": {
-      "skip": true
-    },
-    "0378.png": {
-      "skip": true
-    },
-    "0379.png": {
-      "skip": true
-    },
-    "0380.png": {
-      "skip": true
-    },
-    "0381.png": {
-      "skip": true
-    },
-    "0382.png": {
-      "skip": true
-    },
-    "0383.png": {
-      "skip": true
-    },
-    "0384.png": {
-      "skip": true
-    },
-    "0385.png": {
-      "skip": true
-    },
-    "0386.png": {
-      "skip": true
-    },
-    "0387.png": {
-      "skip": true
-    },
-    "0388.png": {
-      "skip": true
-    },
-    "0389.png": {
-      "skip": true
-    },
-    "0390.png": {
-      "skip": true
-    },
-    "0391.png": {
-      "skip": true
-    },
-    "0392.png": {
-      "skip": true
-    },
-    "0393.png": {
-      "skip": true
-    },
-    "0394.png": {
-      "skip": true
-    },
-    "0395.png": {
-      "skip": true
-    },
-    "0396.png": {
-      "skip": true
-    },
-    "0397.png": {
-      "skip": true
-    },
-    "0398.png": {
-      "skip": true
-    },
-    "0399.png": {
-      "skip": true
-    },
-    "0400.png": {
-      "skip": true
-    },
-    "0401.png": {
-      "skip": true
-    },
-    "0402.png": {
-      "skip": true
-    },
-    "0403.png": {
-      "skip": true
-    },
-    "0404.png": {
-      "skip": true
-    },
-    "0405.png": {
-      "skip": true
-    },
-    "0406.png": {
-      "skip": true
-    },
-    "0407.png": {
-      "skip": true
-    },
-    "0408.png": {
-      "skip": true
-    },
-    "0409.png": {
-      "skip": true
-    },
-    "0410.png": {
-      "skip": true
-    },
-    "0411.png": {
-      "skip": true
-    },
-    "0412.png": {
-      "skip": true
-    },
-    "0413.png": {
-      "skip": true
-    },
-    "0414.png": {
-      "skip": true
-    },
-    "0415.png": {
-      "skip": true
-    },
-    "0416.png": {
-      "skip": true
-    },
-    "0417.png": {
-      "skip": true
-    },
-    "0418.png": {
-      "skip": true
-    },
-    "0419.png": {
-      "skip": true
-    },
-    "0420.png": {
-      "skip": true
-    },
-    "0421.png": {
-      "skip": true
-    },
-    "0422.png": {
-      "skip": true
-    },
-    "0423.png": {
-      "skip": true
-    },
-    "0424.png": {
-      "skip": true
-    },
-    "0425.png": {
-      "skip": true
-    },
-    "0426.png": {
-      "skip": true
-    },
-    "0427.png": {
-      "skip": true
-    },
-    "0428.png": {
-      "skip": true
-    },
-    "0429.png": {
-      "skip": true
-    },
-    "0430.png": {
-      "skip": true
-    },
-    "0431.png": {
-      "skip": true
-    },
-    "0432.png": {
-      "skip": true
-    },
-    "0433.png": {
-      "skip": true
-    },
-    "0434.png": {
-      "skip": true
-    },
-    "0435.png": {
-      "skip": true
-    },
-    "0436.png": {
-      "skip": true
-    },
-    "0437.png": {
-      "skip": true
-    },
-    "0438.png": {
-      "skip": true
-    },
-    "0439.png": {
-      "skip": true
-    },
-    "0440.png": {
-      "skip": true
-    },
-    "0441.png": {
-      "skip": true
-    },
-    "0442.png": {
-      "skip": true
-    },
-    "0443.png": {
-      "skip": true
-    },
-    "0444.png": {
-      "skip": true
-    },
-    "0445.png": {
-      "skip": true
-    },
-    "0446.png": {
-      "skip": true
-    },
-    "0447.png": {
-      "skip": true
-    },
-    "0448.png": {
-      "skip": true
-    },
-    "0449.png": {
-      "skip": true
-    },
-    "0450.png": {
-      "skip": true
-    },
-    "0451.png": {
-      "skip": true
-    },
-    "0452.png": {
-      "skip": true
-    },
-    "0453.png": {
-      "skip": true
-    },
-    "0454.png": {
-      "skip": true
-    },
-    "0455.png": {
-      "skip": true
-    },
-    "0456.png": {
-      "skip": true
-    },
-    "0457.png": {
-      "skip": true
-    },
-    "0458.png": {
-      "skip": true
-    },
-    "0459.png": {
-      "skip": true
-    },
-    "0460.png": {
-      "skip": true
-    },
-    "0461.png": {
-      "skip": true
-    },
-    "0462.png": {
-      "skip": true
-    },
-    "0463.png": {
-      "skip": true
-    },
-    "0464.png": {
-      "skip": true
-    },
-    "0465.png": {
-      "skip": true
-    },
-    "0466.png": {
-      "skip": true
-    },
-    "0467.png": {
-      "skip": true
-    },
-    "0468.png": {
-      "skip": true
-    },
-    "0469.png": {
-      "skip": true
-    },
-    "0470.png": {
-      "skip": true
-    },
-    "0471.png": {
-      "skip": true
-    },
-    "0472.png": {
-      "skip": true
-    },
-    "0473.png": {
-      "skip": true
-    },
-    "0474.png": {
-      "skip": true
-    },
-    "0475.png": {
-      "skip": true
-    },
-    "0476.png": {
-      "skip": true
-    },
-    "0477.png": {
-      "skip": true
-    },
-    "0478.png": {
-      "skip": true
-    },
-    "0479.png": {
-      "skip": true
-    },
-    "0480.png": {
-      "skip": true
-    },
-    "0481.png": {
-      "skip": true
-    },
-    "0482.png": {
-      "skip": true
-    },
-    "0483.png": {
-      "skip": true
-    },
-    "0484.png": {
-      "skip": true
-    },
-    "0485.png": {
-      "skip": true
-    },
-    "0486.png": {
-      "skip": true
-    },
-    "0487.png": {
-      "skip": true
-    },
-    "0488.png": {
-      "skip": true
-    },
-    "0489.png": {
-      "skip": true
-    },
-    "0490.png": {
-      "skip": true
-    },
-    "0491.png": {
-      "skip": true
-    },
-    "0492.png": {
-      "skip": true
-    },
-    "0493.png": {
-      "skip": true
-    },
-    "0494.png": {
-      "skip": true
-    },
-    "0495.png": {
-      "skip": true
-    },
-    "0496.png": {
-      "skip": true
-    },
-    "0497.png": {
-      "skip": true
-    },
-    "0498.png": {
-      "skip": true
-    },
-    "0499.png": {
-      "skip": true
-    },
-    "0500.png": {
-      "skip": true
-    },
-    "0501.png": {
-      "skip": true
-    },
-    "0502.png": {
-      "skip": true
-    },
-    "0503.png": {
-      "skip": true
-    },
-    "0504.png": {
-      "skip": true
-    },
-    "0505.png": {
-      "skip": true
-    },
-    "0506.png": {
-      "skip": true
-    },
-    "0507.png": {
-      "skip": true
-    },
-    "0508.png": {
-      "skip": true
-    },
-    "0509.png": {
-      "skip": true
-    },
-    "0510.png": {
-      "skip": true
-    },
-    "0511.png": {
-      "skip": true
-    },
-    "0512.png": {
-      "skip": true
-    },
-    "0513.png": {
-      "skip": true
-    },
-    "0514.png": {
-      "skip": true
-    },
-    "0515.png": {
-      "skip": true
-    },
-    "0516.png": {
-      "skip": true
-    },
-    "0517.png": {
-      "skip": true
-    },
-    "0518.png": {
-      "skip": true
-    },
-    "0519.png": {
-      "skip": true
-    },
-    "0520.png": {
-      "skip": true
-    },
-    "0521.png": {
-      "skip": true
-    },
-    "0522.png": {
-      "skip": true
-    },
-    "0523.png": {
-      "skip": true
-    },
-    "0524.png": {
-      "skip": true
-    },
-    "0525.png": {
-      "skip": true
-    },
-    "0526.png": {
-      "skip": true
-    },
-    "0527.png": {
-      "skip": true
-    },
-    "0528.png": {
-      "skip": true
-    },
-    "0529.png": {
-      "skip": true
-    },
-    "0530.png": {
-      "skip": true
-    },
-    "0531.png": {
-      "skip": true
-    },
-    "0532.png": {
-      "skip": true
-    },
-    "0533.png": {
-      "skip": true
-    },
-    "0534.png": {
-      "skip": true
-    },
-    "0535.png": {
-      "skip": true
-    },
-    "0536.png": {
-      "skip": true
-    },
-    "0537.png": {
-      "skip": true
-    },
-    "0538.png": {
-      "skip": true
-    },
-    "0539.png": {
-      "skip": true
-    },
-    "0540.png": {
-      "skip": true
-    },
-    "0541.png": {
-      "skip": true
-    },
-    "0542.png": {
-      "skip": true
-    },
-    "0543.png": {
-      "skip": true
-    },
-    "0544.png": {
-      "skip": true
-    },
-    "0545.png": {
-      "skip": true
-    },
-    "0546.png": {
-      "skip": true
-    },
-    "0547.png": {
-      "skip": true
-    },
-    "0548.png": {
-      "skip": true
-    },
-    "0549.png": {
-      "skip": true
-    },
-    "0550.png": {
-      "skip": true
-    },
-    "0551.png": {
-      "skip": true
-    },
-    "0552.png": {
-      "skip": true
-    },
-    "0553.png": {
-      "skip": true
-    },
-    "0554.png": {
-      "skip": true
-    },
-    "0555.png": {
-      "skip": true
-    },
-    "0556.png": {
-      "skip": true
-    },
-    "0557.png": {
-      "skip": true
-    },
-    "0558.png": {
-      "skip": true
-    },
-    "0559.png": {
-      "skip": true
-    },
-    "0560.png": {
-      "skip": true
-    },
-    "0561.png": {
-      "skip": true
-    },
-    "0562.png": {
-      "skip": true
-    },
-    "0563.png": {
-      "skip": true
-    },
-    "0564.png": {
-      "skip": true
-    },
-    "0565.png": {
-      "skip": true
-    },
-    "0566.png": {
-      "skip": true
-    },
-    "0567.png": {
-      "skip": true
-    },
-    "0568.png": {
-      "skip": true
-    },
-    "0569.png": {
-      "skip": true
-    },
-    "0570.png": {
-      "skip": true
-    },
-    "0571.png": {
-      "skip": true
-    },
-    "0572.png": {
-      "skip": true
-    },
-    "0573.png": {
-      "skip": true
-    },
-    "0574.png": {
-      "skip": true
-    },
-    "0575.png": {
-      "skip": true
-    },
-    "0576.png": {
-      "skip": true
-    },
-    "0577.png": {
-      "skip": true
-    },
-    "0578.png": {
-      "skip": true
-    },
-    "0579.png": {
-      "skip": true
-    },
-    "0580.png": {
-      "skip": true
-    },
-    "0581.png": {
-      "skip": true
-    },
-    "0582.png": {
-      "skip": true
-    },
-    "0583.png": {
-      "skip": true
-    },
-    "0584.png": {
-      "skip": true
-    },
-    "0585.png": {
-      "skip": true
-    },
-    "0586.png": {
-      "skip": true
-    },
-    "0587.png": {
-      "skip": true
-    },
-    "0588.png": {
-      "skip": true
-    },
-    "0589.png": {
-      "skip": true
-    },
-    "0590.png": {
-      "skip": true
-    },
-    "0591.png": {
-      "skip": true
-    },
-    "0592.png": {
-      "skip": true
-    },
-    "0593.png": {
-      "skip": true
-    },
-    "0594.png": {
-      "skip": true
-    },
-    "0595.png": {
-      "skip": true
-    },
-    "0596.png": {
-      "skip": true
-    },
-    "0597.png": {
-      "skip": true
-    },
-    "0598.png": {
-      "skip": true
-    },
-    "0599.png": {
-      "skip": true
-    },
-    "0600.png": {
-      "skip": true
-    },
-    "0601.png": {
-      "skip": true
-    },
-    "0602.png": {
-      "skip": true
-    },
-    "0603.png": {
-      "skip": true
-    },
-    "0604.png": {
-      "skip": true
-    },
-    "0605.png": {
-      "skip": true
-    },
-    "0606.png": {
-      "skip": true
-    },
-    "0607.png": {
-      "skip": true
-    },
-    "0608.png": {
-      "skip": true
-    },
-    "0609.png": {
-      "skip": true
-    },
-    "0610.png": {
-      "skip": true
-    },
-    "0611.png": {
-      "skip": true
-    },
-    "0612.png": {
-      "skip": true
-    },
-    "0613.png": {
-      "skip": true
-    },
-    "0614.png": {
-      "skip": true
-    },
-    "0615.png": {
-      "skip": true
-    },
-    "0616.png": {
-      "skip": true
-    },
-    "0617.png": {
-      "skip": true
-    },
-    "0618.png": {
-      "skip": true
-    },
-    "0619.png": {
-      "skip": true
-    },
-    "0620.png": {
-      "skip": true
-    },
-    "0621.png": {
-      "skip": true
-    },
-    "0622.png": {
-      "skip": true
-    },
-    "0623.png": {
-      "skip": true
-    },
-    "0624.png": {
-      "skip": true
-    },
-    "0625.png": {
-      "skip": true
-    },
-    "0626.png": {
-      "skip": true
-    },
-    "0627.png": {
-      "skip": true
-    },
-    "0628.png": {
-      "skip": true
-    },
-    "0629.png": {
-      "skip": true
-    },
-    "0630.png": {
-      "skip": true
-    },
-    "0631.png": {
-      "skip": true
-    },
-    "0632.png": {
-      "skip": true
-    },
-    "0633.png": {
-      "skip": true
-    },
-    "0634.png": {
-      "skip": true
-    },
-    "0635.png": {
-      "skip": true
-    },
-    "0636.png": {
-      "skip": true
-    },
-    "0637.png": {
-      "skip": true
-    },
-    "0638.png": {
-      "skip": true
-    },
-    "0639.png": {
-      "skip": true
-    },
-    "0640.png": {
-      "skip": true
-    },
-    "0641.png": {
-      "skip": true
-    },
-    "0642.png": {
-      "skip": true
-    },
-    "0643.png": {
-      "skip": true
-    },
-    "0644.png": {
-      "skip": true
-    },
-    "0645.png": {
-      "skip": true
-    },
-    "0646.png": {
-      "skip": true
-    },
-    "0647.png": {
-      "skip": true
-    },
-    "0648.png": {
-      "skip": true
-    },
-    "0649.png": {
-      "cap": "All three nest under the coordinator",
-      "vo": "The sidebar nests all three under the coordinator.",
-      "subPos": {
-        "x": 0.75,
-        "y": 0.78
-      }
-    },
-    "0650.png": {
-      "skip": true
-    },
-    "0651.png": {
-      "skip": true
-    },
-    "0652.png": {
-      "skip": true
-    },
-    "0653.png": {
-      "skip": true
-    },
-    "0654.png": {
-      "skip": true
-    },
-    "0655.png": {
-      "hold": 0.7
-    },
-    "0656.png": {},
-    "0657.png": {
-      "cap": "A column collapses into a slim rail",
-      "vo": "Here's the combined app, with a collapsed column rail.",
-      "subPos": "top"
-    },
-    "0658.png": {},
-    "0659.png": {},
-    "0660.png": {
-      "skip": true
-    },
-    "0661.png": {
-      "skip": true
-    },
-    "0662.png": {
-      "skip": true
-    },
-    "0663.png": {
-      "skip": true
-    },
-    "0664.png": {
-      "skip": true
-    },
-    "0665.png": {
-      "skip": true
-    },
-    "0666.png": {
-      "skip": true
-    },
-    "0667.png": {
-      "skip": true
-    },
-    "0668.png": {
-      "skip": true
-    },
-    "0669.png": {
-      "skip": true
-    },
-    "0670.png": {
-      "skip": true
-    },
-    "0671.png": {
-      "cap": "Comments on issues",
-      "vo": "Issues now have comments.",
-      "subPos": "top"
-    },
-    "0672.png": {
-      "skip": true
-    },
-    "0673.png": {
-      "hold": 0.5
-    },
-    "0674.png": {
-      "skip": true
-    },
-    "0675.png": {
-      "cap": "Delete, then Undo within five seconds",
-      "vo": "And deleting a card shows a five second Undo toast that brings it back.",
-      "subPos": "top"
-    },
-    "0676.png": {
-      "hold": 0.5
-    },
-    "0677.png": {},
-    "0678.png": {
-      "hold": 0.8
-    },
-    "0679.png": {
-      "skip": true
-    },
-    "0680.png": {
-      "skip": true
-    },
-    "0681.png": {
-      "skip": true
-    },
-    "0682.png": {
-      "skip": true
-    },
-    "0683.png": {
-      "cap": "Devin Review catches a real bug; Devin fixes it",
-      "vo": "Devin Review caught a real bug on the rail PR, and that Devin reproduced it and pushed a fix."
-    },
-    "0684.png": {
-      "cap": "One combined PR: green CI, 85 tests passing",
-      "vo": "Then the coordinator combines all three into one pull request, with green CI and all 85 tests passing.",
-      "hold": 4.2
-    },
-    "0685.png": {
-      "cap": "Each Devin records its own browser test",
-      "vo": "Each one builds its feature and records itself testing it in the browser."
     }
-  },
-  "subPos": "side",
-  "outroVoDelay": 0.2,
-  "tailHold": 0.2
+  }
 };
