@@ -1,0 +1,26 @@
+{
+ "org": "thequantexplorer (https://app.devin.ai/org/thequantexplorer), captured 2026-10-30 in headless Chrome over CDP with the account email masked and the session sidebar collapsed",
+ "repo": "thequantexplorer/product-demo-apps, existing Fernhouse storefront in fernhouse/ (no planted bugs)",
+ "real": {
+  "0000-0029": "Org home: /scan, Accessibility scan type, the request with an @product-demo-apps mention, sent",
+  "0030-0039": "Scan session \"Find Fernhouse accessibility issues\" (https://app.devin.ai/sessions/c601d9c2f3044bce9a2496f45da4f595): Code scan setup card, Start scan, View findings",
+  "0040-0066": "Findings tab while the scan ran (sped up) and the completed scan: 6 findings, 1 High",
+  "0067-0093": "High finding \"Full innerHTML re-render drops keyboard focus to <body> after every cart action\", Assign to Devin, fix session \"Restore Cart Keyboard Focus\" (https://app.devin.ai/sessions/5b6856261a13478db4cd24ce539e103c), PR linked as product-demo-apps#119",
+  "0095-0126": "Fix session: the prompt \"Test the fix in the browser using only the keyboard, and record the test.\" and Devin starting the dev server for the test",
+  "0127-0137": "Computer tab: Devin's own browser on the Fernhouse app",
+  "0138-0151": "Devin testing recording \"Keyboard-only focus restoration\": 5 passed, 0 failed, 0:43, played in the session",
+  "0152-0159": "PR #119 tab in the fix session: diff of fernhouse/src/main.ts (+35 -11)"
+ },
+ "diagram": {
+  "s00": "title scene",
+  "s05": "flow: Code scan, Findings, Fix with Devin, Pull request, Keyboard test",
+  "s10": "what an accessibility scan looks for; wording from https://devin.ai/blog/introducing-code-scans (\"Missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify\"), credited on screen",
+  "s20": "flow step: fix session and pull request",
+  "s30": "keyboard-only test, labelled Diagram",
+  "s40": "recap"
+ },
+ "claims": {
+  "\"verify the changes work without pulling the branch\"": "https://docs.devin.ai (Testing & recordings: \"The recording is sent directly to you as an attachment so you can verify the changes work without pulling the branch yourself.\")"
+ },
+ "beats": "shots/beats-raw.json is the raw capture order; tools/beats.py inserts the diagram beats and moves the PR diff shots (0152-0159) to follow the PR opening"
+}

@@ -1,0 +1,2442 @@
+{
+ "s00.png": {
+  "text": "Devin can run an accessibility audit and fix it.",
+  "dur": 2.45,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.45,
+    "text": "Devin can run an accessibility audit and fix it."
+   }
+  ]
+ },
+ "s05.png": {
+  "text": "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+  "dur": 6.665,
+  "takeAt": 2.855,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.047,
+    "t1": 0.825,
+    "text": "In this video,"
+   },
+   {
+    "t0": 0.872,
+    "t1": 2.474,
+    "text": "Devin audits a real storefront,"
+   },
+   {
+    "t0": 2.683,
+    "t1": 4.366,
+    "text": "fixes the worst issue it finds,"
+   },
+   {
+    "t0": 4.483,
+    "t1": 6.665,
+    "text": "and then tests the fix using only the keyboard."
+   }
+  ]
+ },
+ "s10.png": {
+  "text": "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+  "dur": 8.112,
+  "takeAt": 9.888,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.918,
+    "text": "An accessibility Code Scan looks for missing labels,"
+   },
+   {
+    "t0": 3.092,
+    "t1": 4.659,
+    "text": "broken keyboard interactions,"
+   },
+   {
+    "t0": 4.775,
+    "t1": 8.112,
+    "text": "and other gaps against the WCAG criteria you specify."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "In the composer, type slash scan, and pick Accessibility.",
+  "dur": 3.988,
+  "takeAt": 18.212,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.165,
+    "text": "In the composer,"
+   },
+   {
+    "t0": 1.374,
+    "t1": 2.628,
+    "text": "type slash scan,"
+   },
+   {
+    "t0": 2.744,
+    "t1": 3.988,
+    "text": "and pick Accessibility."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "Then describe what to check, mention the repo, and send it.",
+  "dur": 3.146,
+  "takeAt": 22.334,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.408,
+    "text": "Then describe what to check,"
+   },
+   {
+    "t0": 1.617,
+    "t1": 2.488,
+    "text": "mention the repo,"
+   },
+   {
+    "t0": 2.523,
+    "t1": 3.146,
+    "text": "and send it."
+   }
+  ]
+ },
+ "0030.png": {
+  "text": "Devin fills in a setup card, and nothing runs until you click Start scan.",
+  "dur": 3.896,
+  "takeAt": 25.724,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.64,
+    "text": "Devin fills in a setup card,"
+   },
+   {
+    "t0": 1.664,
+    "t1": 3.896,
+    "text": "and nothing runs until you click Start scan."
+   }
+  ]
+ },
+ "0039.png": {
+  "text": "The scan reads the code in its own session.",
+  "dur": 2.323,
+  "takeAt": 30.507,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.323,
+    "text": "The scan reads the code in its own session."
+   }
+  ]
+ },
+ "0066.png": {
+  "text": "It comes back with six findings, ranked by severity.",
+  "dur": 3.045,
+  "takeAt": 33.135,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.069,
+    "t1": 1.834,
+    "text": "It comes back with six findings,"
+   },
+   {
+    "t0": 2.008,
+    "t1": 3.045,
+    "text": "ranked by severity."
+   }
+  ]
+ },
+ "0070.png": {
+  "text": "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+  "dur": 5.211,
+  "takeAt": 36.439,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.28,
+    "text": "The high one says every cart action rebuilds"
+   },
+   {
+    "t0": 2.326,
+    "t1": 5.211,
+    "text": "the page, so keyboard focus drops back to the top."
+   }
+  ]
+ },
+ "s20.png": {
+  "text": "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+  "dur": 4.815,
+  "takeAt": 41.965,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.595,
+    "text": "Assign the finding to Devin,"
+   },
+   {
+    "t0": 1.769,
+    "t1": 3.545,
+    "text": "and it starts a session that fixes it"
+   },
+   {
+    "t0": 3.592,
+    "t1": 4.815,
+    "text": "and opens a pull request."
+   }
+  ]
+ },
+ "0072.png": {
+  "text": "The finding now links to its own fix session.",
+  "dur": 2.295,
+  "takeAt": 47.095,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.064,
+    "t1": 2.295,
+    "text": "The finding now links to its own fix session."
+   }
+  ]
+ },
+ "0093.png": {
+  "text": "Minutes later, the fix is up as a pull request.",
+  "dur": 2.305,
+  "takeAt": 49.695,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.099,
+    "t1": 2.305,
+    "text": "Minutes later, the fix is up as a pull request."
+   }
+  ]
+ },
+ "0154.png": {
+  "text": "The fix puts focus back on the control you just used, after every update.",
+  "dur": 3.66,
+  "takeAt": 52.355,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.098,
+    "t1": 2.026,
+    "text": "The fix puts focus back on the control"
+   },
+   {
+    "t0": 2.072,
+    "t1": 2.699,
+    "text": "you just used,"
+   },
+   {
+    "t0": 2.722,
+    "t1": 3.66,
+    "text": "after every update."
+   }
+  ]
+ },
+ "s30.png": {
+  "text": "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+  "dur": 5.722,
+  "takeAt": 56.188,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.711,
+    "text": "Then ask Devin to test it the way"
+   },
+   {
+    "t0": 1.769,
+    "t1": 2.86,
+    "text": "a keyboard user would,"
+   },
+   {
+    "t0": 3.034,
+    "t1": 5.722,
+    "text": "tabbing to each control and checking where focus lands."
+   }
+  ]
+ },
+ "0095.png": {
+  "text": "Ask for a keyboard-only test, and a recording of it.",
+  "dur": 2.56,
+  "takeAt": 62.175,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.066,
+    "t1": 1.621,
+    "text": "Ask for a keyboard-only test,"
+   },
+   {
+    "t0": 1.645,
+    "t1": 2.56,
+    "text": "and a recording of it."
+   }
+  ]
+ },
+ "0122.png": {
+  "text": "Devin starts the app and tests it in its own browser, with keyboard input only.",
+  "dur": 3.796,
+  "takeAt": 64.954,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.815,
+    "text": "Devin starts the app and tests it in"
+   },
+   {
+    "t0": 1.861,
+    "t1": 2.569,
+    "text": "its own browser,"
+   },
+   {
+    "t0": 2.604,
+    "t1": 3.796,
+    "text": "with keyboard input only."
+   }
+  ]
+ },
+ "0138.png": {
+  "text": "The test comes back as a recording, with every check marked as passed.",
+  "dur": 3.599,
+  "takeAt": 68.971,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.861,
+    "text": "The test comes back as a recording,"
+   },
+   {
+    "t0": 2.035,
+    "t1": 3.599,
+    "text": "with every check marked as passed."
+   }
+  ]
+ },
+ "0141.png": {
+  "text": "You can watch the fix work without pulling the branch.",
+  "dur": 2.275,
+  "takeAt": 72.705,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.113,
+    "t1": 2.275,
+    "text": "You can watch the fix work without pulling the branch."
+   }
+  ]
+ },
+ "s40.png": {
+  "text": "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+  "dur": 4.173,
+  "takeAt": 75.147,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.397,
+    "text": "So Devin audits the app,"
+   },
+   {
+    "t0": 1.455,
+    "t1": 2.396,
+    "text": "fixes what it finds,"
+   },
+   {
+    "t0": 2.419,
+    "t1": 4.173,
+    "text": "and proves the fix with a keyboard test."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Try an accessibility scan on your own app.",
+  "dur": 2.205,
+  "takeAt": 79.625,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "s00.png",
+    "Devin can run an accessibility audit and fix it.",
+    "Devin can run an accessibility audit and fix it."
+   ],
+   [
+    "s05.png",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard.",
+    "In this video, Devin audits a real storefront, fixes the worst issue it finds, and then tests the fix using only the keyboard."
+   ],
+   [
+    "s10.png",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify.",
+    "An accessibility Code Scan looks for missing labels, broken keyboard interactions, and other gaps against the WCAG criteria you specify."
+   ],
+   [
+    "0001.png",
+    "In the composer, type slash scan, and pick Accessibility.",
+    "In the composer, type slash scan, and pick Accessibility."
+   ],
+   [
+    "0006.png",
+    "Then describe what to check, mention the repo, and send it.",
+    "Then describe what to check, mention the repo, and send it."
+   ],
+   [
+    "0030.png",
+    "Devin fills in a setup card, and nothing runs until you click Start scan.",
+    "Devin fills in a setup card, and nothing runs until you click Start scan."
+   ],
+   [
+    "0039.png",
+    "The scan reads the code in its own session.",
+    "The scan reads the code in its own session."
+   ],
+   [
+    "0066.png",
+    "It comes back with six findings, ranked by severity.",
+    "It comes back with six findings, ranked by severity."
+   ],
+   [
+    "0070.png",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top.",
+    "The high one says every cart action rebuilds the page, so keyboard focus drops back to the top."
+   ],
+   [
+    "s20.png",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request.",
+    "Assign the finding to Devin, and it starts a session that fixes it and opens a pull request."
+   ],
+   [
+    "0072.png",
+    "The finding now links to its own fix session.",
+    "The finding now links to its own fix session."
+   ],
+   [
+    "0093.png",
+    "Minutes later, the fix is up as a pull request.",
+    "Minutes later, the fix is up as a pull request."
+   ],
+   [
+    "0154.png",
+    "The fix puts focus back on the control you just used, after every update.",
+    "The fix puts focus back on the control you just used, after every update."
+   ],
+   [
+    "s30.png",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands.",
+    "Then ask Devin to test it the way a keyboard user would, tabbing to each control and checking where focus lands."
+   ],
+   [
+    "0095.png",
+    "Ask for a keyboard-only test, and a recording of it.",
+    "Ask for a keyboard-only test, and a recording of it."
+   ],
+   [
+    "0122.png",
+    "Devin starts the app and tests it in its own browser, with keyboard input only.",
+    "Devin starts the app and tests it in its own browser, with keyboard input only."
+   ],
+   [
+    "0138.png",
+    "The test comes back as a recording, with every check marked as passed.",
+    "The test comes back as a recording, with every check marked as passed."
+   ],
+   [
+    "0141.png",
+    "You can watch the fix work without pulling the branch.",
+    "You can watch the fix work without pulling the branch."
+   ],
+   [
+    "s40.png",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test.",
+    "So Devin audits the app, fixes what it finds, and proves the fix with a keyboard test."
+   ],
+   [
+    "outro",
+    "Try an accessibility scan on your own app.",
+    "Try an accessibility scan on your own app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.042,
+    "t1": 2.205,
+    "text": "Try an accessibility scan on your own app."
+   }
+  ]
+ }
+}
