@@ -1,0 +1,228 @@
+{
+ "dataset": "UCI Machine Learning Repository, Online Retail II (https://archive.ics.uci.edu/dataset/502/online+retail+ii), downloaded by Devin in the session",
+ "docs": [
+  "https://docs.devin.ai/work-with-devin/data-analyst.md"
+ ],
+ "shots": [
+  {
+   "img": "0010.png",
+   "kind": "diagram",
+   "scene": "hero",
+   "note": "Diagram drawn by scenes.js; placeholder PNG only"
+  },
+  {
+   "img": "0020.png",
+   "kind": "diagram",
+   "scene": "ask",
+   "note": "Diagram drawn by scenes.js; placeholder PNG only"
+  },
+  {
+   "img": "0030.png",
+   "kind": "real-ui",
+   "raw": "0002.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Prompt typed in Agent mode on the thequantexplorer home page: business question, public UCI Online Retail II link, cleaning rule, HTML report deliverable",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0040.png",
+   "kind": "diagram",
+   "scene": "work",
+   "note": "Diagram drawn by scenes.js; placeholder PNG only"
+  },
+  {
+   "img": "0050.png",
+   "kind": "real-ui",
+   "raw": "0016.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Live session downloading online+retail+ii.zip from archive.ics.uci.edu and loading it with pandas",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0060.png",
+   "kind": "real-ui",
+   "raw": "0050.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Devin's visible reasoning planning the report's charts and controls (metric selector, UK split toggle, seasonal tabs)",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0070.png",
+   "kind": "real-ui",
+   "raw": "0063.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Session running a Playwright script against the finished report; status \"Testing report interactions and chart controls\"",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0080.png",
+   "kind": "diagram",
+   "scene": "report",
+   "note": "Diagram drawn by scenes.js; placeholder PNG only"
+  },
+  {
+   "img": "0090.png",
+   "kind": "real-ui",
+   "raw": "0067.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Devin's final message: net sales, what drove revenue, when to stock up",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0100.png",
+   "kind": "real-ui",
+   "raw": "0070.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "The attached online-retail-ii-report.html artifact card with its live preview, inline in the conversation",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0101.png",
+   "kind": "real-ui",
+   "raw": "0071.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Hovering the artifact card",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0102.png",
+   "kind": "real-ui",
+   "raw": "0072.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Clicking the card opens the report in the side panel",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0103.png",
+   "kind": "real-ui",
+   "raw": "0073.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Hovering Full width",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0104.png",
+   "kind": "real-ui",
+   "raw": "0074.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Full-width report: headline stat cards and summary written by Devin",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0150.png",
+   "kind": "real-ui",
+   "raw": "0089.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Monthly revenue chart in the report",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0151.png",
+   "kind": "real-ui",
+   "raw": "0090.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Hover tooltip on the Nov 10 bar (real interaction)",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0152.png",
+   "kind": "real-ui",
+   "raw": "0093.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Split UK / international toggle turned on",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0180.png",
+   "kind": "real-ui",
+   "raw": "0098.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Seasonal pattern chart, 2010 vs 2011 by month",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0181.png",
+   "kind": "real-ui",
+   "raw": "0100.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "\"By week\" tab: shaded September to November weeks",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0182.png",
+   "kind": "real-ui",
+   "raw": "0103.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "\"Christmas lines\" tab: seasonal products rising from August",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0210.png",
+   "kind": "real-ui",
+   "raw": "0107.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Top countries chart with the UK included",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0211.png",
+   "kind": "real-ui",
+   "raw": "0108.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "Hovering the Include United Kingdom switch",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0212.png",
+   "kind": "real-ui",
+   "raw": "0109.png",
+   "org": "thequantexplorer",
+   "session": "https://app.devin.ai/sessions/0f3f0c66166746c58b042fd8e0d92af8",
+   "sessionTitle": "dc102-Analyze Retail Revenue Seasonality",
+   "proves": "UK excluded: smaller markets rescaled",
+   "captured": "2026-10-30 via capture.mjs / act.mjs (CDP, Chrome zoom 125%, account email masked)"
+  },
+  {
+   "img": "0240.png",
+   "kind": "diagram",
+   "scene": "recap",
+   "note": "Diagram drawn by scenes.js; placeholder PNG only"
+  }
+ ]
+}
