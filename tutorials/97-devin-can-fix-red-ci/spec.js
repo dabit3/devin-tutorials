@@ -3,7 +3,7 @@ window.SPEC = {
   "subtitle": "From a failing check to a green pull request",
   "outro": "Red check in. Green check out.",
   "voOutro": "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
-  "outroVoDelay": 0.3,
+  "outroVoDelay": -0.5,
   "introHold": 0,
   "pace": 1,
   "speed": 3,
@@ -69,7 +69,10 @@ window.SPEC = {
     },
     "0030.png": {
       "hold": 4.73,
-      "subPos": "bottom",
+      "subPos": {
+        "x": 0.5,
+        "y": 0.8
+      },
       "ring": {
         "x": 1203,
         "y": 140,
@@ -140,7 +143,10 @@ window.SPEC = {
     },
     "0050.png": {
       "hold": 3.4,
-      "subPos": "bottom",
+      "subPos": {
+        "x": 0.5,
+        "y": 0.8
+      },
       "ring": {
         "x": 1203,
         "y": 140,
@@ -153,7 +159,7 @@ window.SPEC = {
     },
     "0060.png": {
       "scene": "control",
-      "hold": 9.36,
+      "hold": 8.9,
       "vo": "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
     }
   }
