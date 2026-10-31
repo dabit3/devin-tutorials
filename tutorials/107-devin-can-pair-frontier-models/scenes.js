@@ -10,7 +10,7 @@ const ein = (k, s, t, d = 0.7) => k.eOutQuint(k.prog(s, t, t + d));
 function at(scene, phrase, fallback) {
   const S = window.SPEC, key = Object.keys(S.edit || {}).find(x => S.edit[x].scene === scene);
   const c = S.voLines?.[key]?.chunks.find(c => c.text.toLowerCase().includes(phrase.toLowerCase()));
-  return c ? Math.max(0.3, c.t0) : fallback;
+  return c ? Math.max(0.3, c.t0 + (S.edit[key].voDelay || 0)) : fallback; // voDelay < 0: the line starts before its beat
 }
 function text(ctx, k, s, x, y, size, weight, color, a, align = 'center', track = -0.2, family = 'Inter') {
   if (a <= 0) return;

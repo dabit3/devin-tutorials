@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Tutorial 107 narrated cut: 4K60 render in SEG-frame segments, VO+SFX bed without the title chime (MUSIC_GAIN=0), Nader's upbeat track mixed in, -16 LUFS, 1080p preview.
+# Tutorial 107 narrated cut: 4K60 render in SEG-frame segments, VO+SFX bed without the title chime (MUSIC_GAIN=0), Nader's upbeat track mixed in (head trimmed by MUSIC_SKIP so its drop lands under the title card before the first line), -16 LUFS, 1080p preview.
 # usage: MUSIC=<2-upbeat.mp3> bash tutorials/107-devin-can-pair-frontier-models/tools/make107.sh
 set -euo pipefail
 VD=$(cd "$(dirname "$0")/.." && pwd); T=$(dirname "$VD"); V=107-devin-can-pair-frontier-models; TOOLS=$VD/tools; W=$VD/build/mix; mkdir -p $W
 : "${MUSIC:?set MUSIC to the upbeat track}"
 export VOICE=T8iHhGIWPm2GVYpQD1Am
-SEG=${SEG:-1000}; SHIFT=${SHIFT:-0}
+SEG=${SEG:-1000}; SHIFT=${SHIFT:-0}; export MUSIC_SKIP=${MUSIC_SKIP:-1.45}
 TOTAL=$(cd $T/_kit/tools && node render.mjs $V --count | tail -1)
 echo "frames $TOTAL"
 encode() {

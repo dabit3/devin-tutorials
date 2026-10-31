@@ -15,11 +15,12 @@ N = len(bed)
 m = np.frombuffer(subprocess.run(['ffmpeg', '-v', 'error', '-i', MUSIC, '-ac', '2', '-ar', str(SR), '-f', 's16le', '-'],
                                  capture_output=True, check=True).stdout, '<i2').astype(float).reshape(-1, 2) / 32767
 BAR = 4 * 60 / 117.45; L = int(8 * BAR * SR); P = int(round(200 / BAR) * BAR * SR); X = int(0.04 * SR)
-while len(m) < N:
+SKIP = int(float(os.environ.get('MUSIC_SKIP', '0')) * SR)  # trim the head so the drop (2.05 s in) lands earlier
+while len(m) < N + SKIP:
     head, tail = m[:P], m[P - L:]
     r = np.linspace(0, 1, X)[:, None]
     m = np.concatenate([head[:-X], head[-X:] * (1 - r) + tail[:X] * r, tail[X:]])
-m = np.concatenate([np.zeros((int(SHIFT * SR), 2)), m])[:N]
+m = np.concatenate([np.zeros((int(SHIFT * SR), 2)), m[SKIP:]])[:N]
 duck = np.ones(N); VOICE_ON = np.zeros(N, bool)
 for v in cue.get('vo', []):
     with wave.open(os.path.join(VD, 'vo', os.environ['VOICE'], v['file'] + '.wav')) as w:
