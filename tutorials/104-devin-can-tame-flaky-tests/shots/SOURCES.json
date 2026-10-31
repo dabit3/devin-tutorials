@@ -1,0 +1,88 @@
+{
+  "0000.png": {
+    "kind": "animated-diagram",
+    "source": "104-devin-can-tame-flaky-tests/scenes.js",
+    "scene": "flaky",
+    "note": "Blank placeholder; drawn by the scene. Conceptual illustration of repeated runs, not real results."
+  },
+  "0005.png": {
+    "kind": "animated-diagram",
+    "source": "104-devin-can-tame-flaky-tests/scenes.js",
+    "scene": "method",
+    "note": "Blank placeholder; drawn by the scene."
+  },
+  "0030.png": {
+    "kind": "animated-diagram",
+    "source": "104-devin-can-tame-flaky-tests/scenes.js",
+    "scene": "race",
+    "note": "Blank placeholder; diagram of the race Devin described in its summary (shot 0040)."
+  },
+  "0060.png": {
+    "kind": "animated-diagram",
+    "source": "104-devin-can-tame-flaky-tests/scenes.js",
+    "scene": "proof",
+    "note": "Blank placeholder; the 2 of 50 figure is from Devin's report and the failed test-50x run 41151321357 on commit 55c3e5b."
+  },
+  "0100.png": {
+    "kind": "animated-diagram",
+    "source": "104-devin-can-tame-flaky-tests/scenes.js",
+    "scene": "recap",
+    "note": "Blank placeholder; drawn by the scene."
+  },
+  "0010.png": {
+    "kind": "real-ui",
+    "account": "thequantexplorer Devin org (email masked)",
+    "session": "https://app.devin.ai/sessions/ffae3723c35546bcb39faaacf82784be",
+    "pr": "thequantexplorer/product-demo-apps#113 (private demo repo)",
+    "capture": "capture.mjs (shots-raw/0005.png, 4320x2430, ZOOM=1.25)",
+    "purpose": "The real prompt in the thequantexplorer composer before sending."
+  },
+  "0020.png": {
+    "kind": "real-ui",
+    "account": "thequantexplorer Devin org (email masked)",
+    "session": "https://app.devin.ai/sessions/ffae3723c35546bcb39faaacf82784be",
+    "pr": "thequantexplorer/product-demo-apps#113 (private demo repo)",
+    "capture": "capture.mjs (shots-raw/0016.png, 4320x2430, ZOOM=1.25)",
+    "purpose": "Devin running the suite 200 times to measure the failure rate (before the fix)."
+  },
+  "0040.png": {
+    "kind": "real-ui",
+    "account": "thequantexplorer Devin org (email masked)",
+    "session": "https://app.devin.ai/sessions/ffae3723c35546bcb39faaacf82784be",
+    "pr": "thequantexplorer/product-demo-apps#113 (private demo repo)",
+    "capture": "capture.mjs (shots-raw/0051.png, 4320x2430, ZOOM=1.25)",
+    "purpose": "Devin's final summary: root cause, fix and local before/after counts."
+  },
+  "0050.png": {
+    "kind": "real-ui",
+    "account": "thequantexplorer Devin org (email masked)",
+    "session": "https://app.devin.ai/sessions/ffae3723c35546bcb39faaacf82784be",
+    "pr": "thequantexplorer/product-demo-apps#113 (private demo repo)",
+    "capture": "capture-pr.mjs (shots-pr/0004.png, 4320x2430, ZOOM=1.25)",
+    "purpose": "The fix diff in dc104-stockroom/src/inventory.js, PR #113 Changes tab."
+  },
+  "0070.png": {
+    "kind": "real-ui",
+    "account": "thequantexplorer Devin org (email masked)",
+    "session": "https://app.devin.ai/sessions/ffae3723c35546bcb39faaacf82784be",
+    "pr": "thequantexplorer/product-demo-apps#113 (private demo repo)",
+    "capture": "capture.mjs (shots-raw/0035.png, 4320x2430, ZOOM=1.25)",
+    "purpose": "Session steps: CI failed on commit 1, then the fix commit was pushed."
+  },
+  "0080.png": {
+    "kind": "real-ui",
+    "account": "thequantexplorer Devin org (email masked)",
+    "session": "https://app.devin.ai/sessions/ffae3723c35546bcb39faaacf82784be",
+    "pr": "thequantexplorer/product-demo-apps#113 (private demo repo)",
+    "capture": "capture-pr.mjs (shots-pr/0009.png, 4320x2430, ZOOM=1.25)",
+    "purpose": "PR #113 Checks tab after the fix: test-50x successful (run 41151384389 on 9fe6143)."
+  },
+  "0090.png": {
+    "kind": "real-ui",
+    "account": "thequantexplorer Devin org (email masked)",
+    "session": "https://app.devin.ai/sessions/ffae3723c35546bcb39faaacf82784be",
+    "pr": "thequantexplorer/product-demo-apps#113 (private demo repo)",
+    "capture": "capture-pr.mjs (shots-pr/0004.png, 4320x2430, ZOOM=1.25)",
+    "purpose": "Devin's local repeated-run table: 18/200 failed before, 0/200 after."
+  }
+}
