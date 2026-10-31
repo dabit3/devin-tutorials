@@ -1,16 +1,16 @@
 window.SPEC = {
-  "title": "Find and fix security holes",
+  "title": "Find and fix the security holes in your repos",
   "eyebrow": "Devin can",
   "subtitle": "From a security scan to a tested pull request",
   "outro": "Find the holes. Ship the fix, with tests.",
   "voOutro": "Devin can find and fix the security holes in your repos, and your team still decides what ships.",
-  "introHold": 0.9,
+  "introHold": 5.0,
   "outroVoDelay": -0.3,
   "pace": 1,
   "capPos": "bottom",
   "edit": {
     "0000.png": {
-      "scene": "idea", "hold": 6.4, "cursor": false,
+      "scene": "idea", "hold": 2.3, "voDelay": -4.1, "cursor": false,
       "cap": "Devin can find and fix the security holes in your repos",
       "vo": "Devin can find and fix the security holes in your repos. Here's how it works, on a small demo API with security bugs planted on purpose."
     },
