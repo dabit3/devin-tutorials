@@ -17,7 +17,7 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "hl": null,
-      "vo": "Devin can explain any codebase in seconds. Drop into a repo you've never seen, and just ask how it works."
+      "vo": "Devin can explain any codebase. Drop into a repo you've never seen, and just ask how it works."
     },
     "0001.png": {
       "scene": "how",
@@ -43,14 +43,22 @@ window.SPEC = {
     "0022.png": {
       "vo": "Then ask your question in plain English, the way you'd ask a teammate.",
       "travel": 0.4,
-      "dwell": 0.1
+      "dwell": 0.1,
+      "subPos": {
+        "x": 0.5,
+        "y": 0.035
+      }
     },
     "0045.png": {
       "hold": 0.9,
       "badge": "Sped up"
     },
     "0046.png": {
-      "vo": "Devin searches the repo for the files that matter."
+      "vo": "Devin searches the repo for the files that matter.",
+      "subPos": {
+        "x": 0.5,
+        "y": 0.55
+      }
     },
     "0053.png": {
       "badge": null,
@@ -62,12 +70,20 @@ window.SPEC = {
         "h": 28
       },
       "ringFor": 3.0,
-      "vo": "About a minute later, it explains the scoring formula, and each point links to the exact file and lines."
+      "vo": "About a minute later, it explains the scoring formula, and each point links to the exact file and lines.",
+      "subPos": {
+        "x": 0.5,
+        "y": 0.035
+      }
     },
     "0054.png": {
       "hold": 1.0,
       "hl": true,
-      "vo": "Click a citation, and the code panel jumps straight to those lines, so you can check the answer yourself."
+      "vo": "Click a citation, and the code panel jumps straight to those lines, so you can check the answer yourself.",
+      "subPos": {
+        "x": 0.5,
+        "y": 0.035
+      }
     },
     "0057.png": {
       "hold": 2.4,
@@ -84,7 +100,11 @@ window.SPEC = {
     "0062.png": {
       "hold": 6.4,
       "hl": true,
-      "vo": "Its diagrams map the architecture onto real files, from the React app to the Cloudflare Worker and the tweet dataset."
+      "vo": "Its diagrams map the architecture onto real files, from the React app to the Cloudflare Worker and the tweet dataset.",
+      "subPos": {
+        "x": 0.5,
+        "y": 0.8
+      }
     },
     "0064.png": {
       "hold": 1.2
