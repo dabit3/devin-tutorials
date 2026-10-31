@@ -2,48 +2,19 @@
 
 Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`), generated as one whole-script take with `_kit/tools/vo.py`, ElevenLabs `eleven_multilingual_v2`, default settings.
 
-## How it works
-
-- In this video, we'll show how docs that test themselves work, where every code snippet on every docs page is run exactly as written on a fresh machine, so you find out which examples are broken before your users do.
-- One Devin coordinates the run, and it starts a managed Devin for each docs page, each on its own fresh VM, all in parallel.
-
-## A real run
-
-- Here's a real run on a small invoicing SDK, where we planted two broken examples on purpose.
-- The coordinator starts five managed Devins, one per page.
-- Each one installs the SDK from scratch and runs every snippet, and here the invoices page fails.
-
-## Docs or SDK
-
-- When a snippet fails, Devin works out whether the page is stale or the SDK has a bug, and the answer decides what the pull request fixes.
-- That page still used a parameter name the SDK had renamed, so its pull request fixes the docs.
-- The quickstart exposed a real bug in the SDK, so that pull request fixes the code and adds a test.
+- In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.
+- One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.
+- Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.
+- The coordinator starts five Devins, one per walkthrough.
+- Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.
+- When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.
+- The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.
+- The subtotal was a real bug, so that pull request fixes the app and adds a test.
 - The coordinator collects the results into one summary.
-
-## Make it repeatable
-
-- To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the docs change, and on a schedule.
+- To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.
 - Here's the automation Devin created, with both triggers.
-
-## What you can use it for
-
-- It works for SDK docs, README quickstarts, API guides, and step-by-step tutorials.
+- It works for product walkthroughs, onboarding guides, help center articles, and runbooks.
 
 ## Outro
 
-- Docs that stay true to your code.
-
-## Prompts typed on screen (real run, from tutorial 36)
-
-1. `@thequantexplorer/product-demo-apps Test the docs in ledgerkit/. For every page in ledgerkit/docs/, start a managed Devin on its own fresh machine that runs each code snippet exactly as written. When a snippet fails, decide whether the docs or the SDK is wrong and open a PR that fixes the right one. Then send me a summary.`
-2. `Make this repeatable: save it as a playbook and create an automation that runs it whenever ledgerkit/docs/ changes on main, and every Monday.`
-
-## Disclosure
-
-Both failures were planted on purpose in the demo SDK: a docs page that still uses a renamed parameter, and a `subtotal()` that ignores quantity.
-
-## Sources
-
-- Managed Devins: https://docs.devin.ai/work-with-devin/advanced-capabilities
-- Playbooks: https://docs.devin.ai/product-guides/creating-playbooks and https://docs.devin.ai/product-guides/using-playbooks
-- Automations: https://docs.devin.ai/product-guides/automations
+- So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.

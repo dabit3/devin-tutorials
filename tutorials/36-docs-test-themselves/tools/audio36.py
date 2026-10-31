@@ -1,6 +1,6 @@
 """Run _kit/tools/audio.py for Tutorials 36 + 37 with Nader's chosen track instead of the synthesized bed.
 Changes, applied in memory (_kit stays untouched): the music bed is ES "2AM" by Ben Elson (2am-ben-elson.mp3,
-looped with a crossfade if the cut is longer), and the title chime, tonal swells and caption pops are removed.
+repeated with a crossfade if the cut is longer), and the title chime, tonal swells and caption pops are removed.
 Clicks and typing ticks stay. Env: MUSIC_FILE, MUSIC_LEVEL (track gain, default 0.32), DUCK (under narration, default 0.3).
 usage: python3 audio36.py <kit audio.py> <video-dir>"""
 import os, subprocess, sys

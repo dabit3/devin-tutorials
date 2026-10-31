@@ -2,7 +2,7 @@ window.SPEC = {
   "title": "Docs that test themselves",
   "subtitle": "How it works, and what you can do with it",
   "outro": "Walkthroughs that test themselves",
-  "voOutro": "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the product.",
+  "voOutro": "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.3,
@@ -13,15 +13,15 @@ window.SPEC = {
       "capPos": "bottom",
       "hold": 7,
       "cap": "In this video: walkthroughs that test themselves",
-      "vo": "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the product is wrong, and how to make it run on its own."
+      "vo": "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
     },
     "0001.png": {
       "scene": "fanout",
       "cursor": false,
       "capPos": "bottom",
       "hold": 6,
-      "cap": "One coordinator, one managed Devin per walkthrough",
-      "vo": "One Devin coordinates the run. It starts a managed Devin for each walkthrough, each on its own fresh machine, all in parallel."
+      "cap": "One coordinator, one Devin per walkthrough",
+      "vo": "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
     },
     "0002.png": {
       "cursor": false,
@@ -29,85 +29,84 @@ window.SPEC = {
       "ring": {
         "x": 721,
         "y": 405,
-        "w": 857,
-        "h": 174
+        "w": 858,
+        "h": 200
       },
       "ringFor": 2.6,
-      "cap": "Real run: two broken examples planted on purpose",
-      "vo": "Here's a real run on a small invoicing SDK, where we planted two broken examples on purpose."
+      "cap": "Real run: two problems planted on purpose",
+      "vo": "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
     },
     "0003.png": {
       "cursor": false,
       "hold": 3,
       "ring": {
-        "x": 713,
-        "y": 280,
-        "w": 863,
-        "h": 418
+        "x": 284,
+        "y": 165,
+        "w": 506,
+        "h": 220
       },
       "ringFor": 2.6,
-      "cap": "Five managed Devins, one per page",
-      "vo": "The coordinator starts five managed Devins, one per page."
+      "cap": "Five Devins, one per walkthrough",
+      "vo": "The coordinator starts five Devins, one per walkthrough."
     },
     "0004.png": {
       "cursor": false,
       "hold": 3.5,
       "ring": {
-        "x": 932,
-        "y": 189,
-        "w": 670,
-        "h": 113
+        "x": 1262,
+        "y": 550,
+        "w": 215,
+        "h": 94
       },
       "ringFor": 3,
-      "cap": "Each one runs every snippet on its page",
-      "vo": "Each one installs the SDK from scratch and runs every snippet, and here the invoices page fails."
+      "cap": "Step 5 expects $2,449.00. The app shows $1,249.00",
+      "vo": "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
     },
     "0005.png": {
       "scene": "decide",
       "cursor": false,
       "capPos": "bottom",
       "hold": 6,
-      "cap": "Docs wrong, or SDK wrong?",
-      "vo": "When a snippet fails, Devin works out whether the page is stale or the SDK has a bug, and the answer decides what the pull request fixes."
+      "cap": "Walkthrough wrong, or app wrong?",
+      "vo": "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
     },
     "0006.png": {
       "cursor": false,
       "hold": 3,
       "ring": {
-        "x": 1001,
-        "y": 690,
-        "w": 824,
-        "h": 49
+        "x": 1003,
+        "y": 207,
+        "w": 831,
+        "h": 120
       },
       "ringFor": 2.6,
-      "cap": "Stale page: the PR fixes the docs",
-      "vo": "That page still used a parameter name the SDK had renamed, so its pull request fixes the docs."
+      "cap": "Stale walkthrough: the PR fixes the doc",
+      "vo": "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
     },
     "0007.png": {
       "cursor": false,
       "hold": 3,
       "ring": {
-        "x": 1001,
-        "y": 779,
-        "w": 824,
-        "h": 50
+        "x": 1003,
+        "y": 207,
+        "w": 831,
+        "h": 120
       },
       "ringFor": 2.6,
-      "capPos": "top",
-      "cap": "Real bug: the PR fixes the SDK, plus a test",
-      "vo": "The quickstart exposed a real bug in the SDK, so that pull request fixes the code and adds a test."
+      "cap": "Real bug: the PR fixes the app, plus a test",
+      "vo": "The subtotal was a real bug, so that pull request fixes the app and adds a test."
     },
     "0008.png": {
       "cursor": false,
       "hold": 2.6,
       "ring": {
-        "x": 283,
-        "y": 397,
-        "w": 516,
-        "h": 491
+        "x": 282,
+        "y": 349,
+        "w": 509,
+        "h": 230
       },
       "ringFor": 2.0,
-      "cap": "One summary of every page",
+      "cap": "One summary of every walkthrough",
       "vo": "The coordinator collects the results into one summary."
     },
     "0009.png": {
@@ -122,9 +121,9 @@ window.SPEC = {
       "cursor": false,
       "hold": 3,
       "ring": {
-        "x": 1177,
+        "x": 1180,
         "y": 374,
-        "w": 381,
+        "w": 395,
         "h": 96
       },
       "ringFor": 2.6,
