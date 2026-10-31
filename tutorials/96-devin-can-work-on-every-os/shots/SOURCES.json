@@ -1,0 +1,164 @@
+{
+  "0000.png": {
+    "kind": "animated-diagram",
+    "source": "96-devin-can-work-on-every-os/scenes.js",
+    "scene": "idea",
+    "note": "Blank placeholder; the beat is drawn by the scene."
+  },
+  "0010.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=start PLAT=Windows)",
+    "capture_frame": "shots-windows/0000.png",
+    "org": "thequantexplorer",
+    "note": "Home in thequantexplorer, sidebar collapsed, email masked."
+  },
+  "0011.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=start PLAT=Windows)",
+    "capture_frame": "shots-windows/0001.png",
+    "org": "thequantexplorer",
+    "note": "Hover on the configuration button under the prompt box."
+  },
+  "0012.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=start PLAT=Windows)",
+    "capture_frame": "shots-windows/0002.png",
+    "org": "thequantexplorer",
+    "note": "Click: configuration menu."
+  },
+  "0013.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=start PLAT=Windows)",
+    "capture_frame": "shots-windows/0003.png",
+    "org": "thequantexplorer",
+    "note": "Virtual environment submenu: Hosted Ubuntu, macOS, Windows."
+  },
+  "0014.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=start PLAT=Windows)",
+    "capture_frame": "shots-windows/0004.png",
+    "org": "thequantexplorer",
+    "note": "Hover Windows."
+  },
+  "0015.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=start PLAT=Windows)",
+    "capture_frame": "shots-windows/0005.png",
+    "org": "thequantexplorer",
+    "note": "Click Windows."
+  },
+  "0016.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=start PLAT=Windows)",
+    "capture_frame": "shots-windows/0006.png",
+    "org": "thequantexplorer",
+    "note": "Windows picked."
+  },
+  "0017.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=start PLAT=Windows)",
+    "capture_frame": "shots-windows/0007.png",
+    "org": "thequantexplorer",
+    "note": "Virtual environment now Windows."
+  },
+  "0020.png": {
+    "kind": "animated-diagram",
+    "source": "96-devin-can-work-on-every-os/scenes.js",
+    "scene": "fanout",
+    "note": "Blank placeholder; the beat is drawn by the scene."
+  },
+  "0030.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=start PLAT=Windows)",
+    "capture_frame": "shots-windows/0008.png",
+    "org": "thequantexplorer",
+    "note": "The request pasted into the composer, Windows set."
+  },
+  "0031.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=start PLAT=Windows)",
+    "capture_frame": "shots-windows/0009.png",
+    "session": "https://app.devin.ai/sessions/c828756b9a1d44699762a428eba901e3",
+    "org": "thequantexplorer",
+    "note": "Hover Send; this send started the Windows session."
+  },
+  "0032.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (session in progress)",
+    "capture_frame": "peek-windows/0000.png",
+    "session": "https://app.devin.ai/sessions/c828756b9a1d44699762a428eba901e3",
+    "org": "thequantexplorer",
+    "note": "Windows session at work: python --version; cmd //c ver; powershell."
+  },
+  "0040.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=result)",
+    "capture_frame": "res-ubuntu/0000.png",
+    "session": "https://app.devin.ai/sessions/7ae7640659944872829cf69aa558e70d",
+    "org": "thequantexplorer",
+    "note": "Ubuntu final answer: Ubuntu 22.04.5 LTS, Python 3.10.12, 8 passed."
+  },
+  "0041.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=result)",
+    "capture_frame": "res-ubuntu/0001.png",
+    "session": "https://app.devin.ai/sessions/7ae7640659944872829cf69aa558e70d",
+    "org": "thequantexplorer",
+    "note": "Ubuntu CSV and the subtotal bug note."
+  },
+  "0050.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=result)",
+    "capture_frame": "res-macos/0000.png",
+    "session": "https://app.devin.ai/sessions/9b0a4e2b46d648fe85fccfb077979994",
+    "org": "thequantexplorer",
+    "note": "macOS final answer: macOS 26.6.2 arm64, Python 3.9.6, 8 passed."
+  },
+  "0051.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=result)",
+    "capture_frame": "res-macos/0001.png",
+    "session": "https://app.devin.ai/sessions/9b0a4e2b46d648fe85fccfb077979994",
+    "org": "thequantexplorer",
+    "note": "macOS CSV (quantity 2, amount 300.00)."
+  },
+  "0055.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=result)",
+    "capture_frame": "res-windows/0000.png",
+    "session": "https://app.devin.ai/sessions/c828756b9a1d44699762a428eba901e3",
+    "org": "thequantexplorer",
+    "note": "Windows final answer: Windows Server 2022, Python 3.13.12, 8 passed."
+  },
+  "0056.png": {
+    "kind": "real-ui",
+    "source": "live capture, capture.mjs (PHASE=result)",
+    "capture_frame": "res-windows/0001.png",
+    "session": "https://app.devin.ai/sessions/c828756b9a1d44699762a428eba901e3",
+    "org": "thequantexplorer",
+    "note": "Windows setup notes (python vs python3, .venv/Scripts/activate) and the bug note."
+  },
+  "0060.png": {
+    "kind": "animated-diagram",
+    "source": "96-devin-can-work-on-every-os/scenes.js",
+    "scene": "results",
+    "note": "Blank placeholder; the beat is drawn by the scene."
+  },
+  "0070.png": {
+    "kind": "animated-diagram",
+    "source": "96-devin-can-work-on-every-os/scenes.js",
+    "scene": "usecases",
+    "note": "Blank placeholder; the beat is drawn by the scene."
+  },
+  "_task": {
+    "repo": "thequantexplorer/product-demo-apps (ledgerkit/)",
+    "request": "Check that ledgerkit in thequantexplorer/product-demo-apps works on this machine: run its test suite, then use the SDK to export a sample invoice to CSV. Reply with the OS and version, the Python version, the test results and the CSV. Don't change any code or open a PR.",
+    "sessions": {
+      "ubuntu": "https://app.devin.ai/sessions/7ae7640659944872829cf69aa558e70d",
+      "macos": "https://app.devin.ai/sessions/9b0a4e2b46d648fe85fccfb077979994",
+      "windows": "https://app.devin.ai/sessions/c828756b9a1d44699762a428eba901e3"
+    },
+    "side_effects": "None: no code changes, branches or PRs (the request forbids them; each reply confirms a clean tree).",
+    "bug": "ledgerkit/ledgerkit/invoice.py Invoice.subtotal() adds line.unit_price instead of line.amount; found by all three sessions, left unfixed."
+  }
+}
