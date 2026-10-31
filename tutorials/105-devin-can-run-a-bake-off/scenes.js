@@ -151,5 +151,17 @@ function uses(ctx, s, k) {
   });
 }
 
-window.SCENES = { fork, judge, uses };
+
+// 0. Title card held under the opening line (same layout as the kit's title card, in 1440x810 coords).
+function titlecard(ctx, s, k) {
+  ctx.save(); ctx.globalAlpha = k.alpha; ctx.textBaseline = 'middle';
+  k.font(34, 500); const lw = k.spacedW('Devin', -0.4), mk = 40, gap = 12, lx = k.VW / 2 - (mk + gap + lw) / 2;
+  ctx.drawImage(k.AVATAR, lx, 262 - mk / 2, mk, mk); ctx.fillStyle = k.INK; k.spaced('Devin', lx + mk + gap, 263, -0.4);
+  ctx.textBaseline = 'alphabetic';
+  k.font(64.5, 500); ctx.fillStyle = k.INK; const T = 'Devin can run a bake-off', tw = k.spacedW(T, -1.69); k.spaced(T, k.VW / 2 - tw / 2, 424, -1.69);
+  k.font(24, 400); ctx.fillStyle = 'rgba(25,25,25,.56)'; const S = 'Several Devins, different approaches, one winner', sw = k.spacedW(S, -0.45); k.spaced(S, k.VW / 2 - sw / 2, 469, -0.45);
+  ctx.restore();
+}
+
+window.SCENES = { titlecard, fork, judge, uses };
 })();

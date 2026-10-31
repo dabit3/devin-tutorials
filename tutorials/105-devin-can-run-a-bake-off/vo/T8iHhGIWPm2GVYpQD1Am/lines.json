@@ -1,53 +1,58 @@
 {
  "0000.png": {
-  "text": "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
-  "dur": 11.405,
+  "text": "Devin can run a bake-off where several Devins try different approaches.",
+  "dur": 3.36,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
    [
     "0000.png",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+    "Devin can run a bake-off where several Devins try different approaches.",
+    "Devin can run a bake-off where several Devins try different approaches."
    ],
    [
     "0001.png",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+   ],
+   [
+    "0002.png",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL."
    ],
    [
-    "0002.png",
+    "0003.png",
     "The coordinator starts all three, each named after its approach.",
     "The coordinator starts all three, each named after its approach."
    ],
    [
-    "0003.png",
+    "0004.png",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request."
    ],
    [
-    "0004.png",
+    "0005.png",
     "That's three real pull requests, one for each idea.",
     "That's three real pull requests, one for each idea."
    ],
    [
-    "0007.png",
+    "0008.png",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses.",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses."
    ],
    [
-    "0008.png",
+    "0009.png",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it."
    ],
    [
-    "0009.png",
+    "0010.png",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet."
    ],
    [
-    "0010.png",
+    "0011.png",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel."
    ],
@@ -60,85 +65,70 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 2.055,
+    "t1": 2.183,
     "text": "Devin can run a bake-off where several Devins"
    },
    {
-    "t0": 2.101,
-    "t1": 3.286,
+    "t0": 2.229,
+    "t1": 3.36,
     "text": "try different approaches."
-   },
-   {
-    "t0": 3.529,
-    "t1": 5.433,
-    "text": "You give a coordinator Devin one problem,"
-   },
-   {
-    "t0": 5.608,
-    "t1": 7.268,
-    "text": "and it starts a managed Devin for each"
-   },
-   {
-    "t0": 7.291,
-    "t1": 9.857,
-    "text": "approach, each in its own isolated VM,"
-   },
-   {
-    "t0": 10.008,
-    "t1": 11.405,
-    "text": "all working at the same time."
    }
   ]
  },
  "0001.png": {
-  "text": "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
-  "dur": 11.339,
-  "takeAt": 11.641,
+  "text": "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
+  "dur": 8.4,
+  "takeAt": 3.735,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
    [
     "0000.png",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+    "Devin can run a bake-off where several Devins try different approaches.",
+    "Devin can run a bake-off where several Devins try different approaches."
    ],
    [
     "0001.png",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+   ],
+   [
+    "0002.png",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL."
    ],
    [
-    "0002.png",
+    "0003.png",
     "The coordinator starts all three, each named after its approach.",
     "The coordinator starts all three, each named after its approach."
    ],
    [
-    "0003.png",
+    "0004.png",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request."
    ],
    [
-    "0004.png",
+    "0005.png",
     "That's three real pull requests, one for each idea.",
     "That's three real pull requests, one for each idea."
    ],
    [
-    "0007.png",
+    "0008.png",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses.",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses."
    ],
    [
-    "0008.png",
+    "0009.png",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it."
    ],
    [
-    "0009.png",
+    "0010.png",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet."
    ],
    [
-    "0010.png",
+    "0011.png",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel."
    ],
@@ -151,85 +141,80 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.061,
-    "text": "Here's a real run."
+    "t1": 2.186,
+    "text": "You give a coordinator Devin one problem,"
    },
    {
-    "t0": 1.444,
-    "t1": 3.011,
-    "text": "The analytics dashboard is slow,"
+    "t0": 2.302,
+    "t1": 4.09,
+    "text": "and it starts a managed Devin for each"
    },
    {
-    "t0": 3.046,
-    "t1": 5.925,
-    "text": "so I asked three managed Devins to try three fixes."
+    "t0": 4.113,
+    "t1": 6.842,
+    "text": "approach, each in its own isolated VM,"
    },
    {
-    "t0": 6.25,
-    "t1": 7.458,
-    "text": "One adds an index,"
-   },
-   {
-    "t0": 7.632,
-    "t1": 9.675,
-    "text": "one fetches every event in a single query,"
-   },
-   {
-    "t0": 9.768,
-    "t1": 11.339,
-    "text": "and one aggregates in SQL."
+    "t0": 7.051,
+    "t1": 8.4,
+    "text": "all working at the same time."
    }
   ]
  },
  "0002.png": {
-  "text": "The coordinator starts all three, each named after its approach.",
-  "dur": 3.326,
-  "takeAt": 23.274,
+  "text": "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
+  "dur": 12.249,
+  "takeAt": 12.361,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
    [
     "0000.png",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+    "Devin can run a bake-off where several Devins try different approaches.",
+    "Devin can run a bake-off where several Devins try different approaches."
    ],
    [
     "0001.png",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+   ],
+   [
+    "0002.png",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL."
    ],
    [
-    "0002.png",
+    "0003.png",
     "The coordinator starts all three, each named after its approach.",
     "The coordinator starts all three, each named after its approach."
    ],
    [
-    "0003.png",
+    "0004.png",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request."
    ],
    [
-    "0004.png",
+    "0005.png",
     "That's three real pull requests, one for each idea.",
     "That's three real pull requests, one for each idea."
    ],
    [
-    "0007.png",
+    "0008.png",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses.",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses."
    ],
    [
-    "0008.png",
+    "0009.png",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it."
    ],
    [
-    "0009.png",
+    "0010.png",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet."
    ],
    [
-    "0010.png",
+    "0011.png",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel."
    ],
@@ -242,65 +227,90 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.665,
-    "text": "The coordinator starts all three,"
+    "t1": 1.107,
+    "text": "Here's a real run."
    },
    {
-    "t0": 1.908,
-    "t1": 3.326,
-    "text": "each named after its approach."
+    "t0": 1.548,
+    "t1": 3.325,
+    "text": "The analytics dashboard is slow,"
+   },
+   {
+    "t0": 3.383,
+    "t1": 6.39,
+    "text": "so I asked three managed Devins to try three fixes."
+   },
+   {
+    "t0": 6.831,
+    "t1": 8.061,
+    "text": "One adds an index,"
+   },
+   {
+    "t0": 8.236,
+    "t1": 10.441,
+    "text": "one fetches every event in a single query,"
+   },
+   {
+    "t0": 10.616,
+    "t1": 12.249,
+    "text": "and one aggregates in SQL."
    }
   ]
  },
  "0003.png": {
-  "text": "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
-  "dur": 6.842,
-  "takeAt": 26.688,
+  "text": "The coordinator starts all three, each named after its approach.",
+  "dur": 3.218,
+  "takeAt": 24.912,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
    [
     "0000.png",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+    "Devin can run a bake-off where several Devins try different approaches.",
+    "Devin can run a bake-off where several Devins try different approaches."
    ],
    [
     "0001.png",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+   ],
+   [
+    "0002.png",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL."
    ],
    [
-    "0002.png",
+    "0003.png",
     "The coordinator starts all three, each named after its approach.",
     "The coordinator starts all three, each named after its approach."
    ],
    [
-    "0003.png",
+    "0004.png",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request."
    ],
    [
-    "0004.png",
+    "0005.png",
     "That's three real pull requests, one for each idea.",
     "That's three real pull requests, one for each idea."
    ],
    [
-    "0007.png",
+    "0008.png",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses.",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses."
    ],
    [
-    "0008.png",
+    "0009.png",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it."
    ],
    [
-    "0009.png",
+    "0010.png",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet."
    ],
    [
-    "0010.png",
+    "0011.png",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel."
    ],
@@ -313,75 +323,70 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.896,
-    "text": "They're nested under it in the sidebar."
+    "t1": 1.629,
+    "text": "The coordinator starts all three,"
    },
    {
-    "t0": 2.175,
-    "t1": 4.16,
-    "text": "Each one benchmarks before and after,"
-   },
-   {
-    "t0": 4.369,
-    "t1": 5.484,
-    "text": "keeps the tests passing,"
-   },
-   {
-    "t0": 5.507,
-    "t1": 6.842,
-    "text": "and opens its own pull request."
+    "t0": 1.803,
+    "t1": 3.218,
+    "text": "each named after its approach."
    }
   ]
  },
  "0004.png": {
-  "text": "That's three real pull requests, one for each idea.",
-  "dur": 2.695,
-  "takeAt": 33.665,
+  "text": "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
+  "dur": 7.449,
+  "takeAt": 28.371,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
    [
     "0000.png",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+    "Devin can run a bake-off where several Devins try different approaches.",
+    "Devin can run a bake-off where several Devins try different approaches."
    ],
    [
     "0001.png",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+   ],
+   [
+    "0002.png",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL."
    ],
    [
-    "0002.png",
+    "0003.png",
     "The coordinator starts all three, each named after its approach.",
     "The coordinator starts all three, each named after its approach."
    ],
    [
-    "0003.png",
+    "0004.png",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request."
    ],
    [
-    "0004.png",
+    "0005.png",
     "That's three real pull requests, one for each idea.",
     "That's three real pull requests, one for each idea."
    ],
    [
-    "0007.png",
+    "0008.png",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses.",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses."
    ],
    [
-    "0008.png",
+    "0009.png",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it."
    ],
    [
-    "0009.png",
+    "0010.png",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet."
    ],
    [
-    "0010.png",
+    "0011.png",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel."
    ],
@@ -394,65 +399,156 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.63,
+    "t1": 1.873,
+    "text": "They're nested under it in the sidebar."
+   },
+   {
+    "t0": 2.117,
+    "t1": 4.102,
+    "text": "Each one benchmarks before and after,"
+   },
+   {
+    "t0": 4.311,
+    "t1": 5.635,
+    "text": "keeps the tests passing,"
+   },
+   {
+    "t0": 5.844,
+    "t1": 7.449,
+    "text": "and opens its own pull request."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "That's three real pull requests, one for each idea.",
+  "dur": 3.114,
+  "takeAt": 36.266,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can run a bake-off where several Devins try different approaches.",
+    "Devin can run a bake-off where several Devins try different approaches."
+   ],
+   [
+    "0001.png",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+   ],
+   [
+    "0002.png",
+    "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
+    "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts all three, each named after its approach.",
+    "The coordinator starts all three, each named after its approach."
+   ],
+   [
+    "0004.png",
+    "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
+    "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request."
+   ],
+   [
+    "0005.png",
+    "That's three real pull requests, one for each idea.",
+    "That's three real pull requests, one for each idea."
+   ],
+   [
+    "0008.png",
+    "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses.",
+    "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses."
+   ],
+   [
+    "0009.png",
+    "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
+    "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it."
+   ],
+   [
+    "0010.png",
+    "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
+    "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet."
+   ],
+   [
+    "0011.png",
+    "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
+    "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel."
+   ],
+   [
+    "outro",
+    "Several approaches in, one winner out.",
+    "Several approaches in, one winner out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.885,
     "text": "That's three real pull requests,"
    },
    {
-    "t0": 1.711,
-    "t1": 2.695,
+    "t0": 2.128,
+    "t1": 3.114,
     "text": "one for each idea."
    }
   ]
  },
- "0007.png": {
+ "0008.png": {
   "text": "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses.",
-  "dur": 8.634,
-  "takeAt": 36.626,
+  "dur": 8.844,
+  "takeAt": 39.656,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
    [
     "0000.png",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+    "Devin can run a bake-off where several Devins try different approaches.",
+    "Devin can run a bake-off where several Devins try different approaches."
    ],
    [
     "0001.png",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+   ],
+   [
+    "0002.png",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL."
    ],
    [
-    "0002.png",
+    "0003.png",
     "The coordinator starts all three, each named after its approach.",
     "The coordinator starts all three, each named after its approach."
    ],
    [
-    "0003.png",
+    "0004.png",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request."
    ],
    [
-    "0004.png",
+    "0005.png",
     "That's three real pull requests, one for each idea.",
     "That's three real pull requests, one for each idea."
    ],
    [
-    "0007.png",
+    "0008.png",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses.",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses."
    ],
    [
-    "0008.png",
+    "0009.png",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it."
    ],
    [
-    "0009.png",
+    "0010.png",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet."
    ],
    [
-    "0010.png",
+    "0011.png",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel."
    ],
@@ -465,151 +561,80 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.093,
+    "t1": 1.931,
     "text": "Then the coordinator judges them fairly."
    },
    {
-    "t0": 2.244,
-    "t1": 4.752,
+    "t0": 2.256,
+    "t1": 4.683,
     "text": "It reruns the same benchmark for every candidate"
    },
    {
-    "t0": 4.798,
-    "t1": 5.646,
+    "t0": 4.729,
+    "t1": 5.588,
     "text": "on one machine,"
    },
    {
-    "t0": 5.797,
-    "t1": 8.634,
+    "t0": 5.914,
+    "t1": 8.844,
     "text": "and checks that each one still returns the same responses."
    }
   ]
  },
- "0008.png": {
-  "text": "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
-  "dur": 4.925,
-  "takeAt": 45.655,
-  "mode": "single-take-1",
-  "model": "eleven_multilingual_v2",
-  "take": [
-   [
-    "0000.png",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
-   ],
-   [
-    "0001.png",
-    "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
-    "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL."
-   ],
-   [
-    "0002.png",
-    "The coordinator starts all three, each named after its approach.",
-    "The coordinator starts all three, each named after its approach."
-   ],
-   [
-    "0003.png",
-    "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
-    "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request."
-   ],
-   [
-    "0004.png",
-    "That's three real pull requests, one for each idea.",
-    "That's three real pull requests, one for each idea."
-   ],
-   [
-    "0007.png",
-    "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses.",
-    "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses."
-   ],
-   [
-    "0008.png",
-    "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
-    "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it."
-   ],
-   [
-    "0009.png",
-    "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
-    "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet."
-   ],
-   [
-    "0010.png",
-    "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
-    "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel."
-   ],
-   [
-    "outro",
-    "Several approaches in, one winner out.",
-    "Several approaches in, one winner out."
-   ]
-  ],
-  "chunks": [
-   {
-    "t0": 0.042,
-    "t1": 0.669,
-    "text": "In this run,"
-   },
-   {
-    "t0": 0.692,
-    "t1": 2.503,
-    "text": "it caught a difference in the SQL version"
-   },
-   {
-    "t0": 2.654,
-    "t1": 4.925,
-    "text": "and sent it back for a fix before measuring it."
-   }
-  ]
- },
  "0009.png": {
-  "text": "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
-  "dur": 10.281,
-  "takeAt": 50.859,
+  "text": "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
+  "dur": 5.044,
+  "takeAt": 48.886,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
    [
     "0000.png",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+    "Devin can run a bake-off where several Devins try different approaches.",
+    "Devin can run a bake-off where several Devins try different approaches."
    ],
    [
     "0001.png",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+   ],
+   [
+    "0002.png",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL."
    ],
    [
-    "0002.png",
+    "0003.png",
     "The coordinator starts all three, each named after its approach.",
     "The coordinator starts all three, each named after its approach."
    ],
    [
-    "0003.png",
+    "0004.png",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request."
    ],
    [
-    "0004.png",
+    "0005.png",
     "That's three real pull requests, one for each idea.",
     "That's three real pull requests, one for each idea."
    ],
    [
-    "0007.png",
+    "0008.png",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses.",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses."
    ],
    [
-    "0008.png",
+    "0009.png",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it."
    ],
    [
-    "0009.png",
+    "0010.png",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet."
    ],
    [
-    "0010.png",
+    "0011.png",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel."
    ],
@@ -622,85 +647,75 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.233,
-    "text": "Finally, it puts the results side by side"
+    "t1": 0.735,
+    "text": "In this run,"
    },
    {
-    "t0": 2.28,
-    "t1": 3.081,
-    "text": "and picks a winner."
+    "t0": 0.759,
+    "t1": 2.639,
+    "text": "it caught a difference in the SQL version"
    },
    {
-    "t0": 3.406,
-    "t1": 4.88,
-    "text": "Here, the simple index won,"
-   },
-   {
-    "t0": 4.938,
-    "t1": 7.121,
-    "text": "with the lowest latency and the highest throughput,"
-   },
-   {
-    "t0": 7.4,
-    "t1": 9.187,
-    "text": "and the report says plainly that none of"
-   },
-   {
-    "t0": 9.234,
-    "t1": 10.281,
-    "text": "them hit the target yet."
+    "t0": 2.883,
+    "t1": 5.044,
+    "text": "and sent it back for a fix before measuring it."
    }
   ]
  },
  "0010.png": {
-  "text": "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
-  "dur": 8.195,
-  "takeAt": 61.515,
+  "text": "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
+  "dur": 10.164,
+  "takeAt": 54.296,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
    [
     "0000.png",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+    "Devin can run a bake-off where several Devins try different approaches.",
+    "Devin can run a bake-off where several Devins try different approaches."
    ],
    [
     "0001.png",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+   ],
+   [
+    "0002.png",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL."
    ],
    [
-    "0002.png",
+    "0003.png",
     "The coordinator starts all three, each named after its approach.",
     "The coordinator starts all three, each named after its approach."
    ],
    [
-    "0003.png",
+    "0004.png",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request."
    ],
    [
-    "0004.png",
+    "0005.png",
     "That's three real pull requests, one for each idea.",
     "That's three real pull requests, one for each idea."
    ],
    [
-    "0007.png",
+    "0008.png",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses.",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses."
    ],
    [
-    "0008.png",
+    "0009.png",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it."
    ],
    [
-    "0009.png",
+    "0010.png",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet."
    ],
    [
-    "0010.png",
+    "0011.png",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel."
    ],
@@ -712,76 +727,177 @@
   ],
   "chunks": [
    {
-    "t0": 0.076,
-    "t1": 1.991,
+    "t0": 0.12,
+    "t1": 2.152,
+    "text": "Finally, it puts the results side by side"
+   },
+   {
+    "t0": 2.187,
+    "t1": 2.93,
+    "text": "and picks a winner."
+   },
+   {
+    "t0": 3.371,
+    "t1": 4.776,
+    "text": "Here, the simple index won,"
+   },
+   {
+    "t0": 4.834,
+    "t1": 7.052,
+    "text": "with the lowest latency and the highest throughput,"
+   },
+   {
+    "t0": 7.261,
+    "t1": 9.037,
+    "text": "and the report says plainly that none of"
+   },
+   {
+    "t0": 9.083,
+    "t1": 10.164,
+    "text": "them hit the target yet."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
+  "dur": 8.63,
+  "takeAt": 64.85,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can run a bake-off where several Devins try different approaches.",
+    "Devin can run a bake-off where several Devins try different approaches."
+   ],
+   [
+    "0001.png",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+   ],
+   [
+    "0002.png",
+    "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
+    "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts all three, each named after its approach.",
+    "The coordinator starts all three, each named after its approach."
+   ],
+   [
+    "0004.png",
+    "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
+    "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request."
+   ],
+   [
+    "0005.png",
+    "That's three real pull requests, one for each idea.",
+    "That's three real pull requests, one for each idea."
+   ],
+   [
+    "0008.png",
+    "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses.",
+    "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses."
+   ],
+   [
+    "0009.png",
+    "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
+    "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it."
+   ],
+   [
+    "0010.png",
+    "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
+    "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet."
+   ],
+   [
+    "0011.png",
+    "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
+    "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel."
+   ],
+   [
+    "outro",
+    "Several approaches in, one winner out.",
+    "Several approaches in, one winner out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.885,
     "text": "Run a bake-off whenever there's more than one"
    },
    {
-    "t0": 2.026,
-    "t1": 3.303,
+    "t0": 1.92,
+    "t1": 3.243,
     "text": "reasonable way to do something."
    },
    {
-    "t0": 3.686,
-    "t1": 5.149,
+    "t0": 3.754,
+    "t1": 5.379,
     "text": "It works for competing fixes,"
    },
    {
-    "t0": 5.196,
-    "t1": 8.195,
+    "t0": 5.588,
+    "t1": 8.63,
     "text": "design options, or experiments you want to try in parallel."
    }
   ]
  },
  "outro": {
   "text": "Several approaches in, one winner out.",
-  "dur": 1.963,
-  "takeAt": 70.027,
+  "dur": 2.069,
+  "takeAt": 73.941,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
    [
     "0000.png",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
-    "Devin can run a bake-off where several Devins try different approaches. You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+    "Devin can run a bake-off where several Devins try different approaches.",
+    "Devin can run a bake-off where several Devins try different approaches."
    ],
    [
     "0001.png",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time.",
+    "You give a coordinator Devin one problem, and it starts a managed Devin for each approach, each in its own isolated VM, all working at the same time."
+   ],
+   [
+    "0002.png",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL.",
     "Here's a real run. The analytics dashboard is slow, so I asked three managed Devins to try three fixes. One adds an index, one fetches every event in a single query, and one aggregates in SQL."
    ],
    [
-    "0002.png",
+    "0003.png",
     "The coordinator starts all three, each named after its approach.",
     "The coordinator starts all three, each named after its approach."
    ],
    [
-    "0003.png",
+    "0004.png",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request.",
     "They're nested under it in the sidebar. Each one benchmarks before and after, keeps the tests passing, and opens its own pull request."
    ],
    [
-    "0004.png",
+    "0005.png",
     "That's three real pull requests, one for each idea.",
     "That's three real pull requests, one for each idea."
    ],
    [
-    "0007.png",
+    "0008.png",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses.",
     "Then the coordinator judges them fairly. It reruns the same benchmark for every candidate on one machine, and checks that each one still returns the same responses."
    ],
    [
-    "0008.png",
+    "0009.png",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it.",
     "In this run, it caught a difference in the SQL version and sent it back for a fix before measuring it."
    ],
    [
-    "0009.png",
+    "0010.png",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet.",
     "Finally, it puts the results side by side and picks a winner. Here, the simple index won, with the lowest latency and the highest throughput, and the report says plainly that none of them hit the target yet."
    ],
    [
-    "0010.png",
+    "0011.png",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel.",
     "Run a bake-off whenever there's more than one reasonable way to do something. It works for competing fixes, design options, or experiments you want to try in parallel."
    ],
@@ -794,12 +910,12 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.165,
+    "t1": 1.223,
     "text": "Several approaches in,"
    },
    {
-    "t0": 1.246,
-    "t1": 1.963,
+    "t0": 1.281,
+    "t1": 2.069,
     "text": "one winner out."
    }
   ]

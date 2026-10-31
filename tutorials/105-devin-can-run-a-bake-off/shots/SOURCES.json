@@ -1,5 +1,5 @@
 {
- "note": "Every non-scene frame is a real screenshot of the Devin web app (thequantexplorer org, account email masked) from one live run made for this video on 2026-10-30. Scene beats (0000, 0007, 0010) are kit-drawn diagrams; their PNGs are blank placeholders.",
+ "note": "Every non-scene frame is a real screenshot of the Devin web app (thequantexplorer org, account email masked) from one live run made for this video on 2026-10-30. Scene beats (0000, 0001, 0008, 0011) are kit-drawn diagrams; their PNGs are blank placeholders.",
  "run": {
   "coordinator": "https://app.devin.ai/sessions/336dd9eb3c2244fe8e7d629650c1e7ba",
   "title": "dc105-bake-off: benchmark three dashboard fixes",
@@ -23,62 +23,66 @@
  "frames": {
   "0000.png": {
    "kind": "scene",
-   "scene": "fork"
+   "scene": "titlecard"
   },
   "0001.png": {
+   "kind": "scene",
+   "scene": "fork"
+  },
+  "0002.png": {
    "kind": "real",
    "what": "Home composer with the bake-off prompt, before sending",
    "capture": "capture.mjs PHASE=start",
    "raw": "0007"
   },
-  "0002.png": {
+  "0003.png": {
    "kind": "real",
    "what": "Coordinator session after starting dc105-index, dc105-one-query and dc105-sql-aggregate",
    "capture": "capture.mjs PHASE=start (live poll)",
    "raw": "0050"
   },
-  "0003.png": {
+  "0004.png": {
    "kind": "real",
    "what": "Sidebar with the coordinator's managed Devins expanded; other sessions in the shared account are blurred",
    "capture": "capture.mjs PHASE=sidebar",
    "raw": "0354",
    "edit": "boxblur over sibling sidebar rows"
   },
-  "0004.png": {
+  "0005.png": {
    "kind": "real",
    "what": "Devin Review page for PR #2 (dc105-index)",
    "capture": "capture.mjs PHASE=at URL=/review/.../pull/2",
    "raw": "0361"
   },
-  "0005.png": {
+  "0006.png": {
    "kind": "real",
    "what": "Devin Review page for PR #3 (dc105-one-query)",
    "capture": "capture.mjs PHASE=at",
    "raw": "0362"
   },
-  "0006.png": {
+  "0007.png": {
    "kind": "real",
    "what": "Devin Review page for PR #4 (dc105-sql-aggregate)",
    "capture": "capture.mjs PHASE=at",
    "raw": "0363"
   },
-  "0007.png": {
+  "0008.png": {
    "kind": "scene",
    "scene": "judge"
   },
-  "0008.png": {
+  "0009.png": {
    "kind": "real",
    "what": "Coordinator message: review found SQL-aggregation differences and sent them back for correction",
    "capture": "capture.mjs PHASE=start (live poll)",
    "raw": "0145"
   },
-  "0009.png": {
+  "0010.png": {
    "kind": "real",
    "what": "Coordinator's winner message with the same-VM p50/p95/p99/RPS table",
    "capture": "capture.mjs PHASE=at FIND=^dc105-one-query$",
    "raw": "0365"
   },
-  "0010.png": {
+  "0011.png": {
    "kind": "scene",
    "scene": "uses"
   }
