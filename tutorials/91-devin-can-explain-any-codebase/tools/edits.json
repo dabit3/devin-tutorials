@@ -1,0 +1,212 @@
+{
+ "title": "Devin can explain any codebase",
+ "subtitle": "Ask Devin answers with citations, DeepWiki maps the architecture",
+ "outro": "Ask a question, get answers grounded in the code",
+ "voOutro": "Ask a question, and get answers grounded in the code.",
+ "outroVoDelay": 0.2,
+ "speed": 3,
+ "cps": 48,
+ "maxZoom": 1.5,
+ "pollRunMax": 2.2,
+ "tailHold": 0.3,
+ "edit": {
+  "intro": {
+   "scene": "intro",
+   "hold": 4.6,
+   "cursor": false,
+   "capPos": "bottom",
+   "hl": null,
+   "vo": "Devin can explain any codebase. Drop into a repo you've never seen, and just ask how it works."
+  },
+  "how": {
+   "scene": "how",
+   "hold": 7.0,
+   "cursor": false,
+   "capPos": "bottom",
+   "hl": null,
+   "vo": "Devin indexes your connected repositories. Ask Devin searches the code and cites its answers, and DeepWiki turns the repo into pages and architecture diagrams."
+  },
+  "0": {
+   "hold": 1.4,
+   "vo": "Here's an open-source repo I don't know yet, a site that explains how X ranks its For You feed."
+  },
+  "1": {
+   "vo": "In the composer, switch to Ask, and point it at that one repository, so every answer comes from its code.",
+   "travel": 0.4,
+   "dwell": 0.1
+  },
+  "22": {
+   "hold": 0.9,
+   "hl": true
+  },
+  "23": {
+   "vo": "Then ask your question in plain English, the way you'd ask a teammate.",
+   "travel": 0.4,
+   "dwell": 0.1,
+   "subPos": {
+    "x": 0.5,
+    "y": 0.035
+   }
+  },
+  "46": {
+   "hold": 0.9,
+   "badge": "Sped up"
+  },
+  "90": {
+   "vo": "Devin searches the repo for the files that matter.",
+   "subPos": {
+    "x": 0.5,
+    "y": 0.55
+   }
+  },
+  "97": {
+   "badge": null,
+   "hold": 2.4,
+   "ring": {
+    "x": 229,
+    "y": 425,
+    "w": 172,
+    "h": 28
+   },
+   "ringFor": 3.0,
+   "vo": "About a minute later, it explains the scoring formula, and each point links to the exact file and lines.",
+   "subPos": {
+    "x": 0.5,
+    "y": 0.035
+   }
+  },
+  "104": {
+   "hold": 1.0,
+   "hl": true,
+   "vo": "Click a citation, and the code panel jumps straight to those lines, so you can check the answer yourself.",
+   "subPos": {
+    "x": 0.5,
+    "y": 0.035
+   }
+  },
+  "107": {
+   "hold": 2.4,
+   "hl": true
+  },
+  "108": {
+   "hold": 1.4,
+   "vo": "For the big picture, open the repo's DeepWiki. Each page explains a part of the system and lists the source files behind it."
+  },
+  "111": {
+   "hold": 2.0,
+   "hl": true
+  },
+  "112": {
+   "hold": 6.4,
+   "hl": true,
+   "vo": "Its diagrams map the architecture onto real files, from the React app to the Cloudflare Worker and the tweet dataset.",
+   "subPos": {
+    "x": 0.5,
+    "y": 0.8
+   }
+  },
+  "114": {
+   "hold": 1.2
+  },
+  "uses": {
+   "scene": "uses",
+   "hold": 7.0,
+   "cursor": false,
+   "capPos": "bottom",
+   "hl": null,
+   "vo": "Use it to onboard onto a new repo, explore unfamiliar code, or plan a feature. Then start a Devin session straight from the answer, with all that context."
+  },
+  "2": {
+   "hold": 0.5
+  },
+  "7": {
+   "hold": 0.5
+  },
+  "9": {
+   "hold": 0.5
+  },
+  "19": {
+   "hold": 0.5
+  },
+  "21": {
+   "hold": 0.5
+  },
+  "45": {
+   "hold": 0.5
+  },
+  "10": {
+   "skip": true
+  },
+  "11": {
+   "skip": true
+  },
+  "12": {
+   "skip": true
+  },
+  "13": {
+   "skip": true
+  },
+  "14": {
+   "skip": true
+  },
+  "15": {
+   "skip": true
+  },
+  "16": {
+   "skip": true
+  },
+  "17": {
+   "kind": "still",
+   "hold": 0.6
+  },
+  "6": {
+   "travel": 0.4,
+   "dwell": 0.1
+  },
+  "8": {
+   "travel": 0.4,
+   "dwell": 0.1
+  },
+  "18": {
+   "travel": 0.4,
+   "dwell": 0.1
+  },
+  "20": {
+   "travel": 0.4,
+   "dwell": 0.1
+  },
+  "44": {
+   "travel": 0.4,
+   "dwell": 0.1
+  },
+  "26": {
+   "skip": true
+  },
+  "28": {
+   "skip": true
+  },
+  "30": {
+   "skip": true
+  },
+  "32": {
+   "skip": true
+  },
+  "34": {
+   "skip": true
+  },
+  "36": {
+   "skip": true
+  },
+  "38": {
+   "skip": true
+  },
+  "40": {
+   "skip": true
+  },
+  "42": {
+   "skip": true
+  },
+  "113": {}
+ },
+ "pace": 0.9
+}
