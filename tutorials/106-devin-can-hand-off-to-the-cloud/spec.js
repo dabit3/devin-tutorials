@@ -319,7 +319,11 @@ window.SPEC = {
     "y": 300,
     "z": 1.2
    },
-   "camDur": 1.2
+   "camDur": 1.2,
+   "subPos": {
+    "x": 0.72,
+    "y": 0.93
+   }
   },
   "0136.png": {
    "cam": "reset"
@@ -333,7 +337,11 @@ window.SPEC = {
     "w": 842,
     "h": 35
    },
-   "ringFor": 1.8
+   "ringFor": 1.8,
+   "subPos": {
+    "x": 0.72,
+    "y": 0.93
+   }
   },
   "0138.png": {
    "hold": 1.0,
@@ -345,7 +353,11 @@ window.SPEC = {
     "h": 128
    },
    "ringDelay": 1.8,
-   "ringFor": 2.0
+   "ringFor": 2.0,
+   "subPos": {
+    "x": 0.72,
+    "y": 0.93
+   }
   },
   "0139.png": {
    "hold": 1.0,
@@ -362,7 +374,11 @@ window.SPEC = {
     "y": 300,
     "z": 1.2
    },
-   "camDur": 1.2
+   "camDur": 1.2,
+   "subPos": {
+    "x": 0.72,
+    "y": 0.93
+   }
   },
   "0140.png": {
    "hold": 0.6,
@@ -375,7 +391,11 @@ window.SPEC = {
    },
    "ringDelay": 0.2,
    "ringFor": 2.6,
-   "cam": "reset"
+   "cam": "reset",
+   "subPos": {
+    "x": 0.72,
+    "y": 0.93
+   }
   },
   "0141.png": {
    "hold": 1.0,
@@ -386,7 +406,11 @@ window.SPEC = {
     "w": 845,
     "h": 66
    },
-   "ringFor": 2.2
+   "ringFor": 2.2,
+   "subPos": {
+    "x": 0.72,
+    "y": 0.93
+   }
   },
   "0143.png": {
    "hold": 1.0,
@@ -397,7 +421,11 @@ window.SPEC = {
     "w": 813,
     "h": 92
    },
-   "ringFor": 1.2
+   "ringFor": 1.2,
+   "subPos": {
+    "x": 0.72,
+    "y": 0.93
+   }
   }
  }
 };

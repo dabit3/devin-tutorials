@@ -71,6 +71,8 @@ ed(140, hold=0.6, vo="It even flags an unprotected CSV export, and asks before f
 ed(141, hold=1.0, vo="The pull request describes the change, and exactly how it was tested.", ring=box(636, 456, 1556, 528), ringFor=2.2)
 ed(143, hold=1.0, vo="And its check has passed.", ring=box(655, 140, 1540, 240), ringFor=1.2)
 
+WEB_SUB = {'x': 0.72, 'y': 0.93}  # caption over the right panel's content, clear of the session composer
+for k in ('0135.png', '0137.png', '0138.png', '0139.png', '0140.png', '0141.png', '0143.png'): E[k]['subPos'] = WEB_SUB
 missing = [k for k in E if k not in txt]
 if missing: raise SystemExit(f'edits for missing beats: {missing}')
 old = {}
