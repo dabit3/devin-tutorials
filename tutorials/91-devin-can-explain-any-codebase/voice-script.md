@@ -2,7 +2,7 @@
 
 Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, model from `_kit/settings.json`), generated as one take with `_kit/tools/vo.py` and cut locally at sentence boundaries.
 
-1. Devin can explain any codebase in seconds. Drop into a repo you've never seen, and just ask how it works.
+1. Devin can explain any codebase. Drop into a repo you've never seen, and just ask how it works.
 
 2. Devin indexes your connected repositories. Ask Devin searches the code and cites its answers, and DeepWiki turns the repo into pages and architecture diagrams.
 
