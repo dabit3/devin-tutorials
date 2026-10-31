@@ -16,5 +16,5 @@ One narrated cut, Nader voice (T8iHhGIWPm2GVYpQD1Am), model from _kit/settings.j
 | 0011.png | diagram: flow3 | That starts a remediation session. Devin patches the code, writes tests for the hole, runs the test suite, and opens a pull request. |
 | 0012.png | real UI | Here, it's rewriting the token check and running the tests. |
 | 0013.png | real UI | The pull request lands in your repo, linked right on the finding. |
-| 0014.png | real UI | Its new tests pass with the fix and fail against the old code, so your team reviews the proof, not just the patch. |
+| 0014.png | real UI | Its alg-none test passes with the fix and fails against the old code, so your team reviews the proof, not just the patch. |
 | outro | end card | Devin can find and fix the security holes in your repos, and your team still decides what ships. |

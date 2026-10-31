@@ -4,8 +4,8 @@ window.SPEC = {
   "subtitle": "From a security scan to a tested pull request",
   "outro": "Find the holes. Ship the fix, with tests.",
   "voOutro": "Devin can find and fix the security holes in your repos, and your team still decides what ships.",
-  "introHold": 1.8,
-  "outroVoDelay": 0,
+  "introHold": 0.9,
+  "outroVoDelay": -0.3,
   "pace": 1,
   "capPos": "bottom",
   "edit": {
@@ -16,7 +16,7 @@ window.SPEC = {
     },
     "0001.png": {
       "hold": 4.2, "cursor": false, "capPos": "auto",
-      "cap": "Devin Security: every finding in your organization",
+      "capPos": { "x": 0.62, "y": 0.93 }, "subPos": { "x": 0.62, "y": 0.93 }, "cap": "Devin Security: every finding in your organization",
       "ring": { "x": 613, "y": 123, "w": 334, "h": 34 }, "ringFor": 3.4,
       "vo": "Devin Security keeps the findings from every scan in your organization on one page."
     },
@@ -27,7 +27,7 @@ window.SPEC = {
     },
     "0003.png": {
       "cursor": true, "dwell": 1.0, "hold": 1.2, "capPos": "auto",
-      "cap": "A Normal scan of the demo API",
+      "capPos": { "x": 0.72, "y": 0.94 }, "cap": "A Normal scan of the demo API",
       "ring": true, "ringFor": 1.8
     },
     "0004.png": {
@@ -37,7 +37,7 @@ window.SPEC = {
     },
     "0005.png": {
       "hold": 3.6, "cursor": false, "capPos": "auto",
-      "cap": "A few quick questions sharpen the model",
+      "capPos": { "x": 0.7, "y": 0.62 }, "subPos": { "x": 0.7, "y": 0.62 }, "cap": "A few quick questions sharpen the model",
       "ring": { "x": 289, "y": 574, "w": 556, "h": 450 }, "ringFor": 3.2,
       "vo": "It asks a few quick questions to sharpen that model. Answering them is optional."
     },
@@ -48,23 +48,23 @@ window.SPEC = {
     },
     "0007.png": {
       "hold": 3.4, "cursor": false, "capPos": "auto",
-      "cap": "Six findings, three of them critical",
+      "capPos": { "x": 0.7, "y": 0.8 }, "subPos": { "x": 0.7, "y": 0.8 }, "cap": "Six findings, three of them critical",
       "hl": true,
       "vo": "On the demo API, it found six issues, three of them critical."
     },
     "0008.png": {
       "cursor": true, "dwell": 0.8, "hold": 0.8, "capPos": "auto",
-      "cap": "Open the alg none token bypass"
+      "capPos": { "x": 0.7, "y": 0.8 }, "cap": "Open the alg none token bypass"
     },
     "0009.png": {
       "hold": 3.6, "cursor": false, "capPos": "auto",
-      "cap": "What's wrong, who can exploit it, and how",
+      "capPos": { "x": 0.7, "y": 0.93 }, "subPos": { "x": 0.7, "y": 0.8 }, "cap": "What's wrong, who can exploit it, and how",
       "ring": { "x": 1009, "y": 462, "w": 800, "h": 76 }, "ringFor": 3.2,
       "vo": "Each finding explains what's wrong, who could exploit it, and exactly how."
     },
     "0010.png": {
       "cursor": true, "dwell": 1.0, "hold": 1.0, "capPos": "auto",
-      "cap": "Assign to Devin",
+      "capPos": { "x": 0.7, "y": 0.93 }, "subPos": { "x": 0.7, "y": 0.93 }, "cap": "Assign to Devin",
       "ring": true, "ringFor": 1.6,
       "vo": "Pick one, and click Assign to Devin."
     },
@@ -75,7 +75,7 @@ window.SPEC = {
     },
     "0012.png": {
       "hold": 3.2, "cursor": false, "capPos": "auto",
-      "cap": "The real session: rewriting the token check",
+      "capPos": { "x": 0.7, "y": 0.93 }, "subPos": { "x": 0.7, "y": 0.93 }, "cap": "The real session: rewriting the token check",
       "vo": "Here, it's rewriting the token check and running the tests."
     },
     "0013.png": {
@@ -88,7 +88,7 @@ window.SPEC = {
       "hold": 5.4, "cursor": false, "capPos": "auto",
       "cap": "6 of 6 tests pass; the alg none tests fail on the old code",
       "hl": true,
-      "vo": "Its new tests pass with the fix and fail against the old code, so your team reviews the proof, not just the patch."
+      "vo": "Its alg-none test passes with the fix and fails against the old code, so your team reviews the proof, not just the patch."
     }
   }
 };

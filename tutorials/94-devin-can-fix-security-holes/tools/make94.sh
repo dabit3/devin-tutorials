@@ -5,7 +5,7 @@ set -euo pipefail
 VD=$(cd "$(dirname "$0")/.." && pwd); T=$(dirname "$VD"); V=94-devin-can-fix-security-holes; TOOLS=$VD/tools; W=$VD/build/mix; mkdir -p $W
 : "${MUSIC:?set MUSIC to 2-upbeat.mp3}"
 export VOICE=T8iHhGIWPm2GVYpQD1Am
-SHIFT=${SHIFT:-0}; SEG=${SEG:-1000}
+SHIFT=${SHIFT:--1.3}; SEG=${SEG:-1000}
 TOTAL=$(cd $T/_kit/tools && node render.mjs $V --count)
 echo "frames $TOTAL"
 encode() {

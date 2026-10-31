@@ -19,7 +19,7 @@ while len(m) < N:
     head, tail = m[:P], m[P - L:]
     r = np.linspace(0, 1, X)[:, None]
     m = np.concatenate([head[:-X], head[-X:] * (1 - r) + tail[:X] * r, tail[X:]])
-m = np.concatenate([np.zeros((int(SHIFT * SR), 2)), m])[:N]
+m = (np.concatenate([np.zeros((int(SHIFT * SR), 2)), m]) if SHIFT >= 0 else m[int(-SHIFT * SR):])[:N]
 duck = np.ones(N); VOICE_ON = np.zeros(N, bool)
 for v in cue.get('vo', []):
     with wave.open(os.path.join(VD, 'vo', os.environ['VOICE'], v['file'] + '.wav')) as w:
@@ -31,11 +31,11 @@ intro_end = min((v['t'] / FPS for v in cue.get('vo', [])), default=0)
 target = np.where(VOICE_ON, lo, np.where(t < intro_end, float(os.environ.get('INTRO_DB', '3')), hi))
 g = lfilter([1 - 0.99985], [1, -0.99985], target - target[0]) + target[0]
 rms = lambda x: np.sqrt((x ** 2).mean())
-vo_rms = rms(bed[VOICE_ON]); m_rms = rms(m[int(SHIFT * SR):])
+vo_rms = rms(bed[VOICE_ON]); m_rms = rms(m[int(max(SHIFT, 0) * SR):])
 gain = 10 ** (g / 20) * vo_rms / m_rms
 t = np.arange(N) / SR
 end = total if MODE == 'full' else float(MODE)
-fade = np.clip((end - t) / 3.0, 0, 1) * np.clip((t - SHIFT) / 0.3, 0, 1)
+fade = np.clip((end - t) / 3.0, 0, 1) * np.clip((t - max(SHIFT, 0)) / 0.3, 0, 1)
 out = bed + m * (gain * fade)[:, None]
 out /= max(1e-9, np.abs(out).max()) / 0.9
 with wave.open(OUT, 'wb') as w:
