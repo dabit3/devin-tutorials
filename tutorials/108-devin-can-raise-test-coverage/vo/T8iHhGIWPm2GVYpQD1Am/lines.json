@@ -1,0 +1,368 @@
+{
+ "0000.png": {
+  "text": "Devin can write the missing tests and prove coverage went up in real CI.",
+  "dur": 3.54,
+  "at": 0.0,
+  "end": 3.54,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.811,
+    "text": "Devin can write the missing tests and prove"
+   },
+   {
+    "t0": 1.858,
+    "t1": 3.54,
+    "text": "coverage went up in real CI."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "A coverage report shows which lines no test ever runs, but someone still has to write those tests.",
+  "dur": 5.325,
+  "at": 3.695,
+  "end": 9.02,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.055,
+    "t1": 2.47,
+    "text": "A coverage report shows which lines no test"
+   },
+   {
+    "t0": 2.54,
+    "t1": 5.325,
+    "text": "ever runs, but someone still has to write those tests."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "Devin works like the code coverage guide in the Devin docs: measure a baseline, find the gaps, write tests, then measure again.",
+  "dur": 6.92,
+  "at": 9.205,
+  "end": 16.125,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.141,
+    "t1": 2.022,
+    "text": "Devin works like the code coverage guide in"
+   },
+   {
+    "t0": 2.057,
+    "t1": 2.951,
+    "text": "the Devin docs:"
+   },
+   {
+    "t0": 3.276,
+    "t1": 4.251,
+    "text": "measure a baseline,"
+   },
+   {
+    "t0": 4.309,
+    "t1": 5.029,
+    "text": "find the gaps,"
+   },
+   {
+    "t0": 5.064,
+    "t1": 6.92,
+    "text": "write tests, then measure again."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "Here I asked Devin to raise coverage on a small ledger API, with the baseline taken in real CI and no app code changed.",
+  "dur": 7.35,
+  "at": 16.46,
+  "end": 23.81,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.05,
+    "t1": 2.035,
+    "text": "Here I asked Devin to raise coverage on"
+   },
+   {
+    "t0": 2.082,
+    "t1": 3.498,
+    "text": "a small ledger API,"
+   },
+   {
+    "t0": 3.672,
+    "t1": 6.087,
+    "text": "with the baseline taken in real CI and"
+   },
+   {
+    "t0": 6.157,
+    "t1": 7.306,
+    "text": "no app code changed."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "It read the code and the CI workflow, and planned to use the coverage built into Node.",
+  "dur": 4.63,
+  "at": 23.985,
+  "end": 28.615,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.06,
+    "t1": 2.138,
+    "text": "It read the code and the CI workflow,"
+   },
+   {
+    "t0": 2.347,
+    "t1": 4.63,
+    "text": "and planned to use the coverage built into Node."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "First it pushed only the CI change and opened a pull request, so the first run measures the code as it is.",
+  "dur": 5.6,
+  "at": 29.25,
+  "end": 34.85,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.066,
+    "t1": 2.086,
+    "text": "First it pushed only the CI change and"
+   },
+   {
+    "t0": 2.144,
+    "t1": 3.259,
+    "text": "opened a pull request,"
+   },
+   {
+    "t0": 3.433,
+    "t1": 5.6,
+    "text": "so the first run measures the code as it is."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "That baseline run shows the gaps, like the reports routes at fifty-eight percent of lines.",
+  "dur": 4.58,
+  "at": 35.11,
+  "end": 39.69,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.058,
+    "t1": 1.985,
+    "text": "That baseline run shows the gaps,"
+   },
+   {
+    "t0": 2.159,
+    "t1": 4.58,
+    "text": "like the reports routes at fifty-eight percent of lines."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "Then it wrote tests for auth, invoices, workspaces, reports and the server entry point.",
+  "dur": 5.485,
+  "at": 39.83,
+  "end": 45.315,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.04,
+    "t1": 1.561,
+    "text": "Then it wrote tests for auth,"
+   },
+   {
+    "t0": 1.63,
+    "t1": 5.45,
+    "text": "invoices, workspaces, reports and the server entry point."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "It pushed the tests to the same branch and checked the new CI run.",
+  "dur": 3.065,
+  "at": 45.43,
+  "end": 48.495,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.059,
+    "t1": 1.731,
+    "text": "It pushed the tests to the same branch"
+   },
+   {
+    "t0": 1.766,
+    "t1": 3.065,
+    "text": "and checked the new CI run."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "This time every file reports full line coverage, and branches reach ninety-three percent.",
+  "dur": 4.72,
+  "at": 48.79,
+  "end": 53.51,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.066,
+    "t1": 2.596,
+    "text": "This time every file reports full line coverage,"
+   },
+   {
+    "t0": 2.771,
+    "t1": 4.686,
+    "text": "and branches reach ninety-three percent."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "Both runs passed in GitHub Actions.",
+  "dur": 2.13,
+  "at": 53.865,
+  "end": 55.995,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.13,
+    "text": "Both runs passed in GitHub Actions."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "The pull request lists before and after for every file, with links to both runs.",
+  "dur": 4.265,
+  "at": 56.31,
+  "end": 60.575,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.057,
+    "t1": 2.077,
+    "text": "The pull request lists before and after for"
+   },
+   {
+    "t0": 2.124,
+    "t1": 4.265,
+    "text": "every file, with links to both runs."
+   }
+  ]
+ },
+ "0012.png": {
+  "text": "Devin's summary has the totals and confirms no app code changed.",
+  "dur": 3.565,
+  "at": 60.76,
+  "end": 64.325,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.147,
+    "t1": 2.631,
+    "text": "Devin's summary has the totals and confirms no"
+   },
+   {
+    "t0": 2.712,
+    "t1": 3.565,
+    "text": "app code changed."
+   }
+  ]
+ },
+ "0013.png": {
+  "text": "The new tests also turned up three security bugs, which Devin reported instead of locking them in.",
+  "dur": 5.065,
+  "at": 64.61,
+  "end": 69.675,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.047,
+    "t1": 2.16,
+    "text": "The new tests also turned up three security"
+   },
+   {
+    "t0": 2.206,
+    "t1": 5.065,
+    "text": "bugs, which Devin reported instead of locking them in."
+   }
+  ]
+ },
+ "0014.png": {
+  "text": "Lines went from eighty-six to one hundred percent, branches from fifty-eight to ninety-three, and six tests became fifty-four.",
+  "dur": 6.76,
+  "at": 70.1,
+  "end": 76.86,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.118,
+    "t1": 2.428,
+    "text": "Lines went from eighty-six to one hundred percent,"
+   },
+   {
+    "t0": 2.637,
+    "t1": 4.611,
+    "text": "branches from fifty-eight to ninety-three,"
+   },
+   {
+    "t0": 4.855,
+    "t1": 6.736,
+    "text": "and six tests became fifty-four."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Missing tests written, and the proof is in CI.",
+  "dur": 2.775,
+  "at": 77.155,
+  "end": 79.93,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.064,
+    "t1": 1.26,
+    "text": "Missing tests written,"
+   },
+   {
+    "t0": 1.469,
+    "t1": 2.775,
+    "text": "and the proof is in CI."
+   }
+  ]
+ }
+}
