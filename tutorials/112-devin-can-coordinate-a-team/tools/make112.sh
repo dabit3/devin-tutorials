@@ -7,7 +7,8 @@ VD=$(cd "$(dirname "$0")/.." && pwd); T=$(dirname "$VD"); V=112-devin-can-coordi
 export VOICE=T8iHhGIWPm2GVYpQD1Am
 SEG=${SEG:-1000}
 TOTAL=$(cd $T/_kit/tools && node render.mjs $V --count | grep -Eo '^[0-9]+' | head -1)
-echo "frames $TOTAL"
+INTRO=$(python3 -c "import json,sys;s=open('$VD/spec.js').read();print(round(json.loads(s[s.index('{'):s.rindex('}')+1])['introHold']*60))")
+echo "frames $TOTAL intro $INTRO"
 encode() {
   ffmpeg -v error -y -framerate 60 -start_number "$2" -i "$1/%05d.jpg" \
     -vf "scale=in_range=full:out_range=tv:out_color_matrix=bt709:flags=lanczos+accurate_rnd+full_chroma_int,format=yuv420p" \
@@ -19,6 +20,7 @@ if [ "${SKIP_RENDER:-0}" != 1 ]; then
   for ((a = 0; a < TOTAL; a += SEG)); do
     b=$(( a + SEG < TOTAL ? a + SEG : TOTAL )); rm -rf $VD/build/frames
     (cd $T/_kit/tools && node render.mjs $V --from $a --to $b --workers ${WORKERS:-6})
+    [ $a -eq 0 ] && bash $TOOLS/titlecut.sh $VD/build/frames $INTRO
     encode $VD/build/frames $a $VD/build/seg/$a.mp4
     echo "file '$a.mp4'" >> $VD/build/seg/list.txt
     echo "segment $b/$TOTAL"

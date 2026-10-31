@@ -3,7 +3,7 @@ window.SPEC = {
   "subtitle": "One coordinator, three managed Devins, one weekend trip planner",
   "outro": "One app, a team of Devins",
   "voOutro": "One app, built by a team of Devins.",
-  "introHold": 2.2,
+  "introHold": 3.3,
   "outroVoDelay": 0.0,
   "speed": 3,
   "cps": 48,
@@ -11,13 +11,13 @@ window.SPEC = {
   "edit": {
     "0000.png": {
       "scene": "split",
-      "hold": 7.5,
+      "hold": 6.4,
       "cursor": false,
       "capPos": "bottom",
       "cap": "A coordinator splits the app into parts",
       "vo": "Devin can coordinate a team of Devins on one app. A coordinator splits the app into parts and hands each part to a managed Devin on its own isolated VM, so they all work in parallel.",
       "hl": null,
-      "voDelay": -1.5
+      "voDelay": -2.6
     },
     "0001.png": {
       "hold": 3.6,
@@ -62,9 +62,9 @@ window.SPEC = {
       "cursor": false,
       "ring": {
         "x": 215,
-        "y": 390,
-        "w": 418,
-        "h": 230
+        "y": 590,
+        "w": 420,
+        "h": 228
       },
       "ringFor": 2.0,
       "cap": "The sidebar nests them under the coordinator",
@@ -72,10 +72,14 @@ window.SPEC = {
       "hl": null,
       "cam": {
         "x": 300,
-        "y": 400,
+        "y": 455,
         "z": 1.5
       },
-      "camDur": 0.8
+      "camDur": 0.8,
+      "subPos": {
+        "x": 0.72,
+        "y": 0.5
+      }
     },
     "0005.png": {
       "hold": 3.2,
