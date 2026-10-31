@@ -1,0 +1,1220 @@
+{
+ "0005.png": {
+  "text": "Devin can fix a red CI build on its own.",
+  "dur": 2.29,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0005.png",
+    "Devin can fix a red CI build on its own.",
+    "Devin can fix a red CI build on its own."
+   ],
+   [
+    "0010.png",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again."
+   ],
+   [
+    "0020.png",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure."
+   ],
+   [
+    "0021.png",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch."
+   ],
+   [
+    "0030.png",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red."
+   ],
+   [
+    "0031.png",
+    "Nobody prompts Devin. The automation fires on its own and starts a session.",
+    "Nobody prompts Devin. The automation fires on its own and starts a session."
+   ],
+   [
+    "0040.png",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes."
+   ],
+   [
+    "0041.png",
+    "Here, it pulls the branch and opens the failed job's log.",
+    "Here, it pulls the branch and opens the failed job's log."
+   ],
+   [
+    "0042.png",
+    "It runs the tests, changes one line, runs them again, and pushes the fix.",
+    "It runs the tests, changes one line, runs them again, and pushes the fix."
+   ],
+   [
+    "0043.png",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars."
+   ],
+   [
+    "0050.png",
+    "Back on the pull request, the same check is now green.",
+    "Back on the pull request, the same check is now green."
+   ],
+   [
+    "0060.png",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
+   ],
+   [
+    "outro",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.29,
+    "text": "Devin can fix a red CI build on its own."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+  "dur": 12.46,
+  "takeAt": 2.62,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0005.png",
+    "Devin can fix a red CI build on its own.",
+    "Devin can fix a red CI build on its own."
+   ],
+   [
+    "0010.png",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again."
+   ],
+   [
+    "0020.png",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure."
+   ],
+   [
+    "0021.png",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch."
+   ],
+   [
+    "0030.png",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red."
+   ],
+   [
+    "0031.png",
+    "Nobody prompts Devin. The automation fires on its own and starts a session.",
+    "Nobody prompts Devin. The automation fires on its own and starts a session."
+   ],
+   [
+    "0040.png",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes."
+   ],
+   [
+    "0041.png",
+    "Here, it pulls the branch and opens the failed job's log.",
+    "Here, it pulls the branch and opens the failed job's log."
+   ],
+   [
+    "0042.png",
+    "It runs the tests, changes one line, runs them again, and pushes the fix.",
+    "It runs the tests, changes one line, runs them again, and pushes the fix."
+   ],
+   [
+    "0043.png",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars."
+   ],
+   [
+    "0050.png",
+    "Back on the pull request, the same check is now green.",
+    "Back on the pull request, the same check is now green."
+   ],
+   [
+    "0060.png",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
+   ],
+   [
+    "outro",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.072,
+    "text": "Here's how it works."
+   },
+   {
+    "t0": 1.316,
+    "t1": 3.255,
+    "text": "A push breaks a check on a pull request."
+   },
+   {
+    "t0": 3.533,
+    "t1": 5.902,
+    "text": "A GitHub automation sees the failure and starts"
+   },
+   {
+    "t0": 5.937,
+    "t1": 6.738,
+    "text": "a Devin session."
+   },
+   {
+    "t0": 7.179,
+    "t1": 8.421,
+    "text": "Devin reads the logs,"
+   },
+   {
+    "t0": 8.537,
+    "t1": 9.547,
+    "text": "fixes the cause,"
+   },
+   {
+    "t0": 9.663,
+    "t1": 11.149,
+    "text": "and pushes to the same branch,"
+   },
+   {
+    "t0": 11.323,
+    "t1": 12.46,
+    "text": "so the check runs again."
+   }
+  ]
+ },
+ "0020.png": {
+  "text": "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+  "dur": 5.765,
+  "takeAt": 15.205,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0005.png",
+    "Devin can fix a red CI build on its own.",
+    "Devin can fix a red CI build on its own."
+   ],
+   [
+    "0010.png",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again."
+   ],
+   [
+    "0020.png",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure."
+   ],
+   [
+    "0021.png",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch."
+   ],
+   [
+    "0030.png",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red."
+   ],
+   [
+    "0031.png",
+    "Nobody prompts Devin. The automation fires on its own and starts a session.",
+    "Nobody prompts Devin. The automation fires on its own and starts a session."
+   ],
+   [
+    "0040.png",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes."
+   ],
+   [
+    "0041.png",
+    "Here, it pulls the branch and opens the failed job's log.",
+    "Here, it pulls the branch and opens the failed job's log."
+   ],
+   [
+    "0042.png",
+    "It runs the tests, changes one line, runs them again, and pushes the fix.",
+    "It runs the tests, changes one line, runs them again, and pushes the fix."
+   ],
+   [
+    "0043.png",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars."
+   ],
+   [
+    "0050.png",
+    "Back on the pull request, the same check is now green.",
+    "Back on the pull request, the same check is now green."
+   ],
+   [
+    "0060.png",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
+   ],
+   [
+    "outro",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.198,
+    "text": "This automation watches one repository,"
+   },
+   {
+    "t0": 2.233,
+    "t1": 4.578,
+    "text": "and fires when the checkout API tests check"
+   },
+   {
+    "t0": 4.659,
+    "t1": 5.765,
+    "text": "completes with a failure."
+   }
+  ]
+ },
+ "0021.png": {
+  "text": "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+  "dur": 5.255,
+  "takeAt": 21.365,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0005.png",
+    "Devin can fix a red CI build on its own.",
+    "Devin can fix a red CI build on its own."
+   ],
+   [
+    "0010.png",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again."
+   ],
+   [
+    "0020.png",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure."
+   ],
+   [
+    "0021.png",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch."
+   ],
+   [
+    "0030.png",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red."
+   ],
+   [
+    "0031.png",
+    "Nobody prompts Devin. The automation fires on its own and starts a session.",
+    "Nobody prompts Devin. The automation fires on its own and starts a session."
+   ],
+   [
+    "0040.png",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes."
+   ],
+   [
+    "0041.png",
+    "Here, it pulls the branch and opens the failed job's log.",
+    "Here, it pulls the branch and opens the failed job's log."
+   ],
+   [
+    "0042.png",
+    "It runs the tests, changes one line, runs them again, and pushes the fix.",
+    "It runs the tests, changes one line, runs them again, and pushes the fix."
+   ],
+   [
+    "0043.png",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars."
+   ],
+   [
+    "0050.png",
+    "Back on the pull request, the same check is now green.",
+    "Back on the pull request, the same check is now green."
+   ],
+   [
+    "0060.png",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
+   ],
+   [
+    "outro",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.09,
+    "t1": 1.704,
+    "text": "Its instructions are plain English:"
+   },
+   {
+    "t0": 1.913,
+    "t1": 2.772,
+    "text": "read the logs,"
+   },
+   {
+    "t0": 2.981,
+    "t1": 4.003,
+    "text": "fix the root cause,"
+   },
+   {
+    "t0": 4.026,
+    "t1": 5.255,
+    "text": "and push to the same branch."
+   }
+  ]
+ },
+ "0030.png": {
+  "text": "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+  "dur": 4.431,
+  "takeAt": 26.919,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0005.png",
+    "Devin can fix a red CI build on its own.",
+    "Devin can fix a red CI build on its own."
+   ],
+   [
+    "0010.png",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again."
+   ],
+   [
+    "0020.png",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure."
+   ],
+   [
+    "0021.png",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch."
+   ],
+   [
+    "0030.png",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red."
+   ],
+   [
+    "0031.png",
+    "Nobody prompts Devin. The automation fires on its own and starts a session.",
+    "Nobody prompts Devin. The automation fires on its own and starts a session."
+   ],
+   [
+    "0040.png",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes."
+   ],
+   [
+    "0041.png",
+    "Here, it pulls the branch and opens the failed job's log.",
+    "Here, it pulls the branch and opens the failed job's log."
+   ],
+   [
+    "0042.png",
+    "It runs the tests, changes one line, runs them again, and pushes the fix.",
+    "It runs the tests, changes one line, runs them again, and pushes the fix."
+   ],
+   [
+    "0043.png",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars."
+   ],
+   [
+    "0050.png",
+    "Back on the pull request, the same check is now green.",
+    "Back on the pull request, the same check is now green."
+   ],
+   [
+    "0060.png",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
+   ],
+   [
+    "outro",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.187,
+    "text": "Now a teammate opens a pull request that"
+   },
+   {
+    "t0": 2.233,
+    "t1": 3.15,
+    "text": "adds free shipping,"
+   },
+   {
+    "t0": 3.301,
+    "t1": 4.431,
+    "text": "and the check goes red."
+   }
+  ]
+ },
+ "0031.png": {
+  "text": "Nobody prompts Devin. The automation fires on its own and starts a session.",
+  "dur": 4.096,
+  "takeAt": 31.714,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0005.png",
+    "Devin can fix a red CI build on its own.",
+    "Devin can fix a red CI build on its own."
+   ],
+   [
+    "0010.png",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again."
+   ],
+   [
+    "0020.png",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure."
+   ],
+   [
+    "0021.png",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch."
+   ],
+   [
+    "0030.png",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red."
+   ],
+   [
+    "0031.png",
+    "Nobody prompts Devin. The automation fires on its own and starts a session.",
+    "Nobody prompts Devin. The automation fires on its own and starts a session."
+   ],
+   [
+    "0040.png",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes."
+   ],
+   [
+    "0041.png",
+    "Here, it pulls the branch and opens the failed job's log.",
+    "Here, it pulls the branch and opens the failed job's log."
+   ],
+   [
+    "0042.png",
+    "It runs the tests, changes one line, runs them again, and pushes the fix.",
+    "It runs the tests, changes one line, runs them again, and pushes the fix."
+   ],
+   [
+    "0043.png",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars."
+   ],
+   [
+    "0050.png",
+    "Back on the pull request, the same check is now green.",
+    "Back on the pull request, the same check is now green."
+   ],
+   [
+    "0060.png",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
+   ],
+   [
+    "outro",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.316,
+    "text": "Nobody prompts Devin."
+   },
+   {
+    "t0": 1.641,
+    "t1": 4.096,
+    "text": "The automation fires on its own and starts a session."
+   }
+  ]
+ },
+ "0040.png": {
+  "text": "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+  "dur": 8.957,
+  "takeAt": 36.033,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0005.png",
+    "Devin can fix a red CI build on its own.",
+    "Devin can fix a red CI build on its own."
+   ],
+   [
+    "0010.png",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again."
+   ],
+   [
+    "0020.png",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure."
+   ],
+   [
+    "0021.png",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch."
+   ],
+   [
+    "0030.png",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red."
+   ],
+   [
+    "0031.png",
+    "Nobody prompts Devin. The automation fires on its own and starts a session.",
+    "Nobody prompts Devin. The automation fires on its own and starts a session."
+   ],
+   [
+    "0040.png",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes."
+   ],
+   [
+    "0041.png",
+    "Here, it pulls the branch and opens the failed job's log.",
+    "Here, it pulls the branch and opens the failed job's log."
+   ],
+   [
+    "0042.png",
+    "It runs the tests, changes one line, runs them again, and pushes the fix.",
+    "It runs the tests, changes one line, runs them again, and pushes the fix."
+   ],
+   [
+    "0043.png",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars."
+   ],
+   [
+    "0050.png",
+    "Back on the pull request, the same check is now green.",
+    "Back on the pull request, the same check is now green."
+   ],
+   [
+    "0060.png",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
+   ],
+   [
+    "outro",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.188,
+    "text": "Inside the session,"
+   },
+   {
+    "t0": 1.362,
+    "t1": 3.08,
+    "text": "Devin works the way an engineer would."
+   },
+   {
+    "t0": 3.405,
+    "t1": 4.705,
+    "text": "It reads the failing job,"
+   },
+   {
+    "t0": 4.775,
+    "t1": 6.516,
+    "text": "reproduces it, makes the fix,"
+   },
+   {
+    "t0": 6.633,
+    "t1": 8.957,
+    "text": "and confirms the tests pass before it pushes."
+   }
+  ]
+ },
+ "0041.png": {
+  "text": "Here, it pulls the branch and opens the failed job's log.",
+  "dur": 2.77,
+  "takeAt": 45.32,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0005.png",
+    "Devin can fix a red CI build on its own.",
+    "Devin can fix a red CI build on its own."
+   ],
+   [
+    "0010.png",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again."
+   ],
+   [
+    "0020.png",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure."
+   ],
+   [
+    "0021.png",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch."
+   ],
+   [
+    "0030.png",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red."
+   ],
+   [
+    "0031.png",
+    "Nobody prompts Devin. The automation fires on its own and starts a session.",
+    "Nobody prompts Devin. The automation fires on its own and starts a session."
+   ],
+   [
+    "0040.png",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes."
+   ],
+   [
+    "0041.png",
+    "Here, it pulls the branch and opens the failed job's log.",
+    "Here, it pulls the branch and opens the failed job's log."
+   ],
+   [
+    "0042.png",
+    "It runs the tests, changes one line, runs them again, and pushes the fix.",
+    "It runs the tests, changes one line, runs them again, and pushes the fix."
+   ],
+   [
+    "0043.png",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars."
+   ],
+   [
+    "0050.png",
+    "Back on the pull request, the same check is now green.",
+    "Back on the pull request, the same check is now green."
+   ],
+   [
+    "0060.png",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
+   ],
+   [
+    "outro",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.781,
+    "text": "Here, it pulls the branch and opens the"
+   },
+   {
+    "t0": 1.827,
+    "t1": 2.77,
+    "text": "failed job's log."
+   }
+  ]
+ },
+ "0042.png": {
+  "text": "It runs the tests, changes one line, runs them again, and pushes the fix.",
+  "dur": 4.552,
+  "takeAt": 48.478,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0005.png",
+    "Devin can fix a red CI build on its own.",
+    "Devin can fix a red CI build on its own."
+   ],
+   [
+    "0010.png",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again."
+   ],
+   [
+    "0020.png",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure."
+   ],
+   [
+    "0021.png",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch."
+   ],
+   [
+    "0030.png",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red."
+   ],
+   [
+    "0031.png",
+    "Nobody prompts Devin. The automation fires on its own and starts a session.",
+    "Nobody prompts Devin. The automation fires on its own and starts a session."
+   ],
+   [
+    "0040.png",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes."
+   ],
+   [
+    "0041.png",
+    "Here, it pulls the branch and opens the failed job's log.",
+    "Here, it pulls the branch and opens the failed job's log."
+   ],
+   [
+    "0042.png",
+    "It runs the tests, changes one line, runs them again, and pushes the fix.",
+    "It runs the tests, changes one line, runs them again, and pushes the fix."
+   ],
+   [
+    "0043.png",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars."
+   ],
+   [
+    "0050.png",
+    "Back on the pull request, the same check is now green.",
+    "Back on the pull request, the same check is now green."
+   ],
+   [
+    "0060.png",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
+   ],
+   [
+    "outro",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.2,
+    "text": "It runs the tests,"
+   },
+   {
+    "t0": 1.293,
+    "t1": 2.326,
+    "text": "changes one line,"
+   },
+   {
+    "t0": 2.535,
+    "t1": 3.418,
+    "text": "runs them again,"
+   },
+   {
+    "t0": 3.534,
+    "t1": 4.552,
+    "text": "and pushes the fix."
+   }
+  ]
+ },
+ "0043.png": {
+  "text": "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+  "dur": 5.845,
+  "takeAt": 53.265,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0005.png",
+    "Devin can fix a red CI build on its own.",
+    "Devin can fix a red CI build on its own."
+   ],
+   [
+    "0010.png",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again."
+   ],
+   [
+    "0020.png",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure."
+   ],
+   [
+    "0021.png",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch."
+   ],
+   [
+    "0030.png",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red."
+   ],
+   [
+    "0031.png",
+    "Nobody prompts Devin. The automation fires on its own and starts a session.",
+    "Nobody prompts Devin. The automation fires on its own and starts a session."
+   ],
+   [
+    "0040.png",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes."
+   ],
+   [
+    "0041.png",
+    "Here, it pulls the branch and opens the failed job's log.",
+    "Here, it pulls the branch and opens the failed job's log."
+   ],
+   [
+    "0042.png",
+    "It runs the tests, changes one line, runs them again, and pushes the fix.",
+    "It runs the tests, changes one line, runs them again, and pushes the fix."
+   ],
+   [
+    "0043.png",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars."
+   ],
+   [
+    "0050.png",
+    "Back on the pull request, the same check is now green.",
+    "Back on the pull request, the same check is now green."
+   ],
+   [
+    "0060.png",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
+   ],
+   [
+    "outro",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.047,
+    "t1": 1.463,
+    "text": "Then it explains the cause."
+   },
+   {
+    "t0": 1.847,
+    "t1": 3.321,
+    "text": "The subtotal is in cents,"
+   },
+   {
+    "t0": 3.472,
+    "t1": 5.845,
+    "text": "but the free-shipping threshold was written in dollars."
+   }
+  ]
+ },
+ "0050.png": {
+  "text": "Back on the pull request, the same check is now green.",
+  "dur": 2.65,
+  "takeAt": 59.45,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0005.png",
+    "Devin can fix a red CI build on its own.",
+    "Devin can fix a red CI build on its own."
+   ],
+   [
+    "0010.png",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again."
+   ],
+   [
+    "0020.png",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure."
+   ],
+   [
+    "0021.png",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch."
+   ],
+   [
+    "0030.png",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red."
+   ],
+   [
+    "0031.png",
+    "Nobody prompts Devin. The automation fires on its own and starts a session.",
+    "Nobody prompts Devin. The automation fires on its own and starts a session."
+   ],
+   [
+    "0040.png",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes."
+   ],
+   [
+    "0041.png",
+    "Here, it pulls the branch and opens the failed job's log.",
+    "Here, it pulls the branch and opens the failed job's log."
+   ],
+   [
+    "0042.png",
+    "It runs the tests, changes one line, runs them again, and pushes the fix.",
+    "It runs the tests, changes one line, runs them again, and pushes the fix."
+   ],
+   [
+    "0043.png",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars."
+   ],
+   [
+    "0050.png",
+    "Back on the pull request, the same check is now green.",
+    "Back on the pull request, the same check is now green."
+   ],
+   [
+    "0060.png",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
+   ],
+   [
+    "outro",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.35,
+    "text": "Back on the pull request,"
+   },
+   {
+    "t0": 1.409,
+    "t1": 2.65,
+    "text": "the same check is now green."
+   }
+  ]
+ },
+ "0060.png": {
+  "text": "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+  "dur": 9.06,
+  "takeAt": 62.41,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0005.png",
+    "Devin can fix a red CI build on its own.",
+    "Devin can fix a red CI build on its own."
+   ],
+   [
+    "0010.png",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again."
+   ],
+   [
+    "0020.png",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure."
+   ],
+   [
+    "0021.png",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch."
+   ],
+   [
+    "0030.png",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red."
+   ],
+   [
+    "0031.png",
+    "Nobody prompts Devin. The automation fires on its own and starts a session.",
+    "Nobody prompts Devin. The automation fires on its own and starts a session."
+   ],
+   [
+    "0040.png",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes."
+   ],
+   [
+    "0041.png",
+    "Here, it pulls the branch and opens the failed job's log.",
+    "Here, it pulls the branch and opens the failed job's log."
+   ],
+   [
+    "0042.png",
+    "It runs the tests, changes one line, runs them again, and pushes the fix.",
+    "It runs the tests, changes one line, runs them again, and pushes the fix."
+   ],
+   [
+    "0043.png",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars."
+   ],
+   [
+    "0050.png",
+    "Back on the pull request, the same check is now green.",
+    "Back on the pull request, the same check is now green."
+   ],
+   [
+    "0060.png",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
+   ],
+   [
+    "outro",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.177,
+    "text": "You stay in control."
+   },
+   {
+    "t0": 1.386,
+    "t1": 3.835,
+    "text": "Conditions decide which failures start a session,"
+   },
+   {
+    "t0": 4.009,
+    "t1": 5.728,
+    "text": "the fix lands as a normal commit on"
+   },
+   {
+    "t0": 5.774,
+    "t1": 6.935,
+    "text": "the same pull request,"
+   },
+   {
+    "t0": 7.109,
+    "t1": 9.06,
+    "text": "and your team still reviews and merges."
+   }
+  ]
+ },
+ "outro": {
+  "text": "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+  "dur": 5.605,
+  "takeAt": 71.885,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0005.png",
+    "Devin can fix a red CI build on its own.",
+    "Devin can fix a red CI build on its own."
+   ],
+   [
+    "0010.png",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again.",
+    "Here's how it works. A push breaks a check on a pull request. A GitHub automation sees the failure and starts a Devin session. Devin reads the logs, fixes the cause, and pushes to the same branch, so the check runs again."
+   ],
+   [
+    "0020.png",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure.",
+    "This automation watches one repository, and fires when the checkout API tests check completes with a failure."
+   ],
+   [
+    "0021.png",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch.",
+    "Its instructions are plain English: read the logs, fix the root cause, and push to the same branch."
+   ],
+   [
+    "0030.png",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red.",
+    "Now a teammate opens a pull request that adds free shipping, and the check goes red."
+   ],
+   [
+    "0031.png",
+    "Nobody prompts Devin. The automation fires on its own and starts a session.",
+    "Nobody prompts Devin. The automation fires on its own and starts a session."
+   ],
+   [
+    "0040.png",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes.",
+    "Inside the session, Devin works the way an engineer would. It reads the failing job, reproduces it, makes the fix, and confirms the tests pass before it pushes."
+   ],
+   [
+    "0041.png",
+    "Here, it pulls the branch and opens the failed job's log.",
+    "Here, it pulls the branch and opens the failed job's log."
+   ],
+   [
+    "0042.png",
+    "It runs the tests, changes one line, runs them again, and pushes the fix.",
+    "It runs the tests, changes one line, runs them again, and pushes the fix."
+   ],
+   [
+    "0043.png",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars.",
+    "Then it explains the cause. The subtotal is in cents, but the free-shipping threshold was written in dollars."
+   ],
+   [
+    "0050.png",
+    "Back on the pull request, the same check is now green.",
+    "Back on the pull request, the same check is now green."
+   ],
+   [
+    "0060.png",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges.",
+    "You stay in control. Conditions decide which failures start a session, the fix lands as a normal commit on the same pull request, and your team still reviews and merges."
+   ],
+   [
+    "outro",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own.",
+    "When a push breaks the build, Devin can read the failure, fix it, and get the check back to green on its own."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.084,
+    "t1": 1.384,
+    "text": "When a push breaks the build,"
+   },
+   {
+    "t0": 1.558,
+    "t1": 2.928,
+    "text": "Devin can read the failure,"
+   },
+   {
+    "t0": 3.254,
+    "t1": 4.763,
+    "text": "fix it, and get the check back to"
+   },
+   {
+    "t0": 4.821,
+    "t1": 5.605,
+    "text": "green on its own."
+   }
+  ]
+ }
+}
