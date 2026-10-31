@@ -1,0 +1,115 @@
+{
+ "capture": "capture.mjs drove a CDP Chrome logged in to https://app.devin.ai/org/thequantexplorer (account email masked with MASK_TEXT, session sidebar collapsed). Shots are 3x screenshots of a 1440x810 viewport.",
+ "automation": {
+  "name": "dc101-weekly-deps",
+  "created_from": "natural-language request in Devin session https://app.devin.ai/sessions/e81855ad387b443cad324aaea78c34f7",
+  "trigger": "weekly on Monday at 9:00 AM Pacific",
+  "repo": "thequantexplorer/ledger-api",
+  "edits_after_creation": "Run as changed from Organization to the creator (the first, organization-run session could not push through the git proxy); network controls disabled. Both edits were made in the automation edit dialog in plain English UI, not on camera."
+ },
+ "run": {
+  "started_with": "Run now on the automation page",
+  "session": "https://app.devin.ai/sessions/b95a529c053a4cc49f33b40dff5bef0c",
+  "pr": "https://github.com/thequantexplorer/ledger-api/pull/7",
+  "pr_branch": "dc101-deps-2026-10-30",
+  "changes": "express ^4.21.2 -> ^5.3.0, jsonwebtoken ^9.0.2 -> ^9.0.3",
+  "tests": "npm ci + npm test 6/6 in the session; GitHub CI check passed"
+ },
+ "shots": {
+  "scene-week.png": {
+   "kind": "animated-diagram",
+   "source": "scenes.js",
+   "scene": "week",
+   "note": "Blank placeholder; drawn by the scene and labelled Diagram."
+  },
+  "scene-anatomy.png": {
+   "kind": "animated-diagram",
+   "source": "scenes.js",
+   "scene": "anatomy",
+   "note": "Blank placeholder; labelled Diagram."
+  },
+  "scene-uses.png": {
+   "kind": "animated-diagram",
+   "source": "scenes.js",
+   "scene": "uses",
+   "note": "Blank placeholder; illustrative examples, labelled Examples."
+  },
+  "0004.png": {
+   "kind": "real-ui",
+   "note": "Plain-English automation request typed in a new session with the ledger-api repo mention."
+  },
+  "0018.png": {
+   "kind": "real-ui",
+   "note": "Devin working on the request (sped up)."
+  },
+  "0022.png": {
+   "kind": "real-ui",
+   "note": "Devin working on the request (sped up)."
+  },
+  "0026.png": {
+   "kind": "real-ui",
+   "note": "Create automation approval card drafted by Devin."
+  },
+  "0027.png": {
+   "kind": "real-ui",
+   "note": "Hover on Create automation."
+  },
+  "0028.png": {
+   "kind": "real-ui",
+   "note": "Click Create automation."
+  },
+  "0030.png": {
+   "kind": "real-ui",
+   "note": "Automation created card with the Monday 9:00 AM trigger and next run."
+  },
+  "0041.png": {
+   "kind": "real-ui",
+   "note": "Automations list filtered to dc101."
+  },
+  "0042.png": {
+   "kind": "real-ui",
+   "note": "Hover on the dc101-weekly-deps row."
+  },
+  "0043.png": {
+   "kind": "real-ui",
+   "note": "Open the automation."
+  },
+  "0044.png": {
+   "kind": "real-ui",
+   "note": "Automation page: trigger, instructions, events."
+  },
+  "0045.png": {
+   "kind": "real-ui",
+   "note": "Run now control (the shown run was started with it)."
+  },
+  "0046.png": {
+   "kind": "real-ui",
+   "note": "Event history: the run started with Run now."
+  },
+  "0047.png": {
+   "kind": "real-ui",
+   "note": "Hover View session."
+  },
+  "0048.png": {
+   "kind": "real-ui",
+   "note": "Open the session."
+  },
+  "0050.png": {
+   "kind": "real-ui",
+   "note": "The run session reporting PR ledger-api#7, the upgrades, tests 6/6 and CI passed."
+  },
+  "0053.png": {
+   "kind": "real-ui",
+   "note": "GitHub PR #7 summary with the package table."
+  },
+  "0054.png": {
+   "kind": "real-ui",
+   "note": "GitHub PR #7 Checks tab, CI passed."
+  }
+ },
+ "cleanup": {
+  "automation": "dc101-weekly-deps deleted from the automation page after capture (no longer in the Automations list).",
+  "pr": "PR #7 closed without merging and branch dc101-deps-2026-10-30 deleted by Devin session https://app.devin.ai/sessions/e9efc4ff96d54a57a76bdd16c38419e6; verified with gh api (state closed, merged false; branch 404).",
+  "shown_state": "Footage shows PR #7 as Open because it was captured before cleanup."
+ }
+}
