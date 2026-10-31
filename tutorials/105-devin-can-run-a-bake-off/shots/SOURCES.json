@@ -1,0 +1,89 @@
+{
+ "note": "Every non-scene frame is a real screenshot of the Devin web app (thequantexplorer org, account email masked) from one live run made for this video on 2026-10-30. Scene beats (0000, 0007, 0010) are kit-drawn diagrams; their PNGs are blank placeholders.",
+ "run": {
+  "coordinator": "https://app.devin.ai/sessions/336dd9eb3c2244fe8e7d629650c1e7ba",
+  "title": "dc105-bake-off: benchmark three dashboard fixes",
+  "repo": "thequantexplorer/devin-demo-performance",
+  "managed_devins": {
+   "dc105-index": {
+    "session": "https://app.devin.ai/sessions/b68c66298b29415c94223f05076650a0",
+    "pr": "https://github.com/thequantexplorer/devin-demo-performance/pull/2"
+   },
+   "dc105-one-query": {
+    "session": "https://app.devin.ai/sessions/ad2593bd30284a30929606de1741310a",
+    "pr": "https://github.com/thequantexplorer/devin-demo-performance/pull/3"
+   },
+   "dc105-sql-aggregate": {
+    "session": "https://app.devin.ai/sessions/eb8c869651c04036b6c2f2ae5c43e4aa",
+    "pr": "https://github.com/thequantexplorer/devin-demo-performance/pull/4"
+   }
+  },
+  "winner": "dc105-index (PR #2), chosen by the coordinator from a same-VM benchmark of all three PRs"
+ },
+ "frames": {
+  "0000.png": {
+   "kind": "scene",
+   "scene": "fork"
+  },
+  "0001.png": {
+   "kind": "real",
+   "what": "Home composer with the bake-off prompt, before sending",
+   "capture": "capture.mjs PHASE=start",
+   "raw": "0007"
+  },
+  "0002.png": {
+   "kind": "real",
+   "what": "Coordinator session after starting dc105-index, dc105-one-query and dc105-sql-aggregate",
+   "capture": "capture.mjs PHASE=start (live poll)",
+   "raw": "0050"
+  },
+  "0003.png": {
+   "kind": "real",
+   "what": "Sidebar with the coordinator's managed Devins expanded; other sessions in the shared account are blurred",
+   "capture": "capture.mjs PHASE=sidebar",
+   "raw": "0354",
+   "edit": "boxblur over sibling sidebar rows"
+  },
+  "0004.png": {
+   "kind": "real",
+   "what": "Devin Review page for PR #2 (dc105-index)",
+   "capture": "capture.mjs PHASE=at URL=/review/.../pull/2",
+   "raw": "0361"
+  },
+  "0005.png": {
+   "kind": "real",
+   "what": "Devin Review page for PR #3 (dc105-one-query)",
+   "capture": "capture.mjs PHASE=at",
+   "raw": "0362"
+  },
+  "0006.png": {
+   "kind": "real",
+   "what": "Devin Review page for PR #4 (dc105-sql-aggregate)",
+   "capture": "capture.mjs PHASE=at",
+   "raw": "0363"
+  },
+  "0007.png": {
+   "kind": "scene",
+   "scene": "judge"
+  },
+  "0008.png": {
+   "kind": "real",
+   "what": "Coordinator message: review found SQL-aggregation differences and sent them back for correction",
+   "capture": "capture.mjs PHASE=start (live poll)",
+   "raw": "0145"
+  },
+  "0009.png": {
+   "kind": "real",
+   "what": "Coordinator's winner message with the same-VM p50/p95/p99/RPS table",
+   "capture": "capture.mjs PHASE=at FIND=^dc105-one-query$",
+   "raw": "0365"
+  },
+  "0010.png": {
+   "kind": "scene",
+   "scene": "uses"
+  }
+ },
+ "docs": [
+  "https://docs.devin.ai/work-with-devin/advanced-capabilities#managed-devins"
+ ]
+}
