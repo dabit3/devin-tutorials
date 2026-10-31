@@ -1,0 +1,1212 @@
+{
+ "0000.png": {
+  "text": "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+  "dur": 12.27,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
+   ],
+   [
+    "0001.png",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
+   ],
+   [
+    "0002.png",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts five Devins, one per walkthrough.",
+    "The coordinator starts five Devins, one per walkthrough."
+   ],
+   [
+    "0004.png",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
+   ],
+   [
+    "0005.png",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
+   ],
+   [
+    "0006.png",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
+   ],
+   [
+    "0007.png",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test."
+   ],
+   [
+    "0008.png",
+    "The coordinator collects the results into one summary.",
+    "The coordinator collects the results into one summary."
+   ],
+   [
+    "0009.png",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
+   ],
+   [
+    "0010.png",
+    "Here's the automation Devin created, with both triggers.",
+    "Here's the automation Devin created, with both triggers."
+   ],
+   [
+    "0011.png",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
+   ],
+   [
+    "outro",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 0.72,
+    "text": "In this video,"
+   },
+   {
+    "t0": 0.755,
+    "t1": 2.833,
+    "text": "you'll learn how docs that test themselves work."
+   },
+   {
+    "t0": 3.158,
+    "t1": 5.898,
+    "text": "You'll see how Devin follows every plain-English walkthrough"
+   },
+   {
+    "t0": 5.944,
+    "t1": 7.651,
+    "text": "step by step on a fresh machine,"
+   },
+   {
+    "t0": 7.976,
+    "t1": 9.764,
+    "text": "how it decides whether the walkthrough or the"
+   },
+   {
+    "t0": 9.834,
+    "t1": 10.565,
+    "text": "app is wrong,"
+   },
+   {
+    "t0": 10.716,
+    "t1": 12.27,
+    "text": "and how to make it run on its own."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+  "dur": 6.146,
+  "takeAt": 13.034,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
+   ],
+   [
+    "0001.png",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
+   ],
+   [
+    "0002.png",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts five Devins, one per walkthrough.",
+    "The coordinator starts five Devins, one per walkthrough."
+   ],
+   [
+    "0004.png",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
+   ],
+   [
+    "0005.png",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
+   ],
+   [
+    "0006.png",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
+   ],
+   [
+    "0007.png",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test."
+   ],
+   [
+    "0008.png",
+    "The coordinator collects the results into one summary.",
+    "The coordinator collects the results into one summary."
+   ],
+   [
+    "0009.png",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
+   ],
+   [
+    "0010.png",
+    "Here's the automation Devin created, with both triggers.",
+    "Here's the automation Devin created, with both triggers."
+   ],
+   [
+    "0011.png",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
+   ],
+   [
+    "outro",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.722,
+    "text": "One Devin coordinates the run."
+   },
+   {
+    "t0": 1.896,
+    "t1": 4.091,
+    "text": "It starts a fresh Devin for each walkthrough,"
+   },
+   {
+    "t0": 4.369,
+    "t1": 5.345,
+    "text": "each on its own machine,"
+   },
+   {
+    "t0": 5.368,
+    "t1": 6.146,
+    "text": "all in parallel."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+  "dur": 10.461,
+  "takeAt": 19.489,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
+   ],
+   [
+    "0001.png",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
+   ],
+   [
+    "0002.png",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts five Devins, one per walkthrough.",
+    "The coordinator starts five Devins, one per walkthrough."
+   ],
+   [
+    "0004.png",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
+   ],
+   [
+    "0005.png",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
+   ],
+   [
+    "0006.png",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
+   ],
+   [
+    "0007.png",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test."
+   ],
+   [
+    "0008.png",
+    "The coordinator collects the results into one summary.",
+    "The coordinator collects the results into one summary."
+   ],
+   [
+    "0009.png",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
+   ],
+   [
+    "0010.png",
+    "Here's the automation Devin created, with both triggers.",
+    "Here's the automation Devin created, with both triggers."
+   ],
+   [
+    "0011.png",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
+   ],
+   [
+    "outro",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.117,
+    "text": "Here's a real run on a small invoicing"
+   },
+   {
+    "t0": 2.175,
+    "t1": 4.927,
+    "text": "app, where we planted two problems on purpose:"
+   },
+   {
+    "t0": 5.171,
+    "t1": 7.04,
+    "text": "a walkthrough step for a Mark as paid"
+   },
+   {
+    "t0": 7.086,
+    "t1": 8.166,
+    "text": "button the app removed,"
+   },
+   {
+    "t0": 8.375,
+    "t1": 10.461,
+    "text": "and a subtotal that ignores quantity."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "The coordinator starts five Devins, one per walkthrough.",
+  "dur": 2.945,
+  "takeAt": 30.305,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
+   ],
+   [
+    "0001.png",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
+   ],
+   [
+    "0002.png",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts five Devins, one per walkthrough.",
+    "The coordinator starts five Devins, one per walkthrough."
+   ],
+   [
+    "0004.png",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
+   ],
+   [
+    "0005.png",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
+   ],
+   [
+    "0006.png",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
+   ],
+   [
+    "0007.png",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test."
+   ],
+   [
+    "0008.png",
+    "The coordinator collects the results into one summary.",
+    "The coordinator collects the results into one summary."
+   ],
+   [
+    "0009.png",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
+   ],
+   [
+    "0010.png",
+    "Here's the automation Devin created, with both triggers.",
+    "Here's the automation Devin created, with both triggers."
+   ],
+   [
+    "0011.png",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
+   ],
+   [
+    "outro",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.044,
+    "t1": 1.936,
+    "text": "The coordinator starts five Devins,"
+   },
+   {
+    "t0": 1.994,
+    "t1": 2.945,
+    "text": "one per walkthrough."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+  "dur": 6.079,
+  "takeAt": 33.561,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
+   ],
+   [
+    "0001.png",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
+   ],
+   [
+    "0002.png",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts five Devins, one per walkthrough.",
+    "The coordinator starts five Devins, one per walkthrough."
+   ],
+   [
+    "0004.png",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
+   ],
+   [
+    "0005.png",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
+   ],
+   [
+    "0006.png",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
+   ],
+   [
+    "0007.png",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test."
+   ],
+   [
+    "0008.png",
+    "The coordinator collects the results into one summary.",
+    "The coordinator collects the results into one summary."
+   ],
+   [
+    "0009.png",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
+   ],
+   [
+    "0010.png",
+    "Here's the automation Devin created, with both triggers.",
+    "Here's the automation Devin created, with both triggers."
+   ],
+   [
+    "0011.png",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
+   ],
+   [
+    "outro",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.035,
+    "text": "Each one follows its page in Chrome,"
+   },
+   {
+    "t0": 2.186,
+    "t1": 3.324,
+    "text": "and in Getting started,"
+   },
+   {
+    "t0": 3.498,
+    "t1": 6.079,
+    "text": "the subtotal comes out twelve hundred dollars short."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+  "dur": 7.501,
+  "takeAt": 39.969,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
+   ],
+   [
+    "0001.png",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
+   ],
+   [
+    "0002.png",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts five Devins, one per walkthrough.",
+    "The coordinator starts five Devins, one per walkthrough."
+   ],
+   [
+    "0004.png",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
+   ],
+   [
+    "0005.png",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
+   ],
+   [
+    "0006.png",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
+   ],
+   [
+    "0007.png",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test."
+   ],
+   [
+    "0008.png",
+    "The coordinator collects the results into one summary.",
+    "The coordinator collects the results into one summary."
+   ],
+   [
+    "0009.png",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
+   ],
+   [
+    "0010.png",
+    "Here's the automation Devin created, with both triggers.",
+    "Here's the automation Devin created, with both triggers."
+   ],
+   [
+    "0011.png",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
+   ],
+   [
+    "outro",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.246,
+    "text": "When a step doesn't match,"
+   },
+   {
+    "t0": 1.293,
+    "t1": 3.522,
+    "text": "Devin works out whether the walkthrough is stale"
+   },
+   {
+    "t0": 3.638,
+    "t1": 4.752,
+    "text": "or the app has a bug,"
+   },
+   {
+    "t0": 5.031,
+    "t1": 7.501,
+    "text": "and the answer decides what the pull request fixes."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+  "dur": 4.745,
+  "takeAt": 47.845,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
+   ],
+   [
+    "0001.png",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
+   ],
+   [
+    "0002.png",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts five Devins, one per walkthrough.",
+    "The coordinator starts five Devins, one per walkthrough."
+   ],
+   [
+    "0004.png",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
+   ],
+   [
+    "0005.png",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
+   ],
+   [
+    "0006.png",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
+   ],
+   [
+    "0007.png",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test."
+   ],
+   [
+    "0008.png",
+    "The coordinator collects the results into one summary.",
+    "The coordinator collects the results into one summary."
+   ],
+   [
+    "0009.png",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
+   ],
+   [
+    "0010.png",
+    "Here's the automation Devin created, with both triggers.",
+    "Here's the automation Devin created, with both triggers."
+   ],
+   [
+    "0011.png",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
+   ],
+   [
+    "outro",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.069,
+    "t1": 1.799,
+    "text": "The Mark as paid button was removed on"
+   },
+   {
+    "t0": 1.857,
+    "t1": 4.745,
+    "text": "purpose, so that pull request fixes the walkthrough."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+  "dur": 4.782,
+  "takeAt": 53.378,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
+   ],
+   [
+    "0001.png",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
+   ],
+   [
+    "0002.png",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts five Devins, one per walkthrough.",
+    "The coordinator starts five Devins, one per walkthrough."
+   ],
+   [
+    "0004.png",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
+   ],
+   [
+    "0005.png",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
+   ],
+   [
+    "0006.png",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
+   ],
+   [
+    "0007.png",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test."
+   ],
+   [
+    "0008.png",
+    "The coordinator collects the results into one summary.",
+    "The coordinator collects the results into one summary."
+   ],
+   [
+    "0009.png",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
+   ],
+   [
+    "0010.png",
+    "Here's the automation Devin created, with both triggers.",
+    "Here's the automation Devin created, with both triggers."
+   ],
+   [
+    "0011.png",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
+   ],
+   [
+    "outro",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.711,
+    "text": "The subtotal was a real bug,"
+   },
+   {
+    "t0": 1.92,
+    "t1": 4.01,
+    "text": "so that pull request fixes the app and"
+   },
+   {
+    "t0": 4.045,
+    "t1": 4.782,
+    "text": "adds a test."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "The coordinator collects the results into one summary.",
+  "dur": 2.415,
+  "takeAt": 58.585,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
+   ],
+   [
+    "0001.png",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
+   ],
+   [
+    "0002.png",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts five Devins, one per walkthrough.",
+    "The coordinator starts five Devins, one per walkthrough."
+   ],
+   [
+    "0004.png",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
+   ],
+   [
+    "0005.png",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
+   ],
+   [
+    "0006.png",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
+   ],
+   [
+    "0007.png",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test."
+   ],
+   [
+    "0008.png",
+    "The coordinator collects the results into one summary.",
+    "The coordinator collects the results into one summary."
+   ],
+   [
+    "0009.png",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
+   ],
+   [
+    "0010.png",
+    "Here's the automation Devin created, with both triggers.",
+    "Here's the automation Devin created, with both triggers."
+   ],
+   [
+    "0011.png",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
+   ],
+   [
+    "outro",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.045,
+    "t1": 2.415,
+    "text": "The coordinator collects the results into one summary."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+  "dur": 7.74,
+  "takeAt": 61.285,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
+   ],
+   [
+    "0001.png",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
+   ],
+   [
+    "0002.png",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts five Devins, one per walkthrough.",
+    "The coordinator starts five Devins, one per walkthrough."
+   ],
+   [
+    "0004.png",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
+   ],
+   [
+    "0005.png",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
+   ],
+   [
+    "0006.png",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
+   ],
+   [
+    "0007.png",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test."
+   ],
+   [
+    "0008.png",
+    "The coordinator collects the results into one summary.",
+    "The coordinator collects the results into one summary."
+   ],
+   [
+    "0009.png",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
+   ],
+   [
+    "0010.png",
+    "Here's the automation Devin created, with both triggers.",
+    "Here's the automation Devin created, with both triggers."
+   ],
+   [
+    "0011.png",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
+   ],
+   [
+    "outro",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.165,
+    "text": "To keep it that way,"
+   },
+   {
+    "t0": 1.443,
+    "t1": 3.104,
+    "text": "save the procedure as a playbook,"
+   },
+   {
+    "t0": 3.278,
+    "t1": 5.321,
+    "text": "and create an automation that runs it whenever"
+   },
+   {
+    "t0": 5.368,
+    "t1": 6.529,
+    "text": "the walkthroughs change,"
+   },
+   {
+    "t0": 6.738,
+    "t1": 7.74,
+    "text": "and on a schedule."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "Here's the automation Devin created, with both triggers.",
+  "dur": 2.829,
+  "takeAt": 69.261,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
+   ],
+   [
+    "0001.png",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
+   ],
+   [
+    "0002.png",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts five Devins, one per walkthrough.",
+    "The coordinator starts five Devins, one per walkthrough."
+   ],
+   [
+    "0004.png",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
+   ],
+   [
+    "0005.png",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
+   ],
+   [
+    "0006.png",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
+   ],
+   [
+    "0007.png",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test."
+   ],
+   [
+    "0008.png",
+    "The coordinator collects the results into one summary.",
+    "The coordinator collects the results into one summary."
+   ],
+   [
+    "0009.png",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
+   ],
+   [
+    "0010.png",
+    "Here's the automation Devin created, with both triggers.",
+    "Here's the automation Devin created, with both triggers."
+   ],
+   [
+    "0011.png",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
+   ],
+   [
+    "outro",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.85,
+    "text": "Here's the automation Devin created,"
+   },
+   {
+    "t0": 1.885,
+    "t1": 2.829,
+    "text": "with both triggers."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+  "dur": 5.171,
+  "takeAt": 72.349,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
+   ],
+   [
+    "0001.png",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
+   ],
+   [
+    "0002.png",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts five Devins, one per walkthrough.",
+    "The coordinator starts five Devins, one per walkthrough."
+   ],
+   [
+    "0004.png",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
+   ],
+   [
+    "0005.png",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
+   ],
+   [
+    "0006.png",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
+   ],
+   [
+    "0007.png",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test."
+   ],
+   [
+    "0008.png",
+    "The coordinator collects the results into one summary.",
+    "The coordinator collects the results into one summary."
+   ],
+   [
+    "0009.png",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
+   ],
+   [
+    "0010.png",
+    "Here's the automation Devin created, with both triggers.",
+    "Here's the automation Devin created, with both triggers."
+   ],
+   [
+    "0011.png",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
+   ],
+   [
+    "outro",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.769,
+    "text": "It works for product walkthroughs,"
+   },
+   {
+    "t0": 2.013,
+    "t1": 5.171,
+    "text": "onboarding guides, help center articles, and runbooks."
+   }
+  ]
+ },
+ "outro": {
+  "text": "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+  "dur": 11.912,
+  "takeAt": 77.748,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.",
+    "In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own."
+   ],
+   [
+    "0001.png",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.",
+    "One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel."
+   ],
+   [
+    "0002.png",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.",
+    "Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity."
+   ],
+   [
+    "0003.png",
+    "The coordinator starts five Devins, one per walkthrough.",
+    "The coordinator starts five Devins, one per walkthrough."
+   ],
+   [
+    "0004.png",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.",
+    "Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short."
+   ],
+   [
+    "0005.png",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.",
+    "When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes."
+   ],
+   [
+    "0006.png",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.",
+    "The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough."
+   ],
+   [
+    "0007.png",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test.",
+    "The subtotal was a real bug, so that pull request fixes the app and adds a test."
+   ],
+   [
+    "0008.png",
+    "The coordinator collects the results into one summary.",
+    "The coordinator collects the results into one summary."
+   ],
+   [
+    "0009.png",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.",
+    "To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule."
+   ],
+   [
+    "0010.png",
+    "Here's the automation Devin created, with both triggers.",
+    "Here's the automation Devin created, with both triggers."
+   ],
+   [
+    "0011.png",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks.",
+    "It works for product walkthroughs, onboarding guides, help center articles, and runbooks."
+   ],
+   [
+    "outro",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.",
+    "So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.42,
+    "text": "So, three takeaways."
+   },
+   {
+    "t0": 1.699,
+    "t1": 4.113,
+    "text": "Write your docs as plain-English walkthroughs."
+   },
+   {
+    "t0": 4.322,
+    "t1": 6.11,
+    "text": "Let a fresh Devin follow each one,"
+   },
+   {
+    "t0": 6.261,
+    "t1": 7.411,
+    "text": "the way a new user would."
+   },
+   {
+    "t0": 7.585,
+    "t1": 8.839,
+    "text": "And when a step breaks,"
+   },
+   {
+    "t0": 8.99,
+    "t1": 10.592,
+    "text": "Devin fixes whichever is wrong,"
+   },
+   {
+    "t0": 10.708,
+    "t1": 11.912,
+    "text": "the walkthrough or the app."
+   }
+  ]
+ }
+}
