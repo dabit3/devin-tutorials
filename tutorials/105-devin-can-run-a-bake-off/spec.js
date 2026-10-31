@@ -5,7 +5,7 @@ window.SPEC = {
   "voOutro": "Several approaches in, one winner out.",
   "outroVoDelay": 0.1,
   "tailHold": 0.4,
-  "introHold": 1.2,
+  "introHold": 1.45,
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.4,
