@@ -39,6 +39,28 @@
 | 59 | Port an iOS screen to Android: how it works (overview) | `59-ios-to-android-parity-overview/` |
 | 76 | Devin CLI: what's new in v3000.11.92 (overview) | `76-cli-whats-new-overview/` |
 | 77 | Stack Clash: add a feature to a voice-driven game by voice | `77-stack-clash-voice/` |
+| 89 | Devin can test its own work like a QA engineer (overview) | `89-devin-can-qa-its-own-work/` |
+| 90 | Devin can catch the bug a human reviewer missed and fix it (overview) | `90-devin-can-catch-the-missed-bug/` |
+| 91 | Devin can explain any codebase (overview) | `91-devin-can-explain-any-codebase/` |
+| 92 | Devin can run a codebase-wide migration as a fleet of Devins (overview) | `92-devin-can-migrate-in-parallel/` |
+| 94 | Devin can find and fix the security holes in your repos (overview) | `94-devin-can-fix-security-holes/` |
+| 95 | Devin can build and test an iPhone app on a real Mac (overview) | `95-devin-can-build-an-iphone-app/` |
+| 96 | Devin can work on Linux, macOS and Windows machines from one place (overview) | `96-devin-can-work-on-every-os/` |
+| 97 | Devin can fix a red CI build on its own (overview) | `97-devin-can-fix-red-ci/` |
+| 99 | Devin can remember how your team works (overview) | `99-devin-can-remember-your-team/` |
+| 100 | Devin can learn a process once and repeat it perfectly (overview) | `100-devin-can-learn-a-process/` |
+| 101 | Devin can do recurring chores on a schedule, set up in plain English (overview) | `101-devin-can-do-chores-on-schedule/` |
+| 102 | Devin can answer a data question with charts (overview) | `102-devin-can-answer-data-questions/` |
+| 103 | Devin can run an accessibility audit and fix it (overview) | `103-devin-can-make-apps-accessible/` |
+| 104 | Devin can track down a flaky test and prove it's fixed (overview) | `104-devin-can-tame-flaky-tests/` |
+| 105 | Devin can run a bake-off (overview) | `105-devin-can-run-a-bake-off/` |
+| 106 | Devin can start in your terminal and hand off to the cloud (overview) | `106-devin-can-hand-off-to-the-cloud/` |
+| 107 | Devin can pair frontier models on one task (overview) | `107-devin-can-pair-frontier-models/` |
+| 108 | Devin can write the missing tests and prove coverage went up in real CI (overview) | `108-devin-can-raise-test-coverage/` |
+| 109 | Devin can log into your staging site safely and test signed-in flows (overview) | `109-devin-can-test-signed-in-flows/` |
+| 110 | Devin can turn a screenshot or sketch into working UI (overview) | `110-devin-can-build-from-a-screenshot/` |
+| 111 | Devin can set up its own dev environment (overview) | `111-devin-can-set-up-its-environment/` |
+| 112 | Devin can coordinate a team of Devins on one app (overview) | `112-devin-can-coordinate-a-team/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
 
