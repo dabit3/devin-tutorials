@@ -1,0 +1,677 @@
+{
+ "c1": {
+  "text": "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API.",
+  "dur": 13.28,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API.",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "c2",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?"
+   ],
+   [
+    "c3",
+    "And show the current language in the Chair panel, so players can see it.",
+    "And show the current language in the Chair panel, so players can see it."
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle.",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR.",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's it going with Chair?",
+    "Hey Devin, how's it going with Chair?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 0.499,
+    "text": "Hey Devin."
+   },
+   {
+    "t0": 0.522,
+    "t1": 2.264,
+    "text": "There's a tennis game called ACE RALLY in"
+   },
+   {
+    "t0": 2.299,
+    "t1": 3.831,
+    "text": "the product demo apps repo."
+   },
+   {
+    "t0": 4.156,
+    "t1": 5.027,
+    "text": "It's an Expo app,"
+   },
+   {
+    "t0": 5.05,
+    "t1": 6.792,
+    "text": "so one codebase runs on iOS,"
+   },
+   {
+    "t0": 6.827,
+    "t1": 7.755,
+    "text": "Android, and the web."
+   },
+   {
+    "t0": 8.081,
+    "t1": 9.985,
+    "text": "And it has a live voice umpire called"
+   },
+   {
+    "t0": 10.019,
+    "t1": 13.28,
+    "text": "Chair, built on OpenAI's GPT-Live-1 API."
+   }
+  ]
+ },
+ "c2": {
+  "text": "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?",
+  "dur": 11.883,
+  "takeAt": 13.557,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API.",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "c2",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?"
+   ],
+   [
+    "c3",
+    "And show the current language in the Chair panel, so players can see it.",
+    "And show the current language in the Chair panel, so players can see it."
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle.",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR.",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's it going with Chair?",
+    "Hey Devin, how's it going with Chair?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.2,
+    "text": "I want to add one thing."
+   },
+   {
+    "t0": 1.258,
+    "t1": 3.452,
+    "text": "Let players ask Chair to call the match"
+   },
+   {
+    "t0": 3.522,
+    "t1": 4.543,
+    "text": "in another language,"
+   },
+   {
+    "t0": 4.718,
+    "t1": 6.262,
+    "text": "like Spanish or Japanese."
+   },
+   {
+    "t0": 6.645,
+    "t1": 8.096,
+    "text": "Run that as a background tool,"
+   },
+   {
+    "t0": 8.143,
+    "t1": 10.557,
+    "text": "so he switches languages without stopping the game."
+   },
+   {
+    "t0": 10.836,
+    "t1": 11.883,
+    "text": "How would you set that up?"
+   }
+  ]
+ },
+ "c3": {
+  "text": "And show the current language in the Chair panel, so players can see it.",
+  "dur": 3.628,
+  "takeAt": 25.562,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API.",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "c2",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?"
+   ],
+   [
+    "c3",
+    "And show the current language in the Chair panel, so players can see it.",
+    "And show the current language in the Chair panel, so players can see it."
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle.",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR.",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's it going with Chair?",
+    "Hey Devin, how's it going with Chair?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.896,
+    "text": "And show the current language in the Chair"
+   },
+   {
+    "t0": 1.954,
+    "t1": 3.628,
+    "text": "panel, so players can see it."
+   }
+  ]
+ },
+ "c4": {
+  "text": "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle.",
+  "dur": 8.185,
+  "takeAt": 29.395,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API.",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "c2",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?"
+   ],
+   [
+    "c3",
+    "And show the current language in the Chair panel, so players can see it.",
+    "And show the current language in the Chair panel, so players can see it."
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle.",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR.",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's it going with Chair?",
+    "Hey Devin, how's it going with Chair?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.049,
+    "t1": 1.151,
+    "text": "Oh, wait, one more thing."
+   },
+   {
+    "t0": 1.477,
+    "t1": 3.857,
+    "text": "Keep the OpenAI key on the small server"
+   },
+   {
+    "t0": 3.903,
+    "t1": 5.192,
+    "text": "that's already in the project."
+   },
+   {
+    "t0": 5.401,
+    "t1": 6.55,
+    "text": "It's in your secrets."
+   },
+   {
+    "t0": 6.794,
+    "t1": 8.185,
+    "text": "Nothing goes in the app bundle."
+   }
+  ]
+ },
+ "c5": {
+  "text": "Can you speak a little faster?",
+  "dur": 1.475,
+  "takeAt": 37.745,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API.",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "c2",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?"
+   ],
+   [
+    "c3",
+    "And show the current language in the Chair panel, so players can see it.",
+    "And show the current language in the Chair panel, so players can see it."
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle.",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR.",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's it going with Chair?",
+    "Hey Devin, how's it going with Chair?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.116,
+    "t1": 1.475,
+    "text": "Can you speak a little faster?"
+   }
+  ]
+ },
+ "c6": {
+  "text": "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR.",
+  "dur": 14.838,
+  "takeAt": 39.622,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API.",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "c2",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?"
+   ],
+   [
+    "c3",
+    "And show the current language in the Chair panel, so players can see it.",
+    "And show the current language in the Chair panel, so players can see it."
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle.",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR.",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's it going with Chair?",
+    "Hey Devin, how's it going with Chair?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.641,
+    "text": "Test it in your browser and on the"
+   },
+   {
+    "t0": 1.71,
+    "t1": 3.672,
+    "text": "iPhone simulator with Computer Use."
+   },
+   {
+    "t0": 4.056,
+    "t1": 5.553,
+    "text": "Your Mac can't run Android,"
+   },
+   {
+    "t0": 5.588,
+    "t1": 7.782,
+    "text": "so start a second Devin on Ubuntu to"
+   },
+   {
+    "t0": 7.852,
+    "t1": 9.559,
+    "text": "test it on an Android emulator."
+   },
+   {
+    "t0": 10.07,
+    "t1": 11.08,
+    "text": "For each platform,"
+   },
+   {
+    "t0": 11.138,
+    "t1": 13.599,
+    "text": "send me a test recording with pass fail checks."
+   },
+   {
+    "t0": 13.808,
+    "t1": 14.838,
+    "text": "Then open a PR."
+   }
+  ]
+ },
+ "c7": {
+  "text": "Perfect. Go ahead and start building.",
+  "dur": 2.136,
+  "takeAt": 54.564,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API.",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "c2",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?"
+   ],
+   [
+    "c3",
+    "And show the current language in the Chair panel, so players can see it.",
+    "And show the current language in the Chair panel, so players can see it."
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle.",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR.",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's it going with Chair?",
+    "Hey Devin, how's it going with Chair?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.677,
+    "text": "Perfect."
+   },
+   {
+    "t0": 1.002,
+    "t1": 2.136,
+    "text": "Go ahead and start building."
+   }
+  ]
+ },
+ "c8": {
+  "text": "Hey Devin, how's it going with Chair?",
+  "dur": 1.703,
+  "takeAt": 57.002,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API.",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "c2",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?"
+   ],
+   [
+    "c3",
+    "And show the current language in the Chair panel, so players can see it.",
+    "And show the current language in the Chair panel, so players can see it."
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle.",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR.",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's it going with Chair?",
+    "Hey Devin, how's it going with Chair?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.699,
+    "text": "Hey Devin, how's it going with Chair?"
+   }
+  ]
+ },
+ "c9": {
+  "text": "Nice. Thanks, Devin!",
+  "dur": 1.305,
+  "takeAt": 58.705,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "c1",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API.",
+    "Hey Devin. There's a tennis game called ACE RALLY in the product demo apps repo. It's an Expo app, so one codebase runs on iOS, Android, and the web. And it has a live voice umpire called Chair, built on OpenAI's GPT-Live-1 API."
+   ],
+   [
+    "c2",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?",
+    "I want to add one thing. Let players ask Chair to call the match in another language, like Spanish or Japanese. Run that as a background tool, so he switches languages without stopping the game. How would you set that up?"
+   ],
+   [
+    "c3",
+    "And show the current language in the Chair panel, so players can see it.",
+    "And show the current language in the Chair panel, so players can see it."
+   ],
+   [
+    "c4",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle.",
+    "Oh, wait, one more thing. Keep the OpenAI key on the small server that's already in the project. It's in your secrets. Nothing goes in the app bundle."
+   ],
+   [
+    "c5",
+    "Can you speak a little faster?",
+    "Can you speak a little faster?"
+   ],
+   [
+    "c6",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR.",
+    "Test it in your browser and on the iPhone simulator with Computer Use. Your Mac can't run Android, so start a second Devin on Ubuntu to test it on an Android emulator. For each platform, send me a test recording with pass fail checks. Then open a PR."
+   ],
+   [
+    "c7",
+    "Perfect. Go ahead and start building.",
+    "Perfect. Go ahead and start building."
+   ],
+   [
+    "c8",
+    "Hey Devin, how's it going with Chair?",
+    "Hey Devin, how's it going with Chair?"
+   ],
+   [
+    "c9",
+    "Nice. Thanks, Devin!",
+    "Nice. Thanks, Devin!"
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.065,
+    "t1": 0.495,
+    "text": "Nice."
+   },
+   {
+    "t0": 0.611,
+    "t1": 1.305,
+    "text": "Thanks, Devin!"
+   }
+  ]
+ }
+}

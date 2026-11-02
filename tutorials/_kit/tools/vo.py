@@ -9,7 +9,7 @@ VD, VOICE = os.path.abspath(sys.argv[1]), sys.argv[2]
 MODEL = os.environ.get('VO_MODEL') or json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'settings.json')))['ttsModel']
 KEY = os.environ['ELEVEN_LABS_API_KEY']
 src = open(os.path.join(VD, 'spec.js')).read()
-spec = json.loads(re.sub(r'^\s*window\.SPEC\s*=\s*', '', src).rstrip().rstrip(';'))
+spec = json.JSONDecoder().raw_decode(re.sub(r'^\s*window\.SPEC\s*=\s*', '', src))[0]  # spec.js may carry JS after the object
 beats = json.load(open(os.path.join(VD, 'shots', 'beats.json')))
 edits = spec.get('edit', {})
 order = [(b['img'], edits[b['img']]['vo']) for b in beats if edits.get(b['img'], {}).get('vo') and not edits[b['img']].get('skip')]
