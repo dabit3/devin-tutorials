@@ -1,0 +1,20 @@
+[06:42:56.935] begin
+[06:42:57.499] live
+[06:42:57.502] recording, remote hooked = true
+[06:42:57.503] director opening
+[06:43:07.286]   eira: " See that black smoke curling over the watchpost, friend? Let's find who's keeping that fire alive." tools=[]
+[06:43:18.025] SPEAK k1 (1.4s)
+[06:43:22.955] SPEAK k2 (2.0s)
+[06:43:36.535]   eira: " Aye, stopping now. Let's go have a word with Brann. Right, we turned off for the forge. Brann’s fire’s the only one with a heartbeat left." tools=["talk_to","stop","move_to"]
+[06:43:36.549] SPEAK k3 (1.6s)
+[06:43:51.638]   eira: " As you wish, traveler. My tongue slips back to older songs, the kind sung by firelight. Ah, he names the barrow and the ember-stone, and th" tools=["talk_to","stop","move_to"]
+[06:43:51.639]   reached Brann: ok (0.0s) stage=to_barrow
+[06:43:53.172]   eira: " As you wish, traveler. My tongue slips back to older songs, the kind sung by firelight. Ah, he names the barrow and the ember-stone, and th" tools=["talk_to","stop","move_to"]
+[06:43:53.181] SPEAK k4 (1.1s)
+[06:44:09.568]   eira: " He murmurs the barrow cracked the very hour the shrine's fire died, and something cold carried the ember-stone away. Old bones and older cu" tools=["ask_about","talk_to","stop"]
+[06:44:09.579] SPEAK k5 (0.8s)
+[06:44:23.100]   eira: " Your pack holds an iron sword and two health potions, friend, and you're hale as the first note of a song." tools=["open_pack","ask_about","talk_to"]
+[06:44:23.103] end beat
+[06:44:34.112] final snapshot {"quest":"The Cold Brazier","stage":"to_barrow","objective":"Go to the barrow and recover the ember-stone.","hero_hp":"100/100","sword_drawn":false,"walking_to":null,"waypoint":null,"nearest":"Brann","pack":"iron sword, 2 health potion","combat":null,"flags":{"brannMet":true,"wightRisen":false,"wightDead":false,"chestLooted":false,"brazierLit":false}}
+[06:44:34.116] fps 44
+[06:44:35.838] done

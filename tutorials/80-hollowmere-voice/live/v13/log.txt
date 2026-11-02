@@ -1,0 +1,207 @@
+[01:10:49.059] begin
+[01:10:49.543] live
+[01:10:49.546] recording, remote hooked = true
+[01:10:49.548] director opening
+[01:10:59.202]   eira: " Friend, that shrine’s gone dark, but there’s smoke from the watchpost. Let’s see who’s keeping that fire." tools=[]
+[01:11:10.063] SPEAK m1 (2.3s)
+[01:11:13.142]   eira: " Friend, that shrine’s gone dark, but there’s smoke from the watchpost. Let’s see who’s keeping that fire." tools=[]
+[01:11:32.302]   reached Brann: ok (19.2s) stage=to_barrow
+[01:11:56.673]   eira: " He’s tougher than he looks. We’re fresh and I’ve a good recollection of those tomb drafts; let’s shoulder what he can’t." tools=["talk_to"]
+[01:11:56.687] SPEAK m2 (1.9s)
+[01:12:00.695]   live again after 0.0s status=live
+[01:12:07.052]   eira: "Soft it is, friend. Go on. I'm here." tools=["change_voice","talk_to"]
+[01:12:07.062] SPEAK m3 (1.2s)
+[01:12:29.659]   eira: "Then there's our trail. We'll go fetch what was stolen." tools=["ask_about","change_voice","talk_to"]
+[01:12:29.667] SPEAK m4 (0.8s)
+[01:12:32.696]   open_pack: ok (3.0s)
+[01:12:42.622]   eira: "Let me have a look for you. You've an iron sword, and two health potions, and full breath in your chest." tools=["open_pack","ask_about","change_voice"]
+[01:12:42.631] SPEAK m5 (1.4s)
+[01:12:46.162]   move_to shrine: ok (3.5s)
+[01:12:46.165] end beat
+[01:12:58.676] events:
+01:10:50.849 session.thinking.appended
+01:11:04.354 session.usage.updated
+01:11:13.326 session.delegation.created
+01:11:13.327 response.event
+01:11:13.359 response.event
+01:11:13.976 response.event
+01:11:13.984 response.event
+01:11:13.986 response.event
+01:11:13.994 response.event
+01:11:13.997 response.event
+01:11:14.000 response.event
+01:11:14.020 response.event
+01:11:14.053 response.event
+01:11:14.054 response.event
+01:11:14.318 response.event
+01:11:14.514 response.event
+01:11:14.570 response.event
+01:11:15.038 response.event
+01:11:15.038 response.event
+01:11:15.041 response.event
+01:11:15.061 response.event
+01:11:15.062 response.event
+01:11:15.064 response.event
+01:11:15.066 response.event
+01:11:15.084 response.event
+01:11:15.085 response.event
+01:11:15.086 response.event
+01:11:15.088 response.event
+01:11:15.106 response.event
+01:11:15.111 response.event
+01:11:15.131 response.event
+01:11:15.134 response.event
+01:11:15.136 response.event
+01:11:15.155 response.event
+01:11:15.165 response.event
+01:11:15.167 response.event
+01:11:15.170 response.event
+01:11:15.177 response.event
+01:11:15.178 response.event
+01:11:15.181 response.event
+01:11:15.265 response.event
+01:11:15.266 response.event
+01:11:15.267 response.event
+01:11:15.427 response.event
+01:11:19.354 session.usage.updated
+01:11:34.358 session.usage.updated
+01:11:47.293 session.commentary.appended
+01:11:49.358 session.usage.updated
+01:11:59.558 session.delegation.created
+01:11:59.558 response.event
+01:11:59.587 response.event
+01:12:00.232 response.event
+01:12:00.240 response.event
+01:12:00.262 response.event
+01:12:00.276 response.event
+01:12:00.295 response.event
+01:12:00.312 response.event
+01:12:00.334 response.event
+01:12:00.477 response.event
+01:12:00.478 response.event
+01:12:00.729 response.event
+01:12:01.464 session.started
+01:12:02.667 session.thinking.appended
+01:12:09.070 session.delegation.created
+01:12:09.074 response.event
+01:12:09.105 response.event
+01:12:09.736 response.event
+01:12:09.742 response.event
+01:12:09.744 response.event
+01:12:09.759 response.event
+01:12:09.759 response.event
+01:12:09.760 response.event
+01:12:09.779 response.event
+01:12:09.834 response.event
+01:12:09.836 response.event
+01:12:10.060 response.event
+01:12:10.235 response.event
+01:12:10.270 response.event
+01:12:10.674 response.event
+01:12:10.675 response.event
+01:12:10.677 response.event
+01:12:10.683 response.event
+01:12:10.683 response.event
+01:12:10.693 response.event
+01:12:10.695 response.event
+01:12:10.697 response.event
+01:12:10.699 response.event
+01:12:10.718 response.event
+01:12:10.722 response.event
+01:12:10.725 response.event
+01:12:10.726 response.event
+01:12:10.758 response.event
+01:12:10.759 response.event
+01:12:10.761 response.event
+01:12:10.781 response.event
+01:12:10.791 response.event
+01:12:10.793 response.event
+01:12:10.794 response.event
+01:12:10.808 response.event
+01:12:10.848 response.event
+01:12:10.849 response.event
+01:12:10.849 response.event
+01:12:11.073 response.event
+01:12:16.151 session.usage.updated
+01:12:22.295 session.commentary.appended
+01:12:31.153 session.usage.updated
+01:12:31.818 session.delegation.created
+01:12:31.819 response.event
+01:12:31.856 response.event
+01:12:32.619 response.event
+01:12:32.620 response.event
+01:12:32.660 response.event
+01:12:32.663 response.event
+01:12:32.886 response.event
+01:12:33.050 response.event
+01:12:33.086 response.event
+01:12:33.380 response.event
+01:12:33.382 response.event
+01:12:33.384 response.event
+01:12:33.384 response.event
+01:12:33.399 response.event
+01:12:33.402 response.event
+01:12:33.422 response.event
+01:12:33.424 response.event
+01:12:33.427 response.event
+01:12:33.429 response.event
+01:12:33.443 response.event
+01:12:33.444 response.event
+01:12:33.446 response.event
+01:12:33.448 response.event
+01:12:33.468 response.event
+01:12:33.490 response.event
+01:12:33.512 response.event
+01:12:33.523 response.event
+01:12:33.534 response.event
+01:12:33.558 response.event
+01:12:33.560 response.event
+01:12:33.563 response.event
+01:12:33.606 response.event
+01:12:33.607 response.event
+01:12:33.609 response.event
+01:12:33.831 response.event
+01:12:45.205 session.delegation.created
+01:12:45.205 response.event
+01:12:45.240 response.event
+01:12:45.761 response.event
+01:12:45.764 response.event
+01:12:45.765 response.event
+01:12:45.782 response.event
+01:12:45.783 response.event
+01:12:45.789 response.event
+01:12:45.793 response.event
+01:12:45.834 response.event
+01:12:45.836 response.event
+01:12:46.048 response.event
+01:12:46.154 session.usage.updated
+01:12:46.215 response.event
+01:12:46.257 response.event
+01:12:46.572 response.event
+01:12:46.574 response.event
+01:12:46.575 response.event
+01:12:46.576 response.event
+01:12:46.590 response.event
+01:12:46.593 response.event
+01:12:46.616 response.event
+01:12:46.618 response.event
+01:12:46.620 response.event
+01:12:46.623 response.event
+01:12:46.638 response.event
+01:12:46.640 response.event
+01:12:46.661 response.event
+01:12:46.684 response.event
+01:12:46.706 response.event
+01:12:46.731 response.event
+01:12:46.774 response.event
+01:12:46.784 response.event
+01:12:46.798 response.event
+01:12:46.800 response.event
+01:12:46.803 response.event
+01:12:46.849 response.event
+01:12:46.849 response.event
+01:12:46.850 response.event
+01:12:47.066 response.event
+[01:12:58.679] final snapshot {"quest":"The Cold Brazier","stage":"to_barrow","objective":"Go to the barrow and recover the ember-stone.","hero_hp":"100/100","sword_drawn":false,"walking_to":"the standing-stone shrine","nearest":"the standing-stone shrine","pack":"iron sword, 2 health potion","combat":null,"flags":{"brannMet":true,"wightRisen":false,"wightDead":false,"chestLooted":false,"brazierLit":false}}
+[01:12:58.681] fps 59
+[01:13:00.342] done
