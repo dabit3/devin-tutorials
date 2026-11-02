@@ -16,24 +16,29 @@ window.SPEC = {
   ],
   "edit": {
     "0000.png": {
-      "hold": 0.9,
+      "hold": 0.8,
       "cap": "Start in the Devin web app",
       "capPos": "auto",
-      "vo": "Here's how I added a feature to it, just by talking. First, I switch the virtual environment from Ubuntu to macOS, so Devin can run the iPhone simulator."
+      "vo": "Here's how I added a feature to it, just by talking."
     },
     "0001.png": {
+      "skip": true,
       "hold": 0.5
     },
     "0002.png": {
+      "skip": true,
       "hold": 0.5
     },
     "0004.png": {
+      "skip": true,
       "hold": 0.5
     },
     "0007.png": {
+      "skip": true,
       "hold": 0.5
     },
     "0008.png": {
+      "skip": true,
       "hold": 0.5
     },
     "0003.png": {
@@ -46,18 +51,24 @@ window.SPEC = {
       "hl": true
     },
     "0006.png": {
-      "hold": 0.8,
+      "hold": 0.6,
       "hl": true,
       "capPos": "auto",
       "cap": "Ubuntu \u2192 macOS"
     },
     "0009.png": {
+      "cam": {"x": 1044, "y": 447, "z": 2.0},
+      "camForce": true,
+      "camDur": 0.7,
+      "hold": 1.0,
       "cap": "Start a voice call",
       "capPos": "auto",
-      "hl": true,
-      "vo": "Then I click the waveform button beside the message box to start a voice call."
+      "hl": true
     },
     "0010.png": {
+      "cam": "reset",
+      "camForce": true,
+      "camDur": 0.6,
       "cap": "Devin picks up and says hi",
       "hold": 0.8417,
       "clip": "call1"
@@ -88,9 +99,10 @@ window.SPEC = {
       "hold": 0.5517
     },
     "0346.png": {
-      "cap": "Same session: the call picks up where it left off",
       "cam": "reset",
+      "camForce": true,
       "camDur": 0.6,
+      "cap": "Same session: the call picks up where it left off",
       "hold": 0.9575,
       "clip": "call2"
     },
@@ -145,6 +157,9 @@ window.SPEC = {
       "cap": "End the call"
     },
     "0262.png": {
+      "cam": {"x": 270, "y": 450, "z": 1.6},
+      "camForce": true,
+      "camDur": 0.9,
       "hold": 0.8,
       "cap": "Devin builds the coaching-tip tool",
       "badge": "Sped up",
@@ -466,6 +481,9 @@ window.SPEC = {
       "hold": 0.6
     },
     "0367.png": {
+      "cam": "reset",
+      "camForce": true,
+      "camDur": 0.9,
       "hl": true,
       "cap": "End the call again"
     },
@@ -2953,11 +2971,7 @@ window.SPEC = {
       "badge": "",
       "hold": 1.0,
       "cap": "Devin's test recording: web in Chrome, then the iPhone Simulator",
-      "cam": {
-        "x": 487,
-        "y": 432,
-        "z": 2.0
-      },
+      "cam": {"x": 360, "y": 400, "z": 2.0},
       "camForce": true,
       "camDur": 0.8,
       "vo": "Here's Devin's recording. In Chrome, Rivet reads the board, speaks a tip, and the caption shows under the right board, in the player's color, for about six seconds."
@@ -3005,6 +3019,9 @@ window.SPEC = {
       "hold": 0.9
     },
     "1018.png": {
+      "cam": {"x": 715, "y": 392, "z": 1.2},
+      "camForce": true,
+      "camDur": 0.9,
       "hold": 0.9,
       "cap": "iPhone Simulator: no mic on that Mac, so the tool calls are triggered directly",
       "vo": "On the iPhone Simulator the Mac has no microphone, so Devin triggers the same tool calls directly, and checks the layout, color and timing."
@@ -3109,10 +3126,16 @@ window.SPEC = {
       "hold": 0.9
     },
     "1073.png": {
+      "cam": {"x": 1000, "y": 300, "z": 1.55},
+      "camForce": true,
+      "camDur": 0.9,
       "hold": 1.0,
       "cap": "The pull request: tool, caption, 33 tests, typecheck and lint"
     },
     "1074.png": {
+      "cam": "reset",
+      "camForce": true,
+      "camDur": 0.9,
       "hold": 1.6,
       "cap": "The pull request: tool, caption, 33 tests, typecheck and lint",
       "vo": "The pull request has the tool, the caption, and the tests: thirty-three pass, with typecheck and lint."
@@ -3127,6 +3150,9 @@ window.SPEC = {
       "hold": 1.0
     },
     "1155.png": {
+      "cam": "reset",
+      "camForce": true,
+      "camDur": 0.9,
       "hold": 2.6,
       "cap": "Passes on web and iPhone; Android passes except one known issue",
       "vo": "Every check passes on web and iPhone, and on Android, except that one known issue."

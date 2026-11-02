@@ -1,4 +1,4 @@
-"""Puts the live gameplay intro (real GPT-Live-1 Coach audio, captured from the Chrome build) in front of a kit cut.
+"""Puts the live gameplay cold open (take 8) (real GPT-Live-1 Coach audio, captured from the Chrome build) in front of a kit cut.
 usage: python3 splice.py cap|nader|nomusic <intro.mp4>   (or: splice.py fit <mp4> to just squeeze a file under 95 MB)
   cap:   an 8 s title (intro 42.5 s on, kit music bed, caption pills 0-1), then intro 2.5-67.6 s with its real audio + caption pills, then 21-devin-voice.mp4
   nader: intro 42.5-66.9 s muted under Nader's three intro lines (intro/i*.png.wav), then the same 2.5-67.6 s, then 21-devin-voice-nader.mp4
@@ -9,9 +9,10 @@ D = os.path.dirname(os.path.abspath(__file__))
 mode, src = sys.argv[1], sys.argv[2]
 B = os.path.join(D, 'build', 'splice'); os.makedirs(B, exist_ok=True)
 CAPS = ["Today: a cross-platform game, with a new feature added by voice", "Built with Devin + Devin Voice, which uses ChatGPT voice under the hood",
-        "RIVET: a live ringside announcer on GPT-Live-1", "Talk to it: “start a best-of-one match against the CPU on hard”",
-        "A background tool starts the match while RIVET keeps talking", "“Switch the stage to Ember Fields”: another tool runs, the stage changes live",
-        "Interrupt mid-sentence: “actually, hold on…”", "Change its style: calm commentary"]
+        "RIVET: a live ringside announcer on GPT-Live-1", "\u201cSwitch the stage to Ember Fields\u201d: a background tool runs, the stage changes mid-match",
+        "A scripted player vs the CPU; the voice lines are pre-recorded", "\u201cHow\u2019s the score?\u201d: RIVET answers from live match state",
+        "Interrupt mid-sentence: \u201cactually, hold on\u2026\u201d", "Change its style: calm commentary",
+        "Devin built the base game earlier; RIVET runs the game\u2019s tools in the background"]
 subprocess.run(['node', os.path.join(D, 'caps.mjs'), B, *CAPS], env={**os.environ}, check=True)
 cap = lambda i: os.path.join(B, f'cap{i}.png')
 X264 = ['-c:v', 'libx264', '-profile:v', 'high', '-preset', 'slow', '-crf', '18', '-tune', 'animation', '-g', '120', '-bf', '2', '-pix_fmt', 'yuv420p',
@@ -47,34 +48,30 @@ def seg(out, ss, to, caps, audio):
     elif wavs:
         n0 = 1 + len(caps)
         f += ''.join(f';[{n0 + k}:a]adelay={int(t * 1000)}:all=1[w{k}]' for k, (_, t) in enumerate(wavs))
-        f += ';' + ''.join(f'[w{k}]' for k in range(len(wavs))) + f'amix=inputs={len(wavs)}:normalize=0,apad,atrim=0:{dur},loudnorm=I=-16:TP=-2:LRA=11,aresample=48000[ao]'
+        f += f';[0:a]volume=0.2[g0]' + ';' + ''.join(f'[w{k}]' for k in range(len(wavs))) + f'[g0]amix=inputs={len(wavs) + 1}:normalize=0,apad,atrim=0:{dur},loudnorm=I=-16:TP=-2:LRA=11,aresample=48000[ao]'
     elif isinstance(audio, tuple):
         f += f';[{1 + len(caps)}:a]apad,atrim=0:{dur},aresample=48000[ao]'
     else:
         f += f';anullsrc=r=48000:cl=stereo,atrim=0:{dur}[ao]'
     subprocess.run(cmd + ['-filter_complex', f, '-map', '[vo]', '-map', '[ao]', *X264, *AAC, '-t', str(dur), out], check=True)
     return out
-# real Coach run (segment time = intro time): STT of the intro audio sets these windows
-S0 = 1.0  # take3.mp4 (real RIVET run): title, click TALK TO RIVET at 2.5 s, greeting to 12.3, c1b 12.9, match 21.5, c2 39.8 (stage ~44), c6 57.1, interrupt 64.5, c8 calm 79.5, reply ends 86.9
-live = seg(os.path.join(B, 'live.mp4'), S0, 96.0,
-           [(i, a - S0, b - S0) for i, a, b in [(2, 3.0, 12.0), (3, 12.6, 20.5), (4, 21.0, 32.0), (5, 39.5, 50.0), (6, 56.8, 66.0), (7, 79.2, 88.0)]], 'intro')
-TS = 45.0  # title/teaser footage: Ember Fields gameplay
-parts = [live]
-if mode == 'cap':  # title card: the captioned cut has no narration, so pills 0-1 carry the intro line and the stack (Devin Voice = ChatGPT voice)
-    MB = os.path.join(B, 'music'); os.makedirs(os.path.join(MB, 'build'), exist_ok=True)
-    json.dump({'fps': 60, 'frames': 480, 'intro': 15, 'uiEnd': 440, 'clicks': [], 'typing': [], 'clips': [], 'caps': [], 'vo': [], 'voLate': []}, open(os.path.join(MB, 'build', 'cues.json'), 'w'))
-    subprocess.run(['python3', os.path.join(D, '..', '_kit', 'tools', 'audio.py'), MB], check=True)
-    music = os.path.join(B, 'music.wav')
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.path.join(MB, 'build', 'audio.wav'), '-t', '8', '-af', 'afade=t=out:st=7.3:d=0.7,loudnorm=I=-18:TP=-2:LRA=11', '-ar', '48000', '-ac', '2', music], check=True)
-    parts = [seg(os.path.join(B, 'title.mp4'), TS, TS + 8, [(0, 0.3, 3.8), (1, 4.0, 7.6)], ('music', music)), live]
+# take8 (real RIVET run, cut by ~/tools/expo/coldfinal.py): 0 QUAD slam, c2 stage 2.0, K.O. 5.8, ROUND 2 9.0, whip 14.5, c6 score 17.95,
+# barge-in 24.65, c8 calm 31.45, calm reply ends 36.95, whip 37.8, K.O. 42.1, ROUND 3 45.0, round-3 play to 64.1 (intro narration goes here)
+SPLIT = 37.8
+live1 = seg(os.path.join(B, 'live1.mp4'), 0.0, SPLIT,
+            [(2, 0.3, 5.5), (3, 5.8, 12.0), (4, 12.3, 17.5), (5, 17.9, 23.8), (6, 24.6, 30.6), (7, 31.4, 37.4)], 'intro')
+END = 64.1
 name = '77-stack-clash-voice'
-if mode in ('nader', 'nomusic'):
+if mode == 'cap':  # the captioned cut has no narration, so pills 0/1/8 carry the intro line and the stack (Devin Voice = ChatGPT voice)
+    live2 = seg(os.path.join(B, 'live2.mp4'), SPLIT, END, [(0, 0.6, 8.6), (1, 9.0, 17.6), (8, 18.0, 25.6)], 'intro')
+if mode in ('nader', 'nomusic'):  # Nader's three intro lines over the round-3 footage, game audio ducked under them
     I = json.load(open(os.path.join(D, 'intro', 'lines.json')))
-    t, wavs, caps = 0.5, [], []
-    for k, ci in zip(['i0.png', 'i1.png', 'i2.png'], [0, 1, 2]):
+    t, wavs, caps = 0.6, [], []
+    for k, ci in zip(['i0.png', 'i1.png', 'i2.png'], [0, 1, 8]):
         wavs.append((os.path.join(D, 'intro', k + '.wav'), t)); caps.append((ci, t, t + I[k]['dur'] + 0.3)); t += I[k]["dur"] + 0.35
-    parts = [seg(os.path.join(B, 'teaser.mp4'), TS, TS + t + 0.6, caps, wavs), live]
+    live2 = seg(os.path.join(B, 'live2.mp4'), SPLIT, END, caps, wavs)
     name += '-nader' + ('-nomusic' if mode == 'nomusic' else '')
+parts = [live1, live2]
 kit = os.path.join(D, name + '.mp4')
 norm = os.path.join(B, 'kit.mp4')
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', kit, '-c:v', 'copy', *AAC, norm], check=True)
