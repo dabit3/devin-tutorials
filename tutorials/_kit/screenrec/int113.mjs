@@ -1,0 +1,17 @@
+import { ScreenRec, sleep } from './screc.mjs';
+const r = await new ScreenRec(process.argv[2]).init();
+const fy = () => r.p.evaluate(() => [...document.querySelectorAll('iframe')].find(f => f.title !== 'Devin IDE').getBoundingClientRect().y);
+const scrollTo = async (target, steps = 45) => { const d = target - await fy(); await r.wheel(-d, steps, 16); await sleep(500); return fy(); };
+const at = async (x, rel) => ({ x, y: (await fy()) + rel });
+r.cur = { x: 1000, y: 470 }; await r.p.mouse.move(1000, 470);
+await scrollTo(300, 5); await sleep(400);
+await r.start(); r.mark('int'); await sleep(1200);
+r.mark('scroll1'); await scrollTo(50); await sleep(600);
+r.mark('hoverBar'); await r.moveTo(await at(877, 290), 0.9); await sleep(1600);
+r.mark('clickChanges'); await r.click(await at(555, 50), { dur: 0.8, after: 1200 });
+r.mark('scroll2'); await r.moveTo({ x: 1000, y: 300 }, 0.5); await scrollTo(-350); await sleep(900);
+r.mark('clickApproved'); await r.click(await at(726, 750), { dur: 0.7, after: 1300 });
+r.mark('clickAll'); await r.click(await at(483, 750), { dur: 0.6, after: 700 });
+r.mark('search'); await r.click(await at(342, 750), { dur: 0.7, after: 300 }); await r.type('res.send', 14); await sleep(1300);
+r.mark('sortAge'); await r.click(await at(697, 835), { dur: 0.7, after: 1400 });
+r.mark('end'); await sleep(800); await r.stop(); r.done(); process.exit(0);

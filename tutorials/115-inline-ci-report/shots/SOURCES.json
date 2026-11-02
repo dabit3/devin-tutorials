@@ -1,0 +1,63 @@
+{
+  "note": "Real, signed-in Devin web app (thequantexplorer org) captured with Chrome CDP screencast at 1152x648 CSS px, device scale factor 5 (5760x3240 JPEG frames; a few frames in some takes are 5760x2805 after the viewport height changed). Frames are not committed; shots/<take>/frames.jsonl has their Chrome timestamps and events.jsonl the pointer, click, typing and mark events. The cut (edl.json) only speeds up or trims real footage: waiting is compressed, nothing is staged or edited. Cursor and click rings are drawn from the recorded pointer events. No narration, music or title cards; the master has no audio stream.",
+  "feature": "Inline HTML artifacts (release notes: 'Richer Artifacts, Shown Inline', 'Interactive HTML Reports')",
+  "org": "thequantexplorer",
+  "session": "https://app.devin.ai/sessions/9d886f0b919145b1958316f266f7ffb3",
+  "repo": "astral-sh/uv",
+  "prompt": "Chart the last 200 GitHub Actions runs of github.com/astral-sh/uv as a compact interactive CI health report (pass rate, duration by workflow, failures by day) and embed it inline in your reply.",
+  "takes": [
+    "115a: prompt typed and sent, session watch until the artifact renders",
+    "115c: CI-only toggle, duration hover, Outcomes by day hover, Failed runs tab"
+  ],
+  "tools": "tutorials/_kit/screenrec/ (screc.mjs recorder, take.mjs, int115.mjs, comp.py compositor, prender.sh)",
+  "segments": [
+    [
+      "a",
+      0.5,
+      "typeStart",
+      1.0
+    ],
+    [
+      "a",
+      "typeStart",
+      "typed",
+      2.5
+    ],
+    [
+      "a",
+      "typed",
+      "sent+1.2",
+      1.0
+    ],
+    [
+      "a",
+      "sent+1.2",
+      108.0,
+      30.0
+    ],
+    [
+      "a",
+      108.0,
+      112.5,
+      2.0
+    ],
+    [
+      "a",
+      112.5,
+      116.0,
+      1.0
+    ],
+    [
+      "c",
+      "rev+0.3",
+      "ci-0.2",
+      1.6
+    ],
+    [
+      "c",
+      "ci-0.2",
+      "table+1.8",
+      1.0
+    ]
+  ]
+}
