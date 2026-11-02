@@ -1,0 +1,30 @@
+window.SPEC = {
+  "title": "Devin Oncall",
+  "subtitle": "Devin investigates and fixes your alerts, bugs, and incidents",
+  "outro": "Devin investigates. Your team reviews the fix.",
+  "voOutro": "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+  "dark": true,
+  "tailHold": 0.4,
+  "outroVoDelay": 0.5,
+  "speed": 3,
+  "maxZoom": 1.3,
+  "voSentGap": 0.45,
+  "edit": {
+    "0001.png": {"hold": 2.0, "cap": "A real alert: 5xx error rate 31%", "vo": "An alert fires. Checkout errors jump to thirty-one percent.", "subPos": {"x": 0.5, "y": 0.955}},
+    "0002.png": {"hold": 2.5, "cap": "Devin replies with the root cause", "vo": "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.", "subPos": {"x": 0.5, "y": 0.955}},
+    "0003.png": {"hold": 2.5, "cap": "Then it opens the fix", "vo": "Then it opens the fix, with tests, for the team to review.", "subPos": {"x": 0.5, "y": 0.955}},
+    "0010.png": {"scene": "what", "hold": 4.0, "cap": "Responders, Incidents, Reports", "vo": "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."},
+    "0011.png": {"hold": 2.0, "cap": "The Oncall page", "vo": "All three live on the Oncall page."},
+    "0020.png": {"hold": 3.0, "cap": "Connect tools, once", "vo": "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.", "subPos": {"x": 0.125, "y": 0.62}, "subWords": 5},
+    "0030.png": {"scene": "flow", "hold": 4.0, "cap": "How a responder works", "vo": "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."},
+    "0031.png": {"hold": 2.0, "cap": "A responder on #checkout-alerts", "vo": "Here's a responder watching a Slack alerts channel."},
+    "0032.png": {"hold": 2.5, "cap": "One issue, occurrences grouped", "vo": "It tracks the problem as one issue, with the summary, findings, and every occurrence.", "subPos": {"x": 0.25, "y": 0.85}},
+    "0040.png": {"scene": "types", "hold": 4.0, "cap": "Alerts, or Support + Bugs", "vo": "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."},
+    "0042.png": {"hold": 2.5, "cap": "Fixes land as pull requests", "vo": "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."},
+    "0050.png": {"scene": "review", "hold": 4.0, "cap": "A second agent checks the reasoning", "vo": "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."},
+    "0060.png": {"scene": "memory", "hold": 4.0, "cap": "Oncall improves over time", "vo": "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."},
+    "0070.png": {"hold": 3.0, "cap": "Incidents: Devin joins the channel", "vo": "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.", "subPos": {"x": 0.5, "y": 0.955}},
+    "0071.png": {"hold": 2.5, "cap": "A live incident report", "vo": "And it keeps an incident report up to date while the team works.", "subPos": {"x": 0.2, "y": 0.12}},
+    "0072.png": {"hold": 2.5, "cap": "Reports, on a schedule", "vo": "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.", "subPos": {"x": 0.15, "y": 0.6}}
+  }
+};

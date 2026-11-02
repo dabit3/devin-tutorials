@@ -1,0 +1,44 @@
+{
+  "org": "thequantexplorer (app.devin.ai/org/thequantexplorer), captured as the org Admin with the account name masked",
+  "kind": "real-ui",
+  "note": "Every frame is a real capture of the live app; nothing is mocked. The checkout bug was planted on purpose for the demo, and the video says so.",
+  "setup": {
+    "frames": "0000-0040",
+    "what": "Oncall Set up -> Connect tools -> Set up without tools, the real learning period (sped up), then Create responder 'checkout-api alerts' (Alerts, Slack trigger Message in channel equals #checkout-alerts, Ultra, System User)."
+  },
+  "service": {
+    "repo": "https://github.com/thequantexplorer/product-demo-apps/tree/main/checkout-api",
+    "planted_bug_commit": "a32c8fe00446ae2c8d826a0c10e499cf8bab1649",
+    "failing_version": "1.4.0",
+    "fixed_local_version": "1.4.1"
+  },
+  "alert": {
+    "frames": "0041-0101",
+    "slack": "Devin Oncall Demo workspace, #checkout-alerts, posted by the temporary Checkout Monitor incoming webhook",
+    "text": "[FIRING] checkout-api: 5xx error rate 31% (threshold 5%), Errors (1m): 46/149, version 1.4.0"
+  },
+  "investigation": {
+    "frames": "0101-0205",
+    "session": "https://app.devin.ai/sessions/4116ce1459874aa18aa67932c93f4a97",
+    "oncall_event": "https://app.devin.ai/org/thequantexplorer/oncall/367aee4e671546b9afafeaf8bda85048",
+    "fix_pr": "https://github.com/thequantexplorer/product-demo-apps/pull/100",
+    "devin_review": "https://app.devin.ai/review/thequantexplorer/product-demo-apps/pull/100",
+    "note": "PR #100 was open when these frames were captured (the incident shots recommend merging it). After capture it was closed unmerged and its branch deleted, as demo cleanup. An earlier PR #99 came from a reply mistakenly posted at the channel top level; it was closed unmerged, its branch deleted, and it is not shown."
+  },
+  "issue": {
+    "frames": "0206-0209",
+    "key": "CAA-1",
+    "title": "Checkout API returns 500 on promo-code orders",
+    "note": "Its two occurrences are the mistaken top-level reply and the real alert thread, not two separate production incidents."
+  },
+  "pr_diff": { "frames": "0210-0211", "source": "https://github.com/thequantexplorer/product-demo-apps/pull/100/files" },
+  "oncall_tabs": { "frames": "0212-0223", "what": "Overview, Alerts & Bugs, Incidents, Reports tabs of the real Oncall page" },
+  "reports": { "frames": "0224-0230", "what": "The real Create report form, opened and closed without creating a report" },
+  "incidents": {
+    "frames": "0231-0264",
+    "settings": "Incident settings enabled with the default incident- Slack channel prefix",
+    "slack_channel": "#incident-checkout-promo-500s in Devin Oncall Demo",
+    "incident_report": "https://app.devin.ai/sessions/44f4f03c239d4a6390cd658ab813e55d?tab=attachment%3Aincident-report.md"
+  },
+  "skipped_frames": "Repeated poll and intermediate click frames are marked skip in spec.js."
+}

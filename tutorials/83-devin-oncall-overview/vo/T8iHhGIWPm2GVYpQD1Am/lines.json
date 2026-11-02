@@ -1,0 +1,1957 @@
+{
+ "0001.png": {
+  "text": "An alert fires. Checkout errors jump to thirty-one percent.",
+  "dur": 3.38,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.103,
+    "text": "An alert fires."
+   },
+   {
+    "t0": 1.382,
+    "t1": 3.38,
+    "text": "Checkout errors jump to thirty-one percent."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+  "dur": 5.74,
+  "takeAt": 3.92,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.396,
+    "text": "Minutes later, Devin replies in the alert thread"
+   },
+   {
+    "t0": 2.442,
+    "t1": 3.441,
+    "text": "with the root cause:"
+   },
+   {
+    "t0": 3.685,
+    "t1": 5.74,
+    "text": "one commit that broke promo-code pricing."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "Then it opens the fix, with tests, for the team to review.",
+  "dur": 2.794,
+  "takeAt": 9.876,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.13,
+    "text": "Then it opens the fix,"
+   },
+   {
+    "t0": 1.153,
+    "t1": 2.794,
+    "text": "with tests, for the team to review."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+  "dur": 16.233,
+  "takeAt": 13.127,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.327,
+    "text": "This is Devin Oncall."
+   },
+   {
+    "t0": 1.571,
+    "t1": 3.626,
+    "text": "It investigates and fixes your alerts,"
+   },
+   {
+    "t0": 3.835,
+    "t1": 5.344,
+    "text": "bug reports, and incidents."
+   },
+   {
+    "t0": 5.588,
+    "t1": 6.738,
+    "text": "It has three parts."
+   },
+   {
+    "t0": 6.947,
+    "t1": 9.756,
+    "text": "Responders handle alerts and bug reports as they arrive."
+   },
+   {
+    "t0": 10.139,
+    "t1": 12.31,
+    "text": "Incidents puts Devin in your incident channel to"
+   },
+   {
+    "t0": 12.368,
+    "t1": 13.344,
+    "text": "help drive the fix."
+   },
+   {
+    "t0": 13.785,
+    "t1": 16.233,
+    "text": "And Reports give you a recurring summary of your oncall."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "All three live on the Oncall page.",
+  "dur": 1.715,
+  "takeAt": 29.745,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.035,
+    "t1": 1.715,
+    "text": "All three live on the Oncall page."
+   }
+  ]
+ },
+ "0020.png": {
+  "text": "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+  "dur": 11.237,
+  "takeAt": 31.738,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.163,
+    "text": "Setup happens once per organization."
+   },
+   {
+    "t0": 2.546,
+    "t1": 4.369,
+    "text": "You connect telemetry like Datadog,"
+   },
+   {
+    "t0": 4.416,
+    "t1": 5.565,
+    "text": "Sentry, or Grafana,"
+   },
+   {
+    "t0": 5.809,
+    "t1": 7.318,
+    "text": "and Devin learns your systems."
+   },
+   {
+    "t0": 7.597,
+    "t1": 10.058,
+    "text": "It writes skills that every Oncall session uses,"
+   },
+   {
+    "t0": 10.081,
+    "t1": 11.237,
+    "text": "and keeps them up to date."
+   }
+  ]
+ },
+ "0030.png": {
+  "text": "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+  "dur": 18.053,
+  "takeAt": 43.267,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.919,
+    "text": "A responder watches one source:"
+   },
+   {
+    "t0": 2.07,
+    "t1": 4.23,
+    "text": "a Slack or Microsoft Teams channel,"
+   },
+   {
+    "t0": 4.253,
+    "t1": 5.704,
+    "text": "or PagerDuty incidents."
+   },
+   {
+    "t0": 5.983,
+    "t1": 8.549,
+    "text": "A parent Devin reads each new alert and"
+   },
+   {
+    "t0": 8.595,
+    "t1": 10.011,
+    "text": "decides whether it's a new issue."
+   },
+   {
+    "t0": 10.255,
+    "t1": 10.778,
+    "text": "If it is,"
+   },
+   {
+    "t0": 10.812,
+    "t1": 12.937,
+    "text": "a child Devin starts a fresh investigation."
+   },
+   {
+    "t0": 13.32,
+    "t1": 15.004,
+    "text": "If not, the alert is grouped with the"
+   },
+   {
+    "t0": 15.05,
+    "t1": 18.045,
+    "text": "known issue, so a repeating alert is investigated once."
+   }
+  ]
+ },
+ "0031.png": {
+  "text": "Here's a responder watching a Slack alerts channel.",
+  "dur": 2.465,
+  "takeAt": 61.545,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.092,
+    "t1": 2.465,
+    "text": "Here's a responder watching a Slack alerts channel."
+   }
+  ]
+ },
+ "0032.png": {
+  "text": "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+  "dur": 4.146,
+  "takeAt": 64.339,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.803,
+    "text": "It tracks the problem as one issue,"
+   },
+   {
+    "t0": 1.919,
+    "t1": 2.662,
+    "text": "with the summary,"
+   },
+   {
+    "t0": 2.72,
+    "t1": 4.137,
+    "text": "findings, and every occurrence."
+   }
+  ]
+ },
+ "0040.png": {
+  "text": "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+  "dur": 10.001,
+  "takeAt": 68.739,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.664,
+    "text": "There are two responder types."
+   },
+   {
+    "t0": 1.943,
+    "t1": 3.626,
+    "text": "Alerts focuses on impact,"
+   },
+   {
+    "t0": 3.8,
+    "t1": 5.936,
+    "text": "severity, and a fast mitigation."
+   },
+   {
+    "t0": 6.32,
+    "t1": 8.932,
+    "text": "Support and Bugs focuses on reproducing the problem"
+   },
+   {
+    "t0": 8.978,
+    "t1": 10.001,
+    "text": "and fixing it in code."
+   }
+  ]
+ },
+ "0042.png": {
+  "text": "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+  "dur": 6.526,
+  "takeAt": 79.014,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.467,
+    "text": "Devin uses your telemetry,"
+   },
+   {
+    "t0": 1.513,
+    "t1": 3.498,
+    "text": "code, and deployments to find the cause."
+   },
+   {
+    "t0": 3.777,
+    "t1": 5.217,
+    "text": "When the fix belongs in code,"
+   },
+   {
+    "t0": 5.24,
+    "t1": 6.526,
+    "text": "it opens a pull request."
+   }
+  ]
+ },
+ "0050.png": {
+  "text": "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+  "dur": 6.906,
+  "takeAt": 85.864,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 3.057,
+    "text": "A second review agent checks Devin's reasoning as it works."
+   },
+   {
+    "t0": 3.336,
+    "t1": 4.346,
+    "text": "It catches mistakes,"
+   },
+   {
+    "t0": 4.38,
+    "t1": 6.906,
+    "text": "like blaming a recent deploy before the evidence shows it."
+   }
+  ]
+ },
+ "0060.png": {
+  "text": "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+  "dur": 9.606,
+  "takeAt": 93.004,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.001,
+    "text": "Oncall also gets better over time."
+   },
+   {
+    "t0": 2.326,
+    "t1": 4.044,
+    "text": "Each responder has its own memory,"
+   },
+   {
+    "t0": 4.288,
+    "t1": 6.54,
+    "text": "your organization gets generated skills,"
+   },
+   {
+    "t0": 6.715,
+    "t1": 9.606,
+    "text": "and every investigation is saved for future ones to search."
+   }
+  ]
+ },
+ "0070.png": {
+  "text": "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+  "dur": 8.978,
+  "takeAt": 102.942,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.27,
+    "text": "For bigger outages,"
+   },
+   {
+    "t0": 1.421,
+    "t1": 3.348,
+    "text": "Incidents works with teams that open a Slack"
+   },
+   {
+    "t0": 3.406,
+    "t1": 4.462,
+    "text": "channel per incident."
+   },
+   {
+    "t0": 4.904,
+    "t1": 6.181,
+    "text": "Devin joins the channel,"
+   },
+   {
+    "t0": 6.39,
+    "t1": 7.725,
+    "text": "posts a likely root cause,"
+   },
+   {
+    "t0": 7.748,
+    "t1": 8.978,
+    "text": "and recommends a mitigation."
+   }
+  ]
+ },
+ "0071.png": {
+  "text": "And it keeps an incident report up to date while the team works.",
+  "dur": 2.839,
+  "takeAt": 112.161,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.629,
+    "text": "And it keeps an incident report up to"
+   },
+   {
+    "t0": 1.687,
+    "t1": 2.839,
+    "text": "date while the team works."
+   }
+  ]
+ },
+ "0072.png": {
+  "text": "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+  "dur": 7.875,
+  "takeAt": 115.355,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.118,
+    "t1": 1.929,
+    "text": "Reports run on the schedule you choose."
+   },
+   {
+    "t0": 2.138,
+    "t1": 3.311,
+    "text": "They cover incidents,"
+   },
+   {
+    "t0": 3.427,
+    "t1": 5.749,
+    "text": "alerts, issues, and fixes shipped,"
+   },
+   {
+    "t0": 5.923,
+    "t1": 7.875,
+    "text": "with Devin's insights on what's driving them."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+  "dur": 7.492,
+  "takeAt": 123.678,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0001.png",
+    "An alert fires. Checkout errors jump to thirty-one percent.",
+    "An alert fires. Checkout errors jump to thirty-one percent."
+   ],
+   [
+    "0002.png",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing.",
+    "Minutes later, Devin replies in the alert thread with the root cause: one commit that broke promo-code pricing."
+   ],
+   [
+    "0003.png",
+    "Then it opens the fix, with tests, for the team to review.",
+    "Then it opens the fix, with tests, for the team to review."
+   ],
+   [
+    "0010.png",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall.",
+    "This is Devin Oncall. It investigates and fixes your alerts, bug reports, and incidents. It has three parts. Responders handle alerts and bug reports as they arrive. Incidents puts Devin in your incident channel to help drive the fix. And Reports give you a recurring summary of your oncall."
+   ],
+   [
+    "0011.png",
+    "All three live on the Oncall page.",
+    "All three live on the Oncall page."
+   ],
+   [
+    "0020.png",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date.",
+    "Setup happens once per organization. You connect telemetry like Datadog, Sentry, or Grafana, and Devin learns your systems. It writes skills that every Oncall session uses, and keeps them up to date."
+   ],
+   [
+    "0030.png",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once.",
+    "A responder watches one source: a Slack or Microsoft Teams channel, or PagerDuty incidents. A parent Devin reads each new alert and decides whether it's a new issue. If it is, a child Devin starts a fresh investigation. If not, the alert is grouped with the known issue, so a repeating alert is investigated once."
+   ],
+   [
+    "0031.png",
+    "Here's a responder watching a Slack alerts channel.",
+    "Here's a responder watching a Slack alerts channel."
+   ],
+   [
+    "0032.png",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence.",
+    "It tracks the problem as one issue, with the summary, findings, and every occurrence."
+   ],
+   [
+    "0040.png",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code.",
+    "There are two responder types. Alerts focuses on impact, severity, and a fast mitigation. Support and Bugs focuses on reproducing the problem and fixing it in code."
+   ],
+   [
+    "0042.png",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request.",
+    "Devin uses your telemetry, code, and deployments to find the cause. When the fix belongs in code, it opens a pull request."
+   ],
+   [
+    "0050.png",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it.",
+    "A second review agent checks Devin's reasoning as it works. It catches mistakes, like blaming a recent deploy before the evidence shows it."
+   ],
+   [
+    "0060.png",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search.",
+    "Oncall also gets better over time. Each responder has its own memory, your organization gets generated skills, and every investigation is saved for future ones to search."
+   ],
+   [
+    "0070.png",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation.",
+    "For bigger outages, Incidents works with teams that open a Slack channel per incident. Devin joins the channel, posts a likely root cause, and recommends a mitigation."
+   ],
+   [
+    "0071.png",
+    "And it keeps an incident report up to date while the team works.",
+    "And it keeps an incident report up to date while the team works."
+   ],
+   [
+    "0072.png",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them.",
+    "Reports run on the schedule you choose. They cover incidents, alerts, issues, and fixes shipped, with Devin's insights on what's driving them."
+   ],
+   [
+    "outro",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch.",
+    "Devin Oncall investigates the alert, finds the root cause, and opens the fix, so your engineers review the result instead of starting from scratch."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.082,
+    "text": "Devin Oncall investigates the alert,"
+   },
+   {
+    "t0": 2.326,
+    "t1": 3.359,
+    "text": "finds the root cause,"
+   },
+   {
+    "t0": 3.382,
+    "t1": 4.357,
+    "text": "and opens the fix,"
+   },
+   {
+    "t0": 4.531,
+    "t1": 6.482,
+    "text": "so your engineers review the result instead of"
+   },
+   {
+    "t0": 6.528,
+    "t1": 7.492,
+    "text": "starting from scratch."
+   }
+  ]
+ }
+}
