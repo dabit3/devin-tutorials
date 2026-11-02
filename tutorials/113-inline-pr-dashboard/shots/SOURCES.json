@@ -1,0 +1,65 @@
+{
+  "note": "Real, signed-in Devin web app (thequantexplorer org) captured with Chrome CDP screencast at 1152x648 CSS px, device scale factor 5 (5760x3240 JPEG frames; a few frames in some takes are 5760x2805 after the viewport height changed). Frames are not committed; shots/<take>/frames.jsonl has their Chrome timestamps and events.jsonl the pointer, click, typing and mark events. The cut (edl.json) only speeds up or trims real footage: waiting is compressed, nothing is staged or edited. Cursor and click rings are drawn from the recorded pointer events. No narration, music or title cards; the master has no audio stream.",
+  "feature": "Inline HTML artifacts (release notes: 'Richer Artifacts, Shown Inline', 'Interactive HTML Reports')",
+  "org": "thequantexplorer",
+  "session": "https://app.devin.ai/sessions/afda9d74a4ef41e9ab695deaeedd287c",
+  "repo": "expressjs/express",
+  "prompt": "Build an interactive dashboard of the open pull requests in github.com/expressjs/express and embed it inline in your reply.",
+  "takes": [
+    "113a: prompt typed and sent",
+    "113b: session watch until the artifact renders",
+    "113d: scroll back up to the dashboard",
+    "113c: hover, review-status filters, search, sort"
+  ],
+  "tools": "tutorials/_kit/screenrec/ (screc.mjs recorder, take.mjs, int113.mjs, comp.py compositor, prender.sh)",
+  "segments": [
+    [
+      "a",
+      0.5,
+      "typeStart",
+      1.0
+    ],
+    [
+      "a",
+      "typeStart",
+      "typed",
+      1.5
+    ],
+    [
+      "a",
+      "typed",
+      "sent+0.5",
+      1.0
+    ],
+    [
+      "b",
+      0.5,
+      "artifact-1.5",
+      30.0
+    ],
+    [
+      "b",
+      "artifact-1.5",
+      "artifact+2",
+      1.0
+    ],
+    [
+      "d",
+      "rev+0.3",
+      "end",
+      1.5
+    ],
+    [
+      "c",
+      "int+0.6",
+      "clickApproved+1.6",
+      1.0
+    ],
+    [
+      "c",
+      "search-0.2",
+      "sortAge-0.1",
+      1.0
+    ]
+  ]
+}

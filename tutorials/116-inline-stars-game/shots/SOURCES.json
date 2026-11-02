@@ -1,0 +1,63 @@
+{
+  "note": "Real, signed-in Devin web app (thequantexplorer org) captured with Chrome CDP screencast at 1152x648 CSS px, device scale factor 5 (5760x3240 JPEG frames; a few frames in some takes are 5760x2805 after the viewport height changed). Frames are not committed; shots/<take>/frames.jsonl has their Chrome timestamps and events.jsonl the pointer, click, typing and mark events. The cut (edl.json) only speeds up or trims real footage: waiting is compressed, nothing is staged or edited. Cursor and click rings are drawn from the recorded pointer events. No narration, music or title cards; the master has no audio stream.",
+  "feature": "Inline HTML artifacts (release notes: 'Richer Artifacts, Shown Inline', 'Interactive HTML Reports')",
+  "org": "thequantexplorer",
+  "session": "https://app.devin.ai/sessions/d68c925121dd44899f19faa225b35428",
+  "repo": "20 popular GitHub repos (live star counts)",
+  "prompt": "Make a playable Higher or Lower game from the real GitHub star counts of 20 popular open-source repos (fetch them live) and embed it inline in your reply.",
+  "takes": [
+    "116a: prompt typed and sent, session watch until the artifact renders",
+    "116c: four Higher/Lower guesses played in the artifact"
+  ],
+  "tools": "tutorials/_kit/screenrec/ (screc.mjs recorder, take.mjs, int116.mjs, comp.py compositor, prender.sh)",
+  "segments": [
+    [
+      "a",
+      0.5,
+      "typeStart",
+      1.0
+    ],
+    [
+      "a",
+      "typeStart",
+      "typed",
+      2.0
+    ],
+    [
+      "a",
+      "typed",
+      "sent+1.2",
+      1.0
+    ],
+    [
+      "a",
+      "sent+1.2",
+      "artifact-4",
+      30.0
+    ],
+    [
+      "a",
+      "artifact-4",
+      "artifact+2",
+      1.3
+    ],
+    [
+      "c",
+      "rev+0.3",
+      "up+1.8",
+      1.3
+    ],
+    [
+      "c",
+      "up+1.8",
+      "g1-0.2",
+      6.0
+    ],
+    [
+      "c",
+      "g1-0.2",
+      "end+0.8",
+      1.0
+    ]
+  ]
+}

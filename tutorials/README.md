@@ -41,6 +41,10 @@
 | 59 | Port an iOS screen to Android: how it works (overview) | `59-ios-to-android-parity-overview/` |
 | 76 | Devin CLI: what's new in v3000.11.92 (overview) | `76-cli-whats-new-overview/` |
 | 77 | Stack Clash: add a feature to a voice-driven game by voice | `77-stack-clash-voice/` |
+| 113 | Inline PR dashboard: inline HTML artifact, silent screen recording | `113-inline-pr-dashboard/` |
+| 114 | Inline architecture diagram: inline HTML artifact, silent screen recording | `114-inline-architecture-diagram/` |
+| 115 | Inline CI health report: inline HTML artifact, silent screen recording | `115-inline-ci-report/` |
+| 116 | Inline Higher or Lower game: inline HTML artifact, silent screen recording | `116-inline-stars-game/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
 

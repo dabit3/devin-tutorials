@@ -1,0 +1,63 @@
+{
+  "note": "Real, signed-in Devin web app (thequantexplorer org) captured with Chrome CDP screencast at 1152x648 CSS px, device scale factor 5 (5760x3240 JPEG frames; a few frames in some takes are 5760x2805 after the viewport height changed). Frames are not committed; shots/<take>/frames.jsonl has their Chrome timestamps and events.jsonl the pointer, click, typing and mark events. The cut (edl.json) only speeds up or trims real footage: waiting is compressed, nothing is staged or edited. Cursor and click rings are drawn from the recorded pointer events. No narration, music or title cards; the master has no audio stream.",
+  "feature": "Inline HTML artifacts (release notes: 'Richer Artifacts, Shown Inline', 'Interactive HTML Reports')",
+  "org": "thequantexplorer",
+  "session": "https://app.devin.ai/sessions/a3bc802234a647e99b8d8c666264830e",
+  "repo": "pallets/flask",
+  "prompt": "Map the architecture of github.com/pallets/flask as an interactive diagram (click a module to see what it does) and embed it inline in your reply.",
+  "takes": [
+    "114a: prompt typed and sent, session watch until the artifact renders",
+    "114c: scroll to the diagram, click AppContext, read its panel, click Templating"
+  ],
+  "tools": "tutorials/_kit/screenrec/ (screc.mjs recorder, take.mjs, int114.mjs, comp.py compositor, prender.sh)",
+  "segments": [
+    [
+      "a",
+      0.5,
+      "typeStart",
+      1.0
+    ],
+    [
+      "a",
+      "typeStart",
+      "typed",
+      2.0
+    ],
+    [
+      "a",
+      "typed",
+      "sent+1.2",
+      1.0
+    ],
+    [
+      "a",
+      "sent+1.2",
+      "artifact-3",
+      30.0
+    ],
+    [
+      "a",
+      "artifact-3",
+      "artifact+2",
+      1.0
+    ],
+    [
+      "c",
+      "rev+0.3",
+      "n1-0.2",
+      1.4
+    ],
+    [
+      "c",
+      "n1-0.2",
+      "panel1+2.6",
+      1.0
+    ],
+    [
+      "c",
+      "back-0.1",
+      "n3-0.1",
+      1.0
+    ]
+  ]
+}
