@@ -389,6 +389,7 @@ async function placeCaptions() {
   }
 }
 function drawCaption(f) {
+  if (SPEC.noSubs) return; // SPEC.noSubs: render without captions or narration subtitles
   const k = lastBefore(TL.caps, f); if (!k) return;
   const idx = TL.caps.indexOf(k), prev = TL.caps[idx - 1];
   const draw = (c, a, dy) => {
