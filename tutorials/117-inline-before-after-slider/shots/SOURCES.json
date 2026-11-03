@@ -1,0 +1,65 @@
+{
+  "note": "Real, signed-in Devin web app (thequantexplorer org) captured with Chrome CDP screencast at 1152x648 CSS px, device scale factor 5 (5760x3240 JPEG frames). Frames are not committed; shots/<take>/frames.jsonl has their Chrome timestamps and events.jsonl the pointer, click, drag, typing and mark events. The cut (edl.json) only speeds up or trims real footage: waiting is compressed, nothing is staged or edited. Cursor and click rings are drawn from the recorded pointer events. No narration, music or title cards; the master has no audio stream.",
+  "feature": "Inline HTML artifacts (release notes: 'Richer Artifacts, Shown Inline', 'Interactive HTML Reports')",
+  "org": "thequantexplorer",
+  "session": "https://app.devin.ai/sessions/a88fea080b084049a2b872ff15ff6bc1",
+  "repo": "dabit3/new-portfolio, as a copy at thequantexplorer/product-demo-apps/new-portfolio (the thequantexplorer org has no GitHub access to dabit3/new-portfolio)",
+  "pr": "https://github.com/thequantexplorer/product-demo-apps/pull/122",
+  "prompt": "@thequantexplorer/product-demo-apps In new-portfolio/, give the two link lists under the hero a striking redesign as a polished card grid that fits the dark, light and hacker themes. Run it, take before and after screenshots at the same viewport and scroll, open a PR, and reply with an inline before/after drag slider (screenshots embedded, a tab per theme).",
+  "artifact": "before-after-slider.html: the session's before-after.html attachment (six real 1200x917 WebP screenshots embedded, 1440x1100 viewport at scrollY 840, FX off) with the Devin artifact kit CSS/JS from static.devin.ai inlined so it opens offline; content is otherwise byte-identical",
+  "takes": [
+    "117a: repo mentioned, prompt typed and sent, session watch until the slider artifact renders",
+    "117b: slider dragged back and forth on the real Dark, Light and Hacker tabs, then the PR chip hovered"
+  ],
+  "tools": "tutorials/_kit/screenrec/ (screc.mjs recorder, take117.mjs, int117.mjs, comp.py compositor, prender.sh)",
+  "segments": [
+    [
+      "a",
+      0.5,
+      "typeStart",
+      1.0
+    ],
+    [
+      "a",
+      "typeStart",
+      "typed",
+      3.2
+    ],
+    [
+      "a",
+      "typed",
+      "sent+1.2",
+      1.3
+    ],
+    [
+      "a",
+      "sent+1.2",
+      "artifact-4",
+      90.0
+    ],
+    [
+      "a",
+      "artifact-4",
+      "artifact+2",
+      1.3
+    ],
+    [
+      "b",
+      "rev+0.3",
+      "up+1.8",
+      1.3
+    ],
+    [
+      "b",
+      "up+1.8",
+      "pr",
+      1.4
+    ],
+    [
+      "b",
+      "pr",
+      "pr+2.2",
+      1.0
+    ]
+  ]
+}
