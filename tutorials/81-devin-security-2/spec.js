@@ -121,79 +121,33 @@ window.SPEC = {
    "hold": 0.9
   },
   "0130.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   },
    "camDur": 0.7,
    "hold": 0.6
   },
   "0009.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   },
    "vo": "Connections bring findings from other security tools into Devin to triage and fix. Snyk, Wiz, GitHub, SonarQube and others are in enterprise beta.",
    "hold": 1.2
   },
   "0010.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   }
   },
   "0011.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   }
   },
   "0012.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   },
    "hl": true,
    "vo": "You can also upload a CSV export from any tool."
   },
   "0013.png": {
-   "cam": {
-    "x": 1440,
-    "y": 470,
-    "z": 1.3
-   },
    "vo": "Devin pulls in the findings, investigates each one to confirm it's valid, and writes the results back."
   },
   "0014.png": {
-   "cam": {
-    "x": 1440,
-    "y": 470,
-    "z": 1.3
-   }
   },
   "0015.png": {
-   "cam": {
-    "x": 1440,
-    "y": 470,
-    "z": 1.3
-   }
   },
   "0016.png": {
-   "cam": {
-    "x": 1440,
-    "y": 470,
-    "z": 1.3
-   },
    "vo": "Or pick Custom, and describe where your findings live, like an API or a report in the repo.",
    "hold": 1.2
   },
   "0111.png": {
-   "cam": "reset",
    "camDur": 0.01,
    "vo": "The Repositories view lists each scanned repository with its findings by severity, its pull requests, and when it was last scanned.",
    "hold": 1.0
@@ -202,130 +156,49 @@ window.SPEC = {
    "vo": "Click a repository to see its findings."
   },
   "0131.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   },
    "camDur": 0.4,
    "hold": 0.3
   },
   "0019.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   },
    "vo": "To start a scan, I pick a repository. ledger-api is a small invoicing API I built with a few realistic security bugs.",
    "voSay": "To start a scan, I pick a repository. Ledger A P I is a small invoicing A P I I built with a few realistic security bugs."
   },
   "0020.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   }
   },
   "0021.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   }
   },
   "0022.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   }
   },
   "0023.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   }
   },
   "0024.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   }
   },
   "0025.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   },
    "hold": 0.5
   },
   "0026.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   }
   },
   "0027.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   },
    "vo": "Basic setup only needs a repository. Advanced adds the scan type, a profile, and an optional connection."
   },
   "0028.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   }
   },
   "0029.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   }
   },
   "0030.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   },
    "hl": true,
    "vo": "I leave Scan with a threat model on, so Devin writes one, runs the scan, and reranks findings against it.",
    "hold": 1.4
   },
   "0031.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   },
    "hl": true
   },
   "0032.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   }
   },
   "0035.png": {
-   "cam": {
-    "x": 1440,
-    "y": 405,
-    "z": 1.3
-   },
    "hold": 0.6
   },
   "0036.png": {
-   "cam": "reset",
    "camDur": 0.01,
    "vo": "Devin drafts the threat model from the code, then asks four optional questions. I accept its draft answers."
   },
