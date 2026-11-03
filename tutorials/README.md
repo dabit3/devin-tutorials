@@ -45,6 +45,7 @@
 | 114 | Inline architecture diagram: inline HTML artifact, silent screen recording | `114-inline-architecture-diagram/` |
 | 115 | Inline CI health report: inline HTML artifact, silent screen recording | `115-inline-ci-report/` |
 | 116 | Inline Higher or Lower game: inline HTML artifact, silent screen recording | `116-inline-stars-game/` |
+| 117 | Inline before/after slider for a UI update: inline HTML artifact, silent screen recording | `117-inline-before-after-slider/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
 
