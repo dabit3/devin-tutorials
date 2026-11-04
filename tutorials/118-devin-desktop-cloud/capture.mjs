@@ -24,11 +24,86 @@ async function tidy() {
 }
 await tidy(); await r.park();
 
+
+const button = t => p.evaluate(t => { const e = [...document.querySelectorAll('button')].filter(e => e.textContent.trim() === t && e.getBoundingClientRect().width).pop();
+  if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2, w: b.width, h: b.height }; }, t);
+const until = async (ms, test, every = 3000) => { const t0 = Date.now(); while (Date.now() - t0 < ms) { if (await test(await r.text())) return true; await sleep(every); } return false; };
+const toBottom = async () => { await p.evaluate(() => { for (const e of document.querySelectorAll('main *')) { const b = e.getBoundingClientRect(); if (b.x < 700 && e.scrollHeight > e.clientHeight + 20 && /auto|scroll/.test(getComputedStyle(e).overflowY)) e.scrollTop = e.scrollHeight; } }); await sleep(900); };
+const ownText = (t, sel = '*') => p.evaluate((t, sel) => {
+  const e = [...document.querySelectorAll(sel)].filter(e => { const b = e.getBoundingClientRect(); return b.width && b.height && b.y >= 0 && b.y < innerHeight && [...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim() === t); }).pop();
+  if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2, w: b.width, h: b.height };
+}, t, sel);
+const clearToasts = () => p.evaluate(() => { for (const e of document.querySelectorAll('[aria-label^="Clear Notification"],.notification-toast .codicon-notifications-clear')) if (e.getBoundingClientRect().width) e.click(); });
+const sbOpen = async () => !!(await ownText('New session'));
+const sidebar = async open => { if ((await sbOpen()) !== open) { const t = await label('Toggle Sidebar'); await p.mouse.click(t.x, t.y); await sleep(900); } };
+const newSession = async () => { await sidebar(true); const n = await ownText('New session'); await p.mouse.click(n.x, n.y); await sleep(1500); await tidy(); };
+const allowLoop = async (ms, firstCap) => {
+  const t0 = Date.now(); let n = 0;
+  while (Date.now() - t0 < ms) {
+    const a = await button('Allow');
+    if (a) { await toBottom(); await r.click(await button('Allow'), { cap: n++ ? undefined : firstCap }, 2500); continue; }
+    const tx = await r.text();
+    if (!(await label('Stop Devin')) && /awaiting instructions/.test(tx.slice(-600))) return true;
+    await r.shot({}); await sleep(2500);
+  }
+  return false;
+};
+
+const LOCAL_PROMPT = process.env.LP || 'In pagemark, show an estimated reading time on each book (2 minutes per page), with a test. Then run the tests.';
+if (PHASE === 20) {
+  await clearToasts(); await newSession(); await r.park();
+  await r.shot({ hold: 2.6, cursor: false });
+  await r.click(await label('Toggle Sidebar'), { cap: 'Collapse the session list' }, 1000);
+  await r.click(await r.at('Local'), { cap: 'Local: Devin works on this computer' }, 900);
+  await r.hover(await label('Session folder'), {}); await sleep(500); await r.shot({ hold: 1.4, cap: 'In a folder you choose' });
+  await r.click(await label('Choose an agent'), {}, 1200);
+  await r.shot({ hold: 2.4, hlBox: await around(['Devin Local', 'Claude Agent', 'Codex']), cap: 'Claude and Codex plug in over ACP' });
+  await p.keyboard.press('Escape'); await sleep(700);
+  const mb = (await ownText('SWE-2 High', 'main button, main button *')) || (await ownText('Fusion', 'main button, main button *'));
+  await r.click(mb, { cap: 'Pick any model' }, 1400);
+  await r.shot({ hold: 2.2 });
+  await r.click(await ownText('Fusion'), { cap: 'Fusion: a frontier lead with a fast sidekick' }, 1200);
+  await r.shot({ hold: 1.2 });
+  await r.click(await label('Mode'), {}, 1100);
+  await r.shot({ hold: 1.6, hlBox: await around(['Smart', 'Ask', 'Plan', 'Bypass Permissions']), cap: 'Modes set what needs your approval' });
+  for (const m of ['Smart', 'Ask', 'Plan', 'Bypass Permissions']) { await r.hover(await ownText(m), {}); await sleep(300); await r.shot({ hold: 1.1 }); }
+  await r.click(await ownText('Code'), {}, 900);
+  const box = await around(['Tip:'], 'main *');
+  await r.click({ x: box.x, y: box.y }, {}, 600);
+  for (let i = 0; i < LOCAL_PROMPT.length; i += 14) { await p.keyboard.type(LOCAL_PROMPT.slice(i, i + 14), { delay: 12 }); await r.shot({ kind: 'type' }); }
+  await sleep(500);
+  await r.click(await label('Send'), { cap: 'Start a local session' }, 2500);
+  await r.park();
+  await allowLoop(360000, 'Commands wait for your OK');
+  await sleep(1200); await toBottom(); await r.park();
+  await r.shot({ hold: 2.5, cap: 'Done, on this machine' });
+  const ch = await ownText('Changes');
+  if (ch) { await r.click(ch, { cap: 'Review the edits' }, 2500); await r.park(); await r.shot({ hold: 2.5 }); }
+}
+if (PHASE === 21) {
+  await sidebar(true); const st = await label('Settings'); await p.mouse.click(st.x, st.y); await sleep(2000);
+  const ap = await ownText('App settings'); await p.mouse.click(ap.x, ap.y); await sleep(1800);
+  await p.evaluate(() => { const e = [...document.querySelectorAll('h1,h2,h3,h4,div,span')].filter(e => [...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim() === 'Agents') && e.getBoundingClientRect().x > 300).pop(); if (!e) return; let s = e.parentElement; while (s && !(s.scrollHeight > s.clientHeight + 20 && /auto|scroll/.test(getComputedStyle(s).overflowY))) s = s.parentElement; if (s) s.scrollTop += e.getBoundingClientRect().top - s.getBoundingClientRect().top - 24; });
+  await sleep(900); await clearToasts(); await r.park();
+  await r.shot({ hold: 2.2, hlBox: await around(['Devin Local', 'Claude Agent', 'Codex']), cap: 'Turn on more ACP agents in Settings' });
+  await p.evaluate(() => { const e = [...document.querySelectorAll('*')].find(e => [...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim() === 'Codex') && e.getBoundingClientRect().width); let s = e; while (s && !(s.scrollHeight > s.clientHeight + 20 && /auto|scroll/.test(getComputedStyle(s).overflowY))) s = s.parentElement; window.__acpList = s; });
+  for (let i = 0; i < 6; i++) { await p.evaluate(() => window.__acpList && window.__acpList.scrollBy({ top: 90 })); await sleep(250); await r.shot({ hold: 0.35 }); }
+  await r.shot({ hold: 1 });
+  const b = await ownText('Back to app'); await p.mouse.click(b.x, b.y); await sleep(1500); await sidebar(false);
+}
+if (PHASE === 22) {
+  await sidebar(false); await r.park();
+  await r.click(await ownText('Agents'), { cap: 'Prefer an editor? Switch to the IDE view' }, 1100);
+  await r.shot({ hold: 1.4 });
+  await r.click(await ownText('IDE view'), {}, 3500); await r.park();
+  await r.shot({ hold: 3 });
+  await r.click(await ownText('Agents'), {}, 900); await r.click(await ownText('Agents view'), {}, 2000);
+}
+
 if (PHASE === 1) {
-  await r.click(await r.at('New session'), {}, 1500); await r.park(); await tidy();
-  r.beats.pop(); r.beats.pop(); r.n -= 2;
-  await r.shot({ hold: 2.6, cursor: false, cap: 'The new Devin Desktop' });
-  await r.click(await r.at('Cloud'), { cap: 'Cloud: the task runs on Devin’s own machine' }, 900);
+  await newSession(); await sidebar(false); await r.park();
+  await r.shot({ hold: 1.2, cursor: false });
+await r.click(await r.at('Cloud'), { cap: 'Cloud: the task runs on Devin’s own machine' }, 900);
   await r.click(await label('Configuration'), { cap: 'Each cloud session gets its own VM' }, 1200);
   const ve = await r.at('Virtual environment');
   await r.hover(ve, {}); await sleep(900);
@@ -47,10 +122,6 @@ const findText = (t, sel = '*') => p.evaluate((t, sel) => {
   const e = [...document.querySelectorAll(sel)].filter(e => { const b = e.getBoundingClientRect(); return b.width && b.height && b.y >= 0 && b.y < innerHeight && [...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim() === t); }).pop();
   if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2, w: b.width, h: b.height };
 }, t, sel);
-const button = t => p.evaluate(t => { const e = [...document.querySelectorAll('button')].filter(e => e.textContent.trim() === t && e.getBoundingClientRect().width).pop();
-  if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2, w: b.width, h: b.height }; }, t);
-const until = async (ms, test, every = 3000) => { const t0 = Date.now(); while (Date.now() - t0 < ms) { if (await test(await r.text())) return true; await sleep(every); } return false; };
-const toBottom = async () => { await p.evaluate(() => { for (const e of document.querySelectorAll('main *')) { const b = e.getBoundingClientRect(); if (b.x < 700 && e.scrollHeight > e.clientHeight + 20 && /auto|scroll/.test(getComputedStyle(e).overflowY)) e.scrollTop = e.scrollHeight; } }); await sleep(900); };
 // open a session tab from the "+" Add tab menu (or the empty-panel launcher)
 async function tab(name, cap, wait = 3500) {
   let pt = await findText(name);
@@ -84,6 +155,7 @@ async function wvBox(js) {
 }
 async function reloadPreview() { await unzoom(); await p.evaluate(() => document.querySelector('[aria-label="Reload preview"]')?.click()); await sleep(4500); }
 if (PHASE === 4) { // preview: real app on the cloud machine, picker -> chat
+  await clearToasts(); await sleep(500);
   await p.evaluate(() => { const t = [...document.querySelectorAll('*')].find(e => e.getBoundingClientRect().width && e.getBoundingClientRect().y < 80 && [...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim() === 'Changes')); t && t.click(); });
   await sleep(1500); await r.park(); await r.shot({});
   await r.click(await label('Add tab'), {}, 900);
@@ -184,7 +256,7 @@ if (PHASE === 13) { // payoff in the original session: chat on the page-count re
 }
 if (PHASE === 14) { // Local Hands in a fresh cloud session: Approve once, Allow once per command, tests on this machine
   await hideLoop();
-  await r.click(await r.at('New session'), {}, 1800); await tidy(); await r.park();
+  await newSession(); await sidebar(false); await r.park();
   const box = await around(['Tip:'], 'main *');
   await r.click({ x: box.x, y: box.y }, {}, 600);
   const L = process.env.LOCAL || 'The branch for thequantexplorer/product-demo-apps#123 is already checked out in ~/repos/pda on my machine. Run the pagemark tests there.';
