@@ -108,7 +108,7 @@ function curveH(ctx, k, x0, y0, x1, y1, p, dot = -1) {
 }
 // Three groups, two primitives each.
 function intro(ctx, s, k) {
-  eyebrow(ctx, k, 'A CUSTOMER’S BUG VIDEO BECOMES A FIX', 150, appear(k, s, 0.05));
+  eyebrow(ctx, k, 'HOW TO FIX BUGS FROM CUSTOMER VIDEOS', 150, appear(k, s, 0.05));
   const cx = k.VW / 2, cy = 400;
   const a1 = appear(k, s, 0.3), a2 = appear(k, s, 1.1), a3 = appear(k, s, 1.9);
   box(ctx, k, cx - 520, cy - 80, 240, 160, a1, 0, 16);
@@ -133,7 +133,7 @@ function flow(ctx, s, k) {
   });
   const la = appear(k, s, 3.2, 0.8);
   curve(ctx, k, x0 + 4 * (w + gap) + w / 2, y + 62, x0 + 1 * (w + gap) + w / 2, y + 62, k.eInOut(k.prog(s, 3.2, 4.2)), k.prog(s, 3.4, 4.6));
-  text(ctx, k, 'The same clicks prove the bug and prove the fix', k.VW / 2, 600, 20, 500, MUTED(1.4), la);
+  text(ctx, k, 'The same clicks show the bug and check the fix', k.VW / 2, 600, 20, 500, MUTED(1.4), la);
 }
 function inputs(ctx, s, k) {
   eyebrow(ctx, k, 'WHAT YOU CAN HAND IT', 150, appear(k, s, 0.05));

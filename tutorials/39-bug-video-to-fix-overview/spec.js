@@ -2,7 +2,7 @@ window.SPEC = {
   "title": "How to Fix Bugs from Customer Videos",
   "subtitle": "How Devin turns a screen recording into a verified PR",
   "outro": "Try it with your next bug video",
-  "voOutro": "That's how you turn a customer's bug video into a verified fix. Try it with the next one a customer sends you.",
+  "voOutro": "When a customer sends a bug video, attach it to a Devin session. Devin gives you back a tested fix. Try it with the next one you get.",
   "outroVoDelay": 0.2,
   "speed": 3,
   "cps": 48,
@@ -14,20 +14,20 @@ window.SPEC = {
       "hold": 5.4,
       "cursor": false,
       "cap": "Hand Devin a customer’s bug video, get back a verified fix",
-      "vo": "In this video, we'll look at how Devin turns a customer's screen recording into a fixed and verified pull request."
+      "vo": "In this video, Devin watches a customer's screen recording of a bug and opens a tested fix."
     },
     "0001.png": {
       "scene": "flow",
       "hold": 8.6,
       "cursor": false,
       "cap": "Watch → replay → reproduce → fix → re-check → PR",
-      "vo": "It watches the video, replays the same clicks in its own browser until the bug shows up, and fixes the code. Then it replays the clicks again to prove the fix before it opens the PR."
+      "vo": "Devin watches the video. It repeats the same clicks in its own browser until the bug shows up. Then it fixes the code. It repeats the clicks again to check the fix and opens a PR."
     },
     "0002.png": {
       "hold": 6.6,
       "cursor": false,
       "cap": "Attach the recording to a new session (bug planted, clip recorded by us)",
-      "vo": "In this demo we planted the bug on purpose, and I recorded the clip playing the customer. You just attach the video to a new session."
+      "vo": "We put the bug in this demo on purpose. I recorded the clip myself, playing the customer. To start, attach the video to a new session."
     },
     "0003.png": {
       "hold": 3.8,
@@ -39,7 +39,7 @@ window.SPEC = {
       "hold": 5.0,
       "cursor": false,
       "cap": "It replays the clicks until the bug shows: −$4.80",
-      "vo": "In the Computer tab, you watch it repeat the customer's clicks until the total goes negative, just like in the video.",
+      "vo": "In the Computer tab, you can watch it repeat the customer's clicks. The total goes negative, the same as in the video.",
       "cam": {
         "x": 1180,
         "y": 330,
@@ -51,13 +51,13 @@ window.SPEC = {
       "hold": 3.6,
       "cursor": false,
       "cap": "Same clicks after the fix: $14.40",
-      "vo": "After the fix, it runs the same clicks again, and the total is right."
+      "vo": "After the fix, it repeats the same clicks, and the total is correct."
     },
     "0006.png": {
       "hold": 3.8,
       "cursor": false,
       "cap": "A PR with the fix and a regression test",
-      "vo": "Then it opens a pull request with the fix and a regression test.",
+      "vo": "Then it opens a pull request with the fix and a test for this bug.",
       "cam": "reset",
       "camDur": 0.6
     },
@@ -66,7 +66,7 @@ window.SPEC = {
       "hold": 6.0,
       "cursor": false,
       "cap": "Support-ticket clips, QA recordings, your own repro",
-      "vo": "Any screen recording of a bug works, like a clip from a support ticket or a QA run, along with whatever the customer wrote."
+      "vo": "Any screen recording of a bug works. It can be a clip from a support ticket or a QA run. Add what the customer wrote, too."
     }
   }
 };
