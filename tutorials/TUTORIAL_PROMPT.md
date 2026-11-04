@@ -98,7 +98,20 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - Remeasure `hlBox` after slide-in dialogs settle; the early box may be offset. Inspect rings at line starts and through fades. Never ring a target before it is visible.
 
 **Audio**
-- The music bed is quiet, below UI clicks, typing and caption pops. Typing sounds play only while text is visibly appearing.
+- Music: every video with music uses Nader's track `_kit/music/2-upbeat.mp3`, not the kit's synthesized bed. Its first beat is at 2.05 s and it runs at about 118 BPM, so one bar is 2.034 s. The music is quiet, below UI clicks, typing and caption pops, and ducks under the voice. Typing sounds play only while text is visibly appearing.
+- Build the VO+SFX bed with `MUSIC_GAIN=0`, then add the track, loop it to the video length, duck it under the voice, fade it out, loudnorm to -16 LUFS and mux with `-c:v copy`. Pick `BARS` so each join (at 2.05 s + n × 2.034 s) falls under a narrated line in `build/cues.json`; keep `BARS` at 84 or less, because the beat grid shifts after about 180 s.
+  ```bash
+  cd tutorials && MUSIC_GAIN=0 VOICE=T8iHhGIWPm2GVYpQD1Am VO_NAME=nader bash _kit/tools/build.sh <folder>
+  V=<folder>/<folder>-nader.mp4; BARS=84
+  D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 $V); E=$(python3 -c "print(2.05+$BARS*240/118)")
+  ffmpeg -y -i $V -i _kit/music/2-upbeat.mp3 -filter_complex "\
+  [1:a]asplit[m1][m2];[m1]atrim=0:$E,asetpts=PTS-STARTPTS[h];\
+  [m2]atrim=2.05:$E,asetpts=PTS-STARTPTS,aloop=loop=-1:size=2147483647[b];\
+  [h][b]concat=n=2:v=0:a=1,atrim=0:$D,afade=t=out:st=$(python3 -c "print($D-3)"):d=3,volume=-14dB[m];\
+  [0:a]asplit[vo][key];[m][key]sidechaincompress=threshold=0.02:ratio=8:attack=20:release=400[md];\
+  [vo][md]amix=inputs=2:normalize=0,loudnorm=I=-16:TP=-2:LRA=11[a]" \
+    -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 256k -ar 48000 -movflags +faststart -shortest ${V%.mp4}-music.mp4
+  ```
 
 ## Narration (ElevenLabs)
 
@@ -111,6 +124,7 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
   VOICE=T8iHhGIWPm2GVYpQD1Am VO_NAME=nader SEG=1500 JPEG_QUALITY=85 bash _kit/tools/build.sh <folder>
   ```
   It sends the whole ordered script in one request with `text` and `model_id`, omitting `seed` and `voice_settings` so the voice's saved/default behavior applies. It cuts locally, keeps lead-in to avoid clipping first consonants, verifies the transcript/boundaries, and writes per-line WAVs plus `vo/<voice-id>/lines.json`. Do not substitute a seeded legacy recipe, hard-code stability/similarity/style/speed, pass `next_text`, or return to per-sentence requests.
+- TTS model: the kit default is `eleven_multilingual_v2`, set once as `"ttsModel"` in `_kit/settings.json`; both `vo.py` and `vo_onetake.py` read it. Override it for one run with `VO_MODEL=<model_id>` (e.g. `VO_MODEL=eleven_v4 python3 _kit/tools/vo.py <folder> <voice-id>`); change the setting itself only in a kit PR. Each `lines.json` entry records the `model` that made the take, and `vo.py` regenerates a take whose recorded model differs from the current one (entries without `model` are reused).
 - Current caching is whole-take, not per-line: unchanged text with a complete matching manifest/WAV set is reused; any script change regenerates the full take. For an explicitly requested fresh take of identical text, preserve approved files outside the production folder and remove the old `lines.json` cache before rerunning; there is no force flag in current `vo.py`. Retries generate another complete take, not only failed lines.
 - Rerecord the entire script and re-split it when wording, punctuation or tone needs fixing, or when asked to redo the script. Selective retakes are allowed only when specifically requested/approved; keep the same voice/default request and verify the seam. Inspect the request and shared `take` value before claiming single-take provenance.
 

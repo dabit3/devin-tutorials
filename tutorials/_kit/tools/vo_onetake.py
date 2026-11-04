@@ -8,7 +8,8 @@ import array, base64, difflib, json, math, os, re, subprocess, sys, urllib.reque
 
 VD, VOICE = os.path.abspath(sys.argv[1]), sys.argv[2]
 KEY = os.environ['ELEVEN_LABS_API_KEY']
-MODEL = os.environ.get('VO_MODEL', 'eleven_multilingual_v2')
+# Default TTS model lives in _kit/settings.json ("ttsModel"); VO_MODEL overrides it for one run.
+MODEL = os.environ.get('VO_MODEL') or json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'settings.json')))['ttsModel']
 STABILITY = float(os.environ.get('VO_STABILITY', '0.5'))
 STYLE = float(os.environ.get('VO_STYLE', '0'))
 SIMILARITY = float(os.environ.get('VO_SIMILARITY', '0.75'))  # ElevenLabs defaults: 0.5 / 0.75 / style 0
@@ -32,8 +33,9 @@ for _, _, say in order:
     bounds.append((len(U), len(U) + len(say))); U += say
 
 def tts(seed):
-    body = {'text': U, 'model_id': MODEL, **({} if seed is None else {'seed': seed}),
-            'voice_settings': {'stability': STABILITY, 'similarity_boost': SIMILARITY, 'style': STYLE, 'use_speaker_boost': True}}
+    vs = {'stability': STABILITY, 'similarity_boost': SIMILARITY}
+    if not MODEL.startswith('eleven_v4'): vs.update(style=STYLE, use_speaker_boost=True)  # v4 has only Stability and Similarity
+    body = {'text': U, 'model_id': MODEL, **({} if seed is None else {'seed': seed}), 'voice_settings': vs}
     req = urllib.request.Request(f'https://api.elevenlabs.io/v1/text-to-speech/{VOICE}/with-timestamps?output_format=mp3_44100_192',
                                  data=json.dumps(body).encode(), headers={'xi-api-key': KEY, 'Content-Type': 'application/json'})
     d = json.load(urllib.request.urlopen(req, timeout=600))
@@ -121,7 +123,7 @@ for i, (img, text, say) in enumerate(order):
     ch = chunks([U[c] for c in idx], [st[c] - s0 for c in idx], [en[c] - s0 for c in idx])
     if say != text: ch = [{**ch[0], 't1': ch[-1]['t1'], 'text': text}]
     dur = round(s1 - s0, 3)
-    res[img] = {'text': text, **({'say': say} if say != text else {}), 'dur': dur, 'at': round(s0, 3), 'end': round(s1, 3), 'mode': 'one-take', 'checked': True,
+    res[img] = {'text': text, **({'say': say} if say != text else {}), 'dur': dur, 'at': round(s0, 3), 'end': round(s1, 3), 'mode': 'one-take', 'model': MODEL, 'checked': True,
                 'chunks': [{**c, 't0': round(max(0, c['t0']), 3), 't1': round(min(c['t1'], dur), 3)} for c in ch]}
     print(f'{img}: {dur:.2f}s  {text}')
 os.replace(wav, os.path.join(out, '_full-take.wav'))
