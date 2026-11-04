@@ -41,6 +41,7 @@
 | 59 | Port an iOS screen to Android: how it works (overview) | `59-ios-to-android-parity-overview/` |
 | 76 | Devin CLI: what's new in v3000.11.92 (overview) | `76-cli-whats-new-overview/` |
 | 77 | Stack Clash: add a feature to a voice-driven game by voice | `77-stack-clash-voice/` |
+| 118 | Devin Desktop: cloud sessions | `118-devin-desktop-cloud/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
 
@@ -74,6 +75,7 @@ Native apps (macOS):
 
 - **Devin CLI** (`10-devin-cli/`): `_kit/capture/term/termrec.mjs` runs the real `devin` command in a tmux session and renders the pane with xterm.js at 3× in Chrome, so terminal text stays sharp at 4K (light theme, JetBrains Mono at 24 px). `capture.mjs` records the local task and permission modes, then `cloud.mjs` appends `/model`, `/handoff`, `/cloud` and `devin ssh`, run from a checkout whose origin is `thequantexplorer/orbit-demo`. Needs `brew install tmux`, a signed-in `devin` CLI and Chrome CDP on `127.0.0.1:9333`.
 - **Devin Desktop** (`11-devin-desktop/`): `_kit/capture/desktop.mjs` attaches to the Electron app over CDP. Launch it with `open -a /Applications/Devin.app --args --remote-debugging-port=9335`, sign in, and keep it frontmost while capturing (screenshots stall when the window is in the background).
+- **Devin Desktop: cloud sessions** (`118-devin-desktop-cloud/`): filmed on Linux. Run the X display at 3840×2160, launch with `./devin-desktop --no-sandbox --password-store=basic --remote-debugging-port=9335 --force-device-scale-factor=3` and fullscreen it, so CDP sees 1280×720 at DPR 3. Don't use CDP viewport or device-metric emulation: it breaks the Preview `<webview>` (`capture.mjs` calls `setViewport(null)` and clears the webview's override). Each step is a `PHASE=<n> node capture.mjs`, and the Preview steps find elements inside the shell's nested iframe.
 - **Slack** (`12-devin-slack/`): the same recorder attaches to the Slack desktop app. Launch it with `open -a /Applications/Slack.app --args --remote-debugging-port=9336`, open a channel with Devin invited, and run `PHASE=1 node capture.mjs` (the `!ask` and session parts), then `PHASE=3 SESSION=<session url>` (web app, Chrome CDP) and `PHASE=4` (archive).
 
 All credentials shown in the Secrets video are fake demo values.
