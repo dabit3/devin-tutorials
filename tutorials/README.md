@@ -35,8 +35,10 @@
 | 32 | Dynamic Workflows: how it works (overview) | `32-dynamic-workflows-overview/` |
 | 33 | Dynamic Workflows | `33-dynamic-workflows/` |
 | 34 | Devin Primitives: when to use what (overview) | `34-devin-primitives-overview/` |
-| 46 | Post-train a model on Modal (4:01, narrated by Nader) | `46-modal-post-training/` |
-| 47 | Post-training on Modal: how it works (overview; 2:30, narrated by Nader) | `47-modal-post-training-overview/` |
+| 46 | Post-train a model on Modal (4:14, narrated by Nader) | `46-modal-post-training/` |
+| 47 | Post-training on Modal: how it works (overview; 2:20, narrated by Nader) | `47-modal-post-training-overview/` |
+| 48 | A Devin that improves itself every week | `48-self-improving-devin/` |
+| 49 | A Devin that improves itself every week (overview) | `49-self-improving-devin-overview/` |
 | 58 | Port an iOS screen to Android and prove parity | `58-ios-to-android-parity/` |
 | 59 | Port an iOS screen to Android: how it works (overview) | `59-ios-to-android-parity-overview/` |
 | 76 | Devin CLI: what's new in v3000.11.92 (overview) | `76-cli-whats-new-overview/` |
@@ -53,7 +55,7 @@ Each folder contains the final MP4, a poster frame, the `capture.mjs` script tha
 1. **Capture** (`_kit/capture/`): `capture.mjs` connects to a signed-in Chrome over CDP, drives the UI, and records a screenshot per beat. The account email is masked in the DOM before every screenshot (`MASK_TEXT=<email name>`).
 2. **Render** (`_kit/src/`, `_kit/tools/render.mjs`): a deterministic Canvas engine composites the screenshots at 4K with the Devin title card, animated cursor, click ripples, camera zoom/pan, subtitles, and outro, rendered frame by frame in headless Chrome.
 3. **Audio + encode** (`_kit/tools/audio.py`, `_kit/tools/build.sh`): synthesized music and UI sound effects are generated from the timeline and muxed with H.264 High / AAC.
-4. **Narration** (optional, `_kit/tools/vo.py`): ElevenLabs reads the `vo` lines in `spec.js`; `VOICE=<id> VO_NAME=<name> bash _kit/tools/build.sh <folder>` paces the timeline to the voice, swaps captions for subtitles of the spoken words, ducks the music, and writes `<folder>-<name>.mp4`.
+4. **Narration** (optional, `_kit/tools/vo.py`): ElevenLabs reads the `vo` lines in `spec.js` with the model set as `ttsModel` in `_kit/settings.json` (default `eleven_multilingual_v2`; `VO_MODEL=<model_id>` overrides it for one run); `VOICE=<id> VO_NAME=<name> bash _kit/tools/build.sh <folder>` paces the timeline to the voice, swaps captions for subtitles of the spoken words, ducks the music, and writes `<folder>-<name>.mp4`.
 
 ## Rebuild a video
 
