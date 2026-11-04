@@ -1,0 +1,1251 @@
+{
+ "0000.png": {
+  "text": "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+  "say": "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer.",
+  "dur": 13.24,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs."
+   ],
+   [
+    "0002.png",
+    "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+    "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel."
+   ],
+   [
+    "0003.png",
+    "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+    "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half."
+   ],
+   [
+    "0004.png",
+    "Before training, the base model already matched the GPT model on five hundred test questions.",
+    "Before training, the base model already matched the GPT model on five hundred test questions."
+   ],
+   [
+    "0005.png",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward."
+   ],
+   [
+    "0007.png",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model."
+   ],
+   [
+    "0008.png",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first."
+   ],
+   [
+    "0010.png",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows."
+   ],
+   [
+    "0009.png",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time."
+   ],
+   [
+    "0011.png",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint."
+   ],
+   [
+    "outro",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 0.708,
+    "text": "In this video,"
+   },
+   {
+    "t0": 0.743,
+    "t1": 2.833,
+    "text": "Devin trains an open model on Modal and"
+   },
+   {
+    "t0": 2.879,
+    "t1": 4.214,
+    "text": "deploys it as an API."
+   },
+   {
+    "t0": 4.656,
+    "t1": 7.07,
+    "text": "Then we compare it with OpenAI's GPT model."
+   },
+   {
+    "t0": 7.245,
+    "t1": 9.845,
+    "text": "Our example turns plain-English questions into SQL."
+   },
+   {
+    "t0": 10.089,
+    "t1": 11.923,
+    "text": "The same steps work for any task where"
+   },
+   {
+    "t0": 11.947,
+    "t1": 13.24,
+    "text": "a script can score the answer."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+  "dur": 11.423,
+  "takeAt": 13.627,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs."
+   ],
+   [
+    "0002.png",
+    "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+    "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel."
+   ],
+   [
+    "0003.png",
+    "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+    "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half."
+   ],
+   [
+    "0004.png",
+    "Before training, the base model already matched the GPT model on five hundred test questions.",
+    "Before training, the base model already matched the GPT model on five hundred test questions."
+   ],
+   [
+    "0005.png",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward."
+   ],
+   [
+    "0007.png",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model."
+   ],
+   [
+    "0008.png",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first."
+   ],
+   [
+    "0010.png",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows."
+   ],
+   [
+    "0009.png",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time."
+   ],
+   [
+    "0011.png",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint."
+   ],
+   [
+    "outro",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.325,
+    "text": "Devin runs each step an ML engineer would,"
+   },
+   {
+    "t0": 2.383,
+    "t1": 3.962,
+    "text": "from the dataset to the deploy."
+   },
+   {
+    "t0": 4.288,
+    "t1": 6.168,
+    "text": "Each step lands as a pull request."
+   },
+   {
+    "t0": 6.493,
+    "t1": 9.675,
+    "text": "Modal provides GPUs on demand and hosts the finished model."
+   },
+   {
+    "t0": 10.058,
+    "t1": 11.423,
+    "text": "You pay only while it runs."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+  "say": "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel.",
+  "dur": 7.76,
+  "takeAt": 25.48,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs."
+   ],
+   [
+    "0002.png",
+    "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+    "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel."
+   ],
+   [
+    "0003.png",
+    "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+    "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half."
+   ],
+   [
+    "0004.png",
+    "Before training, the base model already matched the GPT model on five hundred test questions.",
+    "Before training, the base model already matched the GPT model on five hundred test questions."
+   ],
+   [
+    "0005.png",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward."
+   ],
+   [
+    "0007.png",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model."
+   ],
+   [
+    "0008.png",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first."
+   ],
+   [
+    "0010.png",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows."
+   ],
+   [
+    "0009.png",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time."
+   ],
+   [
+    "0011.png",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint."
+   ],
+   [
+    "outro",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 5.055,
+    "text": "First, I ask for training and test splits from BIRD, a public set of hard SQL questions."
+   },
+   {
+    "t0": 5.38,
+    "t1": 7.76,
+    "text": "I also ask for a reward that runs the SQL."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+  "say": "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half.",
+  "dur": 9.115,
+  "takeAt": 33.385,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs."
+   ],
+   [
+    "0002.png",
+    "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+    "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel."
+   ],
+   [
+    "0003.png",
+    "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+    "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half."
+   ],
+   [
+    "0004.png",
+    "Before training, the base model already matched the GPT model on five hundred test questions.",
+    "Before training, the base model already matched the GPT model on five hundred test questions."
+   ],
+   [
+    "0005.png",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward."
+   ],
+   [
+    "0007.png",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model."
+   ],
+   [
+    "0008.png",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first."
+   ],
+   [
+    "0010.png",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows."
+   ],
+   [
+    "0009.png",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time."
+   ],
+   [
+    "0011.png",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint."
+   ],
+   [
+    "outro",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.087,
+    "t1": 3.141,
+    "text": "The reward runs the SQL instead of asking an AI judge."
+   },
+   {
+    "t0": 3.582,
+    "t1": 9.115,
+    "text": "Correct rows score one, and wrong rows score zero."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "Before training, the base model already matched the GPT model on five hundred test questions.",
+  "dur": 4.753,
+  "takeAt": 42.907,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs."
+   ],
+   [
+    "0002.png",
+    "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+    "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel."
+   ],
+   [
+    "0003.png",
+    "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+    "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half."
+   ],
+   [
+    "0004.png",
+    "Before training, the base model already matched the GPT model on five hundred test questions.",
+    "Before training, the base model already matched the GPT model on five hundred test questions."
+   ],
+   [
+    "0005.png",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward."
+   ],
+   [
+    "0007.png",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model."
+   ],
+   [
+    "0008.png",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first."
+   ],
+   [
+    "0010.png",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows."
+   ],
+   [
+    "0009.png",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time."
+   ],
+   [
+    "0011.png",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint."
+   ],
+   [
+    "outro",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.292,
+    "text": "Before training, the base model already matched the"
+   },
+   {
+    "t0": 2.338,
+    "t1": 4.753,
+    "text": "GPT model on five hundred test questions."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+  "dur": 9.014,
+  "takeAt": 47.946,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs."
+   ],
+   [
+    "0002.png",
+    "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+    "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel."
+   ],
+   [
+    "0003.png",
+    "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+    "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half."
+   ],
+   [
+    "0004.png",
+    "Before training, the base model already matched the GPT model on five hundred test questions.",
+    "Before training, the base model already matched the GPT model on five hundred test questions."
+   ],
+   [
+    "0005.png",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward."
+   ],
+   [
+    "0007.png",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model."
+   ],
+   [
+    "0008.png",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first."
+   ],
+   [
+    "0010.png",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows."
+   ],
+   [
+    "0009.png",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time."
+   ],
+   [
+    "0011.png",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint."
+   ],
+   [
+    "outro",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 3.278,
+    "text": "Next, Devin fine-tunes the model and runs reinforcement"
+   },
+   {
+    "t0": 3.325,
+    "t1": 4.451,
+    "text": "learning with that reward."
+   },
+   {
+    "t0": 4.73,
+    "t1": 6.448,
+    "text": "Then it starts four managed Devins."
+   },
+   {
+    "t0": 6.622,
+    "t1": 8.201,
+    "text": "Each one has its own machine and its"
+   },
+   {
+    "t0": 8.248,
+    "t1": 9.014,
+    "text": "own Modal job."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+  "dur": 4.755,
+  "takeAt": 57.265,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs."
+   ],
+   [
+    "0002.png",
+    "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+    "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel."
+   ],
+   [
+    "0003.png",
+    "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+    "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half."
+   ],
+   [
+    "0004.png",
+    "Before training, the base model already matched the GPT model on five hundred test questions.",
+    "Before training, the base model already matched the GPT model on five hundred test questions."
+   ],
+   [
+    "0005.png",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward."
+   ],
+   [
+    "0007.png",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model."
+   ],
+   [
+    "0008.png",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first."
+   ],
+   [
+    "0010.png",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows."
+   ],
+   [
+    "0009.png",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time."
+   ],
+   [
+    "0011.png",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint."
+   ],
+   [
+    "outro",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.09,
+    "t1": 1.854,
+    "text": "Each one tries a different learning rate,"
+   },
+   {
+    "t0": 2.098,
+    "t1": 4.755,
+    "text": "LoRA rank, number of answers per question, or reward."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+  "dur": 10.771,
+  "takeAt": 62.459,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs."
+   ],
+   [
+    "0002.png",
+    "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+    "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel."
+   ],
+   [
+    "0003.png",
+    "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+    "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half."
+   ],
+   [
+    "0004.png",
+    "Before training, the base model already matched the GPT model on five hundred test questions.",
+    "Before training, the base model already matched the GPT model on five hundred test questions."
+   ],
+   [
+    "0005.png",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward."
+   ],
+   [
+    "0007.png",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model."
+   ],
+   [
+    "0008.png",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first."
+   ],
+   [
+    "0010.png",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows."
+   ],
+   [
+    "0009.png",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time."
+   ],
+   [
+    "0011.png",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint."
+   ],
+   [
+    "outro",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.221,
+    "text": "Devin picks the winner by validation score."
+   },
+   {
+    "t0": 2.43,
+    "t1": 4.276,
+    "text": "None of the four beat the base model there."
+   },
+   {
+    "t0": 4.451,
+    "t1": 6.691,
+    "text": "The winner's test gain came from long reasoning,"
+   },
+   {
+    "t0": 6.842,
+    "t1": 8.166,
+    "text": "at three times the cost."
+   },
+   {
+    "t0": 8.34,
+    "t1": 10.771,
+    "text": "So we deploy the earlier reinforcement learning model."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+  "dur": 10.005,
+  "takeAt": 73.535,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs."
+   ],
+   [
+    "0002.png",
+    "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+    "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel."
+   ],
+   [
+    "0003.png",
+    "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+    "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half."
+   ],
+   [
+    "0004.png",
+    "Before training, the base model already matched the GPT model on five hundred test questions.",
+    "Before training, the base model already matched the GPT model on five hundred test questions."
+   ],
+   [
+    "0005.png",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward."
+   ],
+   [
+    "0007.png",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model."
+   ],
+   [
+    "0008.png",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first."
+   ],
+   [
+    "0010.png",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows."
+   ],
+   [
+    "0009.png",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time."
+   ],
+   [
+    "0011.png",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint."
+   ],
+   [
+    "outro",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.744,
+    "text": "Devin deploys our trained model with modal deploy,"
+   },
+   {
+    "t0": 2.988,
+    "t1": 5.565,
+    "text": "as an OpenAI-compatible API endpoint."
+   },
+   {
+    "t0": 6.68,
+    "t1": 8.665,
+    "text": "Here, the demo app answers a question with"
+   },
+   {
+    "t0": 8.689,
+    "t1": 10.005,
+    "text": "the GPT model first."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+  "dur": 5.131,
+  "takeAt": 83.799,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs."
+   ],
+   [
+    "0002.png",
+    "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+    "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel."
+   ],
+   [
+    "0003.png",
+    "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+    "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half."
+   ],
+   [
+    "0004.png",
+    "Before training, the base model already matched the GPT model on five hundred test questions.",
+    "Before training, the base model already matched the GPT model on five hundred test questions."
+   ],
+   [
+    "0005.png",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward."
+   ],
+   [
+    "0007.png",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model."
+   ],
+   [
+    "0008.png",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first."
+   ],
+   [
+    "0010.png",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows."
+   ],
+   [
+    "0009.png",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time."
+   ],
+   [
+    "0011.png",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint."
+   ],
+   [
+    "outro",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.42,
+    "text": "Here is the same question,"
+   },
+   {
+    "t0": 1.664,
+    "t1": 3.649,
+    "text": "answered by our model's endpoint on Modal."
+   },
+   {
+    "t0": 3.823,
+    "t1": 5.131,
+    "text": "It returns the same rows."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+  "say": "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+  "dur": 20.315,
+  "takeAt": 89.275,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs."
+   ],
+   [
+    "0002.png",
+    "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+    "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel."
+   ],
+   [
+    "0003.png",
+    "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+    "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half."
+   ],
+   [
+    "0004.png",
+    "Before training, the base model already matched the GPT model on five hundred test questions.",
+    "Before training, the base model already matched the GPT model on five hundred test questions."
+   ],
+   [
+    "0005.png",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward."
+   ],
+   [
+    "0007.png",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model."
+   ],
+   [
+    "0008.png",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first."
+   ],
+   [
+    "0010.png",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows."
+   ],
+   [
+    "0009.png",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time."
+   ],
+   [
+    "0011.png",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint."
+   ],
+   [
+    "outro",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.054,
+    "t1": 2.736,
+    "text": "The trained model scored sixty-seven point four percent."
+   },
+   {
+    "t0": 3.119,
+    "t1": 5.545,
+    "text": "The GPT model scored sixty-three point eight."
+   },
+   {
+    "t0": 5.986,
+    "t1": 7.554,
+    "text": "That gap could still be chance."
+   },
+   {
+    "t0": 8.065,
+    "t1": 9.435,
+    "text": "Our model answers faster."
+   },
+   {
+    "t0": 10.038,
+    "t1": 15.089,
+    "text": "On an H100 that is already running, it costs about two hundred eighty dollars per million queries."
+   },
+   {
+    "t0": 15.53,
+    "t1": 17.747,
+    "text": "The GPT model costs about twenty-five hundred."
+   },
+   {
+    "t0": 18.072,
+    "t1": 20.313,
+    "text": "Those numbers leave out cold starts and idle time."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+  "dur": 10.615,
+  "takeAt": 109.725,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs."
+   ],
+   [
+    "0002.png",
+    "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+    "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel."
+   ],
+   [
+    "0003.png",
+    "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+    "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half."
+   ],
+   [
+    "0004.png",
+    "Before training, the base model already matched the GPT model on five hundred test questions.",
+    "Before training, the base model already matched the GPT model on five hundred test questions."
+   ],
+   [
+    "0005.png",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward."
+   ],
+   [
+    "0007.png",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model."
+   ],
+   [
+    "0008.png",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first."
+   ],
+   [
+    "0010.png",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows."
+   ],
+   [
+    "0009.png",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time."
+   ],
+   [
+    "0011.png",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint."
+   ],
+   [
+    "outro",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.037,
+    "t1": 1.918,
+    "text": "To recap, we gave Devin a script that"
+   },
+   {
+    "t0": 1.964,
+    "t1": 3.834,
+    "text": "scores answers and a baseline to beat."
+   },
+   {
+    "t0": 4.275,
+    "t1": 7.073,
+    "text": "Devin trained the model and compared four variants in parallel."
+   },
+   {
+    "t0": 7.398,
+    "t1": 9.859,
+    "text": "Then it deployed the earlier reinforcement learning model"
+   },
+   {
+    "t0": 9.917,
+    "t1": 10.615,
+    "text": "as an endpoint."
+   }
+  ]
+ },
+ "outro": {
+  "text": "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+  "dur": 8.235,
+  "takeAt": 120.625,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into SQL. The same steps work for any task where a script can score the answer.",
+    "In this video, Devin trains an open model on Modal and deploys it as an API. Then we compare it with OpenAI's GPT model. Our example turns plain-English questions into sequel. The same steps work for any task where a script can score the answer."
+   ],
+   [
+    "0001.png",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs.",
+    "Devin runs each step an ML engineer would, from the dataset to the deploy. Each step lands as a pull request. Modal provides GPUs on demand and hosts the finished model. You pay only while it runs."
+   ],
+   [
+    "0002.png",
+    "First, I ask for training and test splits from BIRD, a public set of hard SQL questions. I also ask for a reward that runs the SQL.",
+    "First, I ask for training and test splits from BIRD, a public set of hard sequel questions. I also ask for a reward that runs the sequel."
+   ],
+   [
+    "0003.png",
+    "The reward runs the SQL instead of asking an AI judge. Correct rows score one, and wrong rows score zero. SQL that fails to run scores minus a half.",
+    "The reward runs the sequel instead of asking an AI judge. Correct rows score one, and wrong rows score zero. sequel that fails to run scores minus a half."
+   ],
+   [
+    "0004.png",
+    "Before training, the base model already matched the GPT model on five hundred test questions.",
+    "Before training, the base model already matched the GPT model on five hundred test questions."
+   ],
+   [
+    "0005.png",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job.",
+    "Next, Devin fine-tunes the model and runs reinforcement learning with that reward. Then it starts four managed Devins. Each one has its own machine and its own Modal job."
+   ],
+   [
+    "0006.png",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward.",
+    "Each one tries a different learning rate, LoRA rank, number of answers per question, or reward."
+   ],
+   [
+    "0007.png",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model.",
+    "Devin picks the winner by validation score. None of the four beat the base model there. The winner's test gain came from long reasoning, at three times the cost. So we deploy the earlier reinforcement learning model."
+   ],
+   [
+    "0008.png",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first.",
+    "Devin deploys our trained model with modal deploy, as an OpenAI-compatible API endpoint. Here, the demo app answers a question with the GPT model first."
+   ],
+   [
+    "0010.png",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows.",
+    "Here is the same question, answered by our model's endpoint on Modal. It returns the same rows."
+   ],
+   [
+    "0009.png",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H100 that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time.",
+    "The trained model scored sixty-seven point four percent. The GPT model scored sixty-three point eight. That gap could still be chance. Our model answers faster. On an H one hundred that is already running, it costs about two hundred eighty dollars per million queries. The GPT model costs about twenty-five hundred. Those numbers leave out cold starts and idle time."
+   ],
+   [
+    "0011.png",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint.",
+    "To recap, we gave Devin a script that scores answers and a baseline to beat. Devin trained the model and compared four variants in parallel. Then it deployed the earlier reinforcement learning model as an endpoint."
+   ],
+   [
+    "outro",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data.",
+    "That's how Devin trains and deploys your own model on Modal. Everything starts with a script that scores the answer. A playbook lets you run the same steps on your own data."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.059,
+    "text": "That's how Devin trains and deploys your own"
+   },
+   {
+    "t0": 2.105,
+    "t1": 2.941,
+    "text": "model on Modal."
+   },
+   {
+    "t0": 3.185,
+    "t1": 5.472,
+    "text": "Everything starts with a script that scores the answer."
+   },
+   {
+    "t0": 5.681,
+    "t1": 7.469,
+    "text": "A playbook lets you run the same steps"
+   },
+   {
+    "t0": 7.504,
+    "t1": 8.235,
+    "text": "on your own data."
+   }
+  ]
+ }
+}
