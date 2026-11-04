@@ -1,7 +1,7 @@
 window.SPEC = {
  "title": "Devin Security 2.0",
  "subtitle": "Find, rank and fix vulnerabilities with Devin",
- "outro": "Scan, triage and fix in one place",
+ "outro": "Find and fix vulnerabilities in one place",
  "voOutro": "Connect your tools, run a scan, and let Devin fix what it finds.",
  "speed": 4,
  "pace": 1.2,
@@ -105,15 +105,15 @@ window.SPEC = {
   },
   "0126.png": {
    "hold": 1.0,
-   "vo": "Devin Security 2.0 finds real vulnerabilities in your code, ranks them against a threat model, and opens pull requests that fix them."
+   "vo": "Devin Security 2.0 finds vulnerabilities in your code and fixes them. A vulnerability is a bug that an attacker can use. Devin scans your repositories, checks each finding against the code, and ranks it by risk. Then it opens pull requests that fix the problems."
   },
   "0127.png": {
    "hl": true,
-   "vo": "The Overview shows the pull requests Devin has opened for findings, and how findings trend over time."
+   "vo": "The Overview page shows the pull requests that Devin opened for findings, and how the number of findings changes over time."
   },
   "0128.png": {
    "hl": true,
-   "vo": "Below, findings are broken down by severity and by repository.",
+   "vo": "Below that, you see the findings for each severity level and for each repository.",
    "hold": 1.2
   },
   "0129.png": {
@@ -125,31 +125,27 @@ window.SPEC = {
    "hold": 0.6
   },
   "0009.png": {
-   "vo": "Connections bring findings from other security tools into Devin to triage and fix. Snyk, Wiz, GitHub, SonarQube and others are in enterprise beta.",
+   "vo": "Connections bring findings from your other security tools into Devin, so that Devin can sort and fix them. Snyk, Wiz, GitHub, SonarQube, and other tools are in enterprise beta.",
    "hold": 1.2
   },
-  "0010.png": {
-  },
-  "0011.png": {
-  },
+  "0010.png": {},
+  "0011.png": {},
   "0012.png": {
    "hl": true,
    "vo": "You can also upload a CSV export from any tool."
   },
   "0013.png": {
-   "vo": "Devin pulls in the findings, investigates each one to confirm it's valid, and writes the results back."
+   "vo": "Devin imports the findings and investigates each one to find out if it is valid. Then it writes the results back."
   },
-  "0014.png": {
-  },
-  "0015.png": {
-  },
+  "0014.png": {},
+  "0015.png": {},
   "0016.png": {
-   "vo": "Or pick Custom, and describe where your findings live, like an API or a report in the repo.",
+   "vo": "You can also pick Custom. Then you tell Devin where your findings are, for example an API or a report in the repository.",
    "hold": 1.2
   },
   "0111.png": {
    "camDur": 0.01,
-   "vo": "The Repositories view lists each scanned repository with its findings by severity, its pull requests, and when it was last scanned.",
+   "vo": "The Repositories page shows each repository that Devin scanned. For each one, you see the findings by severity, the pull requests, and the date of the last scan.",
    "hold": 1.0
   },
   "0124.png": {
@@ -160,47 +156,38 @@ window.SPEC = {
    "hold": 0.3
   },
   "0019.png": {
-   "vo": "To start a scan, I pick a repository. ledger-api is a small invoicing API I built with a few realistic security bugs.",
-   "voSay": "To start a scan, I pick a repository. Ledger A P I is a small invoicing A P I I built with a few realistic security bugs."
+   "vo": "To start a scan, I pick a repository. ledger-api is a small invoicing API that I made for this demo. It has a few security bugs.",
+   "voSay": "To start a scan, I pick a repository. Ledger A P I is a small invoicing A P I that I made for this demo. It has a few security bugs."
   },
-  "0020.png": {
-  },
-  "0021.png": {
-  },
-  "0022.png": {
-  },
-  "0023.png": {
-  },
-  "0024.png": {
-  },
+  "0020.png": {},
+  "0021.png": {},
+  "0022.png": {},
+  "0023.png": {},
+  "0024.png": {},
   "0025.png": {
    "hold": 0.5
   },
-  "0026.png": {
-  },
+  "0026.png": {},
   "0027.png": {
-   "vo": "Basic setup only needs a repository. Advanced adds the scan type, a profile, and an optional connection."
+   "vo": "Basic setup needs only a repository. Advanced setup adds the scan type, a profile, and a connection if you want one."
   },
-  "0028.png": {
-  },
-  "0029.png": {
-  },
+  "0028.png": {},
+  "0029.png": {},
   "0030.png": {
    "hl": true,
-   "vo": "I leave Scan with a threat model on, so Devin writes one, runs the scan, and reranks findings against it.",
+   "vo": "I keep Scan with a threat model on. A threat model describes who can attack the app, and how. Devin writes one, runs the scan, and then uses the threat model to rank the findings.",
    "hold": 1.4
   },
   "0031.png": {
    "hl": true
   },
-  "0032.png": {
-  },
+  "0032.png": {},
   "0035.png": {
    "hold": 0.6
   },
   "0036.png": {
    "camDur": 0.01,
-   "vo": "Devin drafts the threat model from the code, then asks four optional questions. I accept its draft answers."
+   "vo": "Devin writes the threat model from the code. Then it asks four optional questions. I accept the answers that it suggests."
   },
   "0037.png": {
    "hold": 0.45,
@@ -265,12 +252,12 @@ window.SPEC = {
   },
   "0055.png": {
    "badge": "Sped up",
-   "vo": "Then the scan runs. Devin splits the work across parallel machines, and checks each finding against the code."
+   "vo": "Then the scan runs. Devin splits the work across many machines that run at the same time. It checks each finding against the code."
   },
   "0075.png": {
    "badge": "",
    "hl": true,
-   "vo": "When it finishes, there are five findings: one critical and two high.",
+   "vo": "When the scan is done, there are five findings. One is critical and two are high.",
    "hold": 1.4,
    "subPos": {
     "x": 0.7,
@@ -278,7 +265,7 @@ window.SPEC = {
    }
   },
   "0077.png": {
-   "vo": "You can filter them by status and by severity.",
+   "vo": "You can filter the findings by status and by severity.",
    "hold": 1.0,
    "subPos": {
     "x": 0.7,
@@ -286,14 +273,14 @@ window.SPEC = {
    }
   },
   "0081.png": {
-   "vo": "Let's open the SQL injection.",
+   "vo": "I open the SQL injection. In this attack, user input changes a database query.",
    "subPos": {
     "x": 0.2,
     "y": 0.45
    }
   },
   "0082.png": {
-   "vo": "Each finding says who can exploit it, what they get, and how the attack works, line by line.",
+   "vo": "Each finding tells you who can use the bug, what they get, and how the attack works, step by step.",
    "hold": 1.2,
    "subPos": {
     "x": 0.2,
@@ -305,7 +292,7 @@ window.SPEC = {
   },
   "0084.png": {
    "hl": true,
-   "vo": "It also recommends a fix, and the tests to add.",
+   "vo": "It also recommends a fix and the tests to add.",
    "hold": 1.2,
    "subPos": {
     "x": 0.2,
@@ -313,7 +300,7 @@ window.SPEC = {
    }
   },
   "0090.png": {
-   "vo": "From here, you can mark a finding Reviewed or Dismissed.",
+   "vo": "Here, you can mark a finding as Reviewed or Dismissed.",
    "hold": 1.4,
    "subPos": {
     "x": 0.2,
@@ -329,7 +316,7 @@ window.SPEC = {
    }
   },
   "0093.png": {
-   "vo": "To fix it, I click Assign to Devin, which starts a remediation session.",
+   "vo": "To fix the bug, I click Assign to Devin. This starts a remediation session, which is a Devin session that fixes the finding.",
    "subPos": {
     "x": 0.2,
     "y": 0.45
@@ -339,7 +326,7 @@ window.SPEC = {
    "hl": false
   },
   "0096.png": {
-   "vo": "Devin confirms the bug in the handler, binds the customer filter as a query parameter, and limits sort to an allowlist.",
+   "vo": "Devin first confirms the bug in the handler. Then it passes the customer filter as a query parameter. It also accepts only a fixed list of values for sort.",
    "subPos": {
     "x": 0.73,
     "y": 0.765
@@ -347,7 +334,7 @@ window.SPEC = {
   },
   "0097.png": {
    "hl": true,
-   "vo": "It adds tests that fail on the old code, and the full suite of ten tests passes.",
+   "vo": "It adds tests that fail on the old code. All ten tests pass.",
    "hold": 1.6,
    "subPos": {
     "x": 0.73,
@@ -366,7 +353,7 @@ window.SPEC = {
    "hold": 1.6
   },
   "0105.png": {
-   "vo": "Here's the diff.",
+   "vo": "Here is the code change.",
    "hold": 0.8,
    "subPos": {
     "x": 0.2,
@@ -378,7 +365,7 @@ window.SPEC = {
   },
   "0107.png": {
    "hl": true,
-   "vo": "Back on the finding, the pull request is linked and waiting for review. Once it merges, Devin marks the finding resolved.",
+   "vo": "Back on the finding, the pull request is linked and waits for review. When the pull request merges, Devin marks the finding as resolved.",
    "hold": 1.4,
    "subPos": {
     "x": 0.2,
@@ -386,14 +373,14 @@ window.SPEC = {
    }
   },
   "0109.png": {
-   "vo": "The findings list shows it too.",
+   "vo": "The findings list shows this too.",
    "subPos": {
     "x": 0.2,
     "y": 0.45
    }
   },
   "0110.png": {
-   "vo": "Across all repositories, Findings are split into Open, Reviewed and Dismissed, with filters and quick actions on every row.",
+   "vo": "The Findings page shows the findings from all repositories in three groups: Open, Reviewed, and Dismissed. You can filter the list, and each row has quick actions.",
    "hold": 0.8,
    "subPos": {
     "x": 0.75,

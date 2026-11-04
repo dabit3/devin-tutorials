@@ -79,6 +79,14 @@ for b in range(nbars):
         madd(C, t0 + 3 * BEAT, 0.05 if section else 0.035, pan=0.1)
         for k in range(8):
             madd(H, t0 + k * BEAT / 2, (0.03 if k % 2 else 0.018) + 0.006 * section, pan=0.25)
+# MUSIC_FILE=<audio file> replaces the synthesized bed with that track, matched to the bed's RMS level
+if os.environ.get('MUSIC_FILE'):
+    import subprocess
+    raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', os.environ['MUSIC_FILE'], '-ac', '2', '-ar', str(SR), '-f', 's16le', '-'], capture_output=True, check=True).stdout
+    m = np.frombuffer(raw, '<i2').astype(float).reshape(-1, 2) / 32767
+    ref = np.sqrt(np.mean(ML[:min(N, len(m))] ** 2 + MR[:min(N, len(m))] ** 2) / 2)
+    m = m * ref / max(1e-9, np.sqrt(np.mean(m ** 2))) * float(os.environ.get('MUSIC_FILE_GAIN', '1'))
+    ML = np.zeros(N); MR = np.zeros(N); k = min(N, len(m)); ML[:k], MR[:k] = m[:k, 0], m[:k, 1]
 fade_in = np.minimum(1, np.arange(N) / (1.5 * SR))
 fade_out = np.clip((total - np.arange(N) / SR) / 2.5, 0, 1)
 # narration (vo/<voice>/<key>.wav) ducks the music bed while it plays
