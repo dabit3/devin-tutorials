@@ -2,7 +2,7 @@ window.SPEC = {
   "title": "How to Fix Bugs from Customer Videos",
   "subtitle": "Devin watches the recording, replays the clicks, and opens a verified PR",
   "outro": "Try it with your next bug video",
-  "voOutro": "That's how you turn a customer's bug video into a tested fix. Try it with the next one a customer sends you.",
+  "voOutro": "When a customer sends a bug video, attach it to a Devin session. Devin gives you back a tested fix. Try it with the next one you get.",
   "outroVoDelay": 0.2,
   "speed": 3,
   "cps": 90,
@@ -13,7 +13,7 @@ window.SPEC = {
       "hold": 5.6,
       "cursor": false,
       "cap": "In this video, Devin turns a customer’s bug video into a fix",
-      "vo": "In this video, we'll hand Devin a customer's screen recording of a bug. Devin replays the clicks in its own browser until it sees the bug, and then it fixes it."
+      "vo": "In this video, we give Devin a customer's screen recording of a bug. Devin repeats the clicks in its own browser, finds the bug, and fixes it."
     },
     "0001.png": {
       "skip": true
@@ -41,7 +41,7 @@ window.SPEC = {
       "cursor": false,
       "badge": "Customer recording",
       "cap": "Planted bug, and I recorded this clip playing the customer",
-      "vo": "Fernhouse is a small demo shop, and we planted a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
+      "vo": "Fernhouse is a small demo shop. We put a checkout bug in it on purpose. I recorded this clip myself, playing the customer."
     },
     "0009.png": {
       "skip": true
@@ -68,7 +68,7 @@ window.SPEC = {
       "hold": 2.8,
       "cursor": false,
       "cap": "Two Monsteras and a Pothos go in the cart",
-      "vo": "A couple of Monsteras and a Pothos go in the cart.",
+      "vo": "The customer adds two Monsteras and a Pothos to the cart.",
       "badge": "Customer recording"
     },
     "0017.png": {
@@ -164,7 +164,7 @@ window.SPEC = {
       "hold": 3.6,
       "cursor": false,
       "cap": "Remove the Monsteras and the total goes negative",
-      "vo": "But once both Monsteras come out, the total goes negative.",
+      "vo": "After they remove both Monsteras, the total goes negative.",
       "badge": "Customer recording"
     },
     "0045.png": {
@@ -219,7 +219,7 @@ window.SPEC = {
       "badge": "",
       "hold": 1.8,
       "cap": "Start a new session",
-      "vo": "To hand it to Devin, start a new session."
+      "vo": "To give the video to Devin, start a new session."
     },
     "0064.png": {
       "hold": 3.4,
@@ -229,11 +229,11 @@ window.SPEC = {
     "0065.png": {
       "hold": 1.6,
       "cap": "The .mp4 is attached to the message",
-      "vo": "The video is now attached to your message."
+      "vo": "The video is now attached to the message."
     },
     "0068.png": {
       "cap": "The customer’s words, @repo, and what you want back",
-      "vo": "Then paste in what the customer said, mention the repo, and ask Devin to replay the clicks in its browser, fix the bug, check it again, and open a PR."
+      "vo": "Then paste in what the customer wrote and mention the repo. Ask Devin to repeat the clicks in its browser and fix the bug. We also ask it to check the fix the same way and open a PR."
     },
     "0133.png": {
       "hold": 1.4,
@@ -262,7 +262,7 @@ window.SPEC = {
     "0141.png": {
       "hold": 3.0,
       "cap": "Devin reads the attached video, then starts the app",
-      "vo": "Devin reads the video first, then finds the fernhouse app and starts it.",
+      "vo": "Devin reads the video first. Then it finds the fernhouse app and starts it.",
       "badge": "Sped up"
     },
     "0142.png": {
@@ -301,13 +301,13 @@ window.SPEC = {
     "0152.png": {
       "hold": 4.4,
       "cap": "From the video it works out the exact clicks",
-      "vo": "From the recording, it works out the exact clicks the customer made, in the same order.",
+      "vo": "From the video, it works out each click the customer made, in order.",
       "badge": "Sped up"
     },
     "0153.png": {
       "hold": 2.8,
       "cap": "It replays them in its own browser",
-      "vo": "Then it replays them, one by one, in its own browser.",
+      "vo": "Then it repeats those clicks, one at a time, in its own browser.",
       "badge": "Sped up"
     },
     "0154.png": {
@@ -317,7 +317,7 @@ window.SPEC = {
     "0155.png": {
       "hold": 4.0,
       "cap": "Reproduced: the total is −$4.80",
-      "vo": "And there it is: the total goes negative, the same bug the customer saw.",
+      "vo": "The total goes negative, the same as in the customer's video.",
       "cam": {
         "x": 1180,
         "y": 330,
@@ -332,7 +332,7 @@ window.SPEC = {
     "0157.png": {
       "hold": 5.0,
       "cap": "The discount was locked in when the code was applied",
-      "vo": "Devin finds the cause. The discount was saved as a fixed amount when the code was applied, so removing items never changed it.",
+      "vo": "Devin finds the cause. The app saved the discount as a fixed amount when the code was applied. Removing items did not change it.",
       "cam": "reset",
       "camDur": 0.6,
       "badge": "Sped up"
@@ -344,7 +344,7 @@ window.SPEC = {
     "0159.png": {
       "hold": 4.2,
       "cap": "The fix: work out the discount from the current subtotal",
-      "vo": "So it changes the cart to work out the discount from the current subtotal, and adds a test for this case.",
+      "vo": "Devin changes the cart to work out the discount from the current subtotal. It also adds a test for this case.",
       "badge": "Sped up"
     },
     "0160.png": {
@@ -358,7 +358,7 @@ window.SPEC = {
     "0162.png": {
       "hold": 2.4,
       "cap": "It replays the same clicks to check the fix",
-      "vo": "Then it replays the customer's clicks again to check the fix.",
+      "vo": "Then it repeats the customer's clicks to check the fix.",
       "badge": "Sped up"
     },
     "0163.png": {
@@ -388,7 +388,7 @@ window.SPEC = {
     "0170.png": {
       "hold": 3.2,
       "cap": "Now $3.60 off and a $14.40 total",
-      "vo": "This time the discount shrinks with the cart, and the total stays positive.",
+      "vo": "This time the discount gets smaller with the cart, and the total stays positive.",
       "cam": {
         "x": 1180,
         "y": 330,
@@ -475,7 +475,7 @@ window.SPEC = {
     "0195.png": {
       "hold": 4.6,
       "cap": "Devin explains the bug and the fix, and links the PR",
-      "vo": "When it's done, Devin explains what was wrong and what it changed, and links the pull request.",
+      "vo": "When it is done, Devin explains what was wrong and what it changed. It also links the pull request.",
       "cam": "reset",
       "camDur": 0.6
     },
@@ -528,7 +528,7 @@ window.SPEC = {
       "hold": 3.6,
       "cursor": false,
       "cap": "A regression test for removing items after a promo",
-      "vo": "And here is the new test, which removes items after applying a promo."
+      "vo": "Here is the new test. It applies a promo code and then removes items."
     },
     "0210.png": {
       "skip": true
