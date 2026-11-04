@@ -5,9 +5,7 @@ const ACC = '#71b7ff', ACCRGB = '113,183,255';
 const ink = a => `rgba(242,242,243,${a})`;
 const R = n => (window.SPEC.reveal || {})[n] || [];
 function bg(ctx, k) {
-  const g = ctx.createRadialGradient(k.VW / 2, k.VH * 0.4, 40, k.VW / 2, k.VH * 0.4, k.VW * 0.75);
-  g.addColorStop(0, '#15171c'); g.addColorStop(1, '#0b0b0c');
-  ctx.save(); ctx.globalAlpha = k.alpha; ctx.fillStyle = g; ctx.fillRect(0, 0, k.VW, k.VH); ctx.restore();
+  ctx.save(); ctx.globalAlpha = k.alpha; ctx.fillStyle = '#0b0b0c'; ctx.fillRect(0, 0, k.VW, k.VH); ctx.restore();
 }
 function txt(ctx, k, t, x, y, size, weight, color, a = 1, align = 'left', fam, track = -0.2) {
   if (a <= 0) return 0;
@@ -51,10 +49,10 @@ const SCENES = {
   themes(ctx, s, k) {
     bg(ctx, k); head(ctx, k, s, 'DEVIN CLI · STABLE v3000.11.92 · OCT 14, 2026', "What's new");
     const groups = [
-      ['Long-running work', ['/goal', 'steering', 'Ctrl+C']],
-      ['Models & config', ['Alt+Enter', '/billing', 'config.json']],
-      ['Plugins, hooks & MCP', ['skills-only', 'Source:', 'remote MCPs']],
-      ['Terminal & cloud', ['devin cloud', 'OSC 7501', 'devin connect']],
+      ['Cloud', ['devin cloud', 'devin connect', 'remote MCPs']],
+      ['Long-running goals', ['/goal', 'steering', 'Ctrl+C']],
+      ['Models & plugins', ['Alt+Enter', '/billing', 'skills-only']],
+      ['Terminal', ['session status', 'sandbox allow', 'Source:']],
     ];
     const T = R('themes'), W = 270, G = 22, x0 = (k.VW - (4 * W + 3 * G)) / 2;
     groups.forEach(([t, tags], i) => {
@@ -75,53 +73,49 @@ const SCENES = {
       { label: '50 turns', detail: 'A run pauses itself', tag: 'Not on prompt-based plans', col: 250 },
     ], { y: 210 });
   },
+  cloud(ctx, s, k) {
+    bg(ctx, k); head(ctx, k, s, 'CLOUD', 'Work from anywhere');
+    rows(ctx, k, s, 'cloud', [
+      { label: 'devin cloud', detail: 'Opens a Devin Cloud session, the same as devin --cloud', mono: true, col: 260 },
+      { label: 'devin connect', detail: 'Cloud sessions view local images and copy files both ways', mono: true, col: 260 },
+      { label: 'Remote MCPs', detail: 'Servers configured in Devin Cloud', tag: 'Private Preview', col: 260 },
+    ], { y: 260, h: 80 });
+  },
+  billing(ctx, s, k) {
+    bg(ctx, k); head(ctx, k, s, 'MODELS & SETTINGS', 'Use the plans you have');
+    rows(ctx, k, s, 'billing', [
+      { label: '✱ Marked models', detail: 'Your provider plan, like ChatGPT, can pay for them', col: 250 },
+      { label: '/billing on | off', detail: 'Switch the plan on or off (Ctrl+S in the picker)', mono: true, col: 250 },
+    ], { y: 300, h: 80 });
+  },
   config(ctx, s, k) {
-    bg(ctx, k); head(ctx, k, s, 'MODELS & CONFIG', 'Pick, pay, tune');
+    bg(ctx, k); head(ctx, k, s, 'MODELS & SETTINGS', 'Two new settings');
     rows(ctx, k, s, 'config', [
-      { label: 'Provider billing', detail: '✱ marks models your provider plan can pay for', tag: 'Ctrl+S · /billing', col: 230 },
-      { label: 'typewriter: false', detail: 'Show streamed text as soon as it arrives', mono: true, col: 400 },
-      { label: 'agent.subagent_model', detail: 'Model for subagents', mono: true, col: 400 },
-      { label: 'local_tools_bypass_permissions', detail: 'devin connect starts in Bypass', mono: true, col: 400 },
-      { label: 'DEVIN_SESSIONS_DIR', detail: 'Move the session history database', mono: true, col: 400 },
-    ], { y: 210 });
+      { label: 'typewriter: false', detail: 'Show streamed text as soon as it arrives', mono: true, col: 330 },
+      { label: 'agent.subagent_model', detail: 'Choose the model your subagents use', mono: true, col: 330 },
+    ], { y: 300, h: 80 });
   },
   ext(ctx, s, k) {
-    bg(ctx, k); head(ctx, k, s, 'PLUGINS, HOOKS & MCP', 'Extend it');
+    bg(ctx, k); head(ctx, k, s, 'PLUGINS & MCP', 'Extend it');
     rows(ctx, k, s, 'ext', [
-      { label: 'Skills-only repos', detail: 'devin plugins install anthropics/skills', col: 330 },
-      { label: 'platforms', detail: 'cloud, local, or both', mono: true, col: 330 },
-      { label: 'PLUGIN_ROOT · PLUGIN_DATA', detail: 'Bundled files and data that survives updates', mono: true, col: 330 },
-      { label: 'PreCompact · PostCompact', detail: 'Hooks before and after compaction', mono: true, col: 330 },
-      { label: 'MCP 2026-07-28', detail: 'Newest protocol revision', mono: true, col: 330 },
-      { label: 'Remote MCPs', detail: 'Configured in Devin Cloud', tag: 'Private Preview', col: 330 },
-    ], { y: 196, h: 62, gap: 10 });
+      { label: 'Skills-only repos', detail: 'devin plugins install anthropics/skills', col: 300 },
+      { label: 'PreCompact · PostCompact', detail: 'Hooks that run before and after context compaction', mono: true, col: 300 },
+    ], { y: 300, h: 80 });
   },
   terminal(ctx, s, k) {
-    bg(ctx, k); head(ctx, k, s, 'TERMINAL & CLOUD', 'Work from anywhere');
+    bg(ctx, k); head(ctx, k, s, 'TERMINAL', 'Know what needs you');
     rows(ctx, k, s, 'terminal', [
-      { label: 'OSC 7501', detail: 'idle · working · blocked · done · failed', mono: true, col: 300 },
-      { label: 'sandbox.excluded.allow', detail: 'Let every run of a command skip the sandbox', mono: true, col: 330 },
-      { label: 'devin connect', detail: 'View local images, copy files both ways', mono: true, col: 330 },
-      { label: 'Ctrl+U', detail: 'Clears a multiline prompt line by line', mono: true, col: 330 },
-      { label: 'Force open', detail: 'Sessions held elsewhere or by a stale process', col: 330 },
-    ], { y: 210 });
+      { label: 'Session status', detail: 'Supported terminals show which sessions need you (OSC 7501)', col: 260 },
+      { label: 'Sandbox allow', detail: 'Let a trusted command always run outside the sandbox', col: 260 },
+    ], { y: 300, h: 80 });
   },
   fixes(ctx, s, k) {
-    bg(ctx, k); head(ctx, k, s, 'CHANGED & FIXED', 'And plenty of polish');
-    const T = R('fixes'), cols = [
-      ['Changed', ['Org “ask” rules say so']],
-      ['Fixed', ['Smart mode asks less often', 'Faster startup', 'Session history on network drives']],
-    ];
-    let n = 0;
-    cols.forEach(([t, items], c) => {
-      const x = 230 + c * 500, a0 = fade(k, s, T[n] ?? 0.4 + n * 0.5); n++;
-      txt(ctx, k, t.toUpperCase(), x, 220, 15, 600, ACC, a0, 'left', 'JetBrains Mono', 2.4);
-      items.forEach((it, i) => {
-        const t0 = T[n] ?? 0.4 + n * 0.5, a = fade(k, s, t0), y = 270 + i * 82 + 12 * (1 - a); n++;
-        card(ctx, k, x, y, 470, 64, a, 0, 14);
-        txt(ctx, k, it, x + 26, y + 32, 20, 550, ink(0.94), a);
-      });
-    });
+    bg(ctx, k); head(ctx, k, s, 'FIXES & POLISH', 'And plenty of polish');
+    rows(ctx, k, s, 'fixes', [
+      { label: 'Smart mode', detail: 'Asks for approval less often', col: 260 },
+      { label: 'Startup', detail: 'Faster to start', col: 260 },
+      { label: 'Network drives', detail: 'Session history works on NFS, SMB and more', col: 260 },
+    ], { y: 260, h: 80 });
   },
 };
 window.SCENES = SCENES;
