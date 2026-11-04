@@ -8,12 +8,12 @@ ONCALL = json.load(open(os.path.join(HERE, 'oncall-shots.json'))) if os.path.exi
 ORDER = [
  ('scene:open', 6, "This video covers Code Quality Assurance with Devin. It shows how Devin helps teams debug, refactor, test, and review code at each step of software development."),
  ('scene:agents', 3, "Devin is an AI software engineer made by Cognition. Devin also includes specialized agents. A specialized agent is an agent that is built for one job."),
- ('scene:agents', 3, "This video uses two of them. Devin Review is a specialized agent for code review. Devin Oncall is a specialized agent for site reliability engineering, which is the work of keeping production systems running."),
+ ('scene:agents+', 3, "This video uses two of them. Devin Review is a specialized agent for code review. Devin Oncall is a specialized agent for site reliability engineering, which is the work of keeping production systems running."),
  ('scene:envs', 3, "Every Devin session runs on its own virtual machine, or VM. A VM is a full computer in the cloud. Teams can choose Linux, macOS, or Windows VMs. On macOS, Devin can use Xcode and the iOS Simulator. Devin can also run Android emulators."),
- ('scene:envs', 3, "Everything in this video works the same way on all of these VMs. Most of this demo uses macOS. One part uses Windows for a desktop app."),
+ ('scene:envs+', 3, "Everything in this video works the same way on all of these VMs. Most of this demo uses macOS. One part uses Windows for a desktop app."),
  ('scene:example', 4, "Our example is the claims platform of an insurance company. It has four repositories: a Java claims service that calculates and pays claims, a web portal where customers file claims, a Windows desktop app that adjusters use to approve claims, and an iOS app that field adjusters use to file damage reports."),
- ('scene:example', 3, "The team has strict rules. A person reviews every change. Every bug fix needs a regression test, which is a test that proves the bug stays fixed. Only people merge pull requests."),
- ('scene:ch1', 4, "Chapter one: code review."),
+ ('scene:example+', 3, "The team has strict rules. A person reviews every change. Every bug fix needs a regression test, which is a test that proves the bug stays fixed. Only people merge pull requests."),
+ ('scene:ch1', 4, "Code review."),
  ('scene:adversarial', 4, "Code review is the first quality check on every change. Devin Review is a specialized code review agent. It uses adversarial agents. Some agents look for problems, and other agents try to prove each finding wrong. Devin Review reports only the findings that hold up."),
  ('0016.png', 2.5, "An admin turns on automatic review in the Review settings. The admin chooses the repositories, when the review runs, and the review effort. Normal effort balances cost and depth. Ultra effort gives the most complete review, at a higher cost."),
  ('0097.png', 2.5, "Here, Devin Review covers all four repositories, at Ultra effort."),
@@ -24,29 +24,29 @@ ORDER = [
  ('0105.png', 2.5, "A second finding is a rounding bug. The installments do not add up to the claim total."),
  ('0162.png', 2, "Reviewers can ask questions in Review chat. Here the reviewer asks which findings must be fixed before the merge."),
  ('0190.png', 3, "Devin names the blockers and links to the code."),
- ('scene:ch2', 4, "Chapter two: debugging a failing build."),
+ ('scene:ch2', 4, "Debugging a failing build."),
  ('0329.png', 2.5, "CI, the automatic build and test system, fails on the same pull request. The developer asks Devin to fix it. This session runs on a macOS VM."),
  ('0340.png', 2.5, "Devin reads the CI logs, reproduces the failure on its VM, and finds the root cause."),
  ('0346.png', 3, "It fixes the failure and the review findings: an ownership check, installments that add up to the exact total, safe CSV values, and a 404 for an unknown claim. It adds a regression test for each bug."),
  ('0347.png', 3, "Before it pushes the code, Devin runs the full build and test suite. Then CI passes."),
- ('scene:ch3', 4, "Chapter three: refactoring."),
+ ('scene:ch3', 4, "Refactoring."),
  ('scene:stack', 4, "A refactor changes the structure of code but not its behavior. A large refactor is hard to review as one pull request. Devin can split it into stacked pull requests. Each pull request targets the branch of the one below it, so a reviewer reads one small change at a time."),
  ('0521.png', 3, "Here, Devin moves the payout calculations into one shared module, in three stacked pull requests: the new module, the change to the callers, and the removal of the old code. Devin Review shows where each pull request sits in the stack."),
- ('scene:ch4', 4, "Chapter four: test generation."),
+ ('scene:ch4', 4, "Test generation."),
  ('scene:tests', 4, "Devin writes tests that follow the existing test patterns of the team. In this example, it writes three types of tests: unit tests, integration tests, and end-to-end tests that use the app as a person does."),
  ('0700.png', 2.5, "This session runs on a Windows VM. Adjusters report that a twenty thousand dollar claim was approved without a supervisor. The approval limit is ten thousand dollars."),
  ('0724.png', 3, "Devin finds the root cause. The code compared the claim amount in dollars to a limit stored in cents."),
  ('0726.png', 3, "It adds unit tests below, at, and above the limit, an integration test for the claim queue, and an end-to-end test that opens the Windows app, approves the claim, and checks that it goes to a supervisor."),
  ('0728.png', 2.5, "It also records a check of the app, so a reviewer can watch each step."),
  ('0720.png', 2.5, "All fourteen tests pass on Windows and in CI, and Devin opens a pull request."),
- ('scene:ch5', 4, "Chapter five: testing at scale."),
- ('scene:dw', 5, "Some test work is large and repetitive. An example is to add tests to every package in a service. For this work, Devin can write a Dynamic Workflow. A Dynamic Workflow is a Python script that runs many Devin agents."),
- ('scene:dw', 3, "The workflow is deterministic. It runs the same steps in the same order every time, and each step returns structured results. In each step, an agent decides how to write the tests."),
+ ('scene:ch5', 4, "Testing at scale."),
+ ('scene:dwscript', 5, "Some test work is large and repetitive. An example is to add tests to every package in a service. For this work, Devin can write a Dynamic Workflow. A Dynamic Workflow is a Python script that runs many Devin agents."),
+ ('scene:dwscript+', 3, "The workflow is deterministic. It runs the same steps in the same order every time, and each step returns structured results. In each step, an agent decides how to write the tests."),
  ('0951.png', 3, "Here is the workflow. The list of packages is in the code: one agent for each of the six packages in the claims service."),
  ('0949.png', 2.5, "Each agent writes unit tests and integration tests for its package, runs them, and pushes a branch."),
  ('0953.png', 3, "A final step merges the branches, runs the full build, and opens one pull request. It adds one hundred twenty four unit tests and forty six integration tests, and all of the tests pass."),
  ('scene:dw', 3, "A normal Devin session is not deterministic. Devin decides the next step while it works. Use a session for one task. Use a Dynamic Workflow when the steps must be the same every time."),
- ('scene:ch6', 4, "Chapter six: production debugging."),
+ ('scene:ch6', 4, "Production debugging."),
  ('0958.png', 2, "Devin Oncall is the specialized agent for site reliability engineering. You set up a responder, which watches one source of alerts."),
  ('0976.png', 2.5, "This responder gets crash alerts for the iOS app from a webhook."),
  ('0988.png', 2.5, "It follows the runbook of the team: reproduce the crash, fix the root cause, add tests, and open a pull request."),
@@ -61,8 +61,10 @@ beats, edit = [], {}
 for i, (src, hold, vo) in enumerate(ORDER):
     new = f'{i:04d}.png'
     if src.startswith('scene:'):
-        shutil.copy(os.path.join(SRC, '0000.png'), os.path.join(out, new)); beats.append({'img': new, 'cur': {'x': 1300, 'y': 760}, 'scene': src[6:]})
-        e = {'scene': src[6:]}
+        name = src[6:].rstrip('+')
+        shutil.copy(os.path.join(SRC, '0000.png'), os.path.join(out, new)); beats.append({'img': new, 'cur': {'x': 1300, 'y': 760}, 'scene': name})
+        e = {'scene': name}
+        if src.endswith('+'): e['sceneCont'] = True
     else:
         b = dict(B[src]); shutil.copy(os.path.join(SRC, src), os.path.join(out, new))
         for k in ('kind', 'at', 'mark', 'n', 'paste', 'chars'): b.pop(k, None)

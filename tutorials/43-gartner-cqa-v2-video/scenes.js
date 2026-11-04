@@ -108,66 +108,94 @@ function open(ctx, s, k) {
   mechRow(ctx, k, s, 1.8, 420, 3.6);
 }
 
-// 2. Specialized agents: built for one job.
+// 2. Specialized agents. Part 1: Devin. Part 2: Devin Review and Devin Oncall branch from it.
 function agents(ctx, s, k) {
-  eyebrow(ctx, k, 'SPECIALIZED AGENTS', 150, up(k, s, 0.05));
-  headline(ctx, k, 'A specialized agent is built for one job', 210, up(k, s, 0.3, 0.9), 40);
+  const p1 = k.parts[1] ?? 8;
+  eyebrow(ctx, k, 'SPECIALIZED AGENTS', 130, up(k, s, 0.05));
+  headline(ctx, k, 'A specialized agent is built for one job', 188, up(k, s, 0.3, 0.9), 40);
+  const m = k.eInOut(k.prog(s, p1, p1 + 0.9)), a = up(k, s, 0.8, 0.8);
+  const dw = k.lerp(460, 380, m), dh = k.lerp(210, 84, m), dx = k.VW / 2 - dw / 2, dy = k.lerp(300, 246, m) + 16 * (1 - a);
+  card(ctx, k, dx, dy, dw, dh, a, 0, 20);
+  mark(ctx, k, k.VW / 2, dy + 60, 56, a * (1 - m));
+  text(ctx, k, 'Devin', k.VW / 2, k.lerp(dy + 124, dy + 30, m), k.lerp(30, 24, m), 600, k.INK, a);
+  text(ctx, k, 'AI software engineer, made by Cognition', k.VW / 2, k.lerp(dy + 164, dy + 58, m), 15, 400, MUTED(0.55), a);
+  const ia = up(k, s, Math.min(3.2, p1 * 0.4), 0.7) * (1 - m);
+  pill(ctx, k, 'Includes specialized agents', k.VW / 2, dy + dh + 46, ia, true);
   const A = [
-    { t: 'Devin Review', job: 'Code review', how: 'Uses adversarial agents', i: 'review', at: 1.4 },
-    { t: 'Devin Oncall', job: 'Site reliability engineering', how: 'Investigates production alerts', i: 'alert', at: 3.2 },
+    { t: 'Devin Review', job: 'Code review', how: 'Uses adversarial agents', i: 'review', at: p1 + 1.6 },
+    { t: 'Devin Oncall', job: 'Site reliability engineering', how: 'Investigates production alerts', i: 'alert', at: p1 + 5.0 },
   ];
-  const w = 420, h = 230, gap = 40, x0 = (k.VW - (2 * w + gap)) / 2, y = 300;
+  const w = 420, h = 220, gap = 40, x0 = (k.VW - (2 * w + gap)) / 2, y = 400;
   A.forEach((g, i) => {
-    const x = x0 + i * (w + gap), a = up(k, s, g.at, 0.8), yy = y + 18 * (1 - a), cx = x + w / 2;
-    card(ctx, k, x, yy, w, h, a, k.eOutQuint(k.prog(s, g.at + 0.4, g.at + 0.9)) * (1 - 0.6 * k.eInOut(k.prog(s, g.at + 1.4, g.at + 1.9))));
-    icon(ctx, k, g.i, cx, yy + 58, 36, a);
-    text(ctx, k, g.t, cx, yy + 118, 27, 600, k.INK, a);
-    pill(ctx, k, g.job, cx, yy + 160, up(k, s, g.at + 0.4), true);
-    text(ctx, k, g.how, cx, yy + 198, 15, 400, MUTED(0.55), up(k, s, g.at + 0.6));
+    const x = x0 + i * (w + gap), ga = up(k, s, g.at, 0.8), yy = y + 18 * (1 - ga), cx = x + w / 2;
+    curve(ctx, k, k.VW / 2, dy + dh, cx, y, k.eInOut(k.prog(s, g.at - 0.5, g.at + 0.1)), rgba(BLUE, 0.7), 1.6, false);
+    card(ctx, k, x, yy, w, h, ga, k.eOutQuint(k.prog(s, g.at + 0.4, g.at + 0.9)) * (1 - 0.6 * k.eInOut(k.prog(s, g.at + 1.6, g.at + 2.1))));
+    icon(ctx, k, g.i, cx, yy + 54, 34, ga);
+    text(ctx, k, g.t, cx, yy + 108, 26, 600, k.INK, ga);
+    pill(ctx, k, g.job, cx, yy + 150, up(k, s, g.at + 0.4), true);
+    text(ctx, k, g.how, cx, yy + 188, 15, 400, MUTED(0.55), up(k, s, g.at + 0.6));
   });
 }
 
-// 3. Where Devin runs: five environments, the same four capabilities on each.
+// 3. Where Devin runs. Part 1: five environments appear as they are named. Part 2: cards open to show the same capabilities on each; macOS and Windows are marked.
 function envs(ctx, s, k) {
-  eyebrow(ctx, k, 'WHERE DEVIN RUNS', 150, up(k, s, 0.05));
-  headline(ctx, k, 'Each session runs on its own virtual machine', 210, up(k, s, 0.3, 0.9), 40);
+  const p1 = k.parts[1] ?? 14;
+  eyebrow(ctx, k, 'WHERE DEVIN RUNS', 130, up(k, s, 0.05));
+  headline(ctx, k, 'Each session runs on its own virtual machine', 188, up(k, s, 0.3, 0.9), 40);
+  const sw = k.eInOut(k.prog(s, p1, p1 + 0.6));
+  sub(ctx, k, 'A VM is a full computer in the cloud', 236, up(k, s, 1.6, 0.8) * (1 - sw));
+  sub(ctx, k, 'Everything in this video works the same way on each one', 236, up(k, s, p1 + 0.3, 0.8));
   const E = [
-    { t: 'Linux VM', d: 'Ubuntu' }, { t: 'macOS VM', d: 'Xcode', focus: 1 }, { t: 'Windows VM', d: 'Windows desktop', focus: 1 },
-    { t: 'iOS Simulator', d: 'On macOS VMs' }, { t: 'Android emulator', d: 'Android apps' },
+    { t: 'Linux VM', d: 'Ubuntu', at: 0.33 }, { t: 'macOS VM', d: 'Xcode', at: 0.37, focus: 3.8 }, { t: 'Windows VM', d: 'Windows desktop', at: 0.41, focus: 5.6 },
+    { t: 'iOS Simulator', d: 'On macOS VMs', at: 0.58 }, { t: 'Android emulator', d: 'Android apps', at: 0.80 },
   ];
-  const w = 230, gap = 18, h = 270, y = 290, x0 = (k.VW - (5 * w + 4 * gap)) / 2;
+  const g = k.eInOut(k.prog(s, p1 + 0.2, p1 + 1.0));
+  const w = 230, gap = 18, h = k.lerp(110, 290, g), y = 290, x0 = (k.VW - (5 * w + 4 * gap)) / 2;
   E.forEach((e, i) => {
-    const x = x0 + i * (w + gap), a = up(k, s, 0.9 + i * 0.25, 0.7), yy = y + 18 * (1 - a), cx = x + w / 2;
-    const on = e.focus ? k.eOutQuint(k.prog(s, 6.0, 6.6)) : 0;
+    const x = x0 + i * (w + gap), a = up(k, s, e.at * p1, 0.7), yy = y + 18 * (1 - a), cx = x + w / 2;
+    const on = e.focus ? k.eOutQuint(k.prog(s, p1 + e.focus, p1 + e.focus + 0.6)) : 0;
     card(ctx, k, x, yy, w, h, a, on);
-    text(ctx, k, e.t, cx, yy + 46, 21, 600, k.INK, a);
-    text(ctx, k, e.d, cx, yy + 74, 14, 400, MUTED(0.5), a);
-    ['Code review', 'Debugging', 'Refactoring', 'Testing'].forEach((m, j) => row(ctx, k, x + 34, yy + 128 + j * 32, m, up(k, s, 2.6 + j * 0.35 + i * 0.05)));
-    if (e.focus) pill(ctx, k, 'Shown in this video', cx, yy + h + 28, k.eOutQuint(k.prog(s, 6.2, 6.8)), true);
+    text(ctx, k, e.t, cx, yy + 44, 21, 600, k.INK, a);
+    text(ctx, k, e.d, cx, yy + 72, 14, 400, MUTED(0.5), a);
+    ['Code review', 'Debugging', 'Refactoring', 'Testing'].forEach((m, j) => row(ctx, k, x + 34, yy + 128 + j * 34, m, up(k, s, p1 + 1.0 + j * 0.3 + i * 0.06)));
+    if (e.focus) pill(ctx, k, 'Shown in this video', cx, yy + 290 + 30, k.eOutQuint(k.prog(s, p1 + e.focus + 0.2, p1 + e.focus + 0.8)), true);
   });
 }
 
-// 4. The example: Northwind Insurance, four repositories, three team rules.
+// 4. The example. Part 1: the four repositories, as each is named. Part 2: the team rules.
 function example(ctx, s, k) {
+  const p1 = k.parts[1] ?? 18;
   eyebrow(ctx, k, 'THE EXAMPLE', 130, up(k, s, 0.05));
-  headline(ctx, k, 'An insurance claims platform', 190, up(k, s, 0.3, 0.9), 40);
+  headline(ctx, k, 'An insurance claims platform', 188, up(k, s, 0.3, 0.9), 40);
   const R = [
-    { t: 'claims-service', d: 'Java, Spring Boot', u: 'Calculates and pays claims' },
-    { t: 'claims-portal', d: 'Node.js web app', u: 'Customers file claims' },
-    { t: 'adjuster-desktop', d: '.NET 8, Windows', u: 'Adjusters approve claims' },
-    { t: 'field-adjuster-ios', d: 'SwiftUI, iOS', u: 'Field damage reports' },
+    { t: 'claims-service', d: 'Java, Spring Boot', u: 'Calculates and pays claims', at: 0.22 },
+    { t: 'claims-portal', d: 'Node.js web app', u: 'Customers file claims', at: 0.45 },
+    { t: 'adjuster-desktop', d: '.NET 8, Windows', u: 'Adjusters approve claims', at: 0.62 },
+    { t: 'field-adjuster-ios', d: 'SwiftUI, iOS', u: 'Field damage reports', at: 0.80 },
   ];
-  const w = 290, gap = 20, h = 150, y = 260, x0 = (k.VW - (4 * w + 3 * gap)) / 2;
+  const lift = k.eInOut(k.prog(s, p1, p1 + 0.8));
+  const w = 290, gap = 20, h = 150, y = k.lerp(270, 240, lift), x0 = (k.VW - (4 * w + 3 * gap)) / 2;
   R.forEach((r, i) => {
-    const x = x0 + i * (w + gap), a = up(k, s, 0.9 + i * 0.6, 0.7), yy = y + 16 * (1 - a), cx = x + w / 2;
+    const x = x0 + i * (w + gap), a = up(k, s, r.at * p1, 0.7), yy = y + 16 * (1 - a), cx = x + w / 2;
     card(ctx, k, x, yy, w, h, a);
     icon(ctx, k, 'pr', cx, yy + 38, 24, a);
     text(ctx, k, r.t, cx, yy + 78, 19, 600, k.INK, a);
     text(ctx, k, r.d, cx, yy + 104, 14, 500, rgba(BLUE, 1), a);
     text(ctx, k, r.u, cx, yy + 126, 14, 400, MUTED(0.5), a);
   });
-  const rules = ['A person reviews every change', 'Every bug fix needs a regression test', 'Only people merge pull requests'];
-  rules.forEach((t, i) => { const a = up(k, s, 4.2 + i * 0.7, 0.7); pill(ctx, k, t, k.VW / 2 + (i - 1) * 330, 480 + 8 * (1 - a), a, false); });
+  eyebrow(ctx, k, 'TEAM RULES', 444, up(k, s, p1 + 0.4));
+  const rules = [
+    { t: 'A person reviews every change', i: 'person', at: 1.2 },
+    { t: 'Every bug fix needs a regression test', i: 'test', at: 3.0 },
+    { t: 'Only people merge pull requests', i: 'pr', at: 6.5 },
+  ];
+  const rw = 380, rg = 20, rx0 = (k.VW - (3 * rw + 2 * rg)) / 2;
+  rules.forEach((r, i) => {
+    const a = up(k, s, p1 + r.at, 0.7), x = rx0 + i * (rw + rg), yy = 476 + 14 * (1 - a);
+    card(ctx, k, x, yy, rw, 96, a, k.eOutQuint(k.prog(s, p1 + r.at + 0.3, p1 + r.at + 0.8)) * (1 - 0.7 * k.eInOut(k.prog(s, p1 + r.at + 1.4, p1 + r.at + 1.9))));
+    icon(ctx, k, r.i, x + 48, yy + 48, 26, a);
+    text(ctx, k, r.t, x + 84, yy + 48, 17, 600, k.INK, a, 'left');
+  });
 }
 
 // 5. Adversarial review: finder agents propose, checker agents try to disprove, only surviving findings are reported.
@@ -270,10 +298,65 @@ function tests(ctx, s, k) {
   });
 }
 
-// 9. Session vs Dynamic Workflow. The workflow is deterministic.
+function code(ctx, k, s, x, y, a, color) {
+  ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.textBaseline = 'middle'; k.font(15, 500, 'JetBrains Mono'); ctx.fillStyle = color || k.INK; ctx.fillText(s, x, y); ctx.restore();
+}
+// 9a. What a Dynamic Workflow is. Part 1: a service with six packages, the workflow script, one agent per package. Part 2: the fixed steps.
+function dwscript(ctx, s, k) {
+  const p1 = k.parts[1] ?? 16, f1 = 1 - k.eInOut(k.prog(s, p1, p1 + 0.6));
+  eyebrow(ctx, k, 'DYNAMIC WORKFLOWS', 120, up(k, s, 0.05));
+  headline(ctx, k, 'A Python script that runs many Devin agents', 178, up(k, s, 0.3, 0.9) * f1, 40);
+  headline(ctx, k, 'Dynamic Workflows are deterministic', 178, up(k, s, p1 + 0.3, 0.9), 42);
+  if (f1 > 0) {
+    const y = 250, H = 320;
+    const la = up(k, s, 0.9, 0.7) * f1;
+    card(ctx, k, 110, y + 14 * (1 - la), 330, H, la);
+    text(ctx, k, 'claims-service', 140, y + 40, 20, 600, k.INK, la, 'left');
+    text(ctx, k, '6 packages need tests', 140, y + 66, 14, 400, MUTED(0.55), la, 'left');
+    const P = ['coverage', 'payouts', 'intake', 'fraud', 'documents', 'notifications'];
+    P.forEach((n, i) => pillL(ctx, k, n, 140, y + 108 + i * 34, up(k, s, 1.6 + i * 0.15) * f1, false));
+    const ca = up(k, s, p1 * 0.5, 0.8) * f1, cx = 490, cy = y + 14 * (1 - ca);
+    card(ctx, k, cx, cy, 460, H, ca);
+    code(ctx, k, 'workflow.py', cx + 28, cy + 34, ca, MUTED(0.45));
+    ['PACKAGES = ["coverage", "payouts",', '            "intake", "fraud",', '            "documents",', '            "notifications"]'].forEach((l, i) => code(ctx, k, l, cx + 28, cy + 90 + i * 28, ca));
+    code(ctx, k, '# one agent for each package,', cx + 28, cy + 228, ca, MUTED(0.45));
+    code(ctx, k, '# all in parallel', cx + 28, cy + 256, ca, MUTED(0.45));
+    P.forEach((n, i) => {
+      const at = p1 * 0.72 + i * 0.12, a = up(k, s, at, 0.5) * f1, bx = 1010 + (i % 2) * 166, by = y + 30 + Math.floor(i / 2) * 96;
+      curve(ctx, k, cx + 460, y + H / 2, bx, by + 32, k.eInOut(k.prog(s, at - 0.3, at + 0.2)) * (f1 > 0.99 ? 1 : f1), rgba(BLUE, 0.55), 1.2);
+      ctx.save(); ctx.globalAlpha = k.alpha * a; k.rr(bx, by, 150, 64, 12); ctx.fillStyle = rgba(BLUE, 0.08); ctx.fill(); ctx.strokeStyle = rgba(BLUE, 0.6); ctx.lineWidth = 1.2; ctx.stroke(); ctx.restore();
+      text(ctx, k, 'Devin agent', bx + 75, by + 24, 14, 600, k.INK, a);
+      text(ctx, k, n, bx + 75, by + 44, 12, 400, MUTED(0.6), a);
+    });
+  }
+  const S = [
+    { t: 'Write tests', d: 'Six agents in parallel', e: 'One branch per package' },
+    { t: 'Merge and build', d: 'Merge the branches', e: 'Run ./mvnw -B verify' },
+    { t: 'Open one pull request', d: 'With the test details', e: 'For a person to review' },
+  ];
+  const w = 340, gap = 60, x0 = (k.VW - (3 * w + 2 * gap)) / 2, y = 260, h = 210;
+  S.forEach((st, i) => {
+    const at = p1 + 0.6 + i * 0.5, a = up(k, s, at, 0.7), x = x0 + i * (w + gap), yy = y + 16 * (1 - a);
+    const on = i === 0 ? k.eOutQuint(k.prog(s, p1 + 8.2, p1 + 8.8)) : 0;
+    card(ctx, k, x, yy, w, h, a, on);
+    ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.beginPath(); ctx.arc(x + 40, yy + 40, 15, 0, 7); ctx.fillStyle = rgba(BLUE, 1); ctx.fill(); ctx.restore();
+    text(ctx, k, String(i + 1), x + 40, yy + 40, 15, 600, '#fff', a);
+    text(ctx, k, st.t, x + 28, yy + 90, 22, 600, k.INK, a, 'left');
+    text(ctx, k, st.d, x + 28, yy + 120, 15, 400, MUTED(0.6), a, 'left');
+    text(ctx, k, st.e, x + 28, yy + 144, 15, 400, MUTED(0.6), a, 'left');
+    pillL(ctx, k, 'Structured result', x + 28, yy + 182, up(k, s, p1 + 5.0 + i * 0.2), true);
+    if (i) curve(ctx, k, x - gap + 6, y + h / 2, x - 6, y + h / 2, k.eInOut(k.prog(s, at - 0.3, at + 0.2)), rgba(BLUE, 0.8), 1.6);
+  });
+  const ba = up(k, s, p1 + 2.6, 0.7);
+  ctx.save(); ctx.globalAlpha = k.alpha * ba; k.rr(k.VW / 2 - 200, 512 + 10 * (1 - ba), 400, 46, 23); ctx.fillStyle = rgba(BLUE, 1); ctx.fill(); ctx.restore();
+  text(ctx, k, 'Same steps, same order, every run', k.VW / 2, 535 + 10 * (1 - ba), 17, 600, '#fff', ba);
+  text(ctx, k, 'Inside each step, an agent decides how to write the tests', k.VW / 2, 600, 16, 400, MUTED(0.6), up(k, s, p1 + 8.2, 0.8));
+}
+
+// 9b. Session vs Dynamic Workflow: when to use each.
 function dw(ctx, s, k) {
-  eyebrow(ctx, k, 'DYNAMIC WORKFLOWS', 110, up(k, s, 0.05));
-  headline(ctx, k, 'Dynamic Workflows are deterministic', 168, up(k, s, 0.3, 0.9), 42);
+  eyebrow(ctx, k, 'WHEN TO USE EACH', 110, up(k, s, 0.05));
+  headline(ctx, k, 'A Devin session or a Dynamic Workflow', 168, up(k, s, 0.3, 0.9), 42);
   const w = 520, h = 400, gap = 40, y = 230, xl = (k.VW - (2 * w + gap)) / 2, xr = xl + w + gap;
   const al = up(k, s, 1.0, 0.8), ar = up(k, s, 2.2, 0.8);
   card(ctx, k, xl, y + 16 * (1 - al), w, h, al);
@@ -307,9 +390,8 @@ function chapter(num, title, line, ic) {
     const a = up(k, s, 0.05, 0.8), cx = k.VW / 2;
     card(ctx, k, cx - 44, 250 + 14 * (1 - a), 88, 88, a, k.eOutQuint(k.prog(s, 0.6, 1.1)), 24);
     icon(ctx, k, ic, cx, 294 + 14 * (1 - a), 36, a);
-    eyebrow(ctx, k, `CHAPTER ${num}`, 386, up(k, s, 0.3));
-    headline(ctx, k, title, 440, up(k, s, 0.45, 0.8), 50);
-    sub(ctx, k, line, 500, up(k, s, 0.8, 0.8));
+    headline(ctx, k, title, 410, up(k, s, 0.3, 0.8), 50);
+    sub(ctx, k, line, 468, up(k, s, 0.7, 0.8));
   };
 }
 const ch1 = chapter('01', 'Code review', 'Devin Review, a specialized code review agent', 'review');
@@ -320,12 +402,28 @@ const ch5 = chapter('05', 'Testing at scale', 'With Dynamic Workflows', 'test');
 const ch6 = chapter('06', 'Production debugging', 'Devin Oncall, on a macOS VM with the iOS Simulator', 'alert');
 
 function close(ctx, s, k) {
-  eyebrow(ctx, k, 'CODE QUALITY ASSURANCE', 170, up(k, s, 0.05));
-  mechRow(ctx, k, s, 0.4, 230, 1.4);
+  eyebrow(ctx, k, 'CODE QUALITY ASSURANCE', 112, up(k, s, 0.05));
+  headline(ctx, k, 'What Devin does for code quality', 166, up(k, s, 0.3, 0.9), 38);
+  const L = [
+    { i: 'review', t: 'Devin Review reviews the pull requests in each repository', at: 0.4 },
+    { i: 'debug', t: 'Devin finds root causes from CI logs and production alerts', at: 3.6 },
+    { i: 'refactor', t: 'Devin splits large refactors into stacked pull requests', at: 7.1 },
+    { i: 'test', t: 'Devin writes unit, integration, and end-to-end tests', at: 10.4 },
+    { i: 'pr', t: 'Dynamic Workflows run large test jobs the same way every time', at: 13.6 },
+  ];
+  const x = 250, w = 940, y = 214, rh = 58, ca = up(k, s, 0.2, 0.8);
+  card(ctx, k, x, y + 12 * (1 - ca), w, rh * L.length + 20, ca, 0, 18);
+  L.forEach((r, i) => {
+    const a = up(k, s, r.at, 0.6), yy = y + 10 + i * rh + rh / 2;
+    const lit = k.eOutQuint(k.prog(s, r.at, r.at + 0.4)) * (1 - k.eInOut(k.prog(s, (L[i + 1]?.at ?? 17) , (L[i + 1]?.at ?? 17) + 0.5)));
+    if (lit > 0) { ctx.save(); ctx.globalAlpha = k.alpha * lit; k.rr(x + 10, yy - rh / 2 + 4, w - 20, rh - 8, 12); ctx.fillStyle = rgba(BLUE, 0.07); ctx.fill(); ctx.restore(); }
+    icon(ctx, k, r.i, x + 52, yy, 24, a, lit > 0.5 ? rgba(BLUE, 1) : k.INK);
+    text(ctx, k, r.t, x + 92, yy, 19, 500, k.INK, a, 'left');
+  });
   const envs = ['Linux VM', 'macOS VM', 'Windows VM', 'iOS Simulator', 'Android emulator'];
-  envs.forEach((e, i) => pill(ctx, k, e, k.VW / 2 + (i - 2) * 170, 450, up(k, s, 3.0 + i * 0.15), true));
-  approve(ctx, k, s, 4.4, 520);
+  envs.forEach((e, i) => pill(ctx, k, e, k.VW / 2 + (i - 2) * 170, 548, up(k, s, 17.0 + i * 0.25), true));
+  approve(ctx, k, s, 24.5, 588);
 }
 
-window.SCENES = { open, agents, envs, example, adversarial, multirepo, stack, tests, dw, ch1, ch2, ch3, ch4, ch5, ch6, close };
+window.SCENES = { open, agents, envs, example, adversarial, multirepo, stack, tests, dwscript, dw, ch1, ch2, ch3, ch4, ch5, ch6, close };
 })();

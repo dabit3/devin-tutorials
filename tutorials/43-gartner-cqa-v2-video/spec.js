@@ -27,6 +27,7 @@ window.SPEC = {
   },
   "0002.png": {
    "scene": "agents",
+   "sceneCont": true,
    "hold": 3,
    "cursor": false,
    "hl": null,
@@ -44,6 +45,7 @@ window.SPEC = {
   },
   "0004.png": {
    "scene": "envs",
+   "sceneCont": true,
    "hold": 3,
    "cursor": false,
    "hl": null,
@@ -62,6 +64,7 @@ window.SPEC = {
   },
   "0006.png": {
    "scene": "example",
+   "sceneCont": true,
    "hold": 3,
    "cursor": false,
    "hl": null,
@@ -74,7 +77,7 @@ window.SPEC = {
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
-   "vo": "Chapter one: code review."
+   "vo": "Code review."
   },
   "0008.png": {
    "scene": "adversarial",
@@ -155,7 +158,7 @@ window.SPEC = {
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
-   "vo": "Chapter two: debugging a failing build."
+   "vo": "Debugging a failing build."
   },
   "0019.png": {
    "hold": 2.5,
@@ -195,7 +198,7 @@ window.SPEC = {
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
-   "vo": "Chapter three: refactoring."
+   "vo": "Refactoring."
   },
   "0024.png": {
    "scene": "stack",
@@ -218,7 +221,7 @@ window.SPEC = {
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
-   "vo": "Chapter four: test generation."
+   "vo": "Test generation."
   },
   "0027.png": {
    "scene": "tests",
@@ -271,10 +274,10 @@ window.SPEC = {
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
-   "vo": "Chapter five: testing at scale."
+   "vo": "Testing at scale."
   },
   "0034.png": {
-   "scene": "dw",
+   "scene": "dwscript",
    "hold": 5,
    "cursor": false,
    "hl": null,
@@ -282,7 +285,8 @@ window.SPEC = {
    "vo": "Some test work is large and repetitive. An example is to add tests to every package in a service. For this work, Devin can write a Dynamic Workflow. A Dynamic Workflow is a Python script that runs many Devin agents."
   },
   "0035.png": {
-   "scene": "dw",
+   "scene": "dwscript",
+   "sceneCont": true,
    "hold": 3,
    "cursor": false,
    "hl": null,
@@ -324,7 +328,7 @@ window.SPEC = {
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
-   "vo": "Chapter six: production debugging."
+   "vo": "Production debugging."
   },
   "0041.png": {
    "hold": 2,

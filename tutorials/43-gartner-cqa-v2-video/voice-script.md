@@ -16,7 +16,7 @@ Our example is the claims platform of an insurance company. It has four reposito
 
 The team has strict rules. A person reviews every change. Every bug fix needs a regression test, which is a test that proves the bug stays fixed. Only people merge pull requests.
 
-Chapter one: code review.
+Code review.
 
 Code review is the first quality check on every change. Devin Review is a specialized code review agent. It uses adversarial agents. Some agents look for problems, and other agents try to prove each finding wrong. Devin Review reports only the findings that hold up.
 
@@ -38,7 +38,7 @@ Reviewers can ask questions in Review chat. Here the reviewer asks which finding
 
 Devin names the blockers and links to the code.
 
-Chapter two: debugging a failing build.
+Debugging a failing build.
 
 CI, the automatic build and test system, fails on the same pull request. The developer asks Devin to fix it. This session runs on a macOS VM.
 
@@ -48,13 +48,13 @@ It fixes the failure and the review findings: an ownership check, installments t
 
 Before it pushes the code, Devin runs the full build and test suite. Then CI passes.
 
-Chapter three: refactoring.
+Refactoring.
 
 A refactor changes the structure of code but not its behavior. A large refactor is hard to review as one pull request. Devin can split it into stacked pull requests. Each pull request targets the branch of the one below it, so a reviewer reads one small change at a time.
 
 Here, Devin moves the payout calculations into one shared module, in three stacked pull requests: the new module, the change to the callers, and the removal of the old code. Devin Review shows where each pull request sits in the stack.
 
-Chapter four: test generation.
+Test generation.
 
 Devin writes tests that follow the existing test patterns of the team. In this example, it writes three types of tests: unit tests, integration tests, and end-to-end tests that use the app as a person does.
 
@@ -68,7 +68,7 @@ It also records a check of the app, so a reviewer can watch each step.
 
 All fourteen tests pass on Windows and in CI, and Devin opens a pull request.
 
-Chapter five: testing at scale.
+Testing at scale.
 
 Some test work is large and repetitive. An example is to add tests to every package in a service. For this work, Devin can write a Dynamic Workflow. A Dynamic Workflow is a Python script that runs many Devin agents.
 
@@ -82,7 +82,7 @@ A final step merges the branches, runs the full build, and opens one pull reques
 
 A normal Devin session is not deterministic. Devin decides the next step while it works. Use a session for one task. Use a Dynamic Workflow when the steps must be the same every time.
 
-Chapter six: production debugging.
+Production debugging.
 
 Devin Oncall is the specialized agent for site reliability engineering. You set up a responder, which watches one source of alerts.
 
