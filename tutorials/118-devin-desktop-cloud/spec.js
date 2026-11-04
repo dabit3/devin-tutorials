@@ -518,32 +518,37 @@ window.SPEC = {
    "subPos": {
     "x": 0.42,
     "y": 0.9
-   }
+   },
+   "skip": true
   },
   "0256.png": {
    "subPos": {
     "x": 0.42,
     "y": 0.9
-   }
+   },
+   "skip": true
   },
   "0257.png": {
    "subPos": {
     "x": 0.42,
     "y": 0.9
-   }
+   },
+   "skip": true
   },
   "0258.png": {
    "subPos": {
     "x": 0.42,
     "y": 0.9
-   }
+   },
+   "skip": true
   },
   "0259.png": {
    "subPos": {
     "x": 0.42,
     "y": 0.9
    },
-   "hold": 2.4
+   "hold": 2.4,
+   "skip": true
   },
   "0261.png": {
    "vo": "Back in the preview, the page count is already there."
@@ -562,11 +567,102 @@ window.SPEC = {
    "vo": "All nine tests pass on this machine, too.",
    "hold": 2.8
   },
+  "0285.png": {
+   "skip": true
+  },
   "0286.png": {
-   "vo": "Prefer an editor? The same menu switches to the IDE view."
+   "skip": true
+  },
+  "0287.png": {
+   "skip": true
+  },
+  "0288.png": {
+   "skip": true
   },
   "0289.png": {
+   "skip": true
+  },
+  "0290.png": {
+   "skip": true
+  },
+  "0291.png": {
+   "skip": true
+  },
+  "0292.png": {
+   "skip": true
+  },
+  "0293.png": {
+   "skip": true
+  },
+  "0294.png": {
+   "skip": true
+  },
+  "0296.png": {
+   "vo": "Prefer an editor? The same menu switches to the IDE view."
+  },
+  "0299.png": {
    "hold": 3
+  },
+  "0328.png": {
+   "subPos": {
+    "x": 0.42,
+    "y": 0.9
+   }
+  },
+  "0329.png": {
+   "subPos": {
+    "x": 0.42,
+    "y": 0.9
+   }
+  },
+  "0330.png": {
+   "subPos": {
+    "x": 0.42,
+    "y": 0.9
+   }
+  },
+  "0331.png": {
+   "subPos": {
+    "x": 0.42,
+    "y": 0.9
+   }
+  },
+  "0332.png": {
+   "subPos": {
+    "x": 0.42,
+    "y": 0.9
+   }
+  },
+  "0333.png": {
+   "subPos": {
+    "x": 0.42,
+    "y": 0.9
+   }
+  },
+  "0334.png": {
+   "subPos": {
+    "x": 0.42,
+    "y": 0.9
+   }
+  },
+  "0335.png": {
+   "subPos": {
+    "x": 0.42,
+    "y": 0.9
+   }
+  },
+  "0336.png": {
+   "subPos": {
+    "x": 0.42,
+    "y": 0.9
+   }
+  },
+  "0337.png": {
+   "subPos": {
+    "x": 0.42,
+    "y": 0.9
+   },
+   "hold": 2.4
   }
  }
 };

@@ -209,10 +209,10 @@ if (PHASE === 9) { // IDE follow-up once Remote SSH has connected
   r.p = w; r.cur = { x: 640, y: 360 };
   const ok = async () => w.evaluate(() => !/Opening Remote/.test(document.body.innerText) && [...document.querySelectorAll('.monaco-list-row')].length > 1);
   for (let i = 0; i < 60 && !(await ok()); i++) await sleep(2000);
-  const row = async name => w.evaluate(name => { const e = [...document.querySelectorAll('.monaco-list-row')].find(e => e.getBoundingClientRect().width && e.innerText.trim() === name); if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x + 60, y: b.y + b.height / 2 }; }, name);
+  const row = async name => w.evaluate(name => { const e = [...document.querySelectorAll('.monaco-list-row')].find(e => { const b = e.getBoundingClientRect(); return b.width && b.y > 90 && b.y + b.height < 640 && e.innerText.trim() === name; }); if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x + 60, y: b.y + b.height / 2, open: e.getAttribute('aria-expanded') === 'true' }; }, name);
   console.log('rows', await w.evaluate(() => [...document.querySelectorAll('.monaco-list-row')].map(e => e.innerText.trim()).slice(0, 20).join('|')));
   await r.shot({ hold: 1.4, cap: 'The IDE, over Remote SSH' });
-  for (const n of (process.env.PATHS || 'product-demo-apps,pagemark,src,books.ts').split(',')) { const p2 = await row(n); if (!p2) { console.log('missing', n); break; } await r.click(p2, {}, 1500); }
+  for (const n of (process.env.PATHS || 'product-demo-apps,pagemark,src,books.ts').split(',')) { let p2 = await row(n); for (let k = 0; k < 12 && !p2; k++) { await w.mouse.move(190, 400); await w.mouse.wheel({ deltaY: 300 }); await sleep(500); p2 = await row(n); } if (!p2) { console.log('missing', n); break; } if (!p2.open) await r.click(p2, {}, 1500); }
   await sleep(1500); await r.shot({ hold: 2.4, cap: 'Devin’s code, on Devin’s machine' }); r.p = p;
 }
 if (PHASE === 10) { // IDE: open a file Devin changed via the command center (quick open)
