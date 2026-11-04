@@ -2,7 +2,7 @@ window.SPEC = {
   "title": "From recording to automation",
   "subtitle": "How it works, and what you can hand off",
   "outro": "One recording in. Devin builds and runs the rest",
-  "voOutro": "That's how one screen recording becomes an automation that Devin builds and runs for you.",
+  "voOutro": "That's how you turn one screen recording into a scheduled automation with Devin.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
@@ -11,7 +11,7 @@ window.SPEC = {
       "scene": "value",
       "hold": 4.6,
       "cap": "One recording in, a working automation out",
-      "vo": "Show Devin a chore once on video, and it builds the automation for you: it works out the steps, writes a Playwright script, and runs it on a schedule without you.",
+      "vo": "In this video, Devin turns a screen recording of a chore into a scheduled automation.",
       "cursor": false,
       "voHold": 7.4,
       "capPos": "bottom"
@@ -20,7 +20,7 @@ window.SPEC = {
       "scene": "builds",
       "hold": 4.4,
       "cap": "You give it a video. Devin builds the rest",
-      "vo": "You never write down the steps or any code, the recording is the whole spec, and Devin builds everything else from it.",
+      "vo": "You do not write the steps or any code. Devin works out the steps, writes a Playwright script, and tests it. It opens a pull request and puts the script on a schedule.",
       "cursor": false,
       "voHold": 5.1,
       "capPos": "bottom"
@@ -29,7 +29,7 @@ window.SPEC = {
       "scene": "flow1",
       "hold": 3.4,
       "cap": "1. Record the chore once",
-      "vo": "First, you screen-record yourself doing the chore one time.",
+      "vo": "First, you record your screen while you do the chore one time.",
       "cursor": false,
       "voHold": 3.4,
       "capPos": "bottom"
@@ -37,14 +37,14 @@ window.SPEC = {
     "0002.png": {
       "hold": 3.4,
       "cap": "We recorded this ourselves, on seeded demo data",
-      "vo": "For this demo, we recorded ourselves approving small damaged-item refunds, in a refund app we built with seeded data.",
+      "vo": "For this demo, we built a refund app and filled it with sample data. We recorded ourselves approving small refunds for damaged items.",
       "cursor": false
     },
     "0003.png": {
       "scene": "flow2",
       "hold": 3.4,
       "cap": "2. Attach it to a Devin session",
-      "vo": "Then you attach the video to a Devin session, with the goal in plain words.",
+      "vo": "Then you attach the video to a Devin session and describe the goal in plain words.",
       "cursor": false,
       "voHold": 4.2,
       "capPos": "bottom"
@@ -66,7 +66,7 @@ window.SPEC = {
       "scene": "flow3",
       "hold": 3.4,
       "cap": "3. Devin extracts the workflow",
-      "vo": "Devin pulls frames from the video and works out the steps, and the rule behind them, with nobody spelling them out.",
+      "vo": "Devin pulls frames from the video. It works out the steps and the rule behind them on its own.",
       "cursor": false,
       "voHold": 4.3,
       "capPos": "bottom"
@@ -74,7 +74,7 @@ window.SPEC = {
     "0006.png": {
       "hold": 3.4,
       "cap": "It inferred the rule from the frames",
-      "vo": "Here, it noticed on its own that only damaged items of fifty dollars or less were approved.",
+      "vo": "Here, it saw that only damaged items of fifty dollars or less were approved.",
       "ring": {
         "x": 725,
         "y": 418,
@@ -88,7 +88,7 @@ window.SPEC = {
       "scene": "flow4",
       "hold": 3.4,
       "cap": "4. It turns what it saw into Playwright",
-      "vo": "Next, it turns what it saw into a Playwright script and runs it in its own browser to prove it matches.",
+      "vo": "Next, Devin writes a Playwright script from what it saw. It runs the script in its own browser to check that it matches.",
       "cursor": false,
       "voHold": 4.4,
       "capPos": "bottom"
@@ -109,7 +109,7 @@ window.SPEC = {
     "0010.png": {
       "hold": 2.6,
       "cap": "The script, in a pull request",
-      "vo": "The script lands in a pull request.",
+      "vo": "The script goes into a pull request.",
       "ring": {
         "x": 916,
         "y": 161,
@@ -123,7 +123,7 @@ window.SPEC = {
       "scene": "flow5",
       "hold": 3.4,
       "cap": "5. Devin schedules future runs",
-      "vo": "Finally, Devin sets up an Automation with a schedule trigger, so the chore runs without you.",
+      "vo": "Finally, Devin sets up an Automation with a schedule trigger. The chore then runs without you.",
       "cursor": false,
       "voHold": 4.8,
       "capPos": "bottom"
@@ -144,7 +144,7 @@ window.SPEC = {
     "0013.png": {
       "hold": 3.6,
       "cap": "Each run reports its result",
-      "vo": "Each run reports back, here with the same six approvals and the exported file.",
+      "vo": "Each run reports back. This run made the same six approvals and exported the file.",
       "ring": {
         "x": 310.3,
         "y": 67.5,
@@ -158,7 +158,7 @@ window.SPEC = {
       "scene": "uses",
       "hold": 5.0,
       "cap": "Approvals, exports, data entry, smoke checks",
-      "vo": "It works for approval queues, morning exports, data entry from a spreadsheet, and smoke checks of a key flow.",
+      "vo": "You can use this for approval queues, morning exports, and data entry from a spreadsheet. You can also use it to check that an important flow still runs.",
       "cursor": false,
       "voHold": 6.6,
       "capPos": "bottom"
