@@ -116,7 +116,7 @@ window.SPEC = {
         "h": 250
       },
       "ringFor": 4,
-      "vo": "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+      "vo": "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
     },
     "0070.png": {
       "skip": true
@@ -207,7 +207,7 @@ window.SPEC = {
       "cursor": false,
       "cap": "iOS Simulator: each person's share skips the tip",
       "voGap": 1.2,
-      "vo": "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+      "vo": "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
     },
     "0096.png": {
       "skip": true
@@ -419,7 +419,7 @@ window.SPEC = {
       "cursor": true,
       "voGap": 1.2,
       "cap": "One PR with all four fixes",
-      "vo": "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+      "vo": "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
     },
     "0162.png": {
       "hold": 4,

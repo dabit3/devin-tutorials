@@ -1,7 +1,7 @@
 {
  "0000.png": {
   "text": "In this video, Devin turns a batch of one-star app reviews into bug fixes. It reproduces each bug on the iOS Simulator and the Android emulator first.",
-  "dur": 8.62,
+  "dur": 8.64,
   "takeAt": 0.0,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
@@ -28,8 +28,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -38,8 +38,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -73,8 +73,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -130,35 +130,35 @@
   "chunks": [
    {
     "t0": 0,
-    "t1": 0.708,
+    "t1": 0.801,
     "text": "In this video,"
    },
    {
-    "t0": 0.743,
-    "t1": 2.81,
+    "t0": 0.848,
+    "t1": 3.135,
     "text": "Devin turns a batch of one-star app reviews"
    },
    {
-    "t0": 2.856,
-    "t1": 3.866,
+    "t0": 3.181,
+    "t1": 4.249,
     "text": "into bug fixes."
    },
    {
-    "t0": 4.145,
-    "t1": 6.769,
+    "t0": 4.632,
+    "t1": 7.117,
     "text": "It reproduces each bug on the iOS Simulator"
    },
    {
-    "t0": 6.92,
-    "t1": 8.62,
+    "t0": 7.163,
+    "t1": 8.64,
     "text": "and the Android emulator first."
    }
   ]
  },
  "0006.png": {
   "text": "Tabby is a small Expo demo app. We planted four bugs in it on purpose. The reviews are demo data in the App Store Connect and Google Play export formats.",
-  "dur": 8.956,
-  "takeAt": 8.924,
+  "dur": 8.931,
+  "takeAt": 9.029,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -184,8 +184,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -194,8 +194,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -229,8 +229,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -286,30 +286,30 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.036,
+    "t1": 2.0,
     "text": "Tabby is a small Expo demo app."
    },
    {
-    "t0": 2.21,
-    "t1": 4.265,
+    "t0": 2.326,
+    "t1": 4.322,
     "text": "We planted four bugs in it on purpose."
    },
    {
-    "t0": 4.509,
-    "t1": 6.122,
+    "t0": 4.706,
+    "t1": 6.47,
     "text": "The reviews are demo data in the App"
    },
    {
-    "t0": 6.18,
-    "t1": 8.956,
+    "t0": 6.516,
+    "t1": 8.931,
     "text": "Store Connect and Google Play export formats."
    }
   ]
  },
  "0043.png": {
   "text": "For this demo, I start one Devin session by hand and mention the demo repo. You can also run it on a schedule, for example every night.",
-  "dur": 7.205,
-  "takeAt": 18.255,
+  "dur": 7.425,
+  "takeAt": 18.415,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -335,8 +335,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -345,8 +345,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -380,8 +380,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -436,36 +436,36 @@
   ],
   "chunks": [
    {
-    "t0": 0.054,
-    "t1": 0.808,
+    "t0": 0.044,
+    "t1": 0.787,
     "text": "For this demo,"
    },
    {
-    "t0": 0.832,
-    "t1": 2.724,
+    "t0": 0.834,
+    "t1": 3.051,
     "text": "I start one Devin session by hand and"
    },
    {
-    "t0": 2.782,
-    "t1": 4.048,
+    "t0": 3.109,
+    "t1": 4.387,
     "text": "mention the demo repo."
    },
    {
-    "t0": 4.431,
-    "t1": 6.126,
+    "t0": 4.77,
+    "t1": 6.314,
     "text": "You can also run it on a schedule,"
    },
    {
-    "t0": 6.149,
-    "t1": 7.205,
+    "t0": 6.337,
+    "t1": 7.425,
     "text": "for example every night."
    }
   ]
  },
  "0050.png": {
   "text": "The prompt asks Devin to group the complaints into themes. Then two managed Devins, which are child sessions, reproduce each theme. One uses macOS with the iOS Simulator, and one uses Linux with the Android emulator. Devin fixes what reproduces in one pull request, then tests the fix on both.",
-  "dur": 18.315,
-  "takeAt": 25.735,
+  "dur": 18.04,
+  "takeAt": 26.295,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -491,8 +491,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -501,8 +501,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -536,8 +536,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -592,51 +592,51 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 3.197,
+    "t0": 0.036,
+    "t1": 2.904,
     "text": "The prompt asks Devin to group the complaints into themes."
    },
    {
-    "t0": 3.58,
-    "t1": 4.892,
+    "t0": 3.287,
+    "t1": 4.773,
     "text": "Then two managed Devins,"
    },
    {
-    "t0": 4.915,
-    "t1": 6.227,
+    "t0": 4.854,
+    "t1": 6.097,
     "text": "which are child sessions,"
    },
    {
-    "t0": 6.402,
-    "t1": 7.586,
+    "t0": 6.271,
+    "t1": 7.374,
     "text": "reproduce each theme."
    },
    {
-    "t0": 8.027,
-    "t1": 10.616,
+    "t0": 7.815,
+    "t1": 10.323,
     "text": "One uses macOS with the iOS Simulator,"
    },
    {
-    "t0": 10.825,
-    "t1": 13.309,
+    "t0": 10.497,
+    "t1": 12.888,
     "text": "and one uses Linux with the Android emulator."
    },
    {
-    "t0": 13.751,
-    "t1": 16.607,
+    "t0": 13.33,
+    "t1": 16.139,
     "text": "Devin fixes what reproduces in one pull request,"
    },
    {
-    "t0": 16.851,
-    "t1": 18.315,
+    "t0": 16.348,
+    "t1": 18.04,
     "text": "then tests the fix on both."
    }
   ]
  },
  "0069.png": {
-  "text": "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-  "dur": 14.177,
-  "takeAt": 44.393,
+  "text": "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+  "dur": 23.39,
+  "takeAt": 45.02,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -662,8 +662,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -672,8 +672,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -707,8 +707,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -764,45 +764,65 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.059,
+    "t1": 2.012,
     "text": "Devin reads all twenty-five reviews."
    },
    {
-    "t0": 2.384,
-    "t1": 4.253,
-    "text": "It groups them into four bug themes and"
+    "t0": 2.337,
+    "t1": 4.137,
+    "text": "It groups them into four bugs and links"
    },
    {
-    "t0": 4.323,
-    "t1": 6.622,
-    "text": "links each theme to the likely cause in the code."
+    "t0": 4.206,
+    "t1": 6.168,
+    "text": "each one to the likely cause in the code."
    },
    {
-    "t0": 7.005,
-    "t1": 8.444,
+    "t0": 6.447,
+    "t1": 8.711,
+    "text": "First, each person's share leaves out the tip."
+   },
+   {
+    "t0": 9.094,
+    "t1": 11.463,
+    "text": "Second, bill names disappear in dark mode."
+   },
+   {
+    "t0": 11.706,
+    "t1": 14.261,
+    "text": "Third, deleting the last bill crashes the app."
+   },
+   {
+    "t0": 14.539,
+    "t1": 17.035,
+    "text": "Fourth, saved bills are lost when the app restarts."
+   },
+   {
+    "t0": 17.36,
+    "t1": 18.707,
     "text": "Some reviews are not bugs."
    },
    {
-    "t0": 8.769,
-    "t1": 10.545,
+    "t0": 18.823,
+    "t1": 20.158,
     "text": "One review complains about ads,"
    },
    {
-    "t0": 10.661,
-    "t1": 12.055,
+    "t0": 20.182,
+    "t1": 21.366,
     "text": "but the app has no ads."
    },
    {
-    "t0": 12.438,
-    "t1": 14.177,
+    "t0": 21.691,
+    "t1": 23.39,
     "text": "Two reviews ask for new features."
    }
   ]
  },
  "0083.png": {
   "text": "Then the first Devin, the coordinator, starts the two managed Devins. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator. The coordinator waits for their results.",
-  "dur": 11.704,
-  "takeAt": 58.766,
+  "dur": 11.356,
+  "takeAt": 68.634,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -828,8 +848,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -838,8 +858,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -873,8 +893,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -930,35 +950,35 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.165,
+    "t1": 1.118,
     "text": "Then the first Devin,"
    },
    {
-    "t0": 1.188,
-    "t1": 3.847,
+    "t0": 1.142,
+    "t1": 3.522,
     "text": "the coordinator, starts the two managed Devins."
    },
    {
-    "t0": 4.172,
-    "t1": 6.958,
+    "t0": 3.847,
+    "t1": 6.459,
     "text": "One is a macOS session for the iOS Simulator."
    },
    {
-    "t0": 7.202,
-    "t1": 9.57,
+    "t0": 6.784,
+    "t1": 9.327,
     "text": "The other is a Linux session for the Android emulator."
    },
    {
-    "t0": 9.953,
-    "t1": 11.704,
+    "t0": 9.652,
+    "t1": 11.356,
     "text": "The coordinator waits for their results."
    }
   ]
  },
  "0095.png": {
-  "text": "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-  "dur": 6.705,
-  "takeAt": 70.735,
+  "text": "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+  "dur": 7.528,
+  "takeAt": 80.232,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -984,8 +1004,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -994,8 +1014,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -1029,8 +1049,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -1086,30 +1106,35 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.525,
+    "t1": 1.386,
     "text": "On the iOS Simulator,"
    },
    {
-    "t0": 1.699,
-    "t1": 3.754,
+    "t0": 1.432,
+    "t1": 3.406,
     "text": "the macOS Devin enters a bill from one"
    },
    {
-    "t0": 3.777,
-    "t1": 4.555,
+    "t0": 3.429,
+    "t1": 4.149,
     "text": "of the reviews."
    },
    {
-    "t0": 4.938,
-    "t1": 6.705,
+    "t0": 4.3,
+    "t1": 5.414,
+    "text": "It finds the first bug."
+   },
+   {
+    "t0": 5.658,
+    "t1": 7.528,
     "text": "Each person's share leaves out the tip."
    }
   ]
  },
  "0099.png": {
   "text": "In dark mode, the bill names disappear from the list.",
-  "dur": 2.657,
-  "takeAt": 77.713,
+  "dur": 2.47,
+  "takeAt": 87.945,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -1135,8 +1160,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -1145,8 +1170,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -1180,8 +1205,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -1236,21 +1261,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 0.886,
+    "t0": 0.082,
+    "t1": 0.813,
     "text": "In dark mode,"
    },
    {
-    "t0": 0.909,
-    "t1": 2.657,
+    "t0": 0.836,
+    "t1": 2.47,
     "text": "the bill names disappear from the list."
    }
   ]
  },
  "0104.png": {
   "text": "Then it force-quits Tabby on the Simulator and opens it again. The saved bills are gone.",
-  "dur": 4.455,
-  "takeAt": 80.615,
+  "dur": 4.512,
+  "takeAt": 90.588,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -1276,8 +1301,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -1286,8 +1311,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -1321,8 +1346,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -1377,26 +1402,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.039,
-    "t1": 2.222,
+    "t0": 0.12,
+    "t1": 2.083,
     "text": "Then it force-quits Tabby on the Simulator and"
    },
    {
-    "t0": 2.28,
-    "t1": 3.07,
+    "t0": 2.129,
+    "t1": 2.919,
     "text": "opens it again."
    },
    {
-    "t0": 3.279,
-    "t1": 4.451,
+    "t0": 3.162,
+    "t1": 4.512,
     "text": "The saved bills are gone."
    }
   ]
  },
  "0111.png": {
   "text": "At the same time, the Linux Devin runs the same app in Expo Go on the Android emulator.",
-  "dur": 4.665,
-  "takeAt": 85.225,
+  "dur": 4.524,
+  "takeAt": 95.186,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -1422,8 +1447,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -1432,8 +1457,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -1467,8 +1492,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -1524,25 +1549,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 0.875,
+    "t1": 1.002,
     "text": "At the same time,"
    },
    {
-    "t0": 0.898,
-    "t1": 2.871,
+    "t0": 1.026,
+    "t1": 2.848,
     "text": "the Linux Devin runs the same app in"
    },
    {
-    "t0": 2.941,
-    "t1": 4.665,
+    "t0": 2.907,
+    "t1": 4.524,
     "text": "Expo Go on the Android emulator."
    }
   ]
  },
  "0129.png": {
   "text": "It finds the same tip bug.",
-  "dur": 1.335,
-  "takeAt": 90.115,
+  "dur": 1.415,
+  "takeAt": 100.005,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -1568,8 +1593,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -1578,8 +1603,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -1613,8 +1638,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -1669,16 +1694,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.083,
-    "t1": 1.335,
+    "t0": 0.061,
+    "t1": 1.415,
     "text": "It finds the same tip bug."
    }
   ]
  },
  "0139.png": {
   "text": "Bill names disappear in dark mode here too.",
-  "dur": 2.225,
-  "takeAt": 91.635,
+  "dur": 2.265,
+  "takeAt": 101.705,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -1704,8 +1729,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -1714,8 +1739,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -1749,8 +1774,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -1805,16 +1830,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.119,
-    "t1": 2.225,
+    "t0": 0.114,
+    "t1": 2.265,
     "text": "Bill names disappear in dark mode here too."
    }
   ]
  },
  "0153.png": {
   "text": "Deleting the last bill crashes the app with an uncaught error.",
-  "dur": 3.167,
-  "takeAt": 94.223,
+  "dur": 3.164,
+  "takeAt": 104.276,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -1840,8 +1865,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -1850,8 +1875,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -1885,8 +1910,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -1942,20 +1967,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.279,
+    "t1": 2.21,
     "text": "Deleting the last bill crashes the app with"
    },
    {
-    "t0": 2.314,
-    "t1": 3.167,
+    "t0": 2.245,
+    "t1": 3.164,
     "text": "an uncaught error."
    }
   ]
  },
  "0160.png": {
-  "text": "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-  "dur": 8.412,
-  "takeAt": 97.683,
+  "text": "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+  "dur": 9.167,
+  "takeAt": 107.713,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -1981,8 +2006,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -1991,8 +2016,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -2026,8 +2051,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -2083,35 +2108,35 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.943,
-    "text": "Both Devins reproduced the bugs."
+    "t1": 1.966,
+    "text": "Both Devins found the same bugs."
    },
    {
-    "t0": 2.384,
-    "t1": 4.706,
+    "t0": 2.244,
+    "t1": 4.775,
     "text": "The coordinator then opens one pull request with"
    },
    {
-    "t0": 4.752,
-    "t1": 5.785,
+    "t0": 4.822,
+    "t1": 5.855,
     "text": "all four fixes."
    },
    {
-    "t0": 5.994,
-    "t1": 7.77,
+    "t0": 6.099,
+    "t1": 8.433,
     "text": "The ads review and the feature requests are"
    },
    {
-    "t0": 7.805,
-    "t1": 8.412,
+    "t0": 8.479,
+    "t1": 9.167,
     "text": "not part of it."
    }
   ]
  },
  "0162.png": {
   "text": "Devin Review found edge cases in the restart fix. The coordinator pushed three more commits to fix them.",
-  "dur": 6.096,
-  "takeAt": 106.564,
+  "dur": 5.695,
+  "takeAt": 117.235,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -2137,8 +2162,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -2147,8 +2172,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -2182,8 +2207,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -2238,21 +2263,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 3.127,
+    "t0": 0.095,
+    "t1": 2.916,
     "text": "Devin Review found edge cases in the restart fix."
    },
    {
-    "t0": 3.568,
-    "t1": 6.096,
+    "t0": 3.242,
+    "t1": 5.695,
     "text": "The coordinator pushed three more commits to fix them."
    }
   ]
  },
  "0163.png": {
   "text": "Then both Devins test the fix again. On iOS, the same bill now includes the tip.",
-  "dur": 4.888,
-  "takeAt": 113.007,
+  "dur": 4.725,
+  "takeAt": 123.205,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -2278,8 +2303,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -2288,8 +2313,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -2323,8 +2348,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -2379,21 +2404,21 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.106,
+    "t0": 0.081,
+    "t1": 2.125,
     "text": "Then both Devins test the fix again."
    },
    {
-    "t0": 2.431,
-    "t1": 4.888,
+    "t0": 2.45,
+    "t1": 4.725,
     "text": "On iOS, the same bill now includes the tip."
    }
   ]
  },
  "0168.png": {
   "text": "The bill names show in dark mode.",
-  "dur": 1.943,
-  "takeAt": 118.302,
+  "dur": 1.91,
+  "takeAt": 128.195,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -2419,8 +2444,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -2429,8 +2454,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -2464,8 +2489,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -2520,16 +2545,16 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 1.943,
+    "t0": 0.049,
+    "t1": 1.91,
     "text": "The bill names show in dark mode."
    }
   ]
  },
  "0175.png": {
   "text": "Deleting the last bill now goes back to the empty list. The app does not crash.",
-  "dur": 4.636,
-  "takeAt": 120.554,
+  "dur": 4.391,
+  "takeAt": 130.399,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -2555,8 +2580,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -2565,8 +2590,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -2600,8 +2625,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -2657,25 +2682,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.175,
+    "t1": 2.071,
     "text": "Deleting the last bill now goes back to"
    },
    {
-    "t0": 2.233,
-    "t1": 3.069,
+    "t0": 2.117,
+    "t1": 2.86,
     "text": "the empty list."
    },
    {
-    "t0": 3.394,
-    "t1": 4.636,
+    "t0": 3.139,
+    "t1": 4.391,
     "text": "The app does not crash."
    }
   ]
  },
  "0198.png": {
   "text": "It also force-quits and opens the app again to check that the bills stay saved.",
-  "dur": 4.221,
-  "takeAt": 125.279,
+  "dur": 4.043,
+  "takeAt": 134.857,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -2701,8 +2726,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -2711,8 +2736,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -2746,8 +2771,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -2803,20 +2828,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.535,
+    "t1": 2.361,
     "text": "It also force-quits and opens the app again"
    },
    {
-    "t0": 2.593,
-    "t1": 4.221,
+    "t0": 2.419,
+    "t1": 4.043,
     "text": "to check that the bills stay saved."
    }
   ]
  },
  "0201.png": {
   "text": "On Android, the split includes the tip too. Bill names are easy to read in dark mode.",
-  "dur": 4.762,
-  "takeAt": 129.958,
+  "dur": 4.591,
+  "takeAt": 139.234,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -2842,8 +2867,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -2852,8 +2877,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -2887,8 +2912,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -2944,20 +2969,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.407,
+    "t1": 2.315,
     "text": "On Android, the split includes the tip too."
    },
    {
-    "t0": 2.732,
-    "t1": 4.752,
+    "t0": 2.64,
+    "t1": 4.591,
     "text": "Bill names are easy to read in dark mode."
    }
   ]
  },
  "0243.png": {
   "text": "The Agents tab lists both managed Devins. The coordinator put them to sleep when they finished.",
-  "dur": 4.589,
-  "takeAt": 134.741,
+  "dur": 4.886,
+  "takeAt": 144.134,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -2983,8 +3008,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -2993,8 +3018,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -3028,8 +3053,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -3085,20 +3110,20 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.43,
+    "t1": 2.593,
     "text": "The Agents tab lists both managed Devins."
    },
    {
-    "t0": 2.639,
-    "t1": 4.589,
+    "t0": 2.837,
+    "t1": 4.886,
     "text": "The coordinator put them to sleep when they finished."
    }
   ]
  },
  "0246.png": {
   "text": "The final summary says both platforms passed the last check on the latest commit. CI passed, and every review thread is resolved.",
-  "dur": 7.028,
-  "takeAt": 139.722,
+  "dur": 6.585,
+  "takeAt": 149.395,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -3124,8 +3149,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -3134,8 +3159,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -3169,8 +3194,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -3225,26 +3250,26 @@
   ],
   "chunks": [
    {
-    "t0": 0.12,
-    "t1": 2.651,
+    "t0": 0.06,
+    "t1": 2.336,
     "text": "The final summary says both platforms passed the"
    },
    {
-    "t0": 2.709,
-    "t1": 4.311,
+    "t0": 2.394,
+    "t1": 3.915,
     "text": "last check on the latest commit."
    },
    {
-    "t0": 4.59,
-    "t1": 7.028,
+    "t0": 4.298,
+    "t1": 6.585,
     "text": "CI passed, and every review thread is resolved."
    }
   ]
  },
  "0247.png": {
   "text": "It also lists what it could not test and a known follow-up. The pull request is left for you to merge.",
-  "dur": 5.308,
-  "takeAt": 146.932,
+  "dur": 5.028,
+  "takeAt": 156.277,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -3270,8 +3295,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -3280,8 +3305,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -3315,8 +3340,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -3372,25 +3397,25 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 1.85,
+    "t1": 1.827,
     "text": "It also lists what it could not test"
    },
    {
-    "t0": 1.896,
-    "t1": 2.871,
+    "t0": 1.885,
+    "t1": 2.837,
     "text": "and a known follow-up."
    },
    {
-    "t0": 3.255,
-    "t1": 5.308,
+    "t0": 3.162,
+    "t1": 5.028,
     "text": "The pull request is left for you to merge."
    }
   ]
  },
  "outro": {
   "text": "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
-  "dur": 4.468,
-  "takeAt": 152.412,
+  "dur": 4.133,
+  "takeAt": 161.537,
   "mode": "single-take-1",
   "model": "eleven_multilingual_v2",
   "take": [
@@ -3416,8 +3441,8 @@
    ],
    [
     "0069.png",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
-    "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features.",
+    "Devin reads all twenty-five reviews. It groups them into four bugs and links each one to the likely cause in the code. First, each person's share leaves out the tip. Second, bill names disappear in dark mode. Third, deleting the last bill crashes the app. Fourth, saved bills are lost when the app restarts. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
    ],
    [
     "0083.png",
@@ -3426,8 +3451,8 @@
    ],
    [
     "0095.png",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip.",
-    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip.",
+    "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. It finds the first bug. Each person's share leaves out the tip."
    ],
    [
     "0099.png",
@@ -3461,8 +3486,8 @@
    ],
    [
     "0160.png",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
-    "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it.",
+    "Both Devins found the same bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
    ],
    [
     "0162.png",
@@ -3518,12 +3543,12 @@
   "chunks": [
    {
     "t0": 0.12,
-    "t1": 2.558,
+    "t1": 2.384,
     "text": "That's how you turn one-star reviews into fixes,"
    },
    {
-    "t0": 2.732,
-    "t1": 4.468,
+    "t0": 2.535,
+    "t1": 4.133,
     "text": "tested on iOS and Android."
    }
   ]

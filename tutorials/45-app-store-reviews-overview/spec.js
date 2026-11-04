@@ -44,7 +44,7 @@ window.SPEC = {
         "h": 250
       },
       "ringFor": 4,
-      "vo": "Here it found four bug themes. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+      "vo": "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
     },
     "0004.png": {
       "scene": "flow2",
