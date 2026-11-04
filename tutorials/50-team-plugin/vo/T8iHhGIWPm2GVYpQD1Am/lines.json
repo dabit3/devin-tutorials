@@ -1,0 +1,579 @@
+{
+ "0000.png": {
+  "text": "A Devin plugin packages how your team works, its skills, rules, MCP servers and hooks, into one bundle that every Devin in your organization picks up, in the cloud and on your own machine.",
+  "dur": 10.32,
+  "at": 0.0,
+  "end": 10.32,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.368,
+    "text": "A Devin plugin packages how your team works,"
+   },
+   {
+    "t0": 2.485,
+    "t1": 3.611,
+    "text": "its skills, rules,"
+   },
+   {
+    "t0": 3.646,
+    "t1": 5.132,
+    "text": "MCP servers and hooks,"
+   },
+   {
+    "t0": 5.283,
+    "t1": 7.117,
+    "text": "into one bundle that every Devin in your"
+   },
+   {
+    "t0": 7.152,
+    "t1": 8.324,
+    "text": "organization picks up,"
+   },
+   {
+    "t0": 8.568,
+    "t1": 10.298,
+    "text": "in the cloud and on your own machine."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "To make one, open Customize \u2192 Plugins.",
+  "say": "To make one, open Customize, then Plugins.",
+  "dur": 2.425,
+  "at": 10.53,
+  "end": 12.955,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.093,
+    "t1": 2.425,
+    "text": "To make one, open Customize \u2192 Plugins."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "Pick the Organization tab, so the plugin applies to every cloud session in this organization, and to the CLI of everyone whose primary organization it is.",
+  "dur": 7.93,
+  "at": 13.15,
+  "end": 21.08,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.086,
+    "t1": 1.444,
+    "text": "Pick the Organization tab,"
+   },
+   {
+    "t0": 1.467,
+    "t1": 3.383,
+    "text": "so the plugin applies to every cloud session"
+   },
+   {
+    "t0": 3.429,
+    "t1": 4.497,
+    "text": "in this organization,"
+   },
+   {
+    "t0": 4.672,
+    "t1": 6.738,
+    "text": "and to the CLI of everyone whose primary"
+   },
+   {
+    "t0": 6.796,
+    "t1": 7.93,
+    "text": "organization it is."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "Click Add plugin, choose Create plugin, and name it Orbit Team.",
+  "dur": 3.63,
+  "at": 21.37,
+  "end": 25.0,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.097,
+    "t1": 1.177,
+    "text": "Click Add plugin,"
+   },
+   {
+    "t0": 1.328,
+    "t1": 2.396,
+    "text": "choose Create plugin,"
+   },
+   {
+    "t0": 2.431,
+    "t1": 3.603,
+    "text": "and name it Orbit Team."
+   }
+  ]
+ },
+ "0018.png": {
+  "text": "The editor has a section for each part: the manifest, skills, MCP servers, rules and hooks.",
+  "dur": 5.33,
+  "at": 25.3,
+  "end": 30.63,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.056,
+    "t1": 1.856,
+    "text": "The editor has a section for each part:"
+   },
+   {
+    "t0": 2.03,
+    "t1": 3.284,
+    "text": "the manifest, skills,"
+   },
+   {
+    "t0": 3.319,
+    "t1": 5.304,
+    "text": "MCP servers, rules and hooks."
+   }
+  ]
+ },
+ "0019.png": {
+  "text": "First, a skill called ship-check, which tells Devin to run lint and build before it opens a pull request, and to list each check in a How I tested section.",
+  "dur": 7.85,
+  "at": 30.92,
+  "end": 38.77,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.067,
+    "t1": 1.669,
+    "text": "First, a skill called ship-check,"
+   },
+   {
+    "t0": 1.785,
+    "t1": 3.678,
+    "text": "which tells Devin to run lint and build"
+   },
+   {
+    "t0": 3.736,
+    "t1": 5.117,
+    "text": "before it opens a pull request,"
+   },
+   {
+    "t0": 5.292,
+    "t1": 6.824,
+    "text": "and to list each check in a How"
+   },
+   {
+    "t0": 6.894,
+    "t1": 7.8,
+    "text": "I tested section."
+   }
+  ]
+ },
+ "0042.png": {
+  "text": "Next, a rule that's always on: every pull request title starts with orbit in square brackets, and each pull request holds one change.",
+  "dur": 7.09,
+  "at": 38.98,
+  "end": 46.07,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.123,
+    "t1": 1.574,
+    "text": "Next, a rule that's always on:"
+   },
+   {
+    "t0": 1.853,
+    "t1": 3.977,
+    "text": "every pull request title starts with orbit in"
+   },
+   {
+    "t0": 4.024,
+    "t1": 7.077,
+    "text": "square brackets, and each pull request holds one change."
+   }
+  ]
+ },
+ "0067.png": {
+  "text": "Then an MCP server, here DeepWiki, added as a short JSON config.",
+  "dur": 4.205,
+  "at": 46.315,
+  "end": 50.52,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.067,
+    "t1": 1.379,
+    "text": "Then an MCP server,"
+   },
+   {
+    "t0": 1.449,
+    "t1": 4.205,
+    "text": "here DeepWiki, added as a short JSON config."
+   }
+  ]
+ },
+ "0074.png": {
+  "text": "And a hook: before Devin runs a shell command, it checks for a force push, and exit code two blocks it.",
+  "dur": 5.385,
+  "at": 50.84,
+  "end": 56.225,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.07,
+    "t1": 0.697,
+    "text": "And a hook:"
+   },
+   {
+    "t0": 1.022,
+    "t1": 2.554,
+    "text": "before Devin runs a shell command,"
+   },
+   {
+    "t0": 2.589,
+    "t1": 3.843,
+    "text": "it checks for a force push,"
+   },
+   {
+    "t0": 3.878,
+    "t1": 5.385,
+    "text": "and exit code two blocks it."
+   }
+  ]
+ },
+ "0081.png": {
+  "text": "The Source tab shows the plugin as plain files: the manifest, the skill, the rule, and the MCP and hook configs.",
+  "dur": 6.25,
+  "at": 56.58,
+  "end": 62.83,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.054,
+    "t1": 2.109,
+    "text": "The Source tab shows the plugin as plain"
+   },
+   {
+    "t0": 2.155,
+    "t1": 3.699,
+    "text": "files: the manifest,"
+   },
+   {
+    "t0": 3.78,
+    "t1": 4.663,
+    "text": "the skill, the rule,"
+   },
+   {
+    "t0": 4.686,
+    "t1": 6.25,
+    "text": "and the MCP and hook configs."
+   }
+  ]
+ },
+ "0084.png": {
+  "text": "Back on the list, Orbit Team is installed and required for everyone in the organization.",
+  "dur": 4.32,
+  "at": 63.195,
+  "end": 67.515,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.091,
+    "t1": 0.95,
+    "text": "Back on the list,"
+   },
+   {
+    "t0": 1.031,
+    "t1": 3.33,
+    "text": "Orbit Team is installed and required for everyone"
+   },
+   {
+    "t0": 3.353,
+    "t1": 4.32,
+    "text": "in the organization."
+   }
+  ]
+ },
+ "0085.png": {
+  "text": "Its DeepWiki server is enabled and connects without credentials.",
+  "dur": 3.34,
+  "at": 67.77,
+  "end": 71.11,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.078,
+    "t1": 3.34,
+    "text": "Its DeepWiki server is enabled and connects without credentials."
+   }
+  ]
+ },
+ "0088.png": {
+  "text": "Now start a new session in Agent mode, and type slash orbit: the plugin's ship-check skill is right there in the menu.",
+  "say": "Now start a new session in Agent mode, and type slash orbit: the plugin's ship check skill is right there in the menu.",
+  "dur": 6.525,
+  "at": 71.405,
+  "end": 77.93,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.089,
+    "t1": 6.475,
+    "text": "Now start a new session in Agent mode, and type slash orbit: the plugin's ship-check skill is right there in the menu."
+   }
+  ]
+ },
+ "0097.png": {
+  "text": "Pick it, mention the orbit demo repo, and ask for a Copy ID button in the issue dialog.",
+  "dur": 4.615,
+  "at": 78.19,
+  "end": 82.805,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.073,
+    "t1": 1.896,
+    "text": "Pick it, mention the orbit demo repo,"
+   },
+   {
+    "t0": 1.965,
+    "t1": 3.637,
+    "text": "and ask for a Copy ID button in"
+   },
+   {
+    "t0": 3.684,
+    "t1": 4.613,
+    "text": "the issue dialog."
+   }
+  ]
+ },
+ "0102.png": {
+  "text": "Devin activates the ship-check skill on its own, and the always-on rule is injected into the session.",
+  "dur": 5.12,
+  "at": 83.17,
+  "end": 88.29,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.074,
+    "t1": 2.454,
+    "text": "Devin activates the ship-check skill on its own,"
+   },
+   {
+    "t0": 2.581,
+    "t1": 5.066,
+    "text": "and the always-on rule is injected into the session."
+   }
+  ]
+ },
+ "0118.png": {
+  "text": "Following the skill, it runs npm ci, lint, build and the tests, then checks the button in a headless browser.",
+  "dur": 6.08,
+  "at": 88.6,
+  "end": 94.68,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.077,
+    "t1": 0.948,
+    "text": "Following the skill,"
+   },
+   {
+    "t0": 0.982,
+    "t1": 2.434,
+    "text": "it runs npm ci,"
+   },
+   {
+    "t0": 2.608,
+    "t1": 3.989,
+    "text": "lint, build and the tests,"
+   },
+   {
+    "t0": 4.106,
+    "t1": 6.033,
+    "text": "then checks the button in a headless browser."
+   }
+  ]
+ },
+ "0226.png": {
+  "text": "It opens the pull request on its own, and the title starts with orbit in square brackets, just as the rule says.",
+  "dur": 5.645,
+  "at": 94.865,
+  "end": 100.51,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.012,
+    "t1": 1.823,
+    "text": "It opens the pull request on its own,"
+   },
+   {
+    "t0": 2.032,
+    "t1": 3.762,
+    "text": "and the title starts with orbit in square"
+   },
+   {
+    "t0": 3.785,
+    "t1": 5.645,
+    "text": "brackets, just as the rule says."
+   }
+  ]
+ },
+ "0230.png": {
+  "text": "Its summary confirms the issue dialog now has a Copy ID button that copies the issue ID and shows a Copied toast.",
+  "dur": 6.465,
+  "at": 100.83,
+  "end": 107.295,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.084,
+    "t1": 2.453,
+    "text": "Its summary confirms the issue dialog now has"
+   },
+   {
+    "t0": 2.499,
+    "t1": 4.403,
+    "text": "a Copy ID button that copies the issue"
+   },
+   {
+    "t0": 4.45,
+    "t1": 6.446,
+    "text": "ID and shows a Copied toast."
+   }
+  ]
+ },
+ "0231.png": {
+  "text": "On GitHub, the pull request has the How I tested section the skill asked for, with each check and its result.",
+  "dur": 5.67,
+  "at": 107.63,
+  "end": 113.3,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.088,
+    "t1": 1.957,
+    "text": "On GitHub, the pull request has the How"
+   },
+   {
+    "t0": 2.015,
+    "t1": 3.954,
+    "text": "I tested section the skill asked for,"
+   },
+   {
+    "t0": 4.163,
+    "t1": 5.626,
+    "text": "with each check and its result."
+   }
+  ]
+ },
+ "0235.png": {
+  "text": "The same plugin reaches the Devin CLI: devin plugins update installs it on your machine, and devin plugins list shows Orbit Team.",
+  "dur": 7.59,
+  "at": 113.58,
+  "end": 121.17,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.059,
+    "t1": 2.288,
+    "text": "The same plugin reaches the Devin CLI:"
+   },
+   {
+    "t0": 2.613,
+    "t1": 4.946,
+    "text": "devin plugins update installs it on your machine,"
+   },
+   {
+    "t0": 5.19,
+    "t1": 7.547,
+    "text": "and devin plugins list shows Orbit Team."
+   }
+  ]
+ },
+ "0261.png": {
+  "text": "In the CLI, a plugin skill is named after its plugin, so typing slash orbit finds the ship-check skill.",
+  "dur": 5.635,
+  "at": 121.485,
+  "end": 127.12,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.025,
+    "t1": 0.873,
+    "text": "In the CLI,"
+   },
+   {
+    "t0": 0.896,
+    "t1": 2.939,
+    "text": "a plugin skill is named after its plugin,"
+   },
+   {
+    "t0": 3.067,
+    "t1": 5.598,
+    "text": "so typing slash orbit finds the ship-check skill."
+   }
+  ]
+ },
+ "0273.png": {
+  "text": "Finally, ask it to force-push, and the plugin's hook blocks the push before it runs.",
+  "dur": 4.41,
+  "at": 127.435,
+  "end": 131.845,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.031,
+    "t1": 1.877,
+    "text": "Finally, ask it to force-push,"
+   },
+   {
+    "t0": 2.052,
+    "t1": 4.41,
+    "text": "and the plugin's hook blocks the push before it runs."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Package how your team works once, and every Devin in your organization uses it.",
+  "dur": 4.06,
+  "at": 132.25,
+  "end": 136.31,
+  "mode": "one-take",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.081,
+    "t1": 1.741,
+    "text": "Package how your team works once,"
+   },
+   {
+    "t0": 1.892,
+    "t1": 4.06,
+    "text": "and every Devin in your organization uses it."
+   }
+  ]
+ }
+}
