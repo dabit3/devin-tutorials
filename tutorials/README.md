@@ -35,6 +35,8 @@
 | 32 | Dynamic Workflows: how it works (overview) | `32-dynamic-workflows-overview/` |
 | 33 | Dynamic Workflows | `33-dynamic-workflows/` |
 | 34 | Devin Primitives: when to use what (overview) | `34-devin-primitives-overview/` |
+| 36 | Docs that test themselves | `36-docs-test-themselves/` |
+| 37 | Docs that test themselves: how it works (overview) | `37-docs-test-themselves-overview/` |
 | 48 | A Devin that improves itself every week | `48-self-improving-devin/` |
 | 49 | A Devin that improves itself every week (overview) | `49-self-improving-devin-overview/` |
 | 58 | Port an iOS screen to Android and prove parity | `58-ios-to-android-parity/` |
