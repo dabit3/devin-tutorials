@@ -2,7 +2,7 @@ window.SPEC = {
   "title": "App Store reviews to fixes",
   "subtitle": "Group 1-star reviews, reproduce on iOS and Android, fix in one PR",
   "outro": "1-star reviews to fixes, verified on iOS and Android",
-  "voOutro": "That's how you turn one-star reviews into fixes verified on iOS and Android, every night.",
+  "voOutro": "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
@@ -18,14 +18,14 @@ window.SPEC = {
       "cursor": false,
       "capPos": "bottom",
       "cap": "Run it every night, or whenever new reviews come in",
-      "vo": "You can have Devin turn your one-star app reviews into fixes automatically, every night or whenever new reviews come in. It groups the complaints, reproduces each one on the iOS Simulator and the Android emulator, and fixes them in a pull request."
+      "vo": "In this video, Devin turns a batch of one-star app reviews into bug fixes. It reproduces each bug on the iOS Simulator and the Android emulator first."
     },
     "0006.png": {
       "cursor": false,
       "capPos": "bottom",
       "cap": "Two exports: App Store Connect and Google Play",
       "voGap": 1.2,
-      "vo": "Tabby is a small Expo demo app with four bugs we planted on purpose, and these reviews are demo data in the real App Store Connect and Google Play export formats."
+      "vo": "Tabby is a small Expo demo app. We planted four bugs in it on purpose. The reviews are demo data in the App Store Connect and Google Play export formats."
     },
     "0024.png": {
       "hold": 2.6,
@@ -43,7 +43,7 @@ window.SPEC = {
       "hold": 2.2,
       "voGap": 1.2,
       "cap": "Start one session on the demo repo",
-      "vo": "For this demo, I start one Devin session by hand, mention the demo repo, and give it the goal, not the answer."
+      "vo": "For this demo, I start one Devin session by hand and mention the demo repo. You can also run it on a schedule, for example every night."
     },
     "0046.png": {
       "skip": true
@@ -52,7 +52,7 @@ window.SPEC = {
       "hold": 4,
       "cursor": false,
       "cap": "Group, reproduce on iOS and Android, then fix",
-      "vo": "The prompt asks Devin to group the complaints into themes, start two managed Devins to reproduce every theme, one on macOS with the iOS Simulator and one on Linux with an Android emulator, then fix what reproduces in one pull request and re-verify it on both."
+      "vo": "The prompt asks Devin to group the complaints into themes. Then two managed Devins, which are child sessions, reproduce each theme. One uses macOS with the iOS Simulator, and one uses Linux with the Android emulator. Devin fixes what reproduces in one pull request, then tests the fix on both."
     },
     "0053.png": {
       "cap": "",
@@ -116,7 +116,7 @@ window.SPEC = {
         "h": 250
       },
       "ringFor": 4,
-      "vo": "Devin reads all twenty-five reviews and groups them into four bug themes, each tied to the likely cause in the code. Some reviews aren't bugs. One complains about ads, but the app has no ads, and two are feature requests."
+      "vo": "Devin reads all twenty-five reviews. It groups them into four bug themes and links each theme to the likely cause in the code. Some reviews are not bugs. One review complains about ads, but the app has no ads. Two reviews ask for new features."
     },
     "0070.png": {
       "skip": true
@@ -167,7 +167,7 @@ window.SPEC = {
         "h": 66
       },
       "ringFor": 3.5,
-      "vo": "Then it starts two managed Devins, a macOS session for the iOS Simulator and a Linux session for the Android emulator, and waits for their results."
+      "vo": "Then the first Devin, the coordinator, starts the two managed Devins. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator. The coordinator waits for their results."
     },
     "0084.png": {
       "skip": true
@@ -207,7 +207,7 @@ window.SPEC = {
       "cursor": false,
       "cap": "iOS Simulator: each person's share skips the tip",
       "voGap": 1.2,
-      "vo": "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews, and each person's share leaves out the tip."
+      "vo": "On the iOS Simulator, the macOS Devin enters a bill from one of the reviews. Each person's share leaves out the tip."
     },
     "0096.png": {
       "skip": true
@@ -221,7 +221,7 @@ window.SPEC = {
     "0099.png": {
       "hold": 3,
       "cap": "Dark mode: the bill name disappears",
-      "vo": "In dark mode, the bill names vanish from the list."
+      "vo": "In dark mode, the bill names disappear from the list."
     },
     "0100.png": {
       "skip": true
@@ -238,7 +238,7 @@ window.SPEC = {
     "0104.png": {
       "hold": 2.6,
       "cap": "Force-quit and reopen: the saved bills are gone",
-      "vo": "Then it force-quits Tabby on the Simulator and reopens it, and the saved bills are gone."
+      "vo": "Then it force-quits Tabby on the Simulator and opens it again. The saved bills are gone."
     },
     "0105.png": {
       "skip": true
@@ -263,7 +263,7 @@ window.SPEC = {
       "cursor": false,
       "cap": "The Linux Devin runs Tabby on the Android emulator",
       "voGap": 1.2,
-      "vo": "Meanwhile, the Linux Devin runs the same app in Expo Go on the Android emulator."
+      "vo": "At the same time, the Linux Devin runs the same app in Expo Go on the Android emulator."
     },
     "0112.png": {
       "skip": true
@@ -319,7 +319,7 @@ window.SPEC = {
     "0129.png": {
       "hold": 3,
       "cap": "Same bill on Android: the tip is left out",
-      "vo": "It hits the same tip bug."
+      "vo": "It finds the same tip bug."
     },
     "0130.png": {
       "skip": true
@@ -395,7 +395,7 @@ window.SPEC = {
     "0153.png": {
       "hold": 3.5,
       "cap": "Deleting the last bill crashes the app",
-      "vo": "And deleting the last bill crashes the app with an uncaught error."
+      "vo": "Deleting the last bill crashes the app with an uncaught error."
     },
     "0154.png": {
       "skip": true
@@ -419,20 +419,20 @@ window.SPEC = {
       "cursor": true,
       "voGap": 1.2,
       "cap": "One PR with all four fixes",
-      "vo": "Once both have reproduced the bugs, the coordinator opens one pull request with all four fixes. The ads review and the feature requests stay out of it."
+      "vo": "Both Devins reproduced the bugs. The coordinator then opens one pull request with all four fixes. The ads review and the feature requests are not part of it."
     },
     "0162.png": {
       "hold": 4,
       "cursor": false,
       "cap": "Devin Review findings drove three more commits",
-      "vo": "Devin Review flagged edge cases in the restart fix, and the coordinator pushed three more commits to handle them."
+      "vo": "Devin Review found edge cases in the restart fix. The coordinator pushed three more commits to fix them."
     },
     "0163.png": {
       "hold": 3,
       "cursor": false,
       "cap": "iOS re-check: the share now includes the tip",
       "voGap": 1.2,
-      "vo": "Then both Devins re-verify the fix, and on iOS the same bill now includes the tip."
+      "vo": "Then both Devins test the fix again. On iOS, the same bill now includes the tip."
     },
     "0164.png": {
       "skip": true
@@ -449,7 +449,7 @@ window.SPEC = {
     "0168.png": {
       "hold": 2.6,
       "cap": "Bill names are readable in dark mode",
-      "vo": "The bill names show up in dark mode."
+      "vo": "The bill names show in dark mode."
     },
     "0169.png": {
       "skip": true
@@ -472,7 +472,7 @@ window.SPEC = {
     "0175.png": {
       "hold": 1.6,
       "cap": "Delete the last bill",
-      "vo": "And deleting the last bill goes back to the empty list instead of crashing."
+      "vo": "Deleting the last bill now goes back to the empty list. The app does not crash."
     },
     "0176.png": {
       "hold": 2.4,
@@ -544,7 +544,7 @@ window.SPEC = {
     "0198.png": {
       "hold": 2,
       "cap": "Force-quit and reopen to check saved bills",
-      "vo": "It also force-quits and reopens the app to check that bills are saved."
+      "vo": "It also force-quits and opens the app again to check that the bills stay saved."
     },
     "0199.png": {
       "hold": 1.2
@@ -557,7 +557,7 @@ window.SPEC = {
       "cursor": false,
       "cap": "Android re-check on the same build",
       "voGap": 1.2,
-      "vo": "On Android, the split includes the tip too, and bill names are readable in dark mode."
+      "vo": "On Android, the split includes the tip too. Bill names are easy to read in dark mode."
     },
     "0202.png": {
       "skip": true
@@ -689,7 +689,7 @@ window.SPEC = {
       "cursor": true,
       "voGap": 1.2,
       "cap": "Both managed Devins, asleep when done",
-      "vo": "The Agents tab lists both managed Devins, which the coordinator put to sleep when they finished."
+      "vo": "The Agents tab lists both managed Devins. The coordinator put them to sleep when they finished."
     },
     "0245.png": {
       "hold": 3,
@@ -700,12 +700,12 @@ window.SPEC = {
       "cursor": false,
       "cap": "Final re-check passed on both platforms",
       "voGap": 1.2,
-      "vo": "The final summary says both platforms passed the last re-check on the latest commit, with CI passing and every review thread resolved."
+      "vo": "The final summary says both platforms passed the last check on the latest commit. CI passed, and every review thread is resolved."
     },
     "0247.png": {
       "hold": 3.5,
       "cap": "It lists what it couldn't test",
-      "vo": "It also lists what it couldn't test and a known follow-up, and the pull request is left for you to merge."
+      "vo": "It also lists what it could not test and a known follow-up. The pull request is left for you to merge."
     }
   }
 };
