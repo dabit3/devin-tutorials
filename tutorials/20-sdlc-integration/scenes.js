@@ -195,11 +195,33 @@ function loop(ctx, s, k) {
   ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.beginPath(); ctx.moveTo(711, 520); ctx.lineTo(711, 445); ctx.strokeStyle = rgba(BLUE, 0.4); ctx.lineWidth = 1.5; ctx.stroke(); ctx.restore();
 }
 
+// Testing checks the code; verification proves the change works the way a user sees it.
+function verification(ctx, s, k) {
+  eyebrow(ctx, k, 'TESTING VS. VERIFICATION', 165, k.eOut(k.prog(s, 0, 0.6)));
+  const cols = [
+    ['Testing', 'Does the code pass?', ['Lint and type check', 'Unit and integration tests', 'CI checks']],
+    ['Verification', 'Does it actually work?', ['Run the app', 'Use it like a person would', 'Record the proof']],
+  ];
+  cols.forEach(([title, q, rows], i) => {
+    const x = 200 + i * 540, y = 225, a = k.eOut(k.prog(s, 0.15 + i * 0.9, 0.85 + i * 0.9)), on = i ? k.eOutQuint(k.prog(s, 1.4, 2)) : 0;
+    card(ctx, k, x, y + 16 * (1 - a), 500, 330, a, on);
+    label(ctx, k, x + 250, y + 70 + 16 * (1 - a), title, q, a, 30);
+    rows.forEach((r, n) => {
+      const ra = k.eOut(k.prog(s, 0.45 + i * 0.9 + n * 0.18, 0.95 + i * 0.9 + n * 0.18)), ry = y + 160 + n * 52;
+      check(ctx, k, x + 92, ry, ra, ra * (i ? 1 : 0.35));
+      ctx.save(); ctx.globalAlpha = k.alpha * ra; k.font(20, 500); ctx.fillStyle = i ? k.INK : 'rgba(25,25,25,.6)'; ctx.textBaseline = 'middle';
+      k.spaced(r, x + 118, ry, -0.1); ctx.restore();
+    });
+    if (i) mark(ctx, k, x + 452, y + 44, 28, on);
+  });
+  label(ctx, k, 720, 620, 'Evidence a reviewer can watch before merging', '', k.eOut(k.prog(s, 2.4, 3)), 24);
+}
+
 window.SCENES = {
   lifecycle: (ctx, s, k) => phases(ctx, s, k, false, 'YOUR SOFTWARE LIFECYCLE'),
   time,
   phases: (ctx, s, k) => phases(ctx, s, k, true, 'DEVIN HELPS IN EVERY PHASE'),
   process,
-  connected, context, automation, loop,
+  connected, context, automation, loop, verification,
 };
 })();
