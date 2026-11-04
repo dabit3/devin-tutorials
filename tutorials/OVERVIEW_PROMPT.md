@@ -61,6 +61,7 @@ Two cuts by default: captioned (no voice) and Nader-narrated. Nader is the only 
 - **Current engine caveat:** `vo.py` emits `takeAt`, not the `at`/`end` fields tested by `voNatural`; do not claim original take pauses are automatically restored in the render. Verify actual cues and tune narration-only `hold`, `voGap`/`voSentGap`, `tailHold` and `outroVoDelay` where appropriate. The outro delay starts at UI end; earlier holds/tail also contribute. Do not unnecessarily rebuild an approved captioned cut.
 - After moving/skipping beats, verify every intended line, correct WAV/manifest key and subtitle chunk, including intro/outro. Rename/remap consistently; `--count` alone does not prove coverage or every gap. For opening STT "[on-hold music]", inspect the first spoken word time/waveform.
 - Verify the request and shared `take` value before claiming single-take provenance. Current `vo.py` removes temporary `_take.wav`; never commit it, `_full-take.wav` or other full-script scratch audio.
+- **Music:** every overview with music uses Nader's track `_kit/music/2-upbeat.mp3`, not the kit's synthesized bed. It sits below UI clicks, typing and caption pops, and ducks under the voice. Build and mix it with the command sequence in [TUTORIAL_PROMPT.md](TUTORIAL_PROMPT.md) (Audio): VO+SFX bed with `MUSIC_GAIN=0`, bar-aligned loop joins under narration, duck, fade out, loudnorm to -16 LUFS, mux with `-c:v copy`.
 
 ## Kit gotchas
 
