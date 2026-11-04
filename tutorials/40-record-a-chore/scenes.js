@@ -86,7 +86,7 @@ function cue(img, word, fallback) {
   if (!NARRATED) return fallback;
   const chunks = window.SPEC.voLines?.[img]?.chunks || [];
   for (const c of chunks) {
-    const words = c.text.toLowerCase().replace(/[^a-z0-9 ]/g, '').split(/\s+/);
+    const words = (c.cue ?? c.text).toLowerCase().replace(/[^a-z0-9 ]/g, '').split(/\s+/);
     const i = words.indexOf(word);
     if (i >= 0) return Math.max(0, c.t0 + (c.t1 - c.t0) * i / words.length - 0.15);
   }

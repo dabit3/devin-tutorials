@@ -2,7 +2,7 @@ window.SPEC = {
   "title": "From recording to automation",
   "subtitle": "Devin builds a scheduled Playwright automation from one screen recording",
   "outro": "One recording in, an automation Devin builds and runs",
-  "voOutro": "That's how you turn one screen recording into an automation Devin builds and runs for you.",
+  "voOutro": "That's how you turn one screen recording of a chore into a scheduled automation with Devin.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
@@ -17,16 +17,16 @@ window.SPEC = {
     "scene-builds.png": {
       "scene": "builds",
       "hold": 6,
-      "voHold": 14.0,
+      "voHold": 9.0,
       "cursor": false,
       "capPos": "bottom",
       "cap": "One screen recording in, a working automation out",
-      "vo": "In this video, Devin builds a working automation from nothing but a screen recording, with no written steps and no code from us. It watches the video, works out what we did and why, then writes a Playwright script, tests it in its own browser, opens a pull request, and puts it on a weekday schedule."
+      "vo": "In this video, Devin watches a screen recording of a chore. It works out the steps, writes a Playwright script, and tests it. Then it opens a pull request and puts the script on a schedule."
     },
     "rec1.png": {
       "hold": 5,
       "cap": "We recorded this chore ourselves, on seeded demo data",
-      "vo": "Here's the chore. Every morning, someone opens this refund dashboard and does the same few clicks, so we recorded it once ourselves, in a demo app we built with seeded data that resets on every reload."
+      "vo": "Here is the chore. Each morning, someone opens this refund dashboard and does the same clicks. We built this demo app and filled it with sample data. We recorded the chore ourselves."
     },
     "rec2.png": {
       "hold": 1.6
@@ -38,7 +38,7 @@ window.SPEC = {
     "rec4.png": {
       "hold": 3,
       "cap": "Approve damaged-item refunds of $50 or less",
-      "vo": "Filter to pending, and approve every damaged item refund of fifty dollars or less."
+      "vo": "First, filter to pending. Then approve each damaged item refund of fifty dollars or less."
     },
     "rec5.png": {
       "hold": 1.4,
@@ -47,12 +47,12 @@ window.SPEC = {
     "rec6.png": {
       "hold": 2.0,
       "cap": "Check it in Exports",
-      "vo": "Then export the approved CSV and check it in Exports."
+      "vo": "Last, export the approved CSV and check it on the Exports page."
     },
     "0000.png": {
       "hold": 1.4,
       "cap": "Start a new Devin session",
-      "vo": "In Devin, start a new session and attach the recording, which is the only description of the chore that Devin gets."
+      "vo": "In Devin, start a new session and attach the recording. The recording is the only description of the chore that Devin gets."
     },
     "0001.png": {},
     "0002.png": {
@@ -61,7 +61,7 @@ window.SPEC = {
     "0009.png": {
       "hold": 3,
       "cap": "Give the goal, not the steps",
-      "vo": "The prompt gives the goal, not the steps: watch the video, write a Playwright script that does the same thing, prove it in its browser, and schedule it for every weekday at nine UTC."
+      "vo": "The prompt gives the goal, not the steps. Devin must write a Playwright script that does the same thing. It must test the script in its browser and schedule it for weekdays at nine UTC."
     },
     "0011.png": {},
     "0013.png": {
@@ -70,13 +70,13 @@ window.SPEC = {
     "0025.png": {
       "hold": 4.5,
       "cap": "Nobody told it the rule: Devin infers it from the frames",
-      "vo": "Nobody told it the rule, so Devin pulls frames out of the video and works it out from the clicks: damaged items of fifty dollars or less get approved, and the bigger ones stay pending."
+      "vo": "Nobody told Devin the rule. It pulls frames out of the video and works out the rule from the clicks. Damaged items of fifty dollars or less get approved. The larger ones stay pending."
     },
     "0026.png": {
       "hold": 1.1,
       "badge": "Sped up",
       "cap": "It writes the script from what it saw",
-      "vo": "From what it saw, it writes the script, runs it headless, and checks that it approves the same six refunds as the recording."
+      "vo": "Devin writes the script from what it saw. It runs the script in the background and checks the result. The script approves the same six refunds as the recording."
     },
     "0030.png": {
       "hold": 1.1,
@@ -97,7 +97,7 @@ window.SPEC = {
     "0217.png": {
       "hold": 3,
       "cap": "We asked for a headed rerun to watch",
-      "vo": "Devin had already run it in its own Chrome before we opened the Computer tab, so we asked for one more run, slowed down, to watch."
+      "vo": "Devin ran the script in its own Chrome before we opened the Computer tab. We asked it for one more slow run, so we could watch."
     },
     "0219.png": {},
     "0223.png": {
@@ -108,7 +108,7 @@ window.SPEC = {
       "hold": 1.0,
       "cursor": false,
       "cap": "The script drives Refund Desk in Devin's browser",
-      "vo": "In the Computer tab, the script drives Refund Desk on its own: the pending filter, six approvals, the export, and the Exports page."
+      "vo": "In the Computer tab, the script works through Refund Desk by itself. It sets the pending filter, makes six approvals, exports the file, and opens the Exports page."
     },
     "0227.png": {
       "hold": 1.0,
@@ -137,7 +137,7 @@ window.SPEC = {
     "0277.png": {
       "hold": 3,
       "cap": "Devin opened a PR with the script",
-      "vo": "Devin also opened a pull request with the script, so a chore we only ever showed it on video now lives in the repo as code."
+      "vo": "Devin also opened a pull request with the script. We only showed Devin the chore on video, and now it is code in the repo."
     },
     "0278.png": {
       "hold": 2.2,
@@ -146,21 +146,21 @@ window.SPEC = {
     "0186.png": {
       "hold": 2.6,
       "cap": "Devin asks how the automation should run",
-      "vo": "For the schedule, Devin asks two setup questions: who the runs act as, and when to email. We picked the organization and every run."
+      "vo": "For the schedule, Devin asks two setup questions. It asks who the runs act as, and when to send email. We picked the organization, and an email after every run."
     },
     "0188.png": {},
     "0190.png": {},
     "0191.png": {
       "hold": 2.6,
       "cap": "Approve the automation Devin drafted",
-      "vo": "Then it drafts the automation, with a weekday nine o'clock schedule and a tight network policy, and we approve it."
+      "vo": "Then Devin drafts the automation. It runs weekdays at nine in the morning, with a strict network policy. We approve it."
     },
     "0192.png": {},
     "0193.png": {},
     "0194.png": {
       "hold": 2.4,
       "cap": "Devin offers a test run",
-      "vo": "Devin offers a test run right away, and we approve that too, so we can watch one real run."
+      "vo": "Devin offers to start a test run now. We approve that too, so we can watch one run."
     },
     "0196.png": {
       "hold": 0.8
@@ -177,7 +177,7 @@ window.SPEC = {
     "0208.png": {
       "hold": 2.6,
       "cap": "It's in the Automations list",
-      "vo": "The automation now sits in the Automations list, active, and running as the organization."
+      "vo": "The automation is now in the Automations list. It is active and runs as the organization."
     },
     "0209.png": {
       "hold": 0.8
@@ -192,7 +192,7 @@ window.SPEC = {
     "0212.png": {
       "hold": 2.6,
       "cap": "A schedule trigger, not a CI cron",
-      "vo": "Its trigger runs on weekdays at nine in the morning, and the events list shows the test run we just started."
+      "vo": "Its trigger runs on weekdays at nine in the morning. The events list shows the test run we just started."
     },
     "0213.png": {
       "hold": 1.6,
@@ -202,7 +202,7 @@ window.SPEC = {
     "0207.png": {
       "hold": 5,
       "cap": "SUCCESS: the same six refunds, CSV attached",
-      "vo": "About a minute later, the run reports success, with the same six approvals, and the CSV and a screenshot attached. From now on, it runs every weekday at nine, without us, and all we ever gave it was one recording and a goal."
+      "vo": "About a minute later, the run reports success. It made the same six approvals. It attached the CSV file and a screenshot. From now on, the script runs every weekday at nine without us."
     },
     "0224.png": {
       "skip": true
