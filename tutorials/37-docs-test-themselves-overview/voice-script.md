@@ -1,20 +1,57 @@
-# Docs that test themselves (overview): voice script
+# Docs that test themselves: how it works: voice script
 
-Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`), generated as one whole-script take with `_kit/tools/vo.py`, ElevenLabs `eleven_multilingual_v2`, default settings.
+Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`), one whole-script take with `_kit/tools/vo.py`, ElevenLabs `eleven_multilingual_v2`, default settings. Music: `2-upbeat.mp3`, ducked under the voice.
 
-- In this video, you'll learn how docs that test themselves work. You'll see how Devin follows every plain-English walkthrough step by step on a fresh machine, how it decides whether the walkthrough or the app is wrong, and how to make it run on its own.
-- One Devin coordinates the run. It starts a fresh Devin for each walkthrough, each on its own machine, all in parallel.
-- Here's a real run on a small invoicing app, where we planted two problems on purpose: a walkthrough step for a Mark as paid button the app removed, and a subtotal that ignores quantity.
-- The coordinator starts five Devins, one per walkthrough.
-- Each one follows its page in Chrome, and in Getting started, the subtotal comes out twelve hundred dollars short.
-- When a step doesn't match, Devin works out whether the walkthrough is stale or the app has a bug, and the answer decides what the pull request fixes.
-- The Mark as paid button was removed on purpose, so that pull request fixes the walkthrough.
-- The subtotal was a real bug, so that pull request fixes the app and adds a test.
-- The coordinator collects the results into one summary.
-- To keep it that way, save the procedure as a playbook, and create an automation that runs it whenever the walkthroughs change, and on a schedule.
-- Here's the automation Devin created, with both triggers.
-- It works for product walkthroughs, onboarding guides, help center articles, and runbooks.
+Video length: 01:38.9. Times are for the silent cut and the music-voiceover cut (same timeline).
 
-## Outro
+**1. 00:03.4 to 00:11.1**
 
-- So, three takeaways. Write your docs as plain-English walkthroughs. Let a fresh Devin follow each one, the way a new user would. And when a step breaks, Devin fixes whichever is wrong, the walkthrough or the app.
+In this video, we look at how Devin tests the walkthroughs in your docs. It follows each one like a new user and fixes what does not match.
+
+**2. 00:11.8 to 00:18.8**
+
+One Devin coordinates the work. It starts a new Devin for each walkthrough. Each one runs on its own machine, at the same time.
+
+**3. 00:19.6 to 00:31.3**
+
+Here is a run on a small invoicing app. We planted two problems on purpose. One walkthrough step uses a Mark as paid button that the app removed. The app subtotal also leaves out the quantity.
+
+**4. 00:32.0 to 00:35.3**
+
+The coordinator starts five Devins, one for each walkthrough.
+
+**5. 00:36.0 to 00:41.4**
+
+Each one follows its page in Chrome. In Getting started, the subtotal is twelve hundred dollars too low.
+
+**6. 00:42.1 to 00:51.4**
+
+When a step does not match, Devin finds out which side is wrong. The walkthrough can be out of date, or the app can have a bug. The answer tells it what to fix in the pull request.
+
+**7. 00:52.1 to 00:56.9**
+
+The Mark as paid button was removed on purpose. So that pull request fixes the walkthrough.
+
+**8. 00:57.7 to 01:02.2**
+
+The subtotal was a bug. So that pull request fixes the app and adds a test.
+
+**9. 01:02.9 to 01:05.3**
+
+The coordinator puts the results in one summary.
+
+**10. 01:06.1 to 01:13.9**
+
+To keep the docs correct, save the steps as a playbook. Then create an automation that runs it when the walkthroughs change, and on a schedule.
+
+**11. 01:14.7 to 01:18.2**
+
+Here is the automation that Devin created. It shows both triggers.
+
+**12. 01:18.9 to 01:23.5**
+
+This works for product walkthroughs, onboarding guides, help articles, and runbooks.
+
+**13. 01:26.9 to 01:37.5**
+
+Here is the recap. Write your docs as plain-English walkthroughs. A new Devin follows each one, like a new user. When a step breaks, Devin fixes the walkthrough or the app, whichever is wrong.
