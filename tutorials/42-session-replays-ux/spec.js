@@ -1,8 +1,8 @@
 window.SPEC = {
   "title": "Session replays to UX fixes",
   "subtitle": "Funnel drop-off, replays, a hypothesis and a flagged PR with Devin",
-  "outro": "Analytics in, a flagged fix out",
-  "voOutro": "Analytics in, a flagged fix out.",
+  "outro": "From funnel drop-off to a flagged fix",
+  "voOutro": "That's how Devin turns a funnel drop-off into a flagged fix.",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
@@ -17,7 +17,7 @@ window.SPEC = {
       "hold": 5,
       "cursor": false,
       "cap": "From funnel drop-off to a flagged fix, with Devin",
-      "vo": "Devin can turn product analytics into a shipped fix. It finds where users drop off, watches those sessions, forms a hypothesis, and opens a pull request behind a feature flag."
+      "vo": "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
     },
     "0003.png": {
       "skip": true
@@ -39,7 +39,7 @@ window.SPEC = {
     },
     "0009.png": {
       "cap": "The Metabase plugin from the marketplace",
-      "vo": "First, I installed the Metabase plugin from the marketplace, which gives Devin a Metabase MCP server."
+      "vo": "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
     },
     "0010.png": {
       "skip": true
@@ -63,18 +63,18 @@ window.SPEC = {
       },
       "ringFor": 2.6,
       "cap": "API key and URL stored as write-only secrets",
-      "vo": "Its API key and URL are saved as write-only secrets."
+      "vo": "The API key and URL are saved as write-only secrets."
     },
     "0017.png": {
       "hold": 5,
       "cursor": false,
       "cap": "Demo setup: a planted bug and 320 simulated sessions",
-      "vo": "For this demo, we built a small checkout app called Pantry, and we planted a UX bug on purpose. The traffic is simulated too: three hundred and twenty scripted browser sessions."
+      "vo": "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
     },
     "0018.png": {
       "hold": 3,
       "cap": "Every session recorded with rrweb",
-      "vo": "Each session is recorded with rrweb, the open-source recorder PostHog uses, and its funnel events go to Postgres, where Metabase reads them."
+      "vo": "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
     },
     "0019.png": {
       "skip": true
@@ -90,7 +90,7 @@ window.SPEC = {
     },
     "0028.png": {
       "cap": "Mention the repo, give Devin the goal",
-      "vo": "Now the prompt. I mention the product demo apps repo, and I give Devin the goal, not the answer."
+      "vo": "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
     },
     "0043.png": {
       "hold": 3,
@@ -99,7 +99,7 @@ window.SPEC = {
     "0045.png": {
       "badge": "Sped up",
       "cap": "Devin plans the work",
-      "vo": "Devin plans the work and reaches for the Metabase MCP.",
+      "vo": "Devin plans the work and starts with the Metabase MCP.",
       "cursor": false
     },
     "0046.png": {
@@ -115,8 +115,8 @@ window.SPEC = {
       "cursor": false
     },
     "0050.png": {
-      "cap": "The MCP needed Node on the default path; Devin fixed it",
-      "vo": "The MCP server didn't start at first, because Node wasn't on the machine's default path, so Devin fixed that and kept going.",
+      "cap": "The MCP needed Node on the default path, so Devin fixed it",
+      "vo": "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
       "cursor": false
     },
     "0051.png": {
@@ -152,8 +152,8 @@ window.SPEC = {
       "cursor": false
     },
     "0061.png": {
-      "cap": "Chrome blocked the tunnel link; Devin copied the replay page locally",
-      "vo": "My replay viewer runs behind a tunnel, and Chrome blocked that link, so Devin copied the replay page locally and opened it in its own browser.",
+      "cap": "Chrome blocked the tunnel link, so Devin copied the replay page locally",
+      "vo": "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
       "cursor": false
     },
     "0062.png": {
@@ -178,7 +178,7 @@ window.SPEC = {
       },
       "ringFor": 3.5,
       "cap": "Replay: formatted phone, 5 clicks on Continue, no visible error",
-      "vo": "In its Computer tab, Devin watches a session that dropped at shipping. The phone number is formatted, the user clicks Continue five times, and nothing on screen changes.",
+      "vo": "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
       "cursor": false
     },
     "0067.png": {
@@ -203,13 +203,13 @@ window.SPEC = {
       },
       "ringFor": 3,
       "cap": "Hypothesis: formatted phone numbers fail at Shipping",
-      "vo": "Here's its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there, while sessions with bare digits went on to order.",
+      "vo": "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
       "cursor": false
     },
     "0072.png": {
       "hold": 5,
       "cap": "The fix ships behind forgiving_shipping_form, off by default",
-      "vo": "The fix goes behind a flag called forgiving shipping form, off by default. It accepts common phone formats, shows the error on the field that failed, and logs which fields failed.",
+      "vo": "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
       "cursor": false
     },
     "0073.png": {
@@ -277,7 +277,7 @@ window.SPEC = {
     "0090.png": {
       "hold": 3.5,
       "cap": "It flags the two setup issues and offers a browser test",
-      "vo": "It also lists the two setup issues, and offers to test the change in its browser.",
+      "vo": "It also lists the two setup problems and offers to test the change in its browser.",
       "cursor": false
     },
     "0091.png": {
@@ -314,7 +314,7 @@ window.SPEC = {
     "0100.png": {
       "badge": "Sped up",
       "cap": "I click Test: Devin runs checkout with the flag on",
-      "vo": "I click Test, and Devin walks through checkout with the flag on.",
+      "vo": "I click Test, and Devin goes through checkout with the flag on.",
       "cursor": false
     },
     "0101.png": {
@@ -364,8 +364,8 @@ window.SPEC = {
     },
     "0115.png": {
       "hold": 2,
-      "cap": "A real mistake now shows its error on the field",
-      "vo": "And when a field really is wrong, the error now shows right on that field.",
+      "cap": "A wrong field now shows its error on the field",
+      "vo": "When a field is wrong, the error now shows on that field.",
       "cursor": false
     },
     "0116.png": {
@@ -534,8 +534,8 @@ window.SPEC = {
     },
     "0160.png": {
       "hold": 3.5,
-      "cap": "Testing found polish issues: Devin pushed a fix and retested",
-      "vo": "Testing turned up a few polish issues, so Devin pushed a follow-up commit and retested on a phone-sized screen.",
+      "cap": "Testing found small issues, so Devin pushed a fix and tested again",
+      "vo": "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
       "cursor": false
     },
     "0161.png": {
@@ -544,7 +544,7 @@ window.SPEC = {
     },
     "0162.png": {
       "cap": "PR branch locally, flag off: the same formatted number",
-      "vo": "Finally, here's the pull request branch running locally. With the flag off, I type the same formatted number, and Continue still does nothing visible."
+      "vo": "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
     },
     "0173.png": {
       "hold": 2,
@@ -552,7 +552,7 @@ window.SPEC = {
     },
     "0174.png": {
       "cap": "Flag on: same number",
-      "vo": "With the flag on, the same number takes me straight to payment."
+      "vo": "With the flag on, the same number takes me to payment."
     },
     "0183.png": {
       "hold": 3.5,
