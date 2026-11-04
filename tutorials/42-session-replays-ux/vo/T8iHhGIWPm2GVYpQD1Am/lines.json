@@ -1,0 +1,2984 @@
+{
+ "0000.png": {
+  "text": "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+  "dur": 8.13,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 0.766,
+    "text": "In this video,"
+   },
+   {
+    "t0": 0.801,
+    "t1": 2.844,
+    "text": "I point Devin at our checkout analytics."
+   },
+   {
+    "t0": 3.088,
+    "t1": 5.863,
+    "text": "It finds where users drop off and watches those sessions."
+   },
+   {
+    "t0": 6.142,
+    "t1": 8.13,
+    "text": "Then it ships a fix behind a feature flag."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+  "dur": 5.395,
+  "takeAt": 8.465,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.034,
+    "t1": 2.843,
+    "text": "First, I installed the Metabase plugin from the marketplace."
+   },
+   {
+    "t0": 3.168,
+    "t1": 5.395,
+    "text": "It gives Devin a Metabase MCP server."
+   }
+  ]
+ },
+ "0016.png": {
+  "text": "The API key and URL are saved as write-only secrets.",
+  "dur": 3.213,
+  "takeAt": 14.137,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 3.213,
+    "text": "The API key and URL are saved as write-only secrets."
+   }
+  ]
+ },
+ "0017.png": {
+  "text": "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+  "dur": 9.165,
+  "takeAt": 17.625,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.115,
+    "t1": 0.823,
+    "text": "For this demo,"
+   },
+   {
+    "t0": 0.858,
+    "t1": 2.994,
+    "text": "we built a small checkout app called Pantry."
+   },
+   {
+    "t0": 3.319,
+    "t1": 5.142,
+    "text": "We planted a bug in it on purpose."
+   },
+   {
+    "t0": 5.525,
+    "t1": 6.697,
+    "text": "The traffic is simulated,"
+   },
+   {
+    "t0": 6.721,
+    "t1": 9.165,
+    "text": "from three hundred and twenty scripted browser sessions."
+   }
+  ]
+ },
+ "0018.png": {
+  "text": "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+  "dur": 8.89,
+  "takeAt": 27.105,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.488,
+    "text": "Each session is recorded with rrweb,"
+   },
+   {
+    "t0": 2.732,
+    "t1": 5.124,
+    "text": "the open-source recorder that PostHog uses."
+   },
+   {
+    "t0": 5.402,
+    "t1": 7.109,
+    "text": "The funnel events go to Postgres,"
+   },
+   {
+    "t0": 7.283,
+    "t1": 8.89,
+    "text": "and Metabase reads them from there."
+   }
+  ]
+ },
+ "0028.png": {
+  "text": "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+  "dur": 5.495,
+  "takeAt": 36.265,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.968,
+    "text": "Now the prompt."
+   },
+   {
+    "t0": 1.293,
+    "t1": 3.371,
+    "text": "I mention the product demo apps repo."
+   },
+   {
+    "t0": 3.65,
+    "t1": 4.683,
+    "text": "I give Devin the goal,"
+   },
+   {
+    "t0": 4.73,
+    "t1": 5.495,
+    "text": "not the answer."
+   }
+  ]
+ },
+ "0045.png": {
+  "text": "Devin plans the work and starts with the Metabase MCP.",
+  "dur": 3.168,
+  "takeAt": 42.152,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 3.168,
+    "text": "Devin plans the work and starts with the Metabase MCP."
+   }
+  ]
+ },
+ "0050.png": {
+  "text": "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+  "dur": 5.735,
+  "takeAt": 45.665,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.02,
+    "t1": 2.249,
+    "text": "The MCP server did not start at first."
+   },
+   {
+    "t0": 2.528,
+    "t1": 4.606,
+    "text": "Node was not on the machine's default path,"
+   },
+   {
+    "t0": 4.629,
+    "t1": 5.735,
+    "text": "so Devin fixed that."
+   }
+  ]
+ },
+ "0055.png": {
+  "text": "Then it queries the checkout funnel through Metabase.",
+  "dur": 2.62,
+  "takeAt": 51.695,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.617,
+    "text": "Then it queries the checkout funnel through Metabase."
+   }
+  ]
+ },
+ "0061.png": {
+  "text": "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+  "dur": 7.043,
+  "takeAt": 54.517,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.989,
+    "text": "My replay viewer runs behind a tunnel,"
+   },
+   {
+    "t0": 2.024,
+    "t1": 3.394,
+    "text": "and Chrome blocked that link."
+   },
+   {
+    "t0": 3.777,
+    "t1": 6.099,
+    "text": "Devin copied the replay page locally and opened"
+   },
+   {
+    "t0": 6.145,
+    "t1": 7.043,
+    "text": "it in its browser."
+   }
+  ]
+ },
+ "0066.png": {
+  "text": "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+  "dur": 9.297,
+  "takeAt": 61.773,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.246,
+    "text": "In its Computer tab,"
+   },
+   {
+    "t0": 1.339,
+    "t1": 3.51,
+    "text": "Devin watches a session that dropped at shipping."
+   },
+   {
+    "t0": 3.789,
+    "t1": 5.983,
+    "text": "The phone number has parentheses and a dash."
+   },
+   {
+    "t0": 6.227,
+    "t1": 7.98,
+    "text": "The user clicks Continue five times,"
+   },
+   {
+    "t0": 8.003,
+    "t1": 9.297,
+    "text": "and nothing changes on screen."
+   }
+  ]
+ },
+ "0071.png": {
+  "text": "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+  "dur": 10.232,
+  "takeAt": 71.328,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.339,
+    "text": "Here is its hypothesis."
+   },
+   {
+    "t0": 1.513,
+    "t1": 3.649,
+    "text": "Shipping loses fifty-five percent of sessions."
+   },
+   {
+    "t0": 3.975,
+    "t1": 6.331,
+    "text": "All one hundred fifty-four sessions with a formatted"
+   },
+   {
+    "t0": 6.354,
+    "t1": 7.538,
+    "text": "phone number dropped there."
+   },
+   {
+    "t0": 8.049,
+    "t1": 10.232,
+    "text": "Sessions with plain digits went on to order."
+   }
+  ]
+ },
+ "0072.png": {
+  "text": "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+  "dur": 10.724,
+  "takeAt": 82.136,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.187,
+    "text": "The fix goes behind a flag called forgiving"
+   },
+   {
+    "t0": 2.233,
+    "t1": 4.335,
+    "text": "shipping form, which is off by default."
+   },
+   {
+    "t0": 4.776,
+    "t1": 6.599,
+    "text": "It accepts common phone formats."
+   },
+   {
+    "t0": 6.808,
+    "t1": 8.352,
+    "text": "It shows the error on the field that"
+   },
+   {
+    "t0": 8.398,
+    "t1": 10.724,
+    "text": "failed, and it logs which fields failed."
+   }
+  ]
+ },
+ "0081.png": {
+  "text": "Devin runs the tests and opens a pull request.",
+  "dur": 2.306,
+  "takeAt": 93.224,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.306,
+    "text": "Devin runs the tests and opens a pull request."
+   }
+  ]
+ },
+ "0090.png": {
+  "text": "It also lists the two setup problems and offers to test the change in its browser.",
+  "dur": 4.309,
+  "takeAt": 95.801,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.431,
+    "text": "It also lists the two setup problems and"
+   },
+   {
+    "t0": 2.489,
+    "t1": 4.309,
+    "text": "offers to test the change in its browser."
+   }
+  ]
+ },
+ "0100.png": {
+  "text": "I click Test, and Devin goes through checkout with the flag on.",
+  "dur": 3.223,
+  "takeAt": 100.457,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.072,
+    "text": "I click Test,"
+   },
+   {
+    "t0": 1.188,
+    "t1": 3.223,
+    "text": "and Devin goes through checkout with the flag on."
+   }
+  ]
+ },
+ "0109.png": {
+  "text": "With a formatted phone number, the order goes through.",
+  "dur": 2.365,
+  "takeAt": 104.125,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.005,
+    "t1": 1.41,
+    "text": "With a formatted phone number,"
+   },
+   {
+    "t0": 1.456,
+    "t1": 2.365,
+    "text": "the order goes through."
+   }
+  ]
+ },
+ "0115.png": {
+  "text": "When a field is wrong, the error now shows on that field.",
+  "dur": 2.695,
+  "takeAt": 106.915,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.013,
+    "t1": 1.034,
+    "text": "When a field is wrong,"
+   },
+   {
+    "t0": 1.081,
+    "t1": 2.695,
+    "text": "the error now shows on that field."
+   }
+  ]
+ },
+ "0160.png": {
+  "text": "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+  "dur": 5.895,
+  "takeAt": 110.075,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.011,
+    "t1": 1.926,
+    "text": "Testing found a few small issues."
+   },
+   {
+    "t0": 2.368,
+    "t1": 4.632,
+    "text": "Devin pushed a follow-up commit and tested again"
+   },
+   {
+    "t0": 4.701,
+    "t1": 5.895,
+    "text": "on a phone-sized screen."
+   }
+  ]
+ },
+ "0162.png": {
+  "text": "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+  "dur": 7.764,
+  "takeAt": 116.351,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.721,
+    "text": "Last, here is the pull request branch running locally."
+   },
+   {
+    "t0": 3.046,
+    "t1": 3.952,
+    "text": "With the flag off,"
+   },
+   {
+    "t0": 3.986,
+    "t1": 5.693,
+    "text": "I type the same formatted number."
+   },
+   {
+    "t0": 6.018,
+    "t1": 7.764,
+    "text": "Continue still does nothing visible."
+   }
+  ]
+ },
+ "0174.png": {
+  "text": "With the flag on, the same number takes me to payment.",
+  "dur": 2.461,
+  "takeAt": 124.409,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.944,
+    "text": "With the flag on,"
+   },
+   {
+    "t0": 0.967,
+    "t1": 2.461,
+    "text": "the same number takes me to payment."
+   }
+  ]
+ },
+ "outro": {
+  "text": "That's how Devin turns a funnel drop-off into a flagged fix.",
+  "dur": 3.095,
+  "takeAt": 127.235,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag.",
+    "In this video, I point Devin at our checkout analytics. It finds where users drop off and watches those sessions. Then it ships a fix behind a feature flag."
+   ],
+   [
+    "0009.png",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server.",
+    "First, I installed the Metabase plugin from the marketplace. It gives Devin a Metabase MCP server."
+   ],
+   [
+    "0016.png",
+    "The API key and URL are saved as write-only secrets.",
+    "The API key and URL are saved as write-only secrets."
+   ],
+   [
+    "0017.png",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions.",
+    "For this demo, we built a small checkout app called Pantry. We planted a bug in it on purpose. The traffic is simulated, from three hundred and twenty scripted browser sessions."
+   ],
+   [
+    "0018.png",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there.",
+    "Each session is recorded with rrweb, the open-source recorder that PostHog uses. The funnel events go to Postgres, and Metabase reads them from there."
+   ],
+   [
+    "0028.png",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer.",
+    "Now the prompt. I mention the product demo apps repo. I give Devin the goal, not the answer."
+   ],
+   [
+    "0045.png",
+    "Devin plans the work and starts with the Metabase MCP.",
+    "Devin plans the work and starts with the Metabase MCP."
+   ],
+   [
+    "0050.png",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that.",
+    "The MCP server did not start at first. Node was not on the machine's default path, so Devin fixed that."
+   ],
+   [
+    "0055.png",
+    "Then it queries the checkout funnel through Metabase.",
+    "Then it queries the checkout funnel through Metabase."
+   ],
+   [
+    "0061.png",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser.",
+    "My replay viewer runs behind a tunnel, and Chrome blocked that link. Devin copied the replay page locally and opened it in its browser."
+   ],
+   [
+    "0066.png",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen.",
+    "In its Computer tab, Devin watches a session that dropped at shipping. The phone number has parentheses and a dash. The user clicks Continue five times, and nothing changes on screen."
+   ],
+   [
+    "0071.png",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order.",
+    "Here is its hypothesis. Shipping loses fifty-five percent of sessions. All one hundred fifty-four sessions with a formatted phone number dropped there. Sessions with plain digits went on to order."
+   ],
+   [
+    "0072.png",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed.",
+    "The fix goes behind a flag called forgiving shipping form, which is off by default. It accepts common phone formats. It shows the error on the field that failed, and it logs which fields failed."
+   ],
+   [
+    "0081.png",
+    "Devin runs the tests and opens a pull request.",
+    "Devin runs the tests and opens a pull request."
+   ],
+   [
+    "0090.png",
+    "It also lists the two setup problems and offers to test the change in its browser.",
+    "It also lists the two setup problems and offers to test the change in its browser."
+   ],
+   [
+    "0100.png",
+    "I click Test, and Devin goes through checkout with the flag on.",
+    "I click Test, and Devin goes through checkout with the flag on."
+   ],
+   [
+    "0109.png",
+    "With a formatted phone number, the order goes through.",
+    "With a formatted phone number, the order goes through."
+   ],
+   [
+    "0115.png",
+    "When a field is wrong, the error now shows on that field.",
+    "When a field is wrong, the error now shows on that field."
+   ],
+   [
+    "0160.png",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen.",
+    "Testing found a few small issues. Devin pushed a follow-up commit and tested again on a phone-sized screen."
+   ],
+   [
+    "0162.png",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible.",
+    "Last, here is the pull request branch running locally. With the flag off, I type the same formatted number. Continue still does nothing visible."
+   ],
+   [
+    "0174.png",
+    "With the flag on, the same number takes me to payment.",
+    "With the flag on, the same number takes me to payment."
+   ],
+   [
+    "outro",
+    "That's how Devin turns a funnel drop-off into a flagged fix.",
+    "That's how Devin turns a funnel drop-off into a flagged fix."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.033,
+    "t1": 2.239,
+    "text": "That's how Devin turns a funnel drop-off into"
+   },
+   {
+    "t0": 2.309,
+    "t1": 3.095,
+    "text": "a flagged fix."
+   }
+  ]
+ }
+}
