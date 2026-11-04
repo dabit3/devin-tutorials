@@ -21,7 +21,7 @@ window.SPEC = {
  },
  "edit": {
   "0000.png": {
-   "vo": "This is the new Devin Desktop, and every task can now run on your machine or in the cloud.",
+   "vo": "Devin Desktop is one app for all your Devin sessions. Each task can run on your machine, or in the cloud.",
    "hold": 2.6,
    "cursor": false,
    "subPos": "bottom"
@@ -30,11 +30,11 @@ window.SPEC = {
    "cursor": true
   },
   "0002.png": {
-   "vo": "Switch to Cloud, and the work happens on Devin's own computer instead of yours.",
+   "vo": "Switch to Cloud. Now the work happens on Devin's own computer, not yours.",
    "subPos": "bottom"
   },
   "0004.png": {
-   "vo": "Each cloud session gets its own virtual machine, with Ubuntu, macOS or Windows to choose from.",
+   "vo": "Each cloud session gets its own virtual machine. Pick Ubuntu, macOS or Windows.",
    "subPos": "bottom"
   },
   "0006.png": {
@@ -70,7 +70,7 @@ window.SPEC = {
   "0018.png": {
    "kind": "still",
    "hold": 1.4,
-   "vo": "Let's ask Devin to add a sort menu to a reading-list app, test it, and open a pull request.",
+   "vo": "Let's ask Devin to add a sort menu to a reading-list app. It should test it, then open a pull request.",
    "subPos": "bottom"
   },
   "0021.png": {
@@ -83,19 +83,19 @@ window.SPEC = {
    "cursor": true
   },
   "0035.png": {
-   "vo": "While it works, the Files tab shows the cloud machine's workspace."
+   "vo": "While it works, the Files tab shows the cloud workspace."
   },
   "0041.png": {
    "vo": "Terminal opens a shell on that same machine."
   },
   "0046.png": {
-   "vo": "And Computer shows Devin's desktop, live."
+   "vo": "Computer shows Devin's desktop, live."
   },
   "0047.png": {
    "badge": "Sped up"
   },
   "0048.png": {
-   "vo": "When it finishes, the feature is tested and already running.",
+   "vo": "When it finishes, the feature is tested. It's already running, too.",
    "badge": "",
    "hold": 2.4
   },
@@ -103,10 +103,10 @@ window.SPEC = {
    "skip": true
   },
   "0052.png": {
-   "vo": "Every app Devin runs becomes a preview, right inside Desktop."
+   "vo": "Every app Devin runs becomes a preview. It opens right inside Desktop."
   },
   "0056.png": {
-   "vo": "Here's the app live on Devin's machine, and the new sort menu works."
+   "vo": "Here's the app, live on Devin's machine. The new sort menu works."
   },
   "0062.png": {
    "vo": "Preview settings let you switch ports and device sizes."
@@ -115,11 +115,11 @@ window.SPEC = {
    "hold": 2.2
   },
   "0066.png": {
-   "vo": "You can also point at any element, describe a change, and send it to Devin as context."
+   "vo": "You can also point at any element. Describe a change, and send it to Devin as context."
   },
   "0074.png": {
    "hold": 1.6,
-   "vo": "Here I ask it to show the total page count, and send it along."
+   "vo": "Here I ask for the total page count, and send it along."
   },
   "0078.png": {
    "vo": "The Changes tab shows every edit, file by file."
@@ -128,11 +128,11 @@ window.SPEC = {
    "hold": 1.2
   },
   "0081.png": {
-   "vo": "And the pull request is right here, ready to review and merge.",
+   "vo": "And here's the pull request, ready to review.",
    "hold": 2.6
   },
   "0083.png": {
-   "vo": "The IDE button opens the cloud machine in a full editor over Remote SSH, so you can jump to any file Devin touched."
+   "vo": "The IDE button opens the cloud machine in a full editor. It connects over Remote SSH, so you can jump to any file Devin touched."
   },
   "0084.png": {
    "subPos": {
@@ -165,19 +165,19 @@ window.SPEC = {
    }
   },
   "0090.png": {
-   "vo": "Back in the preview, the page count from the element picker is already live."
+   "vo": "Back in the preview, the page count is already live."
   },
   "0091.png": {
    "hold": 3
   },
   "0093.png": {
-   "vo": "With Local Hands, a cloud session can work on your computer too, like running the tests on this branch here."
+   "vo": "With Local Hands, a cloud session can work on your computer, too. Here it runs the tests on this branch."
   },
   "0110.png": {
-   "vo": "You approve access once, and every local command still waits for your approval."
+   "vo": "You approve access once. After that, each local command still waits for you."
   },
   "0115.png": {
-   "vo": "All nine tests pass on this machine too.",
+   "vo": "All nine tests pass on this machine, too.",
    "hold": 2.8
   }
  }
