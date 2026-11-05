@@ -1,0 +1,24 @@
+{
+ "video": "89-devin-can-qa-its-own-work",
+ "org": "https://app.devin.ai/org/thequantexplorer",
+ "session": "https://app.devin.ai/sessions/d6e67327dab94395ad68db84dd8518b7",
+ "demo_repo": "https://github.com/thequantexplorer/orbit-demo",
+ "demo_pr": "https://github.com/thequantexplorer/orbit-demo/pull/77",
+ "demo_branch": "dc89-title-limit",
+ "captured": "2026-10-30, fresh live run captured with capture.mjs over CDP (4320x2430, sidebar collapsed, account text masked)",
+ "real": {
+  "0007.png": "Task typed into a new Devin session",
+  "0022.png": "Devin's PR card for orbit-demo#77",
+  "0024.png-0026.png": "Devin's test offer, clicked to approve",
+  "0040.png-0110.png": "Computer panel while Devin tests Orbit at localhost:5173 (80/81 characters, paste, reload)",
+  "0125.png-0160.png": "Recording card and viewer: Issue title limit checks, 9 passed, 0 failed",
+  "0181.png-0182.png": "PR #77 Discussion: Devin's test comment with the embedded test recording (added after a follow-up message asking Devin to put the recording on the PR)"
+ },
+ "diagrams": {
+  "t00.png": "Title card",
+  "t01.png": "How it works flow",
+  "t02.png": "Testing stages, from docs.devin.ai (Testing & Video Recordings)"
+ },
+ "music": "2-upbeat.mp3 (Nader), mixed by tools/mix89.py",
+ "raw_capture_log": "shots/capture-beats.json"
+}
