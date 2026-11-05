@@ -1,0 +1,107 @@
+{
+ "captured": "2026-10-30",
+ "org": "thequantexplorer",
+ "repo": "thequantexplorer/devin-demo-security-exploits (demo API with deliberately planted bugs)",
+ "capture": "capture.mjs (PHASE=start|watch|answer|assign|pr|pr2, ZOOM=1.25, MASK_TEXT for the account) -> raw/ (not committed); tools/curate.py picks the beats into shots/",
+ "scan_session": "https://app.devin.ai/org/thequantexplorer/security/sessions/949d2fb48f6f4b5d817ca32b4787048c?tab=scan_findings",
+ "code_scan": "https://app.devin.ai/code-scan/c1525b71a13e4d3cbfcb6e590923cbe6",
+ "remediation_session": "https://app.devin.ai/sessions/2d332d5aba0b4ed882a05dae4097ad34",
+ "pr": "https://github.com/thequantexplorer/devin-demo-security-exploits/pull/2",
+ "shots": [
+  {
+   "img": "0000.png",
+   "kind": "diagram",
+   "what": "scenes.js idea (placeholder frame, drawn over)"
+  },
+  {
+   "img": "0001.png",
+   "kind": "real",
+   "what": "Security -> Findings, organization-wide list (Open 81 / Reviewed 1 / Dismissed 51)",
+   "raw": "0002.png",
+   "url": "https://app.devin.ai/org/thequantexplorer/security/findings"
+  },
+  {
+   "img": "0002.png",
+   "kind": "diagram",
+   "what": "scenes.js flow0"
+  },
+  {
+   "img": "0003.png",
+   "kind": "real",
+   "what": "Configure your scan: Normal effort, thequantexplorer/devin-demo-security-exploits selected, Continue with Devin",
+   "raw": "0016.png",
+   "url": "https://app.devin.ai/org/thequantexplorer/security/findings"
+  },
+  {
+   "img": "0004.png",
+   "kind": "diagram",
+   "what": "scenes.js flow1"
+  },
+  {
+   "img": "0005.png",
+   "kind": "real",
+   "what": "Threat-model scan session: Devin's first question card (Which attackers matter?)",
+   "raw": "0062.png",
+   "url": "https://app.devin.ai/org/thequantexplorer/security/sessions/949d2fb48f6f4b5d817ca32b4787048c?tab=scan_findings"
+  },
+  {
+   "img": "0006.png",
+   "kind": "diagram",
+   "what": "scenes.js flow2"
+  },
+  {
+   "img": "0007.png",
+   "kind": "real",
+   "what": "Scan completed and reranked: 6 findings, 3 Critical, 1 High",
+   "raw": "0103.png",
+   "url": "https://app.devin.ai/org/thequantexplorer/security/sessions/949d2fb48f6f4b5d817ca32b4787048c?tab=scan_findings"
+  },
+  {
+   "img": "0008.png",
+   "kind": "real",
+   "what": "Findings tab: opening the JWT alg none finding",
+   "raw": "0104.png",
+   "url": "https://app.devin.ai/org/thequantexplorer/security/sessions/949d2fb48f6f4b5d817ca32b4787048c?tab=scan_findings"
+  },
+  {
+   "img": "0009.png",
+   "kind": "real",
+   "what": "Finding detail: Critical, JWT handling, summary of who can exploit it",
+   "raw": "0107.png",
+   "url": "https://app.devin.ai/org/thequantexplorer/security/sessions/949d2fb48f6f4b5d817ca32b4787048c?tab=scan_findings&finding=sfind-2a743138f1c741bc8dba920ef88cda03"
+  },
+  {
+   "img": "0010.png",
+   "kind": "real",
+   "what": "Finding detail: clicking Assign to Devin",
+   "raw": "0107.png",
+   "url": "https://app.devin.ai/org/thequantexplorer/security/sessions/949d2fb48f6f4b5d817ca32b4787048c?tab=scan_findings&finding=sfind-2a743138f1c741bc8dba920ef88cda03"
+  },
+  {
+   "img": "0011.png",
+   "kind": "diagram",
+   "what": "scenes.js flow3"
+  },
+  {
+   "img": "0012.png",
+   "kind": "real",
+   "what": "Remediation session \"Fix JWT alg none bypass\": editing src/jwt.js and running npm test",
+   "raw": "0114.png",
+   "url": "https://app.devin.ai/org/thequantexplorer/security/sessions/2d332d5aba0b4ed882a05dae4097ad34?tab=scan_findings&stage=assigned&finding=sfind-2a743138f1c741bc8dba920ef88cda03"
+  },
+  {
+   "img": "0013.png",
+   "kind": "real",
+   "what": "PR tab in the remediation session: thequantexplorer/devin-demo-security-exploits#2 opened by Devin",
+   "raw": "0130.png",
+   "url": "https://app.devin.ai/org/thequantexplorer/security/sessions/2d332d5aba0b4ed882a05dae4097ad34?tab=pr%3A2&stage=assigned&finding=sfind-2a743138f1c741bc8dba920ef88cda03"
+  },
+  {
+   "img": "0014.png",
+   "kind": "real",
+   "what": "PR #2 description: new tests, npm test 6/6 passing, alg-none and expiry tests fail on the old code",
+   "raw": "0133.png",
+   "url": "https://app.devin.ai/org/thequantexplorer/security/sessions/2d332d5aba0b4ed882a05dae4097ad34?tab=pr%3A2&stage=assigned&finding=sfind-2a743138f1c741bc8dba920ef88cda03"
+  }
+ ]
+}
