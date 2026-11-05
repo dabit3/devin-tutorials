@@ -5,8 +5,8 @@ Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`), generated as 
 | Shot | Narration |
 | --- | --- |
 | Home screen | Devin can test your app the way a person would, on its own computer, and record the whole run. |
-| Configuration button | This is an iPhone game, so first pick the machine Devin works on. |
-| Virtual environment menu | Under Virtual environment, choose macOS, so Devin can run the iPhone Simulator. |
+| Configuration button | In this example, we're testing an iPhone game, so we'll give Devin a Mac. For your own app, pick the environment it runs on. |
+| Virtual environment menu | Under Virtual environment, choose macOS. That's where Devin runs the iPhone Simulator. |
 | Mentioning the repo | Then mention the repo. |
 | Pasted request | And ask for a small feature: a line on the game-over card that shows how many hops you made. |
 | Devin working, sped up | Devin finds the game-over code, makes the change, and builds the app. |
@@ -22,4 +22,4 @@ Narrated by Nader Dabit (ElevenLabs voice `T8iHhGIWPm2GVYpQD1Am`), generated as 
 | Opening the recording | Open it to play it back. |
 | Playback with check notes | Each check comes with a note, and the timeline jumps to that moment in the video. |
 | All checks passed | Every check passed, so the pull request is ready for review. |
-| Outro card | Ship changes you've seen work. |
+| Outro card | Devin tests its changes the way a user would, so you see them work before you merge. To learn more, check out the Devin docs. |

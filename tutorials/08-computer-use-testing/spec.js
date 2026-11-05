@@ -7,6 +7,7 @@ window.SPEC = {
   "maxZoom": 1.6,
   "capArrows": false,
   "pollRunMax": 3,
+  "outroVoDelay": 0,
   "edit": {
     "0000.png": {
       "hold": 2.4,
@@ -19,7 +20,7 @@ window.SPEC = {
       "dwell": 1.8,
       "ring": true,
       "ringDelay": 0.67,
-      "vo": "This is an iPhone game, so first pick the machine Devin works on."
+      "vo": "In this example, we're testing an iPhone game, so we'll give Devin a Mac. For your own app, pick the environment it runs on."
     },
     "0002.png": {},
     "0003.png": {
@@ -31,7 +32,7 @@ window.SPEC = {
       "cap": "Virtual environment: choose macOS",
       "hl": true,
       "hlDelay": 0.67,
-      "vo": "Under Virtual environment, choose macOS, so Devin can run the iPhone Simulator."
+      "vo": "Under Virtual environment, choose macOS. That's where Devin runs the iPhone Simulator."
     },
     "0005.png": {},
     "0006.png": {},
@@ -610,5 +611,5 @@ window.SPEC = {
       "vo": "Every check passed, so the pull request is ready for review."
     }
   },
-  "voOutro": "Ship changes you've seen work."
+  "voOutro": "Devin tests its changes the way a user would, so you see them work before you merge. To learn more, check out the Devin docs."
 };
