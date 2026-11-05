@@ -1,8 +1,8 @@
 window.SPEC = {
  "title": "Devin Security 2.0",
  "subtitle": "Find, rank and fix vulnerabilities with Devin",
- "outro": "Find and fix vulnerabilities in one place",
- "voOutro": "Connect your tools, run a scan, and let Devin fix what it finds.",
+ "outro": "Overview, Connections, Repositories, scans and fixes",
+ "voOutro": "We covered the Overview dashboard, Connections, and Repositories. Then we ran a scan that found five vulnerabilities, and Assign to Devin turned one of them into a tested pull request.",
  "speed": 4,
  "pace": 1.2,
  "pollRunMax": 1.2,

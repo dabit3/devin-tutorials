@@ -69,7 +69,7 @@ Nothing is typed on screen. Every scan, finding, session and pull request shown 
 
 ## Outro
 
-- Connect your tools, run a scan, and let Devin fix what it finds.
+- We covered the Overview dashboard, Connections, and Repositories. Then we ran a scan that found five vulnerabilities, and Assign to Devin turned one of them into a tested pull request.
 
 ## Sources
 
