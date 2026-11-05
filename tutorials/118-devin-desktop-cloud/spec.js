@@ -2,7 +2,7 @@ window.SPEC = {
  "title": "Devin Desktop",
  "subtitle": "Devin Local, ACP agents and cloud machines",
  "outro": "Build locally or in the cloud with Devin Desktop",
- "voOutro": "Build on your machine, or in the cloud, with Devin Desktop.",
+ "voOutro": "Build on your machine or in the cloud, with Devin Desktop.",
  "speed": 3,
  "cps": 30,
  "capPos": "auto",
@@ -33,27 +33,26 @@ window.SPEC = {
    "skip": true
   },
   "0003.png": {
-   "vo": "Devin Desktop is one app for all your Devin sessions. Sessions can run on your own computer. Or in the cloud.",
+   "vo": "Devin Desktop is one app for all your Devin sessions. Sessions can run on your own computer or in the cloud.",
    "hold": 2.6,
    "cursor": false,
    "subPos": "bottom"
   },
   "0004.png": {
-   "vo": "First, let's look at Local. Devin Local works right here, on this machine.",
+   "vo": "First, let's look at Local. Devin Local lets you code on your local filesystem.",
    "subPos": "bottom"
   },
   "0006.png": {
-   "vo": "It works in a folder you choose.",
    "hold": 1.8,
    "subPos": "bottom"
   },
   "0009.png": {
-   "vo": "You can also pick a different agent. Desktop supports ACP, the Agent Client Protocol. So agents like Claude Agent and Codex plug right in.",
+   "vo": "You can also pick a different agent. Desktop supports ACP, so agents like Claude Agent and Codex plug right in.",
    "hold": 2.6,
    "subPos": "bottom"
   },
   "0011.png": {
-   "vo": "Next, pick a model. There's SWE-2, Claude, GPT, Gemini, and more.",
+   "vo": "Next, pick a model. There's Claude, GPT, Gemini, and more, including Cognition's own SWE family of models.",
    "subPos": "bottom"
   },
   "0014.png": {
@@ -664,5 +663,6 @@ window.SPEC = {
    },
    "hold": 2.4
   }
- }
+ },
+ "musicStart": 16.15
 };

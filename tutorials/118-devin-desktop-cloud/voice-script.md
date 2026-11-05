@@ -4,11 +4,10 @@ Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`), model `eleven_multilingual_v2` (kit defau
 
 | Beat | Line |
 |---|---|
-| 0003.png | Devin Desktop is one app for all your Devin sessions. Sessions can run on your own computer. Or in the cloud. |
-| 0004.png | First, let's look at Local. Devin Local works right here, on this machine. |
-| 0006.png | It works in a folder you choose. |
-| 0009.png | You can also pick a different agent. Desktop supports ACP, the Agent Client Protocol. So agents like Claude Agent and Codex plug right in. |
-| 0011.png | Next, pick a model. There's SWE-2, Claude, GPT, Gemini, and more. |
+| 0003.png | Devin Desktop is one app for all your Devin sessions. Sessions can run on your own computer or in the cloud. |
+| 0004.png | First, let's look at Local. Devin Local lets you code on your local filesystem. |
+| 0009.png | You can also pick a different agent. Desktop supports ACP, so agents like Claude Agent and Codex plug right in. |
+| 0011.png | Next, pick a model. There's Claude, GPT, Gemini, and more, including Cognition's own SWE family of models. |
 | 0014.png | Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick. |
 | 0018.png | The mode sets what needs your approval. |
 | 0020.png | Smart approves the actions the model judges safe. |
@@ -40,5 +39,5 @@ Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`), model `eleven_multilingual_v2` (kit defau
 | 0265.png | With Local Hands, a cloud session can work on your computer, too. Here it runs the tests on this machine. |
 | 0279.png | You approve access once. After that, each local command still waits for you. |
 | 0284.png | All nine tests pass on this machine, too. |
-| 0286.png | Prefer an editor? The same menu switches to the IDE view. |
-| outro | Build on your machine, or in the cloud, with Devin Desktop. |
+| 0296.png | Prefer an editor? The same menu switches to the IDE view. |
+| outro | Build on your machine or in the cloud, with Devin Desktop. |
