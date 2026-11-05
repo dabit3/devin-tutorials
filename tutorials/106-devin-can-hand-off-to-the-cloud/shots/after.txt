@@ -1,0 +1,21 @@
+ comparison works lexically. I'll add the endpoint following the  /summary  pattern.
+
+ ✓ Edited ./src/routes/reports.js +7 -0
+
+ Now I'll add a test. The seed data has no invoices older than 30 days, so the test needs to
+ insert some directly.
+
+ ✓ Edited ./test/api.test.js +11 -0
+ ✗ npm test 2>&1 | tail -20 Tool execution was rejected by the user
+
+❭ /handoff Run the test suite, start the server and check the new endpoint, then open a PR from
+  a new branch named dc106-overdue-report
+
+ ✓ Handed task off to cloud Devin. Press ↓ down to preview, or view in your browser:
+   https://app.devin.ai/sessions/b71c12360ccb4e0a989e85b63c509f85
+
+ ⏺ ~/code/ledger-api
+──────────────────────────────────────────────────── Add Overdue Invoices Reports Endpoint f… ─
+❭ Ask Devin to build features, fix bugs, or work on your code
+───────────────────────────────────────────────────────────────────────────────────────────────
+SWE-2 High · accept edits · 1 cloud agent ↓                     Context: 22k / 262k tokens (8%)
