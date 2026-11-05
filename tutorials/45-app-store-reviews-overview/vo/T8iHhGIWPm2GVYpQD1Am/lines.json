@@ -1,0 +1,1532 @@
+{
+ "0000.png": {
+  "text": "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+  "dur": 8.86,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 0.789,
+    "text": "In this video,"
+   },
+   {
+    "t0": 0.836,
+    "t1": 3.738,
+    "text": "Devin turns one-star app reviews into bug fixes."
+   },
+   {
+    "t0": 3.982,
+    "t1": 6.641,
+    "text": "It reproduces each bug on iOS and Android,"
+   },
+   {
+    "t0": 6.815,
+    "t1": 8.86,
+    "text": "then fixes them in one pull request."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+  "dur": 9.593,
+  "takeAt": 9.087,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.501,
+    "text": "We start it by hand here,"
+   },
+   {
+    "t0": 1.652,
+    "t1": 3.417,
+    "text": "but you can also run it on a schedule."
+   },
+   {
+    "t0": 3.742,
+    "t1": 5.855,
+    "text": "The app has bugs we planted on purpose."
+   },
+   {
+    "t0": 6.133,
+    "t1": 7.759,
+    "text": "The reviews are demo data in the App"
+   },
+   {
+    "t0": 7.805,
+    "t1": 9.593,
+    "text": "Store Connect and Google Play formats."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+  "dur": 6.262,
+  "takeAt": 19.083,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.85,
+    "text": "First, Devin reads every review."
+   },
+   {
+    "t0": 2.128,
+    "t1": 4.172,
+    "text": "It groups the complaints into themes and links"
+   },
+   {
+    "t0": 4.241,
+    "t1": 6.262,
+    "text": "each theme to the likely cause in the code."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+  "dur": 16.818,
+  "takeAt": 25.422,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.28,
+    "text": "It found four bugs."
+   },
+   {
+    "t0": 1.722,
+    "t1": 3.498,
+    "text": "Each person's share leaves out the tip."
+   },
+   {
+    "t0": 3.823,
+    "t1": 5.576,
+    "text": "Bill names disappear in dark mode."
+   },
+   {
+    "t0": 5.959,
+    "t1": 7.968,
+    "text": "Deleting the last bill crashes the app."
+   },
+   {
+    "t0": 8.351,
+    "t1": 10.336,
+    "text": "Saved bills are lost after a restart."
+   },
+   {
+    "t0": 10.777,
+    "t1": 12.275,
+    "text": "One review complained about ads,"
+   },
+   {
+    "t0": 12.31,
+    "t1": 13.75,
+    "text": "but the app has no ads."
+   },
+   {
+    "t0": 14.028,
+    "t1": 15.874,
+    "text": "Two reviews asked for new features,"
+   },
+   {
+    "t0": 15.932,
+    "t1": 16.818,
+    "text": "so they stay out."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+  "dur": 9.369,
+  "takeAt": 42.511,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.198,
+    "text": "Next, it starts two managed Devins,"
+   },
+   {
+    "t0": 2.314,
+    "t1": 3.615,
+    "text": "which are child sessions."
+   },
+   {
+    "t0": 3.94,
+    "t1": 6.54,
+    "text": "One is a macOS session for the iOS Simulator."
+   },
+   {
+    "t0": 6.923,
+    "t1": 9.369,
+    "text": "The other is a Linux session for the Android emulator."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "On the Simulator, each person's share leaves out the tip.",
+  "dur": 2.773,
+  "takeAt": 52.147,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.003,
+    "text": "On the Simulator,"
+   },
+   {
+    "t0": 1.038,
+    "t1": 2.773,
+    "text": "each person's share leaves out the tip."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "On the emulator, deleting the last bill crashes the app.",
+  "dur": 3.094,
+  "takeAt": 55.236,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.979,
+    "text": "On the emulator,"
+   },
+   {
+    "t0": 1.025,
+    "t1": 3.094,
+    "text": "deleting the last bill crashes the app."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+  "dur": 5.795,
+  "takeAt": 58.575,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.101,
+    "t1": 1.065,
+    "text": "Then the first Devin,"
+   },
+   {
+    "t0": 1.088,
+    "t1": 3.712,
+    "text": "the coordinator, puts every fix in one pull request."
+   },
+   {
+    "t0": 4.037,
+    "t1": 5.795,
+    "text": "Devin Review checks the pull request."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "Each share is now the total, with the tip, divided by the number of people.",
+  "dur": 3.897,
+  "takeAt": 64.663,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.571,
+    "text": "Each share is now the total,"
+   },
+   {
+    "t0": 1.617,
+    "t1": 2.314,
+    "text": "with the tip,"
+   },
+   {
+    "t0": 2.488,
+    "t1": 3.881,
+    "text": "divided by the number of people."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "Finally, both managed Devins test the fixed build again on their platform.",
+  "dur": 3.755,
+  "takeAt": 68.845,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.083,
+    "t1": 2.614,
+    "text": "Finally, both managed Devins test the fixed build"
+   },
+   {
+    "t0": 2.648,
+    "t1": 3.755,
+    "text": "again on their platform."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "On iOS, the share includes the tip.",
+  "dur": 1.84,
+  "takeAt": 72.945,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.081,
+    "t1": 1.84,
+    "text": "On iOS, the share includes the tip."
+   }
+  ]
+ },
+ "0012.png": {
+  "text": "On Android, bill names are easy to read in dark mode.",
+  "dur": 2.803,
+  "takeAt": 75.042,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.071,
+    "text": "On Android, bill names are easy to read"
+   },
+   {
+    "t0": 2.117,
+    "t1": 2.803,
+    "text": "in dark mode."
+   }
+  ]
+ },
+ "0013.png": {
+  "text": "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+  "dur": 8.439,
+  "takeAt": 77.991,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.618,
+    "text": "You can use this to sort a review"
+   },
+   {
+    "t0": 1.676,
+    "t1": 3.661,
+    "text": "export into bugs and other complaints."
+   },
+   {
+    "t0": 4.044,
+    "t1": 6.575,
+    "text": "Devin reproduces each bug before it fixes it,"
+   },
+   {
+    "t0": 6.749,
+    "t1": 8.439,
+    "text": "and tests again before you merge."
+   }
+  ]
+ },
+ "0014.png": {
+  "text": "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+  "dur": 5.842,
+  "takeAt": 86.698,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 3.313,
+    "text": "Devin reports back when both platforms pass the final check."
+   },
+   {
+    "t0": 3.754,
+    "t1": 5.821,
+    "text": "It leaves the pull request for you to merge."
+   }
+  ]
+ },
+ "outro": {
+  "text": "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+  "dur": 4.388,
+  "takeAt": 92.782,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request.",
+    "In this video, Devin turns one-star app reviews into bug fixes. It reproduces each bug on iOS and Android, then fixes them in one pull request."
+   ],
+   [
+    "0001.png",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats.",
+    "We start it by hand here, but you can also run it on a schedule. The app has bugs we planted on purpose. The reviews are demo data in the App Store Connect and Google Play formats."
+   ],
+   [
+    "0002.png",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code.",
+    "First, Devin reads every review. It groups the complaints into themes and links each theme to the likely cause in the code."
+   ],
+   [
+    "0003.png",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out.",
+    "It found four bugs. Each person's share leaves out the tip. Bill names disappear in dark mode. Deleting the last bill crashes the app. Saved bills are lost after a restart. One review complained about ads, but the app has no ads. Two reviews asked for new features, so they stay out."
+   ],
+   [
+    "0004.png",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator.",
+    "Next, it starts two managed Devins, which are child sessions. One is a macOS session for the iOS Simulator. The other is a Linux session for the Android emulator."
+   ],
+   [
+    "0006.png",
+    "On the Simulator, each person's share leaves out the tip.",
+    "On the Simulator, each person's share leaves out the tip."
+   ],
+   [
+    "0007.png",
+    "On the emulator, deleting the last bill crashes the app.",
+    "On the emulator, deleting the last bill crashes the app."
+   ],
+   [
+    "0008.png",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request.",
+    "Then the first Devin, the coordinator, puts every fix in one pull request. Devin Review checks the pull request."
+   ],
+   [
+    "0009.png",
+    "Each share is now the total, with the tip, divided by the number of people.",
+    "Each share is now the total, with the tip, divided by the number of people."
+   ],
+   [
+    "0010.png",
+    "Finally, both managed Devins test the fixed build again on their platform.",
+    "Finally, both managed Devins test the fixed build again on their platform."
+   ],
+   [
+    "0011.png",
+    "On iOS, the share includes the tip.",
+    "On iOS, the share includes the tip."
+   ],
+   [
+    "0012.png",
+    "On Android, bill names are easy to read in dark mode.",
+    "On Android, bill names are easy to read in dark mode."
+   ],
+   [
+    "0013.png",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge.",
+    "You can use this to sort a review export into bugs and other complaints. Devin reproduces each bug before it fixes it, and tests again before you merge."
+   ],
+   [
+    "0014.png",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge.",
+    "Devin reports back when both platforms pass the final check. It leaves the pull request for you to merge."
+   ],
+   [
+    "outro",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android.",
+    "That's how you turn one-star reviews into fixes, tested on iOS and Android."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.593,
+    "text": "That's how you turn one-star reviews into fixes,"
+   },
+   {
+    "t0": 2.837,
+    "t1": 4.388,
+    "text": "tested on iOS and Android."
+   }
+  ]
+ }
+}
