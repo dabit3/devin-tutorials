@@ -1,6 +1,6 @@
 window.SPEC = {
   "title": "How to Fix Bugs from Customer Videos",
-  "subtitle": "How Devin turns a screen recording into a verified PR",
+  "subtitle": "From a screen recording to a tested pull request",
   "outro": "Try it with your next bug video",
   "voOutro": "When a customer sends a bug video, attach it to a Devin session. Devin gives you back a tested fix. Try it with the next one you get.",
   "outroVoDelay": 0.2,
@@ -11,17 +11,17 @@ window.SPEC = {
   "edit": {
     "0000.png": {
       "scene": "intro",
-      "hold": 5.4,
+      "hold": 3.6,
       "cursor": false,
       "cap": "Hand Devin a customer’s bug video, get back a verified fix",
-      "vo": "In this video, Devin watches a customer's screen recording of a bug and opens a tested fix."
+      "vo": "In this video, Devin fixes a bug from a customer's screen recording."
     },
     "0001.png": {
       "scene": "flow",
-      "hold": 8.6,
+      "hold": 4.8,
       "cursor": false,
       "cap": "Watch → replay → reproduce → fix → re-check → PR",
-      "vo": "Devin watches the video. It repeats the same clicks in its own browser until the bug shows up. Then it fixes the code. It repeats the clicks again to check the fix and opens a PR."
+      "vo": "You give Devin the video and what the customer wrote. You get back a pull request with the fix."
     },
     "0002.png": {
       "hold": 6.6,
@@ -39,7 +39,7 @@ window.SPEC = {
       "hold": 5.0,
       "cursor": false,
       "cap": "It replays the clicks until the bug shows: −$4.80",
-      "vo": "In the Computer tab, you can watch it repeat the customer's clicks. The total goes negative, the same as in the video.",
+      "vo": "In the Computer tab, it repeats the customer's clicks. The total goes negative, the same as in the video.",
       "cam": {
         "x": 1180,
         "y": 330,
@@ -51,7 +51,7 @@ window.SPEC = {
       "hold": 3.6,
       "cursor": false,
       "cap": "Same clicks after the fix: $14.40",
-      "vo": "After the fix, it repeats the same clicks, and the total is correct."
+      "vo": "After the fix, it repeats the clicks, and the total is correct."
     },
     "0006.png": {
       "hold": 3.8,
@@ -66,7 +66,7 @@ window.SPEC = {
       "hold": 6.0,
       "cursor": false,
       "cap": "Support-ticket clips, QA recordings, your own repro",
-      "vo": "Any screen recording of a bug works. It can be a clip from a support ticket or a QA run. Add what the customer wrote, too."
+      "vo": "Any screen recording of a bug works. It can be a clip from a support ticket or a QA run."
     }
   }
 };
