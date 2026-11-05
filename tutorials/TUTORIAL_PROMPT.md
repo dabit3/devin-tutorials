@@ -49,7 +49,7 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 **Format**
 - 3840×2160, 60 fps, 16:9, H.264 High, AAC 48 kHz.
 - Open on the Devin logo and a short title with a one-line subtitle. Never write "Devin tutorial" on the title card.
-- End on the outro card with a short takeaway line.
+- End on the outro card. The closing narration is a concise, practical overview of what the video just covered (one or two short sentences), with no random closing line, slogan, hype or call to action.
 
 **Pacing**
 - Length is whatever the flow needs. Most run 45–90 s, and long agentic flows can run longer.
