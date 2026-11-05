@@ -43,6 +43,7 @@
 | 59 | Port an iOS screen to Android: how it works (overview) | `59-ios-to-android-parity-overview/` |
 | 76 | Devin CLI: what's new in v3000.11.92 (overview) | `76-cli-whats-new-overview/` |
 | 77 | Stack Clash: add a feature to a voice-driven game by voice | `77-stack-clash-voice/` |
+| 118 | Devin Desktop: Local, ACP and cloud sessions | `118-devin-desktop-cloud/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
 
@@ -54,7 +55,7 @@ Each folder contains the final MP4, a poster frame, the `capture.mjs` script tha
 
 1. **Capture** (`_kit/capture/`): `capture.mjs` connects to a signed-in Chrome over CDP, drives the UI, and records a screenshot per beat. The account email is masked in the DOM before every screenshot (`MASK_TEXT=<email name>`).
 2. **Render** (`_kit/src/`, `_kit/tools/render.mjs`): a deterministic Canvas engine composites the screenshots at 4K with the Devin title card, animated cursor, click ripples, camera zoom/pan, subtitles, and outro, rendered frame by frame in headless Chrome.
-3. **Audio + encode** (`_kit/tools/audio.py`, `_kit/tools/build.sh`): synthesized music and UI sound effects are generated from the timeline and muxed with H.264 High / AAC.
+3. **Audio + encode** (`_kit/tools/audio.py`, `_kit/tools/build.sh`): synthesized music and UI sound effects are generated from the timeline and muxed with H.264 High / AAC. To use a recorded track instead of the synthesized bed, put it at `<folder>/audio/music.mp3` (or `.wav`); it is looped to length, ducked under narration, `MUSIC_RMS` (default `0.05`) sets its level, and `musicStart` in `spec.js` skips that many seconds into the track.
 4. **Narration** (optional, `_kit/tools/vo.py`): ElevenLabs reads the `vo` lines in `spec.js` with the model set as `ttsModel` in `_kit/settings.json` (default `eleven_multilingual_v2`; `VO_MODEL=<model_id>` overrides it for one run); `VOICE=<id> VO_NAME=<name> bash _kit/tools/build.sh <folder>` paces the timeline to the voice, swaps captions for subtitles of the spoken words, ducks the music, and writes `<folder>-<name>.mp4`.
 
 ## Rebuild a video
@@ -76,6 +77,7 @@ Native apps (macOS):
 
 - **Devin CLI** (`10-devin-cli/`): `_kit/capture/term/termrec.mjs` runs the real `devin` command in a tmux session and renders the pane with xterm.js at 3× in Chrome, so terminal text stays sharp at 4K (light theme, JetBrains Mono at 24 px). `capture.mjs` records the local task and permission modes, then `cloud.mjs` appends `/model`, `/handoff`, `/cloud` and `devin ssh`, run from a checkout whose origin is `thequantexplorer/orbit-demo`. Needs `brew install tmux`, a signed-in `devin` CLI and Chrome CDP on `127.0.0.1:9333`.
 - **Devin Desktop** (`11-devin-desktop/`): `_kit/capture/desktop.mjs` attaches to the Electron app over CDP. Launch it with `open -a /Applications/Devin.app --args --remote-debugging-port=9335`, sign in, and keep it frontmost while capturing (screenshots stall when the window is in the background).
+- **Devin Desktop: Local, ACP and cloud sessions** (`118-devin-desktop-cloud/`): filmed on Linux. Set `"window.menuBarVisibility": "hidden"` in `~/.config/Devin/User/settings.json` first, or the VS Code File…Help menu shows in the title bar (in IDE view hiding it also moves the search box). Collapse the session list (`Toggle Sidebar`) before each shot. Trust the Local workspace folder first, and only show ACP agents whose binaries are installed (Claude Agent, Codex); others fail with a toast. Run the X display at 3840×2160, launch with `./devin-desktop --no-sandbox --password-store=basic --remote-debugging-port=9335 --force-device-scale-factor=3` and fullscreen it, so CDP sees 1280×720 at DPR 3. Don't use CDP viewport or device-metric emulation: it breaks the Preview `<webview>` (`capture.mjs` calls `setViewport(null)` and clears the webview's override). Each step is a `PHASE=<n> node capture.mjs`, and the Preview steps find elements inside the shell's nested iframe.
 - **Slack** (`12-devin-slack/`): the same recorder attaches to the Slack desktop app. Launch it with `open -a /Applications/Slack.app --args --remote-debugging-port=9336`, open a channel with Devin invited, and run `PHASE=1 node capture.mjs` (the `!ask` and session parts), then `PHASE=3 SESSION=<session url>` (web app, Chrome CDP) and `PHASE=4` (archive).
 
 All credentials shown in the Secrets video are fake demo values.

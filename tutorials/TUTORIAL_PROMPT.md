@@ -49,7 +49,7 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 **Format**
 - 3840×2160, 60 fps, 16:9, H.264 High, AAC 48 kHz.
 - Open on the Devin logo and a short title with a one-line subtitle. Never write "Devin tutorial" on the title card.
-- End on the outro card with a short takeaway line.
+- End on the outro card. The closing narration is a concise, practical overview of what the video just covered (one or two short sentences), with no random closing line, slogan, hype or call to action.
 
 **Pacing**
 - Length is whatever the flow needs. Most run 45–90 s, and long agentic flows can run longer.
@@ -98,7 +98,20 @@ Use the existing kit in `tutorials/_kit/` (capture over CDP, deterministic 4K Ca
 - Remeasure `hlBox` after slide-in dialogs settle; the early box may be offset. Inspect rings at line starts and through fades. Never ring a target before it is visible.
 
 **Audio**
-- The music bed is quiet, below UI clicks, typing and caption pops. Typing sounds play only while text is visibly appearing.
+- Music: every video with music uses Nader's track `_kit/music/2-upbeat.mp3`, not the kit's synthesized bed. Its first beat is at 2.05 s and it runs at about 118 BPM, so one bar is 2.034 s. The music is quiet, below UI clicks, typing and caption pops, and ducks under the voice. Typing sounds play only while text is visibly appearing.
+- Build the VO+SFX bed with `MUSIC_GAIN=0`, then add the track, loop it to the video length, duck it under the voice, fade it out, loudnorm to -16 LUFS and mux with `-c:v copy`. Pick `BARS` so each join (at 2.05 s + n × 2.034 s) falls under a narrated line in `build/cues.json`; keep `BARS` at 84 or less, because the beat grid shifts after about 180 s.
+  ```bash
+  cd tutorials && MUSIC_GAIN=0 VOICE=T8iHhGIWPm2GVYpQD1Am VO_NAME=nader bash _kit/tools/build.sh <folder>
+  V=<folder>/<folder>-nader.mp4; BARS=84
+  D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 $V); E=$(python3 -c "print(2.05+$BARS*240/118)")
+  ffmpeg -y -i $V -i _kit/music/2-upbeat.mp3 -filter_complex "\
+  [1:a]asplit[m1][m2];[m1]atrim=0:$E,asetpts=PTS-STARTPTS[h];\
+  [m2]atrim=2.05:$E,asetpts=PTS-STARTPTS,aloop=loop=-1:size=2147483647[b];\
+  [h][b]concat=n=2:v=0:a=1,atrim=0:$D,afade=t=out:st=$(python3 -c "print($D-3)"):d=3,volume=-14dB[m];\
+  [0:a]asplit[vo][key];[m][key]sidechaincompress=threshold=0.02:ratio=8:attack=20:release=400[md];\
+  [vo][md]amix=inputs=2:normalize=0,loudnorm=I=-16:TP=-2:LRA=11[a]" \
+    -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 256k -ar 48000 -movflags +faststart -shortest ${V%.mp4}-music.mp4
+  ```
 
 ## Narration (ElevenLabs)
 

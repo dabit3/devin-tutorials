@@ -1,6 +1,6 @@
 """Synthesize a light groove bed + UI SFX from <video>/build/cues.json (no samples).
 usage: python3 audio.py <video-dir>  -> <video-dir>/build/audio.wav (48 kHz stereo)"""
-import json, os, sys, wave
+import subprocess, json, os, re, sys, wave
 import numpy as np
 from scipy.signal import lfilter
 
@@ -79,6 +79,19 @@ for b in range(nbars):
         madd(C, t0 + 3 * BEAT, 0.05 if section else 0.035, pan=0.1)
         for k in range(8):
             madd(H, t0 + k * BEAT / 2, (0.03 if k % 2 else 0.018) + 0.006 * section, pan=0.25)
+# a recorded track at <video>/audio/music.mp3 (or .wav) replaces the synthesized bed, looped to length;
+# spec.js `musicStart` (s) skips into it, e.g. so a drop lands under the title card
+MUSIC_START = float(json.loads(re.sub(r'^\s*window\.SPEC\s*=\s*', '', open(os.path.join(VD, 'spec.js')).read()).rstrip().rstrip(';')).get('musicStart', 0)) if os.path.exists(os.path.join(VD, 'spec.js')) else 0
+for mf in ('music.mp3', 'music.wav'):
+    mp = os.path.join(VD, 'audio', mf)
+    if not os.path.exists(mp): continue
+    raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', mp, '-f', 's16le', '-ac', '2', '-ar', str(SR), '-'], capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, '<i2').astype(float).reshape(-1, 2) / 32767
+    x = x[int(MUSIC_START * SR):]
+    x = np.tile(x, (N // len(x) + 1, 1))[:N]
+    x *= float(os.environ.get('MUSIC_RMS', '0.05')) / max(1e-9, np.sqrt((x ** 2).mean()))
+    ML, MR = x[:, 0].copy(), x[:, 1].copy()
+    break
 fade_in = np.minimum(1, np.arange(N) / (1.5 * SR))
 fade_out = np.clip((total - np.arange(N) / SR) / 2.5, 0, 1)
 # narration (vo/<voice>/<key>.wav) ducks the music bed while it plays
