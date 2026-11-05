@@ -6,7 +6,7 @@ Disclosure: we put the Fernhouse checkout bug in the demo on purpose, and we rec
 
 ## Lines
 
-1. In this video, we give Devin a customer's screen recording of a bug. Devin repeats the clicks in its own browser, finds the bug, and fixes it.
+1. In this video, Devin fixes a bug from a customer's screen recording.
 
 2. Fernhouse is a small demo shop. We put a checkout bug in it on purpose. I recorded this clip myself, playing the customer.
 
@@ -20,9 +20,9 @@ Disclosure: we put the Fernhouse checkout bug in the demo on purpose, and we rec
 
 7. Click the plus button, choose upload files, and pick the recording.
 
-8. The video is now attached to the message.
+8. The video is now attached.
 
-9. Then paste in what the customer wrote and mention the repo. Ask Devin to repeat the clicks in its browser and fix the bug. We also ask it to check the fix the same way and open a PR.
+9. Then paste in what the customer wrote and mention the repo. Ask Devin to repeat the clicks in its browser, fix the bug, check the fix, and open a PR.
 
 10. Open the Computer tab to watch Devin's own machine.
 

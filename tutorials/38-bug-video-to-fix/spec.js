@@ -1,6 +1,6 @@
 window.SPEC = {
   "title": "How to Fix Bugs from Customer Videos",
-  "subtitle": "Devin watches the recording, replays the clicks, and opens a verified PR",
+  "subtitle": "From a screen recording to a tested pull request",
   "outro": "Try it with your next bug video",
   "voOutro": "When a customer sends a bug video, attach it to a Devin session. Devin gives you back a tested fix. Try it with the next one you get.",
   "outroVoDelay": 0.2,
@@ -13,7 +13,7 @@ window.SPEC = {
       "hold": 5.6,
       "cursor": false,
       "cap": "In this video, Devin turns a customer’s bug video into a fix",
-      "vo": "In this video, we give Devin a customer's screen recording of a bug. Devin repeats the clicks in its own browser, finds the bug, and fixes it."
+      "vo": "In this video, Devin fixes a bug from a customer's screen recording."
     },
     "0001.png": {
       "skip": true
@@ -229,11 +229,11 @@ window.SPEC = {
     "0065.png": {
       "hold": 1.6,
       "cap": "The .mp4 is attached to the message",
-      "vo": "The video is now attached to the message."
+      "vo": "The video is now attached."
     },
     "0068.png": {
       "cap": "The customer’s words, @repo, and what you want back",
-      "vo": "Then paste in what the customer wrote and mention the repo. Ask Devin to repeat the clicks in its browser and fix the bug. We also ask it to check the fix the same way and open a PR."
+      "vo": "Then paste in what the customer wrote and mention the repo. Ask Devin to repeat the clicks in its browser, fix the bug, check the fix, and open a PR."
     },
     "0133.png": {
       "hold": 1.4,
