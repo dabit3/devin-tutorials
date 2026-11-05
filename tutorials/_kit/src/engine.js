@@ -388,6 +388,7 @@ async function placeCaptions() {
     c.ax = a.x;
   }
 }
+let NOSUBS = false; // ?nosubs: no subtitles or badges overlaid
 function drawCaption(f) {
   const k = lastBefore(TL.caps, f); if (!k) return;
   const idx = TL.caps.indexOf(k), prev = TL.caps[idx - 1];
@@ -459,7 +460,7 @@ async function renderFrame(f) {
       if (q > 0.55) { ctx.save(); ctx.globalAlpha = prog(q, 0.55, 1); drawOutro(f, p); ctx.restore(); }
     } else drawOutro(f, p);
   }
-  if (f >= I && f < U + sec(0.4)) { ctx.save(); ctx.globalAlpha = 1 - prog(f, U, U + sec(0.4)); drawCaption(f); drawBadge(f); ctx.restore(); }
+  if (f >= I && f < U + sec(0.4)) { ctx.save(); ctx.globalAlpha = 1 - prog(f, U, U + sec(0.4)); if (!NOSUBS) { drawCaption(f); drawBadge(f); } ctx.restore(); }
 }
 
 // a subtitle chunk of more than 10 words (vo_onetake falls back to one chunk when voSay differs) is split by character share of its time
@@ -480,6 +481,7 @@ const ready = (async () => {
   SPEC = window.SPEC;
   if (SPEC.dark) { DARK = true; INK = '#F2F2F3'; BG = '#0B0B0C'; INKRGB = '242,242,243'; BGRGB = '11,11,12'; }
   const VOICE = new URLSearchParams(location.search).get('voice');
+  NOSUBS = new URLSearchParams(location.search).has('nosubs');
   if (VOICE) { SPEC.voLines = await (await fetch(`../../${V}/vo/${VOICE}/lines.json`)).json(); SPEC.capScale = SPEC.voCapScale ?? 1.0; }
   const cs = SPEC.capScale ?? 1.18; for (const k of ['font', 'padX', 'h', 'gap']) CAP[k] = Math.round(CAP[k] * cs);
   BEATS = await (await fetch(shotURL('beats.json'))).json();
