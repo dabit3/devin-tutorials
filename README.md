@@ -80,6 +80,14 @@ Short 4K (3840×2160, 60 fps) video tutorials for Devin, recorded from real, sig
 
 <!-- -->
 
+38. **How to fix bugs from customer videos** (1:47): A customer’s screen recording (we planted the bug and recorded the clip playing the customer) is attached to a real session with a plain customer-style message. Devin reads the video, replays the same clicks in its own browser (Computer tab) until the checkout total goes negative, fixes the discount math, adds a regression test, replays the clicks to confirm the fix and opens a [real PR](https://github.com/thequantexplorer/product-demo-apps/pull/52). [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/38-bug-video-to-fix/38-bug-video-to-fix.mp4)
+
+<!-- -->
+
+39. **How to fix bugs from customer videos: how it works** (overview, 0:57): A short diagram-led overview: customer video → replay in Devin’s browser → reproduce → fix → re-check → PR, with real shots from tutorial 38 and what kinds of recordings you can hand it. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/39-bug-video-to-fix-overview/39-bug-video-to-fix-overview.mp4)
+
+<!-- -->
+
 48. **A Devin that improves itself every week** (narrated by Nader, 1:57): A step-by-step run in real Devin. Open Session insights on a finished orbit-demo session, see its on-demand usage and size, and generate the analysis: a high-impact knowledge gap and actionable feedback. Then create an automation manually with a Schedule trigger set to every week, give it instructions to review last week's three most expensive sessions and open one pull request that adds or updates a skill, and click Run now. The run's session opens a real PR adding `.agents/skills/orbit-board-ui/SKILL.md`, its description lists what slowed those sessions down and what each cost, notes that Session insights wasn't available to the scheduled run (it read each session's timeline instead), and lists workflow prompt and blueprint changes as recommendations for review. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/48-self-improving-devin/48-self-improving-devin-nader.mp4)
 
 <!-- -->
@@ -138,6 +146,8 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 - **Dynamic Workflows: how it works (overview), narrated by Nader** (1:59): What a dynamic workflow is, why scripted coordination helps with multi-part jobs, parallel work and connected stages, live progress and resumability, `pipeline` vs `parallel`, a real 12-reviewer accessibility audit, and when to use a workflow. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/32-dynamic-workflows-overview/32-dynamic-workflows-overview-nader.mp4) · [Voice script](tutorials/32-dynamic-workflows-overview/voice-script.md)
 - **Dynamic Workflows, narrated by Nader** (2:05): A real five-component audit, fix and verify workflow: the script, the live workflow panel, one agent's structured output, the roll-up and a fix PR. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/33-dynamic-workflows/33-dynamic-workflows-nader.mp4) · [Voice script](tutorials/33-dynamic-workflows/voice-script.md)
 - **Devin Primitives: when to use what (overview), narrated by Nader** (1:42): When to use AGENTS.md, rules, Memory, Skills, Playbooks, MCP servers and Plugins, where each lives in the product, and how to build one. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/34-devin-primitives-overview/34-devin-primitives-overview-nader.mp4) · [Voice script](tutorials/34-devin-primitives-overview/voice-script.md) · [Cheatsheet](tutorials/34-devin-primitives-overview/cheatsheet.md)
+- **How to fix bugs from customer videos, narrated by Nader** (1:55): Attach a customer’s screen recording to a session. Devin repeats the clicks in its own browser, finds the bug, fixes it, checks the fix and opens a PR. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/38-bug-video-to-fix/38-bug-video-to-fix-nader.mp4) · [Voice script](tutorials/38-bug-video-to-fix/voice-script.md)
+- **How to fix bugs from customer videos: how it works (overview), narrated by Nader** (0:57): A short overview of how Devin turns a customer’s bug video into a tested fix. [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/39-bug-video-to-fix-overview/39-bug-video-to-fix-overview-nader.mp4) · [Voice script](tutorials/39-bug-video-to-fix-overview/voice-script.md)
 - **Stack Clash voice, narrated by Nader** (5:57): [Download MP4](https://github.com/dabit3/devin-tutorials/raw/main/tutorials/77-stack-clash-voice/77-stack-clash-voice-nader.mp4) · [Voice script](tutorials/77-stack-clash-voice/voice-script.md)
 
 ## Silent conference video
