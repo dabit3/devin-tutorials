@@ -278,10 +278,10 @@ window.SPEC = {
    "hold": 2.5,
    "cursor": false,
    "hl": {
-    "x": 354.5,
-    "y": 27,
-    "w": 84,
-    "h": 24
+    "x": 357,
+    "y": 24.5,
+    "w": 78,
+    "h": 22
    },
    "capPos": "bottom",
    "hlDelay": 0.5,
@@ -379,10 +379,10 @@ window.SPEC = {
    "hold": 2.5,
    "cursor": false,
    "hl": {
-    "x": 412,
-    "y": 25.5,
-    "w": 80,
-    "h": 24
+    "x": 404.3,
+    "y": 24.4,
+    "w": 92,
+    "h": 22
    },
    "capPos": "bottom",
    "hlDelay": 0.5,
@@ -547,10 +547,10 @@ window.SPEC = {
    "hold": 2.5,
    "cursor": false,
    "hl": {
-    "x": 900.0,
-    "y": 564.0,
-    "w": 972.0,
-    "h": 168.0
+    "x": 941.5,
+    "y": 564.3,
+    "w": 941,
+    "h": 183
    },
    "capPos": "bottom",
    "hlDelay": 0.5,
@@ -560,10 +560,10 @@ window.SPEC = {
    "hold": 2.5,
    "cursor": false,
    "hl": {
-    "x": 849.0,
-    "y": 783.0,
-    "w": 728.0,
-    "h": 52.0
+    "x": 941.5,
+    "y": 776,
+    "w": 941,
+    "h": 72
    },
    "capPos": "bottom",
    "hlDelay": 0.5,

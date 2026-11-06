@@ -189,7 +189,7 @@ function example(ctx, s, k) {
     { t: 'Every bug fix needs a regression test', i: 'test', at: 3.0 },
     { t: 'Only people merge pull requests', i: 'pr', at: 6.5 },
   ];
-  const rw = 380, rg = 20, rx0 = (k.VW - (3 * rw + 2 * rg)) / 2;
+  const rw = 420, rg = 20, rx0 = (k.VW - (3 * rw + 2 * rg)) / 2;
   rules.forEach((r, i) => {
     const a = up(k, s, p1 + r.at, 0.7), x = rx0 + i * (rw + rg), yy = 476 + 14 * (1 - a);
     card(ctx, k, x, yy, rw, 96, a, k.eOutQuint(k.prog(s, p1 + r.at + 0.3, p1 + r.at + 0.8)) * (1 - 0.7 * k.eInOut(k.prog(s, p1 + r.at + 1.4, p1 + r.at + 1.9))));
