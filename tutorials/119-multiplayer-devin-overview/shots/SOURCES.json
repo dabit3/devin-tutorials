@@ -1,0 +1,78 @@
+{
+  "0000.png": {
+    "kind": "animated-diagram",
+    "source": "119-multiplayer-devin-overview/scenes.js",
+    "scene": "team",
+    "note": "Placeholder frame (copied from 23-managed-devins-overview/shots/0000.png); the beat is drawn by the scene. Illustration: three teammates connect to one session. Names match the real thequantexplorer members shown in 0001.png."
+  },
+  "0001.png": {
+    "kind": "real-ui",
+    "source": "capture.mjs PHASE=members (new capture for this video)",
+    "url": "https://app.devin.ai/org/thequantexplorer/settings/members",
+    "note": "Settings → Membership with Leo Park, Maya Chen and Nader Dabit; emails masked by the kit."
+  },
+  "0002.png": {
+    "kind": "real-ui",
+    "source": "87-multiplayer-devin/shots/0003.png",
+    "origin": "PR #178 (https://github.com/dabit3/devin-tutorials/pull/178), real thequantexplorer accounts Nader Dabit, Maya Chen and Leo Park",
+    "session": "https://app.devin.ai/sessions/eee986ccc9944b06ae9496f088d58acd",
+    "demo_pr": "https://github.com/thequantexplorer/orbit-demo/pull/76",
+    "note": "Nader's first prompt in the shared session, naming Maya and Leo."
+  },
+  "0003.png": {
+    "kind": "real-ui",
+    "source": "87-multiplayer-devin/shots/0064.png",
+    "origin": "PR #178 (https://github.com/dabit3/devin-tutorials/pull/178), real thequantexplorer accounts Nader Dabit, Maya Chen and Leo Park",
+    "session": "https://app.devin.ai/sessions/eee986ccc9944b06ae9496f088d58acd",
+    "demo_pr": "https://github.com/thequantexplorer/orbit-demo/pull/76",
+    "note": "Maya's message from her own account and Devin's reply."
+  },
+  "0004.png": {
+    "kind": "real-ui",
+    "source": "87-multiplayer-devin/shots/0123.png",
+    "origin": "PR #178 (https://github.com/dabit3/devin-tutorials/pull/178), real thequantexplorer accounts Nader Dabit, Maya Chen and Leo Park",
+    "session": "https://app.devin.ai/sessions/eee986ccc9944b06ae9496f088d58acd",
+    "demo_pr": "https://github.com/thequantexplorer/orbit-demo/pull/76",
+    "note": "Devin's reply to Leo's merge requirements."
+  },
+  "0005.png": {
+    "kind": "animated-diagram",
+    "source": "119-multiplayer-devin-overview/scenes.js",
+    "scene": "slack",
+    "note": "Placeholder frame (copied from 23-managed-devins-overview/shots/0000.png); the beat is drawn by the scene. Labeled 'Illustration'. Generic Slack thread synced with a session (docs: Slack integration, two-way thread sync). Not filmed: no second real Slack member in the workspace."
+  },
+  "0006.png": {
+    "kind": "animated-diagram",
+    "source": "119-multiplayer-devin-overview/scenes.js",
+    "scene": "ticket",
+    "note": "Placeholder frame (copied from 23-managed-devins-overview/shots/0000.png); the beat is drawn by the scene. Generic ticket flow (docs: Linear and Jira integrations). Not filmed: Linear and Jira are not connected in thequantexplorer."
+  },
+  "0007.png": {
+    "kind": "animated-diagram",
+    "source": "119-multiplayer-devin-overview/scenes.js",
+    "scene": "review",
+    "note": "Placeholder frame (copied from 23-managed-devins-overview/shots/0000.png); the beat is drawn by the scene. Labeled 'Illustration'. Generic PR comments and a /devin comment (docs: GitHub integration, PR comments and /devin)."
+  },
+  "0008.png": {
+    "kind": "real-ui",
+    "source": "87-multiplayer-devin/shots/0365.png",
+    "origin": "PR #178 (https://github.com/dabit3/devin-tutorials/pull/178), real thequantexplorer accounts Nader Dabit, Maya Chen and Leo Park",
+    "session": "https://app.devin.ai/sessions/eee986ccc9944b06ae9496f088d58acd",
+    "demo_pr": "https://github.com/thequantexplorer/orbit-demo/pull/76",
+    "note": "Devin Review: no issues found, and the browser-test result posted for the PR."
+  },
+  "0009.png": {
+    "kind": "real-ui",
+    "source": "87-multiplayer-devin/shots/0310.png",
+    "origin": "PR #178 (https://github.com/dabit3/devin-tutorials/pull/178), real thequantexplorer accounts Nader Dabit, Maya Chen and Leo Park",
+    "session": "https://app.devin.ai/sessions/eee986ccc9944b06ae9496f088d58acd",
+    "demo_pr": "https://github.com/thequantexplorer/orbit-demo/pull/76",
+    "note": "Maya signs off and Devin says the PR is ready to merge."
+  },
+  "0010.png": {
+    "kind": "animated-diagram",
+    "source": "119-multiplayer-devin-overview/scenes.js",
+    "scene": "skills",
+    "note": "Placeholder frame (copied from 23-managed-devins-overview/shots/0000.png); the beat is drawn by the scene. Generic repo skill path .devin/skills/test-before-pr/SKILL.md fanning out to teammates' sessions (docs: Skills)."
+  }
+}
