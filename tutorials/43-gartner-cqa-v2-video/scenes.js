@@ -24,7 +24,7 @@ function card(ctx, k, x, y, w, h, a, on = 0, r = 16) {
 }
 function text(ctx, k, s, x, y, size, weight, color, a, align = 'center', track = -0.2) {
   ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.textBaseline = 'middle'; k.font(size, weight); ctx.fillStyle = color;
-  const w = k.spacedW(s, track); k.spaced(s, align === 'center' ? x - w / 2 : x, y, track); ctx.restore();
+  const w = k.spacedW(s, track); k.spaced(s, align === 'center' ? x - w / 2 : align === 'right' ? x - w : x, y, track); ctx.restore();
 }
 function mark(ctx, k, cx, cy, size, a) {
   if (a <= 0) return; ctx.save(); ctx.globalAlpha = k.alpha * a; ctx.drawImage(k.AVATAR, cx - size / 2, cy - size / 2, size, size); ctx.restore();
@@ -273,7 +273,7 @@ function stack(ctx, s, k) {
     card(ctx, k, x, yy, w, h, a, i >= 2 ? k.eOutQuint(k.prog(s, 4.6 + (i - 2) * 0.5, 5.0 + (i - 2) * 0.5)) * (1 - 0.6 * k.eInOut(k.prog(s, 5.3 + (i - 2) * 0.5, 5.7 + (i - 2) * 0.5))) : 0, 14);
     text(ctx, k, b.t, x + 26, yy + h / 2 - 10, 18, 600, b.base ? MUTED(0.6) : k.INK, a, 'left');
     text(ctx, k, b.d, x + 26, yy + h / 2 + 13, 13, 400, MUTED(0.5), a, 'left');
-    if (i) text(ctx, k, 'targets the branch below', x + w - 22, yy + h / 2, 13, 400, rgba(BLUE, 0.9), up(k, s, 1.1 + i * 0.6), 'right' === 'right' ? 'left' : 'left');
+    if (i) text(ctx, k, 'targets the branch below', x + w - 22, yy + h / 2, 13, 400, rgba(BLUE, 0.9), up(k, s, 1.1 + i * 0.6), 'right');
   });
 }
 

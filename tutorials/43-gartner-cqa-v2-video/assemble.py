@@ -4,6 +4,7 @@ import json, os, shutil
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, '..', '42-gartner-cqa-v2', 'shots')
 B = {b['img']: b for b in json.load(open(os.path.join(SRC, 'beats.json')))}
+HL = json.load(open(os.path.join(HERE, 'hl.json')))
 ONCALL = json.load(open(os.path.join(HERE, 'oncall-shots.json'))) if os.path.exists(os.path.join(HERE, 'oncall-shots.json')) else []
 ORDER = [
  ('scene:open', 6, "This video covers Code Quality Assurance with Devin. It shows how Devin helps teams debug, refactor, test, and review code at each step of software development."),
@@ -23,7 +24,7 @@ ORDER = [
  ('0102.png', 3, "The most serious finding is that a signed-in customer can read the payout details of another customer. Devin labels it as broken access control, CWE-862. It shows the lines of code and recommends an ownership check."),
  ('0105.png', 2.5, "A second finding is a rounding bug. The installments do not add up to the claim total."),
  ('0162.png', 2, "Reviewers can ask questions in Review chat. Here the reviewer asks which findings must be fixed before the merge."),
- ('0190.png', 3, "Devin names the blockers and links to the code."),
+ ('0190b.png', 3, "Devin names the blockers and links to the code."),
  ('1136.png', 3, "From my work with engineering teams, quality checks work best at every step of development, because a problem costs less to fix when you find it early. So teams also use Devin Review while a change is still being written."),
  ('1139.png', 2.5, "Devin Review does not review draft pull requests automatically. Here the developer starts a review on a draft. Devin Review reviews it now, and again on every push."),
  ('1199.png', 3, "The change is not finished, but Devin Review already finds two problems. The critical one is that finance users can see the fraud score, which only adjusters should see."),
@@ -77,6 +78,7 @@ for i, (src, hold, vo) in enumerate(ORDER):
         b.update(img=new, src=src); beats.append(b); e = {}
     e.update(hold=hold, cursor=False, hl=None, capPos='bottom')
     if src == '0521.png': e.update(hl={'x': 350, 'y': 252.5, 'w': 332, 'h': 97}, hlDelay=0.5)
+    elif src in HL: e.update(hl=HL[src], hlDelay=0.5)
     if vo:
         e['vo'] = vo; say = vo
         for a, z in SAY: say = say.replace(a, z)
