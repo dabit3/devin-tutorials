@@ -438,6 +438,96 @@ if (PHASE === 'win-start') {
   await r.shot({ hold: 1.6 });
   r.mark('ios-session');
 }
+// Devin Review on a draft PR while the change is still being written: review on demand, then ask about the code.
+if (PHASE === 'draft') {
+  await r.goto(process.env.PRURL.replace('https://github.com/', ORG + '/review/'), 9000); await sidebar(false); await settle();
+  await p.keyboard.press('Escape');
+  const leaf = t => p.evaluate(a => { const e = [...document.querySelectorAll('*')].filter(x => (x.innerText || x.textContent || "").trim() === a && x.getBoundingClientRect().width > 0).pop(); if (!e) return null; const q = e.getBoundingClientRect(); return { x: q.x + q.width / 2, y: q.y + q.height / 2 }; }, t);
+  if (!process.env.FROM_CLICK) {
+    await r.shot({ hold: 3.0, hl: [await cont("Draft pull requests aren't reviewed automatically")] });
+    r.mark('draft-banner');
+    await r.click({ text: 'Review PR', sel: 'main button' }, { wait: 1200 });
+    await r.shot({ hold: 2.2, hl: [await cont('This pull request', 'Review now and on every push')] });
+    r.mark('draft-menu');
+  } else {
+    const bt = await leaf('Review PR'); await p.mouse.click(bt.x, bt.y); await sleep(1200);
+  }
+  const it = await p.evaluate(() => { const m = [...document.querySelectorAll('body *')].filter(e => (e.textContent || '').includes('Review now and on every push') && e.getBoundingClientRect().width > 0 && e.getBoundingClientRect().height < 120); const e = m.sort((a, b) => b.getBoundingClientRect().height - a.getBoundingClientRect().height)[0]; if (!e) return null; const q = e.getBoundingClientRect(); return { x: q.x + q.width / 2, y: q.y + q.height / 2, h: q.height }; });
+  console.log('item', JSON.stringify(it)); if (!it) fail('menu item missing');
+  await p.mouse.click(it.x, it.y); await sleep(3000);
+  await r.shot({ hold: 1.5 });
+  r.mark('draft-started');
+  const t0 = Date.now();
+  while (Date.now() - t0 < 1500000) {
+    await r.poll(20000, 10000);
+    if (await cont("Devin's analysis") && !(await p.evaluate(() => /Reviewing|Analyzing|in progress/i.test(document.querySelector('main')?.innerText || '')))) break;
+  }
+  await settle();
+  r.mark('draft-reviewed');
+  console.log((await p.evaluate(() => document.body.innerText)).slice(0, 3000));
+  await r.shot({ hold: 3.0, hl: [await cont("Devin's analysis")] });
+  r.mark('draft-analysis');
+}
+
+if (PHASE === 'draft-results') {
+  await r.goto(process.env.PRURL.replace('https://github.com/', ORG + '/review/'), 9000); await sidebar(false); await settle();
+  await p.keyboard.press('Escape');
+  await r.shot({ hold: 2.6, hl: [await cont("Devin's analysis", 'Expose fraud-risk')] });
+  r.mark('draft-analysis');
+  await r.shot({ hold: 2.6, hl: [await cont('Needs your attention', 'Later claims inflate')] });
+  r.mark('draft-findings');
+  if (!(await openFinding('Finance users see'))) fail('vuln popover did not open');
+  await r.shot({ hold: 3.6, hl: [await cont('Copy finding')] });
+  r.mark('draft-vuln');
+  console.log('VULN:', (await p.evaluate(() => document.body.innerText)).match(/Finance users see[\s\S]{0,1800}/)?.[0]);
+  await p.keyboard.press('Escape'); await sleep(800);
+  if (!(await openFinding('Later claims inflate'))) fail('bug popover did not open');
+  await r.shot({ hold: 3.4, hl: [await cont('Copy bug')] });
+  r.mark('draft-bug');
+  console.log('BUG:', (await p.evaluate(() => document.body.innerText)).match(/Later claims inflate[\s\S]{0,1500}/)?.[0]);
+  await p.keyboard.press('Escape'); await sleep(800);
+}
+
+if (PHASE === 'draft-bug') {
+  await r.goto(process.env.PRURL.replace('https://github.com/', ORG + '/review/'), 9000); await sidebar(false); await settle();
+  await p.keyboard.press('Escape');
+  const b = await findingBtn('Later claims inflate'); if (!b) fail('no bug row');
+  await r.click(b, { wait: 2000 });
+  for (let i = 0; i < 10 && !(await cont('Later claims inflate', 'Mark fixed')); i++) { if (i === 4) { const q = await findingBtn('Later claims inflate'); await p.mouse.click(q.x, q.y); } await sleep(700); }
+  await p.mouse.move(700, 700); await sleep(600);
+  await r.shot({ hold: 3.4, hl: [await cont('Later claims inflate', 'Mark fixed')] });
+  r.mark('draft-bug');
+  console.log('BUG:', (await sideText()).match(/Later claims inflate[\s\S]{0,1400}/)?.[0]);
+}
+
+if (PHASE === 'draft-chat') {
+  await r.goto(process.env.PRURL.replace('https://github.com/', ORG + '/review/'), 9000); await sidebar(false); await settle();
+  await p.keyboard.press('Escape');
+  await r.click({ text: 'Chat', sel: 'button, [role=tab]' }, { wait: 1500 });
+  const c = await reviewComposer(); if (!c) fail('no review composer');
+  const Q = process.env.Q;
+  await r.click(c, { wait: 400 });
+  await r.type(Q, { every: 3 });
+  const send = await r.move({ attr: ['aria-label', 'Send message'], sel: 'button' });
+  await r.shot({ kind: 'hover', hold: 0.5 });
+  const before = (await sideText()).length;
+  await p.mouse.click(send.x, send.y); await sleep(1500);
+  r.mark('draft-asked');
+  let last = '', same = 0; const t0 = Date.now();
+  while (Date.now() - t0 < 300000) {
+    await r.poll(4000, 1000, { any: true });
+    const t = await sideText();
+    const busy = await p.evaluate(() => !!document.querySelector('button[aria-label="Stop"], button[aria-label="Stop generating"]'));
+    same = (t === last && !busy) ? same + 1 : 0; last = t;
+    if (t.length > before + 200 && same >= 2) break;
+  }
+  r.mark('draft-answered');
+  await r.shot({ hold: 3.5 });
+  for (let i = 0; i < 6; i++) { await p.mouse.move(1250, 420); await p.mouse.wheel(1250, 420, 260); await sleep(900); await r.shot({ hold: 1.6 }); }
+  r.mark('draft-answer-read');
+  console.log((await sideText()).slice(-3000));
+}
+
 if (PHASE === 'review2') {
   await r.goto(process.env.PRURL ? process.env.PRURL.replace('https://github.com/', ORG + '/review/') : REVIEW(), 9000); await sidebar(false); await settle();
   await p.keyboard.press('Escape');

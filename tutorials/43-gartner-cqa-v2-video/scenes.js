@@ -405,11 +405,11 @@ function close(ctx, s, k) {
   eyebrow(ctx, k, 'CODE QUALITY ASSURANCE', 112, up(k, s, 0.05));
   headline(ctx, k, 'What Devin does for code quality', 166, up(k, s, 0.3, 0.9), 38);
   const L = [
-    { i: 'review', t: 'Devin Review reviews the pull requests in each repository', at: 0.4 },
-    { i: 'debug', t: 'Devin finds root causes from CI logs and production alerts', at: 3.6 },
-    { i: 'refactor', t: 'Devin splits large refactors into stacked pull requests', at: 7.1 },
-    { i: 'test', t: 'Devin writes unit, integration, and end-to-end tests', at: 10.4 },
-    { i: 'pr', t: 'Dynamic Workflows run large test jobs the same way every time', at: 13.6 },
+    { i: 'review', t: 'Devin Review checks the pull requests in every repository', at: 0.9 },
+    { i: 'debug', t: 'Devin finds root causes from CI logs and production alerts', at: 3.8 },
+    { i: 'refactor', t: 'Splits large refactors into stacked pull requests', at: 6.9 },
+    { i: 'test', t: 'Writes unit, integration, and end-to-end tests', at: 9.6 },
+    { i: 'pr', t: 'Dynamic Workflows run large test jobs the same way every time', at: 12.6 },
   ];
   const x = 250, w = 940, y = 214, rh = 58, ca = up(k, s, 0.2, 0.8);
   card(ctx, k, x, y + 12 * (1 - ca), w, rh * L.length + 20, ca, 0, 18);

@@ -153,6 +153,48 @@ window.SPEC = {
    "vo": "Devin names the blockers and links to the code."
   },
   "0018.png": {
+   "hold": 3,
+   "cursor": false,
+   "hl": null,
+   "capPos": "bottom",
+   "vo": "From my work with engineering teams, quality checks work best at every step of development, because a problem costs less to fix when you find it early. So teams also use Devin Review while a change is still being written."
+  },
+  "0019.png": {
+   "hold": 2.5,
+   "cursor": false,
+   "hl": null,
+   "capPos": "bottom",
+   "vo": "Devin Review does not review draft pull requests automatically. Here the developer starts a review on a draft. Devin Review reviews it now, and again on every push."
+  },
+  "0020.png": {
+   "hold": 3,
+   "cursor": false,
+   "hl": null,
+   "capPos": "bottom",
+   "vo": "The change is not finished, but Devin Review already finds two problems. The critical one is that finance users can see the fraud score, which only adjusters should see."
+  },
+  "0021.png": {
+   "hold": 2.5,
+   "cursor": false,
+   "hl": null,
+   "capPos": "bottom",
+   "vo": "The second is a bug. The prior claims count includes claims filed later, so an earlier claim can get a higher score than it should."
+  },
+  "0022.png": {
+   "hold": 2,
+   "cursor": false,
+   "hl": null,
+   "capPos": "bottom",
+   "vo": "The developer can also use Review chat to learn about the code while writing it. Here the developer asks how the fraud score uses the prior claims count. Devin reads the code to answer."
+  },
+  "0023.png": {
+   "hold": 3,
+   "cursor": false,
+   "hl": null,
+   "capPos": "bottom",
+   "vo": "Devin explains which claims to count, and it points out the same access problem. The developer learns this before the change is done, when it is cheapest to fix."
+  },
+  "0024.png": {
    "scene": "ch2",
    "hold": 4,
    "cursor": false,
@@ -160,7 +202,7 @@ window.SPEC = {
    "capPos": "bottom",
    "vo": "Debugging a failing build."
   },
-  "0019.png": {
+  "0025.png": {
    "hold": 2.5,
    "cursor": false,
    "hl": null,
@@ -168,7 +210,7 @@ window.SPEC = {
    "vo": "CI, the automatic build and test system, fails on the same pull request. The developer asks Devin to fix it. This session runs on a macOS VM.",
    "voSay": "C I, the automatic build and test system, fails on the same pull request. The developer asks Devin to fix it. This session runs on a macOS V M."
   },
-  "0020.png": {
+  "0026.png": {
    "hold": 2.5,
    "cursor": false,
    "hl": null,
@@ -176,7 +218,7 @@ window.SPEC = {
    "vo": "Devin reads the CI logs, reproduces the failure on its VM, and finds the root cause.",
    "voSay": "Devin reads the C I logs, reproduces the failure on its V M, and finds the root cause."
   },
-  "0021.png": {
+  "0027.png": {
    "hold": 3,
    "cursor": false,
    "hl": null,
@@ -184,7 +226,7 @@ window.SPEC = {
    "vo": "It fixes the failure and the review findings: an ownership check, installments that add up to the exact total, safe CSV values, and a 404 for an unknown claim. It adds a regression test for each bug.",
    "voSay": "It fixes the failure and the review findings: an ownership check, installments that add up to the exact total, safe CSV values, and a four oh four for an unknown claim. It adds a regression test for each bug."
   },
-  "0022.png": {
+  "0028.png": {
    "hold": 3,
    "cursor": false,
    "hl": null,
@@ -192,7 +234,7 @@ window.SPEC = {
    "vo": "Before it pushes the code, Devin runs the full build and test suite. Then CI passes.",
    "voSay": "Before it pushes the code, Devin runs the full build and test suite. Then C I passes."
   },
-  "0023.png": {
+  "0029.png": {
    "scene": "ch3",
    "hold": 4,
    "cursor": false,
@@ -200,7 +242,7 @@ window.SPEC = {
    "capPos": "bottom",
    "vo": "Refactoring."
   },
-  "0024.png": {
+  "0030.png": {
    "scene": "stack",
    "hold": 4,
    "cursor": false,
@@ -208,14 +250,14 @@ window.SPEC = {
    "capPos": "bottom",
    "vo": "A refactor changes the structure of code but not its behavior. A large refactor is hard to review as one pull request. Devin can split it into stacked pull requests. Each pull request targets the branch of the one below it, so a reviewer reads one small change at a time."
   },
-  "0025.png": {
+  "0031.png": {
    "hold": 3,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "Here, Devin moves the payout calculations into one shared module, in three stacked pull requests: the new module, the change to the callers, and the removal of the old code. Devin Review shows where each pull request sits in the stack."
   },
-  "0026.png": {
+  "0032.png": {
    "scene": "ch4",
    "hold": 4,
    "cursor": false,
@@ -223,7 +265,7 @@ window.SPEC = {
    "capPos": "bottom",
    "vo": "Test generation."
   },
-  "0027.png": {
+  "0033.png": {
    "scene": "tests",
    "hold": 4,
    "cursor": false,
@@ -231,7 +273,7 @@ window.SPEC = {
    "capPos": "bottom",
    "vo": "Devin writes tests that follow the existing test patterns of the team. In this example, it writes three types of tests: unit tests, integration tests, and end-to-end tests that use the app as a person does."
   },
-  "0028.png": {
+  "0034.png": {
    "hold": 2.5,
    "cursor": false,
    "hl": null,
@@ -239,28 +281,28 @@ window.SPEC = {
    "vo": "This session runs on a Windows VM. Adjusters report that a twenty thousand dollar claim was approved without a supervisor. The approval limit is ten thousand dollars.",
    "voSay": "This session runs on a Windows V M. Adjusters report that a twenty thousand dollar claim was approved without a supervisor. The approval limit is ten thousand dollars."
   },
-  "0029.png": {
+  "0035.png": {
    "hold": 3,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "Devin finds the root cause. The code compared the claim amount in dollars to a limit stored in cents."
   },
-  "0030.png": {
+  "0036.png": {
    "hold": 3,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "It adds unit tests below, at, and above the limit, an integration test for the claim queue, and an end-to-end test that opens the Windows app, approves the claim, and checks that it goes to a supervisor."
   },
-  "0031.png": {
+  "0037.png": {
    "hold": 2.5,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "It also records a check of the app, so a reviewer can watch each step."
   },
-  "0032.png": {
+  "0038.png": {
    "hold": 2.5,
    "cursor": false,
    "hl": null,
@@ -268,7 +310,7 @@ window.SPEC = {
    "vo": "All fourteen tests pass on Windows and in CI, and Devin opens a pull request.",
    "voSay": "All fourteen tests pass on Windows and in C I, and Devin opens a pull request."
   },
-  "0033.png": {
+  "0039.png": {
    "scene": "ch5",
    "hold": 4,
    "cursor": false,
@@ -276,7 +318,7 @@ window.SPEC = {
    "capPos": "bottom",
    "vo": "Testing at scale."
   },
-  "0034.png": {
+  "0040.png": {
    "scene": "dwscript",
    "hold": 5,
    "cursor": false,
@@ -284,7 +326,7 @@ window.SPEC = {
    "capPos": "bottom",
    "vo": "Some test work is large and repetitive. An example is to add tests to every package in a service. For this work, Devin can write a Dynamic Workflow. A Dynamic Workflow is a Python script that runs many Devin agents."
   },
-  "0035.png": {
+  "0041.png": {
    "scene": "dwscript",
    "sceneCont": true,
    "hold": 3,
@@ -293,28 +335,28 @@ window.SPEC = {
    "capPos": "bottom",
    "vo": "The workflow is deterministic. It runs the same steps in the same order every time, and each step returns structured results. In each step, an agent decides how to write the tests."
   },
-  "0036.png": {
+  "0042.png": {
    "hold": 3,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "Here is the workflow. The list of packages is in the code: one agent for each of the six packages in the claims service."
   },
-  "0037.png": {
+  "0043.png": {
    "hold": 2.5,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "Each agent writes unit tests and integration tests for its package, runs them, and pushes a branch."
   },
-  "0038.png": {
+  "0044.png": {
    "hold": 3,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "A final step merges the branches, runs the full build, and opens one pull request. It adds one hundred twenty four unit tests and forty six integration tests, and all of the tests pass."
   },
-  "0039.png": {
+  "0045.png": {
    "scene": "dw",
    "hold": 3,
    "cursor": false,
@@ -322,7 +364,7 @@ window.SPEC = {
    "capPos": "bottom",
    "vo": "A normal Devin session is not deterministic. Devin decides the next step while it works. Use a session for one task. Use a Dynamic Workflow when the steps must be the same every time."
   },
-  "0040.png": {
+  "0046.png": {
    "scene": "ch6",
    "hold": 4,
    "cursor": false,
@@ -330,14 +372,14 @@ window.SPEC = {
    "capPos": "bottom",
    "vo": "Production debugging."
   },
-  "0041.png": {
+  "0047.png": {
    "hold": 2,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "Devin Oncall is the specialized agent for site reliability engineering. You set up a responder, which watches one source of alerts."
   },
-  "0042.png": {
+  "0048.png": {
    "hold": 2.5,
    "cursor": false,
    "hl": null,
@@ -345,14 +387,14 @@ window.SPEC = {
    "vo": "This responder gets crash alerts for the iOS app from a webhook.",
    "voSay": "This responder gets crash alerts for the i O S app from a webhook."
   },
-  "0043.png": {
+  "0049.png": {
    "hold": 2.5,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "It follows the runbook of the team: reproduce the crash, fix the root cause, add tests, and open a pull request."
   },
-  "0044.png": {
+  "0050.png": {
    "hold": 2.5,
    "cursor": false,
    "hl": null,
@@ -360,7 +402,7 @@ window.SPEC = {
    "vo": "And it runs on a macOS VM, with Xcode and the iOS Simulator.",
    "voSay": "And it runs on a macOS V M, with Xcode and the i O S Simulator."
   },
-  "0045.png": {
+  "0051.png": {
    "hold": 2,
    "cursor": false,
    "hl": null,
@@ -368,21 +410,21 @@ window.SPEC = {
    "vo": "A crash monitor reports a new crash in the iOS app for field adjusters. The responder starts an investigation.",
    "voSay": "A crash monitor reports a new crash in the i O S app for field adjusters. The responder starts an investigation."
   },
-  "0046.png": {
+  "0052.png": {
    "hold": 2.5,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "Devin Oncall reads the alert. It has the stack trace and the breadcrumbs, which are the last steps the user took before the crash."
   },
-  "0047.png": {
+  "0053.png": {
    "hold": 2.5,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "It posts a first update with the severity and the likely cause: a division by zero when an estimate has no line items."
   },
-  "0048.png": {
+  "0054.png": {
    "hold": 3,
    "cursor": false,
    "hl": null,
@@ -390,35 +432,35 @@ window.SPEC = {
    "vo": "On the macOS VM, Devin follows the breadcrumbs in the iOS Simulator. It removes the line items from an estimate, and the app crashes with the same stack trace.",
    "voSay": "On the macOS V M, Devin follows the breadcrumbs in the i O S Simulator. It removes the line items from an estimate, and the app crashes with the same stack trace."
   },
-  "0049.png": {
+  "0055.png": {
    "hold": 3,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "Devin fixes the root cause. It adds a unit test for an estimate with no items, and a UI test that removes the last item. Then it runs the full test suite on the simulator."
   },
-  "0050.png": {
+  "0056.png": {
    "hold": 3,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "The final report gives the root cause, the confidence, and the app versions that are affected."
   },
-  "0051.png": {
+  "0057.png": {
    "hold": 3,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
    "vo": "It attaches a write-up, the test logs, and a patch file. This responder did not have permission to push code, so a developer opens the pull request from the patch."
   },
-  "0052.png": {
+  "0058.png": {
    "scene": "close",
    "hold": 9,
    "cursor": false,
    "hl": null,
    "capPos": "bottom",
-   "vo": "Devin Review reviews the pull requests in each repository. Devin finds root causes from CI logs and production alerts. Devin splits large refactors into small stacked pull requests. Devin writes unit, integration, and end-to-end tests, and Dynamic Workflows run large test jobs the same way every time. All of this works on Linux, macOS, and Windows VMs, with the iOS Simulator and Android emulators. A person approves every merge.",
-   "voSay": "Devin Review reviews the pull requests in each repository. Devin finds root causes from C I logs and production alerts. Devin splits large refactors into small stacked pull requests. Devin writes unit, integration, and end-to-end tests, and Dynamic Workflows run large test jobs the same way every time. All of this works on Linux, macOS, and Windows V Ms, with the i O S Simulator and Android emulators. A person approves every merge."
+   "vo": "To recap: Devin Review checks the pull requests in every repository. Devin finds root causes from CI logs and production alerts, splits large refactors into small stacked pull requests, and writes unit, integration, and end-to-end tests. Dynamic Workflows run large test jobs the same way every time. All of this works on Linux, macOS, and Windows VMs, with the iOS Simulator and Android emulators. A person approves every merge.",
+   "voSay": "To recap: Devin Review checks the pull requests in every repository. Devin finds root causes from C I logs and production alerts, splits large refactors into small stacked pull requests, and writes unit, integration, and end-to-end tests. Dynamic Workflows run large test jobs the same way every time. All of this works on Linux, macOS, and Windows V Ms, with the i O S Simulator and Android emulators. A person approves every merge."
   }
  }
 };

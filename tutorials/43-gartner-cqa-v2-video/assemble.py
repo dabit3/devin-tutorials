@@ -24,6 +24,12 @@ ORDER = [
  ('0105.png', 2.5, "A second finding is a rounding bug. The installments do not add up to the claim total."),
  ('0162.png', 2, "Reviewers can ask questions in Review chat. Here the reviewer asks which findings must be fixed before the merge."),
  ('0190.png', 3, "Devin names the blockers and links to the code."),
+ ('1136.png', 3, "From my work with engineering teams, quality checks work best at every step of development, because a problem costs less to fix when you find it early. So teams also use Devin Review while a change is still being written."),
+ ('1139.png', 2.5, "Devin Review does not review draft pull requests automatically. Here the developer starts a review on a draft. Devin Review reviews it now, and again on every push."),
+ ('1199.png', 3, "The change is not finished, but Devin Review already finds two problems. The critical one is that finance users can see the fraud score, which only adjusters should see."),
+ ('1202.png', 2.5, "The second is a bug. The prior claims count includes claims filed later, so an earlier claim can get a higher score than it should."),
+ ('1258.png', 2, "The developer can also use Review chat to learn about the code while writing it. Here the developer asks how the fraud score uses the prior claims count. Devin reads the code to answer."),
+ ('1266.png', 3, "Devin explains which claims to count, and it points out the same access problem. The developer learns this before the change is done, when it is cheapest to fix."),
  ('scene:ch2', 4, "Debugging a failing build."),
  ('0329.png', 2.5, "CI, the automatic build and test system, fails on the same pull request. The developer asks Devin to fix it. This session runs on a macOS VM."),
  ('0340.png', 2.5, "Devin reads the CI logs, reproduces the failure on its VM, and finds the root cause."),
@@ -53,7 +59,7 @@ ORDER = [
  ('0996.png', 2.5, "And it runs on a macOS VM, with Xcode and the iOS Simulator."),
  ('1003.png', 2, "A crash monitor reports a new crash in the iOS app for field adjusters. The responder starts an investigation."),
 ] + [tuple(x) for x in ONCALL] + [
- ('scene:close', 9, "Devin Review reviews the pull requests in each repository. Devin finds root causes from CI logs and production alerts. Devin splits large refactors into small stacked pull requests. Devin writes unit, integration, and end-to-end tests, and Dynamic Workflows run large test jobs the same way every time. All of this works on Linux, macOS, and Windows VMs, with the iOS Simulator and Android emulators. A person approves every merge."),
+ ('scene:close', 9, "To recap: Devin Review checks the pull requests in every repository. Devin finds root causes from CI logs and production alerts, splits large refactors into small stacked pull requests, and writes unit, integration, and end-to-end tests. Dynamic Workflows run large test jobs the same way every time. All of this works on Linux, macOS, and Windows VMs, with the iOS Simulator and Android emulators. A person approves every merge."),
 ]
 SAY = [('CWE-862', 'CWE eight six two'), ('404', 'four oh four'), ('CI,', 'C I,'), ('CI ', 'C I '), ('CI.', 'C I.'), ('VMs', 'V Ms'), ('VM', 'V M'), ('iOS', 'i O S')]
 out = os.path.join(HERE, 'shots'); shutil.rmtree(out, ignore_errors=True); os.makedirs(out)

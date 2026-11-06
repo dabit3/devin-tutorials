@@ -38,6 +38,18 @@ Reviewers can ask questions in Review chat. Here the reviewer asks which finding
 
 Devin names the blockers and links to the code.
 
+From my work with engineering teams, quality checks work best at every step of development, because a problem costs less to fix when you find it early. So teams also use Devin Review while a change is still being written.
+
+Devin Review does not review draft pull requests automatically. Here the developer starts a review on a draft. Devin Review reviews it now, and again on every push.
+
+The change is not finished, but Devin Review already finds two problems. The critical one is that finance users can see the fraud score, which only adjusters should see.
+
+The second is a bug. The prior claims count includes claims filed later, so an earlier claim can get a higher score than it should.
+
+The developer can also use Review chat to learn about the code while writing it. Here the developer asks how the fraud score uses the prior claims count. Devin reads the code to answer.
+
+Devin explains which claims to count, and it points out the same access problem. The developer learns this before the change is done, when it is cheapest to fix.
+
 Debugging a failing build.
 
 CI, the automatic build and test system, fails on the same pull request. The developer asks Devin to fix it. This session runs on a macOS VM.
@@ -106,5 +118,5 @@ The final report gives the root cause, the confidence, and the app versions that
 
 It attaches a write-up, the test logs, and a patch file. This responder did not have permission to push code, so a developer opens the pull request from the patch.
 
-Devin Review reviews the pull requests in each repository. Devin finds root causes from CI logs and production alerts. Devin splits large refactors into small stacked pull requests. Devin writes unit, integration, and end-to-end tests, and Dynamic Workflows run large test jobs the same way every time. All of this works on Linux, macOS, and Windows VMs, with the iOS Simulator and Android emulators. A person approves every merge.
+To recap: Devin Review checks the pull requests in every repository. Devin finds root causes from CI logs and production alerts, splits large refactors into small stacked pull requests, and writes unit, integration, and end-to-end tests. Dynamic Workflows run large test jobs the same way every time. All of this works on Linux, macOS, and Windows VMs, with the iOS Simulator and Android emulators. A person approves every merge.
 
