@@ -283,4 +283,47 @@ if (PHASE === 8) { // payoff: the tweak, live in the preview
   const pt = await p.evaluate(() => { const e = [...document.querySelectorAll('*')].find(e => { const b = e.getBoundingClientRect(); return b.width && b.y < 80 && b.x > 700 && [...e.childNodes].some(n => n.nodeType === 3 && /^Pagem/.test(n.textContent.trim())); }); if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2 }; });
   await r.click(pt, { cap: 'Back in the preview' }, 1200); await reloadPreview(); await r.park(); await r.shot({ hold: 3, cap: 'The change, live on Devin’s machine' });
 }
+
+// pick the cloud machine's OS from Configuration -> Virtual environment
+const pickOS = async (os, cap) => {
+  await r.click(await label('Configuration'), {}, 1000);
+  await r.hover(await r.at('Virtual environment'), {}); await sleep(900);
+  await r.click(await ownText(os), { cap }, 1200);
+  await p.keyboard.press('Escape'); await sleep(400); await p.keyboard.press('Escape'); await sleep(600);
+};
+const ask = async (text, cap) => {
+  const box = await around(['Tip:'], 'main *'); await r.click({ x: box.x, y: box.y }, {}, 600);
+  for (let i = 0; i < text.length; i += 14) { await p.keyboard.type(text.slice(i, i + 14), { delay: 12 }); await r.shot({ kind: 'type' }); }
+  await sleep(600); await r.click(await label('Send'), { cap }, 2500); await r.park();
+};
+const settled = tx => /awaiting instructions/.test(tx.slice(-600));
+if (PHASE === 30) { // a cloud session on Devin's macOS machine, shown in Computer
+  await newSession(); await sidebar(false); await r.park();
+  if (!(await around(['Cloud', 'Local']))) throw new Error('no composer');
+  const cl = await ownText('Cloud'); await r.click(cl, {}, 700);
+  await pickOS('macOS', 'Pick macOS');
+  await ask(process.env.MACP || 'On your own macOS cloud machine, open Safari to docs.devin.ai/desktop and leave it open.', 'Devin’s own Mac');
+  await until(240000, async tx => settled(tx) || !!(await button('Approve')), 3000);
+  if (await button('Approve')) throw new Error('asked for local access');
+  await toBottom(); await r.park(); await r.shot({ hold: 1 });
+  await tab('Computer', 'Computer: Devin’s macOS desktop', 6000);
+  await r.park(); await r.poll(+(process.env.MS || 6000), 2000, {});
+}
+if (PHASE === 31) { // one cloud session fans out to parallel sub-Devins
+  await newSession(); await sidebar(false); await r.park();
+  const cl = await ownText('Cloud'); await r.click(cl, {}, 700);
+  await pickOS('Ubuntu');
+  await ask(process.env.SUBP || 'In thequantexplorer/product-demo-apps, spin up 3 sub-Devins in parallel to review the pagemark app: one for accessibility, one for performance, one for test coverage. Then summarize what they find.', 'Ask for sub-Devins');
+  await until(180000, tx => /Created 3 Devin sessions/.test(tx), 3000);
+  await sleep(4000); await r.park();
+  await r.poll(+(process.env.MS || 12000), 2500, { cap: 'Three sub-Devins, running in parallel' });
+}
+if (PHASE === 32) { // the sidebar: local and cloud sessions in one list
+  await sidebar(false); await r.park(); await r.shot({ hold: 0.6, cursor: false });
+  await r.click(await label('Toggle Sidebar'), { cap: 'Every session in one list' }, 1200);
+  await r.park(); await r.shot({ hold: 1 });
+  for (const t of (process.env.HOVERS || '').split('|').filter(Boolean)) { const b = await r.box(`[aria-label=${JSON.stringify(t)}]`); if (b) { await r.hover(b, {}); await sleep(900); await r.shot({ hold: 1.2 }); } }
+  await r.park(); await r.shot({ hold: 1.5 });
+  await r.click(await label('Toggle Sidebar'), {}, 1000);
+}
 await r.b.disconnect(); process.exit(0);

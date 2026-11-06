@@ -39,5 +39,11 @@ Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`), model `eleven_multilingual_v2` (kit defau
 | 0265.png | With Local Hands, a cloud session can work on your computer, too. Here it runs the tests on this machine. |
 | 0279.png | You approve access once. After that, each local command still waits for you. |
 | 0284.png | All nine tests pass on this machine, too. |
+| 0338.png | Cloud sessions can run on macOS, too. |
+| 0355.png | Here Devin opens Safari on its own Mac. |
+| 0358.png | And Computer shows its macOS desktop. |
+| 0360.png | Devin can also split up the work. |
+| 0385.png | Ask for sub-Devins, and they run in parallel, each in its own session. |
+| 0390.png | Open the sidebar, and every session is in one list. Local and cloud, side by side. |
 | 0296.png | Prefer an editor? The same menu switches to the IDE view. |
 | outro | Build on your machine or in the cloud, with Devin Desktop. |
