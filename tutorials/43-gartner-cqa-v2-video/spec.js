@@ -253,8 +253,14 @@ window.SPEC = {
   "0031.png": {
    "hold": 3,
    "cursor": false,
-   "hl": null,
+   "hl": {
+    "x": 350,
+    "y": 252.5,
+    "w": 332,
+    "h": 97
+   },
    "capPos": "bottom",
+   "hlDelay": 0.5,
    "vo": "Here, Devin moves the payout calculations into one shared module, in three stacked pull requests: the new module, the change to the callers, and the removal of the old code. Devin Review shows where each pull request sits in the stack."
   },
   "0032.png": {

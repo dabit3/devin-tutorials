@@ -76,6 +76,7 @@ for i, (src, hold, vo) in enumerate(ORDER):
         for k in ('kind', 'at', 'mark', 'n', 'paste', 'chars'): b.pop(k, None)
         b.update(img=new, src=src); beats.append(b); e = {}
     e.update(hold=hold, cursor=False, hl=None, capPos='bottom')
+    if src == '0521.png': e.update(hl={'x': 350, 'y': 252.5, 'w': 332, 'h': 97}, hlDelay=0.5)
     if vo:
         e['vo'] = vo; say = vo
         for a, z in SAY: say = say.replace(a, z)
