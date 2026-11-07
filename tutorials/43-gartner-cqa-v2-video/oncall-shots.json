@@ -1,0 +1,8 @@
+[
+ ["1121.png", 2.5, "Devin Oncall reads the alert. It has the stack trace and the breadcrumbs, which are the last steps the user took before the crash."],
+ ["1122.png", 2.5, "It posts a first update with the severity and the likely cause: a division by zero when an estimate has no line items."],
+ ["1126.png", 3, "On the macOS VM, Devin follows the breadcrumbs in the iOS Simulator. It removes the line items from an estimate, and the app crashes with the same stack trace."],
+ ["1125.png", 3, "Devin fixes the root cause. It adds a unit test for an estimate with no items, and a UI test that removes the last item. Then it runs the full test suite on the simulator."],
+ ["1129.png", 3, "The final report gives the root cause, the confidence, and the app versions that are affected."],
+ ["1133.png", 3, "It attaches a write-up, the test logs, and a patch file. This responder did not have permission to push code, so a developer opens the pull request from the patch."]
+]
