@@ -8,7 +8,7 @@ Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`), model `eleven_multilingual_v2` (kit defau
 | 0004.png | First, let's look at Local. Devin Local lets you code on your local filesystem. |
 | 0009.png | You can also pick a different agent. Desktop supports ACP, so agents like Claude Agent and Codex plug right in. |
 | 0011.png | Next, pick a model. There's Claude, GPT, Gemini, and more, including Cognition's own SWE family of models. |
-| 0014.png | Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick. |
+| 0014.png | Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick. You keep frontier-level intelligence, at up to 60% lower cost. |
 | 0018.png | The mode sets what needs your approval. |
 | 0020.png | Smart approves the actions the model judges safe. |
 | 0022.png | Ask just answers questions. It won't change code. |

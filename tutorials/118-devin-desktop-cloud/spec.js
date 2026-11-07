@@ -56,8 +56,12 @@ window.SPEC = {
    "subPos": "bottom"
   },
   "0014.png": {
-   "vo": "Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick.",
+   "vo": "Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick. You keep frontier-level intelligence, at up to 60% lower cost.",
+   "voSay": "Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick. You keep frontier-level intelligence, at up to sixty percent lower cost.",
    "subPos": "bottom"
+  },
+  "0017.png": {
+   "waitVo": true
   },
   "0018.png": {
    "vo": "The mode sets what needs your approval.",
