@@ -393,10 +393,11 @@ window.SPEC = {
    "hold": 3,
    "cursor": false,
    "hl": {
-    "x": 946.0,
-    "y": 417.5,
-    "w": 688.0,
-    "h": 67.0
+    "x": 946.5,
+    "y": 425,
+    "w": 689,
+    "h": 70,
+    "pad": 0
    },
    "capPos": "bottom",
    "hlDelay": 0.5,
@@ -406,10 +407,10 @@ window.SPEC = {
    "hold": 3,
    "cursor": false,
    "hl": {
-    "x": 275.0,
-    "y": 265.5,
-    "w": 506.0,
-    "h": 119.0
+    "x": 282,
+    "y": 348.5,
+    "w": 508,
+    "h": 275
    },
    "capPos": "bottom",
    "hlDelay": 0.5,
