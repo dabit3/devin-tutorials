@@ -121,15 +121,17 @@ if cue.get('clips'):
 mg = fade_in * fade_out * MUSIC_GAIN * 1.8 * duck
 L += ML * mg + VL + CL; R += MR * mg + VL + CL
 
+# spec.js `introSfx: false` drops the title chime and the swell into the UI
+INTRO_SFX = json.loads(re.sub(r'^\s*window\.SPEC\s*=\s*', '', open(os.path.join(VD, 'spec.js')).read()).rstrip().rstrip(';')).get('introSfx', True) if os.path.exists(os.path.join(VD, 'spec.js')) else True
 # title chime
-for i, m in enumerate([72, 76, 79, 84]):
+for i, m in enumerate([72, 76, 79, 84] if INTRO_SFX else []):
     add(osc(mtof(m), 1.6) * env(int(1.6 * SR), 0.003, 0.9, 3), 0.15 + i * 0.07, 0.07, pan=-0.2 + i * 0.13)
 # soft tonal swell into UI and out to outro
 def swell(notes, dur=1.1):
     n = int(dur * SR); t = np.arange(n) / SR
     e = np.minimum(1, t / 0.35) * np.exp(-2.2 * np.maximum(0, t - 0.35) / dur)
     return lp(sum(osc(mtof(m), dur, 'tri') for m in notes), 0.25) * e
-add(swell([64, 71, 76]), T(cue['intro']) - 0.25, 0.05)
+if INTRO_SFX: add(swell([64, 71, 76]), T(cue['intro']) - 0.25, 0.05)
 add(swell([72, 67, 64]), T(cue['uiEnd']) - 0.1, 0.045)
 # clicks
 for f in cue['clicks']:

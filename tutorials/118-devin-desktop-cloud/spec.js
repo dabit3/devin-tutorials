@@ -1,6 +1,6 @@
 window.SPEC = {
  "title": "Devin Desktop",
- "subtitle": "Devin Local, ACP agents and cloud machines",
+ "subtitle": "The Agent Development Environment for local and cloud agents",
  "outro": "Build locally or in the cloud with Devin Desktop",
  "voOutro": "Build on your machine or in the cloud, with Devin Desktop.",
  "speed": 3,
@@ -56,8 +56,12 @@ window.SPEC = {
    "subPos": "bottom"
   },
   "0014.png": {
-   "vo": "Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick.",
+   "vo": "Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick. You keep frontier-level intelligence, at up to 60% lower cost.",
+   "voSay": "Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick. You keep frontier-level intelligence, at up to sixty percent lower cost.",
    "subPos": "bottom"
+  },
+  "0017.png": {
+   "waitVo": true
   },
   "0018.png": {
    "vo": "The mode sets what needs your approval.",
@@ -596,6 +600,21 @@ window.SPEC = {
   "0294.png": {
    "skip": true
   },
+  "0338.png": {"vo": "Cloud sessions can run on macOS, too."},
+  "0355.png": {"vo": "Here Devin opens Safari on its own Mac."},
+  "0358.png": {"vo": "And Computer shows its macOS desktop."},
+  "0359.png": {"hold": 2.5},
+  "0360.png": {"vo": "Devin can also split up the work."},
+  "0385.png": {"vo": "Ask for sub-Devins, and they run in parallel, each in its own session."},
+  "0389.png": {"hold": 1.5},
+  "0390.png": {"vo": "Open the sidebar, and every session is in one list. Local and cloud, side by side."},
+  "0393.png": {"hold": 2.5},
+  "0394.png": {"skip": true},
+  "0395.png": {"skip": true},
+  "0396.png": {"skip": true},
+  "0397.png": {"skip": true},
+  "0398.png": {"skip": true},
+  "0399.png": {"skip": true},
   "0296.png": {
    "vo": "Prefer an editor? The same menu switches to the IDE view."
   },
@@ -664,5 +683,6 @@ window.SPEC = {
    "hold": 2.4
   }
  },
- "musicStart": 16.15
+ "musicStart": 16.15,
+ "introSfx": false
 };
