@@ -45,7 +45,7 @@ Each folder contains the final MP4, a poster frame, the `capture.mjs` script tha
 
 ## Silent multi-VM clip
 
-**36 · Four VMs** (`36-four-vms/`): 31.9-second silent live capture of four sessions in a 2×2 split view (macOS two-iPhone air hockey, Ubuntu 3D globe, windowed Windows WPF fractal explorer, macOS Dream Stage rhythm game folding on an iPhone Duo in Device Hub), clicking into each pane so its Computer takes over. 4K30 and 1080p30. See [rebuild instructions](36-four-vms/README.md).
+**36 · Eight sessions** (`36-four-vms/`): 49.7-second silent live capture of eight sessions in a 4×2 split view (macOS two-iPhone air hockey, Ubuntu 3D globe, windowed Windows WPF fractal explorer, Dream Stage folding on an iPhone Duo, Jumpy Otter in the Android Emulator, MuJoCo Franka Panda stacking cubes, Windows falling-sand sandbox, Neon Loom on an iPad simulator), clicking into each pane so its Computer takes over. 4K30 and 1080p30. See [rebuild instructions](36-four-vms/README.md).
 
 ## How it works
 

@@ -131,7 +131,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 
 ## Silent multi-VM clip
 
-**36. Four VMs, four sessions** (0:32): Four Devin sessions open at once in a 2×2 split view, clicking into each so its Computer becomes the main view: macOS two-iPhone air hockey, an Ubuntu 3D flight globe, a windowed Windows WPF fractal explorer driven by the cursor, and the Dream Stage rhythm game on an iPhone Duo in Xcode Device Hub. Real live footage, no audio. [4K master](tutorials/36-four-vms/four-vms.mp4) · [1080p preview](tutorials/36-four-vms/four-vms-1080p.mp4) · [Rebuild instructions](tutorials/36-four-vms/README.md)
+**36. Eight sessions, one screen** (0:50): Eight Devin sessions open at once in a 4×2 split view, clicking into each so its Computer becomes the main view: macOS two-iPhone air hockey, an Ubuntu 3D flight globe, a windowed Windows WPF fractal explorer, the Dream Stage rhythm game on an iPhone Duo in Xcode Device Hub, then Jumpy Otter in the Android Emulator, a MuJoCo Franka Panda arm stacking cubes, a Windows falling-sand sandbox and Neon Loom kaleidoscope drawing on an iPad simulator. Real live footage, no audio. [4K master](tutorials/36-four-vms/four-vms.mp4) · [1080p preview](tutorials/36-four-vms/four-vms-1080p.mp4) · [Rebuild instructions](tutorials/36-four-vms/README.md)
 
 ## Making a new tutorial
 

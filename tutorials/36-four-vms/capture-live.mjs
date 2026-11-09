@@ -3,6 +3,7 @@
 // (a deviceScaleFactor override or CSS zoom does not: screencast frames stay at CSS size / the split layout breaks).
 // a drawn cursor that clicks into each pane's composer so its Computer tab takes over the right panel.
 // Usage: OUT=36-four-vms/live node 36-four-vms/capture-live.mjs   (TEST=5 records 5 s without clicking)
+// ORDER lists the panes to click (row-major from top left); the default is the 2x2 order 1,2,3,0.
 import fs from 'fs';
 const OUT = process.env.OUT || '36-four-vms/live';
 fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive: true });
@@ -60,7 +61,8 @@ const click = async (b) => {
 };
 const panes = await boxes();
 console.log('panes', JSON.stringify(panes));
-if (panes.length !== 4) throw new Error('expected 4 composers');
+const ORDER = (process.env.ORDER || '1,2,3,0').split(',').map(Number);
+if (panes.length !== Math.max(...ORDER) + 1) throw new Error(`expected ${Math.max(...ORDER) + 1} composers, found ${panes.length}`);
 // start focused on pane 0 before recording
 await send('Input.dispatchMouseEvent', { type: 'mousePressed', x: panes[0].x, y: panes[0].y, button: 'left', clickCount: 1 });
 await send('Input.dispatchMouseEvent', { type: 'mouseReleased', x: panes[0].x, y: panes[0].y, button: 'left', clickCount: 1 });
@@ -74,7 +76,7 @@ if (process.env.TEST) await sleep(Number(process.env.TEST) * 1000);
 else {
   const HOLD = Number(process.env.HOLD || 5200);
   await sleep(3200);
-  for (const i of [1, 2, 3, 0]) { await click(panes[i]); await ev(`document.activeElement?.blur()`); mark(i); await sleep(Number(process.env[`HOLD_${i}`] || HOLD)); }
+  for (const i of ORDER) { await click(panes[i]); await ev(`document.activeElement?.blur()`); mark(i); await sleep(Number(process.env[`HOLD_${i}`] || HOLD)); }
 }
 await send('Page.stopScreencast'); await sleep(500);
 fs.writeFileSync(`${OUT}/frames.json`, JSON.stringify({ frames, marks }, null, 0));
