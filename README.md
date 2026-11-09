@@ -131,7 +131,7 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 
 ## Silent multi-VM clip
 
-**36. Four VMs, four sessions** (0:27): Four Devin sessions open at once in a 2×2 split view, clicking into each so its Computer becomes the main view: macOS two-iPhone air hockey, an Ubuntu 3D flight globe, a Windows WPF fractal explorer and a macOS iPhone weather app. Real live footage, no audio. [4K master](tutorials/36-four-vms/four-vms.mp4) · [1080p preview](tutorials/36-four-vms/four-vms-1080p.mp4) · [Rebuild instructions](tutorials/36-four-vms/README.md)
+**36. Four VMs, four sessions** (0:28): Four Devin sessions open at once in a 2×2 split view, clicking into each so its Computer becomes the main view: macOS two-iPhone air hockey, an Ubuntu 3D flight globe, a Windows WPF fractal explorer and a synthwave visualizer on an iPhone Duo in Xcode Device Hub. Real live footage, no audio. [4K master](tutorials/36-four-vms/four-vms.mp4) · [1080p preview](tutorials/36-four-vms/four-vms-1080p.mp4) · [Rebuild instructions](tutorials/36-four-vms/README.md)
 
 ## Making a new tutorial
 
