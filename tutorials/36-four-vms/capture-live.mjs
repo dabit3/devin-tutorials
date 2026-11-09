@@ -74,7 +74,7 @@ if (process.env.TEST) await sleep(Number(process.env.TEST) * 1000);
 else {
   const HOLD = Number(process.env.HOLD || 5200);
   await sleep(3200);
-  for (const i of [1, 2, 3, 0]) { await click(panes[i]); await ev(`document.activeElement?.blur()`); mark(i); await sleep(HOLD); }
+  for (const i of [1, 2, 3, 0]) { await click(panes[i]); await ev(`document.activeElement?.blur()`); mark(i); await sleep(Number(process.env[`HOLD_${i}`] || HOLD)); }
 }
 await send('Page.stopScreencast'); await sleep(500);
 fs.writeFileSync(`${OUT}/frames.json`, JSON.stringify({ frames, marks }, null, 0));
