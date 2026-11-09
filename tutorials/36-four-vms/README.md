@@ -1,6 +1,6 @@
 # Eight sessions across macOS, Ubuntu and Windows VMs, one screen
 
-A **49.7-second silent clip** of the real Devin web app with eight sessions open at once in a 4×2 split view, with the Computer tab on the right. A cursor clicks into each pane in turn and that session's VM becomes the main Computer view: the original four first, in the same order as the four-pane cut, then the four new ones. Filmed live on 9 November 2026; no intro, outro, captions or audio.
+A **46.4-second silent clip** of the real Devin web app with eight sessions open at once in a 4×2 split view, with the Computer tab on the right. A cursor clicks into each pane in turn and that session's VM becomes the main Computer view: the original four first, in the same order as the four-pane cut, then the four new ones. Filmed live on 9 November 2026; no intro, outro, captions or audio.
 
 - [4K master](four-vms.mp4): 3840×2160, 30fps, H.264/yuv420p, no audio.
 - [1080p preview](four-vms-1080p.mp4): 1920×1080, 30fps, no audio.
@@ -25,6 +25,6 @@ Click order: globe → fractal → Duo → air hockey (as in the four-pane cut),
 
 1. Sign in to app.devin.ai in the capture Chrome (`_kit/tools/devin-login-import.mjs`, CDP on port 9333).
 2. Start the eight sessions with `start.mjs` (`PLAT=macOS|Ubuntu|Windows TASK="..." node 36-four-vms/start.mjs`), then open them in a 4×2 split view with a Computer tab on the right (drag a session from the sidebar onto the bottom half of a pane to split it vertically, or the right edge of a pane to add a column; if a pane's right panel shows Changes, use Add tab → Computer). The Duo pane needs Xcode 27.1 (`gh release download duo-toolchain-xcode-27.1 -R dabit3/private-app-demos-1`, then `sudo xcodebuild -runFirstLaunch`). Dream Stage installs from its prebuilt simulator release: `gh release download dream-stage-sim -R dabit3/unity-apps -p DreamStage-sim.zip`, unzip, then `xcrun simctl install <duo-udid> DreamStage.app` and launch `com.dabit3.dreamstage`.
-3. Set Chrome's zoom for app.devin.ai to 250% and record: `ORDER=1,4,5,0,2,3,6,7 HOLD=4200 HOLD_5=8500 HOLD_7=5000 node 36-four-vms/capture-live.mjs` from `tutorials/` (panes are numbered row-major from the top left; `ORDER` is the click order, `HOLD_<pane>` lengthens one pane's hold so the Duo plays a full fold) (writes `live/` frames plus `frames.json`; `live/` is git-ignored).
+3. Set Chrome's zoom for app.devin.ai to 250% and record: `START=0 FIRST=4200 ORDER=1,4,5,2,3,6,7 HOLD=4200 HOLD_5=8500 HOLD_7=5000 node 36-four-vms/capture-live.mjs` from `tutorials/` (panes are numbered row-major from the top left; `START` is the pane focused when recording begins and `FIRST` how long it holds, `ORDER` is the click order after it, `HOLD_<pane>` lengthens one pane's hold so the Duo plays a full fold) (writes `live/` frames plus `frames.json`; `live/` is git-ignored).
 4. Encode: `node 36-four-vms/encode.mjs`. It cuts the white "Connecting to Devin's computer" frames after each click so every switch lands on the live VM, then writes the 4K MP4.
 5. 1080p: `ffmpeg -i four-vms.mp4 -vf scale=1920:1080:flags=lanczos -c:v libx264 -crf 18 -an four-vms-1080p.mp4`.

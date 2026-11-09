@@ -62,10 +62,11 @@ const click = async (b) => {
 const panes = await boxes();
 console.log('panes', JSON.stringify(panes));
 const ORDER = (process.env.ORDER || '1,2,3,0').split(',').map(Number);
-if (panes.length !== Math.max(...ORDER) + 1) throw new Error(`expected ${Math.max(...ORDER) + 1} composers, found ${panes.length}`);
-// start focused on pane 0 before recording
-await send('Input.dispatchMouseEvent', { type: 'mousePressed', x: panes[0].x, y: panes[0].y, button: 'left', clickCount: 1 });
-await send('Input.dispatchMouseEvent', { type: 'mouseReleased', x: panes[0].x, y: panes[0].y, button: 'left', clickCount: 1 });
+if (panes.length !== Math.max(...ORDER, Number(process.env.START || 0)) + 1) throw new Error(`expected ${Math.max(...ORDER, Number(process.env.START || 0)) + 1} composers, found ${panes.length}`);
+// START is the pane already focused when recording begins (default 0); FIRST is how long it shows before the first click
+const START = Number(process.env.START || 0);
+await send('Input.dispatchMouseEvent', { type: 'mousePressed', x: panes[START].x, y: panes[START].y, button: 'left', clickCount: 1 });
+await send('Input.dispatchMouseEvent', { type: 'mouseReleased', x: panes[START].x, y: panes[START].y, button: 'left', clickCount: 1 });
 await send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: 2, y: H - 2 });
 await ev(`document.activeElement?.blur()`);
 await sleep(Number(process.env.PRE || 3000));
@@ -75,7 +76,7 @@ const mark = n => marks.push({ n, t: (Date.now() - t0) / 1000 });
 if (process.env.TEST) await sleep(Number(process.env.TEST) * 1000);
 else {
   const HOLD = Number(process.env.HOLD || 5200);
-  await sleep(3200);
+  await sleep(Number(process.env.FIRST || 3200));
   for (const i of ORDER) { await click(panes[i]); await ev(`document.activeElement?.blur()`); mark(i); await sleep(Number(process.env[`HOLD_${i}`] || HOLD)); }
 }
 await send('Page.stopScreencast'); await sleep(500);
