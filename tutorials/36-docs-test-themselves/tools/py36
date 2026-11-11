@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# PYTHON=<this file> for _kit/tools/build.sh: routes the kit's audio.py through audio36.py, everything else to python3.
+if [[ "${1:-}" == */audio.py ]]; then exec python3 "$(dirname "$0")/audio36.py" "$@"; fi
+exec python3 "$@"
