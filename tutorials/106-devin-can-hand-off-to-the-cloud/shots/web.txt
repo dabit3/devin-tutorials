@@ -1,0 +1,123 @@
+Skip to main content
+dc106-Verify overdue reports and open PR
+#4
+1
+Nader Dabit:
+Run the test suite, start the server and check the new endpoint, then open a PR from a new branch named dc106-overdue-report
+
+
+System-generated context
+5:38
+changes_from_local_clone.diff
+ 
+Worked for 5s
+Devin:
+
+Applying your diff, running tests, checking the endpoint on a live server, then opening a PR from dc106-overdue-report.
+
+Worked for 38s
++18
+Add overdue invoices report endpoint
+ledger-api#4
+•
++18
+−0
+•
+devin-ai-integration[bot]
+Analyze
+Worked for 4s
+Devin:
+
+I opened ledger-api#4 from dc106-overdue-report. npm test passes (7/7) and so does CI.
+
+Your diff wouldn't apply as-is (corrupt patch, probably a missing trailing newline), so I applied it with --recount. The code is unchanged.
+
+Live check: I ran the server on a seeded scratch DB with some backdated invoices added, and the endpoint behaved correctly:
+
+Your workspace: it returned only the 60-day and 45-day sent invoices, oldest first. A sent invoice from 10 days ago and a paid one from 90 days ago were left out.
+Another workspace: it saw only its own overdue invoice.
+Access: a non-member gets 404 and a request with no token gets 401.
+
+Separate issue, not in this PR: GET /api/workspaces/:id/reports/export.csv in reports.js:21-29 has no requireUser/requireMember check. On the live server, I downloaded workspace 1's full CSV (customer emails and amounts) with no token. Want me to open a follow-up PR to lock it down?
+
+5:40
+Session renamed to “dc106-Verify overdue reports and open PR” by you
+Devin is awaiting instructions
+﻿
+
+Ask Devin to build features, fix bugs, or work on your code
+Normal
+PR #4
+Changes
+
+changes_from_local_clone.diff
+changes_from_local_clone.diff
+2 files
++18
+−0
+reports.js
+src/routes
++7
+11
+  res.json({ summary: rows });
+12
+});
+13
+ 
+14
+router.get('/overdue', requireUser, requireMember, (req, res) => {
+15
+  const rows = db
+16
+    .prepare("SELECT id, number, customer, amount_cents, status, created_at FROM invoices WHERE workspace_id = ? AND status = 'sent' AND created_at < datetime('now', '-30 days') ORDER BY created_at")
+17
+    .all(Number(req.params.workspaceId));
+18
+  res.json({ overdue: rows });
+19
+});
+20
+ 
+21
+// CSV export for the finance team's bookkeeping import.
+22
+router.get('/export.csv', (req, res) => {
+23
+  const rows = db
+api.test.js
+test
++11
+46
+  assert.deepStrictEqual(invoices.map(i => i.number), ['NW-1001']);
+47
+});
+48
+ 
+49
+test('overdue report lists sent invoices older than 30 days, oldest first', async () => {
+50
+  const { db } = require('../src/lib/db');
+51
+  const insert = db.prepare("INSERT INTO invoices (workspace_id, number, customer, customer_email, amount_cents, status, created_at) VALUES (1, ?, 'Old Co', 'old@co.test', 1000, ?, datetime('now', ?))");
+52
+  insert.run('NW-OLD1', 'sent', '-45 days');
+53
+  insert.run('NW-OLD2', 'sent', '-60 days');
+54
+  insert.run('NW-PAID-OLD', 'paid', '-90 days');
+55
+  const token = await login('maya@northwind.test', 'maya-demo-pw');
+56
+  const { overdue } = await (await get('/api/workspaces/1/reports/overdue', token)).json();
+57
+  assert.deepStrictEqual(overdue.map(i => i.number), ['NW-OLD2', 'NW-OLD1']);
+58
+});
+59
+ 
+60
+test('non-members cannot list another workspace', async () => {
+61
+  const token = await login('lena@brightside.test', 'lena-demo-pw');
+62
+  const r = await get('/api/workspaces/1/invoices', token);

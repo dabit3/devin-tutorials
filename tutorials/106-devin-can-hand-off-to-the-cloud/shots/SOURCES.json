@@ -1,0 +1,636 @@
+{
+ "note": "Terminal beats (0000-0134) are real Devin CLI output driven in tmux by capture.mjs, capture-handoff.mjs and capture-preview.mjs in ~/code/ledger-api, rendered by the kit term recorder (xterm.js). Web beats (0135-0143) are real screenshots of the cloud session the CLI created, taken by capture-web.mjs and capture-pr.mjs in a Chrome profile signed in to the thequantexplorer org (sidebar collapsed, account email masked). The session title was given the dc106- prefix before the web capture. Scene beats are blank placeholders drawn live by scenes.js and are diagrams, not product UI. Beats marked skip in spec.js are not in the cut.",
+ "org": "https://app.devin.ai/org/thequantexplorer",
+ "session": "https://app.devin.ai/sessions/b71c12360ccb4e0a989e85b63c509f85",
+ "repo": "thequantexplorer/ledger-api",
+ "pr": "https://github.com/thequantexplorer/ledger-api/pull/4 (branch dc106-overdue-report; closed without merging after capture)",
+ "cli": "devin 3000.11.234 (92c83011d113)",
+ "docs": "https://docs.devin.ai/cli/handoff (what carries over: repo and branch, conversation context, uncommitted changes)",
+ "shots": {
+  "scene-title.png": {
+   "kind": "scene",
+   "what": "Blank placeholder; the diagram is drawn live by scenes.js"
+  },
+  "scene-how.png": {
+   "kind": "scene",
+   "what": "Blank placeholder; the diagram is drawn live by scenes.js"
+  },
+  "0000.png": {
+   "kind": "still",
+   "source": "terminal",
+   "label": "start",
+   "what": "Real tmux pane in ~/code/ledger-api (clone of thequantexplorer/ledger-api) before launching devin"
+  },
+  "0001.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0002.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0003.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0004.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0005.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0006.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0007.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0008.png": {
+   "kind": "still",
+   "source": "terminal",
+   "label": "cli-ready"
+  },
+  "0009.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0010.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0011.png": {
+   "kind": "still",
+   "source": "terminal",
+   "label": "accept-edits"
+  },
+  "0012.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0013.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0014.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0015.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0016.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0017.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0018.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0019.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0020.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0021.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0022.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0023.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0024.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0025.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0026.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0027.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0028.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0029.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0030.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0031.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0032.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0033.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0034.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0035.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0036.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0037.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0038.png": {
+   "kind": "still",
+   "source": "terminal",
+   "label": "prompt",
+   "what": "Real local prompt typed into Devin CLI: add GET /api/workspaces/:id/reports/overdue"
+  },
+  "0039.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0040.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0041.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0042.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0043.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0044.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0045.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0046.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0047.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0048.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0049.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0050.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0051.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0052.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0053.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0054.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0055.png": {
+   "kind": "poll",
+   "source": "terminal",
+   "what": "Local Devin reading files and editing src/routes/reports.js (+7)"
+  },
+  "0056.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0057.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0058.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0059.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0060.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0061.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0062.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0063.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0064.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0065.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0066.png": {
+   "kind": "still",
+   "source": "terminal",
+   "label": "ask-run",
+   "what": "Real permission prompt for Exec(npm test)"
+  },
+  "0067.png": {
+   "kind": "still",
+   "source": "terminal",
+   "label": "deny",
+   "what": "Deny selected: the local test run was declined so the cloud session would run it"
+  },
+  "0068.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0069.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0070.png": {
+   "kind": "still",
+   "source": "terminal",
+   "label": "local-done"
+  },
+  "0071.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0072.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0073.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0074.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0075.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0076.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0077.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0078.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0079.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0080.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0081.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0082.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0083.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0084.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0085.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0086.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0087.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0088.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0089.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0090.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0091.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0092.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0093.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0094.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0095.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0096.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0097.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0098.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0099.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0100.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0101.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0102.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0103.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0104.png": {
+   "kind": "type",
+   "source": "terminal"
+  },
+  "0105.png": {
+   "kind": "still",
+   "source": "terminal",
+   "label": "handoff-typed",
+   "what": "Real /handoff command typed with the remaining task"
+  },
+  "0106.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0107.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0108.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0109.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0110.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0111.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0112.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0113.png": {
+   "kind": "still",
+   "source": "terminal",
+   "label": "os",
+   "what": "Real \"Which OS should Devin continue in?\" picker; Ubuntu chosen"
+  },
+  "0114.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0115.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0116.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0117.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0118.png": {
+   "kind": "still",
+   "source": "terminal",
+   "label": "handed-off",
+   "what": "Real \"Handed task off to cloud Devin\" confirmation with session URL"
+  },
+  "0119.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0120.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0121.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0122.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0123.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0124.png": {
+   "kind": "poll",
+   "source": "terminal"
+  },
+  "0125.png": {
+   "kind": "still",
+   "source": "terminal",
+   "label": "after"
+  },
+  "0126.png": {
+   "kind": "still",
+   "source": "terminal",
+   "label": "preview-1",
+   "what": "Real Cloud agents preview (↓) showing the running cloud session"
+  },
+  "0127.png": {
+   "kind": "poll",
+   "source": "terminal",
+   "label": "preview"
+  },
+  "0128.png": {
+   "kind": "poll",
+   "source": "terminal",
+   "label": "preview"
+  },
+  "0129.png": {
+   "kind": "poll",
+   "source": "terminal",
+   "label": "preview"
+  },
+  "0130.png": {
+   "kind": "poll",
+   "source": "terminal",
+   "label": "preview"
+  },
+  "0131.png": {
+   "kind": "poll",
+   "source": "terminal",
+   "label": "preview"
+  },
+  "0132.png": {
+   "kind": "poll",
+   "source": "terminal",
+   "label": "preview"
+  },
+  "0133.png": {
+   "kind": "poll",
+   "source": "terminal",
+   "label": "preview"
+  },
+  "0134.png": {
+   "kind": "poll",
+   "source": "terminal",
+   "label": "preview"
+  },
+  "0135.png": {
+   "kind": "still",
+   "source": "web",
+   "label": "handoff-msg",
+   "what": "Cloud session in the Devin web app: the handoff message and changes_from_local_clone.diff attachment"
+  },
+  "0136.png": {
+   "kind": "hover",
+   "source": "web"
+  },
+  "0137.png": {
+   "kind": "click",
+   "source": "web",
+   "label": "diff-open",
+   "what": "The attached local diff opened in the session (reports.js +7, api.test.js +11)"
+  },
+  "0138.png": {
+   "kind": "still",
+   "source": "web",
+   "label": "plan",
+   "what": "Devin's plan message and the ledger-api#4 PR card"
+  },
+  "0139.png": {
+   "kind": "still",
+   "source": "web",
+   "label": "result",
+   "what": "Devin's report: npm test 7/7, CI passing, live endpoint check, separate export.csv finding"
+  },
+  "0140.png": {
+   "kind": "hover",
+   "source": "web"
+  },
+  "0141.png": {
+   "kind": "click",
+   "source": "web",
+   "label": "pr-description",
+   "what": "PR #4 Description tab in the session PR panel"
+  },
+  "0142.png": {
+   "kind": "hover",
+   "source": "web"
+  },
+  "0143.png": {
+   "kind": "click",
+   "source": "web",
+   "label": "pr-checks",
+   "what": "PR #4 Checks tab: 1 successful, 0 failed"
+  }
+ }
+}
