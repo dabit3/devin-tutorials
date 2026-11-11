@@ -33,7 +33,7 @@ async function openPage() {
   const page = await browser.newPage();
   await page.setViewport({ width: 3840, height: 2160, deviceScaleFactor: 1 });
   page.on('pageerror', e => { console.error('pageerror', e); process.exit(1); });
-  await page.goto(`http://127.0.0.1:${port}/_kit/src/index.html?v=${encodeURIComponent(VIDEO)}${process.env.VOICE ? '&voice=' + encodeURIComponent(process.env.VOICE) : ''}`, { waitUntil: 'load' });
+  await page.goto(`http://127.0.0.1:${port}/_kit/src/index.html?v=${encodeURIComponent(VIDEO)}${process.env.VOICE ? '&voice=' + encodeURIComponent(process.env.VOICE) : ''}${process.env.NOSUBS ? '&nosubs=1' : ''}`, { waitUntil: 'load' });
   await page.evaluate(() => window.film.ready);
   return page;
 }
