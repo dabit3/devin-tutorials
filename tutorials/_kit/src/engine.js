@@ -437,6 +437,8 @@ function drawOutro(f, p) {
 
 async function renderFrame(f) {
   ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.filter = 'none';
+  // SPEC.frame(f, kit): optional per-video frame layout (e.g. a silent reel that frames the UI and adds its own titles); captions, badges and cards are then up to it
+  if (SPEC.frame) return SPEC.frame(f, { ctx, W, H, FPS, VW, VH, TL, drawUI, drawBackdrop, drawLockup, font, spaced, spacedW, rr, clamp, lerp, prog, sec, eOut, eInOut, eOutQuint });
   const I = TL.introEnd, E = TL.enter, U = TL.uiEnd, O = TL.outro;
   if (f < I + E) {
     const out = prog(f, I - 6, I + E * 0.55);

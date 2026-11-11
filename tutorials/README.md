@@ -42,12 +42,17 @@
 | 76 | Devin CLI: what's new in v3000.11.92 (overview) | `76-cli-whats-new-overview/` |
 | 77 | Stack Clash: add a feature to a voice-driven game by voice | `77-stack-clash-voice/` |
 | 118 | Devin Desktop: Local, ACP and cloud sessions | `118-devin-desktop-cloud/` |
+| 120 | Devin feature reel (silent, 10 min) | `120-feature-reel/` |
 
 Each folder contains the final MP4, a poster frame, the `capture.mjs` script that drove the live app, the captured `shots/` (with `beats.json` describing cursor targets, clicks, typing, and captions), and `spec.js`, which edits those beats into the final film (holds, camera moves, captions, speed badges).
 
 ## Silent conference overview
 
 **35 · Meet Devin** (`35-conference-overview/`): 177.30-second silent overview of ten distinct capabilities. Individual large-type introductions, smooth title docking and complete interface framing without editorial crops. The genuine request → testing → finding → fix → retest story includes 53 seconds in Devin's actual live testing interface and six seconds of native recorded evidence. Pure white/grayscale/black with blue only. 4K60 and 1080p60. See [coverage, provenance and rebuild instructions](35-conference-overview/README.md).
+
+## Silent feature reel
+
+**120 · Devin feature reel** (`120-feature-reel/`): a 10-minute silent reel of 21 product features, cut from the raw shots of existing tutorials. It has no audio stream and no captions; the only on-screen text is the feature title above the UI. `segments.json` lists each feature's source spans, `reel.js` is the frame layout (plugged into the kit through `SPEC.frame`), and `node tools/render.mjs` renders every span, dissolves between them and writes the 4K60 master and a 1080p preview.
 
 ## How it works
 
