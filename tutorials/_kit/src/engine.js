@@ -110,7 +110,13 @@ function build() {
     // clip: '<name>' plays <video>/audio/<name>.wav from this beat in every cut (e.g. a recorded voice call)
     if (b.clip) tl.clips.push({ t, file: b.clip });
     if (b.hl && b.hl !== 'keep') for (const box of b.hl === true ? [b.hlBox || b.target] : [].concat(b.hl)) if (box && box.w) tl.hls.push({ t0: t + sec(b.hlDelay ?? 0.1), i, box, pad: box.pad ?? b.hlPad ?? 6 });
-    if (b.scene && !tl.scenes[b.img]) tl.scenes[b.img] = { name: b.scene, t0: t };
+    // sceneCont: continue the previous beat's scene (same t0); k.parts lists each continued beat's start in scene seconds
+    if (b.scene && !tl.scenes[b.img]) {
+      const prev = tl.lastScene;
+      if (b.sceneCont && prev && prev.name === b.scene) { prev.parts.push((t - prev.t0) / FPS); tl.scenes[b.img] = prev; }
+      else tl.scenes[b.img] = { name: b.scene, t0: t, parts: [0] };
+    }
+    tl.lastScene = b.scene ? tl.scenes[b.img] : null;
     const first = shown === null;
     if (b.kind === 'hover') {
       const tg = b.target || b.cur, d = Math.hypot(tg.x - cur.x, tg.y - cur.y);
@@ -221,7 +227,7 @@ async function drawShot(img, f) {
   if (!sc) return ctx.drawImage(await bitmap(shotURL(img)), 0, 0, VW, VH);
   const a = ctx.globalAlpha;
   ctx.save(); ctx.fillStyle = BG; ctx.fillRect(0, 0, VW, VH);
-  window.SCENES[sc.name](ctx, (f - sc.t0) / FPS, { VW, VH, INK, BG, DARK, AVATAR, LOCKUP, font, rr, spaced, spacedW, clamp, lerp, prog, eOut, eInOut, eOutQuint, alpha: a });
+  window.SCENES[sc.name](ctx, (f - sc.t0) / FPS, { VW, VH, INK, BG, DARK, AVATAR, LOCKUP, font, rr, spaced, spacedW, clamp, lerp, prog, eOut, eInOut, eOutQuint, alpha: a, parts: sc.parts || [0] });
   ctx.restore();
 }
 async function drawUI(f, alpha) {
@@ -389,6 +395,7 @@ async function placeCaptions() {
   }
 }
 function drawCaption(f) {
+  if (SPEC.noSubs) return; // SPEC.noSubs: render without captions or narration subtitles
   const k = lastBefore(TL.caps, f); if (!k) return;
   const idx = TL.caps.indexOf(k), prev = TL.caps[idx - 1];
   const draw = (c, a, dy) => {
