@@ -1,0 +1,3817 @@
+{
+ "0000.png": {
+  "text": "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+  "dur": 9.89,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 0.755,
+    "text": "In this video,"
+   },
+   {
+    "t0": 0.778,
+    "t1": 2.891,
+    "text": "one Devin sends the same desktop app bug"
+   },
+   {
+    "t0": 2.949,
+    "t1": 4.957,
+    "text": "to Linux, macOS and Windows."
+   },
+   {
+    "t0": 5.236,
+    "t1": 7.279,
+    "text": "A managed Devin on each system records the"
+   },
+   {
+    "t0": 7.326,
+    "t1": 9.89,
+    "text": "bug, and one fix gets verified on all three."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+  "dur": 8.643,
+  "takeAt": 10.097,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.083,
+    "text": "First, the environment."
+   },
+   {
+    "t0": 1.408,
+    "t1": 2.929,
+    "text": "I don't write any configuration."
+   },
+   {
+    "t0": 3.254,
+    "t1": 4.288,
+    "text": "I just ask Devin,"
+   },
+   {
+    "t0": 4.311,
+    "t1": 5.077,
+    "text": "in plain English,"
+   },
+   {
+    "t0": 5.193,
+    "t1": 6.493,
+    "text": "to set up the repo and build a"
+   },
+   {
+    "t0": 6.54,
+    "t1": 7.562,
+    "text": "snapshot for Linux,"
+   },
+   {
+    "t0": 7.596,
+    "t1": 8.643,
+    "text": "macOS and Windows."
+   }
+  ]
+ },
+ "0019.png": {
+  "text": "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+  "dur": 5.343,
+  "takeAt": 19.222,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.269,
+    "text": "Devin reads the repo,"
+   },
+   {
+    "t0": 1.316,
+    "t1": 2.976,
+    "text": "works out what the Tally app needs,"
+   },
+   {
+    "t0": 3.127,
+    "t1": 5.343,
+    "text": "and tries the setup on a Linux test machine."
+   }
+  ]
+ },
+ "0077.png": {
+  "text": "Before it tests macOS and Windows, it asks me to approve each test machine.",
+  "dur": 4.134,
+  "takeAt": 24.911,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.093,
+    "text": "Before it tests macOS and Windows,"
+   },
+   {
+    "t0": 2.244,
+    "t1": 4.134,
+    "text": "it asks me to approve each test machine."
+   }
+  ]
+ },
+ "0347.png": {
+  "text": "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+  "dur": 5.893,
+  "takeAt": 29.322,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.781,
+    "text": "Then it proposes the blueprint itself,"
+   },
+   {
+    "t0": 1.815,
+    "t1": 2.524,
+    "text": "with a Linux,"
+   },
+   {
+    "t0": 2.582,
+    "t1": 4.021,
+    "text": "macOS and Windows section."
+   },
+   {
+    "t0": 4.463,
+    "t1": 5.893,
+    "text": "I review it and click Approve."
+   }
+  ]
+ },
+ "0420.png": {
+  "text": "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+  "dur": 8.128,
+  "takeAt": 35.522,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.978,
+    "text": "The Windows build used Node 20,"
+   },
+   {
+    "t0": 2.303,
+    "t1": 4.439,
+    "text": "which is too old for this version of Electron."
+   },
+   {
+    "t0": 5.043,
+    "t1": 7.133,
+    "text": "Devin offers to test a Node 22 fix,"
+   },
+   {
+    "t0": 7.156,
+    "t1": 8.128,
+    "text": "and I pick that option."
+   }
+  ]
+ },
+ "0545.png": {
+  "text": "The Windows test machine never comes up.",
+  "dur": 1.775,
+  "takeAt": 43.835,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.051,
+    "t1": 1.775,
+    "text": "The Windows test machine never comes up."
+   }
+  ]
+ },
+ "0548.png": {
+  "text": "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+  "dur": 4.602,
+  "takeAt": 45.948,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.444,
+    "text": "So I reply in plain English,"
+   },
+   {
+    "t0": 1.467,
+    "t1": 2.779,
+    "text": "and ask it to check the fix with"
+   },
+   {
+    "t0": 2.814,
+    "t1": 4.602,
+    "text": "a managed Devin on Windows instead."
+   }
+  ]
+ },
+ "0561.png": {
+  "text": "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+  "dur": 5.717,
+  "takeAt": 50.883,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.093,
+    "text": "It starts a managed Devin on Windows,"
+   },
+   {
+    "t0": 2.209,
+    "t1": 3.87,
+    "text": "which installs Node 22,"
+   },
+   {
+    "t0": 4.079,
+    "t1": 5.717,
+    "text": "runs the tests and clicks through the app."
+   }
+  ]
+ },
+ "0661.png": {
+  "text": "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+  "dur": 4.745,
+  "takeAt": 56.885,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.062,
+    "t1": 1.769,
+    "text": "Then it proposes the Windows update,"
+   },
+   {
+    "t0": 1.792,
+    "t1": 2.547,
+    "text": "and I approve it."
+   },
+   {
+    "t0": 2.872,
+    "t1": 4.745,
+    "text": "Approving it rebuilds the snapshots."
+   }
+  ]
+ },
+ "0769.png": {
+  "text": "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+  "dur": 6.633,
+  "takeAt": 62.017,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.002,
+    "text": "After the rebuild,"
+   },
+   {
+    "t0": 1.025,
+    "t1": 3.115,
+    "text": "the active snapshots show Ubuntu,"
+   },
+   {
+    "t0": 3.324,
+    "t1": 4.613,
+    "text": "macOS and Windows,"
+   },
+   {
+    "t0": 4.787,
+    "t1": 6.633,
+    "text": "and I never typed a line of configuration."
+   }
+  ]
+ },
+ "0773.png": {
+  "text": "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+  "dur": 7.594,
+  "takeAt": 68.936,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.303,
+    "text": "The platform picker under the prompt box offers"
+   },
+   {
+    "t0": 2.338,
+    "t1": 3.058,
+    "text": "the same three."
+   },
+   {
+    "t0": 3.499,
+    "t1": 5.438,
+    "text": "I'm leaving it on Ubuntu for the coordinator,"
+   },
+   {
+    "t0": 5.554,
+    "t1": 7.594,
+    "text": "because it starts the other platforms itself."
+   }
+  ]
+ },
+ "0780.png": {
+  "text": "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+  "dur": 13.004,
+  "takeAt": 76.866,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.921,
+    "text": "Now the prompt."
+   },
+   {
+    "t0": 1.037,
+    "t1": 2.849,
+    "text": "I describe the bug in the Tally desktop"
+   },
+   {
+    "t0": 2.93,
+    "t1": 5.159,
+    "text": "app, and ask for three managed Devins,"
+   },
+   {
+    "t0": 5.403,
+    "t1": 6.482,
+    "text": "one each on Linux,"
+   },
+   {
+    "t0": 6.541,
+    "t1": 7.829,
+    "text": "macOS and Windows,"
+   },
+   {
+    "t0": 7.98,
+    "t1": 9.675,
+    "text": "to reproduce it and send a recording."
+   },
+   {
+    "t0": 9.919,
+    "t1": 11.568,
+    "text": "Then one fix in one PR,"
+   },
+   {
+    "t0": 11.846,
+    "t1": 13.004,
+    "text": "verified on all three."
+   }
+  ]
+ },
+ "0799.png": {
+  "text": "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+  "dur": 5.655,
+  "takeAt": 90.215,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.053,
+    "t1": 1.934,
+    "text": "The coordinator finds the cause in Reset,"
+   },
+   {
+    "t0": 1.957,
+    "t1": 4.023,
+    "text": "and starts three managed Devins on main,"
+   },
+   {
+    "t0": 4.232,
+    "t1": 5.655,
+    "text": "one for each operating system."
+   }
+  ]
+ },
+ "0839.png": {
+  "text": "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+  "dur": 4.608,
+  "takeAt": 96.162,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.478,
+    "text": "While they reproduce the bug,"
+   },
+   {
+    "t0": 1.525,
+    "t1": 3.034,
+    "text": "it writes the fix and opens a pull"
+   },
+   {
+    "t0": 3.092,
+    "t1": 4.608,
+    "text": "request with a new unit test."
+   }
+  ]
+ },
+ "0882.png": {
+  "text": "The Agents tab lists all three children, and each one is done.",
+  "dur": 3.397,
+  "takeAt": 101.003,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.245,
+    "text": "The Agents tab lists all three children,"
+   },
+   {
+    "t0": 2.395,
+    "t1": 3.397,
+    "text": "and each one is done."
+   }
+  ]
+ },
+ "0883.png": {
+  "text": "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+  "dur": 6.758,
+  "takeAt": 104.672,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.536,
+    "text": "Open a child to see its work."
+   },
+   {
+    "t0": 2.047,
+    "t1": 3.788,
+    "text": "On Linux, the count goes back to zero"
+   },
+   {
+    "t0": 3.858,
+    "t1": 6.758,
+    "text": "after Reset, but the old history entries are still there."
+   }
+  ]
+ },
+ "0884.png": {
+  "text": "Each Devin attaches a recording of the repro to its message.",
+  "dur": 3.105,
+  "takeAt": 111.835,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.039,
+    "t1": 2.268,
+    "text": "Each Devin attaches a recording of the repro"
+   },
+   {
+    "t0": 2.349,
+    "t1": 3.092,
+    "text": "to its message."
+   }
+  ]
+ },
+ "0887.png": {
+  "text": "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+  "dur": 6.31,
+  "takeAt": 115.295,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.073,
+    "t1": 2.581,
+    "text": "The recording viewer plays the run and lists each check."
+   },
+   {
+    "t0": 2.906,
+    "t1": 4.056,
+    "text": "The precondition passes,"
+   },
+   {
+    "t0": 4.079,
+    "t1": 5.402,
+    "text": "and the Reset check fails,"
+   },
+   {
+    "t0": 5.577,
+    "t1": 6.31,
+    "text": "which is the bug."
+   }
+  ]
+ },
+ "0909.png": {
+  "text": "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+  "dur": 7.217,
+  "takeAt": 121.913,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.06,
+    "text": "Once the fix is up,"
+   },
+   {
+    "t0": 1.083,
+    "t1": 3.44,
+    "text": "the coordinator sends the branch back to each child."
+   },
+   {
+    "t0": 3.765,
+    "t1": 5.635,
+    "text": "Linux records again on the fix branch,"
+   },
+   {
+    "t0": 5.658,
+    "t1": 7.217,
+    "text": "and this time every check passes."
+   }
+  ]
+ },
+ "0951.png": {
+  "text": "macOS shows the same bug on main, and every check passes on the fix branch.",
+  "dur": 3.865,
+  "takeAt": 129.405,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.105,
+    "t1": 1.881,
+    "text": "macOS shows the same bug on main,"
+   },
+   {
+    "t0": 1.904,
+    "t1": 3.865,
+    "text": "and every check passes on the fix branch."
+   }
+  ]
+ },
+ "0997.png": {
+  "text": "Windows tells the same story, with the bug on main and every check passing on the fix.",
+  "dur": 4.245,
+  "takeAt": 133.625,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.076,
+    "t1": 1.62,
+    "text": "Windows tells the same story,"
+   },
+   {
+    "t0": 1.713,
+    "t1": 3.199,
+    "text": "with the bug on main and every check"
+   },
+   {
+    "t0": 3.269,
+    "t1": 4.245,
+    "text": "passing on the fix."
+   }
+  ]
+ },
+ "1030.png": {
+  "text": "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+  "dur": 5.447,
+  "takeAt": 138.283,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.131,
+    "text": "Back in the coordinator,"
+   },
+   {
+    "t0": 1.154,
+    "t1": 2.338,
+    "text": "the diff shows the fix."
+   },
+   {
+    "t0": 2.512,
+    "t1": 4.01,
+    "text": "Reset now clears the history,"
+   },
+   {
+    "t0": 4.033,
+    "t1": 5.447,
+    "text": "instead of adding an entry to it."
+   }
+  ]
+ },
+ "1027.png": {
+  "text": "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+  "dur": 8.415,
+  "takeAt": 143.975,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.059,
+    "t1": 1.429,
+    "text": "Its summary confirms it."
+   },
+   {
+    "t0": 1.87,
+    "t1": 4.727,
+    "text": "Linux, macOS and Windows each reproduced the bug"
+   },
+   {
+    "t0": 4.785,
+    "t1": 6.827,
+    "text": "on main, then confirmed the fix on the"
+   },
+   {
+    "t0": 6.874,
+    "t1": 8.415,
+    "text": "PR branch with a new recording."
+   }
+  ]
+ },
+ "outro": {
+  "text": "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+  "dur": 4.885,
+  "takeAt": 152.675,
+  "mode": "single-take-1",
+  "take": [
+   [
+    "0000.png",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three.",
+    "In this video, one Devin sends the same desktop app bug to Linux, macOS and Windows. A managed Devin on each system records the bug, and one fix gets verified on all three."
+   ],
+   [
+    "0007.png",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows.",
+    "First, the environment. I don't write any configuration. I just ask Devin, in plain English, to set up the repo and build a snapshot for Linux, macOS and Windows."
+   ],
+   [
+    "0019.png",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine.",
+    "Devin reads the repo, works out what the Tally app needs, and tries the setup on a Linux test machine."
+   ],
+   [
+    "0077.png",
+    "Before it tests macOS and Windows, it asks me to approve each test machine.",
+    "Before it tests macOS and Windows, it asks me to approve each test machine."
+   ],
+   [
+    "0347.png",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve.",
+    "Then it proposes the blueprint itself, with a Linux, macOS and Windows section. I review it and click Approve."
+   ],
+   [
+    "0420.png",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option.",
+    "The Windows build used Node 20, which is too old for this version of Electron. Devin offers to test a Node 22 fix, and I pick that option."
+   ],
+   [
+    "0545.png",
+    "The Windows test machine never comes up.",
+    "The Windows test machine never comes up."
+   ],
+   [
+    "0548.png",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead.",
+    "So I reply in plain English, and ask it to check the fix with a managed Devin on Windows instead."
+   ],
+   [
+    "0561.png",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app.",
+    "It starts a managed Devin on Windows, which installs Node 22, runs the tests and clicks through the app."
+   ],
+   [
+    "0661.png",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots.",
+    "Then it proposes the Windows update, and I approve it. Approving it rebuilds the snapshots."
+   ],
+   [
+    "0769.png",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration.",
+    "After the rebuild, the active snapshots show Ubuntu, macOS and Windows, and I never typed a line of configuration."
+   ],
+   [
+    "0773.png",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself.",
+    "The platform picker under the prompt box offers the same three. I'm leaving it on Ubuntu for the coordinator, because it starts the other platforms itself."
+   ],
+   [
+    "0780.png",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three.",
+    "Now the prompt. I describe the bug in the Tally desktop app, and ask for three managed Devins, one each on Linux, macOS and Windows, to reproduce it and send a recording. Then one fix in one PR, verified on all three."
+   ],
+   [
+    "0799.png",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system.",
+    "The coordinator finds the cause in Reset, and starts three managed Devins on main, one for each operating system."
+   ],
+   [
+    "0839.png",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test.",
+    "While they reproduce the bug, it writes the fix and opens a pull request with a new unit test."
+   ],
+   [
+    "0882.png",
+    "The Agents tab lists all three children, and each one is done.",
+    "The Agents tab lists all three children, and each one is done."
+   ],
+   [
+    "0883.png",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there.",
+    "Open a child to see its work. On Linux, the count goes back to zero after Reset, but the old history entries are still there."
+   ],
+   [
+    "0884.png",
+    "Each Devin attaches a recording of the repro to its message.",
+    "Each Devin attaches a recording of the repro to its message."
+   ],
+   [
+    "0887.png",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug.",
+    "The recording viewer plays the run and lists each check. The precondition passes, and the Reset check fails, which is the bug."
+   ],
+   [
+    "0909.png",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes.",
+    "Once the fix is up, the coordinator sends the branch back to each child. Linux records again on the fix branch, and this time every check passes."
+   ],
+   [
+    "0951.png",
+    "macOS shows the same bug on main, and every check passes on the fix branch.",
+    "macOS shows the same bug on main, and every check passes on the fix branch."
+   ],
+   [
+    "0997.png",
+    "Windows tells the same story, with the bug on main and every check passing on the fix.",
+    "Windows tells the same story, with the bug on main and every check passing on the fix."
+   ],
+   [
+    "1030.png",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it.",
+    "Back in the coordinator, the diff shows the fix. Reset now clears the history, instead of adding an entry to it."
+   ],
+   [
+    "1027.png",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording.",
+    "Its summary confirms it. Linux, macOS and Windows each reproduced the bug on main, then confirmed the fix on the PR branch with a new recording."
+   ],
+   [
+    "outro",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them.",
+    "That's how you set up three operating systems in plain English, and have Devin fix one bug on all of them."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.032,
+    "t1": 1.878,
+    "text": "That's how you set up three operating systems"
+   },
+   {
+    "t0": 1.912,
+    "t1": 2.69,
+    "text": "in plain English,"
+   },
+   {
+    "t0": 2.841,
+    "t1": 4.885,
+    "text": "and have Devin fix one bug on all of them."
+   }
+  ]
+ }
+}
