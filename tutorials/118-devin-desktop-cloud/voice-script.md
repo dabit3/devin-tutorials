@@ -8,7 +8,7 @@ Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`), model `eleven_multilingual_v2` (kit defau
 | 0004.png | First, let's look at Local. Devin Local lets you code on your local filesystem. |
 | 0009.png | You can also pick a different agent. Desktop supports ACP, so agents like Claude Agent and Codex plug right in. |
 | 0011.png | Next, pick a model. There's Claude, GPT, Gemini, and more, including Cognition's own SWE family of models. |
-| 0014.png | Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick. |
+| 0014.png | Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick. You keep frontier-level intelligence, at up to 60% lower cost. |
 | 0018.png | The mode sets what needs your approval. |
 | 0020.png | Smart approves the actions the model judges safe. |
 | 0022.png | Ask just answers questions. It won't change code. |
@@ -39,5 +39,11 @@ Voice: Nader (`T8iHhGIWPm2GVYpQD1Am`), model `eleven_multilingual_v2` (kit defau
 | 0265.png | With Local Hands, a cloud session can work on your computer, too. Here it runs the tests on this machine. |
 | 0279.png | You approve access once. After that, each local command still waits for you. |
 | 0284.png | All nine tests pass on this machine, too. |
+| 0338.png | Cloud sessions can run on macOS, too. |
+| 0355.png | Here Devin opens Safari on its own Mac. |
+| 0358.png | And Computer shows its macOS desktop. |
+| 0360.png | Devin can also split up the work. |
+| 0385.png | Ask for sub-Devins, and they run in parallel, each in its own session. |
+| 0390.png | Open the sidebar, and every session is in one list. Local and cloud, side by side. |
 | 0296.png | Prefer an editor? The same menu switches to the IDE view. |
 | outro | Build on your machine or in the cloud, with Devin Desktop. |

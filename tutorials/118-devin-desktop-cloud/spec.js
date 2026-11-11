@@ -1,6 +1,6 @@
 window.SPEC = {
  "title": "Devin Desktop",
- "subtitle": "Devin Local, ACP agents and cloud machines",
+ "subtitle": "The Agent Development Environment for local and cloud agents",
  "outro": "Build locally or in the cloud with Devin Desktop",
  "voOutro": "Build on your machine or in the cloud, with Devin Desktop.",
  "speed": 3,
@@ -55,9 +55,20 @@ window.SPEC = {
    "vo": "Next, pick a model. There's Claude, GPT, Gemini, and more, including Cognition's own SWE family of models.",
    "subPos": "bottom"
   },
-  "0014.png": {
-   "vo": "Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick.",
+  "0013.png": {
+   "vo": "Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick. You keep frontier-level intelligence, at up to 60% lower cost.",
+   "voSay": "Or choose Fusion. It pairs a frontier lead model with a cheaper, faster sidekick. You keep frontier-level intelligence, at up to sixty percent lower cost.",
    "subPos": "bottom"
+  },
+  "0014.png": {
+   "waitVo": true,
+   "hold": 0.5
+  },
+  "0015.png": {
+   "hold": 0.4
+  },
+  "0017.png": {
+   "hold": 0.3
   },
   "0018.png": {
    "vo": "The mode sets what needs your approval.",
@@ -497,11 +508,19 @@ window.SPEC = {
    "hold": 2.2
   },
   "0237.png": {
-   "vo": "You can also point at any element. Describe a change, and send it to Devin as context."
+   "vo": "You can also point at any element. Describe a change, and send it to Devin as context.",
+   "subPos": {
+    "x": 0.77,
+    "y": 0.5
+   }
   },
   "0240.png": {
    "vo": "Here I ask for the total page count, and send it along.",
-   "hold": 1.4
+   "hold": 1.4,
+   "subPos": {
+    "x": 0.77,
+    "y": 0.5
+   }
   },
   "0249.png": {
    "vo": "The Changes tab shows every edit, file by file."
@@ -600,7 +619,22 @@ window.SPEC = {
    "vo": "Prefer an editor? The same menu switches to the IDE view."
   },
   "0299.png": {
-   "hold": 3
+   "hold": 2.5
+  },
+  "0300.png": {
+   "skip": true
+  },
+  "0301.png": {
+   "skip": true
+  },
+  "0302.png": {
+   "skip": true
+  },
+  "0303.png": {
+   "skip": true
+  },
+  "0304.png": {
+   "skip": true
   },
   "0328.png": {
    "subPos": {
@@ -662,7 +696,100 @@ window.SPEC = {
     "y": 0.9
    },
    "hold": 2.4
+  },
+  "0338.png": {
+   "vo": "Cloud sessions can run on macOS, too."
+  },
+  "0347.png": {
+   "cps": 60
+  },
+  "0348.png": {
+   "cps": 60
+  },
+  "0349.png": {
+   "cps": 60
+  },
+  "0350.png": {
+   "cps": 60
+  },
+  "0351.png": {
+   "cps": 60
+  },
+  "0352.png": {
+   "cps": 60
+  },
+  "0353.png": {
+   "cps": 60
+  },
+  "0355.png": {
+   "vo": "Here Devin opens Safari on its own Mac."
+  },
+  "0358.png": {
+   "vo": "And Computer shows its macOS desktop."
+  },
+  "0359.png": {
+   "hold": 2.5
+  },
+  "0360.png": {
+   "vo": "Devin can also split up the work.",
+   "kind": "",
+   "hold": 0.6
+  },
+  "0361.png": {
+   "skip": true
+  },
+  "0362.png": {
+   "skip": true
+  },
+  "0363.png": {
+   "skip": true
+  },
+  "0364.png": {
+   "skip": true
+  },
+  "0365.png": {
+   "skip": true
+  },
+  "0366.png": {
+   "skip": true
+  },
+  "0367.png": {
+   "skip": true
+  },
+  "0368.png": {
+   "skip": true
+  },
+  "0385.png": {
+   "vo": "Ask for sub-Devins, and they run in parallel, each in its own session."
+  },
+  "0389.png": {
+   "hold": 1.5
+  },
+  "0390.png": {
+   "vo": "Open the sidebar, and every session is in one list. Local and cloud, side by side."
+  },
+  "0393.png": {
+   "hold": 1.2
+  },
+  "0394.png": {
+   "skip": true
+  },
+  "0395.png": {
+   "skip": true
+  },
+  "0396.png": {
+   "skip": true
+  },
+  "0397.png": {
+   "skip": true
+  },
+  "0398.png": {
+   "skip": true
+  },
+  "0399.png": {
+   "skip": true
   }
  },
- "musicStart": 16.15
+ "musicStart": 16.15,
+ "introSfx": false
 };
