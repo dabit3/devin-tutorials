@@ -1,0 +1,80 @@
+{
+ "0005.png": {
+  "kind": "animated-diagram",
+  "source": "97-devin-can-fix-red-ci/scenes.js",
+  "scene": "title",
+  "note": "Blank placeholder; the beat is drawn by the scene."
+ },
+ "0010.png": {
+  "kind": "animated-diagram",
+  "source": "97-devin-can-fix-red-ci/scenes.js",
+  "scene": "flow",
+  "note": "Blank placeholder; the beat is drawn by the scene."
+ },
+ "0040.png": {
+  "kind": "animated-diagram",
+  "source": "97-devin-can-fix-red-ci/scenes.js",
+  "scene": "session",
+  "note": "Blank placeholder; the beat is drawn by the scene."
+ },
+ "0060.png": {
+  "kind": "animated-diagram",
+  "source": "97-devin-can-fix-red-ci/scenes.js",
+  "scene": "control",
+  "note": "Blank placeholder; the beat is drawn by the scene."
+ },
+ "0020.png": {
+  "kind": "real-ui",
+  "source": "Fresh capture by capture.mjs in the thequantexplorer org (2026-10-30), account email masked; demo app thequantexplorer/product-demo-apps/dc97-checkout-api, workflow dc97-ci.",
+  "phase": "form, raw shot 0048",
+  "proves": "Automation dc97-fix-red-ci being created by hand: GitHub Check run trigger on product-demo-apps with Action = Completed, Conclusion = Failure, Check name = checkout-api tests."
+ },
+ "0021.png": {
+  "kind": "real-ui",
+  "source": "Fresh capture by capture.mjs in the thequantexplorer org (2026-10-30), account email masked; demo app thequantexplorer/product-demo-apps/dc97-checkout-api, workflow dc97-ci.",
+  "phase": "form, raw shot 0052",
+  "proves": "Plain-English instructions pasted into the automation (Start new session)."
+ },
+ "0030.png": {
+  "kind": "real-ui",
+  "source": "Fresh capture by capture.mjs in the thequantexplorer org (2026-10-30), account email masked; demo app thequantexplorer/product-demo-apps/dc97-checkout-api, workflow dc97-ci.",
+  "phase": "live, raw shot 0060",
+  "proves": "Devin Review page for product-demo-apps PR #120 (dc97-free-shipping): Checks 0/1, red, after the push broke the checkout-api tests."
+ },
+ "0031.png": {
+  "kind": "real-ui",
+  "source": "Fresh capture by capture.mjs in the thequantexplorer org (2026-10-30), account email masked; demo app thequantexplorer/product-demo-apps/dc97-checkout-api, workflow dc97-ci.",
+  "phase": "live, raw shot 0061",
+  "proves": "The automation's Events list: 'Completed checkout-api tests: failure' with View session, fired without a prompt."
+ },
+ "0041.png": {
+  "kind": "real-ui",
+  "source": "Fresh capture by capture.mjs in the thequantexplorer org (2026-10-30), account email masked; demo app thequantexplorer/product-demo-apps/dc97-checkout-api, workflow dc97-ci.",
+  "phase": "live, raw shot 0064",
+  "proves": "The session the automation started (Fix checkout-api tests): event payload, then pulling the branch and running gh run view --log-failed."
+ },
+ "0042.png": {
+  "kind": "real-ui",
+  "source": "Fresh capture by capture.mjs in the thequantexplorer org (2026-10-30), account email masked; demo app thequantexplorer/product-demo-apps/dc97-checkout-api, workflow dc97-ci.",
+  "phase": "live, raw shot 0075",
+  "proves": "Same session: npm test, a one-line sed fix to pricing.js, tests again, commit and push to dc97-free-shipping."
+ },
+ "0043.png": {
+  "kind": "real-ui",
+  "source": "Fresh capture by capture.mjs in the thequantexplorer org (2026-10-30), account email masked; demo app thequantexplorer/product-demo-apps/dc97-checkout-api, workflow dc97-ci.",
+  "phase": "live, raw shot 0090",
+  "proves": "Same session's final message: cause (cents compared with 150) and fix (FREE_SHIPPING_MIN_CENTS), commit 760dfc1."
+ },
+ "0050.png": {
+  "kind": "real-ui",
+  "source": "Fresh capture by capture.mjs in the thequantexplorer org (2026-10-30), account email masked; demo app thequantexplorer/product-demo-apps/dc97-checkout-api, workflow dc97-ci.",
+  "phase": "green, raw shot 0091",
+  "proves": "PR #120 back in Devin Review: Checks 1/1, green, Commits 2."
+ },
+ "_run": {
+  "automation": "dc97-fix-red-ci (deleted after capture)",
+  "pr": "https://github.com/thequantexplorer/product-demo-apps/pull/120 (closed unmerged, branch deleted)",
+  "session": "https://app.devin.ai/sessions/8c1a586398c74d47ace61b4499130c03",
+  "fix_commit": "760dfc1 by Devin (devin-ai-integration[bot])"
+ }
+}
