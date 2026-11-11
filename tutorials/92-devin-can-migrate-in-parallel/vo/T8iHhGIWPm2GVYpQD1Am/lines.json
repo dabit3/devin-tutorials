@@ -1,0 +1,913 @@
+{
+ "0000.png": {
+  "text": "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another.",
+  "dur": 11.03,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another.",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another."
+   ],
+   [
+    "0001.png",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM.",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM."
+   ],
+   [
+    "0002.png",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary.",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary."
+   ],
+   [
+    "0003.png",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that.",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that."
+   ],
+   [
+    "0004.png",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications.",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications."
+   ],
+   [
+    "0006.png",
+    "A couple of minutes later, every one of them has a pull request open.",
+    "A couple of minutes later, every one of them has a pull request open."
+   ],
+   [
+    "0007.png",
+    "In the sidebar, all four sit nested under the coordinator.",
+    "In the sidebar, all four sit nested under the coordinator."
+   ],
+   [
+    "0008.png",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing.",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing."
+   ],
+   [
+    "0009.png",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing.",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing."
+   ],
+   [
+    "0010.png",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session.",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session."
+   ],
+   [
+    "outro",
+    "One request in, one pull request per service out.",
+    "One request in, one pull request per service out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.473,
+    "text": "Devin can run a codebase-wide migration as a"
+   },
+   {
+    "t0": 2.531,
+    "t1": 3.402,
+    "text": "fleet of Devins."
+   },
+   {
+    "t0": 3.727,
+    "t1": 7.291,
+    "text": "A migration like CommonJS to ES modules touches"
+   },
+   {
+    "t0": 7.349,
+    "t1": 9.927,
+    "text": "every service, and by hand that means one"
+   },
+   {
+    "t0": 9.973,
+    "t1": 11.03,
+    "text": "service after another."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM.",
+  "dur": 8.74,
+  "takeAt": 11.42,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another.",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another."
+   ],
+   [
+    "0001.png",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM.",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM."
+   ],
+   [
+    "0002.png",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary.",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary."
+   ],
+   [
+    "0003.png",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that.",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that."
+   ],
+   [
+    "0004.png",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications.",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications."
+   ],
+   [
+    "0006.png",
+    "A couple of minutes later, every one of them has a pull request open.",
+    "A couple of minutes later, every one of them has a pull request open."
+   ],
+   [
+    "0007.png",
+    "In the sidebar, all four sit nested under the coordinator.",
+    "In the sidebar, all four sit nested under the coordinator."
+   ],
+   [
+    "0008.png",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing.",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing."
+   ],
+   [
+    "0009.png",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing.",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing."
+   ],
+   [
+    "0010.png",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session.",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session."
+   ],
+   [
+    "outro",
+    "One request in, one pull request per service out.",
+    "One request in, one pull request per service out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.119,
+    "text": "With managed Devins,"
+   },
+   {
+    "t0": 1.142,
+    "t1": 2.361,
+    "text": "you send one request,"
+   },
+   {
+    "t0": 2.512,
+    "t1": 5.066,
+    "text": "and a coordinator splits it into independent pieces,"
+   },
+   {
+    "t0": 5.24,
+    "t1": 7.411,
+    "text": "starting one managed Devin per service,"
+   },
+   {
+    "t0": 7.69,
+    "t1": 8.74,
+    "text": "each on its own VM."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary.",
+  "dur": 8.606,
+  "takeAt": 20.604,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another.",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another."
+   ],
+   [
+    "0001.png",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM.",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM."
+   ],
+   [
+    "0002.png",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary.",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary."
+   ],
+   [
+    "0003.png",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that.",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that."
+   ],
+   [
+    "0004.png",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications.",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications."
+   ],
+   [
+    "0006.png",
+    "A couple of minutes later, every one of them has a pull request open.",
+    "A couple of minutes later, every one of them has a pull request open."
+   ],
+   [
+    "0007.png",
+    "In the sidebar, all four sit nested under the coordinator.",
+    "In the sidebar, all four sit nested under the coordinator."
+   ],
+   [
+    "0008.png",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing.",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing."
+   ],
+   [
+    "0009.png",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing.",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing."
+   ],
+   [
+    "0010.png",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session.",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session."
+   ],
+   [
+    "outro",
+    "One request in, one pull request per service out.",
+    "One request in, one pull request per service out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.803,
+    "text": "Each one works on its own branch,"
+   },
+   {
+    "t0": 1.977,
+    "t1": 3.905,
+    "text": "keeps that service's tests passing,"
+   },
+   {
+    "t0": 4.055,
+    "t1": 5.785,
+    "text": "and opens its own pull request,"
+   },
+   {
+    "t0": 5.936,
+    "t1": 8.606,
+    "text": "while the coordinator tracks them and compiles one summary."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "Here's a real run on a small store backend with four Node services, asking for exactly that.",
+  "dur": 4.773,
+  "takeAt": 29.497,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another.",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another."
+   ],
+   [
+    "0001.png",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM.",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM."
+   ],
+   [
+    "0002.png",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary.",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary."
+   ],
+   [
+    "0003.png",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that.",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that."
+   ],
+   [
+    "0004.png",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications.",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications."
+   ],
+   [
+    "0006.png",
+    "A couple of minutes later, every one of them has a pull request open.",
+    "A couple of minutes later, every one of them has a pull request open."
+   ],
+   [
+    "0007.png",
+    "In the sidebar, all four sit nested under the coordinator.",
+    "In the sidebar, all four sit nested under the coordinator."
+   ],
+   [
+    "0008.png",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing.",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing."
+   ],
+   [
+    "0009.png",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing.",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing."
+   ],
+   [
+    "0010.png",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session.",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session."
+   ],
+   [
+    "outro",
+    "One request in, one pull request per service out.",
+    "One request in, one pull request per service out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.641,
+    "text": "Here's a real run on a small store"
+   },
+   {
+    "t0": 1.676,
+    "t1": 3.336,
+    "text": "backend with four Node services,"
+   },
+   {
+    "t0": 3.545,
+    "t1": 4.773,
+    "text": "asking for exactly that."
+   }
+  ]
+ },
+ "0004.png": {
+  "text": "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications.",
+  "dur": 6.975,
+  "takeAt": 34.555,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another.",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another."
+   ],
+   [
+    "0001.png",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM.",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM."
+   ],
+   [
+    "0002.png",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary.",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary."
+   ],
+   [
+    "0003.png",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that.",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that."
+   ],
+   [
+    "0004.png",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications.",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications."
+   ],
+   [
+    "0006.png",
+    "A couple of minutes later, every one of them has a pull request open.",
+    "A couple of minutes later, every one of them has a pull request open."
+   ],
+   [
+    "0007.png",
+    "In the sidebar, all four sit nested under the coordinator.",
+    "In the sidebar, all four sit nested under the coordinator."
+   ],
+   [
+    "0008.png",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing.",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing."
+   ],
+   [
+    "0009.png",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing.",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing."
+   ],
+   [
+    "0010.png",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session.",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session."
+   ],
+   [
+    "outro",
+    "One request in, one pull request per service out.",
+    "One request in, one pull request per service out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.066,
+    "t1": 1.61,
+    "text": "The coordinator reads the repo,"
+   },
+   {
+    "t0": 1.761,
+    "t1": 3.549,
+    "text": "then starts four managed Devins,"
+   },
+   {
+    "t0": 3.758,
+    "t1": 4.837,
+    "text": "one each for orders,"
+   },
+   {
+    "t0": 4.895,
+    "t1": 6.975,
+    "text": "payments, inventory, and notifications."
+   }
+  ]
+ },
+ "0006.png": {
+  "text": "A couple of minutes later, every one of them has a pull request open.",
+  "dur": 3.212,
+  "takeAt": 42.128,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another.",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another."
+   ],
+   [
+    "0001.png",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM.",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM."
+   ],
+   [
+    "0002.png",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary.",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary."
+   ],
+   [
+    "0003.png",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that.",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that."
+   ],
+   [
+    "0004.png",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications.",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications."
+   ],
+   [
+    "0006.png",
+    "A couple of minutes later, every one of them has a pull request open.",
+    "A couple of minutes later, every one of them has a pull request open."
+   ],
+   [
+    "0007.png",
+    "In the sidebar, all four sit nested under the coordinator.",
+    "In the sidebar, all four sit nested under the coordinator."
+   ],
+   [
+    "0008.png",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing.",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing."
+   ],
+   [
+    "0009.png",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing.",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing."
+   ],
+   [
+    "0010.png",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session.",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session."
+   ],
+   [
+    "outro",
+    "One request in, one pull request per service out.",
+    "One request in, one pull request per service out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.235,
+    "text": "A couple of minutes later,"
+   },
+   {
+    "t0": 1.281,
+    "t1": 3.212,
+    "text": "every one of them has a pull request open."
+   }
+  ]
+ },
+ "0007.png": {
+  "text": "In the sidebar, all four sit nested under the coordinator.",
+  "dur": 3.015,
+  "takeAt": 45.775,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another.",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another."
+   ],
+   [
+    "0001.png",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM.",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM."
+   ],
+   [
+    "0002.png",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary.",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary."
+   ],
+   [
+    "0003.png",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that.",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that."
+   ],
+   [
+    "0004.png",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications.",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications."
+   ],
+   [
+    "0006.png",
+    "A couple of minutes later, every one of them has a pull request open.",
+    "A couple of minutes later, every one of them has a pull request open."
+   ],
+   [
+    "0007.png",
+    "In the sidebar, all four sit nested under the coordinator.",
+    "In the sidebar, all four sit nested under the coordinator."
+   ],
+   [
+    "0008.png",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing.",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing."
+   ],
+   [
+    "0009.png",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing.",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing."
+   ],
+   [
+    "0010.png",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session.",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session."
+   ],
+   [
+    "outro",
+    "One request in, one pull request per service out.",
+    "One request in, one pull request per service out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.015,
+    "t1": 0.897,
+    "text": "In the sidebar,"
+   },
+   {
+    "t0": 0.92,
+    "t1": 3.015,
+    "text": "all four sit nested under the coordinator."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing.",
+  "dur": 6.531,
+  "takeAt": 49.199,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another.",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another."
+   ],
+   [
+    "0001.png",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM.",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM."
+   ],
+   [
+    "0002.png",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary.",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary."
+   ],
+   [
+    "0003.png",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that.",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that."
+   ],
+   [
+    "0004.png",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications.",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications."
+   ],
+   [
+    "0006.png",
+    "A couple of minutes later, every one of them has a pull request open.",
+    "A couple of minutes later, every one of them has a pull request open."
+   ],
+   [
+    "0007.png",
+    "In the sidebar, all four sit nested under the coordinator.",
+    "In the sidebar, all four sit nested under the coordinator."
+   ],
+   [
+    "0008.png",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing.",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing."
+   ],
+   [
+    "0009.png",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing.",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing."
+   ],
+   [
+    "0010.png",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session.",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session."
+   ],
+   [
+    "outro",
+    "One request in, one pull request per service out.",
+    "One request in, one pull request per service out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.455,
+    "text": "Open any of them to see its own"
+   },
+   {
+    "t0": 1.502,
+    "t1": 3.963,
+    "text": "work, like the orders Devin reporting its pull"
+   },
+   {
+    "t0": 4.01,
+    "t1": 6.531,
+    "text": "request with all three tests still passing."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "Then the coordinator reports back with four pull requests, one per service, each with its tests passing.",
+  "dur": 5.425,
+  "takeAt": 56.035,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another.",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another."
+   ],
+   [
+    "0001.png",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM.",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM."
+   ],
+   [
+    "0002.png",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary.",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary."
+   ],
+   [
+    "0003.png",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that.",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that."
+   ],
+   [
+    "0004.png",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications.",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications."
+   ],
+   [
+    "0006.png",
+    "A couple of minutes later, every one of them has a pull request open.",
+    "A couple of minutes later, every one of them has a pull request open."
+   ],
+   [
+    "0007.png",
+    "In the sidebar, all four sit nested under the coordinator.",
+    "In the sidebar, all four sit nested under the coordinator."
+   ],
+   [
+    "0008.png",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing.",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing."
+   ],
+   [
+    "0009.png",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing.",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing."
+   ],
+   [
+    "0010.png",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session.",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session."
+   ],
+   [
+    "outro",
+    "One request in, one pull request per service out.",
+    "One request in, one pull request per service out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.03,
+    "t1": 1.922,
+    "text": "Then the coordinator reports back with four pull"
+   },
+   {
+    "t0": 1.98,
+    "t1": 3.815,
+    "text": "requests, one per service,"
+   },
+   {
+    "t0": 4.058,
+    "t1": 5.425,
+    "text": "each with its tests passing."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session.",
+  "dur": 9.899,
+  "takeAt": 61.901,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another.",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another."
+   ],
+   [
+    "0001.png",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM.",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM."
+   ],
+   [
+    "0002.png",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary.",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary."
+   ],
+   [
+    "0003.png",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that.",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that."
+   ],
+   [
+    "0004.png",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications.",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications."
+   ],
+   [
+    "0006.png",
+    "A couple of minutes later, every one of them has a pull request open.",
+    "A couple of minutes later, every one of them has a pull request open."
+   ],
+   [
+    "0007.png",
+    "In the sidebar, all four sit nested under the coordinator.",
+    "In the sidebar, all four sit nested under the coordinator."
+   ],
+   [
+    "0008.png",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing.",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing."
+   ],
+   [
+    "0009.png",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing.",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing."
+   ],
+   [
+    "0010.png",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session.",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session."
+   ],
+   [
+    "outro",
+    "One request in, one pull request per service out.",
+    "One request in, one pull request per service out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.233,
+    "text": "The same pattern fits any change that splits"
+   },
+   {
+    "t0": 2.268,
+    "t1": 4.857,
+    "text": "cleanly, like swapping a legacy REST client for"
+   },
+   {
+    "t0": 4.892,
+    "t1": 7.806,
+    "text": "GraphQL, adding tests module by module,"
+   },
+   {
+    "t0": 8.05,
+    "t1": 9.899,
+    "text": "or running one skill in every session."
+   }
+  ]
+ },
+ "outro": {
+  "text": "One request in, one pull request per service out.",
+  "dur": 2.676,
+  "takeAt": 72.234,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another.",
+    "Devin can run a codebase-wide migration as a fleet of Devins. A migration like CommonJS to ES modules touches every service, and by hand that means one service after another."
+   ],
+   [
+    "0001.png",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM.",
+    "With managed Devins, you send one request, and a coordinator splits it into independent pieces, starting one managed Devin per service, each on its own VM."
+   ],
+   [
+    "0002.png",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary.",
+    "Each one works on its own branch, keeps that service's tests passing, and opens its own pull request, while the coordinator tracks them and compiles one summary."
+   ],
+   [
+    "0003.png",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that.",
+    "Here's a real run on a small store backend with four Node services, asking for exactly that."
+   ],
+   [
+    "0004.png",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications.",
+    "The coordinator reads the repo, then starts four managed Devins, one each for orders, payments, inventory, and notifications."
+   ],
+   [
+    "0006.png",
+    "A couple of minutes later, every one of them has a pull request open.",
+    "A couple of minutes later, every one of them has a pull request open."
+   ],
+   [
+    "0007.png",
+    "In the sidebar, all four sit nested under the coordinator.",
+    "In the sidebar, all four sit nested under the coordinator."
+   ],
+   [
+    "0008.png",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing.",
+    "Open any of them to see its own work, like the orders Devin reporting its pull request with all three tests still passing."
+   ],
+   [
+    "0009.png",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing.",
+    "Then the coordinator reports back with four pull requests, one per service, each with its tests passing."
+   ],
+   [
+    "0010.png",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session.",
+    "The same pattern fits any change that splits cleanly, like swapping a legacy REST client for GraphQL, adding tests module by module, or running one skill in every session."
+   ],
+   [
+    "outro",
+    "One request in, one pull request per service out.",
+    "One request in, one pull request per service out."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.002,
+    "text": "One request in,"
+   },
+   {
+    "t0": 1.049,
+    "t1": 2.676,
+    "text": "one pull request per service out."
+   }
+  ]
+ }
+}
