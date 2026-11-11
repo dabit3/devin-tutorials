@@ -1,0 +1,1693 @@
+{
+ "d01.png": {
+  "text": "Devin can catch the bug a human reviewer missed and fix it.",
+  "dur": 2.81,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.892,
+    "text": "Devin can catch the bug a human reviewer"
+   },
+   {
+    "t0": 1.95,
+    "t1": 2.81,
+    "text": "missed and fix it."
+   }
+  ]
+ },
+ "d02.png": {
+  "text": "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+  "dur": 6.42,
+  "takeAt": 2.98,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.827,
+    "text": "Approved doesn't always mean correct."
+   },
+   {
+    "t0": 2.105,
+    "t1": 3.243,
+    "text": "The tests pass,"
+   },
+   {
+    "t0": 3.359,
+    "t1": 4.659,
+    "text": "a reviewer signs off,"
+   },
+   {
+    "t0": 4.81,
+    "t1": 6.42,
+    "text": "and an edge case still slips through."
+   }
+  ]
+ },
+ "0000.png": {
+  "text": "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+  "dur": 7.666,
+  "takeAt": 9.574,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.082,
+    "text": "Here's a real pull request in Fernhouse,"
+   },
+   {
+    "t0": 2.326,
+    "t1": 3.441,
+    "text": "a demo plant shop."
+   },
+   {
+    "t0": 3.766,
+    "t1": 5.426,
+    "text": "It adds gift cards at checkout,"
+   },
+   {
+    "t0": 5.6,
+    "t1": 7.666,
+    "text": "and we planted one bug in it for this video."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "A teammate reads it, sees the passing tests, and leaves a quick review.",
+  "dur": 3.885,
+  "takeAt": 17.615,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.044,
+    "t1": 1.101,
+    "text": "A teammate reads it,"
+   },
+   {
+    "t0": 1.251,
+    "t1": 2.61,
+    "text": "sees the passing tests,"
+   },
+   {
+    "t0": 2.726,
+    "t1": 3.885,
+    "text": "and leaves a quick review."
+   }
+  ]
+ },
+ "0015.png": {
+  "text": "They approve it, and on a busy day, that's often where review ends.",
+  "dur": 3.467,
+  "takeAt": 21.823,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.747,
+    "text": "They approve it,"
+   },
+   {
+    "t0": 0.77,
+    "t1": 1.827,
+    "text": "and on a busy day,"
+   },
+   {
+    "t0": 1.954,
+    "t1": 3.467,
+    "text": "that's often where review ends."
+   }
+  ]
+ },
+ "0020.png": {
+  "text": "Then we ask Devin Review to review this pull request.",
+  "dur": 2.725,
+  "takeAt": 25.735,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.086,
+    "t1": 2.725,
+    "text": "Then we ask Devin Review to review this pull request."
+   }
+  ]
+ },
+ "0029.png": {
+  "text": "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+  "dur": 4.575,
+  "takeAt": 28.745,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.048,
+    "t1": 0.977,
+    "text": "In under two minutes,"
+   },
+   {
+    "t0": 1.012,
+    "t1": 2.103,
+    "text": "it reports one bug."
+   },
+   {
+    "t0": 2.486,
+    "t1": 4.575,
+    "text": "Gift cards produce negative order totals."
+   }
+  ]
+ },
+ "0033.png": {
+  "text": "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+  "dur": 9.752,
+  "takeAt": 33.608,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.198,
+    "text": "Clicking the finding opens the exact line."
+   },
+   {
+    "t0": 2.581,
+    "t1": 4.729,
+    "text": "The total subtracts the whole card balance,"
+   },
+   {
+    "t0": 4.938,
+    "t1": 7.027,
+    "text": "so a hundred-dollar card on a sixty-four dollar"
+   },
+   {
+    "t0": 7.085,
+    "t1": 9.752,
+    "text": "order shows minus thirty-six dollars instead of zero."
+   }
+  ]
+ },
+ "0036.png": {
+  "text": "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+  "dur": 4.295,
+  "takeAt": 43.615,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.059,
+    "text": "The same finding is posted to the Discussion"
+   },
+   {
+    "t0": 2.117,
+    "t1": 4.295,
+    "text": "tab, right under the teammate's approval."
+   }
+  ]
+ },
+ "d03.png": {
+  "text": "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+  "dur": 7.784,
+  "takeAt": 48.236,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.944,
+    "text": "Now the fix."
+   },
+   {
+    "t0": 1.153,
+    "t1": 3.498,
+    "text": "Auto-fix hands the finding to a Devin session."
+   },
+   {
+    "t0": 3.777,
+    "t1": 5.577,
+    "text": "Devin pushes a commit to the same pull"
+   },
+   {
+    "t0": 5.635,
+    "t1": 7.784,
+    "text": "request, and Devin Review checks it again."
+   }
+  ]
+ },
+ "0037.png": {
+  "text": "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+  "dur": 4.335,
+  "takeAt": 56.445,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.073,
+    "t1": 1.803,
+    "text": "So I click Auto-fix with Devin,"
+   },
+   {
+    "t0": 2.012,
+    "t1": 4.335,
+    "text": "and a Devin session starts working on it right away."
+   }
+  ]
+ },
+ "0053.png": {
+  "text": "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+  "dur": 9.491,
+  "takeAt": 61.169,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.106,
+    "text": "Devin takes over the pull request and caps"
+   },
+   {
+    "t0": 2.141,
+    "t1": 3.998,
+    "text": "the gift card credit at the order value."
+   },
+   {
+    "t0": 4.323,
+    "t1": 6.657,
+    "text": "It adds two tests for oversized cards,"
+   },
+   {
+    "t0": 6.901,
+    "t1": 8.294,
+    "text": "runs the tests and the build,"
+   },
+   {
+    "t0": 8.41,
+    "t1": 9.491,
+    "text": "and pushes the fix."
+   }
+  ]
+ },
+ "0046.png": {
+  "text": "Devin Review checks the new commit and marks the bug resolved.",
+  "dur": 2.945,
+  "takeAt": 71.115,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.101,
+    "t1": 2.133,
+    "text": "Devin Review checks the new commit and marks"
+   },
+   {
+    "t0": 2.168,
+    "t1": 2.945,
+    "text": "the bug resolved."
+   }
+  ]
+ },
+ "0050.png": {
+  "text": "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+  "dur": 4.665,
+  "takeAt": 74.415,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.04,
+    "t1": 1.515,
+    "text": "The fix is a normal commit on the"
+   },
+   {
+    "t0": 1.55,
+    "t1": 3.768,
+    "text": "pull request, ready for a person to read"
+   },
+   {
+    "t0": 3.814,
+    "t1": 4.665,
+    "text": "before it merges."
+   }
+  ]
+ },
+ "d04.png": {
+  "text": "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+  "dur": 8.453,
+  "takeAt": 79.247,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.943,
+    "text": "Your team still decides what ships."
+   },
+   {
+    "t0": 2.268,
+    "t1": 4.532,
+    "text": "Devin Review gives each pull request a second,"
+   },
+   {
+    "t0": 4.578,
+    "t1": 7.388,
+    "text": "careful read, and Auto-fix turns its findings into"
+   },
+   {
+    "t0": 7.481,
+    "t1": 8.453,
+    "text": "fixes you can review."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Catch the bug before it ships.",
+  "dur": 1.505,
+  "takeAt": 88.075,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "d01.png",
+    "Devin can catch the bug a human reviewer missed and fix it.",
+    "Devin can catch the bug a human reviewer missed and fix it."
+   ],
+   [
+    "d02.png",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through.",
+    "Approved doesn't always mean correct. The tests pass, a reviewer signs off, and an edge case still slips through."
+   ],
+   [
+    "0000.png",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video.",
+    "Here's a real pull request in Fernhouse, a demo plant shop. It adds gift cards at checkout, and we planted one bug in it for this video."
+   ],
+   [
+    "0001.png",
+    "A teammate reads it, sees the passing tests, and leaves a quick review.",
+    "A teammate reads it, sees the passing tests, and leaves a quick review."
+   ],
+   [
+    "0015.png",
+    "They approve it, and on a busy day, that's often where review ends.",
+    "They approve it, and on a busy day, that's often where review ends."
+   ],
+   [
+    "0020.png",
+    "Then we ask Devin Review to review this pull request.",
+    "Then we ask Devin Review to review this pull request."
+   ],
+   [
+    "0029.png",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals.",
+    "In under two minutes, it reports one bug. Gift cards produce negative order totals."
+   ],
+   [
+    "0033.png",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero.",
+    "Clicking the finding opens the exact line. The total subtracts the whole card balance, so a hundred-dollar card on a sixty-four dollar order shows minus thirty-six dollars instead of zero."
+   ],
+   [
+    "0036.png",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval.",
+    "The same finding is posted to the Discussion tab, right under the teammate's approval."
+   ],
+   [
+    "d03.png",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again.",
+    "Now the fix. Auto-fix hands the finding to a Devin session. Devin pushes a commit to the same pull request, and Devin Review checks it again."
+   ],
+   [
+    "0037.png",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away.",
+    "So I click Auto-fix with Devin, and a Devin session starts working on it right away."
+   ],
+   [
+    "0053.png",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix.",
+    "Devin takes over the pull request and caps the gift card credit at the order value. It adds two tests for oversized cards, runs the tests and the build, and pushes the fix."
+   ],
+   [
+    "0046.png",
+    "Devin Review checks the new commit and marks the bug resolved.",
+    "Devin Review checks the new commit and marks the bug resolved."
+   ],
+   [
+    "0050.png",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges.",
+    "The fix is a normal commit on the pull request, ready for a person to read before it merges."
+   ],
+   [
+    "d04.png",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review.",
+    "Your team still decides what ships. Devin Review gives each pull request a second, careful read, and Auto-fix turns its findings into fixes you can review."
+   ],
+   [
+    "outro",
+    "Catch the bug before it ships.",
+    "Catch the bug before it ships."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.011,
+    "t1": 1.505,
+    "text": "Catch the bug before it ships."
+   }
+  ]
+ }
+}
