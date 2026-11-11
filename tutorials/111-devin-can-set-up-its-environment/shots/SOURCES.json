@@ -1,0 +1,145 @@
+{
+ "note": "Fresh live run in thequantexplorer for this video. Demo repo: thequantexplorer/devin-demo-cold-repo-onboarding (unchanged; nothing committed). Diagram scenes are drawn by scenes.js. Builds d0803305 and b865e653 failed on Docker Hub 429s; 68bebcf9 (mirror) succeeded.",
+ "shots": {
+  "0000.png": {
+   "scene": "fresh",
+   "source": "diagram placeholder (blank #FCFCFC), drawn by scenes.js"
+  },
+  "0001.png": {
+   "scene": "flow",
+   "source": "diagram placeholder (blank #FCFCFC), drawn by scenes.js"
+  },
+  "0002.png": {
+   "source": "https://app.devin.ai/sessions/e5561d50bacb4bf08642d071889fc2ab",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0041.png",
+   "purpose": "plain-English setup request typed on the home composer (sidebar cropped out; it listed other sessions)",
+   "crop": "crop=3140:1766:1180:335,scale=4320:2430:flags=lanczos"
+  },
+  "0003.png": {
+   "source": "https://app.devin.ai/sessions/e5561d50bacb4bf08642d071889fc2ab",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0050.png",
+   "purpose": "Devin exploring the cold repo: reads files, checks node/pnpm/docker/postgres, runs the tests"
+  },
+  "0004.png": {
+   "source": "https://app.devin.ai/sessions/e5561d50bacb4bf08642d071889fc2ab",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0077.png",
+   "purpose": "cold-run findings and blueprint plan attached by Devin"
+  },
+  "0005.png": {
+   "scene": "parts",
+   "source": "diagram placeholder (blank #FCFCFC), drawn by scenes.js"
+  },
+  "0006.png": {
+   "source": "https://app.devin.ai/sessions/e5561d50bacb4bf08642d071889fc2ab",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0078.png",
+   "purpose": "Devin asks to test a blueprint; Approve pointed"
+  },
+  "0007.png": {
+   "source": "https://app.devin.ai/sessions/e5561d50bacb4bf08642d071889fc2ab",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0079.png",
+   "purpose": "Approve clicked"
+  },
+  "0008.png": {
+   "source": "https://app.devin.ai/sessions/e5561d50bacb4bf08642d071889fc2ab",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0098.png",
+   "purpose": "Devin reports the blueprint tested on clean VMs, tests 2/2"
+  },
+  "0009.png": {
+   "source": "https://app.devin.ai/sessions/e5561d50bacb4bf08642d071889fc2ab",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0103.png",
+   "purpose": "suggested blueprint with View build"
+  },
+  "0010.png": {
+   "source": "https://app.devin.ai/org/thequantexplorer/settings/environment/builds/d080330597d44edb8479c2bdcf670c2b",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0104.png",
+   "purpose": "snapshot build in progress (polled, shown sped up)"
+  },
+  "0011.png": {
+   "source": "https://app.devin.ai/org/thequantexplorer/settings/environment/builds/d080330597d44edb8479c2bdcf670c2b",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0115.png",
+   "purpose": "snapshot build in progress (polled, shown sped up)"
+  },
+  "0012.png": {
+   "source": "https://app.devin.ai/org/thequantexplorer/settings/environment/builds/d080330597d44edb8479c2bdcf670c2b",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0125.png",
+   "purpose": "snapshot build in progress (polled, shown sped up)"
+  },
+  "0013.png": {
+   "source": "https://app.devin.ai/org/thequantexplorer/settings/environment/builds/d080330597d44edb8479c2bdcf670c2b",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0135.png",
+   "purpose": "snapshot build in progress (polled, shown sped up)"
+  },
+  "0014.png": {
+   "source": "https://app.devin.ai/org/thequantexplorer/settings/environment/builds/d080330597d44edb8479c2bdcf670c2b",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0145.png",
+   "purpose": "first snapshot build: Partial, Docker Hub 429 on image pull"
+  },
+  "0015.png": {
+   "source": "https://app.devin.ai/sessions/e5561d50bacb4bf08642d071889fc2ab",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0336.png",
+   "purpose": "plain-English follow-up asking for a mirror after the retry build also hit 429 (top line cropped)",
+   "crop": "crop=3840:2160:240:270,scale=4320:2430:flags=lanczos"
+  },
+  "0016.png": {
+   "source": "https://app.devin.ai/sessions/e5561d50bacb4bf08642d071889fc2ab",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0350.png",
+   "purpose": "mirror blueprint tested on a clean VM with Docker Hub blocked, 2/2"
+  },
+  "0017.png": {
+   "source": "https://app.devin.ai/sessions/e5561d50bacb4bf08642d071889fc2ab",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0365.png",
+   "purpose": "mirror blueprint with View build"
+  },
+  "0018.png": {
+   "source": "https://app.devin.ai/org/thequantexplorer/settings/environment/builds/68bebcf9825544c99fb0634db06af82f",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0366.png",
+   "purpose": "snapshot build in progress (polled, shown sped up)"
+  },
+  "0019.png": {
+   "source": "https://app.devin.ai/org/thequantexplorer/settings/environment/builds/68bebcf9825544c99fb0634db06af82f",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0372.png",
+   "purpose": "snapshot build in progress (polled, shown sped up)"
+  },
+  "0020.png": {
+   "source": "https://app.devin.ai/org/thequantexplorer/settings/environment/builds/68bebcf9825544c99fb0634db06af82f",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0378.png",
+   "purpose": "snapshot build in progress (polled, shown sped up)"
+  },
+  "0021.png": {
+   "source": "https://app.devin.ai/org/thequantexplorer/settings/environment/builds/68bebcf9825544c99fb0634db06af82f",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0383.png",
+   "purpose": "mirror snapshot build: Success, Active snapshot"
+  },
+  "0022.png": {
+   "source": "https://app.devin.ai/sessions/49ae593795904d8083d6dff71384fa26",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0429.png",
+   "purpose": "new session prompt: check services and run tests without setup"
+  },
+  "0023.png": {
+   "source": "https://app.devin.ai/sessions/49ae593795904d8083d6dff71384fa26",
+   "account": "thequantexplorer org (Nader Dabit), captured 2026-10-30 at ZOOM=1.25, account email masked",
+   "raw": "0448.png",
+   "purpose": "new session: Postgres and Redis already running, pnpm test 2/2, nothing installed"
+  }
+ }
+}
