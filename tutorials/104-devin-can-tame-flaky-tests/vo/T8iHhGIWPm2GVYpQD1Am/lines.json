@@ -1,0 +1,1220 @@
+{
+ "0000.png": {
+  "text": "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+  "dur": 7.64,
+  "takeAt": 0.0,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing."
+   ],
+   [
+    "0005.png",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs."
+   ],
+   [
+    "0010.png",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test."
+   ],
+   [
+    "0020.png",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails."
+   ],
+   [
+    "0030.png",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed."
+   ],
+   [
+    "0040.png",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it."
+   ],
+   [
+    "0050.png",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was."
+   ],
+   [
+    "0060.png",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request."
+   ],
+   [
+    "0070.png",
+    "In the session, you can see the check fail before the fix goes in.",
+    "In the session, you can see the check fail before the fix goes in."
+   ],
+   [
+    "0080.png",
+    "After the fix, the same check passes.",
+    "After the fix, the same check passes."
+   ],
+   [
+    "0090.png",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred."
+   ],
+   [
+    "0100.png",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it."
+   ],
+   [
+    "outro",
+    "Fixed and proven, not just green once.",
+    "Fixed and proven, not just green once."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.834,
+    "text": "Devin can track down a flaky test and"
+   },
+   {
+    "t0": 1.881,
+    "t1": 2.694,
+    "text": "prove it's fixed."
+   },
+   {
+    "t0": 3.019,
+    "t1": 4.911,
+    "text": "A flaky test passes most of the time"
+   },
+   {
+    "t0": 4.946,
+    "t1": 6.026,
+    "text": "and fails now and then,"
+   },
+   {
+    "t0": 6.177,
+    "t1": 7.64,
+    "text": "so one green run proves nothing."
+   }
+  ]
+ },
+ "0005.png": {
+  "text": "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+  "dur": 9.275,
+  "takeAt": 7.945,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing."
+   ],
+   [
+    "0005.png",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs."
+   ],
+   [
+    "0010.png",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test."
+   ],
+   [
+    "0020.png",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails."
+   ],
+   [
+    "0030.png",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed."
+   ],
+   [
+    "0040.png",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it."
+   ],
+   [
+    "0050.png",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was."
+   ],
+   [
+    "0060.png",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request."
+   ],
+   [
+    "0070.png",
+    "In the session, you can see the check fail before the fix goes in.",
+    "In the session, you can see the check fail before the fix goes in."
+   ],
+   [
+    "0080.png",
+    "After the fix, the same check passes.",
+    "After the fix, the same check passes."
+   ],
+   [
+    "0090.png",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred."
+   ],
+   [
+    "0100.png",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it."
+   ],
+   [
+    "outro",
+    "Fixed and proven, not just green once.",
+    "Fixed and proven, not just green once."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.112,
+    "t1": 1.9,
+    "text": "Devin treats it like an investigation."
+   },
+   {
+    "t0": 2.144,
+    "t1": 4.593,
+    "text": "It reproduces the failure with repeated runs,"
+   },
+   {
+    "t0": 4.802,
+    "t1": 6.01,
+    "text": "finds the root cause,"
+   },
+   {
+    "t0": 6.219,
+    "t1": 7.182,
+    "text": "fixes the code,"
+   },
+   {
+    "t0": 7.333,
+    "t1": 9.275,
+    "text": "and then proves the fix with the same runs."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+  "dur": 6.999,
+  "takeAt": 17.631,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing."
+   ],
+   [
+    "0005.png",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs."
+   ],
+   [
+    "0010.png",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test."
+   ],
+   [
+    "0020.png",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails."
+   ],
+   [
+    "0030.png",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed."
+   ],
+   [
+    "0040.png",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it."
+   ],
+   [
+    "0050.png",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was."
+   ],
+   [
+    "0060.png",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request."
+   ],
+   [
+    "0070.png",
+    "In the session, you can see the check fail before the fix goes in.",
+    "In the session, you can see the check fail before the fix goes in."
+   ],
+   [
+    "0080.png",
+    "After the fix, the same check passes.",
+    "After the fix, the same check passes."
+   ],
+   [
+    "0090.png",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred."
+   ],
+   [
+    "0100.png",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it."
+   ],
+   [
+    "outro",
+    "Fixed and proven, not just green once.",
+    "Fixed and proven, not just green once."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.875,
+    "text": "For this demo,"
+   },
+   {
+    "t0": 0.898,
+    "t1": 2.918,
+    "text": "we planted a race in a small inventory"
+   },
+   {
+    "t0": 2.976,
+    "t1": 5.078,
+    "text": "app, and asked Devin to fix its flaky"
+   },
+   {
+    "t0": 5.136,
+    "t1": 6.999,
+    "text": "checkout test without changing the test."
+   }
+  ]
+ },
+ "0020.png": {
+  "text": "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+  "dur": 4.586,
+  "takeAt": 25.004,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing."
+   ],
+   [
+    "0005.png",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs."
+   ],
+   [
+    "0010.png",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test."
+   ],
+   [
+    "0020.png",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails."
+   ],
+   [
+    "0030.png",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed."
+   ],
+   [
+    "0040.png",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it."
+   ],
+   [
+    "0050.png",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was."
+   ],
+   [
+    "0060.png",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request."
+   ],
+   [
+    "0070.png",
+    "In the session, you can see the check fail before the fix goes in.",
+    "In the session, you can see the check fail before the fix goes in."
+   ],
+   [
+    "0080.png",
+    "After the fix, the same check passes.",
+    "After the fix, the same check passes."
+   ],
+   [
+    "0090.png",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred."
+   ],
+   [
+    "0100.png",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it."
+   ],
+   [
+    "outro",
+    "Fixed and proven, not just green once.",
+    "Fixed and proven, not just green once."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.105,
+    "text": "Devin starts by running the suite two hundred"
+   },
+   {
+    "t0": 2.14,
+    "t1": 4.586,
+    "text": "times, to measure how often the test fails."
+   }
+  ]
+ },
+ "0030.png": {
+  "text": "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+  "dur": 10.415,
+  "takeAt": 29.875,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing."
+   ],
+   [
+    "0005.png",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs."
+   ],
+   [
+    "0010.png",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test."
+   ],
+   [
+    "0020.png",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails."
+   ],
+   [
+    "0030.png",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed."
+   ],
+   [
+    "0040.png",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it."
+   ],
+   [
+    "0050.png",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was."
+   ],
+   [
+    "0060.png",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request."
+   ],
+   [
+    "0070.png",
+    "In the session, you can see the check fail before the fix goes in.",
+    "In the session, you can see the check fail before the fix goes in."
+   ],
+   [
+    "0080.png",
+    "After the fix, the same check passes.",
+    "After the fix, the same check passes."
+   ],
+   [
+    "0090.png",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred."
+   ],
+   [
+    "0100.png",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it."
+   ],
+   [
+    "outro",
+    "Fixed and proven, not just green once.",
+    "Fixed and proven, not just green once."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.021,
+    "t1": 1.53,
+    "text": "The failures point to a race."
+   },
+   {
+    "t0": 1.704,
+    "t1": 3.585,
+    "text": "Reserving stock reads the count and writes it"
+   },
+   {
+    "t0": 3.62,
+    "t1": 5.048,
+    "text": "back in two separate steps."
+   },
+   {
+    "t0": 5.292,
+    "t1": 6.72,
+    "text": "When the first write is slow,"
+   },
+   {
+    "t0": 6.894,
+    "t1": 8.984,
+    "text": "a second click still reads five units,"
+   },
+   {
+    "t0": 9.158,
+    "t1": 10.415,
+    "text": "and both orders succeed."
+   }
+  ]
+ },
+ "0040.png": {
+  "text": "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+  "dur": 5.062,
+  "takeAt": 40.678,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing."
+   ],
+   [
+    "0005.png",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs."
+   ],
+   [
+    "0010.png",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test."
+   ],
+   [
+    "0020.png",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails."
+   ],
+   [
+    "0030.png",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed."
+   ],
+   [
+    "0040.png",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it."
+   ],
+   [
+    "0050.png",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was."
+   ],
+   [
+    "0060.png",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request."
+   ],
+   [
+    "0070.png",
+    "In the session, you can see the check fail before the fix goes in.",
+    "In the session, you can see the check fail before the fix goes in."
+   ],
+   [
+    "0080.png",
+    "After the fix, the same check passes.",
+    "After the fix, the same check passes."
+   ],
+   [
+    "0090.png",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred."
+   ],
+   [
+    "0100.png",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it."
+   ],
+   [
+    "outro",
+    "Fixed and proven, not just green once.",
+    "Fixed and proven, not just green once."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.616,
+    "text": "Devin's summary explains the root cause in plain"
+   },
+   {
+    "t0": 2.674,
+    "t1": 5.062,
+    "text": "terms, including the timing that triggers it."
+   }
+  ]
+ },
+ "0050.png": {
+  "text": "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+  "dur": 6.02,
+  "takeAt": 46.1,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing."
+   ],
+   [
+    "0005.png",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs."
+   ],
+   [
+    "0010.png",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test."
+   ],
+   [
+    "0020.png",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails."
+   ],
+   [
+    "0030.png",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed."
+   ],
+   [
+    "0040.png",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it."
+   ],
+   [
+    "0050.png",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was."
+   ],
+   [
+    "0060.png",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request."
+   ],
+   [
+    "0070.png",
+    "In the session, you can see the check fail before the fix goes in.",
+    "In the session, you can see the check fail before the fix goes in."
+   ],
+   [
+    "0080.png",
+    "After the fix, the same check passes.",
+    "After the fix, the same check passes."
+   ],
+   [
+    "0090.png",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred."
+   ],
+   [
+    "0100.png",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it."
+   ],
+   [
+    "outro",
+    "Fixed and proven, not just green once.",
+    "Fixed and proven, not just green once."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.279,
+    "text": "The fix makes reservations for the same item"
+   },
+   {
+    "t0": 2.325,
+    "t1": 3.603,
+    "text": "run one after another,"
+   },
+   {
+    "t0": 3.846,
+    "t1": 6.02,
+    "text": "and the test stays exactly as it was."
+   }
+  ]
+ },
+ "0060.png": {
+  "text": "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+  "dur": 11.077,
+  "takeAt": 52.473,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing."
+   ],
+   [
+    "0005.png",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs."
+   ],
+   [
+    "0010.png",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test."
+   ],
+   [
+    "0020.png",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails."
+   ],
+   [
+    "0030.png",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed."
+   ],
+   [
+    "0040.png",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it."
+   ],
+   [
+    "0050.png",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was."
+   ],
+   [
+    "0060.png",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request."
+   ],
+   [
+    "0070.png",
+    "In the session, you can see the check fail before the fix goes in.",
+    "In the session, you can see the check fail before the fix goes in."
+   ],
+   [
+    "0080.png",
+    "After the fix, the same check passes.",
+    "After the fix, the same check passes."
+   ],
+   [
+    "0090.png",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred."
+   ],
+   [
+    "0100.png",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it."
+   ],
+   [
+    "outro",
+    "Fixed and proven, not just green once.",
+    "Fixed and proven, not just green once."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.678,
+    "text": "To prove it,"
+   },
+   {
+    "t0": 0.712,
+    "t1": 2.791,
+    "text": "Devin opened a pull request whose first commit"
+   },
+   {
+    "t0": 2.86,
+    "t1": 4.869,
+    "text": "only adds a CI check that runs the"
+   },
+   {
+    "t0": 4.915,
+    "t1": 6.03,
+    "text": "suite fifty times."
+   },
+   {
+    "t0": 6.355,
+    "t1": 8.305,
+    "text": "That check failed on the original code."
+   },
+   {
+    "t0": 8.584,
+    "t1": 11.077,
+    "text": "Then Devin pushed the fix to the same pull request."
+   }
+  ]
+ },
+ "0070.png": {
+  "text": "In the session, you can see the check fail before the fix goes in.",
+  "dur": 3.022,
+  "takeAt": 63.828,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing."
+   ],
+   [
+    "0005.png",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs."
+   ],
+   [
+    "0010.png",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test."
+   ],
+   [
+    "0020.png",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails."
+   ],
+   [
+    "0030.png",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed."
+   ],
+   [
+    "0040.png",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it."
+   ],
+   [
+    "0050.png",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was."
+   ],
+   [
+    "0060.png",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request."
+   ],
+   [
+    "0070.png",
+    "In the session, you can see the check fail before the fix goes in.",
+    "In the session, you can see the check fail before the fix goes in."
+   ],
+   [
+    "0080.png",
+    "After the fix, the same check passes.",
+    "After the fix, the same check passes."
+   ],
+   [
+    "0090.png",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred."
+   ],
+   [
+    "0100.png",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it."
+   ],
+   [
+    "outro",
+    "Fixed and proven, not just green once.",
+    "Fixed and proven, not just green once."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.794,
+    "text": "In the session,"
+   },
+   {
+    "t0": 0.817,
+    "t1": 2.338,
+    "text": "you can see the check fail before the"
+   },
+   {
+    "t0": 2.373,
+    "t1": 3.022,
+    "text": "fix goes in."
+   }
+  ]
+ },
+ "0080.png": {
+  "text": "After the fix, the same check passes.",
+  "dur": 2.035,
+  "takeAt": 67.125,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing."
+   ],
+   [
+    "0005.png",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs."
+   ],
+   [
+    "0010.png",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test."
+   ],
+   [
+    "0020.png",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails."
+   ],
+   [
+    "0030.png",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed."
+   ],
+   [
+    "0040.png",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it."
+   ],
+   [
+    "0050.png",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was."
+   ],
+   [
+    "0060.png",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request."
+   ],
+   [
+    "0070.png",
+    "In the session, you can see the check fail before the fix goes in.",
+    "In the session, you can see the check fail before the fix goes in."
+   ],
+   [
+    "0080.png",
+    "After the fix, the same check passes.",
+    "After the fix, the same check passes."
+   ],
+   [
+    "0090.png",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred."
+   ],
+   [
+    "0100.png",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it."
+   ],
+   [
+    "outro",
+    "Fixed and proven, not just green once.",
+    "Fixed and proven, not just green once."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.875,
+    "text": "After the fix,"
+   },
+   {
+    "t0": 0.898,
+    "t1": 2.035,
+    "text": "the same check passes."
+   }
+  ]
+ },
+ "0090.png": {
+  "text": "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+  "dur": 4.39,
+  "takeAt": 69.32,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing."
+   ],
+   [
+    "0005.png",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs."
+   ],
+   [
+    "0010.png",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test."
+   ],
+   [
+    "0020.png",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails."
+   ],
+   [
+    "0030.png",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed."
+   ],
+   [
+    "0040.png",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it."
+   ],
+   [
+    "0050.png",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was."
+   ],
+   [
+    "0060.png",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request."
+   ],
+   [
+    "0070.png",
+    "In the session, you can see the check fail before the fix goes in.",
+    "In the session, you can see the check fail before the fix goes in."
+   ],
+   [
+    "0080.png",
+    "After the fix, the same check passes.",
+    "After the fix, the same check passes."
+   ],
+   [
+    "0090.png",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred."
+   ],
+   [
+    "0100.png",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it."
+   ],
+   [
+    "outro",
+    "Fixed and proven, not just green once.",
+    "Fixed and proven, not just green once."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 2.616,
+    "text": "And locally, failures dropped from eighteen in two"
+   },
+   {
+    "t0": 2.674,
+    "t1": 4.39,
+    "text": "hundred runs to zero in two hundred."
+   }
+  ]
+ },
+ "0100.png": {
+  "text": "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+  "dur": 5.37,
+  "takeAt": 73.975,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing."
+   ],
+   [
+    "0005.png",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs."
+   ],
+   [
+    "0010.png",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test."
+   ],
+   [
+    "0020.png",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails."
+   ],
+   [
+    "0030.png",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed."
+   ],
+   [
+    "0040.png",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it."
+   ],
+   [
+    "0050.png",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was."
+   ],
+   [
+    "0060.png",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request."
+   ],
+   [
+    "0070.png",
+    "In the session, you can see the check fail before the fix goes in.",
+    "In the session, you can see the check fail before the fix goes in."
+   ],
+   [
+    "0080.png",
+    "After the fix, the same check passes.",
+    "After the fix, the same check passes."
+   ],
+   [
+    "0090.png",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred."
+   ],
+   [
+    "0100.png",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it."
+   ],
+   [
+    "outro",
+    "Fixed and proven, not just green once.",
+    "Fixed and proven, not just green once."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 1.734,
+    "text": "So when a test fails one run in"
+   },
+   {
+    "t0": 1.792,
+    "t1": 3.58,
+    "text": "eight, ask Devin to measure it,"
+   },
+   {
+    "t0": 3.615,
+    "t1": 4.892,
+    "text": "explain it, fix it,"
+   },
+   {
+    "t0": 4.915,
+    "t1": 5.37,
+    "text": "and prove it."
+   }
+  ]
+ },
+ "outro": {
+  "text": "Fixed and proven, not just green once.",
+  "dur": 2.166,
+  "takeAt": 79.734,
+  "mode": "single-take-1",
+  "model": "eleven_multilingual_v2",
+  "take": [
+   [
+    "0000.png",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing.",
+    "Devin can track down a flaky test and prove it's fixed. A flaky test passes most of the time and fails now and then, so one green run proves nothing."
+   ],
+   [
+    "0005.png",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs.",
+    "Devin treats it like an investigation. It reproduces the failure with repeated runs, finds the root cause, fixes the code, and then proves the fix with the same runs."
+   ],
+   [
+    "0010.png",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test.",
+    "For this demo, we planted a race in a small inventory app, and asked Devin to fix its flaky checkout test without changing the test."
+   ],
+   [
+    "0020.png",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails.",
+    "Devin starts by running the suite two hundred times, to measure how often the test fails."
+   ],
+   [
+    "0030.png",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed.",
+    "The failures point to a race. Reserving stock reads the count and writes it back in two separate steps. When the first write is slow, a second click still reads five units, and both orders succeed."
+   ],
+   [
+    "0040.png",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it.",
+    "Devin's summary explains the root cause in plain terms, including the timing that triggers it."
+   ],
+   [
+    "0050.png",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was.",
+    "The fix makes reservations for the same item run one after another, and the test stays exactly as it was."
+   ],
+   [
+    "0060.png",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request.",
+    "To prove it, Devin opened a pull request whose first commit only adds a CI check that runs the suite fifty times. That check failed on the original code. Then Devin pushed the fix to the same pull request."
+   ],
+   [
+    "0070.png",
+    "In the session, you can see the check fail before the fix goes in.",
+    "In the session, you can see the check fail before the fix goes in."
+   ],
+   [
+    "0080.png",
+    "After the fix, the same check passes.",
+    "After the fix, the same check passes."
+   ],
+   [
+    "0090.png",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred.",
+    "And locally, failures dropped from eighteen in two hundred runs to zero in two hundred."
+   ],
+   [
+    "0100.png",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it.",
+    "So when a test fails one run in eight, ask Devin to measure it, explain it, fix it, and prove it."
+   ],
+   [
+    "outro",
+    "Fixed and proven, not just green once.",
+    "Fixed and proven, not just green once."
+   ]
+  ],
+  "chunks": [
+   {
+    "t0": 0.12,
+    "t1": 0.956,
+    "text": "Fixed and proven,"
+   },
+   {
+    "t0": 1.026,
+    "t1": 2.166,
+    "text": "not just green once."
+   }
+  ]
+ }
+}
