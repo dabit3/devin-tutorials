@@ -1,19 +1,19 @@
 window.SPEC = {
   "title": "Port an iOS screen to Android",
   "subtitle": "Prove parity with two sessions and one PR, an overview",
-  "outro": "Run the original, build the port, prove they match",
+  "outro": "Run both, screenshot both, and see the match",
   "speed": 3,
   "cps": 48,
   "maxZoom": 1.6,
   "edit": {
     "0000.png": {
       "scene": "idea",
-      "hold": 6.6,
+      "hold": 8.6,
       "cursor": false,
       "capPos": "bottom",
       "hl": null,
       "cap": "Two sessions, two platforms, one PR",
-      "vo": "To port an iOS screen to Android, run the original on a Mac, build the port on an Android emulator, and show both screens in one pull request."
+      "vo": "Here's how to port an iOS screen to Android with Devin: run the original on a Mac, build the port on an Android emulator, and show both screens in one pull request."
     },
     "0001.png": {
       "hold": 3.6,
@@ -137,5 +137,5 @@ window.SPEC = {
       "vo": "Here, one prompt asked for the emulator, the port and the side by side screenshots."
     }
   },
-  "voOutro": "Run the original, build the port, and let the screenshots prove they match."
+  "voOutro": "The takeaway: when Devin runs both versions and screenshots them, you don't have to take the port on trust, you can see it."
 };
