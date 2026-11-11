@@ -1,0 +1,25 @@
+# Tutorial 39: How to Fix Bugs from Customer Videos (voice script)
+
+Narrated in Nader's voice (ElevenLabs `T8iHhGIWPm2GVYpQD1Am`, model `eleven_multilingual_v2`; the request sends only the text and `model_id`). The whole script is one take made with `_kit/tools/vo.py`, cut at sentence boundaries and laid over each beat.
+
+Disclosure: we put the Fernhouse checkout bug in the demo on purpose, and we recorded the customer clip ourselves, playing the customer.
+
+## Lines
+
+1. In this video, Devin fixes a bug from a customer's screen recording.
+
+2. You give Devin the video and what the customer wrote. You get back a pull request with the fix.
+
+3. We put the bug in this demo on purpose. I recorded the clip myself, playing the customer. To start, attach the video to a new session.
+
+4. Devin reads the recording and starts the app on its own machine.
+
+5. In the Computer tab, it repeats the customer's clicks. The total goes negative, the same as in the video.
+
+6. After the fix, it repeats the clicks, and the total is correct.
+
+7. Then it opens a pull request with the fix and a test for this bug.
+
+8. Any screen recording of a bug works. It can be a clip from a support ticket or a QA run.
+
+9. When a customer sends a bug video, attach it to a Devin session. Devin gives you back a tested fix. Try it with the next one you get.
