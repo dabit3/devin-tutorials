@@ -146,6 +146,10 @@ Voiceover versions (ElevenLabs) of the tutorials above, from the same footage, w
 
 **35. Meet Devin — product overview** (2:57): Ten distinct capabilities introduced individually with large conference-readable type and smooth title docking. Complete product interfaces remain visible, without editorial camera crops. Fresh DeepWiki, Ask, delegation, Computer Use, collaboration, Managed Devins, Cloud IDE, Review, recorded tests and Skills. The genuine finding → fix → retest story includes 53 seconds inside Devin's live testing interface and six seconds of native recorded evidence. Pure white, neutral grayscale, near-black and blue; no decorative clutter, presentation gradients or audio. [4K master](tutorials/35-conference-overview/35-conference-overview.mp4) · [1080p preview](tutorials/35-conference-overview/35-conference-overview-1080p.mp4) · [Coverage, provenance and rebuild instructions](tutorials/35-conference-overview/README.md)
 
+## Silent multi-VM clip
+
+**36. Eight sessions, one screen** (0:50): Eight Devin sessions open at once in a 4×2 split view, clicking into each so its Computer becomes the main view: macOS two-iPhone air hockey, an Ubuntu 3D flight globe, a windowed Windows WPF fractal explorer, the Dream Stage rhythm game on an iPhone Duo in Xcode Device Hub, then Jumpy Otter in the Android Emulator, a MuJoCo Franka Panda arm stacking cubes, a Windows falling-sand sandbox and Neon Loom kaleidoscope drawing on an iPad simulator. Real live footage, no audio. [4K master](tutorials/36-four-vms/four-vms.mp4) · [1080p preview](tutorials/36-four-vms/four-vms-1080p.mp4) · [Rebuild instructions](tutorials/36-four-vms/README.md)
+
 ## Making a new tutorial
 
 Every video's capture script, screenshots and edit spec live in [`tutorials/`](tutorials/), which also explains how to rebuild them. To create a tutorial for another Devin feature, use the reusable prompt in [`tutorials/TUTORIAL_PROMPT.md`](tutorials/TUTORIAL_PROMPT.md).
