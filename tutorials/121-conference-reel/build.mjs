@@ -20,7 +20,10 @@ const partDur = p => p.dur;
 
 function renderPart(p, file) {
   const speed = p.speed || 1;
-  const chain = [`setpts=(PTS-STARTPTS)/${speed}`, `fps=${FPS}`];
+  const skip = (p.skip || []).map(([a, b]) => `between(t,${(a - p.in).toFixed(3)},${(b - p.in).toFixed(3)})`);
+  const chain = skip.length
+    ? [`setpts=PTS-STARTPTS`, `fps=${FPS}`, `select='not(${skip.join('+')})'`, `setpts=N/(${FPS * speed}*TB)`, `fps=${FPS}`, 'tpad=stop_mode=clone:stop_duration=2']
+    : [`setpts=(PTS-STARTPTS)/${speed}`, `fps=${FPS}`, 'tpad=stop_mode=clone:stop_duration=2'];
   let graph = `[0:v]${chain.join(',')}[a]`, last = 'a';
   (p.blur || []).forEach(([x, y, w, h], i) => {
     graph += `;[${last}]split[m${i}][c${i}];[c${i}]crop=${w}:${h}:${x}:${y},boxblur=24:3[b${i}];[m${i}][b${i}]overlay=${x}:${y}[o${i}]`;
@@ -34,7 +37,7 @@ function renderPart(p, file) {
   graph += p.fit === 'contain'
     ? `;[${last}]scale=${W}:${H}:force_original_aspect_ratio=decrease:flags=lanczos,pad=${W}:${H}:(ow-iw)/2:(oh-ih)/2:color=white,setsar=1[s]`
     : `;[${last}]scale=${W}:${H}:flags=lanczos,setsar=1[s]`;
-  const inputs = ['-ss', String(p.in), '-t', String(p.dur * speed), '-i', path.join(srcDir, p.src)];
+  const inputs = ['-ss', String(p.in), '-t', String(p.span || p.dur * speed), '-i', path.join(srcDir, p.src)];
   if (p.tag) {
     inputs.push('-loop', '1', '-t', String(p.dur), '-i', path.join(titles, 'tag.png'));
     graph += `;[1:v]format=rgba,fade=in:st=0.4:d=0.5:alpha=1[t];[s][t]overlay=0:0:shortest=1[s2]`;

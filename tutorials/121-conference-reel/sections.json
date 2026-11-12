@@ -2,6 +2,8 @@
  "output": "121-conference-reel.mp4",
  "open": "What Devin can build and test",
  "close": "devin.ai",
+ "openDur": 4,
+ "closeDur": 4,
  "testTag": "Devin's test recording",
  "sections": [
   {
@@ -21,8 +23,15 @@
     {
      "src": "11-native-ios.mp4",
      "in": 34,
-     "dur": 13.5,
-     "speed": 2
+     "dur": 10.75,
+     "speed": 2,
+     "skip": [
+      [
+       34.0,
+       39.5
+      ]
+     ],
+     "span": 27
     },
     {
      "src": "11-native-ios.mp4",
@@ -38,18 +47,25 @@
     {
      "src": "11-native-ios.mp4",
      "in": 95,
-     "dur": 9
+     "dur": 7.0
     },
     {
      "src": "11-native-ios.mp4",
      "in": 104,
-     "dur": 9.33,
-     "speed": 1.5
+     "dur": 6.5,
+     "speed": 1.5,
+     "skip": [
+      [
+       105.75,
+       106.5
+      ]
+     ],
+     "span": 10.5
     },
     {
      "src": "11-native-ios.mp4",
      "in": 118,
-     "dur": 7,
+     "dur": 5.5,
      "speed": 2
     }
    ]
@@ -71,8 +87,23 @@
     {
      "src": "01-brewbot.mp4",
      "in": 20,
-     "dur": 8.67,
-     "speed": 3.0
+     "dur": 8.0,
+     "speed": 3.0,
+     "skip": [
+      [
+       20,
+       20.25
+      ],
+      [
+       25.5,
+       26.5
+      ],
+      [
+       36.75,
+       37.5
+      ]
+     ],
+     "span": 26
     },
     {
      "src": "01-brewbot.mp4",
@@ -88,8 +119,15 @@
     {
      "src": "01-brewbot.mp4",
      "in": 76.5,
-     "dur": 14.5,
-     "speed": 2.0
+     "dur": 11.62,
+     "speed": 2.0,
+     "skip": [
+      [
+       77.5,
+       78.25
+      ]
+     ],
+     "span": 24.0
     }
    ]
   },
@@ -110,8 +148,27 @@
     {
      "src": "02-kanban-qa.mp4",
      "in": 24,
-     "dur": 9.0,
-     "speed": 3.0
+     "dur": 7.92,
+     "speed": 3.0,
+     "skip": [
+      [
+       24.0,
+       24.75
+      ],
+      [
+       28.5,
+       29.25
+      ],
+      [
+       32.5,
+       33.5
+      ],
+      [
+       43.5,
+       44.25
+      ]
+     ],
+     "span": 27
     },
     {
      "src": "02-kanban-qa.mp4",
@@ -127,8 +184,15 @@
     {
      "src": "02-kanban-qa.mp4",
      "in": 81.5,
-     "dur": 15,
-     "speed": 2.0
+     "dur": 11.5,
+     "speed": 2.0,
+     "skip": [
+      [
+       82.25,
+       83.25
+      ]
+     ],
+     "span": 24.0
     }
    ]
   },
@@ -149,8 +213,15 @@
     {
      "src": "03-solar-system.mp4",
      "in": 27,
-     "dur": 8.67,
-     "speed": 3.0
+     "dur": 8.42,
+     "speed": 3.0,
+     "skip": [
+      [
+       27.0,
+       27.75
+      ]
+     ],
+     "span": 26
     },
     {
      "src": "03-solar-system.mp4",
@@ -166,8 +237,15 @@
     {
      "src": "03-solar-system.mp4",
      "in": 84.5,
-     "dur": 15,
-     "speed": 2.0
+     "dur": 11.62,
+     "speed": 2.0,
+     "skip": [
+      [
+       85.0,
+       85.75
+      ]
+     ],
+     "span": 24.0
     }
    ]
   },
@@ -182,14 +260,28 @@
     {
      "src": "04-expo-mobile-apps.mp4",
      "in": 7,
-     "dur": 6.33,
-     "speed": 3.0
+     "dur": 4.5,
+     "speed": 3.0,
+     "skip": [
+      [
+       7,
+       12.5
+      ]
+     ],
+     "span": 19
     },
     {
      "src": "04-expo-mobile-apps.mp4",
      "in": 27,
-     "dur": 10.67,
-     "speed": 3.0
+     "dur": 7.92,
+     "speed": 3.0,
+     "skip": [
+      [
+       27.0,
+       35.25
+      ]
+     ],
+     "span": 32
     },
     {
      "src": "04-expo-mobile-apps.mp4",
@@ -205,8 +297,8 @@
     {
      "src": "04-expo-mobile-apps.mp4",
      "in": 89.5,
-     "dur": 9.0,
-     "speed": 2.0
+     "dur": 4.0,
+     "speed": 1.25
     }
    ]
   },
@@ -227,8 +319,19 @@
     {
      "src": "05-neon-breakout.mp4",
      "in": 24,
-     "dur": 8.67,
-     "speed": 3.0
+     "dur": 6.92,
+     "speed": 3.0,
+     "skip": [
+      [
+       24,
+       28.5
+      ],
+      [
+       41.0,
+       41.75
+      ]
+     ],
+     "span": 26
     },
     {
      "src": "05-neon-breakout.mp4",
@@ -244,8 +347,15 @@
     {
      "src": "05-neon-breakout.mp4",
      "in": 73.5,
-     "dur": 10.0,
-     "speed": 2.0
+     "dur": 9.62,
+     "speed": 2.0,
+     "skip": [
+      [
+       74.5,
+       75.25
+      ]
+     ],
+     "span": 20
     }
    ]
   },
@@ -266,8 +376,15 @@
     {
      "src": "06-orbit-confetti.mp4",
      "in": 20,
-     "dur": 9.0,
-     "speed": 3.0
+     "dur": 7.58,
+     "speed": 3.0,
+     "skip": [
+      [
+       20.25,
+       24.5
+      ]
+     ],
+     "span": 27
     },
     {
      "src": "06-orbit-confetti.mp4",
@@ -305,8 +422,8 @@
     {
      "src": "07-architecture-map.mp4",
      "in": 19,
-     "dur": 38.29,
-     "speed": 1.75
+     "dur": 33.5,
+     "speed": 2.0
     }
    ]
   },
@@ -327,8 +444,23 @@
     {
      "src": "08-earthquake-globe.mp4",
      "in": 27,
-     "dur": 8.67,
-     "speed": 3.0
+     "dur": 7.92,
+     "speed": 3.0,
+     "skip": [
+      [
+       27,
+       27.75
+      ],
+      [
+       30.0,
+       30.75
+      ],
+      [
+       34.75,
+       35.5
+      ]
+     ],
+     "span": 26
     },
     {
      "src": "08-earthquake-globe.mp4",
@@ -344,8 +476,15 @@
     {
      "src": "08-earthquake-globe.mp4",
      "in": 84.5,
-     "dur": 15,
-     "speed": 2.0
+     "dur": 11.62,
+     "speed": 2.0,
+     "skip": [
+      [
+       85.0,
+       85.75
+      ]
+     ],
+     "span": 24.0
     }
    ]
   },
@@ -360,14 +499,28 @@
     {
      "src": "09-devin-arcade.mp4",
      "in": 6,
-     "dur": 7.33,
-     "speed": 3.0
+     "dur": 6.67,
+     "speed": 3.0,
+     "skip": [
+      [
+       6,
+       8.0
+      ]
+     ],
+     "span": 22
     },
     {
      "src": "09-devin-arcade.mp4",
      "in": 28,
-     "dur": 8.67,
-     "speed": 1.5
+     "dur": 7.83,
+     "speed": 1.5,
+     "skip": [
+      [
+       38.25,
+       39.5
+      ]
+     ],
+     "span": 13
     },
     {
      "src": "09-devin-arcade.mp4",
@@ -389,8 +542,15 @@
     {
      "src": "09-devin-arcade.mp4",
      "in": 98.5,
-     "dur": 11.5,
-     "speed": 2.0
+     "dur": 11.0,
+     "speed": 2.0,
+     "skip": [
+      [
+       99.0,
+       100.0
+      ]
+     ],
+     "span": 23
     }
    ]
   },
@@ -411,8 +571,15 @@
     {
      "src": "10-drum-machine.mp4",
      "in": 20,
-     "dur": 11.0,
-     "speed": 3.0
+     "dur": 10.75,
+     "speed": 3.0,
+     "skip": [
+      [
+       20.25,
+       21.0
+      ]
+     ],
+     "span": 33
     },
     {
      "src": "10-drum-machine.mp4",
@@ -428,8 +595,15 @@
     {
      "src": "10-drum-machine.mp4",
      "in": 83.5,
-     "dur": 15,
-     "speed": 2.0
+     "dur": 11.62,
+     "speed": 2.0,
+     "skip": [
+      [
+       84.25,
+       85.0
+      ]
+     ],
+     "span": 24.0
     }
    ]
   }
