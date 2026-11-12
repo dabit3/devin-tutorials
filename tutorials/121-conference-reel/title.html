@@ -6,8 +6,9 @@ html,body{margin:0;width:3840px;height:2160px;background:transparent;overflow:hi
 .tag i{display:inline-block;width:22px;height:22px;border-radius:50%;background:#2463eb;margin-right:22px;vertical-align:4px}
 .card{position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:90px;font:300 120px/1.1 Inter;letter-spacing:-2.5px;color:#17191d}
 .card img{height:200px}
+.card.logo img{height:340px}
 </style></head><body><script>
 const p=new URLSearchParams(location.hash.slice(1)),k=p.get('kind'),t=p.get('text')||'';
-document.body.innerHTML=k==='tag'?`<div class="tag"><i></i></div>`:k==='card'?`<div class="card"><img src="../_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png"><div></div></div>`:`<div class="pill"></div>`;
-(document.querySelector('.tag')||document.querySelector('.card div')||document.querySelector('.pill')).append(t);
+document.body.innerHTML=k==='tag'?`<div class="tag"><i></i></div>`:k==='card'?`<div class="card${t?'':' logo'}"><img src="../_kit/brand/DEVIN_AVATAR_SQUARE_BLACK_NO_BG.png">${t?'<div></div>':''}</div>`:`<div class="pill"></div>`;
+(document.querySelector('.tag')||document.querySelector('.card div')||document.querySelector('.pill'))?.append(t);
 </script></body></html>
