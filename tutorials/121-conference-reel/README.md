@@ -1,8 +1,8 @@
 # What Devin can build and test — conference reel
 
-A **9:45 silent 4K reel** walking through eleven Devin demo sessions, each filmed in **Google Chrome on a real Mac** (macOS, light mode, 3840×2160 HiDPI). Every section shows the session's prompt and conversation, Devin's Computer tab, Devin's own test recording with its chapters, and the artifacts, reports and PRs the session produced. A light title names each section; a small "Devin's test recording" tag marks the test-viewer footage.
+A **9:41 silent 4K reel** walking through eleven Devin demo sessions, each filmed in **Google Chrome on a real Mac** (macOS, light mode, 3840×2160 HiDPI). Every section shows the session's prompt and conversation, Devin's Computer tab, Devin's own test recording with its chapters, and the artifacts, reports and PRs the session produced. A light title names each section; a small "Devin's test recording" tag marks the test-viewer footage.
 
-- 4K master: 3840×2160, 30fps, H.264/yuv420p, no audio, 17,547 frames. Too large for git (170 MB); delivered as an attachment and rebuilt with `build.mjs`.
+- 4K master: 3840×2160, 30fps, H.264/yuv420p, no audio, 17,438 frames. Too large for git (170 MB); delivered as an attachment and rebuilt with `build.mjs`.
 - 1080p preview: `121-conference-reel-1080p.mp4` (same cut, H.264, no audio).
 
 ## Chapters
@@ -19,9 +19,9 @@ A **9:45 silent 4K reel** walking through eleven Devin demo sessions, each filme
 | 5:21.9 | Devin shipping a feature PR and testing it | [Orbit confetti](https://app.devin.ai/sessions/9db820c01c5b4b5a89756a9d37df7e5a) |
 | 6:11.5 | Devin mapping a codebase's architecture | [Architecture map](https://app.devin.ai/sessions/d264786ed6f54788961825610b297419) |
 | 6:52.8 | Devin building and testing an earthquake globe | [Earthquake globe](https://app.devin.ai/sessions/5a7f1059e4a94280b0e91bc3930bdc2a) |
-| 7:48.0 | Devin and three child sessions building an arcade | [Devin Arcade](https://app.devin.ai/sessions/d59e1646c02a442bb237e78c806578b2) |
-| 8:45.2 | Devin building and testing a drum machine | [Drum machine](https://app.devin.ai/sessions/3e1edf3ef407495fb8fe0c65c628109c) |
-| 9:40.9 | Closing card: devin.ai | — |
+| 7:45.4 | Devin and three child sessions building an arcade | [Devin Arcade](https://app.devin.ai/sessions/d59e1646c02a442bb237e78c806578b2) |
+| 8:42.6 | Devin building and testing a drum machine | [Groovebox 16](https://app.devin.ai/sessions/1c00583d6a584590a1d795ee1c5ab713) |
+| 9:37.3 | Closing card: devin.ai | — |
 
 ## How it is cut
 
@@ -33,16 +33,18 @@ All footage is a real capture of the Devin web app in Chrome on macOS, recorded 
 
 - The Devin Arcade capture dropped about 6% of frames and missed the Memory Match click, so that section shows Snake and Typing Racer.
 - Neon Breakout and Earthquake Globe were re-filmed after their first takes showed blank artifact panels.
+- The word "pulse" never appears on screen. The drum machine section uses a fresh session that names its app Groovebox 16 (the original drum machine session named it with that word), and the earthquake globe section skips the 7 s where its legend reads "Rings pulse at the base of quakes" (`words.json`). `wordcheck.py` OCRs whole output frames for the word.
 
 ## Rebuild
 
 ```bash
 REEL_SRC=/path/to/mac/clips python3 blanks.py   # blank Computer-pane stretches -> blanks.json
 REEL_SRC=/path/to/mac/clips python3 loading.py  # frame-accurate OCR of loading text -> loading.json (needs tesseract)
-python3 plan.py                     # timings minus blanks -> sections.json
+python3 plan.py                     # timings minus blanks, loading and words.json ranges -> sections.json
 CHROME=google-chrome node titles.mjs  # title PNGs (Inter, 3840x2160)
 REEL_SRC=/path/to/mac/clips node build.mjs   # sections, cards, concat -> 121-conference-reel.mp4
 python3 verify.py 121-conference-reel.mp4    # OCR every near-uniform Computer-pane frame of the output; no HIT lines = clean
+python3 wordcheck.py 121-conference-reel.mp4 "pul[s5]e" 3  # OCR whole frames for a banned word; no HIT lines = clean
 ```
 
 `ONLY=1,2` renders selected sections; `ONLY=0 CONCAT=1` only re-concatenates. Requires ffmpeg and the raw clips named as in `footage-manifest.md`.

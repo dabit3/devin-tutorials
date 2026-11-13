@@ -140,21 +140,21 @@ Session `d59e1646c02a442bb237e78c806578b2` · 3840x2160 · H264 · 30 fps · 2:1
 - `2:15` end
 - Note: Agents tab shows the three child sessions. Artifact segment: devin-arcade.html: Pick a game menu, Snake start screen, Typing Speed Racer. ~6% dropped frames in this clip (3808 of 4061 frames).
 
-## 10-drum-machine.mp4 — Drum machine
-Session `3e1edf3ef407495fb8fe0c65c628109c` · 3840x2160 · H264 · 30 fps · 2:05 (125.2 s)
+## 12-groovebox-16.mp4 — Groovebox 16 drum machine
+Session `1c00583d6a584590a1d795ee1c5ab713` · 3840x2160 · H264 · 30 fps · 2:07 (127.2 s)
 
 - `0:01` session open, prompt visible
 - `0:07` scrolling the conversation: plan, progress, results
-- `0:19` Computer tab: scrubbing the session timeline (replay of Devin's desktop)
-- `0:53` test recording viewer opens and plays: Drum Machine Interactive Test
-- `1:02` viewer jumps to chapter: Test: It should clear and build an editable beat with clicks and drag painting (3/3 passed)
-- `1:09` viewer jumps to chapter: Test: It should change playback speed live when dragging the tempo slider (1/1 passed)
-- `1:16` viewer jumps to chapter: Test: It should stop cleanly and support Space playback as a regression (1/1 passed)
-- `1:22` viewer closed
-- `1:23` artifact opened in the side panel: drum-machine.html
-- `1:55` final summary message
-- `2:05` end
-- Note: Artifact segment: drum-machine.html live: Hip-Hop preset playing with moving playhead, pads toggled, Rock and House presets, stopped.
+- `0:21` Computer tab: scrubbing the session timeline (replay of Devin's desktop)
+- `0:49` test recording viewer opens and plays: Groovebox preset and custom beat
+- `0:58` viewer jumps to chapter: Test: It should build and play a custom beat from an empty grid (2/2 passed)
+- `1:05` viewer jumps to chapter: Test: It should change playback speed with tempo and arrow keys (2/2 passed)
+- `1:12` viewer jumps to chapter: Test: It should stop playback using Space without leaving highlights (1/1 passed)
+- `1:18` viewer closed
+- `1:19` artifact opened in the side panel: groovebox16.html
+- `1:52` final summary message
+- `2:07` end
+- Note: Computer replay was preloaded, so no Connecting / Loading screenshot states appear. Artifact segment: groovebox16.html live: Hip-Hop preset playing with moving playhead, pads toggled, Rock and House presets, stopped. OCR of every 0.5 s frame finds no "pulse" anywhere in frame.
 
 ## 11-native-ios.mp4 — Native iOS (Pocket Garden)
 Session `94af5bbe2ed44d4ea6173dc16ed4e4b0` · 3840x2160 · H264 · 30 fps · 2:30 (150.9 s)

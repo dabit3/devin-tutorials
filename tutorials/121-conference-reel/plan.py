@@ -2,10 +2,12 @@ import json, os
 # Generates sections.json from the clip timestamps in footage-manifest.md.
 # Blank / "Loading screenshot..." Computer-pane stretches (blanks.json from blanks.py, plus MANUAL) are cut from every
 # part except the cropped test-recording viewer. Frame-accurate OCR hits for loading text
-# (loading.json from loading.py) are cut from every part.
+# (loading.json from loading.py) are cut from every part, as are frames showing a word that must not appear on screen
+# (words.json, ranges found with wordcheck.py on the source clips).
 HERE = os.path.dirname(os.path.abspath(__file__))
 BLANKS = json.load(open(os.path.join(HERE, "blanks.json")))
 LOADING = json.load(open(os.path.join(HERE, "loading.json")))
+WORDS = json.load(open(os.path.join(HERE, "words.json")))
 MANUAL = {  # empty panes the pixel check can't see: Google start pages, loading spinners, unloaded PR images
     "04-expo-mobile-apps.mp4": [[27, 35.2], [94.5, 117]],
     "05-neon-breakout.mp4": [[23.5, 28.5]],
@@ -21,7 +23,7 @@ CROP = [360, 321, 3120]
 PROMPT = 5.0; CONV = 3.0; COMP = 3.0; ART = 2.0; ARTMAX = 12; ARCH = 2.0
 
 def part(src, start, span, speed=1, clean=True, **kw):
-    ranges = [[a - LPAD, b + LPAD] for a, b in LOADING.get(src, [])]
+    ranges = [[a - LPAD, b + LPAD] for a, b in LOADING.get(src, []) + WORDS.get(src, [])]
     if clean:
         ranges = ranges + [r for r in BLANKS.get(src, []) if r not in NOT_BLANK.get(src, [])] + MANUAL.get(src, [])
     skip = []
@@ -50,7 +52,7 @@ S = [
  ("07-architecture-map","Devin mapping a codebase's architecture",0,7,None,None,None,19,86,{}),
  ("08-earthquake-globe","Devin building and testing an earthquake globe",0,7,26,53,82,84,121,{}),
  ("09-devin-arcade","Devin and three child sessions building an arcade",0,6,41,74,96,98,121,{"agents":(28,41)}),
- ("10-drum-machine","Devin building and testing a drum machine",1,7,19,53,82,83,115,{}),
+ ("12-groovebox-16","Devin building and testing a drum machine",1,7,21,49,78,79,112,{}),
 ]
 secs = []
 for n, t, p, c, comp, vo, vc, a, s, x in S:
