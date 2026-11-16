@@ -370,7 +370,7 @@ if (PHASE === 'ios-start') {
   const TASK = process.env.TASK;
   await r.goto(ORG, 5000); await sidebar(false);
   await closeMenus(p); await clearComposer(p); await sleep(400);
-  await ensureAgent(r).catch(e => console.log('agent check:', e.message)); await settle();
+  await ensureAgent(r); await settle();
   await p.mouse.move(700, 560); r.cur = { x: 700, y: 560 };
   await r.shot({ hold: 1.2 });
   r.mark('ios-home');
