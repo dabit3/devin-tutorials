@@ -136,7 +136,7 @@ def cut_take():
     for li, c in enumerate(cuts):
         pre, post = [w for w in heard if w['end'] <= c + 0.02], [w for w in heard if w['start'] >= c - 0.02]
         # compare letters, not words: the transcript may split "codebase" into "code base"
-        tail, head = ''.join(words(items[li][1])), ''.join(words(items[li + 1][1]))
+        tail, head = ''.join(words(items[li][2])), ''.join(words(items[li + 1][2]))
         ok = pre and post and len(pre) + len(post) == len(heard) and tail.endswith(''.join(words(pre[-1]['text']))) and head.startswith(''.join(words(post[0]['text'])))
         if not ok:
             near = [(w['text'], w['start'], w['end']) for w in heard if abs(w['start'] - c) < 1.5]

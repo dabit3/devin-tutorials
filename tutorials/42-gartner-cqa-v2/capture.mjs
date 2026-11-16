@@ -11,7 +11,7 @@ const SF = new URL('./state.json', import.meta.url);
 const state = fs.existsSync(SF) ? JSON.parse(fs.readFileSync(SF, 'utf8')) : {};
 const save = () => fs.writeFileSync(SF, JSON.stringify(state, null, 1));
 
-const r = await new Rec('shots').init();
+const r = await new Rec(process.env.SHOTDIR || 'shots').init();
 const p = r.p;
 await p.send('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-color-scheme', value: 'light' }] });
 const settle = async (n = 30) => { for (let i = 0; i < n && !(await r.clean()); i++) await sleep(500); await sleep(400); };
@@ -341,6 +341,31 @@ if (PHASE === 'cifix-start') {
   await r.shot({ hold: 1.6 });
   r.mark('cifix-session');
 }
+
+if (PHASE === 'suite-start') {
+  const TASK = process.env.TASK;
+  await r.goto(ORG, 5000); await sidebar(false);
+  await closeMenus(p); await clearComposer(p); await sleep(400);
+  await ensureAgent(r).catch(e => console.log('agent check:', e.message)); await settle();
+  await r.shot({ hold: 1.2 });
+  r.mark('suite-home');
+  await mentionRepo(r, process.env.REPO, process.env.REPO);
+  await sleep(600);
+  await r.type(' ' + TASK, { every: 6 });
+  await sleep(700);
+  await r.shot({ hold: 2.6 });
+  r.mark('suite-prompt');
+  await r.move({ attr: ['aria-label', 'Send'], sel: 'main button' });
+  await r.shot({ kind: 'hover', hold: 0.5 });
+  await p.mouse.click(r.cur.x, r.cur.y);
+  await sleep(2500);
+  for (let i = 0; i < 40 && !/\/sessions\//.test(await p.evaluate(() => location.href)); i++) await sleep(1500);
+  state.suiteSession = await p.evaluate(() => location.href.split('?')[0]); save();
+  console.log('SESSION', state.suiteSession);
+  await sleep(8000); await settle();
+  await r.shot({ hold: 1.6 });
+  r.mark('suite-session');
+}
 if (PHASE === 'ios-start') {
   const TASK = process.env.TASK;
   await r.goto(ORG, 5000); await sidebar(false);
@@ -469,6 +494,53 @@ if (PHASE === 'draft') {
   r.mark('draft-analysis');
 }
 
+
+// New Review UI (Nov 2026): draft PRs have no banner; start from the PR's "..." menu -> "Review draft".
+if (PHASE === 'draft2') {
+  await r.goto(process.env.PRURL.replace('https://github.com/', ORG + '/review/'), 9000); await sidebar(false); await settle();
+  await p.keyboard.press('Escape');
+  await r.shot({ hold: 3.0, hl: [await cont('Draft', 'Mark ready for review')] });
+  r.mark('draft-banner');
+  await r.click({ attr: ['aria-label', 'More pull request actions'], sel: 'button' }, { wait: 1200 });
+  await r.shot({ hold: 2.4, hl: [await cont('Review draft', 'Close pull request')] });
+  r.mark('draft-menu');
+  await r.click({ text: 'Review draft', sel: '[role=menuitem]', exact: true }, { wait: 3000 });
+  await r.shot({ hold: 1.5 });
+  r.mark('draft-started');
+  console.log('AFTER CLICK:', (await p.evaluate(() => document.body.innerText)).slice(0, 1500));
+  const t0 = Date.now();
+  while (Date.now() - t0 < 1500000) {
+    await r.poll(20000, 10000);
+    const t = await sideText();
+    if (/Needs your attention/.test(t) && !/Reviewing|Analyzing|in progress/i.test(t)) break;
+  }
+  await settle();
+  r.mark('draft-reviewed');
+  console.log('SIDE:', (await sideText()).slice(0, 3000));
+  await r.shot({ hold: 3.0, hl: [await cont('Needs your attention')] });
+  r.mark('draft-findings');
+}
+
+
+// Generic Review PR shots: analysis, findings list, then each finding expanded (FINDINGS = 'title prefix|title prefix').
+if (PHASE === 'pr-shots') {
+  await r.goto(process.env.PRURL.replace('https://github.com/', ORG + '/review/'), 9000); await sidebar(false); await settle();
+  await p.keyboard.press('Escape');
+  await r.shot({ hold: 3.0, hl: [await cont("Devin's analysis")] });
+  r.mark('analysis');
+  await r.shot({ hold: 2.6, hl: [await cont('Needs your attention')] });
+  r.mark('findings');
+  for (const t of (process.env.FINDINGS || '').split('|').filter(Boolean)) {
+    const b = await findingBtn(t); if (!b) { console.log('no finding', t); continue; }
+    await r.click(b, { wait: 2200 });
+    await p.mouse.move(700, 700); await sleep(600);
+    await r.shot({ hold: 3.4, hl: [await cont(t, 'Mark fixed')] });
+    r.mark('f-' + t.slice(0, 14));
+    console.log('FINDING', t, ':', (await sideText()).match(new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '[\\s\\S]{0,900}'))?.[0]);
+    const b2 = await findingBtn(t); if (b2) { await p.mouse.click(b2.x, b2.y); await sleep(1000); }
+  }
+}
+
 if (PHASE === 'draft-results') {
   await r.goto(process.env.PRURL.replace('https://github.com/', ORG + '/review/'), 9000); await sidebar(false); await settle();
   await p.keyboard.press('Escape');
@@ -554,6 +626,31 @@ if (PHASE === 'replay') {
     console.log(k, JSON.stringify(st), (await p.evaluate(() => document.body.innerText.slice(0, 0))));
     if (st.top >= st.max - 2) break;
     st = await scroll(0.55); await sleep(900); k++;
+  }
+}
+
+if (PHASE === 'events') {
+  const TAG = process.env.TAG || 'ev';
+  await r.goto(process.env.SESSION, 8000); await sidebar(false); await settle();
+  await p.keyboard.press('Escape'); await p.evaluate(() => document.activeElement?.blur());
+  const pane = n => p.evaluate(n => { const e = [...document.querySelectorAll('button')].find(x => (x.innerText || '').trim() === n && x.getBoundingClientRect().width > 0 && x.getBoundingClientRect().x > 450); if (e) { e.click(); return true; } return false; }, n);
+  await pane('Progress'); await sleep(2500);
+  const chatTo = t => p.evaluate(t => { const els = [...document.querySelectorAll('main *')].filter(e => e.children.length < 4 && e.getBoundingClientRect().x < 470 && (e.innerText || '').includes(t)); const e = els.pop(); if (!e) return false; e.scrollIntoView({ block: 'start' }); return true; }, t);
+  const evBox = t => p.evaluate(t => { const els = [...document.querySelectorAll('div,li,button')].filter(e => { const b = e.getBoundingClientRect(); return b.x > 480 && b.width > 300 && b.height < 60 && b.height > 14 && (e.innerText || '').includes(t); }); const e = els.pop(); if (!e) return null; e.scrollIntoView({ block: 'center' }); const b = e.getBoundingClientRect(); return { x: b.x + 120, y: b.y + b.height / 2 }; }, t);
+  for (const step of (process.env.STEPS || '').split('|').filter(Boolean)) {
+    const [kind, ...rest] = step.split(':'); const arg = rest.join(':');
+    if (kind === 'expand') { const b = await p.evaluate(() => { const e = [...document.querySelectorAll('main button, main div')].find(x => /^Worked for/.test((x.innerText || '').trim()) && x.getBoundingClientRect().x < 470 && x.getBoundingClientRect().height < 40); if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x + 40, y: b.y + b.height / 2 }; }); if (b) { await p.mouse.click(b.x, b.y); await sleep(1500); } else console.log('no expand'); continue; }
+    if (kind === 'dump') { console.log(await p.evaluate(() => [...document.querySelectorAll('main *')].filter(e => e.getBoundingClientRect().x < 470 && e.children.length === 0 && (e.innerText||'').trim()).map(e => e.innerText.trim().slice(0,90)).join('\n'))); continue; }
+    if (kind === 'dumpr') { console.log(await p.evaluate(() => [...document.querySelectorAll('main *')].filter(e => e.getBoundingClientRect().x > 480 && e.children.length === 0 && (e.innerText||'').trim()).map(e => e.innerText.trim().slice(0,90)).join('\n'))); continue; }
+    if (kind === 'chat') { console.log('chat', arg, await chatTo(arg)); await sleep(1200); }
+    if (kind === 'wheel') { const [x, y, dy] = arg.split(',').map(Number); await p.mouse.move(x, y); for (let i = 0; i < 8; i++) { await p.mouse.wheel(x, y, dy / 8); await sleep(120); } await sleep(900); await p.mouse.move(700, 790); }
+    if (kind === 'goto') { await r.goto(arg, 8000); await sidebar(false); await settle(); await p.keyboard.press('Escape'); await pane('Progress'); await sleep(2500); continue; }
+    if (kind === 'click') { const b = await p.evaluate(t => { const e = [...document.querySelectorAll('a,button,div,span')].filter(x => (x.innerText || '').trim().startsWith(t) && x.getBoundingClientRect().width > 0).sort((a, b) => a.innerText.length - b.innerText.length)[0]; if (!e) return null; const r = e.getBoundingClientRect(); return { x: r.x + r.width / 2, y: r.y + r.height / 2 }; }, arg); if (!b) { console.log('no click', arg); continue; } await r.click(b, { wait: 3500 }); await p.mouse.move(700, 790); }
+    if (kind === 'wait') { await sleep(Number(arg)); continue; }
+    if (kind === 'ev') { await sleep(500); const b = await evBox(arg); if (!b) { console.log('no event', arg); continue; } await sleep(700); const b2 = await evBox(arg); await r.click(b2, { wait: 2500 }); await p.mouse.move(700, 760); }
+    if (kind === 'pane') { await pane(arg); await sleep(2500); }
+    await sleep(600);
+    await r.shot({ hold: 1.4 }); r.mark(`${TAG}-${kind}-${arg.slice(0, 18)}`);
   }
 }
 

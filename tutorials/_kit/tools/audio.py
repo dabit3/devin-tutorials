@@ -20,6 +20,7 @@ def env(n, a, d, curve=4.0):
 def add(sig, t0, gain=1.0, pan=0.0):
     i = int(t0 * SR)
     if i >= N: return
+    if i < 0: sig, i = sig[-i:], 0
     j = min(N, i + len(sig)); s = sig[:j - i] * gain
     L[i:j] += s * np.sqrt(0.5 * (1 - pan)); R[i:j] += s * np.sqrt(0.5 * (1 + pan))
 def osc(freq, dur, kind='sine'):
@@ -37,6 +38,7 @@ ML = np.zeros(N); MR = np.zeros(N)
 def madd(sig, t0, gain=1.0, pan=0.0):
     i = int(t0 * SR)
     if i >= N: return
+    if i < 0: sig, i = sig[-i:], 0
     j = min(N, i + len(sig)); s = sig[:j - i] * gain
     ML[i:j] += s * np.sqrt(0.5 * (1 - pan)); MR[i:j] += s * np.sqrt(0.5 * (1 + pan))
 BEAT = 60 / 100; BAR = 4 * BEAT; S16 = BEAT / 4
