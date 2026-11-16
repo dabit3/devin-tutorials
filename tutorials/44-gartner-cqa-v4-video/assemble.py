@@ -28,6 +28,7 @@ MAP = {
 }
 FRESH = {p: os.path.expanduser('~/gartner/v3/' + d) for p, d in (('d10', 'draft10a'), ('f10', 'fresh10'), ('f9', 'fresh9'), ('f9b', 'fresh9b'), ('su', 'suite'), ('s2', 'suite2'), ('s4', 'suite4'), ('rsu', 're-suite'), ('rci', 're-ci'), ('ci2', 'ci2'), ('rst', 're-stack'), ('rwin', 're-win'), ('rwf', 're-wf'), ('rios', 're-ios'), ('b3', 'b3'), ('onc', 'onc'), ('onc2', 'onc2'), ('c9', 'ci9r'), ('st9', 'stack9r'), ('rv12', 'rv12'), ('rv13', 'rv13'), ('rv14', 'rv14'))}
 FB = {p: {b['img']: b for b in json.load(open(os.path.join(d, 'beats.json')))} for p, d in FRESH.items()}
+HLV6 = json.load(open(os.path.join(HERE, 'hl-v6.json')))  # 'line:src' -> boxes (1440x810, center + size)
 HL4 = {'o10-win-repro-msg.png': {'x': 72, 'y': 330, 'w': 425, 'h': 118}}
 SAY = [('CWE-862', 'CWE eight six two'), ('CWE-290', 'CWE two ninety'), ('REVIEW.md', 'review dot M D'), ('AGENTS.md', 'agents dot M D'), ('999,999', 'nine hundred and ninety-nine thousand nine hundred and ninety-nine'),
        ('CI,', 'C I,'), ('CI ', 'C I '), ('CI.', 'C I.'), ('VMs', 'V Ms'), ('VM', 'V M'), ('iOS', 'i O S'), ('MCP', 'M C P'), ('API', 'A P I')]
@@ -57,6 +58,8 @@ for i, (ln, src, vo) in enumerate(order):
     e = {'hold': 2.5, 'cursor': False, 'hl': None, 'capPos': 'bottom', 'line': ln}
     if src in HL: e.update(hl=HL[src], hlDelay=0.5)
     elif src[2:] in HL4: e.update(hl=HL4[src[2:]], hlDelay=0.5)
+    elif f"{ln}:{b['src']}" in HLV6: e.update(hl=HLV6[f"{ln}:{b['src']}"], hlDelay=0.5)
+    elif b.get('hl'): e.update(hl=b['hl'], hlDelay=0.5)
     e['vo'] = vo; say = vo
     for a, z in SAY: say = say.replace(a, z)
     if say != vo: e['voSay'] = say
