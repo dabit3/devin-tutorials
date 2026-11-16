@@ -24,7 +24,9 @@ The developer can ask questions in Review chat while writing the code. Here they
 
 Devin Review explains which claims to count: the same customer, only claims filed before this one, and only in the same year. It also suggests tests for the edge cases.
 
-The developer can also review in Devin Desktop. The same findings and chat are there, next to the local code.
+The developer can also review in Devin Desktop.
+
+The same finding is there, and they can ask Devin Review questions in chat.
 
 When a pull request is ready, Devin Review runs on its own. An admin picks the repositories, when the review runs, and the review effort. Here it covers all four repositories at Ultra effort.
 
@@ -42,7 +44,9 @@ A second finding is a rounding bug. It is tagged as a repo rule, because AGENTS.
 
 The reviewer asks which findings must be fixed before the merge. Devin Review names the blockers and links each one to the code and to the rule it breaks.
 
-Devin Security is a specialized agent that scans whole repositories for security problems. Before it scans, it asks a few questions to build a threat model, such as who the attackers are and how the service is reached.
+Devin Security is a specialized agent that scans whole repositories for security problems.
+
+Before it scans, it asks a few questions to build a threat model, such as who the attackers are and how the service is reached.
 
 Here it finds a chain of problems. The claims service trusts the user ID and role in the request headers, and never checks that they came from the gateway. So anyone who can reach the service can claim to be an adjuster and read every customer's claims.
 
@@ -62,7 +66,9 @@ Large refactors are hard to review as one pull request. Devin can split a refact
 
 Here, Devin moves the payout math into one shared module in three pull requests. The first adds the new module, the second switches the callers, and the third deletes the old code.
 
-Each pull request is small, so Devin Review and the reviewer check one change at a time. Devin Review found no problems in any of the three.
+Each pull request is small, so Devin Review and the reviewer check one change at a time.
+
+Devin Review found no problems in any of the three.
 
 Devin can write a whole test suite. Here, the developer asks for tests of the claims API at three levels, and asks Devin to run them all.
 
@@ -100,7 +106,7 @@ A crash monitor sends an alert, and Devin Oncall starts a session. The alert has
 
 Devin follows the breadcrumbs in the iOS Simulator and gets the same crash. The cause is a division by zero when an estimate has no line items.
 
-It fixes the root cause and adds two regression tests. One is a unit test for an empty estimate, and one is a UI test that removes the last item.
+It fixes the root cause and adds three regression tests: two unit tests for an empty estimate, and a UI test that removes the last item.
 
 The report gives the root cause, the confidence, and the affected app versions, with the test logs and a patch attached.
 

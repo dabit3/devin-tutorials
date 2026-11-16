@@ -14,19 +14,19 @@ MAP = {
  1: ['k:intro-slide-4k.png'], 2: ['su:0000.png'],
  3: ['v:v03-review-settings-0.png'], 4: ['v:v03-review-settings-0.png'], 5: ['v:v03-review-settings-0.png'], 6: ['v:v06-review-trigger.png'],
  7: ['d10:0000.png'], 8: ['d10:0003.png'], 9: ['f10:0004.png'], 10: ['f10:0000.png'], 11: ['f10:0046.png'], 12: ['f10:0070.png'],
- 13: ['k:d01-desktop-review-info.png'], 14: ['v:v06-review-trigger.png'], 15: ['v:v15-review-billing.png', 'v:v03-review-settings-2.png'],
+ 13: ['k:desk10-info.png', 'k:desk10-asked.png'], 14: ['v:v06-review-trigger.png'], 15: ['v:v15-review-billing.png', 'v:fix16-ctx-tooltip.png'],
  16: ['f9b:0000.png'], 17: ['f9b:0001.png'], 18: ['f9b:0004.png'], 19: ['f9b:0007.png'], 20: ['f9:0057.png'],
- 21: ['v:s03-threat.png'], 22: ['v:s24-References.png'], 23: ['v:s33-validation-section.png'], 24: ['v:s34-pr8-review.png'],
- 25: ['rci:0001.png'], 26: ['ci2:0001.png'], 27: ['rci:0002.png'], 28: ['ci2:0005.png'],
- 29: ['b3:0013.png'], 30: ['rst:0003.png'], 31: ['rst:0004.png'],
+ 21: ['v:s04-threat.png', 'v:s05-q2.png'], 22: ['v:s24-References.png'], 23: ['v:s33-validation-section.png'], 24: ['v:s34-pr8-review.png'],
+ 25: ['c9:0000.png'], 26: ['c9:0002.png'], 27: ['c9:0003.png'], 28: ['c9:0001.png'],
+ 29: ['rv13:0000.png'], 30: ['st9:0001.png'], 31: ['rv12:0000.png', 'rv14:0000.png'],
  32: ['rsu:0000.png'], 33: ['s4:0005.png'], 34: ['s4:0001.png'], 35: ['s2:0006.png'], 36: ['s4:0003.png'], 37: ['rsu:0001.png', 's4:0000.png'],
  38: ['rwin:0000.png'], 39: ['rwin:0003.png', 'b3:0012.png'],
  40: ['rwf:0000.png'], 41: ['b3:0007.png'], 42: ['rwf:0004.png'], 43: ['rwf:0005.png'],
  44: ['onc2:0010.png'], 45: ['onc2:0012.png'], 46: ['rios:0000.png'], 47: ['rios:0008.png'], 48: ['rios:0004.png'], 49: ['rios:0014.png'],
  50: ['v:o03-investigation.png', 'v:o10-win-repro-msg.png'], 51: ['v:o08-oncall-pr3-review.png'],
- 52: ['v:r20-review-home-4repos.png'], 53: ['v:r20-review-home-4repos.png'], 54: ['v:r20-review-home-4repos.png'], 55: ['v:r20-review-home-4repos.png'],
+ 52: ['v:r24m-review-home.png'], 53: ['v:r24m-review-home.png'], 54: ['v:r24m-review-home.png'], 55: ['v:r24m-review-home.png'],
 }
-FRESH = {p: os.path.expanduser('~/gartner/v3/' + d) for p, d in (('d10', 'draft10a'), ('f10', 'fresh10'), ('f9', 'fresh9'), ('f9b', 'fresh9b'), ('su', 'suite'), ('s2', 'suite2'), ('s4', 'suite4'), ('rsu', 're-suite'), ('rci', 're-ci'), ('ci2', 'ci2'), ('rst', 're-stack'), ('rwin', 're-win'), ('rwf', 're-wf'), ('rios', 're-ios'), ('b3', 'b3'), ('onc', 'onc'), ('onc2', 'onc2'))}
+FRESH = {p: os.path.expanduser('~/gartner/v3/' + d) for p, d in (('d10', 'draft10a'), ('f10', 'fresh10'), ('f9', 'fresh9'), ('f9b', 'fresh9b'), ('su', 'suite'), ('s2', 'suite2'), ('s4', 'suite4'), ('rsu', 're-suite'), ('rci', 're-ci'), ('ci2', 'ci2'), ('rst', 're-stack'), ('rwin', 're-win'), ('rwf', 're-wf'), ('rios', 're-ios'), ('b3', 'b3'), ('onc', 'onc'), ('onc2', 'onc2'), ('c9', 'ci9r'), ('st9', 'stack9r'), ('rv12', 'rv12'), ('rv13', 'rv13'), ('rv14', 'rv14'))}
 FB = {p: {b['img']: b for b in json.load(open(os.path.join(d, 'beats.json')))} for p, d in FRESH.items()}
 HL4 = {'o10-win-repro-msg.png': {'x': 72, 'y': 330, 'w': 425, 'h': 118}}
 SAY = [('CWE-862', 'CWE eight six two'), ('CWE-290', 'CWE two ninety'), ('REVIEW.md', 'review dot M D'), ('AGENTS.md', 'agents dot M D'), ('999,999', 'nine hundred and ninety-nine thousand nine hundred and ninety-nine'),
@@ -63,7 +63,7 @@ for i, (ln, src, vo) in enumerate(order):
     edit[new] = e
 json.dump(beats, open(os.path.join(out, 'beats.json'), 'w'), indent=1)
 spec = {'title': '', 'subtitle': '', 'introHold': 0.2, 'outro': 'Devin, by Cognition', 'outroSub': 'devin.ai  ·  cognition.com',
-        'speed': 1, 'cps': 48, 'maxZoom': 1.4, 'voSentGap': 0.4, 'pace': 1.5, 'edit': edit}
+        'speed': 1, 'cps': 48, 'maxZoom': 1.4, 'voSentGap': 0.3, 'pace': 1.5, 'edit': edit}
 if os.environ.get('NO_CAPTIONS'): spec['noSubs'] = True
 open(os.path.join(HERE, 'spec.js'), 'w').write('window.SPEC = ' + json.dumps(spec, indent=1) + ';\n')
 with open(os.path.join(HERE, 'voice-script.md'), 'w') as f:

@@ -23,7 +23,7 @@ The "On screen" column is the shot list for the reshoot. Every shot is real Devi
 | 10 | Its summary also checks access: the new fields are shown only to users who can see all claims, so customers never get them. | Devin's analysis |
 | 11 | The developer can ask questions in Review chat while writing the code. Here they ask how the score should count prior claims. | Review chat: question |
 | 12 | Devin Review explains which claims to count: the same customer, only claims filed before this one, and only in the same year. It also suggests tests for the edge cases. | Review chat: answer |
-| 13 | The developer can also review in Devin Desktop. The same findings and chat are there, next to the local code. | Same PR in Devin Desktop's Review |
+| 13 | The developer can also review in Devin Desktop. The same finding is there, and they can ask Devin Review questions in chat. | PR #10 in Devin Desktop's Review: same finding, question asked in Desktop chat |
 
 ## When you open a pull request
 
@@ -51,17 +51,17 @@ The "On screen" column is the shot list for the reshoot. Every shot is real Devi
 | # | Narration | On screen |
 |---|---|---|
 | 25 | The payout pull request also fails in CI, the automatic build and test system. The developer asks Devin to fix it. This session runs on a macOS VM. | CI-fix session, macOS badge |
-| 26 | Devin reads the CI logs, runs the failing test on its VM, and finds the root cause. The export rounded each installment, so one million cents became 999,999. | Failing test output |
+| 26 | Devin reads the CI logs, runs the failing test on its VM, and finds the root cause. The export rounded each installment, so one million cents became 999,999. | Chat: PayoutExporterTest reproduced on the VM, expected 10000.00 but was 9999.99 |
 | 27 | It fixes the failure and the review findings in the same pull request. Each new regression test fails on the old code and passes on the fix. | Chat: fixes and tests |
-| 28 | Before it pushes, Devin runs the full build and test suite. Then CI passes. | 15 tests, BUILD SUCCESS |
+| 28 | Before it pushes, Devin runs the full build and test suite. Then CI passes. | Chat: ./mvnw -B verify passes locally (29 tests), CI verify and Devin Review green on PR #9 |
 
 ## During a refactor
 
 | # | Narration | On screen |
 |---|---|---|
-| 29 | Large refactors are hard to review as one pull request. Devin can split a refactor into stacked pull requests, where each one builds on the one below it. | Review page for PR #3 |
-| 30 | Here, Devin moves the payout math into one shared module in three pull requests. The first adds the new module, the second switches the callers, and the third deletes the old code. | Stack menu, three PRs highlighted |
-| 31 | Each pull request is small, so Devin Review and the reviewer check one change at a time. Devin Review found no problems in any of the three. | "Needs your attention · 0" |
+| 29 | Large refactors are hard to review as one pull request. Devin can split a refactor into stacked pull requests, where each one builds on the one below it. | Review page for stacked PR #13 |
+| 30 | Here, Devin moves the payout math into one shared module in three pull requests. The first adds the new module, the second switches the callers, and the third deletes the old code. | Stacked pull requests: #9, #12, #13, #14 |
+| 31 | Each pull request is small, so Devin Review and the reviewer check one change at a time. Devin Review found no problems in any of the three. | PRs #12 and #14 in Review: "Needs your attention · 0", Checks 2/2 |
 
 ## When you add tests
 
@@ -88,7 +88,7 @@ The "On screen" column is the shot list for the reshoot. Every shot is real Devi
 | 45 | The responder can use the team's tools through MCP, such as Slack, and it follows the team's runbook. It runs on a macOS VM with Xcode and the iOS Simulator. | MCPs list, runbook, macOS setting |
 | 46 | A crash monitor sends an alert, and Devin Oncall starts a session. The alert has the stack trace and the breadcrumbs, which are the last steps the user took. | Alert payload |
 | 47 | Devin follows the breadcrumbs in the iOS Simulator and gets the same crash. The cause is a division by zero when an estimate has no line items. | Reproduced on iOS 26.5 |
-| 48 | It fixes the root cause and adds two regression tests. One is a unit test for an empty estimate, and one is a UI test that removes the last item. | xcodebuild test run |
+| 48 | It fixes the root cause and adds three regression tests: two unit tests for an empty estimate, and a UI test that removes the last item. | xcodebuild test run |
 | 49 | The report gives the root cause, the confidence, and the affected app versions, with the test logs and a patch attached. | Final report and files |
 | 50 | Here the alert comes from a Windows desktop app. Oncall starts a session on a Windows virtual machine, runs the app, and reproduces the crash. It finds the cause, a missing claim type in the approval rules, writes a fix with a test, and reports its confidence. | Oncall session on a Windows VM |
 | 51 | A developer opens the pull request from the patch. Like every other change, it goes through Devin Review, and a person approves the merge. | adjuster-desktop PR #3 (opened from the Oncall patch) in Devin Review |
@@ -97,7 +97,7 @@ The "On screen" column is the shot list for the reshoot. Every shot is real Devi
 
 | # | Narration | On screen |
 |---|---|---|
-| 52 | To recap: Devin Review checked code while it was written and when each pull request opened, with the team's rules. Devin Security found and fixed a chained vulnerability. | Devin Review home |
+| 52 | To recap: Devin Review checked code while it was written and when each pull request opened, with the team's rules. Devin Security found and fixed a chained vulnerability. | Devin Review home: PRs #9, #14, #12, #13, #11, #8, #6, adjuster-desktop #2, draft #10 |
 | 53 | Devin fixed a failing build, split a refactor into small pull requests, wrote and ran a whole test suite, and fixed production crashes on macOS and Windows. | Same view |
 | 54 | This works on Linux, macOS, and Windows VMs, with the iOS Simulator and Android emulators. | Same view |
 | 55 | So the demo showed code quality at each stage of the life cycle: writing code, opening a pull request, security, a failing build, a refactor, testing, and production. | Same view |

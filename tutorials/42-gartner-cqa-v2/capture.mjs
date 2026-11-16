@@ -370,13 +370,13 @@ if (PHASE === 'ios-start') {
   const TASK = process.env.TASK;
   await r.goto(ORG, 5000); await sidebar(false);
   await closeMenus(p); await clearComposer(p); await sleep(400);
-  await ensureAgent(r); await settle();
+  await ensureAgent(r).catch(e => console.log('agent check:', e.message)); await settle();
   await p.mouse.move(700, 560); r.cur = { x: 700, y: 560 };
   await r.shot({ hold: 1.2 });
   r.mark('ios-home');
   const cfg = { attr: ['aria-label', 'Configuration'], sel: 'main button' };
   await r.click(cfg, { pre: { cap: 'Open the platform menu below the prompt box' }, wait: 900 });
-  const venv = await p.evaluate(() => { const e = [...document.querySelectorAll('[role=menuitem], [role=menu] *')].filter(x => (x.innerText || '').startsWith('Virtual environment')).pop(); const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2 }; });
+  const venv = await p.evaluate(() => { const e = [...document.querySelectorAll('[role=menuitem], [role=menu] *')].filter(x => (x.innerText || '').startsWith('Machine')).pop(); const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2 }; });
   await r.move(venv); await p.mouse.move(venv.x, venv.y); await sleep(500); await p.mouse.move(venv.x + 4, venv.y); r.cur = { x: venv.x + 4, y: venv.y };
   await sleep(1500);
   const hoverVenv = async () => { for (let k = 0; k < 6; k++) { await p.mouse.move(venv.x - 10, venv.y); await sleep(250); await p.mouse.move(venv.x + 4, venv.y, { steps: 4 }); await sleep(900); if (await p.evaluate(() => [...document.querySelectorAll('[role=menu]')].some(m => /macOS/.test(m.innerText)))) return true; } return false; };
@@ -385,7 +385,7 @@ if (PHASE === 'ios-start') {
   await r.shot({ kind: 'hover', hold: 0.8, mark: 'envmenu', hlBox: sub || undefined });
   const before = await p.evaluate(() => [...document.querySelectorAll('[role=menu]')].map(m => m.innerText).join(' | '));
   console.log('MENU', JSON.stringify(before));
-  if (/Virtual environment\s*macOS/.test(before)) fail('picker already on macOS; reset it to Ubuntu first');
+  if (/Machine\s*macOS/.test(before)) fail('picker already on macOS; reset it to Ubuntu first');
   if (!(await hoverVenv())) fail('submenu closed');
   const mac = await p.evaluate(() => {
     const els = [...document.querySelectorAll('[role=menu] *, [role=menuitemradio], [role=menuitem]')].filter(e => e.getBoundingClientRect().width > 0 && (e.innerText || '').trim() === 'macOS');
@@ -394,7 +394,7 @@ if (PHASE === 'ios-start') {
   if (!mac) fail('macOS option not found');
   await r.click(mac, { pre: { cap: 'Pick macOS' }, wait: 900 });
   const sel = await p.evaluate(() => [...document.querySelectorAll('[role=menu]')].map(m => m.innerText).join(' | '));
-  if (!/Virtual environment\s*macOS/.test(sel)) fail('macOS not selected: ' + sel);
+  if (!/Machine\s*macOS/.test(sel)) fail('macOS not selected: ' + sel);
   await closeMenus(p); await sleep(600);
   await p.mouse.move(700, 620); r.cur = { x: 700, y: 620 };
   await mentionRepo(r, process.env.REPO, process.env.REPO);
@@ -425,7 +425,7 @@ if (PHASE === 'win-start') {
   r.mark('ios-home');
   const cfg = { attr: ['aria-label', 'Configuration'], sel: 'main button' };
   await r.click(cfg, { pre: { cap: 'Open the platform menu below the prompt box' }, wait: 900 });
-  const venv = await p.evaluate(() => { const e = [...document.querySelectorAll('[role=menuitem], [role=menu] *')].filter(x => (x.innerText || '').startsWith('Virtual environment')).pop(); const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2 }; });
+  const venv = await p.evaluate(() => { const e = [...document.querySelectorAll('[role=menuitem], [role=menu] *')].filter(x => (x.innerText || '').startsWith('Machine')).pop(); const b = e.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2 }; });
   await r.move(venv); await p.mouse.move(venv.x, venv.y); await sleep(500); await p.mouse.move(venv.x + 4, venv.y); r.cur = { x: venv.x + 4, y: venv.y };
   await sleep(1500);
   const hoverVenv = async () => { for (let k = 0; k < 6; k++) { await p.mouse.move(venv.x - 10, venv.y); await sleep(250); await p.mouse.move(venv.x + 4, venv.y, { steps: 4 }); await sleep(900); if (await p.evaluate(() => [...document.querySelectorAll('[role=menu]')].some(m => /Windows/.test(m.innerText)))) return true; } return false; };
@@ -646,6 +646,7 @@ if (PHASE === 'events') {
     if (kind === 'wheel') { const [x, y, dy] = arg.split(',').map(Number); await p.mouse.move(x, y); for (let i = 0; i < 8; i++) { await p.mouse.wheel(x, y, dy / 8); await sleep(120); } await sleep(900); await p.mouse.move(700, 790); }
     if (kind === 'goto') { await r.goto(arg, 8000); await sidebar(false); await settle(); await p.keyboard.press('Escape'); await pane('Progress'); await sleep(2500); continue; }
     if (kind === 'click') { const b = await p.evaluate(t => { const e = [...document.querySelectorAll('a,button,div,span')].filter(x => (x.innerText || '').trim().startsWith(t) && x.getBoundingClientRect().width > 0).sort((a, b) => a.innerText.length - b.innerText.length)[0]; if (!e) return null; const r = e.getBoundingClientRect(); return { x: r.x + r.width / 2, y: r.y + r.height / 2 }; }, arg); if (!b) { console.log('no click', arg); continue; } await r.click(b, { wait: 3500 }); await p.mouse.move(700, 790); }
+    if (kind === 'filter') { const b = await p.evaluate(() => { const e = [...document.querySelectorAll('input')].find(x => /^Search or filter/.test(x.placeholder || '') && x.getBoundingClientRect().width > 0); if (!e) return null; const r = e.getBoundingClientRect(); return { x: r.x + 60, y: r.y + r.height / 2 }; }); if (!b) { console.log('no filter'); continue; } await p.mouse.click(b.x, b.y); await sleep(300); await p.keyboard.press('Meta+A').catch(() => {}); await p.keyboard.type(arg); await sleep(2500); await p.mouse.move(700, 790); }
     if (kind === 'wait') { await sleep(Number(arg)); continue; }
     if (kind === 'ev') { await sleep(500); const b = await evBox(arg); if (!b) { console.log('no event', arg); continue; } await sleep(700); const b2 = await evBox(arg); await r.click(b2, { wait: 2500 }); await p.mouse.move(700, 760); }
     if (kind === 'pane') { await pane(arg); await sleep(2500); }
