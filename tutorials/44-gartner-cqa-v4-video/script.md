@@ -17,7 +17,7 @@ The "On screen" column is the shot list for the reshoot. Every shot is real Devi
 
 | # | Narration | On screen |
 |---|---|---|
-| 7 | Review can start before the code is finished. A developer is adding a fraud score to the claim page, and the pull request is still a draft. | Draft PR #7 in Devin Review |
+| 7 | Review can start before the code is finished. A developer is adding a fraud score to the claim page, and the pull request is still a draft. | Draft PR #10 in Devin Review |
 | 8 | Devin Review does not review drafts automatically, so the developer starts a review from the pull request menu. | "Review draft" in the pull request menu |
 | 9 | The change is not finished yet. Devin Review flags one thing to look into: older claims can push a claim over the investigation threshold, because the code counts all of the customer's past claims. | Finding expanded |
 | 10 | Its summary also checks access: the new fields are shown only to users who can see all claims, so customers never get them. | Devin's analysis |
@@ -31,8 +31,8 @@ The "On screen" column is the shot list for the reshoot. Every shot is real Devi
 |---|---|---|
 | 14 | When a pull request is ready, Devin Review runs on its own. An admin picks the repositories, when the review runs, and the review effort. Here it covers all four repositories at Ultra effort. | Review settings: four repos, Ultra effort |
 | 15 | The admin also sets controls, such as a spend limit for each pull request. Devin Review reads the team's rule files, such as REVIEW.md and AGENTS.md, on every review. | Settings: spend limit and Context (REVIEW.md) |
-| 16 | A developer opens a pull request on the claims service. It adds a payout export for the finance team. Devin Review starts with a summary of what the change does. | PR #1: Devin's analysis |
-| 17 | Then it lists its findings by type and by severity. | PR #1: findings panel |
+| 16 | A developer opens a pull request on the claims service. It adds a payout export for the finance team. Devin Review starts with a summary of what the change does. | PR #9: Devin's analysis |
+| 17 | Then it lists its findings by type and by severity. | PR #9: findings panel |
 | 18 | The most serious finding is that a signed-in customer can read the payout details of another customer. Devin labels it as broken access control, CWE-639, shows the lines of code, and recommends a fix. | Finding popover |
 | 19 | A second finding is a rounding bug. It is tagged as a repo rule, because AGENTS.md says money must be split with the team's own helper. This is how the team's coding standards are enforced. | Popover with "Repo rule" tag |
 | 20 | The reviewer asks which findings must be fixed before the merge. Devin Review names the blockers and links each one to the code and to the rule it breaks. | Review chat: "Must fix before merge" |
