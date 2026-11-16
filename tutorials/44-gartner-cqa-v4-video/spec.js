@@ -21,14 +21,7 @@ window.SPEC = {
   "0001.png": {
    "hold": 2.5,
    "cursor": false,
-   "hl": [
-    {
-     "x": 720,
-     "y": 405,
-     "w": 757,
-     "h": 133
-    }
-   ],
+   "hl": [],
    "capPos": "bottom",
    "line": 2,
    "hlDelay": 0.5,
@@ -72,14 +65,7 @@ window.SPEC = {
   "0005.png": {
    "hold": 2.5,
    "cursor": false,
-   "hl": [
-    {
-     "x": 720,
-     "y": 405,
-     "w": 680,
-     "h": 130
-    }
-   ],
+   "hl": [],
    "capPos": "bottom",
    "line": 6,
    "hlDelay": 0.5,
@@ -1054,20 +1040,7 @@ window.SPEC = {
   "0060.png": {
    "hold": 2.5,
    "cursor": false,
-   "hl": [
-    {
-     "x": 720,
-     "y": 585,
-     "w": 1400,
-     "h": 50
-    },
-    {
-     "x": 720,
-     "y": 650,
-     "w": 1400,
-     "h": 50
-    }
-   ],
+   "hl": [],
    "capPos": "bottom",
    "line": 54,
    "hlDelay": 0.5,
