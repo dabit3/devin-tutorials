@@ -434,7 +434,7 @@ if (PHASE === 'win-start') {
   await r.shot({ kind: 'hover', hold: 0.8, mark: 'envmenu', hlBox: sub || undefined });
   const before = await p.evaluate(() => [...document.querySelectorAll('[role=menu]')].map(m => m.innerText).join(' | '));
   console.log('MENU', JSON.stringify(before));
-  if (/Virtual environment\s*Windows/.test(before)) fail('picker already on Windows; reset it to Ubuntu first');
+  if (/(Virtual environment|Machine)\s*Windows/.test(before)) fail('picker already on Windows; reset it to Ubuntu first');
   if (!(await hoverVenv())) fail('submenu closed');
   const mac = await p.evaluate(() => {
     const els = [...document.querySelectorAll('[role=menu] *, [role=menuitemradio], [role=menuitem]')].filter(e => e.getBoundingClientRect().width > 0 && (e.innerText || '').trim() === 'Windows');
@@ -443,7 +443,7 @@ if (PHASE === 'win-start') {
   if (!mac) fail('Windows option not found');
   await r.click(mac, { pre: { cap: 'Pick Windows' }, wait: 900 });
   const sel = await p.evaluate(() => [...document.querySelectorAll('[role=menu]')].map(m => m.innerText).join(' | '));
-  if (!/Virtual environment\s*Windows/.test(sel)) fail('Windows not selected: ' + sel);
+  if (!/(Virtual environment|Machine)\s*Windows/.test(sel)) fail('Windows not selected: ' + sel);
   await closeMenus(p); await sleep(600);
   await p.mouse.move(700, 620); r.cur = { x: 700, y: 620 };
   await mentionRepo(r, process.env.REPO, process.env.REPO);
