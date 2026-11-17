@@ -78,7 +78,7 @@ blank = os.path.join(DIRS['n9'], 'agents/0000.png')
 for ln, parts in P:
     if ln == 'CARD':
         new = f'{len(beats):04d}.png'; shutil.copy(blank, os.path.join(out, new)); beats.append({'img': new, 'src': 'card', 'cur': {'x': 1180, 'y': 700}})
-        edit[new] = {'hold': 2.2, 'scene': parts, 'cursor': False}; continue
+        edit[new] = {'hold': 2.2, 'scene': parts, 'cursor': False, 'waitVo': True}; continue
     line = LINES[ln]; sents = re.split(r'(?<=[.!?])\s+', line)
     texts = []; cur = None
     for p in parts:

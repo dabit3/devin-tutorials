@@ -386,7 +386,8 @@ window.SPEC = {
   "0045.png": {
    "hold": 2.2,
    "scene": "ch1",
-   "cursor": false
+   "cursor": false,
+   "waitVo": true
   },
   "0046.png": {
    "hold": 0.6,
@@ -517,7 +518,8 @@ window.SPEC = {
   "0060.png": {
    "hold": 2.2,
    "scene": "ch2",
-   "cursor": false
+   "cursor": false,
+   "waitVo": true
   },
   "0061.png": {
    "hold": 0.6,
@@ -611,7 +613,8 @@ window.SPEC = {
   "0071.png": {
    "hold": 2.2,
    "scene": "ch3",
-   "cursor": false
+   "cursor": false,
+   "waitVo": true
   },
   "0072.png": {
    "hold": 0.6,
@@ -827,7 +830,8 @@ window.SPEC = {
   "0097.png": {
    "hold": 2.2,
    "scene": "ch4",
-   "cursor": false
+   "cursor": false,
+   "waitVo": true
   },
   "0098.png": {
    "hold": 0.6,
@@ -924,7 +928,8 @@ window.SPEC = {
   "0109.png": {
    "hold": 2.2,
    "scene": "ch5",
-   "cursor": false
+   "cursor": false,
+   "waitVo": true
   },
   "0110.png": {
    "hold": 0.6,
