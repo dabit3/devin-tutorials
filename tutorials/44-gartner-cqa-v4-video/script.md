@@ -7,11 +7,11 @@ The "On screen" column is the shot list for the reshoot. Every shot is real Devi
 | # | Narration | On screen |
 |---|---|---|
 | 1 | This video shows how Devin supports code quality across the software development life cycle. It covers code review, security, debugging, refactoring, and testing. | Intro slide |
-| 2 | The demo goes through each stage in order. It starts with writing code and opening a pull request. Then it covers security, a failing build, a refactor, new tests, and production bugs. | Devin home: the prompt box |
+| 2 | The demo goes through each stage in order. It starts with writing code and opening a pull request. Then it covers security, a failing build, a refactor, new tests, and production bugs. | Sessions sidebar → draft PR #10 in Devin Review → Security scan findings → CI-fix session on PR #9 → refactor stack #12–#14 → test-suite session (PR #11) → iOS Oncall alert |
 | 3 | Our example is the claims platform of an insurance company. It has four repositories: a Java claims service, a web portal for customers, a Windows desktop app for adjusters, and an iOS app for field adjusters. | Review settings: the four repositories |
-| 4 | The team keeps its rules in a file called AGENTS.md. One rule is that every bug fix needs a regression test, which is a test that proves the bug stays fixed. Devin follows this rule when it writes code, and Devin Review flags pull requests that break it. Devin opens pull requests, and a person on the team approves every merge. | Same view |
-| 5 | Devin includes specialized agents, which are agents built for one job. Each one runs in its own session, with its own context, and the team manages them from the web app, Devin Desktop, Slack, or the API. | Review settings |
-| 6 | This video uses three. Devin Review uses adversarial agents. Some agents look for problems, and other agents try to prove each problem is wrong. Devin Security uses agentic MapReduce to scan a whole codebase. Devin Oncall is a site reliability agent with its own harness. | Review settings: trigger row |
+| 4 | The team keeps its rules in a file called AGENTS.md. One rule is that every bug fix needs a regression test, which is a test that proves the bug stays fixed. Devin follows this rule when it writes code, and Devin Review flags pull requests that break it. Devin opens pull requests, and a person on the team approves every merge. | claims-service AGENTS.md, "Every bug fix ships with a regression test" boxed → Devin Review finding on PR #9 → GitHub merge box on a Devin PR |
+| 5 | Devin includes specialized agents, which are agents built for one job. Each one runs in its own session, with its own context, and the team manages them from the web app, Devin Desktop, Slack, or the API. | Devin nav with Review, Oncall and Security → workflow child sessions in the sidebar → Devin Desktop → Slack connected → Devin API page |
+| 6 | This video uses three. Devin Review uses adversarial agents. Some agents look for problems, and other agents try to prove each problem is wrong. Devin Security uses agentic MapReduce to scan a whole codebase. Devin Oncall is a site reliability agent with its own harness. | Devin nav → Review panel on PR #9 ("Needs your attention", "Invalidated") → Security scan scanning the codebase → Oncall page with responders |
 
 ## While you write code
 
@@ -44,7 +44,7 @@ The "On screen" column is the shot list for the reshoot. Every shot is real Devi
 | 21 | Devin Security is a specialized agent that scans whole repositories for security problems. Before it scans, it asks a few questions to build a threat model, such as who the attackers are and how the service is reached. | Security scan setup and threat-model questions |
 | 22 | Here it finds a chain of problems. The claims service trusts the user ID and role in the request headers, and never checks that they came from the gateway. So anyone who can reach the service can claim to be an adjuster and read every customer's claims. | Finding: References across claims-service and claims-portal |
 | 23 | Devin documents its reasoning step by step through the code. Then it verifies the finding on a running build: a request that claims to be an adjuster gets back every customer's claims. It labels the finding CWE-290 and marks it critical. | How it works, then Sandbox validation: Confirmed |
-| 24 | One click on Fix with Devin starts a fix. Devin makes the service require a signed header from the gateway, adds tests, and opens a pull request. Devin Review reviews it like any other change. | Fix with Devin → claims-service PR #8 in Devin Review |
+| 24 | One click on Fix with Devin starts a fix. Devin makes the service require a signed header from the gateway, adds tests, and opens a pull request. Devin Review reviews it like any other change. | Security finding with Fix with Devin → claims-service PR #8 in Devin Review |
 
 ## When the build fails
 
@@ -77,7 +77,7 @@ The "On screen" column is the shot list for the reshoot. Every shot is real Devi
 | 39 | Devin finds that the code compared dollars to a limit in cents. It writes unit, integration, and UI tests, and all fourteen pass on Windows and in CI. | Chat: root cause and new tests; PR #2 |
 | 40 | Some test work is too large for one session. For this, Devin writes a Dynamic Workflow, a Python script that runs many Devin agents. | Workflow session chat |
 | 41 | The workflow runs the same steps in the same order every time. Inside each step, an agent decides how to do the work. | Workflow script |
-| 42 | It starts one agent for each of the six packages. Each agent runs in its own session, with its own context. It writes unit and integration tests, runs them, and pushes a branch. | Agents view: package-tests 6/6 |
+| 42 | It starts one agent for each of the six packages. Each agent runs in its own session, with its own context. It writes unit and integration tests, runs them, and pushes a branch. | Sessions sidebar: the workflow and its child sessions, one per agent |
 | 43 | A final step merges the branches, runs the full build, and opens one pull request with 170 new tests for the team to review. | PR #6 and per-package table |
 
 ## Production bugs
@@ -85,22 +85,22 @@ The "On screen" column is the shot list for the reshoot. Every shot is real Devi
 | # | Narration | On screen |
 |---|---|---|
 | 44 | Some bugs still reach production. A Devin Oncall responder watches one source of alerts. This one gets crash alerts for the iOS app from a webhook. | Responder: Webhook trigger |
-| 45 | The responder can use the team's tools through MCP, such as Slack, and it follows the team's runbook. It runs on a macOS VM with Xcode and the iOS Simulator. | MCPs list, runbook, macOS setting |
-| 46 | A crash monitor sends an alert, and Devin Oncall starts a session. The alert has the stack trace and the breadcrumbs, which are the last steps the user took. | Alert payload |
-| 47 | Devin follows the breadcrumbs in the iOS Simulator and gets the same crash. The cause is a division by zero when an estimate has no line items. | Reproduced on iOS 26.5 |
+| 45 | The responder can use the team's tools through MCP, such as Slack, and it follows the team's runbook. It runs on a macOS VM with Xcode and the iOS Simulator. | Responder MCPs and runbook → iOS Oncall session on macOS with its iOS Simulator screenshot |
+| 46 | A crash monitor sends an alert, and Devin Oncall starts a session. The alert has the stack trace and the breadcrumbs, which are the last steps the user took. | Alert payload expanded: stack and breadcrumbs |
+| 47 | Devin follows the breadcrumbs in the iOS Simulator and gets the same crash. The cause is a division by zero when an estimate has no line items. | "Reproduced on iPhone 17 Pro / iOS 26.5 simulator… Division by zero" → Simulator screenshot → root cause |
 | 48 | It fixes the root cause and adds three regression tests: two unit tests for an empty estimate, and a UI test that removes the last item. | xcodebuild test run |
 | 49 | The report gives the root cause, the confidence, and the affected app versions, with the test logs and a patch attached. | Final report and files |
-| 50 | Here the alert comes from a Windows desktop app. Oncall starts a session on a Windows virtual machine, runs the app, and reproduces the crash. It finds the cause, a missing claim type in the approval rules, writes a fix with a test, and reports its confidence. | Oncall session on a Windows VM |
+| 50 | Here the alert comes from a Windows desktop app. Oncall starts a session on a Windows virtual machine and reports that it reproduced the crash. It finds the cause, a missing claim type in the approval rules, writes a fix with unit tests and a UI test, and reports its confidence. | Windows Oncall session: report sentences on the reproduction, root cause, patch with unit and UI tests, and confidence |
 | 51 | A developer opens the pull request from the patch. Like every other change, it goes through Devin Review, and a person approves the merge. | adjuster-desktop PR #3 (opened from the Oncall patch) in Devin Review |
 
 ## Closing
 
 | # | Narration | On screen |
 |---|---|---|
-| 52 | To recap: Devin Review checked code while it was written and when each pull request opened, with the team's rules. Devin Security found and fixed a chained vulnerability. | Devin Review home: PRs #9, #14, #12, #13, #11, #8, #6, adjuster-desktop #2, draft #10 |
-| 53 | Devin fixed a failing build, split a refactor into small pull requests, wrote and ran a whole test suite, and fixed production crashes on macOS and Windows. | Same view |
-| 54 | This works on Linux, macOS, and Windows VMs, with the iOS Simulator and Android emulators. | Same view |
-| 55 | So the demo showed code quality at each stage of the life cycle: writing code, opening a pull request, security, a failing build, a refactor, testing, and production. | Same view |
+| 52 | To recap: Devin Review checked code while it was written and when each pull request opened, with the team's rules. Devin Security found and fixed a chained vulnerability. | Devin Review home: PRs #9, #14, #12, #13, #11, #8, #6, adjuster-desktop #2 |
+| 53 | Devin fixed a failing build, split a refactor into small pull requests, wrote and ran a whole test suite, and fixed production crashes on macOS and Windows. | Review list (build fix, stack, test suite) → iOS Oncall session → adjuster-desktop PR #3 in Devin Review |
+| 54 | This works on Linux, macOS, and Windows VMs, with the iOS Simulator and Android emulators. | Session host picker listing Ubuntu, macOS and Windows → iOS Simulator screenshot from the iOS Oncall session |
+| 55 | So the demo showed code quality at each stage of the life cycle: writing code, opening a pull request, security, a failing build, a refactor, testing, and production. | Devin Review pull request list: PR #9, refactor stack #12–#14, test suite #11, security fix #8 |
 
 ## Criteria coverage
 | Criteria item | Lines |

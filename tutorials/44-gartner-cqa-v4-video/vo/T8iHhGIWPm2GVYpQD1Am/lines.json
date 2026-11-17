@@ -1,0 +1,1842 @@
+{
+ "0000.png": {
+  "text": "This video shows how Devin supports code quality across the software development life cycle. It covers code review, security, debugging, refactoring, and testing.",
+  "dur": 8.62,
+  "at": 0.0,
+  "end": 8.62,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 2.508,
+    "text": "This video shows how Devin supports code quality"
+   },
+   {
+    "t0": 2.554,
+    "t1": 4.598,
+    "text": "across the software development life cycle."
+   },
+   {
+    "t0": 4.876,
+    "t1": 6.107,
+    "text": "It covers code review,"
+   },
+   {
+    "t0": 6.153,
+    "t1": 8.568,
+    "text": "security, debugging, refactoring, and testing."
+   }
+  ]
+ },
+ "0001.png": {
+  "text": "The demo goes through each stage in order.",
+  "dur": 1.965,
+  "at": 8.935,
+  "end": 10.9,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0,
+    "t1": 1.932,
+    "text": "The demo goes through each stage in order."
+   }
+  ]
+ },
+ "0002.png": {
+  "text": "It starts with writing code and opening a pull request.",
+  "dur": 2.64,
+  "at": 11.17,
+  "end": 13.81,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.08,
+    "t1": 2.564,
+    "text": "It starts with writing code and opening a pull request."
+   }
+  ]
+ },
+ "0003.png": {
+  "text": "Then it covers security, a failing build, a refactor, new tests, and production bugs.",
+  "dur": 5.04,
+  "at": 14.095,
+  "end": 19.135,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.022,
+    "t1": 1.276,
+    "text": "Then it covers security,"
+   },
+   {
+    "t0": 1.334,
+    "t1": 2.205,
+    "text": "a failing build,"
+   },
+   {
+    "t0": 2.24,
+    "t1": 3.981,
+    "text": "a refactor, new tests,"
+   },
+   {
+    "t0": 4.005,
+    "t1": 5.026,
+    "text": "and production bugs."
+   }
+  ]
+ },
+ "0008.png": {
+  "text": "Our example is the claims platform of an insurance company. It has four repositories: a Java claims service, a web portal for customers, a Windows desktop app for adjusters, and an iOS app for field adjusters.",
+  "say": "Our example is the claims platform of an insurance company. It has four repositories: a Java claims service, a web portal for customers, a Windows desktop app for adjusters, and an i O S app for field adjusters.",
+  "dur": 12.81,
+  "at": 19.64,
+  "end": 32.45,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.085,
+    "t1": 12.798,
+    "text": "Our example is the claims platform of an insurance company. It has four repositories: a Java claims service, a web portal for customers, a Windows desktop app for adjusters, and an iOS app for field adjusters."
+   }
+  ]
+ },
+ "0009.png": {
+  "text": "The team keeps its rules in a file called AGENTS.md. One rule is that every bug fix needs a regression test, which is a test that proves the bug stays fixed.",
+  "say": "The team keeps its rules in a file called agents dot M D. One rule is that every bug fix needs a regression test, which is a test that proves the bug stays fixed.",
+  "dur": 8.705,
+  "at": 32.635,
+  "end": 41.34,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.012,
+    "t1": 8.662,
+    "text": "The team keeps its rules in a file called AGENTS.md. One rule is that every bug fix needs a regression test, which is a test that proves the bug stays fixed."
+   }
+  ]
+ },
+ "0010.png": {
+  "text": "Devin follows this rule when it writes code, and Devin Review flags pull requests that break it.",
+  "dur": 4.775,
+  "at": 41.505,
+  "end": 46.28,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.117,
+    "t1": 2.079,
+    "text": "Devin follows this rule when it writes code,"
+   },
+   {
+    "t0": 2.253,
+    "t1": 4.775,
+    "text": "and Devin Review flags pull requests that break it."
+   }
+  ]
+ },
+ "0011.png": {
+  "text": "Devin opens pull requests, and a person on the team approves every merge.",
+  "dur": 3.9,
+  "at": 46.55,
+  "end": 50.45,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.122,
+    "t1": 1.597,
+    "text": "Devin opens pull requests,"
+   },
+   {
+    "t0": 1.771,
+    "t1": 3.884,
+    "text": "and a person on the team approves every merge."
+   }
+  ]
+ },
+ "0012.png": {
+  "text": "Devin includes specialized agents, which are agents built for one job.",
+  "dur": 3.605,
+  "at": 50.68,
+  "end": 54.285,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.137,
+    "t1": 1.936,
+    "text": "Devin includes specialized agents,"
+   },
+   {
+    "t0": 1.971,
+    "t1": 3.605,
+    "text": "which are agents built for one job."
+   }
+  ]
+ },
+ "0013.png": {
+  "text": "Each one runs in its own session, with its own context, and the team manages them from the web app, Devin Desktop, Slack, or the API.",
+  "say": "Each one runs in its own session, with its own context, and the team manages them from the web app, Devin Desktop, Slack, or the A P I.",
+  "dur": 7.55,
+  "at": 54.53,
+  "end": 62.08,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.095,
+    "t1": 7.537,
+    "text": "Each one runs in its own session, with its own context, and the team manages them from the web app, Devin Desktop, Slack, or the API."
+   }
+  ]
+ },
+ "0017.png": {
+  "text": "This video uses three.",
+  "dur": 1.345,
+  "at": 62.245,
+  "end": 63.59,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.065,
+    "t1": 1.319,
+    "text": "This video uses three."
+   }
+  ]
+ },
+ "0018.png": {
+  "text": "Devin Review uses adversarial agents. Some agents look for problems, and other agents try to prove each problem is wrong.",
+  "dur": 6.56,
+  "at": 63.765,
+  "end": 70.325,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.124,
+    "t1": 2.377,
+    "text": "Devin Review uses adversarial agents."
+   },
+   {
+    "t0": 2.62,
+    "t1": 4.13,
+    "text": "Some agents look for problems,"
+   },
+   {
+    "t0": 4.199,
+    "t1": 6.56,
+    "text": "and other agents try to prove each problem is wrong."
+   }
+  ]
+ },
+ "0019.png": {
+  "text": "Devin Security uses agentic MapReduce to scan a whole codebase.",
+  "dur": 3.67,
+  "at": 70.6,
+  "end": 74.27,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.128,
+    "t1": 3.67,
+    "text": "Devin Security uses agentic MapReduce to scan a whole codebase."
+   }
+  ]
+ },
+ "0020.png": {
+  "text": "Devin Oncall is a site reliability agent with its own harness.",
+  "dur": 3.51,
+  "at": 74.56,
+  "end": 78.07,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.173,
+    "t1": 2.669,
+    "text": "Devin Oncall is a site reliability agent with"
+   },
+   {
+    "t0": 2.704,
+    "t1": 3.505,
+    "text": "its own harness."
+   }
+  ]
+ },
+ "0021.png": {
+  "text": "Review can start before the code is finished. A developer is adding a fraud score to the claim page, and the pull request is still a draft.",
+  "dur": 6.945,
+  "at": 78.345,
+  "end": 85.29,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.103,
+    "t1": 2.054,
+    "text": "Review can start before the code is finished."
+   },
+   {
+    "t0": 2.379,
+    "t1": 4.202,
+    "text": "A developer is adding a fraud score to"
+   },
+   {
+    "t0": 4.26,
+    "t1": 5.084,
+    "text": "the claim page,"
+   },
+   {
+    "t0": 5.235,
+    "t1": 6.945,
+    "text": "and the pull request is still a draft."
+   }
+  ]
+ },
+ "0022.png": {
+  "text": "Devin Review does not review drafts automatically, so the developer starts a review from the pull request menu.",
+  "dur": 5.755,
+  "at": 85.635,
+  "end": 91.39,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.116,
+    "t1": 2.624,
+    "text": "Devin Review does not review drafts automatically,"
+   },
+   {
+    "t0": 2.775,
+    "t1": 4.667,
+    "text": "so the developer starts a review from the"
+   },
+   {
+    "t0": 4.702,
+    "t1": 5.723,
+    "text": "pull request menu."
+   }
+  ]
+ },
+ "0023.png": {
+  "text": "The change is not finished yet. Devin Review flags one thing to look into: older claims can push a claim over the investigation threshold, because the code counts all of the customer's past claims.",
+  "dur": 10.665,
+  "at": 91.63,
+  "end": 102.295,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.054,
+    "t1": 1.516,
+    "text": "The change is not finished yet."
+   },
+   {
+    "t0": 1.9,
+    "t1": 4.303,
+    "text": "Devin Review flags one thing to look into:"
+   },
+   {
+    "t0": 4.686,
+    "t1": 6.393,
+    "text": "older claims can push a claim over the"
+   },
+   {
+    "t0": 6.439,
+    "t1": 9.237,
+    "text": "investigation threshold, because the code counts all of"
+   },
+   {
+    "t0": 9.26,
+    "t1": 10.665,
+    "text": "the customer's past claims."
+   }
+  ]
+ },
+ "0024.png": {
+  "text": "Its summary also checks access: the new fields are shown only to users who can see all claims, so customers never get them.",
+  "dur": 7.025,
+  "at": 102.62,
+  "end": 109.645,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.081,
+    "t1": 2.02,
+    "text": "Its summary also checks access:"
+   },
+   {
+    "t0": 2.345,
+    "t1": 4.168,
+    "text": "the new fields are shown only to users"
+   },
+   {
+    "t0": 4.203,
+    "t1": 5.445,
+    "text": "who can see all claims,"
+   },
+   {
+    "t0": 5.596,
+    "t1": 6.989,
+    "text": "so customers never get them."
+   }
+  ]
+ },
+ "0025.png": {
+  "text": "The developer can ask questions in Review chat while writing the code. Here they ask how the score should count prior claims.",
+  "dur": 6.36,
+  "at": 109.89,
+  "end": 116.25,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.044,
+    "t1": 2.424,
+    "text": "The developer can ask questions in Review chat"
+   },
+   {
+    "t0": 2.471,
+    "t1": 3.434,
+    "text": "while writing the code."
+   },
+   {
+    "t0": 3.759,
+    "t1": 6.36,
+    "text": "Here they ask how the score should count prior claims."
+   }
+  ]
+ },
+ "0026.png": {
+  "text": "Devin Review explains which claims to count: the same customer, only claims filed before this one, and only in the same year. It also suggests tests for the edge cases.",
+  "dur": 9.875,
+  "at": 116.62,
+  "end": 126.495,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.117,
+    "t1": 2.277,
+    "text": "Devin Review explains which claims to count:"
+   },
+   {
+    "t0": 2.602,
+    "t1": 3.623,
+    "text": "the same customer,"
+   },
+   {
+    "t0": 3.867,
+    "t1": 5.632,
+    "text": "only claims filed before this one,"
+   },
+   {
+    "t0": 5.841,
+    "t1": 7.118,
+    "text": "and only in the same year."
+   },
+   {
+    "t0": 7.443,
+    "t1": 9.875,
+    "text": "It also suggests tests for the edge cases."
+   }
+  ]
+ },
+ "0027.png": {
+  "text": "The developer can also review in Devin Desktop.",
+  "dur": 2.39,
+  "at": 126.8,
+  "end": 129.19,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.061,
+    "t1": 2.39,
+    "text": "The developer can also review in Devin Desktop."
+   }
+  ]
+ },
+ "0028.png": {
+  "text": "The same finding is there, and they can ask Devin Review questions in chat.",
+  "dur": 3.73,
+  "at": 129.55,
+  "end": 133.28,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.074,
+    "t1": 1.258,
+    "text": "The same finding is there,"
+   },
+   {
+    "t0": 1.282,
+    "t1": 3.73,
+    "text": "and they can ask Devin Review questions in chat."
+   }
+  ]
+ },
+ "0029.png": {
+  "text": "When a pull request is ready, Devin Review runs on its own. An admin picks the repositories, when the review runs, and the review effort. Here it covers all four repositories at Ultra effort.",
+  "dur": 10.535,
+  "at": 133.605,
+  "end": 144.14,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.036,
+    "t1": 1.325,
+    "text": "When a pull request is ready,"
+   },
+   {
+    "t0": 1.441,
+    "t1": 2.962,
+    "text": "Devin Review runs on its own."
+   },
+   {
+    "t0": 3.473,
+    "t1": 5.365,
+    "text": "An admin picks the repositories,"
+   },
+   {
+    "t0": 5.481,
+    "t1": 6.491,
+    "text": "when the review runs,"
+   },
+   {
+    "t0": 6.515,
+    "t1": 7.571,
+    "text": "and the review effort."
+   },
+   {
+    "t0": 7.85,
+    "t1": 10.535,
+    "text": "Here it covers all four repositories at Ultra effort."
+   }
+  ]
+ },
+ "0030.png": {
+  "text": "The admin also sets controls, such as a spend limit for each pull request.",
+  "dur": 4.55,
+  "at": 144.48,
+  "end": 149.03,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 2.153,
+    "text": "The admin also sets controls,"
+   },
+   {
+    "t0": 2.362,
+    "t1": 4.55,
+    "text": "such as a spend limit for each pull request."
+   }
+  ]
+ },
+ "0031.png": {
+  "text": "Devin Review reads the team's rule files, such as REVIEW.md and AGENTS.md, on every review.",
+  "say": "Devin Review reads the team's rule files, such as review dot M D and agents dot M D, on every review.",
+  "dur": 7.035,
+  "at": 149.37,
+  "end": 156.405,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.142,
+    "t1": 7.035,
+    "text": "Devin Review reads the team's rule files, such as REVIEW.md and AGENTS.md, on every review."
+   }
+  ]
+ },
+ "0032.png": {
+  "text": "A developer opens a pull request on the claims service. It adds a payout export for the finance team. Devin Review starts with a summary of what the change does.",
+  "dur": 8.23,
+  "at": 156.67,
+  "end": 164.9,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.076,
+    "t1": 1.829,
+    "text": "A developer opens a pull request on the"
+   },
+   {
+    "t0": 1.852,
+    "t1": 4.29,
+    "text": "claims service. It adds a payout export for"
+   },
+   {
+    "t0": 4.336,
+    "t1": 5.242,
+    "text": "the finance team."
+   },
+   {
+    "t0": 5.567,
+    "t1": 7.355,
+    "text": "Devin Review starts with a summary of what"
+   },
+   {
+    "t0": 7.39,
+    "t1": 8.23,
+    "text": "the change does."
+   }
+  ]
+ },
+ "0033.png": {
+  "text": "Then it lists its findings by type and by severity.",
+  "dur": 2.585,
+  "at": 165.11,
+  "end": 167.695,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.053,
+    "t1": 2.585,
+    "text": "Then it lists its findings by type and by severity."
+   }
+  ]
+ },
+ "0034.png": {
+  "text": "The most serious finding is that a signed-in customer can read the payout details of another customer. Devin labels it as broken access control, CWE-639, shows the lines of code, and recommends a fix.",
+  "dur": 12.85,
+  "at": 168.04,
+  "end": 180.89,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.048,
+    "t1": 1.929,
+    "text": "The most serious finding is that a signed-in"
+   },
+   {
+    "t0": 1.999,
+    "t1": 4.135,
+    "text": "customer can read the payout details of another"
+   },
+   {
+    "t0": 4.17,
+    "t1": 7.781,
+    "text": "customer. Devin labels it as broken access control,"
+   },
+   {
+    "t0": 8.164,
+    "t1": 11.565,
+    "text": "CWE-639, shows the lines of code,"
+   },
+   {
+    "t0": 11.716,
+    "t1": 12.85,
+    "text": "and recommends a fix."
+   }
+  ]
+ },
+ "0035.png": {
+  "text": "A second finding is a rounding bug. It is tagged as a repo rule, because AGENTS.md says money must be split with the team's own helper. This is how the team's coding standards are enforced.",
+  "say": "A second finding is a rounding bug. It is tagged as a repo rule, because agents dot M D says money must be split with the team's own helper. This is how the team's coding standards are enforced.",
+  "dur": 10.345,
+  "at": 181.185,
+  "end": 191.53,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.057,
+    "t1": 10.309,
+    "text": "A second finding is a rounding bug. It is tagged as a repo rule, because AGENTS.md says money must be split with the team's own helper. This is how the team's coding standards are enforced."
+   }
+  ]
+ },
+ "0036.png": {
+  "text": "The reviewer asks which findings must be fixed before the merge. Devin Review names the blockers and links each one to the code and to the rule it breaks.",
+  "dur": 8.245,
+  "at": 191.765,
+  "end": 200.01,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.054,
+    "t1": 2.434,
+    "text": "The reviewer asks which findings must be fixed"
+   },
+   {
+    "t0": 2.457,
+    "t1": 3.293,
+    "text": "before the merge."
+   },
+   {
+    "t0": 3.676,
+    "t1": 6.254,
+    "text": "Devin Review names the blockers and links each"
+   },
+   {
+    "t0": 6.312,
+    "t1": 8.245,
+    "text": "one to the code and to the rule it breaks."
+   }
+  ]
+ },
+ "0037.png": {
+  "text": "Devin Security is a specialized agent that scans whole repositories for security problems.",
+  "dur": 4.775,
+  "at": 200.5,
+  "end": 205.275,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.119,
+    "t1": 2.662,
+    "text": "Devin Security is a specialized agent that scans"
+   },
+   {
+    "t0": 2.708,
+    "t1": 4.775,
+    "text": "whole repositories for security problems."
+   }
+  ]
+ },
+ "0038.png": {
+  "text": "Before it scans, it asks a few questions to build a threat model, such as who the attackers are and how the service is reached.",
+  "dur": 5.755,
+  "at": 205.74,
+  "end": 211.495,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.069,
+    "t1": 0.963,
+    "text": "Before it scans,"
+   },
+   {
+    "t0": 0.998,
+    "t1": 2.472,
+    "text": "it asks a few questions to build a"
+   },
+   {
+    "t0": 2.519,
+    "t1": 4.446,
+    "text": "threat model, such as who the attackers are"
+   },
+   {
+    "t0": 4.469,
+    "t1": 5.755,
+    "text": "and how the service is reached."
+   }
+  ]
+ },
+ "0039.png": {
+  "text": "Here it finds a chain of problems. The claims service trusts the user ID and role in the request headers, and never checks that they came from the gateway. So anyone who can reach the service can claim to be an adjuster and read every customer's claims.",
+  "dur": 12.43,
+  "at": 211.77,
+  "end": 224.2,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.042,
+    "t1": 1.621,
+    "text": "Here it finds a chain of problems."
+   },
+   {
+    "t0": 1.864,
+    "t1": 3.884,
+    "text": "The claims service trusts the user ID and"
+   },
+   {
+    "t0": 3.943,
+    "t1": 5.254,
+    "text": "role in the request headers,"
+   },
+   {
+    "t0": 5.405,
+    "t1": 6.903,
+    "text": "and never checks that they came from the"
+   },
+   {
+    "t0": 6.937,
+    "t1": 9.306,
+    "text": "gateway. So anyone who can reach the service"
+   },
+   {
+    "t0": 9.341,
+    "t1": 11.291,
+    "text": "can claim to be an adjuster and read"
+   },
+   {
+    "t0": 11.349,
+    "t1": 12.43,
+    "text": "every customer's claims."
+   }
+  ]
+ },
+ "0040.png": {
+  "text": "Devin documents its reasoning step by step through the code. Then it verifies the finding on a running build: a request that claims to be an adjuster gets back every customer's claims. It labels the finding CWE-290 and marks it critical.",
+  "say": "Devin documents its reasoning step by step through the code. Then it verifies the finding on a running build: a request that claims to be an adjuster gets back every customer's claims. It labels the finding CWE two ninety and marks it critical.",
+  "dur": 13.455,
+  "at": 224.475,
+  "end": 237.93,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.13,
+    "t1": 13.423,
+    "text": "Devin documents its reasoning step by step through the code. Then it verifies the finding on a running build: a request that claims to be an adjuster gets back every customer's claims. It labels the finding CWE-290 and marks it critical."
+   }
+  ]
+ },
+ "0041.png": {
+  "text": "One click on Fix with Devin starts a fix.",
+  "dur": 2.335,
+  "at": 238.31,
+  "end": 240.645,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.099,
+    "t1": 2.335,
+    "text": "One click on Fix with Devin starts a fix."
+   }
+  ]
+ },
+ "0042.png": {
+  "text": "Devin makes the service require a signed header from the gateway, adds tests, and opens a pull request. Devin Review reviews it like any other change.",
+  "dur": 7.91,
+  "at": 240.91,
+  "end": 248.82,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.123,
+    "t1": 2.167,
+    "text": "Devin makes the service require a signed header"
+   },
+   {
+    "t0": 2.213,
+    "t1": 3.038,
+    "text": "from the gateway,"
+   },
+   {
+    "t0": 3.212,
+    "t1": 5.36,
+    "text": "adds tests, and opens a pull request."
+   },
+   {
+    "t0": 5.603,
+    "t1": 7.891,
+    "text": "Devin Review reviews it like any other change."
+   }
+  ]
+ },
+ "0043.png": {
+  "text": "The payout pull request also fails in CI, the automatic build and test system. The developer asks Devin to fix it. This session runs on a macOS VM.",
+  "say": "The payout pull request also fails in C I, the automatic build and test system. The developer asks Devin to fix it. This session runs on a macOS V M.",
+  "dur": 9.485,
+  "at": 248.965,
+  "end": 258.45,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.045,
+    "t1": 9.485,
+    "text": "The payout pull request also fails in CI, the automatic build and test system. The developer asks Devin to fix it. This session runs on a macOS VM."
+   }
+  ]
+ },
+ "0044.png": {
+  "text": "Devin reads the CI logs, runs the failing test on its VM, and finds the root cause. The export rounded each installment, so one million cents became 999,999.",
+  "say": "Devin reads the C I logs, runs the failing test on its V M, and finds the root cause. The export rounded each installment, so one million cents became nine hundred and ninety-nine thousand nine hundred and ninety-nine.",
+  "dur": 12.03,
+  "at": 258.67,
+  "end": 270.7,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.081,
+    "t1": 11.981,
+    "text": "Devin reads the CI logs, runs the failing test on its VM, and finds the root cause. The export rounded each installment, so one million cents became 999,999."
+   }
+  ]
+ },
+ "0045.png": {
+  "text": "It fixes the failure and the review findings in the same pull request. Each new regression test fails on the old code and passes on the fix.",
+  "dur": 7.745,
+  "at": 270.855,
+  "end": 278.6,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.039,
+    "t1": 2.164,
+    "text": "It fixes the failure and the review findings"
+   },
+   {
+    "t0": 2.199,
+    "t1": 3.546,
+    "text": "in the same pull request."
+   },
+   {
+    "t0": 3.929,
+    "t1": 6.077,
+    "text": "Each new regression test fails on the old"
+   },
+   {
+    "t0": 6.146,
+    "t1": 7.745,
+    "text": "code and passes on the fix."
+   }
+  ]
+ },
+ "0046.png": {
+  "text": "Before it pushes, Devin runs the full build and test suite. Then CI passes.",
+  "say": "Before it pushes, Devin runs the full build and test suite. Then C I passes.",
+  "dur": 4.69,
+  "at": 278.985,
+  "end": 283.675,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.06,
+    "t1": 4.69,
+    "text": "Before it pushes, Devin runs the full build and test suite. Then CI passes."
+   }
+  ]
+ },
+ "0047.png": {
+  "text": "Large refactors are hard to review as one pull request. Devin can split a refactor into stacked pull requests, where each one builds on the one below it.",
+  "dur": 8.465,
+  "at": 284.04,
+  "end": 292.505,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.113,
+    "t1": 2.273,
+    "text": "Large refactors are hard to review as one"
+   },
+   {
+    "t0": 2.319,
+    "t1": 5.14,
+    "text": "pull request. Devin can split a refactor into"
+   },
+   {
+    "t0": 5.21,
+    "t1": 6.394,
+    "text": "stacked pull requests,"
+   },
+   {
+    "t0": 6.51,
+    "t1": 8.465,
+    "text": "where each one builds on the one below it."
+   }
+  ]
+ },
+ "0048.png": {
+  "text": "Here, Devin moves the payout math into one shared module in three pull requests. The first adds the new module, the second switches the callers, and the third deletes the old code.",
+  "dur": 9.545,
+  "at": 292.83,
+  "end": 302.375,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.042,
+    "t1": 2.19,
+    "text": "Here, Devin moves the payout math into one"
+   },
+   {
+    "t0": 2.237,
+    "t1": 4.338,
+    "text": "shared module in three pull requests."
+   },
+   {
+    "t0": 4.582,
+    "t1": 6.08,
+    "text": "The first adds the new module,"
+   },
+   {
+    "t0": 6.126,
+    "t1": 7.74,
+    "text": "the second switches the callers,"
+   },
+   {
+    "t0": 7.891,
+    "t1": 9.545,
+    "text": "and the third deletes the old code."
+   }
+  ]
+ },
+ "0049.png": {
+  "text": "Each pull request is small, so Devin Review and the reviewer check one change at a time.",
+  "dur": 4.93,
+  "at": 302.61,
+  "end": 307.54,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.096,
+    "t1": 1.536,
+    "text": "Each pull request is small,"
+   },
+   {
+    "t0": 1.78,
+    "t1": 4.044,
+    "text": "so Devin Review and the reviewer check one"
+   },
+   {
+    "t0": 4.079,
+    "t1": 4.914,
+    "text": "change at a time."
+   }
+  ]
+ },
+ "0050.png": {
+  "text": "Devin Review found no problems in any of the three.",
+  "dur": 2.57,
+  "at": 307.755,
+  "end": 310.325,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.095,
+    "t1": 2.57,
+    "text": "Devin Review found no problems in any of the three."
+   }
+  ]
+ },
+ "0051.png": {
+  "text": "Devin can write a whole test suite. Here, the developer asks for tests of the claims API at three levels, and asks Devin to run them all.",
+  "say": "Devin can write a whole test suite. Here, the developer asks for tests of the claims A P I at three levels, and asks Devin to run them all.",
+  "dur": 7.97,
+  "at": 310.48,
+  "end": 318.45,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.121,
+    "t1": 7.946,
+    "text": "Devin can write a whole test suite. Here, the developer asks for tests of the claims API at three levels, and asks Devin to run them all."
+   }
+  ]
+ },
+ "0052.png": {
+  "text": "Unit tests check one class at a time. Devin writes tests for the fraud rules and the coverage calculator, with a test on each side of every limit.",
+  "dur": 8.02,
+  "at": 318.68,
+  "end": 326.7,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.129,
+    "t1": 2.173,
+    "text": "Unit tests check one class at a time."
+   },
+   {
+    "t0": 2.498,
+    "t1": 4.553,
+    "text": "Devin writes tests for the fraud rules and"
+   },
+   {
+    "t0": 4.576,
+    "t1": 5.725,
+    "text": "the coverage calculator,"
+   },
+   {
+    "t0": 5.876,
+    "t1": 8.02,
+    "text": "with a test on each side of every limit."
+   }
+  ]
+ },
+ "0053.png": {
+  "text": "Integration tests check the API with the database. They use MockMvc, which sends requests to the API inside the test, and the seed data.",
+  "say": "Integration tests check the A P I with the database. They use MockMvc, which sends requests to the A P I inside the test, and the seed data.",
+  "dur": 8.925,
+  "at": 326.96,
+  "end": 335.885,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.069,
+    "t1": 8.925,
+    "text": "Integration tests check the API with the database. They use MockMvc, which sends requests to the API inside the test, and the seed data."
+   }
+  ]
+ },
+ "0054.png": {
+  "text": "The end-to-end test starts the whole service and calls it over HTTP, as a customer and as an adjuster. It checks that a customer cannot read another customer's claim.",
+  "dur": 8.765,
+  "at": 336.13,
+  "end": 344.895,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.048,
+    "t1": 2.091,
+    "text": "The end-to-end test starts the whole service and"
+   },
+   {
+    "t0": 2.149,
+    "t1": 3.6,
+    "text": "calls it over HTTP,"
+   },
+   {
+    "t0": 3.775,
+    "t1": 5.563,
+    "text": "as a customer and as an adjuster."
+   },
+   {
+    "t0": 5.771,
+    "t1": 8.765,
+    "text": "It checks that a customer cannot read another customer's claim."
+   }
+  ]
+ },
+ "0055.png": {
+  "text": "Then Devin runs the whole suite with one command. The unit and integration tests pass, then the five end-to-end tests pass, and the build succeeds.",
+  "dur": 8.315,
+  "at": 345.26,
+  "end": 353.575,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.055,
+    "t1": 1.773,
+    "text": "Then Devin runs the whole suite with one"
+   },
+   {
+    "t0": 1.819,
+    "t1": 4.826,
+    "text": "command. The unit and integration tests pass,"
+   },
+   {
+    "t0": 5.105,
+    "t1": 7.032,
+    "text": "then the five end-to-end tests pass,"
+   },
+   {
+    "t0": 7.206,
+    "t1": 8.315,
+    "text": "and the build succeeds."
+   }
+  ]
+ },
+ "0056.png": {
+  "text": "Devin reports the count for each type: 31 unit, 19 integration, and 5 end-to-end tests.",
+  "dur": 6.265,
+  "at": 353.95,
+  "end": 360.215,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.072,
+    "t1": 2.023,
+    "text": "Devin reports the count for each type:"
+   },
+   {
+    "t0": 2.348,
+    "t1": 4.693,
+    "text": "31 unit, 19 integration,"
+   },
+   {
+    "t0": 4.844,
+    "t1": 6.265,
+    "text": "and 5 end-to-end tests."
+   }
+  ]
+ },
+ "0057.png": {
+  "text": "CI passes, and Devin Review finds no issues.",
+  "say": "C I passes, and Devin Review finds no issues.",
+  "dur": 3.065,
+  "at": 360.52,
+  "end": 363.585,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.085,
+    "t1": 3.065,
+    "text": "CI passes, and Devin Review finds no issues."
+   }
+  ]
+ },
+ "0058.png": {
+  "text": "Devin can also write tests from a requirement. Here, claims over ten thousand dollars must go to a supervisor. This session runs on a Windows VM.",
+  "say": "Devin can also write tests from a requirement. Here, claims over ten thousand dollars must go to a supervisor. This session runs on a Windows V M.",
+  "dur": 8.365,
+  "at": 364.05,
+  "end": 372.415,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.142,
+    "t1": 8.35,
+    "text": "Devin can also write tests from a requirement. Here, claims over ten thousand dollars must go to a supervisor. This session runs on a Windows VM."
+   }
+  ]
+ },
+ "0059.png": {
+  "text": "Devin finds that the code compared dollars to a limit in cents.",
+  "dur": 3.315,
+  "at": 372.64,
+  "end": 375.955,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.085,
+    "t1": 2.315,
+    "text": "Devin finds that the code compared dollars to"
+   },
+   {
+    "t0": 2.384,
+    "t1": 3.313,
+    "text": "a limit in cents."
+   }
+  ]
+ },
+ "0060.png": {
+  "text": "It writes unit, integration, and UI tests, and all fourteen pass on Windows and in CI.",
+  "say": "It writes unit, integration, and UI tests, and all fourteen pass on Windows and in C I.",
+  "dur": 6.185,
+  "at": 376.25,
+  "end": 382.435,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.086,
+    "t1": 6.185,
+    "text": "It writes unit, integration, and UI tests, and all fourteen pass on Windows and in CI."
+   }
+  ]
+ },
+ "0061.png": {
+  "text": "Some test work is too large for one session. For this, Devin writes a Dynamic Workflow, a Python script that runs many Devin agents.",
+  "dur": 7.96,
+  "at": 382.81,
+  "end": 390.77,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.109,
+    "t1": 1.92,
+    "text": "Some test work is too large for one"
+   },
+   {
+    "t0": 1.955,
+    "t1": 3.371,
+    "text": "session. For this,"
+   },
+   {
+    "t0": 3.453,
+    "t1": 5.275,
+    "text": "Devin writes a Dynamic Workflow,"
+   },
+   {
+    "t0": 5.484,
+    "t1": 7.946,
+    "text": "a Python script that runs many Devin agents."
+   }
+  ]
+ },
+ "0062.png": {
+  "text": "The workflow runs the same steps in the same order every time. Inside each step, an agent decides how to do the work.",
+  "dur": 6.025,
+  "at": 391.02,
+  "end": 397.045,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.061,
+    "t1": 1.802,
+    "text": "The workflow runs the same steps in the"
+   },
+   {
+    "t0": 1.837,
+    "t1": 2.94,
+    "text": "same order every time."
+   },
+   {
+    "t0": 3.265,
+    "t1": 4.286,
+    "text": "Inside each step,"
+   },
+   {
+    "t0": 4.31,
+    "t1": 6.025,
+    "text": "an agent decides how to do the work."
+   }
+  ]
+ },
+ "0063.png": {
+  "text": "It starts one agent for each of the six packages.",
+  "dur": 2.58,
+  "at": 397.34,
+  "end": 399.92,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.091,
+    "t1": 2.58,
+    "text": "It starts one agent for each of the six packages."
+   }
+  ]
+ },
+ "0064.png": {
+  "text": "Each agent runs in its own session, with its own context.",
+  "dur": 3.23,
+  "at": 400.3,
+  "end": 403.53,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.103,
+    "t1": 1.949,
+    "text": "Each agent runs in its own session,"
+   },
+   {
+    "t0": 2.065,
+    "t1": 3.23,
+    "text": "with its own context."
+   }
+  ]
+ },
+ "0065.png": {
+  "text": "It writes unit and integration tests, runs them, and pushes a branch.",
+  "dur": 4.025,
+  "at": 403.81,
+  "end": 407.835,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.088,
+    "t1": 2.166,
+    "text": "It writes unit and integration tests,"
+   },
+   {
+    "t0": 2.34,
+    "t1": 4.025,
+    "text": "runs them, and pushes a branch."
+   }
+  ]
+ },
+ "0066.png": {
+  "text": "A final step merges the branches, runs the full build, and opens one pull request with 170 new tests for the team to review.",
+  "dur": 7.335,
+  "at": 408.03,
+  "end": 415.365,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.071,
+    "t1": 2.044,
+    "text": "A final step merges the branches,"
+   },
+   {
+    "t0": 2.218,
+    "t1": 3.263,
+    "text": "runs the full build,"
+   },
+   {
+    "t0": 3.379,
+    "t1": 5.922,
+    "text": "and opens one pull request with 170 new"
+   },
+   {
+    "t0": 5.98,
+    "t1": 7.335,
+    "text": "tests for the team to review."
+   }
+  ]
+ },
+ "0067.png": {
+  "text": "Some bugs still reach production. A Devin Oncall responder watches one source of alerts. This one gets crash alerts for the iOS app from a webhook.",
+  "say": "Some bugs still reach production. A Devin Oncall responder watches one source of alerts. This one gets crash alerts for the i O S app from a webhook.",
+  "dur": 8.54,
+  "at": 415.65,
+  "end": 424.19,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.125,
+    "t1": 8.519,
+    "text": "Some bugs still reach production. A Devin Oncall responder watches one source of alerts. This one gets crash alerts for the iOS app from a webhook."
+   }
+  ]
+ },
+ "0068.png": {
+  "text": "The responder can use the team's tools through MCP, such as Slack, and it follows the team's runbook.",
+  "say": "The responder can use the team's tools through M C P, such as Slack, and it follows the team's runbook.",
+  "dur": 5.835,
+  "at": 424.51,
+  "end": 430.345,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.042,
+    "t1": 5.835,
+    "text": "The responder can use the team's tools through MCP, such as Slack, and it follows the team's runbook."
+   }
+  ]
+ },
+ "0069.png": {
+  "text": "It runs on a macOS VM with Xcode and the iOS Simulator.",
+  "say": "It runs on a macOS V M with Xcode and the i O S Simulator.",
+  "dur": 3.98,
+  "at": 430.68,
+  "end": 434.66,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.083,
+    "t1": 3.938,
+    "text": "It runs on a macOS VM with Xcode and the iOS Simulator."
+   }
+  ]
+ },
+ "0070.png": {
+  "text": "A crash monitor sends an alert, and Devin Oncall starts a session. The alert has the stack trace and the breadcrumbs, which are the last steps the user took.",
+  "dur": 8.825,
+  "at": 434.79,
+  "end": 443.615,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.071,
+    "t1": 1.859,
+    "text": "A crash monitor sends an alert,"
+   },
+   {
+    "t0": 2.034,
+    "t1": 3.961,
+    "text": "and Devin Oncall starts a session."
+   },
+   {
+    "t0": 4.344,
+    "t1": 6.097,
+    "text": "The alert has the stack trace and the"
+   },
+   {
+    "t0": 6.132,
+    "t1": 8.825,
+    "text": "breadcrumbs, which are the last steps the user took."
+   }
+  ]
+ },
+ "0071.png": {
+  "text": "Devin follows the breadcrumbs in the iOS Simulator and gets the same crash.",
+  "say": "Devin follows the breadcrumbs in the i O S Simulator and gets the same crash.",
+  "dur": 3.97,
+  "at": 443.89,
+  "end": 447.86,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.155,
+    "t1": 3.928,
+    "text": "Devin follows the breadcrumbs in the iOS Simulator and gets the same crash."
+   }
+  ]
+ },
+ "0073.png": {
+  "text": "The cause is a division by zero when an estimate has no line items.",
+  "dur": 3.41,
+  "at": 448.14,
+  "end": 451.55,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.061,
+    "t1": 1.768,
+    "text": "The cause is a division by zero when"
+   },
+   {
+    "t0": 1.814,
+    "t1": 3.41,
+    "text": "an estimate has no line items."
+   }
+  ]
+ },
+ "0074.png": {
+  "text": "It fixes the root cause and adds three regression tests: two unit tests for an empty estimate, and a UI test that removes the last item.",
+  "dur": 7.55,
+  "at": 451.855,
+  "end": 459.405,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.038,
+    "t1": 1.93,
+    "text": "It fixes the root cause and adds three"
+   },
+   {
+    "t0": 1.988,
+    "t1": 4.647,
+    "text": "regression tests: two unit tests for an empty"
+   },
+   {
+    "t0": 4.705,
+    "t1": 7.55,
+    "text": "estimate, and a UI test that removes the last item."
+   }
+  ]
+ },
+ "0075.png": {
+  "text": "The report gives the root cause, the confidence, and the affected app versions, with the test logs and a patch attached.",
+  "dur": 5.86,
+  "at": 459.7,
+  "end": 465.56,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.064,
+    "t1": 1.504,
+    "text": "The report gives the root cause,"
+   },
+   {
+    "t0": 1.527,
+    "t1": 3.768,
+    "text": "the confidence, and the affected app versions,"
+   },
+   {
+    "t0": 3.942,
+    "t1": 5.834,
+    "text": "with the test logs and a patch attached."
+   }
+  ]
+ },
+ "0076.png": {
+  "text": "Here the alert comes from a Windows desktop app.",
+  "dur": 2.385,
+  "at": 465.82,
+  "end": 468.205,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.039,
+    "t1": 2.385,
+    "text": "Here the alert comes from a Windows desktop app."
+   }
+  ]
+ },
+ "0077.png": {
+  "text": "Oncall starts a session on a Windows virtual machine and reports that it reproduced the crash.",
+  "dur": 4.535,
+  "at": 468.39,
+  "end": 472.925,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.082,
+    "t1": 2.276,
+    "text": "Oncall starts a session on a Windows virtual"
+   },
+   {
+    "t0": 2.334,
+    "t1": 4.535,
+    "text": "machine and reports that it reproduced the crash."
+   }
+  ]
+ },
+ "0078.png": {
+  "text": "It finds the cause, a missing claim type in the approval rules, writes a fix with unit tests and a UI test, and reports its confidence.",
+  "dur": 7.33,
+  "at": 473.25,
+  "end": 480.58,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.063,
+    "t1": 1.026,
+    "text": "It finds the cause,"
+   },
+   {
+    "t0": 1.061,
+    "t1": 3.081,
+    "text": "a missing claim type in the approval rules,"
+   },
+   {
+    "t0": 3.29,
+    "t1": 5.032,
+    "text": "writes a fix with unit tests and a"
+   },
+   {
+    "t0": 5.113,
+    "t1": 7.33,
+    "text": "UI test, and reports its confidence."
+   }
+  ]
+ },
+ "0079.png": {
+  "text": "A developer opens the pull request from the patch. Like every other change, it goes through Devin Review, and a person approves the merge.",
+  "dur": 6.88,
+  "at": 480.945,
+  "end": 487.825,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.03,
+    "t1": 1.899,
+    "text": "A developer opens the pull request from the"
+   },
+   {
+    "t0": 1.934,
+    "t1": 3.722,
+    "text": "patch. Like every other change,"
+   },
+   {
+    "t0": 3.745,
+    "t1": 5.174,
+    "text": "it goes through Devin Review,"
+   },
+   {
+    "t0": 5.301,
+    "t1": 6.88,
+    "text": "and a person approves the merge."
+   }
+  ]
+ },
+ "0080.png": {
+  "text": "To recap: Devin Review checked code while it was written and when each pull request opened, with the team's rules. Devin Security found and fixed a chained vulnerability.",
+  "dur": 9.05,
+  "at": 488.1,
+  "end": 497.15,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.073,
+    "t1": 2.674,
+    "text": "To recap: Devin Review checked code while it"
+   },
+   {
+    "t0": 2.697,
+    "t1": 4.59,
+    "text": "was written and when each pull request opened,"
+   },
+   {
+    "t0": 4.613,
+    "t1": 5.635,
+    "text": "with the team's rules."
+   },
+   {
+    "t0": 6.076,
+    "t1": 9.013,
+    "text": "Devin Security found and fixed a chained vulnerability."
+   }
+  ]
+ },
+ "0081.png": {
+  "text": "Devin fixed a failing build, split a refactor into small pull requests, wrote and ran a whole test suite, and fixed production crashes on macOS and Windows.",
+  "dur": 8.85,
+  "at": 497.42,
+  "end": 506.27,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.077,
+    "t1": 1.609,
+    "text": "Devin fixed a failing build,"
+   },
+   {
+    "t0": 1.783,
+    "t1": 4.059,
+    "text": "split a refactor into small pull requests,"
+   },
+   {
+    "t0": 4.268,
+    "t1": 5.858,
+    "text": "wrote and ran a whole test suite,"
+   },
+   {
+    "t0": 6.032,
+    "t1": 8.85,
+    "text": "and fixed production crashes on macOS and Windows."
+   }
+  ]
+ },
+ "0084.png": {
+  "text": "This works on Linux, macOS, and Windows VMs, with the iOS Simulator and Android emulators.",
+  "say": "This works on Linux, macOS, and Windows V Ms, with the i O S Simulator and Android emulators.",
+  "dur": 5.63,
+  "at": 506.67,
+  "end": 512.3,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.045,
+    "t1": 5.63,
+    "text": "This works on Linux, macOS, and Windows VMs, with the iOS Simulator and Android emulators."
+   }
+  ]
+ },
+ "0086.png": {
+  "text": "So the demo showed code quality at each stage of the life cycle: writing code, opening a pull request, security, a failing build, a refactor, testing, and production.",
+  "dur": 10.83,
+  "at": 512.64,
+  "end": 523.47,
+  "mode": "one-take",
+  "model": "eleven_multilingual_v2",
+  "checked": true,
+  "chunks": [
+   {
+    "t0": 0.077,
+    "t1": 2.156,
+    "text": "So the demo showed code quality at each"
+   },
+   {
+    "t0": 2.202,
+    "t1": 3.491,
+    "text": "stage of the life cycle:"
+   },
+   {
+    "t0": 3.7,
+    "t1": 6.126,
+    "text": "writing code, opening a pull request,"
+   },
+   {
+    "t0": 6.3,
+    "t1": 8.239,
+    "text": "security, a failing build,"
+   },
+   {
+    "t0": 8.39,
+    "t1": 10.83,
+    "text": "a refactor, testing, and production."
+   }
+  ]
+ }
+}

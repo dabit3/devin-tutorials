@@ -2,15 +2,31 @@
 
 This video shows how Devin supports code quality across the software development life cycle. It covers code review, security, debugging, refactoring, and testing.
 
-The demo goes through each stage in order. It starts with writing code and opening a pull request. Then it covers security, a failing build, a refactor, new tests, and production bugs.
+The demo goes through each stage in order.
+
+It starts with writing code and opening a pull request.
+
+Then it covers security, a failing build, a refactor, new tests, and production bugs.
 
 Our example is the claims platform of an insurance company. It has four repositories: a Java claims service, a web portal for customers, a Windows desktop app for adjusters, and an iOS app for field adjusters.
 
-The team keeps its rules in a file called AGENTS.md. One rule is that every bug fix needs a regression test, which is a test that proves the bug stays fixed. Devin follows this rule when it writes code, and Devin Review flags pull requests that break it. Devin opens pull requests, and a person on the team approves every merge.
+The team keeps its rules in a file called AGENTS.md. One rule is that every bug fix needs a regression test, which is a test that proves the bug stays fixed.
 
-Devin includes specialized agents, which are agents built for one job. Each one runs in its own session, with its own context, and the team manages them from the web app, Devin Desktop, Slack, or the API.
+Devin follows this rule when it writes code, and Devin Review flags pull requests that break it.
 
-This video uses three. Devin Review uses adversarial agents. Some agents look for problems, and other agents try to prove each problem is wrong. Devin Security uses agentic MapReduce to scan a whole codebase. Devin Oncall is a site reliability agent with its own harness.
+Devin opens pull requests, and a person on the team approves every merge.
+
+Devin includes specialized agents, which are agents built for one job.
+
+Each one runs in its own session, with its own context, and the team manages them from the web app, Devin Desktop, Slack, or the API.
+
+This video uses three.
+
+Devin Review uses adversarial agents. Some agents look for problems, and other agents try to prove each problem is wrong.
+
+Devin Security uses agentic MapReduce to scan a whole codebase.
+
+Devin Oncall is a site reliability agent with its own harness.
 
 Review can start before the code is finished. A developer is adding a fraud score to the claim page, and the pull request is still a draft.
 
@@ -52,7 +68,9 @@ Here it finds a chain of problems. The claims service trusts the user ID and rol
 
 Devin documents its reasoning step by step through the code. Then it verifies the finding on a running build: a request that claims to be an adjuster gets back every customer's claims. It labels the finding CWE-290 and marks it critical.
 
-One click on Fix with Devin starts a fix. Devin makes the service require a signed header from the gateway, adds tests, and opens a pull request. Devin Review reviews it like any other change.
+One click on Fix with Devin starts a fix.
+
+Devin makes the service require a signed header from the gateway, adds tests, and opens a pull request. Devin Review reviews it like any other change.
 
 The payout pull request also fails in CI, the automatic build and test system. The developer asks Devin to fix it. This session runs on a macOS VM.
 
@@ -94,17 +112,25 @@ Some test work is too large for one session. For this, Devin writes a Dynamic Wo
 
 The workflow runs the same steps in the same order every time. Inside each step, an agent decides how to do the work.
 
-It starts one agent for each of the six packages. Each agent runs in its own session, with its own context. It writes unit and integration tests, runs them, and pushes a branch.
+It starts one agent for each of the six packages.
+
+Each agent runs in its own session, with its own context.
+
+It writes unit and integration tests, runs them, and pushes a branch.
 
 A final step merges the branches, runs the full build, and opens one pull request with 170 new tests for the team to review.
 
 Some bugs still reach production. A Devin Oncall responder watches one source of alerts. This one gets crash alerts for the iOS app from a webhook.
 
-The responder can use the team's tools through MCP, such as Slack, and it follows the team's runbook. It runs on a macOS VM with Xcode and the iOS Simulator.
+The responder can use the team's tools through MCP, such as Slack, and it follows the team's runbook.
+
+It runs on a macOS VM with Xcode and the iOS Simulator.
 
 A crash monitor sends an alert, and Devin Oncall starts a session. The alert has the stack trace and the breadcrumbs, which are the last steps the user took.
 
-Devin follows the breadcrumbs in the iOS Simulator and gets the same crash. The cause is a division by zero when an estimate has no line items.
+Devin follows the breadcrumbs in the iOS Simulator and gets the same crash.
+
+The cause is a division by zero when an estimate has no line items.
 
 It fixes the root cause and adds three regression tests: two unit tests for an empty estimate, and a UI test that removes the last item.
 
@@ -112,7 +138,9 @@ The report gives the root cause, the confidence, and the affected app versions, 
 
 Here the alert comes from a Windows desktop app.
 
-Oncall starts a session on a Windows virtual machine, runs the app, and reproduces the crash. It finds the cause, a missing claim type in the approval rules, writes a fix with a test, and reports its confidence.
+Oncall starts a session on a Windows virtual machine and reports that it reproduced the crash.
+
+It finds the cause, a missing claim type in the approval rules, writes a fix with unit tests and a UI test, and reports its confidence.
 
 A developer opens the pull request from the patch. Like every other change, it goes through Devin Review, and a person approves the merge.
 
