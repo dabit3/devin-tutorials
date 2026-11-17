@@ -1,0 +1,486 @@
+[
+ {
+  "line": 1,
+  "seconds": 7.75,
+  "frame": "line01.png",
+  "text": "In this video, I'm going to show you how I build a feature with Devin when I want to stay hands-on: working in the IDE and the terminal next to the agents, instead of handing the whole task off.",
+  "beats": [
+   "S2-02"
+  ]
+ },
+ {
+  "line": 2,
+  "seconds": 17.7167,
+  "frame": "line02.png",
+  "text": "I'll use Devin Desktop and the Devin CLI. Local agents, cloud agents, and other agents like Codex and OpenCode all run here, in one app, with one session list.",
+  "beats": [
+   "PREP-ACP"
+  ]
+ },
+ {
+  "line": 3,
+  "seconds": 27.0892,
+  "frame": "line03.png",
+  "text": "Setup is short. First, I connect GitHub to my Devin organization.",
+  "beats": [
+   "S1-01"
+  ]
+ },
+ {
+  "line": 4,
+  "seconds": 34.9717,
+  "frame": "line04.png",
+  "text": "Then Devin indexes my repositories in DeepWiki. These are the four repos for an insurance claims app: the Java claims service, the customer web portal, an adjuster desktop app, and an iOS app.",
+  "beats": [
+   "S1-02-claims-portal",
+   "S1-02-claims-service",
+   "S1-02-adjuster-desktop",
+   "S1-02-field-adjuster-ios"
+  ]
+ },
+ {
+  "line": 5,
+  "seconds": 44.6658,
+  "frame": "line05.png",
+  "text": "DeepWiki gives me, and the agent, an architecture view of each repo. This is the claims service, generated from the code.",
+  "beats": [
+   "S1-03-final"
+  ]
+ },
+ {
+  "line": 6,
+  "seconds": 51.3225,
+  "frame": "line06.png",
+  "text": "In Desktop I open the portal and the service in one workspace. DeepWiki is right here in the IDE too.",
+  "beats": [
+   "S1-04",
+   "S1-05"
+  ]
+ },
+ {
+  "line": 7,
+  "seconds": 60.9517,
+  "frame": "line07.png",
+  "text": "Here's my first task. It's a GitHub issue: let customers upload photos and documents to an open claim. Two sentences, no acceptance criteria.",
+  "beats": [
+   "S2-01"
+  ]
+ },
+ {
+  "line": 8,
+  "seconds": 67.73,
+  "frame": "line08.png",
+  "text": "I pick Devin Local as the agent and switch to Plan mode, so it plans before it writes any code.",
+  "beats": [
+   "S2-02",
+   "S2-03"
+  ]
+ },
+ {
+  "line": 9,
+  "seconds": 72.8642,
+  "frame": "line09.png",
+  "text": "For the model I pick Fusion, which pairs a frontier model with a faster one to keep the cost down.",
+  "beats": [
+   "S2-04"
+  ]
+ },
+ {
+  "line": 10,
+  "seconds": 79.0767,
+  "frame": "line10.png",
+  "text": "I ask it to plan this issue across the service and the portal, with acceptance criteria and a task list that shows what can run in parallel.",
+  "beats": [
+   "S2-05"
+  ]
+ },
+ {
+  "line": 11,
+  "seconds": 87.275,
+  "frame": "line11.png",
+  "text": "Before it writes the plan, it asks me questions: which statuses count as open, where files are stored, which file types and limits. I answer them.",
+  "beats": [
+   "S2-05q"
+  ]
+ },
+ {
+  "line": 12,
+  "seconds": 97.7325,
+  "frame": "line12.png",
+  "text": "Now I have a spec. It has the context it found in both repos, the decisions we made, and twelve acceptance criteria. Each one is testable: status codes, ownership, file types, limits.",
+  "beats": [
+   "S2-clean-01",
+   "S2-clean-02",
+   "S2-clean-03"
+  ]
+ },
+ {
+  "line": 13,
+  "seconds": 108.155,
+  "frame": "line13.png",
+  "text": "And here's the task list. There's a service track and a portal track, and the plan says which tasks depend on each other and which can run at the same time.",
+  "beats": [
+   "S2-clean-06",
+   "S2-clean-07",
+   "S2-clean-08"
+  ]
+ },
+ {
+  "line": 14,
+  "seconds": 116.1075,
+  "frame": "line14.png",
+  "text": "The spec is just a file, so I can edit it. I tighten one criterion: list responses contain attachment metadata only.",
+  "beats": [
+   "S2-08-before",
+   "S2-08"
+  ]
+ },
+ {
+  "line": 15,
+  "seconds": 120.7108,
+  "frame": "line15.png",
+  "text": "Nothing is built until I approve the plan.",
+  "beats": [
+   "S2-09-toolbar",
+   "S2-09-restored"
+  ]
+ },
+ {
+  "line": 16,
+  "seconds": 126.995,
+  "frame": "line16.png",
+  "text": "I approve it, but I scope this local session to the portal screen only. Other agents get the rest.",
+  "beats": [
+   "S3-01-scoped-approval"
+  ]
+ },
+ {
+  "line": 17,
+  "seconds": 132.1675,
+  "frame": "line17.png",
+  "text": "For the service track, I open the Devin CLI in the claims service and point it at the same plan file.",
+  "beats": [
+   "S3-CLI-ready",
+   "S3-CLI-plan"
+  ]
+ },
+ {
+  "line": 18,
+  "seconds": 140.5367,
+  "frame": "line18.png",
+  "text": "Then I type slash handoff and pick Ubuntu. The CLI packages my conversation, my branch, and my uncommitted changes, and a cloud Devin picks it up in its own VM. My environment comes with me.",
+  "beats": [
+   "S3-CLI-handoff-command",
+   "S3-CLI-ubuntu",
+   "S3-CLI-handoff-connected"
+  ]
+ },
+ {
+  "line": 19,
+  "seconds": 148.4167,
+  "frame": "line19.png",
+  "text": "The cloud agent is building and testing the API while my laptop stays free.",
+  "beats": [
+   "S3-CLI-cloud-agent",
+   "S3-CLI-cloud-url-final"
+  ]
+ },
+ {
+  "line": 20,
+  "seconds": 153.2892,
+  "frame": "line20.png",
+  "text": "From Desktop I start a second cloud session for the release notes, so the docs are written alongside the code.",
+  "beats": [
+   "S3-03-cloud-docs"
+  ]
+ },
+ {
+  "line": 21,
+  "seconds": 160.4892,
+  "frame": "line21.png",
+  "text": "For the portal's proxy, I use Codex, running inside Devin Desktop through the Agent Client Protocol. It owns the proxy change and its tests.",
+  "beats": [
+   "S4-01-codex"
+  ]
+ },
+ {
+  "line": 22,
+  "seconds": 167.7642,
+  "frame": "line22.png",
+  "text": "Here's the real work side by side: Codex's proxy change, and Devin Local's upload helpers.",
+  "beats": [
+   "S4-real-edits-readable"
+  ]
+ },
+ {
+  "line": 23,
+  "seconds": 175.3892,
+  "frame": "line23.png",
+  "text": "And this is what I mean by one surface. Devin Local, Codex, OpenCode, and my two cloud sessions are all in one session list, each with its status and pull request.",
+  "beats": [
+   "S3-mixed-complete"
+  ]
+ },
+ {
+  "line": 24,
+  "seconds": 182.0067,
+  "frame": "line24.png",
+  "text": "The same cloud session is also in the Devin web app, with its PR.",
+  "beats": [
+   "S3-cloud-web"
+  ]
+ },
+ {
+  "line": 25,
+  "seconds": 190.425,
+  "frame": "line25.png",
+  "text": "While Devin Local is working, I can queue a message. I edit it before it sends: keep it vanilla JavaScript, no new dependencies.",
+  "beats": [
+   "S5-02-edit-verified",
+   "S5-03-update-verified"
+  ]
+ },
+ {
+  "line": 26,
+  "seconds": 195.3467,
+  "frame": "line26.png",
+  "text": "I can also stop it outright.",
+  "beats": [
+   "S5-05-stop-verified"
+  ]
+ },
+ {
+  "line": 27,
+  "seconds": 200.0408,
+  "frame": "line27.png",
+  "text": "Then I give one correction: the button says \"Upload file\", with a hint for the allowed types and size. It picks up from where it was and makes the change.",
+  "beats": [
+   "S5-correction-continued"
+  ]
+ },
+ {
+  "line": 28,
+  "seconds": 206.505,
+  "frame": "line28.png",
+  "text": "OpenCode wrote the customer help page, so I steer it the same way, and it updates the label.",
+  "beats": [
+   "S4-opencode-steering",
+   "S4-opencode-corrected"
+  ]
+ },
+ {
+  "line": 29,
+  "seconds": 214.6583,
+  "frame": "line29.png",
+  "text": "In the CLI, I can ask a quick side question with slash btw, without disrupting the main task. Here I ask where the proxy adds the customer headers, and it answers from the code.",
+  "beats": [
+   "S5-btw-complete"
+  ]
+ },
+ {
+  "line": 30,
+  "seconds": 224.9475,
+  "frame": "line30.png",
+  "text": "When the portal work is done, I hand it off from Desktop too. I pick Ubuntu again.",
+  "beats": [
+   "S5-portal-handoff-prompt",
+   "S5-portal-platform"
+  ]
+ },
+ {
+  "line": 31,
+  "seconds": 230.52,
+  "frame": "line31.png",
+  "text": "The cloud agent receives my uncommitted changes, checks all eight files, runs the tests, and opens the pull request.",
+  "beats": [
+   "S5-portal-cloud-pickup",
+   "S5-portal-PR-result"
+  ]
+ },
+ {
+  "line": 32,
+  "seconds": 240.1117,
+  "frame": "line32.png",
+  "text": "Devin fits into my own harness. From Customizations, I open the plugin marketplace and install the official DeepWiki plugin.",
+  "beats": [
+   "S6-marketplace",
+   "S6-plugin-installed"
+  ]
+ },
+ {
+  "line": 33,
+  "seconds": 245.6792,
+  "frame": "line33.png",
+  "text": "MCP servers are listed here. Plugins can bring their own.",
+  "beats": [
+   "S6-mcps"
+  ]
+ },
+ {
+  "line": 34,
+  "seconds": 248.7475,
+  "frame": "line34.png",
+  "text": "Hooks run my own scripts on agent events.",
+  "beats": [
+   "S6-hooks"
+  ]
+ },
+ {
+  "line": 35,
+  "seconds": 253.545,
+  "frame": "line35.png",
+  "text": "And rules: both repos' AGENTS.md files are always on, so every agent follows the same conventions.",
+  "beats": [
+   "S6-rules-agents-clean"
+  ]
+ },
+ {
+  "line": 36,
+  "seconds": 260.665,
+  "frame": "line36.png",
+  "text": "I also want this upload checklist reused next time, so I ask Devin to turn it into a skill. It writes the SKILL.md.",
+  "beats": [
+   "S6-create-skill-prompt",
+   "S6-skill-file"
+  ]
+ },
+ {
+  "line": 37,
+  "seconds": 265.8083,
+  "frame": "line37.png",
+  "text": "And now it shows up in Skills for any future session.",
+  "beats": [
+   "S6-skill-listed"
+  ]
+ },
+ {
+  "line": 38,
+  "seconds": 275.4558,
+  "frame": "line38.png",
+  "text": "For context, I generate a Codemap of the upload flow: from the portal, through the proxy, to the controller, the ownership check, validation, and storage. It's built from the code, and each step links back to it.",
+  "beats": [
+   "S7-codemap-final"
+  ]
+ },
+ {
+  "line": 39,
+  "seconds": 284.5608,
+  "frame": "line39.png",
+  "text": "Then I ask Devin Local to test it on my computer. It opens a browser and uploads a real PNG through the file picker.",
+  "beats": [
+   "S7-browser-session-evidence"
+  ]
+ },
+ {
+  "line": 40,
+  "seconds": 290.69,
+  "frame": "line40.png",
+  "text": "The file shows up on the open claim, with its size, and the request returned 201.",
+  "beats": [
+   "S7-browser-upload-result"
+  ]
+ },
+ {
+  "line": 41,
+  "seconds": 298.6158,
+  "frame": "line41.png",
+  "text": "The service pull request opens in Desktop's Review. Devin Review found no active bugs here.",
+  "beats": [
+   "S8-service-findings"
+  ]
+ },
+ {
+  "line": 42,
+  "seconds": 305.32,
+  "frame": "line42.png",
+  "text": "But the author noted a race at the twenty-file limit, so I ask Review chat to fix it. It drafts a lock and a concurrency test, and I commit it from here.",
+  "beats": [
+   "S8-service-review-chat-proposal",
+   "S8-service-commit-draft"
+  ]
+ },
+ {
+  "line": 43,
+  "seconds": 310.9567,
+  "frame": "line43.png",
+  "text": "Checks pass, and I merge the pull request from Desktop.",
+  "beats": [
+   "S8-service-ready",
+   "S8-service-merged"
+  ]
+ },
+ {
+  "line": 44,
+  "seconds": 317.3892,
+  "frame": "line44.png",
+  "text": "On the portal PR, Review flags a critical issue: the demo proxy uses a fixed customer identity. That's a real finding, and it's the kind of thing I'd fix before production.",
+  "beats": [
+   "S8-portal-review"
+  ]
+ },
+ {
+  "line": 45,
+  "seconds": 328.5142,
+  "frame": "line45.png",
+  "text": "Cost control starts with the model. Adaptive routes each request to the right model, and Fusion keeps frontier quality at a lower cost.",
+  "beats": [
+   "S9-model-picker"
+  ]
+ },
+ {
+  "line": 46,
+  "seconds": 334.8692,
+  "frame": "line46.png",
+  "text": "In the CLI, slash session-stats shows the messages and tokens for the session.",
+  "beats": [
+   "S9-cli-stats"
+  ]
+ },
+ {
+  "line": 47,
+  "seconds": 338.7958,
+  "frame": "line47.png",
+  "text": "Desktop shows my daily and weekly usage.",
+  "beats": [
+   "S9-desktop-usage-home"
+  ]
+ },
+ {
+  "line": 48,
+  "seconds": 343.6892,
+  "frame": "line48.png",
+  "text": "Admins control Desktop from organization settings: which models are allowed, and which MCP servers can be used.",
+  "beats": [
+   "S9-web-model-allowlist",
+   "S9-web-mcp-registry"
+  ]
+ },
+ {
+  "line": 49,
+  "seconds": 349.1433,
+  "frame": "line49.png",
+  "text": "The ACP agent registry, and agent hooks for the whole organization.",
+  "beats": [
+   "S9-web-acp-registry",
+   "S9-web-agent-hooks"
+  ]
+ },
+ {
+  "line": 50,
+  "seconds": 351.9492,
+  "frame": "line50.png",
+  "text": "And usage limits.",
+  "beats": [
+   "S9-web-usage-limits"
+  ]
+ },
+ {
+  "line": 51,
+  "seconds": 361.3458,
+  "frame": "line51.png",
+  "text": "So that's assisted development with Devin: a spec I can read and edit, local, cloud, and ACP agents working in parallel, steering in real time, and review and merge, all from one app and one session list.",
+  "beats": [
+   "S3-mixed-complete"
+  ]
+ }
+]
