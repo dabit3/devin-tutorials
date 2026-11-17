@@ -1,0 +1,295 @@
+[
+ {
+  "img": "0000.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S3-CLI-ready",
+  "txt": "\n⠀⣴⣾⣶⡄⠀⠀⠀⠀\n⠀⠛⠿⠟⠻⣶⣾⣶⡄  Devin CLI\n⠀⣤⣶⣦⣴⠿⢿⠿⠃  v3000.13.4\n⠀⠻⢿⠿⠃⠀⠀⠀⠀\n\n Teams · 0% remaining (resets in 4d 21h)\n\n ● ~/demo/claims-service\n───────────────────────────────────────────────────────────────────────────────────────────────\n❭ Ask Devin to build features, fix bugs, or work on your code\n───────────────────────────────────────────────────────────────────────────────────────────────\nSWE-2 High                             Press Ctrl+L to clear the screen, Ctrl+Shift+L to redraw\n\n\n\n\n\n\n\n\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 174,
+   "y": 149,
+   "w": 300,
+   "h": 45
+  },
+  "highlightTarget": "Ask Devin|Devin|devin"
+ },
+ {
+  "img": "0001.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S3-CLI-plan",
+  "txt": "\n⠀⣴⣾⣶⡄⠀⠀⠀⠀\n⠀⠛⠿⠟⠻⣶⣾⣶⡄  Devin CLI\n⠀⣤⣶⣦⣴⠿⢿⠿⠃  v3000.13.4\n⠀⠻⢿⠿⠃⠀⠀⠀⠀\n\n Teams · 0% remaining (resets in 4d 21h)\n\n❭ Read the complete plan at /home/ubuntu/repos/devin-tutorials/tutorials/45-gartner-aad/\n  issue-38-plan-edited.md and AGENTS.md. Implement claims-service track S1-S6 for claims-portal\n  issue #38: attachment validation, persistence, POST/list/download APIs, security tests,\n  README API docs, ./mvnw -B verify, then open a claims-service PR with Security section.\n  However do not edit locally yet: first read the plan and summarize the exact API contract; I\n  will immediately /handoff to Ubuntu so all implementation and commits happen in cloud. Do not\n  implement portal work. Never merge.\n\n⠀⠸ Thinking · 1s (esc twice to interrupt)\n──────────────────────────────────────────────────── Read the complete plan at /home/ubuntu/… ─\n❭ Guide Devin while it works\n───────────────────────────────────────────────────────────────────────────────────────────────\nSWE-2 High                             Press Ctrl+L to clear the screen, Ctrl+Shift+L to redraw\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 664,
+   "y": 350,
+   "w": 1279,
+   "h": 45
+  },
+  "highlightTarget": "Read the complete plan|Thinking|Read"
+ },
+ {
+  "img": "0002.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S3-CLI-handoff-command",
+  "txt": "❭ /handoff Implement claims-service S1-S6 using the complete plan and API contract just read.\n  Work only in claims-service, run ./mvnw -B verify, and open a PR linking thequantexplorer/\n  claims-portal#38 with tests and Security section. Never merge.\n\n ✓ Prepare handoff\n ✓ Organization · My account\n ⠼ Platform\n ○ Start cloud session\n ○ Connect to session\n\n── Platform ───────────────────────────────────────────────────────────────────────────────────\n  Which platform should the cloud session run on?\n\n───────────────────────────────────────────────────────────────────────────────────────────────\n/ Type to search\n───────────────────────────────────────────────────────────────────────────────────────────────\n  ❭ Ubuntu\n    macOS\n    Windows\n───────────────────────────────────────────────────────────────────────────────────────────────\n↑↓ select · ↵ confirm · esc cancel\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 700,
+   "y": 83,
+   "w": 1351,
+   "h": 45
+  },
+  "highlightTarget": "/handoff|Which|Ubuntu|Hand"
+ },
+ {
+  "img": "0003.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S3-CLI-ubuntu",
+  "txt": "❭ /handoff Implement claims-service S1-S6 using the complete plan and API contract just read.\n  Work only in claims-service, run ./mvnw -B verify, and open a PR linking thequantexplorer/\n  claims-portal#38 with tests and Security section. Never merge.\n\n ✓ Prepare handoff\n ✓ Organization · My account\n ⠴ Platform\n ○ Start cloud session\n ○ Connect to session\n\n── Platform ───────────────────────────────────────────────────────────────────────────────────\n  Which platform should the cloud session run on?\n\n───────────────────────────────────────────────────────────────────────────────────────────────\n/ Type to search\n───────────────────────────────────────────────────────────────────────────────────────────────\n  ❭ Ubuntu\n    macOS\n    Windows\n───────────────────────────────────────────────────────────────────────────────────────────────\n↑↓ select · ↵ confirm · esc cancel\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 116,
+   "y": 617,
+   "w": 127,
+   "h": 45
+  },
+  "highlightTarget": "Ubuntu"
+ },
+ {
+  "img": "0004.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S3-CLI-handoff-connected",
+  "txt": "❭ /handoff Implement claims-service S1-S6 using the complete plan and API contract just read.\n  Work only in claims-service, run ./mvnw -B verify, and open a PR linking thequantexplorer/\n  claims-portal#38 with tests and Security section. Never merge.\n\n ✓ Prepare handoff\n ✓ Organization · My account\n ✓ Platform · Ubuntu\n ✓ Start cloud session\n ✓ Connect to session\n\n── Cloud session ──────────────────────────────────────────────────────────────────────────────\n\n ● ~/demo/claims-service\n──────────────────────────────────────────────────── Summarize the claims-service API contra… ─\n❭ Ask Devin to build features, fix bugs, or work on your code\n───────────────────────────────────────────────────────────────────────────────────────────────\nSWE-2 High · 1 cloud agent ↓                               Press alt+t to cycle thinking levels\n\n\n\n\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 188,
+   "y": 350,
+   "w": 300,
+   "h": 45
+  },
+  "highlightTarget": "Connect to session"
+ },
+ {
+  "img": "0005.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S3-CLI-local-list",
+  "txt": " ✓ Platform · Ubuntu\n ✓ Start cloud session\n ✓ Connect to session\n\n── Cloud session ──────────────────────────────────────────────────────────────────────────────\n\n❭ /list-sessions\n\n Sessions (~/demo/claims-service)\n  * invented-seed 2m ago · Summarize the claims-service API contract from th…\n\n ● ~/demo/claims-service\n── Cloud agents 1 · Subagents ─────────────────────────────────────────────────────────────────\n\n ❭ ● Implement claims-service S1-S6 using the complete plan and API contract just read. Work …\n     1m 19s · Creating claims-service branch and baseline verification\n\n\n\n\n↑↓ select · ↵ open · esc close · ←→ switch tab\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 599,
+   "y": 383,
+   "w": 1092,
+   "h": 45
+  },
+  "highlightTarget": "invented-seed"
+ },
+ {
+  "img": "0006.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S5-CLI-btw",
+  "txt": "\n … 2 earlier steps\n ✓ Search for 'proxy|/api'\n ✓ Search for 'x-customer|customer_id|customer-id|header'\n … Reading ./src/proxy.js\n ✓ Read file\n\n … 3 earlier lines\n ```js\n const headers = { 'X-User-Id': 'cust-ana', 'X-User-Role': 'CUSTOMER' };\n ```\n\n It then copies only `content-type` and `content-length` from the incoming request (lines 6–8\n ) — so the client can't override or inject its own `X-User-Id`, and the value is always `cus\n t-ana` regardless of who's actually logged in. `proxyRequest()` (line 26) passes that init o\n bject straight to `fetch(api + req.url, ...)`. `server.js` mounts this on `/api` requests.\n\n Worth noting: if the bug you're chasing is \"portal always shows Ana's claims,\" this is why —\n  the proxy stamps a fixed customer ID on every upstream call.\n\n❭ Ask a /btw…\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 556,
+   "y": 383,
+   "w": 1034,
+   "h": 45
+  },
+  "highlightTarget": "X-User-Id",
+  "cap": "The real /btw answer identifies the fixed customer headers in src/proxy.js"
+ },
+ {
+  "img": "0007.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S3-CLI-cloud-agent",
+  "txt": " ✓ Platform · Ubuntu\n ✓ Start cloud session\n ✓ Connect to session\n\n── Cloud session ──────────────────────────────────────────────────────────────────────────────\n\n❭ /list-sessions\n\n Sessions (~/demo/claims-service)\n  * invented-seed 2m ago · Summarize the claims-service API contract from th…\n\n ● ~/demo/claims-service\n── Cloud agents 1 · Subagents ─────────────────────────────────────────────────────────────────\n\n ❭ ● Implement claims-service S1-S6 using the complete plan and API contract just read. Work …\n     2m 17s · Configuring GCS mirror and compiling\n\n\n\n\n↑↓ select · ↵ open · esc close · ←→ switch tab\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 714,
+   "y": 550,
+   "w": 1351,
+   "h": 45
+  },
+  "highlightTarget": "Creating claims-service|Implement claims-service"
+ },
+ {
+  "img": "0008.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S3-CLI-cloud-url",
+  "txt": " ✓ Platform · Ubuntu\n ✓ Start cloud session\n ✓ Connect to session\n\n── Cloud session ──────────────────────────────────────────────────────────────────────────────\n\n❭ /list-sessions\n\n Sessions (~/demo/claims-service)\n  * invented-seed 2m ago · Summarize the claims-service API contract from th…\n\n ✱ Attempting to open browser: https://app.devin.ai/sessions/33f68659f9d0495fb2a7a4a424c834af\n\n ● ~/demo/claims-service\n──────────────────────────────────────────────────── Summarize the claims-service API contra… ─\n❭ Ask Devin to build features, fix bugs, or work on your code\n───────────────────────────────────────────────────────────────────────────────────────────────\nSWE-2 High · 1 cloud agent ↓                               Press alt+t to cycle thinking levels\n\n\n\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 707,
+   "y": 450,
+   "w": 1337,
+   "h": 45
+  },
+  "highlightTarget": "33f68659f9d0495fb2a7a4a424c834af",
+  "cap": "The handoff cloud session URL, also visible in web and Desktop"
+ },
+ {
+  "img": "0009.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S3-CLI-cloud-url-final",
+  "txt": " ✓ Platform · Ubuntu\n ✓ Start cloud session\n ✓ Connect to session\n\n── Cloud session ──────────────────────────────────────────────────────────────────────────────\n\n❭ /list-sessions\n\n Sessions (~/demo/claims-service)\n  * invented-seed 2m ago · Summarize the claims-service API contract from th…\n\n ✱ Attempting to open browser: https://app.devin.ai/sessions/33f68659f9d0495fb2a7a4a424c834af\n\n ● ~/demo/claims-service\n──────────────────────────────────────────────────── Summarize the claims-service API contra… ─\n❭ Ask Devin to build features, fix bugs, or work on your code\n───────────────────────────────────────────────────────────────────────────────────────────────\nSWE-2 High · 1 cloud agent ↓                               Press alt+t to cycle thinking levels\n\n\n\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 707,
+   "y": 450,
+   "w": 1337,
+   "h": 45
+  },
+  "highlightTarget": "33f68659f9d0495fb2a7a4a424c834af",
+  "cap": "CLI handoff session URL matches Desktop and web"
+ },
+ {
+  "img": "0010.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S5-CLI-btw-final",
+  "txt": "❭ /btw where does the proxy add the customer headers?\n\n─────────────────────────────────────────────────────────────────────────────────────── /btw ──\n❭ where does the proxy add the customer headers?\n\n … 2 earlier steps\n ✓ Search for 'proxy|/api'\n ✓ Search for 'x-customer|customer_id|customer-id|header'\n … Reading ./src/proxy.js\n ✓ Read file\n\n … 5 earlier lines\n ```\n\n It then copies only `content-type` and `content-length` from the incoming request (lines 6–8\n ) — so the client can't override or inject its own `X-User-Id`, and the value is always `cus\n … 5 more lines\n\n❭ Ask a /btw…\n───────────────────────────────────────────────────────────────────────────────────────────────\n↵ ask · ↑↓ scroll · esc back to chat\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 412,
+   "y": 83,
+   "w": 775,
+   "h": 45
+  },
+  "highlightTarget": "customer|X-User|headers",
+  "cap": "The proxy adds fixed customer headers in src/proxy.js"
+ },
+ {
+  "img": "0011.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S5-btw-full",
+  "txt": "⠀⣤⣶⣦⣴⠿⢿⠿⠃  v3000.13.4\n⠀⠻⢿⠿⠃⠀⠀⠀⠀\n\n Teams · 0% remaining (resets in 4d 21h)\n\n❭ /btw where does the proxy add the customer headers?\n\n ▲ Agent process restarted\n   Send a message to continue\n\n─────────────────────────────────────────────────────────────────────────────────────── /btw ──\n❭ where does the proxy add the customer headers?\n\n … 2 earlier steps\n ✓ Search for 'proxy|/api'\n ✓ Search for 'x-customer|customer_id|customer-id|header'\n … Reading ./src/proxy.js\n ✓ Read file\n\n … 1 earlier lines\n s object containing hardcoded customer identity headers:\n\n ```js\n const headers = { 'X-User-Id': 'cust-ana', 'X-User-Role': 'CUSTOMER' };\n … 9 more lines\n\n❭ Ask a /btw…\n───────────────────────────────────────────────────────────────────────────────────────────────\n↵ ask · ↑↓ scroll · esc back to chat\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 316,
+   "y": 202,
+   "w": 585,
+   "h": 37
+  },
+  "highlightTarget": "where does the proxy",
+  "cap": "The CLI side question keeps the main conversation intact"
+ },
+ {
+  "img": "0012.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S5-btw-complete",
+  "txt": "\n ▲ Agent process restarted\n   Send a message to continue\n\n─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── /btw ──\n❭ where does the proxy add the customer headers?\n\n … 2 earlier steps\n ✓ Search for 'proxy|/api'\n ✓ Search for 'x-customer|customer_id|customer-id|header'\n … Reading ./src/proxy.js\n ✓ Read file\n\n In  src/proxy.js , in  toUpstreamInit()  (line 5). Every proxied request gets a fresh headers object containing hardcoded\n customer identity headers:\n\n\n   const headers = { 'X-User-Id': 'cust-ana', 'X-User-Role': 'CUSTOMER' };\n\n\n It then copies only  content-type  and  content-length  from the incoming request (lines 6–8) — so the client can't override\n or inject its own  X-User-Id , and the value is always  cust-ana  regardless of who's actually logged in.  proxyRequest()\n (line 26) passes that init object straight to  fetch(api + req.url, ...) .  server.js  mounts this on  /api  requests.\n Worth noting: if the bug you're chasing is \"portal always shows Ana's claims,\" this is why — the proxy stamps a fixed customer\n ID on every upstream call.\n\n❭ Ask a /btw…\n───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────\n↵ ask · esc back to chat\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 694,
+   "y": 400,
+   "w": 1319,
+   "h": 37
+  },
+  "highlightTarget": "In  src/proxy",
+  "cap": "Complete real side answer: toUpstreamInit stamps customer headers"
+ },
+ {
+  "img": "0013.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S9-cli-stats-resize-artifact",
+  "txt": "❭ /session-stats\n\n Session stats  17ff6f6d-8ef9-4515-bc66-43e34cfda88c\n\n Agent messages       5 messages\n Input tokens         33639 tokens\n Output tokens        656 tokens\n Cached input tokens  29056 tokens\n\n Tokens by model\n ● SWE-2 High  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄  63k    100%\n ──────────────────────────────────────────────────────────────────────────────────────────────\n──────────────────────────────\n   Total\n                   63k  tokens\n\n ● ~/demo/claims-portal\n──────────────────────────────────────────────────────────────────────────────────── where does\n the proxy add the customer h… ─\n❭ Ask Devin to build features, fix bugs, or work on your code\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 412,
+   "y": 149,
+   "w": 746,
+   "h": 45
+  },
+  "highlightTarget": "Session stats",
+  "cap": "Rejected resize take: actual completed-turn statistics, but a pre-resize chart and footer reflow across lines"
+ },
+ {
+  "img": "0014.png",
+  "cur": {
+   "x": 1300,
+   "y": 760
+  },
+  "id": "S9-cli-stats",
+  "txt": "   Total\n\n❭ /session-stats\n\n Session stats  17ff6f6d-8ef9-4515-bc66-43e34cfda88c\n\n Agent messages       5 messages\n Input tokens         33639 tokens\n Output tokens        656 tokens\n Cached input tokens  29056 tokens\n\n Tokens by model\n ● SWE-2 High  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄  63k    100%\n ────────────────────────────────────────────────────────────────────────────────────────────\n   Total                                                                          63k  tokens\n\n ● ~/demo/claims-portal\n──────────────────────────────────────────────────── where does the proxy add the customer h… ─\n❭ Ask Devin to build features, fix bugs, or work on your code\n───────────────────────────────────────────────────────────────────────────────────────────────\nSWE-2 High                                               See all keyboard shortcuts: /shortcuts\n",
+  "hold": 3,
+  "camera": "steady",
+  "cursor": false,
+  "ring": {
+   "x": 412,
+   "y": 216,
+   "w": 746,
+   "h": 45
+  },
+  "highlightTarget": "Session stats",
+  "cap": "Completed-turn CLI session statistics, freshly rendered at the capture terminal size"
+ }
+]
