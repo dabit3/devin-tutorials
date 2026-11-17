@@ -31,9 +31,9 @@ const original = fs.readFileSync(path.join(root, 'issue-38-plan-original.md'), '
 const edited = fs.readFileSync(path.join(root, 'issue-38-plan-edited.md'), 'utf8');
 assert.equal(edited, original.replace('8. **AC8** List responses never include file bytes.', '8. **AC8** List responses never include file bytes. They contain attachment metadata only.'));
 assert.equal((edited.match(/^\d+\. \*\*AC\d+\*\*/gm) || []).length, 12);
-fs.writeFileSync(path.join(root, 'shots', 'production-beats.json'), JSON.stringify(beats, null, 1) + '\n');
-console.log(`PASS: ${beats.length} production beats; every PNG is 3840x2160; steady camera and in-bounds r.box highlights.`);
+console.log(`PASS: ${beats.length} raw capture beats; every PNG is 3840x2160; steady camera and in-bounds r.box highlights.`);
 console.log('PASS: original/edited plans differ only by the visible AC8 sentence; all 12 acceptance criteria preserved.');
+if (process.argv.includes('--captures-only')) process.exit(0);
 const settings = JSON.parse(fs.readFileSync(path.join(homedir(), '.config/Devin/User/settings.json')));
 assert.equal(settings['devin.acp.enabledAgents']['codex-acp'], true);
 assert.equal(settings['devin.acp.enabledAgents'].opencode, true);
@@ -53,5 +53,4 @@ try {
 for (const repo of ['claims-portal', 'claims-service']) {
   assert.equal(execFileSync('git', ['-C', path.join(homedir(), 'demo', repo), 'status', '--porcelain'], { encoding: 'utf8' }), '', repo);
 }
-fs.writeFileSync(path.join(root, 'prep-evidence.json'), JSON.stringify({ dimensions, fullscreen: state.trim(), zoom: 1.25, enabledAgents: settings['devin.acp.enabledAgents'], folders: workspace.folders }, null, 2) + '\n');
 console.log('PASS: native fullscreen 1024x576 DPR3.75 (3840x2160), 125% zoom, both ACP agents enabled, two-root workspace, both claims working trees clean.');
