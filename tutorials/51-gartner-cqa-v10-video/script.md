@@ -22,8 +22,8 @@
 | 10 | On its own computer, it follows the breadcrumbs in the Simulator, removes the last line item, and gets the same crash. The cause is a division by zero when an estimate has no line items. | Devin's computer: the estimate in the Simulator as the line items are removed, then the root cause in chat |
 | 11 | It fixes the root cause and adds three regression tests: two unit tests and a UI test that removes the last line item. | The diff and the tests |
 | 12 | Then it writes a report: what happened, how it reproduced it, what it changed, and how confident it is in the fix. | I scroll the report |
-| 13 | The same flow works on Windows. Here an adjuster's desktop app crashes when approving a claim. | Windows Oncall alert |
-| 14 | Oncall runs this one on a Windows VM. It reproduces the exception, finds a missing claim type in the approval rules, and adds unit tests and a UI test. | The Windows session and patch |
+| 13 | The same flow works on Windows. Here an adjuster's desktop app crashes when approving a claim. | Windows Oncall alert ADCA-1, the approving crash |
+| 14 | Oncall runs this one on a Windows VM. It reproduces the exception, finds a missing claim type in the approval rules, and adds unit tests and a UI test. | Devin's Windows VM running the desktop app, then the PR built from Oncall's patch (repro, missing claim type, unit and UI tests) |
 | 15 | I can review either fix wherever I work: in Devin's web app or in Devin Desktop. | Oncall's PR in the web app, then Review in Devin Desktop |
 | | **Section card:** "Testing with Devin" / "Generated suites, UI tests, recordings" | |
 | 16 | Next, testing. Our claims service has thin test coverage, so I ask Devin to write a test suite for it. | My prompt in the session |
