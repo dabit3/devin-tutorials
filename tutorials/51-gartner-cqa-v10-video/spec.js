@@ -31,39 +31,25 @@ window.SPEC = {
    "vo": "We'll cover debugging, testing, refactoring, security and code review, using three of Devin's specialized agents: Devin Oncall, Devin Security and Devin Review."
   },
   "0002.png": {
-   "hold": 0.5,
+   "hold": 2.0,
    "cursor": true,
-   "hl": [
-    {
-     "x": 535.3820312500001,
-     "y": 106.15,
-     "w": 416.2640625,
-     "h": 42.900000000000006
-    }
-   ],
+   "hl": null,
    "hlDelay": 0.5,
    "capPos": "bottom",
    "line": "2",
    "voSync": 7.14
   },
   "0003.png": {
-   "hold": 0.5,
+   "hold": 2.0,
    "cursor": true,
-   "hl": [
-    {
-     "x": 159.95546875000002,
-     "y": 57.2,
-     "w": 99.9109375,
-     "h": 35.2
-    }
-   ],
+   "hl": null,
    "hlDelay": 0.5,
    "capPos": "bottom",
    "line": "2",
    "voSync": 8.09
   },
   "0004.png": {
-   "hold": 0.5,
+   "hold": 2.0,
    "cursor": true,
    "hl": null,
    "hlDelay": 0.5,
@@ -74,14 +60,7 @@ window.SPEC = {
   "0005.png": {
    "hold": 0.6,
    "cursor": true,
-   "hl": [
-    {
-     "x": 535.3820312500001,
-     "y": 106.15,
-     "w": 416.2640625,
-     "h": 42.900000000000006
-    }
-   ],
+   "hl": null,
    "hlDelay": 0.5,
    "capPos": "bottom",
    "line": "3",
@@ -91,14 +70,7 @@ window.SPEC = {
   "0006.png": {
    "hold": 0.6,
    "cursor": true,
-   "hl": [
-    {
-     "x": 159.95546875000002,
-     "y": 57.2,
-     "w": 99.9109375,
-     "h": 35.2
-    }
-   ],
+   "hl": null,
    "hlDelay": 0.5,
    "capPos": "bottom",
    "line": "3",
