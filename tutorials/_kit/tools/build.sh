@@ -23,7 +23,7 @@ if [ -n "${SEG:-}" ]; then
     b=$(( a + SEG < TOTAL ? a + SEG : TOTAL )); rm -rf "$VD/build/frames"
     if [ "${RESUME:-0}" = 1 ] && [ -s "$VD/build/seg/$a.mp4" ]; then echo "file '$a.mp4'" >> "$VD/build/seg/list.txt"; echo "segment $b/$TOTAL (kept)"; continue; fi
     (cd "$KIT/tools" && node render.mjs "$V" --from "$a" --to "$b" --workers "${WORKERS:-6}")
-    encode "$VD/build/frames" "$a" "$VD/build/seg/$a.mp4"
+    encode "$VD/build/frames" "$a" "$VD/build/seg/$a.part.mp4" && mv "$VD/build/seg/$a.part.mp4" "$VD/build/seg/$a.mp4"
     echo "file '$a.mp4'" >> "$VD/build/seg/list.txt"
     if [ -z "${VOICE:-}" ] && [ "$POSTER" -ge "$a" ] && [ "$POSTER" -lt "$b" ]; then ffmpeg -v error -y -i "$VD/build/frames/$(printf %05d "$POSTER").jpg" -vf scale=1920:-1 "$VD/poster.png"; fi
     echo "segment $b/$TOTAL"
@@ -37,7 +37,7 @@ else
   [ -n "${VOICE:-}" ] || ffmpeg -v error -y -i "$VD/build/frames/$(printf %05d "$POSTER").jpg" -vf scale=1920:-1 "$VD/poster.png"
   [ "${KEEP_FRAMES:-0}" = 1 ] || rm -rf "$VD/build/frames"
 fi
-VOICE="${VOICE:-}" "$PY" "$KIT/tools/audio.py" "$VD"
+VOICE="${VOICE:-}" SFX="${SFX:-1}" "$PY" "$KIT/tools/audio.py" "$VD"
 ffmpeg -v error -y -i "$VD/build/audio.wav" -af "acompressor=threshold=-20dB:ratio=3:attack=4:release=150:makeup=2,loudnorm=I=-16:TP=-2:LRA=11" -ar 48000 "$VD/build/audio_n.wav"
 ffmpeg -v error -y -i "$VD/build/video.mp4" -i "$VD/build/audio_n.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -ar 48000 -movflags +faststart -shortest "$VD/$OUTNAME.mp4"
 rm -f "$VD/build/video.mp4"
