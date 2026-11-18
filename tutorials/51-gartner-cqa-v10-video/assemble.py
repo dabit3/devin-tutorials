@@ -40,7 +40,7 @@ P = [
  ('CARD', 'ch3'),
  ('22', [('x:pages1/0018.png', 'S0'), ('x:pages1/0006.png', 'S1+')]),
  ('23', [('x:cwe3/0000.png', None)]),
- ('24', [('x:rvchat/0002.png', None), ('x:rvchat/0050.png', '', 'it explains')]),
+ ('24', [('x:rvchat/0002.png', None), ('x:rvchat/0049.png', '', 'it explains')]),
  ('25', [('x:ci9/0000.png', None), ('x:ci9/0001.png', '', 'reproduces the failure')]),
  ('26', [('x:ci9/0002.png', None)]),
  ('27', [('x:stack9/0000.png', None), ('x:pages1/0008.png', '', 'a stack of three')]),
@@ -60,7 +60,7 @@ P = [
 ]
 
 HLX = {('4', 'x:pages7/0000.png'): [{'x': 744, 'y': 579, 'w': 760, 'h': 56}]}  # (line, src) -> [box] overrides; None drops a capture-time box
-HOLDX = {('6b', 'x:answer/0001.png'): 1.6, ('24', 'x:rvchat/0050.png'): 2.5, ('38', 'x:pages1/0018.png'): 1.5, ('6a', 'x:wiki/0001.png'): 1.2}
+HOLDX = {('6b', 'x:answer/0001.png'): 1.6, ('24', 'x:rvchat/0049.png'): 2.5, ('38', 'x:pages1/0018.png'): 1.5, ('6a', 'x:wiki/0001.png'): 1.2}
 SAY = [('CWE', 'C W E'), ('AGENTS.md', 'agents dot M D'), ('README', 'read-me'), ('MapReduce', 'map-reduce'), ('CI,', 'C I,'), ('CI ', 'C I '), ('CI.', 'C I.'), ('VMs', 'V Ms'), ('VM', 'V M'), ('iOS', 'i O S'), ('MCP', 'M C P'), ('API', 'A P I'), ('UI', 'U I'), ('DeepWiki', 'Deep Wiki')]
 out = os.path.join(HERE, 'shots'); shutil.rmtree(out, ignore_errors=True); os.makedirs(out)
 BJ = {}
