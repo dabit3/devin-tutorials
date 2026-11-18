@@ -619,7 +619,8 @@ if (PHASE === 'replay') {
   await p.mouse.move(300, 400); await scroll('top'); await sleep(1200);
   let k = 0, st = await chat();
   while (st && k < Number(process.env.MAXSTEP || 60)) {
-    if (k % 4 === 0) { await pane(PANES[(k / 4) % PANES.length]); await sleep(2000); }
+    if (PANES[0] === 'none') { if (k === 0) { await pane('Hide tabs panel') || await p.evaluate(() => { const e = [...document.querySelectorAll('button')].find(x => x.getAttribute('aria-label') === 'Hide tabs panel' && x.getBoundingClientRect().width > 0); if (e) e.click(); }); await sleep(1500); } }
+    else if (k % 4 === 0) { await pane(PANES[(k / 4) % PANES.length]); await sleep(2000); }
     await unfocus();
     await r.shot({ hold: 1.2 });
     r.mark(`${TAG}-${k}`);

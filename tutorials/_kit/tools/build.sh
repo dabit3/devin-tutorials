@@ -18,9 +18,10 @@ TOTAL=$(cd "$KIT/tools" && node render.mjs "$V" --count)
 POSTER="${POSTER:-$(( TOTAL / 2 ))}"
 mkdir -p "$VD/build"
 if [ -n "${SEG:-}" ]; then
-  rm -rf "$VD/build/seg"; mkdir -p "$VD/build/seg"; : > "$VD/build/seg/list.txt"
+  [ "${RESUME:-0}" = 1 ] || rm -rf "$VD/build/seg"; mkdir -p "$VD/build/seg"; : > "$VD/build/seg/list.txt"
   for ((a = 0; a < TOTAL; a += SEG)); do
     b=$(( a + SEG < TOTAL ? a + SEG : TOTAL )); rm -rf "$VD/build/frames"
+    if [ "${RESUME:-0}" = 1 ] && [ -s "$VD/build/seg/$a.mp4" ]; then echo "file '$a.mp4'" >> "$VD/build/seg/list.txt"; echo "segment $b/$TOTAL (kept)"; continue; fi
     (cd "$KIT/tools" && node render.mjs "$V" --from "$a" --to "$b" --workers "${WORKERS:-6}")
     encode "$VD/build/frames" "$a" "$VD/build/seg/$a.mp4"
     echo "file '$a.mp4'" >> "$VD/build/seg/list.txt"
