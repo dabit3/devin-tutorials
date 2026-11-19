@@ -25,13 +25,25 @@ def load(path):
     return json.loads(path.read_text())
 
 
+def voice_duration(n, metadata):
+    path = VO / f'line{n:02}-01.png.wav'
+    if path.exists():
+        with wave.open(str(path), 'rb') as source:
+            assert source.getparams()[:3] == (1, 2, SR)
+            assert source.getnframes() > 0
+            return source.getnframes() / source.getframerate()
+    duration = metadata['dur']
+    assert duration > 0
+    return duration
+
+
 def plan():
     inventory = load(ROOT / 'final-accepted-inventory.json')
     voices = load(VO / 'lines.json')
     lines, position = [], 0
     for entry in inventory['lines']:
         n = entry['line']
-        duration = voices[f'line{n:02}-01.png']['dur']
+        duration = voice_duration(n, voices[f'line{n:02}-01.png'])
         frames = math.ceil(duration * FPS - 1e-8)
         gap = 0 if n == 51 else (30 if n + 1 in SECTIONS else 12)
         clips = []

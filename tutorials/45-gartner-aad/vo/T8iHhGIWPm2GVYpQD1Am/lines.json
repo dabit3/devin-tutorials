@@ -801,38 +801,29 @@
   ]
  },
  "line27-01.png": {
-  "text": "Then I give one correction: the button says \"Upload file\", with a hint for the allowed types and size. It picks up from where it was and makes the change.",
-  "dur": 7.315,
-  "at": 182.46,
-  "end": 189.775,
+  "text": "Then I give one correction: the button should say \"Upload file\", with a hint for the allowed types and size.",
+  "dur": 5.248,
+  "at": 0.0,
+  "end": 5.248,
   "mode": "one-take",
+  "source": "line27-only revoice via vo_onetake.py; other lines retain the original full take",
   "model": "eleven_multilingual_v2",
   "checked": true,
   "chunks": [
    {
-    "t0": 0.05,
-    "t1": 1.211,
+    "t0": 0,
+    "t1": 1.184,
     "text": "Then I give one correction:"
    },
    {
-    "t0": 1.269,
-    "t1": 2.836,
-    "text": "the button says \"Upload file\","
+    "t0": 1.428,
+    "t1": 3.111,
+    "text": "the button should say \"Upload file\","
    },
    {
-    "t0": 3.01,
-    "t1": 4.485,
-    "text": "with a hint for the allowed types and"
-   },
-   {
-    "t0": 4.519,
-    "t1": 6.377,
-    "text": "size. It picks up from where it was"
-   },
-   {
-    "t0": 6.435,
-    "t1": 7.315,
-    "text": "and makes the change."
+    "t0": 3.228,
+    "t1": 5.248,
+    "text": "with a hint for the allowed types and size."
    }
   ]
  },
