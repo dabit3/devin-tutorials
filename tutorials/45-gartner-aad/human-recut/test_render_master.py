@@ -70,9 +70,11 @@ class RenderTest(unittest.TestCase):
     def prepare_fixture(self, count):
         voices, lines = {}, []
         for n in range(1, count + 1):
-            voices[f'line{n:02}-01.png'] = {'dur': .005, 'at': (n - 1) * .005, 'end': n * .005}
+            voices[f'line{n:02}-01.png'] = {'text': f'line {n}', 'dur': .005,
+                                         'at': (n - 1) * .005, 'end': n * .005}
             lines.append({'line': n, 'startFrame': n - 1, 'voiceSeconds': .005})
         (self.vo / 'lines.json').write_text(json.dumps(voices))
+        (self.vo / 'full-take-lines.json').write_text(json.dumps(voices))
         return {'frames': count, 'lines': lines, 'seconds': count / 30}
 
     def test_all_51_clips_need_no_full_take(self):
@@ -110,6 +112,48 @@ class RenderTest(unittest.TestCase):
         self.wav(0, 0)
         with self.assertRaises(AssertionError):
             render.prepare(timeline)
+
+    def test_missing_line27_never_falls_back_even_with_matching_manifest(self):
+        timeline = self.prepare_fixture(27)
+        for n in range(1, 27):
+            self.wav(n, 240)
+        full = self.wav(0, 27 * 240)
+        with patch.object(render.wave, 'open', wraps=wave.open) as opened:
+            with self.assertRaisesRegex(FileNotFoundError, 'line27-01.png.wav; line 27 cannot fall back'):
+                render.prepare(timeline)
+        self.assertFalse(any(call.args == (str(full), 'rb') for call in opened.call_args_list))
+
+    def test_changed_text_cannot_fall_back(self):
+        timeline = self.prepare_fixture(1)
+        voices = json.loads((self.vo / 'lines.json').read_text())
+        voices['line01-01.png']['text'] = 'Replacement narration'
+        (self.vo / 'lines.json').write_text(json.dumps(voices))
+        with self.assertRaisesRegex(ValueError, 'Line 1 text does not match the full-take manifest'):
+            render.prepare(timeline)
+
+    def test_missing_manifest_entry_cannot_fall_back(self):
+        timeline = self.prepare_fixture(1)
+        (self.vo / 'full-take-lines.json').write_text('{}')
+        with self.assertRaisesRegex(ValueError, 'Line 1 text does not match the full-take manifest'):
+            render.prepare(timeline)
+
+    def test_missing_manifest_file_cannot_fall_back(self):
+        timeline = self.prepare_fixture(1)
+        (self.vo / 'full-take-lines.json').unlink()
+        with self.assertRaises(FileNotFoundError) as failure:
+            render.prepare(timeline)
+        self.assertEqual(Path(failure.exception.filename).name, 'full-take-lines.json')
+
+    def test_fallback_uses_original_offsets_not_current_clip_offsets(self):
+        timeline = self.prepare_fixture(2)
+        self.wav(1, 240)
+        self.wav(0, 480)
+        voices = json.loads((self.vo / 'lines.json').read_text())
+        voices['line02-01.png'].update(at=0, end=.005)
+        (self.vo / 'lines.json').write_text(json.dumps(voices))
+        render.prepare(timeline)
+        provenance = json.loads((self.build / 'audio-provenance.json').read_text())
+        self.assertIn('[0.005,0.01]', provenance[1]['origin'])
 
 
 if __name__ == '__main__':

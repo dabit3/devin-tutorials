@@ -83,6 +83,7 @@ def prepare(timeline):
     (BUILD / 'timeline.json').write_text(json.dumps(timeline, indent=2) + '\n')
     voices = load(VO / 'lines.json')
     original = None
+    full_take_manifest = None
     master = np.zeros(timeline['frames'] * SR // FPS, dtype='<i2')
     provenance = []
     for line in timeline['lines']:
@@ -95,11 +96,17 @@ def prepare(timeline):
                 samples = np.frombuffer(source.readframes(source.getnframes()), '<i2').copy()
             origin = str(existing)
         else:
+            if n == 27:
+                raise FileNotFoundError(f'Missing required replacement WAV: {existing}; line 27 cannot fall back to the original full take.')
+            if full_take_manifest is None:
+                full_take_manifest = load(VO / 'full-take-lines.json')
+            v = full_take_manifest.get(f'line{n:02}-01.png')
+            if v is None or v['text'] != voices[f'line{n:02}-01.png']['text']:
+                raise ValueError(f'Line {n} text does not match the full-take manifest; provide {existing}.')
             if original is None:
                 with wave.open(str(VO / '_full-take.wav'), 'rb') as source:
                     assert source.getparams()[:3] == (1, 2, SR)
                     original = np.frombuffer(source.readframes(source.getnframes()), '<i2')
-            v = voices[f'line{n:02}-01.png']
             start, end = round(v['at'] * SR), round(v['end'] * SR)
             samples = original[start:end].copy()
             # Match vo_onetake.py's original per-line WAV export.
