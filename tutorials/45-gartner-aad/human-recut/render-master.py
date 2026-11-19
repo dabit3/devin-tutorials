@@ -82,9 +82,7 @@ def prepare(timeline):
     (BUILD / 'vo').mkdir(exist_ok=True)
     (BUILD / 'timeline.json').write_text(json.dumps(timeline, indent=2) + '\n')
     voices = load(VO / 'lines.json')
-    with wave.open(str(VO / '_full-take.wav'), 'rb') as source:
-        assert source.getparams()[:3] == (1, 2, SR)
-        original = np.frombuffer(source.readframes(source.getnframes()), '<i2')
+    original = None
     master = np.zeros(timeline['frames'] * SR // FPS, dtype='<i2')
     provenance = []
     for line in timeline['lines']:
@@ -97,6 +95,10 @@ def prepare(timeline):
                 samples = np.frombuffer(source.readframes(source.getnframes()), '<i2').copy()
             origin = str(existing)
         else:
+            if original is None:
+                with wave.open(str(VO / '_full-take.wav'), 'rb') as source:
+                    assert source.getparams()[:3] == (1, 2, SR)
+                    original = np.frombuffer(source.readframes(source.getnframes()), '<i2')
             v = voices[f'line{n:02}-01.png']
             start, end = round(v['at'] * SR), round(v['end'] * SR)
             samples = original[start:end].copy()

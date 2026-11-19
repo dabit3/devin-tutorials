@@ -67,6 +67,50 @@ class RenderTest(unittest.TestCase):
         with self.assertRaises(AssertionError):
             render.voice_duration(27, {'dur': 7.315})
 
+    def prepare_fixture(self, count):
+        voices, lines = {}, []
+        for n in range(1, count + 1):
+            voices[f'line{n:02}-01.png'] = {'dur': .005, 'at': (n - 1) * .005, 'end': n * .005}
+            lines.append({'line': n, 'startFrame': n - 1, 'voiceSeconds': .005})
+        (self.vo / 'lines.json').write_text(json.dumps(voices))
+        return {'frames': count, 'lines': lines, 'seconds': count / 30}
+
+    def test_all_51_clips_need_no_full_take(self):
+        timeline = self.prepare_fixture(51)
+        for n in range(1, 52):
+            self.wav(n, 240)
+        render.prepare(timeline)
+        provenance = json.loads((self.build / 'audio-provenance.json').read_text())
+        self.assertEqual(len(provenance), 51)
+        self.assertTrue(all(p['samples'] == 240 and '_full-take' not in p['origin'] for p in provenance))
+        self.assertFalse((self.vo / '_full-take.wav').exists())
+
+    def test_missing_clips_load_full_take_once_and_preserve_export_fade(self):
+        timeline = self.prepare_fixture(3)
+        self.wav(1, 240)
+        full = self.wav(0, 720)
+        with patch.object(render.wave, 'open', wraps=wave.open) as opened:
+            render.prepare(timeline)
+        self.assertEqual(sum(call.args == (str(full), 'rb') for call in opened.call_args_list), 1)
+        with wave.open(str(self.build / 'vo/line02-01.png.wav'), 'rb') as clip:
+            samples = np.frombuffer(clip.readframes(clip.getnframes()), '<i2')
+        expected = np.arange(240, 480, dtype='<i2')
+        for j in range(240):
+            expected[-1-j] = int(int(expected[-1-j]) * j / 240)
+        np.testing.assert_array_equal(samples, expected)
+
+    def test_missing_clip_and_full_take_fail_clearly(self):
+        timeline = self.prepare_fixture(1)
+        with self.assertRaises(FileNotFoundError) as failure:
+            render.prepare(timeline)
+        self.assertEqual(Path(failure.exception.filename).name, '_full-take.wav')
+
+    def test_empty_full_take_cannot_supply_missing_clip(self):
+        timeline = self.prepare_fixture(1)
+        self.wav(0, 0)
+        with self.assertRaises(AssertionError):
+            render.prepare(timeline)
+
 
 if __name__ == '__main__':
     unittest.main()
