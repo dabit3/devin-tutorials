@@ -19,6 +19,8 @@ def env(n, a, d, curve=4.0):
     return np.minimum(1, t / max(a, 1e-4)) * np.exp(-curve * t / d)
 def add(sig, t0, gain=1.0, pan=0.0):
     i = int(t0 * SR)
+    if i < 0:
+        sig = sig[-i:]; i = 0
     if i >= N: return
     j = min(N, i + len(sig)); s = sig[:j - i] * gain
     L[i:j] += s * np.sqrt(0.5 * (1 - pan)); R[i:j] += s * np.sqrt(0.5 * (1 + pan))

@@ -1,0 +1,15 @@
+import{Capture}from'./capture.mjs';
+const r=await new Capture().connect();
+try{
+ await r.focus('desktop');
+ await r.h.moveTo(3810,1080);
+ await r.click('button[aria-label="Tue 10:17 AM"]');
+ await r.native.wait(()=>[...document.querySelectorAll('p')].some(e=>e.innerText.startsWith('Continue P2/P3 only with this correction:')));
+ await r.h.moveTo(2850,1400);await r.wheel(4);await r.h.moveTo(3770,1900);
+ await r.native.wait(()=>{const visible=e=>{const b=e.getBoundingClientRect();return e.checkVisibility()&&b.width>0&&b.y>100&&b.bottom<innerHeight-150};return document.title.startsWith('Plan GitHub issue #38')&&[...document.querySelectorAll('p')].some(e=>e.innerText.startsWith('P2 and P3 are done, including your corrections.')&&e.innerText.includes('17 tests, 0 failures')&&visible(e))&&[...document.querySelectorAll('[data-slot=sidebar-menu-button-two-line-content]')].filter(visible).length===6&&['Archive','Recent'].every(t=>document.querySelector('span[title="'+t+'"]')?.closest('button').getAttribute('aria-expanded')==='false')&&![...document.querySelectorAll('[role=tooltip],.animate-spin')].some(visible)});
+ await r.h.moveTo(3770,1900);
+ await r.start(process.argv[2]||'section11-take01e-result-list51');
+ await r.sequence(51,async()=>{await r.h.moveTo(3740,1840);await r.h.moveTo(3770,1900);},{notes:'GROUPED51 SOURCE E ONLY voice9.896–11.925. Actual existing six pinned mixed Local/Codex/OpenCode/cloud sessions and real original D1 P2/P3 result including corrections, original17tests0failures (9format+8Codexproxy); result explicitly says browser/end-to-end not yet run, not an invented successful E2E or new run. Historical completed-work recap and native Desktop ending, not claim current parallel workers. Original helpers/files result begins below; lower Upload file bullet is below viewport and is NOT claimed from this recap source (line27 must show it separately). Offrecord native Home then actual D1 sidebar row; hide unused Tabs panel, native Tue10:17AM timestamp, four slow main wheel steps; subject completely settled before take/voice. No new task/prompt/edit/agent/test/commit/merge/plugin/hook. Full native100%2x window, Archive/Recent collapsed, no unrelated rows. Shared native pointer3770,1900 at selected boundaries, only small blank-gutter motion during unused earlier voice. Final51 group requires sourcesA–D. No edit/render.'});
+ const line=r.data.lines[0];line.narrationStart=line.actionStart;line.voiceSelection={start:9.896,end:11.925,sourceStart:line.actionStart+9.896,sourceEnd:line.actionStart+11.925};r.data.sourceSelection={line:51,voiceRange:[9.896,11.925],alignment:'sourceTime=subjectSettledStart+voiceTime',group:'line51-spec-agents-steering-review-list',note:'Actual native historical result plus all6 original pinned sessions. Shared native cursor3770,1900. No edit/render.'};r.save();
+ await r.wait(900,'tail handle',false);await r.stop();if(r.data.status==='rejected')throw Error(r.data.rejection||'Capture rejected');
+}catch(error){console.error(error);if(r.rec?.exitCode===null){r.data.status='rejected';r.data.rejection=error.message;await r.stop();}process.exitCode=1;}finally{r.close()}
