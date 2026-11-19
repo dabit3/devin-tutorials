@@ -2,7 +2,7 @@
 import { Dir, sleep } from '../dir.mjs';
 import fs from 'fs';
 const D = JSON.parse(fs.readFileSync('/Users/devin/gartner/v11/vo/durations.json'));
-setTimeout(() => { console.log('HARDEXIT'); process.exit(1); }, 90000);
+const hard = setTimeout(() => { console.log('HARDEXIT'); process.exit(1); }, 90000);
 const d = await new Dir().init(); console.log('init ok', d.p.url());
 if (!/org\/thequantexplorer$/.test(d.p.url())) { await d.p.goto('https://app.devin.ai/org/thequantexplorer', { waitUntil: 'domcontentloaded', timeout: 30000 }).catch(() => {}); await sleep(7000); } await d.hide(); await sleep(600);
 await d.to(2700, 820, 400);
@@ -14,4 +14,4 @@ for (const t of ['Ubuntu', 'macOS', 'Windows']) { const r = await d.find(t, { mi
 await d.pace(D['21'] - 0.8, 0);
 await d.cmd('key 53'); await sleep(200); await d.cmd('key 53');
 await d.pace(D['21'], 1.6);
-await d.stop(); await d.close(); console.log(JSON.stringify(d.marks));
+await d.stop(); await d.close(); console.log(JSON.stringify(d.marks)); clearTimeout(hard); process.exit(0);
