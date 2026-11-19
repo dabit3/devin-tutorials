@@ -1,21 +1,21 @@
-// lines 22-28: Review, CWE, Review chat, CI fix, stack
 import { Dir, sleep } from '../dir.mjs';
 import fs from 'fs';
+import { execSync } from 'child_process';
 const D = JSON.parse(fs.readFileSync('/Users/devin/gartner/v11/vo/durations.json'));
 const ORG = 'https://app.devin.ai/org/thequantexplorer';
+const GO = { waitUntil: 'domcontentloaded', timeout: 30000 };
 const d = await new Dir().init();
-await d.p.goto(ORG); await sleep(5000); await d.hide(); await sleep(800);
-await d.to(2700, 700, 400);
-await d.rec('/Users/devin/gartner/v11/raw/s6.mov');
-d.line('22'); await d.idle(0.4);
-await d.click('More', { sel: 'button', attr: 'aria-label', after: 700 });
-await d.click('Review', { sel: '[role=menuitem]', after: 300 }); await d.to(2650, 640); await d.loaded(true); await d.idle(1.5);
-await d.pace(D['22'] - 5, 0);
-await d.goUrl(ORG + '/settings/review', true); await d.idle(0.8); await d.scroll(300, 1000, { x: 1000, y: 520 });
-await d.pace(D['22'], 0.4);
-d.line('23'); await d.goUrl('app.devin.ai/review/thequantexplorer/claims-service/pull/9', true);
-await d.idle(0.6); const oc = await d.find("Other customers", { minX: 1300 }); console.log('oc', JSON.stringify(oc)); if (oc) { await d.hover(oc, { dwell: 500 }); await d.to(1600 + oc.x + 260, 117 + oc.y + 18, 700); await sleep(900); await d.click(oc, { after: 1800 }); const c = await d.p.evaluate(() => { const e = [...document.querySelectorAll('span,code,div,a')].filter(e => { const r = e.getBoundingClientRect(); return r.width > 0 && r.y > 0 && r.y < innerHeight && /^CWE-\d+/.test((e.innerText || '').trim()); }).sort((a, b) => a.innerText.length - b.innerText.length)[0]; if (!e) return null; const r = e.getBoundingClientRect(); return { x: r.x + r.width / 2, y: r.y + r.height / 2, w: r.width, h: r.height }; }); console.log('cwe', JSON.stringify(c)); if (c) await d.hover(c, { dwell: 900 }); }
-await d.pace(D['23'], 0.4);
+const START = async (url, take) => { await d.p.goto(url, GO).catch(() => {}); await sleep(7000); await d.hide(); await sleep(600); await d.to(2700, 760, 400); await d.rec('/Users/devin/gartner/v11/raw/' + take + '.mov'); };
+const END = async () => { await d.stop(); await d.close(); console.log(JSON.stringify(d.marks)); process.exit(0); };
+const REVIEW = async () => { await d.click('More', { sel: 'button', attr: 'aria-label', after: 600 }); await d.click('Review', { sel: '[role=menuitem]', after: 300 }); await d.to(2650, 640); await d.loaded(true); };
+await START(ORG, 's6');
+await REVIEW();
+d.line('22'); await d.idle(0.8); await d.until('As an admin', 2.6); await d.goUrl(ORG + '/settings/review', true); await d.scroll(300, 1000, { x: 1000, y: 520 });
+await d.pace(D['22'], 0.3);
+await d.goUrl('app.devin.ai/review/thequantexplorer/claims-service/pull/9', true);
+d.line('23'); await d.until('labeled it', 0.8);
+{ const oc = await d.find('Other customers', { minX: 1300 }); if (oc) { await d.hover(oc, { dwell: 400 }); await d.to(1600 + oc.x + 260, 117 + oc.y + 18, 700); } else console.log('nooc'); }
+await d.pace(D['23'], 0.3);
 d.line('24');
 const chat = await d.find('Chat', { sel: 'button,[role=tab]', exact: true });
 if (chat) { await d.click(chat, { after: 800 });
@@ -25,20 +25,17 @@ if (chat) { await d.click(chat, { after: 800 });
     d.mark('cut', { from: c0, to: d.now() - 1 }); await d.idle(1); } }
 else console.log('nochat');
 await d.pace(D['24'], 0.4);
-d.line('25'); await d.goUrl('app.devin.ai/sessions/12b77fa1b7ef4a248e6e7333f589889c', true);
-await d.hover('macOS', { minX: 200 }).catch(() => {});
-await d.seek('CI', { minX: 200, sel: 'p,li' }, { x: 800, y: 500, up: true });
-await d.pace(D['25'], 0.4);
-d.line('26'); await d.scroll(2500, 1400, { x: 800, y: 500 });
-await d.pace(D['26'], 0.4);
-d.line('27'); await d.goUrl('app.devin.ai/sessions/add7ec3b63084b0293743f005eb3b13d', true);
-await d.idle(1);
-await d.pace(D['27'] - 3.5, 0);
-await d.goUrl('github.com/thequantexplorer/claims-service/pull/12', 'Payout');
-await d.pace(D['27'], 0.4);
-d.line('28'); await d.goUrl('github.com/thequantexplorer/claims-service/pull/14/files', 'README');
-await d.seek('README', { minX: 200 }, { x: 1000, y: 520 });
-await d.pace(D['28'] - 3.5, 0);
-await d.goUrl('app.devin.ai/review/thequantexplorer/claims-service/pull/14', true);
+await d.goUrl('app.devin.ai/sessions/12b77fa1b7ef4a248e6e7333f589889c', true);
+d.line('25'); await d.hover('macOS', { minX: 200 }).catch(() => {}); await d.pace(D['25'], 0.3);
+d.line('26'); await d.scroll(4000, 1000, { x: 800, y: 500 }); await d.pace(D['26'], 0.3);
+await d.goUrl('app.devin.ai/sessions/add7ec3b63084b0293743f005eb3b13d', true);
+d.line('27'); await d.idle(0.6); await d.until('a stack of three', 2.4); await d.goUrl('app.devin.ai/review', 'Payout refactor');
+{ const r = await d.find('Payout refactor', { minX: 40 }) || await d.seek('Payout refactor', { minX: 40 }, { x: 700, y: 520 }); if (r) await d.hover(r, { dwell: 500 }); else console.log('nostack'); }
+await d.pace(D['27'], 0.3);
+await d.goUrl('app.devin.ai/review/thequantexplorer/claims-service/pull/12', true); await d.to(1600 + 700, 117 + 600, 500);
+let cm = null; { const s0 = d.now(); for (let k = 0; k < 14 && !cm; k++) { const t = await d.textAt('/**'); if (t && t.y > 150 && t.y < 800) cm = t; else { await d.cmd(`scroll ${t && t.y > 0 ? Math.round(t.y - 420) : 450} 800`); await sleep(500); } } if (d.now() - s0 > 3.2) d.mark('cut', { from: s0 + 1.2, to: d.now() - 0.8 }); console.log('comment', JSON.stringify(cm)); }
+d.line('28'); if (cm) await d.hover(cm, { dwell: 600 });
+await d.until('updates the module', 2.6); await d.goUrl('app.devin.ai/review/thequantexplorer/claims-service/pull/14', 'README.md'); await d.seek('README.md', { sel: 'span', minX: 200 }, { x: 900, y: 560 });
+await d.until('Each pull request passes', 0.8); { const c = await d.find('Checks', { minX: 1300 }); if (c) await d.hover(c, { dwell: 500 }); }
 await d.pace(D['28'], 0.6);
-await d.stop(); await d.close(); console.log(JSON.stringify(d.marks));
+await END();

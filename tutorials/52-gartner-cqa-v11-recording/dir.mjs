@@ -2,6 +2,7 @@
 import puppeteer from '/Users/devin/repos/devin-tutorials/tutorials/_kit/tools/node_modules/puppeteer-core/lib/esm/puppeteer/puppeteer-core.js';
 import { spawn } from 'child_process';
 import fs from 'fs';
+const PH = JSON.parse(fs.readFileSync('/Users/devin/gartner/v11/vo/phrases.json'));
 import { createInterface } from 'readline';
 export const sleep = ms => new Promise(r => setTimeout(r, ms));
 const OX = 1600, OY = 117;
@@ -34,7 +35,7 @@ export class Dir {
   // find element by text (innermost, visible, optional x range); returns css rect
   async find(t, o = {}) {
     return this.p.evaluate(([t, o]) => {
-      const vis = e => { const r = e.getBoundingClientRect(); return r.width > 0 && r.height > 0 && r.bottom > 0 && r.top < innerHeight && r.x >= (o.minX || 0) && r.x < (o.maxX || 1e9) && r.y >= (o.minY || 0); };
+      const vis = e => { const r = e.getBoundingClientRect(); return r.width > 0 && r.height > 0 && r.bottom > 0 && r.top < innerHeight && r.x >= (o.minX || 0) && r.x < (o.maxX || 1e9) && r.y >= (o.minY || 0) && r.y < (o.maxY || 1e9); };
       const sel = o.sel || 'button,a,[role=tab],[role=button],[role=option],[role=menuitem],span,div,p,li,h1,h2,h3,h4,code,td,label,input,textarea';
       const els = [...document.querySelectorAll(sel)].filter(e => vis(e) && (o.attr ? (e.getAttribute(o.attr) || '') === t : o.exact ? (e.innerText || '').trim() === t : (e.innerText || e.getAttribute('aria-label') || '').trim().startsWith(t)));
       const e = els.filter(e => !els.some(x => x !== e && e.contains(x)))[o.nth || 0]; if (!e) return null;
@@ -61,19 +62,32 @@ export class Dir {
     await this.to(OX + 300 + Math.random() * 80, 93, 600); await this.cmd('click'); await sleep(250);
     const u = url.replace(/^https:\/\//, ''); const t1 = this.now();
     await this.cmd('type ' + u); await sleep(300);
-    if (this.now() - t1 > 2.6) this.mark('cut', { from: t1 + 1.0, to: this.now() - 0.9 });
-    await this.cmd('key 36');
+    this.mark('cut', { from: t1 + 0.7, to: this.now() });
+    await this.cmd('key 36'); await this.to(OX + 900 + Math.random() * 200, OY + 560, 450);
     this.mark('click', { what: 'url' }); await this.loaded(ready);
   }
   async scroll(dy, ms = 900, at) { if (at) await this.to(OX + at.x, OY + at.y); await this.cmd(`scroll ${dy} ${ms}`); await sleep(400); }
   async seek(t, o = {}, at = { x: 1000, y: 520 }) { // scroll with the wheel until text is comfortably on screen
     await this.to(OX + at.x, OY + at.y);
-    const s0 = this.now(); for (let i = 0; i < 25; i++) { const r = await this.find(t, o); const ih = 963; if (r && r.y > 140 && r.y < ih - 160) return r; await this.cmd(`scroll ${r ? Math.round(r.y - ih * 0.45) : (at.up ? -420 : 380)} ${700 + Math.random() * 300}`); await sleep(500 + Math.random() * 300); }
+    const s0 = this.now(); for (let i = 0; i < 25; i++) { const r = await this.find(t, o); const ih = 963; if (r && r.y > 140 && r.y < ih - 160) { if (this.now() - s0 > 3.2) this.mark('cut', { from: s0 + 1.2, to: this.now() - 0.8 }); return r; } await this.cmd(`scroll ${r ? Math.round(r.y - ih * 0.45) : (at.up ? -420 : 380)} ${700 + Math.random() * 300}`); await sleep(500 + Math.random() * 300); }
     this.mark('cut', { from: s0 + 1.5, to: this.now() - 0.3 }); console.log('seek miss', t); return null; }
+  async textAt(sub) { return this.p.evaluate(sub => { const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT); let n; while ((n = w.nextNode())) { const i = n.textContent.indexOf(sub); if (i >= 0) { const r = document.createRange(); r.setStart(n, i); r.setEnd(n, i + sub.length); const b = r.getBoundingClientRect(); if (b.width > 0) return { x: b.x + Math.min(b.width / 2, 80), y: b.y + b.height / 2, w: b.width, h: b.height }; } } return null; }, sub); }
+  async openComputer() {
+    const comp = await this.find('Computer', { sel: 'button,[role=tab]', exact: true, minX: 500 });
+    if (comp) await this.click(comp, { after: 300 }); else { await this.click('Show tabs panel', { sel: 'button', attr: 'aria-label', after: 1000 }).catch(() => {}); await this.click('Computer', { sel: 'button,[role=tab]', exact: true, minX: 500, after: 300 }).catch(e => console.log('comp', e.message)); }
+    await this.loaded(true);
+  }
+  async scrub(fracs, gap = 1100) {
+    const tl = await this.p.evaluate(() => { const e = document.querySelector('[aria-label="Session timeline"]'); if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.x, y: b.y + b.height / 2, w: b.width }; });
+    if (!tl) { console.log('no timeline'); return; }
+    for (const f of fracs) { await this.to(OX + tl.x + tl.w * f, OY + tl.y); await sleep(100); await this.cmd('click'); this.mark('click', { what: 'tl' + f }); await sleep(gap); }
+  }
   async idle(sec) { const end = Date.now() + sec * 1000; while (Date.now() < end) { const left = end - Date.now(); if (left > 1800 && Math.random() < 0.4) { const [cx, cy] = await this.pos(); await this.to(cx + (Math.random() - 0.5) * 120, cy + (Math.random() - 0.5) * 60, 700 + Math.random() * 500); } await sleep(Math.min(left, 600 + Math.random() * 600)); } }
   // keep line paced: wait until kept-time since line start >= dur
   kept(since) { const cuts = this.marks.filter(m => m.name === 'cut' && m.from >= since); return this.now() - since - cuts.reduce((a, c) => a + (c.to - c.from), 0); }
   line(id) { this.cur = { id, t: this.now() }; this.mark('L' + id); }
+  off(phrase) { const cl = PH[this.cur.id]; let t = 0.3; for (const c of cl) { const i = c.text.indexOf(phrase); if (i >= 0) return t + c.dur * i / c.text.length; t += c.dur + 0.3; } throw new Error('phrase not found: ' + phrase); }
+  async until(phrase, lead = 0.9) { await this.pace(Math.max(0, this.off(phrase) - lead), 0); }
   async pace(dur, pad = 0.5) { const need = dur + pad - this.kept(this.cur.t); if (need > 0) await this.idle(need); }
   async close() { this.m.stdin.end(); this.b.disconnect(); }
 }

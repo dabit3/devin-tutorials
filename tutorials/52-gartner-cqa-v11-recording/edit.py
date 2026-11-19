@@ -9,7 +9,8 @@ def build(take):
     marks = json.load(open(f'{RAW}/{take}.marks.json'))
     end = next(m['t'] for m in marks if m['name'] == 'end')
     cuts = sorted((m['from'], m['to']) for m in marks if m['name'] == 'cut' and m['to'] > m['from'])
-    keep, t = [], 0.0
+    first = next((m['t'] for m in marks if m['name'] == 'click'), 0.0)
+    keep, t = [], max(0.0, min(first - 0.8, next(m['t'] for m in marks if m['name'].startswith('L')) - 0.5))
     for a, b in cuts:
         if a > t: keep.append((t, a))
         t = max(t, b)
