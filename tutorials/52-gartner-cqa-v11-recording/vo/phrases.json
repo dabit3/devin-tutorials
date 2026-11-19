@@ -1,0 +1,294 @@
+{
+ "1": [
+  {
+   "text": "Today, I'll walk through how we use Devin to keep code quality high across the development life cycle.",
+   "dur": 4.47
+  }
+ ],
+ "2": [
+  {
+   "text": "We'll cover debugging, testing, refactoring, security and code review, using three of Devin's specialized agents: Devin Oncall, Devin Security and Devin Review.",
+   "dur": 10.470021
+  }
+ ],
+ "3": [
+  {
+   "text": "Each one is built for a single job. Oncall is a site reliability agent with its own harness.",
+   "dur": 5.297
+  },
+  {
+   "text": "Security uses agentic MapReduce to scan a whole codebase.",
+   "dur": 3.709021
+  },
+  {
+   "text": "Review uses adversarial agents, where some agents find problems and others try to disprove them.",
+   "dur": 5.745
+  }
+ ],
+ "4": [
+  {
+   "text": "Our example is an insurance claims platform with four repositories: a Java service, a web portal, a Windows desktop app and an iOS app.",
+   "dur": 8.535
+  },
+  {
+   "text": "Devin works across all of them in one session.",
+   "dur": 2.324
+  }
+ ],
+ "5": [
+  {
+   "text": "Before any work starts, Devin pulls in our context. That includes the AGENTS.md file in each repository, our runbooks, and tools like Slack that we connect through MCP.",
+   "dur": 10.163979
+  }
+ ],
+ "6": [
+  {
+   "text": "One rule in AGENTS.md is that every bug fix ships with a regression test. You'll see that rule come up throughout this video.",
+   "dur": 6.946979
+  }
+ ],
+ "7": [
+  {
+   "text": "Our story starts in production, where a bug has slipped through. When our iOS app crashes, it sends a crash report to a webhook, and that webhook triggers Devin Oncall.",
+   "dur": 9.498
+  }
+ ],
+ "8": [
+  {
+   "text": "Here's the alert.",
+   "dur": 0.888
+  },
+  {
+   "text": "It has the stack trace and the breadcrumbs, which are the last steps the user took before the crash.",
+   "dur": 5.189021
+  }
+ ],
+ "9": [
+  {
+   "text": "Oncall starts a session on its own.",
+   "dur": 1.755
+  },
+  {
+   "text": "Because this is an iOS bug, it runs on a macOS VM with the iOS Simulator.",
+   "dur": 4.674
+  }
+ ],
+ "10": [
+  {
+   "text": "On its own computer, it follows the breadcrumbs in the Simulator, removes the last line item, and gets the same crash.",
+   "dur": 5.405
+  },
+  {
+   "text": "The cause is a division by zero when an estimate has no line items.",
+   "dur": 3.424
+  }
+ ],
+ "11": [
+  {
+   "text": "It fixes the root cause and adds three regression tests: two unit tests and a UI test that removes the last line item.",
+   "dur": 6.375
+  }
+ ],
+ "12": [
+  {
+   "text": "Then it writes a report: what happened, how it reproduced it, what it changed, and how confident it is in the fix.",
+   "dur": 5.545
+  }
+ ],
+ "13": [
+  {
+   "text": "The same flow works on Windows. Here an adjuster's desktop app crashes when approving a claim.",
+   "dur": 4.605
+  }
+ ],
+ "14": [
+  {
+   "text": "Oncall runs this one on a Windows VM.",
+   "dur": 2.332
+  },
+  {
+   "text": "It reproduces the exception, finds a missing claim type in the approval rules, and adds unit tests and a UI test.",
+   "dur": 6.405021
+  }
+ ],
+ "15": [
+  {
+   "text": "I can review either fix wherever I work: in Devin's web app or in Devin Desktop.",
+   "dur": 4.345021
+  }
+ ],
+ "16": [
+  {
+   "text": "Next, testing. Our claims service has thin test coverage, so I ask Devin to write a test suite for it.",
+   "dur": 5.715
+  }
+ ],
+ "17": [
+  {
+   "text": "Devin writes unit tests for the business rules, integration tests for the API, and an end-to-end test over HTTP.",
+   "dur": 7.087
+  }
+ ],
+ "18": [
+  {
+   "text": "It runs the whole suite, reads any failures, fixes them, and runs it again until it passes.",
+   "dur": 5.485
+  }
+ ],
+ "19": [
+  {
+   "text": "For apps with a UI, Devin tests in the running app on its own computer.",
+   "dur": 3.906
+  },
+  {
+   "text": "On Windows it drives our desktop app, and on Linux it runs our Android app in an emulator.",
+   "dur": 5.071021
+  }
+ ],
+ "20": [
+  {
+   "text": "It attaches the recording and screenshots to the pull request, so the reviewer can see the test run without running it.",
+   "dur": 5.691
+  }
+ ],
+ "21": [
+  {
+   "text": "Devin can run tests on Linux, macOS and Windows VMs, in the iOS Simulator and in Android emulators.",
+   "dur": 6.784
+  }
+ ],
+ "22": [
+  {
+   "text": "Devin Review is a specialized review agent, and every pull request opens in it.",
+   "dur": 4.417
+  },
+  {
+   "text": "As an admin, I choose which repositories it covers and how deep it goes. Here it's set to the highest review tier for all four.",
+   "dur": 6.632
+  }
+ ],
+ "23": [
+  {
+   "text": "On this pull request, Review found an issue and labeled it with its CWE, the standard ID for the type of weakness.",
+   "dur": 6.475
+  }
+ ],
+ "24": [
+  {
+   "text": "I can ask Review about it in chat. Here I ask how a user could exploit it, and it explains with references to the code.",
+   "dur": 6.595
+  }
+ ],
+ "25": [
+  {
+   "text": "This pull request also has a failing build. Devin reads the CI logs, reproduces the failure on a VM, fixes it, and adds a regression test.",
+   "dur": 8.685
+  }
+ ],
+ "26": [
+  {
+   "text": "Then it reruns the build, and the checks pass.",
+   "dur": 2.154
+  }
+ ],
+ "27": [
+  {
+   "text": "Large changes are easier to review in small steps. Here Devin splits a refactor into a stack of three pull requests, each one building on the last.",
+   "dur": 7.995
+  }
+ ],
+ "28": [
+  {
+   "text": "Along the way, Devin adds comments to the code it changed and updates the module's README. Each pull request passes CI and has no open Review findings, so the team can merge them in order.",
+   "dur": 9.95
+  }
+ ],
+ "29": [
+  {
+   "text": "Devin Security is a specialized adversarial agent: it reads our code the way an attacker would. Some problems only show up across the whole codebase, so it scans the full repository, and it asks about our threat model first.",
+   "dur": 12.384
+  }
+ ],
+ "30": [
+  {
+   "text": "Here it found a chained vulnerability.",
+   "dur": 1.807
+  },
+  {
+   "text": "One service trusts a header that another service never checks, so a user can read other customers' claims.",
+   "dur": 5.67
+  }
+ ],
+ "31": [
+  {
+   "text": "Security writes down its reasoning, then verifies that the attack works before it reports it.",
+   "dur": 4.76
+  }
+ ],
+ "32": [
+  {
+   "text": "One click on Fix with Devin starts a session that fixes it, adds tests, and opens a pull request, which Review then checks like any other change.",
+   "dur": 7.878
+  }
+ ],
+ "33": [
+  {
+   "text": "For bigger jobs, we use dynamic workflows. A workflow combines fixed steps, like running coverage tools, with steps where agents decide what to do.",
+   "dur": 8.658021
+  }
+ ],
+ "34": [
+  {
+   "text": "Here a workflow finds the packages with low coverage, then starts one agent for each package to write and run tests.",
+   "dur": 6.214021
+  },
+  {
+   "text": "Each agent has its own session and context.",
+   "dur": 2.335021
+  }
+ ],
+ "35": [
+  {
+   "text": "We manage all of these agents from one place. I can see every session, and the same agents run from Slack, Devin Desktop and the API.",
+   "dur": 7.768
+  }
+ ],
+ "36": [
+  {
+   "text": "As an admin, I control which repositories each agent can access, what they can spend, and I can see usage across the team.",
+   "dur": 7.137
+  }
+ ],
+ "37": [
+  {
+   "text": "Devin opens pull requests, and a person on our team approves every merge.",
+   "dur": 3.988
+  }
+ ],
+ "38": [
+  {
+   "text": "So we went from a production alert to a tested fix, from thin coverage to a full test suite, and from a pull request to a reviewed, secure change, all with Devin's specialized agents.",
+   "dur": 10.216021
+  }
+ ],
+ "6a": [
+  {
+   "text": "Devin also writes our documentation.",
+   "dur": 2.217
+  },
+  {
+   "text": "DeepWiki generates architecture docs and diagrams for each repository, with links back to the source code.",
+   "dur": 5.747979
+  }
+ ],
+ "6b": [
+  {
+   "text": "When I have a question, I ask in chat.",
+   "dur": 1.975
+  },
+  {
+   "text": "Here I ask how a claim moves from submission to approval, and Devin answers with links to the code.",
+   "dur": 5.432979
+  }
+ ]
+}

@@ -2,7 +2,7 @@
 import puppeteer from '/Users/devin/repos/devin-tutorials/tutorials/_kit/tools/node_modules/puppeteer-core/lib/esm/puppeteer/puppeteer-core.js';
 import { spawn } from 'child_process';
 import fs from 'fs';
-const PH = JSON.parse(fs.readFileSync('/Users/devin/gartner/v11/vo/phrases.json'));
+const PH = JSON.parse(fs.readFileSync(new URL('./vo/phrases.json', import.meta.url)));
 import { createInterface } from 'readline';
 export const sleep = ms => new Promise(r => setTimeout(r, ms));
 const OX = 1600, OY = 117;
