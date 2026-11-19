@@ -51,7 +51,7 @@ export class Dir {
   async click(t, o = {}) { const r = await this.hover(t, o); await this.cmd('click'); this.mark('click', { what: String(t) }); if (o.load) await this.loaded(o.load); else await sleep(o.after ?? 500); return r; }
   // wait for page to settle; the wait is marked as a cut (cutFrom=click+0.35s, cutTo=ready)
   async loaded(cond) {
-    const c0 = this.now() + 0.35;
+    const c0 = this.now() + 0.05;
     const ok = typeof cond === 'string' ? cond : null;
     let last = '', stable = 0;
     for (let i = 0; i < 120; i++) { await sleep(500); await this.hide(); const st = await this.p.evaluate(s => { const sk = [...document.querySelectorAll('.animate-pulse,[class*=skeleton],[data-slot=skeleton]')].some(e => { const r = e.getBoundingClientRect(); return r.width > 20 && r.height > 6 && r.bottom > 0 && r.top < innerHeight; }); const t = document.body.innerText; return { ok: document.readyState === 'complete' && t.length > 300 && !sk && (!s || t.includes(s)), len: t.length }; }, ok).catch(() => ({ ok: false, len: 0 })); stable = st.ok && st.len === last ? stable + 1 : 0; last = st.len; if (stable >= 2 || (i > 40 && st.ok)) break; }
@@ -62,9 +62,9 @@ export class Dir {
     await this.to(OX + 300 + Math.random() * 80, 93, 600); await this.cmd('click'); await sleep(250);
     const u = url.replace(/^https:\/\//, ''); const t1 = this.now();
     await this.cmd('type ' + u); await sleep(300);
-    this.mark('cut', { from: t1 + 0.7, to: this.now() });
     await this.cmd('key 36'); await this.to(OX + 900 + Math.random() * 200, OY + 560, 450);
     this.mark('click', { what: 'url' }); await this.loaded(ready);
+    const lc = this.marks.filter(m => m.name === 'cut').pop(); if (lc) lc.from = t1 - 0.2;
   }
   async scroll(dy, ms = 900, at) { if (at) await this.to(OX + at.x, OY + at.y); await this.cmd(`scroll ${dy} ${ms}`); await sleep(400); }
   async seek(t, o = {}, at = { x: 1000, y: 520 }) { // scroll with the wheel until text is comfortably on screen

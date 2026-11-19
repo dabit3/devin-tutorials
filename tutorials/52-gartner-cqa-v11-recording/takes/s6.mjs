@@ -29,8 +29,8 @@ await d.goUrl('app.devin.ai/sessions/12b77fa1b7ef4a248e6e7333f589889c', true);
 d.line('25'); await d.hover('macOS', { minX: 200 }).catch(() => {}); await d.pace(D['25'], 0.3);
 d.line('26'); await d.scroll(4000, 1000, { x: 800, y: 500 }); await d.pace(D['26'], 0.3);
 await d.goUrl('app.devin.ai/sessions/add7ec3b63084b0293743f005eb3b13d', true);
-d.line('27'); await d.idle(0.6); await d.until('a stack of three', 2.4); await d.goUrl('app.devin.ai/review', 'Payout refactor');
-{ const r = await d.find('Payout refactor', { minX: 40 }) || await d.seek('Payout refactor', { minX: 40 }, { x: 700, y: 520 }); if (r) await d.hover(r, { dwell: 500 }); else console.log('nostack'); }
+d.line('27'); await d.idle(0.6); await d.until('a stack of three', 0.6);
+{ const r = await d.textAt('/pull/12') || await d.textAt('#12') || await d.textAt('refactor 1/3'); if (r && r.y > 120 && r.y < 900) await d.hover(r, { dwell: 600 }); else console.log('nostack'); }
 await d.pace(D['27'], 0.3);
 await d.goUrl('app.devin.ai/review/thequantexplorer/claims-service/pull/12', true); await d.to(1600 + 700, 117 + 600, 500);
 let cm = null; { const s0 = d.now(); for (let k = 0; k < 14 && !cm; k++) { const t = await d.textAt('/**'); if (t && t.y > 150 && t.y < 800) cm = t; else { await d.cmd(`scroll ${t && t.y > 0 ? Math.round(t.y - 420) : 450} 800`); await sleep(500); } } if (d.now() - s0 > 3.2) d.mark('cut', { from: s0 + 1.2, to: d.now() - 0.8 }); console.log('comment', JSON.stringify(cm)); }

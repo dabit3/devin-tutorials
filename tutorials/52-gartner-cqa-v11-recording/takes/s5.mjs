@@ -16,7 +16,7 @@ d.line('17'); await d.idle(0.6); await d.scroll(380, 1000, { x: 900, y: 520 }); 
 await d.goUrl('app.devin.ai/sessions/54de3690eab9436bb382b31d92cd7c1d', true); await d.scroll(600, 900, { x: 800, y: 500 });
 d.line('18'); await d.idle(1); await d.pace(D['18'], 0.3);
 await d.goUrl('app.devin.ai/sessions/8d868225f31a484ea88848de53dc3430', true); await d.openComputer();
-d.line('19'); await d.scrub([0.6], 900); await d.until('on Linux it runs', 3.2);
+d.line('19'); await d.scrub([0.6], 900); await d.until('on Linux', 0.3);
 await d.goUrl('app.devin.ai/sessions/38d8bb7c935347c08df80184abd32572', true); await d.openComputer();
 await d.pace(D['19'], 0.2);
 await d.goUrl('app.devin.ai/review/thequantexplorer/field-adjuster-android/pull/1', true); await d.click('Read more', { sel: 'button', after: 700 }).catch(e => console.log('rm', e.message));
