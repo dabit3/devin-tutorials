@@ -64,7 +64,7 @@ export class Dir {
     await this.cmd('type ' + u); await sleep(300);
     await this.cmd('key 36'); await this.to(OX + 900 + Math.random() * 200, OY + 560, 450);
     this.mark('click', { what: 'url' }); await this.loaded(ready);
-    const lc = this.marks.filter(m => m.name === 'cut').pop(); if (lc) lc.from = t1 - 0.2;
+    const lc = this.marks.filter(m => m.name === 'cut').pop(); if (lc) lc.from = t1 - 0.45;
   }
   async scroll(dy, ms = 900, at) { if (at) await this.to(OX + at.x, OY + at.y); await this.cmd(`scroll ${dy} ${ms}`); await sleep(400); }
   async seek(t, o = {}, at = { x: 1000, y: 520 }) { // scroll with the wheel until text is comfortably on screen
