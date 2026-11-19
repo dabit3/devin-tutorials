@@ -1,23 +1,27 @@
 # Gartner assisted application development — final film
 
-**Final script:** `script.md` is the unchanged Gartner-AAD-script-v3.md: 51 narration lines and 11 sections. `film-lines.json` maps every line to exactly its tagged captured beats. `shots/beats.json`, `spec.js`, `cards.json`, and `scenes.js` are the final film assembly, not the older provisional 38-line version.
+**Final script:** `script.md` describes the native human re-film: 51 narration lines and 11 sections, with the approved replacement line 27. Its `On Screen` labels are descriptions, not capture IDs. The old still manifests (`film-lines.json`, `shots/beats.json`, `spec.js`, `cards.json`, `scenes.js`) are historical and are not inputs to the current master.
 
-**Master:** `45-gartner-aad-master.mp4`, 3840×2160 at 60 fps, caption-free, **6:11.417 (371.417000 seconds)**. `qa/contact-sheet.jpg` is the 51-line midpoint overview; `qa/contact-sheet-01.jpg` through `13.jpg` provide detailed four-frame pages. `qa/samples.json` records exact sampling times and narration. See [final QA results](film-qa.md) for visual review, corrected targets, and technical checks.
+**Master:** `45-gartner-aad-master.mp4`, native 3840×2160 at 30 fps, **5:48.556 (348.556 seconds)**, H.264 slow/CRF16/yuv420p and AAC 48 kHz. Audio is the ordered narration only. No cards, intro/outro effects, music, added highlights, captions or masks. `film-qa.md` describes the superseded still master, not this file.
 
-The assembly uses 76 cuts from 74 unique live-product stills. Multi-beat lines divide their duration into equal whole-frame holds. Each still stays at native framing; the cursor parks instantly inside the metadata highlight target, and the kit animates its highlight. Both caption systems are disabled. The 11 section cards are nominally 2.5 seconds each. CLI capture masks the account email; an independent OCR scan of all 74 film sources found no remaining email matches (`email-masks.json`).
+## Rebuild the human recut
+
+See [human-recut/README.md](human-recut/README.md) for the rig, dependencies and recording provenance. Restore the external production package to `/home/ubuntu/work/aad-human`: `final-accepted-inventory.json`, `final-source-table.md`, the selected native MP4 takes and JSON sidecars. These large/private source assets are deliberately not in this repository. The drivers currently expect this checkout at `/home/ubuntu/repos/devin-tutorials`; VO metadata and the approved line-27 WAV live under `vo/T8iHhGIWPm2GVYpQD1Am/`. Other narration clips may be restored individually or exported from the original external `_full-take.wav` using their metadata ranges. Do not regenerate narration with TTS for a rebuild.
+
+The renderer uses accepted source windows at unchanged speed, straight cuts and real outgoing handles for 0.4-second gaps (1 second at section boundaries). It budgets current per-line WAV durations when present, rather than stale full-take timing. Run from the repository root:
 
 ```sh
-python3 tutorials/45-gartner-aad/assemble.py
-# Only to regenerate VO (not needed for the checked-in per-line clips):
-VO_SEED=none python3 tutorials/_kit/tools/vo_onetake.py tutorials/45-gartner-aad T8iHhGIWPm2GVYpQD1Am
-python3 tutorials/45-gartner-aad/assemble.py
-bash tutorials/45-gartner-aad/build-film.sh
-python3 tutorials/45-gartner-aad/qa-film.py frames
-python3 tutorials/45-gartner-aad/verify-film.py
+python3 tutorials/45-gartner-aad/human-recut/render-master.py --prepare-only
+python3 tutorials/45-gartner-aad/human-recut/render-master.py
+python3 tutorials/45-gartner-aad/human-recut/qa-master.py
+python3 tutorials/45-gartner-aad/human-recut/final-clause-qa.py
+python3 tutorials/45-gartner-aad/human-recut/freeze-review.py
+python3 tutorials/45-gartner-aad/human-recut/verify-source-holds.py
+python3 -m unittest discover -s tutorials/45-gartner-aad/human-recut -p 'test_*.py'
 python3 -m unittest discover -s tutorials/45-gartner-aad -p test_assemble.py
 ```
 
-Nader's voice uses the kit's default TTS model/settings and one continuous take, split into 51 checked 48 kHz mono clips. The old 38-line VO and its provisional timing file are not used. Per-line WAVs and `lines.json` follow the existing CQA tutorial's committed-asset convention; the full-take WAV and build directories remain ignored. No music; standard kit intro/outro sounds remain. The local build adapter calls the unmodified kit renderer/audio tools with the kit's 4K60, CRF18/slow H.264 and AAC settings. It uses FFmpeg 4.4's equivalent `-vsync cfr` because this VM does not support the newer `-fps_mode cfr`, and resumes complete cached segments. Optional `REBUILD_BEATS=id,id` repairs geometry-only changes in affected segments; it rejects changes to scenes, still images, voice, or beat timing and requires snapshots from a completed build.
+Output: `/home/ubuntu/work/aad-human/45-gartner-aad-human-master.mp4`. QA evidence is generated under that production directory, including `qa/human-contact-sheet.jpg`. Machine QA is not visual approval: personally inspect the line/clause/cut frames and classify source holds before copying an approved master to `45-gartner-aad-master.mp4`. The delivered master passed this protocol; full real-time audiovisual playback was not performed. `assemble.py` and `build-film.sh` are compatibility entry points to the same human renderer; neither reads capture IDs from `script.md` nor invokes the retired still/card pipeline.
 
 **Capture provenance and limitations:** [production-final.md](production-final.md), [full captured beat list](production-beat-list.md), and `shots/production-beats.json` preserve the broader capture package. Unlisted beats are not in the film. Only approved demo PRs service #16 and portal #40 were merged in Desktop. Portal's Critical demo-auth finding remains unresolved; docs PR #39 is open. Earlier prep/continuation instructions below are historical and must not be replayed against the completed sessions.
 
