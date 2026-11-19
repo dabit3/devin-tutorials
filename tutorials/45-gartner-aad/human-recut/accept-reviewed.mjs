@@ -1,0 +1,10 @@
+import fs from'node:fs';
+const root='/home/ubuntu/work/aad-human/';
+const[stem,lineArg,...words]=process.argv.slice(2),n=Number(lineArg),note=words.join(' ');
+if(!/^section\d+-[\w-]+$/.test(stem)||!Number.isInteger(n)||!note)throw Error('Expected take stem, reviewed line and actual visual observations');
+const file=root+'takes/'+stem+'.json',d=JSON.parse(fs.readFileSync(file)),e=d.lines.find(e=>e.line===n),gate=root+'qa/'+stem+'-line'+String(n).padStart(2,'0')+'-gate.json',g=JSON.parse(fs.readFileSync(gate));
+if(!e||!g.frames.length||g.frames.some(f=>!fs.existsSync(f.image))||d.status.startsWith('rejected'))throw Error('Missing media/gates or rejected take');
+e.gateStatus='accepted-gated';e.visualQA=note;g.status='accepted-gated';g.visualQA=note;
+if(d.lines.every(l=>l.gateStatus==='accepted-gated'))d.status='accepted-gated';
+fs.writeFileSync(file,JSON.stringify(d,null,2)+'\n');fs.writeFileSync(gate,JSON.stringify(g,null,2)+'\n');
+console.log('REVIEW_RECORDED '+stem+' line'+n+' '+g.frames.length+' personally opened gates; take='+d.status);

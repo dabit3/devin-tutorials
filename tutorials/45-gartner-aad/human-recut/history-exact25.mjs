@@ -1,0 +1,11 @@
+import{Capture}from'./capture.mjs';
+const r=await new Capture().connect();
+try{
+ await r.focus('desktop');
+ await r.native.wait(()=>{const p=[...document.querySelectorAll('p')].find(e=>e.innerText==='Keep it vanilla JavaScript, no new dependencies.');const b=p?.getBoundingClientRect();return document.title.startsWith('Plan GitHub issue #38')&&p?.checkVisibility()&&b.y>150&&b.bottom<innerHeight-180&&document.body.innerText.includes('Agreed. Nothing in the portal needs a library today:')&&![...document.querySelectorAll('[role=tooltip],.animate-spin')].some(e=>e.checkVisibility())});
+ await r.h.moveTo(3770,1900);
+ await r.start(process.argv[2]||'section05-take21a-exact-history25');
+ await r.sequence(25,async()=>{await r.h.moveTo(2945,1083);await r.h.moveTo(3770,1900);},{notes:'Approved read-only historical steering treatment. Genuine existing D1 native5:28AM submitted edited queued message: Keep it vanilla JavaScript, no new dependencies. Native following acknowledgement agrees no library; no commands, edits or tests. This is the same original Devin Local session, but a retained Nov19 filming read-only audit turn, not the Nov17 implementation turn. Earlier real section05-take13a-queue25 (captureEpoch2026-11-19T05:27:54.247Z) proves initial Keep it vanilla JavaScript queue, actual Edit/Update and this exact submitted revised text; its original VO mapping failed, and it is not accepted. Native transcript retains the submitted edited version, not a queue editor/replay. No fresh message, typing, queue, edit, stop, agent run, test, commit or merge. Native5:28 timestamp clicked before capture and all narration; only actual cursor motion here, real full UI100%2x, six original sessions. Explicit historical shot deviation, no claim agent is currently working.'});
+ r.data.lines[0].narrationStart=r.data.lines[0].actionStart;r.data.lines[0].subjectSettledStart=r.data.lines[0].actionStart;r.save();
+ await r.wait(900,'tail handle',false);await r.stop();if(r.data.status==='rejected')throw Error(r.data.rejection||'Capture rejected');
+}catch(error){console.error(error);if(r.rec?.exitCode===null){r.data.status='rejected';r.data.rejection=error.message;await r.stop();}process.exitCode=1;}finally{r.close()}
