@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Assemble final CQA v11: trims, exact-length PCM audio per segment, setpts re-encode, 1.8 s tail.
 import subprocess, os
-O = os.path.expanduser('~/gartner/v11/out'); os.chdir(O)
+O = os.path.expanduser('~/gartner/v11/out'); os.chdir(O); os.makedirs(os.path.expanduser('~/gartner/v11/tmp'), exist_ok=True)
 segs = [('s1', 0), ('s2', 5.0), ('s3', 0), ('s4', 0), ('s4c', 0), ('s5', 0), ('s5b', 0), ('s6', 0), ('s7', 0)]
 run = lambda *a: subprocess.run(list(a), check=True)
 parts = []
